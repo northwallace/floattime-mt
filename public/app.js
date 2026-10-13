@@ -7,6 +7,7 @@ const SPEED_EXPONENT = 0.34; // hydraulic geometry: v ∝ Q^0.34
 const MIN_SPEED_MPH = 0.8;
 const MAX_SPEED_MPH = 9.0;
 const FLOAT_DAY_HOURS = 10; // sections longer than this at current speed = multi-day
+const FISH_MIN_PER_MILE = 35; // extra time if stopping to fish
 
 const $ = (id) => document.getElementById(id);
 
@@ -14,6 +15,7 @@ const state = {
   river: null,          // current river object
   craft: null,          // current craft object
   putIn: null,          // Date for today's put-in, or null if unset
+  fishing: false,       // add FISH_MIN_PER_MILE per mile for stop-and-fish floats
   gaugeCache: {},       // gauge id -> { flow, temp, series, fetchedAt }
   weatherCache: {},     // river id -> { airF, windMph }
   reports: [],
@@ -270,7 +272,9 @@ function renderSections(river, flow, sunset) {
   const now = new Date();
 
   for (const sec of river.sections) {
-    const hours = sec.miles / speed;
+    const driftHours = sec.miles / speed;
+    const fishHours = state.fishing ? sec.miles * (FISH_MIN_PER_MILE / 60) : 0;
+    const hours = driftHours + fishHours;
     const card = document.createElement("div");
     card.className = "float-card";
 
@@ -330,9 +334,9 @@ function renderSections(river, flow, sunset) {
         <span>${sec.miles} mi</span>
         <span class="diff">${esc(sec.difficulty)}</span>
       </div>
-      <div class="fc-time"><span class="fc-time-label">Estimated float time</span>${timeDisplay}</div>
+      <div class="fc-time"><span class="fc-time-label">${state.fishing ? "Estimated time (fishing)" : "Estimated float time"}</span>${timeDisplay}</div>
       ${etaHtml}
-      <div class="fc-speed">~${speed.toFixed(1)} mph in a ${state.craft.label.toLowerCase().split(" (")[0]} at ${flow.toLocaleString()} cfs</div>
+      <div class="fc-speed">~${speed.toFixed(1)} mph in a ${state.craft.label.toLowerCase().split(" (")[0]} at ${flow.toLocaleString()} cfs${state.fishing ? ` · plus ${FISH_MIN_PER_MILE} min/mi for fishing (${fmtDuration(fishHours)} extra)` : ""}</div>
       ${launchHtml}
       ${hazardHtml}
       <div class="fc-notes">${esc(sec.notes)}</div>
@@ -568,6 +572,10 @@ function init() {
   });
   $("putInTime").addEventListener("input", () => {
     state.putIn = parsePutIn($("putInTime").value);
+    renderRiver();
+  });
+  $("fishingToggle").addEventListener("change", () => {
+    state.fishing = $("fishingToggle").checked;
     renderRiver();
   });
 
