@@ -86,14 +86,16 @@ async function fetchGauge(siteId) {
   if (!res.ok) throw new Error(`USGS ${res.status}`);
   const data = await res.json();
 
-  const out = { flow: null, temp: null, series: [], fetchedAt: Date.now() };
+  const out = { flow: null, temp: null, series: [], reportedAt: null, fetchedAt: Date.now() };
   for (const ts of data.value.timeSeries) {
     const code = ts.variable.variableCode[0].value;
     const vals = ts.values[0].value.filter((v) => Number(v.value) > -99999);
     if (!vals.length) continue;
-    const latest = Number(vals[vals.length - 1].value);
+    const last = vals[vals.length - 1];
+    const latest = Number(last.value);
     if (code === "00060") {
       out.flow = latest;
+      out.reportedAt = new Date(last.dateTime).getTime();
       out.series = vals.map((v) => ({ t: new Date(v.dateTime).getTime(), q: Number(v.value) }));
     } else if (code === "00010") {
       out.temp = latest; // °C
@@ -107,12 +109,20 @@ async function fetchWeather(river) {
   if (state.weatherCache[river.id]) return state.weatherCache[river.id];
   try {
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${river.lat}&longitude=${river.lon}` +
-      `&current=temperature_2m,wind_speed_10m&temperature_unit=fahrenheit&wind_speed_unit=mph`;
+      `&current=temperature_2m,wind_speed_10m` +
+      `&daily=precipitation_probability_max,uv_index_max,temperature_2m_max,temperature_2m_min` +
+      `&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=2`;
     const res = await fetch(url);
     const data = await res.json();
+    const daily = data.daily || {};
     const out = {
       airF: Math.round(data.current.temperature_2m),
       windMph: Math.round(data.current.wind_speed_10m),
+      rainToday: daily.precipitation_probability_max ? daily.precipitation_probability_max[0] : null,
+      rainTomorrow: daily.precipitation_probability_max ? daily.precipitation_probability_max[1] : null,
+      uv: daily.uv_index_max ? Math.round(daily.uv_index_max[0]) : null,
+      highF: daily.temperature_2m_max ? Math.round(daily.temperature_2m_max[0]) : null,
+      lowF: daily.temperature_2m_min ? Math.round(daily.temperature_2m_min[0]) : null,
     };
     state.weatherCache[river.id] = out;
     return out;
@@ -132,11 +142,37 @@ function riverSpeedMph(river, flowCfs) {
 
 function conditionFor(river, flowCfs) {
   const ratio = flowCfs / river.refFlowCfs;
-  if (ratio < 0.4)  return { cls: "cond-low",    label: "Low & bony",  note: "Expect to drag in the shallows. Tubes OK, hard boats will scrape." };
-  if (ratio < 0.8)  return { cls: "cond-mellow", label: "Mellow",      note: "Lazy current, relaxed pace. Great tube and family water." };
-  if (ratio < 1.5)  return { cls: "cond-prime",  label: "Prime",       note: "Healthy flow and a good clip. This is the float you came for." };
-  if (ratio < 2.5)  return { cls: "cond-high",   label: "High & fast", note: "Pushy water, fewer eddies. Strong swimmers and PFDs only." };
-  return               { cls: "cond-danger", label: "Runoff — caution", note: "Flood-stage water moves wood and eats boats. Most floaters should wait." };
+  if (ratio < 0.4)  return { cls: "cond-low",    label: "Low & bony",  note: "Expect to drag in the shallows. Tubes OK, hard boats will scrape.", craft: "Tubes and small rafts. Drift boats will scrape." };
+  if (ratio < 0.8)  return { cls: "cond-mellow", label: "Mellow",      note: "Lazy current, relaxed pace. Great tube and family water.", craft: "Anything floats — tubes, SUPs, and rafts." };
+  if (ratio < 1.5)  return { cls: "cond-prime",  label: "Prime",       note: "Healthy flow and a good clip. This is the float you came for.", craft: "Rafts, kayaks, and SUPs. Tubes if you're a strong swimmer." };
+  if (ratio < 2.5)  return { cls: "cond-high",   label: "High & fast", note: "Pushy water, fewer eddies. Strong swimmers and PFDs only.", craft: "Rafts and kayaks. Leave the tubes at home." };
+  return               { cls: "cond-danger", label: "Runoff — caution", note: "Flood-stage water moves wood and eats boats. Most floaters should wait.", craft: "Experienced whitewater crews only — or wait it out." };
+}
+
+function dressFor(tempC) {
+  if (tempC == null) return "No water temp from this gauge — pack a layer you'd swim in.";
+  const f = tempC * 9 / 5 + 32;
+  if (f < 50) return `Water is ${Math.round(f)}°F — drysuit or thick wetsuit. This is hypothermia water.`;
+  if (f < 60) return `Water is ${Math.round(f)}°F — wetsuit. A dunk will knock the wind out of you.`;
+  if (f < 68) return `Water is ${Math.round(f)}°F — wetsuit or splash top. Dunks are still cold.`;
+  return `Water is ${Math.round(f)}°F — summer kit. PFD is still non-negotiable.`;
+}
+
+function uvLabel(uv) {
+  if (uv == null) return "–";
+  if (uv <= 2) return `${uv} low`;
+  if (uv <= 5) return `${uv} mod`;
+  if (uv <= 7) return `${uv} high`;
+  return `${uv} very high`;
+}
+
+function gaugeAge(ts) {
+  if (!ts) return "reading time unknown";
+  const mins = Math.max(0, Math.round((Date.now() - ts) / 60000));
+  if (mins < 2) return "updated just now";
+  if (mins < 60) return `updated ${mins} min ago`;
+  const hrs = Math.round(mins / 60);
+  return hrs === 1 ? "updated 1 hr ago" : `updated ${hrs} hr ago`;
 }
 
 function trendFor(series) {
@@ -311,6 +347,11 @@ async function renderRiver() {
   $("loadError").hidden = true;
   $("riverBlurb").textContent = river.blurb;
   $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName}`;
+  $("packWear").textContent = "Checking the put-in…";
+  $("rainToday").textContent = "–";
+  $("rainTomorrow").textContent = "–";
+  $("uvIndex").textContent = "–";
+  $("packHighLow").textContent = "";
 
   const sunset = renderDaylight(river);
 
@@ -318,9 +359,14 @@ async function renderRiver() {
   $("airTemp").textContent = "–";
   $("windSpeed").textContent = "–";
   fetchWeather(river).then((w) => {
-    if (w && state.river === river) {
-      $("airTemp").textContent = `${w.airF}°F`;
-      $("windSpeed").textContent = `${w.windMph} mph`;
+    if (!(w && state.river === river)) return;
+    $("airTemp").textContent = `${w.airF}°F`;
+    $("windSpeed").textContent = `${w.windMph} mph`;
+    $("rainToday").textContent = w.rainToday != null ? `${w.rainToday}%` : "n/a";
+    $("rainTomorrow").textContent = w.rainTomorrow != null ? `${w.rainTomorrow}%` : "n/a";
+    $("uvIndex").textContent = uvLabel(w.uv);
+    if (w.highF != null && w.lowF != null) {
+      $("packHighLow").textContent = `Put-in high ${w.highF}° / low ${w.lowF}° today`;
     }
   });
 
@@ -353,7 +399,11 @@ async function renderRiver() {
   badge.textContent = cond.label;
   badge.className = `condition-badge ${cond.cls}`;
   $("conditionNote").textContent = cond.note;
+  $("craftHint").textContent = cond.craft;
   $("waterTemp").textContent = gauge.temp != null ? waterTempLabel(gauge.temp) : "n/a";
+  $("packWear").textContent = dressFor(gauge.temp);
+  const age = gaugeAge(gauge.reportedAt);
+  $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName} · ${age}`;
 
   renderSections(river, gauge.flow, sunset);
 }
