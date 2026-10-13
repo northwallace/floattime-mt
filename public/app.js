@@ -13,6 +13,7 @@ const $ = (id) => document.getElementById(id);
 const state = {
   river: null,          // current river object
   craft: null,          // current craft object
+  putIn: null,          // Date for today's put-in, or null if unset
   gaugeCache: {},       // gauge id -> { flow, temp, series, fetchedAt }
   weatherCache: {},     // river id -> { airF, windMph }
   reports: [],
@@ -206,6 +207,26 @@ function renderDaylight(river) {
   return sunset;
 }
 
+function parsePutIn(value) {
+  if (!value) return null;
+  const [h, m] = value.split(":").map(Number);
+  if (Number.isNaN(h) || Number.isNaN(m)) return null;
+  const d = new Date();
+  d.setHours(h, m, 0, 0);
+  return d;
+}
+
+function takeOutTime(putIn, hoursOnWater, isMultiDay) {
+  if (isMultiDay) {
+    const days = Math.max(1, Math.round(hoursOnWater / 7));
+    const finish = new Date(putIn.getTime());
+    finish.setDate(finish.getDate() + days - 1);
+    finish.setHours(putIn.getHours() + 7, putIn.getMinutes(), 0, 0); // ~7 hrs floating that last day
+    return { finish, days };
+  }
+  return { finish: new Date(putIn.getTime() + hoursOnWater * 3600000), days: 1 };
+}
+
 function renderSections(river, flow, sunset) {
   const speed = riverSpeedMph(river, flow) * state.craft.mult;
   const container = $("sectionCards");
@@ -221,11 +242,12 @@ function renderSections(river, flow, sunset) {
 
     let timeDisplay = fmtDuration(hours);
     let launchHtml = "";
+    let etaHtml = "";
     if (isMultiDay) {
       const days = Math.max(1, Math.round(hours / 7)); // ~7 floating hrs/day
       timeDisplay = `~${days} day${days > 1 ? "s" : ""}`;
       launchHtml = `<div class="fc-launch ok"><span class="multi-day-badge">Multi-day</span> &nbsp;About ${Math.round(hours)} total hours on the water, at ~7 floating hrs per day.</div>`;
-    } else if (sunset) {
+    } else if (sunset && !state.putIn) {
       const latestLaunch = new Date(sunset.getTime() - hours * 3600000 - 30 * 60000); // 30 min buffer
       const minutesUntilLatest = (latestLaunch - now) / 60000;
       if (minutesUntilLatest > 90) {
@@ -234,6 +256,30 @@ function renderSections(river, flow, sunset) {
         launchHtml = `<div class="fc-launch tight">⏳ Tight — launch by <strong>${fmtClock(latestLaunch)}</strong> (${Math.round(minutesUntilLatest)} min from now).</div>`;
       } else {
         launchHtml = `<div class="fc-launch no">🌙 Not enough daylight left for this one today.</div>`;
+      }
+    }
+
+    if (state.putIn) {
+      const { finish, days } = takeOutTime(state.putIn, hours, isMultiDay);
+      const afterDark = sunset && finish > sunset && days === 1;
+      const dayNote = days > 1
+        ? ` on day ${days} (${finish.toLocaleDateString([], { weekday: "short", month: "short", day: "numeric" })})`
+        : "";
+      etaHtml = `
+        <div class="fc-eta">
+          <div class="fc-eta-leg"><span class="fc-eta-label">Put in</span><span class="fc-eta-time">${fmtClock(state.putIn)}</span></div>
+          <div class="fc-eta-arrow" aria-hidden="true">→</div>
+          <div class="fc-eta-leg"><span class="fc-eta-label">Take out</span><span class="fc-eta-time">~${fmtClock(finish)}${dayNote}</span></div>
+        </div>`;
+      if (afterDark) {
+        launchHtml = `<div class="fc-launch no">🌙 That take-out is after sunset (${fmtClock(sunset)}). Launch earlier or pick a shorter stretch.</div>`;
+      } else if (sunset && days === 1) {
+        const slackMin = Math.round((sunset - finish) / 60000);
+        if (slackMin >= 0 && slackMin < 45) {
+          launchHtml = `<div class="fc-launch tight">⏳ You'll make sunset with about ${slackMin} min to spare.</div>`;
+        } else if (slackMin >= 45) {
+          launchHtml = `<div class="fc-launch ok">☀️ On the water ${fmtDuration(hours)}. Take-out before sunset (${fmtClock(sunset)}).</div>`;
+        }
       }
     }
 
@@ -249,6 +295,7 @@ function renderSections(river, flow, sunset) {
         <span class="diff">${esc(sec.difficulty)}</span>
       </div>
       <div class="fc-time"><span class="fc-time-label">Estimated float time</span>${timeDisplay}</div>
+      ${etaHtml}
       <div class="fc-speed">~${speed.toFixed(1)} mph in a ${state.craft.label.toLowerCase().split(" (")[0]} at ${flow.toLocaleString()} cfs</div>
       ${launchHtml}
       ${hazardHtml}
@@ -467,6 +514,10 @@ function init() {
   });
   craftSel.addEventListener("change", () => {
     state.craft = CRAFT.find((c) => c.id === craftSel.value);
+    renderRiver();
+  });
+  $("putInTime").addEventListener("input", () => {
+    state.putIn = parsePutIn($("putInTime").value);
     renderRiver();
   });
 
