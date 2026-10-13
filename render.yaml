@@ -1,0 +1,19 @@
+# Render blueprint for FloatTime MT.
+# In the Render dashboard: New + -> Blueprint -> select this repo,
+# or New + -> Web Service -> select this repo (settings below are picked up).
+
+services:
+  - type: web
+    name: floattime-mt
+    runtime: python
+    plan: free            # change to "starter" ($7/mo) for always-on, no cold starts
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 server.py"
+    healthCheckPath: /api/health
+    autoDeploy: true
+    # When you upgrade to a paid instance, uncomment this block so community
+    # obstruction reports survive deploys and restarts (~$0.25/month):
+    # disk:
+    #   name: floattime-data
+    #   mountPath: /opt/render/project/src/data
+    #   sizeGB: 1
