@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FloatTime MT — How long will your Montana river float actually take?</title>
+  <meta name="description" content="Live USGS flow data turned into real float times for Montana rivers. See current conditions, daylight remaining, water temps, and community-reported obstructions for the Madison, Yellowstone, Blackfoot, Clark Fork, Bitterroot and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🛶</text></svg>">
+  <!--
+    ADSENSE: once approved, paste your script tag here, e.g.
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    Then replace each <div class="ad-slot"> placeholder below with an <ins class="adsbygoogle"> unit.
+  -->
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="nav">
+      <div class="brand">🛶 FloatTime <span>MT</span></div>
+      <div class="nav-links">
+        <a href="#calculator">Float Calculator</a>
+        <a href="#reports">River Reports</a>
+        <a href="#how">How It Works</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>How long will your float <em>actually</em> take?</h1>
+      <p class="hero-sub">Live USGS flow data for Montana's favorite rivers, turned into real-world
+        float times — plus daylight countdowns, water temps, and crowd-sourced hazard reports.</p>
+      <div class="hero-stats" id="heroStats">
+        <div class="hero-stat"><span class="hs-num" id="statRivers">–</span><span class="hs-label">rivers tracked</span></div>
+        <div class="hero-stat"><span class="hs-num" id="statSections">–</span><span class="hs-label">float sections</span></div>
+        <div class="hero-stat"><span class="hs-num" id="statDaylight">–</span><span class="hs-label">daylight left today</span></div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,35 C960,70 1200,10 1440,45 L1440,90 L0,90 Z" fill="var(--bg)"/></svg>
+    </div>
+  </header>
+
+  <!-- Ad: leaderboard below hero -->
+  <div class="ad-slot ad-leaderboard" role="complementary" aria-label="Advertisement">
+    <span class="ad-tag">Advertisement</span>
+    <div class="ad-inner">728 × 90 — Leaderboard ad unit</div>
+  </div>
+
+  <main>
+    <section id="calculator" class="section">
+      <div class="section-head">
+        <h2>Pick your float</h2>
+        <p>Choose a river and your craft. We pull the latest gauge reading and estimate your time on the water.</p>
+      </div>
+
+      <div class="controls">
+        <div class="control">
+          <label for="riverSelect">River</label>
+          <select id="riverSelect"></select>
+        </div>
+        <div class="control">
+          <label for="craftSelect">What are you floating in?</label>
+          <select id="craftSelect"></select>
+        </div>
+      </div>
+
+      <div id="riverDash" class="river-dash" hidden>
+        <div class="dash-grid">
+          <div class="dash-card flow-card">
+            <div class="dash-label">Current flow</div>
+            <div class="dash-big"><span id="flowValue">–</span> <span class="unit">cfs</span></div>
+            <div class="dash-sub" id="flowTrend">–</div>
+            <svg id="sparkline" class="sparkline" viewBox="0 0 300 60" preserveAspectRatio="none"></svg>
+            <div class="dash-foot" id="gaugeName">–</div>
+          </div>
+          <div class="dash-card">
+            <div class="dash-label">Conditions</div>
+            <div class="condition-badge" id="conditionBadge">–</div>
+            <div class="dash-sub" id="conditionNote">–</div>
+            <div class="temp-row">
+              <div><span class="temp-num" id="waterTemp">–</span><span class="temp-label">water</span></div>
+              <div><span class="temp-num" id="airTemp">–</span><span class="temp-label">air</span></div>
+              <div><span class="temp-num" id="windSpeed">–</span><span class="temp-label">wind</span></div>
+            </div>
+          </div>
+          <div class="dash-card daylight-card">
+            <div class="dash-label">Daylight</div>
+            <div class="dash-big" id="daylightLeft">–</div>
+            <div class="dash-sub" id="sunsetTime">–</div>
+            <div class="dash-foot" id="daylightNote"></div>
+          </div>
+        </div>
+
+        <p class="river-blurb" id="riverBlurb"></p>
+        <div id="sectionCards" class="section-cards"></div>
+        <p class="fine-print">Float times are estimates based on current gauge flow and typical drift speeds.
+          Mileages are approximate. Conditions change fast — always scout, wear a PFD, and check
+          <a href="https://fwp.mt.gov/activities/boating" target="_blank" rel="noopener">MT FWP</a> for closures.</p>
+      </div>
+
+      <div id="loadError" class="load-error" hidden>Couldn't reach the USGS gauge service. Check your connection and try again.</div>
+    </section>
+
+    <!-- Ad: in-content rectangle -->
+    <div class="ad-slot ad-rect" role="complementary" aria-label="Advertisement">
+      <span class="ad-tag">Advertisement</span>
+      <div class="ad-inner">336 × 280 — In-content ad unit</div>
+    </div>
+
+    <section id="reports" class="section">
+      <div class="section-head">
+        <h2>River reports <span class="live-dot" title="Community reports"></span></h2>
+        <p>Strainers, fences, diversion dams — if you saw it, report it. Help the next boat down.</p>
+      </div>
+
+      <div class="reports-layout">
+        <form id="reportForm" class="report-form">
+          <h3>Report an obstruction</h3>
+          <div class="form-row">
+            <div class="control">
+              <label for="reportRiver">River</label>
+              <select id="reportRiver" required></select>
+            </div>
+            <div class="control">
+              <label for="reportType">Type</label>
+              <select id="reportType" required>
+                <option value="strainer">Strainer / downed tree</option>
+                <option value="diversion">Diversion dam</option>
+                <option value="fence">Fence across channel</option>
+                <option value="low-bridge">Low bridge / cable</option>
+                <option value="debris">Debris / flood wood</option>
+                <option value="other">Other hazard</option>
+              </select>
+            </div>
+          </div>
+          <div class="control">
+            <label for="reportLocation">Where exactly? <span class="optional">(optional)</span></label>
+            <input id="reportLocation" type="text" maxlength="160" placeholder="e.g. 1 mile below Black's Ford, river left">
+          </div>
+          <div class="control">
+            <label for="reportDesc">What did you see?</label>
+            <textarea id="reportDesc" required maxlength="600" rows="3" placeholder="Cottonwood spanning 2/3 of the channel, passable far river right…"></textarea>
+          </div>
+          <div class="control">
+            <label for="reportName">Your name <span class="optional">(optional)</span></label>
+            <input id="reportName" type="text" maxlength="40" placeholder="Anonymous">
+          </div>
+          <button type="submit" class="btn-primary" id="reportSubmit">Submit report</button>
+          <div id="reportStatus" class="report-status" role="status"></div>
+        </form>
+
+        <div class="reports-feed">
+          <div class="reports-feed-head">
+            <h3>Latest reports</h3>
+            <label class="filter-toggle"><input type="checkbox" id="filterReports"> only selected river</label>
+          </div>
+          <div id="reportsList" class="reports-list">
+            <div class="reports-empty">Loading reports…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="section-head">
+        <h2>How the math works</h2>
+      </div>
+      <div class="how-grid">
+        <div class="how-card">
+          <div class="how-num">1</div>
+          <h3>Live gauge data</h3>
+          <p>Every river here is tied to a USGS streamgage. We pull the instantaneous discharge (cfs) and water temperature, refreshed every time you load the page.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-num">2</div>
+          <h3>Flow → speed</h3>
+          <p>River speed rises with discharge. We calibrate each river's typical drift speed at a reference flow, then scale it using the hydraulic-geometry relationship v ∝ Q<sup>0.34</sup>.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-num">3</div>
+          <h3>Your craft matters</h3>
+          <p>A paddled kayak outruns the current; a tube with a cooler lags behind it. We adjust the estimate for what you're actually floating in.</p>
+        </div>
+        <div class="how-card">
+          <div class="how-num">4</div>
+          <h3>Beat the sunset</h3>
+          <p>We compute sunset at the put-in and tell you the latest reasonable launch time, so you're not navigating strainers in the dark.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ad: footer leaderboard -->
+  <div class="ad-slot ad-leaderboard" role="complementary" aria-label="Advertisement">
+    <span class="ad-tag">Advertisement</span>
+    <div class="ad-inner">728 × 90 — Footer ad unit</div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="brand">🛶 FloatTime <span>MT</span></div>
+      <p>Flow data courtesy of the <a href="https://waterservices.usgs.gov/" target="_blank" rel="noopener">USGS Water Services API</a>.
+      Weather by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>.
+      Not a substitute for scouting, judgment, or a PFD. Rivers can kill you; this website cannot save you.</p>
+      <p class="copyright">© <span id="year"></span> FloatTime MT</p>
+    </div>
+  </footer>
+
+  <script src="rivers.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
