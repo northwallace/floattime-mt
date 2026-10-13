@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
 User-agent: Mediapartners-Google
 Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://floateta.com/sitemap.xml

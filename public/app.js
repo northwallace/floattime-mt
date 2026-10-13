@@ -557,12 +557,25 @@ function init() {
   const craftSel = $("craftSelect");
   for (const c of CRAFT) craftSel.add(new Option(c.label, c.id));
 
-  state.river = RIVERS[0];
+  const wanted = new URLSearchParams(location.search).get("river");
+  if (wanted && RIVERS.some((r) => r.id === wanted)) {
+    riverSel.value = wanted;
+  }
+
+  state.river = RIVERS.find((r) => r.id === riverSel.value) || RIVERS[0];
   state.craft = CRAFT[0];
+  reportRiverSel.value = state.river.name;
+
+  function syncRiverUrl() {
+    const url = new URL(location.href);
+    url.searchParams.set("river", state.river.id);
+    history.replaceState(null, "", url.pathname + url.search + url.hash);
+  }
 
   riverSel.addEventListener("change", () => {
     state.river = RIVERS.find((r) => r.id === riverSel.value);
     reportRiverSel.value = state.river.name;
+    syncRiverUrl();
     renderRiver();
     if ($("filterReports").checked) renderReports();
   });

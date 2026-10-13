@@ -18,6 +18,8 @@ import time
 import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
+import seo
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
 DATA_DIR = os.path.join(ROOT, "data")
@@ -38,6 +40,7 @@ MIME = {
     ".jpg": "image/jpeg",
     ".ico": "image/x-icon",
     ".webmanifest": "application/manifest+json",
+    ".xml": "application/xml; charset=utf-8",
     ".txt": "text/plain; charset=utf-8",
 }
 
@@ -101,13 +104,24 @@ class Handler(BaseHTTPRequestHandler):
             with open(path, "rb") as f:
                 body = f.read()
         except (FileNotFoundError, IsADirectoryError):
-            self.send_error(404, "Not found")
+            self._send_bytes(seo.not_found_html(), "text/html; charset=utf-8", status=404)
             return
         ext = os.path.splitext(path)[1].lower()
         self.send_response(200)
         self.send_header("Content-Type", MIME.get(ext, "application/octet-stream"))
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Cache-Control", "no-cache")
+        self.end_headers()
+        if not getattr(self, "_head_only", False):
+            self.wfile.write(body)
+
+    def _send_bytes(self, body, content_type, status=200, cache="no-cache"):
+        if isinstance(body, str):
+            body = body.encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", cache)
         self.end_headers()
         if not getattr(self, "_head_only", False):
             self.wfile.write(body)
@@ -146,6 +160,29 @@ class Handler(BaseHTTPRequestHandler):
 
         if path == "/api/health":
             self._send_json({"ok": True, "time": time.time()})
+            return
+
+        if path == "/sitemap.xml":
+            self._send_bytes(seo.sitemap_xml(), "application/xml; charset=utf-8", cache="public, max-age=3600")
+            return
+
+        if path in ("/montana", "/montana.html"):
+            self._send_bytes(seo.montana_html(), "text/html; charset=utf-8", cache="public, max-age=300")
+            return
+
+        if path in ("/rivers", "/rivers/"):
+            self.send_response(301)
+            self.send_header("Location", "/montana")
+            self.send_header("Content-Length", "0")
+            self.end_headers()
+            return
+
+        if path.startswith("/rivers/"):
+            river = seo.find_river(path[len("/rivers/"):])
+            if river:
+                self._send_bytes(seo.river_html(river), "text/html; charset=utf-8", cache="public, max-age=300")
+                return
+            self._send_bytes(seo.not_found_html(), "text/html; charset=utf-8", status=404)
             return
 
         # static files
