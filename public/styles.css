@@ -556,7 +556,27 @@ select:focus, input:focus, textarea:focus, input[type="time"]:focus {
 }
 .footer-inner { max-width: 1100px; margin: 0 auto; }
 .footer p { color: var(--text-dim); font-size: 0.85rem; max-width: 640px; margin-top: 12px; }
+.footer-links { margin-top: 14px; }
+.footer-links a { color: var(--text-dim); }
 .copyright { font-size: 0.75rem; }
+.nav .brand { text-decoration: none; color: inherit; }
+
+.hero-legal { padding-bottom: 70px; }
+.hero-legal h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 10px 20px 40px;
+}
+.legal h2 {
+  font-size: 1.15rem;
+  margin: 28px 0 8px;
+}
+.legal p, .legal li { color: var(--text-dim); font-size: 0.95rem; }
+.legal ul { padding-left: 1.2rem; margin: 8px 0 0; }
+.legal li { margin: 6px 0; }
+.legal strong { color: var(--text); }
 
 @media (max-width: 640px) {
   .nav-links { display: none; }
