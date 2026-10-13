@@ -1,5 +1,5 @@
 // =====================================================================
-// FloatTime MT — application logic
+// FloatETA — application logic
 // =====================================================================
 
 const USGS_IV = "https://waterservices.usgs.gov/nwis/iv/";

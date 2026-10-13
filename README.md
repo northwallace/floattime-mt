@@ -1,6 +1,6 @@
-# FloatTime MT 🛶
+# FloatETA 🛶
 
-**How long will your Montana river float *actually* take?**
+**How long will your river float *actually* take?** Live at [floateta.com](https://floateta.com).
 
 A website that turns live USGS streamflow data into real-world float time
 estimates for Montana's most popular rivers — with daylight countdowns, water

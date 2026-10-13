@@ -1,5 +1,5 @@
 // =====================================================================
-// FloatTime — river & section database (Montana)
+// FloatETA — river & section database (Montana)
 //
 // Each river is tied to a USGS gauge. Float speed is estimated with a
 // hydraulic-geometry relationship:  v = refSpeedMph * (Q / refFlowCfs)^0.34

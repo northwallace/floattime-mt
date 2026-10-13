@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FloatTime MT — development/production server.
+FloatETA — development/production server.
 Serves the static site from ./public and a small JSON API for
 community obstruction reports and contact messages.
 
@@ -81,7 +81,7 @@ def _clean(text, max_len):
 
 class Handler(BaseHTTPRequestHandler):
     protocol_version = "HTTP/1.1"
-    server_version = "FloatTimeMT/1.0"
+    server_version = "FloatETA/1.0"
 
     # ---------- helpers ----------
 
@@ -250,7 +250,7 @@ def main():
     else:
         port = int(os.environ.get("PORT", 8000))
     server = ThreadingHTTPServer(("0.0.0.0", port), Handler)
-    print(f"FloatTime MT running at http://localhost:{port}")
+    print(f"FloatETA running at http://localhost:{port}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
