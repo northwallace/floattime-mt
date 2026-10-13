@@ -362,10 +362,13 @@ function renderReports() {
     const card = document.createElement("div");
     card.className = `report-card type-${r.type}`;
     const voted = state.votedIds.has(r.id);
+    const confirmedNote = r.lastConfirmedAt
+      ? ` · confirmed ${timeAgo(r.lastConfirmedAt)}`
+      : "";
     card.innerHTML = `
       <div class="rc-top">
         <span class="rc-river">${esc(r.river)}${r.section ? ` · ${esc(r.section)}` : ""}</span>
-        <span class="rc-time">${timeAgo(r.createdAt)}</span>
+        <span class="rc-time">${timeAgo(r.createdAt)}${confirmedNote}</span>
       </div>
       <span class="rc-type">${TYPE_LABELS[r.type] || "Hazard"}</span>
       ${r.location ? `<div class="rc-loc">📍 ${esc(r.location)}</div>` : ""}

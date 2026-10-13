@@ -39,6 +39,7 @@ MIME = {
 
 VALID_TYPES = {"strainer", "diversion", "fence", "low-bridge", "debris", "other"}
 MAX_REPORTS = 500
+EXPIRY_DAYS = 45  # reports hide after this many days unless re-confirmed
 
 
 def _load_reports():
@@ -108,8 +109,14 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/reports":
             with _lock:
                 reports = _load_reports()
-            # newest first, hide anything marked cleared by 3+ people
-            visible = [r for r in reports if r.get("clearedVotes", 0) < 3]
+            # Hide reports marked cleared by 3+ people, and reports with no
+            # activity (creation or "still there" confirmation) in EXPIRY_DAYS.
+            cutoff = time.time() - EXPIRY_DAYS * 86400
+            visible = [
+                r for r in reports
+                if r.get("clearedVotes", 0) < 3
+                and max(r.get("createdAt", 0), r.get("lastConfirmedAt", 0)) >= cutoff
+            ]
             visible.sort(key=lambda r: r.get("createdAt", 0), reverse=True)
             self._send_json(visible)
             return
@@ -169,7 +176,7 @@ class Handler(BaseHTTPRequestHandler):
             self._send_json(report, 201)
             return
 
-        m = re.fullmatch(r"/api/reports/([0-9a-f]{12})/(confirm|cleared)", path)
+        m = re.fullmatch(r"/api/reports/([0-9a-z]{12})/(confirm|cleared)", path)
         if m:
             rid, action = m.group(1), m.group(2)
             with _lock:
@@ -180,6 +187,9 @@ class Handler(BaseHTTPRequestHandler):
                     return
                 key = "confirmVotes" if action == "confirm" else "clearedVotes"
                 target[key] = target.get(key, 0) + 1
+                if action == "confirm":
+                    # a "still there" vote resets the expiry clock
+                    target["lastConfirmedAt"] = time.time()
                 _save_reports(reports)
             self._send_json(target)
             return
