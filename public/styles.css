@@ -90,6 +90,19 @@ a { color: var(--accent); }
   font-size: 1.1rem;
 }
 
+.coming-soon-pill {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(79, 209, 165, 0.08);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .hero-stats {
   display: flex;
   justify-content: center;
@@ -455,6 +468,53 @@ select:focus, input:focus, textarea:focus {
 }
 .how-card h3 { font-size: 1.02rem; margin-bottom: 6px; }
 .how-card p { font-size: 0.88rem; color: var(--text-dim); }
+
+/* ---------- coming soon ---------- */
+
+.coming-soon-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: clamp(24px, 4vw, 36px);
+  text-align: center;
+}
+.coming-soon-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.coming-soon-card h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -0.02em; }
+.coming-soon-card p {
+  color: var(--text-dim);
+  max-width: 560px;
+  margin: 10px auto 0;
+}
+.state-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 22px;
+}
+.state-chip {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+.state-chip.live {
+  border-color: var(--accent-dark);
+  background: rgba(79, 209, 165, 0.12);
+  color: var(--accent);
+  font-weight: 600;
+}
+.state-chip.live em { font-style: normal; font-weight: 500; opacity: 0.75; font-size: 0.75rem; margin-left: 4px; }
+.state-chip.more { opacity: 0.6; }
 
 /* ---------- footer ---------- */
 
