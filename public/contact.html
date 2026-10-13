@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — FloatTime</title>
+  <meta name="description" content="Contact the FloatTime site operator about privacy, advertising, or river data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🛶</text></svg>">
+</head>
+<body>
+  <header class="hero hero-legal">
+    <nav class="nav">
+      <a class="brand" href="/">🛶 FloatTime <span>MT</span></a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Contact</h1>
+      <p class="hero-sub">Privacy questions, ad issues, bad river data, or anything else — send a note.</p>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,35 C960,70 1200,10 1440,45 L1440,90 L0,90 Z" fill="var(--bg)"/></svg>
+    </div>
+  </header>
+
+  <main class="legal">
+    <form id="contactForm" class="report-form contact-form">
+      <div class="control">
+        <label for="contactName">Your name</label>
+        <input id="contactName" type="text" required maxlength="80" autocomplete="name">
+      </div>
+      <div class="control">
+        <label for="contactEmail">Email</label>
+        <input id="contactEmail" type="email" required maxlength="120" autocomplete="email" placeholder="you@example.com">
+      </div>
+      <div class="control">
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" required maxlength="2000" rows="6" placeholder="What's going on?"></textarea>
+      </div>
+      <button type="submit" class="btn-primary" id="contactSubmit">Send message</button>
+      <div id="contactStatus" class="report-status" role="status"></div>
+    </form>
+    <p>We use this for privacy requests, AdSense questions, and site issues. Include a real email if you want a reply.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="brand" href="/">🛶 FloatTime <span>MT</span></a>
+      <p class="footer-links"><a href="/">Home</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a></p>
+      <p class="copyright">© <span id="year"></span> FloatTime</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const form = document.getElementById("contactForm");
+    const btn = document.getElementById("contactSubmit");
+    const status = document.getElementById("contactStatus");
+    form.addEventListener("submit", async (ev) => {
+      ev.preventDefault();
+      btn.disabled = true;
+      status.className = "report-status";
+      status.textContent = "Sending…";
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: document.getElementById("contactName").value,
+            email: document.getElementById("contactEmail").value,
+            message: document.getElementById("contactMessage").value,
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) throw new Error(data.error || "Failed");
+        status.className = "report-status ok";
+        status.textContent = "Got it — thanks for writing.";
+        form.reset();
+      } catch (e) {
+        status.className = "report-status err";
+        status.textContent = "Couldn't send: " + e.message;
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

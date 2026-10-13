@@ -2,7 +2,7 @@
 """
 FloatTime MT — development/production server.
 Serves the static site from ./public and a small JSON API for
-community obstruction reports, persisted to ./data/reports.json.
+community obstruction reports and contact messages.
 
 No dependencies beyond the Python 3 standard library.
 
@@ -22,6 +22,9 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
 DATA_DIR = os.path.join(ROOT, "data")
 REPORTS_FILE = os.path.join(DATA_DIR, "reports.json")
+CONTACTS_FILE = os.path.join(DATA_DIR, "contacts.json")
+MAX_CONTACTS = 200
+EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
 _lock = threading.Lock()
 
@@ -50,12 +53,24 @@ def _load_reports():
         return []
 
 
-def _save_reports(reports):
+def _save_json(path, obj):
     os.makedirs(DATA_DIR, exist_ok=True)
-    tmp = REPORTS_FILE + ".tmp"
+    tmp = path + ".tmp"
     with open(tmp, "w") as f:
-        json.dump(reports, f, indent=2)
-    os.replace(tmp, REPORTS_FILE)
+        json.dump(obj, f, indent=2)
+    os.replace(tmp, path)
+
+
+def _save_reports(reports):
+    _save_json(REPORTS_FILE, reports)
+
+
+def _load_contacts():
+    try:
+        with open(CONTACTS_FILE, "r") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
 
 
 def _clean(text, max_len):
@@ -174,6 +189,34 @@ class Handler(BaseHTTPRequestHandler):
                 reports.append(report)
                 _save_reports(reports[-MAX_REPORTS:])
             self._send_json(report, 201)
+            return
+
+        if path == "/api/contact":
+            body = self._read_body_json()
+            if not isinstance(body, dict):
+                self._send_json({"error": "Invalid JSON body"}, 400)
+                return
+            name = _clean(body.get("name"), 80)
+            email = _clean(body.get("email"), 120).lower()
+            message = _clean(body.get("message"), 2000)
+            if not name or not email or not message:
+                self._send_json({"error": "Name, email, and message are required"}, 400)
+                return
+            if not EMAIL_RE.match(email):
+                self._send_json({"error": "That email does not look valid"}, 400)
+                return
+            entry = {
+                "id": uuid.uuid4().hex[:12],
+                "name": name,
+                "email": email,
+                "message": message,
+                "createdAt": time.time(),
+            }
+            with _lock:
+                contacts = _load_contacts()
+                contacts.append(entry)
+                _save_json(CONTACTS_FILE, contacts[-MAX_CONTACTS:])
+            self._send_json({"ok": True}, 201)
             return
 
         m = re.fullmatch(r"/api/reports/([0-9a-z]{12})/(confirm|cleared)", path)
