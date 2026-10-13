@@ -93,7 +93,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Cache-Control", "no-store")
         self.end_headers()
-        self.wfile.write(body)
+        if not getattr(self, "_head_only", False):
+            self.wfile.write(body)
 
     def _send_file(self, path):
         try:
@@ -108,7 +109,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Cache-Control", "no-cache")
         self.end_headers()
-        self.wfile.write(body)
+        if not getattr(self, "_head_only", False):
+            self.wfile.write(body)
 
     def _read_body_json(self):
         try:
@@ -118,6 +120,11 @@ class Handler(BaseHTTPRequestHandler):
             return None
 
     # ---------- routes ----------
+
+    def do_HEAD(self):
+        # AdSense/Googlebot often HEAD the homepage first; default is 501.
+        self._head_only = True
+        self.do_GET()
 
     def do_GET(self):
         path = self.path.split("?", 1)[0]
