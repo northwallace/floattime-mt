@@ -167,7 +167,11 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         if path in ("/montana", "/montana.html"):
-            self._send_bytes(seo.montana_html(), "text/html; charset=utf-8", cache="public, max-age=300")
+            self._send_bytes(seo.state_html("MT"), "text/html; charset=utf-8", cache="public, max-age=300")
+            return
+
+        if path in ("/idaho", "/idaho.html"):
+            self._send_bytes(seo.state_html("ID"), "text/html; charset=utf-8", cache="public, max-age=300")
             return
 
         if path in ("/rivers", "/rivers/"):

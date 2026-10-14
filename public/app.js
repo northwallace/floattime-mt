@@ -10,6 +10,7 @@ const FLOAT_DAY_HOURS = 10; // sections longer than this at current speed = mult
 const FISH_MIN_PER_MILE = 35; // extra time if stopping to fish
 
 const $ = (id) => document.getElementById(id);
+const riverState = (river) => (river && river.state) || "MT";
 
 const state = {
   river: null,          // current river object
@@ -541,36 +542,71 @@ function init() {
   // hero stats
   $("statRivers").textContent = RIVERS.length;
   $("statSections").textContent = RIVERS.reduce((n, r) => n + r.sections.length, 0);
-  const sunset = sunsetToday(46.6, -112.0); // Montana-ish centroid for the hero stat
+
+  // selectors
+  const stateSel = $("stateSelect");
+  const riverSel = $("riverSelect");
+  const reportRiverSel = $("reportRiver");
+  for (const st of STATES) stateSel.add(new Option(st.name, st.id));
+  const craftSel = $("craftSelect");
+  for (const c of CRAFT) craftSel.add(new Option(c.label, c.id));
+
+  function riversIn(code) {
+    return RIVERS.filter((r) => riverState(r) === code);
+  }
+
+  function fillRiverSelect(code, selectedId) {
+    const list = riversIn(code);
+    riverSel.innerHTML = "";
+    for (const r of list) riverSel.add(new Option(r.name, r.id));
+    if (selectedId && list.some((r) => r.id === selectedId)) riverSel.value = selectedId;
+  }
+
+  function fillReportRivers() {
+    reportRiverSel.innerHTML = "";
+    for (const st of STATES) {
+      const group = document.createElement("optgroup");
+      group.label = st.name;
+      for (const r of riversIn(st.id)) group.appendChild(new Option(r.name, r.name));
+      reportRiverSel.appendChild(group);
+    }
+  }
+  fillReportRivers();
+
+  const params = new URLSearchParams(location.search);
+  const wantedRiver = params.get("river");
+  const wantedState = (params.get("state") || "").toUpperCase();
+  let start = wantedRiver ? RIVERS.find((r) => r.id === wantedRiver) : null;
+  if (!start && STATES.some((s) => s.id === wantedState)) start = riversIn(wantedState)[0];
+  if (!start) start = RIVERS[0];
+
+  stateSel.value = riverState(start);
+  fillRiverSelect(riverState(start), start.id);
+  state.river = RIVERS.find((r) => r.id === riverSel.value) || start;
+  state.craft = CRAFT[0];
+  reportRiverSel.value = state.river.name;
+
+  const sunset = sunsetToday(state.river.lat, state.river.lon);
   if (sunset) {
     const hrs = (sunset - new Date()) / 3600000;
     $("statDaylight").textContent = hrs > 0 ? fmtDuration(hrs).replace(" min", "m").replace(" hr", "h") : "0";
   }
 
-  // selectors
-  const riverSel = $("riverSelect");
-  const reportRiverSel = $("reportRiver");
-  for (const r of RIVERS) {
-    riverSel.add(new Option(r.name, r.id));
-    reportRiverSel.add(new Option(r.name, r.name));
-  }
-  const craftSel = $("craftSelect");
-  for (const c of CRAFT) craftSel.add(new Option(c.label, c.id));
-
-  const wanted = new URLSearchParams(location.search).get("river");
-  if (wanted && RIVERS.some((r) => r.id === wanted)) {
-    riverSel.value = wanted;
-  }
-
-  state.river = RIVERS.find((r) => r.id === riverSel.value) || RIVERS[0];
-  state.craft = CRAFT[0];
-  reportRiverSel.value = state.river.name;
-
   function syncRiverUrl() {
     const url = new URL(location.href);
     url.searchParams.set("river", state.river.id);
+    url.searchParams.set("state", riverState(state.river));
     history.replaceState(null, "", url.pathname + url.search + url.hash);
   }
+
+  stateSel.addEventListener("change", () => {
+    fillRiverSelect(stateSel.value);
+    state.river = RIVERS.find((r) => r.id === riverSel.value);
+    reportRiverSel.value = state.river.name;
+    syncRiverUrl();
+    renderRiver();
+    if ($("filterReports").checked) renderReports();
+  });
 
   riverSel.addEventListener("change", () => {
     state.river = RIVERS.find((r) => r.id === riverSel.value);

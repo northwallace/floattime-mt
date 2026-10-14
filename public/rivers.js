@@ -1,11 +1,17 @@
 // =====================================================================
-// FloatETA — river & section database (Montana)
+// FloatETA — river & section database
 //
 // Each river is tied to a USGS gauge. Float speed is estimated with a
 // hydraulic-geometry relationship:  v = refSpeedMph * (Q / refFlowCfs)^0.34
 // refSpeedMph is the typical drift speed of a raft at refFlowCfs.
 // Mileages are approximate river miles between access points.
+// state defaults to "MT" if omitted.
 // =====================================================================
+
+const STATES = [
+  { id: "MT", name: "Montana", slug: "montana" },
+  { id: "ID", name: "Idaho", slug: "idaho" },
+];
 
 const RIVERS = [
   {
@@ -326,6 +332,217 @@ const RIVERS = [
     blurb: "Quiet valley float into Bigfork. Take out above the Wild Mile unless you meant to run Class III.",
     sections: [
       { id: "swan-lake-bigfork", putIn: "Swan Lake outlet", takeOut: "Bigfork (above the Wild Mile)", miles: 10.0, difficulty: "Class I–II", notes: "Mellow until town. The Wild Mile gorge at Bigfork is a separate Class III run — don't float into it by accident." },
+    ],
+  },
+
+  // -----------------------------------------------------------------
+  // Idaho
+  // -----------------------------------------------------------------
+  {
+    id: "boise",
+    name: "Boise River (Greenbelt)",
+    state: "ID",
+    gauge: "13206000",
+    gaugeName: "Boise River at Glenwood Bridge nr Boise",
+    lat: 43.661, lon: -116.279,
+    refFlowCfs: 1400, refSpeedMph: 2.4,
+    blurb: "Idaho's busiest tube run — Barber Park to downtown, with a city shuttle and 100,000+ floaters a summer.",
+    sections: [
+      { id: "barber-ann-morrison", putIn: "Barber Park", takeOut: "Ann Morrison Park", miles: 6.0, difficulty: "Class I", notes: "The classic Boise float. About 2–3 hours in a tube. Glass is banned. Ada County shuttle in season." },
+      { id: "ann-morrison-eagle", putIn: "Ann Morrison Park", takeOut: "Eagle Island", miles: 8.0, difficulty: "Class I", notes: "Quieter miles west of downtown. Watch for diversion structures and the south channel split." },
+    ],
+  },
+  {
+    id: "snake-sf-swan",
+    name: "South Fork Snake (Swan Valley)",
+    state: "ID",
+    gauge: "13032500",
+    gaugeName: "Snake River nr Irwin",
+    lat: 43.351, lon: -111.219,
+    refFlowCfs: 9000, refSpeedMph: 4.0,
+    blurb: "Palisades Dam to Conant — big cutthroat water in Swan Valley before the canyon walls close in.",
+    sections: [
+      { id: "palisades-spring", putIn: "Palisades Dam", takeOut: "Spring Creek", miles: 8.0, difficulty: "Class I", notes: "Dam-controlled. Fall Creek falls comes in river-left. Palisades Creek is an optional early takeout." },
+      { id: "spring-conant", putIn: "Spring Creek", takeOut: "Conant", miles: 8.0, difficulty: "Class I", notes: "Cottonwood islands and braids. The last easy miles before the Conant-to-Byington canyon." },
+    ],
+  },
+  {
+    id: "snake-sf-canyon",
+    name: "South Fork Snake (Canyon)",
+    state: "ID",
+    gauge: "13037500",
+    gaugeName: "Snake River nr Heise",
+    lat: 43.613, lon: -111.660,
+    refFlowCfs: 9000, refSpeedMph: 3.8,
+    blurb: "The Conant canyon — largest remaining Yellowstone-cutthroat fishery, and no takeout in the middle.",
+    sections: [
+      { id: "conant-byington", putIn: "Conant", takeOut: "Byington", miles: 26.0, difficulty: "Class I–II", notes: "Full-day canyon. No intermediate ramp. Cottonwood gallery, eagles, and a committed float." },
+      { id: "byington-lorenzo", putIn: "Byington", takeOut: "Lorenzo", miles: 12.0, difficulty: "Class I", notes: "River opens into the Heise valley. Twin Bridges is an optional pullout. Watch irrigation diversions." },
+    ],
+  },
+  {
+    id: "henrys-fork-box",
+    name: "Henry's Fork (Box Canyon)",
+    state: "ID",
+    gauge: "13042500",
+    gaugeName: "Henrys Fork nr Island Park",
+    lat: 44.417, lon: -111.395,
+    refFlowCfs: 1400, refSpeedMph: 3.2,
+    blurb: "Island Park Dam to Last Chance — a short basalt canyon on some of the most famous trout water in the West.",
+    sections: [
+      { id: "box-canyon", putIn: "Island Park Dam (Box Canyon)", takeOut: "Last Chance", miles: 4.0, difficulty: "Class II", notes: "Cold, rocky, and crowded with anglers. Give waders room. Harriman State Park below Last Chance is mostly closed to boats — don't float into the Ranch." },
+    ],
+  },
+  {
+    id: "henrys-fork-ashton",
+    name: "Henry's Fork (Ashton)",
+    state: "ID",
+    gauge: "13046000",
+    gaugeName: "Henrys Fork nr Ashton",
+    lat: 44.070, lon: -111.511,
+    refFlowCfs: 1800, refSpeedMph: 3.0,
+    blurb: "Below Mesa Falls — Warm River and Ashton water, slower than the Box and still packed with rainbows.",
+    sections: [
+      { id: "warm-river-ashton", putIn: "Warm River Campground", takeOut: "Ashton (Vernon area)", miles: 8.0, difficulty: "Class I", notes: "Put in below Mesa Falls. Do not launch above the falls. Gentle gradient, watch for diversion dams near Ashton." },
+      { id: "vernon-st-anthony", putIn: "Vernon Bridge", takeOut: "St. Anthony", miles: 10.0, difficulty: "Class I", notes: "Valley miles toward the Snake confluence. Irrigation can skinny this stretch in late summer." },
+    ],
+  },
+  {
+    id: "teton",
+    name: "Teton River (Driggs)",
+    state: "ID",
+    gauge: "13052200",
+    gaugeName: "Teton River ab South Leigh Creek nr Driggs",
+    lat: 43.782, lon: -111.209,
+    refFlowCfs: 500, refSpeedMph: 2.6,
+    blurb: "Teton Valley meadow water under the Idaho Tetons. Small, technical, and bony by August.",
+    sections: [
+      { id: "bates-rainey", putIn: "Bates Bridge", takeOut: "Rainey Bridge", miles: 7.0, difficulty: "Class I", notes: "Classic Teton Valley drift. Brushy banks and irrigation — scout new wood every spring." },
+      { id: "rainey-cache", putIn: "Rainey Bridge", takeOut: "Cache Bridge", miles: 6.0, difficulty: "Class I", notes: "Gets skinny late. Drift boats more than tubes. Respect private land at the fences." },
+    ],
+  },
+  {
+    id: "payette-main",
+    name: "Payette River (Banks)",
+    state: "ID",
+    gauge: "13247500",
+    gaugeName: "Payette River nr Horseshoe Bend",
+    lat: 43.943, lon: -116.197,
+    refFlowCfs: 2500, refSpeedMph: 4.5,
+    blurb: "Idaho's closest commercial whitewater to Boise. Banks to Horseshoe Bend — waves, holes, and a highway shuttle.",
+    sections: [
+      { id: "banks-beehive", putIn: "Banks", takeOut: "Beehive Bend", miles: 5.0, difficulty: "Class II–III", notes: "Upper Main. Payette River Pass parking. Not a tube float. Bennett's Rock is the first real drop." },
+      { id: "beehive-hsb", putIn: "Beehive Bend", takeOut: "Horseshoe Bend boat ramp", miles: 6.0, difficulty: "Class III", notes: "Mixmaster and the rest of the Lower Main. Rafts and kayaks. Scout or go with a guide if it's new water." },
+    ],
+  },
+  {
+    id: "payette-sf",
+    name: "South Fork Payette",
+    state: "ID",
+    gauge: "13235000",
+    gaugeName: "South Fork Payette River at Lowman",
+    lat: 44.085, lon: -115.622,
+    refFlowCfs: 1200, refSpeedMph: 4.2,
+    blurb: "Canyon water out of Lowman — hot springs on the bank, Swirly Canyon in the middle, Garden Valley at the bottom.",
+    sections: [
+      { id: "lowman-deadwood", putIn: "Kirkham / Lowman", takeOut: "Deadwood Campground", miles: 6.0, difficulty: "Class II–III", notes: "Warm up. Staircase above Lowman is a separate Class IV run — don't put in there by mistake." },
+      { id: "danskin-confluence", putIn: "Danskin", takeOut: "Confluence (Garden Valley)", miles: 9.0, difficulty: "Class II–III", notes: "Swirly Canyon miles. Payette River Pass sites. Take out before you join the Main at Banks if that's the plan." },
+    ],
+  },
+  {
+    id: "payette-nf",
+    name: "North Fork Payette (Cabarton)",
+    state: "ID",
+    gauge: "13246000",
+    gaugeName: "NF Payette River nr Banks",
+    lat: 44.114, lon: -116.107,
+    refFlowCfs: 1200, refSpeedMph: 6.0,
+    blurb: "Idaho's hardest roadside creek. Cabarton to Banks is continuous Class IV–V — experts only.",
+    sections: [
+      { id: "cabarton-banks", putIn: "Cabarton Bridge", takeOut: "Banks", miles: 16.0, difficulty: "Class IV–V", notes: "Not a float trip. Steep, wooded, and famous for wrapping boats. Experienced whitewater crews only — or watch from the highway." },
+    ],
+  },
+  {
+    id: "salmon-salmon",
+    name: "Salmon River (Salmon)",
+    state: "ID",
+    gauge: "13302500",
+    gaugeName: "Salmon River at Salmon",
+    lat: 45.184, lon: -113.895,
+    refFlowCfs: 2500, refSpeedMph: 3.4,
+    blurb: "The River of No Return at town scale — Salmon to North Fork is a big, friendly Class I–II day.",
+    sections: [
+      { id: "salmon-north-fork", putIn: "Salmon (Island Park ramp)", takeOut: "North Fork", miles: 22.0, difficulty: "Class I–II", notes: "Highway 93 shuttle. Big water, easy gradient. North Fork is where the Middle Fork comes in and the wilderness section begins." },
+    ],
+  },
+  {
+    id: "salmon-riggins",
+    name: "Salmon River (Riggins)",
+    state: "ID",
+    gauge: "13317000",
+    gaugeName: "Salmon River at White Bird",
+    lat: 45.750, lon: -116.324,
+    refFlowCfs: 10000, refSpeedMph: 4.5,
+    blurb: "Lower Salmon country. Day floats past Riggins, or the multi-day Hammer Creek to Heller Bar desert canyon.",
+    sections: [
+      { id: "riggins-lucile", putIn: "Riggins city", takeOut: "Lucile", miles: 8.0, difficulty: "Class II–III", notes: "Town-to-town. Warm water in summer, jet boats possible. Time Zone Rapid is the named drop." },
+      { id: "hammer-heller", putIn: "Hammer Creek", takeOut: "Heller Bar (Snake confluence)", miles: 73.0, difficulty: "Class III", notes: "The Lower Salmon. Typically 3–4 days. Snowhole is the big rapid. BLM camps, rattlesnakes, and a serious shuttle." },
+    ],
+  },
+  {
+    id: "lochsa",
+    name: "Lochsa River",
+    state: "ID",
+    gauge: "13337000",
+    gaugeName: "Lochsa River nr Lowell",
+    lat: 46.151, lon: -115.587,
+    refFlowCfs: 4000, refSpeedMph: 5.5,
+    blurb: "Highway 12 whitewater. A spring Class III–IV that is over by the time the rest of Idaho is just warming up.",
+    sections: [
+      { id: "knife-fish", putIn: "White Pine / Knife Blade", takeOut: "Fish Creek", miles: 11.0, difficulty: "Class III–IV", notes: "Peak is May–June. Not a tube float. USGS stage at this gauge is not the Lowell Bridge staff — check Lochsa.info for the boater gauge." },
+      { id: "gateway-lowell", putIn: "Wilderness Gateway", takeOut: "Lowell", miles: 13.0, difficulty: "Class III–IV", notes: "Packed rapids to the Selway confluence. Miss the takeout and you are on the Clearwater." },
+    ],
+  },
+  {
+    id: "clearwater",
+    name: "Clearwater River",
+    state: "ID",
+    gauge: "13340000",
+    gaugeName: "Clearwater River at Orofino",
+    lat: 46.478, lon: -116.258,
+    refFlowCfs: 8000, refSpeedMph: 3.3,
+    blurb: "Big, warm, summer water from Orofino toward Lewiston. A North Idaho alternative to the crowded Greenbelt.",
+    sections: [
+      { id: "orofino-peck", putIn: "Orofino", takeOut: "Peck", miles: 12.0, difficulty: "Class I", notes: "Wide river, easy current. Jet boats and fishing traffic on weekends." },
+      { id: "peck-spalding", putIn: "Peck", takeOut: "Spalding (Nez Perce NHP)", miles: 16.0, difficulty: "Class I", notes: "Longer valley miles into the Lewiston area. Wind can come up the canyon in the afternoon." },
+    ],
+  },
+  {
+    id: "st-joe",
+    name: "St. Joe River",
+    state: "ID",
+    gauge: "12414500",
+    gaugeName: "St Joe River at Calder",
+    lat: 47.274, lon: -116.189,
+    refFlowCfs: 1800, refSpeedMph: 3.3,
+    blurb: "Wild & Scenic water out of the Idaho panhandle. Shadowy St. Joe — cedar, cutthroat, and fewer people than the Coeur d'Alene.",
+    sections: [
+      { id: "avery-calder", putIn: "Avery", takeOut: "Calder", miles: 18.0, difficulty: "Class I–II", notes: "Upper-ish Joe. Wood and cold water. Best in early summer before it drops." },
+      { id: "calder-st-maries", putIn: "Calder", takeOut: "St. Maries", miles: 16.0, difficulty: "Class I", notes: "Flatter miles into the lake country. Watch for motorboats near town." },
+    ],
+  },
+  {
+    id: "selway",
+    name: "Selway River (Permit)",
+    state: "ID",
+    gauge: "13336500",
+    gaugeName: "Selway River nr Lowell",
+    lat: 46.087, lon: -115.514,
+    refFlowCfs: 3000, refSpeedMph: 4.0,
+    blurb: "Idaho's other permit-lottery classic. 47 canyon miles, one launch a day, no cell service.",
+    multiDay: true,
+    sections: [
+      { id: "paradise-race-creek", putIn: "Paradise Guard Station", takeOut: "Race Creek / Selway Falls", miles: 47.0, difficulty: "Class III–IV", notes: "Forest Service permit required. Typically 4–5 days in May–July. Moose Creek is midway. Portage or scout Selway Falls at the end." },
     ],
   },
 ];
