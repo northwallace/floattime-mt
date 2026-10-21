@@ -166,12 +166,9 @@ class Handler(BaseHTTPRequestHandler):
             self._send_bytes(seo.sitemap_xml(), "application/xml; charset=utf-8", cache="public, max-age=3600")
             return
 
-        if path in ("/montana", "/montana.html"):
-            self._send_bytes(seo.state_html("MT"), "text/html; charset=utf-8", cache="public, max-age=300")
-            return
-
-        if path in ("/idaho", "/idaho.html"):
-            self._send_bytes(seo.state_html("ID"), "text/html; charset=utf-8", cache="public, max-age=300")
+        state_code = seo.STATE_BY_SLUG.get(path.strip("/").removesuffix(".html"))
+        if state_code:
+            self._send_bytes(seo.state_html(state_code), "text/html; charset=utf-8", cache="public, max-age=300")
             return
 
         if path in ("/rivers", "/rivers/"):

@@ -13,7 +13,6 @@ import time
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
 SITE = os.environ.get("SITE_URL", "https://floateta.com").rstrip("/")
-ADSENSE = "ca-pub-1358970586107841"
 
 STATES = {
     "MT": {
@@ -46,7 +45,29 @@ STATES = {
         "h1": "Idaho rivers to float",
         "intro": "Boise's Greenbelt, the South Fork Snake, Henry's Fork, Payette whitewater, and the Salmon.",
     },
+    "OR": {
+        "code": "OR",
+        "slug": "oregon",
+        "name": "Oregon",
+        "agency": "Oregon State Marine Board",
+        "agencyUrl": "https://www.oregon.gov/osmb/",
+        "geo": "US-OR",
+        "dirTitle": "Oregon Rivers to Float | Live USGS Gauges | FloatETA",
+        "dirDesc": (
+            "Directory of Oregon river floats with live USGS flow: Deschutes at Maupin, Rogue, "
+            "McKenzie, Clackamas, Sandy, John Day, Grande Ronde, and Owyhee."
+        ),
+        "h1": "Oregon rivers to float",
+        "intro": "The Deschutes at Maupin, the Rogue, the McKenzie, Portland's Clackamas and Sandy, and desert canyon trips.",
+    },
 }
+
+STATE_BY_SLUG = {meta["slug"]: code for code, meta in STATES.items()}
+
+
+def _state_names():
+    names = [m["name"] for m in STATES.values()]
+    return ", ".join(names[:-1]) + ", and " + names[-1] if len(names) > 2 else " and ".join(names)
 
 
 def esc(text):
@@ -175,7 +196,7 @@ def _lastmod():
 
 def _head(title, description, path, extra="", json_ld=None, geo=None):
     url = SITE + path
-    image = SITE + "/og.svg"
+    image = SITE + "/og.png"
     geo = geo or STATES["MT"]
     blocks = []
     if json_ld:
@@ -208,19 +229,22 @@ def _head(title, description, path, extra="", json_ld=None, geo=None):
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{esc(url)}">
   <meta property="og:image" content="{esc(image)}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="FloatETA — live river float times from USGS flow">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{esc(title)}">
   <meta name="twitter:description" content="{esc(description)}">
   <meta name="twitter:image" content="{esc(image)}">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE}" crossorigin="anonymous"></script>
   {extra}
   {"".join(blocks)}
 </head>
@@ -232,16 +256,22 @@ def _nav(active=""):
         cls = ' class="is-active"' if active == key else ""
         return f'<a href="{href}"{cls}>{label}</a>'
 
+    state_links = "\n          ".join(item(f"/{m['slug']}", m["name"], m["slug"]) for m in STATES.values())
+    rivers_cls = ' class="is-active"' if active in STATE_BY_SLUG else ""
     return f"""  <a class="skip-link" href="#main">Skip to content</a>
   <header class="hero hero-legal">
     <nav class="nav" aria-label="Primary">
       <a class="brand" href="/">🛶 Float<span>ETA</span></a>
       <div class="nav-links">
         {item("/", "Home", "home")}
-        {item("/montana", "Montana", "montana")}
-        {item("/idaho", "Idaho", "idaho")}
+        <details class="nav-drop">
+          <summary{rivers_cls}>Rivers</summary>
+          <div class="nav-drop-menu">
+          {state_links}
+          </div>
+        </details>
         {item("/#calculator", "Float calculator", "calc")}
-        {item("/contact.html", "Contact", "contact")}
+        {item("/about.html", "About", "about")}
       </div>
     </nav>
 """
@@ -249,15 +279,16 @@ def _nav(active=""):
 
 def _footer():
     year = time.strftime("%Y")
+    states = " ·\n        ".join(f'<a href="/{m["slug"]}">{m["name"]}</a>' for m in STATES.values())
     return f"""  <footer class="footer">
     <div class="footer-inner">
       <a class="brand" href="/">🛶 Float<span>ETA</span></a>
       <p>Live USGS streamflow turned into real float times — daylight, water temp, and community obstruction reports included.</p>
       <p class="footer-links">
         <a href="/">Home</a> ·
-        <a href="/montana">Montana</a> ·
-        <a href="/idaho">Idaho</a> ·
+        {states} ·
         <a href="/#calculator">Float calculator</a> ·
+        <a href="/about.html">About</a> ·
         <a href="/privacy.html">Privacy Policy</a> ·
         <a href="/contact.html">Contact</a>
       </p>
@@ -275,22 +306,19 @@ def _org_schema():
         "@type": "Organization",
         "name": "FloatETA",
         "url": SITE + "/",
-        "logo": SITE + "/favicon.svg",
-        "description": "Live river float-time estimates from USGS streamflow for Montana and Idaho, with more states coming.",
-        "areaServed": [
-            {"@type": "State", "name": "Montana"},
-            {"@type": "State", "name": "Idaho"},
-        ],
+        "logo": SITE + "/icon-512.png",
+        "description": f"Live river float-time estimates from USGS streamflow for {_state_names()}, with more states coming.",
+        "areaServed": [{"@type": "State", "name": m["name"]} for m in STATES.values()],
     }
 
 
 def sitemap_xml():
     lastmod = _lastmod()
     rivers = load_rivers()
-    urls = [
-        ("/", "1.0", "daily"),
-        ("/montana", "0.9", "weekly"),
-        ("/idaho", "0.9", "weekly"),
+    urls = [("/", "1.0", "daily")]
+    urls += [(f"/{m['slug']}", "0.9", "weekly") for m in STATES.values()]
+    urls += [
+        ("/about.html", "0.5", "monthly"),
         ("/privacy.html", "0.3", "yearly"),
         ("/contact.html", "0.3", "yearly"),
     ]
@@ -362,7 +390,7 @@ def state_html(code):
         ],
     }
 
-    others = "".join(
+    others = ", ".join(
         f'<a href="/{m["slug"]}">{esc(m["name"])} rivers</a>'
         for c, m in STATES.items() if c != code
     )
@@ -394,14 +422,6 @@ def state_html(code):
 """
         + _footer()
     )
-
-
-def montana_html():
-    return state_html("MT")
-
-
-def idaho_html():
-    return state_html("ID")
 
 
 def river_html(river):
@@ -606,7 +626,7 @@ def river_html(river):
 
 def not_found_html():
     title = "Page not found | FloatETA"
-    desc = "That page is not on FloatETA. Browse Montana or Idaho river float times or open the live calculator."
+    desc = f"That page is not on FloatETA. Browse {_state_names()} river float times or open the live calculator."
     rivers = load_rivers()[:8]
     links = "".join(
         f'<li><a href="/rivers/{esc(r["id"])}">{esc(r["name"])}</a></li>' for r in rivers
@@ -625,7 +645,7 @@ def not_found_html():
   </header>
   <main id="main" class="section">
     <p><a class="btn-primary" href="/#calculator">Open the float calculator</a>
-      &nbsp; <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a></p>
+      &nbsp; {" · ".join(f'<a href="/{m["slug"]}">{m["name"]}</a>' for m in STATES.values())}</p>
     <ul class="related-rivers">{links}</ul>
   </main>
 """

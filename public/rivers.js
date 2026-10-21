@@ -9,8 +9,9 @@
 // =====================================================================
 
 const STATES = [
-  { id: "MT", name: "Montana", slug: "montana" },
-  { id: "ID", name: "Idaho", slug: "idaho" },
+  { id: "MT", name: "Montana", slug: "montana", agency: "MT FWP", agencyUrl: "https://fwp.mt.gov/activities/boating" },
+  { id: "ID", name: "Idaho", slug: "idaho", agency: "Idaho Fish and Game", agencyUrl: "https://idfg.idaho.gov/" },
+  { id: "OR", name: "Oregon", slug: "oregon", agency: "the Oregon State Marine Board", agencyUrl: "https://www.oregon.gov/osmb/" },
 ];
 
 const RIVERS = [
@@ -543,6 +544,134 @@ const RIVERS = [
     multiDay: true,
     sections: [
       { id: "paradise-race-creek", putIn: "Paradise Guard Station", takeOut: "Race Creek / Selway Falls", miles: 47.0, difficulty: "Class III–IV", notes: "Forest Service permit required. Typically 4–5 days in May–July. Moose Creek is midway. Portage or scout Selway Falls at the end." },
+    ],
+  },
+
+  // -----------------------------------------------------------------
+  // Oregon
+  // -----------------------------------------------------------------
+  {
+    id: "deschutes-maupin",
+    name: "Deschutes River (Maupin)",
+    state: "OR",
+    gauge: "14092500",
+    gaugeName: "Deschutes River nr Madras",
+    lat: 45.175, lon: -121.081,
+    refFlowCfs: 4500, refSpeedMph: 3.8,
+    blurb: "Oregon's most-run whitewater day trip. Dam-fed, warm, and steady all summer through the canyon at Maupin.",
+    sections: [
+      { id: "harpham-maupin", putIn: "Harpham Flat", takeOut: "Maupin City Park", miles: 8.0, difficulty: "Class III", notes: "Wapinitia and Boxcar are the big ones. A Deschutes boater pass is required for every person." },
+      { id: "maupin-sandy-beach", putIn: "Maupin City Park", takeOut: "Sandy Beach", miles: 8.0, difficulty: "Class II–III", notes: "Oak Springs is the rapid to scout. Sandy Beach is the LAST take-out — Sherars Falls below is not runnable." },
+    ],
+  },
+  {
+    id: "rogue-grants-pass",
+    name: "Rogue River (Grants Pass)",
+    state: "OR",
+    gauge: "14361500",
+    gaugeName: "Rogue River at Grants Pass",
+    lat: 42.54, lon: -123.52,
+    refFlowCfs: 2000, refSpeedMph: 3.0,
+    blurb: "Hellgate Canyon day floats below Grants Pass — the easy half of the Rogue, with jet boats for company.",
+    sections: [
+      { id: "hog-creek-galice", putIn: "Hog Creek", takeOut: "Galice", miles: 8.0, difficulty: "Class II", notes: "Floats through Hellgate Canyon. Watch for jet boats and give them room in narrow spots." },
+    ],
+  },
+  {
+    id: "rogue-wild",
+    name: "Rogue River (Wild & Scenic)",
+    state: "OR",
+    gauge: "14372300",
+    gaugeName: "Rogue River nr Agness",
+    lat: 42.647, lon: -123.584,
+    refFlowCfs: 2200, refSpeedMph: 3.0,
+    blurb: "The classic Oregon multi-day: Grave Creek to Foster Bar through roadless canyon, with lodges along the way.",
+    multiDay: true,
+    sections: [
+      { id: "grave-creek-foster-bar", putIn: "Grave Creek", takeOut: "Foster Bar", miles: 34.0, difficulty: "Class III–IV", notes: "BLM permit lottery in the main season. Most boats line or run the fish ladder at Rainie Falls. Scout Blossom Bar — it is the serious one." },
+    ],
+  },
+  {
+    id: "mckenzie",
+    name: "McKenzie River",
+    state: "OR",
+    gauge: "14162500",
+    gaugeName: "McKenzie River nr Vida",
+    lat: 44.125, lon: -122.471,
+    refFlowCfs: 2500, refSpeedMph: 4.0,
+    blurb: "Clear, cold, and quick — the river the McKenzie drift boat was built for, east of Eugene.",
+    sections: [
+      { id: "finn-rock-dorris", putIn: "Finn Rock Landing", takeOut: "Ben and Kay Dorris Park", miles: 9.0, difficulty: "Class II", notes: "Fast, continuous water with Martin Rapid along the way. Cold even in August." },
+    ],
+  },
+  {
+    id: "clackamas",
+    name: "Clackamas River (Lower)",
+    state: "OR",
+    gauge: "14210000",
+    gaugeName: "Clackamas River at Estacada",
+    lat: 45.285, lon: -122.333,
+    refFlowCfs: 900, refSpeedMph: 2.8,
+    blurb: "Portland's summer float — McIver Park to Carver, mellow riffles, and a lot of inflatables on hot weekends.",
+    sections: [
+      { id: "mciver-barton", putIn: "Milo McIver State Park", takeOut: "Barton Park", miles: 9.0, difficulty: "Class I–II", notes: "The popular summer stretch. Water is cold — people drown here every year without PFDs." },
+      { id: "barton-carver", putIn: "Barton Park", takeOut: "Carver Park", miles: 7.0, difficulty: "Class I", notes: "Slower and quieter. Good for a lazy afternoon at moderate flow." },
+    ],
+  },
+  {
+    id: "sandy",
+    name: "Sandy River",
+    state: "OR",
+    gauge: "14142500",
+    gaugeName: "Sandy River bl Bull Run River nr Bull Run",
+    lat: 45.449, lon: -122.245,
+    refFlowCfs: 600, refSpeedMph: 3.0,
+    blurb: "Glacier-fed river 30 minutes from Portland. Gravel bars, cold water, and easy access from county parks.",
+    sections: [
+      { id: "dodge-oxbow", putIn: "Dodge Park", takeOut: "Oxbow Regional Park", miles: 7.0, difficulty: "Class II", notes: "Wood moves every winter here. Scout anything you can't see around." },
+      { id: "oxbow-dabney", putIn: "Oxbow Regional Park", takeOut: "Dabney State Recreation Area", miles: 6.0, difficulty: "Class I–II", notes: "Easier miles with big gravel bars. Gets low and rocky by late summer." },
+    ],
+  },
+  {
+    id: "john-day",
+    name: "John Day River (Clarno)",
+    state: "OR",
+    gauge: "14046500",
+    gaugeName: "John Day River at Service Creek",
+    lat: 44.913, lon: -120.464,
+    refFlowCfs: 2000, refSpeedMph: 3.0,
+    blurb: "Undammed desert canyon float. Spring flows only — by late summer it's too low to boat.",
+    multiDay: true,
+    sections: [
+      { id: "clarno-cottonwood", putIn: "Clarno", takeOut: "Cottonwood Bridge", miles: 70.0, difficulty: "Class II–III", notes: "BLM permit required in the main spring season. Clarno Rapid near the start is the hardest drop — scout it. The gauge is at Service Creek, just upstream of this stretch." },
+    ],
+  },
+  {
+    id: "grande-ronde",
+    name: "Grande Ronde River",
+    state: "OR",
+    gauge: "13333000",
+    gaugeName: "Grande Ronde River at Troy",
+    lat: 45.62, lon: -117.72,
+    refFlowCfs: 2000, refSpeedMph: 3.0,
+    blurb: "Remote northeast Oregon canyon trip with easy water — a good first multi-day float.",
+    multiDay: true,
+    sections: [
+      { id: "minam-troy", putIn: "Minam", takeOut: "Troy", miles: 45.0, difficulty: "Class II", notes: "Usually 3–4 days. The Wenaha River comes in at Troy. Few roads, so plan your shuttle ahead." },
+    ],
+  },
+  {
+    id: "owyhee",
+    name: "Owyhee River (Lower)",
+    state: "OR",
+    gauge: "13181000",
+    gaugeName: "Owyhee River nr Rome",
+    lat: 42.866, lon: -117.649,
+    refFlowCfs: 1500, refSpeedMph: 3.2,
+    blurb: "Spring-only desert canyon in Oregon's far southeast corner. Hot springs, big walls, and a short boating window.",
+    multiDay: true,
+    sections: [
+      { id: "rome-birch-creek", putIn: "Rome", takeOut: "Birch Creek", miles: 48.0, difficulty: "Class III–IV", notes: "Usually floatable only March–May. Scout Montgomery Rapid. Birch Creek road needs a high-clearance vehicle when wet." },
     ],
   },
 ];

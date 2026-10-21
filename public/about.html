@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About FloatETA | Live River Float Times</title>
+  <meta name="description" content="Why FloatETA exists, how it turns live USGS streamflow into float times, where the data comes from, and what the estimates can't tell you.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://floateta.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FloatETA">
+  <meta property="og:title" content="About FloatETA">
+  <meta property="og:description" content="How FloatETA turns live river gauges into real float times — and its limits.">
+  <meta property="og:url" content="https://floateta.com/about.html">
+  <meta property="og:image" content="https://floateta.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"AboutPage","name":"About FloatETA","url":"https://floateta.com/about.html","isPartOf":{"@type":"WebSite","name":"FloatETA","url":"https://floateta.com/"}}
+  </script>
+</head>
+<body>
+  <header class="hero hero-legal">
+    <nav class="nav">
+      <a class="brand" href="/">🛶 Float<span>ETA</span></a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <details class="nav-drop">
+          <summary>Rivers</summary>
+          <div class="nav-drop-menu">
+            <a href="/montana">Montana</a>
+            <a href="/idaho">Idaho</a>
+            <a href="/oregon">Oregon</a>
+          </div>
+        </details>
+        <a href="/about.html" class="is-active">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>About FloatETA</h1>
+      <p class="hero-sub">A float planner built around one question: if we put in now, when do we get to the take-out?</p>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,35 C960,70 1200,10 1440,45 L1440,90 L0,90 Z" fill="var(--bg)"/></svg>
+    </div>
+  </header>
+
+  <main class="legal">
+    <h2>Why this exists</h2>
+    <p>Most float-time advice is a guidebook number: “figure 3 to 4 hours.” That number assumes some flow nobody wrote down. The same 9-mile stretch can take two and a half hours in June runoff and twice that in a bony September. Add a tube, a cooler, or a few stops to fish, and the guess drifts even further.</p>
+    <p>FloatETA starts from today's water instead. Every river on the site is tied to a real USGS streamgage, so the estimate changes when the river changes.</p>
+
+    <h2>How the estimate works</h2>
+    <ul>
+      <li><strong>Live flow.</strong> We read the latest discharge (cubic feet per second) and, where available, water temperature from the USGS Water Services API each time you load a river.</li>
+      <li><strong>Flow to speed.</strong> Each river has a typical raft drift speed at a reference flow. Speed rises with discharge following the hydraulic-geometry relationship v ∝ Q<sup>0.34</sup>, so doubling the flow makes the boat about 27% faster, not twice as fast.</li>
+      <li><strong>Your craft.</strong> Paddled kayaks and canoes run about 20% faster than a drifting raft. Tubes run about 28% slower. Paddleboards are close to a raft.</li>
+      <li><strong>Fishing.</strong> If you're stopping to fish, we add 35 minutes per mile.</li>
+      <li><strong>Daylight.</strong> We calculate sunset at the put-in and tell you the latest sensible launch time, or when you'll reach the take-out if you enter a put-in time.</li>
+      <li><strong>Weather.</strong> Air temperature, wind, rain chance, and UV for the put-in come from Open-Meteo.</li>
+    </ul>
+
+    <h2>What it can't tell you</h2>
+    <p>FloatETA is a planning tool, not a safety tool. It doesn't know about the tree that fell across the channel last night, a closed access site, wind on a slow stretch, or how long your group spends on a gravel bar. Mileages are approximate. Wood, ice, and high water can turn an easy stretch into a dangerous one. Scout what you can't see, wear a PFD, and check the state agency for closures.</p>
+    <p>That's also why the <a href="/#reports">river reports</a> section exists. If you see a strainer, fence, or diversion, post it so the next boat knows. Reports expire after 45 days unless someone confirms the hazard is still there.</p>
+
+    <h2>Where the data comes from</h2>
+    <ul>
+      <li>Streamflow and water temperature: <a href="https://waterservices.usgs.gov/" target="_blank" rel="noopener">USGS Water Services</a></li>
+      <li>Weather: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></li>
+      <li>Sunset: calculated on the page from the put-in's latitude and longitude</li>
+      <li>Rivers and stretches: put together from public access sites and state boating information</li>
+    </ul>
+
+    <h2>Where we float</h2>
+    <p>FloatETA covers <a href="/montana">Montana</a>, <a href="/idaho">Idaho</a>, and <a href="/oregon">Oregon</a>, with more western states on the way. Each state page lists every river and stretch we track.</p>
+
+    <h2>Get in touch</h2>
+    <p>Wrong mileage, a missing take-out, or a river we should add? Send a note on the <a href="/contact.html">contact page</a>. Corrections from people who float these rivers make the site better for everyone.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="brand" href="/">🛶 Float<span>ETA</span></a>
+      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a></p>
+      <p class="copyright">© <span id="year"></span> FloatETA · <a href="https://floateta.com">floateta.com</a></p>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

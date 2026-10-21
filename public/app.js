@@ -351,6 +351,11 @@ async function renderRiver() {
   $("riverDash").hidden = false;
   $("loadError").hidden = true;
   $("riverBlurb").textContent = river.blurb;
+  const st = STATES.find((s) => s.id === riverState(river));
+  if (st) {
+    $("agencyLink").textContent = st.agency;
+    $("agencyLink").href = st.agencyUrl;
+  }
   $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName}`;
   $("packWear").textContent = "Checking the put-in…";
   $("rainToday").textContent = "–";
@@ -404,7 +409,10 @@ async function renderRiver() {
   badge.textContent = cond.label;
   badge.className = `condition-badge ${cond.cls}`;
   $("conditionNote").textContent = cond.note;
-  $("craftHint").textContent = cond.craft;
+  const whitewater = river.sections.some((s) => /\bI{3}|IV|V\b/.test(s.difficulty));
+  $("craftHint").textContent = whitewater && cond.cls !== "cond-danger"
+    ? "Class III+ water — rafts and experienced paddlers. Not a tube run."
+    : cond.craft;
   $("waterTemp").textContent = gauge.temp != null ? waterTempLabel(gauge.temp) : "n/a";
   $("packWear").textContent = dressFor(gauge.temp);
   const age = gaugeAge(gauge.reportedAt);
@@ -634,6 +642,19 @@ function init() {
     const btn = ev.target.closest(".vote-btn");
     if (btn && !btn.disabled) vote(btn.dataset.id, btn.dataset.action);
   });
+
+  const popularSel = $("popularState");
+  if (popularSel) {
+    const panels = document.querySelectorAll(".popular-panel");
+    const showPopular = () => {
+      panels.forEach((panel) => {
+        panel.hidden = panel.dataset.state !== popularSel.value;
+      });
+    };
+    if ([...popularSel.options].some((o) => o.value === wantedState)) popularSel.value = wantedState;
+    popularSel.addEventListener("change", showPopular);
+    showPopular();
+  }
 
   loadReports().then(renderRiver);
 

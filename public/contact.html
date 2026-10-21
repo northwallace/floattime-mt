@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact FloatETA | Privacy, Ads &amp; River Data</title>
-  <meta name="description" content="Write FloatETA about privacy requests, AdSense, bad river data, or a missing Montana float stretch.">
+  <title>Contact FloatETA | Privacy &amp; River Data</title>
+  <meta name="description" content="Write FloatETA about privacy requests, bad river data, or a missing float stretch.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://floateta.com/contact.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="FloatETA">
   <meta property="og:title" content="Contact FloatETA">
-  <meta property="og:description" content="Privacy requests, ad issues, or river data — send a note.">
+  <meta property="og:description" content="Privacy requests or river data — send a note.">
   <meta property="og:url" content="https://floateta.com/contact.html">
-  <meta property="og:image" content="https://floateta.com/og.svg">
+  <meta property="og:image" content="https://floateta.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1358970586107841" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="hero hero-legal">
@@ -27,14 +30,21 @@
       <a class="brand" href="/">🛶 Float<span>ETA</span></a>
       <div class="nav-links">
         <a href="/">Home</a>
-        <a href="/montana">Montana</a>
-        <a href="/idaho">Idaho</a>
-        <a href="/privacy.html">Privacy Policy</a>
+        <details class="nav-drop">
+          <summary>Rivers</summary>
+          <div class="nav-drop-menu">
+            <a href="/montana">Montana</a>
+            <a href="/idaho">Idaho</a>
+            <a href="/oregon">Oregon</a>
+          </div>
+        </details>
+        <a href="/about.html">About</a>
+        <a href="/contact.html" class="is-active">Contact</a>
       </div>
     </nav>
     <div class="hero-content">
       <h1>Contact</h1>
-      <p class="hero-sub">Privacy questions, ad issues, bad river data, or anything else — send a note.</p>
+      <p class="hero-sub">Privacy questions, bad river data, or anything else — send a note.</p>
     </div>
     <div class="hero-wave" aria-hidden="true">
       <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,35 C960,70 1200,10 1440,45 L1440,90 L0,90 Z" fill="var(--bg)"/></svg>
@@ -58,13 +68,13 @@
       <button type="submit" class="btn-primary" id="contactSubmit">Send message</button>
       <div id="contactStatus" class="report-status" role="status"></div>
     </form>
-    <p>We use this for privacy requests, AdSense questions, and site issues. Include a real email if you want a reply.</p>
+    <p>We use this for privacy requests, river corrections, and site issues. Include a real email if you want a reply.</p>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
       <a class="brand" href="/">🛶 Float<span>ETA</span></a>
-      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a></p>
+      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a></p>
       <p class="copyright">© <span id="year"></span> FloatETA · <a href="https://floateta.com">floateta.com</a></p>
     </div>
   </footer>
