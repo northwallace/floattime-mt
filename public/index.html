@@ -92,19 +92,21 @@
           <label for="craftSelect">What are you floating in?</label>
           <select id="craftSelect"></select>
         </div>
-        <div class="control">
-          <label for="putInTime">Put-in time <span class="optional">(optional)</span></label>
-          <input id="putInTime" type="time" aria-describedby="timeZoneNote">
-          <small id="timeZoneNote">Today, in the river’s time zone</small>
-        </div>
-        <div class="control control-check">
-          <label class="check-label" for="fishingToggle">
-            <input id="fishingToggle" type="checkbox">
-            <span>
-              Stopping to fish
-              <span class="optional">+35 min per mile</span>
-            </span>
-          </label>
+        <div class="secondary-controls" aria-label="Optional timing choices">
+          <div class="control">
+            <label for="putInTime">Put-in time <span class="optional">(optional)</span></label>
+            <input id="putInTime" type="time" aria-describedby="timeZoneNote">
+            <small id="timeZoneNote">Today, in the river’s time zone</small>
+          </div>
+          <div class="control control-check">
+            <label class="check-label" for="fishingToggle">
+              <input id="fishingToggle" type="checkbox">
+              <span>
+                Stopping to fish
+                <span class="optional">+25 min per mile</span>
+              </span>
+            </label>
+          </div>
         </div>
       </div>
 
@@ -164,41 +166,6 @@
       </div>
 
       <div class="reports-layout">
-        <form id="reportForm" class="report-form">
-          <h3>Report an obstruction</h3>
-          <div class="form-row">
-            <div class="control">
-              <label for="reportRiver">River</label>
-              <select id="reportRiver" required></select>
-            </div>
-            <div class="control">
-              <label for="reportType">Type</label>
-              <select id="reportType" required>
-                <option value="strainer">Strainer / downed tree</option>
-                <option value="diversion">Diversion dam</option>
-                <option value="fence">Fence across channel</option>
-                <option value="low-bridge">Low bridge / cable</option>
-                <option value="debris">Debris / flood wood</option>
-                <option value="other">Other hazard</option>
-              </select>
-            </div>
-          </div>
-          <div class="control">
-            <label for="reportLocation">Where exactly? <span class="optional">(optional)</span></label>
-            <input id="reportLocation" type="text" maxlength="160" placeholder="e.g. 1 mile below Black's Ford, river left">
-          </div>
-          <div class="control">
-            <label for="reportDesc">What did you see?</label>
-            <textarea id="reportDesc" required maxlength="600" rows="3" placeholder="Cottonwood spanning 2/3 of the channel, passable far river right…"></textarea>
-          </div>
-          <div class="control">
-            <label for="reportName">Your name <span class="optional">(optional)</span></label>
-            <input id="reportName" type="text" maxlength="40" placeholder="Anonymous">
-          </div>
-          <button type="submit" class="btn-primary" id="reportSubmit">Submit report</button>
-          <div id="reportStatus" class="report-status" role="status"></div>
-        </form>
-
         <div class="reports-feed">
           <div class="reports-feed-head">
             <h3>Latest reports</h3>
@@ -210,6 +177,44 @@
           <p class="reports-expiry-note">Reports retire automatically after 45 days unless someone taps
             “Still there”. Reports are unverified; cleared votes are advisory and do not remove hazards.</p>
         </div>
+
+        <details class="report-disclosure">
+          <summary>Report a hazard</summary>
+          <form id="reportForm" class="report-form">
+            <h3>Report an obstruction</h3>
+            <div class="form-row">
+              <div class="control">
+                <label for="reportRiver">River</label>
+                <select id="reportRiver" required></select>
+              </div>
+              <div class="control">
+                <label for="reportType">Type</label>
+                <select id="reportType" required>
+                  <option value="strainer">Strainer / downed tree</option>
+                  <option value="diversion">Diversion dam</option>
+                  <option value="fence">Fence across channel</option>
+                  <option value="low-bridge">Low bridge / cable</option>
+                  <option value="debris">Debris / flood wood</option>
+                  <option value="other">Other hazard</option>
+                </select>
+              </div>
+            </div>
+            <div class="control">
+              <label for="reportLocation">Where exactly? <span class="optional">(optional)</span></label>
+              <input id="reportLocation" type="text" maxlength="160" placeholder="e.g. 1 mile below Black's Ford, river left">
+            </div>
+            <div class="control">
+              <label for="reportDesc">What did you see?</label>
+              <textarea id="reportDesc" required maxlength="600" rows="3" placeholder="Cottonwood spanning 2/3 of the channel, passable far river right…"></textarea>
+            </div>
+            <div class="control">
+              <label for="reportName">Your name <span class="optional">(optional)</span></label>
+              <input id="reportName" type="text" maxlength="40" placeholder="Anonymous">
+            </div>
+            <button type="submit" class="btn-primary" id="reportSubmit">Submit report</button>
+            <div id="reportStatus" class="report-status" role="status"></div>
+          </form>
+        </details>
       </div>
     </section>
 
@@ -258,7 +263,7 @@
         </details>
         <details class="faq-item">
           <summary>How does Float ETA calculate float time?</summary>
-          <p>Each river is tied to a USGS streamgage. We take a typical raft drift speed at a reference flow, then scale it with hydraulic geometry (speed rises with discharge to the 0.34 power). Kayaks, tubes, and paddleboards get their own multipliers. Optional fishing adds 35 minutes per mile.</p>
+          <p>Each river is tied to a USGS streamgage. We take a typical raft drift speed at a reference flow, then scale it with hydraulic geometry (speed rises with discharge to the 0.34 power). Kayaks, tubes, and paddleboards get their own multipliers. Optional fishing adds 25 minutes per mile.</p>
         </details>
         <details class="faq-item">
           <summary>What CFS is good for floating?</summary>
@@ -266,7 +271,7 @@
         </details>
         <details class="faq-item">
           <summary>How much extra time if I stop to fish?</summary>
-          <p>Turn on Stopping to fish and we add 35 minutes per mile on top of drift time. A 9-mile stretch gains about 5 hours 15 minutes.</p>
+          <p>Turn on Stopping to fish and we add 25 minutes per mile on top of drift time. A 9-mile stretch gains about 3 hours 45 minutes.</p>
         </details>
         <details class="faq-item">
           <summary>Which rivers does Float ETA cover?</summary>

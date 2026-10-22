@@ -79,7 +79,7 @@ All launch/arrival/sunset times use the river's timezone. Launch times refer to
 **today**, including when opening a shared link. Shared links preserve river,
 craft, fishing preference and optional launch time.
 
-Trips are rounded to five minutes; fishing adds 35 minutes per mile. Multi-day
+Trips are rounded to five minutes; fishing adds 25 minutes per mile. Multi-day
 results show total water time and minimum days at seven hours/day, without a
 fabricated arrival time. Tubes and recreational SUPs do not receive an estimate
 for Class III+ sections. No flow badge claims a route is safe.

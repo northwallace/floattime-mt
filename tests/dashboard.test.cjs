@@ -25,7 +25,7 @@ test('stale reading keeps routes but never shows a calculated duration',()=>{
 });
 test('fishing on long routes keeps total hours and rounds days up',()=>{
  const h=harness();fixture(h);h.run('state.river.sections[0].miles=60;state.fishing=true;renderSections(state.river,{flow:1000,at:Date.now()},null)');
- const html=h.elements.get('sectionCards').children[0].innerHTML;assert.match(html,/50 hr/);assert.match(html,/At least 8 floating days/);assert.doesNotMatch(html,/Take out ≈/);
+ const html=h.elements.get('sectionCards').children[0].innerHTML;assert.match(html,/40 hr/);assert.match(html,/At least 6 floating days/);assert.doesNotMatch(html,/Take out ≈/);
 });
 test('Class III tube never gets an estimate',()=>{
  const h=harness();fixture(h);h.run('state.river.sections[0].difficulty="Class III–IV";state.craft.id="tube";renderSections(state.river,{flow:1000,at:Date.now()},null)');

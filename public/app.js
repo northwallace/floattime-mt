@@ -10,7 +10,7 @@ const SPEED_EXPONENT = 0.34; // hydraulic geometry: v ∝ Q^0.34
 const MIN_SPEED_MPH = 0.8;
 const MAX_SPEED_MPH = 9.0;
 const FLOAT_DAY_HOURS = 10; // sections longer than this at current speed = multi-day
-const FISH_MIN_PER_MILE = 35; // extra time if stopping to fish
+const FISH_MIN_PER_MILE = 25; // extra time if stopping to fish
 
 const $ = (id) => document.getElementById(id);
 const riverState = (river) => (river && river.state) || "MT";

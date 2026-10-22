@@ -48,3 +48,31 @@ main{max-width:1160px;padding:0 28px}.section{padding:35px 0 23px}.section-kicke
 #timeZoneNote{font-size:.65rem;color:var(--text-dim);line-height:1.4}.fc-eta{flex-wrap:wrap}.brand svg{width:32px;height:32px;flex:none}.hero-legal .hero-content{padding-right:20px}.hero-legal h1{max-width:none}
 
 .hero .hs-label{color:#bfd0c4}.hero-stat .hs-num{white-space:nowrap}.uvIndex{font-variant-numeric:tabular-nums}
+
+/* Focused refinements: clearer small type and a calmer planner/report layout. */
+:root{--text-dim:#4f6256}
+.hero .hs-label{color:#d2ded5}.coming-soon-pill{color:#c3d4c8}
+.dash-label{color:#d1ddd4}.dash-foot{color:#c4d3c8}.temp-label{color:#cbd9cf}
+.fine-print,.reports-empty,.reports-expiry-note{color:#526458}
+
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:end}
+.controls>.control,.controls>.control:nth-child(2){min-width:0}
+.secondary-controls{grid-column:1/-1;display:flex;align-items:flex-end;gap:13px;max-width:620px;padding-top:13px;margin-top:2px;border-top:1px solid #dfe4d9}
+.secondary-controls .control{min-width:190px}.secondary-controls .control-check{flex:.9}
+
+.reports-layout{display:flex;flex-direction:column;gap:18px;margin-top:22px}
+.reports-list{max-height:360px;overflow:auto}
+.report-disclosure{border:1px solid var(--border);border-radius:10px;background:#e9eee2;overflow:hidden}
+.report-disclosure summary{list-style:none;cursor:pointer;padding:13px 16px;color:#285f43;font-size:.86rem;font-weight:700}
+.report-disclosure summary::-webkit-details-marker{display:none}
+.report-disclosure summary::after{content:"+";float:right;font-size:1.05rem;line-height:1}
+.report-disclosure[open] summary::after{content:"−"}
+.report-disclosure .report-form{max-width:720px;border:0;border-top:1px solid var(--border);border-radius:0;padding:20px}
+
+@media(max-width:700px){
+  .controls{grid-template-columns:1fr}
+  .controls>.control,.controls>.control:nth-child(2){min-width:0}
+  .secondary-controls{grid-column:1;max-width:none;flex-wrap:wrap}
+  .secondary-controls .control{min-width:min(100%,220px)}
+  .secondary-controls .control-check{min-width:100%}
+}
