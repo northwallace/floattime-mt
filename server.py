@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-FloatETA — development/production server.
+Float ETA — development/production server.
 Serves the static site from ./public and a small JSON API for
 community obstruction reports and contact messages.
 
@@ -10,6 +10,8 @@ Run:  python3 server.py  [PORT]   (default 8000)
 """
 
 import json
+import hashlib
+import socket
 import os
 import re
 import sys
@@ -22,7 +24,7 @@ import seo
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
-DATA_DIR = os.path.join(ROOT, "data")
+DATA_DIR = os.environ.get("DATA_DIR", os.path.join(ROOT, "data"))
 REPORTS_FILE = os.path.join(DATA_DIR, "reports.json")
 CONTACTS_FILE = os.path.join(DATA_DIR, "contacts.json")
 MAX_CONTACTS = 200
@@ -128,9 +130,13 @@ class Handler(BaseHTTPRequestHandler):
 
     def _read_body_json(self):
         try:
-            length = min(int(self.headers.get("Content-Length", 0)), 64 * 1024)
+            length = int(self.headers.get("Content-Length", 0))
+            if length <= 0 or length > 64 * 1024:
+                self.close_connection = True
+                return None
+            self.connection.settimeout(10)
             return json.loads(self.rfile.read(length).decode("utf-8"))
-        except (ValueError, json.JSONDecodeError):
+        except (ValueError, UnicodeDecodeError, socket.timeout):
             return None
 
     # ---------- routes ----------
@@ -146,16 +152,15 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/reports":
             with _lock:
                 reports = _load_reports()
-            # Hide reports marked cleared by 3+ people, and reports with no
-            # activity (creation or "still there" confirmation) in EXPIRY_DAYS.
+            # Clear votes are advisory; never erase a hazard from anonymous votes.
+            # Hide records with no activity in EXPIRY_DAYS.
             cutoff = time.time() - EXPIRY_DAYS * 86400
             visible = [
                 r for r in reports
-                if r.get("clearedVotes", 0) < 3
-                and max(r.get("createdAt", 0), r.get("lastConfirmedAt", 0)) >= cutoff
+                if max(r.get("createdAt", 0), r.get("lastConfirmedAt", 0)) >= cutoff
             ]
             visible.sort(key=lambda r: r.get("createdAt", 0), reverse=True)
-            self._send_json(visible)
+            self._send_json([{k: v for k, v in r.items() if not k.startswith("_")} for r in visible])
             return
 
         if path == "/api/health":
@@ -173,7 +178,7 @@ class Handler(BaseHTTPRequestHandler):
 
         if path in ("/rivers", "/rivers/"):
             self.send_response(301)
-            self.send_header("Location", "/montana")
+            self.send_header("Location", "/directory.html")
             self.send_header("Content-Length", "0")
             self.end_headers()
             return
@@ -205,7 +210,11 @@ class Handler(BaseHTTPRequestHandler):
                 self._send_json({"error": "Invalid JSON body"}, 400)
                 return
 
-            river = _clean(body.get("river"), 80)
+            river_id = _clean(body.get("riverId"), 100)
+            candidates = [r for r in seo.load_rivers() if
+                          (r["id"] == river_id if river_id else r["name"] == body.get("river"))]
+            record = candidates[0] if len(candidates) == 1 else None
+            river = record["name"] if record else ""
             section = _clean(body.get("section"), 120)
             rtype = _clean(body.get("type"), 20)
             location = _clean(body.get("location"), 160)
@@ -221,6 +230,7 @@ class Handler(BaseHTTPRequestHandler):
             report = {
                 "id": uuid.uuid4().hex[:12],
                 "river": river,
+                "riverId": record["id"],
                 "section": section,
                 "type": rtype,
                 "location": location,
@@ -274,13 +284,22 @@ class Handler(BaseHTTPRequestHandler):
                 if not target:
                     self._send_json({"error": "Report not found"}, 404)
                     return
+                # Deduplicate one vote per connection address per report. Do not
+                # trust forwarding headers supplied by arbitrary clients. This
+                # is a basic abuse guard, not proof of independent people.
+                voter = hashlib.sha256((rid + self.client_address[0]).encode()).hexdigest()
+                voters = target.setdefault("_voters", [])
+                if voter in voters:
+                    self._send_json({"error": "A vote from this address was already recorded"}, 409)
+                    return
+                voters.append(voter)
                 key = "confirmVotes" if action == "confirm" else "clearedVotes"
                 target[key] = target.get(key, 0) + 1
                 if action == "confirm":
                     # a "still there" vote resets the expiry clock
                     target["lastConfirmedAt"] = time.time()
                 _save_reports(reports)
-            self._send_json(target)
+            self._send_json({k: v for k, v in target.items() if not k.startswith("_")})
             return
 
         self.send_error(404, "Not found")
@@ -296,7 +315,7 @@ def main():
     else:
         port = int(os.environ.get("PORT", 8000))
     server = ThreadingHTTPServer(("0.0.0.0", port), Handler)
-    print(f"FloatETA running at http://localhost:{port}")
+    print(f"Float ETA running at http://localhost:{port}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

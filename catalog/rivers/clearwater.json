@@ -1,0 +1,31 @@
+{
+  "id": "clearwater",
+  "name": "Clearwater River",
+  "state": "ID",
+  "gauge": "13340000",
+  "gaugeName": "Clearwater River at Orofino",
+  "lat": 46.478,
+  "lon": -116.258,
+  "refFlowCfs": 8000,
+  "refSpeedMph": 3.3,
+  "blurb": "Big, warm, summer water from Orofino toward Lewiston. A North Idaho alternative to the crowded Greenbelt.",
+  "sections": [
+    {
+      "id": "orofino-peck",
+      "putIn": "Orofino",
+      "takeOut": "Peck",
+      "miles": 12,
+      "difficulty": "Class I",
+      "notes": "Wide river, easy current. Jet boats and fishing traffic on weekends."
+    },
+    {
+      "id": "peck-spalding",
+      "putIn": "Peck",
+      "takeOut": "Spalding (Nez Perce NHP)",
+      "miles": 16,
+      "difficulty": "Class I",
+      "notes": "Longer valley miles into the Lewiston area. Wind can come up the canyon in the afternoon."
+    }
+  ],
+  "timezone": "America/Los_Angeles"
+}

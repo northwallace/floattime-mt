@@ -1,0 +1,31 @@
+{
+  "id": "snake-sf-swan",
+  "name": "South Fork Snake (Swan Valley)",
+  "state": "ID",
+  "gauge": "13032500",
+  "gaugeName": "Snake River nr Irwin",
+  "lat": 43.351,
+  "lon": -111.219,
+  "refFlowCfs": 9000,
+  "refSpeedMph": 4,
+  "blurb": "Palisades Dam to Conant — big cutthroat water in Swan Valley before the canyon walls close in.",
+  "sections": [
+    {
+      "id": "palisades-spring",
+      "putIn": "Palisades Dam",
+      "takeOut": "Spring Creek",
+      "miles": 8,
+      "difficulty": "Class I",
+      "notes": "Dam-controlled. Fall Creek falls comes in river-left. Palisades Creek is an optional early takeout."
+    },
+    {
+      "id": "spring-conant",
+      "putIn": "Spring Creek",
+      "takeOut": "Conant",
+      "miles": 8,
+      "difficulty": "Class I",
+      "notes": "Cottonwood islands and braids. The last easy miles before the Conant-to-Byington canyon."
+    }
+  ],
+  "timezone": "America/Boise"
+}

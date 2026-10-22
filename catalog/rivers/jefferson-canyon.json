@@ -1,0 +1,39 @@
+{
+  "id": "jefferson-canyon",
+  "name": "Jefferson River (Canyon / Three Forks)",
+  "gauge": "06036650",
+  "gaugeName": "Jefferson near Three Forks",
+  "lat": 45.89,
+  "lon": -111.55,
+  "refFlowCfs": 1800,
+  "refSpeedMph": 2.8,
+  "blurb": "Lime-cliff canyon by the Caverns, then braided water into Missouri Headwaters.",
+  "sections": [
+    {
+      "id": "cardwell-sappington",
+      "putIn": "Cardwell Bridge FAS",
+      "takeOut": "Sappington Bridge",
+      "miles": 14,
+      "difficulty": "Class I–II",
+      "notes": "The Jefferson canyon. Long day. Lewis & Clark Caverns State Park is midway."
+    },
+    {
+      "id": "williams-drouillard",
+      "putIn": "Williams Bridge FAS",
+      "takeOut": "Drouillard FAS",
+      "miles": 11,
+      "difficulty": "Class I",
+      "notes": "River opens up and braids. Irrigation can drain this stretch in late summer."
+    },
+    {
+      "id": "drouillard-headwaters",
+      "putIn": "Drouillard FAS",
+      "takeOut": "Missouri Headwaters State Park",
+      "miles": 8,
+      "difficulty": "Class I",
+      "notes": "Ends where the Jefferson, Madison, and Gallatin become the Missouri."
+    }
+  ],
+  "state": "MT",
+  "timezone": "America/Denver"
+}

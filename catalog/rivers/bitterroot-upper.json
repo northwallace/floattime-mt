@@ -1,0 +1,31 @@
+{
+  "id": "bitterroot-upper",
+  "name": "Bitterroot River (Darby / Hamilton)",
+  "gauge": "12344000",
+  "gaugeName": "Bitterroot near Darby",
+  "lat": 46.02,
+  "lon": -114.18,
+  "refFlowCfs": 500,
+  "refSpeedMph": 3,
+  "blurb": "Upper valley float. Smaller water, bigger mountains, same logjam problem as downstream.",
+  "sections": [
+    {
+      "id": "darby-wally",
+      "putIn": "Darby",
+      "takeOut": "Wally Crawford FAS",
+      "miles": 6.5,
+      "difficulty": "Class I",
+      "notes": "Heads-up for new wood every runoff."
+    },
+    {
+      "id": "wally-hamilton",
+      "putIn": "Wally Crawford FAS",
+      "takeOut": "Angler's Roost (Hamilton)",
+      "miles": 9,
+      "difficulty": "Class I",
+      "notes": "Serious diversion dam mid-float — portage. Register at Angler's Roost if you use their takeout."
+    }
+  ],
+  "state": "MT",
+  "timezone": "America/Denver"
+}

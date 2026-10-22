@@ -1,7 +1,7 @@
 """
-FloatETA SEO pages — sitemap, state directories, and per-river landings.
+Float ETA SEO pages — sitemap, state directories, and per-river landings.
 
-River copy is read from public/rivers.js so the calculator and Google
+River copy is read from public/catalog.json so the calculator and Google
 see the same catalog. No extra dependencies.
 """
 
@@ -12,56 +12,34 @@ import time
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
-SITE = os.environ.get("SITE_URL", "https://floateta.com").rstrip("/")
+SITE = os.environ.get("SITE_URL", "https://www.floateta.com").rstrip("/")
 
-STATES = {
-    "MT": {
-        "code": "MT",
-        "slug": "montana",
-        "name": "Montana",
-        "agency": "Montana FWP boating",
-        "agencyUrl": "https://fwp.mt.gov/activities/boating",
-        "geo": "US-MT",
-        "dirTitle": "Montana Rivers to Float | Live USGS Gauges | FloatETA",
-        "dirDesc": (
-            "Directory of Montana river floats with live USGS flow: Madison, Yellowstone, "
-            "Gallatin, Big Hole, Blackfoot, Clark Fork, Bitterroot, and more."
-        ),
-        "h1": "Montana rivers to float",
-        "intro": "Madison, Yellowstone, Gallatin, Blackfoot, and the rest of the Montana catalog.",
-    },
-    "ID": {
-        "code": "ID",
-        "slug": "idaho",
-        "name": "Idaho",
-        "agency": "Idaho Fish and Game",
-        "agencyUrl": "https://idfg.idaho.gov/",
-        "geo": "US-ID",
-        "dirTitle": "Idaho Rivers to Float | Live USGS Gauges | FloatETA",
-        "dirDesc": (
-            "Directory of Idaho river floats with live USGS flow: Boise Greenbelt, South Fork Snake, "
-            "Henry's Fork, Payette, Salmon, Lochsa, Clearwater, and more."
-        ),
-        "h1": "Idaho rivers to float",
-        "intro": "Boise's Greenbelt, the South Fork Snake, Henry's Fork, Payette whitewater, and the Salmon.",
-    },
-    "OR": {
-        "code": "OR",
-        "slug": "oregon",
-        "name": "Oregon",
-        "agency": "Oregon State Marine Board",
-        "agencyUrl": "https://www.oregon.gov/osmb/",
-        "geo": "US-OR",
-        "dirTitle": "Oregon Rivers to Float | Live USGS Gauges | FloatETA",
-        "dirDesc": (
-            "Directory of Oregon river floats with live USGS flow: Deschutes at Maupin, Rogue, "
-            "McKenzie, Clackamas, Sandy, John Day, Grande Ronde, and Owyhee."
-        ),
-        "h1": "Oregon rivers to float",
-        "intro": "The Deschutes at Maupin, the Rogue, the McKenzie, Portland's Clackamas and Sandy, and desert canyon trips.",
-    },
-}
+_catalog_cache = None
+_catalog_stamp = None
 
+
+def catalog():
+    global _catalog_cache, _catalog_stamp
+    path = os.path.join(PUBLIC, "catalog.json")
+    stamp = os.stat(path).st_mtime_ns
+    if _catalog_cache is None or stamp != _catalog_stamp:
+        with open(path, encoding="utf-8") as f:
+            _catalog_cache = json.load(f)
+        _catalog_stamp = stamp
+    return _catalog_cache
+
+
+def _state_records():
+    return {s["id"]: {
+        **s, "code": s["id"], "geo": "US-" + s["id"],
+        "dirTitle": f'{s["name"]} Rivers to Float | Live USGS Gauges | Float ETA',
+        "dirDesc": f'Explore {s["name"]} river floats, stretches, and USGS gauges.',
+        "h1": f'{s["name"]} rivers to float',
+        "intro": f'Find your next stretch in {s["name"]}. Check access and local conditions before launching.'
+    } for s in catalog()["states"]}
+
+
+STATES = _state_records()
 STATE_BY_SLUG = {meta["slug"]: code for code, meta in STATES.items()}
 
 
@@ -71,85 +49,12 @@ def _state_names():
 
 
 def esc(text):
-    return (
-        str(text or "")
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
-
-
-def _split_objects(blob):
-    objs, i, n = [], 0, len(blob)
-    while i < n:
-        if blob[i] == "{":
-            depth = 0
-            start = i
-            for j in range(i, n):
-                if blob[j] == "{":
-                    depth += 1
-                elif blob[j] == "}":
-                    depth -= 1
-                    if depth == 0:
-                        objs.append(blob[start : j + 1])
-                        i = j + 1
-                        break
-            else:
-                break
-        else:
-            i += 1
-    return objs
-
-
-def _str_field(blob, key):
-    m = re.search(rf'{re.escape(key)}:\s*"((?:\\.|[^"\\])*)"', blob)
-    return m.group(1).replace('\\"', '"').replace("\\n", "\n") if m else ""
-
-
-def _num_field(blob, key):
-    m = re.search(rf"{re.escape(key)}:\s*(-?[\d.]+)", blob)
-    return float(m.group(1)) if m else 0.0
-
-
-def _bool_field(blob, key):
-    return bool(re.search(rf"{re.escape(key)}:\s*true", blob))
+    import html
+    return html.escape(str(text or ""), quote=True)
 
 
 def load_rivers():
-    text = open(os.path.join(PUBLIC, "rivers.js"), encoding="utf-8").read()
-    start = text.find("const RIVERS = [")
-    end = text.find("\nconst CRAFT")
-    if start < 0 or end < 0:
-        return []
-    rivers = []
-    for obj in _split_objects(text[start:end]):
-        head, _, rest = obj.partition("sections:")
-        sections = []
-        for sec in _split_objects(rest):
-            sections.append({
-                "id": _str_field(sec, "id"),
-                "putIn": _str_field(sec, "putIn"),
-                "takeOut": _str_field(sec, "takeOut"),
-                "miles": _num_field(sec, "miles"),
-                "difficulty": _str_field(sec, "difficulty"),
-                "notes": _str_field(sec, "notes"),
-            })
-        rivers.append({
-            "id": _str_field(head, "id"),
-            "name": _str_field(head, "name"),
-            "gauge": _str_field(head, "gauge"),
-            "gaugeName": _str_field(head, "gaugeName"),
-            "lat": _num_field(head, "lat"),
-            "lon": _num_field(head, "lon"),
-            "refFlowCfs": _num_field(head, "refFlowCfs"),
-            "refSpeedMph": _num_field(head, "refSpeedMph"),
-            "blurb": _str_field(head, "blurb"),
-            "multiDay": _bool_field(head, "multiDay"),
-            "state": _str_field(head, "state") or "MT",
-            "sections": sections,
-        })
-    return [r for r in rivers if r["id"]]
+    return catalog()["rivers"]
 
 
 def find_river(slug):
@@ -160,8 +65,8 @@ def find_river(slug):
 def _fmt_hours(hours):
     if hours >= 24:
         return f"{hours / 24:.1f} days"
-    h = int(hours)
-    m = int(round((hours - h) * 60))
+    minutes = int(round(hours * 60))
+    h, m = divmod(minutes, 60)
     if h == 0:
         return f"{m} min"
     if m == 0:
@@ -190,7 +95,7 @@ def _related(rivers, current, n=4):
 
 
 def _lastmod():
-    path = os.path.join(PUBLIC, "rivers.js")
+    path = os.path.join(PUBLIC, "catalog.json")
     return time.strftime("%Y-%m-%d", time.gmtime(os.path.getmtime(path)))
 
 
@@ -215,15 +120,15 @@ def _head(title, description, path, extra="", json_ld=None, geo=None):
   <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-  <meta name="author" content="FloatETA">
-  <meta name="theme-color" content="#0e1a14">
+  <meta name="author" content="Float ETA">
+  <meta name="theme-color" content="#f5f3eb">
   <meta name="geo.region" content="{esc(geo['geo'])}">
   <meta name="geo.placename" content="{esc(geo['name'])}">
   <link rel="canonical" href="{esc(url)}">
   <link rel="alternate" hreflang="en-US" href="{esc(url)}">
   <link rel="alternate" hreflang="x-default" href="{esc(url)}">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="FloatETA">
+  <meta property="og:site_name" content="Float ETA">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{esc(title)}">
   <meta property="og:description" content="{esc(description)}">
@@ -232,7 +137,7 @@ def _head(title, description, path, extra="", json_ld=None, geo=None):
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="FloatETA — live river float times from USGS flow">
+  <meta property="og:image:alt" content="Float ETA — live river float times from USGS flow">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{esc(title)}">
   <meta name="twitter:description" content="{esc(description)}">
@@ -241,10 +146,7 @@ def _head(title, description, path, extra="", json_ld=None, geo=None):
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/middle.css">
   {extra}
   {"".join(blocks)}
 </head>
@@ -261,7 +163,7 @@ def _nav(active=""):
     return f"""  <a class="skip-link" href="#main">Skip to content</a>
   <header class="hero hero-legal">
     <nav class="nav" aria-label="Primary">
-      <a class="brand" href="/">🛶 Float<span>ETA</span></a>
+      <a class="brand" href="/"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></a>
       <div class="nav-links">
         {item("/", "Home", "home")}
         <details class="nav-drop">
@@ -282,7 +184,7 @@ def _footer():
     states = " ·\n        ".join(f'<a href="/{m["slug"]}">{m["name"]}</a>' for m in STATES.values())
     return f"""  <footer class="footer">
     <div class="footer-inner">
-      <a class="brand" href="/">🛶 Float<span>ETA</span></a>
+      <a class="brand" href="/"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></a>
       <p>Live USGS streamflow turned into real float times — daylight, water temp, and community obstruction reports included.</p>
       <p class="footer-links">
         <a href="/">Home</a> ·
@@ -292,7 +194,7 @@ def _footer():
         <a href="/privacy.html">Privacy Policy</a> ·
         <a href="/contact.html">Contact</a>
       </p>
-      <p class="copyright">© {year} FloatETA · <a href="{SITE}">{SITE.replace("https://", "")}</a></p>
+      <p class="copyright">© {year} Float ETA · <a href="{SITE}">{SITE.replace("https://", "")}</a></p>
     </div>
   </footer>
 </body>
@@ -304,7 +206,7 @@ def _org_schema():
     return {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "FloatETA",
+        "name": "Float ETA",
         "url": SITE + "/",
         "logo": SITE + "/icon-512.png",
         "description": f"Live river float-time estimates from USGS streamflow for {_state_names()}, with more states coming.",
@@ -315,7 +217,7 @@ def _org_schema():
 def sitemap_xml():
     lastmod = _lastmod()
     rivers = load_rivers()
-    urls = [("/", "1.0", "daily")]
+    urls = [("/", "1.0", "daily"), ("/directory.html", "0.9", "weekly")]
     urls += [(f"/{m['slug']}", "0.9", "weekly") for m in STATES.values()]
     urls += [
         ("/about.html", "0.5", "monthly"),
@@ -366,7 +268,7 @@ def state_html(code):
         "name": meta["h1"],
         "url": SITE + path,
         "description": desc,
-        "isPartOf": {"@type": "WebSite", "name": "FloatETA", "url": SITE + "/"},
+        "isPartOf": {"@type": "WebSite", "name": "Float ETA", "url": SITE + "/"},
         "mainEntity": {
             "@type": "ItemList",
             "numberOfItems": len(rivers),
@@ -411,7 +313,7 @@ def state_html(code):
   </header>
   <main id="main" class="section river-dir">
     <div class="section-head">
-      <h2>Every FloatETA stretch in {esc(meta['name'])}</h2>
+      <h2>Every Float ETA stretch in {esc(meta['name'])}</h2>
       <p>These are real put-in to take-out runs, not a generic state list. Times on each river page are typical raft times at a reference flow; the <a href="/#calculator">live calculator</a> scales them to today's CFS.
         Also live: {others}.</p>
     </div>
@@ -430,7 +332,7 @@ def river_html(river):
     miles = sum(s["miles"] for s in river["sections"])
     diffs = sorted({s["difficulty"] for s in river["sections"]})
     path = f"/rivers/{river['id']}"
-    title = f"{river['name']} Float Time | {st['name']} | FloatETA"
+    title = f"{river['name']} Float Time | {st['name']} | Float ETA"
     desc = (
         f"{river['blurb']} {len(river['sections'])} stretch"
         f"{'es' if len(river['sections']) != 1 else ''}, {miles:g} miles, "
@@ -460,7 +362,7 @@ def river_html(river):
                 "text": (
                     f"About {_fmt_hours(hours)} in a raft at a typical "
                     f"{int(river['refFlowCfs'])} cfs. Kayaks run a bit faster; "
-                    f"tubes run slower. Stopping to fish adds about 35 minutes per mile. "
+                    f"tubes run slower. Add your own stop or fishing time in the planner. "
                     f"{sec['notes']}"
                 ),
             },
@@ -473,7 +375,7 @@ def river_html(river):
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": (
-                    f"FloatETA uses USGS gauge {river['gauge']} ({river['gaugeName']}) "
+                    f"Float ETA uses USGS gauge {river['gauge']} ({river['gaugeName']}) "
                     f"for live discharge. Speed is scaled from a reference "
                     f"{int(river['refFlowCfs'])} cfs drift of about {river['refSpeedMph']} mph."
                 ),
@@ -565,12 +467,12 @@ def river_html(river):
     </div>
   </header>
   <main id="main" class="section river-page">
-    <p>FloatETA estimates how long this float <em>actually</em> takes from live discharge
+    <p>Float ETA estimates how long this float <em>actually</em> takes from live discharge
       at <strong>USGS {esc(river['gauge'])}</strong> ({esc(river['gaugeName'])}), not a
       guidebook average. At a typical <strong>{int(river['refFlowCfs']):,} cfs</strong>,
       a raft drifts about <strong>{river['refSpeedMph']} mph</strong> here. Higher flow
       speeds you up; skinny water slows you down. Kayaks run faster than the current,
-      tubes slower. Optional fishing adds 35 minutes per mile.</p>
+      tubes slower. Add your own total time for stops and fishing.</p>
     {multi}
     <p>The {esc(river['name'])} listing covers <strong>{miles:g} river miles</strong> across
       {len(river['sections'])} access-to-access stretch{'es' if len(river['sections']) != 1 else ''}
@@ -625,8 +527,8 @@ def river_html(river):
 
 
 def not_found_html():
-    title = "Page not found | FloatETA"
-    desc = f"That page is not on FloatETA. Browse {_state_names()} river float times or open the live calculator."
+    title = "Page not found | Float ETA"
+    desc = f"That page is not on Float ETA. Browse {_state_names()} river float times or open the live calculator."
     rivers = load_rivers()[:8]
     links = "".join(
         f'<li><a href="/rivers/{esc(r["id"])}">{esc(r["name"])}</a></li>' for r in rivers
@@ -637,7 +539,7 @@ def not_found_html():
         + f"""
     <div class="hero-content">
       <h1>This page drifted off</h1>
-      <p class="hero-sub">404 — that URL is not a FloatETA page. Try the calculator or a river directory.</p>
+      <p class="hero-sub">404 — that URL is not a Float ETA page. Try the calculator or a river directory.</p>
     </div>
     <div class="hero-wave" aria-hidden="true">
       <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,35 C960,70 1200,10 1440,45 L1440,90 L0,90 Z" fill="var(--bg)"/></svg>

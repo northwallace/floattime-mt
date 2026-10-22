@@ -1,0 +1,39 @@
+{
+  "id": "flathead-north",
+  "name": "North Fork Flathead",
+  "gauge": "12355500",
+  "gaugeName": "N F Flathead nr Columbia Falls",
+  "lat": 48.77,
+  "lon": -114.28,
+  "refFlowCfs": 2500,
+  "refSpeedMph": 3.6,
+  "blurb": "Wild & Scenic water along the Glacier boundary. Logjams, gravel bars, and Polebridge pie.",
+  "sections": [
+    {
+      "id": "polebridge-coal",
+      "putIn": "Polebridge",
+      "takeOut": "Coal Creek",
+      "miles": 9,
+      "difficulty": "Class I–II",
+      "notes": "Stop at the Mercantile before you launch. Wood is the hazard."
+    },
+    {
+      "id": "coal-big-creek",
+      "putIn": "Coal Creek",
+      "takeOut": "Big Creek",
+      "miles": 9,
+      "difficulty": "Class I–II",
+      "notes": "Steady Class II riffles. Glacier on river left."
+    },
+    {
+      "id": "big-creek-glacier-rim",
+      "putIn": "Big Creek",
+      "takeOut": "Glacier Rim",
+      "miles": 11.5,
+      "difficulty": "Class I–II",
+      "notes": "Great Northern Flats is an optional pullout. Blankenship Bridge is the confluence takeout a few miles below Glacier Rim."
+    }
+  ],
+  "state": "MT",
+  "timezone": "America/Denver"
+}

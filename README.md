@@ -1,66 +1,135 @@
-# FloatETA 🛶
+# Float ETA
 
-**How long will your river float *actually* take?** Live at [floateta.com](https://floateta.com).
+A river float planner with live USGS flow, river-local daylight, optional fishing time,
+community reports, and a searchable river catalog. Python standard library on
+the server; HTML, CSS, and JavaScript in the browser.
 
-A website that turns live USGS streamflow data into real-world float time
-estimates for Montana's most popular rivers — with daylight countdowns, water
-temperature, weather at the put-in, condition ratings, flow trends, and
-community-sourced obstruction reports.
+## Run locally
 
-## Run it
-
-```bash
-python3 server.py        # http://localhost:8000
-python3 server.py 3000   # custom port
+```sh
+python3 tools/build_catalog.py
+python3 server.py 8000
 ```
 
-No dependencies — pure Python 3 standard library on the back end, vanilla
-HTML/CSS/JS on the front end.
+Open http://localhost:8000. Python 3.9+ with IANA timezone data is required.
 
-## What it does
+## Add a river (daily workflow)
 
-- **Live flow data** — pulls instantaneous discharge (cfs) and water temp from
-  the [USGS Water Services API](https://waterservices.usgs.gov/) for 10 rivers
-  / 18 float sections, with a 7-day flow sparkline and 24-hour trend.
-- **Float time estimates** — per-river calibrated drift speed scaled by the
-  hydraulic-geometry relationship v ∝ Q^0.34, adjusted per craft (raft, kayak,
-  tube, SUP).
-- **Daylight planning** — computes sunset at the put-in and shows the latest
-  launch time that still gets you to the takeout before dark.
-- **Condition ratings** — Low & bony / Mellow / Prime / High & fast / Runoff,
-  based on current flow vs. the river's reference flow.
-- **Weather at the put-in** — air temp and wind from
-  [Open-Meteo](https://open-meteo.com/) (free, no API key).
-- **Community river reports** — anyone can report strainers, diversion dams,
-  fences, and other obstructions; others can confirm ("still there") or mark
-  cleared. Reports with 3+ "cleared" votes are hidden automatically.
-  Persisted server-side in `data/reports.json`.
-- **Ad slots** — placeholder leaderboard and in-content units, ready to swap
-  for Google AdSense once the site is approved (see the comment in
-  `public/index.html`).
+1. Copy a nearby record in `catalog/rivers/` to a new file named after its unique
+   URL ID, for example `catalog/rivers/new-river.json`.
+2. Set `id` to `new-river`. Keep IDs stable after publishing so existing links work.
+3. Fill in the name, state, gauge ID (a quoted string, including leading zeros),
+   gauge name, put-in coordinates, **IANA timezone**, reference flow and speed,
+   blurb, and sections. Every section needs its own ID, put-in, takeout, miles,
+   difficulty, and notes. Use `multiDay: true` for designated overnight routes.
+4. Verify gauge coverage, access, distance, difficulty, and calibration. Validation
+   catches structural errors; it cannot certify geographic or river information.
+5. Build and check:
+
+```sh
+python3 tools/build_catalog.py
+python3 -m unittest discover -s tests
+# Optional calculator regression tests (Node 18+):
+node --test tests/planner.test.cjs
+```
+
+6. Commit the source record **and** generated `public/catalog.json`. Deploy as
+   usual. The calculator, search, directories, river pages, counts, and sitemap
+   all pick up the record. No HTML or application code edits are needed.
+
+### Add a state
+
+Add the state's `id`, `name`, unique `slug`, `agency`, and HTTPS `agencyUrl` to
+`catalog/settings.json`, then add its rivers and rebuild. Restart/redeploy the
+server to pick up new state routing. The planner and generated state directory
+navigation are automatic. About/contact/privacy pages contain editorial coverage
+copy and can be updated separately when announcing new state coverage.
+
+### Catalog validation
+
+The build rejects malformed/duplicate IDs, filename/ID mismatches, unknown
+states, invalid gauge strings or timezones, missing sections, duplicate section
+IDs, and invalid coordinates, mileage or calibration values. JSON parsing safely
+preserves quotes/braces in names and notes. `--check` also rejects stale generated
+output; the Render build runs this check and Python tests before starting.
+
+`public/catalog.json` is generated. Edit `catalog/`, not the generated file.
+The legacy `public/rivers.js` has been replaced by the catalog source files.
+
+## How growth is handled
+
+- One small source file per river; independent additions are easy to review.
+- One shared, generated catalog drives browser and SEO content.
+- New reports reference stable river IDs, so similarly named rivers remain distinct.
+- Search covers names, states and access points; results render 12 at a time.
+- Only the selected river loads gauge and weather data. Requests share a short
+  cache and in-flight promise. Search is debounced; outdated responses cannot
+  replace the newly selected river.
+- SEO parses JSON, caches by modification time, and renders route pages on demand.
+- The full catalog is downloaded once. This is suitable for hundreds to low
+  thousands of records; for much larger datasets, move search to a paginated API
+  rather than loading the entire catalog. This is not an unlimited-scale claim.
+
+## Planning behavior
+
+Flow readings older than two hours, nonpositive flow, and missing flow do not
+produce a current estimate. Cached requests refresh after five minutes, and
+visible-page results refresh periodically. Temperature freshness is independent.
+All launch/arrival/sunset times use the river's timezone. Launch times refer to
+**today**, including when opening a shared link. Shared links preserve river,
+craft, fishing preference and optional launch time.
+
+Trips are rounded to five minutes; fishing adds 35 minutes per mile. Multi-day
+results show total water time and minimum days at seven hours/day, without a
+fabricated arrival time. Tubes and recreational SUPs do not receive an estimate
+for Class III+ sections. No flow badge claims a route is safe.
+
+Existing timezone records were initialized from the rivers' regions; verify
+boundary rivers and put-in locations when reviewing or adding records.
+
+## Reports, storage and production
+
+Reports and contact submissions remain JSON files. Set `DATA_DIR` to durable
+storage in production (the default is `./data`). Back up that directory. The
+existing Render blueprint does not provision a persistent disk. Confirm your
+actual hosting configuration before relying on report persistence.
+
+Clear votes are advisory and no longer automatically hide hazards. Repeated
+votes are deduplicated by connection address per report; this is a basic guard,
+not identity verification. A reverse proxy or shared network can group users
+under one address. Configure a trusted proxy/identity strategy and rate limiting
+at the hosting boundary before relying on voting at scale. Report submission
+moderation and robust anti-spam controls remain follow-up work. Reports still
+expire after 45 days without activity. No reports never means no hazards.
 
 ## Project layout
 
-```
-server.py            Python stdlib server: static files + reports API
-public/index.html    Page markup + ad slots
-public/styles.css    Styling (dark riverside theme)
-public/rivers.js     River/section database + calibration values
-public/app.js        USGS fetch, float math, sunset calc, reports UI
-data/reports.json    Obstruction report storage (created/updated at runtime)
-```
+- `catalog/rivers/*.json` — editable river records
+- `catalog/settings.json` — states and craft multipliers
+- `tools/build_catalog.py` — catalog validator/builder
+- `public/catalog.json` — generated shared data
+- `public/planner.js` — pure date/time and float calculation functions
+- `public/app.js` — data fetching, search and interface
+- `public/styles.css` — shared responsive design
+- `seo.py` — state pages, river pages and sitemap
+- `server.py` — static pages, reports and contact API
+- `tests/` — catalog/SEO and calculator regressions
 
-## Adding a river or section
+## Release and hosting
 
-Edit `public/rivers.js`. Each river needs a USGS gauge ID, put-in coordinates
-(for sunset/weather), a `refFlowCfs`/`refSpeedMph` calibration pair (typical
-drift speed at a typical flow), and one or more sections with approximate
-mileages.
+Production is the existing Render `floattime-mt` service in Oregon, on the
+$7/month `0.5c-512mb` plan. The blueprint explicitly preserves that plan.
+Pushes to `main` auto-deploy. Do not push until the storage setup is complete.
 
-## Notes & caveats
+The Blueprint provisions a 1 GB persistent disk named `floattime-data` at
+`/opt/render/project/src/data`, which is the server's default `DATA_DIR`. Back up
+that directory periodically and never commit private submissions to Git.
 
-- Mileages and speed calibrations are estimates — refine them against real
-  float logs over time.
-- The reports API has no auth/rate limiting; add both before going public.
-- For production, put the Python server behind a real host (or port the ~200
-  lines of API to any stack) and serve over HTTPS.
+For each rollout, run the catalog validator, Python tests, and Node calculator/UI
+tests locally. After publishing, check health, the homepage, directory, river
+links, reports, contact page, and mobile layout on `floateta.com`.
+
+The home page deliberately starts with no state or river selected. A `?river=`
+link selects that river. At most four popular rivers appear for the chosen state;
+the separate directory searches the catalog and displays 12 results at a time.
+The original gauges, seven-day graph, fishing toggle, and stretch cards remain.

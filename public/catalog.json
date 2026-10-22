@@ -1,0 +1,1554 @@
+{
+  "version": 1,
+  "states": [
+    {
+      "id": "MT",
+      "name": "Montana",
+      "slug": "montana",
+      "agency": "MT FWP",
+      "agencyUrl": "https://fwp.mt.gov/activities/boating"
+    },
+    {
+      "id": "ID",
+      "name": "Idaho",
+      "slug": "idaho",
+      "agency": "Idaho Fish and Game",
+      "agencyUrl": "https://idfg.idaho.gov/"
+    },
+    {
+      "id": "OR",
+      "name": "Oregon",
+      "slug": "oregon",
+      "agency": "the Oregon State Marine Board",
+      "agencyUrl": "https://www.oregon.gov/osmb/"
+    }
+  ],
+  "craft": [
+    {
+      "id": "raft",
+      "label": "Raft / drift boat",
+      "mult": 1
+    },
+    {
+      "id": "kayak",
+      "label": "Kayak / canoe (paddling)",
+      "mult": 1.2
+    },
+    {
+      "id": "tube",
+      "label": "Inner tube",
+      "mult": 0.72
+    },
+    {
+      "id": "sup",
+      "label": "Paddleboard",
+      "mult": 1.05
+    }
+  ],
+  "rivers": [
+    {
+      "id": "boise",
+      "name": "Boise River (Greenbelt)",
+      "state": "ID",
+      "gauge": "13206000",
+      "gaugeName": "Boise River at Glenwood Bridge nr Boise",
+      "lat": 43.661,
+      "lon": -116.279,
+      "refFlowCfs": 1400,
+      "refSpeedMph": 2.4,
+      "blurb": "Idaho's busiest tube run — Barber Park to downtown, with a city shuttle and 100,000+ floaters a summer.",
+      "sections": [
+        {
+          "id": "barber-ann-morrison",
+          "putIn": "Barber Park",
+          "takeOut": "Ann Morrison Park",
+          "miles": 6,
+          "difficulty": "Class I",
+          "notes": "The classic Boise float. About 2–3 hours in a tube. Glass is banned. Ada County shuttle in season."
+        },
+        {
+          "id": "ann-morrison-eagle",
+          "putIn": "Ann Morrison Park",
+          "takeOut": "Eagle Island",
+          "miles": 8,
+          "difficulty": "Class I",
+          "notes": "Quieter miles west of downtown. Watch for diversion structures and the south channel split."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "clearwater",
+      "name": "Clearwater River",
+      "state": "ID",
+      "gauge": "13340000",
+      "gaugeName": "Clearwater River at Orofino",
+      "lat": 46.478,
+      "lon": -116.258,
+      "refFlowCfs": 8000,
+      "refSpeedMph": 3.3,
+      "blurb": "Big, warm, summer water from Orofino toward Lewiston. A North Idaho alternative to the crowded Greenbelt.",
+      "sections": [
+        {
+          "id": "orofino-peck",
+          "putIn": "Orofino",
+          "takeOut": "Peck",
+          "miles": 12,
+          "difficulty": "Class I",
+          "notes": "Wide river, easy current. Jet boats and fishing traffic on weekends."
+        },
+        {
+          "id": "peck-spalding",
+          "putIn": "Peck",
+          "takeOut": "Spalding (Nez Perce NHP)",
+          "miles": 16,
+          "difficulty": "Class I",
+          "notes": "Longer valley miles into the Lewiston area. Wind can come up the canyon in the afternoon."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    },
+    {
+      "id": "henrys-fork-ashton",
+      "name": "Henry's Fork (Ashton)",
+      "state": "ID",
+      "gauge": "13046000",
+      "gaugeName": "Henrys Fork nr Ashton",
+      "lat": 44.07,
+      "lon": -111.511,
+      "refFlowCfs": 1800,
+      "refSpeedMph": 3,
+      "blurb": "Below Mesa Falls — Warm River and Ashton water, slower than the Box and still packed with rainbows.",
+      "sections": [
+        {
+          "id": "warm-river-ashton",
+          "putIn": "Warm River Campground",
+          "takeOut": "Ashton (Vernon area)",
+          "miles": 8,
+          "difficulty": "Class I",
+          "notes": "Put in below Mesa Falls. Do not launch above the falls. Gentle gradient, watch for diversion dams near Ashton."
+        },
+        {
+          "id": "vernon-st-anthony",
+          "putIn": "Vernon Bridge",
+          "takeOut": "St. Anthony",
+          "miles": 10,
+          "difficulty": "Class I",
+          "notes": "Valley miles toward the Snake confluence. Irrigation can skinny this stretch in late summer."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "henrys-fork-box",
+      "name": "Henry's Fork (Box Canyon)",
+      "state": "ID",
+      "gauge": "13042500",
+      "gaugeName": "Henrys Fork nr Island Park",
+      "lat": 44.417,
+      "lon": -111.395,
+      "refFlowCfs": 1400,
+      "refSpeedMph": 3.2,
+      "blurb": "Island Park Dam to Last Chance — a short basalt canyon on some of the most famous trout water in the West.",
+      "sections": [
+        {
+          "id": "box-canyon",
+          "putIn": "Island Park Dam (Box Canyon)",
+          "takeOut": "Last Chance",
+          "miles": 4,
+          "difficulty": "Class II",
+          "notes": "Cold, rocky, and crowded with anglers. Give waders room. Harriman State Park below Last Chance is mostly closed to boats — don't float into the Ranch."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "lochsa",
+      "name": "Lochsa River",
+      "state": "ID",
+      "gauge": "13337000",
+      "gaugeName": "Lochsa River nr Lowell",
+      "lat": 46.151,
+      "lon": -115.587,
+      "refFlowCfs": 4000,
+      "refSpeedMph": 5.5,
+      "blurb": "Highway 12 whitewater. A spring Class III–IV that is over by the time the rest of Idaho is just warming up.",
+      "sections": [
+        {
+          "id": "knife-fish",
+          "putIn": "White Pine / Knife Blade",
+          "takeOut": "Fish Creek",
+          "miles": 11,
+          "difficulty": "Class III–IV",
+          "notes": "Peak is May–June. Not a tube float. USGS stage at this gauge is not the Lowell Bridge staff — check Lochsa.info for the boater gauge."
+        },
+        {
+          "id": "gateway-lowell",
+          "putIn": "Wilderness Gateway",
+          "takeOut": "Lowell",
+          "miles": 13,
+          "difficulty": "Class III–IV",
+          "notes": "Packed rapids to the Selway confluence. Miss the takeout and you are on the Clearwater."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    },
+    {
+      "id": "payette-nf",
+      "name": "North Fork Payette (Cabarton)",
+      "state": "ID",
+      "gauge": "13246000",
+      "gaugeName": "NF Payette River nr Banks",
+      "lat": 44.114,
+      "lon": -116.107,
+      "refFlowCfs": 1200,
+      "refSpeedMph": 6,
+      "blurb": "Idaho's hardest roadside creek. Cabarton to Banks is continuous Class IV–V — experts only.",
+      "sections": [
+        {
+          "id": "cabarton-banks",
+          "putIn": "Cabarton Bridge",
+          "takeOut": "Banks",
+          "miles": 16,
+          "difficulty": "Class IV–V",
+          "notes": "Not a float trip. Steep, wooded, and famous for wrapping boats. Experienced whitewater crews only — or watch from the highway."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "payette-main",
+      "name": "Payette River (Banks)",
+      "state": "ID",
+      "gauge": "13247500",
+      "gaugeName": "Payette River nr Horseshoe Bend",
+      "lat": 43.943,
+      "lon": -116.197,
+      "refFlowCfs": 2500,
+      "refSpeedMph": 4.5,
+      "blurb": "Idaho's closest commercial whitewater to Boise. Banks to Horseshoe Bend — waves, holes, and a highway shuttle.",
+      "sections": [
+        {
+          "id": "banks-beehive",
+          "putIn": "Banks",
+          "takeOut": "Beehive Bend",
+          "miles": 5,
+          "difficulty": "Class II–III",
+          "notes": "Upper Main. Payette River Pass parking. Not a tube float. Bennett's Rock is the first real drop."
+        },
+        {
+          "id": "beehive-hsb",
+          "putIn": "Beehive Bend",
+          "takeOut": "Horseshoe Bend boat ramp",
+          "miles": 6,
+          "difficulty": "Class III",
+          "notes": "Mixmaster and the rest of the Lower Main. Rafts and kayaks. Scout or go with a guide if it's new water."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "salmon-riggins",
+      "name": "Salmon River (Riggins)",
+      "state": "ID",
+      "gauge": "13317000",
+      "gaugeName": "Salmon River at White Bird",
+      "lat": 45.75,
+      "lon": -116.324,
+      "refFlowCfs": 10000,
+      "refSpeedMph": 4.5,
+      "blurb": "Lower Salmon country. Day floats past Riggins, or the multi-day Hammer Creek to Heller Bar desert canyon.",
+      "sections": [
+        {
+          "id": "riggins-lucile",
+          "putIn": "Riggins city",
+          "takeOut": "Lucile",
+          "miles": 8,
+          "difficulty": "Class II–III",
+          "notes": "Town-to-town. Warm water in summer, jet boats possible. Time Zone Rapid is the named drop."
+        },
+        {
+          "id": "hammer-heller",
+          "putIn": "Hammer Creek",
+          "takeOut": "Heller Bar (Snake confluence)",
+          "miles": 73,
+          "difficulty": "Class III",
+          "notes": "The Lower Salmon. Typically 3–4 days. Snowhole is the big rapid. BLM camps, rattlesnakes, and a serious shuttle."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "salmon-salmon",
+      "name": "Salmon River (Salmon)",
+      "state": "ID",
+      "gauge": "13302500",
+      "gaugeName": "Salmon River at Salmon",
+      "lat": 45.184,
+      "lon": -113.895,
+      "refFlowCfs": 2500,
+      "refSpeedMph": 3.4,
+      "blurb": "The River of No Return at town scale — Salmon to North Fork is a big, friendly Class I–II day.",
+      "sections": [
+        {
+          "id": "salmon-north-fork",
+          "putIn": "Salmon (Island Park ramp)",
+          "takeOut": "North Fork",
+          "miles": 22,
+          "difficulty": "Class I–II",
+          "notes": "Highway 93 shuttle. Big water, easy gradient. North Fork is where the Middle Fork comes in and the wilderness section begins."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "selway",
+      "name": "Selway River (Permit)",
+      "state": "ID",
+      "gauge": "13336500",
+      "gaugeName": "Selway River nr Lowell",
+      "lat": 46.087,
+      "lon": -115.514,
+      "refFlowCfs": 3000,
+      "refSpeedMph": 4,
+      "blurb": "Idaho's other permit-lottery classic. 47 canyon miles, one launch a day, no cell service.",
+      "multiDay": true,
+      "sections": [
+        {
+          "id": "paradise-race-creek",
+          "putIn": "Paradise Guard Station",
+          "takeOut": "Race Creek / Selway Falls",
+          "miles": 47,
+          "difficulty": "Class III–IV",
+          "notes": "Forest Service permit required. Typically 4–5 days in May–July. Moose Creek is midway. Portage or scout Selway Falls at the end."
+        }
+      ],
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "id": "payette-sf",
+      "name": "South Fork Payette",
+      "state": "ID",
+      "gauge": "13235000",
+      "gaugeName": "South Fork Payette River at Lowman",
+      "lat": 44.085,
+      "lon": -115.622,
+      "refFlowCfs": 1200,
+      "refSpeedMph": 4.2,
+      "blurb": "Canyon water out of Lowman — hot springs on the bank, Swirly Canyon in the middle, Garden Valley at the bottom.",
+      "sections": [
+        {
+          "id": "lowman-deadwood",
+          "putIn": "Kirkham / Lowman",
+          "takeOut": "Deadwood Campground",
+          "miles": 6,
+          "difficulty": "Class II–III",
+          "notes": "Warm up. Staircase above Lowman is a separate Class IV run — don't put in there by mistake."
+        },
+        {
+          "id": "danskin-confluence",
+          "putIn": "Danskin",
+          "takeOut": "Confluence (Garden Valley)",
+          "miles": 9,
+          "difficulty": "Class II–III",
+          "notes": "Swirly Canyon miles. Payette River Pass sites. Take out before you join the Main at Banks if that's the plan."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "snake-sf-canyon",
+      "name": "South Fork Snake (Canyon)",
+      "state": "ID",
+      "gauge": "13037500",
+      "gaugeName": "Snake River nr Heise",
+      "lat": 43.613,
+      "lon": -111.66,
+      "refFlowCfs": 9000,
+      "refSpeedMph": 3.8,
+      "blurb": "The Conant canyon — largest remaining Yellowstone-cutthroat fishery, and no takeout in the middle.",
+      "sections": [
+        {
+          "id": "conant-byington",
+          "putIn": "Conant",
+          "takeOut": "Byington",
+          "miles": 26,
+          "difficulty": "Class I–II",
+          "notes": "Full-day canyon. No intermediate ramp. Cottonwood gallery, eagles, and a committed float."
+        },
+        {
+          "id": "byington-lorenzo",
+          "putIn": "Byington",
+          "takeOut": "Lorenzo",
+          "miles": 12,
+          "difficulty": "Class I",
+          "notes": "River opens into the Heise valley. Twin Bridges is an optional pullout. Watch irrigation diversions."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "snake-sf-swan",
+      "name": "South Fork Snake (Swan Valley)",
+      "state": "ID",
+      "gauge": "13032500",
+      "gaugeName": "Snake River nr Irwin",
+      "lat": 43.351,
+      "lon": -111.219,
+      "refFlowCfs": 9000,
+      "refSpeedMph": 4,
+      "blurb": "Palisades Dam to Conant — big cutthroat water in Swan Valley before the canyon walls close in.",
+      "sections": [
+        {
+          "id": "palisades-spring",
+          "putIn": "Palisades Dam",
+          "takeOut": "Spring Creek",
+          "miles": 8,
+          "difficulty": "Class I",
+          "notes": "Dam-controlled. Fall Creek falls comes in river-left. Palisades Creek is an optional early takeout."
+        },
+        {
+          "id": "spring-conant",
+          "putIn": "Spring Creek",
+          "takeOut": "Conant",
+          "miles": 8,
+          "difficulty": "Class I",
+          "notes": "Cottonwood islands and braids. The last easy miles before the Conant-to-Byington canyon."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "st-joe",
+      "name": "St. Joe River",
+      "state": "ID",
+      "gauge": "12414500",
+      "gaugeName": "St Joe River at Calder",
+      "lat": 47.274,
+      "lon": -116.189,
+      "refFlowCfs": 1800,
+      "refSpeedMph": 3.3,
+      "blurb": "Wild & Scenic water out of the Idaho panhandle. Shadowy St. Joe — cedar, cutthroat, and fewer people than the Coeur d'Alene.",
+      "sections": [
+        {
+          "id": "avery-calder",
+          "putIn": "Avery",
+          "takeOut": "Calder",
+          "miles": 18,
+          "difficulty": "Class I–II",
+          "notes": "Upper-ish Joe. Wood and cold water. Best in early summer before it drops."
+        },
+        {
+          "id": "calder-st-maries",
+          "putIn": "Calder",
+          "takeOut": "St. Maries",
+          "miles": 16,
+          "difficulty": "Class I",
+          "notes": "Flatter miles into the lake country. Watch for motorboats near town."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    },
+    {
+      "id": "teton",
+      "name": "Teton River (Driggs)",
+      "state": "ID",
+      "gauge": "13052200",
+      "gaugeName": "Teton River ab South Leigh Creek nr Driggs",
+      "lat": 43.782,
+      "lon": -111.209,
+      "refFlowCfs": 500,
+      "refSpeedMph": 2.6,
+      "blurb": "Teton Valley meadow water under the Idaho Tetons. Small, technical, and bony by August.",
+      "sections": [
+        {
+          "id": "bates-rainey",
+          "putIn": "Bates Bridge",
+          "takeOut": "Rainey Bridge",
+          "miles": 7,
+          "difficulty": "Class I",
+          "notes": "Classic Teton Valley drift. Brushy banks and irrigation — scout new wood every spring."
+        },
+        {
+          "id": "rainey-cache",
+          "putIn": "Rainey Bridge",
+          "takeOut": "Cache Bridge",
+          "miles": 6,
+          "difficulty": "Class I",
+          "notes": "Gets skinny late. Drift boats more than tubes. Respect private land at the fences."
+        }
+      ],
+      "timezone": "America/Boise",
+      "multiDay": false
+    },
+    {
+      "id": "beaverhead",
+      "name": "Beaverhead River",
+      "gauge": "06016000",
+      "gaugeName": "Beaverhead at Barretts",
+      "lat": 45.12,
+      "lon": -112.73,
+      "refFlowCfs": 400,
+      "refSpeedMph": 2.4,
+      "blurb": "Tailwater below Clark Canyon Dam. Tight, weedy, and technical — drift boats more than tubes.",
+      "sections": [
+        {
+          "id": "dam-high-bridge",
+          "putIn": "Clark Canyon Dam",
+          "takeOut": "High Bridge FAS",
+          "miles": 9,
+          "difficulty": "Class I",
+          "notes": "Best floating on the river. Narrow and brushy. Great trout water."
+        },
+        {
+          "id": "high-bridge-barretts",
+          "putIn": "High Bridge FAS",
+          "takeOut": "Barretts Dam",
+          "miles": 10,
+          "difficulty": "Class I",
+          "notes": "Portage Barretts Dam if you continue. Below here the river slows and fills with fences."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "big-hole",
+      "name": "Big Hole River",
+      "gauge": "06025500",
+      "gaugeName": "Big Hole near Melrose",
+      "lat": 45.54,
+      "lon": -112.69,
+      "refFlowCfs": 900,
+      "refSpeedMph": 3.5,
+      "blurb": "Southwest Montana's salmonfly river. Canyon scenery from Divide to Melrose, then open ranchland.",
+      "sections": [
+        {
+          "id": "divide-melrose",
+          "putIn": "Divide Bridge",
+          "takeOut": "Melrose (Salmon Fly FAS)",
+          "miles": 14,
+          "difficulty": "Class I–II",
+          "notes": "The canyon section. Maiden Rock is a midway takeout (~6 mi). Sunday nonresident float closures in summer — check FWP."
+        },
+        {
+          "id": "melrose-glen",
+          "putIn": "Melrose (Salmon Fly FAS)",
+          "takeOut": "Glen FAS",
+          "miles": 14,
+          "difficulty": "Class I",
+          "notes": "Lower river, more braids. Browne's Bridge is roughly halfway."
+        },
+        {
+          "id": "glen-notch",
+          "putIn": "Glen FAS",
+          "takeOut": "Notch Bottom FAS",
+          "miles": 7,
+          "difficulty": "Class I",
+          "notes": "Away from the road. Friday outfitter closure in summer. Watch for rattlesnakes at the takeout."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "bitterroot-upper",
+      "name": "Bitterroot River (Darby / Hamilton)",
+      "gauge": "12344000",
+      "gaugeName": "Bitterroot near Darby",
+      "lat": 46.02,
+      "lon": -114.18,
+      "refFlowCfs": 500,
+      "refSpeedMph": 3,
+      "blurb": "Upper valley float. Smaller water, bigger mountains, same logjam problem as downstream.",
+      "sections": [
+        {
+          "id": "darby-wally",
+          "putIn": "Darby",
+          "takeOut": "Wally Crawford FAS",
+          "miles": 6.5,
+          "difficulty": "Class I",
+          "notes": "Heads-up for new wood every runoff."
+        },
+        {
+          "id": "wally-hamilton",
+          "putIn": "Wally Crawford FAS",
+          "takeOut": "Angler's Roost (Hamilton)",
+          "miles": 9,
+          "difficulty": "Class I",
+          "notes": "Serious diversion dam mid-float — portage. Register at Angler's Roost if you use their takeout."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "bitterroot",
+      "name": "Bitterroot River (Stevensville)",
+      "gauge": "12352500",
+      "gaugeName": "Bitterroot near Missoula",
+      "lat": 46.78,
+      "lon": -114.09,
+      "refFlowCfs": 1000,
+      "refSpeedMph": 3,
+      "blurb": "Gentle valley float with Bitterroot peaks for a backdrop. Infamous for shifting logjams.",
+      "sections": [
+        {
+          "id": "bell-crossing-stevi",
+          "putIn": "Bell Crossing",
+          "takeOut": "Stevensville Bridge",
+          "miles": 7,
+          "difficulty": "Class I",
+          "notes": "Channels braid and wood moves every year — heads-up floating."
+        },
+        {
+          "id": "stevi-florence",
+          "putIn": "Stevensville Bridge",
+          "takeOut": "Florence Bridge",
+          "miles": 9,
+          "difficulty": "Class I",
+          "notes": "Check recent obstruction reports — strainers are common here."
+        },
+        {
+          "id": "florence-buckhouse",
+          "putIn": "Florence Bridge",
+          "takeOut": "Buckhouse Bridge (Missoula)",
+          "miles": 11,
+          "difficulty": "Class I",
+          "notes": "Last valley miles into town. Still woody. Stay off new side channels you can't see through."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "blackfoot",
+      "name": "Blackfoot River",
+      "gauge": "12340000",
+      "gaugeName": "Blackfoot near Bonner",
+      "lat": 46.896,
+      "lon": -113.757,
+      "refFlowCfs": 1200,
+      "refSpeedMph": 3.3,
+      "blurb": "A River Runs Through It water. Clear pools, ledge rock, and a famous recreation corridor.",
+      "sections": [
+        {
+          "id": "russell-gates-roundup",
+          "putIn": "Russell Gates FAS",
+          "takeOut": "Roundup Bridge",
+          "miles": 9,
+          "difficulty": "Class I–II",
+          "notes": "Heart of the Blackfoot Recreation Corridor. Roundup Rapid at higher flows."
+        },
+        {
+          "id": "roundup-johnsrud",
+          "putIn": "Roundup Bridge",
+          "takeOut": "Johnsrud Park",
+          "miles": 10,
+          "difficulty": "Class I–II",
+          "notes": "Ledges and boulder gardens; lively at runoff flows."
+        },
+        {
+          "id": "johnsrud-weigh-station",
+          "putIn": "Johnsrud Park",
+          "takeOut": "Weigh Station (Bonner)",
+          "miles": 8,
+          "difficulty": "Class I–II",
+          "notes": "The classic Missoula hot-day float. Thibodeau Rapid midway."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "clark-fork-gorge",
+      "name": "Clark Fork (Alberton Gorge)",
+      "gauge": "12353000",
+      "gaugeName": "Clark Fork below Missoula",
+      "lat": 47,
+      "lon": -114.58,
+      "refFlowCfs": 5000,
+      "refSpeedMph": 4.2,
+      "blurb": "Western Montana's biggest commercial whitewater. Deep green pools, then real holes.",
+      "sections": [
+        {
+          "id": "cyr-tarkio",
+          "putIn": "Cyr Bridge FAS",
+          "takeOut": "Tarkio",
+          "miles": 10,
+          "difficulty": "Class III+",
+          "notes": "Alberton Gorge. Cliffside, Triple Bridges, and the rest. Rafts — not tubes. Don't miss the takeout."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "clark-fork",
+      "name": "Clark Fork River (Missoula)",
+      "gauge": "12340500",
+      "gaugeName": "Clark Fork above Missoula",
+      "lat": 46.87,
+      "lon": -113.937,
+      "refFlowCfs": 2500,
+      "refSpeedMph": 3.5,
+      "blurb": "Float straight through downtown Missoula and wave at Brennan's Wave surfers.",
+      "sections": [
+        {
+          "id": "sharon-caras",
+          "putIn": "Sha-Ron (East Missoula)",
+          "takeOut": "Caras Park",
+          "miles": 6,
+          "difficulty": "Class I–II",
+          "notes": "Brennan's Wave is at the Caras Park takeout — exit river right above it if unsure."
+        },
+        {
+          "id": "caras-kelly-island",
+          "putIn": "Caras Park",
+          "takeOut": "Kelly Island",
+          "miles": 5,
+          "difficulty": "Class I",
+          "notes": "Mellow water below town, braided channels near Kelly Island."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "clarks-fork-yst",
+      "name": "Clarks Fork of the Yellowstone",
+      "gauge": "06208500",
+      "gaugeName": "Clarks Fork Yellowstone at Edgar",
+      "lat": 45.46,
+      "lon": -108.85,
+      "refFlowCfs": 800,
+      "refSpeedMph": 3.6,
+      "blurb": "South-central Montana's other Clarks Fork — Bridger and Fromberg water, not the Idaho canyon.",
+      "sections": [
+        {
+          "id": "bridger-edgar",
+          "putIn": "Bridger",
+          "takeOut": "Edgar",
+          "miles": 12,
+          "difficulty": "Class I–II",
+          "notes": "Prairie-canyon mix. Fromberg is an optional midway town takeout. Irrigation diversions in summer."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "dearborn",
+      "name": "Dearborn River",
+      "gauge": "06073500",
+      "gaugeName": "Dearborn near Craig",
+      "lat": 47.13,
+      "lon": -112.05,
+      "refFlowCfs": 350,
+      "refSpeedMph": 3.8,
+      "blurb": "A short, pretty canyon that dumps into the Missouri. Spring and early-summer water — skinny later.",
+      "sections": [
+        {
+          "id": "hwy200-missouri",
+          "putIn": "Highway 200 / Bean Lake area",
+          "takeOut": "Missouri confluence (Craig)",
+          "miles": 19,
+          "difficulty": "Class I–II",
+          "notes": "Canyon float. Needs decent runoff; at low cfs you will drag. Watch for fences near the mouth."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "gallatin-canyon",
+      "name": "Gallatin River (Canyon)",
+      "gauge": "06043120",
+      "gaugeName": "Gallatin above Deer Creek nr Big Sky",
+      "lat": 45.4,
+      "lon": -111.22,
+      "refFlowCfs": 900,
+      "refSpeedMph": 5.2,
+      "blurb": "Highway 191 whitewater. House Rock and the Mad Mile — rafts and experienced kayakers only.",
+      "sections": [
+        {
+          "id": "greek-creek-storm-castle",
+          "putIn": "Greek Creek",
+          "takeOut": "Storm Castle",
+          "miles": 9,
+          "difficulty": "Class III–IV",
+          "notes": "Screaming Left, House Rock, Mad Mile. Not a tube or beginner run. Commercial rafting water."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "gallatin-lower",
+      "name": "Gallatin River (Valley)",
+      "gauge": "06043500",
+      "gaugeName": "Gallatin near Gallatin Gateway",
+      "lat": 45.507,
+      "lon": -111.271,
+      "refFlowCfs": 800,
+      "refSpeedMph": 3.2,
+      "blurb": "The mellow valley miles below the canyon whitewater. Shallow and quick.",
+      "sections": [
+        {
+          "id": "gateway-shedds",
+          "putIn": "Gallatin Gateway (Axtell Bridge)",
+          "takeOut": "Shedd's Bridge",
+          "miles": 9,
+          "difficulty": "Class I–II",
+          "notes": "Gets bony by August — check the flow before you commit."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "jefferson-canyon",
+      "name": "Jefferson River (Canyon / Three Forks)",
+      "gauge": "06036650",
+      "gaugeName": "Jefferson near Three Forks",
+      "lat": 45.89,
+      "lon": -111.55,
+      "refFlowCfs": 1800,
+      "refSpeedMph": 2.8,
+      "blurb": "Lime-cliff canyon by the Caverns, then braided water into Missouri Headwaters.",
+      "sections": [
+        {
+          "id": "cardwell-sappington",
+          "putIn": "Cardwell Bridge FAS",
+          "takeOut": "Sappington Bridge",
+          "miles": 14,
+          "difficulty": "Class I–II",
+          "notes": "The Jefferson canyon. Long day. Lewis & Clark Caverns State Park is midway."
+        },
+        {
+          "id": "williams-drouillard",
+          "putIn": "Williams Bridge FAS",
+          "takeOut": "Drouillard FAS",
+          "miles": 11,
+          "difficulty": "Class I",
+          "notes": "River opens up and braids. Irrigation can drain this stretch in late summer."
+        },
+        {
+          "id": "drouillard-headwaters",
+          "putIn": "Drouillard FAS",
+          "takeOut": "Missouri Headwaters State Park",
+          "miles": 8,
+          "difficulty": "Class I",
+          "notes": "Ends where the Jefferson, Madison, and Gallatin become the Missouri."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "jefferson-upper",
+      "name": "Jefferson River (Twin Bridges)",
+      "gauge": "06026500",
+      "gaugeName": "Jefferson near Twin Bridges",
+      "lat": 45.54,
+      "lon": -112.33,
+      "refFlowCfs": 1500,
+      "refSpeedMph": 2.7,
+      "blurb": "Quiet brown-trout water. Slow compared with the Madison — and a lot less crowded.",
+      "sections": [
+        {
+          "id": "silver-star-parsons",
+          "putIn": "Silver Star FAS",
+          "takeOut": "Parsons Bridge (Waterloo)",
+          "miles": 6,
+          "difficulty": "Class I",
+          "notes": "Diversion dam just below Waterloo — rope or portage. Don't drift it blind."
+        },
+        {
+          "id": "parsons-parrott",
+          "putIn": "Parsons Bridge",
+          "takeOut": "Parrott Castle FAS",
+          "miles": 10,
+          "difficulty": "Class I",
+          "notes": "Another diversion at Parrott Castle. Meandering valley, watch for fences at low water."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "madison-lower",
+      "name": "Madison River (Lower)",
+      "gauge": "06041000",
+      "gaugeName": "Madison bl Ennis Lake nr McAllister",
+      "lat": 45.487,
+      "lon": -111.633,
+      "refFlowCfs": 1100,
+      "refSpeedMph": 3.4,
+      "blurb": "Bozeman's classic summer float below Ennis Lake — plus Bear Trap Canyon if you want real whitewater.",
+      "sections": [
+        {
+          "id": "bear-trap",
+          "putIn": "Madison Powerhouse (Bear Trap)",
+          "takeOut": "Warm Springs",
+          "miles": 9,
+          "difficulty": "Class III–IV",
+          "notes": "Bear Trap Canyon. Not a tube float. Scout Kitchen Sink. Permits/use limits can apply — check BLM/FWP."
+        },
+        {
+          "id": "warm-springs-blacks-ford",
+          "putIn": "Warm Springs",
+          "takeOut": "Black's Ford",
+          "miles": 7,
+          "difficulty": "Class I",
+          "notes": "The beer-can hatch. Watch for shallow gravel bars in late summer."
+        },
+        {
+          "id": "blacks-ford-greycliff",
+          "putIn": "Black's Ford",
+          "takeOut": "Greycliff",
+          "miles": 9,
+          "difficulty": "Class I",
+          "notes": "Quieter than the upper stretch, good wade-fishing pullouts."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "madison-upper",
+      "name": "Madison River (Upper)",
+      "gauge": "06038800",
+      "gaugeName": "Madison at Kirby Ranch nr Cameron",
+      "lat": 44.899,
+      "lon": -111.593,
+      "refFlowCfs": 1100,
+      "refSpeedMph": 4,
+      "blurb": "The 50-mile riffle. Drift-boat water from Lyons Bridge to Ennis — fast, shallow, and famous.",
+      "sections": [
+        {
+          "id": "lyons-palisades",
+          "putIn": "Lyons Bridge",
+          "takeOut": "Palisades",
+          "miles": 8,
+          "difficulty": "Class I",
+          "notes": "Float fishing starts at Lyons. Steady riffle, big views, beginner-friendly half day."
+        },
+        {
+          "id": "palisades-mcatee",
+          "putIn": "Palisades",
+          "takeOut": "McAtee Bridge",
+          "miles": 9,
+          "difficulty": "Class I",
+          "notes": "Ruby Creek campground is an optional midway takeout. Classic upper-Maddy water."
+        },
+        {
+          "id": "mcatee-varney",
+          "putIn": "McAtee Bridge",
+          "takeOut": "Varney Bridge",
+          "miles": 12,
+          "difficulty": "Class I",
+          "notes": "Full-day riffle. Gradient eases a little; still few eddies. Wind can howl."
+        },
+        {
+          "id": "varney-ennis",
+          "putIn": "Varney Bridge",
+          "takeOut": "Ennis FAS",
+          "miles": 9,
+          "difficulty": "Class I–II",
+          "notes": "Braids and sweeper turns. Eight Mile Ford and Burnt Tree are optional takeouts. No float-fishing below the Ennis highway bridge."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "missouri-breaks",
+      "name": "Missouri River (Breaks)",
+      "gauge": "06090800",
+      "gaugeName": "Missouri at Fort Benton",
+      "lat": 47.82,
+      "lon": -110.67,
+      "refFlowCfs": 6000,
+      "refSpeedMph": 2.8,
+      "blurb": "White Cliffs and the Wild & Scenic Breaks. Multi-day canoe country out of Fort Benton.",
+      "multiDay": true,
+      "sections": [
+        {
+          "id": "fort-benton-judith",
+          "putIn": "Fort Benton",
+          "takeOut": "Judith Landing",
+          "miles": 149,
+          "difficulty": "Class I",
+          "notes": "BLM Wild & Scenic. Typically 3–4 days. Coal Banks is a common midway access. Shuttle is serious — plan it."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver"
+    },
+    {
+      "id": "missouri-craig",
+      "name": "Missouri River (Craig)",
+      "gauge": "06066500",
+      "gaugeName": "Missouri bl Holter Dam",
+      "lat": 47,
+      "lon": -112.01,
+      "refFlowCfs": 4000,
+      "refSpeedMph": 3,
+      "blurb": "Tailwater giant. Steady dam-controlled flows, trout everywhere, drift boats everywhere too.",
+      "sections": [
+        {
+          "id": "holter-craig",
+          "putIn": "Holter Dam",
+          "takeOut": "Craig",
+          "miles": 3.5,
+          "difficulty": "Class I",
+          "notes": "Short and sweet. Busy boat ramp on summer weekends."
+        },
+        {
+          "id": "craig-mtn-palace",
+          "putIn": "Craig",
+          "takeOut": "Mountain Palace",
+          "miles": 8,
+          "difficulty": "Class I",
+          "notes": "Canyon scenery, steady current the whole way."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "flathead-north",
+      "name": "North Fork Flathead",
+      "gauge": "12355500",
+      "gaugeName": "N F Flathead nr Columbia Falls",
+      "lat": 48.77,
+      "lon": -114.28,
+      "refFlowCfs": 2500,
+      "refSpeedMph": 3.6,
+      "blurb": "Wild & Scenic water along the Glacier boundary. Logjams, gravel bars, and Polebridge pie.",
+      "sections": [
+        {
+          "id": "polebridge-coal",
+          "putIn": "Polebridge",
+          "takeOut": "Coal Creek",
+          "miles": 9,
+          "difficulty": "Class I–II",
+          "notes": "Stop at the Mercantile before you launch. Wood is the hazard."
+        },
+        {
+          "id": "coal-big-creek",
+          "putIn": "Coal Creek",
+          "takeOut": "Big Creek",
+          "miles": 9,
+          "difficulty": "Class I–II",
+          "notes": "Steady Class II riffles. Glacier on river left."
+        },
+        {
+          "id": "big-creek-glacier-rim",
+          "putIn": "Big Creek",
+          "takeOut": "Glacier Rim",
+          "miles": 11.5,
+          "difficulty": "Class I–II",
+          "notes": "Great Northern Flats is an optional pullout. Blankenship Bridge is the confluence takeout a few miles below Glacier Rim."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "rock-creek",
+      "name": "Rock Creek (Clinton)",
+      "gauge": "12334510",
+      "gaugeName": "Rock Creek near Clinton",
+      "lat": 46.8,
+      "lon": -113.7,
+      "refFlowCfs": 500,
+      "refSpeedMph": 4,
+      "blurb": "Blue-ribbon creek east of Missoula. Fast, woody, and closed to boats after June 30.",
+      "sections": [
+        {
+          "id": "dalles",
+          "putIn": "Bitterroot Flat / Dalles",
+          "takeOut": "Harry's Flat",
+          "miles": 9,
+          "difficulty": "Class II–III",
+          "notes": "The Dalles boulder garden. Boats prohibited July 1–Nov 30. Scout wood every spring."
+        },
+        {
+          "id": "harrys-votm",
+          "putIn": "Harry's Flat",
+          "takeOut": "Valley of the Moon",
+          "miles": 11,
+          "difficulty": "Class I–II",
+          "notes": "Classic spring salmonfly float. Strainers are the hazard, not rapids."
+        },
+        {
+          "id": "votm-clinton",
+          "putIn": "Valley of the Moon",
+          "takeOut": "Clinton / Clark Fork confluence",
+          "miles": 3,
+          "difficulty": "Class I–II",
+          "notes": "Short lower-creek run onto the Clark Fork. Tamarack is an unmarked option near mile 4."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "smith",
+      "name": "Smith River (Permit)",
+      "gauge": "06077200",
+      "gaugeName": "Smith bl Eagle Creek nr Fort Logan",
+      "lat": 46.68,
+      "lon": -111.19,
+      "refFlowCfs": 350,
+      "refSpeedMph": 2.8,
+      "blurb": "Montana's only permit-lottery river. 59 canyon miles, 4–5 days, zero cell service.",
+      "multiDay": true,
+      "sections": [
+        {
+          "id": "camp-baker-eden",
+          "putIn": "Camp Baker",
+          "takeOut": "Eden Bridge",
+          "miles": 59,
+          "difficulty": "Class I–II",
+          "notes": "Launch requires an FWP permit. Below ~150 cfs expect to drag boats."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver"
+    },
+    {
+      "id": "stillwater",
+      "name": "Stillwater River",
+      "gauge": "06205000",
+      "gaugeName": "Stillwater near Absarokee",
+      "lat": 45.52,
+      "lon": -109.44,
+      "refFlowCfs": 800,
+      "refSpeedMph": 4.3,
+      "blurb": "Badly named — it's one of the fastest day floats in the state. Continuous Class II fun.",
+      "sections": [
+        {
+          "id": "cliff-swallow-absarokee",
+          "putIn": "Cliff Swallow",
+          "takeOut": "Absarokee",
+          "miles": 6,
+          "difficulty": "Class II",
+          "notes": "Fast, rocky, cold. Rafts and duckies, not tubes."
+        },
+        {
+          "id": "absarokee-whitebird",
+          "putIn": "Absarokee",
+          "takeOut": "Whitebird",
+          "miles": 7,
+          "difficulty": "Class II",
+          "notes": "Keep your weight downstream through the rock gardens."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "swan",
+      "name": "Swan River",
+      "gauge": "12370000",
+      "gaugeName": "Swan River near Bigfork",
+      "lat": 48.06,
+      "lon": -114.08,
+      "refFlowCfs": 800,
+      "refSpeedMph": 3.1,
+      "blurb": "Quiet valley float into Bigfork. Take out above the Wild Mile unless you meant to run Class III.",
+      "sections": [
+        {
+          "id": "swan-lake-bigfork",
+          "putIn": "Swan Lake outlet",
+          "takeOut": "Bigfork (above the Wild Mile)",
+          "miles": 10,
+          "difficulty": "Class I–II",
+          "notes": "Mellow until town. The Wild Mile gorge at Bigfork is a separate Class III run — don't float into it by accident."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "yellowstone-upper",
+      "name": "Yellowstone River (Gardiner)",
+      "gauge": "06191500",
+      "gaugeName": "Yellowstone at Corwin Springs",
+      "lat": 45.112,
+      "lon": -110.794,
+      "refFlowCfs": 2200,
+      "refSpeedMph": 4.5,
+      "blurb": "Whitewater stretch out of the Park boundary. Rafts and experienced paddlers.",
+      "sections": [
+        {
+          "id": "gardiner-corwin",
+          "putIn": "Gardiner (Queen of the Waters)",
+          "takeOut": "Corwin Springs",
+          "miles": 8,
+          "difficulty": "Class II–III",
+          "notes": "Continuous wave trains at higher flows. Not a tube float."
+        },
+        {
+          "id": "corwin-yankee-jim",
+          "putIn": "Corwin Springs",
+          "takeOut": "Carbella (below Yankee Jim Canyon)",
+          "miles": 7,
+          "difficulty": "Class III",
+          "notes": "Yankee Jim Canyon — Boat Eater rapid. Scout or go with a guide."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "yellowstone-paradise",
+      "name": "Yellowstone River (Paradise Valley)",
+      "gauge": "06192500",
+      "gaugeName": "Yellowstone near Livingston",
+      "lat": 45.596,
+      "lon": -110.566,
+      "refFlowCfs": 2500,
+      "refSpeedMph": 4.2,
+      "blurb": "Big, fast freestone water under the Absarokas. Moves quicker than it looks.",
+      "sections": [
+        {
+          "id": "emigrant-mallards",
+          "putIn": "Emigrant",
+          "takeOut": "Mallard's Rest",
+          "miles": 14,
+          "difficulty": "Class I–II",
+          "notes": "Grey Owl, Dan Bailey, and Loch Leven are optional pullouts along the way."
+        },
+        {
+          "id": "mallards-carters",
+          "putIn": "Mallard's Rest",
+          "takeOut": "Carter's Bridge",
+          "miles": 10,
+          "difficulty": "Class I–II",
+          "notes": "Pine Creek is a shorter midway takeout (~3 mi)."
+        },
+        {
+          "id": "pine-creek-carters",
+          "putIn": "Pine Creek",
+          "takeOut": "Carter's Bridge",
+          "miles": 7,
+          "difficulty": "Class I–II",
+          "notes": "Braided channels shift every runoff — scout side channels."
+        },
+        {
+          "id": "carters-mayors",
+          "putIn": "Carter's Bridge",
+          "takeOut": "Mayor's Landing",
+          "miles": 6,
+          "difficulty": "Class I",
+          "notes": "Short town float through Livingston."
+        },
+        {
+          "id": "mayors-sheep-mtn",
+          "putIn": "Mayor's Landing",
+          "takeOut": "Sheep Mountain",
+          "miles": 9,
+          "difficulty": "Class I",
+          "notes": "Wind can howl through here in the afternoon."
+        },
+        {
+          "id": "sheep-springdale",
+          "putIn": "Sheep Mountain",
+          "takeOut": "Springdale",
+          "miles": 12,
+          "difficulty": "Class I",
+          "notes": "Below town. Bigger water, fewer people than Paradise Valley."
+        },
+        {
+          "id": "springdale-grey-bear",
+          "putIn": "Springdale",
+          "takeOut": "Grey Bear",
+          "miles": 9,
+          "difficulty": "Class I",
+          "notes": "On toward Big Timber. Watch for diversion structures."
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false
+    },
+    {
+      "id": "clackamas",
+      "name": "Clackamas River (Lower)",
+      "state": "OR",
+      "gauge": "14210000",
+      "gaugeName": "Clackamas River at Estacada",
+      "lat": 45.285,
+      "lon": -122.333,
+      "refFlowCfs": 900,
+      "refSpeedMph": 2.8,
+      "blurb": "Portland's summer float — McIver Park to Carver, mellow riffles, and a lot of inflatables on hot weekends.",
+      "sections": [
+        {
+          "id": "mciver-barton",
+          "putIn": "Milo McIver State Park",
+          "takeOut": "Barton Park",
+          "miles": 9,
+          "difficulty": "Class I–II",
+          "notes": "The popular summer stretch. Water is cold — people drown here every year without PFDs."
+        },
+        {
+          "id": "barton-carver",
+          "putIn": "Barton Park",
+          "takeOut": "Carver Park",
+          "miles": 7,
+          "difficulty": "Class I",
+          "notes": "Slower and quieter. Good for a lazy afternoon at moderate flow."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    },
+    {
+      "id": "deschutes-maupin",
+      "name": "Deschutes River (Maupin)",
+      "state": "OR",
+      "gauge": "14092500",
+      "gaugeName": "Deschutes River nr Madras",
+      "lat": 45.175,
+      "lon": -121.081,
+      "refFlowCfs": 4500,
+      "refSpeedMph": 3.8,
+      "blurb": "Oregon's most-run whitewater day trip. Dam-fed, warm, and steady all summer through the canyon at Maupin.",
+      "sections": [
+        {
+          "id": "harpham-maupin",
+          "putIn": "Harpham Flat",
+          "takeOut": "Maupin City Park",
+          "miles": 8,
+          "difficulty": "Class III",
+          "notes": "Wapinitia and Boxcar are the big ones. A Deschutes boater pass is required for every person."
+        },
+        {
+          "id": "maupin-sandy-beach",
+          "putIn": "Maupin City Park",
+          "takeOut": "Sandy Beach",
+          "miles": 8,
+          "difficulty": "Class II–III",
+          "notes": "Oak Springs is the rapid to scout. Sandy Beach is the LAST take-out — Sherars Falls below is not runnable."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    },
+    {
+      "id": "grande-ronde",
+      "name": "Grande Ronde River",
+      "state": "OR",
+      "gauge": "13333000",
+      "gaugeName": "Grande Ronde River at Troy",
+      "lat": 45.62,
+      "lon": -117.72,
+      "refFlowCfs": 2000,
+      "refSpeedMph": 3,
+      "blurb": "Remote northeast Oregon canyon trip with easy water — a good first multi-day float.",
+      "multiDay": true,
+      "sections": [
+        {
+          "id": "minam-troy",
+          "putIn": "Minam",
+          "takeOut": "Troy",
+          "miles": 45,
+          "difficulty": "Class II",
+          "notes": "Usually 3–4 days. The Wenaha River comes in at Troy. Few roads, so plan your shuttle ahead."
+        }
+      ],
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "id": "john-day",
+      "name": "John Day River (Clarno)",
+      "state": "OR",
+      "gauge": "14046500",
+      "gaugeName": "John Day River at Service Creek",
+      "lat": 44.913,
+      "lon": -120.464,
+      "refFlowCfs": 2000,
+      "refSpeedMph": 3,
+      "blurb": "Undammed desert canyon float. Spring flows only — by late summer it's too low to boat.",
+      "multiDay": true,
+      "sections": [
+        {
+          "id": "clarno-cottonwood",
+          "putIn": "Clarno",
+          "takeOut": "Cottonwood Bridge",
+          "miles": 70,
+          "difficulty": "Class II–III",
+          "notes": "BLM permit required in the main spring season. Clarno Rapid near the start is the hardest drop — scout it. The gauge is at Service Creek, just upstream of this stretch."
+        }
+      ],
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "id": "mckenzie",
+      "name": "McKenzie River",
+      "state": "OR",
+      "gauge": "14162500",
+      "gaugeName": "McKenzie River nr Vida",
+      "lat": 44.125,
+      "lon": -122.471,
+      "refFlowCfs": 2500,
+      "refSpeedMph": 4,
+      "blurb": "Clear, cold, and quick — the river the McKenzie drift boat was built for, east of Eugene.",
+      "sections": [
+        {
+          "id": "finn-rock-dorris",
+          "putIn": "Finn Rock Landing",
+          "takeOut": "Ben and Kay Dorris Park",
+          "miles": 9,
+          "difficulty": "Class II",
+          "notes": "Fast, continuous water with Martin Rapid along the way. Cold even in August."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    },
+    {
+      "id": "owyhee",
+      "name": "Owyhee River (Lower)",
+      "state": "OR",
+      "gauge": "13181000",
+      "gaugeName": "Owyhee River nr Rome",
+      "lat": 42.866,
+      "lon": -117.649,
+      "refFlowCfs": 1500,
+      "refSpeedMph": 3.2,
+      "blurb": "Spring-only desert canyon in Oregon's far southeast corner. Hot springs, big walls, and a short boating window.",
+      "multiDay": true,
+      "sections": [
+        {
+          "id": "rome-birch-creek",
+          "putIn": "Rome",
+          "takeOut": "Birch Creek",
+          "miles": 48,
+          "difficulty": "Class III–IV",
+          "notes": "Usually floatable only March–May. Scout Montgomery Rapid. Birch Creek road needs a high-clearance vehicle when wet."
+        }
+      ],
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "id": "rogue-grants-pass",
+      "name": "Rogue River (Grants Pass)",
+      "state": "OR",
+      "gauge": "14361500",
+      "gaugeName": "Rogue River at Grants Pass",
+      "lat": 42.54,
+      "lon": -123.52,
+      "refFlowCfs": 2000,
+      "refSpeedMph": 3,
+      "blurb": "Hellgate Canyon day floats below Grants Pass — the easy half of the Rogue, with jet boats for company.",
+      "sections": [
+        {
+          "id": "hog-creek-galice",
+          "putIn": "Hog Creek",
+          "takeOut": "Galice",
+          "miles": 8,
+          "difficulty": "Class II",
+          "notes": "Floats through Hellgate Canyon. Watch for jet boats and give them room in narrow spots."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    },
+    {
+      "id": "rogue-wild",
+      "name": "Rogue River (Wild & Scenic)",
+      "state": "OR",
+      "gauge": "14372300",
+      "gaugeName": "Rogue River nr Agness",
+      "lat": 42.647,
+      "lon": -123.584,
+      "refFlowCfs": 2200,
+      "refSpeedMph": 3,
+      "blurb": "The classic Oregon multi-day: Grave Creek to Foster Bar through roadless canyon, with lodges along the way.",
+      "multiDay": true,
+      "sections": [
+        {
+          "id": "grave-creek-foster-bar",
+          "putIn": "Grave Creek",
+          "takeOut": "Foster Bar",
+          "miles": 34,
+          "difficulty": "Class III–IV",
+          "notes": "BLM permit lottery in the main season. Most boats line or run the fish ladder at Rainie Falls. Scout Blossom Bar — it is the serious one."
+        }
+      ],
+      "timezone": "America/Los_Angeles"
+    },
+    {
+      "id": "sandy",
+      "name": "Sandy River",
+      "state": "OR",
+      "gauge": "14142500",
+      "gaugeName": "Sandy River bl Bull Run River nr Bull Run",
+      "lat": 45.449,
+      "lon": -122.245,
+      "refFlowCfs": 600,
+      "refSpeedMph": 3,
+      "blurb": "Glacier-fed river 30 minutes from Portland. Gravel bars, cold water, and easy access from county parks.",
+      "sections": [
+        {
+          "id": "dodge-oxbow",
+          "putIn": "Dodge Park",
+          "takeOut": "Oxbow Regional Park",
+          "miles": 7,
+          "difficulty": "Class II",
+          "notes": "Wood moves every winter here. Scout anything you can't see around."
+        },
+        {
+          "id": "oxbow-dabney",
+          "putIn": "Oxbow Regional Park",
+          "takeOut": "Dabney State Recreation Area",
+          "miles": 6,
+          "difficulty": "Class I–II",
+          "notes": "Easier miles with big gravel bars. Gets low and rocky by late summer."
+        }
+      ],
+      "timezone": "America/Los_Angeles",
+      "multiDay": false
+    }
+  ]
+}

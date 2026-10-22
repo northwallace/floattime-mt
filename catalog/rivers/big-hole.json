@@ -1,0 +1,39 @@
+{
+  "id": "big-hole",
+  "name": "Big Hole River",
+  "gauge": "06025500",
+  "gaugeName": "Big Hole near Melrose",
+  "lat": 45.54,
+  "lon": -112.69,
+  "refFlowCfs": 900,
+  "refSpeedMph": 3.5,
+  "blurb": "Southwest Montana's salmonfly river. Canyon scenery from Divide to Melrose, then open ranchland.",
+  "sections": [
+    {
+      "id": "divide-melrose",
+      "putIn": "Divide Bridge",
+      "takeOut": "Melrose (Salmon Fly FAS)",
+      "miles": 14,
+      "difficulty": "Class I–II",
+      "notes": "The canyon section. Maiden Rock is a midway takeout (~6 mi). Sunday nonresident float closures in summer — check FWP."
+    },
+    {
+      "id": "melrose-glen",
+      "putIn": "Melrose (Salmon Fly FAS)",
+      "takeOut": "Glen FAS",
+      "miles": 14,
+      "difficulty": "Class I",
+      "notes": "Lower river, more braids. Browne's Bridge is roughly halfway."
+    },
+    {
+      "id": "glen-notch",
+      "putIn": "Glen FAS",
+      "takeOut": "Notch Bottom FAS",
+      "miles": 7,
+      "difficulty": "Class I",
+      "notes": "Away from the road. Friday outfitter closure in summer. Watch for rattlesnakes at the takeout."
+    }
+  ],
+  "state": "MT",
+  "timezone": "America/Denver"
+}

@@ -655,19 +655,6 @@ select:focus, input:focus, textarea:focus, input[type="time"]:focus {
 .river-dir-link { display: inline-block; margin-top: 10px; font-size: 0.88rem; }
 .home-river-more { margin-top: 18px; }
 
-.popular-bar {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 4px;
-}
-.popular-bar label {
-  color: var(--text-dim);
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-.popular-bar select { width: auto; min-width: 180px; }
-
 .faq-list { margin-top: 18px; display: grid; gap: 10px; }
 .faq-item {
   background: var(--bg-card);

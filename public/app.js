@@ -2,6 +2,9 @@
 // FloatETA — application logic
 // =====================================================================
 
+const P = FloatPlanner;
+let RIVERS = [], STATES = [], CRAFT = [];
+const gaugeCache = new Map(), weatherCache = new Map();
 const USGS_IV = "https://waterservices.usgs.gov/nwis/iv/";
 const SPEED_EXPONENT = 0.34; // hydraulic geometry: v ∝ Q^0.34
 const MIN_SPEED_MPH = 0.8;
@@ -20,120 +23,79 @@ const state = {
   gaugeCache: {},       // gauge id -> { flow, temp, series, fetchedAt }
   weatherCache: {},     // river id -> { airF, windMph }
   reports: [],
-  votedIds: new Set(JSON.parse(localStorage.getItem("ft_voted") || "[]")),
+  votedIds: new Set(),
+  reportsStatus: "loading",
+  request: 0,
+  gauge: null,
 };
 
 // ---------------------------------------------------------------------
 // Sunset (NOAA simplified algorithm) — good to ~1 minute, plenty here.
 // ---------------------------------------------------------------------
 
-function sunsetToday(lat, lon) {
-  const now = new Date();
-  const start = new Date(now.getFullYear(), 0, 0);
-  const dayOfYear = Math.floor((now - start) / 86400000);
-
-  const zenith = 90.833 * Math.PI / 180;
-  const latRad = lat * Math.PI / 180;
-  const lngHour = lon / 15;
-  const t = dayOfYear + (18 - lngHour) / 24; // approx time for sunset
-
-  const M = 0.9856 * t - 3.289;
-  let L = M + 1.916 * Math.sin(M * Math.PI / 180) + 0.020 * Math.sin(2 * M * Math.PI / 180) + 282.634;
-  L = ((L % 360) + 360) % 360;
-
-  let RA = Math.atan(0.91764 * Math.tan(L * Math.PI / 180)) * 180 / Math.PI;
-  RA = ((RA % 360) + 360) % 360;
-  RA += Math.floor(L / 90) * 90 - Math.floor(RA / 90) * 90;
-  RA /= 15;
-
-  const sinDec = 0.39782 * Math.sin(L * Math.PI / 180);
-  const cosDec = Math.cos(Math.asin(sinDec));
-
-  const cosH = (Math.cos(zenith) - sinDec * Math.sin(latRad)) / (cosDec * Math.cos(latRad));
-  if (cosH < -1 || cosH > 1) return null; // no sunset (not in MT)
-
-  const H = (Math.acos(cosH) * 180 / Math.PI) / 15;
-  const T = H + RA - 0.06571 * t - 6.622;
-  let UT = T - lngHour;
-  UT = ((UT % 24) + 24) % 24;
-
-  const sunset = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, Math.round(UT * 3600)));
-  // If computed sunset landed "yesterday/tomorrow" due to UTC rollover, nudge to same local day
-  if (sunset.getDate() !== now.getDate()) sunset.setDate(now.getDate());
-  return sunset;
+function sunsetToday(lat, lon) { return P.sunset(lat, lon, state.river.timezone); }
+function fmtClock(date) { return P.clock(date, state.river.timezone); }
+function fmtDuration(hours) { return P.duration(hours * 60); }
+async function json(url, options = {}) {
+  const response = await fetch(url, {
+    ...options,
+    signal: AbortSignal.timeout(15000),
+  });
+  if (!response.ok) throw new Error(`Request failed (${response.status})`);
+  return response.json();
 }
-
-function fmtClock(date) {
-  return date.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+function cached(map, key, load, ttl = 300000) {
+  const old = map.get(key);
+  if (old && Date.now() - old.at < ttl) return old.promise;
+  const entry = { at: Date.now(), promise: load() };
+  map.set(key, entry);
+  entry.promise.catch(() => {
+    if (map.get(key) === entry) map.delete(key);
+  });
+  return entry.promise;
 }
-
-function fmtDuration(hours) {
-  if (hours >= 24) return `${(hours / 24).toFixed(1)} days`;
-  const h = Math.floor(hours);
-  const m = Math.round((hours - h) * 60);
-  if (h === 0) return `${m} min`;
-  if (m === 0) return `${h} hr`;
-  return `${h} hr ${m} min`;
-}
-
-// ---------------------------------------------------------------------
-// Data fetching
-// ---------------------------------------------------------------------
-
-async function fetchGauge(siteId) {
-  const cached = state.gaugeCache[siteId];
-  if (cached && Date.now() - cached.fetchedAt < 10 * 60 * 1000) return cached;
-
-  const url = `${USGS_IV}?format=json&sites=${siteId}&parameterCd=00060,00010&period=P7D&siteStatus=all`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`USGS ${res.status}`);
-  const data = await res.json();
-
-  const out = { flow: null, temp: null, series: [], reportedAt: null, fetchedAt: Date.now() };
-  for (const ts of data.value.timeSeries) {
-    const code = ts.variable.variableCode[0].value;
-    const vals = ts.values[0].value.filter((v) => Number(v.value) > -99999);
-    if (!vals.length) continue;
-    const last = vals[vals.length - 1];
-    const latest = Number(last.value);
-    if (code === "00060") {
-      out.flow = latest;
-      out.reportedAt = new Date(last.dateTime).getTime();
-      out.series = vals.map((v) => ({ t: new Date(v.dateTime).getTime(), q: Number(v.value) }));
-    } else if (code === "00010") {
-      out.temp = latest; // °C
+function gaugeFor(river) {
+  return cached(gaugeCache, river.gauge, async () => {
+    const data = await json(
+      `https://waterservices.usgs.gov/nwis/iv/?format=json&sites=${encodeURIComponent(river.gauge)}&parameterCd=00060,00010&period=P7D&siteStatus=all`,
+    );
+    const result = { flow: null, at: null, temp: null, tempAt: null, series: [] };
+    for (const series of data.value?.timeSeries || []) {
+      const code = series.variable?.variableCode?.[0]?.value;
+      const noData = Number(series.variable?.noDataValue ?? -999999);
+      const values = (series.values || [])
+        .flatMap((v) => v.value || [])
+        .map((v) => ({ value: Number(v.value), at: Date.parse(v.dateTime) }))
+        .filter(
+          (v) =>
+            Number.isFinite(v.value) &&
+            v.value !== noData &&
+            Number.isFinite(v.at) &&
+            (code === "00060" ? v.value >= 0 : v.value > -5 && v.value < 60),
+        )
+        .sort((a, b) => a.at - b.at);
+      const last = values.at(-1);
+      if (!last) continue;
+      if (code === "00060") {
+        result.flow = last.value;
+        result.at = last.at;
+        result.series = values.map(v => ({t:v.at,q:v.value}));
+      }
+      if (code === "00010") {
+        result.temp = last.value;
+        result.tempAt = last.at;
+      }
     }
-  }
-  state.gaugeCache[siteId] = out;
-  return out;
+    return result;
+  });
 }
-
-async function fetchWeather(river) {
-  if (state.weatherCache[river.id]) return state.weatherCache[river.id];
-  try {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${river.lat}&longitude=${river.lon}` +
-      `&current=temperature_2m,wind_speed_10m` +
-      `&daily=precipitation_probability_max,uv_index_max,temperature_2m_max,temperature_2m_min` +
-      `&temperature_unit=fahrenheit&wind_speed_unit=mph&forecast_days=2`;
-    const res = await fetch(url);
-    const data = await res.json();
-    const daily = data.daily || {};
-    const out = {
-      airF: Math.round(data.current.temperature_2m),
-      windMph: Math.round(data.current.wind_speed_10m),
-      rainToday: daily.precipitation_probability_max ? daily.precipitation_probability_max[0] : null,
-      rainTomorrow: daily.precipitation_probability_max ? daily.precipitation_probability_max[1] : null,
-      uv: daily.uv_index_max ? Math.round(daily.uv_index_max[0]) : null,
-      highF: daily.temperature_2m_max ? Math.round(daily.temperature_2m_max[0]) : null,
-      lowF: daily.temperature_2m_min ? Math.round(daily.temperature_2m_min[0]) : null,
-    };
-    state.weatherCache[river.id] = out;
-    return out;
-  } catch {
-    return null; // weather is a nice-to-have; never block the page on it
-  }
+function weatherFor(river) {
+  return cached(weatherCache, river.id, () =>
+    json(
+      `https://api.open-meteo.com/v1/forecast?latitude=${river.lat}&longitude=${river.lon}&current=temperature_2m,wind_speed_10m&daily=precipitation_probability_max,uv_index_max,temperature_2m_max,temperature_2m_min&forecast_days=2&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=${encodeURIComponent(river.timezone)}`,
+    ),
+  );
 }
-
 // ---------------------------------------------------------------------
 // Float math
 // ---------------------------------------------------------------------
@@ -145,11 +107,8 @@ function riverSpeedMph(river, flowCfs) {
 
 function conditionFor(river, flowCfs) {
   const ratio = flowCfs / river.refFlowCfs;
-  if (ratio < 0.4)  return { cls: "cond-low",    label: "Low & bony",  note: "Expect to drag in the shallows. Tubes OK, hard boats will scrape.", craft: "Tubes and small rafts. Drift boats will scrape." };
-  if (ratio < 0.8)  return { cls: "cond-mellow", label: "Mellow",      note: "Lazy current, relaxed pace. Great tube and family water.", craft: "Anything floats — tubes, SUPs, and rafts." };
-  if (ratio < 1.5)  return { cls: "cond-prime",  label: "Prime",       note: "Healthy flow and a good clip. This is the float you came for.", craft: "Rafts, kayaks, and SUPs. Tubes if you're a strong swimmer." };
-  if (ratio < 2.5)  return { cls: "cond-high",   label: "High & fast", note: "Pushy water, fewer eddies. Strong swimmers and PFDs only.", craft: "Rafts and kayaks. Leave the tubes at home." };
-  return               { cls: "cond-danger", label: "Runoff — caution", note: "Flood-stage water moves wood and eats boats. Most floaters should wait.", craft: "Experienced whitewater crews only — or wait it out." };
+  const level = ratio < .4 ? ["cond-low", "Well below reference"] : ratio < .8 ? ["cond-mellow", "Below reference"] : ratio < 1.5 ? ["cond-prime", "Near reference"] : ratio < 2.5 ? ["cond-high", "Above reference"] : ["cond-danger", "Well above reference"];
+  return {cls:level[0],label:level[1],note:"Compared with this river’s reference flow. This is not a safety rating.",craft:"Check your stretch, skill level, and local conditions."};
 }
 
 function dressFor(tempC) {
@@ -163,10 +122,10 @@ function dressFor(tempC) {
 
 function uvLabel(uv) {
   if (uv == null) return "–";
-  if (uv <= 2) return `${uv} low`;
-  if (uv <= 5) return `${uv} mod`;
-  if (uv <= 7) return `${uv} high`;
-  return `${uv} very high`;
+  if (uv <= 2) return `${Math.round(uv)} low`;
+  if (uv <= 5) return `${Math.round(uv)} mod`;
+  if (uv <= 7) return `${Math.round(uv)} high`;
+  return `${Math.round(uv)} very high`;
 }
 
 function gaugeAge(ts) {
@@ -231,7 +190,7 @@ function drawSparkline(svg, series) {
 
 function renderDaylight(river) {
   const sunset = sunsetToday(river.lat, river.lon);
-  if (!sunset) return null;
+  if (!sunset) { $("sunsetTime").textContent = "Sunset unavailable"; $("daylightLeft").textContent = "—"; return null; }
   const now = new Date();
   const hoursLeft = (sunset - now) / 3600000;
 
@@ -243,182 +202,95 @@ function renderDaylight(river) {
     $("daylightLeft").textContent = fmtDuration(hoursLeft);
     $("daylightNote").textContent = "";
   }
+  $("statDaylight").textContent = $("daylightLeft").textContent;
   return sunset;
 }
 
-function parsePutIn(value) {
-  if (!value) return null;
-  const [h, m] = value.split(":").map(Number);
-  if (Number.isNaN(h) || Number.isNaN(m)) return null;
-  const d = new Date();
-  d.setHours(h, m, 0, 0);
-  return d;
-}
-
-function takeOutTime(putIn, hoursOnWater, isMultiDay) {
-  if (isMultiDay) {
-    const days = Math.max(1, Math.round(hoursOnWater / 7));
-    const finish = new Date(putIn.getTime());
-    finish.setDate(finish.getDate() + days - 1);
-    finish.setHours(putIn.getHours() + 7, putIn.getMinutes(), 0, 0); // ~7 hrs floating that last day
-    return { finish, days };
-  }
-  return { finish: new Date(putIn.getTime() + hoursOnWater * 3600000), days: 1 };
-}
-
-function renderSections(river, flow, sunset) {
-  const speed = riverSpeedMph(river, flow) * state.craft.mult;
+function parsePutIn(value) { return value ? P.launch(value, state.river.timezone) : null; }
+function reportMatches(r, river) { return r.riverId ? r.riverId === river.id : r.river === river.name; }
+function renderSections(river, gauge, sunset) {
   const container = $("sectionCards");
-  container.innerHTML = "";
-  const now = new Date();
-
+  container.replaceChildren();
+  const launch = parsePutIn($("putInTime").value);
   for (const sec of river.sections) {
-    const driftHours = sec.miles / speed;
-    const fishHours = state.fishing ? sec.miles * (FISH_MIN_PER_MILE / 60) : 0;
-    const hours = driftHours + fishHours;
-    const card = document.createElement("div");
-    card.className = "float-card";
-
-    const isMultiDay = river.multiDay || hours > FLOAT_DAY_HOURS;
-
-    let timeDisplay = fmtDuration(hours);
-    let launchHtml = "";
-    let etaHtml = "";
-    if (isMultiDay) {
-      const days = Math.max(1, Math.round(hours / 7)); // ~7 floating hrs/day
-      timeDisplay = `~${days} day${days > 1 ? "s" : ""}`;
-      launchHtml = `<div class="fc-launch ok"><span class="multi-day-badge">Multi-day</span> &nbsp;About ${Math.round(hours)} total hours on the water, at ~7 floating hrs per day.</div>`;
-    } else if (sunset && !state.putIn) {
-      const latestLaunch = new Date(sunset.getTime() - hours * 3600000 - 30 * 60000); // 30 min buffer
-      const minutesUntilLatest = (latestLaunch - now) / 60000;
-      if (minutesUntilLatest > 90) {
-        launchHtml = `<div class="fc-launch ok">☀️ Launch by <strong>${fmtClock(latestLaunch)}</strong> to take out before sunset.</div>`;
-      } else if (minutesUntilLatest > 0) {
-        launchHtml = `<div class="fc-launch tight">⏳ Tight — launch by <strong>${fmtClock(latestLaunch)}</strong> (${Math.round(minutesUntilLatest)} min from now).</div>`;
-      } else {
-        launchHtml = `<div class="fc-launch no">🌙 Not enough daylight left for this one today.</div>`;
+    const stops = state.fishing ? sec.miles * FISH_MIN_PER_MILE : 0;
+    const estimate = P.fresh(gauge) ? P.estimate(river, sec, gauge.flow, state.craft.mult, stops) : null;
+    const restricted = /\b(?:III|IV|V|VI)\b/.test(sec.difficulty) && ["tube", "sup"].includes(state.craft.id);
+    let timing = "", duration = "—", detail = "";
+    if (!estimate) {
+      timing = '<p class="fc-launch tight">No recent, positive flow reading is available. A current estimate cannot be calculated.</p>';
+    } else if (restricted) {
+      timing = '<p class="fc-launch tight">Class III+ whitewater: no tube or recreational paddleboard estimate. Check local guidance and choose an appropriate craft.</p>';
+    } else {
+      duration = P.duration(estimate.minutes);
+      detail = `~${estimate.speed.toFixed(1)} mph · rounded to 5 minutes${state.fishing ? ` · includes ${P.duration(stops)} for fishing` : ""}`;
+      if (estimate.multiDay) {
+        timing = `<p class="fc-launch">At least ${estimate.days} floating days at 7 hours per day. Total time on water shown above; plan overnight stops separately.</p>`;
+      } else if ($("putInTime").value && !launch) {
+        timing = '<p class="fc-launch tight">Enter a valid time for today at the river.</p>';
+      } else if (launch) {
+        const finish = new Date(launch.getTime() + estimate.minutes * 60000);
+        const nextDay = P.dateKey(finish,river.timezone) !== P.dateKey(launch,river.timezone);
+        const spare = sunset ? Math.floor((sunset-finish)/60000) : null;
+        timing = `<div class="fc-eta"><div class="fc-eta-leg"><span class="fc-eta-label">Put in today</span><span class="fc-eta-time">${fmtClock(launch)}</span></div><div class="fc-eta-arrow" aria-hidden="true">→</div><div class="fc-eta-leg"><span class="fc-eta-label">Take out ≈</span><span class="fc-eta-time">${fmtClock(finish)}${nextDay ? " · next day" : ""}</span></div></div>`;
+        timing += `<p class="fc-launch ${spare !== null && spare < 30 ? "no" : "ok"}">${spare === null ? "Sunset unavailable." : spare < 0 ? `Estimated finish is ${P.duration(-spare)} after sunset. Launch earlier or choose a shorter stretch.` : `About ${P.duration(spare)} before sunset. Allow a safety margin.`}</p>`;
+        if (launch < new Date()) timing += '<p class="fc-notes">This launch time has already passed today.</p>';
+      } else if (sunset) {
+        const latest = new Date(sunset-estimate.minutes*60000-30*60000);
+        timing = latest > new Date() ? `<p class="fc-launch ok">Launch by ${fmtClock(latest)} for a 30-minute sunset buffer.</p>` : '<p class="fc-launch no">Not enough daylight left for this stretch today with a 30-minute buffer.</p>';
       }
     }
-
-    if (state.putIn) {
-      const { finish, days } = takeOutTime(state.putIn, hours, isMultiDay);
-      const afterDark = sunset && finish > sunset && days === 1;
-      const dayNote = days > 1
-        ? ` on day ${days} (${finish.toLocaleDateString([], { weekday: "short", month: "short", day: "numeric" })})`
-        : "";
-      etaHtml = `
-        <div class="fc-eta">
-          <div class="fc-eta-leg"><span class="fc-eta-label">Put in</span><span class="fc-eta-time">${fmtClock(state.putIn)}</span></div>
-          <div class="fc-eta-arrow" aria-hidden="true">→</div>
-          <div class="fc-eta-leg"><span class="fc-eta-label">Take out</span><span class="fc-eta-time">~${fmtClock(finish)}${dayNote}</span></div>
-        </div>`;
-      if (afterDark) {
-        launchHtml = `<div class="fc-launch no">🌙 That take-out is after sunset (${fmtClock(sunset)}). Launch earlier or pick a shorter stretch.</div>`;
-      } else if (sunset && days === 1) {
-        const slackMin = Math.round((sunset - finish) / 60000);
-        if (slackMin >= 0 && slackMin < 45) {
-          launchHtml = `<div class="fc-launch tight">⏳ You'll make sunset with about ${slackMin} min to spare.</div>`;
-        } else if (slackMin >= 45) {
-          launchHtml = `<div class="fc-launch ok">☀️ On the water ${fmtDuration(hours)}. Take-out before sunset (${fmtClock(sunset)}).</div>`;
-        }
-      }
-    }
-
-    const hazards = state.reports.filter((r) => r.river === river.name && (!r.section || r.section === `${sec.putIn} → ${sec.takeOut}`));
-    const hazardHtml = hazards.length
-      ? `<div class="fc-hazard">⚠️ ${hazards.length} active obstruction report${hazards.length > 1 ? "s" : ""} on this river — see River Reports below.</div>`
-      : "";
-
-    card.innerHTML = `
-      <div class="fc-route">${esc(sec.putIn)}<span class="arrow">→</span>${esc(sec.takeOut)}</div>
-      <div class="fc-meta">
-        <span>${sec.miles} mi</span>
-        <span class="diff">${esc(sec.difficulty)}</span>
-      </div>
-      <div class="fc-time"><span class="fc-time-label">${state.fishing ? "Estimated time (fishing)" : "Estimated float time"}</span>${timeDisplay}</div>
-      ${etaHtml}
-      <div class="fc-speed">~${speed.toFixed(1)} mph in a ${state.craft.label.toLowerCase().split(" (")[0]} at ${flow.toLocaleString()} cfs${state.fishing ? ` · plus ${FISH_MIN_PER_MILE} min/mi for fishing (${fmtDuration(fishHours)} extra)` : ""}</div>
-      ${launchHtml}
-      ${hazardHtml}
-      <div class="fc-notes">${esc(sec.notes)}</div>
-    `;
+    const reports = state.reports.filter(r => reportMatches(r, river) && (!r.section || r.section === `${sec.putIn} → ${sec.takeOut}`));
+    const hazards = state.reportsStatus !== "ready" ? '<p class="fc-hazard">Community reports are loading or unavailable. Check local conditions.</p>' : reports.length ? `<a class="fc-hazard" href="#reports">${reports.length} community report(s) on this river or stretch ↓</a>` : "";
+    const card = document.createElement("article"); card.className = "float-card"; card.id = `section-${sec.id}`;
+    card.innerHTML = `<div class="fc-route">${esc(sec.putIn)}<span class="arrow">→</span>${esc(sec.takeOut)}</div><div class="fc-meta"><span>${sec.miles} mi</span><span class="diff">${esc(sec.difficulty)}</span></div><div class="fc-time"><span class="fc-time-label">${estimate?.multiDay ? "Total estimated time on water" : state.fishing ? "Estimated time (fishing)" : "Estimated float time"}</span>${duration}</div><div class="fc-speed">${detail}</div>${timing}${hazards}<div class="fc-notes">${esc(sec.notes)}</div>`;
     container.appendChild(card);
   }
 }
 
 async function renderRiver() {
-  const river = state.river;
+  const river = state.river, request = ++state.request;
+  if (!river) return;
+  state.gauge = null;
   $("riverDash").hidden = false;
   $("loadError").hidden = true;
   $("riverBlurb").textContent = river.blurb;
-  const st = STATES.find((s) => s.id === riverState(river));
-  if (st) {
-    $("agencyLink").textContent = st.agency;
-    $("agencyLink").href = st.agencyUrl;
-  }
-  $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName}`;
-  $("packWear").textContent = "Checking the put-in…";
-  $("rainToday").textContent = "–";
-  $("rainTomorrow").textContent = "–";
-  $("uvIndex").textContent = "–";
-  $("packHighLow").textContent = "";
-
-  const sunset = renderDaylight(river);
-
-  // weather (non-blocking)
-  $("airTemp").textContent = "–";
-  $("windSpeed").textContent = "–";
-  fetchWeather(river).then((w) => {
-    if (!(w && state.river === river)) return;
-    $("airTemp").textContent = `${w.airF}°F`;
-    $("windSpeed").textContent = `${w.windMph} mph`;
-    $("rainToday").textContent = w.rainToday != null ? `${w.rainToday}%` : "n/a";
-    $("rainTomorrow").textContent = w.rainTomorrow != null ? `${w.rainTomorrow}%` : "n/a";
-    $("uvIndex").textContent = uvLabel(w.uv);
-    if (w.highF != null && w.lowF != null) {
-      $("packHighLow").textContent = `Put-in high ${w.highF}° / low ${w.lowF}° today`;
-    }
-  });
-
-  let gauge;
-  try {
-    gauge = await fetchGauge(river.gauge);
-  } catch (e) {
-    $("riverDash").hidden = true;
-    $("loadError").hidden = false;
-    return;
-  }
-  if (state.river !== river) return; // user switched rivers mid-fetch
-
-  if (gauge.flow == null) {
-    $("riverDash").hidden = true;
-    $("loadError").hidden = false;
-    $("loadError").textContent = "This gauge isn't reporting flow right now. Try another river.";
-    return;
-  }
-
-  $("flowValue").textContent = gauge.flow.toLocaleString();
-  const trend = trendFor(gauge.series);
-  const trendEl = $("flowTrend");
-  trendEl.textContent = trend.text;
-  trendEl.className = `dash-sub ${trend.cls}`;
-  drawSparkline($("sparkline"), gauge.series);
-
-  const cond = conditionFor(river, gauge.flow);
-  const badge = $("conditionBadge");
-  badge.textContent = cond.label;
-  badge.className = `condition-badge ${cond.cls}`;
-  $("conditionNote").textContent = cond.note;
-  const whitewater = river.sections.some((s) => /\bI{3}|IV|V\b/.test(s.difficulty));
-  $("craftHint").textContent = whitewater && cond.cls !== "cond-danger"
-    ? "Class III+ water — rafts and experienced paddlers. Not a tube run."
-    : cond.craft;
-  $("waterTemp").textContent = gauge.temp != null ? waterTempLabel(gauge.temp) : "n/a";
-  $("packWear").textContent = dressFor(gauge.temp);
-  const age = gaugeAge(gauge.reportedAt);
-  $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName} · ${age}`;
-
-  renderSections(river, gauge.flow, sunset);
+  const st = STATES.find(s => s.id === river.state);
+  $("agencyLink").textContent = st.agency; $("agencyLink").href = st.agencyUrl;
+  $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName} · checking reading…`;
+  for (const id of ["flowValue","flowTrend","waterTemp","airTemp","windSpeed","rainToday","rainTomorrow","uvIndex"]) $(id).textContent = "—";
+  $("conditionBadge").textContent = "Checking flow";
+  $("conditionBadge").className = "condition-badge";
+  $("conditionNote").textContent = ""; $("craftHint").textContent = "";
+  $("packWear").textContent = "Checking water temperature…"; $("packHighLow").textContent = "";
+  drawSparkline($("sparkline"), []);
+  renderDaylight(river);
+  $("sectionCards").innerHTML = '<p role="status">Checking the latest gauge reading…</p>';
+  weatherFor(river).then(w => {
+    if (request !== state.request) return;
+    const c=w.current || {}, d=w.daily || {};
+    const show=(value,suffix) => Number.isFinite(value) ? `${Math.round(value)}${suffix}` : "n/a";
+    $("airTemp").textContent=show(c.temperature_2m,"°F"); $("windSpeed").textContent=show(c.wind_speed_10m," mph");
+    $("rainToday").textContent=show(d.precipitation_probability_max?.[0],"%"); $("rainTomorrow").textContent=show(d.precipitation_probability_max?.[1],"%");
+    $("uvIndex").textContent=uvLabel(d.uv_index_max?.[0]);
+    $("packHighLow").textContent=`Put-in high ${show(d.temperature_2m_max?.[0],"°F")} / low ${show(d.temperature_2m_min?.[0],"°F")} today`;
+  }).catch(() => {if (request===state.request) $("packHighLow").textContent="Weather unavailable. Check the local forecast.";});
+  let gauge = null;
+  try { gauge = await gaugeFor(river); }
+  catch { /* Keep route details and daylight visible when USGS is unavailable. */ }
+  if (request !== state.request) return;
+  state.gauge = gauge;
+  $("flowValue").textContent = gauge?.flow == null ? "—" : gauge.flow.toLocaleString();
+  $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName} · ${gaugeAge(gauge?.at)}`;
+  if (gauge) { const trend=trendFor(gauge.series); $("flowTrend").textContent=trend.text; $("flowTrend").className=`dash-sub ${trend.cls}`; drawSparkline($("sparkline"),gauge.series); }
+  const current = P.fresh(gauge), cond = current ? conditionFor(river,gauge.flow) : {label:gauge?.flow > 0 ? "Stale reading" : "Reading unavailable",cls:"cond-low",note:"A recent positive flow is needed for estimates.",craft:""};
+  $("conditionBadge").textContent=cond.label; $("conditionBadge").className=`condition-badge ${cond.cls}`;
+  $("conditionNote").textContent=cond.note; $("craftHint").textContent=cond.craft;
+  const tempFresh = gauge?.temp != null && Number.isFinite(gauge.tempAt) && Date.now()-gauge.tempAt >= -300000 && Date.now()-gauge.tempAt <=7200000;
+  $("waterTemp").textContent=tempFresh ? waterTempLabel(gauge.temp) : "n/a";
+  $("packWear").textContent=dressFor(tempFresh ? gauge.temp : null);
+  if (!current) { $("loadError").hidden=false; $("loadError").innerHTML='Current estimates are unavailable. <button type="button" id="retryGauge" class="btn-primary">Retry gauge</button>'; $("retryGauge").onclick=()=>{gaugeCache.delete(river.gauge);renderRiver();}; }
+  renderSections(river,gauge,renderDaylight(river));
 }
 
 // ---------------------------------------------------------------------
@@ -447,23 +319,29 @@ function timeAgo(ts) {
 }
 
 async function loadReports() {
-  try {
-    const res = await fetch("/api/reports");
-    state.reports = await res.json();
-  } catch {
-    state.reports = [];
-  }
+  state.reportsStatus="loading";
   renderReports();
+  try {
+    const reports=await json("/api/reports");
+    if (!Array.isArray(reports)) throw new Error("Invalid reports");
+    state.reports=reports; state.reportsStatus="ready";
+  } catch { state.reports=[]; state.reportsStatus="error"; }
+  renderReports();
+  if(state.river)renderSections(state.river,state.gauge,renderDaylight(state.river));
 }
 
 function renderReports() {
   const list = $("reportsList");
+  if (state.reportsStatus !== "ready") {
+    list.innerHTML = state.reportsStatus === "loading" ? '<p role="status">Loading reports…</p>' : '<p role="status">Reports could not load. This does not mean the river is clear.</p><button type="button" class="btn-primary" data-retry-reports>Retry reports</button>';
+    return;
+  }
   const filterOn = $("filterReports").checked;
   let reports = state.reports;
-  if (filterOn && state.river) reports = reports.filter((r) => r.river === state.river.name);
+  if (filterOn && state.river) reports = reports.filter((r) => reportMatches(r, state.river));
 
   if (!reports.length) {
-    list.innerHTML = `<div class="reports-empty">No reports${filterOn ? " for this river" : ""} yet. If the water's clean, that's good news — if you spot something, report it!</div>`;
+    list.innerHTML = `<div class="reports-empty">No reports${filterOn ? " for this river" : ""} yet. Hazards may still exist. Check local conditions.</div>`;
     return;
   }
 
@@ -486,8 +364,8 @@ function renderReports() {
       <div class="rc-foot">
         <span class="rc-by">— ${esc(r.reporter)}</span>
         <span class="rc-votes">
-          <button class="vote-btn" data-id="${r.id}" data-action="confirm" ${voted ? "disabled" : ""}>👍 Still there (${r.confirmVotes || 0})</button>
-          <button class="vote-btn" data-id="${r.id}" data-action="cleared" ${voted ? "disabled" : ""}>✅ Cleared (${r.clearedVotes || 0})</button>
+          <button class="vote-btn" data-id="${esc(r.id)}" data-action="confirm" ${voted ? "disabled" : ""}>👍 Still there (${r.confirmVotes || 0})</button>
+          <button class="vote-btn" data-id="${esc(r.id)}" data-action="cleared" ${voted ? "disabled" : ""}>Reported cleared (${r.clearedVotes || 0})</button>
         </span>
       </div>
     `;
@@ -496,12 +374,13 @@ function renderReports() {
 }
 
 async function vote(id, action) {
-  state.votedIds.add(id);
-  localStorage.setItem("ft_voted", JSON.stringify([...state.votedIds]));
   try {
-    await fetch(`/api/reports/${id}/${action}`, { method: "POST" });
-  } catch { /* best effort */ }
-  loadReports();
+    await json(`/api/reports/${encodeURIComponent(id)}/${action}`,{method:"POST"});
+    state.votedIds.add(id);
+    try {localStorage.setItem("ft_voted",JSON.stringify([...state.votedIds]));} catch {}
+    $("reportStatus").textContent="Vote recorded.";
+    await loadReports();
+  } catch { $("reportStatus").textContent="Vote failed or was already recorded. Please try refreshing reports."; }
 }
 
 async function submitReport(ev) {
@@ -513,7 +392,7 @@ async function submitReport(ev) {
   status.textContent = "Submitting…";
 
   const body = {
-    river: $("reportRiver").value,
+    riverId: $("reportRiver").value,
     type: $("reportType").value,
     location: $("reportLocation").value,
     description: $("reportDesc").value,
@@ -530,7 +409,7 @@ async function submitReport(ev) {
     status.className = "report-status ok";
     status.textContent = "Thanks — your report is live. Float safe out there. 🤙";
     $("reportForm").reset();
-    $("reportRiver").value = body.river;
+    $("reportRiver").value = body.riverId;
     loadReports();
   } catch (e) {
     status.className = "report-status err";
@@ -544,122 +423,99 @@ async function submitReport(ev) {
 // Init
 // ---------------------------------------------------------------------
 
-function init() {
+async function init() {
+  try {state.votedIds=new Set(JSON.parse(localStorage.getItem("ft_voted") || "[]"));} catch {}
+  try {
+    const catalog=await json("/catalog.json");
+    RIVERS=catalog.rivers; STATES=catalog.states; CRAFT=catalog.craft;
+    if(!RIVERS?.length || !STATES?.length || !CRAFT?.length)throw new Error("Invalid catalog");
+  } catch {
+    $("locationPromptText").textContent="The river catalog could not load. Reload the page to try again.";
+    return;
+  }
+  document.querySelector(".coming-soon-pill").textContent=STATES.map(s=>s.name).join(" · ");
+  document.querySelector(".nav-drop-menu").innerHTML='<a href="/directory.html">All rivers</a>'+STATES.map(s=>`<a href="/${esc(s.slug)}">${esc(s.name)}</a>`).join("");
   $("year").textContent = new Date().getFullYear();
-
-  // hero stats
   $("statRivers").textContent = RIVERS.length;
   $("statSections").textContent = RIVERS.reduce((n, r) => n + r.sections.length, 0);
-
-  // selectors
-  const stateSel = $("stateSelect");
-  const riverSel = $("riverSelect");
-  const reportRiverSel = $("reportRiver");
+  const stateSel = $("stateSelect"), riverSel = $("riverSelect"), reportRiverSel = $("reportRiver"), craftSel = $("craftSelect");
+  function placeholder(select, text) {
+    const option = new Option(text, ""); option.disabled = true; option.selected = true; select.add(option);
+  }
+  placeholder(stateSel, "Choose a state");
   for (const st of STATES) stateSel.add(new Option(st.name, st.id));
-  const craftSel = $("craftSelect");
   for (const c of CRAFT) craftSel.add(new Option(c.label, c.id));
-
-  function riversIn(code) {
-    return RIVERS.filter((r) => riverState(r) === code);
-  }
-
-  function fillRiverSelect(code, selectedId) {
-    const list = riversIn(code);
-    riverSel.innerHTML = "";
-    for (const r of list) riverSel.add(new Option(r.name, r.id));
-    if (selectedId && list.some((r) => r.id === selectedId)) riverSel.value = selectedId;
-  }
-
-  function fillReportRivers() {
-    reportRiverSel.innerHTML = "";
-    for (const st of STATES) {
-      const group = document.createElement("optgroup");
-      group.label = st.name;
-      for (const r of riversIn(st.id)) group.appendChild(new Option(r.name, r.name));
-      reportRiverSel.appendChild(group);
-    }
-  }
-  fillReportRivers();
-
-  const params = new URLSearchParams(location.search);
-  const wantedRiver = params.get("river");
-  const wantedState = (params.get("state") || "").toUpperCase();
-  let start = wantedRiver ? RIVERS.find((r) => r.id === wantedRiver) : null;
-  if (!start && STATES.some((s) => s.id === wantedState)) start = riversIn(wantedState)[0];
-  if (!start) start = RIVERS[0];
-
-  stateSel.value = riverState(start);
-  fillRiverSelect(riverState(start), start.id);
-  state.river = RIVERS.find((r) => r.id === riverSel.value) || start;
   state.craft = CRAFT[0];
-  reportRiverSel.value = state.river.name;
-
-  const sunset = sunsetToday(state.river.lat, state.river.lon);
-  if (sunset) {
-    const hrs = (sunset - new Date()) / 3600000;
-    $("statDaylight").textContent = hrs > 0 ? fmtDuration(hrs).replace(" min", "m").replace(" hr", "h") : "0";
+  placeholder(reportRiverSel, "Choose a river");
+  for (const st of STATES) {
+    const group = document.createElement("optgroup"); group.label = st.name;
+    for (const r of RIVERS.filter(r => riverState(r) === st.id)) group.appendChild(new Option(r.name, r.id));
+    reportRiverSel.appendChild(group);
   }
-
-  function syncRiverUrl() {
+  function fillRivers(code, id) {
+    riverSel.replaceChildren(); placeholder(riverSel, code ? "Choose a river" : "Choose a state first");
+    for (const r of RIVERS.filter(r => riverState(r) === code)) riverSel.add(new Option(r.name, r.id));
+    riverSel.disabled = !code;
+    if (id) riverSel.value = id;
+  }
+  function showPopular(code) {
+    const selected = STATES.find(s => s.id === code);
+    $("explorePrompt").hidden = !!selected;
+    $("popularContent").hidden = !selected;
+    if (!selected) { $("popularPanels").replaceChildren(); return; }
+    $("popularStateName").textContent = selected.name;
+    $("browseRivers").href = "directory.html?state=" + encodeURIComponent(code);
+    const featured = {MT:["madison-upper","madison-lower","yellowstone-paradise","gallatin-canyon"], ID:["boise","snake-sf-canyon","henrys-fork-box","payette-main"], OR:["deschutes-maupin","rogue-grants-pass","rogue-wild","mckenzie"]};
+    const list = RIVERS.filter(r => riverState(r) === code);
+    const chosen = (featured[code] || []).map(id => list.find(r => r.id === id)).filter(Boolean);
+    for (const r of list) { if (chosen.length >= 4) break; if (!chosen.includes(r)) chosen.push(r); }
+    $("popularPanels").innerHTML = chosen.slice(0,4).map(r => `<li><a href="index.html?river=${encodeURIComponent(r.id)}#calculator">${esc(r.name)}</a><span>${esc(r.sections[0].putIn)} → ${esc(r.sections[0].takeOut)}</span></li>`).join("");
+  }
+  function syncUrl() {
     const url = new URL(location.href);
-    url.searchParams.set("river", state.river.id);
-    url.searchParams.set("state", riverState(state.river));
+    if (stateSel.value) url.searchParams.set("state", stateSel.value); else url.searchParams.delete("state");
+    if (state.river) url.searchParams.set("river", state.river.id); else url.searchParams.delete("river");
+    url.searchParams.set("craft", state.craft.id);
+    if ($("putInTime").value) url.searchParams.set("launch",$("putInTime").value); else url.searchParams.delete("launch");
+    if (state.fishing) url.searchParams.set("fishing","1"); else url.searchParams.delete("fishing");
     history.replaceState(null, "", url.pathname + url.search + url.hash);
   }
-
-  stateSel.addEventListener("change", () => {
-    fillRiverSelect(stateSel.value);
-    state.river = RIVERS.find((r) => r.id === riverSel.value);
-    reportRiverSel.value = state.river.name;
-    syncRiverUrl();
-    renderRiver();
-    if ($("filterReports").checked) renderReports();
-  });
-
-  riverSel.addEventListener("change", () => {
-    state.river = RIVERS.find((r) => r.id === riverSel.value);
-    reportRiverSel.value = state.river.name;
-    syncRiverUrl();
-    renderRiver();
-    if ($("filterReports").checked) renderReports();
-  });
-  craftSel.addEventListener("change", () => {
-    state.craft = CRAFT.find((c) => c.id === craftSel.value);
-    renderRiver();
-  });
-  $("putInTime").addEventListener("input", () => {
-    state.putIn = parsePutIn($("putInTime").value);
-    renderRiver();
-  });
-  $("fishingToggle").addEventListener("change", () => {
-    state.fishing = $("fishingToggle").checked;
-    renderRiver();
-  });
-
+  function chooseRiver() {
+    state.request++;
+    state.river = RIVERS.find(r => r.id === riverSel.value) || null;
+    const chosen = !!state.river;
+    $("riverDash").hidden = !chosen; $("loadError").hidden = true;
+    $("locationPrompt").hidden = chosen;
+    $("locationPromptText").textContent = stateSel.value ? "Now choose your river to see its live gauges and float sections." : "Choose a state and river to see live flow, weather, and float times.";
+    $("statDaylight").parentElement.hidden = !chosen;
+    craftSel.disabled = !chosen; $("putInTime").disabled = !chosen; $("fishingToggle").disabled = !chosen;
+    reportRiverSel.value = chosen ? state.river.id : "";
+    syncUrl(); showPopular(stateSel.value); renderReports();
+    if (chosen) {
+      const sunset = sunsetToday(state.river.lat, state.river.lon);
+      const hrs = sunset ? (sunset-new Date())/3600000 : 0;
+      $("statDaylight").textContent = hrs > 0 ? fmtDuration(hrs) : "After sunset";
+      renderRiver();
+    }
+  }
+  const params = new URLSearchParams(location.search);
+  state.craft=CRAFT.find(c=>c.id===params.get("craft")) || CRAFT[0]; craftSel.value=state.craft.id;
+  if (/^\d{2}:\d{2}$/.test(params.get("launch") || "")) $("putInTime").value=params.get("launch");
+  state.fishing=params.get("fishing")==="1"; $("fishingToggle").checked=state.fishing;
+  const start = RIVERS.find(r => r.id === params.get("river"));
+  const code = start ? riverState(start) : STATES.find(st => st.id === (params.get("state") || "").toUpperCase())?.id || "";
+  stateSel.value = code; fillRivers(code, start?.id); chooseRiver();
+  stateSel.addEventListener("change", () => { fillRivers(stateSel.value); chooseRiver(); });
+  riverSel.addEventListener("change", chooseRiver);
+  craftSel.addEventListener("change", () => { state.craft=CRAFT.find(c=>c.id===craftSel.value); syncUrl(); if(state.river)renderRiver(); });
+  $("putInTime").addEventListener("input", () => {syncUrl();if(state.river)renderSections(state.river,state.gauge,renderDaylight(state.river));});
+  $("fishingToggle").addEventListener("change", () => {state.fishing=$("fishingToggle").checked;syncUrl();if(state.river)renderSections(state.river,state.gauge,renderDaylight(state.river));});
   $("filterReports").addEventListener("change", renderReports);
   $("reportForm").addEventListener("submit", submitReport);
-  $("reportsList").addEventListener("click", (ev) => {
-    const btn = ev.target.closest(".vote-btn");
-    if (btn && !btn.disabled) vote(btn.dataset.id, btn.dataset.action);
-  });
-
-  const popularSel = $("popularState");
-  if (popularSel) {
-    const panels = document.querySelectorAll(".popular-panel");
-    const showPopular = () => {
-      panels.forEach((panel) => {
-        panel.hidden = panel.dataset.state !== popularSel.value;
-      });
-    };
-    if ([...popularSel.options].some((o) => o.value === wantedState)) popularSel.value = wantedState;
-    popularSel.addEventListener("change", showPopular);
-    showPopular();
-  }
-
-  loadReports().then(renderRiver);
-
-  // refresh daylight countdown every minute
-  setInterval(() => { if (state.river) renderDaylight(state.river); }, 60000);
+  $("reportsList").addEventListener("click", ev=>{if(ev.target.closest("[data-retry-reports]")){loadReports();return;} const btn=ev.target.closest(".vote-btn");if(btn&&!btn.disabled)vote(btn.dataset.id,btn.dataset.action);});
+  loadReports();
+  setInterval(()=>{if(!document.hidden && state.river) {renderDaylight(state.river);renderSections(state.river,state.gauge,sunsetToday(state.river.lat,state.river.lon));}},60000);
+  setInterval(()=>{if(!document.hidden && state.river){renderRiver();loadReports();}},300000);
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden && state.river){renderRiver();loadReports();}});
 }
-
 init();
