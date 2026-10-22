@@ -101,7 +101,7 @@ def _lastmod():
 
 def _head(title, description, path, extra="", json_ld=None, geo=None):
     url = SITE + path
-    image = SITE + "/og.png"
+    image = SITE + "/float-eta-share.png"
     geo = geo or STATES["MT"]
     blocks = []
     if json_ld:
@@ -134,6 +134,8 @@ def _head(title, description, path, extra="", json_ld=None, geo=None):
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{esc(url)}">
   <meta property="og:image" content="{esc(image)}">
+  <meta property="og:image:url" content="{esc(image)}">
+  <meta property="og:image:secure_url" content="{esc(image)}">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -142,6 +144,7 @@ def _head(title, description, path, extra="", json_ld=None, geo=None):
   <meta name="twitter:title" content="{esc(title)}">
   <meta name="twitter:description" content="{esc(description)}">
   <meta name="twitter:image" content="{esc(image)}">
+  <meta name="twitter:image:alt" content="Float ETA — live river float times from USGS flow">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
