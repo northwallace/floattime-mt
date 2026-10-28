@@ -239,3 +239,30 @@ After integration run the catalog builder, freshness check, geographic audit and
 Python/Node tests. Then check eligible maps in a browser before proposing a state
 release. Keep GPS time remaining and automatic centerline-based distance adoption
 disabled. No changes to research data publish automatically.
+
+## Access identity and conflicting coordinates (October 28 follow-up)
+
+Before promoting an access point, join aliases using an agency site ID and the
+facility description, not only a similar name. Keep the current name, historic
+names, source dates and conflicting attributes in the research package. An old
+PDF title can point to a renamed site whose current detail page carries a closure
+(Corwin Springs / Brogan’s Landing, ID 39753522). Conversely, a newer facility
+announcement can document a launch missing from an older GIS attribute (John &
+Nancy Owen FAS, ID 91552932). Neither case permits automatic coordinate promotion.
+
+Check a proposed facility marker against nearby dams, bridges, road approaches
+and the documented landing. Official provenance alone does not establish that a
+coordinate is a launch. Reject inconsistent coordinates into a research-only
+conflict record; never silently repair a digit, snap to water, or use a dam point
+for a take-out. A published coordinate near a critical hazard may be unsuitable
+even for an approximate marker. The Barretts and Fort Benton decisions in
+`research/MT/access-review-20261028/coordinate-conflicts.json` illustrate this.
+
+Deliver a section-level decision queue with `riverId`, `sectionId`, `status`,
+`decision`, `nextAction`, and `sourceUrls`, plus a dated source-download manifest.
+Distinguish a usable approximate access map from an approved river line, verified
+mileage, calibrated timing, and current opening status. The October 28 queue
+covers every previously withheld Montana section, including unresolved ones.
+Keep uncertain route geometry in research with all feature flags false; keep
+closed/ambiguous access pending. Save dated restrictions as section notices so
+research findings reach both the calculator and guide pages.

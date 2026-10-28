@@ -72,12 +72,13 @@ See [the current catalog and research contract](catalog/RESEARCH_FORMAT.md) for
 all required fields, unavailable timing, guide ranges, and the shared importer.
 Never use guessed speed or a current gauge reading as calibration filler.
 
-Every Montana river has now completed a first-pass access audit. Verified maps
-currently cover Madison Lower, Madison Upper, Yellowstone Paradise Valley, Big
-Hole, Jefferson Canyon / Three Forks, Alberton Gorge, Upper Bitterroot, Stillwater,
-Blackfoot, Missouri River / Craig, North Fork Flathead, and Smith (approximate). Other Montana river audits remain explicitly
-pending because one or more endpoints are ambiguous, unsuitable, locally managed,
-or closed. Their maps stay hidden until each replacement endpoint is verified.
+Montana currently has 38 access maps across 54 sections, including four newly
+reviewed approximate maps on the Bitterroot, Dearborn, and Missouri Breaks.
+Thirteen sections also have reviewed dotted river lines. Sixteen maps remain
+withheld for unresolved landings, route identity, closures, or hazards. An access
+map does not establish reviewed mileage or a calibrated float-time estimate;
+those checks remain separate. See the dated section review queues in
+`research/MT/` for decisions and outstanding work.
 
 ### Catalog validation
 

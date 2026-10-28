@@ -1,0 +1,76 @@
+{
+  "checkedOn": "2026-10-28",
+  "conflicts": [
+    {
+      "site": "Fort Benton canoe launch",
+      "sourceFile": "raw/fort-benton-judith.pdf",
+      "sourceLocation": "Printed page 64 / PDF page 66",
+      "rejected": {
+        "utmZone": "12T",
+        "easting": 526968,
+        "northing": 5294688,
+        "lat": 47.80498244050096,
+        "lon": -110.63983194089852
+      },
+      "acceptedAs": "approximate facility only",
+      "accepted": {
+        "lat": 47.8051,
+        "lon": -110.6798
+      },
+      "reason": "Guide UTM easting places canoe launch away from the Missouri. Used independently listed interagency facility location and BLM fairgrounds identity; did not edit the guide number."
+    },
+    {
+      "site": "Judith Landing",
+      "sourceFile": "raw/lewistown-fire-plan.pdf",
+      "sourceLocation": "Printed page 20 / PDF page 21",
+      "rejected": {
+        "lat": 47.7413,
+        "lon": -109.9266
+      },
+      "reason": "Conflicts with BLM current facility location -109.62665. No substitution into runtime registry."
+    },
+    {
+      "site": "Barretts Station Park",
+      "rejected": {
+        "lat": 45.1304769,
+        "lon": -112.7403012
+      },
+      "dam": {
+        "lat": 45.1302,
+        "lon": -112.7403
+      },
+      "reason": "Tourism facility coordinate is roughly 31 m from USBR dam coordinate. Neither identifies the take-out upstream; keep pending.",
+      "sourceUrls": [
+        "https://data.visitmt.com/data/site/1984",
+        "https://www.usbr.gov/projects/index.php?id=271"
+      ]
+    },
+    {
+      "site": "Corwin Springs",
+      "agencyId": "39753522",
+      "aliases": [
+        "Corwin Springs",
+        "Brogan’s Landing"
+      ],
+      "reason": "Old PDF title and current GIS/site name disagree, and current site page still lists flood closure. No accepted landing coordinate.",
+      "sourceUrls": [
+        "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753522.pdf",
+        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522"
+      ]
+    },
+    {
+      "site": "John & Nancy Owen FAS",
+      "agencyId": "91552932",
+      "aliases": [
+        "Stevensville Bridge",
+        "John Owen FAS",
+        "John & Nancy Owen FAS"
+      ],
+      "reason": "GIS BOAT_FAC says No Boat Facilities; FWP site detail documents boating access and June 2026 release describes a gravel launch. Accepted facility area only, not exact ramp.",
+      "sourceUrls": [
+        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+        "https://www.theoutdoorwire.com/releases/2026/06/small-campground-opens-june-5-at-john-nancy-owen-fishing-access-site-near-stevensville/"
+      ]
+    }
+  ]
+}

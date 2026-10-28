@@ -5,20 +5,32 @@
   "gaugeName": "Dearborn near Craig",
   "lat": 47.13,
   "lon": -112.05,
-  "refFlowCfs": 350,
-  "refSpeedMph": 3.8,
-  "blurb": "A short, pretty canyon that dumps into the Missouri. Spring and early-summer water — skinny later.",
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Seasonal canyon trip from Highway 287 to the Missouri, ending at Mid Canon FAS. Plan a full day and arrange a shuttle.",
   "sections": [
     {
       "id": "hwy200-missouri",
-      "putIn": "Highway 200 / Bean Lake area",
-      "takeOut": "Missouri confluence (Craig)",
+      "putIn": "Dearborn Highway 287 bridge",
+      "takeOut": "Mid Canon FAS (Missouri River)",
       "miles": 19,
-      "difficulty": "Class I–II",
-      "notes": "Canyon float. Needs decent runoff; at low cfs you will drag. Watch for fences near the mouth.",
-      "accessReview": "The launch label covers a broad area, and the Missouri confluence is not a confirmed road-accessible take-out. Both endpoints need a specific access plan."
+      "difficulty": "Class II",
+      "notes": "About 19 miles according to the 2024 River Management Society trip plan, including about one mile on the Missouri. Arrange the shuttle before launching. The bridge approach can be muddy and deeply potholed; check current access and flows.",
+      "notices": [
+        {
+          "title": "Corrected start and finish",
+          "text": "This is the Highway 287 bridge–Mid Canon trip described by the River Management Society, approximately 19 miles. It does not start at Highway 200, and the take-out is downstream of the Dearborn–Missouri confluence. The 2024 full-day itinerary is planning context, not a measured travel-time prediction.",
+          "sourceName": "River Management Society — 2024 Dearborn day-trip plan",
+          "sourceUrl": "https://rms.memberclicks.net/assets/Chapters/Northwest/2024/RMS%20DAY%20TRIP%20INFORMATION%20Dearborn%20River.pdf",
+          "checkedOn": "2026-10-28"
+        }
+      ]
     }
   ],
   "state": "MT",
-  "timezone": "America/Denver"
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "The corrected Highway 287–Mid Canon trip crosses onto the Missouri. A reviewed flow/speed calibration for that trip has not been established."
+  }
 }

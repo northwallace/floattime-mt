@@ -1,0 +1,175 @@
+{
+  "checkedOn": "2026-10-28",
+  "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/hydrography/MapServer/20/query?f=json&where=NAME+LIKE+%27%25Beaverhead%25%27+OR+NAME+LIKE+%27%25Gallatin%25%27+OR+NAME+LIKE+%27%25Dearborn%25%27&outFields=NAME%2CLLID%2COBJECTID%2CMILES&returnGeometry=false",
+  "response": {
+    "displayFieldName": "NAME",
+    "fieldAliases": {
+      "NAME": "NAME",
+      "LLID": "LLID",
+      "OBJECTID": "OBJECTID",
+      "MILES": "MILES"
+    },
+    "fields": [
+      {
+        "name": "NAME",
+        "type": "esriFieldTypeString",
+        "alias": "NAME",
+        "length": 100
+      },
+      {
+        "name": "LLID",
+        "type": "esriFieldTypeString",
+        "alias": "LLID",
+        "length": 16
+      },
+      {
+        "name": "OBJECTID",
+        "type": "esriFieldTypeOID",
+        "alias": "OBJECTID"
+      },
+      {
+        "name": "MILES",
+        "type": "esriFieldTypeDouble",
+        "alias": "MILES"
+      }
+    ],
+    "features": [
+      {
+        "attributes": {
+          "NAME": "Beaverhead Ditch at Beaverhead Rock",
+          "LLID": "1124527455833",
+          "OBJECTID": 1556,
+          "MILES": 1.0561190599999999
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Beaverhead-Big Hole Crossover Ditch",
+          "LLID": "1123400457011",
+          "OBJECTID": 3522,
+          "MILES": 0.58657744
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "South Fork West Fork Gallatin Riv",
+          "LLID": "1112720452679",
+          "OBJECTID": 59262,
+          "MILES": 13.778
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "West Fork Gallatin River",
+          "LLID": "1112523452655",
+          "OBJECTID": 59310,
+          "MILES": 3.745
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "North Fork West Fork Gallating Ri",
+          "LLID": "1113207452666",
+          "OBJECTID": 59690,
+          "MILES": 7.37
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Middle Fork West Fork Gallatin Ri",
+          "LLID": "1113207452667",
+          "OBJECTID": 59691,
+          "MILES": 5.972
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Gallatin River",
+          "LLID": "1114924459385",
+          "OBJECTID": 59887,
+          "MILES": 97.19
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Dearborn River",
+          "LLID": "1119113471278",
+          "OBJECTID": 60552,
+          "MILES": 69.94500000000001
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "South Fork Dearborn River",
+          "LLID": "1121856471952",
+          "OBJECTID": 60665,
+          "MILES": 15.966000000000001
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Dearborn Creek",
+          "LLID": "1120998460268",
+          "OBJECTID": 60666,
+          "MILES": 3.4040000000000004
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Middle Fork Dearborn River",
+          "LLID": "1122427472197",
+          "OBJECTID": 60799,
+          "MILES": 13.992
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "West Prong Dearborn River",
+          "LLID": "1122960470815",
+          "OBJECTID": 61238,
+          "MILES": 2.851
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Dearborn Gulch",
+          "LLID": "1134942462094",
+          "OBJECTID": 65983,
+          "MILES": 2.783
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "East Gallatin River",
+          "LLID": "1113345458915",
+          "OBJECTID": 67140,
+          "MILES": 42.129000000000005
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Unnamed trib to MF Dearborn R 11",
+          "LLID": "1123592471156",
+          "OBJECTID": 67586,
+          "MILES": 2.2880000000000003
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Unnamed trib to Gallatin R RM 40",
+          "LLID": "1112135456351",
+          "OBJECTID": 67598,
+          "MILES": 2.7310000000000003
+        }
+      },
+      {
+        "attributes": {
+          "NAME": "Beaverhead River",
+          "LLID": "1123386455677",
+          "OBJECTID": 83032,
+          "MILES": 75.52992821
+        }
+      }
+    ]
+  }
+}

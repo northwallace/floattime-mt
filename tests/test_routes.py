@@ -51,7 +51,11 @@ class RouteTests(unittest.TestCase):
         queue=json.loads((ROOT/'research/routes/MT/review-queue.json').read_text())['sections']
         expected={(r['id'],s['id']) for r in self.catalog['rivers'] if r['state']=='MT' for s in r['sections']}
         self.assertEqual({(r['riverId'],r['sectionId']) for r in queue},expected)
-        self.assertEqual(sum(r['issues']==['access-points-pending'] for r in queue),7)
-        self.assertEqual(sum(r['issues']==['catalog-access-under-review'] for r in queue),13)
+        sections={(r['id'],s['id']):s for r in self.catalog['rivers'] if r['state']=='MT' for s in r['sections']}
+        for issue, expected_keys in [
+            ('catalog-access-under-review', {key for key,s in sections.items() if s.get('accessReview')}),
+            ('access-points-pending', {key for key,s in sections.items() if not s.get('accessReview') and not s.get('mapPilot')}),
+        ]:
+            self.assertEqual({(r['riverId'],r['sectionId']) for r in queue if issue in r['issues']}, expected_keys)
 
 if __name__=='__main__':unittest.main()

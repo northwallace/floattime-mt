@@ -17,7 +17,7 @@
       "issues": [
         "access-points-pending"
       ],
-      "detail": "Barretts Station Park (above dam): The Bureau of Reclamation and Visit Montana document the park take-out upstream of the diversion dam. The precise landing coordinate remains pending; do not pin the dam itself."
+      "detail": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam."
     },
     {
       "riverId": "big-hole",
@@ -108,17 +108,38 @@
       "riverId": "bitterroot",
       "sectionId": "bell-crossing-stevi",
       "issues": [
-        "access-points-pending"
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
       ],
-      "detail": "Stevensville Bridge: No current managing-agency record has been found for an exact public boat ramp at the catalog label."
+      "metrics": {
+        "routeMiles": 7.1533,
+        "endpointOffsetsMeters": [
+          224.8,
+          91.2
+        ],
+        "mileageDifferencePercent": 2.19,
+        "maxSegmentMeters": 268.6,
+        "vertices": 141
+      }
     },
     {
       "riverId": "bitterroot",
       "sectionId": "stevi-florence",
       "issues": [
-        "access-points-pending"
+        "approximate-access-points",
+        "catalog-distance-under-review",
+        "mileage-difference-over-5-percent"
       ],
-      "detail": "Stevensville Bridge: No current managing-agency record has been found for an exact public boat ramp at the catalog label."
+      "metrics": {
+        "routeMiles": 10.0529,
+        "endpointOffsetsMeters": [
+          91.2,
+          61.5
+        ],
+        "mileageDifferencePercent": 11.7,
+        "maxSegmentMeters": 545.9,
+        "vertices": 124
+      }
     },
     {
       "riverId": "bitterroot",
@@ -220,17 +241,16 @@
       "riverId": "dearborn",
       "sectionId": "hwy200-missouri",
       "issues": [
-        "catalog-access-under-review"
-      ],
-      "detail": "The launch label covers a broad area, and the Missouri confluence is not a confirmed road-accessible take-out. Both endpoints need a specific access plan."
+        "source-not-configured"
+      ]
     },
     {
       "riverId": "gallatin-canyon",
       "sectionId": "greek-creek-storm-castle",
       "issues": [
-        "access-points-pending"
+        "catalog-access-under-review"
       ],
-      "detail": "Greek Creek: The Forest Service recreation area is documented, but an exact legal river-side rafting launch coordinate has not been confirmed from a current agency access record. Storm Castle: The Forest Service recreation area is documented, but an exact legal river-side rafting take-out and its downstream bank have not been confirmed from a current agency access record."
+      "detail": "The 2015 access survey distinguishes Greek Creek Campground from its upstream pull-out, and Upper Storm Castle from Lower Storm Castle. Greek Creek\u2019s bank was rebuilt in 2024\u20132025; the current designated raft launch must be reconciled with those older points before mapping this trip."
     },
     {
       "riverId": "gallatin-lower",
@@ -427,9 +447,19 @@
       "riverId": "missouri-breaks",
       "sectionId": "fort-benton-judith",
       "issues": [
-        "access-points-pending"
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
       ],
-      "detail": "Fort Benton (Canoe Launch): BLM identifies the Chouteau County Fairgrounds canoe launch at river mile 0; an agency-supported coordinate for this specific launch still needs to be entered. Do not substitute the downstream motorboat launch."
+      "metrics": {
+        "routeMiles": 89.593,
+        "endpointOffsetsMeters": [
+          115.5,
+          306.6
+        ],
+        "mileageDifferencePercent": 1.24,
+        "maxSegmentMeters": 902.3,
+        "vertices": 676
+      }
     },
     {
       "riverId": "missouri-craig",

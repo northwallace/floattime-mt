@@ -2712,6 +2712,7 @@
           "miles": 9,
           "difficulty": "Class I",
           "notes": "Best floating on the river. Narrow and brushy. Great trout water.",
+          "distanceReview": "The legacy mileage conflicts with the agency river geometry and has not been established between the intended landings. Float-time estimates are withheld until access and distance are resolved.",
           "mapPendingReason": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch.",
           "mapReleased": false
         },
@@ -2721,7 +2722,7 @@
           "takeOut": "Barretts Station Park (above dam)",
           "miles": 10,
           "difficulty": "Class I",
-          "notes": "Use the documented Barretts Station Park take-out upstream of the diversion dam. Do not continue to the dam. Confirm current access with the Bureau of Reclamation; the exact landing pin is still pending.",
+          "notes": "Use Barretts Station Park’s designated take-out upstream of the diversion dam. Locate the landing from shore before launching. The available tourism coordinate overlaps the dam and is not used as a landing marker.",
           "notices": [
             {
               "title": "Take out before Barretts Diversion Dam",
@@ -2731,7 +2732,8 @@
               "checkedOn": "2026-10-27"
             }
           ],
-          "mapPendingReason": "Barretts Station Park (above dam): The Bureau of Reclamation and Visit Montana document the park take-out upstream of the diversion dam. The precise landing coordinate remains pending; do not pin the dam itself.",
+          "distanceReview": "The legacy mileage conflicts with the agency river geometry and has not been established between the intended landings. Float-time estimates are withheld until access and distance are resolved.",
+          "mapPendingReason": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam.",
           "mapReleased": false
         }
       ],
@@ -2739,7 +2741,7 @@
       "timezone": "America/Denver",
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-23. High Bridge is verified, but the catalog’s Clark Canyon Dam label does not identify the river-side launch and Barretts Dam is not a current managed FWP access point. Maps stay hidden until both endpoints and legal access are resolved."
+      "mapAuditNote": "Reviewed 2026-10-28. High Bridge retains its sourced access record. The state tourism coordinate for Barretts overlaps the diversion dam and was rejected. Both sections remain pending access and mileage review."
     },
     {
       "id": "big-hole",
@@ -3006,22 +3008,86 @@
         {
           "id": "bell-crossing-stevi",
           "putIn": "Bell Crossing",
-          "takeOut": "Stevensville Bridge",
+          "takeOut": "John & Nancy Owen FAS (Stevensville Bridge)",
           "miles": 7,
           "difficulty": "Class I",
           "notes": "Channels braid and wood moves every year — heads-up floating.",
-          "mapPendingReason": "Stevensville Bridge: No current managing-agency record has been found for an exact public boat ramp at the catalog label.",
-          "mapReleased": false
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 46.4443416261623,
+            "lon": -114.12630602302092
+          },
+          "takeOutCoords": {
+            "lat": 46.52119,
+            "lon": -114.10643
+          },
+          "putInAccess": {
+            "status": "verified",
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Bell Crossing Fishing Access Site 39754137",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754137",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer."
+          },
+          "takeOutAccess": {
+            "status": "access-verified",
+            "accessType": "Gravel launch; approximate facility location",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP — John & Nancy Owen Fishing Access Site",
+            "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+            "verifiedOn": "2026-10-28",
+            "note": "FWP documents boating access at this facility. The site coordinate and March 2026 boundary map locate the access area, not a surveyed ramp edge. FWP’s June 2026 announcement describes the gravel launch and expanded trailer parking; the GIS boat-facility attribute has not caught up.",
+            "directions": "From US 93, take Stevensville Cutoff Road east about ¼ mile. Enter the signed John & Nancy Owen FAS on the north side of the road; use the designated launch, not the highway bridge.",
+            "coordinateSourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932"
+          },
+          "mapReleased": true
         },
         {
           "id": "stevi-florence",
-          "putIn": "Stevensville Bridge",
+          "putIn": "John & Nancy Owen FAS (Stevensville Bridge)",
           "takeOut": "Florence Bridge",
           "miles": 9,
           "difficulty": "Class I",
           "notes": "Check recent obstruction reports — strainers are common here.",
-          "mapPendingReason": "Stevensville Bridge: No current managing-agency record has been found for an exact public boat ramp at the catalog label.",
-          "mapReleased": false
+          "distanceReview": "The existing 9-mile figure conflicts with the FWP centerline (about 10 miles between these facility locations). The map is approximate; float-time estimates await a reviewed landing-to-landing distance.",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 46.52119,
+            "lon": -114.10643
+          },
+          "takeOutCoords": {
+            "lat": 46.63211733128685,
+            "lon": -114.05155012142006
+          },
+          "putInAccess": {
+            "status": "access-verified",
+            "accessType": "Gravel launch; approximate facility location",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP — John & Nancy Owen Fishing Access Site",
+            "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+            "verifiedOn": "2026-10-28",
+            "note": "FWP documents boating access at this facility. The site coordinate and March 2026 boundary map locate the access area, not a surveyed ramp edge. FWP’s June 2026 announcement describes the gravel launch and expanded trailer parking; the GIS boat-facility attribute has not caught up.",
+            "directions": "From US 93, take Stevensville Cutoff Road east about ¼ mile. Enter the signed John & Nancy Owen FAS on the north side of the road; use the designated launch, not the highway bridge.",
+            "coordinateSourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932"
+          },
+          "takeOutAccess": {
+            "status": "verified",
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Florence Bridge Fishing Access Site 39754145",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754145",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery."
+          },
+          "mapReleased": true
         },
         {
           "id": "florence-buckhouse",
@@ -3039,7 +3105,7 @@
       "timezone": "America/Denver",
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-24. Bell Crossing and Florence Bridge are current FWP ramps, but the exact legal boat access at Stevensville Bridge and Buckhouse Bridge could not be confirmed from a current managing-agency record. Maps stay hidden until those two endpoints are verified or replaced."
+      "mapAuditNote": "Reviewed 2026-10-28. Stevensville Bridge is John & Nancy Owen FAS: documented boat access with an approximate facility marker. Bell Crossing–Owen and Owen–Florence maps are available. Buckhouse Bridge remains unresolved."
     },
     {
       "id": "blackfoot",
@@ -3421,27 +3487,69 @@
       "gaugeName": "Dearborn near Craig",
       "lat": 47.13,
       "lon": -112.05,
-      "refFlowCfs": 350,
-      "refSpeedMph": 3.8,
-      "blurb": "A short, pretty canyon that dumps into the Missouri. Spring and early-summer water — skinny later.",
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Seasonal canyon trip from Highway 287 to the Missouri, ending at Mid Canon FAS. Plan a full day and arrange a shuttle.",
       "sections": [
         {
           "id": "hwy200-missouri",
-          "putIn": "Highway 200 / Bean Lake area",
-          "takeOut": "Missouri confluence (Craig)",
+          "putIn": "Dearborn Highway 287 bridge",
+          "takeOut": "Mid Canon FAS (Missouri River)",
           "miles": 19,
-          "difficulty": "Class I–II",
-          "notes": "Canyon float. Needs decent runoff; at low cfs you will drag. Watch for fences near the mouth.",
-          "accessReview": "The launch label covers a broad area, and the Missouri confluence is not a confirmed road-accessible take-out. Both endpoints need a specific access plan.",
-          "mapPendingReason": "Highway 200 / Bean Lake area: This describes a general area and does not identify one exact legal river-side launch. Missouri confluence (Craig): The confluence is not a named road-accessible take-out; an exact legal exit point has not been confirmed.",
-          "mapReleased": false
+          "difficulty": "Class II",
+          "notes": "About 19 miles according to the 2024 River Management Society trip plan, including about one mile on the Missouri. Arrange the shuttle before launching. The bridge approach can be muddy and deeply potholed; check current access and flows.",
+          "notices": [
+            {
+              "title": "Corrected start and finish",
+              "text": "This is the Highway 287 bridge–Mid Canon trip described by the River Management Society, approximately 19 miles. It does not start at Highway 200, and the take-out is downstream of the Dearborn–Missouri confluence. The 2024 full-day itinerary is planning context, not a measured travel-time prediction.",
+              "sourceName": "River Management Society — 2024 Dearborn day-trip plan",
+              "sourceUrl": "https://rms.memberclicks.net/assets/Chapters/Northwest/2024/RMS%20DAY%20TRIP%20INFORMATION%20Dearborn%20River.pdf",
+              "checkedOn": "2026-10-28"
+            }
+          ],
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 47.1992,
+            "lon": -112.09597
+          },
+          "takeOutCoords": {
+            "lat": 47.12548411608166,
+            "lon": -111.88509596607486
+          },
+          "putInAccess": {
+            "status": "access-verified",
+            "accessType": "Undeveloped bridge launch",
+            "sourceName": "River Management Society — 2024 Dearborn day-trip logistics",
+            "sourceUrl": "https://rms.memberclicks.net/assets/Chapters/Northwest/2024/RMS%20DAY%20TRIP%20INFORMATION%20Dearborn%20River.pdf",
+            "verifiedOn": "2026-10-28",
+            "note": "RMS identifies the launch and publishes these coordinates. Treat them as the bridge access area, not a surveyed water-edge ramp. This is Highway 287, not Highway 200 or Bean Lake.",
+            "directions": "Use the documented Highway 287 bridge pull-off. This is an undeveloped launch: inspect the muddy approach and large potholes before taking a trailer down.",
+            "coordinateSourceUrl": "https://rms.memberclicks.net/assets/Chapters/Northwest/2024/RMS%20DAY%20TRIP%20INFORMATION%20Dearborn%20River.pdf"
+          },
+          "takeOutAccess": {
+            "status": "access-verified",
+            "accessType": "Gravel ramp; approximate facility location",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP — Mid Canon FAS; RMS Dearborn trip plan",
+            "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753694.pdf",
+            "verifiedOn": "2026-10-28",
+            "note": "FWP’s managed-site inventory documents a gravel ramp and its facility point. The official site map identifies the recreation area; an exact landing-edge coordinate is not claimed.",
+            "directions": "Take out at the signed Mid Canon FAS on the Missouri River, reached from Old US Highway 91. The trip continues about one mile on the Missouri after the Dearborn confluence; the confluence itself is not the take-out.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1/query?where=1%3D1&outFields=%2A&outSR=4326&returnGeometry=true&f=json"
+          },
+          "mapReleased": true
         }
       ],
       "state": "MT",
       "timezone": "America/Denver",
+      "timing": {
+        "mode": "unavailable",
+        "note": "The corrected Highway 287–Mid Canon trip crosses onto the Missouri. A reviewed flow/speed calibration for that trip has not been established."
+      },
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-24. Both catalog endpoints describe broad areas rather than named, agency-documented boat accesses. The map stays hidden until exact legal launch and take-out locations are selected and verified."
+      "mapAuditNote": "Reviewed 2026-10-28 against the RMS 2024 trip plan and FWP Mid Canon map/inventory. Corrected the launch to Highway 287 and the exit to Mid Canon on the Missouri. Approximate facility map available; old speed model disabled. Legacy section ID retained for existing links."
     },
     {
       "id": "gallatin-canyon",
@@ -3461,6 +3569,17 @@
           "miles": 9,
           "difficulty": "Class III–IV",
           "notes": "Screaming Left, House Rock, Mad Mile. Not a tube or beginner run. Confirm the exact legal launch and take-out with the Forest Service or a local outfitter before going.",
+          "accessReview": "The 2015 access survey distinguishes Greek Creek Campground from its upstream pull-out, and Upper Storm Castle from Lower Storm Castle. Greek Creek’s bank was rebuilt in 2024–2025; the current designated raft launch must be reconciled with those older points before mapping this trip.",
+          "distanceReview": "The 2015 access survey totals about 5.2 miles from Greek Creek Campground to Upper Storm Castle, or 7.3 miles to Lower Storm Castle. Neither supports the existing 9-mile label; select the current landings before publishing a replacement distance.",
+          "notices": [
+            {
+              "title": "Greek Creek access has changed",
+              "text": "The Gallatin River Task Force completed streambank restoration at Greek Creek in 2025, with a designated rock-terrace access and protective fencing. An old raft-launch pin may no longer identify the appropriate access. Confirm the designated launch before using this listing.",
+              "sourceName": "Gallatin River Task Force — Greek Creek restoration",
+              "sourceUrl": "https://gallatinrivertaskforce.org/greek-creek/",
+              "checkedOn": "2026-10-28"
+            }
+          ],
           "mapPendingReason": "Greek Creek: The Forest Service recreation area is documented, but an exact legal river-side rafting launch coordinate has not been confirmed from a current agency access record. Storm Castle: The Forest Service recreation area is documented, but an exact legal river-side rafting take-out and its downstream bank have not been confirmed from a current agency access record.",
           "mapReleased": false
         }
@@ -3469,7 +3588,7 @@
       "timezone": "America/Denver",
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-23. Greek Creek and Storm Castle are documented recreation areas, but exact legal river-side rafting launch and take-out points could not be confirmed from current agency records. The map stays hidden pending agency or field verification."
+      "mapAuditNote": "Reviewed 2026-10-28. The access survey distinguishes two Greek Creek points and two Storm Castle points. Greek Creek was restored in 2024–2025; current raft access must be reconciled. Survey mileage also contradicts the old 9-mile figure. Map and timing remain held."
     },
     {
       "id": "gallatin-lower",
@@ -3670,8 +3789,17 @@
           "miles": 6,
           "difficulty": "Class I",
           "notes": "Diversion dam just below Waterloo — rope or portage. Don't drift it blind.",
-          "accessReview": "The Parsons Bridge / Waterloo label needs to be resolved to one confirmed access site. A diversion near Waterloo also requires current local guidance.",
-          "mapPendingReason": "Parsons Bridge (Waterloo): Local canoe-trail material describes a ramp in the road right-of-way and a nearby diversion, but no current agency access record was found and the catalog uses two different labels for this site.",
+          "accessReview": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check.",
+          "notices": [
+            {
+              "title": "Waterloo / Parsons diversion dam",
+              "text": "The Jefferson River Canoe Trail describes a boat ramp in the Waterloo Road right-of-way beside Lost Tomahawk and a public portage around the diversion. Locate the landing and portage before planning this trip; the bridge label alone does not identify a safe exit or launch.",
+              "sourceName": "Jefferson River Canoe Trail — Lost Tomahawk",
+              "sourceUrl": "https://www.jeffersonriver.org/Campsites/Lost_Tomahawk.htm",
+              "checkedOn": "2026-10-28"
+            }
+          ],
+          "mapPendingReason": "Parsons Bridge (Waterloo): Identity resolved: Waterloo Road crossing beside Lost Tomahawk / Parsons diversion dam. The canoe-trail organization documents a right-of-way boat ramp and portage, but the precise landing, dam relationship and current access still need review.",
           "mapReleased": false
         },
         {
@@ -3681,8 +3809,17 @@
           "miles": 10,
           "difficulty": "Class I",
           "notes": "Parrot Castle has no boat ramp and difficult river access in the official FWP record. Do not rely on it as a take-out until a suitable replacement is confirmed.",
-          "accessReview": "The launch label is ambiguous, and the official Parrot Castle record describes difficult river access with no boat ramp. A suitable take-out for the planned craft has not been confirmed.",
-          "mapPendingReason": "Parsons Bridge (Waterloo): Local canoe-trail material describes a ramp in the road right-of-way and a nearby diversion, but no current agency access record was found and the catalog uses two different labels for this site. Parrot Castle FAS: The official Parrot Castle record describes difficult river access and no boat ramp; it is also absent from the current managed-access layer. The section needs a suitable take-out before a map can publish.",
+          "accessReview": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing.",
+          "notices": [
+            {
+              "title": "Waterloo / Parsons diversion dam",
+              "text": "The Jefferson River Canoe Trail describes a boat ramp in the Waterloo Road right-of-way beside Lost Tomahawk and a public portage around the diversion. Locate the landing and portage before planning this trip; the bridge label alone does not identify a safe exit or launch.",
+              "sourceName": "Jefferson River Canoe Trail — Lost Tomahawk",
+              "sourceUrl": "https://www.jeffersonriver.org/Campsites/Lost_Tomahawk.htm",
+              "checkedOn": "2026-10-28"
+            }
+          ],
+          "mapPendingReason": "Parsons Bridge (Waterloo): Identity resolved: Waterloo Road crossing beside Lost Tomahawk / Parsons diversion dam. The canoe-trail organization documents a right-of-way boat ramp and portage, but the precise landing, dam relationship and current access still need review. Parrot Castle FAS: The official Parrot Castle record describes difficult river access and no boat ramp; it is also absent from the current managed-access layer. The section needs a suitable take-out before a map can publish.",
           "mapReleased": false
         }
       ],
@@ -3690,7 +3827,7 @@
       "timezone": "America/Denver",
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-23. Silver Star is verified, but Parsons Bridge lacks a current agency access record and Parrot Castle has no boat ramp and difficult river access. Maps stay hidden until the section endpoints are corrected and verified."
+      "mapAuditNote": "Reviewed 2026-10-28. Parsons/Waterloo identity resolved through the Jefferson River Canoe Trail; landing and diversion-portage geometry are still unresolved. Parrot Castle lacks confirmed usable boat access. Both maps remain held."
     },
     {
       "id": "madison-lower",
@@ -4089,14 +4226,51 @@
             },
             "note": "BLM places the Fort Benton canoe launch at mile 0 and Judith Landing at 88.5. The former 149-mile distance belongs to the longer trip to James Kipp Recreation Area. The motorboat launch is a different start downstream."
           },
-          "mapPendingReason": "Fort Benton (Canoe Launch): BLM identifies the Chouteau County Fairgrounds canoe launch at river mile 0; an agency-supported coordinate for this specific launch still needs to be entered. Do not substitute the downstream motorboat launch.",
-          "mapReleased": false
+          "notices": [
+            {
+              "title": "Confirm seasonal access and shuttle",
+              "text": "BLM lists Judith Landing campground’s season as May 15–October 15. Check launch access and road conditions separately before arranging an off-season trip; the campground listing does not establish year-round vehicle access to the ramp.",
+              "sourceName": "BLM — Judith Landing",
+              "sourceUrl": "https://www.blm.gov/visit/judith-landing",
+              "checkedOn": "2026-10-28"
+            }
+          ],
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 47.8051,
+            "lon": -110.6798
+          },
+          "takeOutCoords": {
+            "lat": 47.74135,
+            "lon": -109.62665
+          },
+          "putInAccess": {
+            "status": "access-verified",
+            "accessType": "Canoe launch; approximate facility location",
+            "sourceName": "BLM Upper Missouri river access guide; Lewistown Area Restrictions Plan 2024–2029",
+            "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks/plan",
+            "verifiedOn": "2026-10-28",
+            "note": "The interagency plan lists this named canoe-launch location on printed page 20. It is treated as an approximate facility point. The conflicting canoe-launch UTM easting in the 2017 BLM boater guide was rejected, not silently corrected.",
+            "directions": "Use the canoe launch at Chouteau County Fairgrounds in Fort Benton (BLM river mile 0). The downstream motorboat launch is a different starting point.",
+            "coordinateSourceUrl": "https://gacc.nifc.gov/nrcc/nrcg/restrictions_closures/areaplans/Lewistown%20Area%20Restrictions%20Plan%202024-2029.pdf"
+          },
+          "takeOutAccess": {
+            "status": "access-verified",
+            "sourceName": "Bureau of Land Management recreation site",
+            "sourceUrl": "https://www.blm.gov/visit/judith-landing",
+            "verifiedOn": "2026-10-27",
+            "note": "BLM confirms a boat-access facility and publishes this recreation-site coordinate. The exact ramp edge and take-out bank remain unverified; do not substitute the facility marker for the landing.",
+            "directions": "Use Judith Landing Recreation Area on Highway 236. BLM’s boater guide places the boat take-out downstream of the highway bridge; the campground is upstream. Confirm seasonal access before arranging your shuttle.",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/judith-landing"
+          },
+          "mapReleased": true
         }
       ],
       "state": "MT",
       "timezone": "America/Denver",
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-24. Fort Benton to Judith Landing is an established Upper Missouri River trip, but the catalog needs exact BLM-supported launch and take-out coordinates and a verified take-out bank before its map can publish."
+      "mapAuditNote": "Reviewed 2026-10-28. The named Fort Benton canoe launch and Judith Landing support an approximate facility map. Printed-guide coordinate conflicts are recorded in research; neither marker claims an exact landing or bank. BLM’s 88.5-mile trip distance is retained."
     },
     {
       "id": "missouri-craig",
@@ -4459,7 +4633,7 @@
       "lon": -113.7,
       "refFlowCfs": 500,
       "refSpeedMph": 4,
-      "blurb": "Blue-ribbon creek east of Missoula. Fast, woody, and closed to boats after June 30.",
+      "blurb": "Blue-ribbon creek east of Missoula with fast water and wood hazards. Seasonal boat-fishing restrictions and access closures require planning.",
       "sections": [
         {
           "id": "dalles",
@@ -4496,9 +4670,16 @@
               "sourceName": "Montana FWP — 2026 Fishing Regulations, page 40",
               "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
               "checkedOn": "2026-10-27"
+            },
+            {
+              "title": "Valley of the Moon road-access closure",
+              "text": "Lolo National Forest Order 26-018-Lolo-D3 prohibits public motor-vehicle use of Gilbert Creek Road (Forest Road 34), mile 0–1.86, August 22–December 31, 2026 unless rescinded. Do not plan a vehicle shuttle across the Valley of the Moon bridge without checking the current order. This is a road closure, not a closure of the entire river.",
+              "sourceName": "US Forest Service — Gilbert Creek Road closure",
+              "sourceUrl": "https://www.fs.usda.gov/r01/lolo/alerts/gilbert-creek-road-closure-forest-service-road-34",
+              "checkedOn": "2026-10-28"
             }
           ],
-          "mapPendingReason": "Harry's Flat: The Forest Service campground is documented, but an exact usable boat launch coordinate has not been confirmed. Valley of the Moon: The former coordinate was an OpenStreetMap fishing-area label across the road from the usable river access; exact take-out requires local or agency confirmation.",
+          "mapPendingReason": "Harry's Flat: The Forest Service campground is documented, but an exact usable boat launch coordinate has not been confirmed. Valley of the Moon: The old pin was across the road from river access. The usable landing is still unresolved. Road access is also affected by Lolo Order 26-018-Lolo-D3 (August 22–December 31, 2026 unless rescinded); see the section’s dated notice.",
           "mapReleased": false
         },
         {
@@ -4516,9 +4697,16 @@
               "sourceName": "Montana FWP — 2026 Fishing Regulations, page 40",
               "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
               "checkedOn": "2026-10-27"
+            },
+            {
+              "title": "Valley of the Moon road-access closure",
+              "text": "Lolo National Forest Order 26-018-Lolo-D3 prohibits public motor-vehicle use of Gilbert Creek Road (Forest Road 34), mile 0–1.86, August 22–December 31, 2026 unless rescinded. Do not plan a vehicle shuttle across the Valley of the Moon bridge without checking the current order. This is a road closure, not a closure of the entire river.",
+              "sourceName": "US Forest Service — Gilbert Creek Road closure",
+              "sourceUrl": "https://www.fs.usda.gov/r01/lolo/alerts/gilbert-creek-road-closure-forest-service-road-34",
+              "checkedOn": "2026-10-28"
             }
           ],
-          "mapPendingReason": "Valley of the Moon: The former coordinate was an OpenStreetMap fishing-area label across the road from the usable river access; exact take-out requires local or agency confirmation. Clinton / Clark Fork confluence: Public conservation land is documented at the confluence, but an exact legal boat take-out has not been confirmed.",
+          "mapPendingReason": "Valley of the Moon: The old pin was across the road from river access. The usable landing is still unresolved. Road access is also affected by Lolo Order 26-018-Lolo-D3 (August 22–December 31, 2026 unless rescinded); see the section’s dated notice. Clinton / Clark Fork confluence: Public conservation land is documented at the confluence, but an exact legal boat take-out has not been confirmed.",
           "mapReleased": false
         }
       ],
@@ -4805,7 +4993,16 @@
           "difficulty": "Class II–III",
           "notes": "Continuous wave trains at higher flows. Not a tube float.",
           "accessReview": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing.",
-          "mapPendingReason": "Gardiner (Queen of the Waters): The current FWP Queen of the Waters site lists no boat facilities, so it is not published as a launch. Corwin Springs: No exact current managing-agency boat ramp or launch record has been confirmed for this catalog label.",
+          "notices": [
+            {
+              "title": "Corwin Springs / Brogan’s Landing closure record",
+              "text": "FWP’s site linked from the older Corwin Springs map is now named Brogan’s Landing. Its current record still lists a flood-related emergency closure effective July 1, 2022 until further notice. Do not use that old map or the tourism listing as proof of an open boat launch.",
+              "sourceName": "Montana FWP — Brogan’s Landing, site 39753522",
+              "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522",
+              "checkedOn": "2026-10-28"
+            }
+          ],
+          "mapPendingReason": "Gardiner (Queen of the Waters): The current FWP Queen of the Waters site lists no boat facilities, so it is not published as a launch. Corwin Springs: The old FWP Corwin Springs PDF uses site ID 39753522, now Brogan’s Landing. Its current FWP page still carries the July 2022 emergency closure. The tourism coordinate also differs; do not promote either as an open exact landing. Find a confirmed current alternative or reopening.",
           "mapReleased": false
         },
         {
@@ -4822,10 +5019,17 @@
               "sourceName": "Bureau of Land Management",
               "sourceUrl": "https://www.blm.gov/visit/carbella-rec-site",
               "checkedOn": "2026-10-27"
+            },
+            {
+              "title": "Corwin Springs / Brogan’s Landing closure record",
+              "text": "FWP’s site linked from the older Corwin Springs map is now named Brogan’s Landing. Its current record still lists a flood-related emergency closure effective July 1, 2022 until further notice. Do not use that old map or the tourism listing as proof of an open boat launch.",
+              "sourceName": "Montana FWP — Brogan’s Landing, site 39753522",
+              "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522",
+              "checkedOn": "2026-10-28"
             }
           ],
           "accessReview": "The intended Corwin Springs boat launch has not been confirmed. Carbella is documented, but one confirmed endpoint is not enough to plan this canyon trip.",
-          "mapPendingReason": "Corwin Springs: No exact current managing-agency boat ramp or launch record has been confirmed for this catalog label.",
+          "mapPendingReason": "Corwin Springs: The old FWP Corwin Springs PDF uses site ID 39753522, now Brogan’s Landing. Its current FWP page still carries the July 2022 emergency closure. The tourism coordinate also differs; do not promote either as an open exact landing. Find a confirmed current alternative or reopening.",
           "mapReleased": false
         }
       ],
@@ -4833,7 +5037,7 @@
       "timezone": "America/Denver",
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-24. Queen of the Waters is a current FWP access site without boat facilities, and exact current agency boat accesses for Corwin Springs and Carbella were not confirmed. Maps stay hidden until usable endpoints are selected and verified."
+      "mapAuditNote": "Reviewed 2026-10-28. Corwin Springs/Brogan’s Landing identity and a still-listed flood closure prevent promotion. Queen of the Waters is not a documented boat facility. Carbella has an approximate BLM facility record. The two trips remain held."
     },
     {
       "id": "yellowstone-paradise",

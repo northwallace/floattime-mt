@@ -1,0 +1,43 @@
+{
+  "checkedOn": "2026-10-28",
+  "localOnly": true,
+  "newMapSections": [
+    "bitterroot/bell-crossing-stevi",
+    "bitterroot/stevi-florence",
+    "dearborn/hwy200-missouri",
+    "missouri-breaks/fort-benton-judith"
+  ],
+  "mapsRemoved": [],
+  "montanaMaps": 38,
+  "montanaSections": 54,
+  "remainingMapsHeld": 16,
+  "pythonTests": {
+    "run": 61,
+    "passed": 61,
+    "skipped": 0,
+    "command": "/private/tmp/floateta-gis-env/bin/python -m unittest discover -s tests -p 'test_*.py'"
+  },
+  "javascriptTests": {
+    "run": 29,
+    "passed": 29,
+    "command": "node --test tests/*.test.cjs"
+  },
+  "catalogBuildCheck": "passed",
+  "geographicAudit": "passed; no impossible-distance flags",
+  "reviewedRouteAssets": "unchanged byte-for-byte",
+  "deployment": "not attempted",
+  "previewUrl": "http://127.0.0.1:8777/?river=bitterroot&state=MT&craft=raft&section=bell-crossing-stevi&map=1#calculator",
+  "browserChecks": {
+    "newMaps": [
+      "bitterroot/bell-crossing-stevi",
+      "bitterroot/stevi-florence",
+      "dearborn/hwy200-missouri",
+      "missouri-breaks/fort-benton-judith"
+    ],
+    "satelliteTiles": "visually rendered",
+    "owenPopup": "approximate facility and directions verified",
+    "timingHolds": "Owen\u2013Florence distance hold and Dearborn unavailable model shown",
+    "browserErrors": "none observed",
+    "screenshot": "/Users/home/Documents/Codex/FloatETA-local-Montana-review-20261028.png"
+  }
+}

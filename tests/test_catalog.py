@@ -58,7 +58,13 @@ class CatalogTests(unittest.TestCase):
             self.assertIn(river['id'], verified | pending | {'missouri-craig'})
             self.assertEqual(river['mapAudit'], 'verified' if river['id'] in verified else 'pending')
             for section in river['sections']:
-                approximate_rivers = {'missouri-craig', 'smith', 'big-hole', 'madison-lower'}
+                approximate_rivers = {'missouri-craig', 'smith', 'big-hole', 'madison-lower', 'dearborn', 'missouri-breaks'}
+                if river['id']=='bitterroot':
+                    eligible = section['id'] in ('bell-crossing-stevi', 'stevi-florence')
+                    self.assertEqual(bool(section.get('mapPilot')), eligible)
+                    if eligible: self.assertEqual(section['mapPrecision'], 'approximate')
+                    else: self.assertNotIn('takeOutCoords', section)
+                    continue
                 self.assertEqual(bool(section.get('mapPilot')), river['id'] in verified or river['id'] in approximate_rivers, river['id'] + '/' + section['id'])
                 if river['id']=='missouri-craig':
                     self.assertEqual(section['mapPrecision'], 'approximate' if section['id']=='holter-craig' else 'exact')
@@ -206,7 +212,7 @@ class CatalogTests(unittest.TestCase):
         self.assertNotIn('class="section-map-link"', pending)
         self.assertNotIn('Put-in directions', pending)
         self.assertEqual(pending.count('<strong>Map unavailable:</strong>'), 3)
-        self.assertIn('Valley of the Moon: The former coordinate was an OpenStreetMap fishing-area label', pending)
+        self.assertIn('Valley of the Moon: The old pin was across the road from river access', pending)
         self.assertEqual(verified.count('class="section-map-link"'), 4)
         self.assertEqual(verified.count('Sources checked 2026-10-23'), 4)
         self.assertEqual(verified.count('Take-out: river right'), 4)
@@ -227,7 +233,7 @@ class CatalogTests(unittest.TestCase):
                 if section['mapReleased']: released.append(section)
             if river['state']!='MT':
                 self.assertNotIn('section-map-link',seo.river_html(river))
-        self.assertEqual(len(released),34)
+        self.assertEqual(len(released),38)
         self.assertTrue(any(r['state']=='WA' for r in catalog['rivers']))
 
     def test_access_hold_cannot_publish_timing_or_map_links(self):

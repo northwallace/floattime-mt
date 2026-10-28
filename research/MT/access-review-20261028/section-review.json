@@ -1,0 +1,223 @@
+{
+  "version": 1,
+  "state": "MT",
+  "checkedOn": "2026-10-28",
+  "localOnly": true,
+  "baselineMaps": 34,
+  "newApproximateMaps": 4,
+  "localMaps": 38,
+  "remainingHeld": 16,
+  "reviewedDottedRoutesUnchanged": 13,
+  "sections": [
+    {
+      "riverId": "beaverhead",
+      "sectionId": "dam-high-bridge",
+      "status": "hold",
+      "decision": "USBR documents below-dam access, but its general recreation map does not identify a dependable landing coordinate. Existing 9-mile figure also needs review.",
+      "nextAction": "Locate the below-dam river launch from a detailed USBR facility map, then reconcile river miles. Do not use the dam or a reservoir launch.",
+      "sourceUrls": [
+        "https://www.usbr.gov/gp/mtao/clarkcanyon/clark_canyon_recreation_map.pdf"
+      ]
+    },
+    {
+      "riverId": "beaverhead",
+      "sectionId": "high-bridge-barretts",
+      "status": "hold",
+      "decision": "Tourism park coordinate lies about 31 m from USBR’s diversion-dam coordinate. Candidate rejected. FWP line also disagrees with the 10-mile catalog value.",
+      "nextAction": "Obtain an upstream landing/park plan from USBR. Keep the dam coordinate out of the access registry.",
+      "sourceUrls": [
+        "https://data.visitmt.com/data/site/1984",
+        "https://www.usbr.gov/projects/index.php?id=271"
+      ]
+    },
+    {
+      "riverId": "bitterroot",
+      "sectionId": "bell-crossing-stevi",
+      "status": "local-map-approximate",
+      "decision": "Stevensville Bridge identified as John & Nancy Owen FAS. FWP documents boat access. Facility marker accepted; exact ramp unconfirmed.",
+      "nextAction": "Review the local map; retain approximate marker. Dotted route awaits exact landings/centerline review.",
+      "sourceUrls": [
+        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+        "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/91552932.pdf"
+      ]
+    },
+    {
+      "riverId": "bitterroot",
+      "sectionId": "stevi-florence",
+      "status": "local-map-approximate-distance-held",
+      "decision": "Same Owen alias resolved. FWP line is about 10.05 mi versus legacy 9 mi; no automatic mileage substitution.",
+      "nextAction": "Review map and obtain independently reviewed landing-to-landing miles before restoring timing.",
+      "sourceUrls": [
+        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+        "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/hydrography/MapServer/20"
+      ]
+    },
+    {
+      "riverId": "bitterroot",
+      "sectionId": "florence-buckhouse",
+      "status": "hold",
+      "decision": "No current operating boat-access record found for the intended Buckhouse Bridge take-out.",
+      "nextAction": "Check Missoula/MDT bridge-access ownership and identify an actual authorized landing; a bridge or road polygon is insufficient.",
+      "sourceUrls": [
+        "https://ftp.mdt.mt.gov/pubinvolve/us93missoulaflorence/docs/AppA-CommentsDuringReview.pdf"
+      ]
+    },
+    {
+      "riverId": "clark-fork",
+      "sectionId": "sharon-caras",
+      "status": "hold",
+      "decision": "City documents Silver Park as a take-out. Caras Park remains an unconfirmed raft landing.",
+      "nextAction": "Investigate replacing this trip with Sha-Ron–Silver Park; map the city landing and measure that different route before replacing endpoints.",
+      "sourceUrls": [
+        "https://www.ci.missoula.mt.us/1227/Silver-Park-Boat-Landing"
+      ]
+    },
+    {
+      "riverId": "clark-fork",
+      "sectionId": "caras-kelly-island",
+      "status": "hold",
+      "decision": "City identifies Silver Park as last public exit before the Grass Valley diversion, with Kelly Island below it.",
+      "nextAction": "Do not release as a casual city float. Define a separate upstream-of-dam trip and proper exit before changing the catalog.",
+      "sourceUrls": [
+        "https://www.ci.missoula.mt.us/1227/Silver-Park-Boat-Landing"
+      ]
+    },
+    {
+      "riverId": "clarks-fork-yst",
+      "sectionId": "bridger-edgar",
+      "status": "hold",
+      "decision": "County minutes identify Wild Cat / Edgar Bridge access at East Pryor Road; not found in current FWP point inventory.",
+      "nextAction": "Retrieve the county/FWP acquisition or as-built ramp map and current operating status; a name match alone cannot produce a landing pin.",
+      "sourceUrls": [
+        "https://carbonmt.gov/april-25-2023-2/",
+        "https://myfwp.mt.gov/fwpPub/commission/returnFile_pdfFile?id=42312650&type=cmId"
+      ]
+    },
+    {
+      "riverId": "dearborn",
+      "sectionId": "hwy200-missouri",
+      "status": "local-map-approximate",
+      "decision": "RMS trip plan locates Highway 287 bridge launch and Mid Canon FAS, including about one mile on the Missouri. Old launch/takeout descriptions corrected.",
+      "nextAction": "Review corrected local map. Keep old section ID for links, but old calibration is disabled; a future centerline must follow two joined rivers.",
+      "sourceUrls": [
+        "https://rms.memberclicks.net/assets/Chapters/Northwest/2024/RMS%20DAY%20TRIP%20INFORMATION%20Dearborn%20River.pdf",
+        "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753694.pdf"
+      ]
+    },
+    {
+      "riverId": "gallatin-canyon",
+      "sectionId": "greek-creek-storm-castle",
+      "status": "hold",
+      "decision": "Survey distinguishes campground/pull-out and Upper/Lower Storm Castle. Greek Creek restoration completed in 2025 changes bank/access. Survey totals 5.2 or 7.3 mi, not 9.",
+      "nextAction": "Use current restoration/as-built access map to establish the designated raft launch; then choose Upper Storm Castle or Lower explicitly and source mileage.",
+      "sourceUrls": [
+        "https://gallatinrivertaskforce.org/greek-creek/",
+        "https://gallatinrivertaskforce.org/wp-content/uploads/2015/12/Gallatin-Access-Sites-061915-small2.pdf"
+      ]
+    },
+    {
+      "riverId": "gallatin-lower",
+      "sectionId": "gateway-shedds",
+      "status": "hold",
+      "decision": "Historical agency guide lists Shedd’s Bridge closed for unstable bank; no current reopening or equivalent replacement established.",
+      "nextAction": "Obtain a current managing-agency reopening or choose a separately documented take-out and remeasure the new trip.",
+      "sourceUrls": [
+        "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf"
+      ]
+    },
+    {
+      "riverId": "jefferson-upper",
+      "sectionId": "silver-star-parsons",
+      "status": "hold",
+      "decision": "Parsons/Waterloo identity now resolved, and canoe-trail owner documents ramp/right-of-way and portage. Landing by diversion remains unlocated.",
+      "nextAction": "Map the ramp and legal portage together from owner/county plans; obtain current condition evidence before releasing.",
+      "sourceUrls": [
+        "https://www.jeffersonriver.org/Campsites/Lost_Tomahawk.htm"
+      ]
+    },
+    {
+      "riverId": "jefferson-upper",
+      "sectionId": "parsons-parrott",
+      "status": "hold",
+      "decision": "Waterloo ramp identity resolved; diversion geometry and Parrot Castle usable boat landing remain unresolved.",
+      "nextAction": "Resolve both landing/dam relationships, not just a bridge pin; consider a documented alternative trip if Parrot Castle is unsuitable.",
+      "sourceUrls": [
+        "https://www.jeffersonriver.org/Campsites/Lost_Tomahawk.htm",
+        "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
+      ]
+    },
+    {
+      "riverId": "missouri-breaks",
+      "sectionId": "fort-benton-judith",
+      "status": "local-map-approximate",
+      "decision": "Accepted named canoe-launch facility from interagency inventory, corroborated against BLM fairgrounds description. Rejected conflicting UTM guide value. Judith remains a facility-area marker.",
+      "nextAction": "Review approximate map. Dotted centerline stays a research candidate until exact launch/landing review; retain BLM 88.5 mi.",
+      "sourceUrls": [
+        "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks/plan",
+        "https://gacc.nifc.gov/nrcc/nrcg/restrictions_closures/areaplans/Lewistown%20Area%20Restrictions%20Plan%202024-2029.pdf"
+      ]
+    },
+    {
+      "riverId": "rock-creek",
+      "sectionId": "dalles",
+      "status": "hold",
+      "decision": "Bitterroot Flat / Dalles combines different locations. A campground or rapid is not an identified boat put-in.",
+      "nextAction": "Choose one legal launch and get the specific river-side access; recompute the intended trip to Harry’s Flat.",
+      "sourceUrls": [
+        "https://www.fs.usda.gov/r01/lolo"
+      ]
+    },
+    {
+      "riverId": "rock-creek",
+      "sectionId": "harrys-votm",
+      "status": "hold",
+      "decision": "Landing remains unresolved; USFS now lists a 2026 vehicle closure on Gilbert Creek Road affecting Valley of the Moon bridge access.",
+      "nextAction": "Confirm landing and current road order before any shuttle plan. Do not republish the old across-road pin.",
+      "sourceUrls": [
+        "https://www.fs.usda.gov/r01/lolo/alerts/gilbert-creek-road-closure-forest-service-road-34"
+      ]
+    },
+    {
+      "riverId": "rock-creek",
+      "sectionId": "votm-clinton",
+      "status": "hold",
+      "decision": "Same Valley of the Moon closure; confluence is not a documented road-accessible boat take-out.",
+      "nextAction": "Identify a usable lower exit with the land manager, then confirm vehicle access and river route.",
+      "sourceUrls": [
+        "https://www.fs.usda.gov/r01/lolo/alerts/gilbert-creek-road-closure-forest-service-road-34"
+      ]
+    },
+    {
+      "riverId": "swan",
+      "sectionId": "swan-lake-bigfork",
+      "status": "hold",
+      "decision": "PacifiCorp maps a reservoir hand access above the dam and a separate Kearney Rapids boat launch. Bigfork boat ramp below Wild Mile is not an alternative.",
+      "nextAction": "Define the actual lake-outlet launch and choose a named upstream take-out; prefer assessing Kearney Rapids before the reservoir/dam and remeasure that changed trip.",
+      "sourceUrls": [
+        "https://www.pacificorp.com/community/recreation/montana.html",
+        "https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/recreation/Bigfork%20Recreation%20Map.pdf"
+      ]
+    },
+    {
+      "riverId": "yellowstone-upper",
+      "sectionId": "gardiner-corwin",
+      "status": "hold",
+      "decision": "Old Corwin Springs FWP map ID resolves to Brogan’s Landing with still-listed 2022 flood closure. Queen of the Waters has no documented boat facility.",
+      "nextAction": "Confirm an open Gardiner-area public launch and open downstream take-out, not tourism/OSM aliases; then define the actual trip.",
+      "sourceUrls": [
+        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522"
+      ]
+    },
+    {
+      "riverId": "yellowstone-upper",
+      "sectionId": "corwin-yankee-jim",
+      "status": "hold",
+      "decision": "Same closed/ambiguous Corwin start. Carbella is already a documented approximate BLM facility.",
+      "nextAction": "Confirm an open suitable upstream launch; changing to Cinnabar or another access requires a new distance and hazard review.",
+      "sourceUrls": [
+        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522",
+        "https://www.blm.gov/visit/carbella-rec-site"
+      ]
+    }
+  ]
+}
