@@ -12,18 +12,66 @@
     {
       "id": "cliff-swallow-absarokee",
       "putIn": "Cliff Swallow",
-      "takeOut": "Absarokee",
-      "miles": 6,
+      "takeOut": "Absaroka FAS",
+      "miles": 9.6,
       "difficulty": "Class II",
-      "notes": "Fast, rocky, cold. Rafts and duckies, not tubes."
+      "notes": "Fast, rocky water. Take out at Absaroka FAS near Johnson Bridge, west of Absarokee; the destination is the access site, not the town.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-10-27",
+        "streamId": "1092800456391",
+        "putIn": {
+          "name": "Cliff Swallow",
+          "lat": 45.51492399294101,
+          "lon": -109.6320969592275,
+          "riverMile": 23.3,
+          "markerId": 67293,
+          "offsetMeters": 64.0
+        },
+        "takeOut": {
+          "name": "Absaroka FAS",
+          "lat": 45.52887096999066,
+          "lon": -109.46839246983271,
+          "riverMile": 13.7,
+          "markerId": 67197,
+          "offsetMeters": 53.3
+        },
+        "note": "Approximate river mileage from the difference between nearby FWP 0.1-mile markers on the same river. Facility locations and mapped channels introduce uncertainty; this is not a surveyed paddling route or a speed calibration."
+      }
     },
     {
       "id": "absarokee-whitebird",
-      "putIn": "Absarokee",
+      "putIn": "Absaroka FAS",
       "takeOut": "Whitebird",
-      "miles": 7,
+      "miles": 7.9,
       "difficulty": "Class II",
-      "notes": "Keep your weight downstream through the rock gardens."
+      "notes": "Launch at Absaroka FAS and take out at Whitebird FAS. Check current flows, obstructions and access conditions before launching.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-10-27",
+        "streamId": "1092800456391",
+        "putIn": {
+          "name": "Absaroka FAS",
+          "lat": 45.52887096999066,
+          "lon": -109.46839246983271,
+          "riverMile": 13.7,
+          "markerId": 67197,
+          "offsetMeters": 53.3
+        },
+        "takeOut": {
+          "name": "Whitebird",
+          "lat": 45.57523817264737,
+          "lon": -109.33703441208561,
+          "riverMile": 5.8,
+          "markerId": 67118,
+          "offsetMeters": 94.8
+        },
+        "note": "Approximate river mileage from the difference between nearby FWP 0.1-mile markers on the same river. Facility locations and mapped channels introduce uncertainty; this is not a surveyed paddling route or a speed calibration."
+      }
     }
   ],
   "state": "MT",

@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "state": "MT",
+  "adapter": "arcgis-measured-line",
+  "serviceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/hydrography/MapServer/20",
+  "idField": "LLID",
+  "sourceName": "Montana FWP hydrography",
+  "projectedCrs": "EPSG:32612",
+  "measureDirection": "increases-upstream",
+  "streams": [
+    {
+      "streamId": "1123386455678",
+      "riverIds": [
+        "big-hole"
+      ]
+    },
+    {
+      "streamId": "1141176468612",
+      "riverIds": [
+        "bitterroot-upper"
+      ]
+    },
+    {
+      "streamId": "1138907468712",
+      "riverIds": [
+        "blackfoot"
+      ]
+    },
+    {
+      "streamId": "1115074459268",
+      "riverIds": [
+        "jefferson-canyon"
+      ]
+    },
+    {
+      "streamId": "1115074459269",
+      "riverIds": [
+        "madison-lower",
+        "madison-upper"
+      ]
+    },
+    {
+      "streamId": "1039825479786",
+      "riverIds": [
+        "missouri-craig"
+      ]
+    },
+    {
+      "streamId": "1092800456391",
+      "riverIds": [
+        "stillwater"
+      ]
+    },
+    {
+      "streamId": "1039825479787",
+      "riverIds": [
+        "yellowstone-paradise"
+      ]
+    },
+    {
+      "streamId": "1162072481455",
+      "riverIds": [
+        "clark-fork-gorge"
+      ]
+    },
+    {
+      "streamId": "1140717484691",
+      "riverIds": [
+        "flathead-north"
+      ]
+    }
+  ],
+  "landSource": {
+    "url": "https://gis.dnrc.mt.gov/arcgis/rest/services/TLMD/AccessMap/FeatureServer",
+    "outFields": "TractID,Acres,Access_Type,Access_Type_Spcl,Verified",
+    "corridorMeters": 150,
+    "layers": [
+      {
+        "id": 0,
+        "category": "no",
+        "label": "No public access"
+      },
+      {
+        "id": 1,
+        "category": "public",
+        "label": "Public access"
+      },
+      {
+        "id": 2,
+        "category": "special",
+        "label": "Special conditions"
+      }
+    ]
+  }
+}

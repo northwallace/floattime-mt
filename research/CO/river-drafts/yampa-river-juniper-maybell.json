@@ -1,0 +1,26 @@
+{
+  "id": "yampa-river-juniper-maybell",
+  "name": "Yampa River (Juniper Canyon to Maybell Bridge)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "CPW text says 13 mi but the NHDPlus route between the CPW Juniper Canyon and Maybell Bridge ramp points is 6.0 mi; one of the CPW site identities or the CPW figure needs review.",
+  "blockers": [
+    "route-geometry"
+  ],
+  "accessPoints": [
+    "CO-ACC-0067",
+    "CO-ACC-0068"
+  ],
+  "candidateSections": [
+    {
+      "id": "juniper-to-maybell-bridge",
+      "putIn": "Juniper Canyon Boat Ramp",
+      "takeOut": "Maybell Bridge Boat Ramp",
+      "milesCandidate": 13.0,
+      "milesSource": "CPW: 'Located 13 miles from Juniper Canyon, Maybell Bridge'.",
+      "nhdMiles": 6.0,
+      "heldBecause": "CPW text says 13 mi but the NHDPlus route between the CPW Juniper Canyon and Maybell Bridge ramp points is 6.0 mi; one of the CPW site identities or the CPW figure needs review."
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

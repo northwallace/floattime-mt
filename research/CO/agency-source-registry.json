@@ -1,0 +1,108 @@
+{
+  "state": "CO",
+  "checkedOn": "2026-10-26",
+  "agencies": [
+    {
+      "agency": "Colorado Parks and Wildlife",
+      "role": "state parks (AHRA, Yampa River State Park), SWAs, facilities GIS",
+      "layers": [
+        "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0",
+        "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3 (CPW Fishing Atlas boat ramps, layer 55)"
+      ],
+      "pages": [
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-river-sections",
+        "https://cpw.state.co.us/sites/default/files/dam/iv4cywcl7k/ahra-state-park-brochure.pdf",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-leadville-buena",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-salida-vallie",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-vallie-bridge",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-parkdale-canon",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-canon-city-lake",
+        "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-waterflow",
+        "https://cpw.widen.net/content/youugg69le/original/AHRA-River-Safety-Information-Map.pdf?u=45lowo&download=true",
+        "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "https://cpw.state.co.us/state-parks/yampa-river-state-park",
+        "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-hayden-pump-station-yampa-river-state",
+        "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-sunbeam-east-cross-mountain-west-cross"
+      ]
+    },
+    {
+      "agency": "Bureau of Land Management",
+      "role": "Kremmling/CRVFO (Upper Colorado), McInnis Canyons NCA, Gunnison Gorge NCA, DENCA, Little Snake FO, Tres Rios",
+      "layers": [
+        "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2"
+      ],
+      "pages": [
+        "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "https://www.blm.gov/visit/pumphouse-recreation-area",
+        "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+        "https://www.blm.gov/sites/blm.gov/files/blm_co_ucrd_mcinnis_rubyhorsethief.pdf",
+        "https://www.blm.gov/sites/blm.gov/files/uploads/programs_national-conservation-lands_colorado_gunnison-gorge_NCA_brochure_Low.pdf",
+        "https://www.blm.gov/sites/blm.gov/files/docs/2021-01/final.2020%20river%20map%20for%20web_0.pdf",
+        "https://www.blm.gov/sites/blm.gov/files/documents/files/CO_DoloresRiver_100k_BoatingMap.pdf",
+        "https://www.blm.gov/visit/dolores-river-co",
+        "https://www.blm.gov/visit/little-yampa-canyon",
+        "https://www.blm.gov/visit/e-cross-mountain-river-access",
+        "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf"
+      ]
+    },
+    {
+      "agency": "National Park Service",
+      "role": "Dinosaur NM, Black Canyon, Curecanti",
+      "layers": [
+        "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0"
+      ],
+      "pages": [
+        "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf",
+        "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+        "https://www.nps.gov/dino/planyourvisit/river-permit-faqs.htm",
+        "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+        "https://www.nps.gov/dino/planyourvisit/riverrafting.htm",
+        "https://www.nps.gov/dino/planyourvisit/river-permit-faqs.htm",
+        "https://www.nps.gov/dino/planyourvisit/non-commercial-river-trips.htm"
+      ]
+    },
+    {
+      "agency": "USDA Forest Service",
+      "role": "Recreation opportunities (EDW)",
+      "layers": [
+        "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0"
+      ],
+      "pages": [],
+      "note": "Fetched (research/raw/gis/usfs_edw_recopps_CO_bbox.json); no catalog endpoint uses a USFS point yet."
+    },
+    {
+      "agency": "Recreation.gov",
+      "role": "federal permits",
+      "pages": [
+        "https://www.recreation.gov/permits/74466",
+        "https://www.recreation.gov/permits/250014",
+        "https://www.recreation.gov/permits/250987",
+        "https://www.recreation.gov/api/permitcontent/250014"
+      ]
+    },
+    {
+      "agency": "USGS",
+      "role": "gauges (Water Data OGC API), NHD/NHDPlus geometry",
+      "layers": [
+        "https://api.waterdata.usgs.gov/ogcapi/v1/",
+        "https://api.water.usgs.gov/nldi/linked-data",
+        "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6 (timed out 2026-10-26)",
+        "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer (layers 3 and 8 reachable 2026-10-26 with intermittent 502/504; used for v1.1 pin checks)"
+      ]
+    },
+    {
+      "agency": "Colorado River Outfitters Association (CROA)",
+      "role": "commercial-outfitter trip lengths (not yet used; candidate timing source)",
+      "pages": []
+    },
+    {
+      "agency": "American Whitewater",
+      "role": "community reach inventory and lengths (mileage priority 2)",
+      "pages": [
+        "https://www.americanwhitewater.org/"
+      ]
+    }
+  ]
+}

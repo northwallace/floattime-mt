@@ -1,0 +1,550 @@
+{
+  "state": "CO",
+  "method": "USGS Water Data OGC API continuous items, parameter 00060/00010, 7-day window (exact request recorded)",
+  "catalogGauges": [
+    {
+      "river": "colorado-river-pumphouse",
+      "inCatalog": true,
+      "gauge": "09058000",
+      "usgsName": "COLORADO RIVER NEAR KREMMLING, CO",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09058000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A36%2B00%3A00%2F2026-10-26T16%3A52%3A36%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09058000?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:36+00:00",
+      "dischargeObsWithValue": 670,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:15:00+00:00",
+      "newestDischargeCfs": 423.0,
+      "suitability": "AW primary gauge for 'Pumphouse campground to State Bridge'. Gauge is upstream of Gore Canyon, above the reach; flow is reservoir-regulated (Green Mountain, Williams Fork, Windy Gap diversions upstream). Representative, not at the reach.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "colorado-river-state-bridge",
+      "inCatalog": true,
+      "gauge": "09060799",
+      "usgsName": "COLORADO RIVER AT CATAMOUNT BRIDGE, CO",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09060799&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A37%2B00%3A00%2F2026-10-26T16%3A52%3A37%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09060799?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:37+00:00",
+      "dischargeObsWithValue": 671,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:30:00+00:00",
+      "newestDischargeCfs": 461.0,
+      "suitability": "AW primary gauge for 'State Bridge to Catamount' and 'Catamount to Dotsero'. On the reach (Catamount); tributaries such as Sweetwater Creek join lower down.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "colorado-river-ruby-horsethief",
+      "inCatalog": true,
+      "gauge": "09163500",
+      "usgsName": "COLORADO RIVER NEAR COLORADO-UTAH STATE LINE",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09163500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A46%2B00%3A00%2F2026-10-26T16%3A52%3A46%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09163500?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:46+00:00",
+      "dischargeObsWithValue": 668,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T15:45:00+00:00",
+      "newestDischargeCfs": 5090.0,
+      "suitability": "AW primary gauge for 'Loma launch to Westwater launch'. At the CO-UT line within the reach.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "gunnison-river-gorge",
+      "inCatalog": true,
+      "gauge": "09128000",
+      "usgsName": "GUNNISON RIVER BELOW GUNNISON TUNNEL, CO",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09128000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A48%2B00%3A00%2F2026-10-26T16%3A52%3A48%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09128000?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:48+00:00",
+      "dischargeObsWithValue": 671,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:30:00+00:00",
+      "newestDischargeCfs": 227.0,
+      "suitability": "AW primary gauge for 'Chukar to N. Fork'. Below the Gunnison Tunnel diversion upstream of the Black Canyon; flows set by the Aspinall Unit dams and tunnel diversion; North Fork joins at the take-out.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "gunnison-river-denca",
+      "inCatalog": true,
+      "gauge": "09152500",
+      "usgsName": "GUNNISON RIVER NEAR GRAND JUNCTION, CO.",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09152500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A51%2B00%3A00%2F2026-10-26T16%3A52%3A51%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09152500?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:51+00:00",
+      "dischargeObsWithValue": 671,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:30:00+00:00",
+      "newestDischargeCfs": 2500.0,
+      "suitability": "AW primary gauge for 'Delta to Whitewater'. At the downstream end near Whitewater; includes Uncompahgre and Escalante Creek inflow, so upper DENCA flow can be lower.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "lake-fork-gunnison",
+      "inCatalog": false,
+      "gauge": "09124500",
+      "usgsName": "LAKE FORK AT GATEVIEW, CO.",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09124500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A52%2B00%3A00%2F2026-10-26T16%3A52%3A52%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09124500?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:52+00:00",
+      "dischargeObsWithValue": 670,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:15:00+00:00",
+      "newestDischargeCfs": 439.0,
+      "suitability": "AW primary gauge for Lake Fork 'BLM CG at Redbridge to Gateview CG'; below Lake San Cristobal (regulated outflow).",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "yampa-river-hayden",
+      "inCatalog": true,
+      "gauge": "09244490",
+      "usgsName": "YAMPA RIVER ABOVE ELKHEAD CREEK NEAR HAYDEN, CO",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09244490&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A56%2B00%3A00%2F2026-10-26T16%3A52%3A56%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09244490?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:56+00:00",
+      "dischargeObsWithValue": 668,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T15:45:00+00:00",
+      "newestDischargeCfs": 205.0,
+      "suitability": "AW primary gauge for 'Transit Center to Pump Station' (upstream reach); located on the Hayden sections above Elkhead Creek. Representative for Pump Station–HQ; Elkhead Creek enters below.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "yampa-river-craig",
+      "inCatalog": true,
+      "gauge": "09247600",
+      "usgsName": "YAMPA RIVER BELOW CRAIG, CO.",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09247600&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A57%2B00%3A00%2F2026-10-26T16%3A52%3A57%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09247600?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:57+00:00",
+      "dischargeObsWithValue": 670,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:15:00+00:00",
+      "newestDischargeCfs": 191.0,
+      "suitability": "AW primary gauge for 'Little Yampa Canyon'; below Craig, on the Craig sections (Williams Fork joins downstream).",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "yampa-river-maybell",
+      "inCatalog": true,
+      "gauge": "09251000",
+      "usgsName": "YAMPA RIVER NEAR MAYBELL, CO",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09251000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A59%2B00%3A00%2F2026-10-26T16%3A52%3A59%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09251000?f=json",
+      "checkedAtUtc": "2026-10-26T16:52:59+00:00",
+      "dischargeObsWithValue": 670,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:15:00+00:00",
+      "newestDischargeCfs": 232.0,
+      "suitability": "AW primary gauge for 'Cross Mountain Gorge'; near Maybell, within the Maybell sections; Little Snake River joins below Cross Mountain (not included).",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "yampa-river-dinosaur",
+      "inCatalog": true,
+      "gauge": "09260050",
+      "usgsName": "YAMPA RIVER AT DEERLODGE PARK, CO",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09260050&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A00%2B00%3A00%2F2026-10-26T16%3A53%3A00%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-09260050?f=json",
+      "checkedAtUtc": "2026-10-26T16:53:00+00:00",
+      "dischargeObsWithValue": 670,
+      "qualifiers": null,
+      "newestDischargeTime": "2026-10-26T16:15:00+00:00",
+      "newestDischargeCfs": 288.0,
+      "suitability": "AW primary gauge for 'Deerlodge Park to Echo Park'; at the put-in. Includes Little Snake inflow; Green River flow below Echo Park is not included.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "live discharge returned in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    },
+    {
+      "river": "arkansas-river-salida",
+      "inCatalog": true,
+      "gauge": "07091200",
+      "usgsName": "ARKANSAS RIVER NEAR NATHROP, CO",
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07091200&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A42%2B00%3A00%2F2026-10-26T16%3A53%3A42%2B00%3A00&limit=10000",
+      "locationRequest": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items/USGS-07091200?f=json",
+      "checkedAtUtc": "2026-10-26T16:53:42+00:00",
+      "dischargeObsWithValue": 0,
+      "qualifiers": [
+        "SEASONAL"
+      ],
+      "newestDischargeTime": null,
+      "newestDischargeCfs": null,
+      "suitability": "AW primary gauge for 'Salida to Rincon' (AW 6769); CPW AHRA safety map uses 'the Nathrop gauge' for the Stone Bridge portage note. Located ~3 mi above Stone Bridge, so it is above the whole reach (South Arkansas River joins at Salida). Seasonal: no discharge values in the 2026-10-26 7-day check.",
+      "note": "Reading recorded only as evidence that the gauge reports; never used as refFlowCfs.",
+      "availability": "no discharge values in 7-day window",
+      "suitabilityBasis": "American Whitewater primary gauge for the matching reach (community data) plus USGS site location; a current reading proves availability only."
+    }
+  ],
+  "otherGauges": [
+    {
+      "gauge": "06620000",
+      "usgsName": "NORTH PLATTE RIVER NEAR NORTHGATE, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 668,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06620000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A14%2B00%3A00%2F2026-10-26T16%3A53%3A14%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "06701900",
+      "usgsName": "SOUTH PLATTE RIVER BLW BRUSH CRK NEAR TRUMBULL, CO",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 668,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06701900&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A54%3A04%2B00%3A00%2F2026-10-26T16%3A54%3A04%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "06719505",
+      "usgsName": "CLEAR CREEK AT GOLDEN, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 668,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06719505&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A20%2B00%3A00%2F2026-10-26T16%3A53%3A20%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "06752000",
+      "usgsName": "CACHE LA POUDRE RIV AT MO OF CN, NR FT COLLINS, CO",
+      "ok": false,
+      "qualifiers": null,
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06752000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A07%2B00%3A00%2F2026-10-26T16%3A53%3A07%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "06752260",
+      "usgsName": "CACHE LA POUDRE RIVER AT FORT COLLINS, CO",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 2009,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06752260&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A52%2B00%3A00%2F2026-10-26T16%3A53%3A52%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07086000",
+      "usgsName": "ARKANSAS RIVER AT GRANITE, CO.",
+      "ok": false,
+      "qualifiers": [],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07086000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A47%2B00%3A00%2F2026-10-26T16%3A53%3A47%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07087050",
+      "usgsName": "ARKANSAS RIVER BELOW GRANITE, CO",
+      "ok": false,
+      "qualifiers": [
+        "SEASONAL"
+      ],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07087050&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A41%2B00%3A00%2F2026-10-26T16%3A53%3A41%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07087200",
+      "usgsName": "ARKANSAS RIVER AT BUENA VISTA, CO.",
+      "ok": false,
+      "qualifiers": [],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07087200&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A49%2B00%3A00%2F2026-10-26T16%3A53%3A49%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07091500",
+      "usgsName": "ARKANSAS RIVER AT SALIDA, CO.",
+      "ok": false,
+      "qualifiers": [],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07091500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A47%2B00%3A00%2F2026-10-26T16%3A53%3A47%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07093700",
+      "usgsName": "ARKANSAS RIVER NEAR WELLSVILLE, CO.",
+      "ok": false,
+      "qualifiers": null,
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07093700&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A32%2B00%3A00%2F2026-10-26T16%3A52%3A32%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07094500",
+      "usgsName": "ARKANSAS RIVER AT PARKDALE, CO.",
+      "ok": false,
+      "qualifiers": [
+        "SEASONAL"
+      ],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07094500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A44%2B00%3A00%2F2026-10-26T16%3A53%3A44%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07096000",
+      "usgsName": "ARKANSAS RIVER AT CANON CITY, CO.",
+      "ok": false,
+      "qualifiers": null,
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07096000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A35%2B00%3A00%2F2026-10-26T16%3A52%3A35%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "07097000",
+      "usgsName": "ARKANSAS RIVER AT PORTLAND, CO.",
+      "ok": false,
+      "qualifiers": [],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07097000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A50%2B00%3A00%2F2026-10-26T16%3A53%3A50%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "08217500",
+      "usgsName": "RIO GRANDE AT WAGON WHEEL GAP, CO",
+      "ok": false,
+      "qualifiers": [],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-08217500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A53%2B00%3A00%2F2026-10-26T16%3A53%3A53%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "08219500",
+      "usgsName": "SOUTH FORK RIO GRANDE AT SOUTH FORK, CO",
+      "ok": false,
+      "qualifiers": [],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-08219500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A55%2B00%3A00%2F2026-10-26T16%3A53%3A55%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "08220000",
+      "usgsName": "RIO GRANDE NEAR DEL NORTE, CO",
+      "ok": false,
+      "qualifiers": null,
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-08220000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A12%2B00%3A00%2F2026-10-26T16%3A53%3A12%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "08251500",
+      "usgsName": "RIO GRANDE NEAR LOBATOS, CO",
+      "ok": false,
+      "qualifiers": null,
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-08251500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A13%2B00%3A00%2F2026-10-26T16%3A53%3A13%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09057500",
+      "usgsName": "BLUE RIVER BELOW GREEN MOUNTAIN RESERVOIR, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 669,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09057500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A11%2B00%3A00%2F2026-10-26T16%3A53%3A11%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09067020",
+      "usgsName": "EAGLE R BLW WASTEWATER TREATMENT PLANT AT AVON, CO",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 671,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09067020&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A55%2B00%3A00%2F2026-10-26T16%3A53%3A55%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09070000",
+      "usgsName": "EAGLE RIVER BELOW GYPSUM, CO.",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 670,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09070000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A10%2B00%3A00%2F2026-10-26T16%3A53%3A10%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09070500",
+      "usgsName": "COLORADO RIVER NEAR DOTSERO, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 669,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09070500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A39%2B00%3A00%2F2026-10-26T16%3A52%3A39%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09071100",
+      "usgsName": "COLORADO RIVER NEAR GLENWOOD SPRINGS, CO.",
+      "ok": false,
+      "qualifiers": null,
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09071100&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A41%2B00%3A00%2F2026-10-26T16%3A52%3A41%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09072500",
+      "usgsName": "COLORADO RIVER AT GLENWOOD SPRINGS, CO.",
+      "ok": false,
+      "qualifiers": [],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09072500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A51%2B00%3A00%2F2026-10-26T16%3A53%3A51%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09081000",
+      "usgsName": "ROARING FORK RIVER NEAR EMMA, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 671,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09081000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A09%2B00%3A00%2F2026-10-26T16%3A53%3A09%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09081600",
+      "usgsName": "CRYSTAL RIVER ABV AVALANCHE CRK, NEAR REDSTONE, CO",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 669,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09081600&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A54%3A00%2B00%3A00%2F2026-10-26T16%3A54%3A00%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09085000",
+      "usgsName": "ROARING FORK RIVER AT GLENWOOD SPRINGS, CO.",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 668,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09085000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A08%2B00%3A00%2F2026-10-26T16%3A53%3A08%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09085100",
+      "usgsName": "COLORADO RIVER BELOW GLENWOOD SPRINGS, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 670,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09085100&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A42%2B00%3A00%2F2026-10-26T16%3A52%3A42%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09095500",
+      "usgsName": "COLORADO RIVER NEAR CAMEO, CO.",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 671,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09095500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A44%2B00%3A00%2F2026-10-26T16%3A52%3A44%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09109000",
+      "usgsName": "TAYLOR RIVER BELOW TAYLOR PARK RESERVOIR, CO.",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 658,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09109000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A16%2B00%3A00%2F2026-10-26T16%3A53%3A16%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09114500",
+      "usgsName": "GUNNISON RIVER NEAR GUNNISON, CO.",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 670,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09114500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A54%3A06%2B00%3A00%2F2026-10-26T16%3A54%3A06%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09119000",
+      "usgsName": "TOMICHI CREEK AT GUNNISON, CO",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 671,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09119000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A54%3A05%2B00%3A00%2F2026-10-26T16%3A54%3A05%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09144250",
+      "usgsName": "GUNNISON RIVER AT DELTA, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 670,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09144250&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A49%2B00%3A00%2F2026-10-26T16%3A52%3A49%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09166500",
+      "usgsName": "DOLORES RIVER AT DOLORES, CO.",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 668,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09166500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A54%3A08%2B00%3A00%2F2026-10-26T16%3A54%3A08%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09168730",
+      "usgsName": "DOLORES RIVER NEAR SLICK ROCK, CO",
+      "ok": false,
+      "qualifiers": [
+        "SEASONAL"
+      ],
+      "dischargeObsWithValue": 0,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09168730&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A45%2B00%3A00%2F2026-10-26T16%3A53%3A45%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09169500",
+      "usgsName": "DOLORES RIVER AT BEDROCK, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 670,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09169500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A01%2B00%3A00%2F2026-10-26T16%3A53%3A01%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09172500",
+      "usgsName": "SAN MIGUEL RIVER NEAR PLACERVILLE, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 2006,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09172500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A17%2B00%3A00%2F2026-10-26T16%3A53%3A17%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09177000",
+      "usgsName": "SAN MIGUEL RIVER AT URAVAN, CO.",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 670,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09177000&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A19%2B00%3A00%2F2026-10-26T16%3A53%3A19%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09239500",
+      "usgsName": "YAMPA RIVER AT STEAMBOAT SPRINGS, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 670,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09239500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A52%3A54%2B00%3A00%2F2026-10-26T16%3A52%3A54%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09304500",
+      "usgsName": "WHITE RIVER NEAR MEEKER, CO.",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 669,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09304500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A57%2B00%3A00%2F2026-10-26T16%3A53%3A57%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09306500",
+      "usgsName": "WHITE RIVER NEAR WATSON, UTAH",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 668,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09306500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A59%2B00%3A00%2F2026-10-26T16%3A53%3A59%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09342500",
+      "usgsName": "SAN JUAN RIVER AT PAGOSA SPRINGS, CO",
+      "ok": true,
+      "qualifiers": [],
+      "dischargeObsWithValue": 669,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09342500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A54%3A01%2B00%3A00%2F2026-10-26T16%3A54%3A01%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09349800",
+      "usgsName": "PIEDRA RIVER NEAR ARBOLES, CO.",
+      "ok": true,
+      "qualifiers": [
+        "UNAVAIL"
+      ],
+      "dischargeObsWithValue": 379,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09349800&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A54%3A02%2B00%3A00%2F2026-10-26T16%3A54%3A02%2B00%3A00&limit=10000"
+    },
+    {
+      "gauge": "09361500",
+      "usgsName": "ANIMAS RIVER AT DURANGO, CO",
+      "ok": true,
+      "qualifiers": null,
+      "dischargeObsWithValue": 671,
+      "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09361500&parameter_code=00060%2C00010&datetime=2026-10-19T16%3A53%3A05%2B00%3A00%2F2026-10-26T16%3A53%3A05%2B00%3A00&limit=10000"
+    }
+  ],
+  "note": "Availability and suitability are recorded separately. No flow thresholds are invented; AW runnable ranges stay in research/river-drafts/aw-inventory-CO.json as community advisories."
+}

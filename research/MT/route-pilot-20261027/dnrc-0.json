@@ -1,0 +1,19 @@
+{
+  "checkedOn": "2026-10-27",
+  "requestUrl": "https://gis.dnrc.mt.gov/arcgis/rest/services/TLMD/AccessMap/FeatureServer/0/query",
+  "parameters": {
+    "f": "geojson",
+    "where": "1=1",
+    "geometry": "-113.8551840020843,46.878474720249116,-113.67353225270247,46.917764776967296",
+    "geometryType": "esriGeometryEnvelope",
+    "inSR": 4326,
+    "outSR": 4326,
+    "spatialRel": "esriSpatialRelIntersects",
+    "outFields": "TractID,Acres,Access_Type,Access_Type_Spcl,Verified",
+    "returnGeometry": "true"
+  },
+  "response": {
+    "type": "FeatureCollection",
+    "features": []
+  }
+}

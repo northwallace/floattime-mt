@@ -1,0 +1,161 @@
+{
+  "id": "colorado-river-state-bridge",
+  "name": "Colorado River — State Bridge to Dotsero",
+  "gauge": "09060799",
+  "gaugeName": "Colorado River at Catamount Bridge, CO (USGS 09060799)",
+  "lat": 39.78,
+  "lon": -106.88,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Mostly Class I–II canyon floating along the Colorado River Road between Eagle County and BLM ramps from State Bridge to Dotsero Landing.",
+  "state": "CO",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "state-bridge-to-two-bridges",
+      "putIn": "State Bridge Boat Ramp",
+      "takeOut": "Two Bridges Boat Ramp",
+      "miles": 4.7,
+      "difficulty": "Class I–II",
+      "notes": "Hazardous bridges just above Two Bridges over 5,500 cfs (BLM). Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 4,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ],
+      "notices": [
+        {
+          "title": "River hazard",
+          "text": "BLM guide: hazardous bridges at RM 29.6 above Two Bridges when flows exceed 5,500 cfs.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "two-bridges-to-catamount",
+      "putIn": "Two Bridges Boat Ramp",
+      "takeOut": "Catamount Bridge Boat Ramp",
+      "miles": 10.1,
+      "difficulty": "Class I–II",
+      "notes": "Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 5,
+          "max": 7,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "catamount-to-pinball",
+      "putIn": "Catamount Bridge Boat Ramp",
+      "takeOut": "Pinball Boat Ramp",
+      "miles": 9.4,
+      "difficulty": "Class II",
+      "notes": "Bull Gulch WSA on river left. Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 4,
+          "max": 6,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "pinball-to-horse-creek",
+      "putIn": "Pinball Boat Ramp",
+      "takeOut": "Horse Creek River Access",
+      "miles": 8.5,
+      "difficulty": "Class I–II",
+      "notes": "Horse Creek is a conservation-easement access managed by Eagle County. Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 4,
+          "max": 6,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "horse-creek-to-cottonwood-island",
+      "putIn": "Horse Creek River Access",
+      "takeOut": "Cottonwood Island Boat Ramp",
+      "miles": 5.3,
+      "difficulty": "Class I–II",
+      "notes": "Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 4,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "cottonwood-island-to-lyons-gulch",
+      "putIn": "Cottonwood Island Boat Ramp",
+      "takeOut": "Lyons Gulch Recreation Site",
+      "miles": 2.5,
+      "difficulty": "Class I–II",
+      "notes": "Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 1,
+          "max": 3,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "lyons-gulch-to-dotsero",
+      "putIn": "Lyons Gulch Recreation Site",
+      "takeOut": "Dotsero Landing Boat Ramp",
+      "miles": 4.0,
+      "difficulty": "Class I–II",
+      "notes": "Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 4,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    }
+  ]
+}

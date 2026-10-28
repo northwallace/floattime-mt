@@ -1,0 +1,919 @@
+{
+ "version": 1,
+ "state": "AZ",
+ "generatedOn": "2026-10-26",
+ "purpose": "Research-only geometry checks. Not read by the app. Thresholds: point >150 m from NHD High Resolution centreline; section mileage mismatch >20%.",
+ "sources": {
+  "flowlines": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query (NHD High Resolution Flowline nhd/MapServer/6; flow-direction digitized)",
+  "roads": "Census TIGERweb Transportation layers 2,6,8,9"
+ },
+ "points": [
+  {
+   "kind": "verified",
+   "label": "Water Users Day Use Area (Lower Salt)",
+   "lat": 33.5541561,
+   "lon": -111.5433992,
+   "river": "salt-river-lower",
+   "nearestFlowline": {
+    "distM": 37,
+    "gnis": "Salt River",
+    "nhdPermanentId": "139048895",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Phon D Sutton Day Use Area (Lower Salt)",
+   "lat": 33.5465461,
+   "lon": -111.6616464,
+   "river": "salt-river-lower",
+   "nearestFlowline": {
+    "distM": 17,
+    "gnis": "Salt River",
+    "nhdPermanentId": "{427D574A-D45B-46A9-999C-3DFD78A52C51}",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Black Canyon Fishing Site (Verde)",
+   "lat": 34.684959,
+   "lon": -111.964009,
+   "river": "verde-river-upper",
+   "nearestFlowline": {
+    "distM": 17,
+    "gnis": "Verde River",
+    "nhdPermanentId": "132786397",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Bignotti Picnic Site (Verde)",
+   "lat": 34.678979,
+   "lon": -111.954134,
+   "river": "verde-river-upper",
+   "nearestFlowline": {
+    "distM": 1,
+    "gnis": "Verde River",
+    "nhdPermanentId": "132786394",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Beasley Flat (Verde)",
+   "lat": 34.4734529,
+   "lon": -111.8012007,
+   "river": "verde-river-scenic",
+   "nearestFlowline": {
+    "distM": 28,
+    "gnis": "Verde River",
+    "nhdPermanentId": "{C10C1D95-702C-47DE-AD1D-EF1CD385E219}",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Pearce Ferry Boat Launch",
+   "lat": 36.1255327,
+   "lon": -113.98254683,
+   "river": "colorado-river-grand-canyon",
+   "nearestFlowline": {
+    "distM": 98,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "122647524",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Blue Point Day Use Area (Lower Salt)",
+   "lat": 33.5552977,
+   "lon": -111.5737484,
+   "river": "salt-river-lower",
+   "areaRadiusM": 200,
+   "nearestFlowline": {
+    "distM": 111,
+    "gnis": "Salt River",
+    "nhdPermanentId": "139048886",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Goldfield Day Use Area (Lower Salt)",
+   "lat": 33.553663,
+   "lon": -111.621131,
+   "river": "salt-river-lower",
+   "areaRadiusM": 300,
+   "nearestFlowline": {
+    "distM": 257,
+    "gnis": "Salt River",
+    "nhdPermanentId": "139048865",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (257 m); within the 300 m approximate radius"
+   ]
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "White Bridge Picnic Site and Boat Launch (Verde)",
+   "lat": 34.549506,
+   "lon": -111.850062,
+   "river": "verde-river-camp-verde",
+   "areaRadiusM": 250,
+   "nearestFlowline": {
+    "distM": 168,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141701479",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (168 m); within the 250 m approximate radius"
+   ]
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Clear Creek Fishing Site (Verde)",
+   "lat": 34.505695,
+   "lon": -111.83708,
+   "river": "verde-river-camp-verde",
+   "areaRadiusM": 200,
+   "nearestFlowline": {
+    "distM": 38,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141701449",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Gila River Boat Put-In (Gila Box)",
+   "lat": 32.96498,
+   "lon": -109.30982,
+   "river": "gila-river-gila-box",
+   "areaRadiusM": 150,
+   "nearestFlowline": {
+    "distM": 48,
+    "gnis": "Gila River",
+    "nhdPermanentId": "139132627",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Lees Ferry Boat Launch",
+   "lat": 36.86600832,
+   "lon": -111.58707804,
+   "river": "colorado-river-grand-canyon",
+   "areaRadiusM": 150,
+   "nearestFlowline": {
+    "distM": 113,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "{0EE8080B-40A1-45C0-B531-87EC0717D0D6}",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Diamond Creek (Grand Canyon)",
+   "lat": 35.7661598,
+   "lon": -113.37295317,
+   "river": "colorado-river-grand-canyon",
+   "areaRadiusM": 200,
+   "nearestFlowline": {
+    "distM": 68,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "128912647",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Blue Point Day Use Area (Lower Salt)",
+   "lat": 33.5552977,
+   "lon": -111.5737484,
+   "river": "salt-river-lower",
+   "nearestFlowline": {
+    "distM": 111,
+    "gnis": "Salt River",
+    "nhdPermanentId": "139048886",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Goldfield Day Use Area (Lower Salt)",
+   "lat": 33.553663,
+   "lon": -111.621131,
+   "river": "salt-river-lower",
+   "nearestFlowline": {
+    "distM": 257,
+    "gnis": "Salt River",
+    "nhdPermanentId": "139048865",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (257 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "White Bridge Picnic Site and Boat Launch (Verde)",
+   "lat": 34.549506,
+   "lon": -111.850062,
+   "river": "verde-river-camp-verde",
+   "nearestFlowline": {
+    "distM": 168,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141701479",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (168 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Clear Creek Fishing Site (Verde)",
+   "lat": 34.505695,
+   "lon": -111.83708,
+   "river": "verde-river-camp-verde",
+   "nearestFlowline": {
+    "distM": 38,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141701449",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Childs River Access Point (Verde)",
+   "lat": 34.348023,
+   "lon": -111.697359,
+   "river": "verde-river-scenic",
+   "nearestFlowline": {
+    "distM": 84,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141701390",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Sheep Bridge (Verde)",
+   "lat": 34.078038,
+   "lon": -111.709538,
+   "river": "verde-river-wild",
+   "nearestFlowline": {
+    "distM": 166,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141701974",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "local road: (unnamed)"
+   ],
+   "flags": [
+    ">150 m from river centreline (166 m)",
+    "line to river crosses local road: (unnamed) (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Horseshoe Campground (Verde)",
+   "lat": 33.976938,
+   "lon": -111.716736,
+   "river": "verde-river-wild",
+   "nearestFlowline": {
+    "distM": 293,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141702109",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (293 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Needle Rock Day Use Area (Verde)",
+   "lat": 33.766968,
+   "lon": -111.669963,
+   "river": "verde-river-lower",
+   "nearestFlowline": {
+    "distM": 61,
+    "gnis": "Verde River",
+    "nhdPermanentId": "{2E90C482-A7D4-40D2-B36E-76679F29C90E}",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Box Bar River Access Point (Verde)",
+   "lat": 33.743712,
+   "lon": -111.660821,
+   "river": "verde-river-lower",
+   "nearestFlowline": {
+    "distM": 119,
+    "gnis": "Verde River",
+    "nhdPermanentId": "141702425",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Gila River Boat Put-In (Gila Box)",
+   "lat": 32.96498,
+   "lon": -109.30982,
+   "river": "gila-river-gila-box",
+   "nearestFlowline": {
+    "distM": 48,
+    "gnis": "Gila River",
+    "nhdPermanentId": "139132627",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Dry Canyon Boat Take-Out (Gila Box)",
+   "lat": 32.8922,
+   "lon": -109.4921,
+   "river": "gila-river-gila-box",
+   "nearestFlowline": {
+    "distM": 559,
+    "gnis": "Gila River",
+    "nhdPermanentId": "142951903",
+    "ftype": 460,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "local road: Bonita Creek Rd"
+   ],
+   "flags": [
+    ">150 m from river centreline (559 m)",
+    "line to river crosses local road: Bonita Creek Rd (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Lees Ferry Boat Launch",
+   "lat": 36.86600832,
+   "lon": -111.58707804,
+   "river": "colorado-river-grand-canyon",
+   "nearestFlowline": {
+    "distM": 113,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "{0EE8080B-40A1-45C0-B531-87EC0717D0D6}",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Diamond Creek (Grand Canyon)",
+   "lat": 35.7661598,
+   "lon": -113.37295317,
+   "river": "colorado-river-grand-canyon",
+   "nearestFlowline": {
+    "distM": 68,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "128912647",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  }
+ ],
+ "sections": [
+  {
+   "riverId": "colorado-river-grand-canyon",
+   "sectionId": "lees-ferry-diamond-creek",
+   "putIn": "Lees Ferry Boat Launch",
+   "takeOut": "Diamond Creek (Grand Canyon)",
+   "listedMiles": 225.0,
+   "putInCoord": {
+    "lat": 36.86600832,
+    "lon": -111.58707804,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 35.7661598,
+    "lon": -113.37295317,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 113,
+    "takeOut": 68
+   },
+   "direction": "not routed (canyon reach; full-reach NHD network not fetched; NPS river miles used)",
+   "flags": []
+  },
+  {
+   "riverId": "colorado-river-grand-canyon",
+   "sectionId": "lees-ferry-pearce-ferry",
+   "putIn": "Lees Ferry Boat Launch",
+   "takeOut": "Pearce Ferry Boat Launch",
+   "listedMiles": 277.0,
+   "putInCoord": {
+    "lat": 36.86600832,
+    "lon": -111.58707804,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 36.1255327,
+    "lon": -113.98254683,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 113,
+    "takeOut": 98
+   },
+   "direction": "not routed (canyon reach; full-reach NHD network not fetched; NPS river miles used)",
+   "flags": []
+  },
+  {
+   "riverId": "colorado-river-lower-gorge",
+   "sectionId": "diamond-creek-pearce-ferry",
+   "putIn": "Diamond Creek (Grand Canyon)",
+   "takeOut": "Pearce Ferry Boat Launch",
+   "listedMiles": 52.0,
+   "putInCoord": {
+    "lat": 35.7661598,
+    "lon": -113.37295317,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 36.1255327,
+    "lon": -113.98254683,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 68,
+    "takeOut": 98
+   },
+   "centrelineMiles": 55.21,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 6.2,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "gila-river-gila-box",
+   "sectionId": "gila-box-put-in-dry-canyon",
+   "putIn": "Gila River Boat Put-In (Gila Box)",
+   "takeOut": "Dry Canyon Boat Take-Out (Gila Box)",
+   "listedMiles": 23.0,
+   "putInCoord": {
+    "lat": 32.96498,
+    "lon": -109.30982,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 32.8922,
+    "lon": -109.4921,
+    "basis": "research candidate (BLM visit page 'Dry Canyon Boat Take-Out and Picnic Area' Ge)"
+   },
+   "snapDistM": {
+    "putIn": 48,
+    "takeOut": 559
+   },
+   "centrelineMiles": 21.39,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -7.0,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": [
+    "take-out is 559 m from the Gila River main stem (routing unreliable)"
+   ]
+  },
+  {
+   "riverId": "salt-river-lower",
+   "sectionId": "lsr-water-users-blue-point",
+   "putIn": "Water Users Day Use Area (Lower Salt)",
+   "takeOut": "Blue Point Day Use Area (Lower Salt)",
+   "listedMiles": 2.4,
+   "putInCoord": {
+    "lat": 33.5541561,
+    "lon": -111.5433992,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 33.5552977,
+    "lon": -111.5737484,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 37,
+    "takeOut": 111
+   },
+   "centrelineMiles": 2.35,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -2.0,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "salt-river-lower",
+   "sectionId": "lsr-water-users-goldfield",
+   "putIn": "Water Users Day Use Area (Lower Salt)",
+   "takeOut": "Goldfield Day Use Area (Lower Salt)",
+   "listedMiles": 6.3,
+   "putInCoord": {
+    "lat": 33.5541561,
+    "lon": -111.5433992,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 33.553663,
+    "lon": -111.621131,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 37,
+    "takeOut": 257
+   },
+   "centrelineMiles": 6.27,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.5,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "salt-river-lower",
+   "sectionId": "lsr-water-users-phon-d",
+   "putIn": "Water Users Day Use Area (Lower Salt)",
+   "takeOut": "Phon D Sutton Day Use Area (Lower Salt)",
+   "listedMiles": 8.8,
+   "putInCoord": {
+    "lat": 33.5541561,
+    "lon": -111.5433992,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 33.5465461,
+    "lon": -111.6616464,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 37,
+    "takeOut": 17
+   },
+   "centrelineMiles": 8.75,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.6,
+   "flags": []
+  },
+  {
+   "riverId": "salt-river-lower",
+   "sectionId": "lsr-blue-point-phon-d",
+   "putIn": "Blue Point Day Use Area (Lower Salt)",
+   "takeOut": "Phon D Sutton Day Use Area (Lower Salt)",
+   "listedMiles": 6.4,
+   "putInCoord": {
+    "lat": 33.5552977,
+    "lon": -111.5737484,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 33.5465461,
+    "lon": -111.6616464,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 111,
+    "takeOut": 17
+   },
+   "centrelineMiles": 6.4,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.1,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "salt-river-lower",
+   "sectionId": "lsr-goldfield-phon-d",
+   "putIn": "Goldfield Day Use Area (Lower Salt)",
+   "takeOut": "Phon D Sutton Day Use Area (Lower Salt)",
+   "listedMiles": 2.5,
+   "putInCoord": {
+    "lat": 33.553663,
+    "lon": -111.621131,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 33.5465461,
+    "lon": -111.6616464,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 257,
+    "takeOut": 17
+   },
+   "centrelineMiles": 2.48,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.6,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "salt-river-upper",
+   "sectionId": "upper-salt-first-camp-hwy-288",
+   "putIn": "First Campground (Upper Salt put-in)",
+   "takeOut": "Highway 288 Bridge Take-out (Upper Salt)",
+   "listedMiles": 52.3,
+   "putInCoord": null,
+   "takeOutCoord": null,
+   "flags": [
+    "missing coordinate for an endpoint"
+   ]
+  },
+  {
+   "riverId": "verde-river-camp-verde",
+   "sectionId": "white-bridge-beasley-flat",
+   "putIn": "White Bridge Picnic Site and Boat Launch (Verde)",
+   "takeOut": "Beasley Flat (Verde)",
+   "listedMiles": 9.8,
+   "putInCoord": {
+    "lat": 34.549506,
+    "lon": -111.850062,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 34.4734529,
+    "lon": -111.8012007,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 168,
+    "takeOut": 28
+   },
+   "centrelineMiles": 9.84,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.4,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "verde-river-camp-verde",
+   "sectionId": "white-bridge-clear-creek",
+   "putIn": "White Bridge Picnic Site and Boat Launch (Verde)",
+   "takeOut": "Clear Creek Fishing Site (Verde)",
+   "listedMiles": 5.5,
+   "putInCoord": {
+    "lat": 34.549506,
+    "lon": -111.850062,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 34.505695,
+    "lon": -111.83708,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 168,
+    "takeOut": 38
+   },
+   "centrelineMiles": 5.39,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -2.0,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "verde-river-camp-verde",
+   "sectionId": "clear-creek-beasley-flat",
+   "putIn": "Clear Creek Fishing Site (Verde)",
+   "takeOut": "Beasley Flat (Verde)",
+   "listedMiles": 4.3,
+   "putInCoord": {
+    "lat": 34.505695,
+    "lon": -111.83708,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 34.4734529,
+    "lon": -111.8012007,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 38,
+    "takeOut": 28
+   },
+   "centrelineMiles": 4.45,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 3.5,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "verde-river-lower",
+   "sectionId": "needle-rock-box-bar",
+   "putIn": "Needle Rock Day Use Area (Verde)",
+   "takeOut": "Box Bar River Access Point (Verde)",
+   "listedMiles": 1.9,
+   "putInCoord": {
+    "lat": 33.766968,
+    "lon": -111.669963,
+    "basis": "research candidate (Tonto NF page coordinate (EDW recareaid 35217: 33.767513, -1)"
+   },
+   "takeOutCoord": {
+    "lat": 33.743712,
+    "lon": -111.660821,
+    "basis": "research candidate (Tonto NF page coordinate (EDW recareaid 35237 is coarse: 33.)"
+   },
+   "snapDistM": {
+    "putIn": 61,
+    "takeOut": 119
+   },
+   "centrelineMiles": 1.93,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 1.4,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "verde-river-scenic",
+   "sectionId": "beasley-flat-childs",
+   "putIn": "Beasley Flat (Verde)",
+   "takeOut": "Childs River Access Point (Verde)",
+   "listedMiles": 17.2,
+   "putInCoord": {
+    "lat": 34.4734529,
+    "lon": -111.8012007,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 34.348023,
+    "lon": -111.697359,
+    "basis": "research candidate (USFS EDW Recreation Opportunities, recareaid 75354 'Childs D)"
+   },
+   "snapDistM": {
+    "putIn": 28,
+    "takeOut": 84
+   },
+   "centrelineMiles": 16.92,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.6,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "verde-river-upper",
+   "sectionId": "tuzigoot-dead-horse-ranch",
+   "putIn": "Tuzigoot River Access Point (Verde)",
+   "takeOut": "Dead Horse Ranch State Park River Day Use Area (Verde)",
+   "listedMiles": 3.0,
+   "putInCoord": null,
+   "takeOutCoord": null,
+   "flags": [
+    "missing coordinate for an endpoint"
+   ]
+  },
+  {
+   "riverId": "verde-river-upper",
+   "sectionId": "black-canyon-bignotti",
+   "putIn": "Black Canyon Fishing Site (Verde)",
+   "takeOut": "Bignotti Picnic Site (Verde)",
+   "listedMiles": 1.0,
+   "putInCoord": {
+    "lat": 34.684959,
+    "lon": -111.964009,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 34.678979,
+    "lon": -111.954134,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 17,
+    "takeOut": 1
+   },
+   "centrelineMiles": 0.75,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -24.7,
+   "flags": [
+    "listed 1.0 mi vs centreline 0.8 mi (-25%)"
+   ]
+  },
+  {
+   "riverId": "verde-river-wild",
+   "sectionId": "childs-sheep-bridge",
+   "putIn": "Childs River Access Point (Verde)",
+   "takeOut": "Sheep Bridge (Verde)",
+   "listedMiles": 33.3,
+   "putInCoord": {
+    "lat": 34.348023,
+    "lon": -111.697359,
+    "basis": "research candidate (USFS EDW Recreation Opportunities, recareaid 75354 'Childs D)"
+   },
+   "takeOutCoord": {
+    "lat": 34.078038,
+    "lon": -111.709538,
+    "basis": "research candidate (USFS EDW Recreation Opportunities, recareaid 35219 'Sheep Br)"
+   },
+   "snapDistM": {
+    "putIn": 84,
+    "takeOut": 166
+   },
+   "centrelineMiles": 32.74,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.7,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "verde-river-wild",
+   "sectionId": "sheep-bridge-horseshoe",
+   "putIn": "Sheep Bridge (Verde)",
+   "takeOut": "Horseshoe Campground (Verde)",
+   "listedMiles": 10.0,
+   "putInCoord": {
+    "lat": 34.078038,
+    "lon": -111.709538,
+    "basis": "research candidate (USFS EDW Recreation Opportunities, recareaid 35219 'Sheep Br)"
+   },
+   "takeOutCoord": {
+    "lat": 33.976938,
+    "lon": -111.716736,
+    "basis": "research candidate (USFS EDW Recreation Opportunities, recareaid 35209 'Horsesho)"
+   },
+   "snapDistM": {
+    "putIn": 166,
+    "takeOut": 293
+   },
+   "centrelineMiles": 9.53,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -4.7,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  }
+ ]
+}

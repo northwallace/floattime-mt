@@ -1,0 +1,1911 @@
+{
+  "version": 1,
+  "state": "CO",
+  "purpose": "Research-only three-level access grades with the v1.1 targeted imagery check. NOT read by the app. catalog/map_points/CO.json carries verified | access-verified | pending; never merge this file into the catalog.",
+  "levels": {
+    "verified": "managing-agency GIS point for the ramp/launch/take-out within 150 m of the NHDPlus centreline + official page documenting boating access + v1.1 Esri imagery shows the pin at the water or at the ramp head (verdict pass / pass-ramp-head)",
+    "access-verified": "official source documents boating access at the site, but the coordinate is an area feature or the imagery check did not show a usable launch at the pin (approximate area)",
+    "pending": "no official coordinate, unresolved permission, or endpoint in another state"
+  },
+  "imageryVerdicts": {
+    "pass": "pin at the water's edge / launch",
+    "pass-ramp-head": "pin at the parking/ramp head with a visible route to water within ~40 m; kept verified with a note",
+    "flag": "location doubtful or sources conflict; grade unchanged, flag shown",
+    "downgrade": "verified candidate whose pin is not at a usable launch; published as access-verified"
+  },
+  "imageryVerdictCounts": {
+    "pass": 36,
+    "flag": 7,
+    "pass-ramp-head": 3,
+    "downgrade": 2
+  },
+  "limitations": "Esri tiles carry no per-tile capture date; channels move, so NHDPlus HR geometry can lag the imagery (e.g. Deerlodge, Pumphouse). The check confirms the marker sits at a plausible launch; it does not prove the site is open today.",
+  "closureUncertain": [],
+  "closed": [],
+  "points": {
+    "Bedrock Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.30461,
+        "lon": -108.89437,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90244 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90244&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Dolores River boating page",
+      "accessSourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+      "sourceQuote": "BLM.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0111",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank at the road end.",
+        "image": "research/raw/imagery/CO-ACC-0111.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "a784bc2d0cca246e407623b8a2e30447400b3ae0c3662681ae562aa1efee67f1"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 14.2,
+        "nearestChannelDistM": 14.2,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": true,
+        "distToPolygonEdgeM": 7.7,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Bob Terrell SWA put-in": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.41485,
+        "lon": -107.22222,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2130 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2130&outFields=*&outSR=4326&f=json",
+      "accessSourceName": null,
+      "accessSourceUrl": null,
+      "sourceQuote": "CPW SWA ('Non motorized put in').",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0115",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank by the parking lot above the bridge.",
+        "image": "research/raw/imagery/CO-ACC-0115.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "1a1375a28d2e231e7895e6f7387473a249a343a1a23875605e64bb236e76f176"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 24.5,
+        "nearestChannelDistM": 24.5,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 11.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Bradfield Recreation Site": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 37.64878,
+        "lon": -108.73849,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 89962 (recsite)"
+      },
+      "areaRadiusM": 150,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89962&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Dolores River boating page",
+      "accessSourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+      "sourceQuote": "BLM; launch below McPhee Dam.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-flag",
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": "coordinate is an area feature (recsite), not the water entry",
+      "inventoryId": "CO-ACC-0112",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "flag",
+        "note": "Recreation-site pin on a road junction about 200 m from the river. Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0112.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "302b0b9ccd87fdac88871ef36809b426505e07cbd0943122beffbf0bb3dbc5d1"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 198.7,
+        "nearestChannelDistM": 198.7,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 185.1,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Bridgeport Trailhead": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 38.84912,
+        "lon": -108.37232,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79636 (trailhead)"
+      },
+      "areaRadiusM": 150,
+      "directions": "End of Bridgeport Road off US 50. Carry boats on the narrow trail that passes under the railroad bridge to the river; launch may be inaccessible at high flows. Not suitable for rafts.",
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79636&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+      "accessSourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+      "sourceQuote": "BLM; small craft only (kayaks/canoes) via trail under the railroad bridge; walking over the tracks is illegal (trespass).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-flag",
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": "coordinate is an area feature (trailhead), not the water entry",
+      "inventoryId": "CO-ACC-0042",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "flag",
+        "note": "Trailhead parking east of the railroad; consistent with an area point. Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0042.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "f90f7fcd3ea53577b7eff5057411954f04795be0eb725f0a56c35b00c21d6d2a"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 77.5,
+        "nearestChannelDistM": 77.5,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 46.5,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Catamount Bridge Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.8909,
+        "lon": -106.83346,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90105 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90105&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Free BLM site with boat launch (guide RM 39.8).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0006",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0006.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "246f1acb26f64bd6451f29ff9b23dae2a08fcd059e8d98ddb52efede60f17033"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 16.0,
+        "nearestChannelDistM": 16.0,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 0.1,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Chukar Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.6223,
+        "lon": -107.83125,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 89961 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89961&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Gunnison Gorge NCA brochure",
+      "accessSourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/programs_national-conservation-lands_colorado_gunnison-gorge_NCA_brochure_Low.pdf",
+      "sourceQuote": "BLM; Gunnison Gorge Wilderness permit/fee required; boats carried ~1 mile down the Chukar Trail from the trailhead.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0030",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin on the beach at the water.",
+        "image": "research/raw/imagery/CO-ACC-0030.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "5d65af2c31d334d09d8f6e3c8274040b7ac895c3faed8924c2988a3c9bc18121"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 18.5,
+        "nearestChannelDistM": 18.5,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 4.8,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Confluence Park Boat Launch (Delta)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "accessSourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+      "accessSourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+      "sourceQuote": "City park boat launch at 440 North Palmer Street, Delta (BLM DENCA float guide).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": "no official coordinate",
+      "inventoryId": "CO-ACC-0040",
+      "inCatalog": true,
+      "imageryCheck": null,
+      "nhdHR": null
+    },
+    "Confluence Recreation Area Boat Ramp (Kremmling)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.04254,
+        "lon": -106.39562,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90780 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90780&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "BLM day-use (guide).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0118",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank by the parking loop; the HR named flowline (126 m) runs mid-channel of a wide reach; polygon edge 13 m.",
+        "image": "research/raw/imagery/CO-ACC-0118.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "e1f2f3d0f3a48ba1fb250742fd5ca3200ab3a2f93ab2d60cfd14f88df039da62"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 125.8,
+        "nearestChannelDistM": 125.8,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 13.2,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Cottonwood Island Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.71223,
+        "lon": -107.04524,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79436 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79436&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Free BLM site featuring a boat launch (guide RM 63.1).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0009",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge; inside the HR river polygon.",
+        "image": "research/raw/imagery/CO-ACC-0009.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "e3ec18b126586f501e3b3a525a88326ce04c6756e2c74359daaff4ad36cd3274"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 33.1,
+        "nearestChannelDistM": 20.2,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": true,
+        "distToPolygonEdgeM": 0.1,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Deerlodge Park Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.44642,
+        "lon": -108.51196,
+        "feature": "NPS Public POIs (FeatureServer/0) feature 9798 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "NPS Public POIs (FeatureServer/0)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?where=OBJECTID%3D9798&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "NPS Dinosaur NM 'Boating and Rafting' page (re-fetched 2026-10-26)",
+      "accessSourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+      "sourceQuote": "NPS launch. Launching for the Yampa Canyon needs a Dinosaur NM river permit (Recreation.gov 250014). Taking out here after floating from above Deerlodge (e.g. West Cross Mountain) needs a free NPS one-day 'play permit' (NPS boating page, checked 2026-10-26).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0072",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin in the parking loop beside the water on river right (west bank), about 25 m from water. HR flowline and polygon are 120–170 m off because they are drawn on an old sandbar channel; the channel has moved west.",
+        "image": "research/raw/imagery/CO-ACC-0072.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "22ccb371e65b1f9678da692d453e580005ec46be52977335f53be0f3aeb08177"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 166.1,
+        "nearestChannelDistM": 123.3,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 123.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Dotsero Landing Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.65069,
+        "lon": -107.06244,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79461 (takeout)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79461&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Eagle County Open Space fee site cooperatively managed with BLM (guide RM 69.5).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0011",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the end of the loop road at a side channel behind a vegetated island; water about 10 m away. Main channel is beyond the island.",
+        "image": "research/raw/imagery/CO-ACC-0011.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "1297ff85567e09923e396cef27cf4bdb00439d0e401878c8b07787107f11d576"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 57.7,
+        "nearestChannelDistM": 57.7,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 17.4,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Duffy Mountain Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.41928,
+        "lon": -107.86957,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 83117 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=83117&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "Duffy Mountain access with boat ramp, vault toilet, parking (CPW).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "pin-at-ramp-head",
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0066",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass-ramp-head",
+        "note": "Pin at the ramp head by the parking loop; a ramp path leads about 25 m to the water.",
+        "image": "research/raw/imagery/CO-ACC-0066.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "7ea0833a45754c0e2947d24537ede8941b099e5f1ed9151b7b2273cf3e851dbb"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 61.0,
+        "nearestChannelDistM": 61.0,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 42.5,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "East Cross Mountain Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.48637,
+        "lon": -108.32416,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 82998 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=82998&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM East Cross Mountain Recreation Site page",
+      "accessSourceUrl": "https://www.blm.gov/visit/e-cross-mountain-river-access",
+      "sourceQuote": "BLM/CPW site with boat ramp, vault toilet, parking.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0070",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the top of the bank by the beach.",
+        "image": "research/raw/imagery/CO-ACC-0070.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "3afb75aa77d33a5416ea44bbe518f7863c41cdf68434709512f7aa09106f64da"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 73.0,
+        "nearestChannelDistM": 16.0,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 15.8,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Escalante Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.75824,
+        "lon": -108.2579,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79561 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79561&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+      "accessSourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+      "sourceQuote": "BLM launch on Escalante Canyon Road ~3 mi from US 50; overnight boaters self-issue a free camping permit here.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "pin-at-ramp-head",
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0041",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass-ramp-head",
+        "note": "Pin in the cleared lot on the bank just upstream of the bridge, about 25 m from water, sloping to the river.",
+        "image": "research/raw/imagery/CO-ACC-0041.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "69162018dc168b2a98f75ef7db433b5f888788b39f6746c2816996071f065c15"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 43.1,
+        "nearestChannelDistM": 43.1,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 32.4,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Fisherman's Bridge Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.76736,
+        "lon": -106.0948,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 89894 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89894&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Buena Vista–Salida sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+      "sourceQuote": "CPW AHRA fee site.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0102",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank at the end of the path.",
+        "image": "research/raw/imagery/CO-ACC-0102.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "db6e4d1bc57c641d5a6eb0f4b4f2f68eab55929cb57ed9d70d9166d8864865b1"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 30.4,
+        "nearestChannelDistM": 30.4,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 16.1,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Gateview Recreation Site": {
+      "grade": "pending",
+      "areaCenter": {
+        "lat": 38.33768,
+        "lon": -107.22991,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 89888 (recsite)"
+      },
+      "areaRadiusM": 150,
+      "directions": "BLM Gateview Recreation Site at the Lake Fork Gunnison, County Road 25 (Gateview); take out at the day-use area riverbank (no mapped ramp).",
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89888&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "aw_405",
+      "accessSourceUrl": "https://www.americanwhitewater.org/content/River/view/river-detail/405/main",
+      "sourceQuote": "Public BLM recreation site; take-out use not described by an official source (AW names it as the take-out).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-flag"
+      ],
+      "whyNotLevel1": "BLM recreation site; no official source describes take-out use (only AW names it).; coordinate is an area feature (recsite), not the water entry",
+      "inventoryId": "CO-ACC-0051",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "flag",
+        "note": "Small site about 35 m from the Lake Fork. Stays pending (permission).",
+        "image": "research/raw/imagery/CO-ACC-0051.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "b7f11a39778c33a588b20fa178ac848bb0aafe47aeff1a22f58c5d23a5ef9911"
+      },
+      "nhdHR": {
+        "namedRiverDistM": null,
+        "nearestChannelDistM": 37.2,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 33.6,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Gunnison Forks Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.78324,
+        "lon": -107.83688,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90635 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90635&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Gunnison Gorge river map",
+      "accessSourceUrl": "https://www.blm.gov/sites/blm.gov/files/docs/2021-01/final.2020%20river%20map%20for%20web_0.pdf",
+      "sourceQuote": "BLM day-use and boat ramp at the North Fork confluence.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0031",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the river edge by the gravel bar below the campground.",
+        "image": "research/raw/imagery/CO-ACC-0031.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "9aea2cec7addabba14117c7d1412cf7bbd3a7bdb4c80a08ee1d408267fa36db3"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 31.6,
+        "nearestChannelDistM": 31.6,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 8.0,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Gypsum Valley Boat Ramp (Dolores)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.13382,
+        "lon": -108.88074,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90011 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90011&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Dolores River boating page",
+      "accessSourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+      "sourceQuote": "BLM; free Dolores boating permit.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0110",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the end of the access road on the Dolores bank.",
+        "image": "research/raw/imagery/CO-ACC-0110.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "7f3991d465862ed8b64e6bb7a51669a8924e8d210328ba2d60f1931422534a96"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 24.3,
+        "nearestChannelDistM": 24.3,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 16.8,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Hayden Pump Station Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.48834,
+        "lon": -107.15946,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2491 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2491&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "CPW state park river site; State Parks daily or annual vehicle pass required.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0060",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the end of the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0060.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "a1f38fab1946e8d53ede3aba34966fe676b1a0171102e577cd74ede97112f0a2"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 35.4,
+        "nearestChannelDistM": 35.4,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 8.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Hecla Junction Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.65137,
+        "lon": -106.05103,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 89896 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89896&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Buena Vista–Salida sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+      "sourceQuote": "CPW AHRA fee site; primary Browns Canyon take-out.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0104",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the foot of the launch area; inside the HR polygon.",
+        "image": "research/raw/imagery/CO-ACC-0104.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "2112a8bbb519493cc11f36e2cfca2779579f31a3627dcda5c1ffab1df3b823f9"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 17.3,
+        "nearestChannelDistM": 17.3,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": true,
+        "distToPolygonEdgeM": 0.2,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Horse Creek River Access": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Free site on a conservation easement managed by Eagle County (guide RM 57.7).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": "no official coordinate",
+      "inventoryId": "CO-ACC-0008",
+      "inCatalog": true,
+      "imageryCheck": null,
+      "nhdHR": null
+    },
+    "Juniper Canyon Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.47661,
+        "lon": -107.96595,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2498 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2498&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "Improved CPW site with boat ramp; vehicle pass required.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0067",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank by the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0067.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "13cb51cac127866ba0a2ceb57f44a6fa3a72717f7b804d3a10979d00ab4e735b"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 46.9,
+        "nearestChannelDistM": 46.9,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 23.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Loma Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.17385,
+        "lon": -108.80795,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79553 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79553&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Ruby-Horsethief Canyon permits page",
+      "accessSourceUrl": "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+      "sourceQuote": "BLM launch; day use needs no permit; overnight camping permits required year-round (Recreation.gov).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0020",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Sandy beach launch at the road end, about 30 m from water at the imaged flow; HR polygon edge 31 m.",
+        "image": "research/raw/imagery/CO-ACC-0020.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "ab5a7fccf4cce67d33772005748e00e4cd72691982e087a2480249f4b9388371"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 64.4,
+        "nearestChannelDistM": 64.4,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 31.0,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Loudy Simpson Park": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "Moffat County park with launch/parking area (CPW).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": "no official coordinate",
+      "inventoryId": "CO-ACC-0064",
+      "inCatalog": true,
+      "imageryCheck": null,
+      "nhdHR": null
+    },
+    "Lyons Gulch Recreation Site": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 39.69879,
+        "lon": -107.07201,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79457 (campground)"
+      },
+      "areaRadiusM": 150,
+      "directions": "BLM Lyons Gulch Recreation Site off Colorado River Road (County Road 301) north of Dotsero; the BLM guide describes a boat launch at the site (river right, RM 65.5). Exact launch not mapped; coordinate is the BLM campground feature.",
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79457&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Free BLM site featuring a boat launch (guide RM 65.5).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-flag"
+      ],
+      "whyNotLevel1": "coordinate is an area feature (campground), not the water entry",
+      "inventoryId": "CO-ACC-0010",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "flag",
+        "note": "Campground pin in trees about 25–40 m from the water; consistent with an area point, not a launch. Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0010.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "b450ac20edfd4c88ca147e23a155cd37677dec04029990ca549ca6952c3f01af"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 51.3,
+        "nearestChannelDistM": 31.9,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 26.5,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Maybell Bridge Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.50155,
+        "lon": -108.03316,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2497 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2497&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "CPW site with boat ramp; vehicle pass required.",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0068",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank at the end of the lot below the bridge.",
+        "image": "research/raw/imagery/CO-ACC-0068.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "9e939a0dc9e2f1b7c2ef6dbf97776b46892d9453fa1d5cee8ea559a2b6f96a95"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 38.5,
+        "nearestChannelDistM": 38.5,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 2.1,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Mountain Sheep Point Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 37.7954,
+        "lon": -108.82588,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90017 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90017&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Dolores River boating page",
+      "accessSourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+      "sourceQuote": "BLM.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0117",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank where the access track reaches the river.",
+        "image": "research/raw/imagery/CO-ACC-0117.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "8314fd30c8c5e30c98ee2c776b788922a4910cd433ec9af607d0c860f94e73a9"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 12.1,
+        "nearestChannelDistM": 12.1,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 5.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Numbers Recreation Site": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 38.9858147,
+        "lon": -106.2165532,
+        "feature": "AHRA_KML feature Fee Sites/Numbers Recreation Site (recsite)"
+      },
+      "areaRadiusM": 150,
+      "directions": null,
+      "sourceName": "AHRA_KML",
+      "sourceUrl": "https://www.google.com/maps/d/kml?mid=CPW_AHRA (see research/raw/gis/cpw_ahra_mymap.kml)",
+      "accessSourceName": "CPW AHRA Leadville–Buena Vista sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-leadville-buena",
+      "sourceQuote": "CPW AHRA fee site.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-flag",
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": "coordinate is an area feature (recsite), not the water entry",
+      "inventoryId": "CO-ACC-0100",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "flag",
+        "note": "AHRA KML area pin in sagebrush well away from the river (HR 160 m). Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0100.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "7a47aa8e64151ec3fa6dda2dd8b39220e59778f8ff27f63a7ddac45136f57b60"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 160.3,
+        "nearestChannelDistM": 160.3,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 137.6,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Parkdale Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.4865,
+        "lon": -105.38952,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 3378 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3378&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Parkdale–Cañon City sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-parkdale-canon",
+      "sourceQuote": "CPW AHRA fee site.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0109",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin beside the concrete launch apron, about 20 m from water.",
+        "image": "research/raw/imagery/CO-ACC-0109.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "50cb5e7a8b54e85627006a4f09ccbbd64f4a05552e43b5d61e77fda2e398f915"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 31.4,
+        "nearestChannelDistM": 25.4,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 21.7,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Pinball Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.83295,
+        "lon": -106.94758,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79471 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79471&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Free BLM site with boat launch (guide RM 49.2, 'Pinball Boat Access').",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0007",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank on the inside of the bend below the road pull-out.",
+        "image": "research/raw/imagery/CO-ACC-0007.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "c77bae8cc448ddd051ced9ca867db2f072fdbb28c7965b847f3e40034116c0d6"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 21.4,
+        "nearestChannelDistM": 21.4,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": true,
+        "distToPolygonEdgeM": 3.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Pumphouse Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.98931,
+        "lon": -106.50902,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90084 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90084&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "BLM fee site with three developed launch/take-out areas (guide RM 11.0).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0001",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the launch on the side channel at the water's edge. HR named flowline is 86 m away because it follows the main channel; pin is inside the HR river polygon.",
+        "image": "research/raw/imagery/CO-ACC-0001.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "c4b7dc413ba1d7ffd74b106076302bc49af07d48063ef7a82f2ce57a9cc5096a"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 86.5,
+        "nearestChannelDistM": 17.0,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": true,
+        "distToPolygonEdgeM": 1.4,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Radium Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.94904,
+        "lon": -106.5566,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 69469 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69469&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "BLM fee site with 2 developed launch/take-out areas (guide RM 15.5).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0002",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the foot of the launch beside the parking area; HR polygon edge 27 m away is offset from the current channel.",
+        "image": "research/raw/imagery/CO-ACC-0002.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "db3a154d20403e51d2c986f2b77512dd3d29b518bf8ef65269fd0558ad20bc3d"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 50.3,
+        "nearestChannelDistM": 50.3,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 27.4,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Railroad Bridge Recreation Site Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.92396,
+        "lon": -106.16996,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 89902 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89902&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Leadville–Buena Vista sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-leadville-buena",
+      "sourceQuote": "CPW AHRA fee site.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0101",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "About 20 m from water at the launch area.",
+        "image": "research/raw/imagery/CO-ACC-0101.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "2e0c9e6123b6841490dad293037cc0dc75657a8aac66ce466b506f56f0061269"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 30.9,
+        "nearestChannelDistM": 18.9,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 16.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Rancho del Rio": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Private recreation fee site (guide RM 21.5); permission is the owner's, terms not verified.",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": "Private fee site (Rancho del Rio); terms set by the owner and not verified from an official source.; no official coordinate",
+      "inventoryId": "CO-ACC-0003",
+      "inCatalog": true,
+      "imageryCheck": null,
+      "nhdHR": null
+    },
+    "Red Bridge Campground": {
+      "grade": "pending",
+      "areaCenter": {
+        "lat": 38.32418,
+        "lon": -107.22705,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79345 (campground)"
+      },
+      "areaRadiusM": 150,
+      "directions": "BLM Red Bridge Campground on CO 149 / County Road 25 along the Lake Fork below Lake City. Put in from the campground riverbank (no mapped ramp).",
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79345&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "aw_405",
+      "accessSourceUrl": "https://www.americanwhitewater.org/content/River/view/river-detail/405/main",
+      "sourceQuote": "Public BLM campground; launching is not described by an official source (AW names it as the put-in).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-flag"
+      ],
+      "whyNotLevel1": "BLM campground; no official source says launching is allowed or describes a launch (only AW names it).; coordinate is an area feature (campground), not the water entry",
+      "inventoryId": "CO-ACC-0050",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "flag",
+        "note": "Campground pin in trees about 20 m from the Lake Fork; not a mapped launch. Stays pending (permission).",
+        "image": "research/raw/imagery/CO-ACC-0050.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "6f8a7914db9b099b7036b4b97002eb8e04f0947cf99b9ab4a636847ff2ba0b27"
+      },
+      "nhdHR": {
+        "namedRiverDistM": null,
+        "nearestChannelDistM": 131.4,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 20.5,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Rincon Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.47253,
+        "lon": -105.86591,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 3400 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3400&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Salida–Vallie Bridge sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-salida-vallie",
+      "sourceQuote": "CPW AHRA fee site with boat ramp/slide; CPW: 'a takeout for boaters wanting a more mellow float'; a daily or annual Colorado State Parks pass is required at AHRA fee sites (CPW AHRA brochure).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "pin-at-ramp-head",
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0107",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass-ramp-head",
+        "note": "Pin at the river-side lobe of the gravel lot, about 20 m from the water's edge; HR named flowline 25.5 m.",
+        "image": "research/raw/imagery/CO-ACC-0107.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "89556f1c42c61dba754c296bf703136bf3a5120896019ac715c6f1c2bd1655b8"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 25.5,
+        "nearestChannelDistM": 25.5,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 19.4,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Rio Grande Boat Takeout (Lee Trail)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 36.99866,
+        "lon": -105.71858,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 90116 (takeout)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90116&outFields=*&outSR=4326&f=json",
+      "accessSourceName": null,
+      "accessSourceUrl": null,
+      "sourceQuote": "BLM.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0116",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the canyon bank where a foot trail descends; walk-in take-out, no vehicle access visible.",
+        "image": "research/raw/imagery/CO-ACC-0116.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "1bc6c420fbe2c775892a0fbadae173318cba4ad13dd1602bc576fc90e1e7b7f7"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 24.2,
+        "nearestChannelDistM": 24.2,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 11.6,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Ruby Mountain Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.75221,
+        "lon": -106.07083,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 89904 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89904&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Buena Vista–Salida sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+      "sourceQuote": "CPW AHRA fee site.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0103",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank in trees below the campground loop, a few metres from water.",
+        "image": "research/raw/imagery/CO-ACC-0103.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "0d772efaa0745888da67c50e0cc6f87fdc55b24a7c6e24ad9ce79c160e8e990f"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 24.4,
+        "nearestChannelDistM": 24.4,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 13.8,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Salida East Boat Ramp": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 38.50942,
+        "lon": -105.96342,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 3401 (ramp)"
+      },
+      "areaRadiusM": 150,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3401&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Salida–Vallie Bridge sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-salida-vallie",
+      "sourceQuote": "CPW AHRA fee site.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-downgrade",
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": "Pin at the north end of the parking lot about 34 m from water through trees; no ramp visible at the pin. Treat as access-verified area only.",
+      "inventoryId": "CO-ACC-0106",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "downgrade",
+        "note": "Pin at the north end of the parking lot about 34 m from water through trees; no ramp visible at the pin. Treat as access-verified area only.",
+        "image": "research/raw/imagery/CO-ACC-0106.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "b6a3534991e858efa316dfa96b4823a78572bf4a3629710db4fa4b9bd7af41d2"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 54.1,
+        "nearestChannelDistM": 37.8,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 37.2,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Sam Caudill SWA put-in": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.47964,
+        "lon": -107.2866,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2129 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2129&outFields=*&outSR=4326&f=json",
+      "accessSourceName": null,
+      "accessSourceUrl": null,
+      "sourceQuote": "CPW SWA ('Rafting put in rather than boat ramp').",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0114",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank next to the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0114.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "5713e7db576cc8e4f4c18d44fe5f3ab3c61e586ad97d2872d4f76e3ce6018e12"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 23.9,
+        "nearestChannelDistM": 23.9,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 7.4,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "South Beach Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.47975,
+        "lon": -107.61651,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2500 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2500&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "CPW river site with boat ramp and vault toilets; vehicle pass required.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0065",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the end of the access road.",
+        "image": "research/raw/imagery/CO-ACC-0065.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "18a1de90c6dde3b7cccc57bf443011f212514f45590bb8dd4d37553cd9c74ce7"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 0.5,
+        "nearestChannelDistM": 0.5,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": true,
+        "distToPolygonEdgeM": 12.4,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Spikebuck Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.45866,
+        "lon": -105.46445,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 3407 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3407&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Vallie Bridge–Parkdale sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-vallie-bridge",
+      "sourceQuote": "CPW AHRA fee site.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0108",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge.",
+        "image": "research/raw/imagery/CO-ACC-0108.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "bfdf733330d6cf5196a37303b06be8858d25a22b3fcdf11d48782ad6a0300afe"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 15.2,
+        "nearestChannelDistM": 15.2,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 3.9,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Split Mountain Boat Ramp": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "accessSourceName": "NPS Dinosaur NM 'Boating in the Monument' 2025",
+      "accessSourceUrl": "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf",
+      "sourceQuote": "Take-out in Utah; Utah registry record 'Split Mountain Boat Ramp'.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": "no official coordinate; endpoint is in Utah: 'Split Mountain Boat Ramp' (see research/cross-state-references.json)",
+      "inventoryId": "CO-ACC-0073",
+      "inCatalog": true,
+      "imageryCheck": null,
+      "nhdHR": null
+    },
+    "State Bridge Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.85742,
+        "lon": -106.64731,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 69267 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69267&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Eagle County Open Space recreation fee site with one developed boat launch (guide RM 25.0).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0004",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the end of the parking area.",
+        "image": "research/raw/imagery/CO-ACC-0004.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "73c4e752ffaf7ee6b5870f014c609322bb0e30d87e4ee65146458229d816321d"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 32.5,
+        "nearestChannelDistM": 32.5,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 3.0,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Stone Bridge Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.61287,
+        "lon": -106.06213,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 3566 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3566&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW AHRA Buena Vista–Salida sites",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+      "sourceQuote": "CPW AHRA fee site with boat ramp/slide (CPW Buena Vista–Salida sites page); a daily or annual Colorado State Parks pass is required at AHRA fee sites (CPW AHRA brochure).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0105",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin where the access road reaches the bank beside the bridge, about 10–15 m from water.",
+        "image": "research/raw/imagery/CO-ACC-0105.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "c6d94a0f7408599507dfa8d1e3f4c1a20328d78fa38af7041f0395f190a4e287"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 28.9,
+        "nearestChannelDistM": 28.9,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 18.6,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Sunbeam River Access": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.54671,
+        "lon": -108.19647,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2495 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2495&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "CPW site; 'no improvements or change facilities'; vehicle pass required.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0069",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank where the track reaches the river.",
+        "image": "research/raw/imagery/CO-ACC-0069.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "e732b0a101bdd82f98e7a3756fb11895f086e48a38e475ff4b68bb641ce34683"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 48.8,
+        "nearestChannelDistM": 1.9,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 1.5,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Two Bridges Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.89132,
+        "lon": -106.70387,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79478 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79478&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "accessSourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+      "sourceQuote": "Eagle County Open Space fee site (guide RM 29.7).",
+      "checkedOn": "2026-10-26",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0005",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank beside the bridge.",
+        "image": "research/raw/imagery/CO-ACC-0005.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "11614307befde48d0492fd5e49e64d58ee41eb6d8699c3f0eb3c89e3b5ee800e"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 22.9,
+        "nearestChannelDistM": 22.9,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 1.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "West Cross Mountain Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.45319,
+        "lon": -108.38051,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 5192 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D5192&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "BLM-owned site managed by CPW (CPW GIS feature comment); boating access documented by CPW Yampa River State Park (West Cross Mountain is a river access site, 9 miles above Deerlodge Park).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-flag",
+        "permit-or-fee",
+        "source-conflict-facility-manager"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0071",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "flag",
+        "note": "Location passes: pin at the end of the dirt access road at the water's edge (HR polygon offset 28 m). Facility conflict: no built ramp visible; CPW park page says 'Boat Ramp: None' and NPS-managed, CPW GIS says BLM ramp managed by CPW. Published as 'Boat launch' (not ramp).",
+        "image": "research/raw/imagery/CO-ACC-0071.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "e13796a687f1bf48c89a1d0455754928104efac521ae1660c45ef2965ee3db78"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 48.8,
+        "nearestChannelDistM": 48.8,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 28.0,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Westwater Ranger Station Boat Ramp": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "accessSourceName": "BLM Ruby-Horsethief Canyon permits page",
+      "accessSourceUrl": "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+      "sourceQuote": "Take-out in Utah; Utah registry record 'Westwater Ranger Station Boat Ramp' (catalog/map_points/UT.json).",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": "no official coordinate; endpoint is in Utah: 'Westwater Ranger Station Boat Ramp' (see research/cross-state-references.json)",
+      "inventoryId": "CO-ACC-0021",
+      "inCatalog": true,
+      "imageryCheck": null,
+      "nhdHR": null
+    },
+    "Whitewater Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.97132,
+        "lon": -108.45456,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79609 (launch)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79609&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+      "accessSourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+      "sourceQuote": "BLM take-out off US 50 near the US 50/CO 141 junction; carry ~100 yards to parking.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0043",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the east-bank water's edge.",
+        "image": "research/raw/imagery/CO-ACC-0043.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "aa2af6c4af36998a77b4d698bf4c648a5af8611d98ec7e89356145b04491ae86"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 35.2,
+        "nearestChannelDistM": 27.7,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 7.1,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Wingo Boat Ramp": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 39.34254,
+        "lon": -107.00588,
+        "feature": "BLM National Recreation Site Points (FeatureServer/2) feature 79298 (ramp)"
+      },
+      "areaRadiusM": 150,
+      "directions": null,
+      "sourceName": "BLM National Recreation Site Points (FeatureServer/2)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79298&outFields=*&outSR=4326&f=json",
+      "accessSourceName": null,
+      "accessSourceUrl": null,
+      "sourceQuote": "BLM.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "imagery-downgrade",
+        "research-point-not-in-catalog"
+      ],
+      "whyNotLevel1": "Pin plots on the highway about 50 m from the river; no launch visible at the pin. Treat as access-verified area only.",
+      "inventoryId": "CO-ACC-0113",
+      "inCatalog": false,
+      "imageryCheck": {
+        "verdict": "downgrade",
+        "note": "Pin plots on the highway about 50 m from the river; no launch visible at the pin. Treat as access-verified area only.",
+        "image": "research/raw/imagery/CO-ACC-0113.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "3035b15eac7bd731ca849896ba8f6244aa0a9fc55132f1ff2ca5dcb9cb7abc5a"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 49.8,
+        "nearestChannelDistM": 49.8,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 40.0,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Yampa River State Park Headquarters": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 40.48921,
+        "lon": -107.30953,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 4923 (recsite)"
+      },
+      "areaRadiusM": 150,
+      "directions": "Yampa River State Park headquarters on US 40 west of Hayden; boating access at the headquarters river site.",
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D4923&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "CPW headquarters site with boating access; vehicle pass required.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": "coordinate is an area feature (recsite), not the water entry",
+      "inventoryId": "CO-ACC-0061",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank where the park path reaches the river.",
+        "image": "research/raw/imagery/CO-ACC-0061.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "37aeea6068f553c11a54088bf14c1b345c7b705add84381f7725d0d0421c93ea"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 24.9,
+        "nearestChannelDistM": 24.9,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 10.0,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Yampa River State Wildlife Area Boat Ramp": {
+      "grade": "pending",
+      "areaCenter": {
+        "lat": 40.51793,
+        "lon": -107.39873,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2501 (ramp)"
+      },
+      "areaRadiusM": 150,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2501&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "CPW State Wildlife Area; CPW says visitors with a valid hunting or fishing license can hunt or fish there. SWA access rules for non-anglers not confirmed.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": "CPW State Wildlife Area: CPW text addresses licensed hunters/anglers only; access terms for non-angling boaters not confirmed.",
+      "inventoryId": "CO-ACC-0062",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin at the north-bank water's edge at the road end; HR polygon is offset south. Stays pending (permission).",
+        "image": "research/raw/imagery/CO-ACC-0062.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "3eee8bce10f5007f9c24cf7c54652225024cc436ba4227b6a7bfa72eacc054af"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 56.0,
+        "nearestChannelDistM": 56.0,
+        "bankBySideOfCentreline": "river-right",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 25.7,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    },
+    "Yampa Valley Golf Course Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.50205,
+        "lon": -107.51374,
+        "feature": "CPW AdminData facilities (FeatureServer/0) feature 2493 (ramp)"
+      },
+      "areaRadiusM": 0,
+      "directions": null,
+      "sourceName": "CPW AdminData facilities (FeatureServer/0)",
+      "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2493&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "CPW Yampa River State Park river sections",
+      "accessSourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+      "sourceQuote": "CPW river site; 'undeveloped boat ramp'; vehicle pass required.",
+      "checkedOn": "2026-10-26",
+      "flags": [
+        "permit-or-fee"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "CO-ACC-0063",
+      "inCatalog": true,
+      "imageryCheck": {
+        "verdict": "pass",
+        "note": "Pin plotted about 10–15 m into the water off the south bank where the access track ends; location consistent with the ramp.",
+        "image": "research/raw/imagery/CO-ACC-0063.jpg",
+        "imagery": "Esri World Imagery z18 (~0.47 m/px, 1280x1280 px ≈ 600 m square); blue = NHDPlus HR flowline, cyan = NHDArea polygon",
+        "imageSha256": "03b0111fa689a305f4a55527a17eca1f3d3690b2493d98d230d31f8196372716"
+      },
+      "nhdHR": {
+        "namedRiverDistM": 19.1,
+        "nearestChannelDistM": 19.1,
+        "bankBySideOfCentreline": "river-left",
+        "pinInsideRiverPolygon": false,
+        "distToPolygonEdgeM": 1.3,
+        "record": "research/geo-checks-hr-CO.json"
+      }
+    }
+  }
+}

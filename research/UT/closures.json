@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "state": "UT",
+  "checkedOn": "2026-10-25",
+  "closures": [
+    {
+      "riverId": "green-river-dinosaur",
+      "sectionIds": [
+        "rainbow-park-split-mountain"
+      ],
+      "status": "closed",
+      "summary": "NPS: 'The 3/4-mile Rainbow Park Road from the junction with Island Park Road to the Rainbow Park Campground and Boat Ramp is closed as of September 25, 2026 due to significant storm damage until repairs are completed, likely through spring of 2027.'",
+      "expectedReopening": "likely spring 2027 (NPS estimate)",
+      "sources": [
+        "https://www.nps.gov/dino/planyourvisit/conditions.htm"
+      ],
+      "relatedPoints": [
+        "Rainbow Park Boat Ramp"
+      ],
+      "action": "Section excluded from catalog/rivers/green-river-dinosaur.json and the point kept out of the registry. Re-add when NPS reopens the road."
+    },
+    {
+      "riverId": "(excluded) colorado-river-cataract",
+      "sectionIds": [
+        "(not in catalog) potash-north-wash"
+      ],
+      "status": "closure-uncertain",
+      "summary": "NPS Glen Canyon Hite page: 'river raft take out ramp at North Wash is inoperable. Boat launching is at your own risk. Four wheel drive vehicles are recommended for all launching.' A Utah DOR press release says a new North Wash ramp of articulating concrete block mats was completed as an interim fix. The two official sources conflict and neither gives a coordinate.",
+      "expectedReopening": null,
+      "sources": [
+        "https://www.nps.gov/glca/planyourvisit/hite.htm",
+        "https://recreation.utah.gov/press-release/north-wash-boat-ramp-construction-complete-restoring-critical-river-access-for-cataract-canyon-users/",
+        "https://www.nps.gov/cany/planyourvisit/boatinginfo.htm"
+      ],
+      "relatedPoints": [
+        "North Wash Take-out (Cataract Canyon)"
+      ],
+      "action": "Cataract Canyon not added. North Wash stays closure-uncertain in the inventory; never verify until NPS GLCA confirms the ramp status."
+    }
+  ],
+  "advisories": [
+    {
+      "riverId": "white-river",
+      "summary": "BLM: the Bonanza Bridge launch is on private property and is open Apr 1-Oct 1 only (closed today, 2026-10-25).",
+      "sources": [
+        "https://www.blm.gov/sites/default/files/documents/files/white%20river%20for%20web.pdf",
+        "https://www.blm.gov/visit/white-river-recreation-area"
+      ],
+      "relatedPoints": [
+        "Bonanza Bridge Boat Launch"
+      ]
+    },
+    {
+      "riverId": "san-juan",
+      "summary": "USGS 09379500 read 19,500 cfs at check time (2026-10-25 20:00 UTC; 14:00 MDT). No historical/typical-flow statistics were pulled, so this package only notes it as a high reading to re-check before any trip; it is also used as refFlowCfs, which is therefore not a typical-season value.",
+      "sources": [
+        "https://waterdata.usgs.gov/monitoring-location/09379500/"
+      ]
+    },
+    {
+      "riverId": "green-river-labyrinth",
+      "summary": "BLM: the Mineral Bottom road 'can be very slick and impassible when wet... Four wheel drive vehicles are recommended.'",
+      "sources": [
+        "https://www.blm.gov/visit/labyrinth-canyon-river"
+      ]
+    },
+    {
+      "riverId": "san-juan",
+      "summary": "BLM: 'There is a dangerous waterfall downstream from Clay Hills.' Clay Hills is the only viable take-out below Mexican Hat.",
+      "sources": [
+        "https://www.blm.gov/sites/blm.gov/files/uploads/San%20Juan%20Trip%20Planning%20Information.pdf"
+      ]
+    }
+  ]
+}

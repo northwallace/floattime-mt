@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "spotCheckVerifiedFirst": [
+    "Water Users Day Use Area (Lower Salt) - IMAGERY-PLACED (North's own Google Maps marking, checked on Esri 2026-10-26): natural sand launch, waterline moves with Stewart Mountain Dam releases",
+    "Phon D Sutton Day Use Area (Lower Salt) - IMAGERY-PLACED (North's own Google Maps marking, checked on Esri 2026-10-26): natural shore take-out at the west end of the site just below the Verde confluence, ~420 m from the Tonto page point; waterline moves with dam releases",
+    "Beasley Flat (Verde) - IMAGERY-PLACED (North's own Google Maps marking, checked on Esri 2026-10-26): open shore gap by the picnic loop; the concrete ramp is not distinguishable on imagery",
+    "Bignotti Picnic Site (Verde) - bank set from imagery (NHD line only 1 m away)",
+    "Pearce Ferry Boat Launch - Lake Mead level changes move the waterline; point is on the paved ramp a short way up from the water on imagery",
+    "Black Canyon Fishing Site (Verde) - fishing site; boating access is from the Prescott NF page text"
+  ],
+  "verified": [
+    "Water Users Day Use Area (Lower Salt)",
+    "Phon D Sutton Day Use Area (Lower Salt)",
+    "Black Canyon Fishing Site (Verde)",
+    "Bignotti Picnic Site (Verde)",
+    "Beasley Flat (Verde)",
+    "Pearce Ferry Boat Launch"
+  ],
+  "pending": [
+    {
+      "label": "Blue Point Day Use Area (Lower Salt)",
+      "inventoryId": "AZ-ACC-0002",
+      "grade": "access-verified",
+      "action": "Imagery: the point is in the day-use parking lot about 110 m east of the river channel. v1.3: North's owner-supplied point (33.5539720, -111.5750868) is at the water's edge on the beach just south of the Bush Highway bridge (NHD 49 m, river right), but that beach is on the Pebble Beach side of the highway (175 m from the Pebble Beach page coordinate, 193 m from the Blue Point one), so it was not applied. v1.4: reassessed with North's statement that Sheeps Crossing is the other side (his Sheeps point is river-left, 432 m away) and the USFS INFRA site points (Pebble Beach 95705 serves the south lots; Blue Point 95316 is the lot north of the highway); still not applied (research/replacement-proposals-AZ.json). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Goldfield Day Use Area (Lower Salt)",
+      "inventoryId": "AZ-ACC-0003",
+      "grade": "access-verified",
+      "action": "Agency point is 257 m from the NHD centreline (>150 m). Tonto order 03-12-03-24-65 closes a described Goldfield-area eagle zone Dec 1-Jun 30 each year (order text runs to Jun 30, 2026; renewal for 2026-27 not found this pass)."
+    },
+    {
+      "label": "First Campground (Upper Salt put-in)",
+      "inventoryId": "AZ-ACC-0005",
+      "grade": "pending",
+      "action": "No managing-agency coordinate: the launch is on White Mountain Apache land (tribal permit required); the Tonto NF area map PDF is image-only and gives no coordinates."
+    },
+    {
+      "label": "Highway 288 Bridge Take-out (Upper Salt)",
+      "inventoryId": "AZ-ACC-0006",
+      "grade": "pending",
+      "action": "Tonto NF names the take-out (just downstream of the Highway 288 Bridge, river left) but publishes no coordinate for it."
+    },
+    {
+      "label": "Tuzigoot River Access Point (Verde)",
+      "inventoryId": "AZ-ACC-0007",
+      "grade": "pending",
+      "action": "No agency coordinate for the launch itself (Clarkdale page 403 to curl; text captured via WebFetch fallback; AZSP gives only the park-entrance coordinate)."
+    },
+    {
+      "label": "Dead Horse Ranch State Park River Day Use Area (Verde)",
+      "inventoryId": "AZ-ACC-0008",
+      "grade": "pending",
+      "action": "No agency coordinate for the river day-use landing (the Dead Horse facility page's boat ramp is at the lagoons, not the river)."
+    },
+    {
+      "label": "White Bridge Picnic Site and Boat Launch (Verde)",
+      "inventoryId": "AZ-ACC-0011",
+      "grade": "access-verified",
+      "action": "Agency point is 168 m from the NHD centreline (>150 m). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Clear Creek Fishing Site (Verde)",
+      "inventoryId": "AZ-ACC-0012",
+      "grade": "access-verified",
+      "action": "Agency says launching/take-out is possible but the site is not a good boat launch (steep, slippery bank; parking not close to the river), so it is kept to the access-verified tier, not verified."
+    },
+    {
+      "label": "Childs River Access Point (Verde)",
+      "inventoryId": "AZ-ACC-0014",
+      "grade": "pending",
+      "action": "The only agency coordinate is for the Childs dispersed camping area; the current Coconino page does not mention boating, and the boating statement comes from a 2006-07 paddle guide."
+    },
+    {
+      "label": "Sheep Bridge (Verde)",
+      "inventoryId": "AZ-ACC-0015",
+      "grade": "pending",
+      "action": "Tonto page lists non-motorized boating but gives no launch/take-out statement; the 2006-07 paddle guide calls it a River Access Point. Road is rocky and technical (4x4)."
+    },
+    {
+      "label": "Horseshoe Campground (Verde)",
+      "inventoryId": "AZ-ACC-0016",
+      "grade": "pending",
+      "action": "Road closure order 03-12-01-26-26 (motor vehicles prohibited on Horseshoe Dam Road, NFSR 205, Sep 29-Nov 2, 2026, flood repairs). Campground access is via campsites 11-12, not a designated launch."
+    },
+    {
+      "label": "Needle Rock Day Use Area (Verde)",
+      "inventoryId": "AZ-ACC-0017",
+      "grade": "pending",
+      "action": "The page names a non-motorized beach and lists non-motorized boating, but it never says launch/put-in, so it stays pending."
+    },
+    {
+      "label": "Box Bar River Access Point (Verde)",
+      "inventoryId": "AZ-ACC-0018",
+      "grade": "pending",
+      "action": "Imagery: the Tonto page coordinate is in the dispersed parking/camping flat about 120 m west of the river."
+    },
+    {
+      "label": "Gila River Boat Put-In (Gila Box)",
+      "inventoryId": "AZ-ACC-0019",
+      "grade": "access-verified",
+      "action": "Imagery: the BLM point is on a sandy track on the south side of the river near the Old Safford Bridge, about 50 m from the channel under riparian trees; no launch is identifiable. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Dry Canyon Boat Take-Out (Gila Box)",
+      "inventoryId": "AZ-ACC-0020",
+      "grade": "pending",
+      "action": "Closure-uncertain: a non-agency (American Whitewater) report dated Oct 4, 2026 describes a road washout on the take-out access; no BLM notice was found either way. The BLM page coordinate is more than 400 m from any NHD Gila River flowline (no flowline in the 0.004-degree NHD query)."
+    },
+    {
+      "label": "Lees Ferry Boat Launch",
+      "inventoryId": "AZ-ACC-0021",
+      "grade": "access-verified",
+      "action": "Imagery: the NPS point is in the paved launch parking lot, about 60 m from the ramp and docks. Too far from the water to pass the ramp-at-water check. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Diamond Creek (Grand Canyon)",
+      "inventoryId": "AZ-ACC-0022",
+      "grade": "access-verified",
+      "action": "Access crosses Hualapai tribal land and the Tribe charges its own fees; the managing authority for road and landing is the Hualapai Tribe, not NPS, so this stays in the access-verified tier."
+    }
+  ],
+  "decisionsNeeded": [
+    "Upper Salt lottery-date conflict (permits.json)",
+    "Dry Canyon coordinate (replacement-proposals-AZ.json)",
+    "Lower Salt / Box Bar eagle orders expired 2026-06-30; confirm renewal before Dec 1, 2026",
+    "Diamond Creek: Hualapai-controlled access; decide whether a tribal landing can ever be 'verified'",
+    "Blue Point owner-supplied point (v1.3, reassessed v1.4 with North's Sheeps Crossing statement and the USFS INFRA site points; still not applied): the lots serving that beach are Pebble Beach (INFRA 95705) and Blue Point's own lot is north of the highway (INFRA 95316). Resolving fact: an agency source assigning the beach at the south abutment of Blue Point Bridge to Blue Point; or North re-marks the water's edge north of Bush Highway from the Blue Point lot; or add Pebble Beach as an endpoint (replacement-proposals-AZ.json)"
+  ]
+}

@@ -1,0 +1,4603 @@
+{
+  "state": "CO",
+  "checkedOn": "2026-10-26",
+  "count": 54,
+  "gradeRules": "verified = managing-agency boating-facility point (ramp/launch/take-out) within 150 m of USGS NHDPlus centreline and permission documented; access-verified = official text documents boating access but coordinate is an area feature (campground/recreation site/trailhead/picnic area); pending = no official coordinate, unresolved permission, cross-state endpoint or conflict.",
+  "points": [
+    {
+      "id": "CO-ACC-0001",
+      "name": "Pumphouse Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-pumphouse"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.98931,
+        "lon": -106.50902,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90084,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90084&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "BLM Kremmling Field Office",
+      "permission": {
+        "text": "BLM fee site with three developed launch/take-out areas (guide RM 11.0).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-left",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 8.7,
+        "nhdSide": "river-left",
+        "comid": 1236673,
+        "within150m": true,
+        "riverLat": 39.98932,
+        "riverLon": -106.509121
+      },
+      "bankDecision": "official text states river-left; NHDPlus side check agrees",
+      "publishedBank": "river-left",
+      "directions": null,
+      "notes": "Pumphouse has several launch features in the BLM layer (90084 Boat Launch, 90810 Boat Ramp); 90084 used. Guide RM 11.0.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the launch on the side channel at the water's edge. HR named flowline is 86 m away because it follows the main channel; pin is inside the HR river polygon.",
+        "image": "research/raw/imagery/CO-ACC-0001.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM fee site with three developed launch/take-out areas (guide RM 11.0).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 8.7,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-left",
+        "evidence": "official text states river-left; NHDPlus side check agrees",
+        "publishedInCatalog": "river-left"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "pumphouse-to-radium"
+      ]
+    },
+    {
+      "id": "CO-ACC-0002",
+      "name": "Radium Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-pumphouse"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.94904,
+        "lon": -106.5566,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 69469,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69469&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Kremmling Field Office",
+      "permission": {
+        "text": "BLM fee site with 2 developed launch/take-out areas (guide RM 15.5).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-left",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 45.0,
+        "nhdSide": "river-left",
+        "comid": 1237109,
+        "within150m": true,
+        "riverLat": 39.948647,
+        "riverLon": -106.556736
+      },
+      "bankDecision": "official text states river-left; NHDPlus side check agrees",
+      "publishedBank": "river-left",
+      "directions": null,
+      "notes": "Second ramp feature 77054 ~300 m away; 69469 used. Guide RM 15.5.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the foot of the launch beside the parking area; HR polygon edge 27 m away is offset from the current channel.",
+        "image": "research/raw/imagery/CO-ACC-0002.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM fee site with 2 developed launch/take-out areas (guide RM 15.5).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 45.0,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-011.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-left",
+        "evidence": "official text states river-left; NHDPlus side check agrees",
+        "publishedInCatalog": "river-left"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "pumphouse-to-radium",
+        "radium-to-rancho-del-rio"
+      ]
+    },
+    {
+      "id": "CO-ACC-0003",
+      "name": "Rancho del Rio",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-pumphouse"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": null,
+      "operator": "Private (Rancho del Rio)",
+      "permission": {
+        "text": "Private recreation fee site (guide RM 21.5); permission is the owner's, terms not verified.",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": false,
+        "issue": "Private fee site (Rancho del Rio); terms set by the owner and not verified from an official source."
+      },
+      "statedBank": "river-left",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": null,
+      "bankDecision": "official text states river-left; not published because the location is not an exact verified facility",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "No official coordinate found in BLM/CPW layers.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location",
+        "access-permission"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": null,
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Private recreation fee site (guide RM 21.5); permission is the owner's, terms not verified.",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": "Private fee site (Rancho del Rio); terms set by the owner and not verified from an official source."
+      },
+      "locationPrecision": {
+        "value": "unknown",
+        "coordinateRepresents": null,
+        "nhdDistanceM": null,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-011.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-left",
+        "evidence": "official text states river-left; not published because the location is not an exact verified facility",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "radium-to-rancho-del-rio",
+        "rancho-del-rio-to-state-bridge"
+      ]
+    },
+    {
+      "id": "CO-ACC-0004",
+      "name": "State Bridge Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-pumphouse",
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.85742,
+        "lon": -106.64731,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 69267,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69267&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "Eagle County Open Space",
+      "permission": {
+        "text": "Eagle County Open Space recreation fee site with one developed boat launch (guide RM 25.0).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-left",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 38.8,
+        "nhdSide": "river-left",
+        "comid": 1237815,
+        "within150m": true,
+        "riverLat": 39.857674,
+        "riverLon": -106.646997
+      },
+      "bankDecision": "official text states river-left; NHDPlus side check agrees",
+      "publishedBank": "river-left",
+      "directions": null,
+      "notes": "Guide RM 25.0.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the end of the parking area.",
+        "image": "research/raw/imagery/CO-ACC-0004.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Eagle County Open Space recreation fee site with one developed boat launch (guide RM 25.0).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 38.8,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-010, CO-RES-011.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-left",
+        "evidence": "official text states river-left; NHDPlus side check agrees",
+        "publishedInCatalog": "river-left"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "rancho-del-rio-to-state-bridge",
+        "state-bridge-to-two-bridges"
+      ]
+    },
+    {
+      "id": "CO-ACC-0005",
+      "name": "Two Bridges Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.89132,
+        "lon": -106.70387,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79478,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79478&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "Eagle County Open Space",
+      "permission": {
+        "text": "Eagle County Open Space fee site (guide RM 29.7).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-right",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 18.8,
+        "nhdSide": "river-right",
+        "comid": 1237599,
+        "within150m": true,
+        "riverLat": 39.891398,
+        "riverLon": -106.704065
+      },
+      "bankDecision": "official text states river-right; NHDPlus side check agrees",
+      "publishedBank": "river-right",
+      "directions": null,
+      "notes": "Guide warns of hazardous bridges just above the access (RM 29.6) over 5,500 cfs.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank beside the bridge.",
+        "image": "research/raw/imagery/CO-ACC-0005.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Eagle County Open Space fee site (guide RM 29.7).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 18.8,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-010.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-right",
+        "evidence": "official text states river-right; NHDPlus side check agrees",
+        "publishedInCatalog": "river-right"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "state-bridge-to-two-bridges",
+        "two-bridges-to-catamount"
+      ]
+    },
+    {
+      "id": "CO-ACC-0006",
+      "name": "Catamount Bridge Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.8909,
+        "lon": -106.83346,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90105,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90105&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Colorado River Valley Field Office",
+      "permission": {
+        "text": "Free BLM site with boat launch (guide RM 39.8).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-left",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 10.9,
+        "nhdSide": "river-left",
+        "comid": 1237525,
+        "within150m": true,
+        "riverLat": 39.890998,
+        "riverLon": -106.833476
+      },
+      "bankDecision": "official text states river-left; NHDPlus side check agrees",
+      "publishedBank": "river-left",
+      "directions": null,
+      "notes": "Guide RM 39.8.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0006.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Free BLM site with boat launch (guide RM 39.8).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 10.9,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-left",
+        "evidence": "official text states river-left; NHDPlus side check agrees",
+        "publishedInCatalog": "river-left"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "two-bridges-to-catamount",
+        "catamount-to-pinball"
+      ]
+    },
+    {
+      "id": "CO-ACC-0007",
+      "name": "Pinball Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.83295,
+        "lon": -106.94758,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79471,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79471&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Colorado River Valley Field Office",
+      "permission": {
+        "text": "Free BLM site with boat launch (guide RM 49.2, 'Pinball Boat Access').",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-right",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 6.4,
+        "nhdSide": "river-right",
+        "comid": 1237895,
+        "within150m": true,
+        "riverLat": 39.832898,
+        "riverLon": -106.947545
+      },
+      "bankDecision": "official text states river-right; NHDPlus side check agrees",
+      "publishedBank": "river-right",
+      "directions": null,
+      "notes": "Guide RM 49.2.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank on the inside of the bend below the road pull-out.",
+        "image": "research/raw/imagery/CO-ACC-0007.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Free BLM site with boat launch (guide RM 49.2, 'Pinball Boat Access').",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 6.4,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-right",
+        "evidence": "official text states river-right; NHDPlus side check agrees",
+        "publishedInCatalog": "river-right"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "catamount-to-pinball",
+        "pinball-to-horse-creek"
+      ]
+    },
+    {
+      "id": "CO-ACC-0008",
+      "name": "Horse Creek River Access",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": null,
+      "operator": "Eagle County (conservation easement on Colorado River Ranch)",
+      "permission": {
+        "text": "Free site on a conservation easement managed by Eagle County (guide RM 57.7).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-left",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": null,
+      "bankDecision": "official text states river-left; not published because the location is not an exact verified facility",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "No official coordinate found.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": null,
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Free site on a conservation easement managed by Eagle County (guide RM 57.7).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "unknown",
+        "coordinateRepresents": null,
+        "nhdDistanceM": null,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-left",
+        "evidence": "official text states river-left; not published because the location is not an exact verified facility",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "pinball-to-horse-creek",
+        "horse-creek-to-cottonwood-island"
+      ]
+    },
+    {
+      "id": "CO-ACC-0009",
+      "name": "Cottonwood Island Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.71223,
+        "lon": -107.04524,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79436,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79436&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Colorado River Valley Field Office",
+      "permission": {
+        "text": "Free BLM site featuring a boat launch (guide RM 63.1).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-right",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 27.6,
+        "nhdSide": "river-right",
+        "comid": 1236059,
+        "within150m": true,
+        "riverLat": 39.711982,
+        "riverLon": -107.045203
+      },
+      "bankDecision": "official text states river-right; NHDPlus side check agrees",
+      "publishedBank": "river-right",
+      "directions": null,
+      "notes": "Guide RM 63.1.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge; inside the HR river polygon.",
+        "image": "research/raw/imagery/CO-ACC-0009.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Free BLM site featuring a boat launch (guide RM 63.1).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 27.6,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-right",
+        "evidence": "official text states river-right; NHDPlus side check agrees",
+        "publishedInCatalog": "river-right"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "horse-creek-to-cottonwood-island",
+        "cottonwood-island-to-lyons-gulch"
+      ]
+    },
+    {
+      "id": "CO-ACC-0010",
+      "name": "Lyons Gulch Recreation Site",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "access-verified",
+      "coordinate": {
+        "lat": 39.69879,
+        "lon": -107.07201,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79457,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79457&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "campground"
+      },
+      "operator": "BLM Colorado River Valley Field Office",
+      "permission": {
+        "text": "Free BLM site featuring a boat launch (guide RM 65.5).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-right",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 34.5,
+        "nhdSide": "river-right",
+        "comid": 1236059,
+        "within150m": true,
+        "riverLat": 39.698693,
+        "riverLon": -107.071628
+      },
+      "bankDecision": "official text states river-right; not published because the location is not an exact verified facility",
+      "publishedBank": null,
+      "directions": "BLM Lyons Gulch Recreation Site off Colorado River Road (County Road 301) north of Dotsero; the BLM guide describes a boat launch at the site (river right, RM 65.5). Exact launch not mapped; coordinate is the BLM campground feature.",
+      "notes": "No boat-ramp feature in BLM layer; campground/restroom/parking only.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "flag",
+        "note": "Campground pin in trees about 25–40 m from the water; consistent with an area point, not a launch. Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0010.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Free BLM site featuring a boat launch (guide RM 65.5).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "access-area",
+        "coordinateRepresents": "campground feature (area), not the water entry from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 34.5,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-right",
+        "evidence": "official text states river-right; not published because the location is not an exact verified facility",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "cottonwood-island-to-lyons-gulch",
+        "lyons-gulch-to-dotsero"
+      ]
+    },
+    {
+      "id": "CO-ACC-0011",
+      "name": "Dotsero Landing Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-state-bridge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.65069,
+        "lon": -107.06244,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79461,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79461&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "takeout"
+      },
+      "operator": "Eagle County Open Space / BLM",
+      "permission": {
+        "text": "Eagle County Open Space fee site cooperatively managed with BLM (guide RM 69.5).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": "river-left",
+      "statedBankSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "nhdCheck": {
+        "distM": 78.2,
+        "nhdSide": "river-left",
+        "comid": 1236063,
+        "within150m": true,
+        "riverLat": 39.650983,
+        "riverLon": -107.063271
+      },
+      "bankDecision": "official text states river-left; NHDPlus side check agrees",
+      "publishedBank": "river-left",
+      "directions": null,
+      "notes": "Guide RM 69.5.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the end of the loop road at a side channel behind a vegetated island; water about 10 m away. Main channel is beyond the island.",
+        "image": "research/raw/imagery/CO-ACC-0011.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Eagle County Open Space fee site cooperatively managed with BLM (guide RM 69.5).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat take-out facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 78.2,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "river-left",
+        "evidence": "official text states river-left; NHDPlus side check agrees",
+        "publishedInCatalog": "river-left"
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "lyons-gulch-to-dotsero"
+      ]
+    },
+    {
+      "id": "CO-ACC-0020",
+      "name": "Loma Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-ruby-horsethief"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.17385,
+        "lon": -108.80795,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79553,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79553&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "BLM McInnis Canyons NCA",
+      "permission": {
+        "text": "BLM launch; day use needs no permit; overnight camping permits required year-round (Recreation.gov).",
+        "sourceName": "BLM Ruby-Horsethief Canyon permits page",
+        "sourceUrl": "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 99.1,
+        "nhdSide": "river-right",
+        "comid": 3179510,
+        "within150m": true,
+        "riverLat": 39.173057,
+        "riverLon": -108.807415
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Also CPW 2128 'Loma Boat Launch SWA' ('Not owned by CDOW').",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Sandy beach launch at the road end, about 30 m from water at the imaged flow; HR polygon edge 31 m.",
+        "image": "research/raw/imagery/CO-ACC-0020.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM launch; day use needs no permit; overnight camping permits required year-round (Recreation.gov).",
+        "sourceName": "BLM Ruby-Horsethief Canyon permits page",
+        "sourceUrl": "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 99.1,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-004.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "BLM: overnight camping permits required year-round (Recreation.gov 74466); day use without permit."
+      ],
+      "sections": [
+        "loma-to-westwater"
+      ]
+    },
+    {
+      "id": "CO-ACC-0021",
+      "name": "Westwater Ranger Station Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-ruby-horsethief"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": null,
+      "operator": "BLM Moab Field Office (Utah)",
+      "permission": {
+        "text": "Take-out in Utah; Utah registry record 'Westwater Ranger Station Boat Ramp' (catalog/map_points/UT.json).",
+        "sourceName": "BLM Ruby-Horsethief Canyon permits page",
+        "sourceUrl": "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": null,
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Cross-state endpoint: app lookup uses river state only, so CO.json carries a pending record.",
+      "utahRegistryName": "Westwater Ranger Station Boat Ramp",
+      "blockers": [
+        "exact-location",
+        "app-support"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": null,
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Take-out in Utah; Utah registry record 'Westwater Ranger Station Boat Ramp' (catalog/map_points/UT.json).",
+        "sourceName": "BLM Ruby-Horsethief Canyon permits page",
+        "sourceUrl": "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "unknown",
+        "coordinateRepresents": null,
+        "nhdDistanceM": null,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-004.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "BLM: overnight camping permits required year-round (Recreation.gov 74466); day use without permit."
+      ],
+      "sections": [
+        "loma-to-westwater"
+      ]
+    },
+    {
+      "id": "CO-ACC-0030",
+      "name": "Chukar Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "gunnison-river-gorge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.6223,
+        "lon": -107.83125,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 89961,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89961&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "BLM Gunnison Gorge NCA",
+      "permission": {
+        "text": "BLM; Gunnison Gorge Wilderness permit/fee required; boats carried ~1 mile down the Chukar Trail from the trailhead.",
+        "sourceName": "BLM Gunnison Gorge NCA brochure",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/programs_national-conservation-lands_colorado_gunnison-gorge_NCA_brochure_Low.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 0.7,
+        "nhdSide": "river-right",
+        "comid": 3251639,
+        "within150m": true,
+        "riverLat": 38.622296,
+        "riverLon": -107.831257
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "NPS POI 6625 'Chukar Trail Rafting Put-in' at 38.62227,-107.83136 agrees (~10 m).",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin on the beach at the water.",
+        "image": "research/raw/imagery/CO-ACC-0030.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM; Gunnison Gorge Wilderness permit/fee required; boats carried ~1 mile down the Chukar Trail from the trailhead.",
+        "sourceName": "BLM Gunnison Gorge NCA brochure",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/programs_national-conservation-lands_colorado_gunnison-gorge_NCA_brochure_Low.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 0.7,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-005, CO-RES-006.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": "boats and gear carried ~1 mile down the Chukar Trail; no carts or wheeled devices (BLM Gunnison Gorge brochure)",
+        "sourceId": "blm_gunnison_gorge_brochure"
+      },
+      "vehicleAccess": {
+        "value": "Chukar Road often requires 4WD/high clearance (BLM Gunnison Gorge brochure)",
+        "sourceId": "blm_gunnison_gorge_brochure"
+      },
+      "permitRequirements": [
+        "BLM: Gunnison Gorge Wilderness permit required ($3 day use, $10/$15 per person for one/two nights); maximum stay two nights/three days; interagency passes not valid."
+      ],
+      "sections": [
+        "chukar-to-gunnison-forks"
+      ]
+    },
+    {
+      "id": "CO-ACC-0031",
+      "name": "Gunnison Forks Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "gunnison-river-gorge"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.78324,
+        "lon": -107.83688,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90635,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90635&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Gunnison Gorge NCA",
+      "permission": {
+        "text": "BLM day-use and boat ramp at the North Fork confluence.",
+        "sourceName": "BLM Gunnison Gorge river map",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/docs/2021-01/final.2020%20river%20map%20for%20web_0.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 45.5,
+        "nhdSide": "river-right",
+        "comid": 3233507,
+        "within150m": true,
+        "riverLat": 38.78291,
+        "riverLon": -107.837193
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Second feature 89915 'Gunnison Forks' (boat ramp) ~250 m NE; see distances.json for which lies on the Gunnison.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the river edge by the gravel bar below the campground.",
+        "image": "research/raw/imagery/CO-ACC-0031.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM day-use and boat ramp at the North Fork confluence.",
+        "sourceName": "BLM Gunnison Gorge river map",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/docs/2021-01/final.2020%20river%20map%20for%20web_0.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 45.5,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-005, CO-RES-006.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "BLM: Gunnison Gorge Wilderness permit required ($3 day use, $10/$15 per person for one/two nights); maximum stay two nights/three days; interagency passes not valid."
+      ],
+      "sections": [
+        "chukar-to-gunnison-forks"
+      ]
+    },
+    {
+      "id": "CO-ACC-0040",
+      "name": "Confluence Park Boat Launch (Delta)",
+      "aliases": [],
+      "rivers": [
+        "gunnison-river-denca"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": null,
+      "operator": "City of Delta",
+      "permission": {
+        "text": "City park boat launch at 440 North Palmer Street, Delta (BLM DENCA float guide).",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": null,
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "No official coordinate found.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": null,
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "City park boat launch at 440 North Palmer Street, Delta (BLM DENCA float guide).",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "unknown",
+        "coordinateRepresents": null,
+        "nhdDistanceM": null,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-007.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "BLM DENCA: overnight boaters self-issue a free camping permit."
+      ],
+      "sections": [
+        "confluence-park-to-whitewater"
+      ]
+    },
+    {
+      "id": "CO-ACC-0041",
+      "name": "Escalante Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "gunnison-river-denca"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.75824,
+        "lon": -108.2579,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79561,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79561&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "BLM Dominguez-Escalante NCA",
+      "permission": {
+        "text": "BLM launch on Escalante Canyon Road ~3 mi from US 50; overnight boaters self-issue a free camping permit here.",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 53.4,
+        "nhdSide": "river-right",
+        "comid": 3232719,
+        "within150m": true,
+        "riverLat": 38.758039,
+        "riverLon": -108.258459
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Very small eddy; boulder just below the ramp (BLM).",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass-ramp-head",
+        "note": "Pin in the cleared lot on the bank just upstream of the bridge, about 25 m from water, sloping to the river.",
+        "image": "research/raw/imagery/CO-ACC-0041.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM launch on Escalante Canyon Road ~3 mi from US 50; overnight boaters self-issue a free camping permit here.",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 53.4,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-007.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "BLM DENCA: overnight boaters self-issue a free camping permit."
+      ],
+      "sections": [
+        "escalante-to-whitewater"
+      ]
+    },
+    {
+      "id": "CO-ACC-0042",
+      "name": "Bridgeport Trailhead",
+      "aliases": [],
+      "rivers": [
+        "gunnison-river-denca"
+      ],
+      "researchOnly": false,
+      "grade": "access-verified",
+      "coordinate": {
+        "lat": 38.84912,
+        "lon": -108.37232,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79636,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79636&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "trailhead"
+      },
+      "operator": "BLM Dominguez-Escalante NCA",
+      "permission": {
+        "text": "BLM; small craft only (kayaks/canoes) via trail under the railroad bridge; walking over the tracks is illegal (trespass).",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 48.5,
+        "nhdSide": "river-left",
+        "comid": 3231493,
+        "within150m": true,
+        "riverLat": 38.849452,
+        "riverLon": -108.372685
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": "End of Bridgeport Road off US 50. Carry boats on the narrow trail that passes under the railroad bridge to the river; launch may be inaccessible at high flows. Not suitable for rafts.",
+      "notes": "Coordinate is the BLM trailhead feature, not the river edge.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "flag",
+        "note": "Trailhead parking east of the railroad; consistent with an area point. Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0042.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM; small craft only (kayaks/canoes) via trail under the railroad bridge; walking over the tracks is illegal (trespass).",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "access-area",
+        "coordinateRepresents": "trailhead feature (area); launch reached on foot from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 48.5,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-007, CO-RES-008.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": "small craft only via the trail under the railroad bridge (BLM DENCA float guide)",
+        "sourceId": "blm_gunnison_dencanca_float"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "BLM DENCA: overnight boaters self-issue a free camping permit."
+      ],
+      "sections": [
+        "bridgeport-to-whitewater"
+      ]
+    },
+    {
+      "id": "CO-ACC-0043",
+      "name": "Whitewater Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "gunnison-river-denca"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.97132,
+        "lon": -108.45456,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79609,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79609&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "BLM Dominguez-Escalante NCA",
+      "permission": {
+        "text": "BLM take-out off US 50 near the US 50/CO 141 junction; carry ~100 yards to parking.",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 30.7,
+        "nhdSide": "river-right",
+        "comid": 3232581,
+        "within150m": true,
+        "riverLat": 38.971326,
+        "riverLon": -108.454914
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Signed ~1/2 mile upstream.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the east-bank water's edge.",
+        "image": "research/raw/imagery/CO-ACC-0043.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM take-out off US 50 near the US 50/CO 141 junction; carry ~100 yards to parking.",
+        "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 30.7,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-007, CO-RES-008.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "BLM DENCA: overnight boaters self-issue a free camping permit."
+      ],
+      "sections": [
+        "confluence-park-to-whitewater",
+        "escalante-to-whitewater",
+        "bridgeport-to-whitewater"
+      ]
+    },
+    {
+      "id": "CO-ACC-0050",
+      "name": "Red Bridge Campground",
+      "aliases": [],
+      "rivers": [
+        "lake-fork-gunnison"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": {
+        "lat": 38.32418,
+        "lon": -107.22705,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79345,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79345&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "campground"
+      },
+      "operator": "BLM Gunnison Field Office",
+      "permission": {
+        "text": "Public BLM campground; launching is not described by an official source (AW names it as the put-in).",
+        "sourceName": "aw_405",
+        "sourceUrl": "https://www.americanwhitewater.org/content/River/view/river-detail/405/main",
+        "resolved": false,
+        "issue": "BLM campground; no official source says launching is allowed or describes a launch (only AW names it)."
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 19.5,
+        "nhdSide": "river-right",
+        "comid": 3253369,
+        "within150m": true,
+        "riverLat": 38.324073,
+        "riverLon": -107.227227
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": "BLM Red Bridge Campground on CO 149 / County Road 25 along the Lake Fork below Lake City. Put in from the campground riverbank (no mapped ramp).",
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [
+        "access-permission"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "flag",
+        "note": "Campground pin in trees about 20 m from the Lake Fork; not a mapped launch. Stays pending (permission).",
+        "image": "research/raw/imagery/CO-ACC-0050.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Public BLM campground; launching is not described by an official source (AW names it as the put-in).",
+        "sourceName": "aw_405",
+        "sourceUrl": "https://www.americanwhitewater.org/content/River/view/river-detail/405/main",
+        "issue": "BLM campground; no official source says launching is allowed or describes a launch (only AW names it)."
+      },
+      "locationPrecision": {
+        "value": "access-area",
+        "coordinateRepresents": "campground feature (area), not the water entry from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 19.5,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "red-bridge-to-gateview"
+      ]
+    },
+    {
+      "id": "CO-ACC-0051",
+      "name": "Gateview Recreation Site",
+      "aliases": [],
+      "rivers": [
+        "lake-fork-gunnison"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": {
+        "lat": 38.33768,
+        "lon": -107.22991,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 89888,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89888&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "recsite"
+      },
+      "operator": "BLM Gunnison Field Office",
+      "permission": {
+        "text": "Public BLM recreation site; take-out use not described by an official source (AW names it as the take-out).",
+        "sourceName": "aw_405",
+        "sourceUrl": "https://www.americanwhitewater.org/content/River/view/river-detail/405/main",
+        "resolved": false,
+        "issue": "BLM recreation site; no official source describes take-out use (only AW names it)."
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 75.3,
+        "nhdSide": "river-right",
+        "comid": 3253369,
+        "within150m": true,
+        "riverLat": 38.337622,
+        "riverLon": -107.230769
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": "BLM Gateview Recreation Site at the Lake Fork Gunnison, County Road 25 (Gateview); take out at the day-use area riverbank (no mapped ramp).",
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [
+        "access-permission"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "flag",
+        "note": "Small site about 35 m from the Lake Fork. Stays pending (permission).",
+        "image": "research/raw/imagery/CO-ACC-0051.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Public BLM recreation site; take-out use not described by an official source (AW names it as the take-out).",
+        "sourceName": "aw_405",
+        "sourceUrl": "https://www.americanwhitewater.org/content/River/view/river-detail/405/main",
+        "issue": "BLM recreation site; no official source describes take-out use (only AW names it)."
+      },
+      "locationPrecision": {
+        "value": "access-area",
+        "coordinateRepresents": "recreation-site feature (area), not the water entry from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 75.3,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "red-bridge-to-gateview"
+      ]
+    },
+    {
+      "id": "CO-ACC-0060",
+      "name": "Hayden Pump Station Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-hayden"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.48834,
+        "lon": -107.15946,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2491,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2491&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW Yampa River State Park",
+      "permission": {
+        "text": "CPW state park river site; State Parks daily or annual vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 45.6,
+        "nhdSide": "river-left",
+        "comid": 1356628,
+        "within150m": true,
+        "riverLat": 40.488606,
+        "riverLon": -107.159048
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "About five miles east of Hayden off US 40, north side.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the end of the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0060.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW state park river site; State Parks daily or annual vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 45.6,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "pump-station-to-headquarters"
+      ]
+    },
+    {
+      "id": "CO-ACC-0061",
+      "name": "Yampa River State Park Headquarters",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-hayden"
+      ],
+      "researchOnly": false,
+      "grade": "access-verified",
+      "coordinate": {
+        "lat": 40.48921,
+        "lon": -107.30953,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 4923,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D4923&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "recsite"
+      },
+      "operator": "CPW Yampa River State Park",
+      "permission": {
+        "text": "CPW headquarters site with boating access; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 36.9,
+        "nhdSide": "river-right",
+        "comid": 1354980,
+        "within150m": true,
+        "riverLat": 40.48891,
+        "riverLon": -107.30934
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": "Yampa River State Park headquarters on US 40 west of Hayden; boating access at the headquarters river site.",
+      "notes": "CPW feature FAC_TYPE 'Boat Ramp' but symbol/ID are 'Group Picnic Area' (YAMPIC001), so treated as a site centroid.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank where the park path reaches the river.",
+        "image": "research/raw/imagery/CO-ACC-0061.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW headquarters site with boating access; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "access-area",
+        "coordinateRepresents": "recreation-site feature (area), not the water entry from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 36.9,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "pump-station-to-headquarters",
+        "headquarters-to-state-wildlife-area"
+      ]
+    },
+    {
+      "id": "CO-ACC-0062",
+      "name": "Yampa River State Wildlife Area Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-hayden"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": {
+        "lat": 40.51793,
+        "lon": -107.39873,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2501,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2501&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW (State Wildlife Area)",
+      "permission": {
+        "text": "CPW State Wildlife Area; CPW says visitors with a valid hunting or fishing license can hunt or fish there. SWA access rules for non-anglers not confirmed.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": false,
+        "issue": "CPW State Wildlife Area: CPW text addresses licensed hunters/anglers only; access terms for non-angling boaters not confirmed."
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 70.9,
+        "nhdSide": "river-right",
+        "comid": 1352678,
+        "within150m": true,
+        "riverLat": 40.517381,
+        "riverLon": -107.399164
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Also CPW 2086 (Yampa River SWA boat ramp) at the same spot.",
+      "utahRegistryName": null,
+      "blockers": [
+        "access-permission"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the north-bank water's edge at the road end; HR polygon is offset south. Stays pending (permission).",
+        "image": "research/raw/imagery/CO-ACC-0062.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW State Wildlife Area; CPW says visitors with a valid hunting or fishing license can hunt or fish there. SWA access rules for non-anglers not confirmed.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": "CPW State Wildlife Area: CPW text addresses licensed hunters/anglers only; access terms for non-angling boaters not confirmed."
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 70.9,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "headquarters-to-state-wildlife-area"
+      ]
+    },
+    {
+      "id": "CO-ACC-0063",
+      "name": "Yampa Valley Golf Course Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-craig"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.50205,
+        "lon": -107.51374,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2493,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2493&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW Yampa River State Park",
+      "permission": {
+        "text": "CPW river site; 'undeveloped boat ramp'; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 4.7,
+        "nhdSide": "river-left",
+        "comid": 1352776,
+        "within150m": true,
+        "riverLat": 40.502088,
+        "riverLon": -107.513715
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin plotted about 10–15 m into the water off the south bank where the access track ends; location consistent with the ramp.",
+        "image": "research/raw/imagery/CO-ACC-0063.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW river site; 'undeveloped boat ramp'; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 4.7,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "golf-course-to-loudy-simpson"
+      ]
+    },
+    {
+      "id": "CO-ACC-0064",
+      "name": "Loudy Simpson Park",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-craig"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": null,
+      "operator": "Moffat County",
+      "permission": {
+        "text": "Moffat County park with launch/parking area (CPW).",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": null,
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "No official coordinate found.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": null,
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Moffat County park with launch/parking area (CPW).",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "unknown",
+        "coordinateRepresents": null,
+        "nhdDistanceM": null,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "golf-course-to-loudy-simpson",
+        "loudy-simpson-to-south-beach"
+      ]
+    },
+    {
+      "id": "CO-ACC-0065",
+      "name": "South Beach Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-craig"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.47975,
+        "lon": -107.61651,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2500,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2500&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW Yampa River State Park",
+      "permission": {
+        "text": "CPW river site with boat ramp and vault toilets; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 28.1,
+        "nhdSide": "river-left",
+        "comid": 1356780,
+        "within150m": true,
+        "riverLat": 40.479935,
+        "riverLon": -107.616737
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the end of the access road.",
+        "image": "research/raw/imagery/CO-ACC-0065.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW river site with boat ramp and vault toilets; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 28.1,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "loudy-simpson-to-south-beach",
+        "south-beach-to-duffy"
+      ]
+    },
+    {
+      "id": "CO-ACC-0066",
+      "name": "Duffy Mountain Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-craig",
+        "yampa-river-maybell"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.41928,
+        "lon": -107.86957,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 83117,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=83117&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Little Snake Field Office / CPW",
+      "permission": {
+        "text": "Duffy Mountain access with boat ramp, vault toilet, parking (CPW).",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 80.0,
+        "nhdSide": "river-left",
+        "comid": 3113447,
+        "within150m": true,
+        "riverLat": 40.419998,
+        "riverLon": -107.869685
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "CPW 2499 'Duffey' boat ramp at 40.41937,-107.86967 agrees (~10 m).",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass-ramp-head",
+        "note": "Pin at the ramp head by the parking loop; a ramp path leads about 25 m to the water.",
+        "image": "research/raw/imagery/CO-ACC-0066.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Duffy Mountain access with boat ramp, vault toilet, parking (CPW).",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 80.0,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "south-beach-to-duffy",
+        "duffy-to-juniper"
+      ]
+    },
+    {
+      "id": "CO-ACC-0067",
+      "name": "Juniper Canyon Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-maybell"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.47661,
+        "lon": -107.96595,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2498,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2498&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW Yampa River State Park",
+      "permission": {
+        "text": "Improved CPW site with boat ramp; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 44.5,
+        "nhdSide": "river-right",
+        "comid": 3116403,
+        "within150m": true,
+        "riverLat": 40.476468,
+        "riverLon": -107.966442
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank by the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0067.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Improved CPW site with boat ramp; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 44.5,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "duffy-to-juniper",
+        "juniper-to-maybell-bridge"
+      ]
+    },
+    {
+      "id": "CO-ACC-0068",
+      "name": "Maybell Bridge Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-maybell"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.50155,
+        "lon": -108.03316,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2497,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2497&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW Yampa River State Park",
+      "permission": {
+        "text": "CPW site with boat ramp; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 62.0,
+        "nhdSide": "river-right",
+        "comid": 3109519,
+        "within150m": true,
+        "riverLat": 40.501758,
+        "riverLon": -108.03384
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank at the end of the lot below the bridge.",
+        "image": "research/raw/imagery/CO-ACC-0068.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW site with boat ramp; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 62.0,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": [
+        "juniper-to-maybell-bridge"
+      ]
+    },
+    {
+      "id": "CO-ACC-0069",
+      "name": "Sunbeam River Access",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-maybell"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.54671,
+        "lon": -108.19647,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2495,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2495&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW Yampa River State Park",
+      "permission": {
+        "text": "CPW site; 'no improvements or change facilities'; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 12.2,
+        "nhdSide": "river-right",
+        "comid": 3109445,
+        "within150m": true,
+        "riverLat": 40.546745,
+        "riverLon": -108.196334
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "CPW feature: Boat Ramp, gravel.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank where the track reaches the river.",
+        "image": "research/raw/imagery/CO-ACC-0069.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW site; 'no improvements or change facilities'; vehicle pass required.",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 12.2,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "sunbeam-to-east-cross-mountain"
+      ]
+    },
+    {
+      "id": "CO-ACC-0070",
+      "name": "East Cross Mountain Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-maybell"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.48637,
+        "lon": -108.32416,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 82998,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=82998&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Little Snake Field Office",
+      "permission": {
+        "text": "BLM/CPW site with boat ramp, vault toilet, parking.",
+        "sourceName": "BLM East Cross Mountain Recreation Site page",
+        "sourceUrl": "https://www.blm.gov/visit/e-cross-mountain-river-access",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 0.9,
+        "nhdSide": "river-left",
+        "comid": 3111125,
+        "within150m": true,
+        "riverLat": 40.486364,
+        "riverLon": -108.324167
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "CPW 2496 'East Cross' boat ramp at identical coordinate.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the top of the bank by the beach.",
+        "image": "research/raw/imagery/CO-ACC-0070.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM/CPW site with boat ramp, vault toilet, parking.",
+        "sourceName": "BLM East Cross Mountain Recreation Site page",
+        "sourceUrl": "https://www.blm.gov/visit/e-cross-mountain-river-access",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 0.9,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-001, CO-RES-002, CO-RES-003.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW: a State Parks daily or annual vehicle pass is required at Yampa River State Park sites."
+      ],
+      "sections": [
+        "sunbeam-to-east-cross-mountain"
+      ]
+    },
+    {
+      "id": "CO-ACC-0071",
+      "name": "West Cross Mountain Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-dinosaur"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.45319,
+        "lon": -108.38051,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 5192,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D5192&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM (ramp managed by CPW)",
+      "permission": {
+        "text": "BLM-owned site managed by CPW (CPW GIS feature comment); boating access documented by CPW Yampa River State Park (West Cross Mountain is a river access site, 9 miles above Deerlodge Park).",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 48.2,
+        "nhdSide": "river-left",
+        "comid": 3111345,
+        "within150m": true,
+        "riverLat": 40.453022,
+        "riverLon": -108.379984
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "v1.1: sources disagree on facility and manager. CPW GIS FID 5192 says 'Owned by BLM ramp managed by CPW'; the CPW Sunbeam/West Cross Mountain page (cpw_yrsp_sunbeam_wcm, 2026-10-26) says 'Boat Ramp: None' and 'Both access sites are managed by the National Park Service'. Esri imagery shows an unpaved road ending at a sandy landing at the water's edge (no built ramp visible).",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "flag",
+        "note": "Location passes: pin at the end of the dirt access road at the water's edge (HR polygon offset 28 m). Facility conflict: no built ramp visible; CPW park page says 'Boat Ramp: None' and NPS-managed, CPW GIS says BLM ramp managed by CPW. Published as 'Boat launch' (not ramp).",
+        "image": "research/raw/imagery/CO-ACC-0071.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM-owned site managed by CPW (CPW GIS feature comment); boating access documented by CPW Yampa River State Park (West Cross Mountain is a river access site, 9 miles above Deerlodge Park).",
+        "sourceName": "CPW Yampa River State Park river sections",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-river-sections",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 48.2,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-013.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "NPS Dinosaur NM: 'A permit is required to boat into the monument from above Gates of Lodore or Deerlodge' and 'One play permit per day will be issued for groups who wish to take out at Lodore or Deerlodge. To avoid congestion at the take-out, it is recommended to arrive after 2 pm.' A day float from West Cross Mountain that takes out at Deerlodge therefore needs this NPS one-day play permit (FAQ: no fee; issued at the Quarry Visitor Center or by the River Office; 2025 guide: also on-site rangers/volunteer camp hosts, no advance reservation). Continuing below Deerlodge needs a Yampa river permit (Recreation.gov 250014) and boater check-in at Deerlodge. CPW: 'Boaters who pass Deerlodge Park must have a permit'. Sources differ on the issuer (River Permit Office vs Quarry Visitor Center/rangers); confirm with NPS when planning."
+      ],
+      "sections": [
+        "west-cross-mountain-to-deerlodge"
+      ]
+    },
+    {
+      "id": "CO-ACC-0072",
+      "name": "Deerlodge Park Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-dinosaur"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.44642,
+        "lon": -108.51196,
+        "sourceLayer": "NPS Public POIs (FeatureServer/0)",
+        "featureId": 9798,
+        "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?where=OBJECTID%3D9798&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/nps_pois_DINO_BLCA_CURE.json",
+        "featureKind": "launch"
+      },
+      "operator": "NPS Dinosaur National Monument",
+      "permission": {
+        "text": "NPS launch. Launching for the Yampa Canyon needs a Dinosaur NM river permit (Recreation.gov 250014). Taking out here after floating from above Deerlodge (e.g. West Cross Mountain) needs a free NPS one-day 'play permit' (NPS boating page, checked 2026-10-26).",
+        "sourceName": "NPS Dinosaur NM 'Boating and Rafting' page (re-fetched 2026-10-26)",
+        "sourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 69.3,
+        "nhdSide": "river-left",
+        "comid": 3111607,
+        "within150m": true,
+        "riverLat": 40.445841,
+        "riverLon": -108.511649
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "NPS POI 'Deerlodge Boat Launch'.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin in the parking loop beside the water on river right (west bank), about 25 m from water. HR flowline and polygon are 120–170 m off because they are drawn on an old sandbar channel; the channel has moved west.",
+        "image": "research/raw/imagery/CO-ACC-0072.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "NPS launch. Launching for the Yampa Canyon needs a Dinosaur NM river permit (Recreation.gov 250014). Taking out here after floating from above Deerlodge (e.g. West Cross Mountain) needs a free NPS one-day 'play permit' (NPS boating page, checked 2026-10-26).",
+        "sourceName": "NPS Dinosaur NM 'Boating and Rafting' page (re-fetched 2026-10-26)",
+        "sourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from NPS Public POIs (FeatureServer/0)",
+        "nhdDistanceM": 69.3,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-009, CO-RES-013, CO-RES-014.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "NPS: a river permit is required for all river trips in Dinosaur NM (Recreation.gov 250014). 2027 season per Recreation.gov: lottery applications Dec 1 – Jan 31, results Feb 12, 2027, confirm by Mar 1; low-use and unclaimed permits from Mar 6, 2027; Yampa high-use season May 10 – Jul 10, 2027. Fees: $15 non-refundable application, $185 recreation fee. Normal high-use Yampa trip 5 days/4 nights (NPS 2025 guide).",
+        "NPS Dinosaur NM: 'A permit is required to boat into the monument from above Gates of Lodore or Deerlodge' and 'One play permit per day will be issued for groups who wish to take out at Lodore or Deerlodge. To avoid congestion at the take-out, it is recommended to arrive after 2 pm.' A day float from West Cross Mountain that takes out at Deerlodge therefore needs this NPS one-day play permit (FAQ: no fee; issued at the Quarry Visitor Center or by the River Office; 2025 guide: also on-site rangers/volunteer camp hosts, no advance reservation). Continuing below Deerlodge needs a Yampa river permit (Recreation.gov 250014) and boater check-in at Deerlodge. CPW: 'Boaters who pass Deerlodge Park must have a permit'. Sources differ on the issuer (River Permit Office vs Quarry Visitor Center/rangers); confirm with NPS when planning.",
+        "NPS: play permits are required for boating upstream of the Gates of Lodore or Deerlodge Park boat ramps and for downstream travel from the Split Mountain Boat Ramp; groups launching above Deerlodge must stop at Deerlodge for boater check-in before continuing on a permitted trip."
+      ],
+      "sections": [
+        "west-cross-mountain-to-deerlodge",
+        "yampa-canyon-deerlodge-to-split-mountain"
+      ]
+    },
+    {
+      "id": "CO-ACC-0073",
+      "name": "Split Mountain Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "yampa-river-dinosaur"
+      ],
+      "researchOnly": false,
+      "grade": "pending",
+      "coordinate": null,
+      "operator": "NPS Dinosaur National Monument (Utah)",
+      "permission": {
+        "text": "Take-out in Utah; Utah registry record 'Split Mountain Boat Ramp'.",
+        "sourceName": "NPS Dinosaur NM 'Boating in the Monument' 2025",
+        "sourceUrl": "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": null,
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Cross-state endpoint (NPS POI 4808 at 40.44544,-109.25259 is in Utah).",
+      "utahRegistryName": "Split Mountain Boat Ramp",
+      "blockers": [
+        "exact-location",
+        "app-support"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": null,
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "Take-out in Utah; Utah registry record 'Split Mountain Boat Ramp'.",
+        "sourceName": "NPS Dinosaur NM 'Boating in the Monument' 2025",
+        "sourceUrl": "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "unknown",
+        "coordinateRepresents": null,
+        "nhdDistanceM": null,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-009, CO-RES-014.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "NPS: a river permit is required for all river trips in Dinosaur NM (Recreation.gov 250014). 2027 season per Recreation.gov: lottery applications Dec 1 – Jan 31, results Feb 12, 2027, confirm by Mar 1; low-use and unclaimed permits from Mar 6, 2027; Yampa high-use season May 10 – Jul 10, 2027. Fees: $15 non-refundable application, $185 recreation fee. Normal high-use Yampa trip 5 days/4 nights (NPS 2025 guide).",
+        "NPS: play permits are required for boating upstream of the Gates of Lodore or Deerlodge Park boat ramps and for downstream travel from the Split Mountain Boat Ramp; groups launching above Deerlodge must stop at Deerlodge for boater check-in before continuing on a permitted trip."
+      ],
+      "sections": [
+        "yampa-canyon-deerlodge-to-split-mountain"
+      ]
+    },
+    {
+      "id": "CO-ACC-0105",
+      "name": "Stone Bridge Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river",
+        "arkansas-river-salida"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.61287,
+        "lon": -106.06213,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 3566,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3566&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW AHRA",
+      "permission": {
+        "text": "CPW AHRA fee site with boat ramp/slide (CPW Buena Vista–Salida sites page); a daily or annual Colorado State Parks pass is required at AHRA fee sites (CPW AHRA brochure).",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 31.9,
+        "nhdSide": "river-right",
+        "comid": 918735,
+        "within150m": true,
+        "riverLat": 38.612682,
+        "riverLon": -106.061852
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "v1.1 promoted to a catalog endpoint: CPW AdminData FID 3566 boat-ramp feature; Esri imagery shows the pin where the access road reaches the bank beside the bridge; NHDPlus HR named flowline 28.9 m.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin where the access road reaches the bank beside the bridge, about 10–15 m from water.",
+        "image": "research/raw/imagery/CO-ACC-0105.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site with boat ramp/slide (CPW Buena Vista–Salida sites page); a daily or annual Colorado State Parks pass is required at AHRA fee sites (CPW AHRA brochure).",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 31.9,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-015, CO-RES-016, CO-RES-017, CO-RES-018.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW AHRA: a Colorado State Parks daily or annual pass is required at AHRA fee sites (Stone Bridge and Rincon are fee sites)."
+      ],
+      "sections": [
+        "stone-bridge-to-rincon"
+      ]
+    },
+    {
+      "id": "CO-ACC-0107",
+      "name": "Rincon Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river",
+        "arkansas-river-salida"
+      ],
+      "researchOnly": false,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.47253,
+        "lon": -105.86591,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 3400,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3400&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW AHRA",
+      "permission": {
+        "text": "CPW AHRA fee site with boat ramp/slide; CPW: 'a takeout for boaters wanting a more mellow float'; a daily or annual Colorado State Parks pass is required at AHRA fee sites (CPW AHRA brochure).",
+        "sourceName": "CPW AHRA Salida–Vallie Bridge sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-salida-vallie",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 4.5,
+        "nhdSide": "river-right",
+        "comid": 921057,
+        "within150m": true,
+        "riverLat": 38.472553,
+        "riverLon": -105.865868
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "v1.1 promoted to a catalog endpoint: CPW AdminData FID 3400 boat-ramp feature (see research/access-grades/CO.json for the imagery check).",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass-ramp-head",
+        "note": "Pin at the river-side lobe of the gravel lot, about 20 m from the water's edge; HR named flowline 25.5 m.",
+        "image": "research/raw/imagery/CO-ACC-0107.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site with boat ramp/slide; CPW: 'a takeout for boaters wanting a more mellow float'; a daily or annual Colorado State Parks pass is required at AHRA fee sites (CPW AHRA brochure).",
+        "sourceName": "CPW AHRA Salida–Vallie Bridge sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-salida-vallie",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 4.5,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today. Related restrictions/advisories: CO-RES-015, CO-RES-016, CO-RES-017, CO-RES-018.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [
+        "CPW AHRA: a Colorado State Parks daily or annual pass is required at AHRA fee sites (Stone Bridge and Rincon are fee sites)."
+      ],
+      "sections": [
+        "stone-bridge-to-rincon"
+      ]
+    },
+    {
+      "id": "CO-ACC-0100",
+      "name": "Numbers Recreation Site",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "access-verified",
+      "coordinate": {
+        "lat": 38.9858147,
+        "lon": -106.2165532,
+        "sourceLayer": "AHRA_KML",
+        "featureId": "Fee Sites/Numbers Recreation Site",
+        "sourceUrl": "https://www.google.com/maps/d/kml?mid=CPW_AHRA (see research/raw/gis/cpw_ahra_mymap.kml)",
+        "rawFile": "research/raw/gis/cpw_ahra_mymap.kml",
+        "featureKind": "recsite"
+      },
+      "operator": "CPW AHRA",
+      "permission": {
+        "text": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Leadville–Buena Vista sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-leadville-buena",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 160.8,
+        "nhdSide": "river-right",
+        "comid": 917441,
+        "within150m": false,
+        "riverLat": 38.985817,
+        "riverLon": -106.214695
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "From CPW AHRA Google My Map (research/raw/gis/cpw_ahra_mymap.kml).",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "flag",
+        "note": "AHRA KML area pin in sagebrush well away from the river (HR 160 m). Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0100.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Leadville–Buena Vista sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-leadville-buena",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "access-area",
+        "coordinateRepresents": "recreation-site feature (area), not the water entry from AHRA_KML",
+        "nhdDistanceM": 160.8,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0101",
+      "name": "Railroad Bridge Recreation Site Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.92396,
+        "lon": -106.16996,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 89902,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89902&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "CPW AHRA / BLM",
+      "permission": {
+        "text": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Leadville–Buena Vista sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-leadville-buena",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 30.8,
+        "nhdSide": "river-left",
+        "comid": 917547,
+        "within150m": true,
+        "riverLat": 38.924157,
+        "riverLon": -106.170211
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "CPW 3315 agrees.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "About 20 m from water at the launch area.",
+        "image": "research/raw/imagery/CO-ACC-0101.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Leadville–Buena Vista sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-leadville-buena",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 30.8,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0102",
+      "name": "Fisherman's Bridge Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.76736,
+        "lon": -106.0948,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 89894,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89894&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "CPW AHRA / BLM",
+      "permission": {
+        "text": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 26.4,
+        "nhdSide": "river-left",
+        "comid": 917825,
+        "within150m": true,
+        "riverLat": 38.767182,
+        "riverLon": -106.095003
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank at the end of the path.",
+        "image": "research/raw/imagery/CO-ACC-0102.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 26.4,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0103",
+      "name": "Ruby Mountain Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.75221,
+        "lon": -106.07083,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 89904,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89904&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "CPW AHRA / BLM",
+      "permission": {
+        "text": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 9.6,
+        "nhdSide": "river-left",
+        "comid": 917867,
+        "within150m": true,
+        "riverLat": 38.752174,
+        "riverLon": -106.070931
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "CPW 3330 agrees.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank in trees below the campground loop, a few metres from water.",
+        "image": "research/raw/imagery/CO-ACC-0103.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 9.6,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0104",
+      "name": "Hecla Junction Boat Launch",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.65137,
+        "lon": -106.05103,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 89896,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89896&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "launch"
+      },
+      "operator": "CPW AHRA / BLM",
+      "permission": {
+        "text": "CPW AHRA fee site; primary Browns Canyon take-out.",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 30.9,
+        "nhdSide": "river-right",
+        "comid": 918097,
+        "within150m": true,
+        "riverLat": 38.651512,
+        "riverLon": -106.050724
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge at the foot of the launch area; inside the HR polygon.",
+        "image": "research/raw/imagery/CO-ACC-0104.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site; primary Browns Canyon take-out.",
+        "sourceName": "CPW AHRA Buena Vista–Salida sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-buena-vista",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-launch facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 30.9,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0106",
+      "name": "Salida East Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "access-verified",
+      "coordinate": {
+        "lat": 38.50942,
+        "lon": -105.96342,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 3401,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3401&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW AHRA",
+      "permission": {
+        "text": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Salida–Vallie Bridge sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-salida-vallie",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 33.7,
+        "nhdSide": "river-left",
+        "comid": 919923,
+        "within150m": true,
+        "riverLat": 38.509567,
+        "riverLon": -105.963081
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "downgrade",
+        "note": "Pin at the north end of the parking lot about 34 m from water through trees; no ramp visible at the pin. Treat as access-verified area only.",
+        "image": "research/raw/imagery/CO-ACC-0106.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Salida–Vallie Bridge sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-salida-vallie",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 33.7,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0108",
+      "name": "Spikebuck Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.45866,
+        "lon": -105.46445,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 3407,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3407&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW AHRA",
+      "permission": {
+        "text": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Vallie Bridge–Parkdale sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-vallie-bridge",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 6.7,
+        "nhdSide": "river-right",
+        "comid": 921119,
+        "within150m": true,
+        "riverLat": 38.458719,
+        "riverLon": -105.464466
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the water's edge.",
+        "image": "research/raw/imagery/CO-ACC-0108.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Vallie Bridge–Parkdale sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-vallie-bridge",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 6.7,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0109",
+      "name": "Parkdale Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "arkansas-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.4865,
+        "lon": -105.38952,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 3378,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D3378&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW AHRA",
+      "permission": {
+        "text": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Parkdale–Cañon City sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-parkdale-canon",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 9.5,
+        "nhdSide": "river-right",
+        "comid": 921065,
+        "within150m": true,
+        "riverLat": 38.486484,
+        "riverLon": -105.389627
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin beside the concrete launch apron, about 20 m from water.",
+        "image": "research/raw/imagery/CO-ACC-0109.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW AHRA fee site.",
+        "sourceName": "CPW AHRA Parkdale–Cañon City sites",
+        "sourceUrl": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-parkdale-canon",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 9.5,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0110",
+      "name": "Gypsum Valley Boat Ramp (Dolores)",
+      "aliases": [],
+      "rivers": [
+        "dolores-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.13382,
+        "lon": -108.88074,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90011,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90011&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Tres Rios / Uncompahgre FO",
+      "permission": {
+        "text": "BLM; free Dolores boating permit.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 0.4,
+        "nhdSide": "river-right",
+        "comid": 18382539,
+        "within150m": true,
+        "riverLat": 38.133816,
+        "riverLon": -108.880741
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the end of the access road on the Dolores bank.",
+        "image": "research/raw/imagery/CO-ACC-0110.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM; free Dolores boating permit.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 0.4,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0111",
+      "name": "Bedrock Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "dolores-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 38.30461,
+        "lon": -108.89437,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90244,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90244&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Uncompahgre FO",
+      "permission": {
+        "text": "BLM.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 11.3,
+        "nhdSide": "river-right",
+        "comid": 18382377,
+        "within150m": true,
+        "riverLat": 38.30454,
+        "riverLon": -108.894464
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank at the road end.",
+        "image": "research/raw/imagery/CO-ACC-0111.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 11.3,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0112",
+      "name": "Bradfield Recreation Site",
+      "aliases": [],
+      "rivers": [
+        "dolores-river"
+      ],
+      "researchOnly": true,
+      "grade": "access-verified",
+      "coordinate": {
+        "lat": 37.64878,
+        "lon": -108.73849,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 89962,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=89962&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "recsite"
+      },
+      "operator": "BLM Tres Rios FO",
+      "permission": {
+        "text": "BLM; launch below McPhee Dam.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 93.7,
+        "nhdSide": "river-left",
+        "comid": 18384163,
+        "within150m": true,
+        "riverLat": 37.647933,
+        "riverLon": -108.738455
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "BLM 'Access Point' feature.",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "flag",
+        "note": "Recreation-site pin on a road junction about 200 m from the river. Stays access-verified.",
+        "image": "research/raw/imagery/CO-ACC-0112.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM; launch below McPhee Dam.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "access-area",
+        "coordinateRepresents": "recreation-site feature (area), not the water entry from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 93.7,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0113",
+      "name": "Wingo Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "roaring-fork-river"
+      ],
+      "researchOnly": true,
+      "grade": "access-verified",
+      "coordinate": {
+        "lat": 39.34254,
+        "lon": -107.00588,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 79298,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=79298&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM",
+      "permission": {
+        "text": "BLM.",
+        "sourceName": null,
+        "sourceUrl": null,
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 79.0,
+        "nhdSide": "river-left",
+        "comid": 1326035,
+        "within150m": true,
+        "riverLat": 39.342989,
+        "riverLon": -107.006593
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "CPW: a fishing license is required to float the Roaring Fork (glenwood_river_access).",
+      "utahRegistryName": null,
+      "blockers": [
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "downgrade",
+        "note": "Pin plots on the highway about 50 m from the river; no launch visible at the pin. Treat as access-verified area only.",
+        "image": "research/raw/imagery/CO-ACC-0113.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM.",
+        "sourceName": null,
+        "sourceUrl": null,
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 79.0,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0114",
+      "name": "Sam Caudill SWA put-in",
+      "aliases": [],
+      "rivers": [
+        "roaring-fork-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.47964,
+        "lon": -107.2866,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2129,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2129&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW (SWA)",
+      "permission": {
+        "text": "CPW SWA ('Rafting put in rather than boat ramp').",
+        "sourceName": null,
+        "sourceUrl": null,
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 26.2,
+        "nhdSide": "river-right",
+        "comid": 1326489,
+        "within150m": true,
+        "riverLat": 39.479456,
+        "riverLon": -107.286793
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank next to the parking lot.",
+        "image": "research/raw/imagery/CO-ACC-0114.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW SWA ('Rafting put in rather than boat ramp').",
+        "sourceName": null,
+        "sourceUrl": null,
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 26.2,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0115",
+      "name": "Bob Terrell SWA put-in",
+      "aliases": [],
+      "rivers": [
+        "roaring-fork-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 39.41485,
+        "lon": -107.22222,
+        "sourceLayer": "CPW AdminData facilities (FeatureServer/0)",
+        "featureId": 2130,
+        "sourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2130&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/cpw_admindata_facilities_0.json",
+        "featureKind": "ramp"
+      },
+      "operator": "CPW (SWA)",
+      "permission": {
+        "text": "CPW SWA ('Non motorized put in').",
+        "sourceName": null,
+        "sourceUrl": null,
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 17.9,
+        "nhdSide": "river-right",
+        "comid": 1325919,
+        "within150m": true,
+        "riverLat": 39.414689,
+        "riverLon": -107.222245
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank by the parking lot above the bridge.",
+        "image": "research/raw/imagery/CO-ACC-0115.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "CPW SWA ('Non motorized put in').",
+        "sourceName": null,
+        "sourceUrl": null,
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from CPW AdminData facilities (FeatureServer/0)",
+        "nhdDistanceM": 17.9,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0116",
+      "name": "Rio Grande Boat Takeout (Lee Trail)",
+      "aliases": [],
+      "rivers": [
+        "rio-grande"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 36.99866,
+        "lon": -105.71858,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90116,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90116&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "takeout"
+      },
+      "operator": "BLM Rio Grande del Norte / San Luis Valley FO",
+      "permission": {
+        "text": "BLM.",
+        "sourceName": null,
+        "sourceUrl": null,
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 19.8,
+        "nhdSide": "river-right",
+        "comid": 17863200,
+        "within150m": true,
+        "riverLat": 36.998583,
+        "riverLon": -105.718379
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "At the CO/NM line.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the canyon bank where a foot trail descends; walk-in take-out, no vehicle access visible.",
+        "image": "research/raw/imagery/CO-ACC-0116.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "unresolved",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM.",
+        "sourceName": null,
+        "sourceUrl": null,
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat take-out facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 19.8,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0117",
+      "name": "Mountain Sheep Point Boat Ramp",
+      "aliases": [],
+      "rivers": [
+        "dolores-river"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 37.7954,
+        "lon": -108.82588,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90017,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90017&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Tres Rios FO",
+      "permission": {
+        "text": "BLM.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 17.0,
+        "nhdSide": "river-right",
+        "comid": 18383649,
+        "within150m": true,
+        "riverLat": 37.795402,
+        "riverLon": -108.826074
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": null,
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank where the access track reaches the river.",
+        "image": "research/raw/imagery/CO-ACC-0117.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM.",
+        "sourceName": "BLM Dolores River boating page",
+        "sourceUrl": "https://www.blm.gov/visit/dolores-river-co",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 17.0,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    },
+    {
+      "id": "CO-ACC-0118",
+      "name": "Confluence Recreation Area Boat Ramp (Kremmling)",
+      "aliases": [],
+      "rivers": [
+        "colorado-river-gore"
+      ],
+      "researchOnly": true,
+      "grade": "verified",
+      "coordinate": {
+        "lat": 40.04254,
+        "lon": -106.39562,
+        "sourceLayer": "BLM National Recreation Site Points (FeatureServer/2)",
+        "featureId": 90780,
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=90780&outFields=*&outSR=4326&f=json",
+        "rawFile": "research/raw/gis/blm_recsites_CO_all.json",
+        "featureKind": "ramp"
+      },
+      "operator": "BLM Kremmling FO",
+      "permission": {
+        "text": "BLM day-use (guide).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "resolved": true,
+        "issue": null
+      },
+      "statedBank": null,
+      "statedBankSource": null,
+      "nhdCheck": {
+        "distM": 36.6,
+        "nhdSide": "river-right",
+        "comid": 1311729,
+        "within150m": true,
+        "riverLat": 40.042253,
+        "riverLon": -106.395836
+      },
+      "bankDecision": "not stated by an official source",
+      "publishedBank": null,
+      "directions": null,
+      "notes": "Gore Canyon put-in area; Gore Canyon is 'Floating Not Recommended' for most boaters in the BLM guide.",
+      "utahRegistryName": null,
+      "blockers": [],
+      "checkedOn": "2026-10-26",
+      "visualCheck": {
+        "verdict": "pass",
+        "note": "Pin at the bank by the parking loop; the HR named flowline (126 m) runs mid-channel of a wide reach; polygon edge 13 m.",
+        "image": "research/raw/imagery/CO-ACC-0118.jpg",
+        "record": "research/access-grades/CO.json"
+      },
+      "accessPermission": {
+        "value": "documented",
+        "activity": "launching/taking out boats (river access)",
+        "evidence": "BLM day-use (guide).",
+        "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+        "issue": null
+      },
+      "locationPrecision": {
+        "value": "specific-facility",
+        "coordinateRepresents": "agency boat-ramp facility point from BLM National Recreation Site Points (FeatureServer/2)",
+        "nhdDistanceM": 36.6,
+        "distanceIsFlagOnly": true
+      },
+      "operatingStatus": {
+        "value": "unknown",
+        "note": "No closure found in the agency sources checked on 2026-10-26; none of them affirmatively states the site is open today.",
+        "lastChecked": "2026-10-26"
+      },
+      "bank": {
+        "value": "unknown",
+        "evidence": "not stated by an official source",
+        "publishedInCatalog": null
+      },
+      "craftSuitability": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "vehicleAccess": {
+        "value": null,
+        "note": "not stated by the sources checked"
+      },
+      "permitRequirements": [],
+      "sections": []
+    }
+  ]
+}

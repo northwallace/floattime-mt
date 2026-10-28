@@ -12,11 +12,30 @@
   "sections": [
     {
       "id": "fort-benton-judith",
-      "putIn": "Fort Benton",
+      "putIn": "Fort Benton (Canoe Launch)",
       "takeOut": "Judith Landing",
-      "miles": 149,
+      "miles": 88.5,
       "difficulty": "Class I",
-      "notes": "BLM Wild & Scenic. Typically 3–4 days. Coal Banks is a common midway access. Shuttle is serious — plan it."
+      "notes": "Start at the Chouteau County Fairgrounds canoe launch (river mile 0). This multi-day trip ends at Judith Landing, not James Kipp. Arrange the long shuttle and confirm current launch and take-out access with BLM before departure.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM Upper Missouri trip planning and river access guide",
+        "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks/plan",
+        "checkedOn": "2026-10-27",
+        "streamId": "Upper Missouri River",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Fort Benton (Canoe Launch)",
+          "riverMile": 0,
+          "sourceLocation": "River Access and Launch Sites: Fort Benton Canoe Launch"
+        },
+        "takeOut": {
+          "name": "Judith Landing",
+          "riverMile": 88.5,
+          "sourceLocation": "River Access and Launch Sites: Judith Landing"
+        },
+        "note": "BLM places the Fort Benton canoe launch at mile 0 and Judith Landing at 88.5. The former 149-mile distance belongs to the longer trip to James Kipp Recreation Area. The motorboat launch is a different start downstream."
+      }
     }
   ],
   "state": "MT",

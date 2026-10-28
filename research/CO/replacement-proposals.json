@@ -1,0 +1,75 @@
+{
+  "state": "CO",
+  "checkedOn": "2026-10-26",
+  "proposals": [
+    {
+      "id": "CO-PRO-001",
+      "type": "app-support",
+      "sections": [
+        "loma-to-westwater"
+      ],
+      "endpoint": "Westwater Ranger Station Boat Ramp",
+      "coEndpointId": "CO-ACC-0021",
+      "utRegistryKey": "Westwater Ranger Station Boat Ramp",
+      "utStatus": "verified (BLM feature 69678, 39.086657,-109.101309, river-right)",
+      "proposal": "PROPOSED APP FEATURE: allow map-point lookup across states (CO river → UT registry). The UT registry already holds a verified BLM point for this name; until then the CO record stays pending and the map stays hidden. Not copied into CO.json.",
+      "wouldUnlock": {
+        "sections": [
+          "loma-to-westwater"
+        ],
+        "auditedRiver": "colorado-river-ruby-horsethief (Loma Boat Launch is already verified, so the river audit could become verified)"
+      },
+      "detail": "research/cross-state-references.json",
+      "evidence": "catalog/map_points/UT.json (Utah package floateta-utah-v1)"
+    },
+    {
+      "id": "CO-PRO-002",
+      "type": "app-support",
+      "sections": [
+        "yampa-canyon-deerlodge-to-split-mountain"
+      ],
+      "endpoint": "Split Mountain Boat Ramp",
+      "coEndpointId": "CO-ACC-0073",
+      "utRegistryKey": "Split Mountain Boat Ramp",
+      "utStatus": "verified (NPS POI 4808, 40.44544,-109.252588, river-right)",
+      "proposal": "PROPOSED APP FEATURE: same cross-state lookup for the UT 'Split Mountain Boat Ramp' record. Not copied into CO.json.",
+      "wouldUnlock": {
+        "sections": [
+          "yampa-canyon-deerlodge-to-split-mountain"
+        ],
+        "auditedRiver": "yampa-river-dinosaur (West Cross Mountain and Deerlodge are verified, so the audit could become verified)"
+      },
+      "detail": "research/cross-state-references.json",
+      "evidence": "catalog/map_points/UT.json (Utah package floateta-utah-v1)"
+    },
+    {
+      "id": "CO-PRO-003",
+      "type": "coordinate",
+      "endpoint": "Yampa River State Park Headquarters",
+      "proposal": "Find the CPW boat-ramp feature at the headquarters (the current CPW feature is a group picnic area) to upgrade from access-verified to verified."
+    },
+    {
+      "id": "CO-PRO-004",
+      "type": "coordinate",
+      "endpoint": "Lyons Gulch Recreation Site",
+      "proposal": "Find an official launch coordinate (BLM layer has only the campground) to upgrade to verified; the BLM guide states river right."
+    },
+    {
+      "id": "CO-PRO-005",
+      "type": "mileage",
+      "sections": [
+        "pumphouse-to-radium"
+      ],
+      "proposal": "Guide map says 4 mi but guide RMs give 4.5 and NHDPlus gives 5.0; consider 4.5 after review. Catalog keeps the guide's stated 4 mi.",
+      "evidence": "research/distances.json"
+    },
+    {
+      "id": "CO-PRO-006",
+      "type": "endpoint-identity",
+      "sections": [
+        "juniper-to-maybell-bridge"
+      ],
+      "proposal": "Resolve the CPW 13 mi vs 6 mi NHDPlus conflict (check CPW site identity for Juniper Canyon/Maybell Bridge), then restore to the catalog."
+    }
+  ]
+}

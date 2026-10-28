@@ -1,0 +1,543 @@
+{
+  "version": 1,
+  "state": "UT",
+  "purpose": "Research-only three-level access grades. NOT read by the app. catalog/map_points/UT.json stays verified|pending; 'access-verified' here is the source of the proposed middle tier (docs/proposed-access-verified-schema.md). Never merge into the catalog.",
+  "levels": {
+    "verified": "managing-agency GIS point for the launch/ramp + current agency page confirming boating access with no closure + Esri z19 imagery shows the ramp at the water + NHD bank; mirrors catalog/map_points/UT.json",
+    "access-verified": "official/land-manager source explicitly names boating/launching/put-in at the site; exact water entry not pinned or not confirmed (approximate area)",
+    "pending": "no official boating-access statement, private/seasonal access, closure or closure uncertainty, or no official coordinate"
+  },
+  "closureUncertain": [
+    "North Wash Take-out (Cataract Canyon) (not in registry; Cataract excluded)"
+  ],
+  "closed": [
+    "Rainbow Park Boat Ramp (not in registry; section excluded)"
+  ],
+  "points": {
+    "Spillway Boat Launch (Flaming Gorge)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.908759,
+        "lon": -109.422174,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Spillway Boat Launch below Flaming Gorge Dam (USFS).",
+      "sourceName": "USFS EDW Recreation Opportunities, recareaid 72385 'Spillway Boat Launch Area'",
+      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D72385&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "USDA Forest Service, Ashley NF: Spillway Boat Launch Area",
+      "accessSourceUrl": "https://www.fs.usda.gov/r04/ashley/recreation/spillway-boat-launch-area",
+      "sourceQuote": "'Green River access for those looking to float section \"A\".' Open year-round; Latitude 40.90885 Longitude -109.422256; Boating - Non-Motorized; fee $5/vehicle/day.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "fee-area"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0001"
+    },
+    "Little Hole Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.910732,
+        "lon": -109.315146,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Little Hole day-use area, west ramp (USFS).",
+      "sourceName": "USFS EDW Recreation Opportunities, recareaid 72387 'Little Hole Boat Launch Area'",
+      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D72387&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "USDA Forest Service, Ashley NF: Little Hole Boat Launch Area",
+      "accessSourceUrl": "https://www.fs.usda.gov/r04/ashley/recreation/little-hole-boat-launch-area",
+      "sourceQuote": "'Little Hole boat launch on the Green River, Section B.' Open year-round; Latitude 40.910719 Longitude -109.315144.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "fee-area"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0002"
+    },
+    "Indian Crossing Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.89699,
+        "lon": -109.185357,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 71216 'Indian Crossing Boat Ramp' (Boat Ramp, UTG01000 Vernal FO)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71216&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Vernal FO: Indian Crossing Campground; BLM 'How to get to the Green River' brochure (put-in/take-out list: Indian Crossing 15.4 miles)",
+      "accessSourceUrl": "https://www.blm.gov/visit/indian-crossing-campground",
+      "sourceQuote": "BLM: 'Several launch points for floating the Green River are also available'; brochure: 'Put in and take out sites are: ... Indian Crossing (15.4 miles)'; no private permit required Dam to Lodore.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "fee-area"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0003"
+    },
+    "Swallow Canyon Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.844332,
+        "lon": -109.082401,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (dirt)",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 71219 'Swallow Canyon Boat Ramp' (Boat Ramp, UTG01000)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71219&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Recreation Site Points description + BLM 'How to get to the Green River' brochure",
+      "accessSourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/recreation_utah_greenriverbrochure.pdf",
+      "sourceQuote": "BLM feature description: 'After exiting the slow and steady flow of Swallow Canyon, this boat ramp can be found on river left. Amenities include a developed dirt boat ramp...'; brochure put-in/take-out list: 'Swallow Canyon (26.2 miles)'.",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0004"
+    },
+    "Gates of Lodore Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.727114,
+        "lon": -108.887881,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (permit launch)",
+      "sourceName": "NPS Public POIs, OBJECTID 10790 'Lodore Boat Launch' (DINO)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=10790&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "NPS Dinosaur NM: Boating and Rafting Permits",
+      "accessSourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+      "sourceQuote": "'Green River multiday permits start at Gates of Lodore Boat Ramp and end at Split Mountain Boat Ramp.' Permits required for all river trips in the monument.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required",
+        "in-colorado"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0005"
+    },
+    "Split Mountain Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.44544,
+        "lon": -109.252588,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (permit take-out)",
+      "sourceName": "NPS Public POIs, OBJECTID 4808 'Split Mountain Boat Launch' (DINO)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=4808&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "NPS Dinosaur NM: Boating and Rafting Permits",
+      "accessSourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+      "sourceQuote": "'Green River multiday permits start at Gates of Lodore Boat Ramp and end at Split Mountain Boat Ramp.' Daily section 'from Rainbow Park to the Split Mountain Boat Ramp'. Conditions page: Split Mountain Road open.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required",
+        "congestion noon-4pm"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0007"
+    },
+    "Sand Wash Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.840465,
+        "lon": -109.913676,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (permit launch)",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 88966 'Sand Wash' (Boat Ramp, UTG02000 Price FO)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=88966&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Price FO: Sand Wash Ranger Station",
+      "accessSourceUrl": "https://www.blm.gov/visit/sand-wash-ranger-station",
+      "sourceQuote": "'serves as the put in for floating Desolation and Gray Canyons ... a boat ramp'; permits required year-round.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required",
+        "remote-dirt-road"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0008"
+    },
+    "Nefertiti Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.195482,
+        "lon": -110.077861,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 69391 'Nefertiti Rapid Recreation Site' (Boat Ramp)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69391&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Price FO: Nefertiti Recreation Area; BLM Green River WSR page",
+      "accessSourceUrl": "https://www.blm.gov/visit/nefertiti-recreation-area",
+      "sourceQuote": "'Nerfertiti offers a put in for floating the Green River (8 river miles)'; Green River WSR page: Green River Daily from Nefertiti to Swasey's, Class I and II, no permit.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "dirt-road"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0009"
+    },
+    "Swaseys Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.112376,
+        "lon": -110.109071,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 77691 'Swasey Rapid Boat Ramp Site' (Boat Ramp, UTG02000)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=77691&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Price FO: Swaseys Boat Ramp",
+      "accessSourceUrl": "https://www.blm.gov/visit/swaseys-boat-ramp",
+      "sourceQuote": "'serves as the take out for ... Desolation Canyon as well as the Green River Daily'; Geographic Coordinates 39.11229444, -110.1090278; no fees.",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0010"
+    },
+    "Green River State Park Boat Ramp": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 38.988844,
+        "lon": -110.150598,
+        "feature": "UGRC Utah Boat Ramps layer (2009), OBJECTID 35 'Green River State Park' (ADMIN USP)"
+      },
+      "areaRadiusM": 100,
+      "directions": "Green River State Park boat ramp (Utah State Parks), town of Green River.",
+      "sourceName": "BLM Moab FO: Labyrinth Canyon River (permit page)",
+      "sourceUrl": "https://www.blm.gov/visit/labyrinth-canyon-river",
+      "sourceQuote": "'Launch sites for the Labyrinth Canyon trip are Green River State Park or Ruby Ranch.' Utah State Parks: 'The park is a starting point for boaters adventuring through Labyrinth and Stillwater canyons.'",
+      "coordinateSourceUrl": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/BoatRamps/FeatureServer/0/query?objectIds=35&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "fee-area",
+        "permit-required-downstream"
+      ],
+      "whyNotLevel1": "Imagery: the UGRC 2009 point is on the sand ramp beside the dock (looks right), but there is no current agency coordinate. Coordinate comes from the 2009 UGRC boat-ramp layer, not from a Utah State Parks page; State Parks ramp-status page was blocked (403) so current ramp status not confirmed.",
+      "inventoryId": "UT-ACC-0011"
+    },
+    "Mineral Bottom Boat Ramp": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 38.524298,
+        "lon": -109.993297,
+        "feature": "BLM National Recreation Site Points, OBJECTID 65135 'Mineral Bottom Recreation Site' (Boat Ramp, UTY01000 Moab FO)"
+      },
+      "areaRadiusM": 150,
+      "directions": "End of the Mineral Bottom road (Horsethief switchbacks) at the Green River; BLM Mineral Bottom Recreation Site.",
+      "sourceName": "BLM Moab FO: Labyrinth Canyon River; Mineral Bottom Recreation Site",
+      "sourceUrl": "https://www.blm.gov/visit/labyrinth-canyon-river",
+      "sourceQuote": "'The usual take-out is at the Mineral Bottom Boat Ramp ... The 16 miles of dirt road ... can be very slick and impassible when wet ... Four wheel drive vehicles are recommended.'",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=65135&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "4wd-high-clearance",
+        "impassable-when-wet",
+        "steep-switchbacks"
+      ],
+      "whyNotLevel1": "Imagery: the BLM GIS point is on the access road about 60-70 m south of the launch area, not on the ramp. The NPS POI (38.5249, -109.9933) sits at the launch beside the water: see research/replacement-proposals-UT.json. NHD is 111 m away. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery.",
+      "inventoryId": "UT-ACC-0012"
+    },
+    "Westwater Ranger Station Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.086657,
+        "lon": -109.101309,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (permit launch)",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 69678 'Westwater Ranger Station' (Boat Ramp, UTY01000)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69678&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Moab FO: Westwater Canyon River Permits",
+      "accessSourceUrl": "https://www.blm.gov/visit/westwater-canyon-river-permits",
+      "sourceQuote": "Directions: 'Westwater Ranger Station (the put-in): From Interstate 70, take exit 227.' Page Geographic Coordinates 39.08638, -109.10142. 'The canyon is 17 miles long and includes Class IV rapids'; permit required.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0013"
+    },
+    "Cisco Takeout": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.970407,
+        "lon": -109.2506984,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM Moab FO Cisco Takeout page, 'Geographic Coordinates 38.970407, -109.2506984' (the BLM GIS point OBJECTID 67918 at 38.970099, -109.252391 sits ~150 m west on the access road loop, so the page coordinate, which imagery puts at the head of the concrete ramp, is used)",
+      "sourceUrl": "https://www.blm.gov/visit/cisco-takeout",
+      "accessSourceName": "BLM Moab FO: Cisco Takeout",
+      "accessSourceUrl": "https://www.blm.gov/visit/cisco-takeout",
+      "sourceQuote": "'Terminus for Westwater boat trip'; Geographic Coordinates 38.970407, -109.2506984; BLM boat ramp feature.",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0014"
+    },
+    "Dewey Bridge Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.811242,
+        "lon": -109.308154,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (small boats)",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 68394 'Dewey Bridge Recreation Site' (Boat Ramp, UTY01000)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=68394&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Moab FO: Dewey Bridge Recreation Site",
+      "accessSourceUrl": "https://www.blm.gov/visit/dewey-bridge-recreation-site",
+      "sourceQuote": "'provides river access for small boats'; Geographic Coordinates 38.810486, -109.307617.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "fee-area"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0015"
+    },
+    "Hittle Bottom Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.760191,
+        "lon": -109.325455,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 71172 'Hittle Bottom Recreation Site' (Boat Ramp, UTY01000)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71172&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Moab FO: Hittle Bottom Recreation Site",
+      "accessSourceUrl": "https://www.blm.gov/visit/hittle-bottom-recreation-site",
+      "sourceQuote": "'popular launch site for Moab Daily river trips ... It has a boat ramp'.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "fee-area"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0016"
+    },
+    "Takeout Beach Boat Ramp": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 38.661778,
+        "lon": -109.500696,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (paved)",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 68336 'Takeout Beach' (Boat Ramp, 'Concrete boat ramp')",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=68336&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Moab FO: Take Out Boat Ramp",
+      "accessSourceUrl": "https://www.blm.gov/visit/take-out-boat-ramp",
+      "sourceQuote": "'primary exit point or take out ramp used by boaters who are floating the \"Colorado River Daily\" ... paved boat ramp'; Geographic Coordinates 38.662476, -109.499878.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "fee-area"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0017"
+    },
+    "Moab Bridge Boat Ramp": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        "https://www.nps.gov/cany/planyourvisit/flatwater.htm",
+        "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/BoatRamps/FeatureServer/0/query?objectIds=26&outFields=*&outSR=4326&f=json"
+      ],
+      "researchCandidate": {
+        "lat": 38.604868,
+        "lon": -109.575014,
+        "source": "UGRC Utah Boat Ramps layer (2009), OBJECTID 26 'Moab bridge' (ADMIN SL&F, State Sovereign Land)"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": "No current managing-agency page found for the Moab (US-191 bridge) ramp; UGRC 2009 attributes list State Sovereign Land. Coordinate is a candidate only.",
+      "inventoryId": "UT-ACC-0018"
+    },
+    "Potash Boat Ramp": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 38.506543,
+        "lon": -109.659221,
+        "feature": "NPS Public POIs, OBJECTID 3023 'Potash' (Boat Launch, listed under CANY)"
+      },
+      "areaRadiusM": 300,
+      "directions": "Potash boat ramp at the end of Potash Road (SR-279) by the potash plant evaporation ponds; outside Canyonlands NP.",
+      "sourceName": "NPS Canyonlands: Flatwater Trips",
+      "sourceUrl": "https://www.nps.gov/cany/planyourvisit/flatwater.htm",
+      "sourceQuote": "'On both rivers, all launch ramps are outside park boundaries.' 'On the Colorado River, boaters typically use the Potash or Moab ramps.'",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=3023&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required-downstream"
+      ],
+      "whyNotLevel1": "Imagery: the NPS POI is in the river channel about 20 m off the west bank; the ramp/beach seen on imagery is about 110 m south. No BLM (managing-agency) page was found. Site lies outside Canyonlands NP; NPS POI and NPS flatwater page name it as a launch but no BLM (managing agency) page was found, so not verified.",
+      "inventoryId": "UT-ACC-0019"
+    },
+    "Sand Island Boat Launch": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 37.262206,
+        "lon": -109.612081,
+        "feature": "BLM National Recreation Site Points, OBJECTID 66895 'Sand Island Recreation Site' (Boat Launch, UTY02000 Monticello FO)"
+      },
+      "areaRadiusM": 150,
+      "directions": "Sand Island Recreation Site (BLM) near Bluff; launch beach below the ranger station.",
+      "sourceName": "BLM Monticello FO: Sand Island",
+      "sourceUrl": "https://www.blm.gov/visit/sand-island",
+      "sourceQuote": "'Campground facilities include ... a boat launch for the San Juan River (permits required).' Geographic Coordinates 37.2606, -109.618.",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=66895&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required"
+      ],
+      "whyNotLevel1": "Imagery: the BLM point (and BLM page coordinate) is in the staging lot near the ranger station, about 40 m from the nearest bank and about 75 m from the launch beach. Too far from the water to pass the imagery check. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery.",
+      "inventoryId": "UT-ACC-0021"
+    },
+    "Mexican Hat Boat Launch": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 37.1471,
+        "lon": -109.854503,
+        "feature": "BLM National Recreation Site Points, OBJECTID 70731 'Mexican Hat Boat Launch Site' (Boat Ramp, UTY02000)"
+      },
+      "areaRadiusM": 150,
+      "directions": "Mexican Hat launch (BLM), upstream of the US-163 bridge.",
+      "sourceName": "BLM: San Juan River Trip Planning Information",
+      "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/utah_river_sanjuanriver_tripplanner.pdf",
+      "sourceQuote": "'Facilities at the Mexican Hat site include a boat ramp, day use area, and toilet. Vehicles have been broken into at this location, so we advise that you don't camp or leave vehicles overnight at the launch area.'",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70731&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required",
+        "vehicle-break-ins"
+      ],
+      "whyNotLevel1": "Imagery: the BLM point is at the entrance of the gravel launch area, about 50-55 m from the water. Too far from the water to pass. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery.",
+      "inventoryId": "UT-ACC-0022"
+    },
+    "Clay Hills Boat Ramp": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 37.2945,
+        "lon": -110.397533,
+        "feature": "BLM National Recreation Site Points, OBJECTID 70434 'Clay Hills Boat Ramp Site' (Boat Takeout, UTY02000)"
+      },
+      "areaRadiusM": 400,
+      "directions": "Clay Hills take-out (BLM) at the end of the Clay Hills road; do not float past it (waterfall downstream).",
+      "sourceName": "BLM: San Juan River Trip Planning Information (PDF)",
+      "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/San%20Juan%20Trip%20Planning%20Information.pdf",
+      "sourceQuote": "'Clay Hills is the only viable take-out below Mexican Hat. There is a dangerous waterfall downstream from Clay Hills.' Trip planner: 'There is a toilet and aluminum recycling at the Clay Hills boat ramp.'",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70434&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required",
+        "waterfall-downstream",
+        "road-impassable-when-wet"
+      ],
+      "whyNotLevel1": "Imagery: the BLM point is on a dirt track with no river visible; it is 263 m from the NHD centreline. The Clay Hills take-out shifts with Lake Powell sediment. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery.",
+      "inventoryId": "UT-ACC-0023"
+    },
+    "Fuller Bottom (San Rafael Put-in)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 39.118617,
+        "lon": -110.855529,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "River access (primitive put-in)",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 68553 'San Rafael River Put In' (Boat Launch, UTG02000 Price FO)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=68553&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Price FO: Fullers Bottom Trailhead",
+      "accessSourceUrl": "https://www.blm.gov/visit/fullers-bottom-trailhead",
+      "sourceQuote": "'Fullers Bottom trailhead serves as the put in for those wishing to hike or float through the Little Grand Canyon ... should only be floated in small crafts above 200 CFS and large crafts above 500 CFS.' Geographic Coordinates 39.1187, -110.8551889.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "runoff-only",
+        "min-flow-200cfs"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0024"
+    },
+    "San Rafael Swinging Bridge Take-out": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 39.080878,
+        "lon": -110.667126,
+        "feature": "BLM National Recreation Site Points, OBJECTID 71217 'San Rafael Boat Take Out' (Boat Takeout, UTG02000)"
+      },
+      "areaRadiusM": 200,
+      "directions": "San Rafael Swinging Bridge (Buckhorn Wash road), BLM Price FO.",
+      "sourceName": "BLM Price FO: Swinging Bridge Trailhead",
+      "sourceUrl": "https://www.blm.gov/visit/swinging-bridge-trailhead",
+      "sourceQuote": "'Swinging Bridge trailhead serves as the take out for those wishing to hike or float through the Little Grand Canyon.' Page coordinates 39.07770278, -110.6852694 (trailhead, ~1.6 km from the BLM take-out feature).",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71217&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "runoff-only"
+      ],
+      "whyNotLevel1": "Imagery: the BLM GIS point is in the campground loop about 50 m south of the river through trees, with no ramp visible. The BLM Swinging Bridge POI is on the road at the north end of the bridge, and the BLM trailhead page coordinate is about 1.6 km away. Exact take-out is unresolved. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery.",
+      "inventoryId": "UT-ACC-0025"
+    },
+    "Bonanza Bridge Boat Launch": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        "https://www.blm.gov/visit/white-river-recreation-area",
+        "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70641&outFields=*&outSR=4326&f=json"
+      ],
+      "researchCandidate": {
+        "lat": 39.97689,
+        "lon": -109.179303,
+        "source": "BLM National Recreation Site Points, OBJECTID 70641 'White River Bonanza Boat Launch' (Boat Ramp)"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "private-property",
+        "seasonal-closed-oct1-apr1"
+      ],
+      "whyNotLevel1": "BLM's own site record says the launch is on private property and open April 1-October 1 only; access permission/season not confirmable as public. Kept pending.",
+      "inventoryId": "UT-ACC-0026"
+    },
+    "Enron Boat Ramp (White River)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 40.010178,
+        "lon": -109.445989,
+        "feature": "verified map point (catalog/map_points/UT.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, OBJECTID 67149 'White River Enron Boat Ramp' (Boat Ramp, UTG01000)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=67149&outFields=*&outSR=4326&f=json",
+      "accessSourceName": "BLM Vernal FO: Floating the White River brochure / White River Recreation Area",
+      "accessSourceUrl": "https://www.blm.gov/sites/default/files/documents/files/white%20river%20for%20web.pdf",
+      "sourceQuote": "Brochure (two-column layout, text interleaved): 'The take out is located 35 miles' ... 'downstream at a dirt graded ramp called the Enron take-out.' ... 'The Enron location is free and a sign is located on' river right; BLM GIS: 'this concrete boat ramp serves as the last public take out before entering the Uintah & Ouray Indian Reservation 1/2 mile downstream where permits are required.'",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "last-takeout-before-reservation"
+      ],
+      "whyNotLevel1": null,
+      "inventoryId": "UT-ACC-0027"
+    }
+  }
+}

@@ -1,0 +1,4736 @@
+{
+  "state": "CO",
+  "checkedOn": "2026-10-26",
+  "count": 78,
+  "catalogCount": 25,
+  "sections": [
+    {
+      "id": "pumphouse-to-radium",
+      "river": "colorado-river-pumphouse",
+      "status": "catalog",
+      "putIn": "Pumphouse Boat Launch",
+      "putInId": "CO-ACC-0001",
+      "takeOut": "Radium Boat Ramp",
+      "takeOutId": "CO-ACC-0002",
+      "difficulty": "Class II–III",
+      "dayOrExpedition": "day",
+      "miles": 4.0,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 3 'Length: 4 miles' (RM 11.0 → 15.5 = 4.5).",
+      "milePriority": 1,
+      "nhdMiles": 5.01,
+      "nhdDeltaPct": 25.3,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "pumphouse-to-radium"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0001",
+        "CO-ACC-0002",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/pumphouse-to-radium"
+      ]
+    },
+    {
+      "id": "radium-to-rancho-del-rio",
+      "river": "colorado-river-pumphouse",
+      "status": "catalog",
+      "putIn": "Radium Boat Ramp",
+      "putInId": "CO-ACC-0002",
+      "takeOut": "Rancho del Rio",
+      "takeOutId": "CO-ACC-0003",
+      "difficulty": "Class II–III",
+      "dayOrExpedition": "day",
+      "miles": 6.0,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 4 'Length: 6 miles' (RM 15.5 → 21.5).",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "pending"
+      },
+      "permissionResolved": false,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [
+        "CO-RES-011"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission on Rancho del Rio (CO-ACC-0003, pending)",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "radium-to-rancho-del-rio"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "radium-to-rancho-del-rio"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Rancho del Rio (CO-ACC-0003, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "radium-to-rancho-del-rio"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0002",
+        "CO-ACC-0003",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/radium-to-rancho-del-rio",
+        "CO-RES-011"
+      ]
+    },
+    {
+      "id": "rancho-del-rio-to-state-bridge",
+      "river": "colorado-river-pumphouse",
+      "status": "catalog",
+      "putIn": "Rancho del Rio",
+      "putInId": "CO-ACC-0003",
+      "takeOut": "State Bridge Boat Ramp",
+      "takeOutId": "CO-ACC-0004",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 4.0,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 5 'Length: 4 miles' (RM 21.5 → 25.0 = 3.5).",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "pending",
+        "takeOut": "verified"
+      },
+      "permissionResolved": false,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [
+        "CO-RES-011"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission on Rancho del Rio (CO-ACC-0003, pending)",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "rancho-del-rio-to-state-bridge"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "rancho-del-rio-to-state-bridge"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Rancho del Rio (CO-ACC-0003, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "rancho-del-rio-to-state-bridge"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0003",
+        "CO-ACC-0004",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/rancho-del-rio-to-state-bridge",
+        "CO-RES-011"
+      ]
+    },
+    {
+      "id": "state-bridge-to-two-bridges",
+      "river": "colorado-river-state-bridge",
+      "status": "catalog",
+      "putIn": "State Bridge Boat Ramp",
+      "putInId": "CO-ACC-0004",
+      "takeOut": "Two Bridges Boat Ramp",
+      "takeOutId": "CO-ACC-0005",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 4.7,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 6 'Length: 4.7 miles' (RM 25.0 → 29.7).",
+      "milePriority": 1,
+      "nhdMiles": 4.75,
+      "nhdDeltaPct": 1.1,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [
+        "CO-RES-010"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "state-bridge-to-two-bridges"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0004",
+        "CO-ACC-0005",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/state-bridge-to-two-bridges",
+        "CO-RES-010"
+      ]
+    },
+    {
+      "id": "two-bridges-to-catamount",
+      "river": "colorado-river-state-bridge",
+      "status": "catalog",
+      "putIn": "Two Bridges Boat Ramp",
+      "putInId": "CO-ACC-0005",
+      "takeOut": "Catamount Bridge Boat Ramp",
+      "takeOutId": "CO-ACC-0006",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 10.1,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 7 'Length: 10.1 miles' (RM 29.7 → 39.8).",
+      "milePriority": 1,
+      "nhdMiles": 10.51,
+      "nhdDeltaPct": 4.1,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "two-bridges-to-catamount"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0005",
+        "CO-ACC-0006",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/two-bridges-to-catamount"
+      ]
+    },
+    {
+      "id": "catamount-to-pinball",
+      "river": "colorado-river-state-bridge",
+      "status": "catalog",
+      "putIn": "Catamount Bridge Boat Ramp",
+      "putInId": "CO-ACC-0006",
+      "takeOut": "Pinball Boat Ramp",
+      "takeOutId": "CO-ACC-0007",
+      "difficulty": "Class II",
+      "dayOrExpedition": "day",
+      "miles": 9.4,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 8 'Length: 9.4 miles' (RM 39.8 → 49.2).",
+      "milePriority": 1,
+      "nhdMiles": 9.53,
+      "nhdDeltaPct": 1.4,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "catamount-to-pinball"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0006",
+        "CO-ACC-0007",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/catamount-to-pinball"
+      ]
+    },
+    {
+      "id": "pinball-to-horse-creek",
+      "river": "colorado-river-state-bridge",
+      "status": "catalog",
+      "putIn": "Pinball Boat Ramp",
+      "putInId": "CO-ACC-0007",
+      "takeOut": "Horse Creek River Access",
+      "takeOutId": "CO-ACC-0008",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 8.5,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 9 'Length: 8.5 miles' (RM 49.2 → 57.7).",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "pending"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "pinball-to-horse-creek"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Horse Creek River Access (CO-ACC-0008, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "pinball-to-horse-creek"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0007",
+        "CO-ACC-0008",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/pinball-to-horse-creek"
+      ]
+    },
+    {
+      "id": "horse-creek-to-cottonwood-island",
+      "river": "colorado-river-state-bridge",
+      "status": "catalog",
+      "putIn": "Horse Creek River Access",
+      "putInId": "CO-ACC-0008",
+      "takeOut": "Cottonwood Island Boat Ramp",
+      "takeOutId": "CO-ACC-0009",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 5.3,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 10 'Length: 5.3 miles' (RM 57.7 → 63.1 = 5.4).",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "pending",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "horse-creek-to-cottonwood-island"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Horse Creek River Access (CO-ACC-0008, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "horse-creek-to-cottonwood-island"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0008",
+        "CO-ACC-0009",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/horse-creek-to-cottonwood-island"
+      ]
+    },
+    {
+      "id": "cottonwood-island-to-lyons-gulch",
+      "river": "colorado-river-state-bridge",
+      "status": "catalog",
+      "putIn": "Cottonwood Island Boat Ramp",
+      "putInId": "CO-ACC-0009",
+      "takeOut": "Lyons Gulch Recreation Site",
+      "takeOutId": "CO-ACC-0010",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 2.5,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 10 'Length: 2.5 miles' (RM 63.1 → 65.5 = 2.4).",
+      "milePriority": 1,
+      "nhdMiles": 2.26,
+      "nhdDeltaPct": -9.6,
+      "mapReadiness": "approximate",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "access-verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "cottonwood-island-to-lyons-gulch"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Lyons Gulch Recreation Site (CO-ACC-0010, access-verified)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "cottonwood-island-to-lyons-gulch"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0009",
+        "CO-ACC-0010",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/cottonwood-island-to-lyons-gulch"
+      ]
+    },
+    {
+      "id": "lyons-gulch-to-dotsero",
+      "river": "colorado-river-state-bridge",
+      "status": "catalog",
+      "putIn": "Lyons Gulch Recreation Site",
+      "putInId": "CO-ACC-0010",
+      "takeOut": "Dotsero Landing Boat Ramp",
+      "takeOutId": "CO-ACC-0011",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 4.0,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+      "mileEvidence": "Guide Map 11 'Length: 4 miles' (RM 65.5 → 69.5).",
+      "milePriority": 1,
+      "nhdMiles": 3.97,
+      "nhdDeltaPct": -0.7,
+      "mapReadiness": "approximate",
+      "accessGrades": {
+        "putIn": "access-verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "lyons-gulch-to-dotsero"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Lyons Gulch Recreation Site (CO-ACC-0010, access-verified)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "lyons-gulch-to-dotsero"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0010",
+        "CO-ACC-0011",
+        "blm_upper_colorado_guide_2015",
+        "research/distances.json#sections/lyons-gulch-to-dotsero"
+      ]
+    },
+    {
+      "id": "loma-to-westwater",
+      "river": "colorado-river-ruby-horsethief",
+      "status": "catalog",
+      "putIn": "Loma Boat Launch",
+      "putInId": "CO-ACC-0020",
+      "takeOut": "Westwater Ranger Station Boat Ramp",
+      "takeOutId": "CO-ACC-0021",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "unspecified-long",
+      "miles": 25.0,
+      "mileSource": "BLM Ruby-Horsethief Canyon permits page",
+      "mileEvidence": "BLM: 'a 25-mile stretch' Loma, CO to Westwater, UT.",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "pending"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-004"
+      ],
+      "requiresAppSupport": true,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "app-support",
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "dayOrExpeditionNote": "Over 20 mi and the source does not say day trip or multi-day; not flagged multiDay in the catalog without a source.",
+      "blockerDetails": [
+        {
+          "code": "app-support",
+          "explanation": "app-support on Westwater Ranger Station Boat Ramp (CO-ACC-0021, pending)",
+          "nextAction": "Requires an app change (see research/replacement-proposals.json); no production change made.",
+          "affectedSections": [
+            "loma-to-westwater"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "loma-to-westwater"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Westwater Ranger Station Boat Ramp (CO-ACC-0021, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "loma-to-westwater"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "loma-to-westwater"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0020",
+        "CO-ACC-0021",
+        "blm_ruby_horsethief_permits",
+        "research/distances.json#sections/loma-to-westwater",
+        "CO-RES-004"
+      ]
+    },
+    {
+      "id": "chukar-to-gunnison-forks",
+      "river": "gunnison-river-gorge",
+      "status": "catalog",
+      "putIn": "Chukar Boat Launch",
+      "putInId": "CO-ACC-0030",
+      "takeOut": "Gunnison Forks Boat Ramp",
+      "takeOutId": "CO-ACC-0031",
+      "difficulty": "Class II–IV",
+      "dayOrExpedition": "day",
+      "miles": 14.0,
+      "mileSource": "BLM Gunnison Gorge NCA brochure",
+      "mileEvidence": "BLM Gunnison Gorge NCA brochure river-mile table: Chukar Rapid at the put-in (mile 0/1) through 'River Miles 10-14 Smith Fork to North Fork', 'The Gunnison Forks take-out is at the North Fork confluence' (mile 14). AW 402: 13.0.",
+      "milePriority": 1,
+      "nhdMiles": 13.23,
+      "nhdDeltaPct": -5.5,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-005",
+        "CO-RES-006"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "chukar-to-gunnison-forks"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "chukar-to-gunnison-forks"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0030",
+        "CO-ACC-0031",
+        "blm_gunnison_gorge_brochure",
+        "research/distances.json#sections/chukar-to-gunnison-forks",
+        "CO-RES-005",
+        "CO-RES-006"
+      ]
+    },
+    {
+      "id": "confluence-park-to-whitewater",
+      "river": "gunnison-river-denca",
+      "status": "catalog",
+      "putIn": "Confluence Park Boat Launch (Delta)",
+      "putInId": "CO-ACC-0040",
+      "takeOut": "Whitewater Boat Launch",
+      "takeOutId": "CO-ACC-0043",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "expedition",
+      "miles": 39.0,
+      "mileSource": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+      "mileEvidence": "BLM DENCA guide: 'flows 39 miles from the boat launch at Confluence Park in Delta, to the take-out in Whitewater'.",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "pending",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [
+        "CO-RES-007"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "confluence-park-to-whitewater"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Confluence Park Boat Launch (Delta) (CO-ACC-0040, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "confluence-park-to-whitewater"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0040",
+        "CO-ACC-0043",
+        "blm_gunnison_dencanca_float",
+        "research/distances.json#sections/confluence-park-to-whitewater",
+        "CO-RES-007"
+      ]
+    },
+    {
+      "id": "escalante-to-whitewater",
+      "river": "gunnison-river-denca",
+      "status": "catalog",
+      "putIn": "Escalante Boat Launch",
+      "putInId": "CO-ACC-0041",
+      "takeOut": "Whitewater Boat Launch",
+      "takeOutId": "CO-ACC-0043",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "unspecified-long",
+      "miles": 29.0,
+      "mileSource": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+      "mileEvidence": "BLM DENCA guide: 'Escalante Canyon (29 miles to Whitewater)'.",
+      "milePriority": 1,
+      "nhdMiles": 26.6,
+      "nhdDeltaPct": -8.3,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-007"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "dayOrExpeditionNote": "Over 20 mi and the source does not say day trip or multi-day; not flagged multiDay in the catalog without a source.",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "escalante-to-whitewater"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "escalante-to-whitewater"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0041",
+        "CO-ACC-0043",
+        "blm_gunnison_dencanca_float",
+        "research/distances.json#sections/escalante-to-whitewater",
+        "CO-RES-007"
+      ]
+    },
+    {
+      "id": "bridgeport-to-whitewater",
+      "river": "gunnison-river-denca",
+      "status": "catalog",
+      "putIn": "Bridgeport Trailhead",
+      "putInId": "CO-ACC-0042",
+      "takeOut": "Whitewater Boat Launch",
+      "takeOutId": "CO-ACC-0043",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 14.0,
+      "mileSource": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+      "mileEvidence": "BLM DENCA guide: 'Bridgeport (14 miles to Whitewater)'.",
+      "milePriority": 1,
+      "nhdMiles": 13.05,
+      "nhdDeltaPct": -6.8,
+      "mapReadiness": "approximate",
+      "accessGrades": {
+        "putIn": "access-verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-007",
+        "CO-RES-008"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "bridgeport-to-whitewater"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Bridgeport Trailhead (CO-ACC-0042, access-verified)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "bridgeport-to-whitewater"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "bridgeport-to-whitewater"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0042",
+        "CO-ACC-0043",
+        "blm_gunnison_dencanca_float",
+        "research/distances.json#sections/bridgeport-to-whitewater",
+        "CO-RES-007",
+        "CO-RES-008"
+      ]
+    },
+    {
+      "id": "red-bridge-to-gateview",
+      "river": "lake-fork-gunnison",
+      "status": "draft",
+      "putIn": "Red Bridge Campground",
+      "putInId": "CO-ACC-0050",
+      "takeOut": "Gateview Recreation Site",
+      "takeOutId": "CO-ACC-0051",
+      "difficulty": "Class III–IV",
+      "dayOrExpedition": "day",
+      "miles": 4.9,
+      "mileSource": "aw_405",
+      "mileEvidence": "American Whitewater reach 405 length 4.9 mi.",
+      "milePriority": 2,
+      "nhdMiles": 1.07,
+      "nhdDeltaPct": -78.3,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "pending",
+        "takeOut": "pending"
+      },
+      "permissionResolved": false,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "endpoint-identity",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission on Red Bridge Campground (CO-ACC-0050, pending); Gateview Recreation Site (CO-ACC-0051, pending)",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "red-bridge-to-gateview"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "red-bridge-to-gateview"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "red-bridge-to-gateview"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "red-bridge-to-gateview"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0050",
+        "CO-ACC-0051",
+        "aw_405",
+        "research/distances.json#sections/red-bridge-to-gateview"
+      ]
+    },
+    {
+      "id": "pump-station-to-headquarters",
+      "river": "yampa-river-hayden",
+      "status": "catalog",
+      "putIn": "Hayden Pump Station Boat Ramp",
+      "putInId": "CO-ACC-0060",
+      "takeOut": "Yampa River State Park Headquarters",
+      "takeOutId": "CO-ACC-0061",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 13.0,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: headquarters 'Located 13 miles from Hayden Pump Station'.",
+      "milePriority": 1,
+      "nhdMiles": 12.92,
+      "nhdDeltaPct": -0.6,
+      "mapReadiness": "approximate",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "access-verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "pump-station-to-headquarters"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Yampa River State Park Headquarters (CO-ACC-0061, access-verified)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "pump-station-to-headquarters"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "pump-station-to-headquarters"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0060",
+        "CO-ACC-0061",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/pump-station-to-headquarters",
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ]
+    },
+    {
+      "id": "headquarters-to-state-wildlife-area",
+      "river": "yampa-river-hayden",
+      "status": "catalog",
+      "putIn": "Yampa River State Park Headquarters",
+      "putInId": "CO-ACC-0061",
+      "takeOut": "Yampa River State Wildlife Area Boat Ramp",
+      "takeOutId": "CO-ACC-0062",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 7.0,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: SWA 'Located 7 miles from the headquarters site'.",
+      "milePriority": 1,
+      "nhdMiles": 6.9,
+      "nhdDeltaPct": -1.4,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "access-verified",
+        "takeOut": "pending"
+      },
+      "permissionResolved": false,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission on Yampa River State Wildlife Area Boat Ramp (CO-ACC-0062, pending)",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "headquarters-to-state-wildlife-area"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "headquarters-to-state-wildlife-area"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Yampa River State Park Headquarters (CO-ACC-0061, access-verified)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "headquarters-to-state-wildlife-area"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "headquarters-to-state-wildlife-area"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0061",
+        "CO-ACC-0062",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/headquarters-to-state-wildlife-area",
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ]
+    },
+    {
+      "id": "golf-course-to-loudy-simpson",
+      "river": "yampa-river-craig",
+      "status": "catalog",
+      "putIn": "Yampa Valley Golf Course Boat Ramp",
+      "putInId": "CO-ACC-0063",
+      "takeOut": "Loudy Simpson Park",
+      "takeOutId": "CO-ACC-0064",
+      "difficulty": "Class I",
+      "dayOrExpedition": "day",
+      "miles": 3.5,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: '3.5 miles from Yampa Valley is Moffat County's Loudy Simpson Park'.",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "pending"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "golf-course-to-loudy-simpson"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Loudy Simpson Park (CO-ACC-0064, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "golf-course-to-loudy-simpson"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "golf-course-to-loudy-simpson"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0063",
+        "CO-ACC-0064",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/golf-course-to-loudy-simpson",
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ]
+    },
+    {
+      "id": "loudy-simpson-to-south-beach",
+      "river": "yampa-river-craig",
+      "status": "catalog",
+      "putIn": "Loudy Simpson Park",
+      "putInId": "CO-ACC-0064",
+      "takeOut": "South Beach Boat Ramp",
+      "takeOutId": "CO-ACC-0065",
+      "difficulty": "Class I",
+      "dayOrExpedition": "day",
+      "miles": 5.5,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: '5.5. miles from the Moffat County site is South Beach'.",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "pending",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "loudy-simpson-to-south-beach"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Loudy Simpson Park (CO-ACC-0064, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "loudy-simpson-to-south-beach"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "loudy-simpson-to-south-beach"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0064",
+        "CO-ACC-0065",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/loudy-simpson-to-south-beach",
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ]
+    },
+    {
+      "id": "south-beach-to-duffy",
+      "river": "yampa-river-craig",
+      "status": "catalog",
+      "putIn": "South Beach Boat Ramp",
+      "putInId": "CO-ACC-0065",
+      "takeOut": "Duffy Mountain Boat Ramp",
+      "takeOutId": "CO-ACC-0066",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "unspecified-long",
+      "miles": 32.0,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: 'Duffy Mountain is located 32 miles downstream from South Beach'.",
+      "milePriority": 1,
+      "nhdMiles": 31.92,
+      "nhdDeltaPct": -0.3,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "dayOrExpeditionNote": "Over 20 mi and the source does not say day trip or multi-day; not flagged multiDay in the catalog without a source.",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "south-beach-to-duffy"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "south-beach-to-duffy"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0065",
+        "CO-ACC-0066",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/south-beach-to-duffy",
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ]
+    },
+    {
+      "id": "duffy-to-juniper",
+      "river": "yampa-river-maybell",
+      "status": "catalog",
+      "putIn": "Duffy Mountain Boat Ramp",
+      "putInId": "CO-ACC-0066",
+      "takeOut": "Juniper Canyon Boat Ramp",
+      "takeOutId": "CO-ACC-0067",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 12.0,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: 'Located 12 miles down river from Duffy Mountain Access Site is Juniper Canyon'.",
+      "milePriority": 1,
+      "nhdMiles": 12.12,
+      "nhdDeltaPct": 1.0,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "duffy-to-juniper"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "duffy-to-juniper"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0066",
+        "CO-ACC-0067",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/duffy-to-juniper",
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ]
+    },
+    {
+      "id": "juniper-to-maybell-bridge",
+      "river": "yampa-river-maybell",
+      "status": "draft",
+      "putIn": "Juniper Canyon Boat Ramp",
+      "putInId": "CO-ACC-0067",
+      "takeOut": "Maybell Bridge Boat Ramp",
+      "takeOutId": "CO-ACC-0068",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 13.0,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: 'Located 13 miles from Juniper Canyon, Maybell Bridge'.",
+      "milePriority": 1,
+      "nhdMiles": 6.0,
+      "nhdDeltaPct": -53.9,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "juniper-to-maybell-bridge"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "Official 13.0 mi vs NHDPlus V2 6.0 mi (-53.9%).",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "juniper-to-maybell-bridge"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "juniper-to-maybell-bridge"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0067",
+        "CO-ACC-0068",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/juniper-to-maybell-bridge"
+      ]
+    },
+    {
+      "id": "sunbeam-to-east-cross-mountain",
+      "river": "yampa-river-maybell",
+      "status": "catalog",
+      "putIn": "Sunbeam River Access",
+      "putInId": "CO-ACC-0069",
+      "takeOut": "East Cross Mountain Boat Ramp",
+      "takeOutId": "CO-ACC-0070",
+      "difficulty": "Class I",
+      "dayOrExpedition": "day",
+      "miles": 12.0,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: 'Located 12 miles from Sunbeam, East Cross Mountain'.",
+      "milePriority": 1,
+      "nhdMiles": 11.4,
+      "nhdDeltaPct": -5.0,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "sunbeam-to-east-cross-mountain"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "sunbeam-to-east-cross-mountain"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0069",
+        "CO-ACC-0070",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/sunbeam-to-east-cross-mountain",
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ]
+    },
+    {
+      "id": "west-cross-mountain-to-deerlodge",
+      "river": "yampa-river-dinosaur",
+      "status": "catalog",
+      "putIn": "West Cross Mountain Boat Ramp",
+      "putInId": "CO-ACC-0071",
+      "takeOut": "Deerlodge Park Boat Launch",
+      "takeOutId": "CO-ACC-0072",
+      "difficulty": "Class I–II",
+      "dayOrExpedition": "day",
+      "miles": 9.0,
+      "mileSource": "CPW Yampa River State Park river sections",
+      "mileEvidence": "CPW: 'Located nine miles from West Cross Mountain is Deer Lodge Park'.",
+      "milePriority": 1,
+      "nhdMiles": 9.2,
+      "nhdDeltaPct": 2.2,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-013"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "calibration-review",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "west-cross-mountain-to-deerlodge"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "west-cross-mountain-to-deerlodge"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0071",
+        "CO-ACC-0072",
+        "cpw_yrsp_sections",
+        "research/distances.json#sections/west-cross-mountain-to-deerlodge",
+        "CO-RES-013"
+      ]
+    },
+    {
+      "id": "yampa-canyon-deerlodge-to-split-mountain",
+      "river": "yampa-river-dinosaur",
+      "status": "catalog",
+      "putIn": "Deerlodge Park Boat Launch",
+      "putInId": "CO-ACC-0072",
+      "takeOut": "Split Mountain Boat Ramp",
+      "takeOutId": "CO-ACC-0073",
+      "difficulty": "Class II–IV",
+      "dayOrExpedition": "expedition",
+      "miles": 71.0,
+      "mileSource": "NPS Dinosaur NM 'Boating in the Monument' 2025",
+      "mileEvidence": "NPS: 'The Yampa River is 71 miles from Deerlodge Park to Split Mountain.'",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "pending",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "pending"
+      },
+      "permissionResolved": true,
+      "guideRange": true,
+      "calibratedEstimate": false,
+      "timingReadiness": "guide-range",
+      "restrictions": [
+        "CO-RES-009",
+        "CO-RES-014"
+      ],
+      "requiresAppSupport": true,
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "blockers": [
+        "app-support",
+        "calibration-review",
+        "exact-location"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "app-support",
+          "explanation": "app-support on Split Mountain Boat Ramp (CO-ACC-0073, pending)",
+          "nextAction": "Requires an app change (see research/replacement-proposals.json); no production change made.",
+          "affectedSections": [
+            "yampa-canyon-deerlodge-to-split-mountain"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "yampa-canyon-deerlodge-to-split-mountain"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location on Split Mountain Boat Ramp (CO-ACC-0073, pending)",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "yampa-canyon-deerlodge-to-split-mountain"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0072",
+        "CO-ACC-0073",
+        "nps_dino_boating_2025",
+        "research/distances.json#sections/yampa-canyon-deerlodge-to-split-mountain",
+        "CO-RES-009",
+        "CO-RES-014"
+      ]
+    },
+    {
+      "id": "stone-bridge-to-rincon",
+      "river": "arkansas-river-salida",
+      "status": "catalog",
+      "putIn": "Stone Bridge Boat Ramp",
+      "putInId": "CO-ACC-0105",
+      "takeOut": "Rincon Boat Ramp",
+      "takeOutId": "CO-ACC-0107",
+      "difficulty": "Class II–III",
+      "dayOrExpedition": "day",
+      "miles": 19.5,
+      "mileSource": "CPW AHRA river safety map",
+      "mileEvidence": "CPW AHRA River Safety map: 'Stone Bridge ~ Rincon … Total length of section is 19.5 miles'. AW 4348 Stone Bridge→Salida 9.5 mi + AW 6769 Salida→Rincon 10.0 mi = 19.5.",
+      "milePriority": 1,
+      "nhdMiles": null,
+      "nhdDeltaPct": null,
+      "mapReadiness": "exact",
+      "accessGrades": {
+        "putIn": "verified",
+        "takeOut": "verified"
+      },
+      "permissionResolved": true,
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [
+        "CO-RES-015",
+        "CO-RES-016",
+        "CO-RES-017",
+        "CO-RES-018"
+      ],
+      "requiresAppSupport": false,
+      "liveEstimates": "hidden: gauge 07091200 returned no discharge values in the 7-day check (SEASONAL); access information is unaffected",
+      "blockers": [
+        "calibration-review",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "stone-bridge-to-rincon"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "stone-bridge-to-rincon"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "CO-ACC-0105",
+        "CO-ACC-0107",
+        "cpw_ahra_safety_map",
+        "CO-RES-015",
+        "CO-RES-016",
+        "CO-RES-017",
+        "CO-RES-018"
+      ]
+    },
+    {
+      "id": "arkansas-river--aw1000018",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "Hayden Meadows to Granite ",
+      "dayOrExpedition": "unknown",
+      "miles": 9.8,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw1000018"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw1000018"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw1000018"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw1000018"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw1000018"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw355",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "01. Granite to Numbers Launch Site",
+      "dayOrExpedition": "unknown",
+      "miles": 5.1,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw355"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw355"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw355"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw355"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw355"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw356",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "02. Numbers Launch to Railroad Bridge Launch",
+      "dayOrExpedition": "unknown",
+      "miles": 6.4,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw356"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw356"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw356"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw356"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw356"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw357",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "03. Railroad Bridge Launch to Buena Vista",
+      "dayOrExpedition": "unknown",
+      "miles": 6.7,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw357"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw357"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw357"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw357"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw357"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw4347",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "04. Buena Vista to Fisherman's Bridge",
+      "dayOrExpedition": "unknown",
+      "miles": 6.7,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw4347"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw4347"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw4347"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw4347"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw4347"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw358",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "05. Fisherman's Bridge access to Stone Bridge access",
+      "dayOrExpedition": "unknown",
+      "miles": 13.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw358"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw358"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw358"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw358"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw358"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw4349",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "08. Rincon to Pinnacle Rock",
+      "dayOrExpedition": "unknown",
+      "miles": 19.5,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw4349"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw4349"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw4349"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw4349"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw4349"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw359",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "09. Pinnacle Rock Launch to Parkdale Launch",
+      "dayOrExpedition": "unknown",
+      "miles": 17.2,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw359"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw359"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw359"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw359"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw359"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "arkansas-river--aw360",
+      "river": "arkansas-river",
+      "status": "draft",
+      "description": "10. Parkdale Launch to Canon City (Royal Gorge)",
+      "dayOrExpedition": "unknown",
+      "miles": 10.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "live-estimates-hidden",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "arkansas-river--aw360"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "arkansas-river--aw360"
+          ]
+        },
+        {
+          "code": "live-estimates-hidden",
+          "explanation": "Gauge returned no discharge in the 7-day check; live estimates hidden, access unaffected.",
+          "nextAction": "Not a blocker: keep live flow-based estimates hidden until the gauge reports again; publish access information as normal.",
+          "affectedSections": [
+            "arkansas-river--aw360"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "arkansas-river--aw360"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "arkansas-river--aw360"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dolores-river--aw384",
+      "river": "dolores-river",
+      "status": "draft",
+      "description": "01. Rico to Big Rock (West Fork)",
+      "dayOrExpedition": "unknown",
+      "miles": 27.6,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "endpoint-identity",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dolores-river--aw384"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dolores-river--aw384"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "dolores-river--aw384"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "dolores-river--aw384"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dolores-river--aw384"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dolores-river--aw11058",
+      "river": "dolores-river",
+      "status": "draft",
+      "description": "02. West Fork to McPhee Reservoir",
+      "dayOrExpedition": "unknown",
+      "miles": 14.6,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "endpoint-identity",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dolores-river--aw11058"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dolores-river--aw11058"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "dolores-river--aw11058"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "dolores-river--aw11058"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dolores-river--aw11058"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dolores-river--aw385",
+      "river": "dolores-river",
+      "status": "draft",
+      "description": "03. Bradfield Launch (McPhee Reservoir) to Dove Creek Pump Station",
+      "dayOrExpedition": "unknown",
+      "miles": 18.5,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "endpoint-identity",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dolores-river--aw385"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dolores-river--aw385"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "dolores-river--aw385"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "dolores-river--aw385"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dolores-river--aw385"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dolores-river--aw386",
+      "river": "dolores-river",
+      "status": "draft",
+      "description": "04. Dove Creek Pump Station to Slickrock",
+      "dayOrExpedition": "unknown",
+      "miles": 28.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "endpoint-identity",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dolores-river--aw386"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dolores-river--aw386"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "dolores-river--aw386"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "dolores-river--aw386"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dolores-river--aw386"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dolores-river--aw387",
+      "river": "dolores-river",
+      "status": "draft",
+      "description": "05. Slickrock to Bedrock",
+      "dayOrExpedition": "unknown",
+      "miles": 49.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "endpoint-identity",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dolores-river--aw387"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dolores-river--aw387"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "dolores-river--aw387"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "dolores-river--aw387"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dolores-river--aw387"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dolores-river--aw388",
+      "river": "dolores-river",
+      "status": "draft",
+      "description": "06. Bedrock to Gateway",
+      "dayOrExpedition": "unknown",
+      "miles": 45.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "endpoint-identity",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dolores-river--aw388"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dolores-river--aw388"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "dolores-river--aw388"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "dolores-river--aw388"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dolores-river--aw388"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dolores-river--aw389",
+      "river": "dolores-river",
+      "status": "draft",
+      "description": "07. Gateway to Colorado River (UT)",
+      "dayOrExpedition": "unknown",
+      "miles": 31.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "endpoint-identity",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dolores-river--aw389"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dolores-river--aw389"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "dolores-river--aw389"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "dolores-river--aw389"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dolores-river--aw389"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "lake-fork-gunnison--aw405",
+      "river": "lake-fork-gunnison",
+      "status": "draft",
+      "description": "03. BLM CG at Redbridge to Gateview CG",
+      "dayOrExpedition": "unknown",
+      "miles": 4.9,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "endpoint-identity",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw405"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw405"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw405"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw405"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "lake-fork-gunnison--aw406",
+      "river": "lake-fork-gunnison",
+      "status": "draft",
+      "description": "02. Lake City Town Run",
+      "dayOrExpedition": "unknown",
+      "miles": 3.7,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "endpoint-identity",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw406"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw406"
+          ]
+        },
+        {
+          "code": "endpoint-identity",
+          "explanation": "Endpoint identity or geometry conflict in the sources.",
+          "nextAction": "Confirm which facility the official source means (name, river mile, agency map) before linking it to a point.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw406"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "lake-fork-gunnison--aw406"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "animas-river--aw348",
+      "river": "animas-river",
+      "status": "draft",
+      "description": "06. Bakers Bridge to Trimble Lane",
+      "dayOrExpedition": "unknown",
+      "miles": 6.6,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "animas-river--aw348"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "animas-river--aw348"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "animas-river--aw348"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "animas-river--aw348"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "animas-river--aw349",
+      "river": "animas-river",
+      "status": "draft",
+      "description": "07. Trimble Lane to 32nd Street Park",
+      "dayOrExpedition": "unknown",
+      "miles": 11.4,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "animas-river--aw349"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "animas-river--aw349"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "animas-river--aw349"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "animas-river--aw349"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "animas-river--aw351",
+      "river": "animas-river",
+      "status": "draft",
+      "description": "08. 32nd St. Park to Purple Cliffs",
+      "dayOrExpedition": "unknown",
+      "miles": 5.8,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "animas-river--aw351"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "animas-river--aw351"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "animas-river--aw351"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "animas-river--aw351"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "animas-river--aw352",
+      "river": "animas-river",
+      "status": "draft",
+      "description": "09. Purple Cliffs to State Line",
+      "dayOrExpedition": "unknown",
+      "miles": 21.2,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "source-fetch",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "animas-river--aw352"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "animas-river--aw352"
+          ]
+        },
+        {
+          "code": "source-fetch",
+          "explanation": "A required source could not be retrieved.",
+          "nextAction": "Retry the fetch or use an alternate official copy; record the attempt.",
+          "affectedSections": [
+            "animas-river--aw352"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "animas-river--aw352"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "cache-la-poudre--aw3370",
+      "river": "cache-la-poudre",
+      "status": "draft",
+      "description": "09. Below Pineview Falls to Bridges Take-out",
+      "dayOrExpedition": "unknown",
+      "miles": 1.9,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "cache-la-poudre--aw3370"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "cache-la-poudre--aw3370"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "cache-la-poudre--aw3370"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "cache-la-poudre--aw372",
+      "river": "cache-la-poudre",
+      "status": "draft",
+      "description": "10. Below Filter Plant to Picnic Rock Access",
+      "dayOrExpedition": "unknown",
+      "miles": 3.2,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "cache-la-poudre--aw372"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "cache-la-poudre--aw372"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "cache-la-poudre--aw372"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "cache-la-poudre--aw11199",
+      "river": "cache-la-poudre",
+      "status": "draft",
+      "description": "11. Fort Collins Play Park",
+      "dayOrExpedition": "unknown",
+      "miles": 1.4,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "cache-la-poudre--aw11199"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "cache-la-poudre--aw11199"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "cache-la-poudre--aw11199"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "roaring-fork-river--aw1463",
+      "river": "roaring-fork-river",
+      "status": "draft",
+      "description": "05. Basalt to Carbondale",
+      "dayOrExpedition": "unknown",
+      "miles": 11.5,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "roaring-fork-river--aw1463"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "roaring-fork-river--aw1463"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "roaring-fork-river--aw1463"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "roaring-fork-river--aw1463"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "roaring-fork-river--aw11319",
+      "river": "roaring-fork-river",
+      "status": "draft",
+      "description": "Carbondale to Black Bridge",
+      "dayOrExpedition": "unknown",
+      "miles": 7.1,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "roaring-fork-river--aw11319"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "roaring-fork-river--aw11319"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "roaring-fork-river--aw11319"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "roaring-fork-river--aw11319"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "roaring-fork-river--aw418",
+      "river": "roaring-fork-river",
+      "status": "draft",
+      "description": "07. Black Bridge to Veltus Park (Cemetery)",
+      "dayOrExpedition": "unknown",
+      "miles": 6.5,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "roaring-fork-river--aw418"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "roaring-fork-river--aw418"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "roaring-fork-river--aw418"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "roaring-fork-river--aw418"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "roaring-fork-river--aw11318",
+      "river": "roaring-fork-river",
+      "status": "draft",
+      "description": "Wingo to Confluence (Fisherman’s Park)",
+      "dayOrExpedition": "unknown",
+      "miles": 2.3,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "roaring-fork-river--aw11318"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "roaring-fork-river--aw11318"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "roaring-fork-river--aw11318"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "roaring-fork-river--aw11318"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "rio-grande--aw416",
+      "river": "rio-grande",
+      "status": "draft",
+      "description": "04. Wagon Wheel Gap to South Fork",
+      "dayOrExpedition": "unknown",
+      "miles": 11.4,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "rio-grande--aw416"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "rio-grande--aw416"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "rio-grande--aw416"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "rio-grande--aw11116",
+      "river": "rio-grande",
+      "status": "draft",
+      "description": "05. South Fork to Del Norte",
+      "dayOrExpedition": "unknown",
+      "miles": 20.9,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "rio-grande--aw11116"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "rio-grande--aw11116"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "rio-grande--aw11116"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "rio-grande--aw11119",
+      "river": "rio-grande",
+      "status": "draft",
+      "description": "08. Lobatos Bridge to Lee Trail",
+      "dayOrExpedition": "unknown",
+      "miles": 21.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "rio-grande--aw11119"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "rio-grande--aw11119"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "rio-grande--aw11119"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw380",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "06. Hanging Lake Exit 125 (I-70) to Shoshone Power Plant Exit 123 (I-70)",
+      "dayOrExpedition": "unknown",
+      "miles": 2.5,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw380"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw380"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw380"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw380"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw4260",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "07. Shoshone Power Plant, Exit 123 (I-70) to Grizzly Creek, Exit 121 (I-70)",
+      "dayOrExpedition": "unknown",
+      "miles": 1.7,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4260"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4260"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4260"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4260"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw5428",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "08. Grizzly Creek to Two Rivers Park",
+      "dayOrExpedition": "unknown",
+      "miles": 5.9,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw5428"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw5428"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw5428"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw5428"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw10349",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "09. Two Rivers to South Canyon",
+      "dayOrExpedition": "unknown",
+      "miles": 5.3,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10349"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10349"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10349"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10349"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw10348",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "10. South Canyon to New Castle",
+      "dayOrExpedition": "unknown",
+      "miles": 6.7,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10348"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10348"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10348"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10348"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw10682",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "11. New Castle to Cameo",
+      "dayOrExpedition": "unknown",
+      "miles": 61.9,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10682"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10682"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10682"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10682"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw4261",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "12. Big Sur",
+      "dayOrExpedition": "unknown",
+      "miles": 1.2,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4261"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4261"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4261"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw4261"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-glenwood--aw10520",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "13. Grand Junction Town",
+      "dayOrExpedition": "unknown",
+      "miles": 31.6,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10520"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10520"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10520"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-glenwood--aw10520"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "dotsero-to-bair-ranch",
+      "river": "colorado-river-glenwood",
+      "status": "draft",
+      "description": "Dotsero Landing Boat Ramp to Bair Ranch",
+      "dayOrExpedition": "unknown",
+      "miles": 6.5,
+      "mileSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015 Map 12 'Length: 6.5 miles'",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "dotsero-to-bair-ranch"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "dotsero-to-bair-ranch"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "dotsero-to-bair-ranch"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "dotsero-to-bair-ranch"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-gore--aw377",
+      "river": "colorado-river-gore",
+      "status": "draft",
+      "description": "01. Hot Sulphur Springs to Hwy 40 bridge",
+      "dayOrExpedition": "unknown",
+      "miles": 2.7,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-gore--aw377"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-gore--aw377"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-gore--aw377"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "colorado-river-gore--aw378",
+      "river": "colorado-river-gore",
+      "status": "draft",
+      "description": "02. Gore Canyon",
+      "dayOrExpedition": "unknown",
+      "miles": 9.7,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "current-status",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "colorado-river-gore--aw378"
+          ]
+        },
+        {
+          "code": "current-status",
+          "explanation": "Current operating status/advisory needs re-checking.",
+          "nextAction": "Re-check the managing agency's current conditions page before promoting.",
+          "affectedSections": [
+            "colorado-river-gore--aw378"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "colorado-river-gore--aw378"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "gunnison-river-north-fork-to-delta--aw11627",
+      "river": "gunnison-river-north-fork-to-delta",
+      "status": "draft",
+      "description": "05. Gunnison Forks to Austin",
+      "dayOrExpedition": "unknown",
+      "miles": 12.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "route-geometry",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "gunnison-river-north-fork-to-delta--aw11627"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "gunnison-river-north-fork-to-delta--aw11627"
+          ]
+        },
+        {
+          "code": "route-geometry",
+          "explanation": "route-geometry",
+          "nextAction": "Review the hydrography path against the official river-mile source; do not replace published mileage with the trace.",
+          "affectedSections": [
+            "gunnison-river-north-fork-to-delta--aw11627"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "gunnison-river-north-fork-to-delta--aw11627"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "eagle-river--aw2882",
+      "river": "eagle-river",
+      "status": "draft",
+      "description": "06. Edwards to Eagle",
+      "dayOrExpedition": "unknown",
+      "miles": 15.8,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "eagle-river--aw2882"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "eagle-river--aw2882"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "eagle-river--aw2882"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "eagle-river--aw11135",
+      "river": "eagle-river",
+      "status": "draft",
+      "description": "07. Eagle to Gypsum",
+      "dayOrExpedition": "unknown",
+      "miles": 8.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "eagle-river--aw11135"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "eagle-river--aw11135"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "eagle-river--aw11135"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "eagle-river--aw11136",
+      "river": "eagle-river",
+      "status": "draft",
+      "description": "08. Gypsum to Dotsero",
+      "dayOrExpedition": "unknown",
+      "miles": 9.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "eagle-river--aw11136"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "eagle-river--aw11136"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "eagle-river--aw11136"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "blue-river--aw363",
+      "river": "blue-river",
+      "status": "draft",
+      "description": "03. Green Mountain Reservoir to Spring Creek Road",
+      "dayOrExpedition": "unknown",
+      "miles": 4.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "access-permission",
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "access-permission",
+          "explanation": "access-permission",
+          "nextAction": "Get the owner's/agency's written boating-access terms (official page or regulation); do not upgrade on imagery.",
+          "affectedSections": [
+            "blue-river--aw363"
+          ]
+        },
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "blue-river--aw363"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "blue-river--aw363"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "blue-river--aw363"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "north-platte--aw2464",
+      "river": "north-platte",
+      "status": "draft",
+      "description": "01. State line to Pickaroon (Northgate Canyon)",
+      "dayOrExpedition": "unknown",
+      "miles": 18.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "north-platte--aw2464"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "north-platte--aw2464"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "north-platte--aw2464"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "san-juan-colorado--aw3171",
+      "river": "san-juan-colorado",
+      "status": "draft",
+      "description": "01. Riverside Campground to Yamaguchi Park",
+      "dayOrExpedition": "unknown",
+      "miles": 2.5,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "san-juan-colorado--aw3171"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "san-juan-colorado--aw3171"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "san-juan-colorado--aw3171"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    },
+    {
+      "id": "san-juan-colorado--aw420",
+      "river": "san-juan-colorado",
+      "status": "draft",
+      "description": "02. Pagosa Springs to Trujillo Rd",
+      "dayOrExpedition": "unknown",
+      "miles": 32.0,
+      "mileSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "milePriority": 2,
+      "mapReadiness": "pending",
+      "guideRange": false,
+      "calibratedEstimate": false,
+      "timingReadiness": "unavailable",
+      "restrictions": [],
+      "requiresAppSupport": false,
+      "blockers": [
+        "calibration-review",
+        "exact-location",
+        "timing-evidence"
+      ],
+      "checkedOn": "2026-10-26",
+      "blockerDetails": [
+        {
+          "code": "calibration-review",
+          "explanation": "No calibrated speed/flow pair; timing.mode stays 'unavailable'.",
+          "nextAction": "Needs a coding/review decision with compatible trip observations, gauge and craft; none collected yet.",
+          "affectedSections": [
+            "san-juan-colorado--aw420"
+          ]
+        },
+        {
+          "code": "exact-location",
+          "explanation": "exact-location",
+          "nextAction": "Find a managing-agency point/map for the water entry (agency GIS, detailed official map), or keep as access-area.",
+          "affectedSections": [
+            "san-juan-colorado--aw420"
+          ]
+        },
+        {
+          "code": "timing-evidence",
+          "explanation": "No published duration for these endpoints found yet.",
+          "nextAction": "Look for an official or outfitter (CROA) published duration for the same endpoints.",
+          "affectedSections": [
+            "san-juan-colorado--aw420"
+          ]
+        }
+      ],
+      "evidenceRefs": []
+    }
+  ]
+}

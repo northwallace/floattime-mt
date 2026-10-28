@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "purpose": "PROPOSALS ONLY. Nothing here is applied to the catalog. Each needs a human decision.",
+  "proposals": [
+    {
+      "label": "Dry Canyon Boat Take-Out (Gila Box)",
+      "inventoryId": "AZ-ACC-0020",
+      "current": {
+        "lat": 32.8922,
+        "lon": -109.4921,
+        "source": "BLM visit page Geographic Coordinates"
+      },
+      "proposed": {
+        "lat": 32.88535014,
+        "lon": -109.49938087,
+        "source": "BLM National Recreation Site Points OBJECTID 83867 'Dry Canyon Boat Take Out' (research/raw/gis/blm_az_L*.json)"
+      },
+      "evidence": "research/raw/imagery/dry_canyon_blm_gis_83867.png: the GIS point is on the north (river-right) bank beside the river, NHD flowline 18 m (NHD id 142951901, flow bearing 257). The page coordinate is ~1 km away and snaps 559 m from the river.",
+      "why": "Both coordinates are BLM. The GIS point matches the river on imagery; the page coordinate does not. Even if adopted, Dry Canyon stays pending until the flood damage reported Oct 4, 2026 (non-agency) is resolved by a BLM source. Imagery may pre-date the flood.",
+      "status": "proposal"
+    },
+    {
+      "label": "Gila River Boat Put-In (Gila Box)",
+      "inventoryId": "AZ-ACC-0019",
+      "current": {
+        "lat": 32.96498,
+        "lon": -109.30982
+      },
+      "alternative": {
+        "lat": 32.96527645,
+        "lon": -109.30975125,
+        "source": "BLM GIS OBJECTID 61446"
+      },
+      "why": "Page and GIS coordinates differ by ~35 m; no change needed. Recorded for completeness.",
+      "status": "info"
+    },
+    {
+      "label": "Beasley Flat (Verde)",
+      "inventoryId": "AZ-ACC-0013",
+      "current": {
+        "lat": 34.4734529,
+        "lon": -111.8012007,
+        "source": "Owner-supplied: North's own Google Maps satellite marking, checked on Esri World Imagery 2026-10-26"
+      },
+      "superseded": {
+        "lat": 34.476515,
+        "lon": -111.800708,
+        "source": "USFS EDW Recreation Opportunities, recareaid 67209 'Beasley Flat Picnic Site' (Prescott NF page: 34.47651531, -111.8007081)",
+        "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67209&outFields=*&outSR=4326&f=json"
+      },
+      "why": "Applied 2026-10-26 (v1.1) on the owner's instruction: the agency point is not at the water (see the note in catalog/map_points/AZ.json); the owner-supplied point was checked on Esri z19 imagery and against the NHD flowline. Recorded so the agency coordinate is not lost.",
+      "status": "applied (IMAGERY-PLACED)"
+    },
+    {
+      "label": "Phon D Sutton Day Use Area (Lower Salt)",
+      "inventoryId": "AZ-ACC-0004",
+      "current": {
+        "lat": 33.5465461,
+        "lon": -111.6616464,
+        "source": "Owner-supplied: North's own Google Maps satellite marking, checked on Esri World Imagery 2026-10-26"
+      },
+      "superseded": {
+        "lat": 33.54697106,
+        "lon": -111.6571505,
+        "source": "Tonto NF Phon D Sutton page coordinate (USFS EDW Recreation Opportunities recareaid 35397 'Phon D Sutton Day Use Area': 33.547016, -111.657843)",
+        "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35397&outFields=*&outSR=4326&f=json"
+      },
+      "why": "Applied 2026-10-26 (v1.2) on the owner's instruction: the agency point is not at the water (see the note in catalog/map_points/AZ.json); the owner-supplied point was checked on Esri z19 imagery and against the NHD flowline. Recorded so the agency coordinate is not lost.",
+      "status": "applied (IMAGERY-PLACED)"
+    },
+    {
+      "label": "Water Users Day Use Area (Lower Salt)",
+      "inventoryId": "AZ-ACC-0001",
+      "current": {
+        "lat": 33.5541561,
+        "lon": -111.5433992,
+        "source": "Owner-supplied: North's own Google Maps satellite marking, checked on Esri World Imagery 2026-10-26"
+      },
+      "superseded": {
+        "lat": 33.555518,
+        "lon": -111.543833,
+        "source": "USFS EDW Recreation Opportunities, recareaid 35407 'Water Users Day Use Area' (same coordinate on the Tonto NF page)",
+        "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35407&outFields=*&outSR=4326&f=json"
+      },
+      "why": "Applied 2026-10-26 (v1.1) on the owner's instruction: the agency point is not at the water (see the note in catalog/map_points/AZ.json); the owner-supplied point was checked on Esri z19 imagery and against the NHD flowline. Recorded so the agency coordinate is not lost.",
+      "status": "applied (IMAGERY-PLACED)"
+    },
+    {
+      "label": "Blue Point Day Use Area (Lower Salt)",
+      "inventoryId": "AZ-ACC-0002",
+      "current": {
+        "lat": 33.5552977,
+        "lon": -111.5737484,
+        "source": "Tonto NF page coordinate (EDW recareaid 35405: 33.555298, -111.573748)",
+        "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35405&outFields=*&outSR=4326&f=json"
+      },
+      "proposed": {
+        "lat": 33.553972,
+        "lon": -111.5750868,
+        "source": "Owner-supplied: North Wallace's own Google Maps satellite marking of the boat-entry spot (33.5539720, -111.5750868); not an agency coordinate",
+        "sourceUrl": "https://www.google.com/maps?q=33.5539720,-111.5750868&t=k"
+      },
+      "checks": {
+        "checkedOn": "2026-10-26",
+        "nhd": "NHD HR Salt River flowline (permanent_identifier 139048886, artificial path) 49 m; flow bearing ~28 (north under the Bush Highway bridge); computed side river-right (east bank), imagery agrees",
+        "imagery": "Esri z19/z18/z17: open sand beach on the east bank immediately south of the Bush Highway (Blue Point) bridge abutment, roughly 15-20 m from the waterline. The beach is reached from the ramada parking lots SOUTH of Bush Highway. The Tonto Blue Point page/EDW coordinate (recareaid 35405) is in the separate parking lot NORTH of Bush Highway, 193 m away; the Tonto Pebble Beach Day Use Area page coordinate (33.552669, -111.574027) is in the ramada lots south of the highway, 175 m away (Pebble Beach EDW recareaid 35437: 422 m).",
+        "distancesM": {
+          "bluePointAgencyM": 193,
+          "pebbleBeachPageM": 175,
+          "pebbleBeachEdwM": 422,
+          "sheepsCrossingEdwM": 297,
+          "nhdFlowlineM": 49,
+          "alongRiverUpstreamOfBluePointAgencyM": 155
+        }
+      },
+      "evidence": [
+        "research/raw/imagery/blue_point_day_use_area_lower_salt_owner_z19.png",
+        "research/raw/imagery/blue_point_day_use_area_lower_salt_owner_z18.png",
+        "research/raw/imagery/blue_point_day_use_area_lower_salt_owner_z17.png",
+        "research/raw/imagery/nhd_blue_point_day_use_area_lower_salt_owner.json",
+        "research/raw/imagery/edw_sites_near_blue_point_owner.json",
+        "research/raw/agency/fs_blue_point.txt",
+        "research/raw/agency/fs_pebble_beach.txt",
+        "research/raw/agency/fs_alert_lsr_occupancy.txt",
+        "research/raw/imagery/blue_point_sheeps_pebble_overview_owner_z17.png",
+        "research/raw/gis/usfs_infra_recsites_blue_point_area.json",
+        "research/raw/gis/usfs_recinfra02_blue_point_area.json",
+        "research/raw/agency/fs_sheep_crossing.txt"
+      ],
+      "why": "NOT promoted. The point is at the water's edge on a public Tonto NF beach, but it sits on the Pebble Beach side of Bush Highway (nearer the Pebble Beach page coordinate than the Blue Point one), so it is not confidently the Blue Point Day Use Area access named by the agency. Tonto lists Blue Point and Pebble Beach as separate developed sites (special occupancy order; Mesa RD site list). Options for a human decision: (a) North confirms he means the beach south of the bridge and the coder accepts it as Blue Point's water access (bank river-right; if applied, the point is ~155 m further upstream along the NHD line than the agency point's nearest river spot, so Water Users - Blue Point would get ~0.1 mi shorter and Blue Point - Phon D ~0.1 mi longer, to be re-routed); (b) North marks the Blue Point beach on the east bank NORTH of the bridge, by the Blue Point lot; or (c) add Pebble Beach Day Use Area as its own endpoint (Tonto: 'most popular inner tube starting and take-out point', 'non-motorized boating'), which would be a new section split, not a silent substitute.",
+      "reassessment": {
+        "version": "v1.4",
+        "checkedOn": "2026-10-26",
+        "ownerStatement": "North (2026-10-26): 'The other side of blue point is sheep's crossing here (33.5570496, -111.5779518)', i.e. he identifies his marked beach as Blue Point and the site across the river as Sheeps Crossing.",
+        "evidenceFor": [
+          "North's identification of the marked beach as Blue Point (owner statement; counts as identity evidence, not agency evidence).",
+          "Tonto calls the Bush Highway bridge 'Blue Point Bridge' (Sheep Crossing page directions: 'to the site just west of Blue Point Bridge'), and the Blue Point page says 'The area has a large beach'.",
+          "The beach is at the water's edge (NHD 49 m, roughly 15-20 m from the waterline on imagery), river-right, on Tonto NF land inside the Lower Salt described area."
+        ],
+        "evidenceAgainst": [
+          "USFS INFRA recreation-site points (EDW_InfraRecreationSites_01 / EDW_RecInfraRecreationSites_02, research/raw/gis/usfs_infra_recsites_blue_point_area.json): 'PEBBLE BEACH' picnic site 95705 (portal 35437) is at 33.552674, -111.574038, inside the ramada lots south of Bush Highway that lead straight to the marked beach (174 m); 'BLUE POINT RECREATION SITE' 95316 (portal 35405) is at 33.555303, -111.573759, in the separate lot north of the highway (192 m). Two independent agency records (recarea page and INFRA site inventory) agree on this split.",
+          "Tonto Pebble Beach page: 'most popular inner tube starting and take-out point', with families 'at the water’s edge' - i.e. the beach beside the south lots has its own agency-named tubing access.",
+          "North's own statement fits the Blue Point lot north of the highway at least as well: the Sheeps Crossing lot (INFRA 95706, 33.556041, -111.577120) is directly across the river from the Blue Point lot, both north of Bush Highway; it does not place Blue Point south of the bridge."
+        ],
+        "notDecisive": "Tonto order 03-12-03-23-39 Exhibit A map (https://www.fs.usda.gov/sites/nfs/files/r03/tonto/publication/alerts/03-12-03-23-39%20Lower%20Salt%20Special%20Occupancy%20Use%20Order%20map.pdf, fetched 2026-10-26, 5.9 MB image-only PDF, not retained for size) shows Blue Point and Pebble Beach as adjacent picnic icons at ~1:60,000; it cannot assign the beach at the bridge to either site. OpenStreetMap (supporting only) was not reachable (Overpass 406/timeout).",
+        "decision": "Still NOT promoted (v1.4). The spot is real water's edge, but two agency records put the lots that serve it under Pebble Beach and Blue Point's own lot across the highway; the owner statement does not resolve that conflict. Blue Point stays pending (access-verified).",
+        "resolvingFact": "One fact would settle it: an agency source (Tonto site map, sign or page) showing that the beach at the south abutment of Blue Point Bridge belongs to Blue Point rather than Pebble Beach. The practical alternative: North marks the water's edge on the east bank NORTH of Bush Highway, reached from the Blue Point lot (the open sand between that lot and the river just north of the bridge), which would avoid the conflict; or the coder decides to add Pebble Beach as its own endpoint, for which this marking is a strong candidate."
+      },
+      "status": "proposal (owner-supplied, not applied v1.3, reassessed and still not applied v1.4)"
+    },
+    {
+      "label": "Sheeps Crossing Day Use Area (Lower Salt)",
+      "inventoryId": null,
+      "nonRegistryId": "AZ-NRC-0001",
+      "proposed": {
+        "lat": 33.5570496,
+        "lon": -111.5779518,
+        "source": "Owner-supplied: North Wallace's own Google Maps satellite marking (33.5570496, -111.5779518); not an agency coordinate",
+        "sourceUrl": "https://www.google.com/maps?q=33.5570496,-111.5779518&t=k"
+      },
+      "agency": {
+        "name": "USDA Forest Service, Tonto NF: Sheep Crossing Day Use Area",
+        "url": "https://www.fs.usda.gov/r03/tonto/recreation/sheep-crossing-day-use-area",
+        "pageLat": 33.55603604,
+        "pageLon": -111.5771091,
+        "edwRecareaId": 35435,
+        "infraSiteId": "95706",
+        "text": "'The area is ideal for a day of floating leisurely down the Salt River.' 'There are no designated docks, ramps, or launch sites. No motor boats.' Directions: 'to the site just west of Blue Point Bridge'. Activities list 'Boating - Non-Motorized'."
+      },
+      "checks": {
+        "checkedOn": "2026-10-26",
+        "nhd": "NHD HR Salt River flowline 139048883 (artificial path) 36 m; flow bearing ~261 (west, below the bend north of the bridge); computed side river-left",
+        "imagery": "Esri z19/z18: open sand shore at the waterline (~10 m from the water) on the south bank of the west-flowing reach, at the north edge of the Sheeps Crossing area; the Sheeps Crossing ramadas are ~60-80 m south. Same land as the west bank of the north-flowing reach under the bridge, i.e. the opposite bank from North's Blue Point marking (river-right, east bank).",
+        "bank": "river-left (opposite bank from the Blue Point marking, which is river-right)",
+        "distancesM": {
+          "sheepsCrossingEdwInfraM": 136,
+          "sheepsCrossingPageM": 137,
+          "northBluePointMarkingM": 432,
+          "bluePointAgencyM": 435,
+          "pebbleBeachPageM": 606,
+          "nhdFlowlineM": 36
+        }
+      },
+      "evidence": [
+        "research/raw/imagery/sheeps_crossing_lower_salt_owner_z19.png",
+        "research/raw/imagery/sheeps_crossing_lower_salt_owner_z18.png",
+        "research/raw/imagery/blue_point_sheeps_pebble_overview_owner_z17.png",
+        "research/raw/imagery/nhd_sheeps_crossing_day_use_area_lower_salt_owner.json",
+        "research/raw/agency/fs_sheep_crossing.txt",
+        "research/raw/gis/usfs_infra_recsites_blue_point_area.json"
+      ],
+      "why": "Owner-supplied context point (v1.4), recorded for the Blue Point identity question only. Tonto: There are no designated docks, ramps, or launch sites. No motor boats. Not a registry point or section endpoint; nothing applied.",
+      "status": "non-registry candidate (research only)"
+    },
+    {
+      "label": "South Cove (Lake Mead) - alternative Grand Canyon take-out",
+      "inventoryId": null,
+      "proposed": {
+        "lat": 36.0904679,
+        "lon": -114.1054168,
+        "source": "NPS Public POIs (LAKE) OBJECTID 21407, research/raw/gis/nps_LAKE.json"
+      },
+      "why": "NPS: River runners can take-out at either South Cove or Pearce Ferry South Cove is on Lake Mead (flat water below Pearce Ferry); imagery and lake level were not reviewed. Possible new section, not added.",
+      "status": "proposal (new point)"
+    }
+  ]
+}

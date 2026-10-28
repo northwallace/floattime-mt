@@ -1,0 +1,43 @@
+{
+  "id": "colorado-river-moab",
+  "name": "Colorado River (Professor Valley / Moab Daily)",
+  "gauge": "09180500",
+  "gaugeName": "Colorado River near Cisco, UT",
+  "lat": 38.9704,
+  "lon": -109.2507,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Upper Colorado along Utah Highway 128: flatwater from Cisco and Dewey Bridge, then the Class I-III Moab Daily (Fisher Towers section).",
+  "sections": [
+    {
+      "id": "cisco-dewey-bridge",
+      "putIn": "Cisco Takeout",
+      "takeOut": "Dewey Bridge Boat Ramp",
+      "miles": 16.0,
+      "difficulty": "Class I",
+      "notes": "Flatwater. Miles (16.0) are NHD High Resolution centreline-routed between the agency points; no agency mileage found."
+    },
+    {
+      "id": "dewey-bridge-hittle-bottom",
+      "putIn": "Dewey Bridge Boat Ramp",
+      "takeOut": "Hittle Bottom Boat Ramp",
+      "miles": 6.6,
+      "difficulty": "Class I",
+      "notes": "Flatwater. Miles (6.6) are NHD High Resolution centreline-routed between the agency points; no agency mileage found."
+    },
+    {
+      "id": "moab-daily",
+      "putIn": "Hittle Bottom Boat Ramp",
+      "takeOut": "Takeout Beach Boat Ramp",
+      "miles": 13.0,
+      "difficulty": "Class I–III",
+      "notes": "BLM Moab Daily (Fisher Towers section): 13 miles, rapids Class I to Class III depending on season and water level. NPS Canyonlands: 'Permits are not required for overnight use or launches on BLM land along the Colorado River.'"
+    }
+  ],
+  "state": "UT",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  }
+}

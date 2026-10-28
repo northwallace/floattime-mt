@@ -1,0 +1,47 @@
+{
+  "id": "rio-grande",
+  "name": "Rio Grande (Lobatos Bridge to Lee Trail)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "Lobatos Bridge put-in has no official point; gauge seasonal.",
+  "blockers": [
+    "exact-location",
+    "calibration-review"
+  ],
+  "accessPoints": [
+    "CO-ACC-0116"
+  ],
+  "candidateSections": [
+    {
+      "id": "rio-grande--aw416",
+      "awId": "416",
+      "description": "04. Wagon Wheel Gap to South Fork",
+      "difficulty": "IItoIIIplus",
+      "milesCandidate": 11.4,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "RIOWAGCO",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/416/main"
+    },
+    {
+      "id": "rio-grande--aw11116",
+      "awId": "11116",
+      "description": "05. South Fork to Del Norte",
+      "difficulty": "II",
+      "milesCandidate": 20.9,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "RIODELCO",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/11116/main"
+    },
+    {
+      "id": "rio-grande--aw11119",
+      "awId": "11119",
+      "description": "08. Lobatos Bridge to Lee Trail",
+      "difficulty": "II",
+      "milesCandidate": 21.0,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "RIOLOBCO",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/11119/main"
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

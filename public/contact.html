@@ -21,7 +21,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="middle.css">
+  <link rel="stylesheet" href="styles.css?v=20261023-1"><link rel="stylesheet" href="middle.css?v=20261027-1">
 </head>
 <body>
   <header class="hero hero-legal">
@@ -35,6 +35,9 @@
             <a href="/montana">Montana</a>
             <a href="/idaho">Idaho</a>
             <a href="/oregon">Oregon</a>
+            <a href="/washington">Washington</a>
+            <a href="/utah">Utah</a>
+            <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a>
           </div>
         </details>
         <a href="/about.html">About</a>
@@ -73,7 +76,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <a class="brand" href="/"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></a>
-      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a></p>
+      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/washington">Washington</a> · <a href="/utah">Utah</a> · <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a> · <a href="/feedback.html?type=float-request">Request a float</a></p>
       <p class="copyright">© <span id="year"></span> Float ETA · <a href="https://www.floateta.com">floateta.com</a></p>
     </div>
   </footer>
@@ -82,6 +85,10 @@
     const form = document.getElementById("contactForm");
     const btn = document.getElementById("contactSubmit");
     const status = document.getElementById("contactStatus");
+    const contactParams = new URLSearchParams(location.search);
+    if (contactParams.get("type") === "correction" && contactParams.get("river")) {
+      document.getElementById("contactMessage").value = `River correction: ${contactParams.get("river")}\n\n`;
+    }
     form.addEventListener("submit", async (ev) => {
       ev.preventDefault();
       btn.disabled = true;

@@ -1,0 +1,89 @@
+{
+  "id": "gunnison-river-denca",
+  "name": "Gunnison River — Delta to Whitewater (Dominguez-Escalante NCA)",
+  "gauge": "09152500",
+  "gaugeName": "Gunnison River near Grand Junction, CO (USGS 09152500)",
+  "lat": 38.85,
+  "lon": -108.3,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Class I–II desert canyon float through Dominguez-Escalante NCA; self-issued free overnight camping permits.",
+  "state": "CO",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "confluence-park-to-whitewater",
+      "putIn": "Confluence Park Boat Launch (Delta)",
+      "takeOut": "Whitewater Boat Launch",
+      "miles": 39.0,
+      "difficulty": "Class I–II",
+      "notes": "Overnight boaters self-issue a free camping permit at Escalante Boat Launch. Mileage: BLM Dominguez-Escalante NCA Gunnison River overview / float guide.",
+      "multiDay": true,
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 3,
+          "unit": "days",
+          "conditions": "BLM DENCA float guide: 'Expect 2-3 days to float this entire stretch of river'",
+          "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Permit",
+          "text": "BLM DENCA: overnight boaters self-issue a free camping permit.",
+          "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "escalante-to-whitewater",
+      "putIn": "Escalante Boat Launch",
+      "takeOut": "Whitewater Boat Launch",
+      "miles": 29.0,
+      "difficulty": "Class I–II",
+      "notes": "Hail Mary Rapid ~1 mile below the launch. Overnight boaters self-issue a free camping permit. Mileage: BLM Dominguez-Escalante NCA Gunnison River overview / float guide.",
+      "notices": [
+        {
+          "title": "Permit",
+          "text": "BLM DENCA: overnight boaters self-issue a free camping permit.",
+          "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "bridgeport-to-whitewater",
+      "putIn": "Bridgeport Trailhead",
+      "takeOut": "Whitewater Boat Launch",
+      "miles": 14.0,
+      "difficulty": "Class I–II",
+      "notes": "Small craft only: carry on a trail under the railroad bridge; walking over the tracks is trespass. Mileage: BLM Dominguez-Escalante NCA Gunnison River overview / float guide.",
+      "notices": [
+        {
+          "title": "Permit",
+          "text": "BLM DENCA: overnight boaters self-issue a free camping permit.",
+          "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+          "checkedOn": "2026-10-26"
+        },
+        {
+          "title": "Access limitation",
+          "text": "BLM: Bridgeport is small craft only via the trail under the railroad bridge; walking over the tracks is trespass.",
+          "sourceName": "BLM Dominguez-Escalante NCA Gunnison River overview / float guide",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cache-la-poudre",
+  "name": "Cache la Poudre (Poudre Canyon)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "USFS sites not yet matched to AW reaches; canyon gauge returned no discharge observations in the 7-day check.",
+  "blockers": [
+    "exact-location",
+    "calibration-review"
+  ],
+  "accessPoints": [],
+  "candidateSections": [
+    {
+      "id": "cache-la-poudre--aw3370",
+      "awId": "3370",
+      "description": "09. Below Pineview Falls to Bridges Take-out",
+      "difficulty": "III",
+      "milesCandidate": 1.9,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "CLAFTCCO",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/3370/main"
+    },
+    {
+      "id": "cache-la-poudre--aw372",
+      "awId": "372",
+      "description": "10. Below Filter Plant to Picnic Rock Access",
+      "difficulty": "IItoIII",
+      "milesCandidate": 3.2,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "CLAFTCCO",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/372/main"
+    },
+    {
+      "id": "cache-la-poudre--aw11199",
+      "awId": "11199",
+      "description": "11. Fort Collins Play Park",
+      "difficulty": "II",
+      "milesCandidate": 1.4,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "06752260",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/11199/main"
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

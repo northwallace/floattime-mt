@@ -5,8 +5,8 @@
   "gaugeName": "Gallatin near Gallatin Gateway",
   "lat": 45.507,
   "lon": -111.271,
-  "refFlowCfs": 800,
-  "refSpeedMph": 3.2,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
   "blurb": "The mellow valley miles below the canyon whitewater. Shallow and quick.",
   "sections": [
     {
@@ -15,9 +15,13 @@
       "takeOut": "Shedd's Bridge",
       "miles": 9,
       "difficulty": "Class I–II",
-      "notes": "Gets bony by August — check the flow before you commit."
+      "notes": "Do not plan this route yet: FWP’s 2017 access guide listed Shedd’s Bridge closed because of an unstable bank. A current usable take-out has not been confirmed."
     }
   ],
   "state": "MT",
-  "timezone": "America/Denver"
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "This route’s intended take-out is unresolved. FWP’s 2017 guide lists Shedd’s Bridge closed because of an unstable bank, and current managed-access GIS does not identify a replacement. Confirm a usable legal take-out before planning this trip."
+  }
 }

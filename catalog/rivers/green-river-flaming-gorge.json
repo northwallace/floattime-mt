@@ -1,0 +1,54 @@
+{
+  "id": "green-river-flaming-gorge",
+  "name": "Green River (Flaming Gorge)",
+  "gauge": "09234500",
+  "gaugeName": "Green River near Greendale, UT",
+  "lat": 40.9088,
+  "lon": -109.4222,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Dam-release tailwater below Flaming Gorge Dam through Red Canyon (Section A), to Browns Park (B) and on through Browns Park (C). Cold, clear water; PFDs required; no motors.",
+  "sections": [
+    {
+      "id": "flaming-gorge-a",
+      "putIn": "Spillway Boat Launch (Flaming Gorge)",
+      "takeOut": "Little Hole Boat Launch",
+      "miles": 7.0,
+      "difficulty": "Class I–II",
+      "notes": "Section A. USFS: 7 miles, rapids class I and II. BLM: flotation tubes NOT recommended; PFDs required; flows fluctuate with dam releases (800-4500+ cfs).",
+      "guideTimes": [
+        {
+          "min": 3,
+          "max": 3,
+          "unit": "hours",
+          "conditions": "Red Canyon Lodge describes about three hours travelling straight through the seven-mile Section A. This is approximate visitor guidance with no stated flow or craft-specific calibration; fishing and other stops can make the trip much longer.",
+          "sourceName": "Red Canyon Lodge: Flaming Gorge rafting guide",
+          "sourceUrl": "https://redcanyonlodge.com/flaming-gorge-rafting/",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "flaming-gorge-b",
+      "putIn": "Little Hole Boat Launch",
+      "takeOut": "Indian Crossing Boat Ramp",
+      "miles": 8.4,
+      "difficulty": "Class III–IV",
+      "notes": "Section B. Red Creek Rapid (BLM: Class III-IV, ~mile 11.5) - scout. Miles: brochure river miles 7 (Little Hole) to 15.4 (Indian Crossing). BLM identifies Red Creek Rapids as Class III–IV; this difficulty is reflected in the section rating."
+    },
+    {
+      "id": "flaming-gorge-c",
+      "putIn": "Indian Crossing Boat Ramp",
+      "takeOut": "Swallow Canyon Boat Ramp",
+      "miles": 10.8,
+      "difficulty": "Class I",
+      "notes": "Section C through Browns Park; mostly flat water. Miles from 1990s brochure ramp list (15.4 to 26.2); newer BLM map lists Swallow Canyon camp at mile 27.0. Swallow Canyon ramp is river left."
+    }
+  ],
+  "state": "UT",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  }
+}

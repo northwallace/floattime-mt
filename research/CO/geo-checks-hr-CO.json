@@ -1,0 +1,2635 @@
+{
+ "version": 1,
+ "state": "CO",
+ "purpose": "v1.1 targeted visual + NHDPlus HR checks of agency pins (research only; not read by the app).",
+ "flowlineService": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query",
+ "areaService": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query",
+ "imagery": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+ "method": "Distance = nearest segment of the named-river NetworkNHDFlowline (HR) to the pin, local equirectangular metres. Bank = side of the digitised centreline relative to its flow direction. NHDArea = StreamRiver polygons; pin inside polygon means it plots in the mapped channel.",
+ "points": {
+  "CO-ACC-0001": {
+   "id": "CO-ACC-0001",
+   "name": "Pumphouse Boat Launch",
+   "river": "Colorado River",
+   "lat": 39.98931,
+   "lon": -106.50902,
+   "featureKind": "launch",
+   "source": "BLM 90084",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.50902%2C39.98931&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.50902%2C39.98931&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 86.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 239,
+    "nhdPermanentId": "88880703",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001007406"
+   },
+   "nearestAnyFlowline": {
+    "distM": 17.0,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 247,
+    "nhdPermanentId": "88880709",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14010001000173"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 17.0,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 247,
+    "nhdPermanentId": "88880709",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14010001000173"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": true,
+    "distToPolygonEdgeM": 1.4
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0001.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.458,
+    "widthM": 586,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "c4b7dc413ba1d7ffd74b106076302bc49af07d48063ef7a82f2ce57a9cc5096a"
+   }
+  },
+  "CO-ACC-0002": {
+   "id": "CO-ACC-0002",
+   "name": "Radium Boat Ramp",
+   "river": "Colorado River",
+   "lat": 39.94904,
+   "lon": -106.5566,
+   "featureKind": "ramp",
+   "source": "BLM 69469",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.5566%2C39.94904&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.5566%2C39.94904&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 50.3,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 97,
+    "nhdPermanentId": "162752844",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000139"
+   },
+   "nearestAnyFlowline": {
+    "distM": 50.3,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 97,
+    "nhdPermanentId": "162752844",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000139"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 50.3,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 97,
+    "nhdPermanentId": "162752844",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000139"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 27.4
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0002.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.458,
+    "widthM": 586,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "db3a154d20403e51d2c986f2b77512dd3d29b518bf8ef65269fd0558ad20bc3d"
+   }
+  },
+  "CO-ACC-0004": {
+   "id": "CO-ACC-0004",
+   "name": "State Bridge Boat Ramp",
+   "river": "Colorado River",
+   "lat": 39.85742,
+   "lon": -106.64731,
+   "featureKind": "ramp",
+   "source": "BLM 69267",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.64731%2C39.85742&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.64731%2C39.85742&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 32.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 320,
+    "nhdPermanentId": "88884971",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000084"
+   },
+   "nearestAnyFlowline": {
+    "distM": 32.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 320,
+    "nhdPermanentId": "88884971",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000084"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 32.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 320,
+    "nhdPermanentId": "88884971",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000084"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 3.0
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0004.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.458,
+    "widthM": 587,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "73c4e752ffaf7ee6b5870f014c609322bb0e30d87e4ee65146458229d816321d"
+   }
+  },
+  "CO-ACC-0005": {
+   "id": "CO-ACC-0005",
+   "name": "Two Bridges Boat Ramp",
+   "river": "Colorado River",
+   "lat": 39.89132,
+   "lon": -106.70387,
+   "featureKind": "launch",
+   "source": "BLM 79478",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.70387%2C39.89132&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.70387%2C39.89132&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 22.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 32,
+    "nhdPermanentId": "88874705",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000075"
+   },
+   "nearestAnyFlowline": {
+    "distM": 22.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 32,
+    "nhdPermanentId": "88874705",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000075"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 22.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 32,
+    "nhdPermanentId": "88874705",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000075"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 1.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0005.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.458,
+    "widthM": 586,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "11614307befde48d0492fd5e49e64d58ee41eb6d8699c3f0eb3c89e3b5ee800e"
+   }
+  },
+  "CO-ACC-0006": {
+   "id": "CO-ACC-0006",
+   "name": "Catamount Bridge Boat Ramp",
+   "river": "Colorado River",
+   "lat": 39.8909,
+   "lon": -106.83346,
+   "featureKind": "ramp",
+   "source": "BLM 90105",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.83346%2C39.8909&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.83346%2C39.8909&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 16.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 250,
+    "nhdPermanentId": "88845083",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000055"
+   },
+   "nearestAnyFlowline": {
+    "distM": 16.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 250,
+    "nhdPermanentId": "88845083",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000055"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 16.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 250,
+    "nhdPermanentId": "88845083",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000055"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 0.1
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0006.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.458,
+    "widthM": 586,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "246f1acb26f64bd6451f29ff9b23dae2a08fcd059e8d98ddb52efede60f17033"
+   }
+  },
+  "CO-ACC-0007": {
+   "id": "CO-ACC-0007",
+   "name": "Pinball Boat Ramp",
+   "river": "Colorado River",
+   "lat": 39.83295,
+   "lon": -106.94758,
+   "featureKind": "ramp",
+   "source": "BLM 79471",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.94758%2C39.83295&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.94758%2C39.83295&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 21.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 248,
+    "nhdPermanentId": "162757713",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000047"
+   },
+   "nearestAnyFlowline": {
+    "distM": 21.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 248,
+    "nhdPermanentId": "162757713",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000047"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 21.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 248,
+    "nhdPermanentId": "162757713",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001000047"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": true,
+    "distToPolygonEdgeM": 3.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0007.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.459,
+    "widthM": 587,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "c77bae8cc448ddd051ced9ca867db2f072fdbb28c7965b847f3e40034116c0d6"
+   }
+  },
+  "CO-ACC-0009": {
+   "id": "CO-ACC-0009",
+   "name": "Cottonwood Island Boat Ramp",
+   "river": "Colorado River",
+   "lat": 39.71223,
+   "lon": -107.04524,
+   "featureKind": "ramp",
+   "source": "BLM 79436",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.04524%2C39.71223&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.04524%2C39.71223&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 33.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 302,
+    "nhdPermanentId": "88856335",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001005200"
+   },
+   "nearestAnyFlowline": {
+    "distM": 20.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 257,
+    "nhdPermanentId": "88856337",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14010001005201"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 20.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 257,
+    "nhdPermanentId": "88856337",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14010001005201"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": true,
+    "distToPolygonEdgeM": 0.1
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0009.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.459,
+    "widthM": 588,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "e3ec18b126586f501e3b3a525a88326ce04c6756e2c74359daaff4ad36cd3274"
+   }
+  },
+  "CO-ACC-0010": {
+   "id": "CO-ACC-0010",
+   "name": "Lyons Gulch Recreation Site",
+   "river": "Colorado River",
+   "lat": 39.69879,
+   "lon": -107.07201,
+   "featureKind": "campground",
+   "source": "BLM 79457",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.07201%2C39.69879&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.07201%2C39.69879&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 51.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 225,
+    "nhdPermanentId": "88856379",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001005212"
+   },
+   "nearestAnyFlowline": {
+    "distM": 13.6,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 106,
+    "nhdPermanentId": "88856033",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "14010001005129"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 31.9,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 141,
+    "nhdPermanentId": "88856381",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14010001005129"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 26.5
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0010.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.459,
+    "widthM": 588,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "b450ac20edfd4c88ca147e23a155cd37677dec04029990ca549ca6952c3f01af"
+   }
+  },
+  "CO-ACC-0011": {
+   "id": "CO-ACC-0011",
+   "name": "Dotsero Landing Boat Ramp",
+   "river": "Colorado River",
+   "lat": 39.65069,
+   "lon": -107.06244,
+   "featureKind": "takeout",
+   "source": "BLM 79461",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.06244%2C39.65069&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.06244%2C39.65069&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 57.7,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 204,
+    "nhdPermanentId": "88856447",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001002640"
+   },
+   "nearestAnyFlowline": {
+    "distM": 57.7,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 204,
+    "nhdPermanentId": "88856447",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001002640"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 57.7,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 204,
+    "nhdPermanentId": "88856447",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001002640"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 17.4
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0011.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.46,
+    "widthM": 589,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "1297ff85567e09923e396cef27cf4bdb00439d0e401878c8b07787107f11d576"
+   }
+  },
+  "CO-ACC-0020": {
+   "id": "CO-ACC-0020",
+   "name": "Loma Boat Launch",
+   "river": "Colorado River",
+   "lat": 39.17385,
+   "lon": -108.80795,
+   "featureKind": "launch",
+   "source": "BLM 79553",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.80795%2C39.17385&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.80795%2C39.17385&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 64.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 228,
+    "nhdPermanentId": "69997476",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010005002167"
+   },
+   "nearestAnyFlowline": {
+    "distM": 64.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 228,
+    "nhdPermanentId": "69997476",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010005002167"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 64.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 228,
+    "nhdPermanentId": "69997476",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010005002167"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 31.0
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0020.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.463,
+    "widthM": 593,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "ab5a7fccf4cce67d33772005748e00e4cd72691982e087a2480249f4b9388371"
+   }
+  },
+  "CO-ACC-0030": {
+   "id": "CO-ACC-0030",
+   "name": "Chukar Boat Launch",
+   "river": "Gunnison River",
+   "lat": 38.6223,
+   "lon": -107.83125,
+   "featureKind": "launch",
+   "source": "BLM 89961",
+   "checkedAtUtc": "2026-10-26T20:24:51+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.83125%2C38.6223&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.83125%2C38.6223&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 18.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 330,
+    "nhdPermanentId": "64472536",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020002000941"
+   },
+   "nearestAnyFlowline": {
+    "distM": 18.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 330,
+    "nhdPermanentId": "64472536",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020002000941"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 18.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 330,
+    "nhdPermanentId": "64472536",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020002000941"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 4.8
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0030.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.467,
+    "widthM": 597,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "5d65af2c31d334d09d8f6e3c8274040b7ac895c3faed8924c2988a3c9bc18121"
+   }
+  },
+  "CO-ACC-0031": {
+   "id": "CO-ACC-0031",
+   "name": "Gunnison Forks Boat Ramp",
+   "river": "Gunnison River",
+   "lat": 38.78324,
+   "lon": -107.83688,
+   "featureKind": "ramp",
+   "source": "BLM 90635",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.83688%2C38.78324&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.83688%2C38.78324&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 31.6,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 306,
+    "nhdPermanentId": "75563885",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005009273"
+   },
+   "nearestAnyFlowline": {
+    "distM": 31.6,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 306,
+    "nhdPermanentId": "75563885",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005009273"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 31.6,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 306,
+    "nhdPermanentId": "75563885",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005009273"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 8.0
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0031.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.466,
+    "widthM": 596,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "9aea2cec7addabba14117c7d1412cf7bbd3a7bdb4c80a08ee1d408267fa36db3"
+   }
+  },
+  "CO-ACC-0041": {
+   "id": "CO-ACC-0041",
+   "name": "Escalante Boat Launch",
+   "river": "Gunnison River",
+   "lat": 38.75824,
+   "lon": -108.2579,
+   "featureKind": "launch",
+   "source": "BLM 79561",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.2579%2C38.75824&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.2579%2C38.75824&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 43.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 342,
+    "nhdPermanentId": "75553197",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005001156"
+   },
+   "nearestAnyFlowline": {
+    "distM": 43.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 342,
+    "nhdPermanentId": "75553197",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005001156"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 43.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 342,
+    "nhdPermanentId": "75553197",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005001156"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 32.4
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0041.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.466,
+    "widthM": 596,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "69162018dc168b2a98f75ef7db433b5f888788b39f6746c2816996071f065c15"
+   }
+  },
+  "CO-ACC-0042": {
+   "id": "CO-ACC-0042",
+   "name": "Bridgeport Trailhead",
+   "river": "Gunnison River",
+   "lat": 38.84912,
+   "lon": -108.37232,
+   "featureKind": "trailhead",
+   "source": "BLM 79636",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.37232%2C38.84912&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.37232%2C38.84912&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 77.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 319,
+    "nhdPermanentId": "75574641",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005000044"
+   },
+   "nearestAnyFlowline": {
+    "distM": 56.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 244,
+    "nhdPermanentId": "75552731",
+    "gnis": "Deer Creek",
+    "ftype": 460,
+    "reachcode": "14020005000196"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 77.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 319,
+    "nhdPermanentId": "75574641",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005000044"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 46.5
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0042.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.465,
+    "widthM": 595,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "f90f7fcd3ea53577b7eff5057411954f04795be0eb725f0a56c35b00c21d6d2a"
+   }
+  },
+  "CO-ACC-0043": {
+   "id": "CO-ACC-0043",
+   "name": "Whitewater Boat Launch",
+   "river": "Gunnison River",
+   "lat": 38.97132,
+   "lon": -108.45456,
+   "featureKind": "launch",
+   "source": "BLM 79609",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.45456%2C38.97132&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.45456%2C38.97132&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 35.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 18,
+    "nhdPermanentId": "75574443",
+    "gnis": "Gunnison River",
+    "ftype": 558,
+    "reachcode": "14020005001154"
+   },
+   "nearestAnyFlowline": {
+    "distM": 27.7,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 311,
+    "nhdPermanentId": "75574441",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14020005004986"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 27.7,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 311,
+    "nhdPermanentId": "75574441",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14020005004986"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 7.1
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0043.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.464,
+    "widthM": 594,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "aa2af6c4af36998a77b4d698bf4c648a5af8611d98ec7e89356145b04491ae86"
+   }
+  },
+  "CO-ACC-0050": {
+   "id": "CO-ACC-0050",
+   "name": "Red Bridge Campground",
+   "river": "Lake Fork Gunnison River",
+   "lat": 38.32418,
+   "lon": -107.22705,
+   "featureKind": "campground",
+   "source": "BLM 79345",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.22705%2C38.32418&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.22705%2C38.32418&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": null,
+   "nearestAnyFlowline": {
+    "distM": 26.6,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 329,
+    "nhdPermanentId": "64457717",
+    "gnis": "Lake Fork",
+    "ftype": 558,
+    "reachcode": "14020002001120"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 131.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 298,
+    "nhdPermanentId": "64457714",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14020002002258"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 20.5
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0050.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.468,
+    "widthM": 600,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "6f8a7914db9b099b7036b4b97002eb8e04f0947cf99b9ab4a636847ff2ba0b27"
+   }
+  },
+  "CO-ACC-0051": {
+   "id": "CO-ACC-0051",
+   "name": "Gateview Recreation Site",
+   "river": "Lake Fork Gunnison River",
+   "lat": 38.33768,
+   "lon": -107.22991,
+   "featureKind": "recsite",
+   "source": "BLM 89888",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.22991%2C38.33768&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.22991%2C38.33768&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": null,
+   "nearestAnyFlowline": {
+    "distM": 18.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 212,
+    "nhdPermanentId": "64457554",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "14020002002266"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 37.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 280,
+    "nhdPermanentId": "64457709",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14020002002266"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 33.6
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0051.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.468,
+    "widthM": 600,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "b7f11a39778c33a588b20fa178ac848bb0aafe47aeff1a22f58c5d23a5ef9911"
+   }
+  },
+  "CO-ACC-0060": {
+   "id": "CO-ACC-0060",
+   "name": "Hayden Pump Station Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.48834,
+   "lon": -107.15946,
+   "featureKind": "ramp",
+   "source": "CPW 2491",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.15946%2C40.48834&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.15946%2C40.48834&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 35.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 320,
+    "nhdPermanentId": "90201045",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001000176"
+   },
+   "nearestAnyFlowline": {
+    "distM": 35.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 320,
+    "nhdPermanentId": "90201045",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001000176"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 35.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 320,
+    "nhdPermanentId": "90201045",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001000176"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 8.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0060.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "a1f38fab1946e8d53ede3aba34966fe676b1a0171102e577cd74ede97112f0a2"
+   }
+  },
+  "CO-ACC-0061": {
+   "id": "CO-ACC-0061",
+   "name": "Yampa River State Park Headquarters",
+   "river": "Yampa River",
+   "lat": 40.48921,
+   "lon": -107.30953,
+   "featureKind": "recsite",
+   "source": "CPW 4923",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.30953%2C40.48921&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.30953%2C40.48921&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 24.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 245,
+    "nhdPermanentId": "90193003",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001000138"
+   },
+   "nearestAnyFlowline": {
+    "distM": 24.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 245,
+    "nhdPermanentId": "90193003",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001000138"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 24.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 245,
+    "nhdPermanentId": "90193003",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001000138"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 10.0
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0061.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "37aeea6068f553c11a54088bf14c1b345c7b705add84381f7725d0d0421c93ea"
+   }
+  },
+  "CO-ACC-0062": {
+   "id": "CO-ACC-0062",
+   "name": "Yampa River State Wildlife Area Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.51793,
+   "lon": -107.39873,
+   "featureKind": "ramp",
+   "source": "CPW 2501",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.39873%2C40.51793&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.39873%2C40.51793&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 56.0,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 281,
+    "nhdPermanentId": "90227953",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001002628"
+   },
+   "nearestAnyFlowline": {
+    "distM": 56.0,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 281,
+    "nhdPermanentId": "90227953",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001002628"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 56.0,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 281,
+    "nhdPermanentId": "90227953",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001002628"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 25.7
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0062.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "3eee8bce10f5007f9c24cf7c54652225024cc436ba4227b6a7bfa72eacc054af"
+   }
+  },
+  "CO-ACC-0063": {
+   "id": "CO-ACC-0063",
+   "name": "Yampa Valley Golf Course Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.50205,
+   "lon": -107.51374,
+   "featureKind": "ramp",
+   "source": "CPW 2493",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.51374%2C40.50205&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.51374%2C40.50205&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 19.1,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 287,
+    "nhdPermanentId": "90224397",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001001761"
+   },
+   "nearestAnyFlowline": {
+    "distM": 19.1,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 287,
+    "nhdPermanentId": "90224397",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001001761"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 19.1,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 287,
+    "nhdPermanentId": "90224397",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001001761"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 1.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0063.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "03b0111fa689a305f4a55527a17eca1f3d3690b2493d98d230d31f8196372716"
+   }
+  },
+  "CO-ACC-0065": {
+   "id": "CO-ACC-0065",
+   "name": "South Beach Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.47975,
+   "lon": -107.61651,
+   "featureKind": "ramp",
+   "source": "CPW 2500",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.61651%2C40.47975&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.61651%2C40.47975&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 0.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 237,
+    "nhdPermanentId": "90177541",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001002281"
+   },
+   "nearestAnyFlowline": {
+    "distM": 0.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 237,
+    "nhdPermanentId": "90177541",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001002281"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 0.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 237,
+    "nhdPermanentId": "90177541",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050001002281"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": true,
+    "distToPolygonEdgeM": 12.4
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0065.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "18a1de90c6dde3b7cccc57bf443011f212514f45590bb8dd4d37553cd9c74ce7"
+   }
+  },
+  "CO-ACC-0066": {
+   "id": "CO-ACC-0066",
+   "name": "Duffy Mountain Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.41928,
+   "lon": -107.86957,
+   "featureKind": "ramp",
+   "source": "BLM 83117",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.86957%2C40.41928&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.86957%2C40.41928&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 61.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 255,
+    "nhdPermanentId": "83353333",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002001402"
+   },
+   "nearestAnyFlowline": {
+    "distM": 61.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 255,
+    "nhdPermanentId": "83353333",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002001402"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 61.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 255,
+    "nhdPermanentId": "83353333",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002001402"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 42.5
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0066.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.455,
+    "widthM": 582,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "7ea0833a45754c0e2947d24537ede8941b099e5f1ed9151b7b2273cf3e851dbb"
+   }
+  },
+  "CO-ACC-0067": {
+   "id": "CO-ACC-0067",
+   "name": "Juniper Canyon Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.47661,
+   "lon": -107.96595,
+   "featureKind": "ramp",
+   "source": "CPW 2498",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.96595%2C40.47661&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.96595%2C40.47661&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 46.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 346,
+    "nhdPermanentId": "83356161",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002001421"
+   },
+   "nearestAnyFlowline": {
+    "distM": 46.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 346,
+    "nhdPermanentId": "83356161",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002001421"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 46.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 346,
+    "nhdPermanentId": "83356161",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002001421"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 23.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0067.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "13cb51cac127866ba0a2ceb57f44a6fa3a72717f7b804d3a10979d00ab4e735b"
+   }
+  },
+  "CO-ACC-0068": {
+   "id": "CO-ACC-0068",
+   "name": "Maybell Bridge Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.50155,
+   "lon": -108.03316,
+   "featureKind": "ramp",
+   "source": "CPW 2497",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.03316%2C40.50155&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.03316%2C40.50155&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 38.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 19,
+    "nhdPermanentId": "83361673",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002000120"
+   },
+   "nearestAnyFlowline": {
+    "distM": 38.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 19,
+    "nhdPermanentId": "83361673",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002000120"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 38.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 19,
+    "nhdPermanentId": "83361673",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002000120"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 2.1
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0068.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "9e939a0dc9e2f1b7c2ef6dbf97776b46892d9453fa1d5cee8ea559a2b6f96a95"
+   }
+  },
+  "CO-ACC-0069": {
+   "id": "CO-ACC-0069",
+   "name": "Sunbeam River Access",
+   "river": "Yampa River",
+   "lat": 40.54671,
+   "lon": -108.19647,
+   "featureKind": "ramp",
+   "source": "CPW 2495",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.19647%2C40.54671&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.19647%2C40.54671&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 48.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 305,
+    "nhdPermanentId": "83369809",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002000107"
+   },
+   "nearestAnyFlowline": {
+    "distM": 1.7,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 20,
+    "nhdPermanentId": "83369621",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "14050002001170"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 1.9,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 23,
+    "nhdPermanentId": "83369811",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14050002001170"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 1.5
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0069.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "e732b0a101bdd82f98e7a3756fb11895f086e48a38e475ff4b68bb641ce34683"
+   }
+  },
+  "CO-ACC-0070": {
+   "id": "CO-ACC-0070",
+   "name": "East Cross Mountain Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.48637,
+   "lon": -108.32416,
+   "featureKind": "ramp",
+   "source": "BLM 82998",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.32416%2C40.48637&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.32416%2C40.48637&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 73.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 143,
+    "nhdPermanentId": "83346019",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002001416"
+   },
+   "nearestAnyFlowline": {
+    "distM": 6.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 213,
+    "nhdPermanentId": "83345559",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "14050002001200"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 16.0,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 217,
+    "nhdPermanentId": "83346021",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14050002001200"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 15.8
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0070.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 581,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "3afb75aa77d33a5416ea44bbe518f7863c41cdf68434709512f7aa09106f64da"
+   }
+  },
+  "CO-ACC-0071": {
+   "id": "CO-ACC-0071",
+   "name": "West Cross Mountain Boat Ramp",
+   "river": "Yampa River",
+   "lat": 40.45319,
+   "lon": -108.38051,
+   "featureKind": "ramp",
+   "source": "CPW 5192",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.38051%2C40.45319&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.38051%2C40.45319&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 48.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 238,
+    "nhdPermanentId": "83372733",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002000098"
+   },
+   "nearestAnyFlowline": {
+    "distM": 29.9,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 44,
+    "nhdPermanentId": "83372577",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "14050002000543"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 48.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 238,
+    "nhdPermanentId": "83372733",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002000098"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 28.0
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0071.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 582,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "e13796a687f1bf48c89a1d0455754928104efac521ae1660c45ef2965ee3db78"
+   }
+  },
+  "CO-ACC-0072": {
+   "id": "CO-ACC-0072",
+   "name": "Deerlodge Park Boat Launch",
+   "river": "Yampa River",
+   "lat": 40.44642,
+   "lon": -108.51196,
+   "featureKind": "launch",
+   "source": "NPS 9798",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.51196%2C40.44642&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.51196%2C40.44642&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 166.1,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 17,
+    "nhdPermanentId": "83353913",
+    "gnis": "Yampa River",
+    "ftype": 558,
+    "reachcode": "14050002000077"
+   },
+   "nearestAnyFlowline": {
+    "distM": 71.2,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 81,
+    "nhdPermanentId": "83353593",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "14050002000504"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 123.3,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 102,
+    "nhdPermanentId": "83353915",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "14050002000504"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 123.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0072.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.454,
+    "widthM": 582,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "22ccb371e65b1f9678da692d453e580005ec46be52977335f53be0f3aeb08177"
+   }
+  },
+  "CO-ACC-0100": {
+   "id": "CO-ACC-0100",
+   "name": "Numbers Recreation Site",
+   "river": "Arkansas River",
+   "lat": 38.9858147,
+   "lon": -106.2165532,
+   "featureKind": "recsite",
+   "source": "AHRA_KML Fee Sites/Numbers Recreation Site",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.2165532%2C38.9858147&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.2165532%2C38.9858147&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 160.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 193,
+    "nhdPermanentId": "133045584",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001003782"
+   },
+   "nearestAnyFlowline": {
+    "distM": 160.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 193,
+    "nhdPermanentId": "133045584",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001003782"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 160.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 193,
+    "nhdPermanentId": "133045584",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001003782"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 137.6
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0100.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.464,
+    "widthM": 594,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "7a47aa8e64151ec3fa6dda2dd8b39220e59778f8ff27f63a7ddac45136f57b60"
+   }
+  },
+  "CO-ACC-0101": {
+   "id": "CO-ACC-0101",
+   "name": "Railroad Bridge Recreation Site Boat Launch",
+   "river": "Arkansas River",
+   "lat": 38.92396,
+   "lon": -106.16996,
+   "featureKind": "launch",
+   "source": "BLM 89902",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.16996%2C38.92396&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.16996%2C38.92396&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 30.9,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 210,
+    "nhdPermanentId": "133045312",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000231"
+   },
+   "nearestAnyFlowline": {
+    "distM": 16.6,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 277,
+    "nhdPermanentId": "163087865",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "11020001003884"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 18.9,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 256,
+    "nhdPermanentId": "133045595",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "11020001003884"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 16.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0101.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.465,
+    "widthM": 595,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "2e0c9e6123b6841490dad293037cc0dc75657a8aac66ce466b506f56f0061269"
+   }
+  },
+  "CO-ACC-0102": {
+   "id": "CO-ACC-0102",
+   "name": "Fisherman's Bridge Boat Launch",
+   "river": "Arkansas River",
+   "lat": 38.76736,
+   "lon": -106.0948,
+   "featureKind": "launch",
+   "source": "BLM 89894",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.0948%2C38.76736&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.0948%2C38.76736&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 30.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 133,
+    "nhdPermanentId": "133045298",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000216"
+   },
+   "nearestAnyFlowline": {
+    "distM": 30.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 133,
+    "nhdPermanentId": "133045298",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000216"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 30.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 133,
+    "nhdPermanentId": "133045298",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000216"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 16.1
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0102.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.466,
+    "widthM": 596,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "db6e4d1bc57c641d5a6eb0f4b4f2f68eab55929cb57ed9d70d9166d8864865b1"
+   }
+  },
+  "CO-ACC-0103": {
+   "id": "CO-ACC-0103",
+   "name": "Ruby Mountain Boat Ramp",
+   "river": "Arkansas River",
+   "lat": 38.75221,
+   "lon": -106.07083,
+   "featureKind": "launch",
+   "source": "BLM 89904",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.07083%2C38.75221&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.07083%2C38.75221&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 24.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 162,
+    "nhdPermanentId": "133045291",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000193"
+   },
+   "nearestAnyFlowline": {
+    "distM": 24.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 162,
+    "nhdPermanentId": "133045291",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000193"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 24.4,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 162,
+    "nhdPermanentId": "133045291",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000193"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 13.8
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0103.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.466,
+    "widthM": 596,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "0d772efaa0745888da67c50e0cc6f87fdc55b24a7c6e24ad9ce79c160e8e990f"
+   }
+  },
+  "CO-ACC-0104": {
+   "id": "CO-ACC-0104",
+   "name": "Hecla Junction Boat Launch",
+   "river": "Arkansas River",
+   "lat": 38.65137,
+   "lon": -106.05103,
+   "featureKind": "launch",
+   "source": "BLM 89896",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.05103%2C38.65137&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.05103%2C38.65137&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 17.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 160,
+    "nhdPermanentId": "133045268",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000180"
+   },
+   "nearestAnyFlowline": {
+    "distM": 17.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 160,
+    "nhdPermanentId": "133045268",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000180"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 17.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 160,
+    "nhdPermanentId": "133045268",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000180"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": true,
+    "distToPolygonEdgeM": 0.2
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0104.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.466,
+    "widthM": 597,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "2112a8bbb519493cc11f36e2cfca2779579f31a3627dcda5c1ffab1df3b823f9"
+   }
+  },
+  "CO-ACC-0105": {
+   "id": "CO-ACC-0105",
+   "name": "Stone Bridge Boat Ramp",
+   "river": "Arkansas River",
+   "lat": 38.61287,
+   "lon": -106.06213,
+   "featureKind": "ramp",
+   "source": "CPW 3566",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.06213%2C38.61287&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.06213%2C38.61287&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 28.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 222,
+    "nhdPermanentId": "133045616",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001006101"
+   },
+   "nearestAnyFlowline": {
+    "distM": 28.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 222,
+    "nhdPermanentId": "133045616",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001006101"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 28.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 222,
+    "nhdPermanentId": "133045616",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001006101"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 18.6
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0105.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.467,
+    "widthM": 597,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "c6d94a0f7408599507dfa8d1e3f4c1a20328d78fa38af7041f0395f190a4e287"
+   }
+  },
+  "CO-ACC-0106": {
+   "id": "CO-ACC-0106",
+   "name": "Salida East Boat Ramp",
+   "river": "Arkansas River",
+   "lat": 38.50942,
+   "lon": -105.96342,
+   "featureKind": "ramp",
+   "source": "CPW 3401",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-105.96342%2C38.50942&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-105.96342%2C38.50942&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 54.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 66,
+    "nhdPermanentId": "133045245",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000157"
+   },
+   "nearestAnyFlowline": {
+    "distM": 18.5,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 316,
+    "nhdPermanentId": "163102320",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "11020001001561"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 37.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 338,
+    "nhdPermanentId": "133045484",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "11020001001561"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 37.2
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0106.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.467,
+    "widthM": 598,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "b6a3534991e858efa316dfa96b4823a78572bf4a3629710db4fa4b9bd7af41d2"
+   }
+  },
+  "CO-ACC-0107": {
+   "id": "CO-ACC-0107",
+   "name": "Rincon Boat Ramp",
+   "river": "Arkansas River",
+   "lat": 38.47253,
+   "lon": -105.86591,
+   "featureKind": "ramp",
+   "source": "CPW 3400",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-105.86591%2C38.47253&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-105.86591%2C38.47253&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 25.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 136,
+    "nhdPermanentId": "133045222",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000148"
+   },
+   "nearestAnyFlowline": {
+    "distM": 25.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 136,
+    "nhdPermanentId": "133045222",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000148"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 25.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 136,
+    "nhdPermanentId": "133045222",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000148"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 19.4
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0107.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.468,
+    "widthM": 598,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "89556f1c42c61dba754c296bf703136bf3a5120896019ac715c6f1c2bd1655b8"
+   }
+  },
+  "CO-ACC-0108": {
+   "id": "CO-ACC-0108",
+   "name": "Spikebuck Boat Ramp",
+   "river": "Arkansas River",
+   "lat": 38.45866,
+   "lon": -105.46445,
+   "featureKind": "ramp",
+   "source": "CPW 3407",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-105.46445%2C38.45866&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-105.46445%2C38.45866&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 15.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 73,
+    "nhdPermanentId": "133045087",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000073"
+   },
+   "nearestAnyFlowline": {
+    "distM": 15.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 73,
+    "nhdPermanentId": "133045087",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000073"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 15.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 73,
+    "nhdPermanentId": "133045087",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000073"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 3.9
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0108.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.468,
+    "widthM": 599,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "bfdf733330d6cf5196a37303b06be8858d25a22b3fcdf11d48782ad6a0300afe"
+   }
+  },
+  "CO-ACC-0109": {
+   "id": "CO-ACC-0109",
+   "name": "Parkdale Boat Ramp",
+   "river": "Arkansas River",
+   "lat": 38.4865,
+   "lon": -105.38952,
+   "featureKind": "ramp",
+   "source": "CPW 3378",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-105.38952%2C38.4865&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-105.38952%2C38.4865&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 31.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 81,
+    "nhdPermanentId": "133045074",
+    "gnis": "Arkansas River",
+    "ftype": 558,
+    "reachcode": "11020001000067"
+   },
+   "nearestAnyFlowline": {
+    "distM": 15.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 354,
+    "nhdPermanentId": "133028928",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "11020001001710"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 25.4,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 0,
+    "nhdPermanentId": "133045506",
+    "gnis": null,
+    "ftype": 558,
+    "reachcode": "11020001001710"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 21.7
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0109.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.467,
+    "widthM": 598,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "50cb5e7a8b54e85627006a4f09ccbbd64f4a05552e43b5d61e77fda2e398f915"
+   }
+  },
+  "CO-ACC-0110": {
+   "id": "CO-ACC-0110",
+   "name": "Gypsum Valley Boat Ramp (Dolores)",
+   "river": "Dolores River",
+   "lat": 38.13382,
+   "lon": -108.88074,
+   "featureKind": "ramp",
+   "source": "BLM 90011",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.88074%2C38.13382&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.88074%2C38.13382&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 24.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 275,
+    "nhdPermanentId": "87422733",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000072"
+   },
+   "nearestAnyFlowline": {
+    "distM": 24.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 275,
+    "nhdPermanentId": "87422733",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000072"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 24.3,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 275,
+    "nhdPermanentId": "87422733",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000072"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 16.8
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0110.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.47,
+    "widthM": 601,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "7f3991d465862ed8b64e6bb7a51669a8924e8d210328ba2d60f1931422534a96"
+   }
+  },
+  "CO-ACC-0111": {
+   "id": "CO-ACC-0111",
+   "name": "Bedrock Boat Ramp",
+   "river": "Dolores River",
+   "lat": 38.30461,
+   "lon": -108.89437,
+   "featureKind": "ramp",
+   "source": "BLM 90244",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.89437%2C38.30461&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.89437%2C38.30461&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 14.2,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 323,
+    "nhdPermanentId": "87450105",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000026"
+   },
+   "nearestAnyFlowline": {
+    "distM": 14.2,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 323,
+    "nhdPermanentId": "87450105",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000026"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 14.2,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 323,
+    "nhdPermanentId": "87450105",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000026"
+   },
+   "nhdArea": {
+    "features": 2,
+    "pinInsideRiverPolygon": true,
+    "distToPolygonEdgeM": 7.7
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0111.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.469,
+    "widthM": 600,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "a784bc2d0cca246e407623b8a2e30447400b3ae0c3662681ae562aa1efee67f1"
+   }
+  },
+  "CO-ACC-0112": {
+   "id": "CO-ACC-0112",
+   "name": "Bradfield Recreation Site",
+   "river": "Dolores River",
+   "lat": 37.64878,
+   "lon": -108.73849,
+   "featureKind": "recsite",
+   "source": "BLM 89962",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.73849%2C37.64878&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.73849%2C37.64878&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 198.7,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 319,
+    "nhdPermanentId": "87427669",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000119"
+   },
+   "nearestAnyFlowline": {
+    "distM": 87.2,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 84,
+    "nhdPermanentId": "87427493",
+    "gnis": null,
+    "ftype": 460,
+    "reachcode": "14030002000713"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 198.7,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 319,
+    "nhdPermanentId": "87427669",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000119"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 185.1
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0112.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.473,
+    "widthM": 605,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "302b0b9ccd87fdac88871ef36809b426505e07cbd0943122beffbf0bb3dbc5d1"
+   }
+  },
+  "CO-ACC-0113": {
+   "id": "CO-ACC-0113",
+   "name": "Wingo Boat Ramp",
+   "river": "Roaring Fork River",
+   "lat": 39.34254,
+   "lon": -107.00588,
+   "featureKind": "ramp",
+   "source": "BLM 79298",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.00588%2C39.34254&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.00588%2C39.34254&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 49.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 213,
+    "nhdPermanentId": "165835668",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000826"
+   },
+   "nearestAnyFlowline": {
+    "distM": 49.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 213,
+    "nhdPermanentId": "165835668",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000826"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 49.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 213,
+    "nhdPermanentId": "165835668",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000826"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 40.0
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0113.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.462,
+    "widthM": 591,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "3035b15eac7bd731ca849896ba8f6244aa0a9fc55132f1ff2ca5dcb9cb7abc5a"
+   }
+  },
+  "CO-ACC-0114": {
+   "id": "CO-ACC-0114",
+   "name": "Sam Caudill SWA put-in",
+   "river": "Roaring Fork River",
+   "lat": 39.47964,
+   "lon": -107.2866,
+   "featureKind": "ramp",
+   "source": "CPW 2129",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.2866%2C39.47964&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.2866%2C39.47964&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 23.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 333,
+    "nhdPermanentId": "165820377",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000011"
+   },
+   "nearestAnyFlowline": {
+    "distM": 23.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 333,
+    "nhdPermanentId": "165820377",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000011"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 23.9,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 333,
+    "nhdPermanentId": "165820377",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000011"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 7.4
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0114.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.461,
+    "widthM": 590,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "5713e7db576cc8e4f4c18d44fe5f3ab3c61e586ad97d2872d4f76e3ce6018e12"
+   }
+  },
+  "CO-ACC-0115": {
+   "id": "CO-ACC-0115",
+   "name": "Bob Terrell SWA put-in",
+   "river": "Roaring Fork River",
+   "lat": 39.41485,
+   "lon": -107.22222,
+   "featureKind": "ramp",
+   "source": "CPW 2130",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-107.22222%2C39.41485&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-107.22222%2C39.41485&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 24.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 273,
+    "nhdPermanentId": "72966038",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000065"
+   },
+   "nearestAnyFlowline": {
+    "distM": 24.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 273,
+    "nhdPermanentId": "72966038",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000065"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 24.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 273,
+    "nhdPermanentId": "72966038",
+    "gnis": "Roaring Fork River",
+    "ftype": 558,
+    "reachcode": "14010004000065"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 11.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0115.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.461,
+    "widthM": 591,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "1a1375a28d2e231e7895e6f7387473a249a343a1a23875605e64bb236e76f176"
+   }
+  },
+  "CO-ACC-0116": {
+   "id": "CO-ACC-0116",
+   "name": "Rio Grande Boat Takeout (Lee Trail)",
+   "river": "Rio Grande",
+   "lat": 36.99866,
+   "lon": -105.71858,
+   "featureKind": "takeout",
+   "source": "BLM 90116",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-105.71858%2C36.99866&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-105.71858%2C36.99866&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 24.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 225,
+    "nhdPermanentId": "120928921",
+    "gnis": "Rio Grande",
+    "ftype": 558,
+    "reachcode": "13020101028653"
+   },
+   "nearestAnyFlowline": {
+    "distM": 24.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 225,
+    "nhdPermanentId": "120928921",
+    "gnis": "Rio Grande",
+    "ftype": 558,
+    "reachcode": "13020101028653"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 24.2,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 225,
+    "nhdPermanentId": "120928921",
+    "gnis": "Rio Grande",
+    "ftype": 558,
+    "reachcode": "13020101028653"
+   },
+   "nhdArea": {
+    "features": 2,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 11.6
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0116.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.477,
+    "widthM": 610,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "1bc6c420fbe2c775892a0fbadae173318cba4ad13dd1602bc576fc90e1e7b7f7"
+   }
+  },
+  "CO-ACC-0117": {
+   "id": "CO-ACC-0117",
+   "name": "Mountain Sheep Point Boat Ramp",
+   "river": "Dolores River",
+   "lat": 37.7954,
+   "lon": -108.82588,
+   "featureKind": "ramp",
+   "source": "BLM 90017",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-108.82588%2C37.7954&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-108.82588%2C37.7954&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 12.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 354,
+    "nhdPermanentId": "{5693B13E-F49D-454D-B0A5-D9AFF6BB0C44}",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000104"
+   },
+   "nearestAnyFlowline": {
+    "distM": 12.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 354,
+    "nhdPermanentId": "{5693B13E-F49D-454D-B0A5-D9AFF6BB0C44}",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000104"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 12.1,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 354,
+    "nhdPermanentId": "{5693B13E-F49D-454D-B0A5-D9AFF6BB0C44}",
+    "gnis": "Dolores River",
+    "ftype": 558,
+    "reachcode": "14030002000104"
+   },
+   "nhdArea": {
+    "features": 1,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 5.3
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0117.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.472,
+    "widthM": 604,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "8314fd30c8c5e30c98ee2c776b788922a4910cd433ec9af607d0c860f94e73a9"
+   }
+  },
+  "CO-ACC-0118": {
+   "id": "CO-ACC-0118",
+   "name": "Confluence Recreation Area Boat Ramp (Kremmling)",
+   "river": "Colorado River",
+   "lat": 40.04254,
+   "lon": -106.39562,
+   "featureKind": "ramp",
+   "source": "BLM 90780",
+   "checkedAtUtc": "2026-10-26T20:24:52+00:00",
+   "requests": {
+    "flowline": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?geometry=-106.39562%2C40.04254&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cgnis_id%2Cftype%2Cfcode%2Cflowdir%2Creachcode%2Clengthkm&returnGeometry=true&outSR=4326&f=json",
+    "area": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/8/query?geometry=-106.39562%2C40.04254&geometryType=esriGeometryPoint&inSR=4326&distance=500&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=permanent_identifier%2Cgnis_name%2Cftype%2Cfcode&returnGeometry=true&outSR=4326&f=json"
+   },
+   "nearestNamedRiverFlowline": {
+    "distM": 125.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 222,
+    "nhdPermanentId": "88870425",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001002647"
+   },
+   "nearestAnyFlowline": {
+    "distM": 46.5,
+    "bankBySideOfCentreline": "river-right",
+    "flowBearingDeg": 290,
+    "nhdPermanentId": "{57DC982C-D06C-419B-B6E2-62906C75CBD0}",
+    "gnis": "Blue River",
+    "ftype": 558,
+    "reachcode": "14010002007231"
+   },
+   "nearestMainOrUnnamedChannel": {
+    "distM": 125.8,
+    "bankBySideOfCentreline": "river-left",
+    "flowBearingDeg": 222,
+    "nhdPermanentId": "88870425",
+    "gnis": "Colorado River",
+    "ftype": 558,
+    "reachcode": "14010001002647"
+   },
+   "nhdArea": {
+    "features": 2,
+    "pinInsideRiverPolygon": false,
+    "distToPolygonEdgeM": 13.2
+   },
+   "image": {
+    "file": "research/raw/imagery/CO-ACC-0118.jpg",
+    "zoom": 18,
+    "metresPerPixel": 0.457,
+    "widthM": 585,
+    "tiles": 25,
+    "tileTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    "sha256": "e1f2f3d0f3a48ba1fb250742fd5ca3200ab3a2f93ab2d60cfd14f88df039da62"
+   }
+  }
+ }
+}

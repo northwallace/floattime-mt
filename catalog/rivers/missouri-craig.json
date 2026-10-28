@@ -13,17 +13,65 @@
       "id": "holter-craig",
       "putIn": "Holter Dam",
       "takeOut": "Craig",
-      "miles": 3.5,
+      "miles": 7.7,
       "difficulty": "Class I",
-      "notes": "Short and sweet. Busy boat ramp on summer weekends."
+      "notes": "Launch below Holter Dam and finish at Craig FAS. Arrange your shuttle before launching; ramps can be busy.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-10-27",
+        "streamId": "1039825479786",
+        "putIn": {
+          "name": "Holter Dam",
+          "lat": 46.99552,
+          "lon": -112.01195,
+          "riverMile": 2201.7,
+          "markerId": 5604,
+          "offsetMeters": 85.7
+        },
+        "takeOut": {
+          "name": "Craig",
+          "lat": 47.07256384164247,
+          "lon": -111.96304900411126,
+          "riverMile": 2194,
+          "markerId": 8203,
+          "offsetMeters": 134.7
+        },
+        "note": "Approximate river mileage from the difference between nearby FWP 0.1-mile markers on the same river. Facility locations and mapped channels introduce uncertainty; this is not a surveyed paddling route or a speed calibration."
+      }
     },
     {
       "id": "craig-mtn-palace",
       "putIn": "Craig",
       "takeOut": "Mountain Palace",
-      "miles": 8,
+      "miles": 13.4,
       "difficulty": "Class I",
-      "notes": "Canyon scenery, steady current the whole way."
+      "notes": "Canyon scenery, steady current the whole way.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-10-27",
+        "streamId": "1039825479786",
+        "putIn": {
+          "name": "Craig",
+          "lat": 47.07256384164247,
+          "lon": -111.96304900411126,
+          "riverMile": 2194,
+          "markerId": 8203,
+          "offsetMeters": 134.7
+        },
+        "takeOut": {
+          "name": "Mountain Palace",
+          "lat": 47.16256018492719,
+          "lon": -111.82310700034365,
+          "riverMile": 2180.6,
+          "markerId": 7613,
+          "offsetMeters": 98.1
+        },
+        "note": "Approximate river mileage from the difference between nearby FWP 0.1-mile markers on the same river. Facility locations and mapped channels introduce uncertainty; this is not a surveyed paddling route or a speed calibration."
+      }
     }
   ],
   "state": "MT",

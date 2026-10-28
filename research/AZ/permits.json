@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "purpose": "Research-only. Permit facts by river, quoted from the managing agency. Nothing was applied for, entered or submitted, and no agency was contacted.",
+  "rivers": {
+    "salt-river-lower": {
+      "permitRequired": false,
+      "passRequired": "Tonto Pass (day-use fee) at Tonto day-use sites",
+      "agency": "USDA Forest Service, Tonto NF (Mesa RD)",
+      "quote": "Tonto Daily Pass",
+      "source": "https://www.fs.usda.gov/r03/tonto/recreation/water-users-day-use-area",
+      "detail": "No float permit. Tonto day-use sites need a Tonto Pass; some need a watercraft sticker (see the individual site pages). Check the site page before you go."
+    },
+    "salt-river-upper": {
+      "permitRequired": "Mar 1 - May 15 (Tonto NF) + White Mountain Apache Tribe permit",
+      "agency": "USDA Forest Service, Tonto NF + White Mountain Apache Tribe",
+      "quote": "A Tonto National Forest Upper Salt River boater permit is required to float the Salt River Canyon Wilderness from March 1st to May 15th annually.",
+      "source": "https://www.fs.usda.gov/r03/tonto/recreation/salt-river-canyon-wilderness-permit",
+      "booking": "https://www.recreation.gov/permits/249275",
+      "detail": "Lottery; $16 application fee + $6 transaction fee; $125 boater permit fee if awarded (Tonto permit page). Motorized equipment and boats are prohibited in the Wilderness. A White Mountain Apache Tribe permit is also needed for the reservation stretch above the Wilderness.",
+      "dateConflict": {
+        "fs_srcw_permit": "from January 3 to January 31",
+        "fs_srcw_permits_page": "December 1st through January 31st",
+        "recgov_srcw": "from December 1 to January 31",
+        "note": "The Tonto permit page and the Tonto permits page / Recreation.gov give different lottery opening dates. Not resolved; do not publish a lottery date."
+      }
+    },
+    "verde-river-upper": {
+      "permitRequired": false,
+      "note": "No float permit statement on the Prescott NF Black Canyon / Bignotti pages or the Clarkdale Tuzigoot page.",
+      "source": "https://www.fs.usda.gov/r03/prescott/recreation/black-canyon-fishing-site"
+    },
+    "verde-river-camp-verde": {
+      "permitRequired": false,
+      "note": "No float permit statement on the Prescott NF White Bridge / Clear Creek / Beasley Flat pages.",
+      "source": "https://www.fs.usda.gov/r03/prescott/recreation/white-bridge-picnic-site-and-boat-launch"
+    },
+    "verde-river-scenic": {
+      "permitRequired": false,
+      "groupSizeLimit": 25,
+      "quote": "The group size on this section of river is limited to 25 people.",
+      "source": "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_2.pdf"
+    },
+    "verde-river-wild": {
+      "permitRequired": false,
+      "groupSizeLimit": 12,
+      "quote": "Group size is limited to twelve people.",
+      "source": "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_2.pdf",
+      "detail": "Overnight trips on the Verde Wild and Scenic River need a fire pan and a portable toilet (Tonto order 03-04-06-23-25, Dec 1, 2023 - Dec 1, 2028).",
+      "orderQuote": "without possessing an approved portable toilet and sewage containment system",
+      "orderSource": "https://www.fs.usda.gov/r03/tonto/alerts/verde-river-fire-and-waste-prohibitions"
+    },
+    "verde-river-lower": {
+      "permitRequired": false,
+      "passRequired": "Tonto Pass (fee area)",
+      "note": "Box Bar and Needle Rock are Tonto fee sites; no float permit.",
+      "source": "https://www.fs.usda.gov/r03/tonto/recreation/box-bar-shoreline-area-and-river-access-point"
+    },
+    "gila-river-gila-box": {
+      "permitRequired": false,
+      "note": "No float permit or fee statement was found on the BLM Gila River Boat Put-In, Dry Canyon or Gila Box RNCA pages (the BLM charges fees at the two campgrounds only).",
+      "quote": "We charge fees at both campgrounds.",
+      "source": "https://www.blm.gov/national-conservation-lands/arizona/gilabox"
+    },
+    "colorado-river-grand-canyon": {
+      "permitRequired": true,
+      "agency": "NPS Grand Canyon NP",
+      "quote": "Permits for these trips are made available to the public through a WEIGHTED LOTTERY",
+      "source": "https://www.nps.gov/grca/planyourvisit/whitewater-rafting.htm",
+      "detail": "12 to 25 day noncommercial trips from Lees Ferry. Lees Ferry is in Glen Canyon NRA; the launch is the start of the Grand Canyon permit."
+    },
+    "colorado-river-lower-gorge": {
+      "permitRequired": true,
+      "agency": "NPS Grand Canyon NP + Hualapai Tribe",
+      "quote": "Grand Canyon National Park authorizes up to two noncommercial river trips to launch from Diamond Creek each day. Each trip is limited to a maximum of 16 participants.",
+      "source": "https://www.nps.gov/grca/planyourvisit/overview-diamond-ck.htm",
+      "detail": "Currently the National Park Service does not charge permit fees for this section of the river, but the Hualapai Tribe will charge access fees"
+    }
+  },
+  "notRequested": "No permit, lottery entry or form was submitted. No agency or tribe was contacted."
+}

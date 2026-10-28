@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "state": "UT",
+  "checkedOn": "2026-10-25",
+  "purpose": "Research-only timing grade per river. Not read by the app. Source data: research/trip-times/UT.json (empty) + agency multi-day durations.",
+  "grades": {
+    "sourced": "dated trip report or agency guide with time+distance on a catalog section",
+    "loosely-supported": "agency guide gives days only (no hours) or off-section/undated",
+    "unsourced": "no trip-time evidence"
+  },
+  "recommendations": {
+    "publish": "show catalog estimate",
+    "publish-with-range": "show the source-supported range",
+    "defer": "hide time until a real trip is logged"
+  },
+  "rivers": {
+    "green-river-flaming-gorge": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 1880,
+      "refFlowBasis": "USGS 09234500 newest instantaneous discharge at check time (2026-10-25T19:30:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "green-river-dinosaur": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "lodore-split-mountain": {
+          "basis": "NPS DINO: 'Normal trip lengths are 4 days (3 nights) on the Green River' (high-use season)",
+          "source": "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf",
+          "days": [
+            4,
+            4
+          ],
+          "miles": 44.0
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 2710,
+      "refFlowBasis": "USGS 09261000 newest instantaneous discharge at check time (2026-10-25T20:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "green-river-desolation": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 5190,
+      "refFlowBasis": "USGS 09315000 newest instantaneous discharge at check time (2026-10-25T20:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "green-river-labyrinth": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "green-river-sp-mineral-bottom": {
+          "basis": "BLM: 'minimum of three to four days to float the 68 river-miles'",
+          "source": "https://www.blm.gov/visit/labyrinth-canyon-river",
+          "days": [
+            3,
+            4
+          ],
+          "miles": 68.0
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 5190,
+      "refFlowBasis": "USGS 09315000 newest instantaneous discharge at check time (2026-10-25T20:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "colorado-river-westwater": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 5540,
+      "refFlowBasis": "USGS 09163500 newest instantaneous discharge at check time (2026-10-25T19:45:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "colorado-river-moab": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 7560,
+      "refFlowBasis": "USGS 09180500 newest instantaneous discharge at check time (2026-10-25T19:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "colorado-river-meander": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 11600,
+      "refFlowBasis": "USGS 09185600 newest instantaneous discharge at check time (2026-10-25T19:45:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "san-juan": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "sand-island-mexican-hat": {
+          "basis": "BLM San Juan trip planning table: 'Sand Island to Mexican Hat  27  2 to 3' (miles, typical days)",
+          "source": "https://www.blm.gov/sites/blm.gov/files/uploads/San%20Juan%20Trip%20Planning%20Information.pdf",
+          "days": [
+            2,
+            3
+          ],
+          "miles": 27.0
+        },
+        "mexican-hat-clay-hills": {
+          "basis": "BLM San Juan trip planning table: 'Mexican Hat to Clay Hills  57  4 to 5' (miles, typical days)",
+          "source": "https://www.blm.gov/sites/blm.gov/files/uploads/San%20Juan%20Trip%20Planning%20Information.pdf",
+          "days": [
+            4,
+            5
+          ],
+          "miles": 57.0
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 19500,
+      "refFlowBasis": "USGS 09379500 newest instantaneous discharge at check time (2026-10-25T20:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "san-rafael": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 995,
+      "refFlowBasis": "USGS 09328500 newest instantaneous discharge at check time (2026-10-25T20:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "white-river": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "bonanza-enron": {
+          "basis": "BLM White River brochure: 'At a minimum, give yourself two days from the Bonanza' (bridge to the Enron take-out, 35 miles)",
+          "source": "https://www.blm.gov/sites/default/files/documents/files/white%20river%20for%20web.pdf",
+          "days": [
+            2,
+            null
+          ],
+          "miles": 35.0
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 316,
+      "refFlowBasis": "USGS 09306500 newest instantaneous discharge at check time (2026-10-25T19:45:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    }
+  }
+}

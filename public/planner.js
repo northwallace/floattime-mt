@@ -93,6 +93,9 @@
   }
   function estimate(river, section, flow, mult, stops) {
     if (
+      section.accessReview || section.distanceReview || river.timing?.mode === "unavailable" ||
+      !Number.isFinite(river.refFlowCfs) || river.refFlowCfs <= 0 ||
+      !Number.isFinite(river.refSpeedMph) || river.refSpeedMph <= 0 ||
       !Number.isFinite(flow) ||
       flow <= 0 ||
       !Number.isFinite(stops) ||
@@ -114,7 +117,7 @@
       speed,
       rawMinutes,
       minutes: Math.max(5, Math.round(rawMinutes / 5) * 5),
-      multiDay: !!river.multiDay || rawMinutes > 600,
+      multiDay: !!river.multiDay || !!section.multiDay || rawMinutes > 600,
       days: Math.ceil(rawMinutes / 420),
     };
   }

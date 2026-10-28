@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "state": "CO",
+  "checkedOn": "2026-10-26",
+  "purpose": "Research-only timing grade per river. Not read by the app.",
+  "grades": [
+    "sourced",
+    "loosely-supported",
+    "unsourced"
+  ],
+  "recommendations": [
+    "publish",
+    "publish-with-range",
+    "defer"
+  ],
+  "rivers": {
+    "colorado-river-pumphouse": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "pumphouse-to-radium": {
+          "min": 2,
+          "max": 2.5,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "radium-to-rancho-del-rio": {
+          "min": 3,
+          "max": 4,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "rancho-del-rio-to-state-bridge": {
+          "min": 1,
+          "max": 1.5,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "Agency guide ranges are attached as section guideTimes; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "colorado-river-state-bridge": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "state-bridge-to-two-bridges": {
+          "min": 2,
+          "max": 4,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "two-bridges-to-catamount": {
+          "min": 5,
+          "max": 7,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "catamount-to-pinball": {
+          "min": 4,
+          "max": 6,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "pinball-to-horse-creek": {
+          "min": 4,
+          "max": 6,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "horse-creek-to-cottonwood-island": {
+          "min": 2,
+          "max": 4,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "cottonwood-island-to-lyons-gulch": {
+          "min": 1,
+          "max": 3,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        },
+        "lyons-gulch-to-dotsero": {
+          "min": 2,
+          "max": 4,
+          "unit": "hours",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "Agency guide ranges are attached as section guideTimes; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "colorado-river-ruby-horsethief": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "No agency or observed trip timing found; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "gunnison-river-gorge": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "No agency or observed trip timing found; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "gunnison-river-denca": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "confluence-park-to-whitewater": {
+          "min": 2,
+          "max": 3,
+          "unit": "days",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/gunnison_river_overview_v5.pdf"
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "Agency guide ranges are attached as section guideTimes; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "yampa-river-hayden": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "No agency or observed trip timing found; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "yampa-river-craig": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "No agency or observed trip timing found; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "yampa-river-maybell": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "No agency or observed trip timing found; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "yampa-river-dinosaur": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "yampa-canyon-deerlodge-to-split-mountain": {
+          "min": 5,
+          "max": 5,
+          "unit": "days",
+          "sourceUrl": "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf"
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "Agency guide ranges are attached as section guideTimes; no calibrated speed/flow model, timing.mode 'unavailable'."
+    },
+    "arkansas-river-salida": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": null,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": null,
+      "note": "No agency or observed trip timing found; no calibrated speed/flow model, timing.mode 'unavailable'."
+    }
+  }
+}

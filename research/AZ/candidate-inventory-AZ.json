@@ -1,0 +1,635 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "note": "AZ-ACC ids are stable (order of tools/az_data.py P); never renumber, append new ids only. AZ-NRC ids are owner-supplied non-registry context points (research only, never endpoints). crossState: Gila River rises in New Mexico (NM gauge 09432000 checked, not used); the Gila Box reach itself is all in Arizona.",
+  "accessPoints": [
+    {
+      "id": "AZ-ACC-0001",
+      "label": "Water Users Day Use Area (Lower Salt)",
+      "river": "Salt River",
+      "inState": "AZ",
+      "lat": 33.5541561,
+      "lon": -111.5433992,
+      "coordinateSource": "Owner-supplied: North Wallace's own Google Maps satellite marking of the boat-entry spot (33.5541561, -111.5433992), checked on Esri World Imagery 2026-10-26; not an agency coordinate",
+      "coordinateSourceUrl": "https://www.google.com/maps?q=33.5541561,-111.5433992&t=k",
+      "operator": "USDA Forest Service (Tonto NF, Mesa Ranger District)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area",
+        "no-motors",
+        "day-use-only"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "AZ-ACC-0002",
+      "label": "Blue Point Day Use Area (Lower Salt)",
+      "river": "Salt River",
+      "inState": "AZ",
+      "lat": 33.5552977,
+      "lon": -111.5737484,
+      "coordinateSource": "Tonto NF page coordinate (EDW recareaid 35405: 33.555298, -111.573748)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35405&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Tonto NF, Mesa Ranger District)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "fee-area",
+        "no-motors",
+        "day-use-only"
+      ],
+      "imagery": "near"
+    },
+    {
+      "id": "AZ-ACC-0003",
+      "label": "Goldfield Day Use Area (Lower Salt)",
+      "river": "Salt River",
+      "inState": "AZ",
+      "lat": 33.553663,
+      "lon": -111.621131,
+      "coordinateSource": "Tonto NF page coordinate (EDW recareaid 35403: 33.554973, -111.620655)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35403&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Tonto NF, Mesa Ranger District)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "fee-area",
+        "day-use-only",
+        "seasonal-eagle-closure-nearby"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0004",
+      "label": "Phon D Sutton Day Use Area (Lower Salt)",
+      "river": "Salt River",
+      "inState": "AZ",
+      "lat": 33.5465461,
+      "lon": -111.6616464,
+      "coordinateSource": "Owner-supplied: North Wallace's own Google Maps satellite marking of the boat-entry spot (33.5465461, -111.6616464), checked on Esri World Imagery 2026-10-26; not an agency coordinate",
+      "coordinateSourceUrl": "https://www.google.com/maps?q=33.5465461,-111.6616464&t=k",
+      "operator": "USDA Forest Service (Tonto NF, Mesa Ranger District)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area",
+        "day-use-only"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "AZ-ACC-0005",
+      "label": "First Campground (Upper Salt put-in)",
+      "river": "Salt River",
+      "inState": "AZ",
+      "lat": null,
+      "lon": null,
+      "coordinateSource": null,
+      "coordinateSourceUrl": null,
+      "operator": "White Mountain Apache Tribe (Fort Apache Indian Reservation)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "tribal-permit",
+        "no-agency-coordinate"
+      ],
+      "imagery": null
+    },
+    {
+      "id": "AZ-ACC-0006",
+      "label": "Highway 288 Bridge Take-out (Upper Salt)",
+      "river": "Salt River",
+      "inState": "AZ",
+      "lat": null,
+      "lon": null,
+      "coordinateSource": null,
+      "coordinateSourceUrl": null,
+      "operator": "USDA Forest Service (Tonto NF)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "no-agency-coordinate"
+      ],
+      "imagery": null
+    },
+    {
+      "id": "AZ-ACC-0007",
+      "label": "Tuzigoot River Access Point (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": null,
+      "lon": null,
+      "coordinateSource": null,
+      "coordinateSourceUrl": null,
+      "operator": "Arizona State Parks (Verde River Greenway SNA; co-managed with Town of Clarkdale)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "no-agency-coordinate",
+        "diversion-dams-below"
+      ],
+      "imagery": null
+    },
+    {
+      "id": "AZ-ACC-0008",
+      "label": "Dead Horse Ranch State Park River Day Use Area (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": null,
+      "lon": null,
+      "coordinateSource": null,
+      "coordinateSourceUrl": null,
+      "operator": "Arizona State Parks (Dead Horse Ranch SP)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "no-agency-coordinate",
+        "fee-area"
+      ],
+      "imagery": null
+    },
+    {
+      "id": "AZ-ACC-0009",
+      "label": "Black Canyon Fishing Site (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 34.684959,
+      "lon": -111.964009,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 67273 'Black Canyon Fishing Site' (Prescott NF page: 34.68495864, -111.9640087)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67273&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "day-use-only"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "AZ-ACC-0010",
+      "label": "Bignotti Picnic Site (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 34.678979,
+      "lon": -111.954134,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 67213 'Bignotti Picnic Site' (Prescott NF page: 34.67897869, -111.9541343)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67213&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "no-floating-below"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "AZ-ACC-0011",
+      "label": "White Bridge Picnic Site and Boat Launch (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 34.549506,
+      "lon": -111.850062,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 67211 'White Bridge Picnic Site and Boat Launch' (Prescott NF page: 34.54950556, -111.8500619)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67211&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0012",
+      "label": "Clear Creek Fishing Site (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 34.505695,
+      "lon": -111.83708,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 67251 'Clear Creek Fishing Site' (Prescott NF page: 34.5056954, -111.8370798)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67251&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "poor-launch",
+        "carry-required"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0013",
+      "label": "Beasley Flat (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 34.4734529,
+      "lon": -111.8012007,
+      "coordinateSource": "Owner-supplied: North Wallace's own Google Maps satellite marking of the water-entry spot (34.4734529, -111.8012007), checked on Esri World Imagery 2026-10-26; not an agency coordinate",
+      "coordinateSourceUrl": "https://www.google.com/maps?q=34.4734529,-111.8012007&t=k",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "wild-and-scenic-start"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "AZ-ACC-0014",
+      "label": "Childs River Access Point (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 34.348023,
+      "lon": -111.697359,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 75354 'Childs Dispersed Camping Area' (Coconino NF) - camping-area point, not the river access",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D75354&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Coconino NF, Red Rock RD)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "4wd-road",
+        "no-current-boating-statement"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0015",
+      "label": "Sheep Bridge (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 34.078038,
+      "lon": -111.709538,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 35219 'Sheep Bridge' (Tonto NF page gives only 34.08, -111.71)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35219&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Tonto NF, Cave Creek RD)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "4wd-road",
+        "no-explicit-launch-statement"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0016",
+      "label": "Horseshoe Campground (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 33.976938,
+      "lon": -111.716736,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 35209 'Horseshoe Campground' (Tonto NF page: 33.976977, -111.717436)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35209&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Tonto NF, Cave Creek RD)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "closure-uncertain",
+        "road-closed-to-2026-11-02"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0017",
+      "label": "Needle Rock Day Use Area (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 33.766968,
+      "lon": -111.669963,
+      "coordinateSource": "Tonto NF page coordinate (EDW recareaid 35217: 33.767513, -111.669061)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35217&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Tonto NF, Cave Creek RD)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "fee-area",
+        "day-use-only",
+        "seasonal-eagle-closure",
+        "no-explicit-launch-statement"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0018",
+      "label": "Box Bar River Access Point (Verde)",
+      "river": "Verde River",
+      "inState": "AZ",
+      "lat": 33.743712,
+      "lon": -111.660821,
+      "coordinateSource": "Tonto NF page coordinate (EDW recareaid 35237 is coarse: 33.74, -111.66)",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35237&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Tonto NF, Cave Creek RD)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "fee-area",
+        "seasonal-eagle-closure"
+      ],
+      "imagery": "near"
+    },
+    {
+      "id": "AZ-ACC-0019",
+      "label": "Gila River Boat Put-In (Gila Box)",
+      "river": "Gila River",
+      "inState": "AZ",
+      "lat": 32.96498,
+      "lon": -109.30982,
+      "coordinateSource": "BLM visit page 'Gila River Boat Put-In' Geographic Coordinates (32.96498, -109.30982)",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/gila-river-boat-put-in",
+      "operator": "Bureau of Land Management (Safford Field Office)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [],
+      "imagery": "near"
+    },
+    {
+      "id": "AZ-ACC-0020",
+      "label": "Dry Canyon Boat Take-Out (Gila Box)",
+      "river": "Gila River",
+      "inState": "AZ",
+      "lat": 32.8922,
+      "lon": -109.4921,
+      "coordinateSource": "BLM visit page 'Dry Canyon Boat Take-Out and Picnic Area' Geographic Coordinates (BLM GIS OBJECTID 83867 is ~1 km away at 32.88536, -109.49939)",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/dry-canyon-boat-take-out-and-picnic-area",
+      "operator": "Bureau of Land Management (Safford Field Office)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "closure-uncertain",
+        "critical-take-out"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0021",
+      "label": "Lees Ferry Boat Launch",
+      "river": "Colorado River",
+      "inState": "AZ",
+      "lat": 36.86600832,
+      "lon": -111.58707804,
+      "coordinateSource": "NPS Public POIs, OBJECTID 10901 'Lees Ferry Boat Launch' (GLCA, Boat Launch, Existing)",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=10901&outFields=*&outSR=4326&f=json",
+      "operator": "National Park Service (Glen Canyon NRA)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "permit-required"
+      ],
+      "imagery": "near"
+    },
+    {
+      "id": "AZ-ACC-0022",
+      "label": "Diamond Creek (Grand Canyon)",
+      "river": "Colorado River",
+      "inState": "AZ",
+      "lat": 35.7661598,
+      "lon": -113.37295317,
+      "coordinateSource": "NPS Public POIs, OBJECTID 8010 'Diamond Creek' (GRCA, Boat Launch, Existing)",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=8010&outFields=*&outSR=4326&f=json",
+      "operator": "Hualapai Tribe (access road and landing on tribal land; river in Grand Canyon NP)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "tribal-fee",
+        "permit-required"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "AZ-ACC-0023",
+      "label": "Pearce Ferry Boat Launch",
+      "river": "Colorado River",
+      "inState": "AZ",
+      "lat": 36.1255327,
+      "lon": -113.98254683,
+      "coordinateSource": "NPS Public POIs, OBJECTID 10448 'Pearce Ferry Boat Launch' (Boat Launch)",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=10448&outFields=*&outSR=4326&f=json",
+      "operator": "National Park Service (Lake Mead NRA)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "critical-take-out",
+        "take-out-only"
+      ],
+      "imagery": "ok"
+    }
+  ],
+  "rivers": [
+    {
+      "riverId": "salt-river-lower",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "lsr-water-users-blue-point",
+        "lsr-water-users-goldfield",
+        "lsr-water-users-phon-d",
+        "lsr-blue-point-phon-d",
+        "lsr-goldfield-phon-d"
+      ],
+      "multiDaySections": [],
+      "crossState": false
+    },
+    {
+      "riverId": "salt-river-upper",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "upper-salt-first-camp-hwy-288"
+      ],
+      "multiDaySections": [
+        "upper-salt-first-camp-hwy-288"
+      ],
+      "crossState": false
+    },
+    {
+      "riverId": "verde-river-upper",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "tuzigoot-dead-horse-ranch",
+        "black-canyon-bignotti"
+      ],
+      "multiDaySections": [],
+      "crossState": false
+    },
+    {
+      "riverId": "verde-river-camp-verde",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "white-bridge-beasley-flat",
+        "white-bridge-clear-creek",
+        "clear-creek-beasley-flat"
+      ],
+      "multiDaySections": [],
+      "crossState": false
+    },
+    {
+      "riverId": "verde-river-scenic",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "beasley-flat-childs"
+      ],
+      "multiDaySections": [],
+      "crossState": false
+    },
+    {
+      "riverId": "verde-river-wild",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "childs-sheep-bridge",
+        "sheep-bridge-horseshoe"
+      ],
+      "multiDaySections": [
+        "childs-sheep-bridge"
+      ],
+      "crossState": false
+    },
+    {
+      "riverId": "verde-river-lower",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "needle-rock-box-bar"
+      ],
+      "multiDaySections": [],
+      "crossState": false
+    },
+    {
+      "riverId": "gila-river-gila-box",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "gila-box-put-in-dry-canyon"
+      ],
+      "multiDaySections": [
+        "gila-box-put-in-dry-canyon"
+      ],
+      "crossState": true
+    },
+    {
+      "riverId": "colorado-river-grand-canyon",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "lees-ferry-diamond-creek",
+        "lees-ferry-pearce-ferry"
+      ],
+      "multiDaySections": [
+        "lees-ferry-diamond-creek",
+        "lees-ferry-pearce-ferry"
+      ],
+      "crossState": false
+    },
+    {
+      "riverId": "colorado-river-lower-gorge",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "diamond-creek-pearce-ferry"
+      ],
+      "multiDaySections": [
+        "diamond-creek-pearce-ferry"
+      ],
+      "crossState": false
+    },
+    {
+      "riverId": "colorado-river-black-canyon",
+      "status": "excluded/deferred",
+      "reason": "NPS: Launching at the Hoover Dam (river mile 64) requires a permit. Paddlecraft can launch and takeout at Willow Beach. The Hoover launch is permit/outfitter-controlled, the reach is the NV/AZ border, and the candidate USGS gauges checked gave no recent discharge. Willow Beach NPS POI 20605 (35.86795, -114.66259) was found but not reviewed. Best done with a Nevada package."
+    },
+    {
+      "riverId": "colorado-river-topock-gorge",
+      "status": "excluded/deferred",
+      "reason": "FWS: launching at either Topock Marina in Arizona or Park Moabi in California. Topock Marina is a private marina and Park Moabi is in California; FWS gives no coordinates. These boat launches do not provide access to the Colorado River. (Topock Marsh launches). No live gauge found."
+    },
+    {
+      "riverId": "colorado-river-imperial-nwr",
+      "status": "excluded/deferred",
+      "reason": "FWS non-motorized boating page was 403-blocked; nothing captured."
+    },
+    {
+      "riverId": "colorado-river-parker-strip / davis",
+      "status": "excluded/deferred",
+      "reason": "Reservoir-like, motorboat-dominated reaches on the AZ/CA/NV borders; no agency paddle launch pages captured. Not researched."
+    },
+    {
+      "riverId": "salt-river-lower (Phon D to Granite Reef)",
+      "status": "excluded/deferred",
+      "reason": "Granite Reef is closure-uncertain (closure order link 404s); see closures.json."
+    },
+    {
+      "riverId": "salt-river-upper (Gleason Flat take-out)",
+      "status": "excluded/deferred",
+      "reason": "No agency coordinate or access page for Gleason Flat was captured (the Tonto rafter take-out pages redirect or 404)."
+    },
+    {
+      "riverId": "verde-river-upper (Dead Horse Ranch to Bridgeport/Camp Verde)",
+      "status": "excluded/deferred",
+      "reason": "No agency coordinates for intermediate Cottonwood/Camp Verde access points were captured."
+    },
+    {
+      "riverId": "verde-river below Bartlett Dam (Riverside)",
+      "status": "excluded/deferred",
+      "reason": "Riverside Campground is closed by order until 2027-03-31."
+    },
+    {
+      "riverId": "san-pedro / little-colorado / agua-fria / black-river / bill-williams / hassayampa / oak-creek / fossil-creek / gila (other reaches) / tonto-creek / salt-river (Roosevelt-Saguaro lakes)",
+      "status": "excluded/deferred",
+      "reason": "Runoff-only, creek or canyoneering runs, or lake reaches with no managing-agency boating launch pages captured this pass. Not researched; listed so they are not mistaken for reviewed-and-rejected."
+    }
+  ],
+  "nonRegistryCandidates": [
+    {
+      "id": "AZ-NRC-0001",
+      "label": "Sheeps Crossing Day Use Area (Lower Salt)",
+      "river": "Salt River",
+      "lat": 33.5570496,
+      "lon": -111.5779518,
+      "coordinateSource": "Owner-supplied: North Wallace's own Google Maps satellite marking (33.5570496, -111.5779518); not an agency coordinate",
+      "bank": "river-left (opposite bank from the Blue Point marking, which is river-right)",
+      "nhd": "NHD HR Salt River flowline 139048883 (artificial path) 36 m; flow bearing ~261 (west, below the bend north of the bridge); computed side river-left",
+      "distancesM": {
+        "sheepsCrossingEdwInfraM": 136,
+        "sheepsCrossingPageM": 137,
+        "northBluePointMarkingM": 432,
+        "bluePointAgencyM": 435,
+        "pebbleBeachPageM": 606,
+        "nhdFlowlineM": 36
+      },
+      "status": "research-only context; not a registry point or section endpoint (Tonto lists no designated launch site there). Not added to catalog/map_points/AZ.json.",
+      "evidence": [
+        "research/raw/imagery/sheeps_crossing_lower_salt_owner_z19.png",
+        "research/raw/imagery/sheeps_crossing_lower_salt_owner_z18.png",
+        "research/raw/imagery/blue_point_sheeps_pebble_overview_owner_z17.png",
+        "research/raw/imagery/nhd_sheeps_crossing_day_use_area_lower_salt_owner.json",
+        "research/raw/agency/fs_sheep_crossing.txt",
+        "research/raw/gis/usfs_infra_recsites_blue_point_area.json"
+      ]
+    }
+  ]
+}

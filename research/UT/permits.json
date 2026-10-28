@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "state": "UT",
+  "checkedOn": "2026-10-25",
+  "purpose": "Research-only. Permit facts by river, quoted from the managing agency. Nothing was applied for or submitted.",
+  "statewide": [
+    {
+      "fact": "Inflatable PFDs are not allowed on any rivers in Utah (quoted on the NPS Canyonlands river page).",
+      "source": "https://www.nps.gov/cany/planyourvisit/boatinginfo.htm",
+      "quote": "Inflatable PFDs are not allowed on any rivers in Utah.",
+      "rawFile": "research/raw/agency/nps_cany_boatinfo.txt"
+    }
+  ],
+  "rivers": {
+    "green-river-dinosaur": {
+      "permitRequired": true,
+      "agency": "NPS Dinosaur NM",
+      "quote": "Permits are required for all river trips within Dinosaur National Monument.",
+      "source": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+      "detail": "Multiday (Lodore) permits are issued by lottery; the Rainbow Park-Split Mountain day section needs a one-day permit (section currently excluded: closed)."
+    },
+    "green-river-desolation": {
+      "permitRequired": "sand-wash-swaseys only",
+      "agency": "BLM Price FO",
+      "quote": "A permit is required year round for floating the Desolation Gray Canyons section of the Green River.",
+      "source": "https://www.blm.gov/programs/recreation/passes-and-permits/lotteries/utah/desolationgray",
+      "detail": "Nefertiti-Swaseys day section, BLM WSR page: 'This river segment does not require a permit.'",
+      "dayQuoteSource": "https://www.blm.gov/national-conservation-lands/utah/green-river-wsr"
+    },
+    "green-river-labyrinth": {
+      "permitRequired": true,
+      "agency": "BLM Moab FO",
+      "quote": "Permits may be downloaded from BLM.gov and emailed to blm_ut_labyrinth@blm.gov.",
+      "source": "https://www.blm.gov/visit/labyrinth-canyon-river",
+      "detail": "BLM permit, self-issued by download and email (the package has not submitted one). NPS: 'Permits are required for boating the Green River between Green River State Park and Mineral Bottom (Labyrinth Canyon).'",
+      "fee": "not stated on the BLM page"
+    },
+    "colorado-river-westwater": {
+      "permitRequired": true,
+      "agency": "BLM Moab FO",
+      "quote": "permits are required year-round for private and commercial use.",
+      "source": "https://www.blm.gov/programs/recreation/passes-and-permits/lotteries/utah/westwatercanyon",
+      "page": "https://www.blm.gov/visit/westwater-canyon-river-permits"
+    },
+    "colorado-river-moab": {
+      "permitRequired": false,
+      "agency": "BLM Moab FO",
+      "quote": "Permits are not required for overnight use or launches on BLM land along the Colorado River.",
+      "source": "https://www.nps.gov/cany/planyourvisit/flatwater.htm",
+      "note": "Quoted from the NPS Canyonlands flatwater page; the BLM Moab Daily map gives no permit statement."
+    },
+    "colorado-river-meander": {
+      "permitRequired": "only for nights inside Canyonlands NP",
+      "agency": "NPS Canyonlands",
+      "quote": "A river permit is required for all noncommercial river travel on the Green and Colorado rivers. (Canyonlands NP)  /  Permits are not required for overnight use or launches on BLM land along the Colorado River.",
+      "source": "https://www.nps.gov/cany/planyourvisit/flatwater.htm",
+      "note": "Moab Bridge to Potash is upstream of the park on BLM land, so no permit applies to the section itself; continuing below Potash needs an NPS permit.",
+      "rawFile": "research/raw/agency/nps_cany_boatinfo.txt"
+    },
+    "san-juan": {
+      "permitRequired": true,
+      "agency": "BLM Monticello FO",
+      "quote": "A permit is required year-round to float any section of the San Juan River between Montezuma Creek and Clay Hills in southeast Utah.",
+      "source": "https://www.blm.gov/programs/recreation/passes-and-permits/lotteries/utah/san-juan-river",
+      "rawFile": "research/raw/agency/blm_sanjuan_permit.txt"
+    },
+    "san-rafael": {
+      "permitRequired": false,
+      "note": "No permit statement found on the BLM Fuller Bottom / Swinging Bridge pages.",
+      "source": "https://www.blm.gov/visit/fullers-bottom-trailhead"
+    },
+    "green-river-flaming-gorge": {
+      "permitRequired": false,
+      "note": "Fee areas (USFS/BLM) at launches; no float permit stated.",
+      "source": "https://www.fs.usda.gov/r04/ashley/recreation/little-hole-boat-launch-area"
+    },
+    "white-river": {
+      "permitRequired": false,
+      "note": "BLM brochure: 'Non-commercial use on BLM land is free, no permit'. Use of Uintah and Ouray Reservation lands requires separate tribal permits (brochure).",
+      "source": "https://www.blm.gov/sites/default/files/documents/files/white%20river%20for%20web.pdf"
+    }
+  },
+  "notRequested": "No permit, lottery entry or form was submitted. Agencies were not contacted."
+}

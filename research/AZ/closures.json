@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "closures": [
+    {
+      "riverId": "(not in catalog) salt-river-lower below Phon D",
+      "status": "closure-uncertain",
+      "relatedPoints": [
+        "Granite Reef Day Use Area (Lower Salt; not in registry)"
+      ],
+      "summary": "The Tonto Granite Reef page shows 'Site Open' and says Granite Reef offers the ability to launch non-motorized boats, but its General Information links to a closure order ('View Closure Order here.') whose page returns 404.",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/recreation/granite-reef-day-use-area",
+        "https://www.fs.usda.gov/r03/tonto/alerts/granite-reef-developed-recreation-site-public-health-and-safety-closure-order"
+      ],
+      "action": "Granite Reef not added. Phon D Sutton is the last Lower Salt take-out in this package."
+    },
+    {
+      "riverId": "(not in catalog) verde-river below Bartlett",
+      "status": "closed",
+      "relatedPoints": [
+        "Riverside Campground (Verde; not in registry)"
+      ],
+      "summary": "Tonto order 03-12-01-26-24: Riverside Campground closed (fire damage). Alert Start Date: September 25, 2026 Alert End Date: March 31, 2027",
+      "expectedReopening": "2027-03-31 (order end date)",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/alerts/riverside-post-fire-recovery-and-safety-closure-extension"
+      ],
+      "action": "Not added."
+    },
+    {
+      "riverId": "(not in catalog) verde-river near Horseshoe",
+      "status": "closed",
+      "relatedPoints": [
+        "Mesquite Campground (Verde; not in registry)"
+      ],
+      "summary": "Mesquite Campground closed due to post fire recovery. Alert Start Date: May 15, 2026 Alert End Date: December 31, 2026",
+      "expectedReopening": "2026-12-31 (order end date)",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/alerts/mesquite-campground-post-fire-recovery-closure-public-health-safety"
+      ],
+      "action": "Not added."
+    },
+    {
+      "riverId": "verde-river-wild",
+      "sectionIds": [
+        "sheep-bridge-horseshoe"
+      ],
+      "status": "road-closure",
+      "relatedPoints": [
+        "Horseshoe Campground (Verde)"
+      ],
+      "summary": "Tonto order 03-12-01-26-26 closes Horseshoe Dam Road for flood repairs: Alert Start Date: September 29, 2026 Alert End Date: November 2, 2026",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/alerts/horseshoe-dam-road-nfsr-205-emergency-closure-public-safety-0"
+      ],
+      "action": "Horseshoe Campground stays pending; re-check after Nov 2, 2026."
+    },
+    {
+      "riverId": "gila-river-gila-box",
+      "sectionIds": [
+        "gila-box-put-in-dry-canyon"
+      ],
+      "status": "closure-uncertain",
+      "relatedPoints": [
+        "Dry Canyon Boat Take-Out (Gila Box)"
+      ],
+      "summary": "Non-agency report only (American Whitewater trip report, Oct 4, 2026): flooding peaking 09/30/26 washed out the Dry Canyon beach access road; small boats can still take out, rafts will need gear carried. No BLM notice was found either way.",
+      "sources": [
+        "https://www.americanwhitewater.org/content/River/view/river-detail/117/reports/d559bd21-8c2a-4b4a-bdf7-ac336be1b2c3",
+        "https://www.blm.gov/visit/dry-canyon-boat-take-out-and-picnic-area"
+      ],
+      "rawFile": "research/raw/supporting/aw_gila_box_takeout_report.txt",
+      "action": "Dry Canyon stays pending (closure-uncertain). Re-check the BLM Safford FO page."
+    }
+  ],
+  "seasonal": [
+    {
+      "riverId": "salt-river-lower",
+      "summary": "Tonto order 03-12-03-24-65: seasonal bald-eagle closure areas on the Lower Salt. Alert Start Date: December 1, 2024 Alert End Date: June 30, 2026. The order has expired and no renewal for Dec 1, 2026 was found; check before winter trips.",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/alerts/lower-salt-river-seasonal-bald-eagle-closures"
+      ]
+    },
+    {
+      "riverId": "verde-river-lower",
+      "summary": "Tonto order 03-12-01-24-64 (Box Bar eagle closure): will remain in effect seasonally each year from December 1 through June 30 , until June 30, 2026. No renewal found; Box Bar stays pending.",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/alerts/box-bar-seasonal-eagle-closure"
+      ],
+      "relatedPoints": [
+        "Box Bar River Access Point (Verde)"
+      ]
+    },
+    {
+      "riverId": "verde-river-scenic / verde-river-wild",
+      "summary": "AZ State Parks Paddle Map 2: eagle no-stopping zones Dec 1 - Jun 30 at guide Mile 2.3-4.3 (Scenic) and Mile 36.9-38.1 (Wild). is closed to stopping from December 1 to June 30",
+      "sources": [
+        "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_2.pdf"
+      ]
+    }
+  ],
+  "advisories": [
+    {
+      "riverId": "salt-river-lower",
+      "summary": "USGS 09502000 (Salt River below Stewart Mountain Dam) read 6.12 cfs at the check (2026-10-25, ~2 PM MST). A near-zero reading suggests no dam release at check time (inference, not an agency statement). Do not publish a live ETA from this reading; the gauge is flagged in gauge-checks-AZ.json.",
+      "sources": [
+        "https://waterdata.usgs.gov/monitoring-location/09502000/"
+      ]
+    },
+    {
+      "riverId": "salt-river-upper",
+      "summary": "Lottery date conflict between Tonto pages and Recreation.gov (see permits.json). The take-out has no agency coordinate captured.",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/recreation/salt-river-canyon-wilderness-permit",
+        "https://www.recreation.gov/permits/249275"
+      ]
+    },
+    {
+      "riverId": "gila-river-gila-box",
+      "summary": "BLM: two smooth-wire fences cross the river 1.3 and 2.7 river miles below the Old Safford Bridge put-in. float boaters should exercise caution upon approaching them, especially at water levels above 100 cubic feet per second",
+      "sources": [
+        "https://www.blm.gov/visit/gila-box-riparian-national-conservation-area"
+      ]
+    },
+    {
+      "riverId": "verde-river-scenic",
+      "summary": "Verde Falls Rapid (Class IV) at guide Mile 2.6 below Beasley Flat; portage or scout (AZ State Parks Paddle Map 2).",
+      "sources": [
+        "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_2.pdf"
+      ]
+    },
+    {
+      "riverId": "salt-river-upper",
+      "summary": "Motorized equipment or boats are prohibited within the Salt River Canyon Wilderness.",
+      "sources": [
+        "https://www.fs.usda.gov/r03/tonto/recreation/salt-river-canyon-wilderness-permit"
+      ]
+    }
+  ]
+}

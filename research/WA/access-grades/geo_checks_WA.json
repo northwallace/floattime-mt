@@ -1,0 +1,2911 @@
+{
+ "version": 1,
+ "state": "WA",
+ "generatedOn": "2026-10-25",
+ "purpose": "Research-only geometry checks. Not read by the app. Thresholds: point >150 m from NHDPlus HR centreline; section mileage mismatch >20%.",
+ "sources": {
+  "flowlines": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query (NHDPlus HR Flowline layer 3; flow-direction digitized)",
+  "roads": "Census TIGERweb Transportation layers 2,6,8,9"
+ },
+ "points": [
+  {
+   "kind": "verified",
+   "label": "Averill (McFarland Creek)",
+   "lat": 48.150954,
+   "lon": -120.057186,
+   "river": "methow-lower",
+   "nearestFlowline": {
+    "distM": 50,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165043454",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Big Eddy (Skykomish)",
+   "lat": 47.83655,
+   "lon": -121.659375,
+   "river": "skykomish",
+   "nearestFlowline": {
+    "distM": 23,
+    "gnis": "Skykomish River",
+    "nhdPermanentId": "165058188",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Big Horn Recreation Site",
+   "lat": 46.8939898,
+   "lon": -120.5004652,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 41,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336243",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Boggans Access",
+   "lat": 46.041693,
+   "lon": -117.253159,
+   "river": "grande-ronde-troy",
+   "nearestFlowline": {
+    "distM": 44,
+    "gnis": "Grande Ronde River",
+    "nhdPermanentId": "109438794",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Carlton Access",
+   "lat": 48.246454,
+   "lon": -120.117781,
+   "river": "methow-lower",
+   "nearestFlowline": {
+    "distM": 38,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165041427",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Copper Creek",
+   "lat": 48.5911167,
+   "lon": -121.3733613,
+   "river": "skagit-upper",
+   "nearestFlowline": {
+    "distM": 60,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "130064055",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Dryden Dam Access",
+   "lat": 47.555227,
+   "lon": -120.574097,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 46,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150857505",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Goodell Creek",
+   "lat": 48.6720439,
+   "lon": -121.269506,
+   "river": "skagit-upper",
+   "nearestFlowline": {
+    "distM": 65,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "161411917",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Heller Bar",
+   "lat": 46.086008,
+   "lon": -116.983366,
+   "river": "grande-ronde-lower",
+   "nearestFlowline": {
+    "distM": 105,
+    "gnis": "Snake River",
+    "nhdPermanentId": "163873316",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Lake Wenatchee State Park",
+   "lat": 47.807773,
+   "lon": -120.726132,
+   "river": "wenatchee-upper",
+   "nearestFlowline": {
+    "distM": 49,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856779",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "roadDataErrors": [
+    "railroad"
+   ],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Leidl Campground",
+   "lat": 45.937299,
+   "lon": -121.119316,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 27,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210338",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Lewis Street Access (Monroe)",
+   "lat": 47.846531,
+   "lon": -121.971445,
+   "river": "skykomish",
+   "nearestFlowline": {
+    "distM": 63,
+    "gnis": "Skykomish River",
+    "nhdPermanentId": "165058202",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Lmuma Creek Recreation Site",
+   "lat": 46.81374588889957,
+   "lon": -120.45049013066262,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 51,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336895",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Mineral Springs (Icehouse)",
+   "lat": 45.818726,
+   "lon": -121.117249,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 22,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210136",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Peshastin Access",
+   "lat": 47.569692,
+   "lon": -120.594505,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 50,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856568",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Plum Landing",
+   "lat": 47.551524,
+   "lon": -121.850756,
+   "river": "snoqualmie-fall-city",
+   "nearestFlowline": {
+    "distM": 47,
+    "gnis": "Snoqualmie River",
+    "nhdPermanentId": "129059046",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Roza Recreation Site",
+   "lat": 46.76391497718437,
+   "lon": -120.45664026056583,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 30,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336224",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Troy Boat Launch",
+   "lat": 45.945165,
+   "lon": -117.450093,
+   "river": "grande-ronde-troy",
+   "nearestFlowline": {
+    "distM": 53,
+    "gnis": "Grande Ronde River",
+    "nhdPermanentId": "109440274",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Turkey Hole",
+   "lat": 45.740386,
+   "lon": -121.228337,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 23,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210062",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Umtanum Recreation Site",
+   "lat": 46.855657557970545,
+   "lon": -120.4836324396714,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 34,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336248",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Vernita Bridge",
+   "lat": 46.639961,
+   "lon": -119.743035,
+   "river": "columbia-hanford",
+   "nearestFlowline": {
+    "distM": 225,
+    "gnis": "Columbia River",
+    "nhdPermanentId": "150580585",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (225 m)"
+   ]
+  },
+  {
+   "kind": "verified",
+   "label": "White Bluffs Boat Launch",
+   "lat": 46.674449,
+   "lon": -119.453933,
+   "river": "columbia-hanford",
+   "nearestFlowline": {
+    "distM": 268,
+    "gnis": "Columbia River",
+    "nhdPermanentId": "150580600",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (268 m)"
+   ]
+  },
+  {
+   "kind": "verified",
+   "label": "Whitney Bridge",
+   "lat": 47.282744,
+   "lon": -122.054858,
+   "river": "green-flaming-geyser",
+   "nearestFlowline": {
+    "distM": 47,
+    "gnis": "Green River",
+    "nhdPermanentId": "130904196",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "BZ Corner",
+   "lat": 45.851342,
+   "lon": -121.509918,
+   "river": "white-salmon",
+   "areaRadiusM": 200,
+   "nearestFlowline": {
+    "distM": 77,
+    "gnis": "White Salmon River",
+    "nhdPermanentId": "150813591",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Barrier Dam (Cowlitz Salmon Hatchery)",
+   "lat": 46.51602,
+   "lon": -122.63773,
+   "river": "cowlitz",
+   "areaRadiusM": 75,
+   "nearestFlowline": {
+    "distM": 65,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "163817223",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Blue Creek (Cowlitz Trout Hatchery)",
+   "lat": 46.483875,
+   "lon": -122.731074,
+   "river": "cowlitz",
+   "areaRadiusM": 150,
+   "nearestFlowline": {
+    "distM": 62,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "132970030",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Concrete Bridge (Middle Fork Snoqualmie)",
+   "lat": 47.4943,
+   "lon": -121.6408,
+   "river": "snoqualmie-mf",
+   "areaRadiusM": 150,
+   "nearestFlowline": {
+    "distM": 86,
+    "gnis": "Middle Fork Snoqualmie River",
+    "nhdPermanentId": "129059088",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Hartzell Creek Boat Launch",
+   "lat": 47.55197,
+   "lon": -124.203328,
+   "river": "queets",
+   "areaRadiusM": 100,
+   "nearestFlowline": {
+    "distM": 82,
+    "gnis": "Queets River",
+    "nhdPermanentId": "160932996",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Hoh Oxbow Campground",
+   "lat": 47.811365,
+   "lon": -124.249436,
+   "river": "hoh",
+   "areaRadiusM": 400,
+   "nearestFlowline": {
+    "distM": 53,
+    "gnis": "Hoh River",
+    "nhdPermanentId": "160517166",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Hoh Rainforest Campground",
+   "lat": 47.858352,
+   "lon": -123.93554,
+   "river": "hoh",
+   "areaRadiusM": 400,
+   "nearestFlowline": {
+    "distM": 172,
+    "gnis": "Hoh River",
+    "nhdPermanentId": "160509579",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (172 m); within the 400 m approximate radius"
+   ]
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Husum (above the falls)",
+   "lat": 45.799923,
+   "lon": -121.486067,
+   "river": "white-salmon",
+   "areaRadiusM": 100,
+   "nearestFlowline": {
+    "distM": 45,
+    "gnis": "White Salmon River",
+    "nhdPermanentId": "150813605",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Kanaskat-Palmer State Park",
+   "lat": 47.32193,
+   "lon": -121.90726,
+   "river": "green-gorge",
+   "areaRadiusM": 300,
+   "nearestFlowline": {
+    "distM": 96,
+    "gnis": "Green River",
+    "nhdPermanentId": "165398120",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Lower Sauk Boat Launch",
+   "lat": 48.3448,
+   "lon": -121.5499,
+   "river": "sauk",
+   "areaRadiusM": 200,
+   "nearestFlowline": {
+    "distM": 133,
+    "gnis": "Sauk River",
+    "nhdPermanentId": "129304936",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [
+    "secondary road: State Rte 530"
+   ],
+   "flags": [
+    "line to river crosses secondary road: State Rte 530 (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Marblemount Boat Launch",
+   "lat": 48.52638889,
+   "lon": -121.4269444,
+   "river": "skagit-eagle",
+   "areaRadiusM": 200,
+   "nearestFlowline": {
+    "distM": 178,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "157516816",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (178 m); within the 200 m approximate radius"
+   ]
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Streator Crossing",
+   "lat": 47.589786,
+   "lon": -124.107848,
+   "river": "queets",
+   "areaRadiusM": 100,
+   "nearestFlowline": {
+    "distM": 98,
+    "gnis": "Queets River",
+    "nhdPermanentId": "123599128",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Sultan Sportsman Park",
+   "lat": 47.86078,
+   "lon": -121.82127,
+   "river": "skykomish",
+   "areaRadiusM": 250,
+   "nearestFlowline": {
+    "distM": 33,
+    "gnis": "Sultan River",
+    "nhdPermanentId": "165058138",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Averill (McFarland Creek)",
+   "lat": 48.151,
+   "lon": -120.0574,
+   "river": "methow-lower",
+   "nearestFlowline": {
+    "distM": 52,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165043948",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Averill (McFarland Creek) — agency site coordinate",
+   "lat": 48.151416165319,
+   "lon": -120.05746788902,
+   "river": "methow-lower",
+   "nearestFlowline": {
+    "distM": 81,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165043947",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "BZ Corner",
+   "lat": 45.8517,
+   "lon": -121.5098,
+   "river": "white-salmon",
+   "nearestFlowline": {
+    "distM": 64,
+    "gnis": "White Salmon River",
+    "nhdPermanentId": "150813591",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Barrier Dam (Cowlitz Salmon Hatchery)",
+   "lat": 46.516,
+   "lon": -122.6376,
+   "river": "cowlitz",
+   "nearestFlowline": {
+    "distM": 71,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "163817223",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Barrier Dam (Cowlitz Salmon Hatchery) — WDFW Facilities ramp feature",
+   "lat": 46.51602,
+   "lon": -122.63773,
+   "river": "cowlitz",
+   "nearestFlowline": {
+    "distM": 65,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "163817223",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Barrier Dam (Cowlitz Salmon Hatchery) — agency site coordinate",
+   "lat": 46.515919320418,
+   "lon": -122.6373703957,
+   "river": "cowlitz",
+   "nearestFlowline": {
+    "distM": 77,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "163817223",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Big Eddy (Methow)",
+   "lat": 48.4282,
+   "lon": -120.1627,
+   "river": "methow-upper",
+   "nearestFlowline": {
+    "distM": 59,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165034847",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Big Eddy (Skykomish)",
+   "lat": 47.8364,
+   "lon": -121.6589,
+   "river": "skykomish",
+   "nearestFlowline": {
+    "distM": 60,
+    "gnis": "Skykomish River",
+    "nhdPermanentId": "165058188",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Big Eddy (Skykomish) — agency site coordinate",
+   "lat": 47.836041411391,
+   "lon": -121.65762918629,
+   "river": "skykomish",
+   "nearestFlowline": {
+    "distM": 159,
+    "gnis": "Skykomish River",
+    "nhdPermanentId": "165058188",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (159 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Big Horn Recreation Site",
+   "lat": 46.8965,
+   "lon": -120.5047,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 10,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336242",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Blue Creek (Cowlitz Trout Hatchery)",
+   "lat": 46.4841,
+   "lon": -122.7304,
+   "river": "cowlitz",
+   "nearestFlowline": {
+    "distM": 68,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "132970030",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Blue Creek (Cowlitz Trout Hatchery) — agency site coordinate",
+   "lat": 46.483874923849,
+   "lon": -122.73107350254,
+   "river": "cowlitz",
+   "nearestFlowline": {
+    "distM": 62,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "132970030",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Blue Creek (Cowlitz Trout Hatchery) — imagery-estimated ramp",
+   "lat": 46.4838,
+   "lon": -122.7311,
+   "river": "cowlitz",
+   "nearestFlowline": {
+    "distM": 55,
+    "gnis": "Cowlitz River",
+    "nhdPermanentId": "132970030",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Boggans Access",
+   "lat": 46.041764,
+   "lon": -117.253518,
+   "river": "grande-ronde-troy",
+   "nearestFlowline": {
+    "distM": 62,
+    "gnis": "Grande Ronde River",
+    "nhdPermanentId": "109438794",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Boggans Access — agency site coordinate",
+   "lat": 46.041763999441,
+   "lon": -117.25351800032,
+   "river": "grande-ronde-troy",
+   "nearestFlowline": {
+    "distM": 62,
+    "gnis": "Grande Ronde River",
+    "nhdPermanentId": "109438794",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Boggans Access — superseded v1 coordinate",
+   "lat": 46.0392,
+   "lon": -117.2556,
+   "river": "grande-ronde-troy",
+   "nearestFlowline": {
+    "distM": 215,
+    "gnis": "Grande Ronde River",
+    "nhdPermanentId": "161820657",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "secondary road: State Rte 129"
+   ],
+   "flags": [
+    ">150 m from river centreline (215 m)",
+    "line to river crosses secondary road: State Rte 129 (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Bridge View (Middle Fork Snoqualmie)",
+   "lat": 47.5472,
+   "lon": -121.542,
+   "river": "snoqualmie-mf",
+   "nearestFlowline": {
+    "distM": 41,
+    "gnis": "Middle Fork Snoqualmie River",
+    "nhdPermanentId": "129059147",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Carlton Access",
+   "lat": 48.2463,
+   "lon": -120.118,
+   "river": "methow-lower",
+   "nearestFlowline": {
+    "distM": 15,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165041427",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Carlton Access — agency site coordinate",
+   "lat": 48.246538251693,
+   "lon": -120.11755424333,
+   "river": "methow-lower",
+   "nearestFlowline": {
+    "distM": 54,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165041427",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "roadDataErrors": [
+    "railroad"
+   ],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Cashmere Riverside Park",
+   "lat": 47.5247,
+   "lon": -120.4673,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 65,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150857552",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Concrete Bridge (Middle Fork Snoqualmie)",
+   "lat": 47.4943,
+   "lon": -121.6408,
+   "river": "snoqualmie-mf",
+   "nearestFlowline": {
+    "distM": 86,
+    "gnis": "Middle Fork Snoqualmie River",
+    "nhdPermanentId": "129059088",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Copper Creek",
+   "lat": 48.5911,
+   "lon": -121.373,
+   "river": "skagit-upper",
+   "nearestFlowline": {
+    "distM": 49,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "130064121",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Dryden Dam Access",
+   "lat": 47.5555,
+   "lon": -120.5744,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 63,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150857058",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Dryden Dam Access — agency site coordinate",
+   "lat": 47.556254430415,
+   "lon": -120.574865262,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 82,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150857058",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Fall City Access",
+   "lat": 47.5696,
+   "lon": -121.8882,
+   "river": "snoqualmie-fall-city",
+   "nearestFlowline": {
+    "distM": 146,
+    "gnis": "Snoqualmie River",
+    "nhdPermanentId": "129059039",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Flaming Geyser State Park",
+   "lat": 47.2728,
+   "lon": -122.024,
+   "river": "green-gorge",
+   "nearestFlowline": {
+    "distM": 102,
+    "gnis": "Green River",
+    "nhdPermanentId": "165398436",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Flaming Geyser State Park — superseded v1 coordinate",
+   "lat": 47.2729,
+   "lon": -122.0243,
+   "river": "green-gorge",
+   "nearestFlowline": {
+    "distM": 90,
+    "gnis": "Green River",
+    "nhdPermanentId": "165398436",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Goodell Creek",
+   "lat": 48.6718,
+   "lon": -121.269,
+   "river": "skagit-upper",
+   "nearestFlowline": {
+    "distM": 21,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "161411917",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Government Bridge (Sauk)",
+   "lat": 48.4027,
+   "lon": -121.5572,
+   "river": "sauk",
+   "nearestFlowline": {
+    "distM": 55,
+    "gnis": "Sauk River",
+    "nhdPermanentId": "129304929",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Hartzell Creek Boat Launch",
+   "lat": 47.5519,
+   "lon": -124.203,
+   "river": "queets",
+   "nearestFlowline": {
+    "distM": 84,
+    "gnis": "Queets River",
+    "nhdPermanentId": "160932996",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Headworks (Green River)",
+   "lat": 47.3075,
+   "lon": -121.8515,
+   "river": "green-gorge",
+   "nearestFlowline": {
+    "distM": 55,
+    "gnis": "Green River",
+    "nhdPermanentId": "165397585",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Heller Bar",
+   "lat": 46.085752,
+   "lon": -116.983375,
+   "river": "grande-ronde-lower",
+   "nearestFlowline": {
+    "distM": 103,
+    "gnis": "Snake River",
+    "nhdPermanentId": "163873314",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Heller Bar — agency site coordinate",
+   "lat": 46.085752274155,
+   "lon": -116.98337450809,
+   "river": "grande-ronde-lower",
+   "nearestFlowline": {
+    "distM": 103,
+    "gnis": "Snake River",
+    "nhdPermanentId": "163873314",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Heller Bar — superseded v1 coordinate",
+   "lat": 46.0858,
+   "lon": -116.9834,
+   "river": "grande-ronde-lower",
+   "nearestFlowline": {
+    "distM": 106,
+    "gnis": "Snake River",
+    "nhdPermanentId": "163873314",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Highway 2 Bridge (Tumwater)",
+   "lat": 47.6765,
+   "lon": -120.7343,
+   "river": "wenatchee-upper",
+   "nearestFlowline": {
+    "distM": 50,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856593",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "secondary road: US Hwy 2"
+   ],
+   "flags": [
+    "line to river crosses secondary road: US Hwy 2 (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Hoh Oxbow Campground",
+   "lat": 47.8116,
+   "lon": -124.2505,
+   "river": "hoh",
+   "nearestFlowline": {
+    "distM": 92,
+    "gnis": "Hoh River",
+    "nhdPermanentId": "160517166",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Hoh Rainforest Campground",
+   "lat": 47.8586,
+   "lon": -123.938,
+   "river": "hoh",
+   "nearestFlowline": {
+    "distM": 95,
+    "gnis": "Hoh River",
+    "nhdPermanentId": "160509579",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Howard Miller Steelhead Park",
+   "lat": 48.4845,
+   "lon": -121.5951,
+   "river": "skagit-eagle",
+   "nearestFlowline": {
+    "distM": 60,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "{F78C952A-C89D-44C3-AED5-A109772D4121}",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Husum (above the falls)",
+   "lat": 45.8,
+   "lon": -121.4861,
+   "river": "white-salmon",
+   "nearestFlowline": {
+    "distM": 44,
+    "gnis": "White Salmon River",
+    "nhdPermanentId": "150813605",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Husum (above the falls) — agency site coordinate",
+   "lat": 45.799923,
+   "lon": -121.486067,
+   "river": "white-salmon",
+   "nearestFlowline": {
+    "distM": 45,
+    "gnis": "White Salmon River",
+    "nhdPermanentId": "150813605",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Kanaskat-Palmer State Park",
+   "lat": 47.3219,
+   "lon": -121.9076,
+   "river": "green-gorge",
+   "nearestFlowline": {
+    "distM": 98,
+    "gnis": "Green River",
+    "nhdPermanentId": "165398163",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Kanaskat-Palmer State Park — superseded v1 coordinate",
+   "lat": 47.3219,
+   "lon": -121.9073,
+   "river": "green-gorge",
+   "nearestFlowline": {
+    "distM": 100,
+    "gnis": "Green River",
+    "nhdPermanentId": "165398120",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Lake Wenatchee State Park",
+   "lat": 47.8076,
+   "lon": -120.726,
+   "river": "wenatchee-upper",
+   "nearestFlowline": {
+    "distM": 65,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856779",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "local road: State Park Rd"
+   ],
+   "flags": [
+    "line to river crosses local road: State Park Rd (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Leidl Campground",
+   "lat": 45.9376,
+   "lon": -121.1194,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 48,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210338",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Leidl Campground — agency site coordinate",
+   "lat": 45.93768550533,
+   "lon": -121.11907311543,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 72,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210338",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "local road: (unnamed)"
+   ],
+   "flags": [
+    "line to river crosses local road: (unnamed) (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Lewis Street Access (Monroe)",
+   "lat": 47.8465,
+   "lon": -121.9716,
+   "river": "skykomish",
+   "nearestFlowline": {
+    "distM": 67,
+    "gnis": "Skykomish River",
+    "nhdPermanentId": "165058202",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Lewis Street Access (Monroe) — agency site coordinate",
+   "lat": 47.846442195984,
+   "lon": -121.97225912803,
+   "river": "skykomish",
+   "nearestFlowline": {
+    "distM": 90,
+    "gnis": "Skykomish River",
+    "nhdPermanentId": "165058202",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Lmuma Creek Recreation Site",
+   "lat": 46.8133,
+   "lon": -120.4504,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 1,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336895",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Lower Sauk Boat Launch",
+   "lat": 48.3452,
+   "lon": -121.549,
+   "river": "sauk",
+   "nearestFlowline": {
+    "distM": 77,
+    "gnis": "Sauk River",
+    "nhdPermanentId": "129304936",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Lower Sauk Boat Launch — agency site coordinate",
+   "lat": 48.3448,
+   "lon": -121.5499,
+   "river": "sauk",
+   "nearestFlowline": {
+    "distM": 133,
+    "gnis": "Sauk River",
+    "nhdPermanentId": "129304936",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [
+    "secondary road: State Rte 530"
+   ],
+   "flags": [
+    "line to river crosses secondary road: State Rte 530 (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Marblemount Boat Launch",
+   "lat": 48.5266,
+   "lon": -121.428,
+   "river": "skagit-eagle",
+   "nearestFlowline": {
+    "distM": 98,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "157516816",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Marblemount Boat Launch — agency site coordinate",
+   "lat": 48.52638889,
+   "lon": -121.4269444,
+   "river": "skagit-eagle",
+   "nearestFlowline": {
+    "distM": 178,
+    "gnis": "Skagit River",
+    "nhdPermanentId": "157516816",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (178 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Mineral Springs (Icehouse)",
+   "lat": 45.8187,
+   "lon": -121.1175,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 33,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210136",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Mineral Springs (Icehouse) — agency site coordinate",
+   "lat": 45.818868342058,
+   "lon": -121.11773125157,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 59,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210136",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Pateros Take-out",
+   "lat": 48.0461,
+   "lon": -119.916,
+   "river": "methow-lower",
+   "nearestFlowline": {
+    "distM": 103,
+    "gnis": "Methow River",
+    "nhdPermanentId": "165045213",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Peshastin Access",
+   "lat": 47.5695,
+   "lon": -120.5951,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 56,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856567",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Peshastin Access — agency site coordinate",
+   "lat": 47.569432998744,
+   "lon": -120.59539900027,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 62,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856567",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [
+    "local road: School St"
+   ],
+   "flags": [
+    "line to river crosses local road: School St (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Plain Access",
+   "lat": 47.7673,
+   "lon": -120.6652,
+   "river": "wenatchee-upper",
+   "nearestFlowline": {
+    "distM": 149,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856885",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Plese Flats",
+   "lat": 47.72774,
+   "lon": -117.51153,
+   "river": "spokane",
+   "nearestFlowline": {
+    "distM": 78,
+    "gnis": "Spokane River",
+    "nhdPermanentId": "148502246",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Plese Flats — superseded v1 coordinate",
+   "lat": 47.7273,
+   "lon": -117.511,
+   "river": "spokane",
+   "nearestFlowline": {
+    "distM": 137,
+    "gnis": "Spokane River",
+    "nhdPermanentId": "148502246",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Plum Landing",
+   "lat": 47.5515,
+   "lon": -121.8506,
+   "river": "snoqualmie-fall-city",
+   "nearestFlowline": {
+    "distM": 54,
+    "gnis": "Snoqualmie River",
+    "nhdPermanentId": "129059046",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Plum Landing — agency site coordinate",
+   "lat": 47.551466590328,
+   "lon": -121.85054198313,
+   "river": "snoqualmie-fall-city",
+   "nearestFlowline": {
+    "distM": 56,
+    "gnis": "Snoqualmie River",
+    "nhdPermanentId": "129059046",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Queets Trailhead",
+   "lat": 47.6247,
+   "lon": -124.0147,
+   "river": "queets",
+   "nearestFlowline": {
+    "distM": 92,
+    "gnis": "Queets River",
+    "nhdPermanentId": "160947945",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Red Barn Access (Winthrop)",
+   "lat": 48.4763,
+   "lon": -120.1884,
+   "river": "methow-upper",
+   "nearestFlowline": {
+    "distM": 54,
+    "gnis": "Methow River",
+    "nhdPermanentId": "144385429",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Roza Recreation Site",
+   "lat": 46.7636,
+   "lon": -120.4571,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 16,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336224",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Sauk Prairie (Darrington)",
+   "lat": 48.2617,
+   "lon": -121.5947,
+   "river": "sauk",
+   "nearestFlowline": {
+    "distM": 44,
+    "gnis": "Sauk River",
+    "nhdPermanentId": "161656629",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Streator Crossing",
+   "lat": 47.5898,
+   "lon": -124.1078,
+   "river": "queets",
+   "nearestFlowline": {
+    "distM": 100,
+    "gnis": "Queets River",
+    "nhdPermanentId": "123599128",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Sultan Sportsman Park",
+   "lat": 47.8608,
+   "lon": -121.8213,
+   "river": "skykomish",
+   "nearestFlowline": {
+    "distM": 34,
+    "gnis": "Sultan River",
+    "nhdPermanentId": "165058138",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "T.J. Meenach Bridge",
+   "lat": 47.6812,
+   "lon": -117.455,
+   "river": "spokane",
+   "nearestFlowline": {
+    "distM": 61,
+    "gnis": "Spokane River",
+    "nhdPermanentId": "148502251",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Tanner Road Access",
+   "lat": 47.4792,
+   "lon": -121.7373,
+   "river": "snoqualmie-mf",
+   "nearestFlowline": {
+    "distM": 108,
+    "gnis": "Middle Fork Snoqualmie River",
+    "nhdPermanentId": "163863244",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Troy Boat Launch",
+   "lat": 45.94548,
+   "lon": -117.45023,
+   "river": "grande-ronde-troy",
+   "nearestFlowline": {
+    "distM": 17,
+    "gnis": "Grande Ronde River",
+    "nhdPermanentId": "109440274",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Troy Boat Launch — superseded v1 coordinate",
+   "lat": 45.9472,
+   "lon": -117.4492,
+   "river": "grande-ronde-troy",
+   "nearestFlowline": {
+    "distM": 142,
+    "gnis": "Grande Ronde River",
+    "nhdPermanentId": "109440274",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [
+    "local road: 1st Ave"
+   ],
+   "flags": [
+    "line to river crosses local road: 1st Ave (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Turkey Hole",
+   "lat": 45.7408,
+   "lon": -121.2275,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 4,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210062",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Turkey Hole — agency site coordinate",
+   "lat": 45.740039976261,
+   "lon": -121.22851363678,
+   "river": "klickitat",
+   "nearestFlowline": {
+    "distM": 57,
+    "gnis": "Klickitat River",
+    "nhdPermanentId": "147210062",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Twisp Access",
+   "lat": 48.3681,
+   "lon": -120.12,
+   "river": "methow-upper",
+   "nearestFlowline": {
+    "distM": 40,
+    "gnis": "Twisp River",
+    "nhdPermanentId": "165036028",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Umtanum Recreation Site",
+   "lat": 46.8556,
+   "lon": -120.4842,
+   "river": "yakima-canyon",
+   "nearestFlowline": {
+    "distM": 9,
+    "gnis": "Yakima River",
+    "nhdPermanentId": "149336234",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Vernita Bridge",
+   "lat": 46.6419,
+   "lon": -119.7401,
+   "river": "columbia-hanford",
+   "nearestFlowline": {
+    "distM": 302,
+    "gnis": "Columbia River",
+    "nhdPermanentId": "150580585",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (302 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Vernita Bridge — agency site coordinate",
+   "lat": 46.641877971647,
+   "lon": -119.74009399925,
+   "river": "columbia-hanford",
+   "nearestFlowline": {
+    "distM": 299,
+    "gnis": "Columbia River",
+    "nhdPermanentId": "150580585",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (299 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Vernita Bridge — second WDFW ramp feature (not used)",
+   "lat": 46.64398,
+   "lon": -119.734184,
+   "river": "columbia-hanford",
+   "nearestFlowline": {
+    "distM": 256,
+    "gnis": "Columbia River",
+    "nhdPermanentId": "150580585",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [
+    "secondary road: State Rte 24"
+   ],
+   "flags": [
+    ">150 m from river centreline (256 m)",
+    "line to river crosses secondary road: State Rte 24 (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Waterfront Park (Leavenworth)",
+   "lat": 47.5941,
+   "lon": -120.658,
+   "river": "wenatchee-leavenworth",
+   "nearestFlowline": {
+    "distM": 122,
+    "gnis": "Wenatchee River",
+    "nhdPermanentId": "150856984",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "White Bluffs Boat Launch",
+   "lat": 46.67438,
+   "lon": -119.45403,
+   "river": "columbia-hanford",
+   "nearestFlowline": {
+    "distM": 264,
+    "gnis": "Columbia River",
+    "nhdPermanentId": "150580600",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": [
+    ">150 m from river centreline (264 m)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Whitney Bridge",
+   "lat": 47.2829,
+   "lon": -122.0545,
+   "river": "green-flaming-geyser",
+   "nearestFlowline": {
+    "distM": 72,
+    "gnis": "Green River",
+    "nhdPermanentId": "130904196",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "proposal",
+   "label": "Raging River (WDFW) [proposal]",
+   "lat": 47.567983,
+   "lon": -121.882314,
+   "river": "snoqualmie-fall-city",
+   "nearestFlowline": {
+    "distM": 31,
+    "gnis": "Snoqualmie River",
+    "nhdPermanentId": "163859671",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "proposal",
+   "label": "Queets Campground (NPS) [proposal]",
+   "lat": 47.628058,
+   "lon": -124.01752,
+   "river": "queets",
+   "nearestFlowline": {
+    "distM": 43,
+    "gnis": "Queets River",
+    "nhdPermanentId": "160947946",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  }
+ ],
+ "sections": [
+  {
+   "riverId": "columbia-hanford",
+   "sectionId": "vernita-white-bluffs",
+   "putIn": "Vernita Bridge",
+   "takeOut": "White Bluffs Boat Launch",
+   "listedMiles": 18.5,
+   "putInCoord": {
+    "lat": 46.639961,
+    "lon": -119.743035,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 46.674449,
+    "lon": -119.453933,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 225,
+    "takeOut": 268
+   },
+   "centrelineMiles": 18.83,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 1.8,
+   "flags": []
+  },
+  {
+   "riverId": "cowlitz",
+   "sectionId": "salmon-hatchery-trout-hatchery",
+   "putIn": "Barrier Dam (Cowlitz Salmon Hatchery)",
+   "takeOut": "Blue Creek (Cowlitz Trout Hatchery)",
+   "listedMiles": 7.5,
+   "putInCoord": {
+    "lat": 46.51602,
+    "lon": -122.63773,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 46.483875,
+    "lon": -122.731074,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 65,
+    "takeOut": 62
+   },
+   "centrelineMiles": 7.48,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.3,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "grande-ronde-lower",
+   "sectionId": "troy-heller-bar",
+   "putIn": "Troy Boat Launch",
+   "takeOut": "Heller Bar",
+   "listedMiles": 46.2,
+   "putInCoord": {
+    "lat": 45.945165,
+    "lon": -117.450093,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 46.086008,
+    "lon": -116.983366,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 53,
+    "takeOut": 695
+   },
+   "centrelineMiles": 45.75,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.0,
+   "flags": [
+    "take-out is 695 m from the Grande Ronde River main stem (routing unreliable)"
+   ]
+  },
+  {
+   "riverId": "grande-ronde-troy",
+   "sectionId": "troy-boggans",
+   "putIn": "Troy Boat Launch",
+   "takeOut": "Boggans Access",
+   "listedMiles": 19.5,
+   "putInCoord": {
+    "lat": 45.945165,
+    "lon": -117.450093,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 46.041693,
+    "lon": -117.253159,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 53,
+    "takeOut": 44
+   },
+   "centrelineMiles": 19.24,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.3,
+   "flags": []
+  },
+  {
+   "riverId": "green-flaming-geyser",
+   "sectionId": "flaming-geyser-whitney",
+   "putIn": "Flaming Geyser State Park",
+   "takeOut": "Whitney Bridge",
+   "listedMiles": 2.8,
+   "putInCoord": {
+    "lat": 47.2728,
+    "lon": -122.024,
+    "basis": "research candidate (v1 research: AW access coordinate (gorge take-out AW point 4)"
+   },
+   "takeOutCoord": {
+    "lat": 47.282744,
+    "lon": -122.054858,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 102,
+    "takeOut": 47
+   },
+   "centrelineMiles": 2.8,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.1,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "green-gorge",
+   "sectionId": "headworks-kanaskat",
+   "putIn": "Headworks (Green River)",
+   "takeOut": "Kanaskat-Palmer State Park",
+   "listedMiles": 4.0,
+   "putInCoord": {
+    "lat": 47.3075,
+    "lon": -121.8515,
+    "basis": "research candidate (v1 research: AW access coordinate; 63 m from OSM Green River)"
+   },
+   "takeOutCoord": {
+    "lat": 47.32193,
+    "lon": -121.90726,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 55,
+    "takeOut": 96
+   },
+   "centrelineMiles": 3.93,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.7,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "green-gorge",
+   "sectionId": "kanaskat-flaming-geyser",
+   "putIn": "Kanaskat-Palmer State Park",
+   "takeOut": "Flaming Geyser State Park",
+   "listedMiles": 12.0,
+   "putInCoord": {
+    "lat": 47.32193,
+    "lon": -121.90726,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 47.2728,
+    "lon": -122.024,
+    "basis": "research candidate (v1 research: AW access coordinate (gorge take-out AW point 4)"
+   },
+   "snapDistM": {
+    "putIn": 96,
+    "takeOut": 102
+   },
+   "centrelineMiles": 11.96,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.4,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "hoh",
+   "sectionId": "hoh-campground-oxbow",
+   "putIn": "Hoh Rainforest Campground",
+   "takeOut": "Hoh Oxbow Campground",
+   "listedMiles": 20.0,
+   "putInCoord": {
+    "lat": 47.858352,
+    "lon": -123.93554,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 47.811365,
+    "lon": -124.249436,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 172,
+    "takeOut": 53
+   },
+   "centrelineMiles": 21.16,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 5.8,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "klickitat",
+   "sectionId": "leidl-icehouse",
+   "putIn": "Leidl Campground",
+   "takeOut": "Mineral Springs (Icehouse)",
+   "listedMiles": 15.8,
+   "putInCoord": {
+    "lat": 45.937299,
+    "lon": -121.119316,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 45.818726,
+    "lon": -121.117249,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 27,
+    "takeOut": 22
+   },
+   "centrelineMiles": 15.95,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 1.0,
+   "flags": []
+  },
+  {
+   "riverId": "klickitat",
+   "sectionId": "icehouse-turkey-hole",
+   "putIn": "Mineral Springs (Icehouse)",
+   "takeOut": "Turkey Hole",
+   "listedMiles": 10.9,
+   "putInCoord": {
+    "lat": 45.818726,
+    "lon": -121.117249,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 45.740386,
+    "lon": -121.228337,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 22,
+    "takeOut": 23
+   },
+   "centrelineMiles": 10.95,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.5,
+   "flags": []
+  },
+  {
+   "riverId": "methow-lower",
+   "sectionId": "carlton-averill",
+   "putIn": "Carlton Access",
+   "takeOut": "Averill (McFarland Creek)",
+   "listedMiles": 10.6,
+   "putInCoord": {
+    "lat": 48.246454,
+    "lon": -120.117781,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 48.150954,
+    "lon": -120.057186,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 38,
+    "takeOut": 50
+   },
+   "centrelineMiles": 10.63,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.3,
+   "flags": []
+  },
+  {
+   "riverId": "methow-lower",
+   "sectionId": "averill-pateros",
+   "putIn": "Averill (McFarland Creek)",
+   "takeOut": "Pateros Take-out",
+   "listedMiles": 16.9,
+   "putInCoord": {
+    "lat": 48.150954,
+    "lon": -120.057186,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 48.0461,
+    "lon": -119.916,
+    "basis": "research candidate (v1 research: AW access coordinate; 107 m from OSM Methow cen)"
+   },
+   "snapDistM": {
+    "putIn": 50,
+    "takeOut": 103
+   },
+   "centrelineMiles": 16.84,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.4,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "methow-upper",
+   "sectionId": "red-barn-big-eddy",
+   "putIn": "Red Barn Access (Winthrop)",
+   "takeOut": "Big Eddy (Methow)",
+   "listedMiles": 4.5,
+   "putInCoord": {
+    "lat": 48.4763,
+    "lon": -120.1884,
+    "basis": "research candidate (v1 research: AW access coordinate; 52 m from OSM Methow cent)"
+   },
+   "takeOutCoord": {
+    "lat": 48.4282,
+    "lon": -120.1627,
+    "basis": "research candidate (v1 research: AW access coordinate; 65 m from OSM Methow cent)"
+   },
+   "snapDistM": {
+    "putIn": 54,
+    "takeOut": 59
+   },
+   "centrelineMiles": 4.47,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.8,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "methow-upper",
+   "sectionId": "big-eddy-twisp",
+   "putIn": "Big Eddy (Methow)",
+   "takeOut": "Twisp Access",
+   "listedMiles": 6.1,
+   "putInCoord": {
+    "lat": 48.4282,
+    "lon": -120.1627,
+    "basis": "research candidate (v1 research: AW access coordinate; 65 m from OSM Methow cent)"
+   },
+   "takeOutCoord": {
+    "lat": 48.3681,
+    "lon": -120.12,
+    "basis": "research candidate (v1 research: AW access coordinate; 85 m from OSM centerline )"
+   },
+   "snapDistM": {
+    "putIn": 59,
+    "takeOut": 84
+   },
+   "centrelineMiles": 6.05,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.9,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "queets",
+   "sectionId": "queets-trailhead-streator",
+   "putIn": "Queets Trailhead",
+   "takeOut": "Streator Crossing",
+   "listedMiles": 6.8,
+   "putInCoord": {
+    "lat": 47.6247,
+    "lon": -124.0147,
+    "basis": "research candidate (v1 research: AW access coordinate (two AW reaches agree with)"
+   },
+   "takeOutCoord": {
+    "lat": 47.589786,
+    "lon": -124.107848,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 92,
+    "takeOut": 98
+   },
+   "centrelineMiles": 6.69,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.5,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "queets",
+   "sectionId": "streator-hartzell",
+   "putIn": "Streator Crossing",
+   "takeOut": "Hartzell Creek Boat Launch",
+   "listedMiles": 6.5,
+   "putInCoord": {
+    "lat": 47.589786,
+    "lon": -124.107848,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 47.55197,
+    "lon": -124.203328,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 98,
+    "takeOut": 82
+   },
+   "centrelineMiles": 6.36,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -2.2,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "sauk",
+   "sectionId": "sauk-prairie-lower-sauk",
+   "putIn": "Sauk Prairie (Darrington)",
+   "takeOut": "Lower Sauk Boat Launch",
+   "listedMiles": 7.5,
+   "putInCoord": {
+    "lat": 48.2617,
+    "lon": -121.5947,
+    "basis": "research candidate (v1 research: AW access coordinate; OSM slipway 'Darrington M)"
+   },
+   "takeOutCoord": {
+    "lat": 48.3448,
+    "lon": -121.5499,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 44,
+    "takeOut": 133
+   },
+   "centrelineMiles": 7.41,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.2,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "sauk",
+   "sectionId": "lower-sauk-government-bridge",
+   "putIn": "Lower Sauk Boat Launch",
+   "takeOut": "Government Bridge (Sauk)",
+   "listedMiles": 5.2,
+   "putInCoord": {
+    "lat": 48.3448,
+    "lon": -121.5499,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 48.4027,
+    "lon": -121.5572,
+    "basis": "research candidate (v1 research: AW access coordinate; 55 m from OSM Sauk center)"
+   },
+   "snapDistM": {
+    "putIn": 133,
+    "takeOut": 55
+   },
+   "centrelineMiles": 5.2,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.1,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "skagit-eagle",
+   "sectionId": "copper-marblemount",
+   "putIn": "Copper Creek",
+   "takeOut": "Marblemount Boat Launch",
+   "listedMiles": 5.8,
+   "putInCoord": {
+    "lat": 48.5911167,
+    "lon": -121.3733613,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 48.52638889,
+    "lon": -121.4269444,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 60,
+    "takeOut": 178
+   },
+   "centrelineMiles": 5.78,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.3,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "skagit-eagle",
+   "sectionId": "marblemount-howard-miller",
+   "putIn": "Marblemount Boat Launch",
+   "takeOut": "Howard Miller Steelhead Park",
+   "listedMiles": 10.4,
+   "putInCoord": {
+    "lat": 48.52638889,
+    "lon": -121.4269444,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 48.4845,
+    "lon": -121.5951,
+    "basis": "research candidate (v1 research: AW access coordinate (two AW reaches agree); OS)"
+   },
+   "snapDistM": {
+    "putIn": 178,
+    "takeOut": 60
+   },
+   "centrelineMiles": 10.34,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.6,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "skagit-upper",
+   "sectionId": "goodell-copper",
+   "putIn": "Goodell Creek",
+   "takeOut": "Copper Creek",
+   "listedMiles": 8.9,
+   "putInCoord": {
+    "lat": 48.6720439,
+    "lon": -121.269506,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 48.5911167,
+    "lon": -121.3733613,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 65,
+    "takeOut": 60
+   },
+   "centrelineMiles": 8.43,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -5.3,
+   "flags": []
+  },
+  {
+   "riverId": "skykomish",
+   "sectionId": "big-eddy-sultan",
+   "putIn": "Big Eddy (Skykomish)",
+   "takeOut": "Sultan Sportsman Park",
+   "listedMiles": 9.7,
+   "putInCoord": {
+    "lat": 47.83655,
+    "lon": -121.659375,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 47.86078,
+    "lon": -121.82127,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 23,
+    "takeOut": 114
+   },
+   "centrelineMiles": 9.67,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.3,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "skykomish",
+   "sectionId": "sultan-lewis-street",
+   "putIn": "Sultan Sportsman Park",
+   "takeOut": "Lewis Street Access (Monroe)",
+   "listedMiles": 9.6,
+   "putInCoord": {
+    "lat": 47.86078,
+    "lon": -121.82127,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 47.846531,
+    "lon": -121.971445,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 114,
+    "takeOut": 63
+   },
+   "centrelineMiles": 9.59,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.1,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "snoqualmie-fall-city",
+   "sectionId": "plum-landing-fall-city",
+   "putIn": "Plum Landing",
+   "takeOut": "Fall City Access",
+   "listedMiles": 3.2,
+   "putInCoord": {
+    "lat": 47.551524,
+    "lon": -121.850756,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 47.5696,
+    "lon": -121.8882,
+    "basis": "research candidate (v1 research: AW access coordinate (47.56963,-121.88822); on )"
+   },
+   "snapDistM": {
+    "putIn": 47,
+    "takeOut": 146
+   },
+   "centrelineMiles": 3.18,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.6,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "snoqualmie-mf",
+   "sectionId": "bridge-view-concrete-bridge",
+   "putIn": "Bridge View (Middle Fork Snoqualmie)",
+   "takeOut": "Concrete Bridge (Middle Fork Snoqualmie)",
+   "listedMiles": 8.0,
+   "putInCoord": {
+    "lat": 47.5472,
+    "lon": -121.542,
+    "basis": "research candidate (v1 research: AW access coordinate; 31 m from OSM Middle Fork)"
+   },
+   "takeOutCoord": {
+    "lat": 47.4943,
+    "lon": -121.6408,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 41,
+    "takeOut": 86
+   },
+   "centrelineMiles": 7.97,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.4,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "snoqualmie-mf",
+   "sectionId": "concrete-bridge-tanner",
+   "putIn": "Concrete Bridge (Middle Fork Snoqualmie)",
+   "takeOut": "Tanner Road Access",
+   "listedMiles": 7.0,
+   "putInCoord": {
+    "lat": 47.4943,
+    "lon": -121.6408,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 47.4792,
+    "lon": -121.7373,
+    "basis": "research candidate (v1 research: AW access coordinate; 128 m from OSM Middle For)"
+   },
+   "snapDistM": {
+    "putIn": 86,
+    "takeOut": 108
+   },
+   "centrelineMiles": 6.99,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.1,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "spokane",
+   "sectionId": "meenach-plese-flats",
+   "putIn": "T.J. Meenach Bridge",
+   "takeOut": "Plese Flats",
+   "listedMiles": 6.5,
+   "putInCoord": {
+    "lat": 47.6812,
+    "lon": -117.455,
+    "basis": "research candidate (v1 research: AW 'Put In' coordinate (generic label); 63 m fr)"
+   },
+   "takeOutCoord": {
+    "lat": 47.72774,
+    "lon": -117.51153,
+    "basis": "research candidate (v1 research: OSM 'Plese Flats' slipway; AW generic 'Take Out)"
+   },
+   "snapDistM": {
+    "putIn": 61,
+    "takeOut": 78
+   },
+   "centrelineMiles": 6.8,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 4.6,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "wenatchee-leavenworth",
+   "sectionId": "leavenworth-peshastin",
+   "putIn": "Waterfront Park (Leavenworth)",
+   "takeOut": "Peshastin Access",
+   "listedMiles": 5.2,
+   "putInCoord": {
+    "lat": 47.5941,
+    "lon": -120.658,
+    "basis": "research candidate (v1 research: AW access coordinate; OSM slipway 61 m; river l)"
+   },
+   "takeOutCoord": {
+    "lat": 47.569692,
+    "lon": -120.594505,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 122,
+    "takeOut": 50
+   },
+   "centrelineMiles": 5.25,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.9,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "wenatchee-leavenworth",
+   "sectionId": "dryden-cashmere",
+   "putIn": "Dryden Dam Access",
+   "takeOut": "Cashmere Riverside Park",
+   "listedMiles": 7.7,
+   "putInCoord": {
+    "lat": 47.555227,
+    "lon": -120.574097,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 47.5247,
+    "lon": -120.4673,
+    "basis": "research candidate (v1 research: AW access coordinate; 91 m from OSM centerline )"
+   },
+   "snapDistM": {
+    "putIn": 46,
+    "takeOut": 65
+   },
+   "centrelineMiles": 7.63,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.9,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "wenatchee-upper",
+   "sectionId": "lake-wenatchee-plain",
+   "putIn": "Lake Wenatchee State Park",
+   "takeOut": "Plain Access",
+   "listedMiles": 7.4,
+   "putInCoord": {
+    "lat": 47.807773,
+    "lon": -120.726132,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 47.7673,
+    "lon": -120.6652,
+    "basis": "research candidate (v1 research: AW access coordinate; river right as AW describ)"
+   },
+   "snapDistM": {
+    "putIn": 49,
+    "takeOut": 149
+   },
+   "centrelineMiles": 7.91,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 6.9,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "wenatchee-upper",
+   "sectionId": "plain-hwy2",
+   "putIn": "Plain Access",
+   "takeOut": "Highway 2 Bridge (Tumwater)",
+   "listedMiles": 9.1,
+   "putInCoord": {
+    "lat": 47.7673,
+    "lon": -120.6652,
+    "basis": "research candidate (v1 research: AW access coordinate; river right as AW describ)"
+   },
+   "takeOutCoord": {
+    "lat": 47.6765,
+    "lon": -120.7343,
+    "basis": "research candidate (v1 research: AW access coordinate; 36 m from OSM centerline )"
+   },
+   "snapDistM": {
+    "putIn": 149,
+    "takeOut": 50
+   },
+   "centrelineMiles": 10.74,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 18.1,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "white-salmon",
+   "sectionId": "bz-husum",
+   "putIn": "BZ Corner",
+   "takeOut": "Husum (above the falls)",
+   "listedMiles": 4.4,
+   "putInCoord": {
+    "lat": 45.851342,
+    "lon": -121.509918,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 45.799923,
+    "lon": -121.486067,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 77,
+    "takeOut": 45
+   },
+   "centrelineMiles": 4.4,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.0,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "yakima-canyon",
+   "sectionId": "big-horn-umtanum",
+   "putIn": "Big Horn Recreation Site",
+   "takeOut": "Umtanum Recreation Site",
+   "listedMiles": 5.4,
+   "putInCoord": {
+    "lat": 46.8939898,
+    "lon": -120.5004652,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 46.855657557970545,
+    "lon": -120.4836324396714,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 41,
+    "takeOut": 34
+   },
+   "centrelineMiles": 5.17,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -4.2,
+   "flags": []
+  },
+  {
+   "riverId": "yakima-canyon",
+   "sectionId": "umtanum-lmuma",
+   "putIn": "Umtanum Recreation Site",
+   "takeOut": "Lmuma Creek Recreation Site",
+   "listedMiles": 4.7,
+   "putInCoord": {
+    "lat": 46.855657557970545,
+    "lon": -120.4836324396714,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 46.81374588889957,
+    "lon": -120.45049013066262,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 34,
+    "takeOut": 51
+   },
+   "centrelineMiles": 4.98,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 6.0,
+   "flags": []
+  },
+  {
+   "riverId": "yakima-canyon",
+   "sectionId": "lmuma-roza",
+   "putIn": "Lmuma Creek Recreation Site",
+   "takeOut": "Roza Recreation Site",
+   "listedMiles": 5.3,
+   "putInCoord": {
+    "lat": 46.81374588889957,
+    "lon": -120.45049013066262,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 46.76391497718437,
+    "lon": -120.45664026056583,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 51,
+    "takeOut": 30
+   },
+   "centrelineMiles": 5.53,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 4.3,
+   "flags": []
+  }
+ ]
+}

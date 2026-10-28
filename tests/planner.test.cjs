@@ -6,6 +6,14 @@ test("zero/invalid flow never produces an estimate", () => {
   for (const q of [0, -1, NaN, Infinity])
     assert.equal(P.estimate(river, { miles: 8 }, q, 1, 0), null);
 });
+test("unavailable or missing calibration never produces an ETA even with fresh flow", () => {
+  for (const r of [
+    {...river, timing:{mode:"unavailable"}},
+    {...river, refSpeedMph:null},
+    {...river, refFlowCfs:null},
+    {...river, refSpeedMph:NaN},
+  ]) assert.equal(P.estimate(r,{miles:8},1100,1,0),null);
+});
 test("rounds total duration without 60-minute remainder", () =>
   assert.equal(P.duration(119.99), "2 hr"));
 test("stops and craft alter duration", () => {
@@ -17,6 +25,11 @@ test("multi-day uses ceiling and retains total hours", () => {
   const e = P.estimate({ ...river, multiDay: true }, { miles: 60 }, 1100, 1, 0);
   assert.equal(e.rawMinutes, 900);
   assert.equal(e.days, 3);
+});
+test("one multi-day section does not label a whole mixed river", () => {
+ const short=P.estimate({...river,multiDay:false},{miles:8},1100,1,0);
+ const long=P.estimate({...river,multiDay:false},{miles:73,multiDay:true},1100,1,0);
+ assert.equal(short.multiDay,false);assert.equal(long.multiDay,true);
 });
 test("freshness excludes stale, future and zero readings", () => {
   const n = Date.now();
@@ -47,3 +60,7 @@ test("invalid DST local launch is rejected", () =>
     P.launch("02:30", "America/Denver", new Date("2026-03-08T18:00:00Z")),
     null,
   ));
+
+test('access under review never yields an estimate',()=>{
+ assert.equal(P.estimate(river,{miles:8,accessReview:"Landing not confirmed"},1100,1,0),null);
+});

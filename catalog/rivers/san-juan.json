@@ -1,0 +1,60 @@
+{
+  "id": "san-juan",
+  "name": "San Juan River",
+  "gauge": "09379500",
+  "gaugeName": "San Juan River near Bluff, UT",
+  "lat": 37.2622,
+  "lon": -109.6121,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Sand Island to Mexican Hat (Upper San Juan) and the Goosenecks / Mexican Hat to Clay Hills (Lower San Juan). BLM permit required year-round.",
+  "sections": [
+    {
+      "id": "sand-island-mexican-hat",
+      "putIn": "Sand Island Boat Launch",
+      "takeOut": "Mexican Hat Boat Launch",
+      "miles": 27.0,
+      "difficulty": "Class II–III",
+      "notes": "BLM permit required year-round (recreation.gov lottery). BLM trip planner: 27 miles, typically 2-3 days; river has class II to III rapids. River left (south) is Navajo Nation - separate permit to camp/hike. Do not leave vehicles overnight at Mexican Hat (break-ins).",
+      "multiDay": true,
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 3,
+          "unit": "days",
+          "conditions": "BLM typical trip-length guidance. Includes overnight itinerary planning; actual time varies with conditions, camps and permit requirements.",
+          "sourceName": "BLM San Juan Trip Planning Information",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/San%20Juan%20Trip%20Planning%20Information.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "mexican-hat-clay-hills",
+      "putIn": "Mexican Hat Boat Launch",
+      "takeOut": "Clay Hills Boat Ramp",
+      "miles": 57.0,
+      "difficulty": "Class II–III",
+      "notes": "BLM: 57 miles, typically 4-5 days; Government Rapid often requires scouting. Clay Hills is the only viable take-out; BLM warns of a dangerous waterfall downstream of Clay Hills - do not miss the take-out. CR 278 to Clay Hills can be impassable when wet.",
+      "multiDay": true,
+      "guideTimes": [
+        {
+          "min": 4,
+          "max": 5,
+          "unit": "days",
+          "conditions": "BLM typical trip-length guidance. Includes overnight itinerary planning; actual time varies with conditions, camps and permit requirements.",
+          "sourceName": "BLM San Juan Trip Planning Information",
+          "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/uploads/San%20Juan%20Trip%20Planning%20Information.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    }
+  ],
+  "state": "UT",
+  "timezone": "America/Denver",
+  "multiDay": true,
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  }
+}

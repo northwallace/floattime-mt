@@ -1,0 +1,1203 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "sources": [
+    {
+      "key": "fs_water_users",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/water-users-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_water_users.html",
+        "research/raw/agency/fs_water_users.txt"
+      ],
+      "sha256_16": "b8e35434ca707ac8",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_blue_point",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/blue-point-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_blue_point.html",
+        "research/raw/agency/fs_blue_point.txt"
+      ],
+      "sha256_16": "9454cefd39689b4e",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_pebble_beach",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/pebble-beach-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_pebble_beach.html",
+        "research/raw/agency/fs_pebble_beach.txt"
+      ],
+      "sha256_16": "c07407ad58c64974",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_sheeps_crossing",
+      "url": "https://www.fs.usda.gov/recarea/tonto/recarea/?recid=35435",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "failed/unusable: Old recarea URL redirects to the Tonto recreation index (no site content). The new slug sheeps-crossing-day-use-area returned 404.",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_goldfield",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/goldfield-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_goldfield.html",
+        "research/raw/agency/fs_goldfield.txt"
+      ],
+      "sha256_16": "7a76f9bd07fc6820",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_rafter_takeout",
+      "url": "https://www.fs.usda.gov/recarea/tonto/recarea/?recid=35763",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "failed/unusable: Redirects to the Tonto recreation index; the new slug rafter-take-out-parking returned 404. Not used.",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_raccoon_bluff",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/raccoon-bluff-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_raccoon_bluff.html",
+        "research/raw/agency/fs_raccoon_bluff.txt"
+      ],
+      "sha256_16": "0a2f5d32cbcb9aa0",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_phon_d",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/phon-d-sutton-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_phon_d.html",
+        "research/raw/agency/fs_phon_d.txt"
+      ],
+      "sha256_16": "b7c8fe9d08580bb3",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_granite_reef",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/granite-reef-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_granite_reef.html",
+        "research/raw/agency/fs_granite_reef.txt"
+      ],
+      "sha256_16": "17e152e9b6aaaefd",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_saguaro_lake_ranch",
+      "url": "https://www.fs.usda.gov/recarea/tonto/recarea/?recid=35409",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "failed/unusable: Redirects to the Tonto recreation index. Not used.",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_mesa_rd",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/mesa-ranger-district",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_mesa_rd.html",
+        "research/raw/agency/fs_mesa_rd.txt"
+      ],
+      "sha256_16": "32620655341a6318",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_srcw_permit",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/salt-river-canyon-wilderness-permit",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_srcw_permit.html",
+        "research/raw/agency/fs_srcw_permit.txt"
+      ],
+      "sha256_16": "a04cbf28c0082cc7",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_srcw_permits_page",
+      "url": "https://www.fs.usda.gov/r03/tonto/permits/salt-river-canyon-wilderness",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_srcw_permits_page.html",
+        "research/raw/agency/fs_srcw_permits_page.txt"
+      ],
+      "sha256_16": "ea147c094338d2bf",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "recgov_srcw",
+      "url": "https://www.recreation.gov/permits/249275",
+      "publisher": "Recreation.gov",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/recgov_srcw.html",
+        "research/raw/agency/recgov_srcw.txt"
+      ],
+      "sha256_16": "28d5aa6f34f1d79e",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_box_bar",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/box-bar-shoreline-area-and-river-access-point",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_box_bar.html",
+        "research/raw/agency/fs_box_bar.txt"
+      ],
+      "sha256_16": "0db7775f408376a7",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_needle_rock",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/needle-rock-day-use-area-and-non-motorized-beach",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_needle_rock.html",
+        "research/raw/agency/fs_needle_rock.txt"
+      ],
+      "sha256_16": "45fa37d144ce41e8",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_riverside",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/riverside-campground",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_riverside.html",
+        "research/raw/agency/fs_riverside.txt"
+      ],
+      "sha256_16": "f1ac1c532a7114ac",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_sheep_bridge",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/sheep-bridge",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_sheep_bridge.html",
+        "research/raw/agency/fs_sheep_bridge.txt"
+      ],
+      "sha256_16": "acb290dd536df473",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_horseshoe_cg",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/horseshoe-campground",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_horseshoe_cg.html",
+        "research/raw/agency/fs_horseshoe_cg.txt"
+      ],
+      "sha256_16": "4f131e8f87ce43a1",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_mesquite_cg",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/mesquite-campground",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_mesquite_cg.html",
+        "research/raw/agency/fs_mesquite_cg.txt"
+      ],
+      "sha256_16": "ea45c01e82f8c86b",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_horseshoe_res",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/horseshoe-reservoir",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_horseshoe_res.html",
+        "research/raw/agency/fs_horseshoe_res.txt"
+      ],
+      "sha256_16": "888dcd2b37aa414b",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_beasley",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_beasley.html",
+        "research/raw/agency/fs_beasley.txt"
+      ],
+      "sha256_16": "1b6956d8adfc4a9b",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_white_bridge_pnf",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/white-bridge-picnic-site-and-boat-launch",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_white_bridge_pnf.html",
+        "research/raw/agency/fs_white_bridge_pnf.txt"
+      ],
+      "sha256_16": "463a56c1d0f4be0d",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_white_bridge_cnf",
+      "url": "https://www.fs.usda.gov/r03/coconino/recreation/white-bridge-picnic-site",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_white_bridge_cnf.html",
+        "research/raw/agency/fs_white_bridge_cnf.txt"
+      ],
+      "sha256_16": "7c3af23c0b231aa1",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_clear_creek_pnf",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/clear-creek-fishing-site",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_clear_creek_pnf.html",
+        "research/raw/agency/fs_clear_creek_pnf.txt"
+      ],
+      "sha256_16": "0c60183144697663",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_bignotti",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/bignotti-picnic-site",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_bignotti.html",
+        "research/raw/agency/fs_bignotti.txt"
+      ],
+      "sha256_16": "98d9ceedbbdab3f3",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_sheeps_xing_pnf",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/sheeps-crossing-fishing-site",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_sheeps_xing_pnf.html",
+        "research/raw/agency/fs_sheeps_xing_pnf.txt"
+      ],
+      "sha256_16": "a0bf9b91801ace72",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_verde_pnf",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/verde-river",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_verde_pnf.html",
+        "research/raw/agency/fs_verde_pnf.txt"
+      ],
+      "sha256_16": "3838709bdd60eb96",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_childs",
+      "url": "https://www.fs.usda.gov/r03/coconino/recreation/childs-dispersed-camping-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_childs.html",
+        "research/raw/agency/fs_childs.txt"
+      ],
+      "sha256_16": "a6789abed150a259",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_verde_cnf_group",
+      "url": "https://www.fs.usda.gov/r03/coconino/recreation/groups/verde-river",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_verde_cnf_group.html",
+        "research/raw/agency/fs_verde_cnf_group.txt"
+      ],
+      "sha256_16": "b76bcdaaa6e18b11",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_verde_paddle_trail_pdf",
+      "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprd3818300.pdf",
+      "publisher": "USFS",
+      "type": "agency PDF",
+      "fetchStatus": "failed/unusable: 404 (old FS document URL). The AZ State Parks hosted copies of the paddle maps were used instead.",
+      "httpStatus": "404",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "research-only"
+    },
+    {
+      "key": "blm_gila_putin",
+      "url": "https://www.blm.gov/visit/gila-river-boat-put-in",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_gila_putin.html",
+        "research/raw/agency/blm_gila_putin.txt"
+      ],
+      "sha256_16": "f223adba1bfc14a3",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "blm_dry_canyon",
+      "url": "https://www.blm.gov/visit/dry-canyon-boat-take-out-and-picnic-area",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_dry_canyon.html",
+        "research/raw/agency/blm_dry_canyon.txt"
+      ],
+      "sha256_16": "c12e63a92ff141ae",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "blm_gila_box",
+      "url": "https://www.blm.gov/visit/gila-box-riparian-national-conservation-area",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_gila_box.html",
+        "research/raw/agency/blm_gila_box.txt"
+      ],
+      "sha256_16": "1a04e3f73514b3c2",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "blm_gila_box_ncl",
+      "url": "https://www.blm.gov/national-conservation-lands/arizona/gilabox",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_gila_box_ncl.html",
+        "research/raw/agency/blm_gila_box_ncl.txt"
+      ],
+      "sha256_16": "2b8ac918f5123516",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "nps_lake_paddle",
+      "url": "https://www.nps.gov/lake/planyourvisit/canoeing-kayaking.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_lake_paddle.html",
+        "research/raw/agency/nps_lake_paddle.txt"
+      ],
+      "sha256_16": "26710fb4aa507c92",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "nps_lake_bcwt",
+      "url": "https://www.nps.gov/lake/planyourvisit/black-canyon-water-trail.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_lake_bcwt.html",
+        "research/raw/agency/nps_lake_bcwt.txt"
+      ],
+      "sha256_16": "cc5a958894f8c390",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "nps_bcwt_thingstodo",
+      "url": "https://www.nps.gov/thingstodo/black-canyon-national-water-trail.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_bcwt_thingstodo.html",
+        "research/raw/agency/nps_bcwt_thingstodo.txt"
+      ],
+      "sha256_16": "d153c72960c0ef3a",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "nps_lake_bc_pdf",
+      "url": "https://www.nps.gov/lake/planyourvisit/upload/Black-Canyon.pdf",
+      "publisher": "NPS",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_lake_bc_pdf.pdf",
+        "research/raw/agency/nps_lake_bc_pdf.txt"
+      ],
+      "sha256_16": "bbba5c327b98b507",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "nps_grca_lf_dc",
+      "url": "https://www.nps.gov/grca/planyourvisit/overview-lees-ferry-diamond-ck.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_grca_lf_dc.html",
+        "research/raw/agency/nps_grca_lf_dc.txt"
+      ],
+      "sha256_16": "caf5fec9e4153f36",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "nps_grca_dc",
+      "url": "https://www.nps.gov/grca/planyourvisit/overview-diamond-ck.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_grca_dc.html",
+        "research/raw/agency/nps_grca_dc.txt"
+      ],
+      "sha256_16": "9c3eaaab0161e98b",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "nps_grca_regs_pdf",
+      "url": "https://www.nps.gov/grca/planyourvisit/upload/Noncommercial_River_Trip_Regulations.pdf",
+      "publisher": "NPS",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_grca_regs_pdf.pdf",
+        "research/raw/agency/nps_grca_regs_pdf.txt"
+      ],
+      "sha256_16": "df953fc7e8dba12a",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "nps_grca_dc_app_pdf",
+      "url": "https://www.nps.gov/grca/planyourvisit/upload/Diamond_Creek_Application.pdf",
+      "publisher": "NPS",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_grca_dc_app_pdf.pdf",
+        "research/raw/agency/nps_grca_dc_app_pdf.txt"
+      ],
+      "sha256_16": "55f10dca8437546e",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "nps_grca_river",
+      "url": "https://www.nps.gov/grca/planyourvisit/whitewater-rafting.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_grca_river.html",
+        "research/raw/agency/nps_grca_river.txt"
+      ],
+      "sha256_16": "0f24938092fc581d",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "nps_glca_lees_ferry",
+      "url": "https://www.nps.gov/glca/planyourvisit/lees-ferry.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_glca_lees_ferry.html",
+        "research/raw/agency/nps_glca_lees_ferry.txt"
+      ],
+      "sha256_16": "5f12527b10849e42",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fws_havasu_nonmotor",
+      "url": "https://www.fws.gov/refuge/havasu/visit-us/activities/boating---non-motorized",
+      "publisher": "USFWS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fws_havasu_nonmotor.html",
+        "research/raw/agency/fws_havasu_nonmotor.txt"
+      ],
+      "sha256_16": "f8ba01358aeb188d",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fws_imperial_nonmotor",
+      "url": "https://www.fws.gov/refuge/imperial/visit-us/activities/boating---non-motorized",
+      "publisher": "USFWS",
+      "type": "agency page",
+      "fetchStatus": "not fetched (status 403)",
+      "httpStatus": "403",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_upper_salt_area_map",
+      "url": "https://www.fs.usda.gov/media/232485",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_upper_salt_area_map.pdf",
+        "research/raw/agency/fs_upper_salt_area_map.txt"
+      ],
+      "sha256_16": "338d2c0c7a5c28c6",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_upper_salt_detail_map",
+      "url": "https://www.fs.usda.gov/media/232486",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_upper_salt_detail_map.pdf",
+        "research/raw/agency/fs_upper_salt_detail_map.txt"
+      ],
+      "sha256_16": "30f6dcee6d04d5b9",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_alert_granite_reef",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/granite-reef-developed-recreation-site-public-health-and-safety-closure-order",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "failed/unusable: 404. The Granite Reef page says Site Open but links to this closure order under View Closure Order here, so Granite Reef is closure-uncertain.",
+      "httpStatus": "404",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_alert_riverside",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/riverside-post-fire-recovery-and-safety-closure-extension",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_alert_riverside.html",
+        "research/raw/agency/fs_alert_riverside.txt"
+      ],
+      "sha256_16": "5e60b88847986045",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_alert_mesquite",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/mesquite-campground-post-fire-recovery-closure-public-health-safety",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_alert_mesquite.html",
+        "research/raw/agency/fs_alert_mesquite.txt"
+      ],
+      "sha256_16": "d22228529b3b00cb",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_tonto_alerts",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_tonto_alerts.html",
+        "research/raw/agency/fs_tonto_alerts.txt"
+      ],
+      "sha256_16": "c408da62015d365d",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_tonto_maps",
+      "url": "https://www.fs.usda.gov/r03/tonto/maps-guides",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_tonto_maps.html",
+        "research/raw/agency/fs_tonto_maps.txt"
+      ],
+      "sha256_16": "21a11769ca77a205",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_alert_horseshoe_rd",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/horseshoe-dam-road-nfsr-205-emergency-closure-public-safety-0",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_alert_horseshoe_rd.html",
+        "research/raw/agency/fs_alert_horseshoe_rd.txt"
+      ],
+      "sha256_16": "7cc1630b747797f7",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_alert_lsr_eagle",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/lower-salt-river-seasonal-bald-eagle-closures",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_alert_lsr_eagle.html",
+        "research/raw/agency/fs_alert_lsr_eagle.txt"
+      ],
+      "sha256_16": "44559a613ca9e704",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_alert_boxbar_eagle",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/box-bar-seasonal-eagle-closure",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_alert_boxbar_eagle.html",
+        "research/raw/agency/fs_alert_boxbar_eagle.txt"
+      ],
+      "sha256_16": "0f238a943d851744",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_alert_lsr_occupancy",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/lower-salt-special-occupancy-use-order",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_alert_lsr_occupancy.html",
+        "research/raw/agency/fs_alert_lsr_occupancy.txt"
+      ],
+      "sha256_16": "300c9b08fc8365a6",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_alert_verde_fire",
+      "url": "https://www.fs.usda.gov/r03/tonto/alerts/verde-river-fire-and-waste-prohibitions",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_alert_verde_fire.html",
+        "research/raw/agency/fs_alert_verde_fire.txt"
+      ],
+      "sha256_16": "e9e55611c111b88b",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "azsp_verde_greenway",
+      "url": "https://azstateparks.com/verde-river/explore/facility-information",
+      "publisher": "Arizona State Parks and Trails",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/azsp_verde_greenway.html",
+        "research/raw/agency/azsp_verde_greenway.txt"
+      ],
+      "sha256_16": "175afe3a9f6b0626",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "azsp_dead_horse_fac",
+      "url": "https://azstateparks.com/dead-horse/explore/facility-information",
+      "publisher": "Arizona State Parks and Trails",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/azsp_dead_horse_fac.html",
+        "research/raw/agency/azsp_dead_horse_fac.txt"
+      ],
+      "sha256_16": "fef4b9f0099c543c",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "clarkdale_tuzigoot",
+      "url": "https://www.clarkdale.az.gov/220/Tuzigoot-River-Access-Point",
+      "publisher": "Town of Clarkdale",
+      "type": "agency page",
+      "fetchStatus": "failed/unusable: curl 403 (WAF). WebFetch of the same public page succeeded; text saved as research/raw/agency/clarkdale_tuzigoot.txt (no coordinate on the page). (text saved)",
+      "httpStatus": "403",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/clarkdale_tuzigoot.txt"
+      ],
+      "sha256_16": null,
+      "usedBy": "catalog"
+    },
+    {
+      "key": "clarkdale_verde",
+      "url": "https://www.clarkdale.az.gov/214/Verde-River-Clarkdale",
+      "publisher": "Town of Clarkdale",
+      "type": "agency page",
+      "fetchStatus": "failed/unusable: curl 403 (WAF). Not retried; nothing relies on it.",
+      "httpStatus": "403",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_black_canyon_pnf",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/black-canyon-fishing-site",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_black_canyon_pnf.html",
+        "research/raw/agency/fs_black_canyon_pnf.txt"
+      ],
+      "sha256_16": "3b0cfcc7fa313eae",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "fs_prescott_verde",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/verde-river",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_prescott_verde.html",
+        "research/raw/agency/fs_prescott_verde.txt"
+      ],
+      "sha256_16": "3838709bdd60eb96",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "azsp_verde_paddle1_pdf",
+      "url": "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map.pdf",
+      "publisher": "other",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/azsp_verde_paddle1_pdf.pdf",
+        "research/raw/agency/azsp_verde_paddle1_pdf.txt"
+      ],
+      "sha256_16": "3c50888372c01a85",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "azsp_verde_paddle2_pdf",
+      "url": "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_2.pdf",
+      "publisher": "other",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/azsp_verde_paddle2_pdf.pdf",
+        "research/raw/agency/azsp_verde_paddle2_pdf.txt"
+      ],
+      "sha256_16": "75c1e91003d19344",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "azsp_verde_paddle3_pdf",
+      "url": "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_3.pdf",
+      "publisher": "other",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/azsp_verde_paddle3_pdf.pdf",
+        "research/raw/agency/azsp_verde_paddle3_pdf.txt"
+      ],
+      "sha256_16": "d99fe80db9826587",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "azsp_verde_maps",
+      "url": "https://azstateparks.com/verde-river/maps",
+      "publisher": "Arizona State Parks and Trails",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/azsp_verde_maps.html",
+        "research/raw/agency/azsp_verde_maps.txt"
+      ],
+      "sha256_16": "36dcbfa852bf4eb5",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "nps_lake_south_cove_ramp",
+      "url": "https://www.nps.gov/places/south-cove-launch-ramp.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_lake_south_cove_ramp.html",
+        "research/raw/agency/nps_lake_south_cove_ramp.txt"
+      ],
+      "sha256_16": "679053d3c59f5344",
+      "usedBy": "catalog"
+    },
+    {
+      "key": "nps_lake_conditions",
+      "url": "https://www.nps.gov/lake/planyourvisit/conditions.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_lake_conditions.html",
+        "research/raw/agency/nps_lake_conditions.txt"
+      ],
+      "sha256_16": "8e9347111adb85a9",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "nps_lake_changing_levels",
+      "url": "https://www.nps.gov/lake/planyourvisit/changing-lake-levels.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_lake_changing_levels.html",
+        "research/raw/agency/nps_lake_changing_levels.txt"
+      ],
+      "sha256_16": "3bd35191becf1319",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "fs_sheep_crossing",
+      "url": "https://www.fs.usda.gov/r03/tonto/recreation/sheep-crossing-day-use-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/fs_sheep_crossing.html",
+        "research/raw/agency/fs_sheep_crossing.txt"
+      ],
+      "sha256_16": "e010646e0aa0dceb",
+      "usedBy": "research-only"
+    },
+    {
+      "key": "aw_gila_box_takeout_report",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/117/reports/d559bd21-8c2a-4b4a-bdf7-ac336be1b2c3",
+      "publisher": "American Whitewater (supporting only)",
+      "type": "user trip report",
+      "fetchStatus": "fetched (JS page; text via WebFetch)",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/supporting/aw_gila_box_takeout_report.html",
+        "research/raw/supporting/aw_gila_box_takeout_report.txt"
+      ],
+      "sha256_16": null,
+      "usedBy": "closure-uncertain flag only"
+    },
+    {
+      "key": "fs_upper_salt_area_map / fs_upper_salt_detail_map",
+      "url": "see BLOCKED_FETCHES.md",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: Fetched, but image-only: pdftotext gives no text, so no mileage or coordinate was taken from them.",
+      "httpStatus": null,
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "none"
+    },
+    {
+      "key": "nps_lake_pearce / nps_lake_launchramps",
+      "url": "see BLOCKED_FETCHES.md",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: 404 (guessed NPS slugs). The NPS South Cove Launch Ramp place page (section \"Pearce Ferry Takeout\") was used instead.",
+      "httpStatus": null,
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null,
+      "usedBy": "none"
+    },
+    {
+      "key": "BLM National Recreation Site Points",
+      "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query",
+      "publisher": "BLM",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/gis/blm_az_L*.json"
+      ],
+      "sha256_16": null,
+      "usedBy": "catalog"
+    },
+    {
+      "key": "NPS Public POIs",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query",
+      "publisher": "NPS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/gis/nps_*.json"
+      ],
+      "sha256_16": null,
+      "usedBy": "catalog"
+    },
+    {
+      "key": "USFS EDW Recreation Opportunities",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query",
+      "publisher": "USFS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/gis/usfs_recopp_az.json"
+      ],
+      "sha256_16": null,
+      "usedBy": "catalog"
+    },
+    {
+      "key": "USGS NHD High Resolution flowlines (nhd/MapServer/6)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+      "publisher": "USGS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/imagery/nhd_*.json, research/raw/geo_cache/"
+      ],
+      "sha256_16": null,
+      "usedBy": "catalog"
+    },
+    {
+      "key": "USGS Water Data OGC API (continuous)",
+      "url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items",
+      "publisher": "USGS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/gauges/gauge-checks-AZ.json, research/raw/usgs/"
+      ],
+      "sha256_16": null,
+      "usedBy": "catalog"
+    },
+    {
+      "key": "Esri World Imagery tiles (z17/z19)",
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "publisher": "Esri",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "httpStatus": "200",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/imagery/*.png (evidence-image zips)"
+      ],
+      "sha256_16": null,
+      "usedBy": "catalog"
+    }
+  ]
+}

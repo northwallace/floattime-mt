@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "state": "WA",
+  "checkedOn": "2026-10-25",
+  "purpose": "Research-only timing grade per river. Not read by the app; catalog speeds unchanged. Source data: research/trip-times/WA.json.",
+  "grades": {
+    "sourced": "dated trip report or agency guide with time+distance on a catalog section",
+    "loosely-supported": "off-section, undated, outfitter, no-flow or low-confidence only",
+    "unsourced": "no trip-time evidence"
+  },
+  "recommendations": {
+    "publish": "show catalog estimate",
+    "publish-with-range": "show the source-supported range",
+    "defer": "hide time until a real trip is logged"
+  },
+  "rivers": {
+    "columbia-hanford": {
+      "grade": "sourced",
+      "recommendation": "publish",
+      "range": {
+        "hours": [
+          4,
+          6
+        ],
+        "miles": 19.0,
+        "flowCfs": [
+          80000,
+          120000
+        ],
+        "basis": "NPS Hanford Reach guide: 4-6 h at 'moderate' 80,000-120,000 cfs; dated notes 4.5 h at 111 kcfs (no lunch)"
+      },
+      "observations": 5,
+      "catalogRefSpeedMph": 4.0,
+      "catalogRefFlowCfs": 101000,
+      "catalogSpeedChanged": false,
+      "note": "Agency guide plus 4 trip logs; ref 4.0 mph at 101 kcfs (4.75 h) sits inside the NPS range. Wind is the main variable."
+    },
+    "cowlitz": {
+      "grade": "sourced",
+      "recommendation": "publish",
+      "range": {
+        "hours": [
+          1,
+          2
+        ],
+        "miles": 7.5,
+        "flowCfs": null,
+        "basis": "outfitter 'average 2 hours', KATU 1-2 h, AW report 2 h (7.5 mi, 5,090 cfs daily mean)"
+      },
+      "observations": 4,
+      "catalogRefSpeedMph": 4.0,
+      "catalogRefFlowCfs": 3000,
+      "catalogSpeedChanged": false,
+      "note": "Ref 4.0 mph at 3,000 cfs = ~1.9 h, consistent with all sources."
+    },
+    "grande-ronde-lower": {
+      "grade": "loosely-supported",
+      "recommendation": "publish-with-range",
+      "range": {
+        "mph": [
+          2,
+          4
+        ],
+        "flowCfs": [
+          2000,
+          6000
+        ],
+        "basis": "'Float Time Estimates on the Wallowa and Grande Ronde' speed table (Troy gauge); author unconfirmed"
+      },
+      "observations": 1,
+      "catalogRefSpeedMph": 3.5,
+      "catalogRefFlowCfs": 4300,
+      "catalogSpeedChanged": false,
+      "note": "Undated speed table only; low confidence."
+    },
+    "grande-ronde-troy": {
+      "grade": "loosely-supported",
+      "recommendation": "publish-with-range",
+      "range": {
+        "mph": [
+          2,
+          4
+        ],
+        "flowCfs": [
+          2000,
+          6000
+        ],
+        "basis": "same speed table as grande-ronde-lower"
+      },
+      "observations": 2,
+      "catalogRefSpeedMph": 3.5,
+      "catalogRefFlowCfs": 4300,
+      "catalogSpeedChanged": false,
+      "note": "Mountaineers report is off-section; speed table undated."
+    },
+    "green-flaming-geyser": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 1,
+      "catalogRefSpeedMph": 3.0,
+      "catalogRefFlowCfs": 340,
+      "catalogSpeedChanged": false,
+      "note": "One AW report (3 h, distance not stated, 1,530 cfs) - nowhere near the 340 cfs ref flow; no supported range."
+    },
+    "green-gorge": {
+      "grade": "sourced",
+      "recommendation": "publish",
+      "range": null,
+      "observations": 1,
+      "catalogRefSpeedMph": 4.0,
+      "catalogRefFlowCfs": 780,
+      "catalogSpeedChanged": false,
+      "note": "One dated AW report on kanaskat-flaming-geyser: 3 h for 12 mi at ~1,250 cfs (4.0 mph). Single observation at a higher flow than the 780 cfs ref, so no range is claimed."
+    },
+    "hoh": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 0,
+      "catalogRefSpeedMph": 4.0,
+      "catalogRefFlowCfs": 1000,
+      "catalogSpeedChanged": false,
+      "note": "No trip-time observation found."
+    },
+    "klickitat": {
+      "grade": "sourced",
+      "recommendation": "publish",
+      "range": null,
+      "observations": 4,
+      "catalogRefSpeedMph": 4.5,
+      "catalogRefFlowCfs": 1800,
+      "catalogSpeedChanged": false,
+      "note": "Dated AW report icehouse-turkey-hole: 2 h for 10.9 mi at ~2,300 cfs (5.45 mph). Leidl-Icehouse report is low-confidence (lower bound only). No source-stated range."
+    },
+    "methow-lower": {
+      "grade": "sourced",
+      "recommendation": "publish-with-range",
+      "range": {
+        "mph": [
+          6.7,
+          6.8
+        ],
+        "flowCfs": [
+          4300,
+          6500
+        ],
+        "basis": "two AW reports: averill-pateros 17 mi in 2.5 h at 6,500 cfs; Averill-Burma Rd 8.4 mi in 75 min at 4,310 cfs"
+      },
+      "observations": 2,
+      "catalogRefSpeedMph": 4.5,
+      "catalogRefFlowCfs": 1800,
+      "catalogSpeedChanged": false,
+      "note": "Both observations are at 2.4-3.6x the 1,800 cfs ref flow; the range applies to high water only. Ref 4.5 mph at 1,800 cfs is not directly supported."
+    },
+    "methow-upper": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "catalogRefFlowCfs": 260,
+      "catalogSpeedChanged": false,
+      "note": "No trip-time observation found."
+    },
+    "queets": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 0,
+      "catalogRefSpeedMph": 3.5,
+      "catalogRefFlowCfs": 900,
+      "catalogSpeedChanged": false,
+      "note": "No trip-time observation found."
+    },
+    "sauk": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 2,
+      "catalogRefSpeedMph": 4.0,
+      "catalogRefFlowCfs": 2200,
+      "catalogSpeedChanged": false,
+      "note": "One AW report (Darrington to ~Sauk, 23 mi in 6 h incl. lunch at ~8,500 cfs) covers more than the catalog sections; a second has no distance."
+    },
+    "skagit-eagle": {
+      "grade": "sourced",
+      "recommendation": "publish",
+      "range": null,
+      "observations": 1,
+      "catalogRefSpeedMph": 3.5,
+      "catalogRefFlowCfs": 3900,
+      "catalogSpeedChanged": false,
+      "note": "Dated blog trip log on marblemount-howard-miller: 115 min for 10.5 mi at ~9,700 cfs (5.5 mph, mostly drifting). Higher than the 3,900 cfs ref flow; single non-agency source."
+    },
+    "skagit-upper": {
+      "grade": "loosely-supported",
+      "recommendation": "publish-with-range",
+      "range": {
+        "hours": [
+          2,
+          2.5
+        ],
+        "miles": 8.9,
+        "flowCfs": null,
+        "basis": "Triad River Tours trip summary: 120-150 min Goodell-Copper (dam-regulated, May-Sep)"
+      },
+      "observations": 1,
+      "catalogRefSpeedMph": 4.0,
+      "catalogRefFlowCfs": 3100,
+      "catalogSpeedChanged": false,
+      "note": "Outfitter guided-raft time; no flow stated."
+    },
+    "skykomish": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 1,
+      "catalogRefSpeedMph": 3.0,
+      "catalogRefFlowCfs": 930,
+      "catalogSpeedChanged": false,
+      "note": "One AW report partly off-section (2.86 mph at 2,950 cfs, paddling most of the time)."
+    },
+    "snoqualmie-fall-city": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 0,
+      "catalogRefSpeedMph": 2.5,
+      "catalogRefFlowCfs": 650,
+      "catalogSpeedChanged": false,
+      "note": "No trip-time observation found."
+    },
+    "snoqualmie-mf": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 3,
+      "catalogRefSpeedMph": 3.2,
+      "catalogRefFlowCfs": 1300,
+      "catalogSpeedChanged": false,
+      "note": "concrete-bridge-tanner 7 mi in 2 h but reporter flow (~5,000 cfs) conflicts with the gauge (2,070); other reports are slow wildlife surveys with no distance."
+    },
+    "spokane": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 0,
+      "catalogRefSpeedMph": 3.5,
+      "catalogRefFlowCfs": 1200,
+      "catalogSpeedChanged": false,
+      "note": "No trip-time observation found."
+    },
+    "wenatchee-leavenworth": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 1,
+      "catalogRefSpeedMph": 4.0,
+      "catalogRefFlowCfs": 1700,
+      "catalogSpeedChanged": false,
+      "note": "Only an outfitter tubing time on a 2-mile sub-reach at low summer flow (~1.3 mph); not representative of boats on the 5.2 mi section."
+    },
+    "wenatchee-upper": {
+      "grade": "sourced",
+      "recommendation": "publish",
+      "range": null,
+      "observations": 1,
+      "catalogRefSpeedMph": 2.5,
+      "catalogRefFlowCfs": 780,
+      "catalogSpeedChanged": false,
+      "note": "Dated AW report lake-wenatchee-plain: 2 h for 7.4 mi at 2,600 cfs (3.7 mph). Ref 2.5 mph is at 780 cfs, so the observation does not test the ref directly."
+    },
+    "white-salmon": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "range": null,
+      "observations": 1,
+      "catalogRefSpeedMph": 4.5,
+      "catalogRefFlowCfs": 670,
+      "catalogSpeedChanged": false,
+      "note": "Only an outfitter full-day figure (~4 mph gross over a longer reach); nothing on the 4.4 mi bz-husum section."
+    },
+    "yakima-canyon": {
+      "grade": "loosely-supported",
+      "recommendation": "publish-with-range",
+      "range": {
+        "hours": [
+          3,
+          4
+        ],
+        "miles": 10.9,
+        "flowCfs": null,
+        "basis": "Yakima River Tubing: 'Float time: 3hrs - 4 hours' Umtanum-Roza (tubes)"
+      },
+      "observations": 1,
+      "catalogRefSpeedMph": 3.0,
+      "catalogRefFlowCfs": 2900,
+      "catalogSpeedChanged": false,
+      "note": "Outfitter tubing range; boats are likely faster. No flow stated."
+    }
+  }
+}

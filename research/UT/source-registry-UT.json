@@ -1,0 +1,652 @@
+{
+  "version": 1,
+  "state": "UT",
+  "checkedOn": "2026-10-25",
+  "sources": [
+    {
+      "key": "usfs_spillway",
+      "url": "https://www.fs.usda.gov/r04/ashley/recreation/spillway-boat-launch-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/usfs_spillway.html",
+        "research/raw/agency/usfs_spillway.txt"
+      ],
+      "sha256_16": "968b3705a933cfe7"
+    },
+    {
+      "key": "usfs_little_hole",
+      "url": "https://www.fs.usda.gov/r04/ashley/recreation/little-hole-boat-launch-area",
+      "publisher": "USFS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/usfs_little_hole.html",
+        "research/raw/agency/usfs_little_hole.txt"
+      ],
+      "sha256_16": "2f9559d4032acba0"
+    },
+    {
+      "key": "blm_green_brochure",
+      "url": "https://www.blm.gov/sites/blm.gov/files/uploads/recreation_utah_greenriverbrochure.pdf",
+      "publisher": "BLM",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_green_brochure.pdf",
+        "research/raw/agency/blm_green_brochure.txt"
+      ],
+      "sha256_16": "4367af2458718ea5"
+    },
+    {
+      "key": "blm_floating_green",
+      "url": "https://www.blm.gov/sites/default/files/documents/files/floating_the_green_river_brochure.pdf",
+      "publisher": "BLM",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_floating_green.pdf",
+        "research/raw/agency/blm_floating_green.txt"
+      ],
+      "sha256_16": "7fbb663e03c132c6"
+    },
+    {
+      "key": "blm_indian_crossing",
+      "url": "https://www.blm.gov/visit/indian-crossing-campground",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_indian_crossing.html",
+        "research/raw/agency/blm_indian_crossing.txt"
+      ],
+      "sha256_16": "9b5ea640aae7b4d8"
+    },
+    {
+      "key": "nps_dino_boating",
+      "url": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_dino_boating.html",
+        "research/raw/agency/nps_dino_boating.txt"
+      ],
+      "sha256_16": "c4d024dae282a0f0"
+    },
+    {
+      "key": "nps_dino_boating_pdf",
+      "url": "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf",
+      "publisher": "NPS",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_dino_boating_pdf.pdf",
+        "research/raw/agency/nps_dino_boating_pdf.txt"
+      ],
+      "sha256_16": "12fabf9406dabc0f"
+    },
+    {
+      "key": "nps_dino_alerts",
+      "url": "https://www.nps.gov/dino/planyourvisit/conditions.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_dino_alerts.html",
+        "research/raw/agency/nps_dino_alerts.txt"
+      ],
+      "sha256_16": "a3b354af11e7a7e9"
+    },
+    {
+      "key": "blm_desogray",
+      "url": "https://www.blm.gov/programs/recreation/passes-and-permits/lotteries/utah/desolationgray",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_desogray.html",
+        "research/raw/agency/blm_desogray.txt"
+      ],
+      "sha256_16": "1c848a56f1c6bf21"
+    },
+    {
+      "key": "blm_dg_info",
+      "url": "https://www.blm.gov/sites/blm.gov/files/Utah_River_DesolationGrayCanyons_InformationSheet.pdf",
+      "publisher": "BLM",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_dg_info.html",
+        "research/raw/agency/blm_dg_info.txt"
+      ],
+      "sha256_16": "295715b067aed2c3"
+    },
+    {
+      "key": "blm_sandwash",
+      "url": "https://www.blm.gov/visit/sand-wash-ranger-station",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_sandwash.html",
+        "research/raw/agency/blm_sandwash.txt"
+      ],
+      "sha256_16": "9da07bf9a19f6eca"
+    },
+    {
+      "key": "blm_swasey",
+      "url": "https://www.blm.gov/visit/swaseys-boat-ramp",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_swasey.html",
+        "research/raw/agency/blm_swasey.txt"
+      ],
+      "sha256_16": "3f4b73f14947db3d"
+    },
+    {
+      "key": "blm_nefertiti",
+      "url": "https://www.blm.gov/visit/nefertiti-recreation-area",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_nefertiti.html",
+        "research/raw/agency/blm_nefertiti.txt"
+      ],
+      "sha256_16": "bd61c9edca528e6e"
+    },
+    {
+      "key": "blm_greenwsr",
+      "url": "https://www.blm.gov/national-conservation-lands/utah/green-river-wsr",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_greenwsr.html",
+        "research/raw/agency/blm_greenwsr.txt"
+      ],
+      "sha256_16": "efdd1fdec85778b1"
+    },
+    {
+      "key": "blm_labyrinth",
+      "url": "https://www.blm.gov/visit/labyrinth-canyon-river",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_labyrinth.html",
+        "research/raw/agency/blm_labyrinth.txt"
+      ],
+      "sha256_16": "7fda5f3bef4c1047"
+    },
+    {
+      "key": "blm_mineral_bottom",
+      "url": "https://www.blm.gov/visit/mineral-bottom-recreation-site",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_mineral_bottom.html",
+        "research/raw/agency/blm_mineral_bottom.txt"
+      ],
+      "sha256_16": "fa37e447c8ca005e"
+    },
+    {
+      "key": "usp_green_river",
+      "url": "https://stateparks.utah.gov/parks/green-river/",
+      "publisher": "Utah State Parks",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/usp_green_river.html",
+        "research/raw/agency/usp_green_river.txt"
+      ],
+      "sha256_16": "1bbfc3615409d945"
+    },
+    {
+      "key": "blm_westwater",
+      "url": "https://www.blm.gov/visit/westwater-canyon-river-permits",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_westwater.html",
+        "research/raw/agency/blm_westwater.txt"
+      ],
+      "sha256_16": "fa3863a4c82edba5"
+    },
+    {
+      "key": "blm_westwater_lottery",
+      "url": "https://www.blm.gov/programs/recreation/passes-and-permits/lotteries/utah/westwatercanyon",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_westwater_lottery.html",
+        "research/raw/agency/blm_westwater_lottery.txt"
+      ],
+      "sha256_16": "21f41a8609f36532"
+    },
+    {
+      "key": "blm_cisco",
+      "url": "https://www.blm.gov/visit/cisco-takeout",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_cisco.html",
+        "research/raw/agency/blm_cisco.txt"
+      ],
+      "sha256_16": "635f5f2cad26d9ea"
+    },
+    {
+      "key": "blm_dewey",
+      "url": "https://www.blm.gov/visit/dewey-bridge-recreation-site",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_dewey.html",
+        "research/raw/agency/blm_dewey.txt"
+      ],
+      "sha256_16": "12369e45c7bee0b1"
+    },
+    {
+      "key": "blm_hittle",
+      "url": "https://www.blm.gov/visit/hittle-bottom-recreation-site",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_hittle.html",
+        "research/raw/agency/blm_hittle.txt"
+      ],
+      "sha256_16": "c2b251520ae33723"
+    },
+    {
+      "key": "blm_takeout_beach",
+      "url": "https://www.blm.gov/visit/take-out-boat-ramp",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_takeout_beach.html",
+        "research/raw/agency/blm_takeout_beach.txt"
+      ],
+      "sha256_16": "fea5f73577b180b6"
+    },
+    {
+      "key": "blm_moab_daily_pdf",
+      "url": "https://www.blm.gov/sites/default/files/documents/files/MoabDailyMap.pdf",
+      "publisher": "BLM",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_moab_daily_pdf.pdf",
+        "research/raw/agency/blm_moab_daily_pdf.txt"
+      ],
+      "sha256_16": "ea85b9d7839e52d3"
+    },
+    {
+      "key": "nps_cany_flatwater",
+      "url": "https://www.nps.gov/cany/planyourvisit/flatwater.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_cany_flatwater.html",
+        "research/raw/agency/nps_cany_flatwater.txt"
+      ],
+      "sha256_16": "baeed24a6ed2350a"
+    },
+    {
+      "key": "nps_cany_permits",
+      "url": "https://www.nps.gov/cany/planyourvisit/riverpermits.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_cany_permits.html",
+        "research/raw/agency/nps_cany_permits.txt"
+      ],
+      "sha256_16": "874b02c0efc93592"
+    },
+    {
+      "key": "nps_cany_lakelevels",
+      "url": "https://www.nps.gov/cany/planyourvisit/lakelevels.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_cany_lakelevels.html",
+        "research/raw/agency/nps_cany_lakelevels.txt"
+      ],
+      "sha256_16": "131b0fca073180b7"
+    },
+    {
+      "key": "nps_glca_hite",
+      "url": "https://www.nps.gov/glca/planyourvisit/hite.htm",
+      "publisher": "NPS",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/nps_glca_hite.html",
+        "research/raw/agency/nps_glca_hite.txt"
+      ],
+      "sha256_16": "fe920f1939fb96db"
+    },
+    {
+      "key": "uor_north_wash_pr",
+      "url": "https://recreation.utah.gov/press-release/north-wash-boat-ramp-construction-complete-restoring-critical-river-access-for-cataract-canyon-users/",
+      "publisher": "Utah DOR",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/uor_north_wash_pr.html",
+        "research/raw/agency/uor_north_wash_pr.txt"
+      ],
+      "sha256_16": "32bb823c2b939fb9"
+    },
+    {
+      "key": "blm_sanjuan",
+      "url": "https://www.blm.gov/visit/san-juan-river",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_sanjuan.html",
+        "research/raw/agency/blm_sanjuan.txt"
+      ],
+      "sha256_16": "ae06f6376757cedd"
+    },
+    {
+      "key": "blm_sand_island",
+      "url": "https://www.blm.gov/visit/sand-island",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_sand_island.html",
+        "research/raw/agency/blm_sand_island.txt"
+      ],
+      "sha256_16": "b396012da2af4370"
+    },
+    {
+      "key": "blm_sj_trip",
+      "url": "https://www.blm.gov/sites/blm.gov/files/uploads/San%20Juan%20Trip%20Planning%20Information.pdf",
+      "publisher": "BLM",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_sj_trip.pdf",
+        "research/raw/agency/blm_sj_trip.txt"
+      ],
+      "sha256_16": "9223bee91071bd0b"
+    },
+    {
+      "key": "blm_sj_tripplanner",
+      "url": "https://www.blm.gov/sites/blm.gov/files/uploads/utah_river_sanjuanriver_tripplanner.pdf",
+      "publisher": "BLM",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_sj_tripplanner.pdf",
+        "research/raw/agency/blm_sj_tripplanner.txt"
+      ],
+      "sha256_16": "7e2fd0ffe46eb073"
+    },
+    {
+      "key": "blm_fullers",
+      "url": "https://www.blm.gov/visit/fullers-bottom-trailhead",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_fullers.html",
+        "research/raw/agency/blm_fullers.txt"
+      ],
+      "sha256_16": "f14a1622d684b940"
+    },
+    {
+      "key": "blm_swinging_bridge",
+      "url": "https://www.blm.gov/visit/swinging-bridge-trailhead",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_swinging_bridge.html",
+        "research/raw/agency/blm_swinging_bridge.txt"
+      ],
+      "sha256_16": "fe3e03a763cfcc46"
+    },
+    {
+      "key": "blm_white_rec",
+      "url": "https://www.blm.gov/visit/white-river-recreation-area",
+      "publisher": "BLM",
+      "type": "agency page",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_white_rec.html",
+        "research/raw/agency/blm_white_rec.txt"
+      ],
+      "sha256_16": "007f8eb08998f719"
+    },
+    {
+      "key": "blm_white_pdf",
+      "url": "https://www.blm.gov/sites/default/files/documents/files/white%20river%20for%20web.pdf",
+      "publisher": "BLM",
+      "type": "agency PDF",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/agency/blm_white_pdf.pdf",
+        "research/raw/agency/blm_white_pdf.txt"
+      ],
+      "sha256_16": "c9a90c2cf6b82a97"
+    },
+    {
+      "key": "slc_jordan",
+      "url": "https://www.slc.gov/parks/slc-be-wild/jordan-river/",
+      "publisher": "Salt Lake City",
+      "type": "agency page",
+      "fetchStatus": "blocked: 403 (WAF)",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    },
+    {
+      "key": "BLM National Recreation Site Points (FeatureServer/2)",
+      "url": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query",
+      "publisher": "BLM",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/gis/blm_rec_L*.json, blm_boatramp_ut.json"
+      ],
+      "sha256_16": null
+    },
+    {
+      "key": "NPS Public POIs",
+      "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query",
+      "publisher": "NPS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/gis/nps_*.json"
+      ],
+      "sha256_16": null
+    },
+    {
+      "key": "USFS EDW Recreation Opportunities",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query",
+      "publisher": "USFS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/gis/usfs_recopp_fg.json"
+      ],
+      "sha256_16": null
+    },
+    {
+      "key": "UGRC Utah Boat Ramps (2009)",
+      "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/BoatRamps/FeatureServer/0/query",
+      "publisher": "UGRC",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/gis/ugrc_boatramps.json"
+      ],
+      "sha256_16": null
+    },
+    {
+      "key": "USGS NHD High Resolution flowlines (nhd/MapServer/6)",
+      "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+      "publisher": "USGS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/imagery/nhd_*.json, research/raw/geo_cache/"
+      ],
+      "sha256_16": null
+    },
+    {
+      "key": "USGS Water Data OGC API (continuous)",
+      "url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items",
+      "publisher": "USGS",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/gauges/gauge-checks-UT.json"
+      ],
+      "sha256_16": null
+    },
+    {
+      "key": "Esri World Imagery tiles (z17/z19)",
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "publisher": "Esri",
+      "type": "GIS/API",
+      "fetchStatus": "fetched",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [
+        "research/raw/imagery/*.png (evidence-image zips)"
+      ],
+      "sha256_16": null
+    },
+    {
+      "key": "usp_green_river_discover",
+      "url": "https://stateparks.utah.gov/parks/green-river/discover/",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: 404",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    },
+    {
+      "key": "usp_ramp_conditions",
+      "url": "Utah State Parks ramp-conditions page",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: 403",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    },
+    {
+      "key": "jrc_water_trail",
+      "url": "Jordan River Commission water trail page",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: 406",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    },
+    {
+      "key": "blm_rocky_rapid",
+      "url": "BLM Rocky Rapid page",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: 404",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    },
+    {
+      "key": "blm_westwater_rs",
+      "url": "BLM Westwater Ranger Station page",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: 404",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    },
+    {
+      "key": "uor_north_wash",
+      "url": "Utah DOR North Wash page (non-press-release)",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: 403",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    },
+    {
+      "key": "blm_ruby_ranch",
+      "url": "BLM Ruby Ranch page",
+      "publisher": "see url",
+      "type": "agency page",
+      "fetchStatus": "failed: duplicate of the Labyrinth page",
+      "fetchedOn": "2026-10-25",
+      "rawFiles": [],
+      "sha256_16": null
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "verde-river-upper",
+  "name": "Verde River (Clarkdale - Cottonwood)",
+  "gauge": "09504000",
+  "gaugeName": "Verde River near Clarkdale, AZ",
+  "lat": 34.685,
+  "lon": -111.964,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Short flatwater-to-riffle floats on the Verde River Greenway and Prescott NF access sites between Clarkdale and Camp Verde. Irrigation diversion dams, sweepers and strainers.",
+  "sections": [
+    {
+      "id": "tuzigoot-dead-horse-ranch",
+      "putIn": "Tuzigoot River Access Point (Verde)",
+      "takeOut": "Dead Horse Ranch State Park River Day Use Area (Verde)",
+      "miles": 3.0,
+      "difficulty": "Not rated by agency",
+      "notes": "AZ State Parks Paddle Map 1: Mile 0.0 Tuzigoot Bridge to Mile 3.0 Dead Horse Ranch River Day Use Area. Two diversion dams: Hickey Ditch Diversion Dam (Mile 0.25) and Cottonwood Ditch Diversion Dam (Mile 0.8), scout on river left. Clarkdale: below the Cottonwood Ditch boaters 'will face many areas where portage is required'; the ditch can take the entire river at times. AZSP: watch for 'sleepers and strainers'."
+    },
+    {
+      "id": "black-canyon-bignotti",
+      "putIn": "Black Canyon Fishing Site (Verde)",
+      "takeOut": "Bignotti Picnic Site (Verde)",
+      "miles": 1.0,
+      "difficulty": "Not rated by agency (smooth water)",
+      "notes": "Prescott NF: 'a short, smooth water float from Black Canyon River Access Point'. AZ State Parks Paddle Map 3 table: Black Canyon (RM 23) 1.0 mile to Bignotti (RM 24). Do not continue below Bignotti: the water is 'generally too shallow and has too many obstacles for boating down river between Bignottie and White Bridge' (Prescott NF).",
+      "guideTimes": [
+        {
+          "min": 0.5,
+          "max": 1,
+          "unit": "hours",
+          "conditions": "Guide lists 1 hour at low flow and 0.5 hour at medium flow for 1 mile. Numeric flow bands, craft and stops are not specified in this table.",
+          "sourceName": "Arizona State Parks-hosted Verde River Paddle Map 3, page 3 (2013 guide)",
+          "sourceUrl": "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_3.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    }
+  ],
+  "state": "AZ",
+  "timezone": "America/Phoenix",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  }
+}

@@ -19,7 +19,45 @@
       "name": "Oregon",
       "slug": "oregon",
       "agency": "the Oregon State Marine Board",
-      "agencyUrl": "https://www.oregon.gov/osmb/"
+      "agencyUrl": "https://www.oregon.gov/osmb/",
+      "permitNotice": "Oregon generally requires a Waterway Access Permit for non-motorized boats. Exemptions apply on some trips, so check the current Marine Board rules.",
+      "permitUrl": "https://www.oregon.gov/osmb/boater-info/pages/ais-faqs.aspx"
+    },
+    {
+      "id": "WA",
+      "name": "Washington",
+      "slug": "washington",
+      "agency": "Washington Dept of Fish & Wildlife",
+      "agencyUrl": "https://wdfw.wa.gov/places-to-go/water-access-sites",
+      "permitNotice": "Washington generally requires a Discover Pass to park at state-managed launches (WDFW, State Parks and DNR); a WDFW Vehicle Access Pass covers WDFW sites only. Federal, county, city and utility launches set their own fees.",
+      "permitUrl": "https://wdfw.wa.gov/licenses/parking"
+    },
+    {
+      "id": "UT",
+      "name": "Utah",
+      "slug": "utah",
+      "agency": "Utah Division of Outdoor Recreation",
+      "agencyUrl": "https://recreation.utah.gov/",
+      "permitNotice": "Many Utah river trips need a federal permit: Dinosaur NM (NPS), Desolation/Gray Canyons, Westwater Canyon, the San Juan and Labyrinth Canyon (BLM) and Canyonlands (NPS). Most permits are booked on Recreation.gov. Some launches charge fees. Check the managing agency before you go.",
+      "permitUrl": "https://www.recreation.gov/"
+    },
+    {
+      "id": "AZ",
+      "name": "Arizona",
+      "slug": "arizona",
+      "agency": "Arizona State Parks and Trails",
+      "agencyUrl": "https://azstateparks.com/",
+      "permitNotice": "Several Arizona river trips need a permit. The Grand Canyon (Lees Ferry or Diamond Creek) needs a National Park Service river permit, and the Hualapai Tribe charges fees to use Diamond Creek. The Upper Salt (Mar 1 to May 15) needs a Tonto National Forest permit plus a White Mountain Apache permit. Lower Salt and Verde sites on the Tonto may need a Tonto Pass. Many permits are booked on Recreation.gov. Check the managing agency before you go.",
+      "permitUrl": "https://www.recreation.gov/"
+    },
+    {
+      "id": "CO",
+      "name": "Colorado",
+      "slug": "colorado",
+      "agency": "Colorado Parks and Wildlife",
+      "agencyUrl": "https://cpw.state.co.us/",
+      "permitNotice": "Some Colorado river trips need a permit or pass: Dinosaur NM (NPS; including a one-day play permit to take out at Deerlodge after floating from upstream), Gunnison Gorge Wilderness and Ruby-Horsethief overnight camping (BLM), self-issued DENCA overnight permits, and CPW State Parks passes (including Arkansas Headwaters fee sites). Some launches charge fees. Check the managing agency before you go.",
+      "permitUrl": "https://www.recreation.gov/"
     }
   ],
   "craft": [
@@ -43,5 +81,11 @@
       "label": "Paddleboard",
       "mult": 1.05
     }
-  ]
+  ],
+  "mapRelease": {
+    "states": [
+      "MT"
+    ],
+    "reviewedRoutes": true
+  }
 }

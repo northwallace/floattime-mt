@@ -1,0 +1,653 @@
+{
+  "version": 1,
+  "state": "UT",
+  "checkedOn": "2026-10-25",
+  "note": "UT-ACC ids are stable (order of tools/ut_data.py P); never renumber, append new ids only.",
+  "accessPoints": [
+    {
+      "id": "UT-ACC-0001",
+      "label": "Spillway Boat Launch (Flaming Gorge)",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 40.908759,
+      "lon": -109.422174,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 72385 'Spillway Boat Launch Area'",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D72385&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Ashley NF, Flaming Gorge NRA)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0002",
+      "label": "Little Hole Boat Launch",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 40.910732,
+      "lon": -109.315146,
+      "coordinateSource": "USFS EDW Recreation Opportunities, recareaid 72387 'Little Hole Boat Launch Area'",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D72387&outFields=*&outSR=4326&f=json",
+      "operator": "USDA Forest Service (Ashley NF, Flaming Gorge NRA)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0003",
+      "label": "Indian Crossing Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 40.89699,
+      "lon": -109.185357,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 71216 'Indian Crossing Boat Ramp' (Boat Ramp, UTG01000 Vernal FO)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71216&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Vernal Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0004",
+      "label": "Swallow Canyon Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 40.844332,
+      "lon": -109.082401,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 71219 'Swallow Canyon Boat Ramp' (Boat Ramp, UTG01000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71219&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Vernal Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0005",
+      "label": "Gates of Lodore Boat Ramp",
+      "river": "Green River",
+      "inState": "CO",
+      "lat": 40.727114,
+      "lon": -108.887881,
+      "coordinateSource": "NPS Public POIs, OBJECTID 10790 'Lodore Boat Launch' (DINO)",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=10790&outFields=*&outSR=4326&f=json",
+      "operator": "National Park Service (Dinosaur National Monument)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "permit-required",
+        "in-colorado"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0006",
+      "label": "Rainbow Park Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 40.494962,
+      "lon": -109.173717,
+      "coordinateSource": "NPS Public POIs, OBJECTID 9566 'Rainbow Park Boat Launch' (DINO)",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=9566&outFields=*&outSR=4326&f=json",
+      "operator": "National Park Service (Dinosaur National Monument)",
+      "grade": "pending",
+      "inRegistry": false,
+      "registryStatus": null,
+      "flags": [
+        "closed",
+        "permit-required"
+      ],
+      "imagery": "not-reviewed"
+    },
+    {
+      "id": "UT-ACC-0007",
+      "label": "Split Mountain Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 40.44544,
+      "lon": -109.252588,
+      "coordinateSource": "NPS Public POIs, OBJECTID 4808 'Split Mountain Boat Launch' (DINO)",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=4808&outFields=*&outSR=4326&f=json",
+      "operator": "National Park Service (Dinosaur National Monument)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "permit-required",
+        "congestion noon-4pm"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0008",
+      "label": "Sand Wash Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 39.840465,
+      "lon": -109.913676,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 88966 'Sand Wash' (Boat Ramp, UTG02000 Price FO)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=88966&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Price Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "permit-required",
+        "remote-dirt-road"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0009",
+      "label": "Nefertiti Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 39.195482,
+      "lon": -110.077861,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 69391 'Nefertiti Rapid Recreation Site' (Boat Ramp)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69391&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Price Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "dirt-road"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0010",
+      "label": "Swaseys Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 39.112376,
+      "lon": -110.109071,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 77691 'Swasey Rapid Boat Ramp Site' (Boat Ramp, UTG02000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=77691&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Price Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0011",
+      "label": "Green River State Park Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 38.988844,
+      "lon": -110.150598,
+      "coordinateSource": "UGRC Utah Boat Ramps layer (2009), OBJECTID 35 'Green River State Park' (ADMIN USP)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/BoatRamps/FeatureServer/0/query?objectIds=35&outFields=*&outSR=4326&f=json",
+      "operator": "Utah State Parks (Green River State Park)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "fee-area",
+        "permit-required-downstream"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0012",
+      "label": "Mineral Bottom Boat Ramp",
+      "river": "Green River",
+      "inState": "UT",
+      "lat": 38.524298,
+      "lon": -109.993297,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 65135 'Mineral Bottom Recreation Site' (Boat Ramp, UTY01000 Moab FO)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=65135&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Moab Field Office)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "4wd-high-clearance",
+        "impassable-when-wet",
+        "steep-switchbacks"
+      ],
+      "imagery": "near"
+    },
+    {
+      "id": "UT-ACC-0013",
+      "label": "Westwater Ranger Station Boat Ramp",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": 39.086657,
+      "lon": -109.101309,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 69678 'Westwater Ranger Station' (Boat Ramp, UTY01000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69678&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Moab Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "permit-required"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0014",
+      "label": "Cisco Takeout",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": 38.970407,
+      "lon": -109.2506984,
+      "coordinateSource": "BLM Moab FO Cisco Takeout page, 'Geographic Coordinates 38.970407, -109.2506984' (the BLM GIS point OBJECTID 67918 at 38.970099, -109.252391 sits ~150 m west on the access road loop, so the page coordinate, which imagery puts at the head of the concrete ramp, is used)",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/cisco-takeout",
+      "operator": "Bureau of Land Management (Moab Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0015",
+      "label": "Dewey Bridge Boat Ramp",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": 38.811242,
+      "lon": -109.308154,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 68394 'Dewey Bridge Recreation Site' (Boat Ramp, UTY01000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=68394&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Moab Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0016",
+      "label": "Hittle Bottom Boat Ramp",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": 38.760191,
+      "lon": -109.325455,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 71172 'Hittle Bottom Recreation Site' (Boat Ramp, UTY01000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71172&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Moab Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0017",
+      "label": "Takeout Beach Boat Ramp",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": 38.661778,
+      "lon": -109.500696,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 68336 'Takeout Beach' (Boat Ramp, 'Concrete boat ramp')",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=68336&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Moab Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "fee-area"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0018",
+      "label": "Moab Bridge Boat Ramp",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": 38.604868,
+      "lon": -109.575014,
+      "coordinateSource": "UGRC Utah Boat Ramps layer (2009), OBJECTID 26 'Moab bridge' (ADMIN SL&F, State Sovereign Land)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/BoatRamps/FeatureServer/0/query?objectIds=26&outFields=*&outSR=4326&f=json",
+      "operator": "Utah Division of Forestry, Fire & State Lands (per UGRC attribute; unconfirmed)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [],
+      "imagery": "ok-unsourced"
+    },
+    {
+      "id": "UT-ACC-0019",
+      "label": "Potash Boat Ramp",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": 38.506543,
+      "lon": -109.659221,
+      "coordinateSource": "NPS Public POIs, OBJECTID 3023 'Potash' (Boat Launch, listed under CANY)",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=3023&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Moab FO) - managing agency page not found",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "permit-required-downstream"
+      ],
+      "imagery": "off"
+    },
+    {
+      "id": "UT-ACC-0020",
+      "label": "North Wash Take-out (Cataract Canyon)",
+      "river": "Colorado River",
+      "inState": "UT",
+      "lat": null,
+      "lon": null,
+      "coordinateSource": "",
+      "coordinateSourceUrl": "",
+      "operator": "Glen Canyon NRA (NPS) / Utah Division of Outdoor Recreation",
+      "grade": "pending",
+      "inRegistry": false,
+      "registryStatus": null,
+      "flags": [
+        "closure-uncertain",
+        "4wd",
+        "steep"
+      ],
+      "imagery": null
+    },
+    {
+      "id": "UT-ACC-0021",
+      "label": "Sand Island Boat Launch",
+      "river": "San Juan River",
+      "inState": "UT",
+      "lat": 37.262206,
+      "lon": -109.612081,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 66895 'Sand Island Recreation Site' (Boat Launch, UTY02000 Monticello FO)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=66895&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Monticello FO, Bears Ears NM)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "permit-required"
+      ],
+      "imagery": "near"
+    },
+    {
+      "id": "UT-ACC-0022",
+      "label": "Mexican Hat Boat Launch",
+      "river": "San Juan River",
+      "inState": "UT",
+      "lat": 37.1471,
+      "lon": -109.854503,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 70731 'Mexican Hat Boat Launch Site' (Boat Ramp, UTY02000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70731&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Monticello FO)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "permit-required",
+        "vehicle-break-ins"
+      ],
+      "imagery": "near"
+    },
+    {
+      "id": "UT-ACC-0023",
+      "label": "Clay Hills Boat Ramp",
+      "river": "San Juan River",
+      "inState": "UT",
+      "lat": 37.2945,
+      "lon": -110.397533,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 70434 'Clay Hills Boat Ramp Site' (Boat Takeout, UTY02000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70434&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Monticello FO)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "permit-required",
+        "waterfall-downstream",
+        "road-impassable-when-wet"
+      ],
+      "imagery": "off"
+    },
+    {
+      "id": "UT-ACC-0024",
+      "label": "Fuller Bottom (San Rafael Put-in)",
+      "river": "San Rafael River",
+      "inState": "UT",
+      "lat": 39.118617,
+      "lon": -110.855529,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 68553 'San Rafael River Put In' (Boat Launch, UTG02000 Price FO)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=68553&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Price Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "runoff-only",
+        "min-flow-200cfs"
+      ],
+      "imagery": "ok"
+    },
+    {
+      "id": "UT-ACC-0025",
+      "label": "San Rafael Swinging Bridge Take-out",
+      "river": "San Rafael River",
+      "inState": "UT",
+      "lat": 39.080878,
+      "lon": -110.667126,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 71217 'San Rafael Boat Take Out' (Boat Takeout, UTG02000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=71217&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Price Field Office)",
+      "grade": "access-verified",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "runoff-only"
+      ],
+      "imagery": "near"
+    },
+    {
+      "id": "UT-ACC-0026",
+      "label": "Bonanza Bridge Boat Launch",
+      "river": "White River",
+      "inState": "UT",
+      "lat": 39.97689,
+      "lon": -109.179303,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 70641 'White River Bonanza Boat Launch' (Boat Ramp)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70641&outFields=*&outSR=4326&f=json",
+      "operator": "Private land (BLM-listed launch)",
+      "grade": "pending",
+      "inRegistry": true,
+      "registryStatus": "pending",
+      "flags": [
+        "private-property",
+        "seasonal-closed-oct1-apr1"
+      ],
+      "imagery": "not-required"
+    },
+    {
+      "id": "UT-ACC-0027",
+      "label": "Enron Boat Ramp (White River)",
+      "river": "White River",
+      "inState": "UT",
+      "lat": 40.010178,
+      "lon": -109.445989,
+      "coordinateSource": "BLM National Recreation Site Points, OBJECTID 67149 'White River Enron Boat Ramp' (Boat Ramp, UTG01000)",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=67149&outFields=*&outSR=4326&f=json",
+      "operator": "Bureau of Land Management (Vernal Field Office)",
+      "grade": "verified",
+      "inRegistry": true,
+      "registryStatus": "verified",
+      "flags": [
+        "last-takeout-before-reservation"
+      ],
+      "imagery": "ok"
+    }
+  ],
+  "rivers": [
+    {
+      "riverId": "green-river-flaming-gorge",
+      "status": "included",
+      "auditStatus": "verified",
+      "sections": [
+        "flaming-gorge-a",
+        "flaming-gorge-b",
+        "flaming-gorge-c"
+      ]
+    },
+    {
+      "riverId": "green-river-dinosaur",
+      "status": "included",
+      "auditStatus": "verified",
+      "sections": [
+        "lodore-split-mountain"
+      ]
+    },
+    {
+      "riverId": "green-river-desolation",
+      "status": "included",
+      "auditStatus": "verified",
+      "sections": [
+        "sand-wash-swaseys",
+        "nefertiti-swaseys"
+      ]
+    },
+    {
+      "riverId": "green-river-labyrinth",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "green-river-sp-mineral-bottom"
+      ]
+    },
+    {
+      "riverId": "colorado-river-westwater",
+      "status": "included",
+      "auditStatus": "verified",
+      "sections": [
+        "westwater-cisco"
+      ]
+    },
+    {
+      "riverId": "colorado-river-moab",
+      "status": "included",
+      "auditStatus": "verified",
+      "sections": [
+        "cisco-dewey-bridge",
+        "dewey-bridge-hittle-bottom",
+        "moab-daily"
+      ]
+    },
+    {
+      "riverId": "colorado-river-meander",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "moab-potash"
+      ]
+    },
+    {
+      "riverId": "san-juan",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "sand-island-mexican-hat",
+        "mexican-hat-clay-hills"
+      ]
+    },
+    {
+      "riverId": "san-rafael",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "fuller-bottom-swinging-bridge"
+      ]
+    },
+    {
+      "riverId": "white-river",
+      "status": "included",
+      "auditStatus": "pending",
+      "sections": [
+        "bonanza-enron"
+      ]
+    },
+    {
+      "riverId": "colorado-river-cataract",
+      "status": "excluded/deferred",
+      "reason": "Take-out North Wash is closure-uncertain (NPS says inoperable; Utah DOR says an interim ramp is done). No official coordinate captured. Whitewater Class III-V needing an NPS permit."
+    },
+    {
+      "riverId": "green-river-rainbow-park (section)",
+      "status": "excluded/deferred",
+      "reason": "Closed: NPS closed the Rainbow Park road and boat ramp on Sept 25, 2026, likely until spring 2027. The section was dropped from green-river-dinosaur."
+    },
+    {
+      "riverId": "yampa-river-dinosaur",
+      "status": "excluded/deferred",
+      "reason": "Put-in and most river-miles are in Colorado, so it belongs in a CO package. Only the last miles after the Green confluence are in Utah."
+    },
+    {
+      "riverId": "colorado-river-ruby-horsethief",
+      "status": "excluded/deferred",
+      "reason": "Colorado-primary (BLM Grand Junction FO). Westwater Ranger Station is the Utah take-out and is already in the registry."
+    },
+    {
+      "riverId": "green-river-ouray-sand-wash",
+      "status": "excluded/deferred",
+      "reason": "Not researched this pass: no managing-agency launch page or coordinate was captured."
+    },
+    {
+      "riverId": "dolores-river-ut",
+      "status": "excluded/deferred",
+      "reason": "Mostly in Colorado. Utah access points were not researched. Gauge 09180000 is live (3,180 cfs at check)."
+    },
+    {
+      "riverId": "jordan-river",
+      "status": "excluded/deferred",
+      "reason": "No official launch coordinates. The Salt Lake City page was 403-blocked, the Salt Lake County Jordan River Water Trail project page gives no coordinates, and gauges 10167000/10167230 return no data (10171000 is live)."
+    },
+    {
+      "riverId": "provo-river-lower",
+      "status": "excluded/deferred",
+      "reason": "Gauges 10159500 and 10161000 return no current discharge. The only access information found was outfitter/state-park activity text with no launch coordinates or legal-access statement."
+    },
+    {
+      "riverId": "provo-river-middle",
+      "status": "excluded/deferred",
+      "reason": "No agency launch coordinates or boating-access statement captured. Gauges 10155200/10155500 are live."
+    },
+    {
+      "riverId": "weber-river",
+      "status": "excluded/deferred",
+      "reason": "No agency river-access page with launches found; the DWR page captured is fishing access. Gauge 10132000 read 0.47 cfs at Echo."
+    },
+    {
+      "riverId": "bear-river",
+      "status": "excluded/deferred",
+      "reason": "Not researched beyond gauges (10126000 live, 10118000 no data). No agency launch pages captured."
+    },
+    {
+      "riverId": "san-rafael-little-grand-canyon-extended / black-boxes",
+      "status": "excluded/deferred",
+      "reason": "Technical canyoneering/whitewater with no agency boating launch information captured."
+    },
+    {
+      "riverId": "logan / price / virgin / escalante / muddy-creek",
+      "status": "excluded/deferred",
+      "reason": "Runoff-only or canyoneering runs with no managing-agency boating launch pages captured this pass. Not researched; listed so they are not mistaken for reviewed-and-rejected."
+    }
+  ]
+}

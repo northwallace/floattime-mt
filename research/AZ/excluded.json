@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "excluded": [
+    {
+      "riverId": "colorado-river-black-canyon",
+      "name": "Colorado River: Hoover Dam to Willow Beach (Black Canyon Water Trail, NV/AZ border)",
+      "reason": "NPS: Launching at the Hoover Dam (river mile 64) requires a permit. Paddlecraft can launch and takeout at Willow Beach. The Hoover launch is permit/outfitter-controlled, the reach is the NV/AZ border, and the candidate USGS gauges checked gave no recent discharge. Willow Beach NPS POI 20605 (35.86795, -114.66259) was found but not reviewed. Best done with a Nevada package.",
+      "source": [
+        "https://www.nps.gov/lake/planyourvisit/black-canyon-water-trail.htm",
+        "https://www.nps.gov/lake/planyourvisit/upload/Black-Canyon.pdf"
+      ]
+    },
+    {
+      "riverId": "colorado-river-topock-gorge",
+      "name": "Colorado River: Topock Gorge (Havasu NWR, AZ/CA border)",
+      "reason": "FWS: launching at either Topock Marina in Arizona or Park Moabi in California. Topock Marina is a private marina and Park Moabi is in California; FWS gives no coordinates. These boat launches do not provide access to the Colorado River. (Topock Marsh launches). No live gauge found.",
+      "source": [
+        "https://www.fws.gov/refuge/havasu/visit-us/activities/boating---non-motorized"
+      ]
+    },
+    {
+      "riverId": "colorado-river-imperial-nwr",
+      "name": "Colorado River: Imperial NWR paddle reach (AZ/CA)",
+      "reason": "FWS non-motorized boating page was 403-blocked; nothing captured.",
+      "source": [
+        "https://www.fws.gov/refuge/imperial/visit-us/activities/boating---non-motorized"
+      ]
+    },
+    {
+      "riverId": "colorado-river-parker-strip / davis",
+      "name": "Colorado River: Parker Strip and Davis Dam to Laughlin reaches",
+      "reason": "Reservoir-like, motorboat-dominated reaches on the AZ/CA/NV borders; no agency paddle launch pages captured. Not researched.",
+      "source": []
+    },
+    {
+      "riverId": "salt-river-lower (Phon D to Granite Reef)",
+      "name": "Lower Salt below Phon D Sutton",
+      "reason": "Granite Reef is closure-uncertain (closure order link 404s); see closures.json.",
+      "source": [
+        "https://www.fs.usda.gov/r03/tonto/recreation/granite-reef-day-use-area"
+      ]
+    },
+    {
+      "riverId": "salt-river-upper (Gleason Flat take-out)",
+      "name": "Upper Salt: Highway 288 to Gleason Flat",
+      "reason": "No agency coordinate or access page for Gleason Flat was captured (the Tonto rafter take-out pages redirect or 404).",
+      "source": []
+    },
+    {
+      "riverId": "verde-river-upper (Dead Horse Ranch to Bridgeport/Camp Verde)",
+      "name": "Upper Verde below Dead Horse Ranch",
+      "reason": "No agency coordinates for intermediate Cottonwood/Camp Verde access points were captured.",
+      "source": []
+    },
+    {
+      "riverId": "verde-river below Bartlett Dam (Riverside)",
+      "name": "Lower Verde: Bartlett Dam area to Needle Rock",
+      "reason": "Riverside Campground is closed by order until 2027-03-31.",
+      "source": [
+        "https://www.fs.usda.gov/r03/tonto/alerts/riverside-post-fire-recovery-and-safety-closure-extension"
+      ]
+    },
+    {
+      "riverId": "san-pedro / little-colorado / agua-fria / black-river / bill-williams / hassayampa / oak-creek / fossil-creek / gila (other reaches) / tonto-creek / salt-river (Roosevelt-Saguaro lakes)",
+      "name": "Other Arizona rivers and creeks",
+      "reason": "Runoff-only, creek or canyoneering runs, or lake reaches with no managing-agency boating launch pages captured this pass. Not researched; listed so they are not mistaken for reviewed-and-rejected.",
+      "source": []
+    }
+  ],
+  "notAdded": [
+    "Granite Reef Day Use Area (closure-uncertain)",
+    "Riverside Campground (closed)",
+    "Mesquite Campground (closed)",
+    "Willow Beach (NV/AZ; not reviewed)",
+    "South Cove (Lake Mead; proposal only)",
+    "Gleason Flat (no agency coordinate)"
+  ]
+}

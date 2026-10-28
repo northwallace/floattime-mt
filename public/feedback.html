@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggest a Correction or Request a Float | Float ETA</title>
+  <meta name="description" content="Help improve Float ETA: suggest a river-section correction or request a missing float.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.floateta.com/feedback.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Float ETA">
+  <meta property="og:title" content="Help improve Float ETA">
+  <meta property="og:description" content="Suggest a section correction or request a missing float.">
+  <meta property="og:url" content="https://www.floateta.com/feedback.html">
+  <meta property="og:image" content="https://www.floateta.com/float-eta-share.png">
+  <meta property="og:image:url" content="https://www.floateta.com/float-eta-share.png">
+  <meta property="og:image:secure_url" content="https://www.floateta.com/float-eta-share.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="stylesheet" href="styles.css?v=20261023-1"><link rel="stylesheet" href="middle.css?v=20261027-1">
+</head>
+<body>
+  <header class="hero hero-legal">
+    <nav class="nav">
+      <a class="brand" href="/"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <details class="nav-drop">
+          <summary>Rivers</summary>
+          <div class="nav-drop-menu">
+            <a href="/montana">Montana</a>
+            <a href="/idaho">Idaho</a>
+            <a href="/oregon">Oregon</a>
+            <a href="/washington">Washington</a>
+            <a href="/utah">Utah</a>
+            <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a>
+          </div>
+        </details>
+        <a href="/about.html">About</a>
+        <a href="/feedback.html" class="is-active">Suggestions</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Help improve Float ETA</h1>
+      <p class="hero-sub">Know this stretch? Share a correction, or tell us about a float we should add.</p>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,35 C960,70 1200,10 1440,45 L1440,90 L0,90 Z" fill="var(--bg)"/></svg>
+    </div>
+  </header>
+
+  <main class="legal feedback-page">
+    <p class="feedback-intro">Your local knowledge helps the next floater. Suggestions go to a private review queue before any river information changes.</p>
+    <noscript><p>Please enable JavaScript to send a suggestion, or use our <a href="/contact.html">contact page</a>.</p></noscript>
+    <form id="feedbackForm" class="report-form contact-form">
+      <div class="control">
+        <label for="feedbackType">What would you like to send?</label>
+        <select id="feedbackType"><option value="float-request">Request a float</option><option value="correction">Suggest a correction</option></select>
+      </div>
+      <fieldset id="correctionFields" class="feedback-fields" hidden disabled>
+        <legend>Which river section?</legend>
+        <div class="control"><label for="feedbackRiver">River</label><select id="feedbackRiver" required><option value="">Choose a river</option></select></div>
+        <div class="control"><label for="feedbackSection">Section</label><select id="feedbackSection"><option value="">Whole river / general correction</option></select></div>
+        <div class="control"><label for="feedbackCategory">What needs correcting?</label><select id="feedbackCategory" required>
+          <option value="">Choose an issue</option><option value="map-location">Map or launch location</option><option value="distance">Distance</option><option value="timing">Float time</option><option value="access">Access, closure or permit information</option><option value="difficulty">Difficulty or craft suitability</option><option value="other">Something else</option>
+        </select></div>
+        <p id="feedbackContext" class="feedback-context"></p>
+      </fieldset>
+      <fieldset id="requestFields" class="feedback-fields">
+        <legend>Tell us about the float</legend>
+        <div class="control"><label for="requestState">State or region</label><input id="requestState" list="feedbackStates" required maxlength="80" placeholder="e.g. Colorado"><datalist id="feedbackStates"></datalist></div>
+        <div class="control"><label for="requestRiver">River name</label><input id="requestRiver" required maxlength="160" placeholder="e.g. Colorado River"></div>
+        <div class="feedback-two-columns">
+          <div class="control"><label for="requestPutIn">Put-in</label><input id="requestPutIn" required maxlength="160" placeholder="Launch or access name"></div>
+          <div class="control"><label for="requestTakeOut">Take-out</label><input id="requestTakeOut" required maxlength="160" placeholder="Landing or access name"></div>
+        </div>
+      </fieldset>
+      <div class="control"><label id="feedbackMessageLabel" for="feedbackMessage">What should we know about this float?</label><textarea id="feedbackMessage" required maxlength="2000" rows="5" placeholder="Useful details, local knowledge, or what should change…"></textarea></div>
+      <div class="control"><label for="feedbackSource">Supporting link <span class="optional">(optional)</span></label><input id="feedbackSource" type="url" maxlength="1000" placeholder="https://"><small>An agency page, map or trip report can help us check it. You can also describe coordinates in your message.</small></div>
+      <div class="feedback-two-columns">
+        <div class="control"><label for="feedbackName">Your name <span class="optional">(optional)</span></label><input id="feedbackName" maxlength="80" autocomplete="name"></div>
+        <div class="control"><label for="feedbackEmail">Email <span class="optional">(optional)</span></label><input id="feedbackEmail" type="email" maxlength="120" autocomplete="email" placeholder="Only if we can follow up"></div>
+      </div>
+      <p class="feedback-private">Your name, email and suggestion are kept private. Email is optional; you can contribute without an account.</p>
+      <div class="feedback-honeypot" aria-hidden="true"><label for="feedbackWebsite">Leave this blank</label><input id="feedbackWebsite" name="website" tabindex="-1" autocomplete="off"></div>
+      <button type="submit" class="btn-primary" id="feedbackSubmit">Request this float</button>
+      <div id="feedbackStatus" class="report-status" role="status" aria-live="polite"></div>
+    </form>
+    <section id="feedbackThanks" class="feedback-thanks" hidden>
+      <h2>Thanks for helping.</h2><p id="feedbackConfirmation"></p>
+      <p>Your suggestion is saved for review. River information changes after it has been checked.</p>
+      <a id="feedbackBack" href="/">Back to Float ETA</a> · <a href="/feedback.html?type=float-request">Request another float</a>
+    </section>
+    <p>New hazards such as fallen trees or blocked channels? <a href="/#reports">Use river reports</a> so other floaters can see them. For other questions, <a href="/contact.html">contact us</a>.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="brand" href="/"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></a>
+      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/washington">Washington</a> · <a href="/utah">Utah</a> · <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a> · <a href="/feedback.html?type=float-request">Request a float</a></p>
+      <p class="copyright">© <span id="year"></span> Float ETA · <a href="https://www.floateta.com">floateta.com</a></p>
+    </div>
+  </footer>
+  <script src="feedback.js?v=20261026-1"></script>
+</body>
+</html>

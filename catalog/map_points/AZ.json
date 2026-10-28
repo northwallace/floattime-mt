@@ -1,0 +1,256 @@
+{
+  "version": 2,
+  "state": "AZ",
+  "auditedRivers": {
+    "salt-river-lower": {
+      "status": "pending",
+      "note": "Audited 2026-10-26. Pending: Blue Point Day Use Area (Lower Salt) (access-verified); Goldfield Day Use Area (Lower Salt) (access-verified)."
+    },
+    "salt-river-upper": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: First Campground (Upper Salt put-in) (pending); Highway 288 Bridge Take-out (Upper Salt) (pending)."
+    },
+    "verde-river-upper": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Dead Horse Ranch State Park River Day Use Area (Verde) (pending); Tuzigoot River Access Point (Verde) (pending)."
+    },
+    "verde-river-camp-verde": {
+      "status": "pending",
+      "note": "Audited 2026-10-26. Pending: Clear Creek Fishing Site (Verde) (access-verified); White Bridge Picnic Site and Boat Launch (Verde) (access-verified)."
+    },
+    "verde-river-scenic": {
+      "status": "pending",
+      "note": "Audited 2026-10-26. Pending: Childs River Access Point (Verde) (pending)."
+    },
+    "verde-river-wild": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Childs River Access Point (Verde) (pending); Horseshoe Campground (Verde) (pending); Sheep Bridge (Verde) (pending)."
+    },
+    "verde-river-lower": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Box Bar River Access Point (Verde) (pending); Needle Rock Day Use Area (Verde) (pending)."
+    },
+    "gila-river-gila-box": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Dry Canyon Boat Take-Out (Gila Box) (pending); Gila River Boat Put-In (Gila Box) (access-verified)."
+    },
+    "colorado-river-grand-canyon": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Diamond Creek (Grand Canyon) (access-verified); Lees Ferry Boat Launch (access-verified)."
+    },
+    "colorado-river-lower-gorge": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Diamond Creek (Grand Canyon) (access-verified)."
+    }
+  },
+  "points": {
+    "Water Users Day Use Area (Lower Salt)": {
+      "status": "verified",
+      "lat": 33.5541561,
+      "lon": -111.5433992,
+      "accessType": "River access / non-motorized launch (fee area)",
+      "operator": "USDA Forest Service (Tonto NF, Mesa Ranger District)",
+      "sourceName": "Access: USDA Forest Service, Tonto NF: Water Users Day Use Area (Site Open). Coordinate: North's own Google Maps marking (owner-supplied), checked on Esri World Imagery",
+      "sourceUrl": "https://www.fs.usda.gov/r03/tonto/recreation/water-users-day-use-area",
+      "verifiedOn": "2026-10-26",
+      "note": "IMAGERY-PLACED: coordinate is owner-supplied (North's own Google Maps satellite marking, 33.5541561, -111.5433992) and checked on Esri World Imagery z19 on 2026-10-26 (research/raw/imagery/water_users_day_use_area_lower_salt_owner_z19.png); it is NOT an agency coordinate. On imagery: North's point sits on the open sand clearing where the foot paths from the day-use parking lot reach the north bank, about 10-20 m from the channel edge across a bare silt/gravel bar; no constructed ramp (natural shore launch). The USFS EDW point (recareaid 35407) is in the paved lot about 156 m north. The waterline moves with Stewart Mountain Dam releases. NHD High Resolution flowline 37 m away. Superseded agency point: USFS EDW Recreation Opportunities, recareaid 35407 'Water Users Day Use Area' (same coordinate on the Tonto NF page) at 33.555518, -111.543833 (https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35407&outFields=*&outSR=4326&f=json). Legal boating access: USDA Forest Service, Tonto NF: Water Users Day Use Area (Site Open) (https://www.fs.usda.gov/r03/tonto/recreation/water-users-day-use-area): 'Water Users is a popular site for kayakers and tubers.' 'This site is most popular as a launch site' 'Motorized boats are not allowed to launch at this site.' Tonto Daily Pass (and Watercraft Sticker, if required). Spot-check this point first; imagery date is not published by Esri.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-26",
+      "bankSourceName": "USGS NHD High Resolution flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query?where=permanent_identifier%3D%27139048895%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~247), the point is right of the NHD centreline (37 m)."
+    },
+    "Blue Point Day Use Area (Lower Salt)": {
+      "status": "pending",
+      "note": "Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the point is in the day-use parking lot about 110 m east of the river channel. v1.3: North's owner-supplied point (33.5539720, -111.5750868) is at the water's edge on the beach just south of the Bush Highway bridge (NHD 49 m, river right), but that beach is on the Pebble Beach side of the highway (175 m from the Pebble Beach page coordinate, 193 m from the Blue Point one), so it was not applied. v1.4: reassessed with North's statement that Sheeps Crossing is the other side (his Sheeps point is river-left, 432 m away) and the USFS INFRA site points (Pebble Beach 95705 serves the south lots; Blue Point 95316 is the lot north of the highway); still not applied (research/replacement-proposals-AZ.json). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    "Goldfield Day Use Area (Lower Salt)": {
+      "status": "pending",
+      "note": "Research-only grade: access-verified (official source names boating access; approximate area only). Agency point is 257 m from the NHD centreline (>150 m). Tonto order 03-12-03-24-65 closes a described Goldfield-area eagle zone Dec 1-Jun 30 each year (order text runs to Jun 30, 2026; renewal for 2026-27 not found this pass)."
+    },
+    "Phon D Sutton Day Use Area (Lower Salt)": {
+      "status": "verified",
+      "lat": 33.5465461,
+      "lon": -111.6616464,
+      "accessType": "River access / take-out (fee area)",
+      "operator": "USDA Forest Service (Tonto NF, Mesa Ranger District)",
+      "sourceName": "Access: USDA Forest Service, Tonto NF: Phon D Sutton Day Use Area (Site Open). Coordinate: North's own Google Maps marking (owner-supplied), checked on Esri World Imagery",
+      "sourceUrl": "https://www.fs.usda.gov/r03/tonto/recreation/phon-d-sutton-day-use-area",
+      "verifiedOn": "2026-10-26",
+      "note": "IMAGERY-PLACED: coordinate is owner-supplied (North's own Google Maps satellite marking, 33.5465461, -111.6616464) and checked on Esri World Imagery z19 on 2026-10-26 (research/raw/imagery/phon_d_sutton_day_use_area_lower_salt_owner_z19.png); it is NOT an agency coordinate. On imagery: North's point sits at the waterline on the south bank of the Salt, on an open sandy/rocky shore reached by foot paths from the western Phon D Sutton parking lots and ramadas, just below the Verde River confluence (the Verde enters from the north opposite). No constructed ramp (natural shore take-out). The Tonto NF page point (EDW recareaid 35397) is in the eastern parking lot about 420 m east (60 m south of the river there); the paved site road links both lot groups, and EDW lists no other recreation site between Raccoon Bluff (1.7 km upstream) and this point. The waterline moves with Salt and Verde dam releases. NHD High Resolution flowline 17 m away. Superseded agency point: Tonto NF Phon D Sutton page coordinate (USFS EDW Recreation Opportunities recareaid 35397 'Phon D Sutton Day Use Area': 33.547016, -111.657843) at 33.54697106, -111.6571505 (https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D35397&outFields=*&outSR=4326&f=json). Legal boating access: USDA Forest Service, Tonto NF: Phon D Sutton Day Use Area (Site Open) (https://www.fs.usda.gov/r03/tonto/recreation/phon-d-sutton-day-use-area): 'This site is a popular inner tube take-out point.' Tonto Daily Pass (and Watercraft Sticker, if required). Spot-check this point first; imagery date is not published by Esri.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-26",
+      "bankSourceName": "USGS NHD High Resolution flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query?where=permanent_identifier%3D%27{427D574A-D45B-46A9-999C-3DFD78A52C51}%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~250), the point is left of the NHD centreline (17 m). Imagery agrees: the point, the parking lots and the site road are on the south bank (river left when facing downstream, flow to the west-southwest)."
+    },
+    "First Campground (Upper Salt put-in)": {
+      "status": "pending",
+      "note": "No managing-agency coordinate: the launch is on White Mountain Apache land (tribal permit required); the Tonto NF area map PDF is image-only and gives no coordinates."
+    },
+    "Highway 288 Bridge Take-out (Upper Salt)": {
+      "status": "pending",
+      "note": "Tonto NF names the take-out (just downstream of the Highway 288 Bridge, river left) but publishes no coordinate for it."
+    },
+    "Tuzigoot River Access Point (Verde)": {
+      "status": "pending",
+      "note": "No agency coordinate for the launch itself (Clarkdale page 403 to curl; text captured via WebFetch fallback; AZSP gives only the park-entrance coordinate)."
+    },
+    "Dead Horse Ranch State Park River Day Use Area (Verde)": {
+      "status": "pending",
+      "note": "No agency coordinate for the river day-use landing (the Dead Horse facility page's boat ramp is at the lagoons, not the river)."
+    },
+    "Black Canyon Fishing Site (Verde)": {
+      "status": "verified",
+      "lat": 34.684959,
+      "lon": -111.964009,
+      "accessType": "River access point (no fee)",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "sourceName": "USFS EDW Recreation Opportunities, recareaid 67273 'Black Canyon Fishing Site' (Prescott NF page: 34.68495864, -111.9640087)",
+      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67273&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "USFS EDW Recreation Opportunities, recareaid 67273 'Black Canyon Fishing Site' (Prescott NF page: 34.68495864, -111.9640087) is the managing agency's own point. Legal boating access: USDA Forest Service, Prescott NF: Black Canyon Fishing Site + Bignotti Picnic Site page (https://www.fs.usda.gov/r03/prescott/recreation/black-canyon-fishing-site): 'Black Canyon Fishing Site provides access to the Verde River where visitors enjoy fishing, picnicking, bird watching, canoeing, kayaking, and floating on inner tubes.' Bignotti page: 'Canoers and kayakers who put in for a short, smooth water float from Black Canyon River Access Point end their float trip here'. Imagery: Esri World Imagery z19 checked 2026-10-25 (research/raw/imagery/black_canyon_fishing_site_verde.png): Point is at the water's edge on the west bank beside the gravel parking area and the dirt turnaround, at a pool on the river. NHD flowline 17 m away.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHD High Resolution flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query?where=permanent_identifier%3D%27132786397%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~127), the point is right of the NHD centreline (17 m)."
+    },
+    "Bignotti Picnic Site (Verde)": {
+      "status": "verified",
+      "lat": 34.678979,
+      "lon": -111.954134,
+      "accessType": "River access / take-out",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "sourceName": "USFS EDW Recreation Opportunities, recareaid 67213 'Bignotti Picnic Site' (Prescott NF page: 34.67897869, -111.9541343)",
+      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67213&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "USFS EDW Recreation Opportunities, recareaid 67213 'Bignotti Picnic Site' (Prescott NF page: 34.67897869, -111.9541343) is the managing agency's own point. Legal boating access: USDA Forest Service, Prescott NF: Bignotti Picnic Site (https://www.fs.usda.gov/r03/prescott/recreation/bignotti-picnic-site): 'Canoers and kayakers who put in for a short, smooth water float from Black Canyon River Access Point end their float trip here as the water is generally too shallow and has too many obstacles for boating down river between Bignottie and White Bridge which is 14 miles down river.' Imagery: Esri World Imagery z19 checked 2026-10-25 (research/raw/imagery/bignotti_picnic_site_verde.png): Point is on the wooded west bank at the end of the picnic-site road loop, about 10 m from open water. NHD flowline 1 m away.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHD High Resolution flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query?where=permanent_identifier%3D%27132786394%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Bank set from imagery: the NHD centreline is only 1 m away, so the computed side (river-left) is not reliable; facing downstream (flow bearing ~157) the point is on the river-right bank on imagery."
+    },
+    "White Bridge Picnic Site and Boat Launch (Verde)": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 34.549506,
+        "lon": -111.850062,
+        "feature": "USFS EDW Recreation Opportunities, recareaid 67211 'White Bridge Picnic Site and Boat Launch' (Prescott NF page: 34.54950556, -111.8500619)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "USDA Forest Service, Prescott NF: White Bridge Picnic Site and Boat Launch + Verde River page",
+      "sourceUrl": "https://www.fs.usda.gov/r03/prescott/recreation/white-bridge-picnic-site-and-boat-launch",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67211&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "directions": "Just off Highway 260 (Prescott NF page); a short walk leads to the river.",
+      "note": "Agency point is 168 m from the NHD centreline (>150 m). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery. Restrictions: "
+    },
+    "Clear Creek Fishing Site (Verde)": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 34.505695,
+        "lon": -111.83708,
+        "feature": "USFS EDW Recreation Opportunities, recareaid 67251 'Clear Creek Fishing Site' (Prescott NF page: 34.5056954, -111.8370798)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "USDA Forest Service, Prescott NF: Clear Creek Fishing Site",
+      "sourceUrl": "https://www.fs.usda.gov/r03/prescott/recreation/clear-creek-fishing-site",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67251&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "directions": "Informal put-in/take-out (steep bank)",
+      "note": "Agency says launching/take-out is possible but the site is not a good boat launch (steep, slippery bank; parking not close to the river), so it is kept to the access-verified tier, not verified. Restrictions: poor-launch; carry-required"
+    },
+    "Beasley Flat (Verde)": {
+      "status": "verified",
+      "lat": 34.4734529,
+      "lon": -111.8012007,
+      "accessType": "Concrete boat ramp",
+      "operator": "USDA Forest Service (Prescott NF, Verde RD)",
+      "sourceName": "Access: USDA Forest Service, Prescott NF: Beasley Flat Picnic Site; AZ State Parks Paddle Map 2 (Mile 0.0). Coordinate: North's own Google Maps marking (owner-supplied), checked on Esri World Imagery",
+      "sourceUrl": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site",
+      "verifiedOn": "2026-10-26",
+      "note": "IMAGERY-PLACED: coordinate is owner-supplied (North's own Google Maps satellite marking, 34.4734529, -111.8012007) and checked on Esri World Imagery z19 on 2026-10-26 (research/raw/imagery/beasley_flat_verde_owner_z19.png); it is NOT an agency coordinate. On imagery: North's point sits in a bare sandy clearing that runs through a gap in the west-bank riparian trees to open water, about 8 m from the waterline, directly east of the paved Beasley Flat picnic loop. The concrete ramp surface the paddle guide describes is not clearly distinguishable on the imagery, but this is the only open shore gap by the loop road. The USFS EDW point (recareaid 67209) plots in the channel about 340 m north-northeast. NHD High Resolution flowline 28 m away. Superseded agency point: USFS EDW Recreation Opportunities, recareaid 67209 'Beasley Flat Picnic Site' (Prescott NF page: 34.47651531, -111.8007081) at 34.476515, -111.800708 (https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaid%3D67209&outFields=*&outSR=4326&f=json). Legal boating access: USDA Forest Service, Prescott NF: Beasley Flat Picnic Site; AZ State Parks Paddle Map 2 (Mile 0.0) (https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site): 'It is also the most popular take-out spot for canoes and kayaks after a 10-mile float from White Bridge.' Paddle Map 2: Beasley Flat facilities 'include a concrete boat ramp, a parking lot, toilets'. Spot-check this point first; imagery date is not published by Esri.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-26",
+      "bankSourceName": "USGS NHD High Resolution flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query?where=permanent_identifier%3D%27{C10C1D95-702C-47DE-AD1D-EF1CD385E219}%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~179), the point is right of the NHD centreline (28 m). The access road, picnic loop and launch clearing are on the west bank (river right when facing downstream, flow to the south)."
+    },
+    "Childs River Access Point (Verde)": {
+      "status": "pending",
+      "note": "The only agency coordinate is for the Childs dispersed camping area; the current Coconino page does not mention boating, and the boating statement comes from a 2006-07 paddle guide."
+    },
+    "Sheep Bridge (Verde)": {
+      "status": "pending",
+      "note": "Tonto page lists non-motorized boating but gives no launch/take-out statement; the 2006-07 paddle guide calls it a River Access Point. Road is rocky and technical (4x4)."
+    },
+    "Horseshoe Campground (Verde)": {
+      "status": "pending",
+      "note": "Road closure order 03-12-01-26-26 (motor vehicles prohibited on Horseshoe Dam Road, NFSR 205, Sep 29-Nov 2, 2026, flood repairs). Campground access is via campsites 11-12, not a designated launch."
+    },
+    "Needle Rock Day Use Area (Verde)": {
+      "status": "pending",
+      "note": "The page names a non-motorized beach and lists non-motorized boating, but it never says launch/put-in, so it stays pending."
+    },
+    "Box Bar River Access Point (Verde)": {
+      "status": "pending",
+      "note": "Imagery: the Tonto page coordinate is in the dispersed parking/camping flat about 120 m west of the river."
+    },
+    "Gila River Boat Put-In (Gila Box)": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 32.96498,
+        "lon": -109.30982,
+        "feature": "BLM visit page 'Gila River Boat Put-In' Geographic Coordinates (32.96498, -109.30982)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "BLM Safford FO: Gila River Boat Put-In",
+      "sourceUrl": "https://www.blm.gov/visit/gila-river-boat-put-in",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/gila-river-boat-put-in",
+      "verifiedOn": "2026-10-25",
+      "directions": "BLM directions: turn right just after crossing the Old Safford Bridge; the put-in is by the river there.",
+      "note": "Imagery: the BLM point is on a sandy track on the south side of the river near the Old Safford Bridge, about 50 m from the channel under riparian trees; no launch is identifiable. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery. Restrictions: "
+    },
+    "Dry Canyon Boat Take-Out (Gila Box)": {
+      "status": "pending",
+      "note": "Closure-uncertain: a non-agency (American Whitewater) report dated Oct 4, 2026 describes a road washout on the take-out access; no BLM notice was found either way. The BLM page coordinate is more than 400 m from any NHD Gila River flowline (no flowline in the 0.004-degree NHD query)."
+    },
+    "Lees Ferry Boat Launch": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 36.86600832,
+        "lon": -111.58707804,
+        "feature": "NPS Public POIs, OBJECTID 10901 'Lees Ferry Boat Launch' (GLCA, Boat Launch, Existing)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "NPS Glen Canyon NRA: Lees Ferry",
+      "sourceUrl": "https://www.nps.gov/glca/planyourvisit/lees-ferry.htm",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=10901&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "directions": "The launch ramp and courtesy docks are beside the Lees Ferry launch parking lot (imagery).",
+      "note": "Imagery: the NPS point is in the paved launch parking lot, about 60 m from the ramp and docks. Too far from the water to pass the ramp-at-water check. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery. Restrictions: permit-required"
+    },
+    "Diamond Creek (Grand Canyon)": {
+      "status": "pending",
+      "note": "Research-only grade: access-verified (official source names boating access; approximate area only). Access crosses Hualapai tribal land and the Tribe charges its own fees; the managing authority for road and landing is the Hualapai Tribe, not NPS, so this stays in the access-verified tier."
+    },
+    "Pearce Ferry Boat Launch": {
+      "status": "verified",
+      "lat": 36.1255327,
+      "lon": -113.98254683,
+      "accessType": "River-trip take-out ramp (no launching)",
+      "operator": "National Park Service (Lake Mead NRA)",
+      "sourceName": "NPS Public POIs, OBJECTID 10448 'Pearce Ferry Boat Launch' (Boat Launch)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=10448&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "NPS Public POIs, OBJECTID 10448 'Pearce Ferry Boat Launch' (Boat Launch) is the managing agency's own point. Legal boating access: NPS Lake Mead NRA: South Cove Launch Ramp page (section 'Pearce Ferry Takeout', last updated Aug 20, 2026) (https://www.nps.gov/places/south-cove-launch-ramp.htm): 'The boat ramp at Pearce Ferry is for Grand Canyon river trip takeouts only. Launching watercraft is not allowed at Pearce Ferry.' NPS Grand Canyon: 'River runners can take-out at either South Cove or Pearce Ferry.' Imagery: Esri World Imagery z19 checked 2026-10-25 (research/raw/imagery/pearce_ferry_boat_launch.png): Point is on the paved ramp lane that runs down to the river; boats are pulled up at the bottom of the ramp. NHD flowline 98 m away. Take-out only: NPS prohibits launching watercraft at Pearce Ferry.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHD High Resolution flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query?where=permanent_identifier%3D%27122647524%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~329), the point is left of the NHD centreline (98 m)."
+    }
+  }
+}

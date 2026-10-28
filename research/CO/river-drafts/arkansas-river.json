@@ -1,0 +1,117 @@
+{
+  "id": "arkansas-river",
+  "name": "Arkansas River (AHRA, Leadville to Pueblo)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "v1.1: the seasonal gauges no longer hold the river back (a seasonal/unavailable gauge only hides live estimates). Stone Bridge → Rincon is now in the catalog (river arkansas-river-salida). The remaining AHRA reaches stay draft because their endpoints are area features (Numbers KML pin, Railroad Bridge, Fisherman's Bridge, Ruby Mountain, Hecla Junction are BLM 'launch' points not yet matched to official same-endpoint mileage), Salida East failed the imagery check, and AW lengths still need reconciling with the AHRA safety-map section totals (14.4–32.7 mi). USGS Arkansas gauges (07087050, 07091200, 07094500) returned only SEASONAL-qualified null discharge in the 7-day check on 2026-10-26.",
+  "blockers": [
+    "exact-location",
+    "route-geometry",
+    "live-estimates-hidden"
+  ],
+  "accessPoints": [
+    "CO-ACC-0100",
+    "CO-ACC-0101",
+    "CO-ACC-0102",
+    "CO-ACC-0103",
+    "CO-ACC-0104",
+    "CO-ACC-0105",
+    "CO-ACC-0106",
+    "CO-ACC-0107",
+    "CO-ACC-0108",
+    "CO-ACC-0109"
+  ],
+  "candidateSections": [
+    {
+      "id": "arkansas-river--aw1000018",
+      "awId": "1000018",
+      "description": "Hayden Meadows to Granite ",
+      "difficulty": "ItoII",
+      "milesCandidate": 9.8,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "ARKGRNCO",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/1000018/main"
+    },
+    {
+      "id": "arkansas-river--aw355",
+      "awId": "355",
+      "description": "01. Granite to Numbers Launch Site",
+      "difficulty": "IVtoV",
+      "milesCandidate": 5.1,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07087050",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/355/main"
+    },
+    {
+      "id": "arkansas-river--aw356",
+      "awId": "356",
+      "description": "02. Numbers Launch to Railroad Bridge Launch",
+      "difficulty": "IV",
+      "milesCandidate": 6.4,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07087050",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/356/main"
+    },
+    {
+      "id": "arkansas-river--aw357",
+      "awId": "357",
+      "description": "03. Railroad Bridge Launch to Buena Vista",
+      "difficulty": "III",
+      "milesCandidate": 6.7,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07087050",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/357/main"
+    },
+    {
+      "id": "arkansas-river--aw4347",
+      "awId": "4347",
+      "description": "04. Buena Vista to Fisherman's Bridge",
+      "difficulty": "III",
+      "milesCandidate": 6.7,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07091200",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/4347/main"
+    },
+    {
+      "id": "arkansas-river--aw358",
+      "awId": "358",
+      "description": "05. Fisherman's Bridge access to Stone Bridge access",
+      "difficulty": "III",
+      "milesCandidate": 13.0,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07091200",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/358/main"
+    },
+    {
+      "id": "arkansas-river--aw4349",
+      "awId": "4349",
+      "description": "08. Rincon to Pinnacle Rock",
+      "difficulty": "IItoIII",
+      "milesCandidate": 19.5,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07094500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/4349/main"
+    },
+    {
+      "id": "arkansas-river--aw359",
+      "awId": "359",
+      "description": "09. Pinnacle Rock Launch to Parkdale Launch",
+      "difficulty": "III",
+      "milesCandidate": 17.2,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07094500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/359/main"
+    },
+    {
+      "id": "arkansas-river--aw360",
+      "awId": "360",
+      "description": "10. Parkdale Launch to Canon City (Royal Gorge)",
+      "difficulty": "IIItoIVstandoutV",
+      "milesCandidate": 10.0,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "07094500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/360/main"
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

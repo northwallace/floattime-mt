@@ -1,0 +1,1471 @@
+{
+  "Absarokee": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 45.52887096999066,
+      "lon": -109.46839246983271,
+      "accessType": "Hand launch",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Absaroka Fishing Access Site 39753820",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753820",
+      "verifiedOn": "2026-10-24",
+      "note": "The catalog label is Absarokee; the official site name is Absaroka. Exact coordinate and launch type are from the current Montana FWP managed-access layer.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-24",
+      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+      "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271092800456391%27&geometry=-109.46839246983271%2C45.52887096999066&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 13.699999809265137,
+            "LLID": "1092800456391",
+            "OBJECTID": 67197
+          },
+          "geometry": {
+            "x": -109.46801962227741,
+            "y": 45.528468587333606
+          },
+          "distanceMeters": 53.3
+        },
+        {
+          "attributes": {
+            "MEAS": 13.800000190734863,
+            "LLID": "1092800456391",
+            "OBJECTID": 67198
+          },
+          "geometry": {
+            "x": -109.47006922381954,
+            "y": 45.5284791724794
+          },
+          "distanceMeters": 137.7
+        },
+        {
+          "attributes": {
+            "MEAS": 13.600000381469727,
+            "LLID": "1092800456391",
+            "OBJECTID": 67196
+          },
+          "geometry": {
+            "x": -109.4662646403007,
+            "y": 45.52918631045587
+          },
+          "distanceMeters": 169.4
+        },
+        {
+          "attributes": {
+            "MEAS": 13.899999618530273,
+            "LLID": "1092800456391",
+            "OBJECTID": 67199
+          },
+          "geometry": {
+            "x": -109.47199557291144,
+            "y": 45.528941530583786
+          },
+          "distanceMeters": 280.8
+        },
+        {
+          "attributes": {
+            "MEAS": 13.5,
+            "LLID": "1092800456391",
+            "OBJECTID": 67195
+          },
+          "geometry": {
+            "x": -109.46464045482595,
+            "y": 45.530074748403834
+          },
+          "distanceMeters": 321.5
+        },
+        {
+          "attributes": {
+            "MEAS": 14,
+            "LLID": "1092800456391",
+            "OBJECTID": 67200
+          },
+          "geometry": {
+            "x": -109.47388392147018,
+            "y": 45.5293723269401
+          },
+          "distanceMeters": 431.4
+        },
+        {
+          "attributes": {
+            "MEAS": 13.399999618530273,
+            "LLID": "1092800456391",
+            "OBJECTID": 67194
+          },
+          "geometry": {
+            "x": -109.46266261699694,
+            "y": 45.5304364393068
+          },
+          "distanceMeters": 479.1
+        },
+        {
+          "attributes": {
+            "MEAS": 14.100000381469727,
+            "LLID": "1092800456391",
+            "OBJECTID": 67201
+          },
+          "geometry": {
+            "x": -109.47547449468193,
+            "y": 45.52846721478871
+          },
+          "distanceMeters": 553.5
+        }
+      ]
+    },
+    "nearestRiverMile": 13.7,
+    "nearestOffsetMeters": 53.3,
+    "riverIdentifier": "1092800456391"
+  },
+  "Cliff Swallow": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 45.51492399294101,
+      "lon": -109.6320969592275,
+      "accessType": "Hand launch",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Cliff Swallow Fishing Access Site 39753840",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753840",
+      "verifiedOn": "2026-10-24",
+      "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271092800456391%27&geometry=-109.6320969592275%2C45.51492399294101&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 23.299999237060547,
+            "LLID": "1092800456391",
+            "OBJECTID": 67293
+          },
+          "geometry": {
+            "x": -109.6323363656406,
+            "y": 45.51547431687553
+          },
+          "distanceMeters": 64.0
+        },
+        {
+          "attributes": {
+            "MEAS": 23.399999618530273,
+            "LLID": "1092800456391",
+            "OBJECTID": 67294
+          },
+          "geometry": {
+            "x": -109.63414983602716,
+            "y": 45.51480824954632
+          },
+          "distanceMeters": 160.5
+        },
+        {
+          "attributes": {
+            "MEAS": 23.200000762939453,
+            "LLID": "1092800456391",
+            "OBJECTID": 67292
+          },
+          "geometry": {
+            "x": -109.63043439682552,
+            "y": 45.516017453938254
+          },
+          "distanceMeters": 177.7
+        },
+        {
+          "attributes": {
+            "MEAS": 23.5,
+            "LLID": "1092800456391",
+            "OBJECTID": 67295
+          },
+          "geometry": {
+            "x": -109.63545362837264,
+            "y": 45.51368741207301
+          },
+          "distanceMeters": 295.5
+        },
+        {
+          "attributes": {
+            "MEAS": 23.100000381469727,
+            "LLID": "1092800456391",
+            "OBJECTID": 67291
+          },
+          "geometry": {
+            "x": -109.62838393379901,
+            "y": 45.5160694975315
+          },
+          "distanceMeters": 316.1
+        },
+        {
+          "attributes": {
+            "MEAS": 23.600000381469727,
+            "LLID": "1092800456391",
+            "OBJECTID": 67296
+          },
+          "geometry": {
+            "x": -109.63672444805562,
+            "y": 45.51254758049373
+          },
+          "distanceMeters": 447.0
+        },
+        {
+          "attributes": {
+            "MEAS": 23,
+            "LLID": "1092800456391",
+            "OBJECTID": 67290
+          },
+          "geometry": {
+            "x": -109.6263232614193,
+            "y": 45.51606953278112
+          },
+          "distanceMeters": 467.6
+        }
+      ]
+    },
+    "nearestRiverMile": 23.3,
+    "nearestOffsetMeters": 64.0,
+    "riverIdentifier": "1092800456391"
+  },
+  "Craig": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 47.07256384164247,
+      "lon": -111.96304900411126,
+      "accessType": "Concrete ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Craig Fishing Access Site 39753704",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753704",
+      "verifiedOn": "2026-10-24",
+      "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-24",
+      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+      "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271039825479786%27&geometry=-111.96304900411126%2C47.07256384164247&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 2194,
+            "LLID": "1039825479786",
+            "OBJECTID": 8203
+          },
+          "geometry": {
+            "x": -111.96147411009447,
+            "y": 47.07312732089778
+          },
+          "distanceMeters": 134.7
+        },
+        {
+          "attributes": {
+            "MEAS": 2194.10009765625,
+            "LLID": "1039825479786",
+            "OBJECTID": 8204
+          },
+          "geometry": {
+            "x": -111.96179592885007,
+            "y": 47.07169561240603
+          },
+          "distanceMeters": 135.4
+        },
+        {
+          "attributes": {
+            "MEAS": 2193.89990234375,
+            "LLID": "1039825479786",
+            "OBJECTID": 8202
+          },
+          "geometry": {
+            "x": -111.96122413859531,
+            "y": 47.074563157857106
+          },
+          "distanceMeters": 261.8
+        },
+        {
+          "attributes": {
+            "MEAS": 2194.199951171875,
+            "LLID": "1039825479786",
+            "OBJECTID": 8205
+          },
+          "geometry": {
+            "x": -111.96220808219063,
+            "y": 47.07027859802752
+          },
+          "distanceMeters": 262.0
+        },
+        {
+          "attributes": {
+            "MEAS": 2194.300048828125,
+            "LLID": "1039825479786",
+            "OBJECTID": 8206
+          },
+          "geometry": {
+            "x": -111.96286203146295,
+            "y": 47.068900917283244
+          },
+          "distanceMeters": 407.5
+        },
+        {
+          "attributes": {
+            "MEAS": 2193.800048828125,
+            "LLID": "1039825479786",
+            "OBJECTID": 8201
+          },
+          "geometry": {
+            "x": -111.96119926244846,
+            "y": 47.07601192458972
+          },
+          "distanceMeters": 408.2
+        },
+        {
+          "attributes": {
+            "MEAS": 2194.39990234375,
+            "LLID": "1039825479786",
+            "OBJECTID": 8207
+          },
+          "geometry": {
+            "x": -111.9637409054077,
+            "y": 47.067600033388096
+          },
+          "distanceMeters": 554.4
+        },
+        {
+          "attributes": {
+            "MEAS": 2193.699951171875,
+            "LLID": "1039825479786",
+            "OBJECTID": 8200
+          },
+          "geometry": {
+            "x": -111.9612568345767,
+            "y": 47.07745369560217
+          },
+          "distanceMeters": 560.4
+        }
+      ]
+    },
+    "nearestRiverMile": 2194,
+    "nearestOffsetMeters": 134.7,
+    "riverIdentifier": "1039825479786"
+  },
+  "Holter Dam": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 46.99552,
+      "lon": -112.01195,
+      "accessType": "Two-lane concrete boat ramp",
+      "operator": "U.S. Bureau of Land Management",
+      "sourceName": "BLM Holter Dam Campground",
+      "sourceUrl": "https://www.blm.gov/visit/holter-dam-campground",
+      "verifiedOn": "2026-10-24",
+      "note": "Official BLM recreation coordinate for the campground and two-lane concrete boat ramp below Holter Dam."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271039825479786%27&geometry=-112.01195%2C46.99552&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 2201.699951171875,
+            "LLID": "1039825479786",
+            "OBJECTID": 5604
+          },
+          "geometry": {
+            "x": -112.01087419952009,
+            "y": 46.99528486839938
+          },
+          "distanceMeters": 85.7
+        },
+        {
+          "attributes": {
+            "MEAS": 2201.60009765625,
+            "LLID": "1039825479786",
+            "OBJECTID": 5603
+          },
+          "geometry": {
+            "x": -112.0099827222119,
+            "y": 46.996558464296186
+          },
+          "distanceMeters": 188.7
+        },
+        {
+          "attributes": {
+            "MEAS": 2201.800048828125,
+            "LLID": "1039825479786",
+            "OBJECTID": 5605
+          },
+          "geometry": {
+            "x": -112.01006466383717,
+            "y": 46.993962444634256
+          },
+          "distanceMeters": 224.6
+        },
+        {
+          "attributes": {
+            "MEAS": 2201.5,
+            "LLID": "1039825479786",
+            "OBJECTID": 5602
+          },
+          "geometry": {
+            "x": -112.00846948586131,
+            "y": 46.99750169315611
+          },
+          "distanceMeters": 343.9
+        },
+        {
+          "attributes": {
+            "MEAS": 2201.89990234375,
+            "LLID": "1039825479786",
+            "OBJECTID": 5606
+          },
+          "geometry": {
+            "x": -112.0087861105579,
+            "y": 46.992843298392984
+          },
+          "distanceMeters": 382.3
+        },
+        {
+          "attributes": {
+            "MEAS": 2201.39990234375,
+            "LLID": "1039825479786",
+            "OBJECTID": 5601
+          },
+          "geometry": {
+            "x": -112.00692814032713,
+            "y": 46.998487183687566
+          },
+          "distanceMeters": 503.9
+        },
+        {
+          "attributes": {
+            "MEAS": 2202,
+            "LLID": "1039825479786",
+            "OBJECTID": 5607
+          },
+          "geometry": {
+            "x": -112.00696631693006,
+            "y": 46.99211688052667
+          },
+          "distanceMeters": 534.8
+        }
+      ]
+    },
+    "nearestRiverMile": 2201.7,
+    "nearestOffsetMeters": 85.7,
+    "riverIdentifier": "1039825479786"
+  },
+  "Johnsrud Park": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 46.91645116775823,
+      "lon": -113.67855354818647,
+      "accessType": "Concrete ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Johnsrud Park Fishing Access Site 39754243",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754243",
+      "verifiedOn": "2026-10-24",
+      "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-24",
+      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+      "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271138907468712%27&geometry=-113.67855354818647%2C46.91645116775823&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 12.600000381469727,
+            "LLID": "1138907468712",
+            "OBJECTID": 92094
+          },
+          "geometry": {
+            "x": -113.67894390570329,
+            "y": 46.91589589664137
+          },
+          "distanceMeters": 68.5
+        },
+        {
+          "attributes": {
+            "MEAS": 12.699999809265137,
+            "LLID": "1138907468712",
+            "OBJECTID": 92095
+          },
+          "geometry": {
+            "x": -113.67910207477031,
+            "y": 46.91733566562588
+          },
+          "distanceMeters": 106.8
+        },
+        {
+          "attributes": {
+            "MEAS": 12.5,
+            "LLID": "1138907468712",
+            "OBJECTID": 92093
+          },
+          "geometry": {
+            "x": -113.67796512113266,
+            "y": 46.91461878345217
+          },
+          "distanceMeters": 208.6
+        },
+        {
+          "attributes": {
+            "MEAS": 12.800000190734863,
+            "LLID": "1138907468712",
+            "OBJECTID": 92096
+          },
+          "geometry": {
+            "x": -113.67812843305467,
+            "y": 46.91845072015213
+          },
+          "distanceMeters": 224.7
+        },
+        {
+          "attributes": {
+            "MEAS": 12.899999618530273,
+            "LLID": "1138907468712",
+            "OBJECTID": 92097
+          },
+          "geometry": {
+            "x": -113.67622163220167,
+            "y": 46.91902481573813
+          },
+          "distanceMeters": 336.6
+        },
+        {
+          "attributes": {
+            "MEAS": 12.399999618530273,
+            "LLID": "1138907468712",
+            "OBJECTID": 92092
+          },
+          "geometry": {
+            "x": -113.6767788913084,
+            "y": 46.913420521060424
+          },
+          "distanceMeters": 363.0
+        },
+        {
+          "attributes": {
+            "MEAS": 13,
+            "LLID": "1138907468712",
+            "OBJECTID": 92098
+          },
+          "geometry": {
+            "x": -113.67416954771609,
+            "y": 46.919342774922434
+          },
+          "distanceMeters": 462.9
+        },
+        {
+          "attributes": {
+            "MEAS": 12.300000190734863,
+            "LLID": "1138907468712",
+            "OBJECTID": 92091
+          },
+          "geometry": {
+            "x": -113.67582803805489,
+            "y": 46.91213541246142
+          },
+          "distanceMeters": 522.6
+        }
+      ]
+    },
+    "nearestRiverMile": 12.6,
+    "nearestOffsetMeters": 68.5,
+    "riverIdentifier": "1138907468712"
+  },
+  "Mountain Palace": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 47.16256018492719,
+      "lon": -111.82310700034365,
+      "accessType": "Concrete ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Mountain Palace Fishing Access Site 39753712",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753712",
+      "verifiedOn": "2026-10-24",
+      "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-24",
+      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+      "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271039825479786%27&geometry=-111.82310700034365%2C47.16256018492719&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 2180.60009765625,
+            "LLID": "1039825479786",
+            "OBJECTID": 7613
+          },
+          "geometry": {
+            "x": -111.8243475782426,
+            "y": 47.16230142054851
+          },
+          "distanceMeters": 98.1
+        },
+        {
+          "attributes": {
+            "MEAS": 2180.699951171875,
+            "LLID": "1039825479786",
+            "OBJECTID": 7614
+          },
+          "geometry": {
+            "x": -111.8243636535946,
+            "y": 47.160909982222506
+          },
+          "distanceMeters": 206.6
+        },
+        {
+          "attributes": {
+            "MEAS": 2180.5,
+            "LLID": "1039825479786",
+            "OBJECTID": 7612
+          },
+          "geometry": {
+            "x": -111.82620740529107,
+            "y": 47.16270625166741
+          },
+          "distanceMeters": 235.0
+        },
+        {
+          "attributes": {
+            "MEAS": 2180.800048828125,
+            "LLID": "1039825479786",
+            "OBJECTID": 7615
+          },
+          "geometry": {
+            "x": -111.82481205844846,
+            "y": 47.1594967507216
+          },
+          "distanceMeters": 364.2
+        },
+        {
+          "attributes": {
+            "MEAS": 2180.39990234375,
+            "LLID": "1039825479786",
+            "OBJECTID": 7611
+          },
+          "geometry": {
+            "x": -111.82817266850276,
+            "y": 47.16297535088736
+          },
+          "distanceMeters": 385.8
+        },
+        {
+          "attributes": {
+            "MEAS": 2180.89990234375,
+            "LLID": "1039825479786",
+            "OBJECTID": 7616
+          },
+          "geometry": {
+            "x": -111.82538452513462,
+            "y": 47.15821185324102
+          },
+          "distanceMeters": 513.3
+        },
+        {
+          "attributes": {
+            "MEAS": 2180.300048828125,
+            "LLID": "1039825479786",
+            "OBJECTID": 7610
+          },
+          "geometry": {
+            "x": -111.8302890795492,
+            "y": 47.16308996514516
+          },
+          "distanceMeters": 546.2
+        }
+      ]
+    },
+    "nearestRiverMile": 2180.6,
+    "nearestOffsetMeters": 98.1,
+    "riverIdentifier": "1039825479786"
+  },
+  "Roundup Bridge": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 46.9459918608496,
+      "lon": -113.43312040341276,
+      "accessType": "Raft slide launch",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Roundup Fishing Access Site 39753898",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753898",
+      "verifiedOn": "2026-10-24",
+      "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-24",
+      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+      "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271138907468712%27&geometry=-113.43312040341276%2C46.9459918608496&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 29.100000381469727,
+            "LLID": "1138907468712",
+            "OBJECTID": 91494
+          },
+          "geometry": {
+            "x": -113.4326056948061,
+            "y": 46.94503847669831
+          },
+          "distanceMeters": 113.0
+        },
+        {
+          "attributes": {
+            "MEAS": 29,
+            "LLID": "1138907468712",
+            "OBJECTID": 91493
+          },
+          "geometry": {
+            "x": -113.43470092986637,
+            "y": 46.945085372933704
+          },
+          "distanceMeters": 156.7
+        },
+        {
+          "attributes": {
+            "MEAS": 29.200000762939453,
+            "LLID": "1138907468712",
+            "OBJECTID": 91495
+          },
+          "geometry": {
+            "x": -113.4305023641285,
+            "y": 46.944905568442316
+          },
+          "distanceMeters": 232.6
+        },
+        {
+          "attributes": {
+            "MEAS": 28.899999618530273,
+            "LLID": "1138907468712",
+            "OBJECTID": 91492
+          },
+          "geometry": {
+            "x": -113.43678150891276,
+            "y": 46.94486725553727
+          },
+          "distanceMeters": 304.8
+        },
+        {
+          "attributes": {
+            "MEAS": 29.299999237060547,
+            "LLID": "1138907468712",
+            "OBJECTID": 91496
+          },
+          "geometry": {
+            "x": -113.42844488076808,
+            "y": 46.945209016573635
+          },
+          "distanceMeters": 365.4
+        },
+        {
+          "attributes": {
+            "MEAS": 28.799999237060547,
+            "LLID": "1138907468712",
+            "OBJECTID": 91491
+          },
+          "geometry": {
+            "x": -113.43841728714624,
+            "y": 46.94399673407713
+          },
+          "distanceMeters": 459.2
+        },
+        {
+          "attributes": {
+            "MEAS": 29.399999618530273,
+            "LLID": "1138907468712",
+            "OBJECTID": 91497
+          },
+          "geometry": {
+            "x": -113.42642182264595,
+            "y": 46.94557599139364
+          },
+          "distanceMeters": 510.6
+        }
+      ]
+    },
+    "nearestRiverMile": 29.1,
+    "nearestOffsetMeters": 113.0,
+    "riverIdentifier": "1138907468712"
+  },
+  "Russell Gates FAS": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 47.02344262685744,
+      "lon": -113.30603653697402,
+      "accessType": "Gravel ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Russell Gates Memorial Fishing Access Site 39754195",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754195",
+      "verifiedOn": "2026-10-24",
+      "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271138907468712%27&geometry=-113.30603653697402%2C47.02344262685744&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 40.20000076293945,
+            "LLID": "1138907468712",
+            "OBJECTID": 92980
+          },
+          "geometry": {
+            "x": -113.30776712250426,
+            "y": 47.02225036100016
+          },
+          "distanceMeters": 186.5
+        },
+        {
+          "attributes": {
+            "MEAS": 40.400001525878906,
+            "LLID": "1138907468712",
+            "OBJECTID": 92982
+          },
+          "geometry": {
+            "x": -113.30421847350144,
+            "y": 47.02208889134507
+          },
+          "distanceMeters": 204.1
+        },
+        {
+          "attributes": {
+            "MEAS": 40.29999923706055,
+            "LLID": "1138907468712",
+            "OBJECTID": 92981
+          },
+          "geometry": {
+            "x": -113.30594480730542,
+            "y": 47.021514162971535
+          },
+          "distanceMeters": 214.5
+        },
+        {
+          "attributes": {
+            "MEAS": 40.099998474121094,
+            "LLID": "1138907468712",
+            "OBJECTID": 92979
+          },
+          "geometry": {
+            "x": -113.30958948711044,
+            "y": 47.022986529892975
+          },
+          "distanceMeters": 274.1
+        },
+        {
+          "attributes": {
+            "MEAS": 40.5,
+            "LLID": "1138907468712",
+            "OBJECTID": 92983
+          },
+          "geometry": {
+            "x": -113.3023159198831,
+            "y": 47.022547514130046
+          },
+          "distanceMeters": 299.1
+        },
+        {
+          "attributes": {
+            "MEAS": 40,
+            "LLID": "1138907468712",
+            "OBJECTID": 92978
+          },
+          "geometry": {
+            "x": -113.31159087427467,
+            "y": 47.02338732701511
+          },
+          "distanceMeters": 421.1
+        },
+        {
+          "attributes": {
+            "MEAS": 40.599998474121094,
+            "LLID": "1138907468712",
+            "OBJECTID": 92984
+          },
+          "geometry": {
+            "x": -113.30023306720072,
+            "y": 47.022504851284346
+          },
+          "distanceMeters": 452.1
+        },
+        {
+          "attributes": {
+            "MEAS": 39.900001525878906,
+            "LLID": "1138907468712",
+            "OBJECTID": 92977
+          },
+          "geometry": {
+            "x": -113.31354697377215,
+            "y": 47.022927872474945
+          },
+          "distanceMeters": 572.2
+        }
+      ]
+    },
+    "nearestRiverMile": 40.2,
+    "nearestOffsetMeters": 186.5,
+    "riverIdentifier": "1138907468712"
+  },
+  "Weigh Station (Bonner)": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 46.87970354275769,
+      "lon": -113.85249265590265,
+      "accessType": "Concrete ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Weigh Station Fishing Access Site 39754561",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754561",
+      "verifiedOn": "2026-10-24",
+      "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-24",
+      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+      "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271138907468712%27&geometry=-113.85249265590265%2C46.87970354275769&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 1.899999976158142,
+            "LLID": "1138907468712",
+            "OBJECTID": 91987
+          },
+          "geometry": {
+            "x": -113.85313294269781,
+            "y": 46.879602731613716
+          },
+          "distanceMeters": 49.9
+        },
+        {
+          "attributes": {
+            "MEAS": 2,
+            "LLID": "1138907468712",
+            "OBJECTID": 91988
+          },
+          "geometry": {
+            "x": -113.85218253141542,
+            "y": 46.88088120465826
+          },
+          "distanceMeters": 133.1
+        },
+        {
+          "attributes": {
+            "MEAS": 1.7999999523162842,
+            "LLID": "1138907468712",
+            "OBJECTID": 91986
+          },
+          "geometry": {
+            "x": -113.8539404859174,
+            "y": 46.878265695002945
+          },
+          "distanceMeters": 194.1
+        },
+        {
+          "attributes": {
+            "MEAS": 2.0999999046325684,
+            "LLID": "1138907468712",
+            "OBJECTID": 91989
+          },
+          "geometry": {
+            "x": -113.85081444933998,
+            "y": 46.88193074590297
+          },
+          "distanceMeters": 278.6
+        },
+        {
+          "attributes": {
+            "MEAS": 1.7000000476837158,
+            "LLID": "1138907468712",
+            "OBJECTID": 91985
+          },
+          "geometry": {
+            "x": -113.8547970753549,
+            "y": 46.87694255193902
+          },
+          "distanceMeters": 353.5
+        },
+        {
+          "attributes": {
+            "MEAS": 2.200000047683716,
+            "LLID": "1138907468712",
+            "OBJECTID": 91990
+          },
+          "geometry": {
+            "x": -113.84894203599606,
+            "y": 46.88258457985942
+          },
+          "distanceMeters": 418.9
+        },
+        {
+          "attributes": {
+            "MEAS": 1.600000023841858,
+            "LLID": "1138907468712",
+            "OBJECTID": 91984
+          },
+          "geometry": {
+            "x": -113.85608009685438,
+            "y": 46.87605900376644
+          },
+          "distanceMeters": 488.4
+        },
+        {
+          "attributes": {
+            "MEAS": 2.299999952316284,
+            "LLID": "1138907468712",
+            "OBJECTID": 91991
+          },
+          "geometry": {
+            "x": -113.84742101933678,
+            "y": 46.88345571325938
+          },
+          "distanceMeters": 568.0
+        },
+        {
+          "attributes": {
+            "MEAS": 1.5,
+            "LLID": "1138907468712",
+            "OBJECTID": 91983
+          },
+          "geometry": {
+            "x": -113.85817001837974,
+            "y": 46.876174811583795
+          },
+          "distanceMeters": 583.2
+        }
+      ]
+    },
+    "nearestRiverMile": 1.9,
+    "nearestOffsetMeters": 49.9,
+    "riverIdentifier": "1138907468712"
+  },
+  "Whitebird": {
+    "checkedOn": "2026-10-27",
+    "point": {
+      "status": "verified",
+      "lat": 45.57523817264737,
+      "lon": -109.33703441208561,
+      "accessType": "Gravel ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP Whitebird Fishing Access Site 39753880",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753880",
+      "verifiedOn": "2026-10-24",
+      "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-24",
+      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+      "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction."
+    },
+    "requestUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2/query?f=json&where=LLID+%3D+%271092800456391%27&geometry=-109.33703441208561%2C45.57523817264737&geometryType=esriGeometryPoint&inSR=4326&outSR=4326&distance=600&units=esriSRUnit_Meter&spatialRel=esriSpatialRelIntersects&outFields=MEAS%2CLLID%2COBJECTID",
+    "response": {
+      "displayFieldName": "LLID",
+      "fieldAliases": {
+        "MEAS": "MILE MEASURE",
+        "LLID": "LLID",
+        "OBJECTID": "OBJECTID"
+      },
+      "geometryType": "esriGeometryPoint",
+      "spatialReference": {
+        "wkid": 4326,
+        "latestWkid": 4326
+      },
+      "fields": [
+        {
+          "name": "MEAS",
+          "type": "esriFieldTypeSingle",
+          "alias": "MILE MEASURE"
+        },
+        {
+          "name": "LLID",
+          "type": "esriFieldTypeString",
+          "alias": "LLID",
+          "length": 13
+        },
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "alias": "OBJECTID"
+        }
+      ],
+      "features": [
+        {
+          "attributes": {
+            "MEAS": 5.800000190734863,
+            "LLID": "1092800456391",
+            "OBJECTID": 67118
+          },
+          "geometry": {
+            "x": -109.33825036536598,
+            "y": 45.57528899251301
+          },
+          "distanceMeters": 94.8
+        },
+        {
+          "attributes": {
+            "MEAS": 5.699999809265137,
+            "LLID": "1092800456391",
+            "OBJECTID": 67117
+          },
+          "geometry": {
+            "x": -109.33764515059615,
+            "y": 45.57662900034383
+          },
+          "distanceMeters": 161.8
+        },
+        {
+          "attributes": {
+            "MEAS": 5.900000095367432,
+            "LLID": "1092800456391",
+            "OBJECTID": 67119
+          },
+          "geometry": {
+            "x": -109.33941906816075,
+            "y": 45.574097564843
+          },
+          "distanceMeters": 224.8
+        },
+        {
+          "attributes": {
+            "MEAS": 5.599999904632568,
+            "LLID": "1092800456391",
+            "OBJECTID": 67116
+          },
+          "geometry": {
+            "x": -109.33737174564448,
+            "y": 45.57805153046944
+          },
+          "distanceMeters": 313.9
+        },
+        {
+          "attributes": {
+            "MEAS": 6,
+            "LLID": "1092800456391",
+            "OBJECTID": 67120
+          },
+          "geometry": {
+            "x": -109.34092672148188,
+            "y": 45.573108559421414
+          },
+          "distanceMeters": 384.5
+        },
+        {
+          "attributes": {
+            "MEAS": 5.5,
+            "LLID": "1092800456391",
+            "OBJECTID": 67115
+          },
+          "geometry": {
+            "x": -109.33599541703474,
+            "y": 45.57913075467675
+          },
+          "distanceMeters": 440.3
+        },
+        {
+          "attributes": {
+            "MEAS": 6.099999904632568,
+            "LLID": "1092800456391",
+            "OBJECTID": 67121
+          },
+          "geometry": {
+            "x": -109.34166289894203,
+            "y": 45.5718320502577
+          },
+          "distanceMeters": 522.7
+        },
+        {
+          "attributes": {
+            "MEAS": 5.400000095367432,
+            "LLID": "1092800456391",
+            "OBJECTID": 67114
+          },
+          "geometry": {
+            "x": -109.33461903362777,
+            "y": 45.580209961913475
+          },
+          "distanceMeters": 583.9
+        }
+      ]
+    },
+    "nearestRiverMile": 5.8,
+    "nearestOffsetMeters": 94.8,
+    "riverIdentifier": "1092800456391"
+  }
+}

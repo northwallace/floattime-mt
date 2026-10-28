@@ -1,0 +1,55 @@
+{
+  "id": "animas-river",
+  "name": "Animas River (Durango)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "City of Durango access PDF returned HTTP 202 with 225 bytes and is hosted on a tourism domain; no official access coordinates yet.",
+  "blockers": [
+    "source-fetch",
+    "exact-location"
+  ],
+  "accessPoints": [],
+  "candidateSections": [
+    {
+      "id": "animas-river--aw348",
+      "awId": "348",
+      "description": "06. Bakers Bridge to Trimble Lane",
+      "difficulty": "ItoII",
+      "milesCandidate": 6.6,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09361500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/348/main"
+    },
+    {
+      "id": "animas-river--aw349",
+      "awId": "349",
+      "description": "07. Trimble Lane to 32nd Street Park",
+      "difficulty": "ItoII",
+      "milesCandidate": 11.4,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09361500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/349/main"
+    },
+    {
+      "id": "animas-river--aw351",
+      "awId": "351",
+      "description": "08. 32nd St. Park to Purple Cliffs",
+      "difficulty": "III",
+      "milesCandidate": 5.8,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09361500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/351/main"
+    },
+    {
+      "id": "animas-river--aw352",
+      "awId": "352",
+      "description": "09. Purple Cliffs to State Line",
+      "difficulty": "IItoIII",
+      "milesCandidate": 21.2,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09361500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/352/main"
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

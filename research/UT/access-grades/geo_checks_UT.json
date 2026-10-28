@@ -1,0 +1,965 @@
+{
+ "version": 1,
+ "state": "UT",
+ "generatedOn": "2026-10-25",
+ "purpose": "Research-only geometry checks. Not read by the app. Thresholds: point >150 m from NHD High Resolution centreline; section mileage mismatch >20%.",
+ "sources": {
+  "flowlines": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6/query (NHD High Resolution Flowline nhd/MapServer/6; flow-direction digitized)",
+  "roads": "Census TIGERweb Transportation layers 2,6,8,9"
+ },
+ "points": [
+  {
+   "kind": "verified",
+   "label": "Spillway Boat Launch (Flaming Gorge)",
+   "lat": 40.908759,
+   "lon": -109.422174,
+   "river": "green-river-flaming-gorge",
+   "nearestFlowline": {
+    "distM": 31,
+    "gnis": "Green River",
+    "nhdPermanentId": "75275119",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Little Hole Boat Launch",
+   "lat": 40.910732,
+   "lon": -109.315146,
+   "river": "green-river-flaming-gorge",
+   "nearestFlowline": {
+    "distM": 57,
+    "gnis": "Green River",
+    "nhdPermanentId": "75278061",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Indian Crossing Boat Ramp",
+   "lat": 40.89699,
+   "lon": -109.185357,
+   "river": "green-river-flaming-gorge",
+   "nearestFlowline": {
+    "distM": 41,
+    "gnis": "Green River",
+    "nhdPermanentId": "{EADB1A03-E58A-413B-B3FE-0F4BFDF38565}",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Swallow Canyon Boat Ramp",
+   "lat": 40.844332,
+   "lon": -109.082401,
+   "river": "green-river-flaming-gorge",
+   "nearestFlowline": {
+    "distM": 72,
+    "gnis": "Green River",
+    "nhdPermanentId": "75292759",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Gates of Lodore Boat Ramp",
+   "lat": 40.727114,
+   "lon": -108.887881,
+   "river": "green-river-dinosaur",
+   "nearestFlowline": {
+    "distM": 58,
+    "gnis": "Green River",
+    "nhdPermanentId": "75272743",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Split Mountain Boat Ramp",
+   "lat": 40.44544,
+   "lon": -109.252588,
+   "river": "green-river-dinosaur",
+   "nearestFlowline": {
+    "distM": 38,
+    "gnis": "Green River",
+    "nhdPermanentId": "65997513",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Sand Wash Boat Ramp",
+   "lat": 39.840465,
+   "lon": -109.913676,
+   "river": "green-river-desolation",
+   "nearestFlowline": {
+    "distM": 72,
+    "gnis": "Green River",
+    "nhdPermanentId": "58933889",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Nefertiti Boat Ramp",
+   "lat": 39.195482,
+   "lon": -110.077861,
+   "river": "green-river-desolation",
+   "nearestFlowline": {
+    "distM": 29,
+    "gnis": "Green River",
+    "nhdPermanentId": "58943051",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Swaseys Boat Ramp",
+   "lat": 39.112376,
+   "lon": -110.109071,
+   "river": "green-river-desolation",
+   "nearestFlowline": {
+    "distM": 51,
+    "gnis": "Green River",
+    "nhdPermanentId": "58774931",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Westwater Ranger Station Boat Ramp",
+   "lat": 39.086657,
+   "lon": -109.101309,
+   "river": "colorado-river-westwater",
+   "nearestFlowline": {
+    "distM": 81,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "80057225",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Cisco Takeout",
+   "lat": 38.970407,
+   "lon": -109.2506984,
+   "river": "colorado-river-moab",
+   "nearestFlowline": {
+    "distM": 111,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "80059991",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Dewey Bridge Boat Ramp",
+   "lat": 38.811242,
+   "lon": -109.308154,
+   "river": "colorado-river-moab",
+   "nearestFlowline": {
+    "distM": 51,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "77834099",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Hittle Bottom Boat Ramp",
+   "lat": 38.760191,
+   "lon": -109.325455,
+   "river": "colorado-river-moab",
+   "nearestFlowline": {
+    "distM": 66,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "77834623",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Takeout Beach Boat Ramp",
+   "lat": 38.661778,
+   "lon": -109.500696,
+   "river": "colorado-river-moab",
+   "nearestFlowline": {
+    "distM": 37,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "77836315",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Fuller Bottom (San Rafael Put-in)",
+   "lat": 39.118617,
+   "lon": -110.855529,
+   "river": "san-rafael",
+   "nearestFlowline": {
+    "distM": 91,
+    "gnis": "San Rafael River",
+    "nhdPermanentId": "78827019",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "verified",
+   "label": "Enron Boat Ramp (White River)",
+   "lat": 40.010178,
+   "lon": -109.445989,
+   "river": "white-river",
+   "nearestFlowline": {
+    "distM": 53,
+    "gnis": "White River",
+    "nhdPermanentId": "80094248",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Green River State Park Boat Ramp",
+   "lat": 38.988844,
+   "lon": -110.150598,
+   "river": "green-river-labyrinth",
+   "areaRadiusM": 100,
+   "nearestFlowline": {
+    "distM": 87,
+    "gnis": "Green River",
+    "nhdPermanentId": "58777021",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Mineral Bottom Boat Ramp",
+   "lat": 38.524298,
+   "lon": -109.993297,
+   "river": "green-river-labyrinth",
+   "areaRadiusM": 150,
+   "nearestFlowline": {
+    "distM": 111,
+    "gnis": "Green River",
+    "nhdPermanentId": "58781311",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Potash Boat Ramp",
+   "lat": 38.506543,
+   "lon": -109.659221,
+   "river": "colorado-river-meander",
+   "areaRadiusM": 300,
+   "nearestFlowline": {
+    "distM": 27,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "77838567",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Sand Island Boat Launch",
+   "lat": 37.262206,
+   "lon": -109.612081,
+   "river": "san-juan",
+   "areaRadiusM": 150,
+   "nearestFlowline": {
+    "distM": 80,
+    "gnis": "San Juan River",
+    "nhdPermanentId": "75982633",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Mexican Hat Boat Launch",
+   "lat": 37.1471,
+   "lon": -109.854503,
+   "river": "san-juan",
+   "areaRadiusM": 150,
+   "nearestFlowline": {
+    "distM": 85,
+    "gnis": "San Juan River",
+    "nhdPermanentId": "78285788",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "Clay Hills Boat Ramp",
+   "lat": 37.2945,
+   "lon": -110.397533,
+   "river": "san-juan",
+   "areaRadiusM": 400,
+   "nearestFlowline": {
+    "distM": 263,
+    "gnis": "San Juan River",
+    "nhdPermanentId": "78284858",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "local road: Whirlwind Crossing Rd"
+   ],
+   "flags": [
+    ">150 m from river centreline (263 m); within the 400 m approximate radius",
+    "line to river crosses local road: Whirlwind Crossing Rd (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "access-verified-center",
+   "label": "San Rafael Swinging Bridge Take-out",
+   "lat": 39.080878,
+   "lon": -110.667126,
+   "river": "san-rafael",
+   "areaRadiusM": 200,
+   "nearestFlowline": {
+    "distM": 51,
+    "gnis": "San Rafael River",
+    "nhdPermanentId": "78828503",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Green River State Park Boat Ramp",
+   "lat": 38.988844,
+   "lon": -110.150598,
+   "river": "green-river-labyrinth",
+   "nearestFlowline": {
+    "distM": 87,
+    "gnis": "Green River",
+    "nhdPermanentId": "58777021",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Mineral Bottom Boat Ramp",
+   "lat": 38.524298,
+   "lon": -109.993297,
+   "river": "green-river-labyrinth",
+   "nearestFlowline": {
+    "distM": 111,
+    "gnis": "Green River",
+    "nhdPermanentId": "58781311",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Moab Bridge Boat Ramp",
+   "lat": 38.604868,
+   "lon": -109.575014,
+   "river": "colorado-river-meander",
+   "nearestFlowline": {
+    "distM": 76,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "77837525",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Potash Boat Ramp",
+   "lat": 38.506543,
+   "lon": -109.659221,
+   "river": "colorado-river-meander",
+   "nearestFlowline": {
+    "distM": 27,
+    "gnis": "Colorado River",
+    "nhdPermanentId": "77838567",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Sand Island Boat Launch",
+   "lat": 37.262206,
+   "lon": -109.612081,
+   "river": "san-juan",
+   "nearestFlowline": {
+    "distM": 80,
+    "gnis": "San Juan River",
+    "nhdPermanentId": "75982633",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Mexican Hat Boat Launch",
+   "lat": 37.1471,
+   "lon": -109.854503,
+   "river": "san-juan",
+   "nearestFlowline": {
+    "distM": 85,
+    "gnis": "San Juan River",
+    "nhdPermanentId": "78285788",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Clay Hills Boat Ramp",
+   "lat": 37.2945,
+   "lon": -110.397533,
+   "river": "san-juan",
+   "nearestFlowline": {
+    "distM": 263,
+    "gnis": "San Juan River",
+    "nhdPermanentId": "78284858",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [
+    "local road: Whirlwind Crossing Rd"
+   ],
+   "flags": [
+    ">150 m from river centreline (263 m)",
+    "line to river crosses local road: Whirlwind Crossing Rd (apparently on the far side of a road/rail)"
+   ]
+  },
+  {
+   "kind": "research-candidate",
+   "label": "San Rafael Swinging Bridge Take-out",
+   "lat": 39.080878,
+   "lon": -110.667126,
+   "river": "san-rafael",
+   "nearestFlowline": {
+    "distM": 51,
+    "gnis": "San Rafael River",
+    "nhdPermanentId": "78828503",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-right"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "research-candidate",
+   "label": "Bonanza Bridge Boat Launch",
+   "lat": 39.97689,
+   "lon": -109.179303,
+   "river": "white-river",
+   "nearestFlowline": {
+    "distM": 34,
+    "gnis": "White River",
+    "nhdPermanentId": "80096620",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  },
+  {
+   "kind": "proposal",
+   "label": "Mineral Bottom Boat Ramp — proposed NPS POI",
+   "lat": 38.5249,
+   "lon": -109.9933,
+   "river": "green-river-labyrinth",
+   "nearestFlowline": {
+    "distM": 78,
+    "gnis": "Green River",
+    "nhdPermanentId": "58781311",
+    "ftype": 558,
+    "bankBySideOfCentreline": "river-left"
+   },
+   "roadRailCrossings": [],
+   "flags": []
+  }
+ ],
+ "sections": [
+  {
+   "riverId": "colorado-river-meander",
+   "sectionId": "moab-potash",
+   "putIn": "Moab Bridge Boat Ramp",
+   "takeOut": "Potash Boat Ramp",
+   "listedMiles": 17.1,
+   "putInCoord": {
+    "lat": 38.604868,
+    "lon": -109.575014,
+    "basis": "research candidate (UGRC Utah Boat Ramps layer (2009), OBJECTID 26 'Moab bridge')"
+   },
+   "takeOutCoord": {
+    "lat": 38.506543,
+    "lon": -109.659221,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 76,
+    "takeOut": 27
+   },
+   "centrelineMiles": 17.16,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.3,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "colorado-river-moab",
+   "sectionId": "cisco-dewey-bridge",
+   "putIn": "Cisco Takeout",
+   "takeOut": "Dewey Bridge Boat Ramp",
+   "listedMiles": 16.0,
+   "putInCoord": {
+    "lat": 38.970407,
+    "lon": -109.2506984,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 38.811242,
+    "lon": -109.308154,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 111,
+    "takeOut": 51
+   },
+   "centrelineMiles": 16.04,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.3,
+   "flags": []
+  },
+  {
+   "riverId": "colorado-river-moab",
+   "sectionId": "dewey-bridge-hittle-bottom",
+   "putIn": "Dewey Bridge Boat Ramp",
+   "takeOut": "Hittle Bottom Boat Ramp",
+   "listedMiles": 6.6,
+   "putInCoord": {
+    "lat": 38.811242,
+    "lon": -109.308154,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 38.760191,
+    "lon": -109.325455,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 51,
+    "takeOut": 66
+   },
+   "centrelineMiles": 6.57,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.5,
+   "flags": []
+  },
+  {
+   "riverId": "colorado-river-moab",
+   "sectionId": "moab-daily",
+   "putIn": "Hittle Bottom Boat Ramp",
+   "takeOut": "Takeout Beach Boat Ramp",
+   "listedMiles": 13.0,
+   "putInCoord": {
+    "lat": 38.760191,
+    "lon": -109.325455,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 38.661778,
+    "lon": -109.500696,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 66,
+    "takeOut": 37
+   },
+   "centrelineMiles": 14.03,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 8.0,
+   "flags": []
+  },
+  {
+   "riverId": "colorado-river-westwater",
+   "sectionId": "westwater-cisco",
+   "putIn": "Westwater Ranger Station Boat Ramp",
+   "takeOut": "Cisco Takeout",
+   "listedMiles": 17.0,
+   "putInCoord": {
+    "lat": 39.086657,
+    "lon": -109.101309,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 38.970407,
+    "lon": -109.2506984,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 81,
+    "takeOut": 111
+   },
+   "centrelineMiles": 17.42,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 2.4,
+   "flags": []
+  },
+  {
+   "riverId": "green-river-desolation",
+   "sectionId": "sand-wash-swaseys",
+   "putIn": "Sand Wash Boat Ramp",
+   "takeOut": "Swaseys Boat Ramp",
+   "listedMiles": 84.0,
+   "putInCoord": {
+    "lat": 39.840465,
+    "lon": -109.913676,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 39.112376,
+    "lon": -110.109071,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 72,
+    "takeOut": 51
+   },
+   "centrelineMiles": 82.79,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.4,
+   "flags": []
+  },
+  {
+   "riverId": "green-river-desolation",
+   "sectionId": "nefertiti-swaseys",
+   "putIn": "Nefertiti Boat Ramp",
+   "takeOut": "Swaseys Boat Ramp",
+   "listedMiles": 8.5,
+   "putInCoord": {
+    "lat": 39.195482,
+    "lon": -110.077861,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 39.112376,
+    "lon": -110.109071,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 29,
+    "takeOut": 51
+   },
+   "centrelineMiles": 8.28,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -2.6,
+   "flags": []
+  },
+  {
+   "riverId": "green-river-dinosaur",
+   "sectionId": "lodore-split-mountain",
+   "putIn": "Gates of Lodore Boat Ramp",
+   "takeOut": "Split Mountain Boat Ramp",
+   "listedMiles": 44.0,
+   "putInCoord": {
+    "lat": 40.727114,
+    "lon": -108.887881,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 40.44544,
+    "lon": -109.252588,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 58,
+    "takeOut": 38
+   },
+   "centrelineMiles": 43.6,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.9,
+   "flags": []
+  },
+  {
+   "riverId": "green-river-flaming-gorge",
+   "sectionId": "flaming-gorge-a",
+   "putIn": "Spillway Boat Launch (Flaming Gorge)",
+   "takeOut": "Little Hole Boat Launch",
+   "listedMiles": 7.0,
+   "putInCoord": {
+    "lat": 40.908759,
+    "lon": -109.422174,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 40.910732,
+    "lon": -109.315146,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 31,
+    "takeOut": 57
+   },
+   "centrelineMiles": 6.96,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.6,
+   "flags": []
+  },
+  {
+   "riverId": "green-river-flaming-gorge",
+   "sectionId": "flaming-gorge-b",
+   "putIn": "Little Hole Boat Launch",
+   "takeOut": "Indian Crossing Boat Ramp",
+   "listedMiles": 8.4,
+   "putInCoord": {
+    "lat": 40.910732,
+    "lon": -109.315146,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 40.89699,
+    "lon": -109.185357,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 57,
+    "takeOut": 41
+   },
+   "centrelineMiles": 8.24,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -1.9,
+   "flags": []
+  },
+  {
+   "riverId": "green-river-flaming-gorge",
+   "sectionId": "flaming-gorge-c",
+   "putIn": "Indian Crossing Boat Ramp",
+   "takeOut": "Swallow Canyon Boat Ramp",
+   "listedMiles": 10.8,
+   "putInCoord": {
+    "lat": 40.89699,
+    "lon": -109.185357,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 40.844332,
+    "lon": -109.082401,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 41,
+    "takeOut": 72
+   },
+   "centrelineMiles": 11.52,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 6.7,
+   "flags": []
+  },
+  {
+   "riverId": "green-river-labyrinth",
+   "sectionId": "green-river-sp-mineral-bottom",
+   "putIn": "Green River State Park Boat Ramp",
+   "takeOut": "Mineral Bottom Boat Ramp",
+   "listedMiles": 68.0,
+   "putInCoord": {
+    "lat": 38.988844,
+    "lon": -110.150598,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 38.524298,
+    "lon": -109.993297,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 87,
+    "takeOut": 111
+   },
+   "centrelineMiles": 68.19,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": 0.3,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "san-juan",
+   "sectionId": "sand-island-mexican-hat",
+   "putIn": "Sand Island Boat Launch",
+   "takeOut": "Mexican Hat Boat Launch",
+   "listedMiles": 27.0,
+   "putInCoord": {
+    "lat": 37.262206,
+    "lon": -109.612081,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 37.1471,
+    "lon": -109.854503,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 80,
+    "takeOut": 85
+   },
+   "centrelineMiles": 26.87,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.5,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "san-juan",
+   "sectionId": "mexican-hat-clay-hills",
+   "putIn": "Mexican Hat Boat Launch",
+   "takeOut": "Clay Hills Boat Ramp",
+   "listedMiles": 57.0,
+   "putInCoord": {
+    "lat": 37.1471,
+    "lon": -109.854503,
+    "basis": "access-verified area centre"
+   },
+   "takeOutCoord": {
+    "lat": 37.2945,
+    "lon": -110.397533,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 85,
+    "takeOut": 263
+   },
+   "centrelineMiles": 56.54,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.8,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "san-rafael",
+   "sectionId": "fuller-bottom-swinging-bridge",
+   "putIn": "Fuller Bottom (San Rafael Put-in)",
+   "takeOut": "San Rafael Swinging Bridge Take-out",
+   "listedMiles": 18.0,
+   "putInCoord": {
+    "lat": 39.118617,
+    "lon": -110.855529,
+    "basis": "verified map point"
+   },
+   "takeOutCoord": {
+    "lat": 39.080878,
+    "lon": -110.667126,
+    "basis": "access-verified area centre"
+   },
+   "snapDistM": {
+    "putIn": 91,
+    "takeOut": 51
+   },
+   "centrelineMiles": 17.37,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -3.5,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  },
+  {
+   "riverId": "white-river",
+   "sectionId": "bonanza-enron",
+   "putIn": "Bonanza Bridge Boat Launch",
+   "takeOut": "Enron Boat Ramp (White River)",
+   "listedMiles": 35.0,
+   "putInCoord": {
+    "lat": 39.97689,
+    "lon": -109.179303,
+    "basis": "research candidate (BLM National Recreation Site Points, OBJECTID 70641 'White R)"
+   },
+   "takeOutCoord": {
+    "lat": 40.010178,
+    "lon": -109.445989,
+    "basis": "verified map point"
+   },
+   "snapDistM": {
+    "putIn": 34,
+    "takeOut": 53
+   },
+   "centrelineMiles": 34.67,
+   "direction": "take-out downstream of put-in",
+   "milesDiffPct": -0.9,
+   "note": "uses at least one non-verified coordinate; mileage is indicative",
+   "flags": []
+  }
+ ]
+}

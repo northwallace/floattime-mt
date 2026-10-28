@@ -10,6 +10,15 @@ main{max-width:1160px;padding:0 28px}.section{padding:35px 0 23px}.section-kicke
 @media(max-width:600px){.preview-note{font-size:9px;flex-wrap:wrap;gap:3px;padding:7px 12px}.nav{padding:18px 20px}.hero{padding-bottom:25px}.hero h1{font-size:2rem}.hero-stats{flex-wrap:wrap;gap:12px 18px}.hero-stat{flex-direction:column;gap:0}.hs-label{font-size:.62rem}.hero-sub{font-size:.85rem}.coming-soon-pill{font-size:.62rem}main{padding:0 16px}.controls{padding:14px;gap:12px}.controls .control{min-width:calc(50% - 12px)}.controls .control:nth-child(2){flex:1;min-width:100%}.controls .control-check{min-width:100%}.dash-grid{grid-template-columns:1fr}.dash-card{padding:20px}.section-cards{grid-template-columns:1fr}.section{padding-top:26px}.routes-heading span{display:none}.report-form{padding:20px}.nav-links{gap:12px;font-size:.8rem}.nav-links a{font-size:.78rem}.nav-drop summary{font-size:.78rem}.section-head h2{font-size:1.55rem}.check-label{min-height:44px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+/* One-section land-access map pilot. */
+.map-card-actions{margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}.map-preview-button{align-self:flex-start;display:inline-flex;align-items:center;gap:7px;border:1px solid #b9cbbc;border-radius:7px;background:#edf3e9;color:#285f43;padding:9px 11px;font:700 .73rem Arial,Helvetica,sans-serif;cursor:pointer}.map-preview-button:hover{background:#e2ecde;border-color:#8fad96}.map-preview-button:focus-visible,.map-close:focus-visible{outline:3px solid #8bb99d;outline-offset:2px}.map-preview-button small{padding:2px 5px;border-radius:999px;background:#d5e4d6;color:#496651;font-size:.58rem;letter-spacing:.06em;text-transform:uppercase}.takeout-bank{color:#6a4a25;font:700 .68rem Arial,Helvetica,sans-serif}.takeout-bank small{display:block;color:#68766d;font-size:.58rem;font-weight:500;margin-top:2px}.map-pending-note{margin-top:10px;padding:9px 10px;border-left:3px solid #b68731;border-radius:4px;background:#f5efdc;color:#66512c;font-size:.68rem;line-height:1.45}
+.land-map-panel{margin-top:18px;padding:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 8px 24px #183b2212}.land-map-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:14px}.land-map-head h3{margin:5px 0 3px;font:400 1.45rem Georgia,'Times New Roman',serif}.land-map-head p{color:var(--text-dim);font-size:.8rem}.map-preview-tag{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#6d5521;font-weight:700}.map-close{border:1px solid #c8d3c5;border-radius:7px;background:#f4f5ee;color:#3e5547;padding:7px 10px;font:700 .7rem Arial,Helvetica,sans-serif;cursor:pointer}.land-map{height:440px;border:1px solid #cbd5c7;border-radius:9px;overflow:hidden;background:#e8ede5}.land-map-key{display:flex;gap:18px;flex-wrap:wrap;margin-top:11px;color:#4c6053;font-size:.7rem}.land-map-key span{display:inline-flex;align-items:center;gap:6px}.map-key-swatch{width:18px;height:11px}.map-key-swatch.public{background:#3f8d604d;border:2px solid #3f8d60}.map-key-swatch.special{background:#d7a93b4d;border:2px solid #a87616}.map-key-swatch.no-access{background:#b95d4b4d;border:2px solid #a44d3d}.map-key-marker{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #284b37}.map-key-marker.put-in{background:#2b7653}.map-key-marker.take-out{background:#b8682d}.land-map-location{margin-top:10px;padding:8px 10px;border-radius:7px;background:#eef2ed;color:#506158;font-size:.68rem;line-height:1.45}.land-map-status{margin-top:8px;font-size:.76rem;color:#3f5c49;font-weight:600}.land-map-note{margin-top:6px;color:#5b6e61;font-size:.68rem;line-height:1.55}.land-map-note a,.land-map-status a{color:#28684a}.access-marker{display:grid;place-items:center;width:31px;height:31px;border:3px solid #fff;border-radius:50%;color:#fff;font:800 .72rem Arial,Helvetica,sans-serif;box-shadow:0 2px 8px #132d2266;cursor:pointer}.access-marker.put-in{background:#2b7653}.access-marker.take-out{background:#b8682d}.maplibregl-popup-content{font:12px/1.4 Arial,Helvetica,sans-serif;color:#263d32;border-radius:8px;padding:12px 14px;max-width:230px}.maplibregl-popup-content p{margin:5px 0}.maplibregl-popup-content .popup-bank{color:#7a461f;font-weight:800}.maplibregl-popup-content .popup-bank-source{display:block;margin-top:4px}.maplibregl-popup-content small{display:block;margin-top:7px;color:#586a60}
+@media(max-width:600px){.land-map-panel{padding:14px;margin-left:-2px;margin-right:-2px}.land-map{height:390px}.land-map-head h3{font-size:1.25rem}.land-map-key{gap:12px}.map-card-actions{display:block}.map-preview-button{width:100%;justify-content:center}.takeout-bank{display:block;margin-top:8px;text-align:center}}
+
+/* Search-visible river links and practical river-page access details. */
+.crawl-river-links{margin:12px 0 0;color:#657368;font-size:.72rem;line-height:1.7}.crawl-river-links a{color:#2b684a}.permit-notice{margin:12px 0;padding:12px 14px;border-left:3px solid #b68731;background:#f5efdc;color:#594a2d;font-size:.78rem;line-height:1.55}.permit-notice a{color:#315f45;font-weight:700}.access-guide-list{display:grid;gap:14px;margin:14px 0 28px}.access-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.75fr);gap:18px;align-items:stretch;padding:18px;border:1px solid #d0dacb;border-radius:10px;background:#fffef9}.access-guide h3{font-size:1.05rem;margin-bottom:7px}.access-guide p{font-size:.78rem;color:#607164}.access-links{margin-top:12px;line-height:1.7}.access-links a{font-weight:700;color:#2b684a}.access-verified{color:#42644e;font-size:.7rem}.access-pending{display:inline-block;padding:6px 9px;border-radius:6px;background:#f4ead3;color:#674f26;font-weight:700}.river-mini-map{width:100%;min-height:190px;border:1px solid #cbd5c7;border-radius:8px;background:#e8ede5}.site-steward{margin-top:30px;padding:20px;border-radius:10px;background:#edf2e7;border:1px solid #cfdbc9}.site-steward h2{margin-top:0}.site-steward p{font-size:.82rem}.site-steward a{color:#2b684a;font-weight:700}
+@media(max-width:720px){.access-guide{grid-template-columns:1fr}.river-mini-map{min-height:230px}}
+
 /* The first concept's wave mark and editorial typography. */
 :root { --font-body: Arial, Helvetica, sans-serif; --font-display: Georgia, 'Times New Roman', serif; }
 .brand { display:inline-flex; align-items:center; gap:7px; font-family:Arial,Helvetica,sans-serif; font-size:1.5rem; font-weight:700; letter-spacing:-.04em; }
@@ -76,3 +85,43 @@ main{max-width:1160px;padding:0 28px}.section{padding:35px 0 23px}.section-kicke
   .secondary-controls .control{min-width:min(100%,220px)}
   .secondary-controls .control-check{min-width:100%;padding-top:0}
 }
+.access-marker.approximate-access { border: 3px dashed #fff; outline: 2px solid #294e53; width: 44px; font-size: 15px; }
+.guide-time { margin: 12px 0; padding: 12px; border-left: 3px solid #426c62; background: #eef3ef; color: #24423a; }
+.guide-time p { margin: 6px 0; font-size: .9rem; line-height: 1.5; }
+.guide-time a { color: #26594c; text-decoration: underline; font-size: .85rem; }
+.section-correction { display: inline-block; margin-top: 14px; padding: 8px 0; color: #365b49; text-decoration: underline; font-size: .8rem; }
+.community-actions { margin: 12px 0 18px; color: #475f50; font-size: .85rem; }
+.community-actions a { color: #285f43; font-weight: 700; text-decoration: underline; }
+.feedback-page { max-width: 760px; }
+.feedback-intro { margin-bottom: 20px; }
+.feedback-fields { margin: 0; padding: 0; border: 0; display: grid; gap: 14px; min-width: 0; }
+.feedback-fields[hidden], .feedback-page [hidden] { display: none !important; }
+.feedback-fields legend { margin: 10px 0 14px; font-weight: 700; color: #294b37; }
+.feedback-two-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.feedback-context { padding: 10px 12px; background: #edf2e7; border-radius: 6px; color: #294b37; font-size: .85rem; }
+.feedback-private, .feedback-page small { color: #4c6252; font-size: .8rem; line-height: 1.5; }
+.feedback-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.feedback-thanks { background: #edf2e7; border: 1px solid #c5d5bf; border-radius: 10px; padding: 24px; margin-bottom: 24px; }
+@media (max-width: 600px) { .feedback-two-columns { grid-template-columns: 1fr; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.hero .nav-links a.is-active { color: #e7efdc; text-decoration: underline; text-underline-offset: 4px; }
+
+/* Dated agency notices stay visible even when live flow is unavailable. */
+.section-notice { margin:12px 0; padding:12px 14px; border-left:3px solid #a66c25; border-radius:5px; background:#f7f0df; color:#403821; font-size:14px; line-height:1.5; }
+.section-notice p { margin:5px 0; }
+.section-notice a { color:#36543e; text-decoration:underline; overflow-wrap:anywhere; }
+.section-notice small { display:block; margin-top:4px; color:#635c4b; }
+.distance-source { margin:12px 0; font-size:.78rem; line-height:1.6; color:#435a49; }
+.distance-source summary { cursor:pointer; font-weight:600; }
+.distance-source p { margin:6px 0; }
+.distance-source a { color:#245d40; text-decoration:underline; }
+.section-map-link { display:flex; flex-direction:column; justify-content:center; gap:10px; padding:24px; border:1px solid #c4d2c0; border-radius:8px; background:#eef3e8; color:#24553b; text-decoration:none; }
+.section-map-link > span:first-child { font-size:2rem; }
+.section-map-link > span:last-child { font-size:.82rem; line-height:1.5; }
+.section-map-link:hover { background:#e0ebd9; }
+.maplibregl-popup-content { max-height:240px; overflow-y:auto; overflow-wrap:anywhere; }
+
+.float-progress{margin-top:14px;padding:15px;border:1px solid #b3c7b7;border-radius:10px;background:#f0f5ed;color:#294b38}
+.float-progress[hidden]{display:none}.progress-top{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.progress-top strong{font-size:1rem}
+.progress-result{font-size:1.25rem;font-weight:750;line-height:1.35;margin:10px 0 6px}.float-progress p{line-height:1.5}.progress-note{font-size:.75rem;color:#435b4c;margin-top:8px}
+.float-progress details{margin-top:12px;border-top:1px solid #c4d2c1;padding-top:10px}.float-progress summary{cursor:pointer;font-weight:650}.float-progress details p{font-size:.8rem}.float-progress label{display:block;margin:9px 0 4px;font-size:.8rem;font-weight:650}.float-progress input[type=range]{width:100%;min-height:32px}.float-progress select{width:100%;padding:9px;background:#fff;border:1px solid #9bab9c;border-radius:6px;color:#294b38}.float-progress .map-close{margin-top:10px}.progress-demo-marker{display:grid;place-items:center;width:28px;height:28px;background:#346b96;border:3px solid white;border-radius:50%;color:white;font:bold 13px Arial;box-shadow:0 1px 5px #0008}

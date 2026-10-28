@@ -1,6 +1,17 @@
 .DS_Store
 __pycache__/
 *.pyc
+data/reports.json
 data/reports.json.tmp
 data/contacts.json
 data/contacts.json.tmp
+data/feedback.json
+data/feedback.json.tmp
+# Local source/evidence caches; retain the original research packages as backups.
+research/**/raw/
+
+# Local browser-map credentials (never commit).
+map-config.local.json
+
+# Bulky downloaded PDFs are local research caches, not release assets.
+research/MT/access-review-20261027/*.pdf

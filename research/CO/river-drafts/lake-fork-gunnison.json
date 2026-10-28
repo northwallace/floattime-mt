@@ -1,0 +1,47 @@
+{
+  "id": "lake-fork-gunnison",
+  "name": "Lake Fork of the Gunnison (Red Bridge to Gateview)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "NHDPlus route between the BLM Red Bridge Campground and Gateview features is 1.07 mi versus AW 4.9 mi; the AW put-in is probably a different spot; launch permission also not documented by an official source.",
+  "blockers": [
+    "endpoint-identity",
+    "access-permission"
+  ],
+  "accessPoints": [
+    "CO-ACC-0050",
+    "CO-ACC-0051"
+  ],
+  "candidateSections": [
+    {
+      "id": "lake-fork-gunnison--aw405",
+      "awId": "405",
+      "description": "03. BLM CG at Redbridge to Gateview CG",
+      "difficulty": "IIItoIV",
+      "milesCandidate": 4.9,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09124500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/405/main"
+    },
+    {
+      "id": "lake-fork-gunnison--aw406",
+      "awId": "406",
+      "description": "02. Lake City Town Run",
+      "difficulty": "III",
+      "milesCandidate": 3.7,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09124500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/406/main"
+    },
+    {
+      "id": "red-bridge-to-gateview",
+      "putIn": "Red Bridge Campground",
+      "takeOut": "Gateview Recreation Site",
+      "milesCandidate": 4.9,
+      "milesSource": "American Whitewater reach 405 length 4.9 mi.",
+      "nhdMiles": 1.07,
+      "heldBecause": "NHDPlus route between the BLM Red Bridge Campground and Gateview features is 1.07 mi versus AW 4.9 mi; the AW put-in is probably a different spot; launch permission also not documented by an official source."
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

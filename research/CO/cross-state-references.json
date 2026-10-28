@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "state": "CO",
+  "type": "PROPOSED APP FEATURE — not implemented, not read by the app",
+  "checkedOn": "2026-10-26",
+  "problem": "The catalog builder looks up a river's map points only in catalog/map_points/<river.state>.json. Two Colorado sections end in Utah at points that the Utah registry already verifies, so their maps stay hidden in Colorado.",
+  "proposal": "Let a river's endpoint resolve to another state's registry entry, e.g. an optional per-section or per-river 'endpointStates' / 'crossStateEndpoints': {\"<endpoint name>\": \"UT\"}, or a registry fallback to neighbouring states for names marked pending with a utahRegistryName. No research is repeated; the Utah record remains the single source of truth.",
+  "notDone": "The Utah points were NOT copied into catalog/map_points/CO.json (CO records stay 'pending' with a note). No change was made to the app or the live site.",
+  "references": [
+    {
+      "coEndpointId": "CO-ACC-0021",
+      "coEndpointName": "Westwater Ranger Station Boat Ramp",
+      "coRegistryStatusToday": "pending",
+      "utRegistry": {
+        "file": "catalog/map_points/UT.json (Utah package /workspace/floateta-utah-v1)",
+        "key": "Westwater Ranger Station Boat Ramp",
+        "status": "verified",
+        "lat": 39.086657,
+        "lon": -109.101309,
+        "riverBank": "river-right",
+        "sourceName": "BLM National Recreation Site Points, OBJECTID 69678 'Westwater Ranger Station' (Boat Ramp, UTY01000)",
+        "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=69678&outFields=*&outSR=4326&f=json",
+        "verifiedOn": "2026-10-25"
+      },
+      "sectionsThatWouldUnlock": [
+        {
+          "id": "loma-to-westwater",
+          "otherEndpoint": "Loma Boat Launch",
+          "otherEndpointStatus": "verified",
+          "mapReadinessToday": "pending",
+          "mapReadinessWithFeature": "exact"
+        }
+      ],
+      "auditedRiver": {
+        "id": "colorado-river-ruby-horsethief",
+        "statusToday": "pending",
+        "statusWithFeature": "verified"
+      }
+    },
+    {
+      "coEndpointId": "CO-ACC-0073",
+      "coEndpointName": "Split Mountain Boat Ramp",
+      "coRegistryStatusToday": "pending",
+      "utRegistry": {
+        "file": "catalog/map_points/UT.json (Utah package /workspace/floateta-utah-v1)",
+        "key": "Split Mountain Boat Ramp",
+        "status": "verified",
+        "lat": 40.44544,
+        "lon": -109.252588,
+        "riverBank": "river-right",
+        "sourceName": "NPS Public POIs, OBJECTID 4808 'Split Mountain Boat Launch' (DINO)",
+        "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=4808&outFields=*&outSR=4326&f=json",
+        "verifiedOn": "2026-10-25"
+      },
+      "sectionsThatWouldUnlock": [
+        {
+          "id": "yampa-canyon-deerlodge-to-split-mountain",
+          "otherEndpoint": "Deerlodge Park Boat Launch",
+          "otherEndpointStatus": "verified",
+          "mapReadinessToday": "pending",
+          "mapReadinessWithFeature": "exact"
+        }
+      ],
+      "auditedRiver": {
+        "id": "yampa-river-dinosaur",
+        "statusToday": "pending",
+        "statusWithFeature": "verified"
+      }
+    }
+  ],
+  "relatedProposals": [
+    "CO-PRO-001",
+    "CO-PRO-002 (research/replacement-proposals.json)"
+  ]
+}

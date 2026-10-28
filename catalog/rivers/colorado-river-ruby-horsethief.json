@@ -1,0 +1,40 @@
+{
+  "id": "colorado-river-ruby-horsethief",
+  "name": "Colorado River — Ruby-Horsethief Canyons",
+  "gauge": "09163500",
+  "gaugeName": "Colorado River near Colorado-Utah State Line (USGS 09163500)",
+  "lat": 39.16,
+  "lon": -108.93,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "25 miles of mostly flatwater through McInnis Canyons NCA from Loma, CO to Westwater, UT. Overnight camping permits required year-round.",
+  "state": "CO",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "loma-to-westwater",
+      "putIn": "Loma Boat Launch",
+      "takeOut": "Westwater Ranger Station Boat Ramp",
+      "miles": 25.0,
+      "difficulty": "Class I–II",
+      "notes": "Day use needs no permit; overnight camping permits required year-round (Recreation.gov 74466). No take-outs until Westwater. Take-out is in Utah. Mileage: BLM Ruby-Horsethief Canyon permits page.",
+      "takeOutPoint": {
+        "state": "UT",
+        "name": "Westwater Ranger Station Boat Ramp"
+      },
+      "notices": [
+        {
+          "title": "Permit",
+          "text": "BLM: overnight camping permits required year-round (Recreation.gov 74466); day use without permit.",
+          "sourceName": "BLM Ruby-Horsethief Canyon permits page",
+          "sourceUrl": "https://www.blm.gov/visit/ruby-horsethief-canyon-permits",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    }
+  ]
+}

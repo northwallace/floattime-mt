@@ -1,0 +1,91 @@
+{
+  "id": "dolores-river",
+  "name": "Dolores River (McPhee Dam to Gateway)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "Dam-release dependent; BLM permit text conflicts (phone permit vs Recreation.gov free permit). Slickrock and Dove Creek Pump Station endpoints have no official point yet.",
+  "blockers": [
+    "current-status",
+    "endpoint-identity",
+    "source-fetch"
+  ],
+  "accessPoints": [
+    "CO-ACC-0110",
+    "CO-ACC-0111",
+    "CO-ACC-0112",
+    "CO-ACC-0117"
+  ],
+  "candidateSections": [
+    {
+      "id": "dolores-river--aw384",
+      "awId": "384",
+      "description": "01. Rico to Big Rock (West Fork)",
+      "difficulty": "IItoIII",
+      "milesCandidate": 27.6,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09165000",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/384/main"
+    },
+    {
+      "id": "dolores-river--aw11058",
+      "awId": "11058",
+      "description": "02. West Fork to McPhee Reservoir",
+      "difficulty": "IItoIII",
+      "milesCandidate": 14.6,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09166500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/11058/main"
+    },
+    {
+      "id": "dolores-river--aw385",
+      "awId": "385",
+      "description": "03. Bradfield Launch (McPhee Reservoir) to Dove Creek Pump Station",
+      "difficulty": "IItoIIIstandoutIV",
+      "milesCandidate": 18.5,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "DOLBMCCO",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/385/main"
+    },
+    {
+      "id": "dolores-river--aw386",
+      "awId": "386",
+      "description": "04. Dove Creek Pump Station to Slickrock",
+      "difficulty": "IItoIIIplusstandoutIV",
+      "milesCandidate": 28.0,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09168730",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/386/main"
+    },
+    {
+      "id": "dolores-river--aw387",
+      "awId": "387",
+      "description": "05. Slickrock to Bedrock",
+      "difficulty": "IIplusstandoutIII",
+      "milesCandidate": 49.0,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09171100",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/387/main"
+    },
+    {
+      "id": "dolores-river--aw388",
+      "awId": "388",
+      "description": "06. Bedrock to Gateway",
+      "difficulty": "IIplus",
+      "milesCandidate": 45.0,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09171100",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/388/main"
+    },
+    {
+      "id": "dolores-river--aw389",
+      "awId": "389",
+      "description": "07. Gateway to Colorado River (UT)",
+      "difficulty": "IIplusstandoutIV",
+      "milesCandidate": 31.0,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09180000",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/389/main"
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

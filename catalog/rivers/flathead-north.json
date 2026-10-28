@@ -11,27 +11,93 @@
   "sections": [
     {
       "id": "polebridge-coal",
-      "putIn": "Polebridge",
+      "putIn": "Polebridge (Downstream)",
       "takeOut": "Coal Creek",
-      "miles": 9,
+      "miles": 9.3,
       "difficulty": "Class I–II",
-      "notes": "Stop at the Mercantile before you launch. Wood is the hazard."
+      "notes": "Launch at the downstream Polebridge access. Coal Creek is a side-channel landing; low water and wood may complicate the take-out. Scout before committing to the channel.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "Flathead Rivers Alliance / DREAM river access surveys (April 2026)",
+        "sourceUrl": "https://www.flatheadrivers.org/river-alerts-gear-trip-planning-tips-outfitters-resources",
+        "checkedOn": "2026-10-27",
+        "streamId": "North Fork Flathead River",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Polebridge (Downstream)",
+          "riverMile": 33.8,
+          "sourceLocation": "Polebridge (Downstream) access survey heading"
+        },
+        "takeOut": {
+          "name": "Coal Creek",
+          "riverMile": 24.5,
+          "sourceLocation": "Coal Creek access survey heading"
+        },
+        "note": "Approximate distance between the published access-survey river mile markers. Braids, water level and the landing used can change the paddled distance. Individual access surveys with coordinates and photographs are linked from the map markers."
+      }
     },
     {
       "id": "coal-big-creek",
       "putIn": "Coal Creek",
       "takeOut": "Big Creek",
-      "miles": 9,
+      "miles": 9.2,
       "difficulty": "Class I–II",
-      "notes": "Steady Class II riffles. Glacier on river left."
+      "notes": "Coal Creek launches from a side channel; wood and low water can require lining or dragging boats. Big Creek is a developed access with a day-use fee.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "Flathead Rivers Alliance / DREAM river access surveys (April 2026)",
+        "sourceUrl": "https://www.flatheadrivers.org/river-alerts-gear-trip-planning-tips-outfitters-resources",
+        "checkedOn": "2026-10-27",
+        "streamId": "North Fork Flathead River",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Coal Creek",
+          "riverMile": 24.5,
+          "sourceLocation": "Coal Creek access survey heading"
+        },
+        "takeOut": {
+          "name": "Big Creek",
+          "riverMile": 15.3,
+          "sourceLocation": "Big Creek access survey heading"
+        },
+        "note": "Approximate distance between the published access-survey river mile markers. Braids, water level and the landing used can change the paddled distance. Individual access surveys with coordinates and photographs are linked from the map markers."
+      }
     },
     {
       "id": "big-creek-glacier-rim",
       "putIn": "Big Creek",
       "takeOut": "Glacier Rim",
       "miles": 11.5,
-      "difficulty": "Class I–II",
-      "notes": "Great Northern Flats is an optional pullout. Blankenship Bridge is the confluence takeout a few miles below Glacier Rim."
+      "difficulty": "Class II–III",
+      "notes": "Includes the lower canyon rapids and the Shelf/Ledge above Glacier Rim. Scout and use whitewater skills; this is not a casual tube float. Great Northern Flats is an earlier exit before the lower rapids; confirm its access separately.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "Flathead Rivers Alliance / DREAM river access surveys (April 2026)",
+        "sourceUrl": "https://www.flatheadrivers.org/river-alerts-gear-trip-planning-tips-outfitters-resources",
+        "checkedOn": "2026-10-27",
+        "streamId": "North Fork Flathead River",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Big Creek",
+          "riverMile": 15.3,
+          "sourceLocation": "Big Creek access survey heading"
+        },
+        "takeOut": {
+          "name": "Glacier Rim",
+          "riverMile": 3.8,
+          "sourceLocation": "Glacier Rim access survey heading"
+        },
+        "note": "Approximate distance between the published access-survey river mile markers. Braids, water level and the landing used can change the paddled distance. Individual access surveys with coordinates and photographs are linked from the map markers."
+      },
+      "notices": [
+        {
+          "title": "Lower canyon whitewater",
+          "text": "Published paddler accounts describe Class III rapids between roughly river miles 9 and 4, within this section. Difficulty and the Shelf/Ledge hazard vary with flow; an access map does not identify a safe channel.",
+          "sourceName": "Rocky Mountain Canoe Club, July 2024 firsthand North Fork trip report, pp. 4–6",
+          "sourceUrl": "https://rockymountaincanoeclub.net/wp-content/uploads/2024/08/Trip-Report-NF-Flathead-2024.pdf",
+          "checkedOn": "2026-10-27"
+        }
+      ]
     }
   ],
   "state": "MT",

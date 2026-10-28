@@ -1,0 +1,658 @@
+{
+  "version": 2,
+  "state": "WA",
+  "auditedRivers": {
+    "columbia-hanford": {
+      "status": "verified",
+      "note": "Audited 2026-10-25 (batch 2). Both endpoints are verified. Vernita Bridge comes from WDFW's field-confirmed ramp feature 25 plus the WDFW page and the WaterAccessSites layer. White Bluffs comes from USFWS's own facility asset point plus USFWS Hanford Reach pages. Banks come from NHDPlus HR. White Bluffs is closed to motorized launching Nov 1-Jun 30; non-motorized load/unload is allowed."
+    },
+    "cowlitz": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (batch 1). Tacoma Power confirms both launches (Barrier Dam, Blue Creek) are public and free, but it publishes addresses only. WDFW's Barrier Dam ramp feature sits at the ramp head in the lot, about 30-35 m from the water. Blue Creek has no agency ramp feature. Pending until on-ramp agency coordinates are found for both."
+    },
+    "grande-ronde-lower": {
+      "status": "verified",
+      "note": "Audited 2026-10-25 (batch 2). Both endpoints are verified. Troy comes from OSMB (ODFW-managed) and Heller Bar from WDFW ramp feature 244 (Chief Joseph Wildlife Area Unit). Banks come from NHDPlus HR. The Heller Bar take-out is on the Snake's west bank (river-left) just below the confluence."
+    },
+    "grande-ronde-troy": {
+      "status": "verified",
+      "note": "Audited 2026-10-25 (batch 2). Both endpoints are verified. Troy (Oregon) comes from the Oregon State Marine Board boating-access point (ODFW-managed) plus the BLM river page. Boggan's comes from WDFW ramp feature 250 plus the WDFW page and the WaterAccessSites layer. Banks come from NHDPlus HR. BLM requires free self-issued river permits for boating in Oregon."
+    },
+    "green-flaming-geyser": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (final run). Whitney Bridge is verified (King County Parks non-motorized put-in feature 327). Flaming Geyser State Park is still pending (no State Parks launch coordinate)."
+    },
+    "green-gorge": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Flaming Geyser State Park, Headworks (Green River), Kanaskat-Palmer State Park not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "hoh": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (final run). Both endpoints still pending: no NPS launch POI at Hoh Rain Forest; DNR confirms Oxbow's hand boat launch but its coordinate is the campground."
+    },
+    "klickitat": {
+      "status": "verified",
+      "note": "Audited 2026-10-25 (batch 1). All three endpoints (Leidl, Mineral Springs/Icehouse, Turkey Hole) are verified. Coordinates come from WDFW's Facilities GIS ramp/hand-launch features, checked on Esri World Imagery. Access comes from WDFW water-access pages and the WaterAccessSites layer (WDFW-managed, no closure). Banks come from NHDPlus HR flowlines. Turkey Hole is take-out only and the last designated take-out above Lyle Falls."
+    },
+    "methow-lower": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (batch 2). Carlton and Averill/McFarland are verified (WDFW ramp features 108 and 89). Pateros Take-out is still pending: its manager is unknown and there is no agency coordinate."
+    },
+    "methow-upper": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Big Eddy (Methow), Red Barn Access (Winthrop), Twisp Access not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "queets": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (final run). All endpoints pending: NPS launch POIs for Hartzell and Streaters are off the water on imagery; the NPS Queets Campground launch is 427 m from Queets Trailhead (relabel decision needed)."
+    },
+    "sauk": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Government Bridge (Sauk), Lower Sauk Boat Launch, Sauk Prairie (Darrington) not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "skagit-eagle": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (final run). Copper Creek is verified (NPS POI 20467). Marblemount (USFS coordinate is the parking loop) and Howard Miller (Skagit County, no public coordinate) are still pending."
+    },
+    "skagit-upper": {
+      "status": "verified",
+      "note": "Audited 2026-10-25 (final run). Both endpoints are verified from NPS Public POIs (Goodell Creek Raft Launch 33925, Copper Creek Raft Take-out/Launch 20467) plus the NPS North Cascades rafting page, checked on Esri imagery. Banks come from NHDPlus HR. No fee for personal rafts (NPS)."
+    },
+    "skykomish": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (final run). Lewis Street and Big Eddy (WDFW hand launch 27; State Parks-managed) are verified. Sultan Sportsman Park is still pending."
+    },
+    "snoqualmie-fall-city": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (batch 2). Plum Landing is verified (WDFW ramp feature 271). Fall City Access is still pending: the nearest agency ramp is WDFW's Raging River site, ~500 m from v1's point, so it needs a relocation decision."
+    },
+    "snoqualmie-mf": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Bridge View (Middle Fork Snoqualmie), Concrete Bridge (Middle Fork Snoqualmie), Tanner Road Access not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "spokane": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: Plese Flats, T.J. Meenach Bridge not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "wenatchee-leavenworth": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (final run). Peshastin and Dryden Dam are verified (WDFW hand-launch features 57 and 49). Waterfront Park (Leavenworth) and Cashmere Riverside Park are still pending (city sites, no public coordinates)."
+    },
+    "wenatchee-upper": {
+      "status": "pending",
+      "note": "Audited 2026-10-25 (final run). Lake Wenatchee State Park is verified (State Parks launch point 62). Plain Access and Hwy 2 Bridge are still pending (no agency source)."
+    },
+    "white-salmon": {
+      "status": "pending",
+      "note": "Audited 2026-10-25. Pending: BZ Corner, Husum (above the falls) not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "yakima-canyon": {
+      "status": "verified",
+      "note": "Audited 2026-10-25 (batch 4). Umtanum, Lmuma Creek and Roza are verified from BLM's own boat-ramp features plus BLM's Yakima River Canyon page. Big Horn is verified as IMAGERY-PLACED (North's Google Maps marking, confirmed on Esri imagery; BLM page confirms access; BLM has no Big Horn GIS feature). Spot-check Big Horn first."
+    }
+  },
+  "points": {
+    "Averill (McFarland Creek)": {
+      "status": "verified",
+      "lat": 48.150954,
+      "lon": -120.057186,
+      "accessType": "Gravel boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 89, gravel) at WDFW's McFarland access",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=89&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. v1 'Averill (McFarland Creek)' is WDFW's McFarland water-access site. Coordinate is WDFW's own boat-ramp feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/averill.png) puts it on a gravel spit under trees about 15-20 m from the open water, the furthest from the water of the batch-2 points, but on the launch path rather than the lot. Legal access: WDFW McFarland page (https://wdfw.wa.gov/places-to-go/water-access-sites/mcfarland-480) says it is at the confluence of McFarland Creek and the Methow, 1 gravel ramp, open year-round, camping allowed; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Pass required.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165043454%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~31), the ramp is left of the NHD centreline. Confirmed on imagery."
+    },
+    "BZ Corner": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 45.851342,
+        "lon": -121.509918,
+        "feature": "USFS INFRA 'Bz Launch Site' point (parking/offloading loop)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "USDA Forest Service, Columbia River Gorge NSA: BZ Launch Site & Trail (#4413)",
+      "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+      "coordinateSourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+      "verifiedOn": "2026-10-25",
+      "directions": "Park in the USFS BZ Launch Site lot at BZ Corner (SR 141). From the offloading area carry down the 0.1-mile launch trail (metal boat-slide railing) to the river; put in at the bottom of the trail.",
+      "note": "USFS point is the parking/offloading loop ~150 m from the water; the river end of the trail has no agency coordinate and is hidden by canyon/tree cover in imagery (research/raw/batch4/bz_g.png). Restrictions: steep-carry-0.1mi; commercial-use-permits-apply-to-outfitters"
+    },
+    "Barrier Dam (Cowlitz Salmon Hatchery)": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 46.51602,
+        "lon": -122.63773,
+        "feature": "WDFW Facilities GIS Boat Ramp feature 146 (concrete ramp at lot edge)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "Tacoma Power: Cowlitz Salmon Hatchery (Barrier Dam Boat Launch)",
+      "sourceUrl": "https://www.mytpu.org/community-environment/fish-wildlife-environment/cowlitz-river-project/cowlitz-fisheries-programs/cowlitz-salmon-hatchery/",
+      "coordinateSourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=146&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "directions": "Tacoma Power Barrier Dam Boat Launch below the Cowlitz Salmon Hatchery barrier dam; ramp from the paved lot down the gravel shore.",
+      "note": "WDFW ramp feature is at the paved lot edge ~30-35 m from the waterline; water end on the gravel shore not resolvable (research/raw/batch4/bd19_g.png). Restrictions: posted hours; heavy fishing traffic"
+    },
+    "Big Eddy (Methow)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Big Eddy (Skykomish)": {
+      "status": "verified",
+      "lat": 47.83655,
+      "lon": -121.659375,
+      "accessType": "Hand launch",
+      "operator": "Washington State Parks and Recreation Commission (per WDFW)",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (ObjectID 27)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=27&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is WDFW's own hand-launch feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/bigeddy.png) puts it about 3 m from the water's edge under trees. Legal access: WDFW Big Eddy page (https://wdfw.wa.gov/places-to-go/water-access-sites/big-eddy-617) says 'Access area open: Year-round Managed by Washington State Parks', no boat ramps, 1 hand launch, 1 parking lot, 1 restroom; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) lists manager State Parks, no closure. Hand-carry only. Discover Pass required. State Parks' Boat Launches layer has no Big Eddy feature, so the coordinate rests on WDFW.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165058188%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream, the hand launch is left of the NHD centreline (~23 m). Confirmed on imagery."
+    },
+    "Big Horn Recreation Site": {
+      "status": "verified",
+      "lat": 46.8939898,
+      "lon": -120.5004652,
+      "accessType": "Launch (open gravel/sand clearing to the water)",
+      "operator": "Bureau of Land Management (Wenatchee Field Office)",
+      "sourceName": "Access: BLM Yakima River Canyon page (lists Bighorn among BLM's five developed river access sites). Coordinate: North's own Google Maps marking, checked on Esri World Imagery",
+      "sourceUrl": "https://www.blm.gov/visit/yakima-river-canyon-campgrounds",
+      "verifiedOn": "2026-10-25",
+      "note": "IMAGERY-PLACED: coordinate placed from satellite imagery and confirmed by North's own circled marking and Google Maps coordinate (46.8939898, -120.5004652), checked on Esri World Imagery z19 (z20 not available), 2026-10-25. Agency published no exact launch coordinate: BLM's National Recreation Site Points layer has no Bighorn feature. On imagery (research/raw/batch4/bhN.png, bhN_w.png, bh19c_g.png) the point sits inside an open gravel/sand clearing that runs from a small paved pull-off and structure beside SR 821 down to the Yakima's north-east shore. The clearing's water-side tip is about 8.5 m SSW (~46.89392, -120.50051). The point is not in the water, not on the road and not in the paved lot (the lot edge is ~15 m NE). Offsets: 426 m SE of the earlier v1/AW candidate (46.8965, -120.5047, an opening near the campground's NW end, now superseded); ~130 m SE of the Google 'Bighorn Boat Ramp' label pin. Our georeference of North's screenshot (Esri features + scale bar) gave a water end within ~9 m of this point. Legal access: BLM's Yakima River Canyon page (https://www.blm.gov/visit/yakima-river-canyon-campgrounds) lists it among BLM's five developed river access sites (Bighorn, Umtanum, Lmuma Creek, Big Pines, Roza), open year-round; fees $5 day-use, $15 overnight. Spot-check first: no ramp surface is visible (natural launch), and the imagery date is unknown.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336243%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (NHDPlus HR flow bearing ~128, SE through the canyon), the launch is on the north-east bank, left of the NHD centreline (~41 m; ftype 558 artificial path). On imagery SR 821 runs along the same (left) bank and the railway along the opposite (right, south-west) bank."
+    },
+    "Blue Creek (Cowlitz Trout Hatchery)": {
+      "status": "pending",
+      "note": "Batch 1 (2026-10-25). Legal access is confirmed: Tacoma Power's Cowlitz Trout Hatchery page says Blue Creek Boat Launch (273 Blue Creek Lane, Toledo) gives free public river access, with 3-day camping in the lot. It gives an address only. No agency coordinate exists: WDFW's Facilities GIS has no ramp here, and its Blue Creek parking feature comment says it 'does not account for Tacoma Power's boat launch and assoc facilities'. The WDFW Blue Creek page is the ADA fishing-platform site. Imagery shows a ramp to the shore south of the lot near 46.4838, -122.7311, and boatlaunchmap/OSM give 46.48381, -122.73049, but neither is an agency source, and OSM maps a second unnamed ramp about 400 m upstream. Bank is river-right on NHDPlus HR (flow ~250), not usable until the point is verified. Imagery pass (2026-10-25, not promoted): Disputed site. Imagery (research/raw/batch4/bc19_g.png, z19): a paved lane from the trailer lot reaches the water (~46.48381,-122.73049, matching OSM), but OSM also maps a second ramp ~400 m upstream and no agency source says which one is Tacoma Power's. Not placed."
+    },
+    "Boggans Access": {
+      "status": "verified",
+      "lat": 46.041693,
+      "lon": -117.253159,
+      "accessType": "Unimproved boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 250, unimproved)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=250&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is WDFW's own boat-ramp feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/boggans.png) puts it about 7 m from the water on the west inside bend just above the SR 129 bridge. Legal access: WDFW Boggan's page (https://wdfw.wa.gov/places-to-go/water-access-sites/boggans-1058) lists 1 unimproved ramp, open year-round, camping allowed, and says additional parking and river access are on the left (north) bank below the bridge. WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Discover Pass or WDFW Vehicle Access Pass required.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27109438794%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~163; the river turns south here), the ramp is on the west bank, right of the NHD centreline. WDFW's note about the north bank below the bridge is consistent with this bend."
+    },
+    "Bridge View (Middle Fork Snoqualmie)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency launch feature: King County facility points, DNR recreation sites and USFS INFRA found none near Bridge View. Manager unknown (likely USFS road corridor). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+    },
+    "Carlton Access": {
+      "status": "verified",
+      "lat": 48.246454,
+      "lon": -120.117781,
+      "accessType": "Gravel boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 108, gravel)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=108&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is WDFW's own boat-ramp feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/carlton.png) puts it on the gravel bar about 7-10 m from the water. Legal access: WDFW Carlton Hole page (https://wdfw.wa.gov/places-to-go/water-access-sites/carlton-hole-481) lists 1 gravel ramp, open year-round, no camping; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Pass required.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165041427%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~120), the ramp is left of the NHD centreline. Confirmed on imagery."
+    },
+    "Cashmere Riverside Park": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): City of Cashmere park; no city/county GIS launch feature found on ArcGIS Online and city pages could not be read. Spring-2026 flood-rock blockage of the ramp not confirmed cleared. Needs City of Cashmere answer. Imagery pass (2026-10-25, not promoted): Closure uncertainty (flood rock reported); not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Concrete Bridge (Middle Fork Snoqualmie)": {
+      "status": "pending",
+      "note": "King County's Middle Fork Snoqualmie Natural Area page confirms a public hand-boat access 'just below the concrete bridge' on SE Lake Dorothy Rd (shoulder parking) but gives no coordinate; the AW candidate is ~100 m from the river centreline. Final run: DNR Recreation Sites has only Granite Creek trailhead (318 m) and Champion Beach (691 m); no feature at the concrete bridge access. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/concrete_g.png): dense tree cover; no launch visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Copper Creek": {
+      "status": "verified",
+      "lat": 48.5911167,
+      "lon": -121.3733613,
+      "accessType": "Raft take-out / launch",
+      "operator": "National Park Service (Ross Lake National Recreation Area, North Cascades NP Service Complex)",
+      "sourceName": "NPS Public POIs, 'Copper Creek Raft Take-out/Launch' (OBJECTID 20467, type Boat Launch, Ross Lake NRA)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=20467&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is NPS's own POI for the raft take-out, 27 m from the v1/AW candidate. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/copper.png) puts it on the north bank under trees about 9 m from the water's edge. NPS lists its XY accuracy as 'Unknown'. Legal access: the NPS rafting page (https://www.nps.gov/thingstodo/rafting-in-the-north-cascades.htm) says the Skagit is accessible 'via ... the Copper Creek Take-Out near mile post 112' on SR 20; NPS says there is no fee to raft the Skagit in a personal raft.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27130064055%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~271, west), the take-out is on the north bank, right of the NHD centreline (~60 m; ftype 558 artificial path through the wide channel). Confirmed on imagery."
+    },
+    "Dryden Dam Access": {
+      "status": "verified",
+      "lat": 47.555227,
+      "lon": -120.574097,
+      "accessType": "Hand launch (below the dam)",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (ObjectID 49, 'Dryden Dam')",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=49&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is WDFW's own hand-launch feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/dryden.png) puts it below the dam on a trail through vegetation about 10 m from the water. Legal access: WDFW Dryden Dam page (https://wdfw.wa.gov/places-to-go/water-access-sites/dryden-dam-711) says 'Access area open: Year-round. Boats can be hand launched below Dryden Dam', 1 hand launch; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure, year-round. Caveat: the GIS feature carries an internal WDFW comment 'Take out only?'; the public WDFW page explicitly allows hand launching below the dam, which is what this section uses. Do not launch above the dam. Pass required.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150857505%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream, the hand launch is right of the NHD centreline (~46 m; artificial path). Confirmed on imagery."
+    },
+    "Fall City Access": {
+      "status": "pending",
+      "note": "Batch 2 (2026-10-25) finding, not promoted: the nearest WDFW access is 'Raging River' (WDFW page https://wdfw.wa.gov/places-to-go/water-access-sites/raging-river-627; 1 concrete ramp, WDFW-managed, no closure). Its WDFW ramp feature (layer 5, 211; 47.567983, -121.882314) is at the south-bank water's edge on imagery (river-left on NHDPlus HR 163859671), but it is a different site from v1's Fall City Access below the SR 202 bridge (47.5696, -121.8882), about 500 m away. Needs a decision on whether to relocate the take-out to Raging River before promotion. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Label kept unchanged as instructed."
+    },
+    "Flaming Geyser State Park": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): State Parks' Boat Launches layer has no Flaming Geyser feature; King County's POI is the park centroid (585 m). No agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/flaming_g.png): the v1 point is in the parking loop; a dirt track reaches the river but there are several possible spots; no State Parks launch statement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Goodell Creek": {
+      "status": "verified",
+      "lat": 48.6720439,
+      "lon": -121.269506,
+      "accessType": "Raft launch",
+      "operator": "National Park Service (Ross Lake National Recreation Area, North Cascades NP Service Complex)",
+      "sourceName": "NPS Public POIs, 'Goodell Creek Raft Launch' (OBJECTID 33925, type Boat Launch; map label 'Goodell Creek Boat Launch'; digitized from 2013 NAIP)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=33925&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is NPS's own POI for the launch. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/goodell.png) puts it at a small beach clearing at the water's edge. Legal access: the NPS rafting page (https://www.nps.gov/thingstodo/rafting-in-the-north-cascades.htm) says 'The Skagit River is accessible via a boat launch near Goodell Creek Campground at mile post 119 on State Route 20'.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27161411917%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~236), the launch is right of the NHD centreline (~65 m; artificial path). Confirmed on imagery."
+    },
+    "Government Bridge (Sauk)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency source. The nearest agency site is USFS 'White Creek River Access', 711 m away (a different site). Government Bridge appears informal; manager unknown. Needs agency answer or relabel decision. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Hartzell Creek Boat Launch": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 47.55197,
+        "lon": -124.203328,
+        "feature": "NPS Public POIs 'Hartzell' Boat Launch (OBJECTID 33194)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "National Park Service, Olympic NP: Queets Area Brochure",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/queets-area-brochure.htm",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?outFields=*&outSR=4326&f=json&objectIds=33194",
+      "verifiedOn": "2026-10-25",
+      "directions": "Queets River Rd (off US 101) to the NPS Hartzell boat launch; carry across the gravel bar to the Queets.",
+      "note": "NPS POI sits ~35-45 m inland of the gravel bar in forest, not at the water (research/raw/batch3/hartzell.png). Restrictions: winter storms can damage roads and boat launches (NPS); log-jam hazards (NPS); low water late summer"
+    },
+    "Headworks (Green River)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No King County, WDFW or State Parks launch feature near the Headworks put-in (Tacoma Water land). Needs Tacoma Water/agency answer on legal access and position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+    },
+    "Heller Bar": {
+      "status": "verified",
+      "lat": 46.086008,
+      "lon": -116.983366,
+      "accessType": "Concrete boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 244, concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=244&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is WDFW's own boat-ramp feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/heller.png) puts it on the concrete ramp about 7 m from the water on the Snake River's west bank below the Grande Ronde confluence, matching the v1 instruction to pull out river-left after entering the Snake. WDFW's hand-launch feature (layer 4, 53) is ~300 m south and was not used. Legal access: WDFW Heller Bar page (https://wdfw.wa.gov/places-to-go/water-access-sites/heller-bar-395) lists it in the Chief Joseph Wildlife Area Unit, open year-round, 1 concrete ramp and 1 hand launch, camping allowed; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Pass required.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27163873316%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream on the Snake (flow bearing ~5, north), the ramp is on the west bank, left of the NHD centreline. Confirmed on imagery."
+    },
+    "Highway 2 Bridge (Tumwater)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency coordinate or manager found for the Hwy 2 (Tumwater) bridge take-out. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Hoh Oxbow Campground": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 47.811365,
+        "lon": -124.249436,
+        "feature": "WA DNR Recreation Sites 'Hoh Oxbow Campground' point (OBJECTID 588; campground, not launch)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "Washington DNR Recreation Sites: Olympic Peninsula - Hoh Oxbow Campground",
+      "sourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
+      "coordinateSourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
+      "verifiedOn": "2026-10-25",
+      "directions": "DNR Hoh Oxbow Campground off US 101 at the Hoh River bridge; hand-carry the 0.25-mile trail from the campground to the river.",
+      "note": "DNR coordinate is the campground; trail and water end under dense forest (research/raw/batch4/hohoxbow_g.png). Restrictions: hand-carry-0.25mi; Discover Pass may be required on DNR land"
+    },
+    "Hoh Rainforest Campground": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): NPS Public POIs near Hoh Rain Forest have campground, visitor-center and picnic features only; no boat-launch POI. No agency coordinate for a river launch. Needs NPS answer or in-person position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+    },
+    "Howard Miller Steelhead Park": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): Skagit County park; no Skagit County GIS layer for park facilities was found publicly. WDFW's nearest site (Barnaby Slough) is 1 km away. Needs Skagit County answer. Imagery pass (2026-10-25, not promoted): Access OK (Skagit County: park open for day use year-round; county 2025 fee schedule lists an annual boat launch permit). Imagery (research/raw/batch4/hm19_g.png, z19) around the AW ramp points (48.48456,-121.59497): the lot edge drops into tree canopy; the concrete ramp and its water end are not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Husum (above the falls)": {
+      "status": "pending",
+      "note": "USFS Husum Boating Site page confirms public access above Husum Falls (no fee) and lists lat/lon 45.799923,-121.486067; on Esri imagery (2026-10-25) that is the SR 141 roadside pull-out ~25-30 m from the water, not a confirmed water's-edge take-out. Final run: USFS INFRA has the same point; no separate take-out coordinate. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/husum_g.png): the USFS point is an SR 141 roadside pullout; the bank is under trees and the water end is not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Kanaskat-Palmer State Park": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): State Parks' Boat Launches layer (117 features) has no Kanaskat-Palmer feature; King County layers list only State Parks camping (1.1 km). Legal access per State Parks, but no agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/kanaskat_g.png): canyon and dense tree cover; launch not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Lake Wenatchee State Park": {
+      "status": "verified",
+      "lat": 47.807773,
+      "lon": -120.726132,
+      "accessType": "Boat launch",
+      "operator": "Washington State Parks and Recreation Commission",
+      "sourceName": "Washington State Parks Boat Launches layer, 'Lake Wenatchee' (OBJECTID 62, park ID 64000)",
+      "sourceUrl": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WAStateParks_BoatLaunches/FeatureServer/0/query?objectIds=62&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is State Parks' own boat-launch point. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/lakewen.png) puts it at the water end of a ramp/dock on the south shore of the narrow lake outlet, where the Wenatchee River leaves the lake. Legal access: State Parks' Lake Wenatchee page (https://parks.wa.gov/find-parks/state-parks/lake-wenatchee-state-park) lists the watercraft launch; Discover Pass required ($45/yr, $10/day) plus a $7/day Watercraft Launch Fee; hours summer 6:30 a.m.-dusk, winter 8 a.m.-dusk. Caveat: this is a lake-side launch at the outlet, so boaters paddle a short distance into the river.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150856779%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~101, east) on the Wenatchee River flowline through the outlet, the launch is on the south shore, right of the centreline (~49 m). Confirmed on imagery."
+    },
+    "Leidl Campground": {
+      "status": "verified",
+      "lat": 45.937299,
+      "lon": -121.119316,
+      "accessType": "Concrete boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 166, 'Leidl', concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=166&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Coordinate is WDFW's own boat-ramp feature, separate from its site and parking points. Esri World Imagery (z19, checked 2026-10-25) puts it on the campground-side bank edge, a few metres from open water. Legal access: the WDFW Leidl page (https://wdfw.wa.gov/places-to-go/water-access-sites/leidl-1640) lists it in the Soda Springs Wildlife Area Unit, open year-round, with 1 concrete ramp and camping. The WaterAccessSites layer shows it managed by WDFW with no closure. A Discover Pass or WDFW Vehicle Access Pass is required.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27147210338%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~307 on the flowline), the ramp is about 27 m right of the NHD centreline. Matches imagery, v1 and AW."
+    },
+    "Lewis Street Access (Monroe)": {
+      "status": "verified",
+      "lat": 47.846531,
+      "lon": -121.971445,
+      "accessType": "Concrete boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 143, concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=143&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is WDFW's own boat-ramp feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/lewisst.png) puts it at the water's edge east of the lot by the Lewis Street bridge. Legal access: WDFW Lewis Street page (https://wdfw.wa.gov/places-to-go/water-access-sites/lewis-street-616) lists 1 concrete ramp, open year-round; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Pass required.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165058202%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~234), the ramp is right of the NHD centreline. Confirmed on imagery."
+    },
+    "Lmuma Creek Recreation Site": {
+      "status": "verified",
+      "lat": 46.81374588889957,
+      "lon": -120.45049013066262,
+      "accessType": "Boat ramp",
+      "operator": "Bureau of Land Management (Wenatchee Field Office)",
+      "sourceName": "BLM National Recreation Site Points, 'Lmuma Campground' Boat Ramp (OBJECTID 85504)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=85504&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is BLM's own boat-ramp feature, 50 m from the v1 candidate. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/blm_lmuma.png) puts it at the river end of the lot, about 5-8 m from the water on the north bank. Legal access: BLM's Yakima River Canyon page (https://www.blm.gov/visit/yakima-river-canyon-campgrounds) lists it among BLM's five developed river access sites (Bighorn, Umtanum, Lmuma Creek, Big Pines, Roza), open year-round; fees $5 day-use, $15 overnight.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336895%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~87, east), the ramp is on the north bank, left of the NHD centreline (~51 m). Confirmed on imagery."
+    },
+    "Lower Sauk Boat Launch": {
+      "status": "pending",
+      "note": "USFS Lower Sauk Boat Launch page confirms public access (no fee, day use) and lists lat/lon 48.3448,-121.5499, but on Esri imagery (2026-10-25) that point is the site entrance road ~100 m from the river. Launch position not confirmed. Final run: USFS INFRA has the same point; no ramp feature in WDFW layers. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/ls19_g.png, z19): the lot ends ~25 m from the gravel bar under canopy; no ramp visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Marblemount Boat Launch": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 48.52638889,
+        "lon": -121.4269444,
+        "feature": "USFS recreation-site lat/lon (gravel parking loop)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "USDA Forest Service, Mt. Baker-Snoqualmie NF: Marblemount Boat Launch",
+      "sourceUrl": "https://www.fs.usda.gov/r06/mbs/recreation/marblemount-boat-launch",
+      "coordinateSourceUrl": "https://www.fs.usda.gov/r06/mbs/recreation/marblemount-boat-launch",
+      "verifiedOn": "2026-10-25",
+      "directions": "USFS Marblemount Boat Launch by the Cascade River Rd bridge at Marblemount; the launch is on the right just after the bridge (USFS description), reached from the gravel parking loop.",
+      "note": "USFS point is the parking loop ~90 m from the Skagit; shoreline under canopy, no ramp visible (research/raw/batch4/mm19_g.png). Restrictions: eagle-season (Dec-Feb): Skagit Bald Eagle area guidance - limited launch hours and no beaching; check before winter trips"
+    },
+    "Mineral Springs (Icehouse)": {
+      "status": "verified",
+      "lat": 45.818726,
+      "lon": -121.117249,
+      "accessType": "Concrete boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 317, 'Mineral Springs', concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=317&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Coordinate is WDFW's own boat-ramp feature. Esri World Imagery (z19, checked 2026-10-25) puts it at the water's edge beside a cleared launch patch, not in the campground. Legal access: the WDFW Mineral Springs page (https://wdfw.wa.gov/places-to-go/water-access-sites/mineral-springs-1655) lists it in the Mineral Springs Wildlife Area Unit, open year-round, with 1 concrete ramp. WaterAccessSites shows it WDFW-managed with no closure. Pass required. This is the 'Icehouse' access: take-out for Leidl-Icehouse and put-in for Icehouse-Turkey Hole.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27147210136%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~225), the ramp is about 22 m right of the NHD centreline, on the west/north-west bank. Confirmed on imagery."
+    },
+    "Pateros Take-out": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none; city/port GIS not found). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pateros_g.png): a gravel lot reaches the Methow, but no agency source confirms public access. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Peshastin Access": {
+      "status": "verified",
+      "lat": 47.569692,
+      "lon": -120.594505,
+      "accessType": "Hand launch",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (feature 57, 'Peshastin')",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=57&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is WDFW's own hand-launch feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/peshastin.png) puts it a few metres from the Wenatchee. Legal access: WDFW Peshastin page (https://wdfw.wa.gov/places-to-go/water-access-sites/peshastin-708) lists no boat ramp, 1 hand launch, 1 parking lot, open year-round; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Hand-carry only. Pass required.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150856568%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~57), the hand launch is left of the NHD centreline. Confirmed on imagery."
+    },
+    "Plain Access": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW, State Parks, USFS, DNR: none within 2 km). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Plese Flats": {
+      "status": "pending",
+      "note": "Washington State Parks lists Plese Flats (Riverside State Park) as a non-motorized launch but publishes no coordinate; candidate is an OpenStreetMap slipway. Plese Flats is not on State Parks' 2026-08-28 list of areas still closed after the August 2026 wildfires. Final run: State Parks' Boat Launches layer (117 features) has no Plese Flats/Riverside feature; Spokane County Parks MapServer returned non-JSON. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pl19_g.png): shore in shadow, no distinct ramp; some residual closure uncertainty. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Plum Landing": {
+      "status": "verified",
+      "lat": 47.551524,
+      "lon": -121.850756,
+      "accessType": "Concrete boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 271, concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=271&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is WDFW's own boat-ramp feature. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/plum.png) puts it at the water's edge below the lot. Legal access: WDFW Plum page (https://wdfw.wa.gov/places-to-go/water-access-sites/plum-626) lists 1 concrete ramp, open year-round, with extra parking and a restroom 0.25 mi upstream at SE Fish Hatchery Rd and 372nd Ave SE; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Pass required.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27129059046%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~323), the ramp is right of the NHD centreline. Confirmed on imagery."
+    },
+    "Queets Trailhead": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): The nearest NPS launch POI is 'Queets Campground' Boat Launch (OBJECTID 20692; 47.628058, -124.017520), 427 m from v1's Queets Trailhead point, so it is a different site. Promote only if North/the coding agent agrees to relabel the put-in as Queets Campground (label change not made here). Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Queets relabel not approved."
+    },
+    "Red Barn Access (Winthrop)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): Red Barn is the Town of Winthrop's Mack Lloyd Park (WWRP grant record), but no Town GIS/launch coordinate or access page was found; USFWS features nearby are Winthrop hatchery only. Needs Town of Winthrop answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/rb19_g.png, z19) shows a clear path from the lot behind the Barn to the gravel shore (water end ~48.47608,-120.18798; river-left per NHDPlus 144385429). But access status is not clear enough: the Town's 2024 Park Plan (https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf) says the bank 'has been used informally' for water access, is severely eroding, and the Town 'has funding to install a new water access pathway' for hand launch (RCO-funded, construction anticipated 2024); completion was not confirmed. Construction/legal-status uncertainty, so not placed."
+    },
+    "Roza Recreation Site": {
+      "status": "verified",
+      "lat": 46.76391497718437,
+      "lon": -120.45664026056583,
+      "accessType": "Boat ramp",
+      "operator": "Bureau of Land Management (Wenatchee Field Office)",
+      "sourceName": "BLM National Recreation Site Points, 'Roza Recreation Site' Boat Ramp (OBJECTID 85215)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=85215&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is BLM's own boat-ramp feature, 49 m from the v1 candidate. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/blm_roza.png) puts it at the top of the ramp at the water's edge on the north bank. Roza is the last take-out above Roza Dam. Legal access: BLM's Yakima River Canyon page (https://www.blm.gov/visit/yakima-river-canyon-campgrounds) lists it among BLM's five developed river access sites (Bighorn, Umtanum, Lmuma Creek, Big Pines, Roza), open year-round; fees $5 day-use, $15 overnight.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336224%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~116), the ramp is on the north-east bank, left of the NHD centreline (~30 m). Confirmed on imagery."
+    },
+    "Sauk Prairie (Darrington)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency launch feature found in USFS INFRA, WDFW, Snohomish County Parks or DNR layers. Manager unknown. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+    },
+    "Streator Crossing": {
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 47.589786,
+        "lon": -124.107848,
+        "feature": "NPS Public POIs 'Streaters' Boat Launch (OBJECTID 21737)"
+      },
+      "accessType": "Access facility (approximate location)",
+      "sourceName": "National Park Service, Olympic NP: Queets Area Brochure",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/queets-area-brochure.htm",
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?outFields=*&outSR=4326&f=json&objectIds=21737",
+      "verifiedOn": "2026-10-25",
+      "directions": "Queets River Rd to the NPS Streator Crossing launch; the main channel is ~60 m beyond the POI across a gravel bar (a side channel is closer).",
+      "note": "NPS POI is in vegetation ~60 m from the main channel (~20 m from a side channel) (research/raw/batch3/streaters.png). Restrictions: winter storms can damage roads and boat launches (NPS); log-jam hazards (NPS); side-channel vs main channel"
+    },
+    "Sultan Sportsman Park": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency launch feature: King County/Snohomish County layers found nothing; WDFW's nearest is Jonker (560 m, different site). City of Sultan GIS not found. Needs City of Sultan answer. Imagery pass (2026-10-25, not promoted): Access OK in principle (Snohomish County shoreline access inventory lists 'Sportsman's Park, WDFW, Boat launch'). Imagery (research/raw/batch4/su19_g.png, su19b_g.png, z19) around AW 47.86078,-121.82127: the confluence point is wooded, the lot north of US 2 looks like a gravel/staging yard, and no ramp to the water is visible. Not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "T.J. Meenach Bridge": {
+      "status": "pending",
+      "note": "Candidate is a generic American Whitewater 'Put In' point only; no managing-agency source or coordinate for a T.J. Meenach Bridge launch found. Final run: no City of Spokane or Spokane County launch feature found. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+    },
+    "Tanner Road Access": {
+      "status": "pending",
+      "note": "Candidate is American Whitewater only (designated parking on Tanner Road per AW); no city/county agency page or coordinate found. Final run: King County features nearby are Snoqualmie Valley Trail only (~790 m); DNR has Mount Si trailheads (1.4 km). No agency launch. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Troy Boat Launch": {
+      "status": "verified",
+      "lat": 45.945165,
+      "lon": -117.450093,
+      "accessType": "Boat ramp (trailered, 1 lane)",
+      "operator": "Oregon Department of Fish and Wildlife",
+      "sourceName": "Oregon State Marine Board Boating Access Sites (public), 'Troy Access' (ObjectId 287; manager/owner ODFW; facility Boat Ramp; public_display Yes)",
+      "sourceUrl": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Boating_Access_Sites_OA/FeatureServer/0/query?objectIds=287&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Troy is in Oregon (Wallowa County). Coordinate is the Oregon State Marine Board's own boating-access point, which lists ODFW as manager and owner, 1 trailered ramp lane and parking. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/troy.png) puts it at the head of the gravel access on the south-east bank just upstream (south-west) of the Troy bridge, about 10-15 m from the water through the tree gap; the v1/OSM point is ~40 m away. Legal access: OSMB lists it as a public boating access site (OSMB boat-ramp map), and BLM's Wallowa & Grande Ronde Wild and Scenic Rivers page names Troy as a river access point. The OSMB record has fees='Yes' but USEFEE='No'; fee status is unclear. BLM says free self-issued river permits are required for boating the Wallowa/Grande Ronde in Oregon.",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27109440274%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~47 on the flowline), the access is on the south-east bank, right of the NHD centreline. Confirmed on imagery."
+    },
+    "Turkey Hole": {
+      "status": "verified",
+      "lat": 45.740386,
+      "lon": -121.228337,
+      "accessType": "Hand launch (take-out only)",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (feature 914, 'Take-out', comment 'Take-out only.', edited 2025-02)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=914&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Coordinate is WDFW's own hand-launch/take-out feature, separate from the parking-area point (45.73986, -121.22888). Esri World Imagery (z19, checked 2026-10-25) puts it on the south bank under tree cover, about 10 m from open water. Legal access: the WDFW Turkey Hole page (https://wdfw.wa.gov/places-to-go/water-access-sites/turkey-hole-1534) says 'Turkey Hole (RM 4.8) is the last WDFW-designated take-out above Lyle Falls... This launch is for take-out only' and warns of hazardous water and active tribal fishing downstream. WDFW-managed, no closure. Pass required. Do not continue downstream.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27147210062%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~255), the take-out is about 23 m left of the NHD centreline, on the south bank. The WDFW parking point is also south. Confirmed on imagery."
+    },
+    "Twisp Access": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/twisp_g.png): no launch visible at the park/pool lot; no agency access source. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    "Umtanum Recreation Site": {
+      "status": "verified",
+      "lat": 46.855657557970545,
+      "lon": -120.4836324396714,
+      "accessType": "Boat ramp",
+      "operator": "Bureau of Land Management (Wenatchee Field Office)",
+      "sourceName": "BLM National Recreation Site Points, 'Umtanum Campground' Boat Ramp (OBJECTID 85117)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=85117&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is BLM's own boat-ramp feature, 44 m from the v1 candidate. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/blm_umtanum.png) puts it at the water's edge on the east bank just upstream of the Umtanum footbridge. Legal access: BLM's Yakima River Canyon page (https://www.blm.gov/visit/yakima-river-canyon-campgrounds) lists it among BLM's five developed river access sites (Bighorn, Umtanum, Lmuma Creek, Big Pines, Roza), open year-round; fees $5 day-use, $15 overnight.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336248%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~197, south), the ramp is on the east bank, left of the NHD centreline (~34 m). Confirmed on imagery."
+    },
+    "Vernita Bridge": {
+      "status": "verified",
+      "lat": 46.639961,
+      "lon": -119.743035,
+      "accessType": "Unimproved boat ramp",
+      "operator": "Washington Department of Fish and Wildlife",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 25, unimproved; comment 'Location confirmed by R Finger, April 2025')",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=25&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is WDFW's own field-confirmed boat-ramp feature, not the site/staging point v1 used. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/vernita25.png) puts it on a gravel opening a few metres from the Columbia on the north shore, about 0.6 mi west (upstream) of Vernita Bridge, consistent with NPS's 'north shore just west of the bridge'. WDFW's second ramp feature (38, 'Location assigned', 46.643980, -119.734184) is in vegetation ~40 m from the water by the bridge and was not used. Legal access: WDFW Vernita Bridge page (https://wdfw.wa.gov/places-to-go/water-access-sites/vernita-bridge-1047) lists 2 unimproved ramps, open year-round; WaterAccessSites layer (https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WaterAccessSites/FeatureServer/1) shows WDFW-managed, no closure. Discover Pass or WDFW Vehicle Access Pass required.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150580585%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~62 on the flowline), the ramp is on the north shore, left of the NHD centreline. Matches imagery and NPS."
+    },
+    "Waterfront Park (Leavenworth)": {
+      "status": "pending",
+      "note": "Final run (2026-10-25): City of Leavenworth's ArcGIS layers are District_Park and Parking_Zones only (no launch feature); no agency launch coordinate. Needs City of Leavenworth answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/waterfront_g.png): several beaches, no single launch; no City access page found."
+    },
+    "White Bluffs Boat Launch": {
+      "status": "verified",
+      "lat": 46.674449,
+      "lon": -119.453933,
+      "accessType": "Concrete boat ramp (two lanes)",
+      "operator": "U.S. Fish and Wildlife Service (Hanford Reach National Monument)",
+      "sourceName": "USFWS Facilities/Property points (public view), 'White Bluffs Boat Ramp' (ObjectID 1215, asset 10004685, Public_Use 'Public Use', status Valid)",
+      "sourceUrl": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_HQ_Fac_Property_Pt_PublicView/FeatureServer/0/query?objectIds=1215&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 2. Coordinate is USFWS's own asset point for the ramp, separate from its 'White Bluffs Boat Ramp Parking' point (46.675380, -119.453112). Esri World Imagery (z19, checked 2026-10-25, research/raw/batch2/whitebluffs.png) puts it on the concrete ramp a few metres from the water's edge (the v1/OSM slipway point is ~11 m away). Legal access: USFWS Hanford Reach pages (https://www.fws.gov/national-monument/hanford-reach and .../visit-us/activities/boating---motorized) describe the concrete two-lane White Bluffs Boat Launch on the Wahluke Unit. It is CLOSED to launching motorized craft Nov 1-Jun 30 (waterfowl sanctuary), but loading/unloading non-motorized craft (canoes, kayaks, rafts) is allowed year-round, though you may have to carry boats to/from the parking lot. Monument is open sunrise to sunset; the launch is open 2 h before sunrise to 2 h after sunset for fishing entry (USFWS 2025 regulations brochure).",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150580600%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~204), the ramp is on the east/south-east bank, left of the NHD centreline (~270 m; the reach is wide here). Confirmed on imagery."
+    },
+    "Whitney Bridge": {
+      "status": "verified",
+      "lat": 47.282744,
+      "lon": -122.054858,
+      "accessType": "Non-motorized boat put-in area",
+      "operator": "King County Parks and Recreation",
+      "sourceName": "King County Parks facility points (PARK_FACILITY_POINT_231), 'Boat Put-in Area (Non-motorized)' at Whitney Bridge Park (OBJECTID 327; owner, manager and maintainer King County Parks and Recreation)",
+      "sourceUrl": "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/PARK_FACILITY_POINT_231/FeatureServer/0/query?objectIds=327&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-10-25",
+      "note": "Batch 3. Coordinate is King County Parks' own designated non-motorized boat put-in feature, 32 m from the v1/AW candidate. Esri World Imagery (z19, checked 2026-10-25, research/raw/batch3/whitney.png) puts it on the north bank just upstream (west) of the SE Green Valley Rd/212th Way SE bridge, about 10 m from the water through the bank vegetation. King County's same layer also has a 'Boat Launch Trailer Ramp' (OBJECTID 326; 47.282577, -122.054189) just downstream of the bridge, about 15 m from the water, as an alternative. Legal access: King County owns and manages Whitney Bridge Park (county GIS) and lists it among its parks (SE Green Valley Rd and 218th Ave SE, Auburn); King County Code 7.12.205.E permits boat launching in designated and posted areas, which this feature is. No fee or hours found on a county page (needs agency answer if hours matter).",
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-10-25",
+      "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
+      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27130904196%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
+      "bankNote": "Facing downstream (flow bearing ~289), the put-in area is on the north bank, right of the NHD centreline (~47 m; artificial path). Matches AW's 'take out on river right at Whitney Bridge'. Confirmed on imagery."
+    }
+  }
+}

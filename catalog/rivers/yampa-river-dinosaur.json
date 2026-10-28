@@ -1,0 +1,76 @@
+{
+  "id": "yampa-river-dinosaur",
+  "name": "Yampa River — Deerlodge Park and Yampa Canyon",
+  "gauge": "09260050",
+  "gaugeName": "Yampa River at Deerlodge Park, CO (USGS 09260050)",
+  "lat": 40.45,
+  "lon": -108.7,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Lower Yampa into Dinosaur National Monument: the approach to Deerlodge Park and the permitted multi-day Yampa Canyon trip to Split Mountain, UT.",
+  "state": "CO",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "west-cross-mountain-to-deerlodge",
+      "putIn": "West Cross Mountain Boat Ramp",
+      "takeOut": "Deerlodge Park Boat Launch",
+      "miles": 9.0,
+      "difficulty": "Class I–II",
+      "notes": "Mileage: CPW Yampa River State Park river sections.",
+      "notices": [
+        {
+          "title": "Deerlodge takeout permit",
+          "text": "NPS requires a play permit for trips entering from above Deerlodge and taking out there. Contact the River Permit Office to confirm arrangements; NPS recommends arriving after 2 pm to avoid congestion. Continuing below Deerlodge requires the appropriate canyon trip permit.",
+          "sourceName": "NPS Dinosaur NM 'Boating and Rafting' page (re-fetched 2026-10-26)",
+          "sourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "yampa-canyon-deerlodge-to-split-mountain",
+      "putIn": "Deerlodge Park Boat Launch",
+      "takeOut": "Split Mountain Boat Ramp",
+      "miles": 71.0,
+      "difficulty": "Class II–IV",
+      "notes": "NPS river permit required for all trips (Recreation.gov 250014). Warm Springs rapid. Take-out is in Utah. Mileage: NPS Dinosaur NM 'Boating in the Monument' 2025.",
+      "multiDay": true,
+      "guideTimes": [
+        {
+          "min": 5,
+          "max": 5,
+          "unit": "days",
+          "conditions": "NPS normal permitted high-use-season trip length (5 days/4 nights); an itinerary allocation, not hours afloat; overlength by one day only on rare occasions",
+          "sourceName": "NPS Dinosaur NM 'Boating in the Monument' 2025",
+          "sourceUrl": "https://www.nps.gov/dino/planyourvisit/upload/2025-Boating-in-the-Monument-accessible.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ],
+      "takeOutPoint": {
+        "state": "UT",
+        "name": "Split Mountain Boat Ramp"
+      },
+      "notices": [
+        {
+          "title": "Dinosaur river permit",
+          "text": "A river permit is required for the Yampa Canyon trip. Check NPS and Recreation.gov for the applicable season, lottery dates, fees and trip-length limits.",
+          "sourceName": "NPS Dinosaur river permits",
+          "sourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+          "checkedOn": "2026-10-26"
+        },
+        {
+          "title": "Permit",
+          "text": "NPS: play permits are required for boating upstream of the Gates of Lodore or Deerlodge Park boat ramps and for downstream travel from the Split Mountain Boat Ramp; groups launching above Deerlodge must stop at Deerlodge for boater check-in before continuing on a permitted trip.",
+          "sourceName": "NPS Dinosaur NM 'Boating and Rafting' page (re-fetched 2026-10-26)",
+          "sourceUrl": "https://www.nps.gov/dino/planyourvisit/boating-and-rafting.htm",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    }
+  ]
+}

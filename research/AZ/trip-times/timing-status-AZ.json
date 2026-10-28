@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "state": "AZ",
+  "checkedOn": "2026-10-25",
+  "purpose": "Research-only timing grade per river. Not read by the app. Source data: research/trip-times/AZ.json (paddle-guide tables) + agency multi-day durations.",
+  "grades": {
+    "sourced": "dated trip report or agency guide with time+distance on a catalog section",
+    "loosely-supported": "agency guide gives days only (no hours) or off-section/undated",
+    "unsourced": "no trip-time evidence"
+  },
+  "recommendations": {
+    "publish": "show catalog estimate",
+    "publish-with-range": "show the source-supported range",
+    "defer": "hide time until a real trip is logged"
+  },
+  "rivers": {
+    "salt-river-lower": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 6,
+      "refFlowBasis": "USGS 09502000 newest instantaneous discharge at check time (2026-10-25T21:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "salt-river-upper": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 1310,
+      "refFlowBasis": "USGS 09497500 newest instantaneous discharge at check time (2026-10-25T21:30:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "verde-river-upper": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 1,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 209,
+      "refFlowBasis": "USGS 09504000 newest instantaneous discharge at check time (2026-10-25T21:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "verde-river-camp-verde": {
+      "grade": "sourced",
+      "recommendation": "publish-with-range",
+      "agencyDurations": {},
+      "observations": 4,
+      "catalogRefSpeedMph": 2.9,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": 1940,
+      "refFlowBasis": "USGS 09506000 newest instantaneous discharge at check time (2026-10-25T21:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph derived from the AZ State Parks paddle-guide Med-band travel times (research/trip-times/AZ.json); show as a range, guide says times are approximate."
+    },
+    "verde-river-scenic": {
+      "grade": "sourced",
+      "recommendation": "publish-with-range",
+      "agencyDurations": {},
+      "observations": 1,
+      "catalogRefSpeedMph": 2.6,
+      "refSpeedIsPlaceholder": false,
+      "catalogRefFlowCfs": 1940,
+      "refFlowBasis": "USGS 09506000 newest instantaneous discharge at check time (2026-10-25T21:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph derived from the AZ State Parks paddle-guide Med-band travel times (research/trip-times/AZ.json); show as a range, guide says times are approximate."
+    },
+    "verde-river-wild": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "childs-sheep-bridge": {
+          "basis": "AZ State Parks Paddle Map 2 travel-time table: Childs to Sheep Bridge 32.5 mi, '2 or 3 days' at Med (500-3000 cfs); 4 or 5 Days Low, 1 or 2 Days High",
+          "source": "https://arizona-content.usedirect.com/storage1/gallery/downloads/VERI_Paddle_Map_2.pdf",
+          "days": [
+            2,
+            3
+          ],
+          "miles": 33.3
+        }
+      },
+      "observations": 2,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 2090,
+      "refFlowBasis": "USGS 09508500 newest instantaneous discharge at check time (2026-10-25T21:29:15+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "verde-river-lower": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 775,
+      "refFlowBasis": "USGS 09510000 newest instantaneous discharge at check time (2026-10-25T21:30:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "gila-river-gila-box": {
+      "grade": "unsourced",
+      "recommendation": "defer",
+      "agencyDurations": {},
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 861,
+      "refFlowBasis": "USGS 09448500 newest instantaneous discharge at check time (2026-10-25T21:30:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "colorado-river-grand-canyon": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "lees-ferry-diamond-creek": {
+          "basis": "NPS Grand Canyon river trips page: '12 to 25 Day Noncommercial River Trips'; 'Motor trips usually take a minimum of 7 days to reach Diamond Creek'",
+          "source": "https://www.nps.gov/grca/planyourvisit/whitewater-rafting.htm",
+          "days": [
+            12,
+            25
+          ],
+          "miles": 225.0
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 7700,
+      "refFlowBasis": "USGS 09380000 newest instantaneous discharge at check time (2026-10-25T21:00:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    },
+    "colorado-river-lower-gorge": {
+      "grade": "loosely-supported",
+      "recommendation": "defer",
+      "agencyDurations": {
+        "diamond-creek-pearce-ferry": {
+          "basis": "NPS Grand Canyon: 'Noncommercial river trips which launch from Diamond Creek (river mile 225) take 2 to 5 days'",
+          "source": "https://www.nps.gov/grca/planyourvisit/overview-diamond-ck.htm",
+          "days": [
+            2,
+            5
+          ],
+          "miles": 52.0
+        }
+      },
+      "observations": 0,
+      "catalogRefSpeedMph": 3.0,
+      "refSpeedIsPlaceholder": true,
+      "catalogRefFlowCfs": 12200,
+      "refFlowBasis": "USGS 09404200 newest instantaneous discharge at check time (2026-10-25T21:30:00+00:00 UTC), not a typical-season value",
+      "note": "refSpeedMph 3.0 is an unsupported placeholder required by the schema; hide float-time estimates for this river until real trip timings exist."
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "colorado-river-pumphouse",
+  "name": "Colorado River — Pumphouse to State Bridge",
+  "gauge": "09058000",
+  "gaugeName": "Colorado River near Kremmling, CO (USGS 09058000)",
+  "lat": 39.92,
+  "lon": -106.58,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Upper Colorado below Gore Canyon: BLM Pumphouse and Radium fee sites, Class II–III Little Gore and Red Gorge, to Eagle County's State Bridge.",
+  "state": "CO",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "pumphouse-to-radium",
+      "putIn": "Pumphouse Boat Launch",
+      "takeOut": "Radium Boat Ramp",
+      "miles": 4.0,
+      "difficulty": "Class II–III",
+      "notes": "Little Gore Canyon. BLM fee sites at both ends. Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 2.5,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "radium-to-rancho-del-rio",
+      "putIn": "Radium Boat Ramp",
+      "takeOut": "Rancho del Rio",
+      "miles": 6.0,
+      "difficulty": "Class II–III",
+      "notes": "Red Gorge. Rancho del Rio is a private fee site. Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 3,
+          "max": 4,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Private access",
+          "text": "BLM guide: Rancho del Rio is a private recreation fee site.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "id": "rancho-del-rio-to-state-bridge",
+      "putIn": "Rancho del Rio",
+      "takeOut": "State Bridge Boat Ramp",
+      "miles": 4.0,
+      "difficulty": "Class I–II",
+      "notes": "Private fee site at put-in. Mileage: BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015.",
+      "guideTimes": [
+        {
+          "min": 1,
+          "max": 1.5,
+          "unit": "hours",
+          "conditions": "BLM Upper Colorado River guide (2015) floating-time planning range. Stops and flow band not specified by the source; a planning range, not a calibrated estimate.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Private access",
+          "text": "BLM guide: Rancho del Rio is a private recreation fee site.",
+          "sourceName": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015",
+          "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf",
+          "checkedOn": "2026-10-26"
+        }
+      ]
+    }
+  ]
+}

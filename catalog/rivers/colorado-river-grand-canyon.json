@@ -1,0 +1,38 @@
+{
+  "id": "colorado-river-grand-canyon",
+  "name": "Colorado River (Grand Canyon)",
+  "gauge": "09380000",
+  "gaugeName": "Colorado River at Lees Ferry, AZ",
+  "lat": 36.866,
+  "lon": -111.5871,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Grand Canyon from Lees Ferry: multi-week whitewater trips. NPS permit required (weighted lottery for noncommercial trips); Diamond Creek take-out crosses Hualapai land.",
+  "sections": [
+    {
+      "id": "lees-ferry-diamond-creek",
+      "putIn": "Lees Ferry Boat Launch",
+      "takeOut": "Diamond Creek (Grand Canyon)",
+      "miles": 225.0,
+      "difficulty": "Not rated by agency (big-water whitewater)",
+      "notes": "NPS: Diamond Creek is river mile 225. NPS permit required (noncommercial weighted lottery). Hualapai Tribe charges separate fees to take out at Diamond Creek. Gauge at Lees Ferry is at the start; tributary inflow changes flow downstream.",
+      "multiDay": true
+    },
+    {
+      "id": "lees-ferry-pearce-ferry",
+      "putIn": "Lees Ferry Boat Launch",
+      "takeOut": "Pearce Ferry Boat Launch",
+      "miles": 277.0,
+      "difficulty": "Not rated by agency (big-water whitewater)",
+      "notes": "NPS: 'the entire stretch to river mile 277 (Pearce Ferry) is free-flowing whitewater'; NPS regulations describe the river between 'river mile 0 at Lees Ferry and river mile 279 near Pearce Ferry'. Mileage uses 277 from the Diamond Creek page. Take out at Pearce Ferry or South Cove (NPS); the Pearce Ferry ramp is for Grand Canyon river-trip take-outs only (no launching). NPS permit required.",
+      "multiDay": true
+    }
+  ],
+  "state": "AZ",
+  "timezone": "America/Phoenix",
+  "multiDay": true,
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  }
+}

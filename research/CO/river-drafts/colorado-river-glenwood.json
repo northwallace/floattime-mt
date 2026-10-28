@@ -1,0 +1,109 @@
+{
+  "id": "colorado-river-glenwood",
+  "name": "Colorado River (Dotsero to Glenwood Springs, incl. Glenwood Canyon)",
+  "state": "CO",
+  "status": "draft",
+  "whyDraft": "BLM guide gives Dotsero→Bair Ranch 6.5 mi / 3–5 h, but Bair Ranch, Grizzly Creek and Shoshone have no official GIS point yet; I-70 canyon access status changes.",
+  "blockers": [
+    "exact-location",
+    "current-status"
+  ],
+  "accessPoints": [],
+  "candidateSections": [
+    {
+      "id": "colorado-river-glenwood--aw380",
+      "awId": "380",
+      "description": "06. Hanging Lake Exit 125 (I-70) to Shoshone Power Plant Exit 123 (I-70)",
+      "difficulty": "IVtoVstandoutVplus",
+      "milesCandidate": 2.5,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09070500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/380/main"
+    },
+    {
+      "id": "colorado-river-glenwood--aw4260",
+      "awId": "4260",
+      "description": "07. Shoshone Power Plant, Exit 123 (I-70) to Grizzly Creek, Exit 121 (I-70)",
+      "difficulty": "IIItoIV",
+      "milesCandidate": 1.7,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09070500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/4260/main"
+    },
+    {
+      "id": "colorado-river-glenwood--aw5428",
+      "awId": "5428",
+      "description": "08. Grizzly Creek to Two Rivers Park",
+      "difficulty": "IIplusstandoutIII",
+      "milesCandidate": 5.9,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09070500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/5428/main"
+    },
+    {
+      "id": "colorado-river-glenwood--aw10349",
+      "awId": "10349",
+      "description": "09. Two Rivers to South Canyon",
+      "difficulty": "IIstandoutIII",
+      "milesCandidate": 5.3,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09085100",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/10349/main"
+    },
+    {
+      "id": "colorado-river-glenwood--aw10348",
+      "awId": "10348",
+      "description": "10. South Canyon to New Castle",
+      "difficulty": "I",
+      "milesCandidate": 6.7,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09085100",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/10348/main"
+    },
+    {
+      "id": "colorado-river-glenwood--aw10682",
+      "awId": "10682",
+      "description": "11. New Castle to Cameo",
+      "difficulty": "I",
+      "milesCandidate": 61.9,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": null,
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/10682/main"
+    },
+    {
+      "id": "colorado-river-glenwood--aw4261",
+      "awId": "4261",
+      "description": "12. Big Sur",
+      "difficulty": "III",
+      "milesCandidate": 1.2,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09095500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/4261/main"
+    },
+    {
+      "id": "colorado-river-glenwood--aw10520",
+      "awId": "10520",
+      "description": "13. Grand Junction Town",
+      "difficulty": "I",
+      "milesCandidate": 31.6,
+      "milesSource": "American Whitewater (priority 2; no official same-endpoint mileage yet)",
+      "gaugeCandidate": "09163500",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/10520/main"
+    },
+    {
+      "id": "dotsero-to-bair-ranch",
+      "putIn": "Dotsero Landing Boat Ramp",
+      "takeOut": "Bair Ranch",
+      "milesCandidate": 6.5,
+      "milesSource": "BLM Upper Colorado River Guide (Pumphouse to Dotsero), 2015 Map 12 'Length: 6.5 miles'",
+      "guideRangeCandidate": {
+        "min": 3,
+        "max": 5,
+        "unit": "hours",
+        "sourceUrl": "https://rms.memberclicks.net/assets/NRRD/RiverGuides/Upper_Colorado_River_Guide_2015.pdf"
+      },
+      "heldBecause": "Bair Ranch has no official coordinate."
+    }
+  ],
+  "checkedOn": "2026-10-26"
+}

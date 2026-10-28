@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "state": "UT",
+  "checkedOn": "2026-10-25",
+  "purpose": "PROPOSALS ONLY. Nothing here is applied to the catalog. Each needs a human decision.",
+  "proposals": [
+    {
+      "label": "Mineral Bottom Boat Ramp",
+      "inventoryId": "UT-ACC-0012",
+      "current": {
+        "lat": 38.524298,
+        "lon": -109.993297,
+        "source": "BLM GIS OBJECTID 65135"
+      },
+      "proposed": {
+        "lat": 38.5249,
+        "lon": -109.9933,
+        "source": "NPS Public POIs (Canyonlands) 'Mineral Bottom' point, research/raw/gis/nps_CANY.json"
+      },
+      "why": "Imagery (research/raw/imagery/mineral_bottom_boat_ramp.png): the NPS point is at the launch beside the water, while the BLM point is on the access road 60-70 m south. The NPS is not the managing agency (the site is BLM), so a human must decide whether an NPS coordinate is acceptable.",
+      "status": "proposal"
+    },
+    {
+      "label": "Cisco Takeout",
+      "inventoryId": "UT-ACC-0014",
+      "applied": "coordinate taken from the BLM Cisco Takeout page (managing agency) instead of BLM GIS 67918",
+      "old": {
+        "lat": 38.970099,
+        "lon": -109.252391
+      },
+      "new": {
+        "lat": 38.970407,
+        "lon": -109.2506984
+      },
+      "why": "Imagery: the GIS point is on the access loop about 150 m from the river; the BLM page coordinate is at the head of the concrete ramp. Both are BLM. Recorded here for review even though it is already in the data.",
+      "status": "applied-in-package (review)"
+    },
+    {
+      "label": "San Rafael Swinging Bridge Take-out",
+      "inventoryId": "UT-ACC-0025",
+      "proposed": null,
+      "why": "Three BLM coordinates disagree: GIS 71217 in the campground loop, the Swinging Bridge POI at the north end of the bridge, and the trailhead page about 1.6 km away. A human should mark the real take-out on imagery (research/raw/imagery/san_rafael_swinging_bridge_take_out_z17.png).",
+      "status": "needs-decision"
+    },
+    {
+      "label": "Potash Boat Ramp",
+      "inventoryId": "UT-ACC-0019",
+      "proposed": null,
+      "why": "The NPS POI is in the river. The ramp seen on imagery is about 110 m south (research/raw/imagery/potash_boat_ramp.png). There is no agency coordinate for the ramp itself.",
+      "status": "needs-decision"
+    }
+  ]
+}

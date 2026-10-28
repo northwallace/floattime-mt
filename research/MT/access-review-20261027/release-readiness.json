@@ -1,0 +1,111 @@
+{
+  "checkedOn": "2026-10-27",
+  "recommendation": "Ready for a limited Montana map launch, pending explicit publishing authorization and post-deploy checks.",
+  "published": false,
+  "montanaSections": 54,
+  "releasedMaps": 34,
+  "precision": {
+    "unavailable": 20,
+    "exact": 28,
+    "approximate": 6
+  },
+  "accessHolds": [
+    {
+      "river": "bitterroot",
+      "section": "florence-buckhouse",
+      "reason": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch."
+    },
+    {
+      "river": "clark-fork",
+      "section": "sharon-caras",
+      "reason": "The exact Caras Park landing has not been confirmed. The city documents Silver Park as a downtown take-out, but that is a different endpoint and this listing has not yet been revised or remeasured."
+    },
+    {
+      "river": "clark-fork",
+      "section": "caras-kelly-island",
+      "reason": "Do not use this listing to plan a casual float. Missoula identifies Silver Park as the last public exit before the downstream Grass Valley diversion dam, with Kelly Island below the dam. A suitable route and access plan have not been established."
+    },
+    {
+      "river": "clarks-fork-yst",
+      "section": "bridger-edgar",
+      "reason": "An exact legal take-out at Edgar has not been established for this listing. A town or bridge name is not enough to plan an exit."
+    },
+    {
+      "river": "dearborn",
+      "section": "hwy200-missouri",
+      "reason": "The launch label covers a broad area, and the Missouri confluence is not a confirmed road-accessible take-out. Both endpoints need a specific access plan."
+    },
+    {
+      "river": "jefferson-upper",
+      "section": "silver-star-parsons",
+      "reason": "The Parsons Bridge / Waterloo label needs to be resolved to one confirmed access site. A diversion near Waterloo also requires current local guidance."
+    },
+    {
+      "river": "jefferson-upper",
+      "section": "parsons-parrott",
+      "reason": "The launch label is ambiguous, and the official Parrot Castle record describes difficult river access with no boat ramp. A suitable take-out for the planned craft has not been confirmed."
+    },
+    {
+      "river": "rock-creek",
+      "section": "dalles",
+      "reason": "The launch label combines Bitterroot Flat and Dalles, which are different locations. This section needs a single confirmed put-in and landing before its mileage and timing can be offered."
+    },
+    {
+      "river": "rock-creek",
+      "section": "harrys-votm",
+      "reason": "The former Valley of the Moon pin was across the road from river access. The actual usable take-out remains unconfirmed; this listing is not ready for trip planning."
+    },
+    {
+      "river": "rock-creek",
+      "section": "votm-clinton",
+      "reason": "The Valley of the Moon launch and a legal boat take-out near Clinton / the Clark Fork confluence remain unconfirmed. Do not treat the confluence as a guaranteed exit."
+    },
+    {
+      "river": "swan",
+      "section": "swan-lake-bigfork",
+      "reason": "A usable take-out above the Wild Mile has not been confirmed. The mapped Bigfork boat ramp is a different location and must not be substituted. This section is not ready for trip planning."
+    },
+    {
+      "river": "yellowstone-upper",
+      "section": "gardiner-corwin",
+      "reason": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing."
+    },
+    {
+      "river": "yellowstone-upper",
+      "section": "corwin-yankee-jim",
+      "reason": "The intended Corwin Springs boat launch has not been confirmed. Carbella is documented, but one confirmed endpoint is not enough to plan this canyon trip."
+    }
+  ],
+  "timingUnavailable": [
+    "gallatin-lower"
+  ],
+  "reviewedRoutes": 13,
+  "gpsRemainingTime": false,
+  "browserMapsChecked": 34,
+  "gaugeSitesResponding": 24,
+  "pythonTests": 61,
+  "javascriptTests": 29,
+  "renderDiskVerified": {
+    "sizeGB": 1,
+    "mountPath": "/opt/render/project/src/data"
+  },
+  "productionKeyMetadataVerified": {
+    "expires": "2027-10-26",
+    "referrers": [
+      "https://floateta.com",
+      "https://www.floateta.com"
+    ],
+    "privilege": "Static basemap tiles"
+  },
+  "postDeployChecks": [
+    "Live production-key imagery and labels",
+    "One sourced map and river line",
+    "Correction submission and persistence",
+    "HTTPS both domains",
+    "Recent USGS reading"
+  ],
+  "notFieldTested": [
+    "Phone GPS permission/location accuracy",
+    "Observed on-water trip-time accuracy"
+  ]
+}

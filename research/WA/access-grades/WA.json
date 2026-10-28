@@ -1,0 +1,1049 @@
+{
+  "version": 1,
+  "state": "WA",
+  "purpose": "Research-only three-level access grades. NOT read by the app. catalog/map_points/WA.json stays verified|pending; 'access-verified' here is the source of the proposed middle tier (docs/proposed-access-verified-schema.md). Never merge into the catalog.",
+  "levels": {
+    "verified": "official launch/ramp GIS point, or official boating access + ramp/path clearly visible in imagery; mirrors catalog/map_points/WA.json",
+    "access-verified": "official/land-manager source explicitly names boating/launching/put-in at the site; exact water entry not pinned (approximate area)",
+    "pending": "only AW/OSM/outfitter/informal or uncertain access; or official source mentions only park/trail/activity/generic river access; or closure/construction uncertainty"
+  },
+  "closureUncertain": [
+    "Cashmere Riverside Park",
+    "Plese Flats",
+    "T.J. Meenach Bridge",
+    "Red Barn Access (Winthrop)",
+    "Little Spokane (excluded; not in registry)"
+  ],
+  "points": {
+    "Averill (McFarland Creek)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 48.150954,
+        "lon": -120.057186,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Gravel boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 89, gravel) at WDFW's McFarland access",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=89&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "BZ Corner": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 45.851342,
+        "lon": -121.509918,
+        "feature": "USFS INFRA 'Bz Launch Site' point (parking/offloading loop)"
+      },
+      "areaRadiusM": 200,
+      "directions": "Park in the USFS BZ Launch Site lot at BZ Corner (SR 141). From the offloading area carry down the 0.1-mile launch trail (metal boat-slide railing) to the river; put in at the bottom of the trail.",
+      "sourceName": "USDA Forest Service, Columbia River Gorge NSA: BZ Launch Site & Trail (#4413)",
+      "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+      "sourceQuote": "'Boat launch, take-outs and trail are open for use. This day-use site allows kayakers and rafters to put into the Lower White Salmon River.' The launch trail is 1/10 mile with a boat-slide railing.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "steep-carry-0.1mi",
+        "commercial-use-permits-apply-to-outfitters"
+      ],
+      "whyNotLevel1": "USFS point is the parking/offloading loop ~150 m from the water; the river end of the trail has no agency coordinate and is hidden by canyon/tree cover in imagery (research/raw/batch4/bz_g.png)."
+    },
+    "Barrier Dam (Cowlitz Salmon Hatchery)": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 46.51602,
+        "lon": -122.63773,
+        "feature": "WDFW Facilities GIS Boat Ramp feature 146 (concrete ramp at lot edge)"
+      },
+      "areaRadiusM": 75,
+      "directions": "Tacoma Power Barrier Dam Boat Launch below the Cowlitz Salmon Hatchery barrier dam; ramp from the paved lot down the gravel shore.",
+      "sourceName": "Tacoma Power: Cowlitz Salmon Hatchery (Barrier Dam Boat Launch)",
+      "sourceUrl": "https://www.mytpu.org/community-environment/fish-wildlife-environment/cowlitz-river-project/cowlitz-fisheries-programs/cowlitz-salmon-hatchery/",
+      "sourceQuote": "Tacoma Power: 'Barrier Dam Boat Launch provides free river access'; area hours May 1-Nov 4 4 a.m.-10 p.m., Nov 7-Apr 20 6 a.m.-6 p.m.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "posted hours",
+        "heavy fishing traffic"
+      ],
+      "whyNotLevel1": "WDFW ramp feature is at the paved lot edge ~30-35 m from the waterline; water end on the gravel shore not resolvable (research/raw/batch4/bd19_g.png)."
+    },
+    "Big Eddy (Methow)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [],
+      "researchCandidate": {
+        "lat": 48.4282,
+        "lon": -120.1627,
+        "source": "v1 research: AW access coordinate; 65 m from OSM Methow centerline; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": "AW only (roadside pull-out, steep bank, SR 20 MP 196.7). No manager found; the WDFW 'Big Eddy' site is the Skykomish one."
+    },
+    "Big Eddy (Skykomish)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 47.83655,
+        "lon": -121.659375,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Hand launch",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (ObjectID 27)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=27&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Big Horn Recreation Site": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.8939898,
+        "lon": -120.5004652,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Launch (open gravel/sand clearing to the water)",
+      "sourceName": "Access: BLM Yakima River Canyon page (lists Bighorn among BLM's five developed river access sites). Coordinate: North's own Google Maps marking, checked on Esri World Imagery",
+      "sourceUrl": "https://www.blm.gov/visit/yakima-river-canyon-campgrounds",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Blue Creek (Cowlitz Trout Hatchery)": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 46.483875,
+        "lon": -122.731074,
+        "feature": "WDFW Blue Creek water-access-site coordinate (site, not ramp)"
+      },
+      "areaRadiusM": 150,
+      "directions": "273 Blue Creek Lane, Toledo (Cowlitz Trout Hatchery). Use the ramp south of the lot to the shore.",
+      "sourceName": "Tacoma Power: Cowlitz Trout Hatchery (Blue Creek Boat Launch)",
+      "sourceUrl": "https://www.mytpu.org/community-environment/fish-wildlife-environment/cowlitz-river-project/cowlitz-fisheries-programs/cowlitz-trout-hatchery/",
+      "sourceQuote": "Tacoma Power: Blue Creek Boat Launch (273 Blue Creek Lane, Toledo) gives free public river access; 3-day camping in the lot.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "AMBIGUITY: OSM maps a second unnamed ramp ~400 m upstream",
+        "WDFW Blue Creek page is the ADA fishing-platform site"
+      ],
+      "whyNotLevel1": "No agency ramp coordinate; WDFW parking feature explicitly excludes Tacoma Power's launch; imagery ramp position is non-agency (research/raw/batch4/bc19_g.png)."
+    },
+    "Boggans Access": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.041693,
+        "lon": -117.253159,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Unimproved boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 250, unimproved)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=250&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Bridge View (Middle Fork Snoqualmie)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "King County: Middle Fork Snoqualmie whitewater concept plan (c. 2005, planning doc)",
+          "url": "https://your.kingcounty.gov/dnrp/library/parks-and-recreation/documents/cpg/whitewaterconceptplan.pdf"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.5472,
+        "lon": -121.542,
+        "source": "v1 research: AW access coordinate; 31 m from OSM Middle Fork centerline; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "planning-doc-only"
+      ],
+      "whyNotLevel1": "Only a ~2005 King County whitewater concept plan (planning document) lists 'Bridgeview' as a site; no current managing-agency statement. AW calls it a Forest Service roadside pull-out."
+    },
+    "Carlton Access": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 48.246454,
+        "lon": -120.117781,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Gravel boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 108, gravel)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=108&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Cashmere Riverside Park": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [],
+      "researchCandidate": {
+        "lat": 47.5247,
+        "lon": -120.4673,
+        "source": "v1 research: AW access coordinate; 91 m from OSM centerline on river right, matching AW; no OSM slipway mapped"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "closure-uncertain",
+        "flood-rock"
+      ],
+      "whyNotLevel1": "CLOSURE-UNCERTAIN - not promoted (instruction). Spring-2026 flood-rock blockage of the ramp not confirmed cleared; City of Cashmere page could not be read (access denied)."
+    },
+    "Concrete Bridge (Middle Fork Snoqualmie)": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 47.4943,
+        "lon": -121.6408,
+        "feature": "American Whitewater access coordinate (no official coordinate exists); position matches King County's 'just below the concrete bridge' description"
+      },
+      "areaRadiusM": 150,
+      "directions": "SE Lake Dorothy Rd at the concrete bridge over the Middle Fork; park on the road shoulder and use the hand-boat access just below the bridge. Hand-carry only.",
+      "sourceName": "King County Parks: Middle Fork Snoqualmie Natural Area",
+      "sourceUrl": "https://kingcounty.gov/en/dept/dnrp/nature-recreation/parks-recreation/king-county-parks/natural-working-lands/middle-fork-snoqualmie",
+      "sourceQuote": "'a hand boat (kayaks, rafts, canoes) river access point, situated just below the concrete bridge over the Snoqualmie River ... on Southeast Lake Dorothy Road'; road-shoulder parking.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "hand-carry-only",
+        "shoulder-parking-only"
+      ],
+      "whyNotLevel1": "No agency coordinate; dense tree cover hides the access (research/raw/batch4/concrete_g.png). Centre is a non-agency coordinate used only to place the approximate area."
+    },
+    "Copper Creek": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 48.5911167,
+        "lon": -121.3733613,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Raft take-out / launch",
+      "sourceName": "NPS Public POIs, 'Copper Creek Raft Take-out/Launch' (OBJECTID 20467, type Boat Launch, Ross Lake NRA)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=20467&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Dryden Dam Access": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 47.555227,
+        "lon": -120.574097,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Hand launch (below the dam)",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (ObjectID 49, 'Dryden Dam')",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=49&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Fall City Access": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [],
+      "researchCandidate": {
+        "lat": 47.5696,
+        "lon": -121.8882,
+        "source": "v1 research: AW access coordinate (47.56963,-121.88822); on river right as AW describes; 129 m from OSM centerline; nearest agency site (WDFW Raging River) is 463 m away, a different access"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "replacement-proposed"
+      ],
+      "whyNotLevel1": "No official source for the v1 Fall City (SR 202 bridge) site. WDFW Raging River access ~500 m away is official - see replacement-proposals-WA.json (proposal only; label kept unchanged)."
+    },
+    "Flaming Geyser State Park": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "Washington State Parks: Flaming Geyser State Park (activities list only)",
+          "url": "https://parks.wa.gov/find-parks/state-parks/flaming-geyser-state-park"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.2728,
+        "lon": -122.024,
+        "source": "v1 research: AW access coordinate (gorge take-out AW point 47.2729,-122.0243 is 25 m away — merged); 98 m from OSM Green centerline on river left, matching AW text; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "borderline"
+      ],
+      "whyNotLevel1": "BORDERLINE. State Parks' park page lists kayaking / whitewater kayaking among park activities but has no launch statement, the park is not in State Parks' Boat Launches layer, and the v1 point is the parking loop with several possible river spots. Activity list only, so not access-verified under the strict rule."
+    },
+    "Goodell Creek": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 48.6720439,
+        "lon": -121.269506,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Raft launch",
+      "sourceName": "NPS Public POIs, 'Goodell Creek Raft Launch' (OBJECTID 33925, type Boat Launch; map label 'Goodell Creek Boat Launch'; digitized from 2013 NAIP)",
+      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=33925&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Government Bridge (Sauk)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [],
+      "researchCandidate": {
+        "lat": 48.4027,
+        "lon": -121.5572,
+        "source": "v1 research: AW access coordinate; 55 m from OSM Sauk centerline on river left, matching AW's 'river left' description; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "informal"
+      ],
+      "whyNotLevel1": "AW describes an informal USFS-area access with no facilities; no agency page. Nearest agency site is USFS White Creek River Access (711 m, different site)."
+    },
+    "Hartzell Creek Boat Launch": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 47.55197,
+        "lon": -124.203328,
+        "feature": "NPS Public POIs 'Hartzell' Boat Launch (OBJECTID 33194)"
+      },
+      "areaRadiusM": 100,
+      "directions": "Queets River Rd (off US 101) to the NPS Hartzell boat launch; carry across the gravel bar to the Queets.",
+      "sourceName": "National Park Service, Olympic NP: Queets Area Brochure",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/queets-area-brochure.htm",
+      "sourceQuote": "'Boat Launches: Launch from Hartzell Creek, Streator Crossing, or the Queets Campground.' NPS Boating page also lists 'the Hartzell Boat Launch (Class II-III)'.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "winter storms can damage roads and boat launches (NPS)",
+        "log-jam hazards (NPS)",
+        "low water late summer"
+      ],
+      "whyNotLevel1": "NPS POI sits ~35-45 m inland of the gravel bar in forest, not at the water (research/raw/batch3/hartzell.png)."
+    },
+    "Headworks (Green River)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [],
+      "researchCandidate": {
+        "lat": 47.3075,
+        "lon": -121.8515,
+        "source": "v1 research: AW access coordinate; 63 m from OSM Green River centerline; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "permit-required (AW-reported)"
+      ],
+      "whyNotLevel1": "Tacoma Water land; AW reports a negotiated permit system (ID, insurance, vehicle permit, closed sunset-sunrise). No Tacoma Water page found confirming it."
+    },
+    "Heller Bar": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.086008,
+        "lon": -116.983366,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Concrete boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 244, concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=244&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Highway 2 Bridge (Tumwater)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "USFS Okanogan-Wenatchee NF: Tumwater Campground Closure",
+          "url": "https://www.fs.usda.gov/r06/okanogan-wenatchee/alerts/tumwater-campground-closure-wenatchee-river-ranger-district"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.6765,
+        "lon": -120.7343,
+        "source": "v1 research: AW access coordinate; 36 m from OSM centerline on river right, matching AW; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "adjacent-closure-area"
+      ],
+      "whyNotLevel1": "No official boating source. AW only (scramble up the bank). USFS closure order 06-17-07-16-902 keeps Tumwater Campground and Day Use Area closed (since 2014) immediately upstream; the take-out's relation to the closure boundary is unconfirmed."
+    },
+    "Hoh Oxbow Campground": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 47.811365,
+        "lon": -124.249436,
+        "feature": "WA DNR Recreation Sites 'Hoh Oxbow Campground' point (OBJECTID 588; campground, not launch)"
+      },
+      "areaRadiusM": 400,
+      "directions": "DNR Hoh Oxbow Campground off US 101 at the Hoh River bridge; hand-carry the 0.25-mile trail from the campground to the river.",
+      "sourceName": "Washington DNR Recreation Sites: Olympic Peninsula - Hoh Oxbow Campground",
+      "sourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
+      "sourceQuote": "DNR lists amenities including a 'hand boat launch' and says a 0.25-mile trail accesses the Hoh River.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "hand-carry-0.25mi",
+        "Discover Pass may be required on DNR land"
+      ],
+      "whyNotLevel1": "DNR coordinate is the campground; trail and water end under dense forest (research/raw/batch4/hohoxbow_g.png)."
+    },
+    "Hoh Rainforest Campground": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 47.858352,
+        "lon": -123.93554,
+        "feature": "NPS Public POIs 'Hoh Rain Forest' Campground point"
+      },
+      "areaRadiusM": 400,
+      "directions": "Hoh Rain Forest Campground at the end of Upper Hoh Rd (park entrance fee); put in from the campground river bank - choose the spot on site.",
+      "sourceName": "National Park Service, Olympic NP: Boating",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/boating.htm",
+      "sourceQuote": "'Hoh River (Class II-III) ... The most popular put-in locations are at the Hoh Campground (Class II) and near the park entrance station (Class II-III) on the Hoh River Road.'",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "NPS entrance fee",
+        "log-jam hazards (NPS: always scout ahead)",
+        "campground reservations required in summer"
+      ],
+      "whyNotLevel1": "NPS names the campground as a put-in but has no boat-launch POI; the river entry within the campground is not pinned."
+    },
+    "Howard Miller Steelhead Park": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "Skagit County Parks: Howard Miller Steelhead Park",
+          "url": "https://skagitcounty.net/Departments/ParksAndRecreation/parks/howardmiller.htm"
+        },
+        {
+          "name": "Skagit County: HMSP / Grandy / Sauk proposed user fee schedule effective 2025-10-01",
+          "url": "https://www.skagitcounty.net/parksandrecreation/documents/HMSP-Grandy-Sauk%20PROPOSED%20NEW%20User%20Fee%20Schedule%202025.pdf"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 48.4845,
+        "lon": -121.5951,
+        "source": "v1 research: AW access coordinate (two AW reaches agree); OSM slipway 14 m; OSM fee parking 19 m"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "borderline"
+      ],
+      "whyNotLevel1": "BORDERLINE. Skagit County's park page lists river rafting as an activity and the county's 2025 fee schedule for Howard Miller Steelhead Park / Grandy Lake / Sauk Park lists an annual boat launch permit, but no county statement names a boat launch at Howard Miller itself (Grandy Lake also has a launch). The ramp claim comes from skagiteagle.org (non-agency) and AW."
+    },
+    "Husum (above the falls)": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 45.799923,
+        "lon": -121.486067,
+        "feature": "USFS Husum Boating Site lat/lon (SR 141 roadside pull-out)"
+      },
+      "areaRadiusM": 100,
+      "directions": "Take out above Husum Falls at the USFS Husum Boating Site pull-out beside SR 141 in Husum; scout the take-out eddy before the trip - the falls are immediately downstream.",
+      "sourceName": "USDA Forest Service, Columbia River Gorge NSA: Husum Boating Site",
+      "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+      "sourceQuote": "'Husum Boating Site ... offers an opportunity to portage around Husum Falls, a class V waterfall'; day use, sunrise-sunset.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "SAFETY: take-out is immediately above Husum Falls (Class V); missing it means running the falls",
+        "day-use sunrise-sunset"
+      ],
+      "whyNotLevel1": "USFS point is the SR 141 roadside pull-out ~25-30 m from the water; the water-end take-out is under trees and not visible (research/raw/batch4/husum_g.png)."
+    },
+    "Kanaskat-Palmer State Park": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 47.32193,
+        "lon": -121.90726,
+        "feature": "American Whitewater access coordinate inside the park (no State Parks launch coordinate exists)"
+      },
+      "areaRadiusM": 300,
+      "directions": "Kanaskat-Palmer State Park (Discover Pass; 8 a.m.-dusk). Hand-carry from the day-use lots to the upper or lower put-in/take-out shown on the State Parks brochure map.",
+      "sourceName": "Washington State Parks: Kanaskat-Palmer State Park",
+      "sourceUrl": "https://parks.wa.gov/find-parks/state-parks/kanaskat-palmer-state-park",
+      "sourceQuote": "State Parks: 'Watercraft launch is by hand only at no cost' and 'Launch your raft or kayak here'; the park brochure map marks upper and lower put-in/take-out sites.",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "Discover Pass required",
+        "park hours 8 a.m.-dusk",
+        "two sites (upper/lower) - pick the one matching the section"
+      ],
+      "whyNotLevel1": "State Parks' Boat Launches layer has no feature; canyon and tree cover hide the launch (research/raw/batch4/kanaskat_g.png)."
+    },
+    "Lake Wenatchee State Park": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 47.807773,
+        "lon": -120.726132,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat launch",
+      "sourceName": "Washington State Parks Boat Launches layer, 'Lake Wenatchee' (OBJECTID 62, park ID 64000)",
+      "sourceUrl": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/WAStateParks_BoatLaunches/FeatureServer/0/query?objectIds=62&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Leidl Campground": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 45.937299,
+        "lon": -121.119316,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Concrete boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 166, 'Leidl', concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=166&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Lewis Street Access (Monroe)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 47.846531,
+        "lon": -121.971445,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Concrete boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 143, concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=143&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Lmuma Creek Recreation Site": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.81374588889957,
+        "lon": -120.45049013066262,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, 'Lmuma Campground' Boat Ramp (OBJECTID 85504)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=85504&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Lower Sauk Boat Launch": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 48.3448,
+        "lon": -121.5499,
+        "feature": "USFS recreation-site lat/lon (site entrance road)"
+      },
+      "areaRadiusM": 200,
+      "directions": "Turn into the USFS Lower Sauk Boat Launch day-use site; the launch is at the river end of the lot past the picnic shelter.",
+      "sourceName": "USDA Forest Service, Mt. Baker-Snoqualmie NF: Lower Sauk Boat Launch",
+      "sourceUrl": "https://www.fs.usda.gov/r06/mbs/recreation/lower-sauk-boat-launch",
+      "sourceQuote": "'The Lower Sauk boat launch is available for motorized and non-motorized boats.'",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "day-use",
+        "geo check: the USFS point plots on the far side of SR 530 from the river (TIGER heuristic, 133 m from centreline); the launch itself is on the river side - use the area, not the point"
+      ],
+      "whyNotLevel1": "USFS point is the entrance road ~100 m from the river; the ramp is under canopy and not visible on z19 imagery (research/raw/batch4/ls19_g.png)."
+    },
+    "Marblemount Boat Launch": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 48.52638889,
+        "lon": -121.4269444,
+        "feature": "USFS recreation-site lat/lon (gravel parking loop)"
+      },
+      "areaRadiusM": 200,
+      "directions": "USFS Marblemount Boat Launch by the Cascade River Rd bridge at Marblemount; the launch is on the right just after the bridge (USFS description), reached from the gravel parking loop.",
+      "sourceName": "USDA Forest Service, Mt. Baker-Snoqualmie NF: Marblemount Boat Launch",
+      "sourceUrl": "https://www.fs.usda.gov/r06/mbs/recreation/marblemount-boat-launch",
+      "sourceQuote": "'The Marblemount boat launch is available for all motorized and non-motorized boats for white water rafting, fishing or nature viewing along the Skagit River.'",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "eagle-season (Dec-Feb): Skagit Bald Eagle area guidance - limited launch hours and no beaching; check before winter trips"
+      ],
+      "whyNotLevel1": "USFS point is the parking loop ~90 m from the Skagit; shoreline under canopy, no ramp visible (research/raw/batch4/mm19_g.png)."
+    },
+    "Mineral Springs (Icehouse)": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 45.818726,
+        "lon": -121.117249,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Concrete boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 317, 'Mineral Springs', concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=317&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Pateros Take-out": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "City of Pateros: Methow Boat Launch",
+          "url": "https://pateros.com/business_detail_T2_R31.php"
+        },
+        {
+          "name": "City of Pateros 2024 Parks and Recreation Plan",
+          "url": "https://cms3.revize.com/revize/cityofpateros/Documents/Park%20and%20Recreation/Pateros%202024%20Park%20Plan%20FINAL.pdf"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 48.0461,
+        "lon": -119.916,
+        "source": "v1 research: AW access coordinate; 107 m from OSM Methow centerline on river right, matching AW; no OSM slipway mapped"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "site-identity-unresolved",
+        "seasonal-closure Oct-Mar (city launch)"
+      ],
+      "whyNotLevel1": "UNRESOLVED SITE IDENTITY. AW says the take-out is a Douglas PUD facility ~0.7 mi up the Methow from US 97 (river right). The City of Pateros publishes a 'Methow Boat Launch' (190 Lakeshore Dr; seasonal, usually closed October-March) with access to Lake Pateros and the lower Methow, but it is not established that this is the same site, and no coordinate was found for it."
+    },
+    "Peshastin Access": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 47.569692,
+        "lon": -120.594505,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Hand launch",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (feature 57, 'Peshastin')",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=57&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Plain Access": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "Chelan PUD: Wenatchee River Access in Plain",
+          "url": "https://www.chelanpud.org/parks-and-recreation/our-parks/wenatchee-river-access-in-plain"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.7673,
+        "lon": -120.6652,
+        "source": "v1 research: AW access coordinate; river right as AW describes, but 157 m from OSM centerline (likely the parking lot rather than the stairs); no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "borderline",
+        "river-access wording only"
+      ],
+      "whyNotLevel1": "BORDERLINE. Chelan PUD built a parking area and trail to the Wenatchee River at the Plain Substation for 'safe public access to the Wenatchee River' - generic river access, boating not named. AW describes concrete stairs to the river. Coordinates match (AW 47.76729,-120.66509)."
+    },
+    "Plese Flats": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "Washington State Parks: Riverside wildfire recovery",
+          "url": "https://parks.wa.gov/"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.72774,
+        "lon": -117.51153,
+        "source": "v1 research: OSM 'Plese Flats' slipway; AW generic 'Take Out' coordinate 63 m away (AW point was 155 m off the river centerline, so the slipway is used)"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "closure-uncertain",
+        "fire-recovery"
+      ],
+      "whyNotLevel1": "CLOSURE-UNCERTAIN - not promoted (instruction). State Parks lists Plese Flats (Riverside SP) as a non-motorized put-in/take-out, and it was not on the 2026-08-28 list of areas still closed after the August 2026 wildfires, but residual fire-recovery status is unconfirmed."
+    },
+    "Plum Landing": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 47.551524,
+        "lon": -121.850756,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Concrete boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 271, concrete)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=271&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Queets Trailhead": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [],
+      "researchCandidate": {
+        "lat": 47.6247,
+        "lon": -124.0147,
+        "source": "v1 research: AW access coordinate (two AW reaches agree within 10 m); 102 m from OSM Queets centerline; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "replacement-proposed"
+      ],
+      "whyNotLevel1": "The NPS launch is Queets Campground (NPS POI 427 m away); NPS names Queets Campground, not the trailhead, as the put-in. Relabel not approved - see replacement-proposals-WA.json."
+    },
+    "Red Barn Access (Winthrop)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "Town of Winthrop: Parks and Recreation Plan (Feb 2024 draft)",
+          "url": "https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 48.4763,
+        "lon": -120.1884,
+        "source": "v1 research: AW access coordinate; 52 m from OSM Methow centerline; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "construction-status-unconfirmed"
+      ],
+      "whyNotLevel1": "CONSTRUCTION/LEGAL-STATUS UNCERTAIN. Town of Winthrop 2024 Park Plan says the bank was used informally and a new hand-launch pathway was funded (construction anticipated 2024). Methow Valley News (Nov 2025, not official) reports restrooms serving the adjacent boat launch, but no Town/RCO page confirms the launch is complete and open."
+    },
+    "Roza Recreation Site": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.76391497718437,
+        "lon": -120.45664026056583,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, 'Roza Recreation Site' Boat Ramp (OBJECTID 85215)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=85215&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Sauk Prairie (Darrington)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [],
+      "researchCandidate": {
+        "lat": 48.2617,
+        "lon": -121.5947,
+        "source": "v1 research: AW access coordinate; OSM slipway 'Darrington Mill Boat Launch' 15 m; 35 m from OSM Sauk centerline"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": "AW only. Town of Darrington map shows a 'Darrington Mill Boat Launch', not confirmed to be this site."
+    },
+    "Streator Crossing": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 47.589786,
+        "lon": -124.107848,
+        "feature": "NPS Public POIs 'Streaters' Boat Launch (OBJECTID 21737)"
+      },
+      "areaRadiusM": 100,
+      "directions": "Queets River Rd to the NPS Streator Crossing launch; the main channel is ~60 m beyond the POI across a gravel bar (a side channel is closer).",
+      "sourceName": "National Park Service, Olympic NP: Queets Area Brochure",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/queets-area-brochure.htm",
+      "sourceQuote": "'Boat Launches: Launch from Hartzell Creek, Streator Crossing, or the Queets Campground.'",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "winter storms can damage roads and boat launches (NPS)",
+        "log-jam hazards (NPS)",
+        "side-channel vs main channel"
+      ],
+      "whyNotLevel1": "NPS POI is in vegetation ~60 m from the main channel (~20 m from a side channel) (research/raw/batch3/streaters.png)."
+    },
+    "Sultan Sportsman Park": {
+      "grade": "access-verified",
+      "areaCenter": {
+        "lat": 47.86078,
+        "lon": -121.82127,
+        "feature": "American Whitewater access coordinate at the Sultan/Skykomish confluence (no official coordinate)"
+      },
+      "areaRadiusM": 250,
+      "directions": "City of Sultan Sportsman Park beside US 2 at the Sultan River bridge; the water access is a short way up the Sultan River near its confluence with the Skykomish (landing is on the Sultan River, not the Sky main stem).",
+      "sourceName": "Snohomish County shoreline/water Access Point Inventory (lists 'Sportsman's Park - WDFW - Boat launch')",
+      "sourceUrl": "https://www.snohomishcountywa.gov/DocumentCenter/View/47944",
+      "sourceQuote": "Snohomish County Access Point Inventory lists 'Sportsman's Park - WDFW - Boat launch'. City of Sultan's facility page lists 'river access' and a summer life-jacket kiosk at Sportsman Park (3.57 acres next to US 2).",
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "manager discrepancy: county inventory says WDFW, city page says City of Sultan facility (likely WDFW-owned/City-managed - unconfirmed)",
+        "inventory age not stated",
+        "take-out is on the Sultan River just above the confluence"
+      ],
+      "whyNotLevel1": "No agency ramp coordinate; z19 imagery shows no ramp to the water (research/raw/batch4/su19_g.png, su19b_g.png)."
+    },
+    "T.J. Meenach Bridge": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "City of Spokane: Downriver Park River Access Area Now Open (2024-04-24)",
+          "url": "https://my.spokanecity.org/parksrec/news/2024/04/24/downriver-park-river-access-area-now-open/"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.6812,
+        "lon": -117.455,
+        "source": "v1 research: AW 'Put In' coordinate (generic label); 63 m from OSM Spokane centerline; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "closure-uncertain",
+        "seasonal-gate"
+      ],
+      "whyNotLevel1": "CLOSURE-UNCERTAIN - not promoted. City of Spokane reopened Downriver Park (near TJ Meenach Dr) in April 2024 with a 'renovated non-motorized watercraft access area' (explicit), but the site closed again after a November 2024 hillside breach and the Spokane River Forum reports a May 2025 reopening 'for the summer season' (seasonal gate). Current (Oct 2026) status unconfirmed, and the City access is ~0.25 mi downstream of the bridge, not necessarily the AW 'T.J. Meenach Bridge' put-in point."
+    },
+    "Tanner Road Access": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "King County: Middle Fork Snoqualmie whitewater concept plan (c. 2005, planning doc)",
+          "url": "https://your.kingcounty.gov/dnrp/library/parks-and-recreation/documents/cpg/whitewaterconceptplan.pdf"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.4792,
+        "lon": -121.7373,
+        "source": "v1 research: AW access coordinate; 128 m from OSM Middle Fork centerline; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "planning-doc-only"
+      ],
+      "whyNotLevel1": "Only AW (designated parking on an old county bridge right-of-way) and the c. 2005 King County concept plan ('Tanner Road End'); no current agency statement."
+    },
+    "Troy Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 45.945165,
+        "lon": -117.450093,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp (trailered, 1 lane)",
+      "sourceName": "Oregon State Marine Board Boating Access Sites (public), 'Troy Access' (ObjectId 287; manager/owner ODFW; facility Boat Ramp; public_display Yes)",
+      "sourceUrl": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Boating_Access_Sites_OA/FeatureServer/0/query?objectIds=287&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Turkey Hole": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 45.740386,
+        "lon": -121.228337,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Hand launch (take-out only)",
+      "sourceName": "WDFW Facilities GIS, Hand Launch layer (feature 914, 'Take-out', comment 'Take-out only.', edited 2025-02)",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/4/query?objectIds=914&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Twisp Access": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "Town of Twisp: Parks & Recreation",
+          "url": "https://www.townoftwisp.com/services/parks___recreation/index.php"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 48.3681,
+        "lon": -120.12,
+        "source": "v1 research: AW access coordinate; 85 m from OSM centerline on river right, matching AW; no OSM access feature"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": "Town of Twisp parks page lists Twisp Park (325 N Lincoln) and Commons Park with no mention of river or boating access; AW only."
+    },
+    "Umtanum Recreation Site": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.855657557970545,
+        "lon": -120.4836324396714,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Boat ramp",
+      "sourceName": "BLM National Recreation Site Points, 'Umtanum Campground' Boat Ramp (OBJECTID 85117)",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=85117&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Vernita Bridge": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.639961,
+        "lon": -119.743035,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Unimproved boat ramp",
+      "sourceName": "WDFW Facilities GIS, Boat Ramp layer (feature 25, unimproved; comment 'Location confirmed by R Finger, April 2025')",
+      "sourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=25&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Waterfront Park (Leavenworth)": {
+      "grade": "pending",
+      "areaCenter": null,
+      "areaRadiusM": null,
+      "directions": null,
+      "sourceName": null,
+      "sourceUrl": null,
+      "officialSourcesChecked": [
+        {
+          "name": "City of Leavenworth: Waterfront Park (tube / 'anything that floats' wording)",
+          "url": "https://cityofleavenworth.com/your-city-hall/departments/public-works/city-parks/waterfront-park/"
+        },
+        {
+          "name": "City of Leavenworth: River Shuttle 2026 (official put-in Icicle Rd Bridge River Access; take-out East Leavenworth Boat Launch, river right)",
+          "url": "https://cityofleavenworth.com/community/river-shuttle/"
+        }
+      ],
+      "researchCandidate": {
+        "lat": 47.5941,
+        "lon": -120.658,
+        "source": "v1 research: AW access coordinate; OSM slipway 61 m; river left matches AW (Trout Unlimited Park launch is across the river, 239 m)"
+      },
+      "checkedOn": "2026-10-25",
+      "flags": [
+        "borderline",
+        "tubing wording only",
+        "city's own float route uses Icicle Rd Bridge / East Leavenworth Boat Launch instead"
+      ],
+      "whyNotLevel1": "BORDERLINE. City of Leavenworth's Waterfront Park page invites tubing ('your tube or anything that floats') at the park but names no launch; imagery shows several beaches and no single launch. The City's 2026 River Shuttle page names a different official route (put-in Icicle Rd Bridge River Access; take-out East Leavenworth Boat Launch on river right; hatchery gate and boat-launch parking typically close near ~200 cfs) - see replacement-proposals-WA.json."
+    },
+    "White Bluffs Boat Launch": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 46.674449,
+        "lon": -119.453933,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Concrete boat ramp (two lanes)",
+      "sourceName": "USFWS Facilities/Property points (public view), 'White Bluffs Boat Ramp' (ObjectID 1215, asset 10004685, Public_Use 'Public Use', status Valid)",
+      "sourceUrl": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_HQ_Fac_Property_Pt_PublicView/FeatureServer/0/query?objectIds=1215&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    },
+    "Whitney Bridge": {
+      "grade": "verified",
+      "areaCenter": {
+        "lat": 47.282744,
+        "lon": -122.054858,
+        "feature": "verified map point (catalog/map_points/WA.json)"
+      },
+      "areaRadiusM": 0,
+      "directions": "Non-motorized boat put-in area",
+      "sourceName": "King County Parks facility points (PARK_FACILITY_POINT_231), 'Boat Put-in Area (Non-motorized)' at Whitney Bridge Park (OBJECTID 327; owner, manager and maintainer King County Parks and Recreation)",
+      "sourceUrl": "https://services.arcgis.com/Ej0PsM5Aw677QF1W/arcgis/rest/services/PARK_FACILITY_POINT_231/FeatureServer/0/query?objectIds=327&outFields=*&outSR=4326&f=json",
+      "checkedOn": "2026-10-25",
+      "flags": [],
+      "whyNotLevel1": null
+    }
+  }
+}
