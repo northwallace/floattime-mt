@@ -80,7 +80,7 @@ def _fingerprint_html(body):
     return ASSET_LINK.sub(replace, text).encode('utf-8')
 
 
-def _map_config():
+def _map_config(field_test=""):
     """Only the browser-safe basemap key is exposed; never return arbitrary config."""
     key = os.environ.get("ARCGIS_BASEMAP_API_KEY", "").strip()
     local = {}
@@ -112,6 +112,30 @@ def _map_config():
                 routes = json.load(f)["routes"]
                 config["routes"] = [entry for entry in routes if entry.get('state') in release.get('states', [])] if release.get('reviewedRoutes') is True else routes
         except (OSError, ValueError, KeyError, TypeError):
+            pass
+    # A dedicated URL opts into one separately checked pilot. Never enable GPS
+    # estimates through the normal route-map registry or local experiment flags.
+    if field_test:
+        try:
+            with open(os.path.join(ROOT, 'catalog', 'field_pilots.json')) as f:
+                entries = json.load(f)['pilots']
+            for entry in entries:
+                if entry.get('id') != field_test or entry.get('enabled') is not True:
+                    continue
+                filename = entry.get('file', '')
+                if not re.fullmatch(r'field-pilots/[a-z0-9-]+\.json', filename):
+                    continue
+                with open(os.path.join(PUBLIC, filename), 'rb') as f:
+                    raw = f.read()
+                payload = json.loads(raw)
+                if (hashlib.sha256(raw).hexdigest() != entry.get('sha256') or
+                    payload.get('status') != 'field-pilot' or
+                    any(payload.get(k) != entry.get(k) for k in ('id', 'riverId', 'sectionId')) or
+                    payload.get('state') not in release.get('states', [])):
+                    continue
+                config['fieldTest'] = {k: entry[k] for k in ('id', 'riverId', 'sectionId', 'file', 'sha256')}
+                break
+        except (OSError, ValueError, KeyError, TypeError, AttributeError):
             pass
     return config
 
@@ -363,7 +387,7 @@ class Handler(BaseHTTPRequestHandler):
         query = parse_qs(parsed.query)
 
         if path == "/api/map-config":
-            config = _map_config()
+            config = _map_config((query.get('fieldtest') or [''])[0])
             self._send_json(config or {"error": "Satellite maps are not configured"}, 200 if config else 503)
             return
 

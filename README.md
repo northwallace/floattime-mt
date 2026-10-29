@@ -312,3 +312,28 @@ Final production checks after an authorized deployment: HTTPS on both domains;
 an unreleased-state link stays closed; a correction reaches the private queue;
 and a current USGS reading. Verify location permission on an actual phone before
 advertising phone GPS as tested. GPS time remaining is not part of this release.
+
+## Greycliff opt-in field test (2026-10-29)
+
+Only `?fieldtest=greycliff&river=madison-lower&section=blacks-ford-greycliff&map=1`
+enables the checked Blacks Ford–Greycliff pilot. Ordinary visitors and other sections
+retain existing behavior. `catalog/field_pilots.json` allowlists the exact public
+asset SHA-256; the server and browser both check it. Disable its `enabled` flag and
+redeploy to withdraw the pilot. Never promote other route candidates by enabling
+this registry wholesale.
+
+The destination is the owner-supplied public ramp at 45.704500, -111.516139,
+corroborated against imagery, **not agency verified**. The start remains an approximate
+facility area. USGS NHDPlus HR supplies eight connected primary downstream reaches,
+clipped at projections of those endpoints; no straight connector is invented.
+The 4.5686-mile mapped line is used only for this field test. The normal calculator
+retains the rounded 4-mile agency-guide distance. Side channels and actual travel
+speed remain uncertain. The pilot requires fresh accurate GPS, a position near the
+line, and fresh flow; it withholds estimates otherwise. GPS stays in the browser.
+
+Reproduce source geometry with `python tools/check_greycliff_geometry.py`
+(development-only Shapely 2.0.7 and pyproj 3.6.1). Run
+`python -m unittest discover -s tests` and `node --test tests/*.test.cjs`.
+Evidence and the imagery review are recorded in
+`research/MT/greycliff-pilot-20261029/route-checks.json`.
+Phone GPS still needs the user's real field test; simulated checks are not field validation.

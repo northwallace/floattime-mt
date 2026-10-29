@@ -175,11 +175,11 @@
             <span><i class="map-key-marker put-in"></i>Put-in</span>
             <span><i class="map-key-marker take-out"></i>Take-out</span>
           </div>
-          <p id="landMapRouteEvidence" class="land-map-note" hidden></p>
           <section id="floatProgress" class="float-progress" aria-labelledby="floatProgressTitle" hidden>
-            <div class="progress-top"><span class="map-preview-tag">Local pilot</span><strong id="floatProgressTitle">Time left on your float</strong></div>
+            <div class="progress-top"><span id="floatProgressTag" class="map-preview-tag">Local pilot</span><strong id="floatProgressTitle">Time left on your float</strong></div>
             <p id="floatProgressResult" class="progress-result" role="status">Use the location button on the map to estimate what’s left.</p>
             <p id="floatProgressDetail"></p>
+            <p id="fieldPilotNote" class="progress-note" hidden></p>
             <p class="progress-note">Approximate river line and planning speed—not navigation or a guarantee of arrival. Your location stays in this browser; map tiles reveal the viewed area to the map provider.</p>
             <details id="progressDemo"><summary>Try a sample position</summary>
               <p>Demo uses a simulated position and an example flow of 1,200 cfs. It does not use your GPS.</p>
@@ -194,6 +194,7 @@
             </details>
             <p class="progress-note"><a id="floatProgressSource" target="_blank" rel="noopener">River-line source</a> · Field testing still required.</p>
           </section>
+          <p id="landMapRouteEvidence" class="land-map-note" hidden></p>
           <p id="landMapLocationStatus" class="land-map-location" role="status"></p>
           <p id="landMapStatus" class="land-map-status" role="status">Loading the map and official Montana land data…</p>
           <p id="landMapLandNote" class="land-map-note">Trust-land boundaries and access details are approximate. State ownership does not guarantee unrestricted access. Verify signs, closures, and current license requirements before leaving the river. <a href="https://dnrc.mt.gov/TrustLandMaps" target="_blank" rel="noopener">Check Montana DNRC</a>.</p>
@@ -350,6 +351,7 @@
 
 <script src="river-route.js"></script>
 <script src="route-progress.js"></script>
+<script src="field-pilot.js"></script>
 <script src="planner.js?v=20261027-1"></script>
   <script src="app.js?v=20261027-2"></script>
 </body>

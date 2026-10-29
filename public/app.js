@@ -162,11 +162,15 @@ function prepareSectionRoute(data, river, section, experiment = false) {
   return FloatRoute.prepare(data);
 }
 
-function mountFloatProgress(map, maplibregl, data, route, river, section) {
+function mountFloatProgress(map, maplibregl, data, route, river, section, fieldTest = false) {
   const box = $("floatProgress"), result = $("floatProgressResult"), detail = $("floatProgressDetail");
   let fix = null, demo = false, marker = null;
   box.hidden = false;
+  $("floatProgressTag").textContent = fieldTest ? "Field test · estimate" : "Local pilot";
+  $("fieldPilotNote").hidden = !fieldTest;
+  $("fieldPilotNote").textContent = fieldTest ? "To the user-confirmed Greycliff takeout pin. Side channels, wind, rowing and stops can change your time. Keep this page open for updates; confirm the landing visually." : "";
   $("floatProgressSource").href = data.sourceUrl;
+  $("progressDemo").hidden = fieldTest;
   $("progressDemo").open = false;
   $("progressDemoControls").hidden = true;
   $("progressDemoPosition").value = "50";
@@ -193,7 +197,7 @@ function mountFloatProgress(map, maplibregl, data, route, river, section) {
     result.textContent = prefix + (messages[position.status] || "Calculating…");
     detail.textContent = demo ? "Simulated position · example flow 1,200 cfs · not your GPS" : "Waiting for a clear, recent GPS reading on this section.";
     if (!["on-route", "near-takeout"].includes(position.status)) return;
-    detail.textContent = `${prefix}${position.remainingMiles.toFixed(1)} river miles remaining · ${state.craft.label || state.craft.id}`;
+    detail.textContent = `${prefix}${position.remainingMiles.toFixed(1)} mapped river miles remaining · ${state.craft.label || state.craft.id}`;
     if (position.status === "near-takeout") return;
     const gauge = demo ? {flow:1200, at:Date.now()} : state.gauge;
     const restricted = /\b(?:III|IV|V|VI)\b/.test(section.difficulty) && ["tube", "sup"].includes(state.craft.id);
@@ -213,6 +217,7 @@ function mountFloatProgress(map, maplibregl, data, route, river, section) {
     refresh();
   }
   $("progressDemoStart").onclick = () => {
+    if (fieldTest) return;
     demo = true;
     const el = document.createElement("div"); el.className = "progress-demo-marker"; el.textContent = "D"; el.setAttribute("aria-label", "Simulated position");
     marker = new maplibregl.Marker({element:el}).setLngLat(FloatProgress.pointAt(route, .5)).addTo(map);
@@ -260,28 +265,49 @@ async function showLandMap(section) {
     : "Location is unavailable in this browser.";
   panel.scrollIntoView({behavior:"smooth", block:"nearest"});
   try {
-    const [maplibregl, mapConfig] = await Promise.all([loadMapLibrary(), json("/api/map-config")]);
+    const fieldTestId = new URL(location.href).searchParams.get("fieldtest") || "";
+    const [maplibregl, mapConfig] = await Promise.all([loadMapLibrary(), json("/api/map-config" + (fieldTestId ? "?fieldtest=" + encodeURIComponent(fieldTestId) : ""))]);
     if (generation !== state.mapGeneration) return;
-    let pilot = null, route = null, routeUnavailable = false;
-    const entry = (mapConfig.routes || mapConfig.routePilots)?.find(item => item.riverId === river.id && item.sectionId === section.id);
+    let pilot = null, route = null, routeUnavailable = false, fieldTest = false;
+    const testEntry = FloatFieldPilot.matches(mapConfig.fieldTest, fieldTestId, river, section) ? mapConfig.fieldTest : null;
+    const entry = testEntry || (mapConfig.routes || mapConfig.routePilots)?.find(item => item.riverId === river.id && item.sectionId === section.id);
     if (entry) {
       try {
-        const data = await json("/" + entry.file);
+        let data;
+        if (testEntry) {
+          const response = await fetch("/" + entry.file, {signal:AbortSignal.timeout(15000), cache:"no-store"});
+          if (!response.ok) throw Error("Pilot unavailable");
+          const raw = await response.arrayBuffer();
+          const digest = Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", raw)), byte => byte.toString(16).padStart(2,"0")).join("");
+          if (digest !== entry.sha256) throw Error("Pilot changed; refresh required");
+          data = JSON.parse(new TextDecoder().decode(raw));
+          if (!FloatFieldPilot.matches(data, fieldTestId, river, section)) throw Error("Pilot identity mismatch");
+        } else data = await json("/" + entry.file);
         if (generation !== state.mapGeneration) return;
-        route = prepareSectionRoute(data, river, section, !mapConfig.routes);
+        route = testEntry ? FloatFieldPilot.prepare(data, river, section) : prepareSectionRoute(data, river, section, !mapConfig.routes);
+        fieldTest = !!testEntry;
         pilot = data;
       } catch {
         if (generation !== state.mapGeneration) return;
         routeUnavailable = true; // Keep the existing access map usable.
       }
     }
-    const points = [section.putInCoords, section.takeOutCoords];
+    const takeOutPoint = fieldTest ? pilot.takeOut : section.takeOutCoords;
+    const points = [section.putInCoords, takeOutPoint];
+    if (fieldTest) $("landMapAccuracy").textContent = "Field test · user-confirmed takeout";
     const bounds = new maplibregl.LngLatBounds();
     for (const point of points) bounds.extend([point.lon, point.lat]);
     if (route) for (const point of route.coordinates) bounds.extend(point);
+    const style = satelliteMapStyle(mapConfig.arcgisApiKey);
+    if (fieldTest) {
+      // The pilot needs imagery and its river path, without depending on the
+      // separately licensed optional labels service to initialize GPS timing.
+      delete style.sources["imagery-labels"];
+      style.layers = style.layers.filter(layer => layer.id !== "imagery-labels");
+    }
     const map = new maplibregl.Map({
       container: "landMap",
-      style: satelliteMapStyle(mapConfig.arcgisApiKey),
+      style,
       bounds,
       // Leave room for expanded provider credits so they do not cover a landing.
       fitBoundsOptions: {padding: {top:54, left:54, right:54, bottom:$("landMap").clientWidth < 640 ? 150 : 100}},
@@ -314,17 +340,23 @@ async function showLandMap(section) {
     map.addControl(new maplibregl.AttributionControl({compact:true}), "bottom-right");
     for (const [point, access, label, className] of [
       [section.putInCoords, section.putInAccess, section.putIn, "put-in"],
-      [section.takeOutCoords, section.takeOutAccess, section.takeOut, "take-out"],
+      [takeOutPoint, section.takeOutAccess, section.takeOut, "take-out"],
     ]) {
       const marker = document.createElement("button");
       marker.type = "button"; marker.className = `access-marker ${className}`;
-      const approximate = access.status === "access-verified";
+      const reportedTakeout = fieldTest && className === "take-out";
+      const approximate = access.status === "access-verified" && !reportedTakeout;
       if (approximate) marker.className += " approximate-access";
-      marker.textContent = (className === "put-in" ? "P" : "T") + (approximate ? "~" : "");
+      marker.textContent = (className === "put-in" ? "P" : "T") + (reportedTakeout ? "*" : approximate ? "~" : "");
       marker.setAttribute("aria-label", `${className === "put-in" ? "Put-in" : "Take-out"}: ${label}`);
       const popup = document.createElement("div");
       const title = document.createElement("strong"); title.textContent = label; popup.appendChild(title);
       const detail = document.createElement("p"); detail.textContent = `${access.accessType || "Access area"}${access.operator ? ` · ${access.operator}` : ""}`; popup.appendChild(detail);
+      if (reportedTakeout) {
+        const reported = document.createElement("p");
+        reported.textContent = `User-confirmed takeout · ${takeOutPoint.lat.toFixed(6)}, ${takeOutPoint.lon.toFixed(6)}. Checked against imagery; not an agency-surveyed landing. Confirm the ramp visually.`;
+        popup.appendChild(reported);
+      }
       if (approximate) {
         const accuracy = document.createElement("p");
         accuracy.textContent = "Approximate facility location. Exact landing is not confirmed. " + access.directions;
@@ -393,14 +425,14 @@ async function showLandMap(section) {
       if (pilot.land) $("landMapLandNote").textContent = pilot.landNote + " State ownership does not guarantee unrestricted access. Check current DNRC rules and signs.";
       const evidence = $("landMapRouteEvidence"); evidence.hidden = false; evidence.replaceChildren();
       const description = document.createElement("span");
-      description.textContent = `Approximate mapped river path: ${pilot.routeMiles.toFixed(1)} mi. Planning distance remains ${section.miles} mi. Dashed line is an agency centerline, not a recommended navigation channel. `;
+      description.textContent = `Approximate mapped river path: ${pilot.routeMiles.toFixed(1)} mi. Planning distance remains ${section.miles} mi. Dashed line is an agency centerline, not a recommended navigation channel. ` + (fieldTest ? "T* marks the user-confirmed pilot destination; P~ is the approximate put-in area. " : "");
       evidence.appendChild(description);
       const source = document.createElement("a"); source.href = pilot.sourceUrl; source.target = "_blank"; source.rel = "noopener"; source.textContent = `River-line source · checked ${pilot.checkedOn}`; evidence.appendChild(source);
       // The saved GPS experiment is independently opt-in; ordinary route maps never enable it.
-      if (!mapConfig.routes && mapConfig.routePilots && pilot.status === "local-pilot") state.progress = mountFloatProgress(map, maplibregl, pilot, route, river, section);
+      if (fieldTest || (!mapConfig.routes && mapConfig.routePilots && pilot.status === "local-pilot")) state.progress = mountFloatProgress(map, maplibregl, pilot, route, river, section, fieldTest);
     }
     if (routeUnavailable) { $("landMapRouteEvidence").hidden = false; $("landMapRouteEvidence").textContent = "The reviewed river line is unavailable. Access markers remain available."; }
-    const verified = (section.mapPrecision === "approximate"
+    const verified = fieldTest ? "Pilot takeout: user-confirmed Greycliff ramp, checked against imagery. P~ remains an approximate access-area marker. " : (section.mapPrecision === "approximate"
       ? "Markers with ~ show approximate facility locations, not confirmed landings. " : "") +
       `Access sources checked: put-in ${section.putInAccess.verifiedOn}; take-out ${section.takeOutAccess.verifiedOn}. `;
     status.textContent = verified + (landUnavailable
