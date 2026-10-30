@@ -1,5 +1,249 @@
 # Float ETA
 
+## Release candidate — optional gauges and honest availability
+
+LOCAL ONLY, October 30. Gauge handling now supports no assigned station and
+explicit same-river/other-river reference roles. No-data responses recover after
+cache expiry. The dashboard uses a quiet availability message, retains reviewed
+access maps and published guide times, and never enables a new timing model just
+because discharge returns. Six existing Wyoming reference sources are explicitly
+labelled; no gauge IDs or approved map coordinates were changed. Wisconsin is
+not imported. Access/distance holds also withhold published trip durations until
+the underlying route issue is resolved; the evidence stays in the catalog.
+
+```sh
+python3 tools/build_catalog.py --check
+python3 tools/build_review_queue.py --check
+python3 tools/check_release.py --output /tmp/floateta-release-readiness.json
+python3 -m unittest discover -s tests
+node --test tests/*.test.cjs
+```
+
+The review includes 170 rivers, 598 sections and 438 local access maps in the
+existing 11 states. Four of those maps are for inspecting distance/endpoints under
+review, with trip estimates withheld. Other held maps remain unavailable.
+The 59 dotted path files and existing Greycliff pilot are preserved.
+Validation: 121 Python checks passed (including seven development GIS checks),
+45 JavaScript tests passed, 359 public pages/assets returned HTTP 200 and five
+private paths returned HTTP 404. Four sampled agency feeds returned current
+discharge; the sampled missing gauge returned no discharge without breaking maps.
+Evidence is in `research/gauge-release-review-20261030/`.
+Preview: **http://127.0.0.1:8784**. The isolated preview uses temporary test data,
+not the owner's real reports or correction inbox.
+
+Before an authorized publication, confirm Render's production basemap credential,
+existing paid plan and persistent data mount; retain the existing rollback
+revision. After deployment verify both HTTPS domains, gauge recovery, mobile
+satellite maps/attribution, held-map behavior and a private correction submission.
+No deployment, push, new state import or scheduled background job is performed by
+this candidate. Production phone GPS still needs a field test.
+
+## Current local review — four states and clearer access pins
+
+LOCAL ONLY, October 30. The local catalog contains **170 rivers, 598 sections,
+749 permanent access IDs and 438 access maps** across 11 states. Nothing in
+this batch was pushed or deployed.
+
+- Montana: **42/56** access maps; 14 remain held for landing identity, legal
+  access, closures or hazard/portage questions. No unsafe exit was substituted.
+- Wyoming: **124/149**, up four. Libby Creek, Newton Creek, Mummy Cave and Elk
+  Fork Cliffs now have WGFD-supported **approximate access areas**, reviewed
+  against imagery and the agency's launch/egress attributes. Twenty-five maps
+  remain held. These new maps do not assert surveyed ramps or bank sides.
+- Missouri: **111/141** maps enabled locally, with 30 held.
+- Arkansas: **98/115** maps enabled locally, with 17 held.
+- **59 dotted paths** and the Greycliff pilot geometry/settings are unchanged.
+  No additional GPS remaining-time pilot or timing calibration was enabled.
+
+The two new states still require explicit per-section approval fingerprints.
+New agency snapshots cover MDC ramps, AGFC boating/canoe accesses, NPS access
+features and the relevant Forest Service recreation records. Bindings retain
+agency identity and source hashes, so changed coordinates/status trigger review
+without silently moving a public pin. The research package's imagery/NHD checks
+were reviewed along with independent image samples; this is desktop evidence,
+not a field inspection or a guarantee of navigability.
+
+Tyler Bend mileage/landing conflicts, Buffalo Point's carry-only closure,
+Saline bridge/spillway/access questions and uncertain highway approaches remain
+held. Slabtown and Red Bluff have conflicting Forest Service closure evidence;
+their maps remain withheld until reconciled. Two Rivers (MO) and Grinders Ferry
+(AR) were lowered to area precision after imagery review. Neither became a new
+exact landing by moving its coordinate.
+
+The three original discharge gaps remain Corbett, Laramie/Woods Landing and
+Tongue/Ranchester. Their fresh adapter checks returned no discharge. Salida's
+Colorado DWR adapter still returns current discharge. Upstream diversion gauges,
+stage-only feeds and inaccessible exports were not substituted. Midwest gauge
+limitations remain documented separately from map approval.
+
+Map markers now use launch/finish SVG pins, readable labels, keyboard focus and
+large tap targets. Approximate markers carry an **Area** badge; Greycliff's
+user-confirmed field-test destination retains a distinct **Pilot** badge. Narrow
+screen popups stay clear of map controls and scroll when needed.
+
+```sh
+python3 tools/fetch_agency_layer.py --source AR-agfc-access
+python3 tools/check_agency_bindings.py research/four-state-map-review-20261030/AR-agfc-access-bindings.json
+python3 tools/build_catalog.py --check
+python3 tools/build_review_queue.py --check
+```
+
+The full source/config/binding list is in `catalog/agency_sources/index.json`.
+Evidence, decisions and remaining work are in
+`research/four-state-map-review-20261030/`. Preview: **http://127.0.0.1:8783**.
+Validation results are recorded in that batch's `validation.json`.
+
+## Earlier gauge and map review — October 30, 2026
+
+LOCAL ONLY: five of the nine outstanding gauge gaps now return current discharge
+through reviewed Bureau of Reclamation sources. Glendo, Gray Reef–Casper, Bighorn
+at Thermopolis, Shoshone at Cody and Shoshone at Willwood show their actual source,
+reading age and provisional status. Gray Reef is explicitly a dam-release value.
+These sources do not enable uncalibrated float-time estimates. Arkansas at Salida,
+Shoshone at Corbett, Laramie at Woods Landing and the Tongue remain unresolved;
+their notes explain the limitation rather than substituting a nearby gauge.
+
+Four additional Wyoming access maps are available locally: Bixby–Douglas,
+Douglas–South Douglas, Green River Lake–Roaring Fork, and Dubois City Park–Painted
+Hills. Dubois's imported agency point was roughly 10 km from the actual park;
+the town's facility location replaces it as an approximate access area. That
+section's old mileage is held for review. None of these new maps claims an exact
+landing or adds a dotted path.
+
+The catalog now has **221 local access-map previews** (Wyoming 116/149, Montana
+42/56) and 59 reviewed dotted paths. The 14 Montana map holds remain in place.
+All 107 Python and 40 JavaScript tests pass. The nine-gap live audit restored five
+readings, and all 337 checked local pages/assets returned HTTP 200. The existing
+Greycliff pilot files are unchanged; no deployment or push occurred.
+
+See `research/gauge-map-review-20261030/README.md` and `validation.json` for source
+evidence, remaining work and browser checks. The local review is on port 8781.
+
+## Previous local scaling batch — October 29, 2026
+
+The latest expansion is LOCAL ONLY. The previously published Greycliff pilot is
+preserved; this batch does not deploy new states or change that live pilot.
+The local catalog contains 125 rivers / 342 sections in nine states. Local map
+approvals cover MT 42, ID 1, OR 13, WA 12, UT 13, AZ 6, CO 17, WY 112 and CA 1
+(217 sections). Compared with the checkpoint before this batch, that is one new
+river, six new sections and 17 additional access-map previews.
+Wyoming has 24 rivers / 149 sections: 112 access maps are ready for local review,
+37 remain withheld, and all Wyoming live timing stays disabled until calibrated.
+Montana has 14 held sections. Cinnabar–Carbella and Sha-Ron–Caras Terrace
+approximate maps keep distance and timing under review. First Street Gateway in
+Casper now supplies approximate access areas for two Wyoming sections.
+Validation results and preview limitations are recorded in
+`research/expansion-20261029/validation.json`; source decisions remain in the state review folders.
+Oregon now has reviewed facility locations from the Marine Board, and Boise's
+Barber–Ann Morrison section has reviewed landing markers. California starts with
+the Russian River Steelhead–Sunset summer float. Approximate locations stay
+labelled as such. Oxbow's temporary closure and unresolved or hazardous Payette
+and Boise routes remain withheld. New mileage and guide times have linked sources.
+See `research/expansion-20261029/README.md` for the new evidence, validation and
+next-state workflow. Historical validation files describe their earlier snapshots.
+
+- 459 permanent access IDs live in state registries. Every source section uses
+  `putInAccessId` / `takeOutAccessId`. Names can change without changing IDs.
+  Aliases preserve explicit legacy cross-state references. Shared landings have
+  one source record; uncertain matches remain separate until reviewed.
+- `catalog/access-index.json` and `catalog/source-index.json` are generated
+  handoff indexes. Per-state registries remain the authoritative access records.
+- `public/catalog-index.json` is about 61 KiB. Planner, feedback and directory
+  use it; the planner loads one fingerprinted river asset on selection. The full
+  catalog is retained for backend/SEO compatibility, not downloaded at startup.
+- `catalog/map_reviews/STATE.json` approves individual sections against hashes
+  of endpoint evidence, names, trip notes, restrictions and mileage sources. Changed evidence loses
+  release approval. New imports require this review; importing does not publish.
+- Private location submissions accept landing, parking or entrance, endpoint,
+  coordinates, visit date and firsthand flag. Server validation attaches the
+  canonical existing access ID when applicable and forces community-reported
+  status. No submitted pin or moderator decision edits the catalog automatically.
+- Maps use catalog put-ins and take-outs. Community suggestions remain private
+  evidence for review. GPS time remaining and automatic catalog mileage
+  replacement remain disabled on normal maps. The separate Greycliff opt-in pilot
+  still needs an actual phone field test.
+- Agency point layers have allowlisted public fields, complete paginated downloads,
+  immutable snapshots and feature bindings. Refreshing a layer never promotes a
+  pin. A changed or missing reviewed feature appears in the private review queue.
+- Homepage state links and counts are rendered from the catalog before JavaScript
+  runs. State descriptions name their rivers, including newly added states.
+- The gauge audit found nine remaining discharge gaps after correcting Encampment
+  to active USGS 06625000. Seasonal/historical source notes appear on the affected
+  pages. `tools/audit_gauges.py` repeats the check through the actual app adapter.
+- State and river guides show per-stretch mileage ranges, avoiding inflated river
+  coverage when short options overlap a longer float.
+
+### Wyoming dotted paths — local review, October 29
+
+The shared map renderer now draws reviewed paths in any state, independently of
+Montana's trust-land layer. Wyoming has **46 display-only dotted paths** across
+11 river records: 17 flow-directed high-resolution USGS lines and 29 generalized
+USGS downstream-mainstem lines. Existing 13 Montana paths and land corridors
+remain unchanged. No GPS remaining-time or automatic mileage adoption is enabled.
+
+Source import stages candidates only. It rejects reversed/disconnected or
+ambiguous high-resolution paths, endpoints more than 100 metres from the line,
+segments over 1 km, and mileage disagreements above 5%. Generalized candidates
+also need a separate, immutable high-resolution comparison and manual display
+review. This batch sampled every 25 metres, retained only candidates within
+75 metres of the finer network, and reviewed all 46 full-section overlays.
+These are approximate reference lines, not surveyed landings or channel advice.
+
+```bash
+# Development GIS environment: shapely 2.0.7 and pyproj 3.6.1; not server dependencies.
+python3 tools/fetch_nhd_archives.py --manifest research/routes/nhd-archives.json --output /tmp/floateta-nhd --regions 1018 1404 1704 1008 1007
+python tools/import_nldi_routes.py --state WY
+python tools/import_nhd_routes.py --state WY --gpkg-dir /tmp/floateta-nhd
+python tools/compare_route_resolution.py --state WY
+# Review candidates first; importing never changes catalog/routes/WY.json.
+python3 tools/build_catalog.py
+python3 tools/build_review_queue.py
+```
+
+`catalog/routes/sources/WY.json` supplies explicit river names, source snapshots,
+projected CRS and archive manifest. New states use their own source configuration;
+no nearest-river naming guesses or hand-drawn gap connectors are used.
+The downloader verifies ZIP hashes before extraction, and the importer checks the
+extracted GeoPackage hash. Smaller immutable source extracts accompany each route.
+`research/routes/WY/review-queue.json` and `hr-review-queue.json` cover all 149
+sections. Readiness files now include a river-path blocker and next action.
+`catalog/routes/sources/MT-nhd.json` records the additional Yellowstone/Stillwater
+cross-check; those newer lines did not resolve the held endpoint offsets.
+
+Run the local review workspace (loopback only; never launched by Render):
+
+```bash
+DATA_DIR=/private/tmp/floateta-scale-preview-data python3 tools/serve_review.py --port 8778
+# Open http://127.0.0.1:8778/review
+```
+
+Use a DATA_DIR with your actual private feedback to review real submissions.
+This preview uses isolated test storage. Decisions append to private
+`DATA_DIR/review-decisions.json`. A per-process token, local binding, host check
+and origin validation protect the decision API. The production Handler exposes
+neither the dashboard nor private-review API.
+
+```bash
+python3 tools/import_state_research.py /path/to/package  # dry run
+python3 tools/import_state_research.py /path/to/package --apply
+# Existing states additionally need --replace-existing after backup/diff review.
+python3 tools/build_catalog.py
+python3 tools/build_review_queue.py --packages '/path/to/states and rivers'
+python3 tools/build_review_queue.py --check
+python3 tools/check_access_sources.py --states WA UT AZ CO
+python3 tools/build_catalog.py --check
+python3 tools/audit_map_readiness.py
+python3 -m unittest discover -s tests -p 'test_*.py'
+node --test tests/*.test.cjs
+```
+
+Source retrieval only archives evidence; it never approves access. Research
+imports are normalized under `research/review-imports`, and generated readiness
+records cover every current state in `research/readiness`. The original research
+is retained, including blocked entries and draft-only Wyoming items. Older
+implementation notes below describe their dated milestones.
+
+
 A river float planner with live USGS flow, river-local daylight, optional fishing time,
 community reports, and a searchable river catalog. Python standard library on
 the server; HTML, CSS, and JavaScript in the browser.
@@ -61,7 +305,7 @@ river descriptions. A state registry uses schema version 2 and records:
 
 Maps are eligible per section when both endpoints have reviewed records.
 Public display additionally requires that state in `catalog/settings.json` →
-`mapRelease.states` (currently only `MT`) and no section `accessReview`.
+`mapRelease.states` (see `catalog/settings.json` for the local reviewed states) and no section `accessReview`.
 A `verified` point is shown as a specific access facility. An `access-verified`
 point uses an explicitly approximate facility marker with directions and source
 links. Pending endpoints still block their section. Bank guidance is optional
@@ -251,7 +495,7 @@ Regression checks: `node --test tests/*.test.cjs`, `python3 -m unittest discover
 
 ### Reusable river routes (local preview, October 27)
 
-Current local flags are `routeMapsEnabled: true`, `routePilotEnabled: false`. The reviewed route index is also enabled for a future production release by `mapRelease: {"states":["MT"],"reviewedRoutes":true}` in catalog settings. A production key does not enable the local GPS experiment. No deployment was made.
+Current local flags are `routeMapsEnabled: true`, `routePilotEnabled: false`. `mapRelease.reviewedRoutes` enables reviewed display paths in the states listed in catalog settings. A production key does not enable the old Blackfoot GPS experiment. The later Greycliff pilot is separately allowlisted; new state work remains local.
 
 The registry is independent of the map provider and browser layout:
 

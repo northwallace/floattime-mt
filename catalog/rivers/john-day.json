@@ -1,6 +1,6 @@
 {
   "id": "john-day",
-  "name": "John Day River (Clarno)",
+  "name": "John Day River (Clarno–Cottonwood)",
   "state": "OR",
   "gauge": "14046500",
   "gaugeName": "John Day River at Service Creek",
@@ -8,16 +8,149 @@
   "lon": -120.464,
   "refFlowCfs": 2000,
   "refSpeedMph": 3,
-  "blurb": "Undammed desert canyon float. Spring flows only — by late summer it's too low to boat.",
+  "blurb": "Remote multi-day desert-canyon trips between Clarno and Cottonwood Bridge, with a shorter trip option at Thirtymile. Plan around river level, road access and year-round boating permits.",
   "multiDay": true,
   "sections": [
     {
       "id": "clarno-cottonwood",
       "putIn": "Clarno",
       "takeOut": "Cottonwood Bridge",
-      "miles": 70,
-      "difficulty": "Class II–III",
-      "notes": "A Recreation.gov boating permit is required year-round between Service Creek and Tumwater Falls. Clarno Rapid near the start is the hardest drop — scout it. The gauge is at Service Creek, just upstream."
+      "miles": 69.6,
+      "difficulty": "Class II–III (IV at some flows)",
+      "notes": "A Recreation.gov boating permit is required year-round between Service Creek and Tumwater Falls. Clarno Rapid near the start is the hardest drop — scout it. The gauge is at Service Creek, just upstream.",
+      "putInAccessId": "acc-96ebde2f9b2a5b308410",
+      "takeOutAccessId": "acc-db9757990706533e88ed",
+      "guideTimes": [
+        {
+          "min": 4,
+          "max": 5,
+          "unit": "days",
+          "conditions": "BLM’s common itinerary for the whole Clarno–Cottonwood trip; flow, camps, wind and stops change travel time.",
+          "sourceName": "BLM John Day permit report",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-12/john-day-wsr-permit-report.pdf",
+          "checkedOn": "2026-10-29"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Year-round river permit",
+          "text": "A Recreation.gov permit is required for day and overnight trips from Service Creek to Tumwater Falls. Check current BLM closures and river conditions before departure.",
+          "sourceName": "BLM John Day Wild and Scenic River",
+          "sourceUrl": "https://www.blm.gov/visit/john-day-wild-and-scenic-river",
+          "checkedOn": "2026-10-29"
+        }
+      ],
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM John Day River Launches and Camping Information",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/JDR_Seg_Camp%20info.pdf",
+        "checkedOn": "2026-10-29",
+        "streamId": "John Day River mainstem",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Clarno",
+          "riverMile": 109.2,
+          "sourceLocation": "Boat Launch & Take-Outs table, page 1"
+        },
+        "takeOut": {
+          "name": "Cottonwood Bridge",
+          "riverMile": 39.6,
+          "sourceLocation": "Boat Launch & Take-Outs table, page 1"
+        },
+        "note": "Approximate distance from the BLM named-access river-mile table. Clarno is mile 109.2, Thirtymile 84, and Cottonwood / J.S. Burres 39.6. Rounded whole-trip descriptions in other guides differ slightly; these sections consistently use this one table."
+      }
+    },
+    {
+      "id": "clarno-thirtymile",
+      "putIn": "Clarno",
+      "takeOut": "Thirtymile Launch",
+      "putInAccessId": "acc-96ebde2f9b2a5b308410",
+      "takeOutAccessId": "acc-2f9e6306d41b54879b15",
+      "miles": 25.2,
+      "multiDay": true,
+      "difficulty": "Class II–III (IV at some flows)",
+      "notes": "Arrange the long road shuttle before launch. This upper trip includes Clarno Rapid; scout it and assess whether a portage is necessary. Thirtymile is a primitive ramp; carrying boats to the water may be necessary.",
+      "notices": [
+        {
+          "title": "Year-round river permit",
+          "text": "A Recreation.gov permit is required for day and overnight trips from Service Creek to Tumwater Falls. Check current BLM closures and river conditions before departure.",
+          "sourceName": "BLM John Day Wild and Scenic River",
+          "sourceUrl": "https://www.blm.gov/visit/john-day-wild-and-scenic-river",
+          "checkedOn": "2026-10-29"
+        },
+        {
+          "title": "Thirtymile seasonal road access",
+          "text": "Use Armstrong Road and the designated riverside parking area. BLM closes vehicle access December 15–March 31; wet weather can make the road impassable. High clearance and suitable tires are recommended, with 4WD for trailers.",
+          "sourceName": "BLM Thirtymile visitor information, updated September 2025",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2021-11/thirtymile-info.pdf",
+          "checkedOn": "2026-10-29"
+        }
+      ],
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM John Day River Launches and Camping Information",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/JDR_Seg_Camp%20info.pdf",
+        "checkedOn": "2026-10-29",
+        "streamId": "John Day River mainstem",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Clarno",
+          "riverMile": 109.2,
+          "sourceLocation": "Boat Launch & Take-Outs table, page 1"
+        },
+        "takeOut": {
+          "name": "Thirtymile Launch",
+          "riverMile": 84,
+          "sourceLocation": "Boat Launch & Take-Outs table, page 1"
+        },
+        "note": "Approximate distance from the BLM named-access river-mile table. Clarno is mile 109.2, Thirtymile 84, and Cottonwood / J.S. Burres 39.6. Rounded whole-trip descriptions in other guides differ slightly; these sections consistently use this one table."
+      }
+    },
+    {
+      "id": "thirtymile-cottonwood",
+      "putIn": "Thirtymile Launch",
+      "takeOut": "Cottonwood Bridge",
+      "putInAccessId": "acc-2f9e6306d41b54879b15",
+      "takeOutAccessId": "acc-db9757990706533e88ed",
+      "miles": 44.4,
+      "multiDay": true,
+      "difficulty": "Class I–II",
+      "notes": "Arrange the long road shuttle before launch. This lower trip begins downstream of Clarno Rapid. Thirtymile is a primitive ramp; carrying boats to the water may be necessary.",
+      "notices": [
+        {
+          "title": "Year-round river permit",
+          "text": "A Recreation.gov permit is required for day and overnight trips from Service Creek to Tumwater Falls. Check current BLM closures and river conditions before departure.",
+          "sourceName": "BLM John Day Wild and Scenic River",
+          "sourceUrl": "https://www.blm.gov/visit/john-day-wild-and-scenic-river",
+          "checkedOn": "2026-10-29"
+        },
+        {
+          "title": "Thirtymile seasonal road access",
+          "text": "Use Armstrong Road and the designated riverside parking area. BLM closes vehicle access December 15–March 31; wet weather can make the road impassable. High clearance and suitable tires are recommended, with 4WD for trailers.",
+          "sourceName": "BLM Thirtymile visitor information, updated September 2025",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2021-11/thirtymile-info.pdf",
+          "checkedOn": "2026-10-29"
+        }
+      ],
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM John Day River Launches and Camping Information",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/JDR_Seg_Camp%20info.pdf",
+        "checkedOn": "2026-10-29",
+        "streamId": "John Day River mainstem",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Thirtymile Launch",
+          "riverMile": 84,
+          "sourceLocation": "Boat Launch & Take-Outs table, page 1"
+        },
+        "takeOut": {
+          "name": "Cottonwood Bridge",
+          "riverMile": 39.6,
+          "sourceLocation": "Boat Launch & Take-Outs table, page 1"
+        },
+        "note": "Approximate distance from the BLM named-access river-mile table. Clarno is mile 109.2, Thirtymile 84, and Cottonwood / J.S. Burres 39.6. Rounded whole-trip descriptions in other guides differ slightly; these sections consistently use this one table."
+      }
     }
   ],
   "timezone": "America/Los_Angeles"

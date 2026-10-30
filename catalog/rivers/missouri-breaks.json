@@ -44,6 +44,77 @@
           "sourceUrl": "https://www.blm.gov/visit/judith-landing",
           "checkedOn": "2026-10-28"
         }
+      ],
+      "putInAccessId": "acc-b0f5423b0b3e5893b1d3",
+      "takeOutAccessId": "acc-2371fcfa564855b48530"
+    },
+    {
+      "id": "fort-benton-coal-banks",
+      "putIn": "Fort Benton (Canoe Launch)",
+      "takeOut": "Coal Banks Landing",
+      "putInAccessId": "acc-b0f5423b0b3e5893b1d3",
+      "takeOutAccessId": "acc-60a681309c795870a90b",
+      "miles": 41.5,
+      "difficulty": "Class I",
+      "multiDay": true,
+      "notes": "A remote Missouri Breaks trip with limited road access. Arrange the shuttle before departure; strong winds and weather can change travel time substantially. Check BLM seasonal access, fees and current restrictions.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM Upper Missouri River Breaks trip planning",
+        "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks/plan",
+        "checkedOn": "2026-10-29",
+        "streamId": "Upper Missouri River",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Fort Benton (Canoe Launch)",
+          "riverMile": 0,
+          "sourceLocation": "River Access and Launch Sites"
+        },
+        "takeOut": {
+          "name": "Coal Banks Landing",
+          "riverMile": 41.5,
+          "sourceLocation": "River Access and Launch Sites"
+        },
+        "note": "Named public-launch river miles published by BLM; not a measured route or calibration."
+      }
+    },
+    {
+      "id": "coal-banks-judith",
+      "putIn": "Coal Banks Landing",
+      "takeOut": "Judith Landing",
+      "putInAccessId": "acc-60a681309c795870a90b",
+      "takeOutAccessId": "acc-2371fcfa564855b48530",
+      "miles": 47.0,
+      "difficulty": "Class I",
+      "multiDay": true,
+      "notes": "A remote Missouri Breaks trip with limited road access. Arrange the shuttle before departure; strong winds and weather can change travel time substantially. Check BLM seasonal access, fees and current restrictions.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM Upper Missouri River Breaks trip planning",
+        "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks/plan",
+        "checkedOn": "2026-10-29",
+        "streamId": "Upper Missouri River",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Coal Banks Landing",
+          "riverMile": 41.5,
+          "sourceLocation": "River Access and Launch Sites"
+        },
+        "takeOut": {
+          "name": "Judith Landing",
+          "riverMile": 88.5,
+          "sourceLocation": "River Access and Launch Sites"
+        },
+        "note": "Named public-launch river miles published by BLM; not a measured route or calibration."
+      },
+      "notices": [
+        {
+          "title": "Confirm seasonal access and shuttle",
+          "text": "BLM lists Judith Landing campground’s season as May 15–October 15. Check launch access and road conditions separately before arranging an off-season trip; the campground listing does not establish year-round vehicle access to the ramp.",
+          "sourceName": "BLM — Judith Landing",
+          "sourceUrl": "https://www.blm.gov/visit/judith-landing",
+          "checkedOn": "2026-10-28"
+        }
       ]
     }
   ],

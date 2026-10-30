@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-30T18:55:33.266270+00:00",
+  "localOnly": true,
+  "preview": "http://127.0.0.1:8783",
+  "counts": {
+    "states": 11,
+    "rivers": 170,
+    "sections": 598,
+    "accessIds": 749,
+    "maps": 225,
+    "mtMaps": 42,
+    "mtHeld": 14,
+    "wyMaps": 120,
+    "wyHeld": 29,
+    "dottedPaths": 59,
+    "newStatesMapApprovals": 0
+  },
+  "tests": {
+    "python": {
+      "passed": 114,
+      "failed": 0
+    },
+    "javascript": {
+      "passed": 40,
+      "failed": 0
+    },
+    "catalogAfterCopyRefinement": {
+      "passed": 15,
+      "failed": 0
+    }
+  },
+  "http": {
+    "successfulChecks": 357,
+    "failed": 0,
+    "privatePaths": 5,
+    "privatePathsStatus": 404
+  },
+  "browser": [
+    "Jelm map renders satellite imagery, approximate put-in and exact take-out; popup shows signed southern parking directions and agency source.",
+    "Salida shows Colorado DWR ARKSALCO, 258 cfs, measurement age and provisional label; Nathrop hazard threshold distinguished; timing unavailable.",
+    "Upper Green Campfire Ring–Warm Springs opens approximate map.",
+    "Missouri state directory and Arkansas held sections inspected locally.",
+    "Upper Green satellite image visually checked with both approximate markers and source dates; no browser console errors."
+  ],
+  "pilotUnchanged": {
+    "public/field-pilot.js": true,
+    "public/field-pilots/greycliff.json": true,
+    "catalog/field_pilots.json": true,
+    "catalog/rivers/madison-lower.json": true
+  },
+  "limits": [
+    "No on-water GPS or phone geolocation test.",
+    "No newly approved dotted paths, landing-side claims or timing calibrations.",
+    "Original 4 gauge gaps reduced to 3. New-state research separately includes 9 missing and 1 stale gauge.",
+    "No push, deployment, Render changes or new public release."
+  ],
+  "screenshots": [
+    "/Users/home/Documents/Codex/floateta-jelm-local-review-20261030.png",
+    "/Users/home/Documents/Codex/floateta-green-local-review-20261030.png"
+  ]
+}

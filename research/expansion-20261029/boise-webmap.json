@@ -1,0 +1,1294 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1904282ba75-layer-5",
+      "title": "Emergency Access Site - Keep Clear",
+      "url": "https://services1.arcgis.com/WHM6qC35aMtyAAlN/arcgis/rest/services/Swift_Water_Launch_Sites_view/FeatureServer/0",
+      "visibility": true,
+      "itemId": "912d1cc7fe404d8ea5f0ab58ab9156e4",
+      "layerType": "ArcGISFeatureLayer",
+      "effect": null,
+      "featureEffect": null,
+      "layerDefinition": {
+        "definitionExpression": "Name = 'Baybrook'",
+        "drawingInfo": {
+          "labelingInfo": [
+            {
+              "labelExpressionInfo": {
+                "expression": "\"Emergency Access Only - Keep Clear\"",
+                "title": "New expression"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveLeft",
+              "maxScale": 0,
+              "minScale": 84561.2561,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  0,
+                  0,
+                  0,
+                  255
+                ],
+                "font": {
+                  "family": "Arial",
+                  "size": 9.75
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "haloSize": 1.5,
+                "rightToLeft": false,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "bottom",
+                "xoffset": 0,
+                "yoffset": 0,
+                "angle": 0
+              },
+              "useCodedValues": true
+            }
+          ],
+          "renderer": {
+            "type": "simple",
+            "symbol": {
+              "type": "esriPMS",
+              "angle": 0,
+              "xoffset": 0,
+              "yoffset": 0,
+              "contentType": "image/png",
+              "imageData": "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",
+              "url": "https://static.arcgis.com/images/Symbols/Emergency-Management/Response-Road-Blocks.png",
+              "height": 13.25,
+              "width": 13.253
+            }
+          }
+        }
+      },
+      "showLabels": true
+    },
+    {
+      "id": "19042868dc9-layer-6",
+      "title": "Greenbelt DOTS Milepost Markers",
+      "url": "https://services1.arcgis.com/WHM6qC35aMtyAAlN/arcgis/rest/services/GreenbeltDOTSMileMarkers/FeatureServer/0",
+      "itemId": "b6ec00f4e47843dab7a7a2969e42f0cb",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 10430.199702,
+        "drawingInfo": {
+          "labelingInfo": [
+            {
+              "name": "Default",
+              "deconflictionStrategy": "dynamic",
+              "labelExpressionInfo": {
+                "expression": "$feature.QUAD + \" \" +$feature.MP",
+                "title": "New expression"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+              "maxScale": 0,
+              "minScale": 4916.998528,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  0,
+                  0,
+                  0,
+                  255
+                ],
+                "font": {
+                  "family": "Arial",
+                  "size": 9
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "haloSize": 1,
+                "rightToLeft": false,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "bottom",
+                "xoffset": 0,
+                "yoffset": 0,
+                "angle": 0
+              },
+              "useCodedValues": true
+            }
+          ]
+        }
+      },
+      "showLabels": true
+    },
+    {
+      "id": "Boise_River_Hazards_and_Access_-_VIEW_7134",
+      "opacity": 1,
+      "title": "Boise River Hazards and Access",
+      "url": "https://services1.arcgis.com/WHM6qC35aMtyAAlN/arcgis/rest/services/Boise_River_Hazards_and_Access_-_VIEW/FeatureServer/10",
+      "visibility": true,
+      "itemId": "eb0bdc42d5334ea5a69965e353e7943f",
+      "layerType": "ArcGISFeatureLayer",
+      "effect": [
+        {
+          "type": "saturate",
+          "amount": 0.6
+        },
+        {
+          "type": "opacity",
+          "amount": 0.8
+        }
+      ],
+      "featureEffect": null,
+      "layerDefinition": {
+        "definitionExpression": "Status = 'A'",
+        "drawingInfo": {
+          "labelingInfo": [
+            {
+              "labelExpression": "[Name]",
+              "labelExpressionInfo": {
+                "expression": "$feature[\"Name\"]"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementAboveCenter",
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  0,
+                  0,
+                  0,
+                  255
+                ],
+                "font": {
+                  "family": "Arial",
+                  "size": 9.75
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                "haloSize": 1,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "baseline",
+                "xoffset": 0,
+                "yoffset": 0,
+                "angle": 0
+              }
+            }
+          ],
+          "renderer": {
+            "authoringInfo": {
+              "colorRamp": {
+                "type": "multipart",
+                "colorRamps": [
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      210,
+                      252,
+                      210,
+                      255
+                    ],
+                    "toColor": [
+                      210,
+                      252,
+                      210,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      250,
+                      179,
+                      252,
+                      255
+                    ],
+                    "toColor": [
+                      250,
+                      179,
+                      252,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      184,
+                      217,
+                      252,
+                      255
+                    ],
+                    "toColor": [
+                      184,
+                      217,
+                      252,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      252,
+                      190,
+                      179,
+                      255
+                    ],
+                    "toColor": [
+                      252,
+                      190,
+                      179,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      252,
+                      244,
+                      179,
+                      255
+                    ],
+                    "toColor": [
+                      252,
+                      244,
+                      179,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      252,
+                      210,
+                      237,
+                      255
+                    ],
+                    "toColor": [
+                      252,
+                      210,
+                      237,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      207,
+                      252,
+                      252,
+                      255
+                    ],
+                    "toColor": [
+                      207,
+                      252,
+                      252,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      196,
+                      187,
+                      252,
+                      255
+                    ],
+                    "toColor": [
+                      196,
+                      187,
+                      252,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      252,
+                      232,
+                      215,
+                      255
+                    ],
+                    "toColor": [
+                      252,
+                      232,
+                      215,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      195,
+                      252,
+                      179,
+                      255
+                    ],
+                    "toColor": [
+                      195,
+                      252,
+                      179,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      225,
+                      210,
+                      252,
+                      255
+                    ],
+                    "toColor": [
+                      225,
+                      210,
+                      252,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      252,
+                      182,
+                      214,
+                      255
+                    ],
+                    "toColor": [
+                      252,
+                      182,
+                      214,
+                      255
+                    ]
+                  },
+                  {
+                    "type": "algorithmic",
+                    "algorithm": "esriCIELabAlgorithm",
+                    "fromColor": [
+                      247,
+                      252,
+                      212,
+                      255
+                    ],
+                    "toColor": [
+                      247,
+                      252,
+                      212,
+                      255
+                    ]
+                  }
+                ]
+              }
+            },
+            "type": "uniqueValue",
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "valueExpression": "$view.scale",
+                "stops": [
+                  {
+                    "size": 19.46,
+                    "value": 2256.994353
+                  },
+                  {
+                    "size": 15.567999999999998,
+                    "value": 18055.954822
+                  },
+                  {
+                    "size": 7.783999999999999,
+                    "value": 144447.638572
+                  },
+                  {
+                    "size": 3.8919999999999995,
+                    "value": 1155581.108577
+                  }
+                ]
+              }
+            ],
+            "field1": "Type",
+            "fieldDelimiter": ",",
+            "uniqueValueGroups": [
+              {
+                "classes": [
+                  {
+                    "label": "Put-in",
+                    "symbol": {
+                      "type": "CIMSymbolReference",
+                      "symbol": {
+                        "type": "CIMPointSymbol",
+                        "symbolLayers": [
+                          {
+                            "type": "CIMVectorMarker",
+                            "enable": true,
+                            "anchorPoint": {
+                              "x": -0.0003006246746486026,
+                              "y": 9.968632037858545e-06
+                            },
+                            "anchorPointUnits": "Relative",
+                            "dominantSizeAxis3D": "Y",
+                            "size": 19.46,
+                            "billboardMode3D": "FaceNearPlane",
+                            "frame": {
+                              "xmin": 0,
+                              "ymin": 0,
+                              "xmax": 25.5,
+                              "ymax": 17
+                            },
+                            "markerGraphics": [
+                              {
+                                "type": "CIMMarkerGraphic",
+                                "geometry": {
+                                  "rings": [
+                                    [
+                                      [
+                                        3.68,
+                                        0
+                                      ],
+                                      [
+                                        3.68,
+                                        10.2
+                                      ],
+                                      [
+                                        18.42,
+                                        10.2
+                                      ],
+                                      [
+                                        18.42,
+                                        5.67
+                                      ],
+                                      [
+                                        24.08,
+                                        11.33
+                                      ],
+                                      [
+                                        18.42,
+                                        17
+                                      ],
+                                      [
+                                        18.42,
+                                        12.47
+                                      ],
+                                      [
+                                        1.42,
+                                        12.47
+                                      ],
+                                      [
+                                        1.42,
+                                        0
+                                      ],
+                                      [
+                                        3.68,
+                                        0
+                                      ]
+                                    ]
+                                  ]
+                                },
+                                "symbol": {
+                                  "type": "CIMPolygonSymbol",
+                                  "symbolLayers": [
+                                    {
+                                      "type": "CIMSolidFill",
+                                      "enable": true,
+                                      "color": [
+                                        9,
+                                        173,
+                                        72,
+                                        255
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "scaleSymbolsProportionally": true,
+                            "respectFrame": true,
+                            "clippingPath": {
+                              "type": "CIMClippingPath",
+                              "clippingType": "Intersect",
+                              "path": {
+                                "rings": [
+                                  [
+                                    [
+                                      0,
+                                      0
+                                    ],
+                                    [
+                                      25.5,
+                                      0
+                                    ],
+                                    [
+                                      25.5,
+                                      17
+                                    ],
+                                    [
+                                      0,
+                                      17
+                                    ],
+                                    [
+                                      0,
+                                      0
+                                    ]
+                                  ]
+                                ]
+                              }
+                            },
+                            "rotation": 0
+                          }
+                        ],
+                        "haloSize": 1,
+                        "scaleX": 1,
+                        "angleAlignment": "Display",
+                        "angle": 0
+                      }
+                    },
+                    "values": [
+                      [
+                        "I"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Take-out",
+                    "symbol": {
+                      "type": "CIMSymbolReference",
+                      "symbol": {
+                        "type": "CIMPointSymbol",
+                        "symbolLayers": [
+                          {
+                            "type": "CIMVectorMarker",
+                            "enable": true,
+                            "anchorPoint": {
+                              "x": -0.0003006246746486026,
+                              "y": 9.968632037858545e-06
+                            },
+                            "anchorPointUnits": "Relative",
+                            "dominantSizeAxis3D": "Y",
+                            "size": 17.79,
+                            "billboardMode3D": "FaceNearPlane",
+                            "frame": {
+                              "xmin": 0,
+                              "ymin": 0,
+                              "xmax": 25.5,
+                              "ymax": 17
+                            },
+                            "markerGraphics": [
+                              {
+                                "type": "CIMMarkerGraphic",
+                                "geometry": {
+                                  "rings": [
+                                    [
+                                      [
+                                        24.08,
+                                        0
+                                      ],
+                                      [
+                                        24.08,
+                                        12.47
+                                      ],
+                                      [
+                                        7.08,
+                                        12.47
+                                      ],
+                                      [
+                                        7.08,
+                                        17
+                                      ],
+                                      [
+                                        1.42,
+                                        11.33
+                                      ],
+                                      [
+                                        7.08,
+                                        5.67
+                                      ],
+                                      [
+                                        7.08,
+                                        10.2
+                                      ],
+                                      [
+                                        21.82,
+                                        10.2
+                                      ],
+                                      [
+                                        21.82,
+                                        0
+                                      ],
+                                      [
+                                        24.08,
+                                        0
+                                      ]
+                                    ]
+                                  ]
+                                },
+                                "symbol": {
+                                  "type": "CIMPolygonSymbol",
+                                  "symbolLayers": [
+                                    {
+                                      "type": "CIMSolidFill",
+                                      "enable": true,
+                                      "color": [
+                                        217,
+                                        13,
+                                        33,
+                                        255
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "scaleSymbolsProportionally": true,
+                            "respectFrame": true,
+                            "clippingPath": {
+                              "type": "CIMClippingPath",
+                              "clippingType": "Intersect",
+                              "path": {
+                                "rings": [
+                                  [
+                                    [
+                                      0,
+                                      0
+                                    ],
+                                    [
+                                      25.5,
+                                      0
+                                    ],
+                                    [
+                                      25.5,
+                                      17
+                                    ],
+                                    [
+                                      0,
+                                      17
+                                    ],
+                                    [
+                                      0,
+                                      0
+                                    ]
+                                  ]
+                                ]
+                              }
+                            },
+                            "rotation": 54
+                          }
+                        ],
+                        "haloSize": 1,
+                        "scaleX": 1,
+                        "angleAlignment": "Display",
+                        "angle": 54
+                      }
+                    },
+                    "values": [
+                      [
+                        "O"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Permanent hazard",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 0,
+                      "contentType": "image/png",
+                      "imageData": "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",
+                      "url": "https://static.arcgis.com/images/Symbols/Emergency-Management/Fire-Fire-Response-Restrictions-Other.png",
+                      "height": 27,
+                      "width": 27
+                    },
+                    "values": [
+                      [
+                        "P"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Temporary hazard",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 0,
+                      "contentType": "image/png",
+                      "imageData": "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",
+                      "url": "https://static.arcgis.com/images/Symbols/Emergency-Management/Incident-Other.png",
+                      "height": 22.65,
+                      "width": 22.65
+                    },
+                    "values": [
+                      [
+                        "T"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Class II Rapid",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 0,
+                      "contentType": "image/png",
+                      "imageData": "iVBORw0KGgoAAAANSUhEUgAAAC8AAAAqCAYAAAAj6gIfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuklEQVRYhe2ZzXHCMBBGn2ZoImmDNgg1kAsuAygjvqSDXDilBygjUIZykDzYxIhd/ZnM8E4MI8nPOx/S2sz4x8ymFkjhKT8VT3ktFuYGjqnrVJe3sAa2Fr4NvKesVU3ewhuwAeb+q5UFUm6guLx1sltgkXvtYvIWXnER2QSGJVW/iLzP9ZpLREKseAR5H5EPZNL9eZ8x1c8in5JrAyb2uknyPtcLXLVVpEh3RMsrcz0ghzhEyE8VkTHE8l66q7aK3NIdIvnuSAdeNIvHSFuw0nlB+Zq5tmB7n0Vb56h8zVz3pXuITt6BfO1c3xAXc135M0rxgtJ3qz+QN3Cy0CK8gUwRieZP5g009o58Jekj8BUacGu3aRg58ivl+gzsjXMIMipvoLW9LbLij7EFWunzbWifb4BDxYjsDOw1k27K+7sXi9eU7sjVzxfLdYjUfr54rkNEyU8RkTFi+nmt+BFX6VZ7rXto+vkD+u6yxVX7pJwnQlP5JfAjHJst1yHE8sK+J3uuQ2gzv2Nc/gxsS+Q6hEreV3/H8BVe0VyHUO82xr2e7p6wmtK5DhF7SC2nqPQ1UfKPIA7P/6Sm4xdBIYIezlC7SQAAAABJRU5ErkJggg==",
+                      "url": "https://services1.arcgis.com/WHM6qC35aMtyAAlN/arcgis/rest/services/Boise_River_Hazards_and_Access_-_VIEW/FeatureServer/10/images/47aea458f8c1404fc7b9048f121f025a",
+                      "height": 31,
+                      "width": 35
+                    },
+                    "values": [
+                      [
+                        "R"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Extreme Hazard",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 0,
+                      "contentType": "image/png",
+                      "imageData": "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",
+                      "url": "https://www.arcgis.com/apps/mapviewer/warning.png",
+                      "height": 10.7,
+                      "width": 12.23
+                    },
+                    "values": [
+                      [
+                        "E"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uniqueValueInfos": [
+              {
+                "label": "Put-in",
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPointSymbol",
+                    "symbolLayers": [
+                      {
+                        "type": "CIMVectorMarker",
+                        "enable": true,
+                        "anchorPoint": {
+                          "x": -0.0003006246746486026,
+                          "y": 9.968632037858545e-06
+                        },
+                        "anchorPointUnits": "Relative",
+                        "dominantSizeAxis3D": "Y",
+                        "size": 19.46,
+                        "billboardMode3D": "FaceNearPlane",
+                        "frame": {
+                          "xmin": 0,
+                          "ymin": 0,
+                          "xmax": 25.5,
+                          "ymax": 17
+                        },
+                        "markerGraphics": [
+                          {
+                            "type": "CIMMarkerGraphic",
+                            "geometry": {
+                              "rings": [
+                                [
+                                  [
+                                    3.68,
+                                    0
+                                  ],
+                                  [
+                                    3.68,
+                                    10.2
+                                  ],
+                                  [
+                                    18.42,
+                                    10.2
+                                  ],
+                                  [
+                                    18.42,
+                                    5.67
+                                  ],
+                                  [
+                                    24.08,
+                                    11.33
+                                  ],
+                                  [
+                                    18.42,
+                                    17
+                                  ],
+                                  [
+                                    18.42,
+                                    12.47
+                                  ],
+                                  [
+                                    1.42,
+                                    12.47
+                                  ],
+                                  [
+                                    1.42,
+                                    0
+                                  ],
+                                  [
+                                    3.68,
+                                    0
+                                  ]
+                                ]
+                              ]
+                            },
+                            "symbol": {
+                              "type": "CIMPolygonSymbol",
+                              "symbolLayers": [
+                                {
+                                  "type": "CIMSolidFill",
+                                  "enable": true,
+                                  "color": [
+                                    9,
+                                    173,
+                                    72,
+                                    255
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "scaleSymbolsProportionally": true,
+                        "respectFrame": true,
+                        "clippingPath": {
+                          "type": "CIMClippingPath",
+                          "clippingType": "Intersect",
+                          "path": {
+                            "rings": [
+                              [
+                                [
+                                  0,
+                                  0
+                                ],
+                                [
+                                  25.5,
+                                  0
+                                ],
+                                [
+                                  25.5,
+                                  17
+                                ],
+                                [
+                                  0,
+                                  17
+                                ],
+                                [
+                                  0,
+                                  0
+                                ]
+                              ]
+                            ]
+                          }
+                        },
+                        "rotation": 0
+                      }
+                    ],
+                    "haloSize": 1,
+                    "scaleX": 1,
+                    "angleAlignment": "Display",
+                    "angle": 0
+                  }
+                },
+                "value": "I"
+              },
+              {
+                "label": "Take-out",
+                "symbol": {
+                  "type": "CIMSymbolReference",
+                  "symbol": {
+                    "type": "CIMPointSymbol",
+                    "symbolLayers": [
+                      {
+                        "type": "CIMVectorMarker",
+                        "enable": true,
+                        "anchorPoint": {
+                          "x": -0.0003006246746486026,
+                          "y": 9.968632037858545e-06
+                        },
+                        "anchorPointUnits": "Relative",
+                        "dominantSizeAxis3D": "Y",
+                        "size": 17.79,
+                        "billboardMode3D": "FaceNearPlane",
+                        "frame": {
+                          "xmin": 0,
+                          "ymin": 0,
+                          "xmax": 25.5,
+                          "ymax": 17
+                        },
+                        "markerGraphics": [
+                          {
+                            "type": "CIMMarkerGraphic",
+                            "geometry": {
+                              "rings": [
+                                [
+                                  [
+                                    24.08,
+                                    0
+                                  ],
+                                  [
+                                    24.08,
+                                    12.47
+                                  ],
+                                  [
+                                    7.08,
+                                    12.47
+                                  ],
+                                  [
+                                    7.08,
+                                    17
+                                  ],
+                                  [
+                                    1.42,
+                                    11.33
+                                  ],
+                                  [
+                                    7.08,
+                                    5.67
+                                  ],
+                                  [
+                                    7.08,
+                                    10.2
+                                  ],
+                                  [
+                                    21.82,
+                                    10.2
+                                  ],
+                                  [
+                                    21.82,
+                                    0
+                                  ],
+                                  [
+                                    24.08,
+                                    0
+                                  ]
+                                ]
+                              ]
+                            },
+                            "symbol": {
+                              "type": "CIMPolygonSymbol",
+                              "symbolLayers": [
+                                {
+                                  "type": "CIMSolidFill",
+                                  "enable": true,
+                                  "color": [
+                                    217,
+                                    13,
+                                    33,
+                                    255
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ],
+                        "scaleSymbolsProportionally": true,
+                        "respectFrame": true,
+                        "clippingPath": {
+                          "type": "CIMClippingPath",
+                          "clippingType": "Intersect",
+                          "path": {
+                            "rings": [
+                              [
+                                [
+                                  0,
+                                  0
+                                ],
+                                [
+                                  25.5,
+                                  0
+                                ],
+                                [
+                                  25.5,
+                                  17
+                                ],
+                                [
+                                  0,
+                                  17
+                                ],
+                                [
+                                  0,
+                                  0
+                                ]
+                              ]
+                            ]
+                          }
+                        },
+                        "rotation": 54
+                      }
+                    ],
+                    "haloSize": 1,
+                    "scaleX": 1,
+                    "angleAlignment": "Display",
+                    "angle": 54
+                  }
+                },
+                "value": "O"
+              },
+              {
+                "label": "Permanent hazard",
+                "symbol": {
+                  "type": "esriPMS",
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "contentType": "image/png",
+                  "imageData": "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",
+                  "url": "https://static.arcgis.com/images/Symbols/Emergency-Management/Fire-Fire-Response-Restrictions-Other.png",
+                  "height": 27,
+                  "width": 27
+                },
+                "value": "P"
+              },
+              {
+                "label": "Temporary hazard",
+                "symbol": {
+                  "type": "esriPMS",
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "contentType": "image/png",
+                  "imageData": "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",
+                  "url": "https://static.arcgis.com/images/Symbols/Emergency-Management/Incident-Other.png",
+                  "height": 22.65,
+                  "width": 22.65
+                },
+                "value": "T"
+              },
+              {
+                "label": "Class II Rapid",
+                "symbol": {
+                  "type": "esriPMS",
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "contentType": "image/png",
+                  "imageData": "iVBORw0KGgoAAAANSUhEUgAAAC8AAAAqCAYAAAAj6gIfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuklEQVRYhe2ZzXHCMBBGn2ZoImmDNgg1kAsuAygjvqSDXDilBygjUIZykDzYxIhd/ZnM8E4MI8nPOx/S2sz4x8ymFkjhKT8VT3ktFuYGjqnrVJe3sAa2Fr4NvKesVU3ewhuwAeb+q5UFUm6guLx1sltgkXvtYvIWXnER2QSGJVW/iLzP9ZpLREKseAR5H5EPZNL9eZ8x1c8in5JrAyb2uknyPtcLXLVVpEh3RMsrcz0ghzhEyE8VkTHE8l66q7aK3NIdIvnuSAdeNIvHSFuw0nlB+Zq5tmB7n0Vb56h8zVz3pXuITt6BfO1c3xAXc135M0rxgtJ3qz+QN3Cy0CK8gUwRieZP5g009o58Jekj8BUacGu3aRg58ivl+gzsjXMIMipvoLW9LbLij7EFWunzbWifb4BDxYjsDOw1k27K+7sXi9eU7sjVzxfLdYjUfr54rkNEyU8RkTFi+nmt+BFX6VZ7rXto+vkD+u6yxVX7pJwnQlP5JfAjHJst1yHE8sK+J3uuQ2gzv2Nc/gxsS+Q6hEreV3/H8BVe0VyHUO82xr2e7p6wmtK5DhF7SC2nqPQ1UfKPIA7P/6Sm4xdBIYIezlC7SQAAAABJRU5ErkJggg==",
+                  "url": "https://services1.arcgis.com/WHM6qC35aMtyAAlN/arcgis/rest/services/Boise_River_Hazards_and_Access_-_VIEW/FeatureServer/10/images/47aea458f8c1404fc7b9048f121f025a",
+                  "height": 31,
+                  "width": 35
+                },
+                "value": "R"
+              },
+              {
+                "label": "Extreme Hazard",
+                "symbol": {
+                  "type": "esriPMS",
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "contentType": "image/png",
+                  "imageData": "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",
+                  "url": "https://www.arcgis.com/apps/mapviewer/warning.png",
+                  "height": 10.7,
+                  "width": 12.23
+                },
+                "value": "E"
+              }
+            ]
+          }
+        }
+      },
+      "showLabels": true,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "fields",
+            "description": "",
+            "fieldInfos": [
+              {
+                "fieldName": "Type",
+                "isEditable": true,
+                "label": "Type",
+                "visible": true
+              },
+              {
+                "fieldName": "Descriptions",
+                "isEditable": true,
+                "label": "Description",
+                "visible": true
+              },
+              {
+                "fieldName": "Marker",
+                "isEditable": true,
+                "label": "Nearest Downstream Mile Marker",
+                "visible": true
+              }
+            ],
+            "title": ""
+          },
+          {
+            "type": "attachments",
+            "description": "",
+            "displayType": "auto",
+            "title": ""
+          }
+        ],
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Hazard Label",
+            "expression": "iif(($feature.Type) == \"Extreme Hazard\", \"Extreme Hazard - Turn Back!\", \r\n$feature.Name)",
+            "returnType": "string"
+          }
+        ],
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "OBJECTID",
+            "visible": false
+          },
+          {
+            "fieldName": "Name",
+            "isEditable": true,
+            "label": "Name",
+            "visible": false
+          },
+          {
+            "fieldName": "Type",
+            "isEditable": true,
+            "label": "Type",
+            "visible": true
+          },
+          {
+            "fieldName": "Status",
+            "isEditable": true,
+            "label": "Status",
+            "visible": false
+          },
+          {
+            "fieldName": "Comments",
+            "isEditable": true,
+            "label": "Internal Comments",
+            "visible": false
+          },
+          {
+            "fieldName": "CreationDate",
+            "isEditable": true,
+            "label": "CreationDate",
+            "visible": false
+          },
+          {
+            "fieldName": "Creator",
+            "isEditable": true,
+            "label": "Creator",
+            "visible": false
+          },
+          {
+            "fieldName": "EditDate",
+            "isEditable": true,
+            "label": "EditDate",
+            "visible": false
+          },
+          {
+            "fieldName": "Editor",
+            "isEditable": true,
+            "label": "Editor",
+            "visible": false
+          },
+          {
+            "fieldName": "Descriptions",
+            "isEditable": true,
+            "label": "Description",
+            "visible": true
+          },
+          {
+            "fieldName": "Marker",
+            "isEditable": true,
+            "label": "Nearest Downstream Mile Marker",
+            "visible": true
+          },
+          {
+            "fieldName": "expression/expr0",
+            "isEditable": true,
+            "visible": false
+          }
+        ],
+        "title": "{Name}"
+      }
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "World_Hillshade_1081",
+        "opacity": 1,
+        "title": "World_Hillshade",
+        "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "visibility": true,
+        "layerType": "ArcGISTiledMapServiceLayer"
+      },
+      {
+        "id": "VectorTile_5394",
+        "opacity": 1,
+        "title": "World Topographic Map",
+        "visibility": true,
+        "itemId": "7dc6cea0b1764a1f9af2e679f642f0f5",
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://www.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json"
+      }
+    ],
+    "title": "Topographic "
+  },
+  "applicationProperties": {
+    "viewing": {}
+  },
+  "authoringApp": "ArcGISMapViewer",
+  "authoringAppVersion": "2025.1",
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -12946915.735848172,
+        "ymin": 5389820.876435314,
+        "xmax": -12915423.680194722,
+        "ymax": 5414242.506972396
+      }
+    }
+  },
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "timeZone": "system",
+  "version": "2.33"
+}

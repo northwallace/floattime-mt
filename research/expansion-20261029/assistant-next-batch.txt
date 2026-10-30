@@ -1,0 +1,80 @@
+FLOAT ETA — NEXT STATE / RIVER RESEARCH BATCH
+
+Work on [STATE OR RIVER CLUSTER]. Prepare an evidence-backed import package;
+do not publish, edit generated public assets, or approve maps automatically.
+Use the supplied current catalog/RESEARCH_FORMAT.md, source-index.json and
+access-index.json. The validator in that same package is the authority for
+structure. Ask for those files if the package is missing them.
+
+Prioritize a small connected set of useful public floats sharing landings.
+Completeness means recording an honest decision for each candidate, not making
+every candidate verified. Keep unrelated private landings and long stretches
+with unresolved hazards out of a ready-for-visitors claim.
+
+1. Identity first. Reuse permanent acc-... IDs. Keep the original identity for
+   shared or cross-state landings. Preserve aliases. Identify the particular
+   river landing, parking area and entrance separately; do not conflate them.
+
+2. Establish public boating access and current opening status from the managing
+   agency. Find agency GIS through an agency-owned page or map, then record the
+   service, layer, public filter and stable feature identifier. An official pin
+   can still be a campground, parking lot or dam rather than a river landing.
+   A review must check that distinction and compare placement with imagery.
+
+3. Use the registered agency-source pipeline when possible. Include only public
+   fields needed for review. Save complete paginated results, query URLs, dates
+   and checksums. Bind the reviewed access ID to its source feature. Never
+   silently accept a partial response or promote a whole layer by proximity.
+
+4. Exact points need dependable landing evidence. A documented public boating
+   facility with only an agency park/area coordinate may be access-verified and
+   displayed approximately. Keep candidate coordinates under research, never
+   in a pending point's active lat/lon. Preserve conflicting coordinates and
+   explain what would resolve them. A closure, uncertain permission or hazardous
+   endpoint may require withholding even an approximate map.
+
+5. Check the complete trip: downstream direction, confluences, dams, required
+   exits, seasonal roads, permits and craft suitability. Distances must refer to
+   the same named endpoints. Use published river mile markers or a published
+   whole-trip length with citations. Do not substitute walking, shuttle-road or
+   straight-line distance. Store uncertain distances as research evidence.
+
+6. Guide times belong to sections with original craft/season/flow assumptions.
+   Do not convert a multiday camping itinerary to hours afloat. New rivers use
+   timing.mode unavailable and null refFlowCfs/refSpeedMph. An active flow gauge
+   by itself does not create a live ETA calibration.
+
+7. Check the gauge's identity AND recent numeric discharge (parameter 00060).
+   The actual app calls the USGS Water Data API v1 continuous collection with
+   monitoring_location_id=USGS-<station>, parameter_code=00060,00010, a seven-day
+   UTC datetime interval and limit=10000. Save a dated response without any key.
+   Temperature-only, seasonal/null, historical and discontinued records do not
+   supply current discharge. Do not substitute flow from across a dam/diversion.
+   Record gaugeContext for a known limitation and retain unavailable timing.
+
+8. Dotted river paths are a separate review. Candidate geometry stays under
+   research/routes/STATE with display, landOverlay, distanceEstimate and
+   remainingTime false. A visually plausible line does not verify distance,
+   takeout-bank side or GPS time remaining. Do not assume the widest branch is
+   the route. Keep alternative channels and endpoint-offset evidence.
+
+Deliver:
+- Proposed per-river source records and state access registry, preserving IDs.
+- Dated source manifest, raw agency snapshots and feature bindings.
+- A section review queue distinguishing approximate access map, exact landing,
+  route display, sourced distance, calibrated time and current opening status.
+- Pending candidates and conflicts, with a concrete next action for each.
+- Gauge audit results, including failed requests; no fabricated API responses.
+- A change log identifying replacements, closures and changed distances.
+
+Useful current examples:
+- Russian River (Forestville): a new state with one county-backed summer float,
+  approximate park markers, source-backed length and guide time, no live ETA.
+- John Day: shared permanent landings and sourced full/shorter trip options.
+- Boise: reviewed landing and river-left takeout; unsafe downstream extension held.
+- Encampment: active replacement gauge with explicit reach limitations.
+- Sandy: a documented closure overrides an otherwise plausible access map.
+
+The application maintainer runs build_catalog.py, build_review_queue.py, source
+binding checks, audit_gauges.py and browser checks, then deliberately reviews
+section fingerprints. Successful import and tests do not authorize publication.

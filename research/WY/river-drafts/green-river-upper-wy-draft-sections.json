@@ -1,0 +1,68 @@
+{
+ "id": "green-river-upper-wy-draft-sections",
+ "name": "Green River (Upper) — Green River Lakes to Names Hill — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "permission"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0029",
+   "name": "Forty Rod (Green)",
+   "grade": "verified",
+   "flags": []
+  },
+  {
+   "id": "WY-ACC-0030",
+   "name": "Daniel Hwy 189/Zach Roberts (Green)",
+   "grade": "pending",
+   "flags": [
+    "permission"
+   ]
+  },
+  {
+   "id": "WY-ACC-0031",
+   "name": "Swains/Woods Bridge (Green)",
+   "grade": "verified",
+   "flags": []
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "forty-rod-to-daniel-hwy-189-zach-roberts",
+   "putIn": "Forty Rod (Green)",
+   "takeOut": "Daniel Hwy 189/Zach Roberts (Green)",
+   "miles": 9.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  },
+  {
+   "id": "daniel-hwy-189-zach-roberts-to-swains-woods-bridge",
+   "putIn": "Daniel Hwy 189/Zach Roberts (Green)",
+   "takeOut": "Swains/Woods Bridge (Green)",
+   "miles": 7.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  }
+ ]
+}

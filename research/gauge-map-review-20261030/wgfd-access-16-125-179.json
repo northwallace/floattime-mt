@@ -1,0 +1,226 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "uniqueIdField": {
+    "name": "OBJECTID",
+    "isSystemMaintained": true
+  },
+  "globalIdFieldName": "GlobalID",
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+  },
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "StreamID",
+      "type": "esriFieldTypeInteger",
+      "alias": "StreamID",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "UpStreamToDownID",
+      "type": "esriFieldTypeString",
+      "alias": "UpStreamToDownID",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "StreamName",
+      "type": "esriFieldTypeString",
+      "alias": "StreamName",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "LaunchLocation",
+      "type": "esriFieldTypeString",
+      "alias": "LaunchLocation",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "IsLaunch",
+      "type": "esriFieldTypeInteger",
+      "alias": "IsLaunch",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "IsEgress",
+      "type": "esriFieldTypeInteger",
+      "alias": "IsEgress",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Sections",
+      "type": "esriFieldTypeInteger",
+      "alias": "Sections",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "EgressID",
+      "type": "esriFieldTypeString",
+      "alias": "EgressID",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "UTMZone",
+      "type": "esriFieldTypeString",
+      "alias": "UTMZone",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "UTMEasting",
+      "type": "esriFieldTypeDouble",
+      "alias": "UTMEasting",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "UTMNorthing",
+      "type": "esriFieldTypeDouble",
+      "alias": "UTMNorthing",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "UTMs",
+      "type": "esriFieldTypeString",
+      "alias": "UTMs",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Egress_Location_Notes",
+      "type": "esriFieldTypeString",
+      "alias": "Egress Location Notes",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Notes_Explanation",
+      "type": "esriFieldTypeString",
+      "alias": "Notes/Explanation",
+      "sqlType": "sqlTypeOther",
+      "length": 8000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "GlobalID",
+      "type": "esriFieldTypeGlobalID",
+      "alias": "GlobalID",
+      "sqlType": "sqlTypeOther",
+      "length": 38,
+      "domain": null,
+      "defaultValue": "NEWID() WITH VALUES"
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 16,
+        "StreamID": 4,
+        "UpStreamToDownID": "UGR2",
+        "StreamName": "Green River",
+        "LaunchLocation": "Roaring Fork (USFS)",
+        "IsLaunch": 1,
+        "IsEgress": 1,
+        "Sections": 1,
+        "EgressID": "4",
+        "UTMZone": "12T",
+        "UTMEasting": 587176.76,
+        "UTMNorthing": 4801044.63,
+        "UTMs": "12T 587176.76m 4801044.63m",
+        "Egress_Location_Notes": null,
+        "Notes_Explanation": null,
+        "GlobalID": "74667274-3488-48ec-b191-7c4043e0a918"
+      },
+      "geometry": {
+        "x": -109.92421874242159,
+        "y": 43.35720848261893
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 125,
+        "StreamID": 15,
+        "UpStreamToDownID": "WRU2",
+        "StreamName": "Wind River ",
+        "LaunchLocation": "Dubois City Park",
+        "IsLaunch": 1,
+        "IsEgress": 1,
+        "Sections": 1,
+        "EgressID": "15",
+        "UTMZone": "12T",
+        "UTMEasting": 600447.94,
+        "UTMNorthing": 4825784.74,
+        "UTMs": "12T 600447.94m 4825784.74m",
+        "Egress_Location_Notes": null,
+        "Notes_Explanation": null,
+        "GlobalID": "f9c2d814-41e7-4e9d-b711-a5767fe87f05"
+      },
+      "geometry": {
+        "x": -109.75592273624017,
+        "y": 43.578267250668254
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 179,
+        "StreamID": 9,
+        "UpStreamToDownID": "NPL3",
+        "StreamName": "North Platte River",
+        "LaunchLocation": "Douglas",
+        "IsLaunch": 1,
+        "IsEgress": 1,
+        "Sections": 6,
+        "EgressID": "9",
+        "UTMZone": "13T",
+        "UTMEasting": 467774,
+        "UTMNorthing": 4734554,
+        "UTMs": "13T 467774  4734554",
+        "Egress_Location_Notes": null,
+        "Notes_Explanation": null,
+        "GlobalID": "8b3008e4-9edc-4b17-a36e-aa40026d9a3a"
+      },
+      "geometry": {
+        "x": -105.39386946442382,
+        "y": 42.76284378052946
+      }
+    }
+  ]
+}

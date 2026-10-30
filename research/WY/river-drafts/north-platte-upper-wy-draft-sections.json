@@ -1,0 +1,47 @@
+{
+ "id": "north-platte-upper-wy-draft-sections",
+ "name": "North Platte River — Six Mile Gap to Saratoga and Sinclair — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "cross-state"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0137",
+   "name": "Routt, Colorado (North Platte)",
+   "grade": "pending",
+   "flags": [
+    "cross-state"
+   ]
+  },
+  {
+   "id": "WY-ACC-0138",
+   "name": "Six Mile Gap (North Platte)",
+   "grade": "access-verified",
+   "flags": []
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "routt-colorado-to-six-mile-gap",
+   "putIn": "Routt, Colorado (North Platte)",
+   "takeOut": "Six Mile Gap (North Platte)",
+   "miles": 9.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "take-out-approximate",
+    "app-support",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  }
+ ]
+}

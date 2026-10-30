@@ -1,0 +1,638 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-10-30",
+  "heldMapCounts": {
+    "AR": 17,
+    "MO": 30,
+    "MT": 14,
+    "WY": 25
+  },
+  "gaugeGaps": [
+    {
+      "riverId": "shoshone-river-corbett",
+      "station": "USGS 06283000",
+      "status": "unresolved",
+      "nextAction": "Find a maintained discharge source below Corbett diversion. SRBB is upstream and SRLO at Lovell is much farther downstream; neither was approved as a substitute."
+    },
+    {
+      "riverId": "laramie-river-woods-landing",
+      "station": "USGS 06659000",
+      "status": "candidate-needs-review",
+      "candidate": "Wyoming State Engineer 014AWL, Laramie below Pioneer Canal",
+      "sourceUrl": "https://seoflow.wyo.gov/",
+      "nextAction": "Review station placement relative to Jelm/Woods Landing and Pioneer Canal. Public metadata lists a current series, but the export returned No Access. Obtain an authorized public machine-readable feed before implementing."
+    },
+    {
+      "riverId": "tongue-river-wy",
+      "station": "USGS 06299980",
+      "status": "candidate-needs-review",
+      "candidate": "Wyoming State Engineer 06298000, Tongue near Dayton",
+      "sourceUrl": "https://seoflow.wyo.gov/",
+      "nextAction": "Review how the upstream Dayton station represents Ranchester. Public metadata lists a current series, but the export returned No Access. Obtain an authorized public machine-readable feed before implementing."
+    }
+  ],
+  "heldAccessMaps": [
+    {
+      "id": "buffalo-river/baker-ford-to-tyler-bend",
+      "state": "AR",
+      "putIn": "Baker Ford (Buffalo NR)",
+      "takeOut": "Tyler Bend (Buffalo NR)",
+      "reason": "Tyler Bend has more than one launch. The supplied launch coordinate conflicts with the NPS mileage to Grinders Ferry. Confirm the intended landing and corresponding mileage before trip planning."
+    },
+    {
+      "id": "buffalo-river/tyler-bend-to-grinders-ferry",
+      "state": "AR",
+      "putIn": "Tyler Bend (Buffalo NR)",
+      "takeOut": "Grinders Ferry (Buffalo NR)",
+      "reason": "Tyler Bend has more than one launch. The supplied launch coordinate conflicts with the NPS mileage to Grinders Ferry. Confirm the intended landing and corresponding mileage before trip planning."
+    },
+    {
+      "id": "buffalo-river/dillards-ferry-to-buffalo-point",
+      "state": "AR",
+      "putIn": "Dillards Ferry (Buffalo NR)",
+      "takeOut": "Buffalo Point (Buffalo NR)",
+      "reason": "NPS says the road to the Buffalo Point launch is closed; boats and gear must be carried up a large, steep gravel bar. Confirm the current carry access and craft suitability before using this listing. Dillards Ferry is an agency-listed alternative upstream."
+    },
+    {
+      "id": "buffalo-river/buffalo-point-to-rush",
+      "state": "AR",
+      "putIn": "Buffalo Point (Buffalo NR)",
+      "takeOut": "Rush (Buffalo NR)",
+      "reason": "NPS says the road to the Buffalo Point launch is closed; boats and gear must be carried up a large, steep gravel bar. Confirm the current carry access and craft suitability before using this listing. Dillards Ferry is an agency-listed alternative upstream."
+    },
+    {
+      "id": "cadron-creek/hwy-285-boat-ramp-to-shaw-bridge-boat-ramp",
+      "state": "AR",
+      "putIn": "Hwy 285 Boat Ramp",
+      "takeOut": "Shaw Bridge Boat Ramp",
+      "reason": "Shaw Bridge Boat Ramp: Agency record identifies highway right-of-way, not a confirmed public boat approach."
+    },
+    {
+      "id": "cadron-creek/shaw-bridge-boat-ramp-to-hwy-64-boat-ramp",
+      "state": "AR",
+      "putIn": "Shaw Bridge Boat Ramp",
+      "takeOut": "Hwy 64 Boat Ramp",
+      "reason": "Shaw Bridge Boat Ramp: Agency record identifies highway right-of-way, not a confirmed public boat approach."
+    },
+    {
+      "id": "illinois-river-ar/chamber-springs-boating-access-to-siloam-springs-kayak-park-access",
+      "state": "AR",
+      "putIn": "Chamber Springs Boating Access",
+      "takeOut": "Siloam Springs Kayak Park Access",
+      "reason": "Siloam Springs Kayak Park Access: Whitewater park entry, restrictions and route suitability need a dedicated review."
+    },
+    {
+      "id": "illinois-river-ar/siloam-springs-kayak-park-access-to-woka-whitewater-park-canoe-kayakng-access",
+      "state": "AR",
+      "putIn": "Siloam Springs Kayak Park Access",
+      "takeOut": "WOKA Whitewater Park Canoe-Kayakng Access",
+      "reason": "Siloam Springs Kayak Park Access: Whitewater park entry, restrictions and route suitability need a dedicated review."
+    },
+    {
+      "id": "ouachita-river-upper/oden-boating-access-to-rocky-shoals",
+      "state": "AR",
+      "putIn": "Oden Boating Access",
+      "takeOut": "Rocky Shoals (USFS)",
+      "reason": "Rocky Shoals (USFS): The recreation record does not establish a suitable boat landing; obtain a dedicated canoe/launch source."
+    },
+    {
+      "id": "ouachita-river-upper/rocky-shoals-to-fulton-branch",
+      "state": "AR",
+      "putIn": "Rocky Shoals (USFS)",
+      "takeOut": "Fulton Branch (USFS)",
+      "reason": "Rocky Shoals (USFS): The recreation record does not establish a suitable boat landing; obtain a dedicated canoe/launch source."
+    },
+    {
+      "id": "ouachita-river-upper/fulton-branch-to-dragover",
+      "state": "AR",
+      "putIn": "Fulton Branch (USFS)",
+      "takeOut": "Dragover (USFS)",
+      "reason": "Fulton Branch (USFS): The recreation record does not establish a suitable boat landing; obtain a dedicated canoe/launch source."
+    },
+    {
+      "id": "ouachita-river-upper/dragover-to-river-bluff",
+      "state": "AR",
+      "putIn": "Dragover (USFS)",
+      "takeOut": "River Bluff (USFS)",
+      "reason": "River Bluff (USFS): The recreation record does not establish a suitable boat landing; obtain a dedicated canoe/launch source."
+    },
+    {
+      "id": "saline-river/peeler-bend-boat-ramp-to-lyle-park-boat-ramp",
+      "state": "AR",
+      "putIn": "Peeler Bend Boat Ramp",
+      "takeOut": "Lyle Park Boat Ramp",
+      "reason": "AGFC documents a low-water bridge on this reach that can block boats as water rises. Confirm a safe, legal portage and current river conditions before using this listing. Do not rely on the map or a gauge height alone to pass beneath the bridge."
+    },
+    {
+      "id": "saline-river/lyle-park-boat-ramp-to-i-30-cherry-gingles-boat-ramp",
+      "state": "AR",
+      "putIn": "Lyle Park Boat Ramp",
+      "takeOut": "I -30 Cherry Gingles Boat Ramp",
+      "reason": "The Cherry Gingles / Cherry Demuth landing identity and current access need reconciliation. AGFC lists Cherry Demuth as closed and documents a hazardous spillway downstream of Lyle Park. A usable landing and any required portage must be confirmed before this map is released."
+    },
+    {
+      "id": "saline-river/i-30-cherry-gingles-boat-ramp-to-fitzhugh-boat-ramp",
+      "state": "AR",
+      "putIn": "I -30 Cherry Gingles Boat Ramp",
+      "takeOut": "Fitzhugh Boat Ramp",
+      "reason": "The Cherry Gingles / Cherry Demuth landing identity and current access need reconciliation. AGFC lists Cherry Demuth as closed and documents a hazardous spillway downstream of Lyle Park. A usable landing and any required portage must be confirmed before this map is released."
+    },
+    {
+      "id": "spring-river-ar/cold-springs-boat-ramp-to-dam-3-boat-ramp",
+      "state": "AR",
+      "putIn": "Cold Springs Boat Ramp",
+      "takeOut": "Dam 3 Boat Ramp",
+      "reason": "Dam 3 Boat Ramp: The hatchery/dam landing and downstream passage need a dedicated access and hazard review."
+    },
+    {
+      "id": "spring-river-ar/dam-3-boat-ramp-to-bayou-boat-ramp",
+      "state": "AR",
+      "putIn": "Dam 3 Boat Ramp",
+      "takeOut": "Bayou Boat Ramp",
+      "reason": "Dam 3 Boat Ramp: The hatchery/dam landing and downstream passage need a dedicated access and hazard review."
+    },
+    {
+      "id": "big-piney-river/simmons-ford-access-to-baptist-camp-access",
+      "state": "MO",
+      "putIn": "Simmons Ford Access",
+      "takeOut": "Baptist Camp Access",
+      "reason": "Baptist Camp Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "big-piney-river/baptist-camp-access-to-dogs-bluff-access",
+      "state": "MO",
+      "putIn": "Baptist Camp Access",
+      "takeOut": "Dogs Bluff Access",
+      "reason": "Baptist Camp Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "big-piney-river/mason-bridge-access-to-slabtown-recreation-area",
+      "state": "MO",
+      "putIn": "Mason Bridge Access",
+      "takeOut": "Slabtown Recreation Area (USFS)",
+      "reason": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "id": "big-piney-river/slabtown-recreation-area-to-ross-access",
+      "state": "MO",
+      "putIn": "Slabtown Recreation Area (USFS)",
+      "takeOut": "Ross Access",
+      "reason": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "id": "big-piney-river/ross-access-to-east-gate-access",
+      "state": "MO",
+      "putIn": "Ross Access",
+      "takeOut": "East Gate Access (USFS)",
+      "reason": "This reach passes through Fort Leonard Wood. Confirm installation access requirements, a legal shuttle and the intended East Gate landing before planning this section."
+    },
+    {
+      "id": "big-river/bootleg-access-to-leadwood-access",
+      "state": "MO",
+      "putIn": "Bootleg Access",
+      "takeOut": "Leadwood Access",
+      "reason": "Bootleg Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "big-river/leadwood-access-to-mammoth-access",
+      "state": "MO",
+      "putIn": "Leadwood Access",
+      "takeOut": "Mammoth Access",
+      "reason": "Leadwood Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "bourbeuse-river/mint-spring-access-to-tea-access",
+      "state": "MO",
+      "putIn": "Mint Spring Access",
+      "takeOut": "Tea Access",
+      "reason": "Tea Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "bourbeuse-river/tea-access-to-mill-rock-access",
+      "state": "MO",
+      "putIn": "Tea Access",
+      "takeOut": "Mill Rock Access",
+      "reason": "Tea Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "bourbeuse-river/mill-rock-access-to-wenkel-ford-access",
+      "state": "MO",
+      "putIn": "Mill Rock Access",
+      "takeOut": "Wenkel Ford Access",
+      "reason": "Wenkel Ford Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "bourbeuse-river/wenkel-ford-access-to-reiker-ford-access",
+      "state": "MO",
+      "putIn": "Wenkel Ford Access",
+      "takeOut": "Reiker Ford Access",
+      "reason": "Wenkel Ford Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "bourbeuse-river/reiker-ford-access-to-union-access",
+      "state": "MO",
+      "putIn": "Reiker Ford Access",
+      "takeOut": "Union Access",
+      "reason": "Reiker Ford Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "bryant-creek/warren-bridge-access-to-flo-cook-access",
+      "state": "MO",
+      "putIn": "Warren Bridge Access",
+      "takeOut": "Flo Cook Access",
+      "reason": "Flo Cook Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "current-river-upper/baptist-to-cedar-grove",
+      "state": "MO",
+      "putIn": "Baptist (Ozark NSR)",
+      "takeOut": "Cedar Grove (Ozark NSR)",
+      "reason": "Baptist (Ozark NSR): This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "current-river-upper/pulltite-to-round-spring",
+      "state": "MO",
+      "putIn": "Pulltite (Ozark NSR)",
+      "takeOut": "Round Spring (Ozark NSR)",
+      "reason": "Round Spring (Ozark NSR): The specific lower/middle landing and current approach need confirmation; old flood damage notice does not establish current ramp status."
+    },
+    {
+      "id": "current-river-upper/round-spring-to-jerktail-landing",
+      "state": "MO",
+      "putIn": "Round Spring (Ozark NSR)",
+      "takeOut": "Jerktail Landing (Ozark NSR)",
+      "reason": "Round Spring (Ozark NSR): The specific lower/middle landing and current approach need confirmation; old flood damage notice does not establish current ramp status."
+    },
+    {
+      "id": "current-river-upper/round-spring-to-two-rivers",
+      "state": "MO",
+      "putIn": "Round Spring (Ozark NSR)",
+      "takeOut": "Two Rivers (Ozark NSR)",
+      "reason": "Round Spring (Ozark NSR): The specific lower/middle landing and current approach need confirmation; old flood damage notice does not establish current ramp status."
+    },
+    {
+      "id": "current-river-lower/two-rivers-to-powder-mill",
+      "state": "MO",
+      "putIn": "Two Rivers (Ozark NSR)",
+      "takeOut": "Powder Mill (Ozark NSR)",
+      "reason": "Powder Mill (Ozark NSR): This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "current-river-lower/powder-mill-to-rocky-creek-conservation-area",
+      "state": "MO",
+      "putIn": "Powder Mill (Ozark NSR)",
+      "takeOut": "Rocky Creek Conservation Area",
+      "reason": "Powder Mill (Ozark NSR): This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "current-river-lower/bay-nothing-gravel-boat-launch-to-float-camp-recreation-area",
+      "state": "MO",
+      "putIn": "Bay Nothing Gravel Boat Launch (USFS)",
+      "takeOut": "Float Camp Recreation Area (USFS)",
+      "reason": "Float Camp Recreation Area (USFS): The recreation record does not establish a suitable boat landing; obtain a dedicated canoe/launch source."
+    },
+    {
+      "id": "current-river-lower/float-camp-recreation-area-to-t-l-wright-memorial-access",
+      "state": "MO",
+      "putIn": "Float Camp Recreation Area (USFS)",
+      "takeOut": "T. L. Wright Memorial Access (Doniphan)",
+      "reason": "Float Camp Recreation Area (USFS): The recreation record does not establish a suitable boat landing; obtain a dedicated canoe/launch source."
+    },
+    {
+      "id": "current-river-lower/powder-mill-to-van-buren",
+      "state": "MO",
+      "putIn": "Powder Mill (Ozark NSR)",
+      "takeOut": "Van Buren (Ozark NSR)",
+      "reason": "Powder Mill (Ozark NSR): This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "huzzah-creek/red-bluff-recreation-area-to-huzzah-conservation-area-huzzah-creek",
+      "state": "MO",
+      "putIn": "Red Bluff Recreation Area (USFS)",
+      "takeOut": "Huzzah Conservation Area — Huzzah Creek",
+      "reason": "Red Bluff Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "id": "little-piney-creek/lane-spring-recreation-area-to-jerome-access",
+      "state": "MO",
+      "putIn": "Lane Spring Recreation Area (USFS)",
+      "takeOut": "Jerome Access",
+      "reason": "Lane Spring Recreation Area (USFS): The recreation record does not establish a suitable boat landing; obtain a dedicated canoe/launch source."
+    },
+    {
+      "id": "meramec-river/short-bend-access-to-scotts-ford-access",
+      "state": "MO",
+      "putIn": "Short Bend Access",
+      "takeOut": "Scotts Ford Access",
+      "reason": "Short Bend Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "niangua-river/big-john-access-to-williams-ford-access",
+      "state": "MO",
+      "putIn": "Big John Access",
+      "takeOut": "Williams Ford Access",
+      "reason": "Williams Ford Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "niangua-river/williams-ford-access-to-moon-valley-access",
+      "state": "MO",
+      "putIn": "Williams Ford Access",
+      "takeOut": "Moon Valley Access",
+      "reason": "Williams Ford Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "north-fork-river/hebron-access-to-north-fork-recreation-area",
+      "state": "MO",
+      "putIn": "Hebron Access",
+      "takeOut": "North Fork Recreation Area (USFS)",
+      "reason": "Hebron Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "osage-fork/rader-access-to-long-ford-access",
+      "state": "MO",
+      "putIn": "Rader Access",
+      "takeOut": "Long Ford Access",
+      "reason": "Rader Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "st-francis-river/gruner-ford-access-to-syenite-access",
+      "state": "MO",
+      "putIn": "Gruner Ford Access",
+      "takeOut": "Syenite Access",
+      "reason": "Gruner Ford Access: This source needs a separate facility/landing review; it was not part of the fresh MDC/AGFC/NPS comparison."
+    },
+    {
+      "id": "beaverhead/dam-high-bridge",
+      "state": "MT",
+      "putIn": "Clark Canyon Dam",
+      "takeOut": "High Bridge FAS",
+      "reason": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch."
+    },
+    {
+      "id": "beaverhead/high-bridge-barretts",
+      "state": "MT",
+      "putIn": "High Bridge FAS",
+      "takeOut": "Barretts Station Park (above dam)",
+      "reason": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam."
+    },
+    {
+      "id": "bitterroot/florence-buckhouse",
+      "state": "MT",
+      "putIn": "Florence Bridge",
+      "takeOut": "Buckhouse Bridge (Missoula)",
+      "reason": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch."
+    },
+    {
+      "id": "clark-fork/caras-kelly-island",
+      "state": "MT",
+      "putIn": "Caras Park",
+      "takeOut": "Kelly Island",
+      "reason": "Do not use this listing to plan a casual float. Missoula identifies Silver Park as the last public exit before the downstream Grass Valley diversion dam, with Kelly Island below the dam. A suitable route and access plan have not been established."
+    },
+    {
+      "id": "clarks-fork-yst/bridger-edgar",
+      "state": "MT",
+      "putIn": "Bridger",
+      "takeOut": "Edgar",
+      "reason": "An exact legal take-out at Edgar has not been established for this listing. A town or bridge name is not enough to plan an exit."
+    },
+    {
+      "id": "gallatin-canyon/greek-creek-storm-castle",
+      "state": "MT",
+      "putIn": "Greek Creek",
+      "takeOut": "Storm Castle",
+      "reason": "Greek Creek Campground now has a restored rock-terrace river access (completed May 2025), but the project documentation does not identify a designated raft launch. The older survey also distinguishes the campground from an upstream pull-out and Upper from Lower Storm Castle. Confirm the intended launch and take-out before mapping or using the old mileage."
+    },
+    {
+      "id": "gallatin-lower/gateway-shedds",
+      "state": "MT",
+      "putIn": "Gallatin Gateway (Axtell Bridge)",
+      "takeOut": "Shedd's Bridge",
+      "reason": "Shedd's Bridge: The official FWP access guide marks this site closed for public safety due to an unstable river bank, and it is absent from the current managed-access inventory. Do not use it as a take-out without current agency confirmation."
+    },
+    {
+      "id": "jefferson-upper/silver-star-parsons",
+      "state": "MT",
+      "putIn": "Silver Star FAS",
+      "takeOut": "Parsons Bridge (Waterloo)",
+      "reason": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check."
+    },
+    {
+      "id": "jefferson-upper/parsons-parrott",
+      "state": "MT",
+      "putIn": "Parsons Bridge (Waterloo)",
+      "takeOut": "Parrot Castle FAS",
+      "reason": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing."
+    },
+    {
+      "id": "rock-creek/dalles",
+      "state": "MT",
+      "putIn": "Bitterroot Flat / Dalles",
+      "takeOut": "Harry's Flat",
+      "reason": "The launch label combines Bitterroot Flat and Dalles, which are different locations. This section needs a single confirmed put-in and landing before its mileage and timing can be offered."
+    },
+    {
+      "id": "rock-creek/harrys-votm",
+      "state": "MT",
+      "putIn": "Harry's Flat",
+      "takeOut": "Valley of the Moon",
+      "reason": "The former Valley of the Moon pin was across the road from river access. The actual usable take-out remains unconfirmed; this listing is not ready for trip planning."
+    },
+    {
+      "id": "rock-creek/votm-clinton",
+      "state": "MT",
+      "putIn": "Valley of the Moon",
+      "takeOut": "Clinton / Clark Fork confluence",
+      "reason": "The Valley of the Moon launch and a legal boat take-out near Clinton / the Clark Fork confluence remain unconfirmed. Do not treat the confluence as a guaranteed exit."
+    },
+    {
+      "id": "swan/swan-lake-bigfork",
+      "state": "MT",
+      "putIn": "Swan Lake outlet",
+      "takeOut": "Bigfork (above the Wild Mile)",
+      "reason": "A usable take-out above the Wild Mile has not been confirmed. The mapped Bigfork boat ramp is a different location and must not be substituted. This section is not ready for trip planning."
+    },
+    {
+      "id": "yellowstone-upper/gardiner-corwin",
+      "state": "MT",
+      "putIn": "Gardiner (Queen of the Waters)",
+      "takeOut": "Corwin Springs",
+      "reason": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing."
+    },
+    {
+      "id": "green-river-upper-wy/warm-springs-to-kendall-bridge",
+      "state": "WY",
+      "putIn": "Warm Springs (Green)",
+      "takeOut": "Kendall Bridge (Green)",
+      "reason": "Kendall Bridge (Green): WGFD lists this as river access, but its Green River guide marks a closed approach road near Kendall Bridge. The current legal vehicle approach and usable landing need to be reconciled before publishing a marker. Do not route visitors onto a road shown as closed."
+    },
+    {
+      "id": "green-river-upper-wy/kendall-bridge-to-whiskey-campground",
+      "state": "WY",
+      "putIn": "Kendall Bridge (Green)",
+      "takeOut": "Whiskey Campground (Green)",
+      "reason": "Kendall Bridge (Green): WGFD lists this as river access, but its Green River guide marks a closed approach road near Kendall Bridge. The current legal vehicle approach and usable landing need to be reconciled before publishing a marker. Do not route visitors onto a road shown as closed. Whiskey Campground (Green): WGFD and Forest Service recreation coordinates disagree by about 500 metres. The Green River guide labels Whiskey Grove near Kendall Bridge; the current campground landing and the direction/order of these nearby sites need to be reconciled before mapping."
+    },
+    {
+      "id": "green-river-upper-wy/whiskey-campground-to-usfs-boundary",
+      "state": "WY",
+      "putIn": "Whiskey Campground (Green)",
+      "takeOut": "USFS Boundary (Green)",
+      "reason": "Whiskey Campground (Green): WGFD and Forest Service recreation coordinates disagree by about 500 metres. The Green River guide labels Whiskey Grove near Kendall Bridge; the current campground landing and the direction/order of these nearby sites need to be reconciled before mapping."
+    },
+    {
+      "id": "green-river-upper-wy/fears-dry-piney-reardon-draw-to-gas-wells",
+      "state": "WY",
+      "putIn": "Fears/Dry Piney-Reardon Draw (Green)",
+      "takeOut": "Gas Wells (Green)",
+      "reason": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/gas-wells-to-labarge-whelan-bridge",
+      "state": "WY",
+      "putIn": "Gas Wells (Green)",
+      "takeOut": "LaBarge Whelan Bridge (Green)",
+      "reason": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-fontenelle/james-town-to-expedition-island",
+      "state": "WY",
+      "putIn": "James Town (Green)",
+      "takeOut": "Expedition Island (Green)",
+      "reason": "WGFD advises taking out at James Town before the diversion hazards at river miles 67–70. This downstream trip is withheld; a safe, authorized route around the hazards has not been established."
+    },
+    {
+      "id": "green-river-fontenelle/expedition-island-to-stratton-meyer",
+      "state": "WY",
+      "putIn": "Expedition Island (Green)",
+      "takeOut": "Stratton Meyer (Green)",
+      "reason": "The launch is documented, but the exact launch/channel relationship to the guide’s river-mile 67–70 hazard reach still needs review. Do not infer a safe through-route from the access marker."
+    },
+    {
+      "id": "hoback-river/highway-189-bridge-to-granite-creek",
+      "state": "WY",
+      "putIn": "Highway 189 Bridge (Hoback)",
+      "takeOut": "Granite Creek (Hoback)",
+      "reason": "Highway 189 Bridge (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 56 ('Highway 189 Bridge', listed as a launch and take-out). Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/granite-creek-to-stinking-springs",
+      "state": "WY",
+      "putIn": "Granite Creek (Hoback)",
+      "takeOut": "Stinking Springs (Hoback)",
+      "reason": "Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out). Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/stinking-springs-to-spotted-horse-ranch",
+      "state": "WY",
+      "putIn": "Stinking Springs (Hoback)",
+      "takeOut": "Spotted Horse Ranch (Hoback)",
+      "reason": "Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out). Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/spotted-horse-ranch-to-confluence",
+      "state": "WY",
+      "putIn": "Spotted Horse Ranch (Hoback)",
+      "takeOut": "Confluence (Hoback)",
+      "reason": "Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out). Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/confluence-to-astoria",
+      "state": "WY",
+      "putIn": "Confluence (Hoback)",
+      "takeOut": "Astoria (Snake)",
+      "reason": "Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/east-fork-confluence-to-gas-wells",
+      "state": "WY",
+      "putIn": "East Fork Confluence (New Fork)",
+      "takeOut": "Gas Wells (New Fork)",
+      "reason": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/gas-wells-to-remmick",
+      "state": "WY",
+      "putIn": "Gas Wells (New Fork)",
+      "takeOut": "Remmick (New Fork)",
+      "reason": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/usgs-gage-station-to-blm-downstream-of-gage-station",
+      "state": "WY",
+      "putIn": "USGS Gage Station (New Fork)",
+      "takeOut": "BLM downstream of Gage Station (New Fork)",
+      "reason": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/blm-downstream-of-gage-station-to-fears-ferry-island",
+      "state": "WY",
+      "putIn": "BLM downstream of Gage Station (New Fork)",
+      "takeOut": "Fears/Ferry Island (Green)",
+      "reason": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/sleeping-giant-ski-area-to-eagle-creek-campground",
+      "state": "WY",
+      "putIn": "Sleeping Giant Ski Area (NF Shoshone)",
+      "takeOut": "Eagle Creek Campground (NF Shoshone)",
+      "reason": "Sleeping Giant Ski Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 71 ('Sleeping Giant Ski Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/sleeping-giant-picnic-area-to-eagle-creek-campground",
+      "state": "WY",
+      "putIn": "Sleeping Giant Picnic Area (NF Shoshone)",
+      "takeOut": "Eagle Creek Campground (NF Shoshone)",
+      "reason": "Sleeping Giant Picnic Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 72 ('Sleeping Giant Picnic Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/eagle-creek-campground-to-libby-creek-aka-white-rocks",
+      "state": "WY",
+      "putIn": "Eagle Creek Campground (NF Shoshone)",
+      "takeOut": "Libby Creek (aka White Rocks) (NF Shoshone)",
+      "reason": "Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "id": "shoshone-river-corbett/corbett-dam-to-buck-creek",
+      "state": "WY",
+      "putIn": "Corbett Dam (Shoshone)",
+      "takeOut": "Buck Creek (Shoshone)",
+      "reason": "Buck Creek (Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 98 ('Buck Creek', listed as a take-out)."
+    },
+    {
+      "id": "south-fork-shoshone/hunter-creek-to-mariposa-bridge-aka-ishawooa",
+      "state": "WY",
+      "putIn": "Hunter Creek (SF Shoshone)",
+      "takeOut": "Mariposa Bridge (aka Ishawooa) (SF Shoshone)",
+      "reason": "Hunter Creek (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 118 ('Hunter Creek', listed as a launch). Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out)."
+    },
+    {
+      "id": "south-fork-shoshone/mariposa-bridge-aka-ishawooa-to-bobcat-hoolihan",
+      "state": "WY",
+      "putIn": "Mariposa Bridge (aka Ishawooa) (SF Shoshone)",
+      "takeOut": "Bobcat-Hoolihan (SF Shoshone)",
+      "reason": "Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out). Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out)."
+    },
+    {
+      "id": "south-fork-shoshone/bobcat-hoolihan-to-twin-creek",
+      "state": "WY",
+      "putIn": "Bobcat-Hoolihan (SF Shoshone)",
+      "takeOut": "Twin Creek (SF Shoshone)",
+      "reason": "Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out)."
+    },
+    {
+      "id": "tongue-river-wy/upstream-of-i90-to-downstream-of-i90",
+      "state": "WY",
+      "putIn": "Upstream of I90 (Tongue)",
+      "takeOut": "Downstream of I90 (Tongue)",
+      "reason": "Upstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 184 ('Upstream of I90', listed as a launch and take-out). Downstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 185 ('Downstream of I90', listed as a launch and take-out)."
+    },
+    {
+      "id": "wind-river-dubois/stoney-point-to-painted-hills",
+      "state": "WY",
+      "putIn": "Stoney Point (Wind)",
+      "takeOut": "Painted Hills (Wind)",
+      "reason": "Stoney Point (Wind): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 124 ('Stoney Point', listed as a launch)."
+    }
+  ]
+}

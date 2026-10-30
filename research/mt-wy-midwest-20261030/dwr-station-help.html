@@ -1,0 +1,1483 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <title>GET api/v2/telemetrystations/telemetrystation</title>
+    <script  type="text/javascript" src='/Rest/GET/bundles/jquery?v=9zSzwhKBsBkF1f5Ln4CiIDqiP6tqOaCEwgDFXVJ_RNQ1?v=10-28-2026_1432'></script>
+
+    <link href='/Rest/GET/Content/css?v=PdeIEpjW21L26gHa9fr0o_LaYb80--vOquPRuEjCrrI1?v=10-28-2026_1432' rel='stylesheet'/>
+
+    <script  type="text/javascript" src='/Rest/GET/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1?v=10-28-2026_1432'></script>
+
+    <script  type="text/javascript" src='/Rest/GET/bundles/bootstrap?v=PW41pTbhgmyixsEjcaudTT_npfSPbq7DNKm8D6El-_Q1?v=10-28-2026_1432'></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        .container .aux {
+            float: right;
+            display: inline;
+        }
+
+        .navbar-header {
+            display: inline-block;
+        }
+
+        @media (min-width: 710px) {
+            .navbar-collapse.collapse {
+                display: inline-block !important;
+                height: auto !important;
+                padding-bottom: 0;
+                overflow: visible !important;
+                width: 100%;
+            }
+
+            #mainnav-right {
+                float: right
+            }
+
+                #mainnav-right > li {
+                    float: left
+                }
+        }
+
+        div.header {
+            display: block;
+            vertical-align: middle;
+            border-top: solid 2px #1F2839;
+            color: #5c666f;
+            letter-spacing: 1px;
+            text-align: left;
+            background-image: -webkit-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: -moz-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: -ms-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: -o-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-color: #d0d2d2;
+            /*padding: 19px 0 19px 19px*/
+            /*
+        background-color: #ECEEF0;
+        background-color: #d0d2d2;
+        */
+        }
+
+        div.footer {
+            display: block;
+            /*
+        position: absolute;
+        bottom: 0px;
+        width: 99%;
+        */
+            text-align: center;
+            /*border-top: solid 2px #CCC;
+        border-bottom: solid 2px #1F2839;*/
+            margin: 0 0 0 0;
+            white-space: nowrap;
+        }
+
+        .tableFooter {
+            width: 100%;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            border-collapse: collapse;
+        }
+
+            .tableFooter td {
+                text-align: center;
+                background-color: #356686;
+                color: #FFF;
+                height: 25px;
+                text-decoration: none;
+                font-size: 9pt;
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+            }
+
+                .tableFooter td a {
+                    color: #FFF;
+                    text-decoration: none;
+                    font-size: 9pt;
+                }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1049;
+        }
+
+        body.modal-open {
+            overflow: visible;
+            padding-right: 0px !important;
+        }
+
+        .modal-title {
+            line-height: 1.42857;
+            margin: 0px;
+        }
+
+        .modal-header {
+            color: white;
+            background: rgb(40, 72, 92);
+        }
+
+            .modal-header > .close {
+                color: white;
+            }
+
+            .modal-header .close {
+                margin-top: -2px;
+            }
+
+        .btn-dwr {
+            padding-left: 7px !important;
+            padding-right: 7px !important;
+            color: rgb(255, 255, 255);
+            min-width: 75px;
+            background: linear-gradient(rgb(53, 102, 134) 23%, rgb(60, 60, 60) 63%);
+            margin: 5px 1px 7px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(155, 171, 176);
+            border-image: initial;
+            padding: 2px;
+            border-radius: 4px;
+        }
+
+            .btn-dwr.info.btn:focus, .btn-dwr.info.btn:hover {
+                color: white;
+            }
+
+        .refSelector tr:hover {
+            background: rgb(65, 97, 102);
+            color: white;
+        }
+
+        .selectedRow {
+            background: rgb(40, 72, 92);
+            color: white;
+        }
+
+        .btn.btn-dwr:focus:enabled {
+            color: rgb(255, 255, 255);
+            outline: none;
+            outline-color: initial;
+            outline-style: none;
+            outline-width: initial;
+        }
+
+        .btn.btn-dwr:hover:enabled {
+            color: rgb(255, 255, 255);
+            background: linear-gradient(rgb(68, 117, 149) 23%, rgb(80, 80, 80) 63%);
+            box-shadow: 0 0 4px 0 #000000;
+        }
+
+        .btn.btn-dwr:hover:not(:enabled) {
+            color: rgb(255, 255, 255);
+        }
+
+        .btn.btn-dwr:active:enabled {
+            color: rgb(255, 255, 255);
+            background: linear-gradient(rgb(83, 132, 164) 23%, rgb(100, 100, 100) 63%);
+            box-shadow: 0 0 10px 1.5px #000000;
+        }
+    </style>
+    <link href="/Rest/GET/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="header" class="header" style="padding: 0;">
+
+
+        <div class="container-fluid" id="bannerheader" data-toggle="expand" data-target="#menuitemlist" style="overflow-x: auto;">
+            <div class="bottom-right" style="top: 10px">
+                <a href="#" onclick="ShowBanner(false);"><img src="/Rest/GET/Images/angle-double-up.svg" class="Show-DesktopMenu" id="hideBanner" style="height: 20px" /></a>
+            </div>
+            <div id="userDiv">
+                        <div class="bottom-right" id="signedInUser" style="display: none; font-family: Tahoma, Verdana, Calibri, Arial, Helvetica, sans-serif; font-size: 13px">
+                            Welcome <text id="userName"></text>,
+                            <a href="" data-toggle="modal" data-target="#logoutModal" style="cursor: pointer">
+                                <span class="glyphicon glyphicon-log-out"></span> Sign out
+                            </a>
+                        </div>
+                        <div class="bottom-right" id="guestUser" style="display: none; cursor: pointer">
+                            <text id="guestUserWelcome" style="font-style: italic">Welcome Guest, </text>
+                            <a href="/Rest/GET/Home/LoginUser">
+                                Click here to Login <span class="glyphicon glyphicon-log-in"></span>
+                            </a>
+                        </div>
+
+            </div>
+
+<script>
+    function handleVisibilityChange() {
+        if (!document.hidden) {
+            pageLoadOrTabOpened();
+        }
+    }
+
+
+    var signedInUser = null;
+    var timeoutWarningHandler = null;
+    var countDownHandler = null;
+
+    function pageLoadOrTabOpened() {
+        //if (!$("#modalSignOut").is(':visible'))
+        $.ajax({
+            type: "POST",
+            url: "/Rest/GET/Home/GetUser",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(response) {
+                var newUser = response.SignedIn ? (response.FirstName + " " + response.LastName) : null;
+                if (newUser != null && response.EmailAddress != null
+                    && (response.FirstName == null || response.FirstName.length === 0 || response.LastName == null || response.LastName.length === 0 )) {
+                    newUser = response.EmailAddress;
+                }
+                signedInUser = newUser;                
+                $("#signedInUser").toggle(response.SignedIn);
+                $("#MyAccounts").toggle(response.SignedIn);
+                $("#guestUser").toggle(!response.SignedIn);
+                $("#loginDiv").toggle(!response.SignedIn);
+                if (timeoutWarningHandler != null) clearTimeout(timeoutWarningHandler);
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                if (response.SignedIn) {
+                    $("#userName")
+                        .text(signedInUser != null ? signedInUser : "");
+                    if (!$("#guestUserLogin").hasClass("hide"))
+                        $("#guestUserLogin").addClass("hide");
+                    $("#MyApiKey").val(response.ApiKey);
+                    
+                    if ($("#MyApiKeyDropdown").hasClass("hide")) 
+                        $("#MyApiKeyDropdown").removeClass("hide");
+                    $(document).trigger("userStatus:toggle", response);
+                   
+                    var expirationDateMillis = parseInt(/[\d]+/.exec(response.Expiration));
+                    var timeUntilExpiration = expirationDateMillis - Date.now();
+                    var warningUntilExpirationSeconds = 180;
+                    var warningUntilExpiration = (1000 * warningUntilExpirationSeconds);
+                    var timeToWarning = timeUntilExpiration - warningUntilExpiration;
+                    if (timeUntilExpiration > warningUntilExpiration)
+                        $("#modalSignOut").modal("hide");
+                    // Triggers the warning late by a few seconds to ensure the expiration has passed before refreshing or getting the user.
+                    // Without it, race condition can occur and user may or may not be shown as signed out correctly
+                    var triggerLateAmountSeconds = 2;
+                    var triggerLateAmount = 1000 * triggerLateAmountSeconds;
+                    timeoutWarningHandler = setTimeout(function() {
+                        var elem = document.getElementById("modalSignOutTime");
+                        var time = Math.floor(expirationDateMillis / 1000) - Math.floor(Date.now() / 1000);
+                        if (time > 0) {
+                            $("#modalSignOut").modal("show");
+                            time += 1 + triggerLateAmountSeconds;
+                            frame();
+                            if (countDownHandler != null) clearInterval(countDownHandler);
+                            countDownHandler = setInterval(frame, 1000);
+
+                            function frame() {
+                                var fullSeconds = --time;
+                                var seconds = fullSeconds % 60;
+                                var minutes = Math.floor((fullSeconds - seconds) / 60);
+                                var text = "<br/>";
+                                text += minutes + ":" + (seconds >= 10 ? seconds : "0" + seconds);
+                                if (elem != null) {
+                                    elem.innerHTML = text;
+                                }
+                                if (time <= 0) {
+                                    onExpiration();
+                                }
+                            }
+                        } else {
+                            onExpiration();
+                        }
+                    },
+                    timeToWarning + triggerLateAmount);
+
+                    function onExpiration() {
+                        $("#modalSignOut").modal("hide");
+                        if (countDownHandler != null) clearInterval(countDownHandler);
+pageLoadOrTabOpened();                    }
+                } else {
+                    $("#guestUser").toggle(true);
+                    $("#loginDiv").toggle(true);
+                    $("#guestUser").toggle(true);
+                    $("#guestUserLogin").removeClass("hide");
+                    $("#modalSignOut").modal("hide");
+                    $("#MyApiKeyDropdown").addClass("hide");
+                    $("#MyApiKey").val("");
+                    $(document).trigger("userStatus:toggle", null);
+
+                }
+            },
+            failure: function (response) {
+                signedInUser = null;
+                $("#MyAccounts").toggle(false);
+                $("#signedInUser").toggle(false);
+                $("#MyApiKeyDropdown").addClass("hide");
+                $("#MyApiKey").val("");
+                $(document).trigger("userStatus:toggle", null);
+                $("#guestUser").toggle(true);
+                $("#guestUserLogin").removeClass("hide");
+                if (timeoutWarningHandler != null) clearTimeout(timeoutWarningHandler);
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                $("#modalSignOut").modal("hide");
+            },
+            error: function (response) {
+                signedInUser = null;
+                $("#MyAccounts").toggle(false);
+                $("#signedInUser").toggle(false);
+                $("#guestUser").toggle(true);
+                $("#MyApiKeyDropdown").addClass("hide");
+                $("#MyApiKey").val("");
+                $(document).trigger("userStatus:toggle", null);
+                $("#guestUserLogin").removeClass("hide");
+                if (timeoutWarningHandler != null) clearTimeout(timeoutWarningHandler);
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                $("#modalSignOut").modal("hide");
+            }
+        });
+    }
+
+    function renewSignIn() {
+        $.ajax({
+            type: "POST",
+            url: "/Rest/GET/Home/RenewUser",
+            success: function (response) {
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                $("#modalSignOut").modal("hide");
+                pageLoadOrTabOpened();
+            },
+            failure: function (response) {
+            },
+            error: function (response) {
+
+            }
+        });
+    }
+    $(document).on("click", "#modalSignOutRenewButton", renewSignIn);
+
+    $(document).on("visibilitychange", handleVisibilityChange);
+    $(document).ready(function () {
+        pageLoadOrTabOpened();
+    });
+
+    function populateApiKey(onSuccess, onFailure, onError) {
+        $.ajax({
+            type: "POST",
+            url: "/Rest/GET/Home/GetAccountApiKey",
+            success: function (response) {
+                if (onSuccess != null && typeof onSuccess === "function") {
+                    onSuccess(response);
+                }
+            },
+            failure: function (response) {
+                console.log("Fail");
+                console.log(response);
+                if (onFailure != null && typeof onFailure === "function") {
+                    onFailure(response);
+                }
+            },
+            error: function (response) {
+                console.log("Error");
+                console.log(response);
+                if (onError != null && typeof onError === "function") {
+                    onError(response);
+                }
+            }
+        });
+    }
+</script>
+            <div style="">
+                <a href="/Rest/GET/Help" id="headerLink" title="Colorado Department of Natural Resources">
+                    <img id="ImgDnrLarge" src="/Rest/GET/Images/co_dnr_div_cdss_cwcbdwr_transparent.png" alt="Colorado Department of Natural Resources Home"
+                         border="0" runat="server" style="height: 80px; margin: 19px;" />
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid" id="bannerheadermobile" style="background: #356686; padding-left: 0; padding-right: 0">
+            <div id="navMenuContentMobileLinks" class="Sidebar SidebarPinned" style="height:auto">
+                <div id="SidebarContainer" class="SidebarContainer SidebarPinned">
+                    <img id="ImgDnrShields" src="/Rest/GET/Images/CDSSMobile.png" alt="Colorado Department of Natural Resources Home" style="height: 35px; margin: 3px 0 0 0px; padding-right: 5px; padding-left: 10px; float: left; border-right: 1px solid white;">
+                    
+                    
+                    <div class="container" onclick="ClassToggle(this)" style="margin-bottom: 0; cursor: pointer;float: right; margin-top: 4px" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <div id="breadcrumbsDiv" class="SidebarSection SidebarNavigationMenu SidebarNavigationBreadcrumbs shrinkFont360" style="height:auto">
+                        <span id="BreadCrumb" style="padding-left:0" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager">
+                            <a href="/Rest/GET/" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager" style="color:white" hidefocus="hidefocus">REST Web Services</a>
+                        </span>
+                        <div class="SidebarSectionHeader">
+                            <h2 class="SidebarSectionHeaderCaption">Navigation</h2>
+                            <div class="clearer"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse nav-bar-color-desktop NavMenuStyling" id="navbar-collapse-1">
+            <div class="dropdown" style="font-size: 14px">
+                <div id="menuDropdown" class="container Show-DesktopMenu" onclick="ClassToggle(this); $('#menuDropdown').parent().toggleClass('open');" style="width: auto !important; cursor: pointer; margin-bottom: 0; margin-top: 9px; padding-left: 10px; float: left" aria-haspopup="true" aria-expanded="false">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul id="MenuSearchDropDown" class="dropdown-menu Desktop-Only-Menu" style="background: linear-gradient(190deg, #356686 31%, #3c3c3c 100%); margin-bottom: 25px; top: 96%; left: -1px"></ul>
+
+
+                <span style="line-height: 3;display: inline" class="Show-DesktopMenu">
+                    <span id="BreadCrumb" style="padding-left:0" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager">
+                        <a href="/Rest/GET/" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager" style="color:white" hidefocus="hidefocus">REST Web Services</a>
+                    </span>
+                </span>
+                <ul id="mainnav" class="nav navbar-nav Show-MobileMenu" style="padding-left: 15px; overflow:hidden"></ul>
+
+                <script>
+                    $(document).ready(function() {
+
+                        setMenu("https://dwr.state.co.us/tools/Home/Menu");
+                    });
+
+                    function setMenu(url) {
+                        $.ajax({
+                            type: "GET",
+                            url: url,
+                            success: function (response) {
+                                var menu = $(response);
+								var menuForMobile = menu.clone();
+
+                                var desktopMenu = $("#MenuSearchDropDown");
+                                desktopMenu.empty();
+                                desktopMenu.append(menu);
+                                var mobileMenu = $("#mainnav");
+                                mobileMenu.prepend(menuForMobile);
+                            },
+                            failure: function(response) {
+                                console.log("Fail");
+                                console.log(response);
+                            },
+                            error: function(response) {
+                                console.log("Error");
+                                console.log(response);
+                            }
+                        });
+                    }
+                </script>
+
+                <li role="separator" class="divider Mobile-Only" style="background-color: #eeeeee; height: 1px"></li>
+                <a href="#" onclick="ShowBanner(true);"><i class="fa fa-angle-double-down Show-DesktopMenu" id="showBanner" style="float: right; margin: 9px; display: none; font-size: 19px; color: white"></i></a>
+                <ul id="mainnav-right" class="nav navbar-nav navbar-right border-top-mobile" style="padding-left: 15px; overflow: hidden">
+                    
+                    <li><a href="#modalID" class="right-menu-button" data-toggle="modal" data-target="#modalID">Help</a></li>
+                    <li id="guestUserLogin" class="Show-MobileMenu hide">
+                        <a>
+                            Login <span class="glyphicon glyphicon-log-in pull-right"></span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown dropdown-hover hide" id="MyApiKeyDropdown">
+                        <style>
+                            @media (min-width: 710px) {
+                                #MyApiKeyDropdown ul {
+                                    position: fixed;
+                                    right: 30px;
+                                    width: 360px;
+                                }
+                            }
+
+                            @media (max-width: 709px) {
+                                #MyApiKeyDropdown ul {
+                                    width: 100%;
+                                }
+                            }
+                        </style>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Api Key <span class="caret menu-caret"></span></a>
+                        <ul id="api-key" class="dropdown-menu mainnav-right-submenu" style="background: #3c3c3c;top: auto;">
+                            <li style="padding: 10px; margin-right:20px"><span class="glyphicon glyphicon-duplicate" title="Click to copy" style="color: white;cursor:pointer" onclick="copyOnClick('MyApiKey');"></span> <input type="text" id="MyApiKey" style="cursor: text;width:100%" onclick="copyOnClick('MyApiKey')" disabled="disabled"><text id="MyApiKeyCopied" style="display: none; color: white">Copied to clipboard...</text></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-hover" id="MyAccounts" style="display: none">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret menu-caret"></span></a>
+                        <ul id="account-information" class="dropdown-menu mainnav-right-submenu" style="background: #3c3c3c;top: auto; right: -5px;">
+                            <li><a href=/Rest/GET/Home/AccountDetails><span class="glyphicon glyphicon-user"></span> Account Details</a></li>
+                            <li><a href=/Rest/GET/Home/AccountChangePassword><span class="glyphicon glyphicon-lock"></span> Change Password</a></li>
+                            <li><a href=/Rest/GET/Home/NotificationLists><span class="glyphicon glyphicon-th-list"></span> My Subscriptions</a></li>
+                            <li><a href=/Rest/GET/Home/WebServiceToken><span class="glyphicon glyphicon-globe"></span> Web Service Token Manager</a></li>
+                            <li role="separator" class="divider Show-DesktopMenu"></li>
+                            <li><a href="https://dwr.state.co.us/portal/dwr/index"><span class="glyphicon glyphicon-home"></span> Portal Home</a></li>
+                            <li><a href="" data-toggle="modal" data-target="#logoutModal"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="bodyContainer" style="padding-bottom:60px">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10 body-content">
+            
+
+<link type="text/css" href="/Rest/GET/Areas/HelpPage/HelpPage.css" rel="stylesheet" />
+<div id="body" class="help-page">
+    <section class="content-wrapper main-content clear-fix">
+        
+<h1>GET api/v2/telemetrystations/telemetrystation</h1>
+<div>
+    <p>Returns telemetry stations and their most recent parameter reading<br/><span style="color: red;">NOTICE - Changed: Added 2 new date fields to data (can also search on them). Can now search by historic status and third party status</span></p>
+    
+    <div id="requestInfo">
+        
+
+        <p></p>
+
+    <table class="help-page-table">
+        <thead>
+            <tr><th>Name</th><th>Description</th><th>Type</th></tr>
+        </thead>
+        <tbody>
+
+        
+            <tr>
+                <td class="parameter-name">abbrev</td>
+                <td class="parameter-documentation">
+                    <p>Station Abbreviation</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">contrArea</td>
+                <td class="parameter-documentation">
+                    <p>Contributing Area</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">county</td>
+                <td class="parameter-documentation">
+                    <p>County where the well is located</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">dataSource</td>
+                <td class="parameter-documentation">
+                    <p>Full data source description</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">dataSourceAbbrev</td>
+                <td class="parameter-documentation">
+                    <p>Primary source/provider of well measurement data</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">division</td>
+                <td class="parameter-documentation">
+                    <p>DWR Water Division</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">drainArea</td>
+                <td class="parameter-documentation">
+                    <p>Drainage Area</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">flagA</td>
+                <td class="parameter-documentation">
+                    <p>Station status (eg Ice Affected)</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">flagB</td>
+                <td class="parameter-documentation">
+                    <p>Data publish status (eg Raw, Provisional, Published)</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">gnisId</td>
+                <td class="parameter-documentation">
+                    <p>Water source - geographic name information system ID</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">huc10</td>
+                <td class="parameter-documentation">
+                    <p>HUC 10</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">latitude</td>
+                <td class="parameter-documentation">
+                    <p>Latitude value in decimal degrees</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">locationAccuracy</td>
+                <td class="parameter-documentation">
+                    <p>Accuracy of location coordinates</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">longitude</td>
+                <td class="parameter-documentation">
+                    <p>Longitude (decimal degrees)</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">measDateTime</td>
+                <td class="parameter-documentation">
+                    <p>Measurement Date/Time of last recorded parameter</p>
+                </td>
+                <td class="parameter-type">
+                    date
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">measValue</td>
+                <td class="parameter-documentation">
+                    <p>Last recorded reading of meas_value parameter</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">modified</td>
+                <td class="parameter-documentation">
+                    <p>Last date time that this record was modified in the DWR database</p>
+                </td>
+                <td class="parameter-type">
+                    date
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">moreInformation</td>
+                <td class="parameter-documentation">
+                    <p>Hyperlink to additional details</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">parameter</td>
+                <td class="parameter-documentation">
+                    <p>Parameter that last recorded meas_value is reporting</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">stage</td>
+                <td class="parameter-documentation">
+                    <p>Last recorded stage (feet) associated with measurement parameter</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">stationName</td>
+                <td class="parameter-documentation">
+                    <p>Station Name</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">stationPorEnd</td>
+                <td class="parameter-documentation">
+                    <p>End of period of record for this station</p>
+                </td>
+                <td class="parameter-type">
+                    date
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">stationPorStart</td>
+                <td class="parameter-documentation">
+                    <p>Beginning of period of record for this station</p>
+                </td>
+                <td class="parameter-type">
+                    date
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">stationStatus</td>
+                <td class="parameter-documentation">
+                    <p>Station Status</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">stationType</td>
+                <td class="parameter-documentation">
+                    <p>Station Type</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">streamMile</td>
+                <td class="parameter-documentation">
+                    <p>Distance in miles to the confluence with the next downstream water source (or distance to state line)</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">structureType</td>
+                <td class="parameter-documentation">
+                    <p>Type of structure</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">thirdParty</td>
+                <td class="parameter-documentation">
+                    <p>Is data from third party?</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">units</td>
+                <td class="parameter-documentation">
+                    <p>Units of measure</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">usgsStationId</td>
+                <td class="parameter-documentation">
+                    <p>USGS Station ID</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">utmX</td>
+                <td class="parameter-documentation">
+                    <p>The x (Easting) component of the Universal Transverse Mercator system. (Zone 13, NAD83 datum)</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">utmY</td>
+                <td class="parameter-documentation">
+                    <p>The y (Northing) component of the Universal Transverse Mercator system. (Zone 13, NAD83 datum)</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">waterDistrict</td>
+                <td class="parameter-documentation">
+                    <p>DWR Water District</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">waterSource</td>
+                <td class="parameter-documentation">
+                    <p>Name of the water source as specified in the court case</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+            <tr>
+                <td class="parameter-name">wdid</td>
+                <td class="parameter-documentation">
+                    <p>DWR unique structure identifier</p>
+                </td>
+                <td class="parameter-type">
+                    string
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+
+            <h4>Response Formats</h4>
+
+<div>
+        <h5 class="sample-header">application/json, text/json</h5>
+        <div class="sample-content">
+            <span><b>Sample:</b></span>
+<pre class="wrapped">
+[
+  {
+    &quot;division&quot;: 1,
+    &quot;waterDistrict&quot;: 1,
+    &quot;county&quot;: &quot;sample string 1&quot;,
+    &quot;stationName&quot;: &quot;sample string 2&quot;,
+    &quot;dataSourceAbbrev&quot;: &quot;sample string 3&quot;,
+    &quot;dataSource&quot;: &quot;sample string 4&quot;,
+    &quot;waterSource&quot;: &quot;sample string 5&quot;,
+    &quot;gnisId&quot;: &quot;sample string 6&quot;,
+    &quot;streamMile&quot;: 1.0,
+    &quot;abbrev&quot;: &quot;sample string 7&quot;,
+    &quot;usgsStationId&quot;: &quot;sample string 8&quot;,
+    &quot;stationStatus&quot;: &quot;sample string 9&quot;,
+    &quot;stationType&quot;: &quot;sample string 10&quot;,
+    &quot;structureType&quot;: &quot;sample string 11&quot;,
+    &quot;measDateTime&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;parameter&quot;: &quot;sample string 13&quot;,
+    &quot;stage&quot;: 1.0,
+    &quot;measValue&quot;: 1.0,
+    &quot;units&quot;: &quot;sample string 14&quot;,
+    &quot;flagA&quot;: &quot;sample string 15&quot;,
+    &quot;flagB&quot;: &quot;sample string 16&quot;,
+    &quot;contrArea&quot;: 1.0,
+    &quot;drainArea&quot;: 1.0,
+    &quot;huc10&quot;: &quot;sample string 17&quot;,
+    &quot;utmX&quot;: 1.0,
+    &quot;utmY&quot;: 1.0,
+    &quot;latitude&quot;: 1.0,
+    &quot;longitude&quot;: 1.0,
+    &quot;locationAccuracy&quot;: &quot;sample string 18&quot;,
+    &quot;wdid&quot;: &quot;sample string 19&quot;,
+    &quot;modified&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;moreInformation&quot;: &quot;sample string 20&quot;,
+    &quot;stationPorStart&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;stationPorEnd&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;thirdParty&quot;: true
+  },
+  {
+    &quot;division&quot;: 1,
+    &quot;waterDistrict&quot;: 1,
+    &quot;county&quot;: &quot;sample string 1&quot;,
+    &quot;stationName&quot;: &quot;sample string 2&quot;,
+    &quot;dataSourceAbbrev&quot;: &quot;sample string 3&quot;,
+    &quot;dataSource&quot;: &quot;sample string 4&quot;,
+    &quot;waterSource&quot;: &quot;sample string 5&quot;,
+    &quot;gnisId&quot;: &quot;sample string 6&quot;,
+    &quot;streamMile&quot;: 1.0,
+    &quot;abbrev&quot;: &quot;sample string 7&quot;,
+    &quot;usgsStationId&quot;: &quot;sample string 8&quot;,
+    &quot;stationStatus&quot;: &quot;sample string 9&quot;,
+    &quot;stationType&quot;: &quot;sample string 10&quot;,
+    &quot;structureType&quot;: &quot;sample string 11&quot;,
+    &quot;measDateTime&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;parameter&quot;: &quot;sample string 13&quot;,
+    &quot;stage&quot;: 1.0,
+    &quot;measValue&quot;: 1.0,
+    &quot;units&quot;: &quot;sample string 14&quot;,
+    &quot;flagA&quot;: &quot;sample string 15&quot;,
+    &quot;flagB&quot;: &quot;sample string 16&quot;,
+    &quot;contrArea&quot;: 1.0,
+    &quot;drainArea&quot;: 1.0,
+    &quot;huc10&quot;: &quot;sample string 17&quot;,
+    &quot;utmX&quot;: 1.0,
+    &quot;utmY&quot;: 1.0,
+    &quot;latitude&quot;: 1.0,
+    &quot;longitude&quot;: 1.0,
+    &quot;locationAccuracy&quot;: &quot;sample string 18&quot;,
+    &quot;wdid&quot;: &quot;sample string 19&quot;,
+    &quot;modified&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;moreInformation&quot;: &quot;sample string 20&quot;,
+    &quot;stationPorStart&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;stationPorEnd&quot;: &quot;2026-10-30T01:34:50.4382659-06:00&quot;,
+    &quot;thirdParty&quot;: true
+  }
+]
+</pre>
+        </div>
+        <h5 class="sample-header">application/xml, text/xml</h5>
+        <div class="sample-content">
+            <span><b>Sample:</b></span>
+<pre class="wrapped">
+&lt;ArrayOfTelemetryStation xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+  &lt;TelemetryStation&gt;
+    &lt;abbrev&gt;sample string 7&lt;/abbrev&gt;
+    &lt;contrArea&gt;1&lt;/contrArea&gt;
+    &lt;county&gt;sample string 1&lt;/county&gt;
+    &lt;dataSource&gt;sample string 4&lt;/dataSource&gt;
+    &lt;dataSourceAbbrev&gt;sample string 3&lt;/dataSourceAbbrev&gt;
+    &lt;division&gt;1&lt;/division&gt;
+    &lt;drainArea&gt;1&lt;/drainArea&gt;
+    &lt;flagA&gt;sample string 15&lt;/flagA&gt;
+    &lt;flagB&gt;sample string 16&lt;/flagB&gt;
+    &lt;gnisId&gt;sample string 6&lt;/gnisId&gt;
+    &lt;huc10&gt;sample string 17&lt;/huc10&gt;
+    &lt;latitude&gt;1&lt;/latitude&gt;
+    &lt;locationAccuracy&gt;sample string 18&lt;/locationAccuracy&gt;
+    &lt;longitude&gt;1&lt;/longitude&gt;
+    &lt;measDateTime&gt;2026-10-30T01:34:50.4382659-06:00&lt;/measDateTime&gt;
+    &lt;measValue&gt;1&lt;/measValue&gt;
+    &lt;modified&gt;2026-10-30T01:34:50.4382659-06:00&lt;/modified&gt;
+    &lt;moreInformation&gt;sample string 20&lt;/moreInformation&gt;
+    &lt;parameter&gt;sample string 13&lt;/parameter&gt;
+    &lt;stage&gt;1&lt;/stage&gt;
+    &lt;stationName&gt;sample string 2&lt;/stationName&gt;
+    &lt;stationPorEnd&gt;2026-10-30T01:34:50.4382659-06:00&lt;/stationPorEnd&gt;
+    &lt;stationPorStart&gt;2026-10-30T01:34:50.4382659-06:00&lt;/stationPorStart&gt;
+    &lt;stationStatus&gt;sample string 9&lt;/stationStatus&gt;
+    &lt;stationType&gt;sample string 10&lt;/stationType&gt;
+    &lt;streamMile&gt;1&lt;/streamMile&gt;
+    &lt;structureType&gt;sample string 11&lt;/structureType&gt;
+    &lt;thirdParty&gt;true&lt;/thirdParty&gt;
+    &lt;units&gt;sample string 14&lt;/units&gt;
+    &lt;usgsStationId&gt;sample string 8&lt;/usgsStationId&gt;
+    &lt;utmX&gt;1&lt;/utmX&gt;
+    &lt;utmY&gt;1&lt;/utmY&gt;
+    &lt;waterDistrict&gt;1&lt;/waterDistrict&gt;
+    &lt;waterSource&gt;sample string 5&lt;/waterSource&gt;
+    &lt;wdid&gt;sample string 19&lt;/wdid&gt;
+  &lt;/TelemetryStation&gt;
+  &lt;TelemetryStation&gt;
+    &lt;abbrev&gt;sample string 7&lt;/abbrev&gt;
+    &lt;contrArea&gt;1&lt;/contrArea&gt;
+    &lt;county&gt;sample string 1&lt;/county&gt;
+    &lt;dataSource&gt;sample string 4&lt;/dataSource&gt;
+    &lt;dataSourceAbbrev&gt;sample string 3&lt;/dataSourceAbbrev&gt;
+    &lt;division&gt;1&lt;/division&gt;
+    &lt;drainArea&gt;1&lt;/drainArea&gt;
+    &lt;flagA&gt;sample string 15&lt;/flagA&gt;
+    &lt;flagB&gt;sample string 16&lt;/flagB&gt;
+    &lt;gnisId&gt;sample string 6&lt;/gnisId&gt;
+    &lt;huc10&gt;sample string 17&lt;/huc10&gt;
+    &lt;latitude&gt;1&lt;/latitude&gt;
+    &lt;locationAccuracy&gt;sample string 18&lt;/locationAccuracy&gt;
+    &lt;longitude&gt;1&lt;/longitude&gt;
+    &lt;measDateTime&gt;2026-10-30T01:34:50.4382659-06:00&lt;/measDateTime&gt;
+    &lt;measValue&gt;1&lt;/measValue&gt;
+    &lt;modified&gt;2026-10-30T01:34:50.4382659-06:00&lt;/modified&gt;
+    &lt;moreInformation&gt;sample string 20&lt;/moreInformation&gt;
+    &lt;parameter&gt;sample string 13&lt;/parameter&gt;
+    &lt;stage&gt;1&lt;/stage&gt;
+    &lt;stationName&gt;sample string 2&lt;/stationName&gt;
+    &lt;stationPorEnd&gt;2026-10-30T01:34:50.4382659-06:00&lt;/stationPorEnd&gt;
+    &lt;stationPorStart&gt;2026-10-30T01:34:50.4382659-06:00&lt;/stationPorStart&gt;
+    &lt;stationStatus&gt;sample string 9&lt;/stationStatus&gt;
+    &lt;stationType&gt;sample string 10&lt;/stationType&gt;
+    &lt;streamMile&gt;1&lt;/streamMile&gt;
+    &lt;structureType&gt;sample string 11&lt;/structureType&gt;
+    &lt;thirdParty&gt;true&lt;/thirdParty&gt;
+    &lt;units&gt;sample string 14&lt;/units&gt;
+    &lt;usgsStationId&gt;sample string 8&lt;/usgsStationId&gt;
+    &lt;utmX&gt;1&lt;/utmX&gt;
+    &lt;utmY&gt;1&lt;/utmY&gt;
+    &lt;waterDistrict&gt;1&lt;/waterDistrict&gt;
+    &lt;waterSource&gt;sample string 5&lt;/waterSource&gt;
+    &lt;wdid&gt;sample string 19&lt;/wdid&gt;
+  &lt;/TelemetryStation&gt;
+&lt;/ArrayOfTelemetryStation&gt;
+</pre>
+        </div>
+</div>    </div>
+
+</div>
+    </section>
+</div>
+
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="logoutModalLabel" style="float: left">Confirm Log out</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <BR />
+                        </div>
+                        <div class="modal-body">Select "Sign out" below if you are ready to end your current session.</div>
+                        <div class="modal-footer">
+                            <button class="btn-dwr" type="button" onclick="location.href='/Rest/GET/Home/LogoutUser'">Sign out</button>
+                            <button class="btn-dwr" type="button" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modalID" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content" style="font-family: sans-serif; color: black">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="text-align: center"><b>About GET api/v2/telemetrystations/telemetrystation</b></h4>
+                        </div>
+                        <div class="modal-body" style="min-height: 350px">
+                            <h5><b><u>Description</u></b></h5>
+                            <p>
+                                
+                            </p>
+                            <br />
+                            <h5><b><u>Resources</u></b></h5>
+                            <p>
+                                <a href="https://docs.google.com/document/d/e/2PACX-1vRN35hLVrkXemNrMcrK1Ks4rcT1Ps7xfUI9gUPJ5FOpaaNSp4-iGpOol1s678018NNURkTpM4ZbB6uF/pub#h.8wfpfoa6p5ix" target="_blank">
+                                    User Guide
+                                </a>
+                            </p>
+                            <p>
+                                    <a href="https://dwr.state.co.us/portal/dwr/askdwr?topic_num=5&amp;officeNum=8&amp;subject=Question%20about%20CDSS" target="_blank">
+        Ask DWR: Other Questions About GET api/v2/telemetrystations/telemetrystation
+    </a>
+
+                            </p>
+                            <p>
+                                <a href="#modalID1" role="tab" data-toggle="modal">Subscribe to email list <span class="glyphicon glyphicon-envelope"></span></a>
+                            </p>
+
+<script>
+    const recaptchaWidgetIdAttr = 'recaptcha-widget-id';
+    function captchaCallback() {
+        $('.g-recaptcha').each(function (index, el) {
+            const jEl = $(el);
+            const jForm = jEl.closest('form');
+            const isInvisibleClass = jEl.is('.invisible-recaptcha');
+            const isInvisibleByAttr = jEl.attr('data-size') == 'invisible';
+            const isInvisible = isInvisibleClass || isInvisibleByAttr;
+            const parent = jEl.closest('.recaptcha-parent');
+            let allowSubmit = false;
+            const toggleError = function (showError) {
+                showError = showError === true;
+                allowSubmit = !showError;
+                parent.toggleClass('recaptcha-error', showError);
+                parent.find('.recaptcha-error-message').toggle(showError);
+            };
+            const grecaptchaArgs = {
+                sitekey: isInvisible ? '6LcICqgkAAAAAE0Fbv5JZh_XLsYkffu5LN9OT2qr' : '6LfHrKckAAAAAG9BWMYNFvlD5qFSZF4UKVEj7abN',
+                callback: function (token) {
+                    jForm.find('.g-recaptcha-response').val(token);
+                    if (isInvisible) {
+                        allowSubmit = true;
+                        jForm.submit();
+                    }
+                    else {
+                        toggleError(false);
+                    }
+                }
+            };
+            if (!isInvisible) {
+                grecaptchaArgs['expired-callback'] = function () {
+                    toggleError(true);
+                }
+            }
+            let widgetId = grecaptcha.render(el, grecaptchaArgs, true);
+            jEl.attr(recaptchaWidgetIdAttr, widgetId);
+
+            jForm.submit(function (event) {
+                if (!allowSubmit) {
+                    event.preventDefault();
+                    if (isInvisible) {
+                        grecaptcha.execute(widgetId);
+                    }
+                    else {
+                        alert('Please fill out CAPTCHA');
+                    }
+                }
+                else {
+                    let onRecaptchaSubmitAttr = jEl.attr('on-recaptcha-submit');
+                    if (onRecaptchaSubmitAttr != null && onRecaptchaSubmitAttr.length > 0) {
+                        let func = window[onRecaptchaSubmitAttr];
+                        if (typeof func === 'function') {
+                            func(jForm[0]);
+                        }
+                    }
+                }
+            });
+        });
+    }
+
+    function getRecaptchaWidgetId(el) {
+        return $(el).attr(recaptchaWidgetIdAttr);
+    }
+
+    function getRecaptchaResponse(el) {
+        return grecaptcha.getResponse(getRecaptchaWidgetId(el));
+    }</script>
+<script async="" defer="" src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&amp;render=explicit"></script>
+<style>
+    .grecaptcha-badge {
+        bottom: 30px;
+        z-index: 2060;
+    }
+
+    .g-recaptcha:not(.invisible-recaptcha):not([data-size="invisible"]) {
+        display: inline-block;
+    }
+
+    .recaptcha-error {
+        border: 1px solid red;
+        padding: 3px;
+        margin: 13px;
+    }
+
+    .recaptcha-error-message {
+        color: red;
+    }</style>
+
+
+<div id="modalID1" class="modal fade" role="dialog" style="overflow: visible;">
+    <div class="modal-dialog" style="max-width: 450px">
+        <div class="modal-content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"  onclick="$('#modalID1').modal('toggle');">&times;</button>
+                    <h5 class="modal-title" style="text-align: center"><b>Subscribe to CDSS Online Email Notifications</b></h5>
+                </div>
+                <div id="mainDiv" class="mainDiv">
+                    <div id="subscriptionFields" class="modal-body">
+                        <input name="__RequestVerificationToken" type="hidden" value="lmsayIJj9G3mJth-X3tuz9T-koCrvzC1K2XWU9UWa__eOK0qSZBsmie5aO8Ssef1zePsKzkPeYu2lW9Xwdzruh-V-_VbYgDXyn0o727QWa01" />
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="txtemail" placeholder="Email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Verify Email:</label>
+                            <input type="text" class="form-control" id="txtverifyemail" placeholder="Verify Email" name="pwd">
+                        </div>
+                        <div class="recaptcha-error recaptcha-parent"><div class="g-recaptcha"></div><div class="recaptcha-error-message">Please verify that you are not a robot.</div></div>
+                        
+                        
+                        
+                        <br />
+
+
+                        <div class="form-group" id="span1" style="display:none;color:red"><span></span></div>
+                    </div>
+
+                    <div class="form-group" style="text-align:center">
+
+                        <button type="button" class="btn btn-rt" tabindex="4" onclick="EmailScription();">Subscribe</button>
+                        <button type="button" class="btn btn-rt"  onclick="$('#modalID1').modal('toggle');">Cancel</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="SubscriptionSuccess" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="max-width: 450px">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title" style="text-align: center"><b id="SubscriptionHeader">Success</b></h5>
+            </div>
+            <div class="modal-body">
+                <div class="successDiv" id="successDiv">
+                    <br />
+                    <div class="form-group" id="successSpan" style="text-align:center">
+                        <span> Hallelujah</span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group" style="text-align:center">
+                    <button type="button" class="btn btn-rt"  onclick="$('#SubscriptionSuccess').modal('toggle');">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        // codes works on all bootstrap modal windows in application
+        $('.modal').on('hidden.bs.modal', function (e) {
+            $("#span1").css('display', 'none');
+            $("#span1").text("");
+            $("#txtemail").val("");
+            $("#txtverifyemail").val("");
+            $("div.modal-backdrop").prop("class", "");
+            grecaptcha.reset();
+        });
+    })
+</script>
+<script>
+    var imNotARobot = function() {
+        $("#span1").css('display', 'none');
+        $("#span1").text("");
+    };
+    function ValidateEmail(email) {
+        var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (email.includes("..")) {
+            return false;
+        };
+        return expr.test(email);
+    };
+    function EmailScription() {
+        $("#span1").css('display', 'none');
+        var form = $("#subscriptionFields");
+        const captchaResponse = getRecaptchaResponse(form.find(".g-recaptcha"));
+        if (captchaResponse == "") {
+            $("#span1").css('display', 'block');
+            $("#span1").text("Robot verification missing");
+            return false;
+        } else {
+        }
+        if (!ValidateEmail($("#txtemail").val())) {
+            $("#span1").css('display', 'block');
+            $("#span1").text("Invalid email address");
+            return false;
+        }
+
+        if ($("#txtemail").val() != $("#txtverifyemail").val())
+        {
+            $("#span1").css('display', 'block');
+            $("#span1").text("Verify Email does not match Email address");
+            return false;
+        }
+        else {
+            let data = {
+                email: $('#txtemail').val(),
+                list: "Tools and Technology News",
+                "g-recaptcha-response": captchaResponse
+            };
+            
+            var token = form.find(':input:hidden[name*="RequestVerificationToken"]');
+            if (token.length > 0)
+                data[token.attr("name")] = token.val();
+            $.ajax({
+                url: '/Rest/GET/Subscription/EmailVerification',
+                type: "POST",
+                dataType: "JSON",
+                data: data,
+                success: function (data) {
+
+                    if (data.EmailAddress == "Failed") {
+                        document.getElementById('SubscriptionHeader').innerHTML = "Failure";
+                        $("#successSpan").text("Subscription failed. Please contact dnr_dwr_app_support@state.co.us");
+                    }else if (data.EmailExists == false) {
+                        $("#successSpan").text("Subscription success.  An email has been sent to allow you to complete your registration.");
+                    }
+                    else {
+                        $("#successSpan").text("Successfully subscribed to notification list.");
+                    }
+
+                    $('#modalID1').modal('hide');
+                    $('#SubscriptionSuccess').modal('show');
+                },
+                error: function (ex) {
+                    alert('Error' + ex);
+                }
+            });
+
+        }
+
+    }
+
+</script>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dwr" data-dismiss="modal">Close</button>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <br />
+            
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div id="footer" class="footer navbar-fixed-bottom">
+        <table class="tableFooter" cellspacing="0">
+            <tr>
+                <td>
+                    &copy; 2026 - Colorado Division of Water Resources |
+                    <a href="https://dnr.colorado.gov/accessibility" target="_blank">Accessibility & Accommodations</a> 
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+    function ClassToggle(x) {
+        x.classList.toggle("change");
+    }
+    function ShowBanner(True) {
+        if (True) {
+            document.getElementById('hideBanner').style.display = 'block';
+            document.getElementById('ImgDnrLarge').style.display = 'block';
+            document.getElementById('showBanner').style.display = 'none';
+            document.getElementById('userDiv').style.display = 'block';
+        } else {
+            document.getElementById('hideBanner').style.display = 'none';
+            document.getElementById('ImgDnrLarge').style.display = 'none';
+            document.getElementById('showBanner').style.display = 'block';
+            document.getElementById('userDiv').style.display = 'none';
+        }
+    }
+    document.addEventListener("click", function (evt) {
+        if ($(evt.target).closest('#menuDropdown').length || $(evt.target).closest('#navbar-collapse-1').length) {
+            return;
+        }
+        else {
+            if ($("#menuDropdown").hasClass("change")) {
+                $("#menuDropdown").toggleClass("change");
+                $('#menuDropdown').parent().toggleClass('open');
+            }
+        }
+    });
+
+    window.onscroll = function () { stickyNav() };
+    window.onresize = function () { stickyNav() };
+
+    var desktopHeader = document.getElementById("navbar-collapse-1");
+    var mobileHeader = document.getElementById("header");
+
+    function stickyNav() {
+        var topPaddingAmount = "0";
+        if (window.innerWidth > 710) {
+
+            if (window.pageYOffset > document.getElementById("bannerheader").offsetHeight) {
+                desktopHeader.classList.add("sticky");
+                mobileHeader.classList.remove("sticky");
+                topPaddingAmount = $("#navbar-collapse-1").css("height");
+            } else {
+                desktopHeader.classList.remove("sticky");
+                mobileHeader.classList.remove("sticky");
+            }
+        } else {
+            mobileHeader.classList.add("sticky");
+            desktopHeader.classList.remove("sticky");
+            topPaddingAmount = $("#header").css("height");
+        }
+        $("#bodyContainer").css("padding-top", topPaddingAmount);
+    }
+    stickyNav();
+    $(document).ready(stickyNav);
+
+    function copyOnClick(id) {
+        $("#api-key").css("width", $("#api-key").css("width"));
+        var copyText = document.getElementById(id);
+        $("#" + id).removeAttr("disabled");
+        /* Select the text field */
+        copyText.select();
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+        $("#" + id).attr("disabled", "disabled");
+        /* Alert the copied text */
+        $("#MyApiKeyCopied").fadeIn(2000);
+        $("#" + id).css("display", "none")
+        $("#api-key").find("li>span").css("display", "none");
+        setTimeout(function () {
+            setTimeout(function () {
+                $("#" + id).fadeIn()
+                $("#api-key").find("li>span").fadeIn();
+            },
+                2500);
+            $("#MyApiKeyCopied").fadeOut(2000);
+        },
+            1500);
+
+        //$("#MyApiKeyCopied").fadeIn(3000);
+    }
+</script>

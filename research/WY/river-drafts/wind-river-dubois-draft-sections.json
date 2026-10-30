@@ -1,0 +1,94 @@
+{
+ "id": "wind-river-dubois-draft-sections",
+ "name": "Wind River — Dubois to Dinwoody Creek — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "tribal"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0126",
+   "name": "Painted Hills (Wind)",
+   "grade": "access-verified",
+   "flags": []
+  },
+  {
+   "id": "WY-ACC-0127",
+   "name": "Picnic Tables - Upper Wind River (Wind)",
+   "grade": "pending",
+   "flags": [
+    "tribal"
+   ]
+  },
+  {
+   "id": "WY-ACC-0128",
+   "name": "Dinwoody Creek Bridge (Wind)",
+   "grade": "pending",
+   "flags": [
+    "tribal"
+   ]
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "painted-hills-to-picnic-tables-upper-wind-river",
+   "putIn": "Painted Hills (Wind)",
+   "takeOut": "Picnic Tables - Upper Wind River (Wind)",
+   "miles": 8.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-approximate",
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004",
+    "WY-RES-007"
+   ]
+  },
+  {
+   "id": "painted-hills-to-dinwoody-creek-bridge",
+   "putIn": "Painted Hills (Wind)",
+   "takeOut": "Dinwoody Creek Bridge (Wind)",
+   "miles": 14.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-approximate",
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004",
+    "WY-RES-007"
+   ]
+  },
+  {
+   "id": "picnic-tables-upper-wind-river-to-dinwoody-creek-bridge",
+   "putIn": "Picnic Tables - Upper Wind River (Wind)",
+   "takeOut": "Dinwoody Creek Bridge (Wind)",
+   "miles": 6.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004",
+    "WY-RES-007"
+   ]
+  }
+ ]
+}

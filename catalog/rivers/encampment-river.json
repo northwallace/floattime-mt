@@ -1,0 +1,57 @@
+{
+  "id": "encampment-river",
+  "name": "Encampment River — Odd Fellows to North Platte River",
+  "gauge": "06625000",
+  "gaugeName": "Encampment River at Mouth, near Encampment, WY",
+  "lat": 41.18384,
+  "lon": -106.79666,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Encampment River: sections between Wyoming Game and Fish Department river access points.",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "odd-fellows-blm-campground-to-smelter-plant-town-of-riverside",
+      "putIn": "Odd Fellows (BLM Campground) (Encampment)",
+      "takeOut": "Smelter Plant (Town of Riverside) (Encampment)",
+      "miles": 2.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Odd Fellows (BLM Campground) (Encampment): exact agency facility pin. Take-out Smelter Plant (Town of Riverside) (Encampment): exact agency facility pin. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (2.7 mi); no agency mileage found.",
+      "putInAccessId": "acc-2cc9840085065a518ec9",
+      "takeOutAccessId": "acc-ea6194d6d39256059ef7"
+    },
+    {
+      "id": "smelter-plant-town-of-riverside-to-baggot-rocks-wyoming-state-trust-lands",
+      "putIn": "Smelter Plant (Town of Riverside) (Encampment)",
+      "takeOut": "Baggot Rocks (Wyoming State Trust Lands) (Encampment)",
+      "miles": 5.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Smelter Plant (Town of Riverside) (Encampment): exact agency facility pin. Take-out Baggot Rocks (Wyoming State Trust Lands) (Encampment): approximate area only. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (5.3 mi); no agency mileage found.",
+      "putInAccessId": "acc-ea6194d6d39256059ef7",
+      "takeOutAccessId": "acc-d1b74206cf2555a39040"
+    },
+    {
+      "id": "baggot-rocks-wyoming-state-trust-lands-to-treasure-island",
+      "putIn": "Baggot Rocks (Wyoming State Trust Lands) (Encampment)",
+      "takeOut": "Treasure Island (North Platte)",
+      "miles": 6.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Baggot Rocks (Wyoming State Trust Lands) (Encampment): approximate area only. Take-out Treasure Island (North Platte): approximate area only. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (6.2 mi); no agency mileage found.",
+      "putInAccessId": "acc-d1b74206cf2555a39040",
+      "takeOutAccessId": "acc-67ae472b7af858669d98"
+    }
+  ],
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "This active gauge measures the Encampment near its mouth. Its flow is context for the Encampment sections, not a measurement of upstream landings or the North Platte portion below the confluence. A calibrated trip estimate is not available.",
+    "sourceName": "USGS station record",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-06625000/",
+    "checkedOn": "2026-10-29"
+  },
+  "gaugeRelationship": "same-river-reference"
+}

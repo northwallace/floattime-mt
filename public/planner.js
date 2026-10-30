@@ -93,6 +93,7 @@
   }
   function estimate(river, section, flow, mult, stops) {
     if (
+      !supportsLiveTiming(river) ||
       section.accessReview || section.distanceReview || river.timing?.mode === "unavailable" ||
       !Number.isFinite(river.refFlowCfs) || river.refFlowCfs <= 0 ||
       !Number.isFinite(river.refSpeedMph) || river.refSpeedMph <= 0 ||
@@ -131,6 +132,12 @@
       now - reading.at <= 120 * minute
     );
   }
+  function gaugeRelationship(river) {
+    return river.gaugeRelationship || (river.gauge || river.flowSource ? "representative" : "none");
+  }
+  function supportsLiveTiming(river) {
+    return gaugeRelationship(river) === "representative" && river.timing?.mode !== "unavailable";
+  }
   const api = {
     localParts,
     dateKey,
@@ -140,6 +147,8 @@
     sunset,
     estimate,
     fresh,
+    gaugeRelationship,
+    supportsLiveTiming,
   };
   if (typeof module === "object" && module.exports) module.exports = api;
   else root.FloatPlanner = api;

@@ -1,0 +1,472 @@
+{
+ "state": "MO",
+ "checkedOn": "2026-10-30",
+ "method": "USGS Water Data OGC API (latest continuous discharge, parameter 00060) per candidate gauge; daily values for catalog gauges. No flow-to-speed calibration was attempted.",
+ "catalogGauges": [
+  {
+   "river": "current-river-upper",
+   "inCatalog": true,
+   "gauge": "07064533",
+   "usgsName": "Current River above Akers, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07064533&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A07%2B00%3A00%2F2026-10-30T14%3A19%3A07%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:07+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T13:30:00+00:00",
+   "newestDischargeCfs": 136.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "jacks-fork",
+   "inCatalog": true,
+   "gauge": "07065495",
+   "usgsName": "Jacks Fork at Alley Spring, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07065495&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A09%2B00%3A00%2F2026-10-30T14%3A19%3A09%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:09+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T13:30:00+00:00",
+   "newestDischargeCfs": 45.5,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "current-river-lower",
+   "inCatalog": true,
+   "gauge": "07067000",
+   "usgsName": "Current River at Van Buren, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07067000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A12%2B00%3A00%2F2026-10-30T14%3A19%3A12%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:12+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T13:30:00+00:00",
+   "newestDischargeCfs": 750.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "eleven-point-river",
+   "inCatalog": true,
+   "gauge": "07071500",
+   "usgsName": "Eleven Point River near Bardley, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07071500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A15%2B00%3A00%2F2026-10-30T14%3A19%3A15%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:15+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T13:30:00+00:00",
+   "newestDischargeCfs": 263.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "meramec-river",
+   "inCatalog": true,
+   "gauge": "07014500",
+   "usgsName": "Meramec River near Sullivan, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07014500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A19%2B00%3A00%2F2026-10-30T14%3A19%3A19%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:19+00:00",
+   "dischargeObsWithValue": 645,
+   "newestDischargeTime": "2026-10-30T13:30:00+00:00",
+   "newestDischargeCfs": 297.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "huzzah-creek",
+   "inCatalog": true,
+   "gauge": "07014000",
+   "usgsName": "Huzzah Creek near Steelville, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07014000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A21%2B00%3A00%2F2026-10-30T14%3A19%3A21%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:21+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T13:30:00+00:00",
+   "newestDischargeCfs": 53.3,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "big-piney-river",
+   "inCatalog": true,
+   "gauge": "06930000",
+   "usgsName": "Big Piney River near Big Piney, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06930000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A24%2B00%3A00%2F2026-10-30T14%3A19%3A24%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:24+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T14:00:00+00:00",
+   "newestDischargeCfs": 129.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "little-piney-creek",
+   "inCatalog": true,
+   "gauge": "06932000",
+   "usgsName": "Little Piney Creek at Newburg, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06932000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A27%2B00%3A00%2F2026-10-30T14%3A19%3A27%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:27+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T14:00:00+00:00",
+   "newestDischargeCfs": 64.7,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "gasconade-river",
+   "inCatalog": true,
+   "gauge": "06933500",
+   "usgsName": "Gasconade River at Jerome, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06933500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A29%2B00%3A00%2F2026-10-30T14%3A19%3A29%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:29+00:00",
+   "dischargeObsWithValue": 286,
+   "newestDischargeTime": "2026-10-30T13:45:00+00:00",
+   "newestDischargeCfs": 449.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "osage-fork",
+   "inCatalog": true,
+   "gauge": "06927800",
+   "usgsName": "Osage Fork Gasconade River at Drynob, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06927800&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A32%2B00%3A00%2F2026-10-30T14%3A19%3A32%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:32+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "niangua-river",
+   "inCatalog": true,
+   "gauge": "06923250",
+   "usgsName": "Niangua River at Windyville, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06923250&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A33%2B00%3A00%2F2026-10-30T14%3A19%3A33%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:33+00:00",
+   "dischargeObsWithValue": 667,
+   "newestDischargeTime": "2026-10-30T13:00:00+00:00",
+   "newestDischargeCfs": 22.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "north-fork-river",
+   "inCatalog": true,
+   "gauge": "07057500",
+   "usgsName": "North Fork River near Tecumseh, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07057500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A35%2B00%3A00%2F2026-10-30T14%3A19%3A35%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:35+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T14:00:00+00:00",
+   "newestDischargeCfs": 290.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "bryant-creek",
+   "inCatalog": true,
+   "gauge": "07058000",
+   "usgsName": "Bryant Creek near Tecumseh, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07058000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A36%2B00%3A00%2F2026-10-30T14%3A19%3A36%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:36+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T14:00:00+00:00",
+   "newestDischargeCfs": 140.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "black-river",
+   "inCatalog": true,
+   "gauge": "07063000",
+   "usgsName": "Black River at Poplar Bluff, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07063000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A40%2B00%3A00%2F2026-10-30T14%3A19%3A40%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:40+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-30T13:15:00+00:00",
+   "newestDischargeCfs": 463.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "st-francis-river",
+   "inCatalog": true,
+   "gauge": "07037500",
+   "usgsName": "St. Francis River near Patterson, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07037500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A20%3A32%2B00%3A00%2F2026-10-30T14%3A20%3A32%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:20:32+00:00",
+   "dischargeObsWithValue": 630,
+   "newestDischargeTime": "2026-10-30T14:00:00+00:00",
+   "newestDischargeCfs": 62.9,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "bourbeuse-river",
+   "inCatalog": true,
+   "gauge": "07016500",
+   "usgsName": "Bourbeuse River at Union, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07016500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A44%2B00%3A00%2F2026-10-30T14%3A19%3A44%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:44+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T14:00:00+00:00",
+   "newestDischargeCfs": 50.7,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "big-river",
+   "inCatalog": true,
+   "gauge": "07018100",
+   "usgsName": "Big River near Richwoods, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07018100&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A47%2B00%3A00%2F2026-10-30T14%3A19%3A47%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:47+00:00",
+   "dischargeObsWithValue": 660,
+   "newestDischargeTime": "2026-10-30T14:00:00+00:00",
+   "newestDischargeCfs": 88.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "james-river",
+   "inCatalog": true,
+   "gauge": "07052500",
+   "usgsName": "James River at Galena, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07052500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A50%2B00%3A00%2F2026-10-30T14%3A19%3A50%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:50+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-30T13:15:00+00:00",
+   "newestDischargeCfs": 116.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "elk-river",
+   "inCatalog": true,
+   "gauge": "07189000",
+   "usgsName": "Elk River near Tiff City, Mo",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07189000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A52%2B00%3A00%2F2026-10-30T14%3A19%3A52%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:52+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": "2026-04-26",
+    "oldest": "2025-09-25",
+    "count": 214
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "shoal-creek",
+   "inCatalog": true,
+   "gauge": "07187000",
+   "usgsName": "Shoal Creek above Joplin, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07187000&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A53%2B00%3A00%2F2026-10-30T14%3A19%3A53%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:53+00:00",
+   "dischargeObsWithValue": 167,
+   "newestDischargeTime": "2026-10-30T13:00:00+00:00",
+   "newestDischargeCfs": 88.2,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "pomme-de-terre-river",
+   "inCatalog": true,
+   "gauge": "06921500",
+   "usgsName": "Pomme de Terre River at Hermitage, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06921500&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A57%2B00%3A00%2F2026-10-30T14%3A19%3A57%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:57+00:00",
+   "dischargeObsWithValue": 670,
+   "newestDischargeTime": "2026-10-30T13:45:00+00:00",
+   "newestDischargeCfs": 61.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "osage-river-lower",
+   "inCatalog": true,
+   "gauge": "06926510",
+   "usgsName": "Osage River below St. Thomas, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06926510&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A19%3A59%2B00%3A00%2F2026-10-30T14%3A19%3A59%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:19:59+00:00",
+   "dischargeObsWithValue": 670,
+   "newestDischargeTime": "2026-10-30T13:45:00+00:00",
+   "newestDischargeCfs": 1190.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "missouri-river-mr340",
+   "inCatalog": true,
+   "gauge": "06910450",
+   "usgsName": "Missouri River at Jefferson City, MO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06910450&parameter_code=00060%2C00010&datetime=2026-10-23T14%3A20%3A02%2B00%3A00%2F2026-10-30T14%3A20%3A02%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T14:20:02+00:00",
+   "dischargeObsWithValue": 657,
+   "newestDischargeTime": "2026-10-30T13:45:00+00:00",
+   "newestDischargeCfs": 57300.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  }
+ ],
+ "otherGauges": [
+  {
+   "gauge": "06893000",
+   "usgsName": "Missouri River at Kansas City, MO",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "06895500",
+   "usgsName": "Missouri River at Waverly, MO",
+   "dischargeObsWithValue": 617
+  },
+  {
+   "gauge": "06909000",
+   "usgsName": "Missouri River at Boonville, MO",
+   "dischargeObsWithValue": 619
+  },
+  {
+   "gauge": "06919000",
+   "usgsName": "Sac River near Stockton, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06923700",
+   "usgsName": "Niangua River at Bennett Spring, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06927780",
+   "usgsName": "Osage Fork near Russ, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06927850",
+   "usgsName": "Osage Fork of the Gasconade River near Lebanon, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06928000",
+   "usgsName": "Gasconade River near Hazelgreen, MO",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "06928900",
+   "usgsName": "BIG PINEY RIVER NEAR HOUSTON, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06934000",
+   "usgsName": "Gasconade River near Rich Fountain, MO",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "06934500",
+   "usgsName": "Missouri River at Hermann, MO",
+   "dischargeObsWithValue": 512
+  },
+  {
+   "gauge": "06935965",
+   "usgsName": "Missouri River at St. Charles, MO",
+   "dischargeObsWithValue": 336
+  },
+  {
+   "gauge": "07013000",
+   "usgsName": "Meramec River near Steelville, MO",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "07016000",
+   "usgsName": "Bourbeuse River near Spring Bluff, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07017200",
+   "usgsName": "Big River at Irondale, MO",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "07018000",
+   "usgsName": "Big River near De Soto, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07018500",
+   "usgsName": "Big River at Byrnesville, MO",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "07019000",
+   "usgsName": "Meramec River near Eureka, MO",
+   "dischargeObsWithValue": 671
+  },
+  {
+   "gauge": "07022000",
+   "usgsName": "Mississippi River at Thebes, IL",
+   "dischargeObsWithValue": 325
+  },
+  {
+   "gauge": "07034000",
+   "usgsName": "St. Francis River near Roselle, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07034500",
+   "usgsName": null,
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07035000",
+   "usgsName": "Little St. Francis River at Fredericktown, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07052250",
+   "usgsName": "James River near Boaz, MO",
+   "dischargeObsWithValue": 666
+  },
+  {
+   "gauge": "07061500",
+   "usgsName": "Black River near Annapolis, MO",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "07062500",
+   "usgsName": "Black River at Leeper, MO",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "07066000",
+   "usgsName": "Jacks Fork at Eminence, MO",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "07066500",
+   "usgsName": "Current River near Eminence, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07068000",
+   "usgsName": "Current River at Doniphan, MO",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "07070500",
+   "usgsName": "Eleven Point River near Thomasville, MO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07188000",
+   "usgsName": "Spring River near Quapaw, OK",
+   "dischargeObsWithValue": 334
+  },
+  {
+   "gauge": "07188925",
+   "usgsName": "Elk Rv at MO-59, Noel, MO",
+   "dischargeObsWithValue": 0
+  }
+ ],
+ "note": "An unavailable gauge only hides live estimates; it never blocks a section."
+}

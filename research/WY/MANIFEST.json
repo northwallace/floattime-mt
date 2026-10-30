@@ -1,0 +1,4937 @@
+{
+ "package": "floateta-wyoming-v1",
+ "created": "2026-10-27",
+ "fileCount": 821,
+ "totalBytes": 226038023,
+ "notBundled": {
+  "NHD HR HU4 GeoPackages": "see research/sources.json ids nhd_hr_* (url + zipSha256)"
+ },
+ "files": [
+  {
+   "path": "CHANGELOG.md",
+   "bytes": 964,
+   "sha256": "c09b0351ab8b9a9ff6b81e1241657c8c06e3da60230eb49d5b25de69de1d83e8",
+   "zip": "slim"
+  },
+  {
+   "path": "CLAUDE_INSTRUCTIONS.md",
+   "bytes": 4606,
+   "sha256": "e546a881c50c6113ea13788d2d86bfb5297d56c53bdb81166a8ddbcce48b6024",
+   "zip": "slim"
+  },
+  {
+   "path": "FINAL_REPORT.md",
+   "bytes": 13613,
+   "sha256": "51779a447e25467915d570c1a42065fca7aedbeaf24a7f4460cede59be0cbf04",
+   "zip": "slim"
+  },
+  {
+   "path": "PROGRESS.md",
+   "bytes": 3726,
+   "sha256": "6c0bcf0e9213d701c203012e59933bbf923e70e855ee0048546647e2bdf3ede8",
+   "zip": "slim"
+  },
+  {
+   "path": "README.md",
+   "bytes": 1096,
+   "sha256": "f1edd10771410a53d3e3b228e08d1c5e7bfd41e7b7d6779267fe568580df60ff",
+   "zip": "slim"
+  },
+  {
+   "path": "WY-SUMMARY.md",
+   "bytes": 8525,
+   "sha256": "2b505c33ccf0497d21f6f4b57c381b4bce270b9521db02565b6a7256517654e7",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/map_points/WY.json",
+   "bytes": 166281,
+   "sha256": "d513b91cb015062a62ae76377d443d8907fbdc4afe88a0fd9eaf44e28709cca5",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/bighorn-river-thermopolis.json",
+   "bytes": 5022,
+   "sha256": "ba50d943d00f77bb43f4558e9574158f349a67d89d21fe62ae28f2d8465aed98",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/clarks-fork-wy.json",
+   "bytes": 2707,
+   "sha256": "a7c01ac310a5ca58c682d90653748a929614567e939333890a70d4bb9ee87e3b",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/encampment-river.json",
+   "bytes": 2867,
+   "sha256": "d6d0fa7cbe1661a1b6a15c8fd32676e874fa28dcfc9e11031884d63caede7cec",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/green-river-fontenelle.json",
+   "bytes": 9586,
+   "sha256": "2425570fb410ddff92aadf183d2b8d364128eafa8fb0864b3b7b357199f98bac",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/green-river-upper-wy.json",
+   "bytes": 17757,
+   "sha256": "70865ba472a6753a3185d253134b977acdac5128b07243ddd17e5a25186e89bd",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/hoback-river.json",
+   "bytes": 4821,
+   "sha256": "f6bae570f397ba11be9dd8a5adb05de6a0cb64444c72b4c1845355242bd227ad",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/laramie-river-woods-landing.json",
+   "bytes": 1299,
+   "sha256": "e35e2e4c5e7e4679f643ab5930231655f4db78e20e1e113e8c3f028e97912057",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/new-fork-river.json",
+   "bytes": 6831,
+   "sha256": "e8d909f8f299192a9ef58f7114416dbff3d7be4439418056fbb1312342234729",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/north-fork-shoshone.json",
+   "bytes": 9211,
+   "sha256": "0cd2d9b1cfa7cb35c2fe806a99e7a9402ea7d80cf7a6cd2abdf12dfc20c3c60b",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/north-platte-douglas.json",
+   "bytes": 3341,
+   "sha256": "e3a6f03cfb51217786ebc35a00c67c26d184d16b80a20e5c363e2f8c3cf806b5",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/north-platte-glendo.json",
+   "bytes": 1267,
+   "sha256": "98cc29ba2afac3a1724b00b8e07e6ca1e13116a0ef3cecd6b765fcc09a0fee5b",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/north-platte-gray-reef-casper.json",
+   "bytes": 13948,
+   "sha256": "773733ae01145aa0007b32e5652472aff37c1036d08c672517610546d9533a24",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/north-platte-upper-wy.json",
+   "bytes": 9067,
+   "sha256": "f54060ea38370f99e3488900571f68d7ed82f5c60ff80463df6656ddd3164606",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/salt-river-wy.json",
+   "bytes": 7780,
+   "sha256": "56659adaa28a0efc708d8bb9ac194481ed2d373bd5aa2a476ae1cba9b661b1d7",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/shoshone-river-cody.json",
+   "bytes": 1245,
+   "sha256": "67187ddfac2c50e58315ca0355b765dbb03e2c976654dc598282b4969d29142e",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/shoshone-river-corbett.json",
+   "bytes": 1315,
+   "sha256": "f9825b4ed8631715fa83c7f725d65074d8bdb01e2fa00f1aed15def31b0d3936",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/shoshone-river-willwood.json",
+   "bytes": 1262,
+   "sha256": "e92540bf8a9e42718e086807eeb16e0898998fcc1acaca162a44a89fa46131d4",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/snake-river-canyon-wy.json",
+   "bytes": 5534,
+   "sha256": "3e7ff91a53b8cfb38c722d04890c56e59482146241522a3ce6251b3a85980fa7",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/snake-river-grand-teton.json",
+   "bytes": 5082,
+   "sha256": "2b8fd7ee3f5be68489ac20f10c9eea6677b2042873d1f4e9d468f3e97d4eb603",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/snake-river-jackson-hole.json",
+   "bytes": 2525,
+   "sha256": "da923b17f0b17311ddd9f8419698f5a63e93dac964ea2f8e9776a9eca3919364",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/snake-river-southgate-jackson-lake.json",
+   "bytes": 3656,
+   "sha256": "2e1a3413cb0da31a3c230a97e826e8fcc7fa3bfa4b8d28d10e329dfe9e98a0e2",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/south-fork-shoshone.json",
+   "bytes": 4466,
+   "sha256": "e7f4364dfb898122d97c4fb4ccdd7932c1a4a07e1db9a3c47ab63f9d73f85d7d",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/tongue-river-wy.json",
+   "bytes": 1419,
+   "sha256": "835e3fa74cc5d5534edb934cdee2f120f20b99ea4147a202c352ccaef242058d",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/wind-river-dubois.json",
+   "bytes": 2586,
+   "sha256": "f01759ffad292834b6857f502c4d270e3bda477bd19ba50e1b178ad21fdce60a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/access-grades/WY.json",
+   "bytes": 349946,
+   "sha256": "5a02bc116e7df47effd00d263aba64c212ae7a0ff5583d152e58ae27bbc51f25",
+   "zip": "slim"
+  },
+  {
+   "path": "research/access-points.json",
+   "bytes": 412345,
+   "sha256": "b86227ccf0397e4407b0cf6405309e4e12e08401cd20d01b084d20b2da135241",
+   "zip": "slim"
+  },
+  {
+   "path": "research/agency-source-registry.json",
+   "bytes": 4699,
+   "sha256": "50c48d0b51d310e4789918a7d248c0fb6d74656ff37619806ecab95faf3c3e8c",
+   "zip": "slim"
+  },
+  {
+   "path": "research/cross-state-references.json",
+   "bytes": 3060,
+   "sha256": "443386e7ad2d2eba7490d815d27b01422f5e499980061a3175182ded43ea6684",
+   "zip": "slim"
+  },
+  {
+   "path": "research/distances.json",
+   "bytes": 132127,
+   "sha256": "6318625981065f0fb6623d7b22b695de395923a2ef29f136d203c2a8140cdbd3",
+   "zip": "slim"
+  },
+  {
+   "path": "research/gauge-checks.json",
+   "bytes": 25855,
+   "sha256": "c39545a6c27d5956d016dd3949119128a0673e88f8abaa87c8060ffeb71bcc61",
+   "zip": "slim"
+  },
+  {
+   "path": "research/geo-checks-nhd-WY.json",
+   "bytes": 318693,
+   "sha256": "5ae18ded674b57b98f017e57a9ce565ee8b607229fcc98ca29cbdcba179da34a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/pending-map-points/WY.json",
+   "bytes": 65484,
+   "sha256": "7e4b97af6148f87ad3343a99ce36cf5fbdb7a4728295af901f9e6c70b28b3c41",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/blm_north_platte_wy.html",
+   "bytes": 174267,
+   "sha256": "83bffeb8a68e0bece4336046b05be47298342d2a7342d973777ea0699bea2a97",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/blm_north_platte_wy.txt",
+   "bytes": 5481,
+   "sha256": "0d47f0613bb3a58374beda337486f327dd6f0b47dd2e4417be44982a3a810d80",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_bica_boating.html",
+   "bytes": 49411,
+   "sha256": "55784472de464ea90d9a4bb3e448c54a2d57b6585b428bd60d4f309662907aca",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_bica_boating.txt",
+   "bytes": 3885,
+   "sha256": "97dfea69ea1ec65679988ca0c9aa104cfba0989a015f936a81e4706dc6dc1a76",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_grte_boat.html",
+   "bytes": 71398,
+   "sha256": "bd691caa719773ed806319417668c27b8b3cd2a545d2d34248e6a1687287c10e",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_grte_boat.txt",
+   "bytes": 12032,
+   "sha256": "e5e4a182f76ed44f9b61735d5ec1bba7724d27f5c069291caf6091b4c1fad466",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_grte_float.html",
+   "bytes": 52391,
+   "sha256": "056e36099c0dfb54b2e3506ae9152aaa0fedb3709dd15701af158f3d9aa8c117",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_grte_float.txt",
+   "bytes": 6495,
+   "sha256": "b9d2f9c78e0a9dfb9f0f448ff9ce308440b56d889505ac276ef9994871995dd6",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_grte_moose_landing.html",
+   "bytes": 38159,
+   "sha256": "e6b8a7f59b363d358b674299ec8abbb432720963f87da76778cffe3f9dc9388b",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_grte_moose_landing.txt",
+   "bytes": 6933,
+   "sha256": "9e1163e2664bc07e71a0b70fdec1f8e74247ab68f1ef9e75b1451ac43decbb17",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_yell_boating.html",
+   "bytes": 66728,
+   "sha256": "1bd6ea8bbf7c70aa3a30b3deb7b4121b9100d9fe026aab30e4f3e83e3e94d45e",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_yell_boating.txt",
+   "bytes": 9507,
+   "sha256": "9b0e6ed937ced333be9715628c40458a95256fd78c2ef7c5e27574d2807a82f9",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/rec_gov_grte_pass.html",
+   "bytes": 13221,
+   "sha256": "530b7d372e5aa5032f92d991f3ade064f7738d6a32fe861f3384d8d7f96b656d",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/rec_gov_grte_pass.txt",
+   "bytes": 3157,
+   "sha256": "47e4cf87fc31a4a3d51ab2501e24850330e29298627e5a6e0dd966cd893f1f98",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/usfs_btnf_snake_canyon.html",
+   "bytes": 230886,
+   "sha256": "b2fb553406f1f82bd28ad6e515c186cdb2baa27d99adf8bd1b498ad01abe37de",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/usfs_btnf_snake_canyon.txt",
+   "bytes": 6928,
+   "sha256": "4bceb03e0b957f807b6d382247764c5a56021daa2bc1acab6d2283f09a2ee9d2",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/usfs_btnf_snake_permits.html",
+   "bytes": 267231,
+   "sha256": "867f9528725fa90c1f6515d997991116fc937737b85d5630f48e8d6f2bd8251a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/usfs_btnf_snake_permits.txt",
+   "bytes": 21310,
+   "sha256": "9c893d457c473247d5276418c892070e4a9400168bfdfc0a72af69d6fe300461",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/usfs_btnf_west_table.html",
+   "bytes": 234649,
+   "sha256": "a1aca817a371d4d32bc7a31af5da055dadfb0edf2f25573e82dd0dabac68993d",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/usfs_btnf_west_table.txt",
+   "bytes": 7476,
+   "sha256": "4d69ca2d179a507b8a277ff34d18acaf0c147b18c43ff98f98a26e6f13152e98",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_ais.html",
+   "bytes": 260019,
+   "sha256": "5de23ee8198b565b9469f003eee0780637da4d6310ed3061a58484063d49a16e",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_ais.txt",
+   "bytes": 14227,
+   "sha256": "359c8bd7e26436b5e2fdfa8871c70ee2d6868f3ffd3c3e63f340997244027c0a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_facilities.json",
+   "bytes": 240128,
+   "sha256": "3bc63ec1576c4ef6bfa7cf65be4805ab1a7ef96f683096637759a4c3a0f1f5fb",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_facilities_meta.json",
+   "bytes": 25398,
+   "sha256": "77276937458e2a24d0aaba9a766def09d3d65617d28a1a6bc2fc0d3af360ddc2",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_paa_facilities.json",
+   "bytes": 190709,
+   "sha256": "508146c2deec9580c83878b2056e2ffc8f40cb14e20591e8ee30011ea164de1d",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_paa_facilities_meta.json",
+   "bytes": 24142,
+   "sha256": "e4415c15155dc5936fc01d596e693169a0e9909367370f0b492d2ca46ce07bac",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_paa_locations.json",
+   "bytes": 218682,
+   "sha256": "db8e3b015adb78af396d6ce2716298cc73aa1d586cefa161e216166b2aa90ebf",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_paa_locations_meta.json",
+   "bytes": 28835,
+   "sha256": "5485e42a5e2b5854e9972993bd0dc18edd9846a75e75f2abc23eba9d117df80b",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_paa_sommers.html",
+   "bytes": 243018,
+   "sha256": "463bef36020adcbcf4c423c68438f7eacb42da76fdd6f8513e7eff72600d23fb",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_paa_sommers.txt",
+   "bytes": 13341,
+   "sha256": "68fbc3c09b9e8ef15f608e8b09a35cdd56e36f60e1e575b011b9fb99785364ab",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_river_access_points.json",
+   "bytes": 87819,
+   "sha256": "ff98df7125c517a71d8510b822c6fbe8d9156c0352e6a67e9748bd1e0a9cff03",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_river_access_points_meta.json",
+   "bytes": 11145,
+   "sha256": "82baa63f82f661848b6b7db0eb0399bdddc99ece928db5a7f474b534f9484d2f",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_stream_access_sam.html",
+   "bytes": 239327,
+   "sha256": "9d09473fb3e1a8ad288a155921344bebd1533a46bf03c4d04490e8d4adbb6047",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_stream_access_sam.txt",
+   "bytes": 11701,
+   "sha256": "328377dae14d17b42f9e9aa3e68f1d68d24aeb3879377720bce7f6d4c3897c99",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_trespass.html",
+   "bytes": 258644,
+   "sha256": "cef89e405865ee38239080ab3fc9a7ba584f1b988c486d7324fa5a817ff65b9f",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wgfd_trespass.txt",
+   "bytes": 15807,
+   "sha256": "0e0e0287c1190214b4dca9bbe1edf2ce771a46f3d8fd5fa6d40f90597a63f474",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wrir_fg_need_to_know.html",
+   "bytes": 115179,
+   "sha256": "7980ec8447f33b62445447568836dd1a7e01563eefebb13b5d01cd426c31eb26",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wrir_fg_need_to_know.txt",
+   "bytes": 4988,
+   "sha256": "7b61823bc0d20a5de5da5aae7eb18e991f2ebc2b738ee4cd1849eab295facecc",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wrir_fishing_regs_2026.pdf",
+   "bytes": 809683,
+   "sha256": "eeef7ddb0ac1518797d75c2c1cc8d7a60ecb984b7125071dd889bdf016739154",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wrir_fishing_regs_2026.txt",
+   "bytes": 29377,
+   "sha256": "0c55728891ba77b81923c34301f571184f459ebc777c0288b9f489119822d9c7",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wy_parks_boysen.html",
+   "bytes": 198294,
+   "sha256": "11134666ee98a6d5be95878eceb51ff9b04b88a15f62184372d35dfd6c7b20ab",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wy_parks_boysen.txt",
+   "bytes": 14765,
+   "sha256": "4e59145e0dbf0686dc63655cfb85350bc111d0987d525b7013220f4c968f24f5",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wy_parks_hot_springs.html",
+   "bytes": 192958,
+   "sha256": "7f5c92a41bdf847dfa1b208df0d77398f0ae7e1c47adf1a055152e81bf218da8",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/wy_parks_hot_springs.txt",
+   "bytes": 14580,
+   "sha256": "53a92d2dae542b078b0e5ffe1e8865dbba95c1a010839b946ece36e67107e754",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/fetch-log.json",
+   "bytes": 16585,
+   "sha256": "9ab9b11134e5d26a3d95b62e3083f2280c5f5cb997d3a9971d772615c1ea0334",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gauges/gauge-checks-raw-WY.json",
+   "bytes": 59312,
+   "sha256": "3152c9026238668a42d89f31f2475ee097642d8276b4877f5ac7d92364d639a1",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gauges/gauge-recent-daily-WY.json",
+   "bytes": 10208,
+   "sha256": "6c21cc4b7751a553685354861a8c7f9e3ef9029e4e4908843bf3cf51ba7c2f1f",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gauges/nldi_nwissites_WY.json",
+   "bytes": 30863,
+   "sha256": "46d3e8aded95a772063decc7aec3c68cc1007220c1f46c534fda081ef3eeb171",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/geo_cache/geo_checks.log",
+   "bytes": 21199,
+   "sha256": "713de96e41a2ff1e7109482aa9a0ae2d181a46a74cf45602a3fd9ae2f9e13722",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR1_area.json",
+   "bytes": 1622572,
+   "sha256": "fd27472fab46412a96d254b45964c3132ebc7904df5c2154b7126b2727984ab5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR1_fl.json",
+   "bytes": 17411,
+   "sha256": "d420ef940fc9e46ed1d9506f2e8494b9c45944126a7adf1e6d52de86b10532cd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR2_area.json",
+   "bytes": 1611634,
+   "sha256": "629797df6f23ca158fa7358bb87b042e9115c2201b02c4b9a16ca57998162f99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR2_fl.json",
+   "bytes": 13642,
+   "sha256": "18db6bbf7189a842d1ad51e9d6389131638abf2f0d36a343f8a00913f865369a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR3_area.json",
+   "bytes": 1611634,
+   "sha256": "629797df6f23ca158fa7358bb87b042e9115c2201b02c4b9a16ca57998162f99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR3_fl.json",
+   "bytes": 8333,
+   "sha256": "251f3763530560b771de92d5b73e67b8aeb22bb30a341808bb7caf4871e377f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR4_area.json",
+   "bytes": 1611634,
+   "sha256": "629797df6f23ca158fa7358bb87b042e9115c2201b02c4b9a16ca57998162f99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR4_fl.json",
+   "bytes": 11775,
+   "sha256": "064b03a7d517efc2d269c9ab5ae6ba7747b31450f967ecc6f5ff3f043df76220",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR5_area.json",
+   "bytes": 1611634,
+   "sha256": "629797df6f23ca158fa7358bb87b042e9115c2201b02c4b9a16ca57998162f99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR5_fl.json",
+   "bytes": 4642,
+   "sha256": "aeb6e94aeeafd8e2e007893b690fa3e75ea4ad2e5e00946461ec0d8914303685",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR6_area.json",
+   "bytes": 540569,
+   "sha256": "1dd52faed252f40942e17d4a9b647d7d1e58ff1b00043db5bcc8970860a2a8f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR6_fl.json",
+   "bytes": 10839,
+   "sha256": "3b07dd8a55f0e74d2b68372265ea60418a10a2fec80e72fcd7ab6adf826646d3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR7_area.json",
+   "bytes": 540569,
+   "sha256": "1dd52faed252f40942e17d4a9b647d7d1e58ff1b00043db5bcc8970860a2a8f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR7_fl.json",
+   "bytes": 12531,
+   "sha256": "cf13d36dd4d937f96ee5777c836da8a9860527bd949f66b2a4e73c2885f2977c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR8_area.json",
+   "bytes": 540569,
+   "sha256": "1dd52faed252f40942e17d4a9b647d7d1e58ff1b00043db5bcc8970860a2a8f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR8_fl.json",
+   "bytes": 14341,
+   "sha256": "8a1d0e8506cc67d8ef90575a0b76a884a353fabeb4c69cca020c7ccf8d0cd844",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR9_area.json",
+   "bytes": 540569,
+   "sha256": "1dd52faed252f40942e17d4a9b647d7d1e58ff1b00043db5bcc8970860a2a8f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHR9_fl.json",
+   "bytes": 7505,
+   "sha256": "26d8380722745160dd4e7c6cafd08824f752cfc15e51d1e0e9fa500f4c505019",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHW1_area.json",
+   "bytes": 17248,
+   "sha256": "f326d1008b50bf3d03ef6a9f0bf34a43efb355ce3d8868546457149185095b67",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHW1_fl.json",
+   "bytes": 9025,
+   "sha256": "a065a942754b29b181a19f4a02cf924e86611052f8e25feee7a82762a6086b60",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHW2_area.json",
+   "bytes": 16600,
+   "sha256": "220f1965d9d4dcb05bfda553891b789b17e0e635a84574ac98091a18abcf99db",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/BHW2_fl.json",
+   "bytes": 6058,
+   "sha256": "c41d04857c694c6fe79baa9b294ae2f0a362ed6728b2c79b192376b6bf4abcde",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY1_area.json",
+   "bytes": 656591,
+   "sha256": "84e0ee4aabc3e19a03a5494194047b037d9ad050661f284be035526fe13cdcf4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY1_fl.json",
+   "bytes": 14699,
+   "sha256": "8b0a14e9f09e7d9f79c6351f68bcf17d80f3e7ce57ded0117630655d6d88a262",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY2_area.json",
+   "bytes": 656591,
+   "sha256": "84e0ee4aabc3e19a03a5494194047b037d9ad050661f284be035526fe13cdcf4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY2_fl.json",
+   "bytes": 5044,
+   "sha256": "41d4ae14e267859cd9ad41ebd5794f324c299f60782c0719a08e71994f09f77c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY3_area.json",
+   "bytes": 656591,
+   "sha256": "84e0ee4aabc3e19a03a5494194047b037d9ad050661f284be035526fe13cdcf4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY3_fl.json",
+   "bytes": 13683,
+   "sha256": "454441bd2c7bbbf90f2c452d0f4c903de7cad4f45c72e3d5d365821ba63d2739",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY4_area.json",
+   "bytes": 656591,
+   "sha256": "84e0ee4aabc3e19a03a5494194047b037d9ad050661f284be035526fe13cdcf4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY4_fl.json",
+   "bytes": 10965,
+   "sha256": "0cd7191d37d9b2ab65c8cf726b04adf90dd6b5ff8f5a63b37c9c1b4b9f76dc47",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY5_area.json",
+   "bytes": 656591,
+   "sha256": "84e0ee4aabc3e19a03a5494194047b037d9ad050661f284be035526fe13cdcf4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/CFY5_fl.json",
+   "bytes": 7780,
+   "sha256": "8c21305dee481be1d6ffc87172fb792db9583bbe450f3a6a22d72934b55bac72",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ENR1_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ENR1_fl.json",
+   "bytes": 15675,
+   "sha256": "bbc5fbff58284e6ca94a6f2bda66b49665386e2f8ad5dc8eff4ccdc3a78376e2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ENR2_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ENR2_fl.json",
+   "bytes": 28527,
+   "sha256": "d521c988c15a4f9b5269f16fab738d0d0f1e632ac42287452f5a1b99cb58a252",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ENR3_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ENR3_fl.json",
+   "bytes": 19159,
+   "sha256": "1f6d05b0c1bc8fb9d92fa1458da524f16be2e6820aa76b73a0b74d56cfcb5415",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR1_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR1_fl.json",
+   "bytes": 11179,
+   "sha256": "17a676b52eb3125162b034a61cff08f84be85e8c9a3f705d1dba0d03a0c0924d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR2_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR2_fl.json",
+   "bytes": 8390,
+   "sha256": "8bd5a2b6fe03a83a4b3672bf8cd5ab4bb699befe48010f0f99b388a0d435ac52",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR3_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR3_fl.json",
+   "bytes": 10089,
+   "sha256": "6c56453e7eb831e4d7237229b2ac49d570f072269871d466840466ab5219cde3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR4_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR4_fl.json",
+   "bytes": 7198,
+   "sha256": "987d80d3eaa3cf7f2fdb85ad79e1dc00961d78cb4de387bdeec99df9b641c046",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR5_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/HOR5_fl.json",
+   "bytes": 7075,
+   "sha256": "e1ab7d984b30913092796f72aa134beb1d955051d9ad2ee0227916a5a55987eb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LER1_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LER1_fl.json",
+   "bytes": 18195,
+   "sha256": "3dece7f97ccf95afce22502247e48c20e7a90508aff27ff579b3b8fbd9ebfb5a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LER2_area.json",
+   "bytes": 683034,
+   "sha256": "0e8bf7fe67cb8713d51c87ae8e8728e8cc06c6b803cda765697fa33dd775fd23",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LER2_fl.json",
+   "bytes": 25540,
+   "sha256": "c5f0311c89893a37ebb087c0c5e5d9fbbc92383f8bdd9feeac3c061383fa3d2c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LER3_area.json",
+   "bytes": 683034,
+   "sha256": "0e8bf7fe67cb8713d51c87ae8e8728e8cc06c6b803cda765697fa33dd775fd23",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LER3_fl.json",
+   "bytes": 19239,
+   "sha256": "537b8b177bf379c5bcf05f2422ab59a412969307214f97c443504904388f1836",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR10_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR10_fl.json",
+   "bytes": 20015,
+   "sha256": "79f21d9b8f73a14f539b9d694318256d4b1b1359b4c08c56d2ad69b059144d72",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR11_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR11_fl.json",
+   "bytes": 13448,
+   "sha256": "780a74f59ef4ecfd68b9d04b2629722fb4594576191bfe97cb8ad38c5e073d56",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR12_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR12_fl.json",
+   "bytes": 12778,
+   "sha256": "b29cfd50796f9b716428df29eb04b98f459407f339282493cec7c444e61211e5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR13_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR13_fl.json",
+   "bytes": 4944,
+   "sha256": "bf4655f61d354e867b735b8fa9d8144469213098eec167cb3301ff44d5d7d2c2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR14_area.json",
+   "bytes": 48613,
+   "sha256": "df46f2b94ff9c2237c39f402f82a93ea11d16d00fd15b2e7674e6f5159d7b9c6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR14_fl.json",
+   "bytes": 9034,
+   "sha256": "9e860973945947f03326c7eeded525c5cff2360fcc3f5a5b4a1315b470b313bb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR15_area.json",
+   "bytes": 48613,
+   "sha256": "df46f2b94ff9c2237c39f402f82a93ea11d16d00fd15b2e7674e6f5159d7b9c6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR15_fl.json",
+   "bytes": 18578,
+   "sha256": "79f8722b96a245445e12d44c98396f8e573acb42e975b983e55407ef5f762bdc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR1_area.json",
+   "bytes": 385389,
+   "sha256": "956988b9bb8f05b6133c3486799c648039ee292e83b84c5d2d832c51d4cf0c09",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR1_fl.json",
+   "bytes": 10047,
+   "sha256": "29dbc794b7fa34950f86a3ede8236ae803faaa128ac30a2e1b31fa61ad8e4584",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR2_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR2_fl.json",
+   "bytes": 6554,
+   "sha256": "925fa91422b42a5641fd24c4b49875f5f169fd3b526828d3a7eb6a2fbd70b718",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR3_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR3_fl.json",
+   "bytes": 7285,
+   "sha256": "c8efc87e4fd534f9e2be84b9c9aa9f2e0a7fb76e4b1892f283cdaf15b5f51f9d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR4_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR4_fl.json",
+   "bytes": 14769,
+   "sha256": "cbf954b914fea8545a20b1c6981f84f96efbc667ffe94482fb90d3e27effe34e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR5_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR5_fl.json",
+   "bytes": 8425,
+   "sha256": "cb896465ff36677cb80a1269e9c1d7d5571a8fe5bf04b0662bbd18538b413eb3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR6_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR6_fl.json",
+   "bytes": 13415,
+   "sha256": "8143bc0e42811aa68dc363df16f6eb044ea954b46cc6cbcfc6c836bce62db2bc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR7_area.json",
+   "bytes": 271621,
+   "sha256": "bb506357e9fc7ad2cb5f55c1a0c68f6dceca8735ef91d9f107f20617e58b3349",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR7_fl.json",
+   "bytes": 17712,
+   "sha256": "06a70f452637e7081bb5ddb8ad0bac57ccda8b990a38b84b28b67f3e875bf11c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR8_area.json",
+   "bytes": 1159456,
+   "sha256": "e8ace01cc18f4e9f467482a7e98c7704098c3c64702cbec4f12b45f2b13f2a98",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR8_fl.json",
+   "bytes": 15272,
+   "sha256": "a5872ea0d2b371a85c19eed3958936caf19e9a1fa4e5220e7bb222da36bbef36",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR9_area.json",
+   "bytes": 1159456,
+   "sha256": "e8ace01cc18f4e9f467482a7e98c7704098c3c64702cbec4f12b45f2b13f2a98",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/LGR9_fl.json",
+   "bytes": 12869,
+   "sha256": "6ccb652a3f353993fda3c1f4928a08f5a6444fa8e9014b3797d955db6c91e693",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR10_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR10_fl.json",
+   "bytes": 20589,
+   "sha256": "850bc374e700b33eff790be9954c4c16e101da5d0619c9bba358d899f20bf6f1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR1_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR1_fl.json",
+   "bytes": 11045,
+   "sha256": "56caa8c5bb9d8f73b8aa4faf13498f1262791f5972eeb2707234e6d5b0bb4be8",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR2_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR2_fl.json",
+   "bytes": 11793,
+   "sha256": "11fb630853aa3667395dc2e7d0b5878cb7b51cd9f7ba6da4ddc697c99a1bf24f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR3_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR3_fl.json",
+   "bytes": 9475,
+   "sha256": "464d753983d76b625663b380af15ae6cd6322eb4c8861a665ddfaaa804596bb5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR4_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR4_fl.json",
+   "bytes": 23750,
+   "sha256": "413691a4695ddaee233c57bd9b0ff7872245531429fd319440c51595d8e565cc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR5_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR5_fl.json",
+   "bytes": 15226,
+   "sha256": "ff3be8540bca899ca085b5f3636f16ffdf52d80d7cd61dd411449378ce87630f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR6_area.json",
+   "bytes": 1001967,
+   "sha256": "f0800a42fb3afbc4efbee3eb0adfdc21e6b33bf7b87eac54743075c8eee54046",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR6_fl.json",
+   "bytes": 15540,
+   "sha256": "372c1e8c1056b732d6e99b2e6b631a2edec7fc59417e650064d30e3b367d249b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR7_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR7_fl.json",
+   "bytes": 22792,
+   "sha256": "229aa014c070234356f7405e5eab40ca93c86b37d67c70cddd7b1abddf76fa5b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR8_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR8_fl.json",
+   "bytes": 25248,
+   "sha256": "f9a566cfa956ebd3c112dfcb07a385575d5b6079c596c272fc005e8493519e23",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR9_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFR9_fl.json",
+   "bytes": 23758,
+   "sha256": "906bae432b1ca689075b179d39a1a5a48d951f79c2685681d7f4373098af9bcb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS10_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS10_fl.json",
+   "bytes": 30612,
+   "sha256": "2eeafaa6fcc81beb6e724d401c9017d4d10a9a1e10a75ebfc2b3df87fcb68663",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS11_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS11_fl.json",
+   "bytes": 19541,
+   "sha256": "19b9ad25ab858305772af4deb04e9b06815abb154eb11b9623c6b0abc2bebb8b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS1_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS1_fl.json",
+   "bytes": 15749,
+   "sha256": "643210bb6555e71ba539aab92bbe1c6e5179a1223b0feab6cca05cac50b7cc7b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS2_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS2_fl.json",
+   "bytes": 16293,
+   "sha256": "342d5d8daf4136a2e731a0c65610d44f933a38488707aeaa0486727d83d36533",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS3_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS3_fl.json",
+   "bytes": 20937,
+   "sha256": "21990bdc35aac58acc16e3fb8bc7ac89367a317ef7d78c6aa04a508723582ec1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS4_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS4_fl.json",
+   "bytes": 20086,
+   "sha256": "42c9e8603f65c963b3beba5c86eae217f2af014715a296b43eb8fd1ca67f0714",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS5_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS5_fl.json",
+   "bytes": 12062,
+   "sha256": "11f70a5f6ba415910de7fb6877e4fefc7ba814385909420ec755359f63ca102e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS6_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS6_fl.json",
+   "bytes": 18138,
+   "sha256": "52b6e809c92a10ff789dc63bc04753358f000cc5d79eb5f2d58e9ad14816a3c5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS7_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS7_fl.json",
+   "bytes": 14455,
+   "sha256": "0c36cc820841083221af908aec816f08665643d1f999a4b2ae15c9018644736a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS8_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS8_fl.json",
+   "bytes": 14551,
+   "sha256": "4d6b4158e2f531c0fd7fa308265d352595019d4275f498a137a58f4e4295895d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS9_area.json",
+   "bytes": 246994,
+   "sha256": "116b5242372fb9c4f7edce9415f5e7871d4800021ca17bd32e2619d4acb61412",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NFS9_fl.json",
+   "bytes": 9959,
+   "sha256": "6e4188a08ff566da1a41c488a1b03ac59dfc9d007f0a7b30021542ee23b29dad",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPAB_area.json",
+   "bytes": 52035,
+   "sha256": "89751d4aa2ebadb9e2f8f414e5c50190589dd63990cb4fe6cef422ad31a7ff0a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPAB_fl.json",
+   "bytes": 10702,
+   "sha256": "aff1292e7d5c3f1894cc8777df894a8ea0e03bbe3064c641b43d48713761b106",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPG1_area.json",
+   "bytes": 301366,
+   "sha256": "24a6edebdd8c0c3632d35825ffde83c77bb45796a3b72b09f326635d532c139d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPG1_fl.json",
+   "bytes": 13062,
+   "sha256": "029855d8cf8c353ff8bb9660d1d34c24f4771d83b930902734da25fca0c8c09e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPG2_area.json",
+   "bytes": 179404,
+   "sha256": "b964bd3f4fd5ff01440e58e7246fe5c64663e0c12c4c3d3a88095c5417d87ba9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPG2_fl.json",
+   "bytes": 42146,
+   "sha256": "ad32cf9ca4e57090928b47163818b6d890241453f2431284cf92d0a217f293e4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPKS_area.json",
+   "bytes": 693,
+   "sha256": "a28b92df0141859ce1ceb6c8ea4b2c7c9a199ecab8aa00ab006dedc6dafae199",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPKS_fl.json",
+   "bytes": 4121,
+   "sha256": "3154ff06f4d3db6e9b5a8279d9ae9653ac009f346983c9b420a7948bbbb34583",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL1_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL1_fl.json",
+   "bytes": 3270,
+   "sha256": "1be3507b040b270db283dfaf8bd14562e4889e0c0406973a467f39c4c1bb8a3d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL2_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL2_fl.json",
+   "bytes": 16375,
+   "sha256": "87fdc06ac3341ac8073c177b30996ba8329fa13766ceba6a6cb944da99b46e88",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL3_area.json",
+   "bytes": 138584,
+   "sha256": "c8875dacdea71a15cc80fee4eab5d4a14b0b001cce83d3838dcc7cac3508a267",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL3_fl.json",
+   "bytes": 11578,
+   "sha256": "71136dbe8e8ef92628451aeaa02ff92b27e836ff2de453e4459062ac35739a0c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL4_area.json",
+   "bytes": 138584,
+   "sha256": "c8875dacdea71a15cc80fee4eab5d4a14b0b001cce83d3838dcc7cac3508a267",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL4_fl.json",
+   "bytes": 10777,
+   "sha256": "0c8d186a012d83bfddb16b4005770f64ed17c80abe058383e5a817ea6b1a455c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL5_area.json",
+   "bytes": 138584,
+   "sha256": "c8875dacdea71a15cc80fee4eab5d4a14b0b001cce83d3838dcc7cac3508a267",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPL5_fl.json",
+   "bytes": 16616,
+   "sha256": "dd3e867331470e2495d2b26a292a081eabaeef4cc3ff9b939ff976d17ea170f3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM10_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM10_fl.json",
+   "bytes": 7211,
+   "sha256": "ee665de0e69233e54d91657f2a60bdef52e8cbb99a4d38c08a9b6c4fd24f8c6d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM11_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM11_fl.json",
+   "bytes": 6058,
+   "sha256": "03e6dbcf56880025f331506dae28e4e1806386cdd9bada94ad0069ebbe5c777f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM12_area.json",
+   "bytes": 312321,
+   "sha256": "c8e37d32208d87e3c1a33956995fa0ad41d82e052215d57dac6f523b1bdaec66",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM12_fl.json",
+   "bytes": 6002,
+   "sha256": "490851f602f85f3cbb084581ad637b36d75f6598de3ca56937591cb894c6cd49",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM13_area.json",
+   "bytes": 312786,
+   "sha256": "3a06dc758b970346d8c9a4a9ef250312c98b95be07525f9e42937d1220cfc746",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM13_fl.json",
+   "bytes": 5196,
+   "sha256": "6837112151dd865dbadecfa5a41bda6952e0073d39850274056199b515fb39f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM14_area.json",
+   "bytes": 313390,
+   "sha256": "7900eec31781ea15bc14039be03a64a95da3630c09a3d7ae8e37e43189dd486e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM14_fl.json",
+   "bytes": 9088,
+   "sha256": "4af369de46b6def1e3d0a0e4f5974119916a82a7f40ba12181252285e99f51ae",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM15_area.json",
+   "bytes": 314490,
+   "sha256": "db354e45219cc38a81ea0a03dec39a2dca1f71d56a06d0ba32f23dce7443653e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM15_fl.json",
+   "bytes": 8359,
+   "sha256": "72708f6f7ff5c011c7df9363b74437cb55767ef3c02b64d74c07fa01178d3ce0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM16_area.json",
+   "bytes": 312866,
+   "sha256": "78bcdc89dee52aa29dc6cb14c0857be0694ff0cb563b6e6e32f86445a98c5537",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM16_fl.json",
+   "bytes": 11055,
+   "sha256": "ef060e987f5718c9298fc3b1aa35a34cc67e493f5d4c60bae08907595c267ec1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM17_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM17_fl.json",
+   "bytes": 6621,
+   "sha256": "8486ff7f25e74dcef1fa32433d76502916af024694eea25cc9bfa10fb438ba5a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM18_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM18_fl.json",
+   "bytes": 15330,
+   "sha256": "a988c5462d4fb6dfede2f1badc6a07730f602aa00ef55e16a8cbd2a71f75b090",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM19_area.json",
+   "bytes": 314981,
+   "sha256": "b34968d633b50e8f43955637525ff3cc8e57fa5cad38a1a11362cdd5266ac332",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM19_fl.json",
+   "bytes": 18019,
+   "sha256": "eec721b7b74167360b3fa8ae618a389c64751c28db5c13754d33c8245b0b5e92",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM1_area.json",
+   "bytes": 361164,
+   "sha256": "aea10f40fd04612654810bddb94a8b0903119c80939de661b9b782d28568d421",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM1_fl.json",
+   "bytes": 20772,
+   "sha256": "4f3fae1a72b00654dc70aad87b88a996dba3d46cfbea10b8dd13a2848a41100f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM20_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM20_fl.json",
+   "bytes": 13049,
+   "sha256": "92d1e0ea348930f3463f10b566025aa74ef2251c9ef894c1dce05caa5f6a043c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM21_area.json",
+   "bytes": 356330,
+   "sha256": "a60c3d1f368fe202f9da95eed3bfb86c85b47785269c1bec70ea0364ab9258e9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM21_fl.json",
+   "bytes": 11256,
+   "sha256": "e348d1f72df9de04cc3d9e76713426f48da9dd3d26506aa5344673ccc4fe732a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM2_area.json",
+   "bytes": 318100,
+   "sha256": "066dc6b97bc6786f3d610351feb477bd74c1cccb86959c1e2c32509383419193",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM2_fl.json",
+   "bytes": 15459,
+   "sha256": "4e497ced0a628e5313caa432de29099b6bfed35a60a3fba69693c6efbfce3298",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM3_area.json",
+   "bytes": 314296,
+   "sha256": "d7f0ceff820752bd30e4810668536267d44480d3994133ec1be1a86bda418e61",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM3_fl.json",
+   "bytes": 17613,
+   "sha256": "7b3c3dbacf19dd2746d9b2c07f80db09329c09525bcfd3cc0188cfe20ea6d0da",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM4_area.json",
+   "bytes": 315248,
+   "sha256": "98bffbfe026bcae09b2f516ddc99c23fe24681e734b4ed8d6a8b7c16027c5e05",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM4_fl.json",
+   "bytes": 21496,
+   "sha256": "3b6125707d3e6b932d638ca648baeac522e9c864175040f74b4895c19e4cf35a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM5_area.json",
+   "bytes": 312617,
+   "sha256": "6c2390e0337f3d04c41d5558ad66fff1dbc5690c3ce99e89f4117e1e13287505",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM5_fl.json",
+   "bytes": 4859,
+   "sha256": "baa7bc614e38421772d43f36f167410b05d969c8ff44b6dc371e1a9ec1bb41d2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM6_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM6_fl.json",
+   "bytes": 16590,
+   "sha256": "b84aa02a1e3f946b3b08272bd9732f8db0eafc0e9540fbce1e4d6ff3d327e6f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM7_area.json",
+   "bytes": 312944,
+   "sha256": "c8e9cf7ae1ac8685c5c604964906f953c0965660b5fa4b0977ad242b731b5ebb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM7_fl.json",
+   "bytes": 11663,
+   "sha256": "fda9cb4a47cbde2a7f37fed3131cc0cee60345b47f800e152647125b7c597ed4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM8_area.json",
+   "bytes": 314438,
+   "sha256": "cf1b420aa6f08b8806e7ad7e15bea77ad1d35c1321b22c0b0a3a83d73e33392e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM8_fl.json",
+   "bytes": 10300,
+   "sha256": "ff6f30faf5fa506fcd8bd69d3ccdb2cafc64e86d0b7765009a65e524b6b0750e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM9_area.json",
+   "bytes": 311544,
+   "sha256": "13b2ef27dc3fd591ff464f08b23edf73e8169a5fae8cd71bb71a6a9d418a8600",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPM9_fl.json",
+   "bytes": 8032,
+   "sha256": "25a62d67b9c30201c945eb71267f1cf15c77c264c514b3c620e7131dc86f09f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPMM_area.json",
+   "bytes": 17187,
+   "sha256": "a77d4eb4ca29bb64dec39e422d18e4b76cec2e33996238f0bf435bc99df0d0a1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPMM_fl.json",
+   "bytes": 13142,
+   "sha256": "21a2a84843ebe6d37da96d8e6b9b557d1e272263251a4bed656bf57ee419766a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPS-SOUTHGATE_area.json",
+   "bytes": 251823,
+   "sha256": "455d92ee3b39fa96ec41eafe6a7c1bb248fc944456b73efa02c445280e5d7f1e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPS-SOUTHGATE_fl.json",
+   "bytes": 15565,
+   "sha256": "2ec41ee584b48232efe33156b2ecddf8dcfe084f3e440560f3a7d9b6ecd4e450",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU10_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU10_fl.json",
+   "bytes": 11886,
+   "sha256": "a71ddf897214abf563a00e6f9897ccfb9e1195c653bf4474d95c4b375f0e60c3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU11_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU11_fl.json",
+   "bytes": 27567,
+   "sha256": "ca36e07ca4ff4b8547a03945c61fcf69af58dd594a3ed6649c9ccae052ec860d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU12_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU12_fl.json",
+   "bytes": 15078,
+   "sha256": "7c3b526b0938b1c30947b5ed0e0801330c914b154c85e6a922f6261a2a7cf86d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU13_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU13_fl.json",
+   "bytes": 10711,
+   "sha256": "f01f99d2ae403a0313e61819b142f29bb7fe63cd0868a12004baf876b0650274",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU14_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU14_fl.json",
+   "bytes": 19665,
+   "sha256": "4a6b0336b59fe16b0fd422cf0a81c2ddb6d7b3b2cec34dd9b8e2f93904d82b0f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU15_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU15_fl.json",
+   "bytes": 19886,
+   "sha256": "55664e44241e1cf55805c275b0564f2d0a10e72932c97bc0970b80cb3cc161da",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU16_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU16_fl.json",
+   "bytes": 18195,
+   "sha256": "3dece7f97ccf95afce22502247e48c20e7a90508aff27ff579b3b8fbd9ebfb5a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU1_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU1_fl.json",
+   "bytes": 29527,
+   "sha256": "f1a3fc101ade6b8800dda1a86566ce2b5a6b51a049118f01fcc98858f2e67df9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU2_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU2_fl.json",
+   "bytes": 33218,
+   "sha256": "64ef4bd35eede2f5e8871c6acaac5dfa0db5df89422a2113c06d3c49d24bb878",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU3_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU3_fl.json",
+   "bytes": 18139,
+   "sha256": "5b76fe1384fe212a55b9faf20e94b433d16f33412c47ef876d6c62fc81329776",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU4_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU4_fl.json",
+   "bytes": 18046,
+   "sha256": "ffc83db51e602cc949b90cca0d1c0739c6a7cea5c3bc2cf60a40aca6d6134eb4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU5_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU5_fl.json",
+   "bytes": 10895,
+   "sha256": "fdd3088faa5c7d26d9defa4838ae76739f79068aaba087ea1dc33acd6252b704",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU6_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU6_fl.json",
+   "bytes": 42053,
+   "sha256": "19148b4bd3abb7e121f325909bd7220392c65f855d89f077cffd5df3b94f122c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU7_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU7_fl.json",
+   "bytes": 21330,
+   "sha256": "69ab3e3f40a20acea7fc5ac7bd279542a155770858c532d73eeafb8cc0f9369f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU8_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU8_fl.json",
+   "bytes": 28380,
+   "sha256": "e8b29ec0da94a8baa0d3ee0ce7cd03c1a522b338af7c906d87c0a42df2ac0663",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU9_area.json",
+   "bytes": 822573,
+   "sha256": "379cbee5817d37f4ab92220cfb1222f8c2e029e56f4a78d394249ffe6cae78b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/NPU9_fl.json",
+   "bytes": 17952,
+   "sha256": "4aa8742fa25870ed747db8b58512b6bb7b2ecd8e4063b2a2757cf7ccd9954d59",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS1_area.json",
+   "bytes": 693,
+   "sha256": "a28b92df0141859ce1ceb6c8ea4b2c7c9a199ecab8aa00ab006dedc6dafae199",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS1_fl.json",
+   "bytes": 19479,
+   "sha256": "767ce61bc331d032c7678a4b66595eed9528ab70fa3f04643a64f0d3cb374fc3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS2_area.json",
+   "bytes": 157279,
+   "sha256": "97c613a7f8ec5ab3cfd2829b1e296f21c71fc8a1c6ea633f460b3ceca78107a6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS2_fl.json",
+   "bytes": 19247,
+   "sha256": "851bba37295798adaba891b4008b3d585e06113d34f978304b27afad62b4d48d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS3_area.json",
+   "bytes": 157279,
+   "sha256": "97c613a7f8ec5ab3cfd2829b1e296f21c71fc8a1c6ea633f460b3ceca78107a6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS3_fl.json",
+   "bytes": 9370,
+   "sha256": "7912bd436a680ede30bfa8615d440b98ef6294c858c78ddc2555194b5163e79e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS4_area.json",
+   "bytes": 1085139,
+   "sha256": "7ffd79426e844907ba8d23790f3bc49d5d69c48074e6de767fd4150e9c027f4a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS4_fl.json",
+   "bytes": 41116,
+   "sha256": "5e3861d20aba6ff977765a8d84a5a9f1d884ca17f081644599885b8ad205ebdd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS5_area.json",
+   "bytes": 1085139,
+   "sha256": "7ffd79426e844907ba8d23790f3bc49d5d69c48074e6de767fd4150e9c027f4a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS5_fl.json",
+   "bytes": 14291,
+   "sha256": "77defea43f9246936aab38e580b9c78ac755606793c8644e1b03de9babcd952a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS6_area.json",
+   "bytes": 1085139,
+   "sha256": "7ffd79426e844907ba8d23790f3bc49d5d69c48074e6de767fd4150e9c027f4a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SFS6_fl.json",
+   "bytes": 6859,
+   "sha256": "2a60252f36cc8ad4499239f5f3d61961a97771096ad5eac801e9b43f0b9d273d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHL1_area.json",
+   "bytes": 470570,
+   "sha256": "0d5d810151e0bcd5a00c415e85e10796404e5053967b0eeda2cb018f99f98304",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHL1_fl.json",
+   "bytes": 10880,
+   "sha256": "5c861136a466a2640ba1b454644dd7dbdec5aa81afa5cae1405fb35e33332ba2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHL2_area.json",
+   "bytes": 456556,
+   "sha256": "3337a409e9c871278676d322c1da1d913117667de49478508c9183641e1ab484",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHL2_fl.json",
+   "bytes": 11401,
+   "sha256": "130845c893517f7ba6ffd370c8bffdca5ec2552292fb4d2c8a1f7458abc7973f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHM1_area.json",
+   "bytes": 456556,
+   "sha256": "3337a409e9c871278676d322c1da1d913117667de49478508c9183641e1ab484",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHM1_fl.json",
+   "bytes": 13311,
+   "sha256": "ee7a08d9a065e2659698fbe1627a0d5b6e6950ba0bab29e161dbecc4373766bb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHM2_area.json",
+   "bytes": 470570,
+   "sha256": "0d5d810151e0bcd5a00c415e85e10796404e5053967b0eeda2cb018f99f98304",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHM2_fl.json",
+   "bytes": 11612,
+   "sha256": "ca223ec8c494051d4b6db9dc876b9c62d5bedf5254e481038ec272e34f1711ff",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHU1_area.json",
+   "bytes": 456556,
+   "sha256": "3337a409e9c871278676d322c1da1d913117667de49478508c9183641e1ab484",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHU1_fl.json",
+   "bytes": 5982,
+   "sha256": "4c92ce1a06cda4d1a14307e6970563a553b3b171d2420d1fc2ea8468178ba56b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHU2_area.json",
+   "bytes": 456556,
+   "sha256": "3337a409e9c871278676d322c1da1d913117667de49478508c9183641e1ab484",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHU2_fl.json",
+   "bytes": 6279,
+   "sha256": "1774f326fc7984ade3259d3cd618ceb576889e16f50cd66634ab387741e51891",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHU3_area.json",
+   "bytes": 456556,
+   "sha256": "3337a409e9c871278676d322c1da1d913117667de49478508c9183641e1ab484",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SHU3_fl.json",
+   "bytes": 11148,
+   "sha256": "86698f128cc05145b61ed502393cb44908b73d938a4472610b5f0c43b12b8ad4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM10_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM10_fl.json",
+   "bytes": 8800,
+   "sha256": "6c44d12e2091596d525c647a562cb5471b97189136e9b3a61e4979d8bd0c1788",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM11_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM11_fl.json",
+   "bytes": 22733,
+   "sha256": "46662f00df2299d900cb1128df430c4753b59d78c825855d3a91bd98839ba348",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM12_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM12_fl.json",
+   "bytes": 6568,
+   "sha256": "54293d6027219d448f76e84912a7d861865d32be286d0525e61fc6494c94aa9a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM13_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM13_fl.json",
+   "bytes": 12033,
+   "sha256": "40e32790972690ae505ac193dc300f6f8eb2b0f052240e92978d4ce3f93eb094",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM14_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM14_fl.json",
+   "bytes": 15447,
+   "sha256": "0b7da438316608286bd3d35ce4c8a1eb367f6c952c3db7fdd7190564044cdfb6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM15_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM15_fl.json",
+   "bytes": 24924,
+   "sha256": "2c050ff88a7d0bcb8d3def8ce055895c697db8cfb5fdf5458743291b1d3b86c4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM1_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM1_fl.json",
+   "bytes": 16933,
+   "sha256": "c02d1d97d39de0bfddd49cc7d365fe0313d99e9f7d9dca2a1d0bec41f7f6770c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM2_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM2_fl.json",
+   "bytes": 14192,
+   "sha256": "ff598aaae24662264c4850bbc7038dfda36d2f16601b754689846c307afe78f7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM3_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM3_fl.json",
+   "bytes": 4285,
+   "sha256": "3d2041033abcd4c1b6069474cba96371500ef3f3c59f1a375d6744b2bf442b2d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM4_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM4_fl.json",
+   "bytes": 10092,
+   "sha256": "6d7ca376e1bf3a6299d5acde4ac82909ee9032980b8a50efeb67ab144df43a34",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM5_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM5_fl.json",
+   "bytes": 32015,
+   "sha256": "00732b088c1d25f9afce0121677c935205d600b07f00995fbb85ec3209ab3db3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM6_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM6_fl.json",
+   "bytes": 28255,
+   "sha256": "84e9ac69b340cc2039a8d0ed4c9774362e2bc77f6ab683931f43164d19a982fd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM7_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM7_fl.json",
+   "bytes": 34112,
+   "sha256": "f1845a2bc7e8b0ebde75da522d6946b0881027ec9b7274e641f10e893f4f1680",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM8_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM8_fl.json",
+   "bytes": 30424,
+   "sha256": "ca9080ef05a16098eb9464c11d94932c2f5702533970118880096178e8a2e1d9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM9_area.json",
+   "bytes": 1887456,
+   "sha256": "c87f6bf455a493088e5d88e8098999b3bb54edd318aa3a6beb23b31afe97c4c9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNM9_fl.json",
+   "bytes": 6663,
+   "sha256": "6c0fb224f0cffd38fbdb036b25c31ce67be4636b56b2eaf6c47970ae281c05b9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNU1_area.json",
+   "bytes": 251823,
+   "sha256": "455d92ee3b39fa96ec41eafe6a7c1bb248fc944456b73efa02c445280e5d7f1e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNU1_fl.json",
+   "bytes": 18238,
+   "sha256": "010df50b6c09d32498e64ce9ef6d1f870664d88161caab20edf2f3636adffc48",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNU2_area.json",
+   "bytes": 693,
+   "sha256": "a28b92df0141859ce1ceb6c8ea4b2c7c9a199ecab8aa00ab006dedc6dafae199",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/SNU2_fl.json",
+   "bytes": 8820,
+   "sha256": "39f66c7d5a391d36fff9a886283d717d0550fd5d49b094e5c6111882b9db2f59",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR10_area.json",
+   "bytes": 95026,
+   "sha256": "1248497162e58fa3bf07b5c209508ce72e27463c3551c7831e59d2e55152857d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR10_fl.json",
+   "bytes": 12013,
+   "sha256": "5ea9ce896a8682dd9fc8598887e574cc0f2fe17f57bf840136011a40019ab5f8",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR11_area.json",
+   "bytes": 95026,
+   "sha256": "1248497162e58fa3bf07b5c209508ce72e27463c3551c7831e59d2e55152857d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR11_fl.json",
+   "bytes": 24333,
+   "sha256": "48682c5e439f8e2489d8dae0fb3d99a12ed68175d79801ee8ba93d60f41bdfc4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR12_area.json",
+   "bytes": 95026,
+   "sha256": "1248497162e58fa3bf07b5c209508ce72e27463c3551c7831e59d2e55152857d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR12_fl.json",
+   "bytes": 18419,
+   "sha256": "0fa1af843fbf26eef1ca41ed5556decf3d6ae7e8518755a97ec1c60a4ca50bbe",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR1_area.json",
+   "bytes": 196760,
+   "sha256": "60f2ef61c141d6d9a8486016432447627fc6908ab304196f4c79691cdb2aa42e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR1_fl.json",
+   "bytes": 28824,
+   "sha256": "d2c63ae63e94ec222f1ba8fa894b2b67401b6df302fef7e7cd3f233b1c684710",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR2_area.json",
+   "bytes": 196760,
+   "sha256": "60f2ef61c141d6d9a8486016432447627fc6908ab304196f4c79691cdb2aa42e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR2_fl.json",
+   "bytes": 62037,
+   "sha256": "b6577ffa4521c6c51c20c7949fde631028fc566d3a25d18362a353db52a4f3ed",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR3_area.json",
+   "bytes": 199420,
+   "sha256": "f9b1f8cbc41a832afd2866d926a3617df8ab4811235ce16752159375fc8561a2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR3_fl.json",
+   "bytes": 52748,
+   "sha256": "9898da3d7c3cb55d12737491334f8c2b934ef4618ee1085169b6fec82d87aaf9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR4_area.json",
+   "bytes": 196760,
+   "sha256": "60f2ef61c141d6d9a8486016432447627fc6908ab304196f4c79691cdb2aa42e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR4_fl.json",
+   "bytes": 17001,
+   "sha256": "31399795ebb69fce95ada452c010e6fd6b00c31e1ba8c60c831ed877d01baf2b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR5_area.json",
+   "bytes": 196760,
+   "sha256": "60f2ef61c141d6d9a8486016432447627fc6908ab304196f4c79691cdb2aa42e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR5_fl.json",
+   "bytes": 11756,
+   "sha256": "ce50c563968ee64e2c6629906a074e75ff703285bc2ddbe59184e8537f6c8dba",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR6_area.json",
+   "bytes": 196760,
+   "sha256": "60f2ef61c141d6d9a8486016432447627fc6908ab304196f4c79691cdb2aa42e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR6_fl.json",
+   "bytes": 8301,
+   "sha256": "bf8fb9925003ef9d40ff0b85aa3dc984112d5c739ac77d533c50cd04c203152a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR7_area.json",
+   "bytes": 196760,
+   "sha256": "60f2ef61c141d6d9a8486016432447627fc6908ab304196f4c79691cdb2aa42e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR7_fl.json",
+   "bytes": 29871,
+   "sha256": "024de05ef44ed84d09761853f1815612b4c6dfa69b140c509928fa175d21cc02",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR8_area.json",
+   "bytes": 23766,
+   "sha256": "89f0e31ef3546359622048b48152583f7c94f6595d0071e405f60d50ccecb767",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR8_fl.json",
+   "bytes": 20384,
+   "sha256": "189316114163a21a7f4779fc1263c35f5b2a417956e3b404c7fb04d180ad42e6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR9_area.json",
+   "bytes": 95026,
+   "sha256": "1248497162e58fa3bf07b5c209508ce72e27463c3551c7831e59d2e55152857d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/STR9_fl.json",
+   "bytes": 24767,
+   "sha256": "0fcbacefc163280cb3d274ba82b5d01bf1136e4cd41c732e50023ba609c7aa7e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/TRV1_area.json",
+   "bytes": 231455,
+   "sha256": "b2ea6c20542e07364a93312b12ad6b6855e7812165e30a560d9cb727f49d953e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/TRV1_fl.json",
+   "bytes": 11561,
+   "sha256": "a14ed241e6d95572dedd552774c0f37a82b2cacc55fd8681091327681426fcb8",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/TRV2_area.json",
+   "bytes": 231455,
+   "sha256": "b2ea6c20542e07364a93312b12ad6b6855e7812165e30a560d9cb727f49d953e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/TRV2_fl.json",
+   "bytes": 25325,
+   "sha256": "c57ea95a6f8250821bc498b0893103fe60690278bddfe4569def638b9f114571",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR10_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR10_fl.json",
+   "bytes": 15041,
+   "sha256": "f16b0b622162562c6f63198ab7b81a9c1d8005a8198912dd9e7431ebc48d1b41",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR11_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR11_fl.json",
+   "bytes": 8969,
+   "sha256": "0dd0791c076705df39e5d5c47b8b7c5909a99f2ac57a7b69d8e72a83dfe28af6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR12_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR12_fl.json",
+   "bytes": 7710,
+   "sha256": "7766f52b7c4a949203dad56c76dd57a497e8504b392aae91ad0a595c834b5381",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR13_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR13_fl.json",
+   "bytes": 18504,
+   "sha256": "faf94f041b7dd9076065fcce81e753b996896800577e3877daed80ba8c3cc21b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR14_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR14_fl.json",
+   "bytes": 12911,
+   "sha256": "a41fe6f1077f8884d4d5f3e3d60bb41b4c390f024605b3c0cb242080ab12d43a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR15_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR15_fl.json",
+   "bytes": 16039,
+   "sha256": "a2ffe1025253d2803fba6ab8c0c571ba480f376c996b4e163690a1c1837a2b92",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR16_area.json",
+   "bytes": 1359907,
+   "sha256": "2ec836ebec72b2eb0e9d25d71df5f4e9865b7a4567a641bbdf2afb946877abcf",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR16_fl.json",
+   "bytes": 25902,
+   "sha256": "367230186a60b619c7ffe1ec460b702fc87d0a84e2ed7b183a02936d8a368a7b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR17_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR17_fl.json",
+   "bytes": 19695,
+   "sha256": "bc34e99b4696ab3f0606f304580ab7c214f4956de473d685e82caaa96cc50b52",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR18_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR18_fl.json",
+   "bytes": 25861,
+   "sha256": "0709c2a5ec57a5a007b62750f00f5a899bebead49ea1d6460af04252e995075a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR19_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR19_fl.json",
+   "bytes": 22464,
+   "sha256": "be3b7a43e80660fbae06fc3c5183f4c18b26a8879d0121734ece7f0daf177078",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR1_area.json",
+   "bytes": 134639,
+   "sha256": "f46e29cd54b9d47671759bba3f6f02830f18f1e0652938111ed8b03e64f0ab99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR1_fl.json",
+   "bytes": 8816,
+   "sha256": "63108c596f5363f328017854c2e7d28c864789ad25ba7b821861c0fdefbee552",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR20_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR20_fl.json",
+   "bytes": 26153,
+   "sha256": "51a13ec8f735f5bfdc4e98082fa99e71fed19312f719eb4e36004c7830a93c40",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR21_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR21_fl.json",
+   "bytes": 44686,
+   "sha256": "5bd2fa0da31dd6100f78b2d7892c402de09171c2bdaeeeecb75ae112e7158a77",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR22_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR22_fl.json",
+   "bytes": 17061,
+   "sha256": "6c9112b7a919a7a55b06c4741f0af34ac7da54583c584d7e7f92ee9f4c7d9c4a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR23_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR23_fl.json",
+   "bytes": 14677,
+   "sha256": "b3a8020ed181515c8521661d197aeb074832d3e8df07de33ce0b1e37f797504b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR24_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR24_fl.json",
+   "bytes": 8493,
+   "sha256": "4becc0447089c0b12f4f314984c80140cb5ae0965d7a10b5a82f40c92a9ada30",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR25_area.json",
+   "bytes": 1000640,
+   "sha256": "cbcbc21095c634ea89dea3700c22fd3bd73edebdeb74b4e600a2890145cf4b25",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR25_fl.json",
+   "bytes": 16848,
+   "sha256": "4d222ff37fad64eb6ce9bbc8febc42598611b11036c6c07fd4e6918faa995e10",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR26_area.json",
+   "bytes": 62745,
+   "sha256": "1b4fc5ad6c0fec6f1c9258e93676a58451c26ae8bebb63e6eb9d81c4c9bf22ba",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR26_fl.json",
+   "bytes": 20876,
+   "sha256": "5ed60bce1c5c835576215357edf13f16badcf8e8b3acdf4489a8fd3824005cfe",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR2_area.json",
+   "bytes": 134639,
+   "sha256": "f46e29cd54b9d47671759bba3f6f02830f18f1e0652938111ed8b03e64f0ab99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR2_fl.json",
+   "bytes": 9588,
+   "sha256": "462ba433ad8b8bd632f753b82054e9b353541a48882c17f855e72380b826f9ea",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR3_area.json",
+   "bytes": 134639,
+   "sha256": "f46e29cd54b9d47671759bba3f6f02830f18f1e0652938111ed8b03e64f0ab99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR3_fl.json",
+   "bytes": 32510,
+   "sha256": "60cc9e6c4099046c620abe4d2cc57e42dbd766ac20247ee5736be19cdfe347ac",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR4_area.json",
+   "bytes": 490065,
+   "sha256": "76ce3a62d5b3bed54e404f07184067f9baa5e2d104ce5f0015c85397be811b03",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR4_fl.json",
+   "bytes": 21801,
+   "sha256": "244ad1481c4325391c208160dc154070ad32f0fc4e5c1146ef866dcaaa2f69f4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR5_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR5_fl.json",
+   "bytes": 19463,
+   "sha256": "9736a73a06dc3c34b9d51e2a141cdf71b1827ce6b1aa14f60a12783d89282475",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR6_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR6_fl.json",
+   "bytes": 10814,
+   "sha256": "299ea3b87f001c7f84e101482e712a45a98ac98b9cce03acd3b8d22dc0cbbc99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR7_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR7_fl.json",
+   "bytes": 26344,
+   "sha256": "2c3f3a427a102fc33b2cf0be9e3dad2f0b0164c2a7aa7f4a5f34286e0c38f8c5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR8_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR8_fl.json",
+   "bytes": 20869,
+   "sha256": "e7eaa3cecc312ba11b5a24931bf83d6959f57b73a6591ca982475e645bfc9d9d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR9_area.json",
+   "bytes": 356117,
+   "sha256": "5f58c3dff464b47c737346a274781306f502d702fb9546695b4c3d8015274d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/UGR9_fl.json",
+   "bytes": 8340,
+   "sha256": "bc41d935299aec97222f2d5bb505f51ed06811aa21808a6eedf8d2e917dbe591",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU1_area.json",
+   "bytes": 1071756,
+   "sha256": "66c3087559509dd8c65c014aafea4f5fcd0d085e0d6030a4110ae296b4c6086a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU1_fl.json",
+   "bytes": 14473,
+   "sha256": "f84411dfe2f7590133011816610629aeac8d2e9ef4f5cc3f134ff63af400b724",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU2_area.json",
+   "bytes": 1071756,
+   "sha256": "66c3087559509dd8c65c014aafea4f5fcd0d085e0d6030a4110ae296b4c6086a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU2_fl.json",
+   "bytes": 15169,
+   "sha256": "cc547b853e83b49b4ac1f79dc0d3b8a01e1cfdcb126d56d1fd18beaf90dbb11d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU3_area.json",
+   "bytes": 1076174,
+   "sha256": "f02087d51347645b61361e8f33534ca724808fe53877033fb1647e184707ce43",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU3_fl.json",
+   "bytes": 19826,
+   "sha256": "6e9590bc872bedd870fa2e1d5d370e1456d2df65f81772323772f06abc4de2fc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU4_area.json",
+   "bytes": 1071756,
+   "sha256": "66c3087559509dd8c65c014aafea4f5fcd0d085e0d6030a4110ae296b4c6086a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU4_fl.json",
+   "bytes": 19822,
+   "sha256": "874ac58925606864f826f9d664620384c93acbbe784efe42ae8c4eb6aa542563",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU5_area.json",
+   "bytes": 1099132,
+   "sha256": "03f88801f0c24ec0c1e440fc65a79a43368d0ae958c52acc963d67e3e04fda93",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/WRU5_fl.json",
+   "bytes": 11439,
+   "sha256": "78d6dc1e428d427485f76982c170246c30e186b62ea2c2886040b0a5d338c537",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_gpkg_sources.json",
+   "bytes": 1742,
+   "sha256": "9c8b816598bcb1358ceea1d22643d55f8a10587a18418adf929a9433a1489214",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR1_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR1_fl.json",
+   "bytes": 7030,
+   "sha256": "dc9d9390b3fdb3e260664d76e637f781619fac6b3310c5707bde0486a211759f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR2_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR2_fl.json",
+   "bytes": 13234,
+   "sha256": "385e8154781fe52461a9d6f3d919112a32bd05e51d0ae497beb1b1eda8389b1a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR3_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR3_fl.json",
+   "bytes": 6122,
+   "sha256": "8b0d5574c88afcdeef7a19b18256c62db582ce1d9b55c0cf15273e9d4e64fa8b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR4_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR4_fl.json",
+   "bytes": 5596,
+   "sha256": "a67d66d74bad33d0e9ceae2d353419ee9cb0c86072bb10a5b68a31d52c8cfa23",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR5_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR5_fl.json",
+   "bytes": 5122,
+   "sha256": "013b803fc78e2610088ba2133f5adb8c83d2e5cf4c7f39bdd8d432bcfee05dbb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR6_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR6_fl.json",
+   "bytes": 7085,
+   "sha256": "f03c50d1046a9eeb1a585a1e74d14438df39416b79575d7a9e4e4498f445b9b7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR7_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR7_fl.json",
+   "bytes": 4111,
+   "sha256": "b79b9d4df9cfbb7a071ddc28bd0e5fe11511b6907b7cf64bdac64a9f1de2d8b0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR8_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR8_fl.json",
+   "bytes": 9359,
+   "sha256": "546dcc56510617bad653c4004b1e813ab5648db13fafd48a9cd706369604e96c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR9_area.json",
+   "bytes": 532443,
+   "sha256": "9b3692470b2e4c31983cd5b7d9db5194982cd0189c9929ca4a87cd5ba52f17c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/BHR9_fl.json",
+   "bytes": 4617,
+   "sha256": "c77b26931763661f13372a173c9bf3efcfd1417ae0d9fc268f23474a731046a0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY1_area.json",
+   "bytes": 635830,
+   "sha256": "e53b610f2e50e6a0189260d60ee9ca9864117dca706907c33e8fd492883db2f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY1_fl.json",
+   "bytes": 9183,
+   "sha256": "4f9c818aa9853308ccf0bfa1cbc0c7f3f6e0adca14ed9e4e4c470a0d32e7f81b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY2_area.json",
+   "bytes": 635830,
+   "sha256": "e53b610f2e50e6a0189260d60ee9ca9864117dca706907c33e8fd492883db2f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY2_fl.json",
+   "bytes": 5107,
+   "sha256": "c171830035f3903a63958267cdf61e5c2aad6f5994e877a0eb0c382e3d710cb1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY3_area.json",
+   "bytes": 635830,
+   "sha256": "e53b610f2e50e6a0189260d60ee9ca9864117dca706907c33e8fd492883db2f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY3_fl.json",
+   "bytes": 3947,
+   "sha256": "323013e97d50280625175fe795f10ee77e4f5a4ac3c5c6cf9d2ba14bd668dc35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY4_area.json",
+   "bytes": 635830,
+   "sha256": "e53b610f2e50e6a0189260d60ee9ca9864117dca706907c33e8fd492883db2f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY4_fl.json",
+   "bytes": 7092,
+   "sha256": "e28c3886a84e300f6c4800092979040ac561aa8256f8b1ff0dec0699e4301d27",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY5_area.json",
+   "bytes": 635830,
+   "sha256": "e53b610f2e50e6a0189260d60ee9ca9864117dca706907c33e8fd492883db2f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/CFY5_fl.json",
+   "bytes": 3149,
+   "sha256": "fce1fd5319c7cf9f6a8546007a4b0ef59fb1774ae3b3c2eb203778082d1873f0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR10_area.json",
+   "bytes": 345088,
+   "sha256": "2b78ce52942262493e8d043e9ec03cc0c0b4a50cd45a3c9a0c166d6c748e2e57",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR10_fl.json",
+   "bytes": 8535,
+   "sha256": "ebbc918739e00e04129236abfad0cb9c87a7a64fa3a535530a134438e65d9269",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR11_area.json",
+   "bytes": 345088,
+   "sha256": "2b78ce52942262493e8d043e9ec03cc0c0b4a50cd45a3c9a0c166d6c748e2e57",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR11_fl.json",
+   "bytes": 7668,
+   "sha256": "2ee717b8a26673b2852802b9fabd7790d5686aa3b8f58089024a0d10fd84af2f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR12_fl.json",
+   "bytes": 5419,
+   "sha256": "1454a1ab1dbf7c34e8b5542e4a58f8d6865a563ecdafde27076ad99c0e1941ad",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR15_fl.json",
+   "bytes": 9087,
+   "sha256": "74b9ee125d8dc651c49e88582593f71b8fcc7aa8e9b2663502200444821b808c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR16_fl.json",
+   "bytes": 17172,
+   "sha256": "06c7f37a3cb3224ecc3ce3ba3dedc249b4d10603334bccf37f1e89d090cb56be",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR18_fl.json",
+   "bytes": 20710,
+   "sha256": "f2d29704a7267fb9bab5a511a68325d9fe5f47b7896e9b3e75febf488d3070f7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR1_area.json",
+   "bytes": 130523,
+   "sha256": "99771aa0ca9bc392a6a89474baddbd88611289307259197ee4c2634330a11f6c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR1_fl.json",
+   "bytes": 3776,
+   "sha256": "8ab3b61242124c2059c225e7b361a8d0da09fc0452a968938ae4fdacfb08b9dc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR2_area.json",
+   "bytes": 130523,
+   "sha256": "99771aa0ca9bc392a6a89474baddbd88611289307259197ee4c2634330a11f6c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR2_fl.json",
+   "bytes": 8320,
+   "sha256": "c114390a8bf8a3bebc0f634900c59d04cb19fedea1c771d161a91289147d5251",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR3_area.json",
+   "bytes": 130523,
+   "sha256": "99771aa0ca9bc392a6a89474baddbd88611289307259197ee4c2634330a11f6c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR3_fl.json",
+   "bytes": 14407,
+   "sha256": "5678f24e5dd13de27a7b8fbab24f6e340a964fa5ec5e8e2332978643eafa0be7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR4_area.json",
+   "bytes": 345088,
+   "sha256": "2b78ce52942262493e8d043e9ec03cc0c0b4a50cd45a3c9a0c166d6c748e2e57",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR4_fl.json",
+   "bytes": 10579,
+   "sha256": "3e615fade5730245f1742d483da23094d1d1eae05e113356ea87472600d0286c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR5_area.json",
+   "bytes": 345088,
+   "sha256": "2b78ce52942262493e8d043e9ec03cc0c0b4a50cd45a3c9a0c166d6c748e2e57",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR5_fl.json",
+   "bytes": 17483,
+   "sha256": "4ee8c8f8fc0d9f37cb8c59b2d60eb9d5c06f8d604747b55363bcd1783877aba5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR6_area.json",
+   "bytes": 345088,
+   "sha256": "2b78ce52942262493e8d043e9ec03cc0c0b4a50cd45a3c9a0c166d6c748e2e57",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR6_fl.json",
+   "bytes": 10641,
+   "sha256": "4488d3c02525c5dc44bb2e0417d332cb341877e12ebc837cf492b624a9378700",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR7_fl.json",
+   "bytes": 24772,
+   "sha256": "83cca52bb954ce6f90f943b5fe419a30965ed48ad07d39d531fbc1c0a0976026",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR9_area.json",
+   "bytes": 345088,
+   "sha256": "2b78ce52942262493e8d043e9ec03cc0c0b4a50cd45a3c9a0c166d6c748e2e57",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nhdplus_hr_partial_superseded/UGR9_fl.json",
+   "bytes": 7742,
+   "sha256": "85949588adb200ca847643dd2200047063579b3586d7f9b676de3f175f229884",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_12788124_400.json",
+   "bytes": 158970,
+   "sha256": "3a22adf70f259f43bb8e71f2dbd87174e950cc2fd7492c353b3dc1bd4379a20c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_12794807_400.json",
+   "bytes": 158134,
+   "sha256": "d1a6cf5c6ce95cbc0c3ff08c722c069cdd2b5028ede5cd376993779d4cb3b1ba",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_12870023_400.json",
+   "bytes": 141602,
+   "sha256": "fa261001edc162e9f61e652ad1787e5c6491fc231f27fad9a994636938bdbd9f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_12874015_400.json",
+   "bytes": 139290,
+   "sha256": "c7fae70473e382bcf87c672aaa27d28a6c61d13f0f60df933683deae24876f14",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_12897580_400.json",
+   "bytes": 135542,
+   "sha256": "e48b01f0302e536201b46a1000d387d88ef99aced42b30026be5d3512999889f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_12898110_400.json",
+   "bytes": 138614,
+   "sha256": "4d5049f74cde05651046f17255f42e5cc106856ce81abac9d30b9622fa0ee6f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15976388_400.json",
+   "bytes": 132128,
+   "sha256": "91d2b0310d670ffe3a3373492257fa09ede415e4f05b314b4ebf88c774ce5d35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15976454_400.json",
+   "bytes": 136335,
+   "sha256": "8be3da5f8b5e6a298fd396f63e578401d3306a2d1d39cc6e1c437d7c79cc55ca",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15981867_400.json",
+   "bytes": 151041,
+   "sha256": "b331ceca37bc857a2dda4277eaad801c2e09b48220d934c74d536fb6faf260e9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15981963_400.json",
+   "bytes": 151161,
+   "sha256": "a5491f12de288b5d501a225f4c4279037ac37564324046fc7b258acc2dd9cf5f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15981973_400.json",
+   "bytes": 150592,
+   "sha256": "b3a72061bfbc4adf4b9f5594a895e39c91400d5967ecc133499aabaa63d24786",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15984213_400.json",
+   "bytes": 160979,
+   "sha256": "c9a20725e744fcccd35e17528cdf937b3f72884977c47ed2ffd8489628c9ca0a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15986157_400.json",
+   "bytes": 160092,
+   "sha256": "47176b5ff7adf0a7c750223593cd1b6c61bf559e705ac72dade48ff4c56eeee2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_17494093_400.json",
+   "bytes": 200486,
+   "sha256": "59d63571a9a04197ef58894ce51ca75ac29ef902bdec18fd68d6f06ac9e424b2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_18312272_400.json",
+   "bytes": 175076,
+   "sha256": "7b9e173e5a75a53c3b3f5cc8ad931554347e82906072ec3861185c39ca5bb5fc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_18329262_400.json",
+   "bytes": 190734,
+   "sha256": "ab1585b746a3defc7758beb87ea87f92c8ff7d3dac373a1849892331594b36e2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_18345953_400.json",
+   "bytes": 196971,
+   "sha256": "e25b20d19ba735cd3917b78fa4166eaa8eb7916aff06e3139ab83bbb909c4ade",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_18345959_400.json",
+   "bytes": 197705,
+   "sha256": "7972af35a7f9ade4989fa2d59a9e2f12aaa8f85e74131112791c7a188eeee0fe",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_18346003_400.json",
+   "bytes": 197511,
+   "sha256": "b0f5865cecc26882da9190d53e62a7c2ec2e1201328b4c44cdb80ee736ffa30f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_18347189_400.json",
+   "bytes": 198219,
+   "sha256": "57365702edf5dc96c221044cc85bf9973e19a2bd083def08ab71bdd10e4b87aa",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22095111_400.json",
+   "bytes": 224225,
+   "sha256": "d01e712b019d9c346afa189cc9b98eb45fcb36401a2399ce8ae5fb15239e3442",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22107749_400.json",
+   "bytes": 129493,
+   "sha256": "25adc2106f91b3fc7e24df7638ca12d37111b2259ee7f03cb49ab08aa4f48abd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22107763_400.json",
+   "bytes": 129224,
+   "sha256": "61b9db713f516b4fc9101aa0590a151f4e79f0c6cc9d387eb3e4c971b546460e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22109475_400.json",
+   "bytes": 166962,
+   "sha256": "a29d287e093fc28a4effd53881d200648f99195ec0b98863d73b7df925f864c1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_23123437_400.json",
+   "bytes": 154220,
+   "sha256": "675caa46455df1811823218c237406770ea3ee7e5bf070e50321a786c9db6ec6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_23123539_400.json",
+   "bytes": 139129,
+   "sha256": "a524ec1d15b13e004d45edf8f1ab1e029b842a30557fee32ca2bb2f40904746c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_23123543_400.json",
+   "bytes": 137113,
+   "sha256": "d9075e776eb9359742f4a50d4b32723c596f0124e2b361cbdde54a02406e4af5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_23124229_400.json",
+   "bytes": 142469,
+   "sha256": "64e9f7fa78f575efc8e570f5c19d9231c6575694d28da88ed68bec34ec655fa5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_23134247_400.json",
+   "bytes": 203064,
+   "sha256": "87f09c05c9169e7679126f85e33fce69aef1d6d045ff162bdc5b24941ac3abbc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_24432473_400.json",
+   "bytes": 167539,
+   "sha256": "fbc4ac16e4828f37335574375ee90ce3fcf355c1a7120d586c78bfbd8ff07d2d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_4269370_400.json",
+   "bytes": 154840,
+   "sha256": "58af433047e0b084951eb299615041a475bb2defc1e97cb6dde06cd2a4a97458",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_4425965_400.json",
+   "bytes": 145765,
+   "sha256": "53754a4851941193a777410ec37a8b514b2d8da655acb5e1df2a4996514ed386",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_4428823_400.json",
+   "bytes": 141012,
+   "sha256": "041eadede0bc7a50f7304a0a1c426d00cce2849f7da4dc80b3565c6ca36b9b8d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_4428849_400.json",
+   "bytes": 141193,
+   "sha256": "33bf8e5b44d62e3ef78c1ab9a5bf4ff27067e1dd074c10b49c795cafbd888aaa",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_5335487_400.json",
+   "bytes": 237699,
+   "sha256": "f4e006b73c3dc937ba84380c4f423c44282b6ad55862149655b98757afe85090",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_order.json",
+   "bytes": 37801,
+   "sha256": "4ca4266eec7973f9da654d3f160d6649772d6594cac732a829e354674b401049",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_40.95199_m106.34296.json",
+   "bytes": 491,
+   "sha256": "d340cb20296206aca8727185d3810d2c29d8f8effdf5c42b0b338aac8e2fcde4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_41.07959_m106.01237.json",
+   "bytes": 1251,
+   "sha256": "183bdf5ac038256ec3537e889fffe3b7760cd2b65a511c0240dade3de341996f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_41.18384_m106.79666.json",
+   "bytes": 1615,
+   "sha256": "c688bb1a458ecd2405cf5b89c1c995bf9a525509dbabb8e08376e58a7bfa40e7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_41.53856_m106.88120.json",
+   "bytes": 1463,
+   "sha256": "743781b594c468316968c01e7ddce468632961a7e1e9ac01d7403556a4865709",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_41.55585_m106.91712.json",
+   "bytes": 1182,
+   "sha256": "64b035a7c939ec2ba5022ec75894fa1504f29fee49604462031be7cf9ba72745",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_41.55723_m106.94284.json",
+   "bytes": 1182,
+   "sha256": "64b035a7c939ec2ba5022ec75894fa1504f29fee49604462031be7cf9ba72745",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_41.66620_m106.89652.json",
+   "bytes": 775,
+   "sha256": "27c76d503a09da1e49107ae567b8a9a5ec7d55549d1e4f77f8629272fe23e7c7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.02535_m110.06508.json",
+   "bytes": 615,
+   "sha256": "68f3403ccde2db0ca94340a9cb6820ccff5e3244b80cba1ff6cf49ab1443458f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.16142_m106.90724.json",
+   "bytes": 651,
+   "sha256": "3f6eeea583cb68c83c9a93edc3f269dc27316afb9c1ba179c5570e9af9e9ef3b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.20858_m106.87657.json",
+   "bytes": 1053,
+   "sha256": "b9be1928ccaea45122814e888ba6fea5120901932c055b503065e0615d8fff50",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.46559_m104.95500.json",
+   "bytes": 965,
+   "sha256": "bc9cb26ce7e95cf97d3a7cf0d3b9321defd71373261be7e6f093c20ab45a0720",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.55558_m106.71219.json",
+   "bytes": 519,
+   "sha256": "1413a29ddc3871cf43f383046afbd208cf6c5e73a4806fd95d41acb09cf53a29",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.56837_m106.70104.json",
+   "bytes": 459,
+   "sha256": "bf2b7fd961fb0b4cd7caa8a2b881165811042cf32683b9a7d8a16065419ce122",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.75718_m110.97186.json",
+   "bytes": 740,
+   "sha256": "6039cf4c7edeb02993d93271c4faa0d03bacc9c1085543acbd37422285f9a8a1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.83705_m109.86329.json",
+   "bytes": 3997,
+   "sha256": "05af65f3ca738ee085a843ecbc02ffbcd5753111ebb2f708aeea7d2aa5e86780",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_42.84080_m105.74009.json",
+   "bytes": 1247,
+   "sha256": "4fc3123b2ee9d7aa18bd0615e0637faef1a852c01ecb7bf5582227bc0ae936cc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.03295_m110.10133.json",
+   "bytes": 1218,
+   "sha256": "c4105911324483b94d4edbba4ec58b6f88230e760e18cb4aed18e82d5b32fe41",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.06555_m110.08164.json",
+   "bytes": 1155,
+   "sha256": "c7220a0b422c6faa7c8e0bb371086ae44e126d65b382fe28acadfde770a7f381",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.07213_m110.07409.json",
+   "bytes": 2173,
+   "sha256": "389d2ff10e531469fab17c45409e245e131e3dafbf31baf9262b8a9ab527f56e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.11899_m110.05480.json",
+   "bytes": 2173,
+   "sha256": "389d2ff10e531469fab17c45409e245e131e3dafbf31baf9262b8a9ab527f56e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.24416_m110.47972.json",
+   "bytes": 1905,
+   "sha256": "0a7938239b749ca85a9d92363a9729c2b23e31e4cf7bba43b29bb98d9a4b8e75",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.31081_m109.85742.json",
+   "bytes": 807,
+   "sha256": "d4b6b3dc39e2ee436d122762203d241d953d85bfdf7d1f8fd8f63e69ffcc36fe",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.42237_m108.17910.json",
+   "bytes": 805,
+   "sha256": "b7e6155361aabbd48dc9c85cfa2f715990eb96d195d467b34cbdd4e0ae0acbe1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.53543_m109.64673.json",
+   "bytes": 1473,
+   "sha256": "0ce188e2995629c1b9140b22ac4817c1c9875de89ea87f456f967d73bc1e4925",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.57827_m109.75592.json",
+   "bytes": 1441,
+   "sha256": "ab36f36488f472a7b9be9cd6a42f66b85ed5fbb4285748cf3cbf99f913c82375",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.58121_m108.21328.json",
+   "bytes": 587,
+   "sha256": "cd641cbf29000871bfddf5c41e757d35ba1ccd346bc8641b9b041570ef39087e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_43.85831_m110.58599.json",
+   "bytes": 425,
+   "sha256": "6f5e21a7d7472be1c063410f584ca693763d5cbb3dcdae7636a4c9fd1b394406",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.00141_m110.69159.json",
+   "bytes": 395,
+   "sha256": "7d69c1395f11f703fdb16cdfcd5f7ac54b60dcee7afaefab3712ba98b9630a2e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.09978_m110.66763.json",
+   "bytes": 802,
+   "sha256": "3cc465d7f8729ad8ebb519df19f88dcb52d2099342eb44e7743b9dc13dd3acf3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.12944_m110.65909.json",
+   "bytes": 999,
+   "sha256": "8b8ae232469c01a341ae288614be26ea36180faf800c65c4f6b237ba4b6d32f2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.20778_m109.55541.json",
+   "bytes": 459,
+   "sha256": "5a8ec403a8bfed34d0f51790168c78ed71da8f8a2586cd3eabcc9ffbffeaa2d2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.49264_m109.93982.json",
+   "bytes": 899,
+   "sha256": "991ea97045309fe214ddb2e9977b4037fd3d26289b44da1ecc9bd04b91591cfd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.51843_m109.11338.json",
+   "bytes": 1867,
+   "sha256": "2a7a6858b8b0e6f5989b76b0210c15b8e48dec31905a888ffb6439987d081fee",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.58955_m108.94926.json",
+   "bytes": 743,
+   "sha256": "4ba28d078149dfe8eee9ce242c6e4569ce87637ff8234e84422876681ecd1592",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.67514_m108.91612.json",
+   "bytes": 931,
+   "sha256": "2799d4d6ffb9104386da70716c565e44f131dccc4c8a98dc7327a4cc6eaf6b6a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.84184_m109.31743.json",
+   "bytes": 639,
+   "sha256": "9cd037a5c0a7aaf3cbac084ce3f9b9a9ed76cfb1248f86fd9872739e07e8d58a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_44.87954_m107.25995.json",
+   "bytes": 519,
+   "sha256": "62e0455698803b96a45bcbb64378ab9eef9c0e43868d8dae0f4f763a0dc80109",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/gis/blm_recsites_WY_all.json",
+   "bytes": 610990,
+   "sha256": "84bfec682f5da3c850c5349b2de2cbb8bd12e191926d24c034b517c038705f9b",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gis/nps_pois_GRTE_YELL_BICA_boating.json",
+   "bytes": 96918,
+   "sha256": "f08e2188d2554d76b26fc5e426ff655583427bc7ebdd2b5b81e6826cb464aa12",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gis/tiger_aiannh_fed_res_WY.json",
+   "bytes": 12225,
+   "sha256": "90e208ea90336e90c755b82a5a17c0428ac29a5aaf1d10731885eea43a135353",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gis/usfs_edw_recopp_WY.json",
+   "bytes": 974930,
+   "sha256": "58ec1944edd079815a14f21ee3d8627a1b0ef0bdc079122b6203cb02b0b20568",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gis/wgfd_crossmatch.json",
+   "bytes": 154326,
+   "sha256": "f66dc81b75b55f7ac51014bf48c402ac9f106ceb46521ceeed3d7a695eb4ccb1",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/imagery/BHR1.jpg",
+   "bytes": 344229,
+   "sha256": "0c3b26976ac75eaa8ce9bfb91fce756a72f07e674e4bf509a5ecf19c2cd1e2d0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR2.jpg",
+   "bytes": 255869,
+   "sha256": "68062f9b7301c078be4a3dcccb156fba1fd2a2d4f5b6c0867d53ddd42288d4ee",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR3.jpg",
+   "bytes": 323389,
+   "sha256": "5fbc0f6ffae2b1c49987120f82d26625b39c659a50d47af4cc6b05b1e2c129af",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR4.jpg",
+   "bytes": 389253,
+   "sha256": "1b024220b6f0fc6c8dc553c87a48a149a7a6eb43cf5dede0b7ae2c4d09881aee",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR5.jpg",
+   "bytes": 348178,
+   "sha256": "511f4d2ba053e4dc94fe6fcda100d7a779e906b1a79dc2684105093c8cbefae9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR6.jpg",
+   "bytes": 309784,
+   "sha256": "d0cdf84b3eb0cbbea6c7b33b01a5fa2d53623d7b92b3f725b2af7ba4cc49c890",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR7.jpg",
+   "bytes": 286410,
+   "sha256": "ff26c6c863492ab00a0b9448cd4f078240501b3597a13233d0609431abdf7863",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR8.jpg",
+   "bytes": 272457,
+   "sha256": "9073d5b76ef630695ca2e7e4c0462bc920be9c7738302a0bd725c956a82ac139",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHR9.jpg",
+   "bytes": 372645,
+   "sha256": "f8f3ec6000c2d956f2e6face952f8fa22fb006ee689ae927983a06c7ae0e32da",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHW1.jpg",
+   "bytes": 473621,
+   "sha256": "e60e73fa34d841aaf70c6aa0378998b6f35dde27e1a6ac31c6c6bd6ff5f7ce62",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/BHW2.jpg",
+   "bytes": 291742,
+   "sha256": "c5fe036934fdf2d9939a7c13194b97fc67bce0aeb682e2f23e963c3f47156f26",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/CFY1.jpg",
+   "bytes": 414140,
+   "sha256": "9fa185102eb4470befaaf11f77f600dc20735b8f3af77ef57da881f7f90512bc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/CFY2.jpg",
+   "bytes": 373591,
+   "sha256": "731eaa355bcfbb244e32a734a3e0e5079efe188b2211305b523a43a64b24f52a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/CFY3.jpg",
+   "bytes": 421661,
+   "sha256": "dcad9efec7e1f5250fbe102eb7f823bd127be54d2fbfd4db467e78d92ad1ebe1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/CFY4.jpg",
+   "bytes": 417837,
+   "sha256": "cd1711564de1f05ef31688e4c1e151e3b0fc0a47e6ca54e18d799ed5222572d9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/CFY5.jpg",
+   "bytes": 274153,
+   "sha256": "3d18475c1b0f5adfe7f7da3a8844899be8c0781f575f5356bc6c1b26abb42965",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/ENR1.jpg",
+   "bytes": 589437,
+   "sha256": "afba6844296313afd8d0e02b9c6415652d3e9f867c7296641caa69d378ddad73",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/ENR2.jpg",
+   "bytes": 498656,
+   "sha256": "95176b56458d4402cdd08185e0ba0635843dcc1f8590e6960af33554fea4882c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/ENR3.jpg",
+   "bytes": 542046,
+   "sha256": "aaabb4d189f311fed4d1a1bbb6eeb89d862644d2587e97b2c65be503bf629bda",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/HOR1.jpg",
+   "bytes": 361321,
+   "sha256": "b32a9febd51e5476f1306e682275e050ab42fc63f5cd73691b83bb75b1cf065b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/HOR2.jpg",
+   "bytes": 325395,
+   "sha256": "8bdc4b3fc2708e35bc6d14aca2a1bc932661e37edd250e7b08b4ba11eea65d32",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/HOR3.jpg",
+   "bytes": 408103,
+   "sha256": "1ca7705b0b7775237cb886bb3d48c81dd938d98f945d03a7d303a55a85276e51",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/HOR4.jpg",
+   "bytes": 381394,
+   "sha256": "657a4ab19857cfdccdb70ae48c748b80b73d29c6564b7d90d18368453766c42b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/HOR5.jpg",
+   "bytes": 361462,
+   "sha256": "414b96f7aad5afba3b9d3098ec87fe1b5ed94c1a1a319646b321bc774714c5b4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LER1.jpg",
+   "bytes": 332309,
+   "sha256": "0f0502c386c898a958341a5e17a4d7e0098417b6d9f56c39720e16903c6ac4c2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LER2.jpg",
+   "bytes": 350810,
+   "sha256": "41003792ff58341ae3bba2299f02741f47881a24cfd976921b8251c43d1ef60d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LER3.jpg",
+   "bytes": 364073,
+   "sha256": "1ed0d0f8c78c6c10b88f0fb338de1cf1e2b573f719e779ae60704def4a10e04c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR1.jpg",
+   "bytes": 340249,
+   "sha256": "8a135264ce21e209c0bf695ff7160b1a704709166220d7dab189dcc90ae0c54e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR10.jpg",
+   "bytes": 427294,
+   "sha256": "ab9c2493611b5fe3af2f8985a5ec832bb9f15437bf030284999427dcd5938e81",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR11.jpg",
+   "bytes": 634809,
+   "sha256": "c3ef8e5fc9253cb40ccad309af060d0dae3b7c164f9550e604f3f1002900b634",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR12.jpg",
+   "bytes": 549424,
+   "sha256": "16b8f3116a91ddc45a6be5f280d33e57572ded0d99e59e482b3f5b81cf1b79bd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR13.jpg",
+   "bytes": 510952,
+   "sha256": "7a09cb079a55af900aa588f2a7126c8e485f4d11a3c1dfc541bdea763dcb0c1c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR14.jpg",
+   "bytes": 478336,
+   "sha256": "956ecc8d9f19b010bc0dde14ce967e6de5e6e2cc061ffe5f7fb85bdb2de92e97",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR15.jpg",
+   "bytes": 522546,
+   "sha256": "ce3c255b8d210368cd7ebd99b18e92ae979f92c6c33a1ccff52c1bc0acfdff65",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR2.jpg",
+   "bytes": 518242,
+   "sha256": "ee905f54b3e70ef1bfe8dc3178c32d4a604c7024d78c3bcacf0e43fa61b58085",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR3.jpg",
+   "bytes": 486551,
+   "sha256": "ca5e8aaa21bf09806f6457ebaa00d55a400266df06904d7fb2768daeddb6029f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR4.jpg",
+   "bytes": 395430,
+   "sha256": "3d1196cdc5d2f6e4bbee7d5810df48f21f6ed931b79318b807c35a2e778b8246",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR5.jpg",
+   "bytes": 376369,
+   "sha256": "30897aa1f3684d0b9560095779a2f08b9c3a178eafdfea6ece2c9134d65ad704",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR6.jpg",
+   "bytes": 405637,
+   "sha256": "899272e1e176b5d4890faec6d925e98476cd86b5bc603a3b7bd768e4534e77cd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR7.jpg",
+   "bytes": 463047,
+   "sha256": "aaa6fe233d548b2e79faf7ea55f0ce879cad44ded54e68f1f66dc2a43f03ed6b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR8.jpg",
+   "bytes": 451743,
+   "sha256": "5e91bf3289ee54eabf57f2d64f18fdbfff61567e922cb67fa86b8b0cde9a9cec",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/LGR9.jpg",
+   "bytes": 533476,
+   "sha256": "643f3ad471a06b678199ed7b3884a829d02d98e78f572fda5d03507a716e9a27",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR1.jpg",
+   "bytes": 451499,
+   "sha256": "b09a7af8fdd7bfe3256ff7716959070de13c9db7488d1d57bb97b00211dee79c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR10.jpg",
+   "bytes": 493468,
+   "sha256": "71620ae7f778b8a602f3a9fd7c97afb5362950c4218931739a532fd0c250d397",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR2.jpg",
+   "bytes": 491342,
+   "sha256": "da019c983a543104e3264b34af060277415a329987ff5cb1d49b5547025289d0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR3.jpg",
+   "bytes": 416299,
+   "sha256": "3a6ff592709b472d8cf25439da53880fd442949fd34602f9ccfcec5560bd90d9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR4.jpg",
+   "bytes": 451391,
+   "sha256": "b7b605139687bf20d8fb0d676984de0a0731ee589ead63ad7e4c504edd5ccd84",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR5.jpg",
+   "bytes": 483080,
+   "sha256": "62fb302148456c413d9fc57c3f01f5ab216d1c46ee326c8c4eacfa2751849958",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR6.jpg",
+   "bytes": 457572,
+   "sha256": "2786669aa4d7e333fd16af580bc982e60679b4710113351021ff0e728059d112",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR7.jpg",
+   "bytes": 535896,
+   "sha256": "31eee1574af8777e96dcf3f6dbb6048bff6912b6b311e86896723882be683056",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR8.jpg",
+   "bytes": 489805,
+   "sha256": "78760c932115c121d07484c60c7740d9dd2818d46da94cf74c346decf4848051",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFR9.jpg",
+   "bytes": 431555,
+   "sha256": "b6ca78454e4edcefdf5a476f81627574a9cbeff15853284e0104a5271c23ad9d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS1.jpg",
+   "bytes": 388417,
+   "sha256": "226c1743fb8d888df8c54635836171d1e9cfd0ec043db2a6d9ba79ab928b0ac3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS10.jpg",
+   "bytes": 294003,
+   "sha256": "12e902025534d1106332a0f0e922ecde6bb05089f3a05c02a08a6da6d6c61c26",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS11.jpg",
+   "bytes": 319442,
+   "sha256": "e62f770a809e4785688aa0927333d2f6860907f3784a0b4fb8ed7b4bb4e56d0a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS2.jpg",
+   "bytes": 207427,
+   "sha256": "1929e476ba46419d0a0139d669f5b7fee5b80a87230b63610baa39ec87c7a788",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS3.jpg",
+   "bytes": 239344,
+   "sha256": "a96949d0caa9ace17692359d70ca369a2e143182f71e37bcb8cb9d73aaf9ab02",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS4.jpg",
+   "bytes": 411896,
+   "sha256": "fb37d36655e40dc00bed4f9eac35e1e586c7e047cc8eefe4af6eaf0f18117f15",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS5.jpg",
+   "bytes": 472275,
+   "sha256": "d91c90dc832c0f5f1084ce5eaa4ede3a7a809257bd200633916654472f4154a5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS6.jpg",
+   "bytes": 420017,
+   "sha256": "dcd3451666955f9f4debd6db4474fc941c84c4734457388b2dc142eee1a743cd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS7.jpg",
+   "bytes": 360318,
+   "sha256": "ff26e8fdd8d8d2808f939658ef8c5bc773ba3be08d296dc52dde33997d7da407",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS8.jpg",
+   "bytes": 429096,
+   "sha256": "06ceeca374d62b45f2caee225f49c03980bb999b1892f481a77d999b36060f66",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NFS9.jpg",
+   "bytes": 359749,
+   "sha256": "c153029a90496846e18a6354b6d997f35a8ad2b283898f02ec5430d5ca9a7f6b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPAB.jpg",
+   "bytes": 390406,
+   "sha256": "8e26a3a21f7d8c6e3fa466804364df99d792880f967aaecb4f6411ab711d10cf",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPG1.jpg",
+   "bytes": 425899,
+   "sha256": "5be961aacaeed8e0b43e7467f19885154d39ca53707edfd92643aa897ac627bf",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPG2.jpg",
+   "bytes": 346366,
+   "sha256": "5cd33ee1ec6f1409320b65f0dca647af351e84bcdf244b61ec7084d71ef8a124",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPKS.jpg",
+   "bytes": 563749,
+   "sha256": "30ae43af4f5e607961263ada5279154da2141b37109155cf5aa8de545aa85f5f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPL1.jpg",
+   "bytes": 278162,
+   "sha256": "baf8ef5dba8aaa0d7a4865e1be51b102903bc77a959f922ea80d6350eb9975ed",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPL2.jpg",
+   "bytes": 361245,
+   "sha256": "1fe353de48cbb35a7acb36bed6c8ae79f6cf2ac29aad1c879b4a622d80bb628a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPL3.jpg",
+   "bytes": 423664,
+   "sha256": "9876a6291a89b53eb531befce3f1082a4b337a17dd33c3cfb06a1ad4d7121f33",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPL4.jpg",
+   "bytes": 384459,
+   "sha256": "d4af3dd55244af911636d1ab659a3c02ff094c416a06f6c7992da4a241b61ecb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPL5.jpg",
+   "bytes": 279876,
+   "sha256": "6c766e031b64a7ac269abdede94925eb3e68f8da735d7f5765bb110c453d5d75",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM1.jpg",
+   "bytes": 489627,
+   "sha256": "f961d98bf12039bc65a7d52a95bbcc0bea0cdeb254ef9232e40d8ca5560153de",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM10.jpg",
+   "bytes": 370054,
+   "sha256": "dfb8088527b172789b0bee2eb51a1c248a51346bbfab695a117be5521080af8f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM11.jpg",
+   "bytes": 328406,
+   "sha256": "596bd6e7a94d65006b62e2d371b523ba19a53c6ec182014be9c2965bb8f7c2da",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM12.jpg",
+   "bytes": 341336,
+   "sha256": "eb8e7736d58b27716fb74f38a9b442cbc8b3d228340cb7de455823967f841704",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM13.jpg",
+   "bytes": 344144,
+   "sha256": "5d9f2a89ab5163a3173f41c1f146289a298c12b9daef1a20568df4e64a2795fe",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM14.jpg",
+   "bytes": 387337,
+   "sha256": "4aefd15567122cfd4f15abc9798fb8eac13e84d9e480e6d24e3b8274207e5d3e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM15.jpg",
+   "bytes": 380739,
+   "sha256": "1d0e9920364b0e67dd3a9d893aacdcd8d5c491ad636765cbcbe9b6a1543389cb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM16.jpg",
+   "bytes": 296889,
+   "sha256": "739cb644114f1c84df449fc705ac7591f544fa70d026cb3c98848ebec9cdf48c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM17.jpg",
+   "bytes": 273120,
+   "sha256": "ba49a1ce6ba27e64508def6462c2461aea8f7e0d403fe5433e40d484d751538d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM18.jpg",
+   "bytes": 399731,
+   "sha256": "5f01c53fc8f697ede41f8735a58347762b8311ab1057cd57bd8f03e895b21b4a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM19.jpg",
+   "bytes": 395230,
+   "sha256": "f8a80b7b342d5e4126ea136193d1fa92b00abb1b8e5d883303635534b810177c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM2.jpg",
+   "bytes": 450026,
+   "sha256": "1faa8aacb6a95f63e8d20866df07df4698c8c398aeb3b7de2f36bcbb0221ad0f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM20.jpg",
+   "bytes": 383584,
+   "sha256": "574b7e9ce965b918b814da507c780fda24771c6dadf94b527b2858366e4c2d88",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM21.jpg",
+   "bytes": 313614,
+   "sha256": "0e7dd0eb92958a44f984adbca4f909113cdaf132696600eaa85d0819cd9d2510",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM3.jpg",
+   "bytes": 464630,
+   "sha256": "b2dfaa4692518495ec10f6de29f09b89bc61e8fc097756c6769846d2f6d9ea19",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM4.jpg",
+   "bytes": 424229,
+   "sha256": "06806e649a18e1d6ba71ab0db803658efac29fb9fb87b6af4caa4be58c728ae2",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM5.jpg",
+   "bytes": 432614,
+   "sha256": "1398bac83ad03a9f017e9d63d54a02a1be556816d033ebfc8b0041e360d8c8e6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM6.jpg",
+   "bytes": 363100,
+   "sha256": "149e2a669443b4d11928a6764931abc5bdc4d6fefa691c71654c134916934f70",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM7.jpg",
+   "bytes": 380266,
+   "sha256": "e8f7263c91a560f1ff4a0b8f7cc64ffb60c9f1c88421779ca3e7a143d6d3ebdc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM8.jpg",
+   "bytes": 322896,
+   "sha256": "bf1e2802ab4fe6acb37ddc4193beeb04ac5d935ffb1bf671706bf4cd325c5a58",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPM9.jpg",
+   "bytes": 377812,
+   "sha256": "5717d4b0e3ac4c9b732d63081e5386f27eee7278ad11ed8306072bcebfeb7ea3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPMM.jpg",
+   "bytes": 492088,
+   "sha256": "bcd86320f8095d4dd42f5f8e17d9bda195b18a6f23211e0743dafac95522b304",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPS-SOUTHGATE.jpg",
+   "bytes": 413272,
+   "sha256": "4c3318a07a57d44566cd470d0c4423333c1a0af379436e36e2e78fc0e5ddbdc1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU1.jpg",
+   "bytes": 437952,
+   "sha256": "cb2fec1008d798665e45703c39124300c1a3988fa83c67b39cf2d0177df53060",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU10.jpg",
+   "bytes": 224378,
+   "sha256": "ba00ce7a8086c5bb4af6b4a4621c739bd2133e47c7cf60503afe37269d5cba94",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU11.jpg",
+   "bytes": 157535,
+   "sha256": "32b2e5c14b746e47cfa514ce69b9bb6dce0f15b7e445e27591f67a9ee647310f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU12.jpg",
+   "bytes": 369738,
+   "sha256": "8e9d03dd2fcd729fa5360ff2e1be05cfb7f8c49e4ae4528a415092a799d3b914",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU13.jpg",
+   "bytes": 424991,
+   "sha256": "f86ebe310c973be831c5ea226bf4c4f29842a13543dfdebc71ea364c51f0d889",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU14.jpg",
+   "bytes": 412534,
+   "sha256": "494e29a9ecfbfe0c4e03a1ff835a68469cd6c3ef947f4e76709f3fb020395110",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU15.jpg",
+   "bytes": 404397,
+   "sha256": "c2b0f93d5855bb58d7f92fbc607ec41b36328e8b68812caaf0a690a24a5885f8",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU16.jpg",
+   "bytes": 332597,
+   "sha256": "a99dddce7cf51a4a21bcac15bcedd41c1fc9757ded58bfb99be12654341f5d07",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU2.jpg",
+   "bytes": 351595,
+   "sha256": "ed4fa3176c13b99d4a2254eea7bcd2c8634222a01d7887d5ee396324323abe87",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU3.jpg",
+   "bytes": 412700,
+   "sha256": "bccaa04187dec3111e20dcbee3727a922bc936191596ca6162cb320ee84421a7",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU4.jpg",
+   "bytes": 351297,
+   "sha256": "4d7a667cbf8bdb272637ae3cc9470efa4f7c5e3aa523f8a36d51ccd2af52f02c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU5.jpg",
+   "bytes": 504434,
+   "sha256": "54e99db39f4bc6b122e53fdd8ae7a7605f1499dd707440921add142e93d95d79",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU6.jpg",
+   "bytes": 434451,
+   "sha256": "ef0820515f88736ebda1da0534d35d5c30345212d56a86c85e27030cb5fab2b9",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU7.jpg",
+   "bytes": 493227,
+   "sha256": "59fc48b199aabbed8df66d121e354b0154722e4a4165e34103a788994c4142cf",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU8.jpg",
+   "bytes": 491839,
+   "sha256": "35ac82e1002c6b2d0b069057c3db3e4cbf1a1f6093704b716f18e9a455bd9e9b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/NPU9.jpg",
+   "bytes": 190741,
+   "sha256": "19cba84d424c11538781d62151eb4d11f09009fff0fcafff70adbaae6d922fd8",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SFS1.jpg",
+   "bytes": 360922,
+   "sha256": "40c1193a58b16110f29da383ed36523ed223cfb331de19d4c3fc26eb7606619a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SFS2.jpg",
+   "bytes": 403289,
+   "sha256": "6117db308a2fe4f5a28af373d98ca4961ce619ea893baeaa8c89f96928bb8283",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SFS3.jpg",
+   "bytes": 355530,
+   "sha256": "10afeb8a29f5c0d089bef21ca15f7564a0eaf708f417a35a150b0b3c31d4470d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SFS4.jpg",
+   "bytes": 351111,
+   "sha256": "29d4ee07d6b5513bf4c278d7b1e9f3cad4b89c16beed7b63fbff8cce3593923e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SFS5.jpg",
+   "bytes": 422318,
+   "sha256": "729b5b8ade53f6fa6dd66acf4b28e630b4734abdc4c8953bc19021a5f4022e17",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SFS6.jpg",
+   "bytes": 338807,
+   "sha256": "6d243f0644901c008f2709b123e3389001fec7019bd3442f3f664ba836ddcc35",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SHL1.jpg",
+   "bytes": 474835,
+   "sha256": "96897b9b0bbf525a8778577a665fbc874fa835e7e88cfefa90477c714a2886b3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SHL2.jpg",
+   "bytes": 414711,
+   "sha256": "2104cb29c4cdce0d5a3175a85fc15f749e5fa7e50c16ad1c46f93ad397441cad",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SHM1.jpg",
+   "bytes": 470712,
+   "sha256": "d5462c44a638cd8a81515593a123ecc7af24d466c56304446f440035d7a2e91e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SHM2.jpg",
+   "bytes": 527488,
+   "sha256": "739c991d39d38272c924aa1fe3f9bc9bbedd162457dfd562005a24dd711a4476",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SHU1.jpg",
+   "bytes": 418237,
+   "sha256": "25a21ee014ca0205bafe399ee70244224fdbc1ae579eec1a602d75e49bb34e4e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SHU2.jpg",
+   "bytes": 428611,
+   "sha256": "0fbdb504eef30ba190e2bd659e0477336b048599e70a3b350a4ad3dd92434ac5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SHU3.jpg",
+   "bytes": 464803,
+   "sha256": "6f85c619c24d4af6ec4a15cdf8f1fca764a3c15b96fcc75969b5ac04b2307337",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM1.jpg",
+   "bytes": 328551,
+   "sha256": "b5afd82b39557baf9a5ab84f1a49f263569d8b602aeba8a3a4ea35c36d5c0e99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM10.jpg",
+   "bytes": 344249,
+   "sha256": "720c3c275462fe1f634bf099fddb43a753693dd2c8d2ecec8485401a211c33fb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM11.jpg",
+   "bytes": 354374,
+   "sha256": "71245e4097bd1e1598eda631c02353f6924753011143839141ce11ddf1eec3f5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM12.jpg",
+   "bytes": 355878,
+   "sha256": "f56b4403908893a60db0c659b349b427c6e15762eb992361495fdc56a48794f0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM13.jpg",
+   "bytes": 353422,
+   "sha256": "934d3ad34952a7867168e8bc6cea5bc9721826dae59d81ad4d0bb277763ceda8",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM14.jpg",
+   "bytes": 348821,
+   "sha256": "ee7d193282f1dadfe80ff3ba32f61c25d5d30425c843db34dc23129efa6c2189",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM15.jpg",
+   "bytes": 383549,
+   "sha256": "129178f2156edece0bbc0c8489f2ee20cbec0102b3b127520e101886b8495124",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM2.jpg",
+   "bytes": 336478,
+   "sha256": "1e8e24cab22c4a11b872ad710dea37f20842ce62337bfc1298c6064926a462cb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM3.jpg",
+   "bytes": 343666,
+   "sha256": "36093e70b80d8360348bcd0d93f892b6453fa5c7b6fdfc71d5f9b1ab3a793d5c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM4.jpg",
+   "bytes": 281505,
+   "sha256": "a69f567a8c5ad1c85b133126572afdf914b422888c09496ec6330d7cd9d91c12",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM5.jpg",
+   "bytes": 311821,
+   "sha256": "239193aa18f729577753e6c5e400cbefa97b3c691a5be6df414bd5f045aafacf",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM6.jpg",
+   "bytes": 301363,
+   "sha256": "19c0c8c4fbd366a130382582fd73183520ed9eef8ab8cfafd4e08a2087991934",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM7.jpg",
+   "bytes": 359135,
+   "sha256": "1e7974b5db16a727747c6dc42b17376640d6fc4b81bb8decb81e370fb3ff23dd",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM8.jpg",
+   "bytes": 375925,
+   "sha256": "be6fd2896fb9094a8a019f8658b54c0f512a44f17c45755e9e736faf8b76c625",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNM9.jpg",
+   "bytes": 362783,
+   "sha256": "b23435f9606570a2f373a84649727cd006979b9f2e0ffa34445241bccbe4da7b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNU1.jpg",
+   "bytes": 377404,
+   "sha256": "40700eb8e7609f951fd298817d126b5959083519b905c7cf0fddbf13b1b130f3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/SNU2.jpg",
+   "bytes": 205609,
+   "sha256": "1a62f362c5a3ae4d2f0678388141ae9665de2bb627af6a2db9f7d602f117d868",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR1.jpg",
+   "bytes": 206591,
+   "sha256": "d61461c1ccad2bf26621e667657a4743e7914d540a3f58bf911eec2f098dd879",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR10.jpg",
+   "bytes": 298615,
+   "sha256": "8d80364c4e787c614cbeb56fb44406cd9d840830cfd58ac7ce617baec8fa6162",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR11.jpg",
+   "bytes": 333829,
+   "sha256": "44c0a43772fa5cbdb2e89e55ba5bf64abfa7f4eb83801f5f2362bd9ecadbbb85",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR12.jpg",
+   "bytes": 385267,
+   "sha256": "42c7d03b1d06befb032879e390c46b0432f2bfaf02223f42e374b8562495aec1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR2.jpg",
+   "bytes": 230634,
+   "sha256": "d343b52fdeef47b78d974b4ff3df047ac3ccfc7fd95dda81476d2788941020b5",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR3.jpg",
+   "bytes": 219928,
+   "sha256": "f712f77cb1a600a4a9f128e7b64dc455bff12bd1be58d5fef05ed69ca94c94ba",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR4.jpg",
+   "bytes": 338671,
+   "sha256": "a489a6419ac08093809b3cb2b2114424adab9eaca60d78fcd80154dc46b08a3c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR5.jpg",
+   "bytes": 254618,
+   "sha256": "02982bdbe313d3243f8b9fb1c9174e14e8045f3d1dcfb04e819400a08d0c271e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR6.jpg",
+   "bytes": 348172,
+   "sha256": "96ac57ba44c864359af7f080162d67b12ed2f7985ddb86e107edf074ec6121d4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR7.jpg",
+   "bytes": 354554,
+   "sha256": "b4bdd6486797a8a96a0513728b6de68ec8451e3388025b6b9b8e63c693233edc",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR8.jpg",
+   "bytes": 287635,
+   "sha256": "81614ce52992c5ac937dae0091eb3330f915877969c30022ff40cbd5c23a4fd6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/STR9.jpg",
+   "bytes": 329545,
+   "sha256": "a88427721817edc23c06fbeeec09c0a56aaf1d3383401cda5970c9a38bb71528",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/TRV1.jpg",
+   "bytes": 356932,
+   "sha256": "c1bbd55c86eee5d63589468077262cc6fc66d9c4bdf1f9332f7a9a620711b8c8",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/TRV2.jpg",
+   "bytes": 256191,
+   "sha256": "20cc16adbe42c04e5e1d0ec71c4c6a4cc5e4f9feb0a5b53daf81f514fec8bfda",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR1.jpg",
+   "bytes": 338158,
+   "sha256": "2f88190ec1e255397e90fb6efb5ca98389d95d654f0e4ccad2060dbec0325632",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR10.jpg",
+   "bytes": 358389,
+   "sha256": "09f860a310f8cc05a20722ecfe0cfa493123ff2e8f4239592a63f00511cc8765",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR11.jpg",
+   "bytes": 369919,
+   "sha256": "fa58f68bb5b8926138520fc119bdfba0550649e03a3706d65091eeedd86d2bf4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR12.jpg",
+   "bytes": 372275,
+   "sha256": "9f0b654025137e87c11872ab393e6bc7ab15df9bbd840d15b6254c3a90abfe2a",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR13.jpg",
+   "bytes": 357814,
+   "sha256": "df66ceb9dec47683f1f32047a1ba68ddc876d2009fd02d7d19494a78e3ed7ca1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR14.jpg",
+   "bytes": 373813,
+   "sha256": "e4a6310dbea72adb6285036438d4bbc6585c2a8b4fc14d0f561fcd872bfd5f3b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR15.jpg",
+   "bytes": 318411,
+   "sha256": "2a30bf281bc68662b7a30e5a7b8742538b7966b29ba68632cdda5d791c7f985d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR16.jpg",
+   "bytes": 310112,
+   "sha256": "d15f0a5124bca4c0e0a24790b3ae3eac35c2bf648dbb147596aeaa721026415d",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR17.jpg",
+   "bytes": 495614,
+   "sha256": "0aaf6c023fcb022ab8deb485fa0ae121e65bf5384cf53a1fac5ff99fd4675c53",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR18.jpg",
+   "bytes": 488791,
+   "sha256": "b7069135d1e9e0c5a94800b193364a212b22b605a61aa6215829360cc9bde6d4",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR19.jpg",
+   "bytes": 412415,
+   "sha256": "ac946c1f541ef1f5f0d975a49295ec5150ff779d648c48933b3b83eb618515be",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR2.jpg",
+   "bytes": 339704,
+   "sha256": "35a03132048b311a27c052e3fb3b6b15839237de170f0369d561c17283ea7732",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR20.jpg",
+   "bytes": 468448,
+   "sha256": "18e0a8531f106f4fd6f763e2460e47674d2cc0d27b7c007e3c7b0bf7a85d0fb6",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR21.jpg",
+   "bytes": 392437,
+   "sha256": "b06bd9165463bd9c50824c242e0189616aa275c3797e48c3fa6be9c0624d253c",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR22.jpg",
+   "bytes": 481960,
+   "sha256": "715429171f77bf8c47d38e8c12be853e61585a7d5880fd05c51da36af918aa90",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR23.jpg",
+   "bytes": 443650,
+   "sha256": "35cb739556ba0b124a5198c0b7d867c2beedcc1988d418f16dc6ef8284f38578",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR24.jpg",
+   "bytes": 384247,
+   "sha256": "00a4474cd1bd17aed0cfa3c04231bd593b5333d5ecd365fef4ea73054798ea0f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR25.jpg",
+   "bytes": 468210,
+   "sha256": "ff25292b2fece4879c9926ea2cf09fce1630e2b9bf8f7ccbac2679965bb098d0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR26.jpg",
+   "bytes": 410453,
+   "sha256": "6f06872d646742e89898f5a13b3392a3ad54dcc9e325f7bbed205e23061cbf99",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR3.jpg",
+   "bytes": 357011,
+   "sha256": "80675fcb21dbed09e5059748b3fa8bead0f9528e9dd11b110af3edcb39ce4c65",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR4.jpg",
+   "bytes": 408622,
+   "sha256": "4d2ed78a70ebe3b3dfd4a3bd89edf34b44eadfa997ea9d27c3375f60f2ce7230",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR5.jpg",
+   "bytes": 395382,
+   "sha256": "320cb0ecc4f1dea3ec1e3b025ba5f9fdfbc4f2a37a797a128d0c01264b66a0b1",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR6.jpg",
+   "bytes": 446767,
+   "sha256": "0612b29105a2e9a24bde00cf4a647876eb08d24d63592b160323cfe74d9bd94e",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR7.jpg",
+   "bytes": 456181,
+   "sha256": "e83fb9bc23883a758341dadda57bed733b6ff08018cf4b4057158e86e2143d42",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR8.jpg",
+   "bytes": 367005,
+   "sha256": "f83d5f74f88fa2c27bfe62ab7ac83451a5ec4632d9721f5ffbe9ab2d2204c7a0",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/UGR9.jpg",
+   "bytes": 408579,
+   "sha256": "273a5bde714ea77089d5d28ddb8f8ce394b5fa24e2534325326e5ac2fd6285e3",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/WRU1.jpg",
+   "bytes": 339667,
+   "sha256": "4b29239ce9657a4002bdfbf03d890193e374a29491781557c7952a4228aef09f",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/WRU2.jpg",
+   "bytes": 445521,
+   "sha256": "210aafaad10f91a967d6fa6ee39e9086f6cda6d1d691025abfedc6e812ca249b",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/WRU3.jpg",
+   "bytes": 400796,
+   "sha256": "24e8040dffae1c5604d2fe598cb878a92b61e1e0fc3040c5f33cf0078ac15aee",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/WRU4.jpg",
+   "bytes": 397343,
+   "sha256": "d96c1e54bb976dc410428157edf4fdb2834dacb9c4ec32e7ccfbad79ad3b9402",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery/WRU5.jpg",
+   "bytes": 355434,
+   "sha256": "1b2315f838b337ecf1046212725429a751542f48175686a329fffdaa84e32edb",
+   "zip": "evidence"
+  },
+  {
+   "path": "research/raw/imagery-review-WY.json",
+   "bytes": 22563,
+   "sha256": "78da200e94585956369db4b8fabae2ac31dab44eba10daadc61bc5467201a36c",
+   "zip": "slim"
+  },
+  {
+   "path": "research/readiness-status.json",
+   "bytes": 5830,
+   "sha256": "baabc286ed1df7d42752db895f294e79cca8892d0e588e26b32a6f986179d095",
+   "zip": "slim"
+  },
+  {
+   "path": "research/replacement-proposals.json",
+   "bytes": 5500,
+   "sha256": "58ed8dfb79522a39948a442c949042ccb3a8342c54cb2558b899d34450f43add",
+   "zip": "slim"
+  },
+  {
+   "path": "research/restrictions.json",
+   "bytes": 25330,
+   "sha256": "bbc4621357e4ece7aa818d2a3db712a372eb228da7a53dd7177e9a3c54bc6c0e",
+   "zip": "slim"
+  },
+  {
+   "path": "research/review-queue.json",
+   "bytes": 20347,
+   "sha256": "d217a7ffbd6ff972a19051e5d5dc76ddc208694a42af65cf8f8692c212512236",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/bighorn-river-thermopolis-draft-sections.json",
+   "bytes": 1179,
+   "sha256": "d9252e3f1beb7dcae606852df68311ac8dbab22d9c02cc8c97d58e4a244e8064",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/clarks-fork-wy-draft-sections.json",
+   "bytes": 1031,
+   "sha256": "c6c1ae2bf1540e85e8d884cdfbcdb567651833dc10321797328175e219e2a0cc",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/green-river-upper-wy-draft-sections.json",
+   "bytes": 1592,
+   "sha256": "c47a3c47c81c89a68a1a14dfc8e0f160ec38f23acd3fe981e70b5997a95b781a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/greys-river.json",
+   "bytes": 333,
+   "sha256": "774fabe20f66bde5c005d73d3e3c1b18a4a3152447906d414e0ef838930668a2",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/gros-ventre-river.json",
+   "bytes": 345,
+   "sha256": "95a1b58d0fe5233ed9900323c35d12b321c13111ea85d719cf442d5bd2d62fbe",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/new-fork-river-draft-sections.json",
+   "bytes": 1471,
+   "sha256": "90085befaac713767f21fd929f2ec7153ce55af4a3d93e45c1283848e319c3e7",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/north-platte-out-and-back.json",
+   "bytes": 773,
+   "sha256": "3126a37e6acb363a877b60d7a98b296b1a974a2b028da6635a44e970effd2f8a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/north-platte-upper-wy-draft-sections.json",
+   "bytes": 1092,
+   "sha256": "c133b70a660a56fec3a897fa44e561e935fecf1b2ef63fb614c7422f86531be3",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/popo-agie-river.json",
+   "bytes": 341,
+   "sha256": "779dc3ee35ff0d52b0cce9d689eedf1454003cbd70c64135134fa074e95bc03d",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/powder-river.json",
+   "bytes": 335,
+   "sha256": "ef739107f854805f378d7a0a3349c7df1db5c0d9864e5b432ee5be22ccc00a24",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/shoshone-river-cody-draft-sections.json",
+   "bytes": 1104,
+   "sha256": "a26a078ccf104f94fe71efb0d9899b5e235211ff1eb0364bb807a918e4e3daf9",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/snake-river-grand-teton-draft-sections.json",
+   "bytes": 1646,
+   "sha256": "8562e9f7d082b00d43194957d600d3f7bd48921f703d3b74a5eaea892dbba916",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/snake-river-jackson-hole-draft-sections.json",
+   "bytes": 1632,
+   "sha256": "99064fd81b64c49b6c07b00bf5e4f7e4e057a1c5494c5cf984b3d80b47ff5d23",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/sweetwater-river.json",
+   "bytes": 343,
+   "sha256": "83bf538cecad3186c6cf82fbd324265d9a8efe4afe050fd9ec27e1735c692d41",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/wind-river-canyon.json",
+   "bytes": 1713,
+   "sha256": "cfb9b12738becb224a4e210d17aeb2ae89e404ebd24395b1a51740abe8c2a14d",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/wind-river-dubois-draft-sections.json",
+   "bytes": 2200,
+   "sha256": "3d72b0f6d15812e5efc7161f7dab34738ceea5068f41a23e1347906b1fa87dbd",
+   "zip": "slim"
+  },
+  {
+   "path": "research/sections.json",
+   "bytes": 392859,
+   "sha256": "347f131d48587a91fe5b9cc21147bd2e39fc13d7e8731c136f75aec5723e8fb7",
+   "zip": "slim"
+  },
+  {
+   "path": "research/sources.json",
+   "bytes": 21226,
+   "sha256": "9cd08474c9010a3967501b68b62f9f6286d5523fb719b4dffda4fe074b865d78",
+   "zip": "slim"
+  },
+  {
+   "path": "research/timing.json",
+   "bytes": 437,
+   "sha256": "630237d6995aa9d19605a8ac2a15b98660539651f4cfcd4da92c1f29d3ade21d",
+   "zip": "slim"
+  },
+  {
+   "path": "research/trip-times/WY.json",
+   "bytes": 136,
+   "sha256": "8ca26fc07b910d7c7a8466bbf5534e56890069a73eaaa5c3f3ab1ea9495f4441",
+   "zip": "slim"
+  },
+  {
+   "path": "research/trip-times/timing-status-WY.json",
+   "bytes": 7452,
+   "sha256": "4c26a23ab8089f96fc51fe3ccc461c43f9caf22971ac1d879a246afb70490c18",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/aw_reaches.py",
+   "bytes": 2848,
+   "sha256": "d09b37eb08c531e31d7934192641fc4918e7057aad20209ec23ea2f852feb1ff",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/co_geo.py",
+   "bytes": 3248,
+   "sha256": "c05b8759b52862add3742b57c717d94197d67c20950c89a334023199b90f2265",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/fetch.py",
+   "bytes": 2264,
+   "sha256": "3dcf8381a666958dcb8083a9aedceca7caced2e3dbfef56ab11ff5a0b4543356",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/gauge_check.py",
+   "bytes": 3677,
+   "sha256": "ea48471226b4441e38f8bbd17db6cc629748ca67340c6333fa6c6d591813f3d4",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/gauge_recent.py",
+   "bytes": 1641,
+   "sha256": "f86e72c35addc7b09ef1c7665ede0f25c9414b649eef166764348af49590f03a",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/geo_lib.py",
+   "bytes": 18974,
+   "sha256": "e8d2a37a9eb53697fa194e222b0e517a1730db900560dfcb28bd13b78cc346d4",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/html2txt.py",
+   "bytes": 385,
+   "sha256": "8b0725392e5d3d716e7866e843b23b2857cd3a8eb7fe43eacd266dcd83ef825b",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/validate_wy.py",
+   "bytes": 7683,
+   "sha256": "578d3e30b9cbadf29aa8d338d6171970a582d19f4dd12dd4c2aeeecb30aa4437",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_build.py",
+   "bytes": 58369,
+   "sha256": "467bb388b1e45bf19178b6b76244321a862619bff033edb4b82d4f9dfc2591a6",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_contact_sheets.py",
+   "bytes": 1070,
+   "sha256": "1ec09cc8f5ab1fe63c2087abd1c55677409dc33501bf6e8240f5cb58bd014fde",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_crossmatch.py",
+   "bytes": 3327,
+   "sha256": "83e40a735a3c92a24ca24f5d4ece8c96c8d8ee4954964d9afefe1f5378bd13d4",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_data.py",
+   "bytes": 16140,
+   "sha256": "61457b27ba95c89658519724d1bfab34b32cfe6c9632a9b5f71e9149fa7b6a1e",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_docs.py",
+   "bytes": 13471,
+   "sha256": "4084a2d656517d1aeedf28bfe56ee29b1292476ce144bdcb60b4ece3a2a49c7b",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_gauge_find.py",
+   "bytes": 1430,
+   "sha256": "19f2a5ea02c02dccb520a679ab0fe05257e7738a2681f8c671dde511d37bbeb9",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_geo_checks.py",
+   "bytes": 9889,
+   "sha256": "aa7d3df58cd1bbf4d612516452155640e5bd6ec7a58567341d120cf32ce99cca",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_nhd_local.py",
+   "bytes": 4248,
+   "sha256": "025d8c3b1df51891da55c154d280d28d0d6b5f67672fd168fec5c6f86bde4599",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/wy_nldi.py",
+   "bytes": 2406,
+   "sha256": "eea7366734893fef4f605bcc01868a09a32c192bc8267eb84763c50c3c323738",
+   "zip": "slim"
+  },
+  {
+   "path": "validation-results.txt",
+   "bytes": 156315,
+   "sha256": "63e6813df98b96b8406926c7733815a58ed61064f8dca09b66519d570f2264b4",
+   "zip": "slim"
+  },
+  {
+   "path": "wy-state-entry.json",
+   "bytes": 917,
+   "sha256": "6fbaa382e60359c4b2de2ddf343780c0368a203108f566d67d1dd2b2e619c047",
+   "zip": "slim"
+  }
+ ]
+}

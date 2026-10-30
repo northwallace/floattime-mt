@@ -1,0 +1,2969 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <meta name="description" content="Use the Colorado CDSS REST web services to retrieve HydroBase data programmatically (for models, spreadsheets, etc), and to conduct large data grabs." />
+    <meta name="keywords" content="REST, soap, web services, Colorado, Colorado Decision Support Systems, CDSS, Division of Water Resources, DWR, State Engineer's Office, SEO, hydrobase, tools, CDSS tools" />
+
+    <title>CDSS REST Services</title>
+    <script  type="text/javascript" src='/Rest/GET/bundles/jquery?v=9zSzwhKBsBkF1f5Ln4CiIDqiP6tqOaCEwgDFXVJ_RNQ1?v=10-28-2026_1432'></script>
+
+    <link href='/Rest/GET/Content/css?v=PdeIEpjW21L26gHa9fr0o_LaYb80--vOquPRuEjCrrI1?v=10-28-2026_1432' rel='stylesheet'/>
+
+    <script  type="text/javascript" src='/Rest/GET/bundles/modernizr?v=wBEWDufH_8Md-Pbioxomt90vm6tJN2Pyy9u9zHtWsPo1?v=10-28-2026_1432'></script>
+
+    <script  type="text/javascript" src='/Rest/GET/bundles/bootstrap?v=PW41pTbhgmyixsEjcaudTT_npfSPbq7DNKm8D6El-_Q1?v=10-28-2026_1432'></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+        .container .aux {
+            float: right;
+            display: inline;
+        }
+
+        .navbar-header {
+            display: inline-block;
+        }
+
+        @media (min-width: 710px) {
+            .navbar-collapse.collapse {
+                display: inline-block !important;
+                height: auto !important;
+                padding-bottom: 0;
+                overflow: visible !important;
+                width: 100%;
+            }
+
+            #mainnav-right {
+                float: right
+            }
+
+                #mainnav-right > li {
+                    float: left
+                }
+        }
+
+        div.header {
+            display: block;
+            vertical-align: middle;
+            border-top: solid 2px #1F2839;
+            color: #5c666f;
+            letter-spacing: 1px;
+            text-align: left;
+            background-image: -webkit-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: -moz-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: -ms-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: -o-linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-image: linear-gradient(0deg, #d0d2d2 0%, #eee 100%);
+            background-color: #d0d2d2;
+            /*padding: 19px 0 19px 19px*/
+            /*
+        background-color: #ECEEF0;
+        background-color: #d0d2d2;
+        */
+        }
+
+        div.footer {
+            display: block;
+            /*
+        position: absolute;
+        bottom: 0px;
+        width: 99%;
+        */
+            text-align: center;
+            /*border-top: solid 2px #CCC;
+        border-bottom: solid 2px #1F2839;*/
+            margin: 0 0 0 0;
+            white-space: nowrap;
+        }
+
+        .tableFooter {
+            width: 100%;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            border-collapse: collapse;
+        }
+
+            .tableFooter td {
+                text-align: center;
+                background-color: #356686;
+                color: #FFF;
+                height: 25px;
+                text-decoration: none;
+                font-size: 9pt;
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+            }
+
+                .tableFooter td a {
+                    color: #FFF;
+                    text-decoration: none;
+                    font-size: 9pt;
+                }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1049;
+        }
+
+        body.modal-open {
+            overflow: visible;
+            padding-right: 0px !important;
+        }
+
+        .modal-title {
+            line-height: 1.42857;
+            margin: 0px;
+        }
+
+        .modal-header {
+            color: white;
+            background: rgb(40, 72, 92);
+        }
+
+            .modal-header > .close {
+                color: white;
+            }
+
+            .modal-header .close {
+                margin-top: -2px;
+            }
+
+        .btn-dwr {
+            padding-left: 7px !important;
+            padding-right: 7px !important;
+            color: rgb(255, 255, 255);
+            min-width: 75px;
+            background: linear-gradient(rgb(53, 102, 134) 23%, rgb(60, 60, 60) 63%);
+            margin: 5px 1px 7px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(155, 171, 176);
+            border-image: initial;
+            padding: 2px;
+            border-radius: 4px;
+        }
+
+            .btn-dwr.info.btn:focus, .btn-dwr.info.btn:hover {
+                color: white;
+            }
+
+        .refSelector tr:hover {
+            background: rgb(65, 97, 102);
+            color: white;
+        }
+
+        .selectedRow {
+            background: rgb(40, 72, 92);
+            color: white;
+        }
+
+        .btn.btn-dwr:focus:enabled {
+            color: rgb(255, 255, 255);
+            outline: none;
+            outline-color: initial;
+            outline-style: none;
+            outline-width: initial;
+        }
+
+        .btn.btn-dwr:hover:enabled {
+            color: rgb(255, 255, 255);
+            background: linear-gradient(rgb(68, 117, 149) 23%, rgb(80, 80, 80) 63%);
+            box-shadow: 0 0 4px 0 #000000;
+        }
+
+        .btn.btn-dwr:hover:not(:enabled) {
+            color: rgb(255, 255, 255);
+        }
+
+        .btn.btn-dwr:active:enabled {
+            color: rgb(255, 255, 255);
+            background: linear-gradient(rgb(83, 132, 164) 23%, rgb(100, 100, 100) 63%);
+            box-shadow: 0 0 10px 1.5px #000000;
+        }
+    </style>
+    <link href="/Rest/GET/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="header" class="header" style="padding: 0;">
+
+
+        <div class="container-fluid" id="bannerheader" data-toggle="expand" data-target="#menuitemlist" style="overflow-x: auto;">
+            <div class="bottom-right" style="top: 10px">
+                <a href="#" onclick="ShowBanner(false);"><img src="/Rest/GET/Images/angle-double-up.svg" class="Show-DesktopMenu" id="hideBanner" style="height: 20px" /></a>
+            </div>
+            <div id="userDiv">
+                        <div class="bottom-right" id="signedInUser" style="display: none; font-family: Tahoma, Verdana, Calibri, Arial, Helvetica, sans-serif; font-size: 13px">
+                            Welcome <text id="userName"></text>,
+                            <a href="" data-toggle="modal" data-target="#logoutModal" style="cursor: pointer">
+                                <span class="glyphicon glyphicon-log-out"></span> Sign out
+                            </a>
+                        </div>
+                        <div class="bottom-right" id="guestUser" style="display: none; cursor: pointer">
+                            <text id="guestUserWelcome" style="font-style: italic">Welcome Guest, </text>
+                            <a href="/Rest/GET/Home/LoginUser">
+                                Click here to Login <span class="glyphicon glyphicon-log-in"></span>
+                            </a>
+                        </div>
+
+            </div>
+
+<script>
+    function handleVisibilityChange() {
+        if (!document.hidden) {
+            pageLoadOrTabOpened();
+        }
+    }
+
+
+    var signedInUser = null;
+    var timeoutWarningHandler = null;
+    var countDownHandler = null;
+
+    function pageLoadOrTabOpened() {
+        //if (!$("#modalSignOut").is(':visible'))
+        $.ajax({
+            type: "POST",
+            url: "/Rest/GET/Home/GetUser",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function(response) {
+                var newUser = response.SignedIn ? (response.FirstName + " " + response.LastName) : null;
+                if (newUser != null && response.EmailAddress != null
+                    && (response.FirstName == null || response.FirstName.length === 0 || response.LastName == null || response.LastName.length === 0 )) {
+                    newUser = response.EmailAddress;
+                }
+                signedInUser = newUser;                
+                $("#signedInUser").toggle(response.SignedIn);
+                $("#MyAccounts").toggle(response.SignedIn);
+                $("#guestUser").toggle(!response.SignedIn);
+                $("#loginDiv").toggle(!response.SignedIn);
+                if (timeoutWarningHandler != null) clearTimeout(timeoutWarningHandler);
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                if (response.SignedIn) {
+                    $("#userName")
+                        .text(signedInUser != null ? signedInUser : "");
+                    if (!$("#guestUserLogin").hasClass("hide"))
+                        $("#guestUserLogin").addClass("hide");
+                    $("#MyApiKey").val(response.ApiKey);
+                    
+                    if ($("#MyApiKeyDropdown").hasClass("hide")) 
+                        $("#MyApiKeyDropdown").removeClass("hide");
+                    $(document).trigger("userStatus:toggle", response);
+                   
+                    var expirationDateMillis = parseInt(/[\d]+/.exec(response.Expiration));
+                    var timeUntilExpiration = expirationDateMillis - Date.now();
+                    var warningUntilExpirationSeconds = 180;
+                    var warningUntilExpiration = (1000 * warningUntilExpirationSeconds);
+                    var timeToWarning = timeUntilExpiration - warningUntilExpiration;
+                    if (timeUntilExpiration > warningUntilExpiration)
+                        $("#modalSignOut").modal("hide");
+                    // Triggers the warning late by a few seconds to ensure the expiration has passed before refreshing or getting the user.
+                    // Without it, race condition can occur and user may or may not be shown as signed out correctly
+                    var triggerLateAmountSeconds = 2;
+                    var triggerLateAmount = 1000 * triggerLateAmountSeconds;
+                    timeoutWarningHandler = setTimeout(function() {
+                        var elem = document.getElementById("modalSignOutTime");
+                        var time = Math.floor(expirationDateMillis / 1000) - Math.floor(Date.now() / 1000);
+                        if (time > 0) {
+                            $("#modalSignOut").modal("show");
+                            time += 1 + triggerLateAmountSeconds;
+                            frame();
+                            if (countDownHandler != null) clearInterval(countDownHandler);
+                            countDownHandler = setInterval(frame, 1000);
+
+                            function frame() {
+                                var fullSeconds = --time;
+                                var seconds = fullSeconds % 60;
+                                var minutes = Math.floor((fullSeconds - seconds) / 60);
+                                var text = "<br/>";
+                                text += minutes + ":" + (seconds >= 10 ? seconds : "0" + seconds);
+                                if (elem != null) {
+                                    elem.innerHTML = text;
+                                }
+                                if (time <= 0) {
+                                    onExpiration();
+                                }
+                            }
+                        } else {
+                            onExpiration();
+                        }
+                    },
+                    timeToWarning + triggerLateAmount);
+
+                    function onExpiration() {
+                        $("#modalSignOut").modal("hide");
+                        if (countDownHandler != null) clearInterval(countDownHandler);
+pageLoadOrTabOpened();                    }
+                } else {
+                    $("#guestUser").toggle(true);
+                    $("#loginDiv").toggle(true);
+                    $("#guestUser").toggle(true);
+                    $("#guestUserLogin").removeClass("hide");
+                    $("#modalSignOut").modal("hide");
+                    $("#MyApiKeyDropdown").addClass("hide");
+                    $("#MyApiKey").val("");
+                    $(document).trigger("userStatus:toggle", null);
+
+                }
+            },
+            failure: function (response) {
+                signedInUser = null;
+                $("#MyAccounts").toggle(false);
+                $("#signedInUser").toggle(false);
+                $("#MyApiKeyDropdown").addClass("hide");
+                $("#MyApiKey").val("");
+                $(document).trigger("userStatus:toggle", null);
+                $("#guestUser").toggle(true);
+                $("#guestUserLogin").removeClass("hide");
+                if (timeoutWarningHandler != null) clearTimeout(timeoutWarningHandler);
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                $("#modalSignOut").modal("hide");
+            },
+            error: function (response) {
+                signedInUser = null;
+                $("#MyAccounts").toggle(false);
+                $("#signedInUser").toggle(false);
+                $("#guestUser").toggle(true);
+                $("#MyApiKeyDropdown").addClass("hide");
+                $("#MyApiKey").val("");
+                $(document).trigger("userStatus:toggle", null);
+                $("#guestUserLogin").removeClass("hide");
+                if (timeoutWarningHandler != null) clearTimeout(timeoutWarningHandler);
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                $("#modalSignOut").modal("hide");
+            }
+        });
+    }
+
+    function renewSignIn() {
+        $.ajax({
+            type: "POST",
+            url: "/Rest/GET/Home/RenewUser",
+            success: function (response) {
+                if (countDownHandler != null) clearInterval(countDownHandler);
+                $("#modalSignOut").modal("hide");
+                pageLoadOrTabOpened();
+            },
+            failure: function (response) {
+            },
+            error: function (response) {
+
+            }
+        });
+    }
+    $(document).on("click", "#modalSignOutRenewButton", renewSignIn);
+
+    $(document).on("visibilitychange", handleVisibilityChange);
+    $(document).ready(function () {
+        pageLoadOrTabOpened();
+    });
+
+    function populateApiKey(onSuccess, onFailure, onError) {
+        $.ajax({
+            type: "POST",
+            url: "/Rest/GET/Home/GetAccountApiKey",
+            success: function (response) {
+                if (onSuccess != null && typeof onSuccess === "function") {
+                    onSuccess(response);
+                }
+            },
+            failure: function (response) {
+                console.log("Fail");
+                console.log(response);
+                if (onFailure != null && typeof onFailure === "function") {
+                    onFailure(response);
+                }
+            },
+            error: function (response) {
+                console.log("Error");
+                console.log(response);
+                if (onError != null && typeof onError === "function") {
+                    onError(response);
+                }
+            }
+        });
+    }
+</script>
+            <div style="">
+                <a href="/Rest/GET/Help" id="headerLink" title="Colorado Department of Natural Resources">
+                    <img id="ImgDnrLarge" src="/Rest/GET/Images/co_dnr_div_cdss_cwcbdwr_transparent.png" alt="Colorado Department of Natural Resources Home"
+                         border="0" runat="server" style="height: 80px; margin: 19px;" />
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid" id="bannerheadermobile" style="background: #356686; padding-left: 0; padding-right: 0">
+            <div id="navMenuContentMobileLinks" class="Sidebar SidebarPinned" style="height:auto">
+                <div id="SidebarContainer" class="SidebarContainer SidebarPinned">
+                    <img id="ImgDnrShields" src="/Rest/GET/Images/CDSSMobile.png" alt="Colorado Department of Natural Resources Home" style="height: 35px; margin: 3px 0 0 0px; padding-right: 5px; padding-left: 10px; float: left; border-right: 1px solid white;">
+                    
+                    
+                    <div class="container" onclick="ClassToggle(this)" style="margin-bottom: 0; cursor: pointer;float: right; margin-top: 4px" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <div id="breadcrumbsDiv" class="SidebarSection SidebarNavigationMenu SidebarNavigationBreadcrumbs shrinkFont360" style="height:auto">
+                        <span id="BreadCrumb" style="padding-left:0" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager">
+                            <a href="/Rest/GET/" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager" style="color:white" hidefocus="hidefocus">REST Web Services</a>
+                        </span>
+                        <div class="SidebarSectionHeader">
+                            <h2 class="SidebarSectionHeaderCaption">Navigation</h2>
+                            <div class="clearer"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse nav-bar-color-desktop NavMenuStyling" id="navbar-collapse-1">
+            <div class="dropdown" style="font-size: 14px">
+                <div id="menuDropdown" class="container Show-DesktopMenu" onclick="ClassToggle(this); $('#menuDropdown').parent().toggleClass('open');" style="width: auto !important; cursor: pointer; margin-bottom: 0; margin-top: 9px; padding-left: 10px; float: left" aria-haspopup="true" aria-expanded="false">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul id="MenuSearchDropDown" class="dropdown-menu Desktop-Only-Menu" style="background: linear-gradient(190deg, #356686 31%, #3c3c3c 100%); margin-bottom: 25px; top: 96%; left: -1px"></ul>
+
+
+                <span style="line-height: 3;display: inline" class="Show-DesktopMenu">
+                    <span id="BreadCrumb" style="padding-left:0" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager">
+                        <a href="/Rest/GET/" class="SidebarNavigationLabel  SidebarNavigationCurrent SidebarNavigationCurrentManager" style="color:white" hidefocus="hidefocus">REST Web Services</a>
+                    </span>
+                </span>
+                <ul id="mainnav" class="nav navbar-nav Show-MobileMenu" style="padding-left: 15px; overflow:hidden"></ul>
+
+                <script>
+                    $(document).ready(function() {
+
+                        setMenu("https://dwr.state.co.us/tools/Home/Menu");
+                    });
+
+                    function setMenu(url) {
+                        $.ajax({
+                            type: "GET",
+                            url: url,
+                            success: function (response) {
+                                var menu = $(response);
+								var menuForMobile = menu.clone();
+
+                                var desktopMenu = $("#MenuSearchDropDown");
+                                desktopMenu.empty();
+                                desktopMenu.append(menu);
+                                var mobileMenu = $("#mainnav");
+                                mobileMenu.prepend(menuForMobile);
+                            },
+                            failure: function(response) {
+                                console.log("Fail");
+                                console.log(response);
+                            },
+                            error: function(response) {
+                                console.log("Error");
+                                console.log(response);
+                            }
+                        });
+                    }
+                </script>
+
+                <li role="separator" class="divider Mobile-Only" style="background-color: #eeeeee; height: 1px"></li>
+                <a href="#" onclick="ShowBanner(true);"><i class="fa fa-angle-double-down Show-DesktopMenu" id="showBanner" style="float: right; margin: 9px; display: none; font-size: 19px; color: white"></i></a>
+                <ul id="mainnav-right" class="nav navbar-nav navbar-right border-top-mobile" style="padding-left: 15px; overflow: hidden">
+                    
+                    <li><a href="#modalID" class="right-menu-button" data-toggle="modal" data-target="#modalID">Help</a></li>
+                    <li id="guestUserLogin" class="Show-MobileMenu hide">
+                        <a>
+                            Login <span class="glyphicon glyphicon-log-in pull-right"></span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown dropdown-hover hide" id="MyApiKeyDropdown">
+                        <style>
+                            @media (min-width: 710px) {
+                                #MyApiKeyDropdown ul {
+                                    position: fixed;
+                                    right: 30px;
+                                    width: 360px;
+                                }
+                            }
+
+                            @media (max-width: 709px) {
+                                #MyApiKeyDropdown ul {
+                                    width: 100%;
+                                }
+                            }
+                        </style>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Api Key <span class="caret menu-caret"></span></a>
+                        <ul id="api-key" class="dropdown-menu mainnav-right-submenu" style="background: #3c3c3c;top: auto;">
+                            <li style="padding: 10px; margin-right:20px"><span class="glyphicon glyphicon-duplicate" title="Click to copy" style="color: white;cursor:pointer" onclick="copyOnClick('MyApiKey');"></span> <input type="text" id="MyApiKey" style="cursor: text;width:100%" onclick="copyOnClick('MyApiKey')" disabled="disabled"><text id="MyApiKeyCopied" style="display: none; color: white">Copied to clipboard...</text></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-hover" id="MyAccounts" style="display: none">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret menu-caret"></span></a>
+                        <ul id="account-information" class="dropdown-menu mainnav-right-submenu" style="background: #3c3c3c;top: auto; right: -5px;">
+                            <li><a href=/Rest/GET/Home/AccountDetails><span class="glyphicon glyphicon-user"></span> Account Details</a></li>
+                            <li><a href=/Rest/GET/Home/AccountChangePassword><span class="glyphicon glyphicon-lock"></span> Change Password</a></li>
+                            <li><a href=/Rest/GET/Home/NotificationLists><span class="glyphicon glyphicon-th-list"></span> My Subscriptions</a></li>
+                            <li><a href=/Rest/GET/Home/WebServiceToken><span class="glyphicon glyphicon-globe"></span> Web Service Token Manager</a></li>
+                            <li role="separator" class="divider Show-DesktopMenu"></li>
+                            <li><a href="https://dwr.state.co.us/portal/dwr/index"><span class="glyphicon glyphicon-home"></span> Portal Home</a></li>
+                            <li><a href="" data-toggle="modal" data-target="#logoutModal"><span class="glyphicon glyphicon-log-out"></span> Sign out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="bodyContainer" style="padding-bottom:60px">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10 body-content">
+            
+
+
+
+
+
+<style>
+    th {
+        background: lightgray;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .colorstrip {
+        width: 100%;
+        height: 2px;
+        border-color: black;
+        background-color: black;
+    }
+
+    .nav [role=presentation]:not(.active) {
+        border: 1px solid gray;
+        border-radius: 4px;
+        background-color: lightgray;
+    }
+
+    .nav [role=presentation].active {
+        border-radius: 4px;
+    }
+
+        .nav [role=presentation].active * {
+            border: none !important;
+        }
+
+    .nav:not(#apiNavPills):not(#apiNavPillsTable) [role=presentation] * {
+        background-color: transparent;
+    }
+
+    [role=tabpanel] [role=tablist] li.active > a, [role=tabpanel] [role=tablist] > li.active > a:hover, [role=tabpanel] [role=tablist] > li.active > a:focus {
+        color: #fff;
+    }
+
+    [role=tabpanel] [role=tabpanel] [role=tablist] li.active {
+        color: #fff;
+        background-color: #4c33b7;
+        border-radius: 4px;
+    }
+
+    [role=tabpanel] [role=tablist] li.active {
+        color: #fff;
+        background-color: #33a6b7;
+        border-radius: 4px;
+    }
+
+    [role=tabpanel] [role=tablist] tr.active {
+        background-color: #33a6b7;
+        border-radius: 4px;
+    }
+
+        [role=tabpanel] [role=tablist] tr.active td:first-child {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        [role=tabpanel] [role=tablist] tr.active td:last-child {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        [role=tabpanel] [role=tablist] tr.active * {
+            color: #fff;
+        }
+
+    ul[role=tablist] li.active {
+        color: #fff;
+        background-color: #337ab7;
+    }
+
+    @media (min-width: 768px) {
+        .nav [role=presentation]:not(.active) + [role=presentation]:not(.active) {
+            border-left: none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .nav-pills[role=tablist] > li > a {
+            margin-bottom: 0;
+        }
+    }
+
+    [role=tabpanel] [role=tabpanel] [role=tablist] li.active > a, [role=tabpanel] [role=tabpanel] [role=tablist] > li.active > a:hover, [role=tabpanel] [role=tabpanel] [role=tablist] > li.active > a:focus {
+        color: #fff;
+    }
+
+    #apiNavPills[role=tablist] {
+        padding-right: 40px;
+        margin-bottom: 0;
+    }
+
+    #apiNavPillsTableDiv {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 0;
+    }
+
+    [role=tablist] > *:not(.active):hover, [role=tablist] > *:not(.active):focus {
+        cursor: pointer;
+    }
+
+    #apiNavPills[role=tablist] > li:not(.active):hover > a, #apiNavPills[role=tablist] > li:not(.active):focus > a {
+        color: black;
+    }
+
+    #apiNavPills[role=tablist] > li:not(:first-of-type) {
+        border-top: 1px solid black;
+    }
+
+    #apiNavPills[role=tablist] > li:not(.active):hover, #apiNavPills[role=tablist] > li:not(.active):focus {
+        background-color: lightgray;
+    }
+
+    [role=tablist]:not(#apiNavPills) > li:not(.active):hover, [role=tablist]:not(#apiNavPills) > li:not(.active):focus {
+        background-color: grey;
+    }
+
+        [role=tablist]:not(#apiNavPills) > li:not(.active):hover > a, [role=tablist]:not(#apiNavPills) > li:not(.active):focus > a {
+            color: white;
+        }
+
+    #apiNavPillsTable[role=tablist] tr:not(.active):hover > a, #apiNavPillsTable[role=tablist] tr:not(.active):focus > a {
+        color: black;
+    }
+
+    #apiNavPillsTable[role=tablist] tr:not(:first-of-type) {
+        border-top: 1px solid black;
+    }
+
+    #apiNavPillsTable[role=tablist] tr:not(.active):hover, #apiNavPillsTable[role=tablist] tr:not(.active):focus {
+        background-color: lightgray;
+    }
+
+    [role=tablist]:not(#apiNavPillsTable) tr:not(.active):hover, [role=tablist]:not(#apiNavPillsTable) tr:not(.active):focus {
+        background-color: grey;
+    }
+
+        [role=tablist]:not(#apiNavPillsTable) tr:not(.active):hover > a, [role=tablist]:not(#apiNavPillsTable) tr:not(.active):focus > a {
+            color: white;
+        }
+
+    [role=tabpanel] [role=tabpanel] [role=tablist] > li:not(.active):hover > a, [role=tabpanel] [role=tabpanel] [role=tablist] > li:not(.active):focus > a {
+        color: white;
+    }
+</style>
+<script>
+    // inClick is needed to keep a stack overflow from happening
+    // because of recursive calls to the "li" element's onclick
+    // The click on the "a" element propogates up to the "li" element again and this stops it
+    var inClick = {};
+    $(document).on("click", "li[role=presentation]:has(a), tr[role=presentation]:has(a)", function () {
+        var elem = $(this);
+        var id = elem.id
+        if (inClick[id] == null) {
+            inClick[id] = true;
+            elem.find("a").click();
+            inClick[id] = null;
+        }
+        elem.parent().children(".active").removeClass("active");
+        elem.addClass("active");
+    });
+</script>
+<link type="text/css" href="/Rest/GET/Areas/HelpPage/HelpPage.css" rel="stylesheet" />
+
+<BR />
+<script>
+    $(document).on("click", "ul[role=tablist] li a, table[role=tablist] tr a", function () {
+        setTimeout(function () {
+            var hash = "";
+            $("[role=tablist] .active a").each(function () {
+                var href = $(this).attr("href");
+                if (href != null && href.length) {
+                    if (hash.length) {
+                        hash += "&";
+                    }
+                    hash += href;
+                }
+            })
+            history.replaceState(null, null, hash);
+            $("#headerLink").attr("href", hash);
+        }, 250);
+    });
+    $(document).ready(function () {
+        window.location.hash.split("&").forEach(function (item) {
+            if (item.length)
+                $("[role=tablist] a[href=" + item + "]").click();
+        });
+    });
+    $(document).on("userStatus:toggle", function (event, user) {
+        $(".apiLink").each(function (index, element) {
+            var jelem = $(element);
+            var href = jelem.prop("href")
+            var indexOfQuery = href.indexOf("?");
+            var base = indexOfQuery >= 0 ? href.substring(0, indexOfQuery) : href;
+            var fullQuery = indexOfQuery >= 0 ? href.substring(indexOfQuery + 1) : "";
+            var hasApiKey = queryStringHasApiKey(fullQuery)
+            if (!hasApiKey && user != null && user.SignedIn === true && user.ApiKey != null && user.ApiKey.length > 0) {
+                fullQuery += (fullQuery.length > 0 ? "&" : "") + "apiKey=" + user.ApiKey;
+            } else if (hasApiKey && (user == null || user.SignedIn == null || user.SignedIn === false)) {
+                fullQuery = fullQuery.replace(/apikey=[^&]*/gi, "").replace(/(&)+/g, "&")
+            }
+            href = base + (fullQuery.length > 0 ? "?" : "") + fullQuery;
+            jelem.prop("href", href);
+        })
+    });
+
+    function queryStringHasApiKey(queryString) {
+        if (queryString.length === 0) return false;
+        var queries = queryString.split("&");
+        for (var i = 0; i < queries.length; i++) {
+            var query = queries[i];
+            var eqIndex = query.indexOf("=");
+            var key = eqIndex >= 0 ? query.substring(0, eqIndex) : query;
+            if (key.toLowerCase() == "apikey") return true;
+        }
+        return false;
+    }
+</script>
+<div>
+    <p>
+        The CDSS REST services provide HydroBase data programmatically for consumption by outside entities. Users can request data from the services in two ways:
+    </p>
+    <ul>
+        <li>Enter a properly constructed URL in your browser or other application (such as a spreadsheet)</li>
+        <li>Send a properly constructed request object with a header</li>
+    </ul>
+</div>
+<ul id="topLevelNavPills" class="nav nav-pills nav-justified" role="tablist" style="width: 100%">
+    <li role="presentation" class="active">
+        <a href="#Datasets" role="tab" data-toggle="pill">Datasets</a>
+    </li>
+    <li role="presentation">
+        <a href="#TechInfoHelp" role="tab" data-toggle="pill">Technical Information & Help</a>
+    </li>
+</ul>
+<br />
+<div class="colorstrip"></div>
+<br />
+
+<div class="tab-content">
+    <div role="tabpanel" id="Datasets" style="width:100%; overflow:hidden" class="help-page tab-pane active">
+            <style>
+        #apiNavPills li.active a {
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        #apiNavPillsTable tr.active a {
+            font-weight: bold;
+        }
+
+        #apiNavPills li a, #apiNavPillsTable tr a {
+            padding: 4px 6px;
+        }
+
+        #apiNavPillsTable td {
+            padding-right: 10px;
+        }
+    </style>
+        <div id="apiNavPillsTableDiv">
+            <table id="apiNavPillsTable" class="" role="tablist" style="width: 100%; list-style-type: none;">
+                <thead>
+                    <tr><th style="width: 25%"></th><th style="width: 75%"></th></tr>
+                </thead>
+
+                    <tr class="active" role="presentation">
+                        <td><a href="#All" role="tab" data-toggle="pill">All</a></td>
+                        <td>Lists all datasets in the service</td>
+                    </tr>
+                                    <tr                         role="presentation">
+                        <td><a href="#AdministrativeCallsController" role="tab" data-toggle="pill">Administrative Calls</a></td>
+                        <td>Analysis data for administrative calls and water sources <br><li>See <a href="https://dnrweblink.state.co.us/dwr/ElectronicFile.aspx?docid=3600964&dbid=0" target="_blank" rel="noopener">Administrative Call Standard</a> for detailed explanation of calls</li></td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#AnalysisServicesController" role="tab" data-toggle="pill">Analysis Services</a></td>
+                        <td>Analysis data for administrative calls and water sources</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#ClimateStationsController" role="tab" data-toggle="pill">Climate Stations</a></td>
+                        <td>Climate station data gathered from external data providers for use in CDSS models<br>
+<b>It is recommended that data be retrieved directly from the data provider if possible (not all datatypeid are retrieved for CDSS purposes)</b>
+<li><a href="https://www.ncdc.noaa.gov/cdo-web/webservices" target="_blank" rel="noopener">National Centers for Environmental data</a></li>
+<li><a href="https://www.northernwater.org/our-data/weather-data" target="_blank" rel="noopener">Northern Water</a></li></td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#DamSafetyController" role="tab" data-toggle="pill">Dam Safety</a></td>
+                        <td>Data on dams and dam safety</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#DiversionRecordsController" role="tab" data-toggle="pill">Diversion Records</a></td>
+                        <td>Data on diversion records and waterclasses <br> <li>See <a href="https://dnrweblink.state.co.us/dwr/ElectronicFile.aspx?docid=3600965&dbid=0" target="_blank" rel="noopener">Diversion Record Standard</a> for detailed explanation of waterclasses</li></td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#GroundwaterGeophysicalLogsController" role="tab" data-toggle="pill">Groundwater Geophysical Logs</a></td>
+                        <td>Groundwater data related to geophysical logs</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#GroundwaterLevelsController" role="tab" data-toggle="pill">Groundwater Levels</a></td>
+                        <td>Groundwater data related to water levels</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#MeterReadingsController" role="tab" data-toggle="pill">Meter Readings</a></td>
+                        <td>Data on meter readings</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#ParcelUseTSController" role="tab" data-toggle="pill">Parcel Use TS</a></td>
+                        <td>Parcel-use time series data</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#ReferenceTablesController" role="tab" data-toggle="pill">Reference Tables</a></td>
+                        <td>Reference table information, which may help with other searches</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#StructuresController" role="tab" data-toggle="pill">Structures</a></td>
+                        <td>Data on administrative structures</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#SurfaceWaterController" role="tab" data-toggle="pill">Surface Water</a></td>
+                        <td>Data on surface water - rivers, streams, creeks, lakes, and reservoirs</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#TelemetryStationsController" role="tab" data-toggle="pill">Telemetry Stations</a></td>
+                        <td>Data on Telemetry Stations</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#WaterRightsController" role="tab" data-toggle="pill">Water Rights</a></td>
+                        <td>Data on water rights</td>
+                    </tr>
+                    <tr                         role="presentation">
+                        <td><a href="#WellPermitsController" role="tab" data-toggle="pill">Well Permits</a></td>
+                        <td>Data on well permits</td>
+                    </tr>
+            </table>
+        </div>
+        <br />
+        <div class="colorstrip"></div>
+
+            <style>
+        #All table.help-page-table td.api-name, #All table.help-page-table td.api-documentation {
+            width: 30%;
+        }
+
+        #All table.help-page-table td.url-generator, #All table.help-page-table td.api-area {
+            width: 20%;
+        }
+
+        table.help-page-table td.api-name, table.help-page-table td.api-documentation {
+            width: 35%;
+        }
+
+        table.help-page-table td.url-generator {
+            width: 30%;
+        }
+    </style>
+    <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="All" style="width: 100%; overflow: hidden">
+                <h3 id="Datasets - All">Datasets - All</h3>
+                <table class="help-page-table">
+                    <thead><tr><th style="width: 30% !important">API</th><th style="width: 30% !important">Description</th><th style="width: 20% !important">Url Generator</th><th style="width: 20% !important">Area</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+                    <div role="tabpanel" class="tab-pane " id="AdministrativeCallsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Administrative Calls</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-administrativecalls-active">GET api/v2/administrativecalls/active</a></td>
+            <td class="api-documentation">
+                <p>Returns list of active administrative calls</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ActiveAdminCallGenerator">Active Administrative Calls Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-administrativecalls-historical">GET api/v2/administrativecalls/historical</a></td>
+            <td class="api-documentation">
+                <p>Returns list of historical administrative calls</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/HistoricalAdminCallGenerator">Historical Administrative Calls Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="AnalysisServicesController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Analysis Services</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-analysisservices-watersourcerouteanalysis">GET api/v2/analysisservices/watersourcerouteanalysis</a></td>
+            <td class="api-documentation">
+                <p>Returns all WDID(s), and their stream mile, located between two different stream locations on the DWR Water Source Framework.  
+</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterSourceRouteAnalysisGenerator">Water Source Route Analysis Info Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-analysisservices-watersourcerouteframework">GET api/v2/analysisservices/watersourcerouteframework</a></td>
+            <td class="api-documentation">
+                <p>Returns the DWR source route framework reference table for the criteria specified</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterSourceRouteFrameworkGenerator">Water Source Route Framework Info Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-analysisservices-callanalysisbywdid">GET api/v2/analysisservices/callanalysisbywdid</a></td>
+            <td class="api-documentation">
+                <p>Performs a call analysis that returns a time series showing the percentage of each day that the specified WDID and priority was out of priority and the downstream call in priority.</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/CallAnalysisByWdidGenerator">Call Analysis Structure Info Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-analysisservices-callanalysisbygnisid">GET api/v2/analysisservices/callanalysisbygnisid</a></td>
+            <td class="api-documentation">
+                <p>Performs a call analysis that returns a time series showing the percentage of each day that the specified stream/stream mile and priority was out of priority and the downstream call in priority..   This can be used when there is not an existing WDID to be analyzed.</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/CallAnalysisByGnisIdGenerator">Call Analysis Stream Mile Info Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="ClimateStationsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Climate Stations</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-climatedata-climatestations">GET api/v2/climatedata/climatestations</a></td>
+            <td class="api-documentation">
+                <p>Returns Climate Stations</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ClimateStationsGenerator">Climate Stations Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-climatedata-climatestationsdatatypes">GET api/v2/climatedata/climatestationsdatatypes</a></td>
+            <td class="api-documentation">
+                <p>Returns Climate Station Data Types</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ClimateStationDataTypesGenerator">Climate Station Data Types Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-climatedata-climatestationtsday">GET api/v2/climatedata/climatestationtsday</a></td>
+            <td class="api-documentation">
+                <p>Returns Climate Station Time Series Day</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ClimateStationTSDayGenerator">Climate Station Time Series - Day Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-climatedata-climatestationtsmonth">GET api/v2/climatedata/climatestationtsmonth</a></td>
+            <td class="api-documentation">
+                <p>Returns Climate Station Time Series Month</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ClimateStationTSMonthGenerator">Climate Station Time Series - Month Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-climatedata-climatestationfrostdates">GET api/v2/climatedata/climatestationfrostdates</a></td>
+            <td class="api-documentation">
+                <p>Returns Climate Station Frost Dates</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ClimateStationFrostDatesGenerator">Climate Station Frost Dates Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="DamSafetyController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Dam Safety</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-damsafety-damsafetydaminfojd">GET api/v2/damsafety/damsafetydaminfojd</a></td>
+            <td class="api-documentation">
+                <p>Returns jurisdictional dam info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DamSafetyJDGenerator">Jurisdictional Dams Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-damsafety-damsafetydaminfonjd">GET api/v2/damsafety/damsafetydaminfonjd</a></td>
+            <td class="api-documentation">
+                <p>Returns non-jurisdictional dam info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DamSafetyNJDGenerator">Non-Jurisdictional Dams Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-damsafety-damsafetydaminfolswtecd">GET api/v2/damsafety/damsafetydaminfolswtecd</a></td>
+            <td class="api-documentation">
+                <p>Returns livestock and erosion control info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DamSafetyLSWTECDGenerator">Livestock and Erosion Control Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="DiversionRecordsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Diversion Records</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures-divrec-waterclasses">GET api/v2/structures/divrec/waterclasses</a></td>
+            <td class="api-documentation">
+                <p>Returns list of waterclasses</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterClassesGenerator">Water Classes Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures-divrec-comments">GET api/v2/structures/divrec/comments</a></td>
+            <td class="api-documentation">
+                <p>Returns list of comments based on WDID</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DivRecCommentsGenerator">Diversion Record Comments Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures-divrec-stagevolume">GET api/v2/structures/divrec/stagevolume</a></td>
+            <td class="api-documentation">
+                <p>Returns list of stage volumes based on WDID</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DivRecStageVolumeGenerator">Diversion Record Stage Volumes Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures-divrec-divrecday">GET api/v2/structures/divrec/divrecday</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Diversion Records By Day<br/><span style="color: red;">NOTICE - Changed: Can now search by multiple WDID's in one request</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DivRecDayGenerator">Diversion Records By Day Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures-divrec-divrecmonth">GET api/v2/structures/divrec/divrecmonth</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Diversion Records By Month<br/><span style="color: red;">NOTICE - Changed: Can now search by multiple WDID's in one request</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DivRecMonthGenerator">Diversion Records By Month Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures-divrec-divrecyear">GET api/v2/structures/divrec/divrecyear</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Diversion Records By Year<br/><span style="color: red;">NOTICE - Changed: Can now search by multiple WDID's in one request</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DivRecYearGenerator">Diversion Records By Year Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="GroundwaterGeophysicalLogsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Groundwater Geophysical Logs</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-groundwater-geophysicallogs-wells">GET api/v2/groundwater/geophysicallogs/wells</a></td>
+            <td class="api-documentation">
+                <p>Returns GeophysicalLogsWell from filters.</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/GeophysicalLogsWellSearchGenerator">Well Sites Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-groundwater-geophysicallogs-geoplogpicks">GET api/v2/groundwater/geophysicallogs/geoplogpicks</a></td>
+            <td class="api-documentation">
+                <p>Returns list of groundwater Geophysical Log picks by well ID</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/GeophysicalLogsPicksGenerator">Geophysical Log picks Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="GroundwaterLevelsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Groundwater Levels</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-groundwater-waterlevels-wells">GET api/v2/groundwater/waterlevels/wells</a></td>
+            <td class="api-documentation">
+                <p>Returns WaterLevelsWell from filters.</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterLevelsWellSearchGenerator">Well Sites Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-groundwater-waterlevels-wellmeasurements">GET api/v2/groundwater/waterlevels/wellmeasurements</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Groundwater Measurements.</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterLevelsWellMeasurementsGenerator">Well Measurements Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="MeterReadingsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Meter Readings</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-meterreadings-readings">GET api/v2/meterreadings/readings</a></td>
+            <td class="api-documentation">
+                <p>Returns list of meter readings</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/MeterReadingsGenerator">Meter Readings Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="ParcelUseTSController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Parcel Use TS</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures-parcelusets">GET api/v2/structures/parcelusets</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Parcel Use Time Series</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ParcelUseTSGenerator">Parcel Use Time Series Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="ReferenceTablesController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Reference Tables</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-county">GET api/v2/referencetables/county</a></td>
+            <td class="api-documentation">
+                <p>Returns county names</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/CountiesGenerator">Colorado Counties Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-designatedbasin">GET api/v2/referencetables/designatedbasin</a></td>
+            <td class="api-documentation">
+                <p>Returns list of designated basins</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DesignatedBasinsGenerator">Designated Basins Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-groundwaterpublication">GET api/v2/referencetables/groundwaterpublication</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Groundwater Publications</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/GroundwaterPublicationsGenerator">Groundwater Publications Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-managementdistrict">GET api/v2/referencetables/managementdistrict</a></td>
+            <td class="api-documentation">
+                <p>Returns Management Districts</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ManagementDistrictsGenerator">Management Districts Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-permitactionname">GET api/v2/referencetables/permitactionname</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Permit Action Names</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/PermitActionNamesGenerator">Permit Action Names Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-waterdistrict">GET api/v2/referencetables/waterdistrict</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Water Districts</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterDistrictsGenerator">Water Districts Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-waterdivision">GET api/v2/referencetables/waterdivision</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Water Divisions</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterDivisionsGenerator">Water Divisions Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-telemetryparams">GET api/v2/referencetables/telemetryparams</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Telemetry Parameters</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryParametersGenerator">Telemetry Parameters Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-climatestationmeastype">GET api/v2/referencetables/climatestationmeastype</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Climate Station Measurement Types</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/ClimateStationMeasTypesGenerator">Climate Station Measurement Types Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-currentinusecodes">GET api/v2/referencetables/currentinusecodes</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Current In Use Codes</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/CurrentInUseCodesGenerator">Current In Use Codes Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-divrecobservationcodes">GET api/v2/referencetables/divrecobservationcodes</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Div Rec Observation Codes</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DivRecObservationCodesGenerator">Diversion Record Observation Codes Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-divrectypes">GET api/v2/referencetables/divrectypes</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Div Rec Types</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DivRecTypesGenerator">Diversion Record Types Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-diversionnotusedcodes">GET api/v2/referencetables/diversionnotusedcodes</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Diversion Not Used Codes</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/DiversionNotUsedCodesGenerator">Diversion Not Used Codes Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-stationflags">GET api/v2/referencetables/stationflags</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Station Flags and their descriptions</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/StationFlagsGenerator">Station Flags Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-referencetables-meterreadingsubmissiontypes">GET api/v2/referencetables/meterreadingsubmissiontypes</a></td>
+            <td class="api-documentation">
+                <p>Returns list of Meter Reading Submission Types</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/MeterReadingSubmissionTypesGenerator">Meter Reading Submission Types Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="StructuresController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Structures</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-structures">GET api/v2/structures</a></td>
+            <td class="api-documentation">
+                <p>Returns list of administrative structures</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/StructuresGenerator">Administrative Structures Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="SurfaceWaterController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Surface Water</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-surfacewater-surfacewaterstations">GET api/v2/surfacewater/surfacewaterstations</a></td>
+            <td class="api-documentation">
+                <p>Returns Surface Water Station info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/SurfaceWaterStationsGenerator">Surface Water Stations Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-surfacewater-surfacewaterstationdatatypes">GET api/v2/surfacewater/surfacewaterstationdatatypes</a></td>
+            <td class="api-documentation">
+                <p>Returns Surface Water Station Data Type info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/SurfaceWaterStationDataTypesGenerator">Surface Water Station Data Types Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-surfacewater-surfacewatertsday">GET api/v2/surfacewater/surfacewatertsday</a></td>
+            <td class="api-documentation">
+                <p>Returns Surface Water Time Series Day info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/SurfaceWaterTSDayGenerator">Surface Water Time Series - Day Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-surfacewater-surfacewatertsmonth">GET api/v2/surfacewater/surfacewatertsmonth</a></td>
+            <td class="api-documentation">
+                <p>Returns Surface Water Time Series Month info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/SurfaceWaterTSMonthGenerator">Surface Water Time Series - Month Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-surfacewater-surfacewatertswateryear">GET api/v2/surfacewater/surfacewatertswateryear</a></td>
+            <td class="api-documentation">
+                <p>Returns Surface Water Time Series Water Year info</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/SurfaceWaterTSWaterYearGenerator">Surface Water Time Series - Water Year Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="TelemetryStationsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Telemetry Stations</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetrystation">GET api/v2/telemetrystations/telemetrystation</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry stations and their most recent parameter reading<br/><span style="color: red;">NOTICE - Changed: Added 2 new date fields to data (can also search on them). Can now search by historic status and third party status</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryStationsGenerator">Telemetry Stations Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetrystationdatatypes">GET api/v2/telemetrystations/telemetrystationdatatypes</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry stations data types info and their available period of record<br/><span style="color: red;">NOTICE - Changed: Added 2 new date fields to data (can also search on them). Can now search by historic status and third party status</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryStationsDataTypesGenerator">Telemetry Stations Data Types Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetrytimeseriesraw">GET api/v2/telemetrystations/telemetrytimeseriesraw</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry time series data in originally recorded timestep<br/><span style="color: red;">NOTICE - Changed: Can now search by multiple abbrev's and parameter's in one request. Can also include third party data now</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryTimeSeriesRawGenerator">Telemetry Time Series Raw Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetrytimeserieshour">GET api/v2/telemetrystations/telemetrytimeserieshour</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry time series data aggregated to a hour timestep<br/><span style="color: red;">NOTICE - Changed: Can now search by multiple abbrev's and parameter's in one request. Can also include third party data now</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryTimeSeriesHourGenerator">Telemetry Time Series Hour Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetrytimeseriesday">GET api/v2/telemetrystations/telemetrytimeseriesday</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry time series data aggregated to a day timestep<br/><span style="color: red;">NOTICE - Changed: Can now search by multiple abbrev's and parameter's in one request. Can also include third party data now</span></p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryTimeSeriesDayGenerator">Telemetry Time Series Day Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetryshiftadjustedratingtable">GET api/v2/telemetrystations/telemetryshiftadjustedratingtable</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry shift adjusted rating table results</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryStationsShiftAdjustedRatingTableGenerator">Telemetry Shift Adjusted Rating Table Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetrydecodesettings">GET api/v2/telemetrystations/telemetrydecodesettings</a></td>
+            <td class="api-documentation">
+                <p>Returns current telemetry decode settings (e.g. current shift, current rating table name, and shift curve name)</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryStationsDecodeSettingsGenerator">Telemetry Decode Settings Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetryratingtable">GET api/v2/telemetrystations/telemetryratingtable</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry rating table results</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryStationsRatingTableGenerator">Telemetry Rating Table Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetryshiftcurve">GET api/v2/telemetrystations/telemetryshiftcurve</a></td>
+            <td class="api-documentation">
+                <p>Returns telemetry shift curve results</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryShiftCurveGenerator">Telemetry Stations Shift Curve Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-telemetrystations-telemetrydischargemeasurement">GET api/v2/telemetrystations/telemetrydischargemeasurement</a></td>
+            <td class="api-documentation">
+                <p>Returns discharge measurements made at telemetry stations</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/TelemetryDischargeMeasurementGenerator">Telemetry Stations Discharge Measurement Summary Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="WaterRightsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Water Rights</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-waterrights-netamount">GET api/v2/waterrights/netamount</a></td>
+            <td class="api-documentation">
+                <p>Returns current status of a water right based on all of its court decreed actions</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterRightNetAmountGenerator">Water Rights Net Amounts Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-waterrights-transaction">GET api/v2/waterrights/transaction</a></td>
+            <td class="api-documentation">
+                <p>List of court decreed actions that affect amount and use(s) that can be used by each water right</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WaterRightTransactionGenerator">Water Rights Transactions Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+            <div role="tabpanel" class="tab-pane " id="WellPermitsController" style="width: 100%; overflow: hidden">
+                
+
+<h3 >Datasets - Well Permits</h3>
+
+<table class="help-page-table">
+    <thead>
+        <tr><th>API</th><th>Description</th><th>Url Generator</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-wellpermits-wellpermit">GET api/v2/wellpermits/wellpermit</a></td>
+            <td class="api-documentation">
+                <p>Returns well permits</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WellPermitGenerator">Well Permits Generator</a></td>
+        </tr>
+        <tr>
+            <td class="api-name"><a href="/Rest/GET/Help/Api/GET-api-v2-wellpermits-wellpermitactionhistory">GET api/v2/wellpermits/wellpermitactionhistory</a></td>
+            <td class="api-documentation">
+                <p>Returns list of well permit actions</p>
+            </td>
+            <td class="url-generator"><a href="/Rest/GET/Help/WellPermitActionHistoryGenerator">Well Permit Action History Generator</a></td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+    </div>
+        <script>
+            var tables = $("table.help-page-table").not("div#All table");
+            var color = false;
+            tables.each(function () {
+                var clones = $(this).find("tbody tr").clone();
+                if (!clones.length) return;
+                var controller = $(this).closest("div[role=tabpanel]").attr("id");
+                var text = $("a[href=#" + controller + "]").text();
+                clones.append($("<td class=\"api-area\">" + text + "</td>"));
+                if (color) {
+                    clones.filter(":not(:last)").find("td").css("border-color", "gray");
+                }
+                clones.addClass(color ? "alternate" : "normal");
+                color = !color;
+                $("div#All tbody").append(clones);
+            });
+        </script>
+    <style>
+        .help-page-table tbody tr.alternate:hover td {
+            background-color: #67a2b5;
+        }
+
+        .help-page-table tbody tr.normal:hover td {
+            background-color: #f1e6e6;
+        }
+
+        .help-page-table tbody tr.alternate td {
+            background-color: lightblue;
+        }
+    </style>
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="TechInfoHelp" style="width:100%; overflow:hidden">
+        <ul id="navPills" class="nav nav-pills nav-justified" role="tablist" style="width: 100%">
+            <li role="presentation" class="active">
+                <a href="#gettingstarted" role="tab" data-toggle="pill">Getting started</a>
+            </li>
+
+            <li role="presentation">
+                <a href="#urlsyntax" role="tab" data-toggle="pill">URL Syntax</a>
+            </li>
+            <li role="presentation">
+                <a href="#responseerror" role="tab" data-toggle="pill">Response Status and Errors</a>
+            </li>
+            <li role="presentation">
+                <a href="#customheaders" role="tab" data-toggle="pill">Custom Response Headers</a>
+            </li>
+            <li role="presentation">
+                <a href="#responseformat" role="tab" data-toggle="pill">Response Data Formats</a>
+            </li>
+        </ul>
+        <br>
+        <div class="colorstrip"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="gettingstarted" style="width:100%; overflow:hidden">
+                        <h2>Getting started</h2>
+                        <p>
+                            <b>Version number:</b> 10-28-2026_1432
+                            <br /><b>Version Number - API address:</b> <a class="apiLink" id="versionApi" href="https://dwr.state.co.us/Rest/GET/Version" target="_blank">https://dwr.state.co.us/Rest/GET/Version</a>
+                            <br /><b>Current user's usage data - API address:</b> <a class="apiLink" id="userLimitsApi" href="https://dwr.state.co.us/Rest/GET/UserLimits" target="_blank">https://dwr.state.co.us/Rest/GET/UserLimits</a>
+                            <br /><b><a href="/Rest/GET/Help/Changes" target="_blank">Release Notes / Version Changes</a></b>
+                            <br /><b><a href="https://docs.google.com/spreadsheets/d/1wBngNBiRl9mVtsbHau81q1tTtMmspyXBY3d_YPj2DoY/edit?usp=sharing" target="_blank">Example usage of REST API using Google Sheets</a></b>. You can make a copy of the sheet if you'd like to modify it or test different queries.
+                            <br /><b><a href="/Rest/GET/Help/ExcelImportMethod" target="_blank">Example usage of REST API using Excel</a></b>
+                            <br /><b><a href="/Rest/GET/Content/RestJavascript.html" target="_blank">Example usage of REST API using javascript</a></b>. You can download a copy of the web page <a href="/Rest/GET/Content/RestJavascript.html" download="">here</a>
+                            <br /><b><a href="https://github.com/anguswg-ucsb/cdsspy" target="_blank">Example usage of REST API using Python</a></b>
+                            <br /><b><a href="https://github.com/anguswg-ucsb/cdssr" target="_blank">Example usage of REST API using R</a></b>
+                            <br /><br /><b>See the <a href="https://github.com/OpenCDSS/cdss-rest-services-examples" target="_blank">OpenCDSS repository</a> for examples how to use various tools and technologies with the HydroBase REST web services.</b>
+                        </p>
+                        <p>
+                            The CDSS REST service limits both the number of calls a user can make on a given day,
+                            as well as the total number of data rows that can be retrieved.
+                            This service allows both anonymous and registered users.
+                        </p>
+                        <p>There is also a limit for how many records can be returned in a single request, which is 500,000. Multiple requests are necessary to get more records.</p>
+                        <p>The default number of records returned in a request is 50,000. To return more rows per request (up to 500,000), specify the "pageSize" parameter in the URL.</p>
+                        <p>
+                            <b>Anonymous Users:</b> anonymous users are limited to 1,000 calls per day and 600,000 rows of data.
+                        </p>
+                        <p>
+                            <b>Registered Users:</b> to sign up for an API Key/token:
+                            <ol>
+                                <li>
+                                    Go <a href="https://dwr.state.co.us/Portal/" target="_blank" class="btn btn-primary btn-sm">here</a> to sign up for an account through the DWR portal
+                                </li>
+                                <li>Once signed up and signed in, follow <a href="https://dwr.state.co.us/Portal/Dwr/WebServiceManager" target="_blank" class="btn btn-primary btn-sm">this link</a> to find your API Key/token or to request a limit increase</li>
+                            </ol>
+                            You must then include the API Key/token with the data request, which you can do in either of two ways (examples are if the API key is "B9xxxxx-xxxx-4D47-y"):
+                        </p>
+                        <ol>
+                            <li>
+                                Request Header: programmers may add the API Key to the http request header.
+                                This is the syntax for the custom header:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>Token: B9xxxxx-xxxx-4D47-y</i></b>
+                                <br>&nbsp;&nbsp;or
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>ApiKey: B9xxxxx-xxxx-4D47-y</i></b>
+                            </li>
+                            <li>
+                                URL argument: a user may instead add the API Key directly to the URL as an argument.
+                                Example:<br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>http://dwrwebapi/api/v2/admincalls/active?apiKey=B9xxxxx-xxxx-4D47-y</i></b>
+                                <br>&nbsp;&nbsp;or when combined with other arguments:
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;<b><i>http://dwrwebapi/api/v2/admincalls/active?callId=1&apiKey=B9xxxxx-xxxx-4D47-y</i></b>
+                            </li>
+                        </ol>
+                        </ol>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="urlsyntax" style="width:100%; overflow:hidden">
+                        <h2>URL Syntax</h2>
+                        <p>
+                            The user specifies filter parameters by entering them in the arguments section of the URL.
+                        </p>
+                        <ul>
+                            <li>Each argument key is followed by an equal sign, then the value (Ex. wellName=thiswellname)</li>
+                            <li>
+                                Each argument value should be properly URL encoded (the url generators do the encoding for you), otherwise you may get unexpected results
+                                <ul>
+                                    <li>
+                                        You can test whether an argument needs to be URL encoded below<br />
+                                        Input value: <input id="encodeCheckerInput" style="width: 400px" type="text" /><br />
+                                        Encoded value: <input style="width: 400px;" disabled="disabled" type="text" id="urlEncodedOutput" />
+                                        <script>
+                                            function urlEncodeAndSetOutput() {
+                                                $("#urlEncodedOutput").val(encodeURIComponent($("#encodeCheckerInput").val()));
+                                            }
+                                            $("#encodeCheckerInput").on("input", urlEncodeAndSetOutput);
+                                            $("#encodeCheckerInput").change(urlEncodeAndSetOutput);
+                                        </script>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Multiple arguments are separated by ampersands (&) (Ex. wellName=thiswellname&division=5)</li>
+                            <li>The order of the arguments does not matter</li>
+                            <li>If you misspell an argument name, you will be sent back an error and the query won't run</li>
+                            <li>Make argument strings as detailed as possible to reduce the number of rows returned to just what you need</li>
+                        </ul>
+                        <h4>
+                            The following ‘wildcards’ can be included in the argument string.
+                        </h4>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th style="width:10%">Syntax</th>
+                                <th style="width:30%">Description</th>
+                                <th style="width:30%">Example</th>
+                                <th style="width:30%">Returned By Example</th>
+                            </tr>
+                            <tr>
+                                <td>min-</td>
+                                <td>Allows dates and numeric field values to return data that meets a ‘minimum’ value threshold</td>
+                                <td>min-measurementDate=1/1/2000</td>
+                                <td>All time series data with dates greater than or equal to 1/1/2000</td>
+                            </tr>
+                            <tr>
+                                <td>max-</td>
+                                <td>Allows dates and numeric field values to return data that meets a ‘maximum’ value threshold</td>
+                                <td>max-wellDepth=50</td>
+                                <td>all wells with a well depth less than or equal to 50 feet</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>* is a wildcard, can be placed at the beginning of a string value, the end of the value, or both</td>
+                                <td><ol><li>wellName=AB*</li><li>wellName=*AB</li><li>wellName=*AB*</li></ol></td>
+                                <td><ol><li>all wells with name beginning with AB</li><li>all wells with a name ending with AB</li><li>all wells with a name containing AB</li></ol></td>
+                            </tr>
+                        </table>
+                        <h4>
+                            The following are optional additional arguments common to all queries.
+                        </h4>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th style="width:20%">Syntax</th>
+                                <th style="width:20%">Type</th>
+                                <th style="width:60%">Description</th>
+                            </tr>
+                            <tr>
+                                <td>format</td>
+                                <td>string</td>
+                                <td>
+                                    To return data as Json, XML, CSV  (comma separated values), TSV (tab separated values), or GeoJson, add format to the argument string as follows:
+                                    <ul><li><i>format=json</i></li><li><i>format=xml</i></li><li><i>format=csv</i></li><li><i>format=tsv</i></li><li><i>format=geo</i></li></ul><b>Note: GeoJson is only available on certain datasets!</b>
+                                    <p>If you want an empty ResponseData object instead of an error when no data is available, add "forced" to the end of the format (Ex: <i>format=jsonforced</i>)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>pageSize</td>
+                                <td>integer</td>
+                                <td>
+                                    Maximum number of rows to return (or up to remaining user available rows for the day, whichever is less).
+                                    Default page size = 50,000
+                                    Max page size = 500,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>pageIndex</td>
+                                <td>integer</td>
+                                <td>
+                                    If the page size is less than the number of rows the query would have returned, page index can be used to tell the server which rows to return.
+                                    Ex: the query returns 20,000 rows, but the user only wants 50 rows starting at page 3 (the 150th record - 200th record).
+                                    The user would enter <i>pageSize=50&amp;pageIndex=3</i>.
+                                    Default page index = 1.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>encoding</td>
+                                <td>string</td>
+                                <td>
+                                    If a user has no control over the headers being sent and would like to encode using "gzip" or "deflate" compression to save network bandwidth.
+                                    To use gzip encoding the user would enter <i>encoding=gzip</i>. This overrides the "Accept-Encoding" header's value (if there is one)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>fields</td>
+                                <td>string</td>
+                                <td>
+                                    If a user knows that they only want a certain set of fields in the response, they can enter a comma delimited list of fields, and only those will be returned
+                                    (in CSV format, this will set the order of fields in the resulting CSV output as well). For example, in the Active Admin Calls service, a user could enter
+                                    <i>fields=callNumber,dateTimeSet</i> to only retrieve those two fields.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>dateFormat</td>
+                                <td>string</td>
+                                <td>
+                                    If a user is needing the dates to be in a certain format to be parsed by their code/program, they can specify a few different formats for the dates in the response.
+                                    The options are:
+                                    <ul>
+
+                                            <li><i>dateFormat=spaceSeparated</i> (Ex: 2026-10-30 12:25:05.5835663-06:00)</li>
+                                            <li><i>dateFormat=tSeparated</i> (Ex: 2026-10-30T12:25:05.5835663-06:00)</li>
+                                            <li><i>dateFormat=spaceSepNoTimeZone</i> (Ex: 2026-10-30 12:25:05.5835663)</li>
+                                            <li><i>dateFormat=tSepNoTimeZone</i> (Ex: 2026-10-30T12:25:05.5835663)</li>
+                                            <li><i>dateFormat=spaceSepToSeconds</i> (Ex: 2026-10-30 12:25:05)</li>
+                                            <li><i>dateFormat=tSepToSeconds</i> (Ex: 2026-10-30T12:25:05)</li>
+                                            <li><i>dateFormat=spaceSepToMinutes</i> (Ex: 2026-10-30 12:25)</li>
+                                            <li><i>dateFormat=tSepToMinutes</i> (Ex: 2026-10-30T12:25)</li>
+                                            <li><i>dateFormat=dateOnly</i> (Ex: 2026-10-30)</li>
+                                            <li><i>dateFormat=timeOnly</i> (Ex: 12:25:05.5835663-06:00)</li>
+                                            <li><i>dateFormat=timeOnlyNoTimeZone</i> (Ex: 12:25:05.5835663)</li>
+                                            <li><i>dateFormat=timeOnlyToSeconds</i> (Ex: 12:25:05)</li>
+                                            <li><i>dateFormat=timeOnlyToMinutes</i> (Ex: 12:25)</li>
+                                    </ul>
+                                    If importing into Excel or Google Sheets, the "spaceSeparated" option works the best.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="responseerror" style="width:100%; overflow:hidden">
+                        <h2>Response Status and Error Codes</h2>
+                        <p>
+                            The CDSS REST service returns data through an HTTP get command.
+                            Each response contains an HTTP Status Code.
+                            It is important to check the status code to understand the response from the service.
+                        </p>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th style="width:20%">HTTP Response Status</th>
+                                <th style="width:30%">Error Code</th>
+                                <th style="width:50%">Description</th>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td>Ok</td>
+                                <td>The request was successfully executed</td>
+                            </tr>
+                            <tr>
+                                <td>400</td>
+                                <td>Bad Request</td>
+                                <td>An error happened during the data query. A message should be returned that explains the error.</td>
+                            </tr>
+                            <tr>
+                                <td>403</td>
+                                <td>Forbidden</td>
+                                <td>
+                                    This error happens when the user is being blocked by the service.
+                                    This is typical when the user has exceeded either their daily data limit, or number of allowable data rows.
+                                    These limit values are reset daily, allowing the user to resume the following day.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>404</td>
+                                <td>Not Found</td>
+                                <td>The query was successfully executed, but returned no results.</td>
+                            </tr>
+                            <tr>
+                                <td>500</td>
+                                <td>Internal_Server_Error</td>
+                                <td>
+                                    This means there was an error with the service itself, not the query.
+                                    DWR support team is usually notified right away and will resolve the issue.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>502</td>
+                                <td>Connection_Failed</td>
+                                <td>The service was unavailable</td>
+                            </tr>
+                            <tr>
+                                <td>503</td>
+                                <td>Server_Unavailable </td>
+                                <td>
+                                    This error means the service is currently down.
+                                    Possible conditions include maintenance, overload or power failure.
+                                    The system should be back online shortly.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="customheaders" style="width:100%; overflow:hidden">
+                        <h2>Custom Response Headers</h2>
+                        <p>
+                            HTTP response headers tell you about the returned message.
+                            In addition to standard http headers, DWR adds the following
+                            custom headers to explain data results and access limitations as explained below.
+                        </p>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th style="width:20%">Header Name</th>
+                                <th style="width:20%">Value Type</th>
+                                <th style="width:60%">Description</th>
+                            </tr>
+                            <tr>
+                                <td>X-Result-Count</td>
+                                <td>integer</td>
+                                <td>Number of data rows returned</td>
+                            </tr>
+                            <tr>
+                                <td>X-Rate-Row-Limit</td>
+                                <td>integer</td>
+                                <td>Maximum number of data rows current user is allotted on a daily basis</td>
+                            </tr>
+                            <tr>
+                                <td>X-Rate-Row-Remaining</td>
+                                <td>integer</td>
+                                <td>Number of data rows that can still be returned for the current day</td>
+                            </tr>
+                            <tr>
+                                <td>X-Rate-Request-Limit</td>
+                                <td>integer</td>
+                                <td>Maximum number of call attempts the user is allotted on a daily basis</td>
+                            </tr>
+                            <tr>
+                                <td>X-Rate-Request-Remaining</td>
+                                <td>integer</td>
+                                <td>Number of calls the user may still make for the current day</td>
+                            </tr>
+                            <tr>
+                                <td>X-Rate-Reset-Date</td>
+                                <td>date</td>
+                                <td>Date when the number of calls used and rows returned are reset to zero</td>
+                            </tr>
+                            <tr>
+                                <td>X-Version-Number</td>
+                                <td>string</td>
+                                <td>The current service version number at the time of the request</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="responseformat" style="width:100%; overflow:hidden">
+                        
+
+<h2>Response Data Formats</h2>
+<p>
+    Each successful data search will return a complex object with the following elements:
+</p>
+<table class="table table-bordered">
+    <tr>
+        <th style="width:30%">Field</th>
+        <th style="width:15%">Type</th>
+        <th style="width:55%">Description</th>
+    </tr>
+    <tr>
+        <td>PageCount</td>
+        <td>integer</td>
+        <td>
+            If the query results would have been greater than the page size (either default or defined),
+            this number reflects the total number of pages the query could return
+        </td>
+    </tr>
+    <tr>
+        <td>PageNumber</td>
+        <td>integer</td>
+        <td>
+            If pageIndex is defined, returns the selected page index, otherwise 1
+        </td>
+    </tr>
+    <tr>
+        <td>ResultCount</td>
+        <td>integer</td>
+        <td>
+            Number of records returned
+        </td>
+    </tr>
+    <tr>
+        <td>ResultDateTime</td>
+        <td>date/time</td>
+        <td>
+            Date and time the of the request
+        </td>
+    </tr>
+</table>
+<p>Depending on the format requested, the rest of the data will be as follows:<br/><b>NOTE: By default, neither json nor xml formats have extra white space in them, as it takes up extra space and more data in the response.
+    The jsonprettyprint option is available when testing the service to have a more human-readable version of the response, but it is not recommended
+    when actually using the service in software.</b></p>
+
+<ul id="formatNavPills" class="nav nav-pills nav-justified" role="tablist" style="width: 100%">
+    <li role="presentation" class="active">
+        <a href="#jsonxml" role="tab" data-toggle="pill">Json and Xml</a>
+    </li>
+    <li role="presentation">
+        <a href="#csv" role="tab" data-toggle="pill">CSV</a>
+    </li>
+    <li role="presentation">
+        <a href="#geojson" role="tab" data-toggle="pill">GeoJson</a>
+    </li>
+</ul>
+<style>
+    .map {
+        height: 600px;
+        width: 100%;
+    }
+    .nav [role=presentation]:not(.active) {
+        border: 1px solid gray;
+        border-radius: 4px;
+        background-color: lightgray;
+    }
+    [role=tablist] li.active {
+        color: #fff;
+        background-color: #4c33b7;
+        border-radius: 4px;
+    }
+    .nav [role=presentation] * {
+        background-color: transparent !important;
+    }
+    .nav [role=presentation].active * {
+        border: none !important;
+    }
+    @media (min-width: 768px) {
+        .nav [role=presentation]:not(.active) + [role=presentation]:not(.active) {
+            border-left: none;
+        }
+    }
+    [role=tablist]:not(#apiNavPills) > li:not(.active):hover, [role=tablist]:not(#apiNavPills) > li:not(.active):focus {
+        background-color: grey;
+    }
+    [role=tablist] > li:not(.active):hover > a, [role=tablist] > li:not(.active):focus > a {
+        color: white;
+    }
+    .scrollabletextbox {
+        max-height: 400px;
+        width: 100%;
+        overflow-y: scroll;
+        border-style: groove;
+        white-space: pre-wrap
+    }
+
+    .csv {
+        white-space: pre
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tab-content">
+            
+            <div role="tabpanel" class="tab-pane active" id="jsonxml" style="width: 100%; overflow: hidden">
+                <p>
+                    Json and Xml return objects will also contain a List of type &lt;dataset model&gt; for the given query.
+                    <br>The list's name in the complex return object will be "ResultList"
+                </p>
+                <h4>Json</h4>
+                <p class="scrollabletextbox">{&quot;PageNumber&quot;:1,&quot;PageCount&quot;:60,&quot;ResultCount&quot;:2,&quot;ResultDateTime&quot;:&quot;2026-10-30T12:25:05.5835663-06:00&quot;,&quot;ResultList&quot;:[{&quot;callNumber&quot;:16596,&quot;callType&quot;:&quot;UPSTREAM JUNIOR CALL&quot;,&quot;dateTimeSet&quot;:&quot;2015-05-04T08:00:00&quot;,&quot;dateTimeReleased&quot;:null,&quot;waterSourceName&quot;:&quot;SAN FRANCISCO CREEK&quot;,&quot;locationWdid&quot;:&quot;2400583&quot;,&quot;locationWdidStreammile&quot;:4.15,&quot;locationStructureName&quot;:&quot;SAN FRANCISCO D&quot;,&quot;priorityWdid&quot;:&quot;2400583&quot;,&quot;priorityStructureName&quot;:&quot;SAN FRANCISCO D&quot;,&quot;priorityAdminNumber&quot;:3804.00000,&quot;priorityOrderNumber&quot;:0,&quot;priorityDate&quot;:&quot;1860-05-31T00:00:00&quot;,&quot;priorityNumber&quot;:&quot;14&quot;,&quot;boundingWdid&quot;:null,&quot;boundingStructureName&quot;:null,&quot;setComments&quot;:null,&quot;releaseComment&quot;:null,&quot;division&quot;:3,&quot;locationStructureLatitude&quot;:37.100937,&quot;locationStructureLongitude&quot;:-105.345769,&quot;boundingStructureLatitude&quot;:null,&quot;boundingStructureLongitude&quot;:null,&quot;modified&quot;:&quot;2015-05-04T09:48:08.54&quot;,&quot;moreInformation&quot;:&quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596&quot;},{&quot;callNumber&quot;:16597,&quot;callType&quot;:&quot;CALL&quot;,&quot;dateTimeSet&quot;:&quot;2015-05-04T08:00:00&quot;,&quot;dateTimeReleased&quot;:null,&quot;waterSourceName&quot;:&quot;CULEBRA CREEK&quot;,&quot;locationWdid&quot;:&quot;2400581&quot;,&quot;locationWdidStreammile&quot;:17.14,&quot;locationStructureName&quot;:&quot;SAN ACACIO D&quot;,&quot;priorityWdid&quot;:&quot;2400522&quot;,&quot;priorityStructureName&quot;:&quot;CERRO D&quot;,&quot;priorityAdminNumber&quot;:2891.00000,&quot;priorityOrderNumber&quot;:0,&quot;priorityDate&quot;:&quot;1857-11-30T00:00:00&quot;,&quot;priorityNumber&quot;:&quot;11&quot;,&quot;boundingWdid&quot;:null,&quot;boundingStructureName&quot;:null,&quot;setComments&quot;:null,&quot;releaseComment&quot;:null,&quot;division&quot;:3,&quot;locationStructureLatitude&quot;:37.202413,&quot;locationStructureLongitude&quot;:-105.492071,&quot;boundingStructureLatitude&quot;:null,&quot;boundingStructureLongitude&quot;:null,&quot;modified&quot;:&quot;2015-05-04T12:02:11.463&quot;,&quot;moreInformation&quot;:&quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597&quot;}]}</p>
+                <h4>Json pretty print</h4>
+                <p class="scrollabletextbox">{
+  &quot;PageNumber&quot;: 1,
+  &quot;PageCount&quot;: 60,
+  &quot;ResultCount&quot;: 2,
+  &quot;ResultDateTime&quot;: &quot;2026-10-30T12:25:05.5835663-06:00&quot;,
+  &quot;ResultList&quot;: [
+    {
+      &quot;callNumber&quot;: 16596,
+      &quot;callType&quot;: &quot;UPSTREAM JUNIOR CALL&quot;,
+      &quot;dateTimeSet&quot;: &quot;2015-05-04T08:00:00&quot;,
+      &quot;dateTimeReleased&quot;: null,
+      &quot;waterSourceName&quot;: &quot;SAN FRANCISCO CREEK&quot;,
+      &quot;locationWdid&quot;: &quot;2400583&quot;,
+      &quot;locationWdidStreammile&quot;: 4.15,
+      &quot;locationStructureName&quot;: &quot;SAN FRANCISCO D&quot;,
+      &quot;priorityWdid&quot;: &quot;2400583&quot;,
+      &quot;priorityStructureName&quot;: &quot;SAN FRANCISCO D&quot;,
+      &quot;priorityAdminNumber&quot;: 3804.00000,
+      &quot;priorityOrderNumber&quot;: 0,
+      &quot;priorityDate&quot;: &quot;1860-05-31T00:00:00&quot;,
+      &quot;priorityNumber&quot;: &quot;14&quot;,
+      &quot;boundingWdid&quot;: null,
+      &quot;boundingStructureName&quot;: null,
+      &quot;setComments&quot;: null,
+      &quot;releaseComment&quot;: null,
+      &quot;division&quot;: 3,
+      &quot;locationStructureLatitude&quot;: 37.100937,
+      &quot;locationStructureLongitude&quot;: -105.345769,
+      &quot;boundingStructureLatitude&quot;: null,
+      &quot;boundingStructureLongitude&quot;: null,
+      &quot;modified&quot;: &quot;2015-05-04T09:48:08.54&quot;,
+      &quot;moreInformation&quot;: &quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596&quot;
+    },
+    {
+      &quot;callNumber&quot;: 16597,
+      &quot;callType&quot;: &quot;CALL&quot;,
+      &quot;dateTimeSet&quot;: &quot;2015-05-04T08:00:00&quot;,
+      &quot;dateTimeReleased&quot;: null,
+      &quot;waterSourceName&quot;: &quot;CULEBRA CREEK&quot;,
+      &quot;locationWdid&quot;: &quot;2400581&quot;,
+      &quot;locationWdidStreammile&quot;: 17.14,
+      &quot;locationStructureName&quot;: &quot;SAN ACACIO D&quot;,
+      &quot;priorityWdid&quot;: &quot;2400522&quot;,
+      &quot;priorityStructureName&quot;: &quot;CERRO D&quot;,
+      &quot;priorityAdminNumber&quot;: 2891.00000,
+      &quot;priorityOrderNumber&quot;: 0,
+      &quot;priorityDate&quot;: &quot;1857-11-30T00:00:00&quot;,
+      &quot;priorityNumber&quot;: &quot;11&quot;,
+      &quot;boundingWdid&quot;: null,
+      &quot;boundingStructureName&quot;: null,
+      &quot;setComments&quot;: null,
+      &quot;releaseComment&quot;: null,
+      &quot;division&quot;: 3,
+      &quot;locationStructureLatitude&quot;: 37.202413,
+      &quot;locationStructureLongitude&quot;: -105.492071,
+      &quot;boundingStructureLatitude&quot;: null,
+      &quot;boundingStructureLongitude&quot;: null,
+      &quot;modified&quot;: &quot;2015-05-04T12:02:11.463&quot;,
+      &quot;moreInformation&quot;: &quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597&quot;
+    }
+  ]
+}</p>
+                <h4>Xml</h4>
+                <p class="scrollabletextbox">&lt;ResponseDataOfAdminCall xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;PageNumber&gt;1&lt;/PageNumber&gt;&lt;PageCount&gt;60&lt;/PageCount&gt;&lt;ResultCount&gt;2&lt;/ResultCount&gt;&lt;ResultList&gt;&lt;AdminCall&gt;&lt;callNumber&gt;16596&lt;/callNumber&gt;&lt;callType&gt;UPSTREAM JUNIOR CALL&lt;/callType&gt;&lt;dateTimeSet&gt;2015-05-04T08:00:00&lt;/dateTimeSet&gt;&lt;dateTimeReleased xsi:nil=&quot;true&quot; /&gt;&lt;waterSourceName&gt;SAN FRANCISCO CREEK&lt;/waterSourceName&gt;&lt;locationWdid&gt;2400583&lt;/locationWdid&gt;&lt;locationWdidStreammile&gt;4.15&lt;/locationWdidStreammile&gt;&lt;locationStructureName&gt;SAN FRANCISCO D&lt;/locationStructureName&gt;&lt;priorityWdid&gt;2400583&lt;/priorityWdid&gt;&lt;priorityStructureName&gt;SAN FRANCISCO D&lt;/priorityStructureName&gt;&lt;priorityAdminNumber&gt;3804.00000&lt;/priorityAdminNumber&gt;&lt;priorityOrderNumber&gt;0&lt;/priorityOrderNumber&gt;&lt;priorityDate&gt;1860-05-31T00:00:00&lt;/priorityDate&gt;&lt;priorityNumber&gt;14&lt;/priorityNumber&gt;&lt;division&gt;3&lt;/division&gt;&lt;locationStructureLatitude&gt;37.100937&lt;/locationStructureLatitude&gt;&lt;locationStructureLongitude&gt;-105.345769&lt;/locationStructureLongitude&gt;&lt;boundingStructureLatitude xsi:nil=&quot;true&quot; /&gt;&lt;boundingStructureLongitude xsi:nil=&quot;true&quot; /&gt;&lt;modified&gt;2015-05-04T09:48:08.54&lt;/modified&gt;&lt;moreInformation&gt;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596&lt;/moreInformation&gt;&lt;/AdminCall&gt;&lt;AdminCall&gt;&lt;callNumber&gt;16597&lt;/callNumber&gt;&lt;callType&gt;CALL&lt;/callType&gt;&lt;dateTimeSet&gt;2015-05-04T08:00:00&lt;/dateTimeSet&gt;&lt;dateTimeReleased xsi:nil=&quot;true&quot; /&gt;&lt;waterSourceName&gt;CULEBRA CREEK&lt;/waterSourceName&gt;&lt;locationWdid&gt;2400581&lt;/locationWdid&gt;&lt;locationWdidStreammile&gt;17.14&lt;/locationWdidStreammile&gt;&lt;locationStructureName&gt;SAN ACACIO D&lt;/locationStructureName&gt;&lt;priorityWdid&gt;2400522&lt;/priorityWdid&gt;&lt;priorityStructureName&gt;CERRO D&lt;/priorityStructureName&gt;&lt;priorityAdminNumber&gt;2891.00000&lt;/priorityAdminNumber&gt;&lt;priorityOrderNumber&gt;0&lt;/priorityOrderNumber&gt;&lt;priorityDate&gt;1857-11-30T00:00:00&lt;/priorityDate&gt;&lt;priorityNumber&gt;11&lt;/priorityNumber&gt;&lt;division&gt;3&lt;/division&gt;&lt;locationStructureLatitude&gt;37.202413&lt;/locationStructureLatitude&gt;&lt;locationStructureLongitude&gt;-105.492071&lt;/locationStructureLongitude&gt;&lt;boundingStructureLatitude xsi:nil=&quot;true&quot; /&gt;&lt;boundingStructureLongitude xsi:nil=&quot;true&quot; /&gt;&lt;modified&gt;2015-05-04T12:02:11.463&lt;/modified&gt;&lt;moreInformation&gt;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597&lt;/moreInformation&gt;&lt;/AdminCall&gt;&lt;/ResultList&gt;&lt;/ResponseDataOfAdminCall&gt;</p>
+                <h4>Xml pretty print</h4>
+                <p class="scrollabletextbox">&lt;ResponseDataOfAdminCall xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+  &lt;PageNumber&gt;1&lt;/PageNumber&gt;
+  &lt;PageCount&gt;60&lt;/PageCount&gt;
+  &lt;ResultCount&gt;2&lt;/ResultCount&gt;
+  &lt;ResultList&gt;
+    &lt;AdminCall&gt;
+      &lt;callNumber&gt;16596&lt;/callNumber&gt;
+      &lt;callType&gt;UPSTREAM JUNIOR CALL&lt;/callType&gt;
+      &lt;dateTimeSet&gt;2015-05-04T08:00:00&lt;/dateTimeSet&gt;
+      &lt;dateTimeReleased
+        xsi:nil=&quot;true&quot; /&gt;
+      &lt;waterSourceName&gt;SAN FRANCISCO CREEK&lt;/waterSourceName&gt;
+      &lt;locationWdid&gt;2400583&lt;/locationWdid&gt;
+      &lt;locationWdidStreammile&gt;4.15&lt;/locationWdidStreammile&gt;
+      &lt;locationStructureName&gt;SAN FRANCISCO D&lt;/locationStructureName&gt;
+      &lt;priorityWdid&gt;2400583&lt;/priorityWdid&gt;
+      &lt;priorityStructureName&gt;SAN FRANCISCO D&lt;/priorityStructureName&gt;
+      &lt;priorityAdminNumber&gt;3804.00000&lt;/priorityAdminNumber&gt;
+      &lt;priorityOrderNumber&gt;0&lt;/priorityOrderNumber&gt;
+      &lt;priorityDate&gt;1860-05-31T00:00:00&lt;/priorityDate&gt;
+      &lt;priorityNumber&gt;14&lt;/priorityNumber&gt;
+      &lt;division&gt;3&lt;/division&gt;
+      &lt;locationStructureLatitude&gt;37.100937&lt;/locationStructureLatitude&gt;
+      &lt;locationStructureLongitude&gt;-105.345769&lt;/locationStructureLongitude&gt;
+      &lt;boundingStructureLatitude
+        xsi:nil=&quot;true&quot; /&gt;
+      &lt;boundingStructureLongitude
+        xsi:nil=&quot;true&quot; /&gt;
+      &lt;modified&gt;2015-05-04T09:48:08.54&lt;/modified&gt;
+      &lt;moreInformation&gt;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596&lt;/moreInformation&gt;
+    &lt;/AdminCall&gt;
+    &lt;AdminCall&gt;
+      &lt;callNumber&gt;16597&lt;/callNumber&gt;
+      &lt;callType&gt;CALL&lt;/callType&gt;
+      &lt;dateTimeSet&gt;2015-05-04T08:00:00&lt;/dateTimeSet&gt;
+      &lt;dateTimeReleased
+        xsi:nil=&quot;true&quot; /&gt;
+      &lt;waterSourceName&gt;CULEBRA CREEK&lt;/waterSourceName&gt;
+      &lt;locationWdid&gt;2400581&lt;/locationWdid&gt;
+      &lt;locationWdidStreammile&gt;17.14&lt;/locationWdidStreammile&gt;
+      &lt;locationStructureName&gt;SAN ACACIO D&lt;/locationStructureName&gt;
+      &lt;priorityWdid&gt;2400522&lt;/priorityWdid&gt;
+      &lt;priorityStructureName&gt;CERRO D&lt;/priorityStructureName&gt;
+      &lt;priorityAdminNumber&gt;2891.00000&lt;/priorityAdminNumber&gt;
+      &lt;priorityOrderNumber&gt;0&lt;/priorityOrderNumber&gt;
+      &lt;priorityDate&gt;1857-11-30T00:00:00&lt;/priorityDate&gt;
+      &lt;priorityNumber&gt;11&lt;/priorityNumber&gt;
+      &lt;division&gt;3&lt;/division&gt;
+      &lt;locationStructureLatitude&gt;37.202413&lt;/locationStructureLatitude&gt;
+      &lt;locationStructureLongitude&gt;-105.492071&lt;/locationStructureLongitude&gt;
+      &lt;boundingStructureLatitude
+        xsi:nil=&quot;true&quot; /&gt;
+      &lt;boundingStructureLongitude
+        xsi:nil=&quot;true&quot; /&gt;
+      &lt;modified&gt;2015-05-04T12:02:11.463&lt;/modified&gt;
+      &lt;moreInformation&gt;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597&lt;/moreInformation&gt;
+    &lt;/AdminCall&gt;
+  &lt;/ResultList&gt;
+&lt;/ResponseDataOfAdminCall&gt;</p>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="csv" style="width: 100%; overflow: hidden">
+                <p>CSV will return the above object and a List of type &lt;dataset model&gt; for the given query as comma separated values.</p>
+                <ul>
+                    <li>The first row will contain the names of the above fields (PageCount, PageNumber, ResultCount, and ResultList)</li>
+                    <li>The second row will contain the values in accordance with the above fields</li>
+                    <li>The third row will contain the names of each field within the dataset model object</li>
+                    <li>All filled rows after the third row will contain a record (the cell values will correspond with the above named field for the current record)</li>
+                </ul>
+                <h4>CSV</h4>
+                <p class="scrollabletextbox csv">PageNumber,PageCount,ResultCount,ResultDateTime
+1,60,2,2026-10-30T12:25:05.5835663-06:00
+callNumber,callType,dateTimeSet,dateTimeReleased,waterSourceName,locationWdid,locationWdidStreammile,locationStructureName,priorityWdid,priorityStructureName,priorityAdminNumber,priorityOrderNumber,priorityDate,priorityNumber,boundingWdid,boundingStructureName,setComments,releaseComment,division,locationStructureLatitude,locationStructureLongitude,boundingStructureLatitude,boundingStructureLongitude,modified,moreInformation
+16596,UPSTREAM JUNIOR CALL,2015-05-04T08:00:00.0000000,,SAN FRANCISCO CREEK,2400583,4.15,SAN FRANCISCO D,2400583,SAN FRANCISCO D,3804.00000,0,1860-05-31T00:00:00.0000000,14,,,,,3,37.100937,-105.345769,,,2015-05-04T09:48:08.5400000,https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596
+16597,CALL,2015-05-04T08:00:00.0000000,,CULEBRA CREEK,2400581,17.14,SAN ACACIO D,2400522,CERRO D,2891.00000,0,1857-11-30T00:00:00.0000000,11,,,,,3,37.202413,-105.492071,,,2015-05-04T12:02:11.4630000,https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597</p>
+                <h4>CSV (formatted as a table)</h4>
+                <div style="height: 100px; overflow: auto; height: 400px;">
+                    <table class="table table-bordered">
+                            
+                                <tr>
+                                        
+                                            <td>PageNumber</td>
+                                        
+                                            <td>PageCount</td>
+                                        
+                                            <td>ResultCount</td>
+                                        
+                                            <td>ResultDateTime</td>
+                                                                            <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                        
+                                            <td>1</td>
+                                        
+                                            <td>60</td>
+                                        
+                                            <td>2</td>
+                                        
+                                            <td>2026-10-30T12:25:05.5835663-06:00</td>
+                                                                            <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                </tr>
+                            
+                            
+                                <tr>
+                                        
+                                            <td>callNumber</td>
+                                        
+                                            <td>callType</td>
+                                        
+                                            <td>dateTimeSet</td>
+                                        
+                                            <td>dateTimeReleased</td>
+                                        
+                                            <td>waterSourceName</td>
+                                        
+                                            <td>locationWdid</td>
+                                        
+                                            <td>locationWdidStreammile</td>
+                                        
+                                            <td>locationStructureName</td>
+                                        
+                                            <td>priorityWdid</td>
+                                        
+                                            <td>priorityStructureName</td>
+                                        
+                                            <td>priorityAdminNumber</td>
+                                        
+                                            <td>priorityOrderNumber</td>
+                                        
+                                            <td>priorityDate</td>
+                                        
+                                            <td>priorityNumber</td>
+                                        
+                                            <td>boundingWdid</td>
+                                        
+                                            <td>boundingStructureName</td>
+                                        
+                                            <td>setComments</td>
+                                        
+                                            <td>releaseComment</td>
+                                        
+                                            <td>division</td>
+                                        
+                                            <td>locationStructureLatitude</td>
+                                        
+                                            <td>locationStructureLongitude</td>
+                                        
+                                            <td>boundingStructureLatitude</td>
+                                        
+                                            <td>boundingStructureLongitude</td>
+                                        
+                                            <td>modified</td>
+                                        
+                                            <td>moreInformation</td>
+                                                                    </tr>
+                            
+                            
+                                <tr>
+                                        
+                                            <td>16596</td>
+                                        
+                                            <td>UPSTREAM JUNIOR CALL</td>
+                                        
+                                            <td>2015-05-04T08:00:00.0000000</td>
+                                        
+                                            <td></td>
+                                        
+                                            <td>SAN FRANCISCO CREEK</td>
+                                        
+                                            <td>2400583</td>
+                                        
+                                            <td>4.15</td>
+                                        
+                                            <td>SAN FRANCISCO D</td>
+                                        
+                                            <td>2400583</td>
+                                        
+                                            <td>SAN FRANCISCO D</td>
+                                        
+                                            <td>3804.00000</td>
+                                        
+                                            <td>0</td>
+                                        
+                                            <td>1860-05-31T00:00:00.0000000</td>
+                                        
+                                            <td>14</td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td>3</td>
+                                        
+                                            <td>37.100937</td>
+                                        
+                                            <td>-105.345769</td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td>2015-05-04T09:48:08.5400000</td>
+                                        
+                                            <td>https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596</td>
+                                                                    </tr>
+                            
+                            
+                                <tr>
+                                        
+                                            <td>16597</td>
+                                        
+                                            <td>CALL</td>
+                                        
+                                            <td>2015-05-04T08:00:00.0000000</td>
+                                        
+                                            <td></td>
+                                        
+                                            <td>CULEBRA CREEK</td>
+                                        
+                                            <td>2400581</td>
+                                        
+                                            <td>17.14</td>
+                                        
+                                            <td>SAN ACACIO D</td>
+                                        
+                                            <td>2400522</td>
+                                        
+                                            <td>CERRO D</td>
+                                        
+                                            <td>2891.00000</td>
+                                        
+                                            <td>0</td>
+                                        
+                                            <td>1857-11-30T00:00:00.0000000</td>
+                                        
+                                            <td>11</td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td>3</td>
+                                        
+                                            <td>37.202413</td>
+                                        
+                                            <td>-105.492071</td>
+                                        
+                                            <td></td>
+                                        
+                                            <td></td>
+                                        
+                                            <td>2015-05-04T12:02:11.4630000</td>
+                                        
+                                            <td>https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597</td>
+                                                                    </tr>
+                            
+                    </table>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="geojson" style="width: 100%; overflow: hidden">
+                <p>
+                    GeoJson return objects will also contain a GeoJsonFeatureCollection object called "GeoJsonFeatureCollection".
+                    <br>This GeoJsonFeatureCollection and everything within it is valid GeoJson.
+                    <br><br>
+                    <b>
+                        Note: The outer object that holds the GeoJsonFeatureCollection is not valid GeoJson however,
+                        so you will have to extract the GeoJsonFeatureCollection from its parent
+                    </b>
+                </p>
+
+                <h4>GeoJson</h4>
+                <p class="scrollabletextbox">{&quot;PageNumber&quot;:1,&quot;PageCount&quot;:60,&quot;ResultCount&quot;:2,&quot;ResultDateTime&quot;:&quot;2026-10-30T12:25:05.5835663-06:00&quot;,&quot;GeoJsonFeatureCollection&quot;:{&quot;type&quot;:&quot;FeatureCollection&quot;,&quot;features&quot;:[{&quot;type&quot;:&quot;Feature&quot;,&quot;geometry&quot;:{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[-105.345769,37.100937]},&quot;properties&quot;:{&quot;callNumber&quot;:16596,&quot;callType&quot;:&quot;UPSTREAM JUNIOR CALL&quot;,&quot;dateTimeSet&quot;:&quot;2015-05-04T08:00:00&quot;,&quot;dateTimeReleased&quot;:null,&quot;waterSourceName&quot;:&quot;SAN FRANCISCO CREEK&quot;,&quot;locationWdid&quot;:&quot;2400583&quot;,&quot;locationWdidStreammile&quot;:4.15,&quot;locationStructureName&quot;:&quot;SAN FRANCISCO D&quot;,&quot;priorityWdid&quot;:&quot;2400583&quot;,&quot;priorityStructureName&quot;:&quot;SAN FRANCISCO D&quot;,&quot;priorityAdminNumber&quot;:3804.00000,&quot;priorityOrderNumber&quot;:0,&quot;priorityDate&quot;:&quot;1860-05-31T00:00:00&quot;,&quot;priorityNumber&quot;:&quot;14&quot;,&quot;boundingWdid&quot;:null,&quot;boundingStructureName&quot;:null,&quot;setComments&quot;:null,&quot;releaseComment&quot;:null,&quot;division&quot;:3,&quot;locationStructureLatitude&quot;:37.100937,&quot;locationStructureLongitude&quot;:-105.345769,&quot;boundingStructureLatitude&quot;:null,&quot;boundingStructureLongitude&quot;:null,&quot;modified&quot;:&quot;2015-05-04T09:48:08.54&quot;,&quot;moreInformation&quot;:&quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596&quot;}},{&quot;type&quot;:&quot;Feature&quot;,&quot;geometry&quot;:{&quot;type&quot;:&quot;Point&quot;,&quot;coordinates&quot;:[-105.492071,37.202413]},&quot;properties&quot;:{&quot;callNumber&quot;:16597,&quot;callType&quot;:&quot;CALL&quot;,&quot;dateTimeSet&quot;:&quot;2015-05-04T08:00:00&quot;,&quot;dateTimeReleased&quot;:null,&quot;waterSourceName&quot;:&quot;CULEBRA CREEK&quot;,&quot;locationWdid&quot;:&quot;2400581&quot;,&quot;locationWdidStreammile&quot;:17.14,&quot;locationStructureName&quot;:&quot;SAN ACACIO D&quot;,&quot;priorityWdid&quot;:&quot;2400522&quot;,&quot;priorityStructureName&quot;:&quot;CERRO D&quot;,&quot;priorityAdminNumber&quot;:2891.00000,&quot;priorityOrderNumber&quot;:0,&quot;priorityDate&quot;:&quot;1857-11-30T00:00:00&quot;,&quot;priorityNumber&quot;:&quot;11&quot;,&quot;boundingWdid&quot;:null,&quot;boundingStructureName&quot;:null,&quot;setComments&quot;:null,&quot;releaseComment&quot;:null,&quot;division&quot;:3,&quot;locationStructureLatitude&quot;:37.202413,&quot;locationStructureLongitude&quot;:-105.492071,&quot;boundingStructureLatitude&quot;:null,&quot;boundingStructureLongitude&quot;:null,&quot;modified&quot;:&quot;2015-05-04T12:02:11.463&quot;,&quot;moreInformation&quot;:&quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597&quot;}}]}}</p>
+                <h4>GeoJson pretty print</h4>
+                <p class="scrollabletextbox">{
+  &quot;PageNumber&quot;: 1,
+  &quot;PageCount&quot;: 60,
+  &quot;ResultCount&quot;: 2,
+  &quot;ResultDateTime&quot;: &quot;2026-10-30T12:25:05.5835663-06:00&quot;,
+  &quot;GeoJsonFeatureCollection&quot;: {
+    &quot;type&quot;: &quot;FeatureCollection&quot;,
+    &quot;features&quot;: [
+      {
+        &quot;type&quot;: &quot;Feature&quot;,
+        &quot;geometry&quot;: {
+          &quot;type&quot;: &quot;Point&quot;,
+          &quot;coordinates&quot;: [
+            -105.345769,
+            37.100937
+          ]
+        },
+        &quot;properties&quot;: {
+          &quot;callNumber&quot;: 16596,
+          &quot;callType&quot;: &quot;UPSTREAM JUNIOR CALL&quot;,
+          &quot;dateTimeSet&quot;: &quot;2015-05-04T08:00:00&quot;,
+          &quot;dateTimeReleased&quot;: null,
+          &quot;waterSourceName&quot;: &quot;SAN FRANCISCO CREEK&quot;,
+          &quot;locationWdid&quot;: &quot;2400583&quot;,
+          &quot;locationWdidStreammile&quot;: 4.15,
+          &quot;locationStructureName&quot;: &quot;SAN FRANCISCO D&quot;,
+          &quot;priorityWdid&quot;: &quot;2400583&quot;,
+          &quot;priorityStructureName&quot;: &quot;SAN FRANCISCO D&quot;,
+          &quot;priorityAdminNumber&quot;: 3804.00000,
+          &quot;priorityOrderNumber&quot;: 0,
+          &quot;priorityDate&quot;: &quot;1860-05-31T00:00:00&quot;,
+          &quot;priorityNumber&quot;: &quot;14&quot;,
+          &quot;boundingWdid&quot;: null,
+          &quot;boundingStructureName&quot;: null,
+          &quot;setComments&quot;: null,
+          &quot;releaseComment&quot;: null,
+          &quot;division&quot;: 3,
+          &quot;locationStructureLatitude&quot;: 37.100937,
+          &quot;locationStructureLongitude&quot;: -105.345769,
+          &quot;boundingStructureLatitude&quot;: null,
+          &quot;boundingStructureLongitude&quot;: null,
+          &quot;modified&quot;: &quot;2015-05-04T09:48:08.54&quot;,
+          &quot;moreInformation&quot;: &quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596&quot;
+        }
+      },
+      {
+        &quot;type&quot;: &quot;Feature&quot;,
+        &quot;geometry&quot;: {
+          &quot;type&quot;: &quot;Point&quot;,
+          &quot;coordinates&quot;: [
+            -105.492071,
+            37.202413
+          ]
+        },
+        &quot;properties&quot;: {
+          &quot;callNumber&quot;: 16597,
+          &quot;callType&quot;: &quot;CALL&quot;,
+          &quot;dateTimeSet&quot;: &quot;2015-05-04T08:00:00&quot;,
+          &quot;dateTimeReleased&quot;: null,
+          &quot;waterSourceName&quot;: &quot;CULEBRA CREEK&quot;,
+          &quot;locationWdid&quot;: &quot;2400581&quot;,
+          &quot;locationWdidStreammile&quot;: 17.14,
+          &quot;locationStructureName&quot;: &quot;SAN ACACIO D&quot;,
+          &quot;priorityWdid&quot;: &quot;2400522&quot;,
+          &quot;priorityStructureName&quot;: &quot;CERRO D&quot;,
+          &quot;priorityAdminNumber&quot;: 2891.00000,
+          &quot;priorityOrderNumber&quot;: 0,
+          &quot;priorityDate&quot;: &quot;1857-11-30T00:00:00&quot;,
+          &quot;priorityNumber&quot;: &quot;11&quot;,
+          &quot;boundingWdid&quot;: null,
+          &quot;boundingStructureName&quot;: null,
+          &quot;setComments&quot;: null,
+          &quot;releaseComment&quot;: null,
+          &quot;division&quot;: 3,
+          &quot;locationStructureLatitude&quot;: 37.202413,
+          &quot;locationStructureLongitude&quot;: -105.492071,
+          &quot;boundingStructureLatitude&quot;: null,
+          &quot;boundingStructureLongitude&quot;: null,
+          &quot;modified&quot;: &quot;2015-05-04T12:02:11.463&quot;,
+          &quot;moreInformation&quot;: &quot;https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597&quot;
+        }
+      }
+    ]
+  }
+}</p>
+                <div id="map" class="map"></div>
+                <script>
+
+                    var map;
+                    var infowindow;
+                    $(document).ready(function() {
+                        $('#formatNavPills.nav-pills a').on('shown.bs.tab',
+                            function() {
+                                if (map == null) return;
+                                fitBounds(map);
+                                //}
+
+                            });
+                    });
+                    /* Map functions */
+
+                    function initMap() {
+                        var mapCenterLat = 39.7392;
+                        var mapCenterLong = -104.9903;
+
+                        // set up the map
+                        var openStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 19,
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        });
+                        var openTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+                            maxZoom: 17,
+                            attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+                        });
+
+                        map = L.map("map", {
+                            layers: [openStreetMap_Mapnik],
+                            zoomControl: false
+                        }).setView([mapCenterLat, mapCenterLong], 13);
+                        
+                        map.invalidateSize();
+                        map._onResize();
+                        setTimeout(function () {
+                            map.invalidateSize();
+                            map._onResize();
+                        }, 500);
+
+                    }
+                    var mapPoints;
+                    function loadGeoJsonString() {
+                        
+                        var geojson = JSON.parse('{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.345769,37.100937]},"properties":{"callNumber":16596,"callType":"UPSTREAM JUNIOR CALL","dateTimeSet":"2015-05-04T08:00:00","dateTimeReleased":null,"waterSourceName":"SAN FRANCISCO CREEK","locationWdid":"2400583","locationWdidStreammile":4.15,"locationStructureName":"SAN FRANCISCO D","priorityWdid":"2400583","priorityStructureName":"SAN FRANCISCO D","priorityAdminNumber":3804.00000,"priorityOrderNumber":0,"priorityDate":"1860-05-31T00:00:00","priorityNumber":"14","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.100937,"locationStructureLongitude":-105.345769,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2015-05-04T09:48:08.54","moreInformation":"https://dwr.state.co.us/tools/AdministrativeCalls/Details/16596"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-105.492071,37.202413]},"properties":{"callNumber":16597,"callType":"CALL","dateTimeSet":"2015-05-04T08:00:00","dateTimeReleased":null,"waterSourceName":"CULEBRA CREEK","locationWdid":"2400581","locationWdidStreammile":17.14,"locationStructureName":"SAN ACACIO D","priorityWdid":"2400522","priorityStructureName":"CERRO D","priorityAdminNumber":2891.00000,"priorityOrderNumber":0,"priorityDate":"1857-11-30T00:00:00","priorityNumber":"11","boundingWdid":null,"boundingStructureName":null,"setComments":null,"releaseComment":null,"division":3,"locationStructureLatitude":37.202413,"locationStructureLongitude":-105.492071,"boundingStructureLatitude":null,"boundingStructureLongitude":null,"modified":"2015-05-04T12:02:11.463","moreInformation":"https://dwr.state.co.us/tools/AdministrativeCalls/Details/16597"}}]}');
+                        //geojson = geojson.GeoJsonFeatureCollection;
+                        mapPoints = L.geoJson(geojson, {
+                            onEachFeature: function (feature, layer) {
+                                var text = "";
+                                var props = feature.properties;
+                                for (var prop in props) {
+                                    if (props.hasOwnProperty(prop)) {
+                                        var val = props[prop];
+                                        if (val != null)
+                                            text += prop + ": " + val.toString() + "<br>";
+                                    }
+                                }
+                                layer.bindPopup(text);
+                            }
+                        }).addTo(map);
+                        setTimeout(function () { fitBounds(map); }, 500);
+                    }
+
+                    function fitBounds(map) {
+                        var bounds = mapPoints.getBounds();
+                        map.fitBounds(bounds);
+                    }
+
+                    function initialize() {
+                        initMap();
+                        loadGeoJsonString();
+                    }
+
+                    $("[role=tablist] a[href=#geojson]").one("click", function () {
+                        setTimeout(initialize, 150);
+                    });
+                </script>
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="logoutModalLabel" style="float: left">Confirm Log out</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <BR />
+                        </div>
+                        <div class="modal-body">Select "Sign out" below if you are ready to end your current session.</div>
+                        <div class="modal-footer">
+                            <button class="btn-dwr" type="button" onclick="location.href='/Rest/GET/Home/LogoutUser'">Sign out</button>
+                            <button class="btn-dwr" type="button" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modalID" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content" style="font-family: sans-serif; color: black">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="text-align: center"><b>About CDSS REST Services</b></h4>
+                        </div>
+                        <div class="modal-body" style="min-height: 350px">
+                            <h5><b><u>Description</u></b></h5>
+                            <p>
+                                <p>The DWR web services are provided in 'representational state transfer' (REST) format. All of the CDSS datasets. and the Administrative Call Analysis tools, can be queried from HydroBase as 'GET' requests. See the 'Technical Information and Help' tab below.</p>
+<p>For POST services, see <a href="https://docs.google.com/document/d/1AGpUUoqouMPCwoOq0gFsZcU5MAEDpq-9z597StbcDUU/edit">How to Guide - REST Telemetry POST</a>.</p>
+                            </p>
+                            <br />
+                            <h5><b><u>Resources</u></b></h5>
+                            <p>
+                                <a href="https://docs.google.com/document/d/e/2PACX-1vRN35hLVrkXemNrMcrK1Ks4rcT1Ps7xfUI9gUPJ5FOpaaNSp4-iGpOol1s678018NNURkTpM4ZbB6uF/pub#h.8wfpfoa6p5ix" target="_blank">
+                                    User Guide
+                                </a>
+                            </p>
+                            <p>
+                                    <a href="https://dwr.state.co.us/portal/dwr/askdwr?topic_num=5&amp;officeNum=8&amp;subject=Question%20about%20CDSS" target="_blank">
+        Ask DWR: Other Questions About CDSS REST Services
+    </a>
+
+                            </p>
+                            <p>
+                                <a href="#modalID1" role="tab" data-toggle="modal">Subscribe to email list <span class="glyphicon glyphicon-envelope"></span></a>
+                            </p>
+
+<script>
+    const recaptchaWidgetIdAttr = 'recaptcha-widget-id';
+    function captchaCallback() {
+        $('.g-recaptcha').each(function (index, el) {
+            const jEl = $(el);
+            const jForm = jEl.closest('form');
+            const isInvisibleClass = jEl.is('.invisible-recaptcha');
+            const isInvisibleByAttr = jEl.attr('data-size') == 'invisible';
+            const isInvisible = isInvisibleClass || isInvisibleByAttr;
+            const parent = jEl.closest('.recaptcha-parent');
+            let allowSubmit = false;
+            const toggleError = function (showError) {
+                showError = showError === true;
+                allowSubmit = !showError;
+                parent.toggleClass('recaptcha-error', showError);
+                parent.find('.recaptcha-error-message').toggle(showError);
+            };
+            const grecaptchaArgs = {
+                sitekey: isInvisible ? '6LcICqgkAAAAAE0Fbv5JZh_XLsYkffu5LN9OT2qr' : '6LfHrKckAAAAAG9BWMYNFvlD5qFSZF4UKVEj7abN',
+                callback: function (token) {
+                    jForm.find('.g-recaptcha-response').val(token);
+                    if (isInvisible) {
+                        allowSubmit = true;
+                        jForm.submit();
+                    }
+                    else {
+                        toggleError(false);
+                    }
+                }
+            };
+            if (!isInvisible) {
+                grecaptchaArgs['expired-callback'] = function () {
+                    toggleError(true);
+                }
+            }
+            let widgetId = grecaptcha.render(el, grecaptchaArgs, true);
+            jEl.attr(recaptchaWidgetIdAttr, widgetId);
+
+            jForm.submit(function (event) {
+                if (!allowSubmit) {
+                    event.preventDefault();
+                    if (isInvisible) {
+                        grecaptcha.execute(widgetId);
+                    }
+                    else {
+                        alert('Please fill out CAPTCHA');
+                    }
+                }
+                else {
+                    let onRecaptchaSubmitAttr = jEl.attr('on-recaptcha-submit');
+                    if (onRecaptchaSubmitAttr != null && onRecaptchaSubmitAttr.length > 0) {
+                        let func = window[onRecaptchaSubmitAttr];
+                        if (typeof func === 'function') {
+                            func(jForm[0]);
+                        }
+                    }
+                }
+            });
+        });
+    }
+
+    function getRecaptchaWidgetId(el) {
+        return $(el).attr(recaptchaWidgetIdAttr);
+    }
+
+    function getRecaptchaResponse(el) {
+        return grecaptcha.getResponse(getRecaptchaWidgetId(el));
+    }</script>
+<script async="" defer="" src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&amp;render=explicit"></script>
+<style>
+    .grecaptcha-badge {
+        bottom: 30px;
+        z-index: 2060;
+    }
+
+    .g-recaptcha:not(.invisible-recaptcha):not([data-size="invisible"]) {
+        display: inline-block;
+    }
+
+    .recaptcha-error {
+        border: 1px solid red;
+        padding: 3px;
+        margin: 13px;
+    }
+
+    .recaptcha-error-message {
+        color: red;
+    }</style>
+
+
+<div id="modalID1" class="modal fade" role="dialog" style="overflow: visible;">
+    <div class="modal-dialog" style="max-width: 450px">
+        <div class="modal-content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"  onclick="$('#modalID1').modal('toggle');">&times;</button>
+                    <h5 class="modal-title" style="text-align: center"><b>Subscribe to CDSS Online Email Notifications</b></h5>
+                </div>
+                <div id="mainDiv" class="mainDiv">
+                    <div id="subscriptionFields" class="modal-body">
+                        <input name="__RequestVerificationToken" type="hidden" value="7rK1TJmK-S1M3u7Go5M3zaZwOYgd35AanVPXXN3xPV7uQxstZu0FgLuL5ZtxtuFCKlVA2syN2lD_uoCka_Snz1KXas_mLPsx1cf8ytKTXjk1" />
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" id="txtemail" placeholder="Email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Verify Email:</label>
+                            <input type="text" class="form-control" id="txtverifyemail" placeholder="Verify Email" name="pwd">
+                        </div>
+                        <div class="recaptcha-error recaptcha-parent"><div class="g-recaptcha"></div><div class="recaptcha-error-message">Please verify that you are not a robot.</div></div>
+                        
+                        
+                        
+                        <br />
+
+
+                        <div class="form-group" id="span1" style="display:none;color:red"><span></span></div>
+                    </div>
+
+                    <div class="form-group" style="text-align:center">
+
+                        <button type="button" class="btn btn-rt" tabindex="4" onclick="EmailScription();">Subscribe</button>
+                        <button type="button" class="btn btn-rt"  onclick="$('#modalID1').modal('toggle');">Cancel</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="SubscriptionSuccess" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="max-width: 450px">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title" style="text-align: center"><b id="SubscriptionHeader">Success</b></h5>
+            </div>
+            <div class="modal-body">
+                <div class="successDiv" id="successDiv">
+                    <br />
+                    <div class="form-group" id="successSpan" style="text-align:center">
+                        <span> Hallelujah</span>
+                    </div>
+                </div>
+                <br />
+                <div class="form-group" style="text-align:center">
+                    <button type="button" class="btn btn-rt"  onclick="$('#SubscriptionSuccess').modal('toggle');">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        // codes works on all bootstrap modal windows in application
+        $('.modal').on('hidden.bs.modal', function (e) {
+            $("#span1").css('display', 'none');
+            $("#span1").text("");
+            $("#txtemail").val("");
+            $("#txtverifyemail").val("");
+            $("div.modal-backdrop").prop("class", "");
+            grecaptcha.reset();
+        });
+    })
+</script>
+<script>
+    var imNotARobot = function() {
+        $("#span1").css('display', 'none');
+        $("#span1").text("");
+    };
+    function ValidateEmail(email) {
+        var expr = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if (email.includes("..")) {
+            return false;
+        };
+        return expr.test(email);
+    };
+    function EmailScription() {
+        $("#span1").css('display', 'none');
+        var form = $("#subscriptionFields");
+        const captchaResponse = getRecaptchaResponse(form.find(".g-recaptcha"));
+        if (captchaResponse == "") {
+            $("#span1").css('display', 'block');
+            $("#span1").text("Robot verification missing");
+            return false;
+        } else {
+        }
+        if (!ValidateEmail($("#txtemail").val())) {
+            $("#span1").css('display', 'block');
+            $("#span1").text("Invalid email address");
+            return false;
+        }
+
+        if ($("#txtemail").val() != $("#txtverifyemail").val())
+        {
+            $("#span1").css('display', 'block');
+            $("#span1").text("Verify Email does not match Email address");
+            return false;
+        }
+        else {
+            let data = {
+                email: $('#txtemail').val(),
+                list: "Tools and Technology News",
+                "g-recaptcha-response": captchaResponse
+            };
+            
+            var token = form.find(':input:hidden[name*="RequestVerificationToken"]');
+            if (token.length > 0)
+                data[token.attr("name")] = token.val();
+            $.ajax({
+                url: '/Rest/GET/Subscription/EmailVerification',
+                type: "POST",
+                dataType: "JSON",
+                data: data,
+                success: function (data) {
+
+                    if (data.EmailAddress == "Failed") {
+                        document.getElementById('SubscriptionHeader').innerHTML = "Failure";
+                        $("#successSpan").text("Subscription failed. Please contact dnr_dwr_app_support@state.co.us");
+                    }else if (data.EmailExists == false) {
+                        $("#successSpan").text("Subscription success.  An email has been sent to allow you to complete your registration.");
+                    }
+                    else {
+                        $("#successSpan").text("Successfully subscribed to notification list.");
+                    }
+
+                    $('#modalID1').modal('hide');
+                    $('#SubscriptionSuccess').modal('show');
+                },
+                error: function (ex) {
+                    alert('Error' + ex);
+                }
+            });
+
+        }
+
+    }
+
+</script>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dwr" data-dismiss="modal">Close</button>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <br />
+            
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div id="footer" class="footer navbar-fixed-bottom">
+        <table class="tableFooter" cellspacing="0">
+            <tr>
+                <td>
+                    &copy; 2026 - Colorado Division of Water Resources |
+                    <a href="https://dnr.colorado.gov/accessibility" target="_blank">Accessibility & Accommodations</a> 
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+    function ClassToggle(x) {
+        x.classList.toggle("change");
+    }
+    function ShowBanner(True) {
+        if (True) {
+            document.getElementById('hideBanner').style.display = 'block';
+            document.getElementById('ImgDnrLarge').style.display = 'block';
+            document.getElementById('showBanner').style.display = 'none';
+            document.getElementById('userDiv').style.display = 'block';
+        } else {
+            document.getElementById('hideBanner').style.display = 'none';
+            document.getElementById('ImgDnrLarge').style.display = 'none';
+            document.getElementById('showBanner').style.display = 'block';
+            document.getElementById('userDiv').style.display = 'none';
+        }
+    }
+    document.addEventListener("click", function (evt) {
+        if ($(evt.target).closest('#menuDropdown').length || $(evt.target).closest('#navbar-collapse-1').length) {
+            return;
+        }
+        else {
+            if ($("#menuDropdown").hasClass("change")) {
+                $("#menuDropdown").toggleClass("change");
+                $('#menuDropdown').parent().toggleClass('open');
+            }
+        }
+    });
+
+    window.onscroll = function () { stickyNav() };
+    window.onresize = function () { stickyNav() };
+
+    var desktopHeader = document.getElementById("navbar-collapse-1");
+    var mobileHeader = document.getElementById("header");
+
+    function stickyNav() {
+        var topPaddingAmount = "0";
+        if (window.innerWidth > 710) {
+
+            if (window.pageYOffset > document.getElementById("bannerheader").offsetHeight) {
+                desktopHeader.classList.add("sticky");
+                mobileHeader.classList.remove("sticky");
+                topPaddingAmount = $("#navbar-collapse-1").css("height");
+            } else {
+                desktopHeader.classList.remove("sticky");
+                mobileHeader.classList.remove("sticky");
+            }
+        } else {
+            mobileHeader.classList.add("sticky");
+            desktopHeader.classList.remove("sticky");
+            topPaddingAmount = $("#header").css("height");
+        }
+        $("#bodyContainer").css("padding-top", topPaddingAmount);
+    }
+    stickyNav();
+    $(document).ready(stickyNav);
+
+    function copyOnClick(id) {
+        $("#api-key").css("width", $("#api-key").css("width"));
+        var copyText = document.getElementById(id);
+        $("#" + id).removeAttr("disabled");
+        /* Select the text field */
+        copyText.select();
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+        $("#" + id).attr("disabled", "disabled");
+        /* Alert the copied text */
+        $("#MyApiKeyCopied").fadeIn(2000);
+        $("#" + id).css("display", "none")
+        $("#api-key").find("li>span").css("display", "none");
+        setTimeout(function () {
+            setTimeout(function () {
+                $("#" + id).fadeIn()
+                $("#api-key").find("li>span").fadeIn();
+            },
+                2500);
+            $("#MyApiKeyCopied").fadeOut(2000);
+        },
+            1500);
+
+        //$("#MyApiKeyCopied").fadeIn(3000);
+    }
+</script>

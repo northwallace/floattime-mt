@@ -1,0 +1,3199 @@
+{
+ "generatedBy": "tools/wy_build.py (from tools/wy_nldi.py + tools/wy_geo_checks.py)",
+ "checkedOn": "2026-10-27",
+ "source": "USGS NLDI (NHDPlus V2) downstream-mainstem flowlines for routing; USGS NHD High Resolution (HU4 GeoPackages) for the 150 m rule",
+ "method": "Points are ordered per WGFD stream-section group by chainage along the NLDI DM line from the group's most upstream point. Section miles = chainage difference. NHDPlus V2 is generalised: routed miles are preliminary geometry, not agency mileage.",
+ "farThresholdM": 150,
+ "points": {
+  "Northern Reservation boundary (mouth of canyon) (Bighorn)": {
+   "id": "WY-ACC-0001",
+   "group": "Bighorn River | 1",
+   "v2DistM": 52.5,
+   "v2Side": "river-right",
+   "chainM": 732.7,
+   "hrNamedDistM": 45.7,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Wedding of the Waters (Bighorn)": {
+   "id": "WY-ACC-0002",
+   "group": "Bighorn River | 1",
+   "v2DistM": 37.2,
+   "v2Side": "river-right",
+   "chainM": 1613.5,
+   "hrNamedDistM": 28.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "8th Street (Bighorn)": {
+   "id": "WY-ACC-0003",
+   "group": "Bighorn River | 1",
+   "v2DistM": 29.9,
+   "v2Side": "river-right",
+   "chainM": 10032.5,
+   "hrNamedDistM": 37.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Hot Springs State Park (Bighorn)": {
+   "id": "WY-ACC-0004",
+   "group": "Bighorn River | 1",
+   "v2DistM": 33.9,
+   "v2Side": "river-right",
+   "chainM": 13107.4,
+   "hrNamedDistM": 37.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Kirby Ditch (Bighorn)": {
+   "id": "WY-ACC-0005",
+   "group": "Bighorn River | 1",
+   "v2DistM": 57.4,
+   "v2Side": "river-right",
+   "chainM": 16796.4,
+   "hrNamedDistM": 38.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Wakeley (Bighorn)": {
+   "id": "WY-ACC-0006",
+   "group": "Bighorn River | 1",
+   "v2DistM": 14.6,
+   "v2Side": "river-left",
+   "chainM": 23190.0,
+   "hrNamedDistM": 9.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Longwell (Bighorn)": {
+   "id": "WY-ACC-0007",
+   "group": "Bighorn River | 1",
+   "v2DistM": 45.3,
+   "v2Side": "river-left",
+   "chainM": 28594.6,
+   "hrNamedDistM": 25.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Skelton (Bighorn)": {
+   "id": "WY-ACC-0008",
+   "group": "Bighorn River | 1",
+   "v2DistM": 63.0,
+   "v2Side": "river-right",
+   "chainM": 31884.8,
+   "hrNamedDistM": 45.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Eggert (Bighorn)": {
+   "id": "WY-ACC-0009",
+   "group": "Bighorn River | 1",
+   "v2DistM": 55.8,
+   "v2Side": "river-left",
+   "chainM": 49305.2,
+   "hrNamedDistM": 74.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Morrison Jeep Trail (Clarks Fork)": {
+   "id": "WY-ACC-0010",
+   "group": "Clarks Fork Yellowstone River | 1",
+   "v2DistM": 33.1,
+   "v2Side": "river-left",
+   "chainM": 50.2,
+   "hrNamedDistM": 49.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "River Runners (Clarks Fork)": {
+   "id": "WY-ACC-0011",
+   "group": "Clarks Fork Yellowstone River | 1",
+   "v2DistM": 7.2,
+   "v2Side": "river-right",
+   "chainM": 4420.3,
+   "hrNamedDistM": 20.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Beartooth Ranch (aka Drug Ranch) (Clarks Fork)": {
+   "id": "WY-ACC-0012",
+   "group": "Clarks Fork Yellowstone River | 1",
+   "v2DistM": 39.3,
+   "v2Side": "river-left",
+   "chainM": 12966.6,
+   "hrNamedDistM": 36.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Edelweiss (Clarks Fork)": {
+   "id": "WY-ACC-0013",
+   "group": "Clarks Fork Yellowstone River | 1",
+   "v2DistM": 107.4,
+   "v2Side": "river-left",
+   "chainM": 26093.4,
+   "hrNamedDistM": 41.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "WY/MT State Line (Clarks Fork)": {
+   "id": "WY-ACC-0014",
+   "group": "Clarks Fork Yellowstone River | 1",
+   "v2DistM": 88.3,
+   "v2Side": "river-left",
+   "chainM": 41598.0,
+   "hrNamedDistM": 37.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Green River Lake (Green)": {
+   "id": "WY-ACC-0015",
+   "group": "Green River | 1",
+   "v2DistM": 213.4,
+   "v2Side": "river-left",
+   "chainM": 2782.9,
+   "hrNamedDistM": 212.9,
+   "hrSide": "river-left",
+   "within150m": false
+  },
+  "Roaring Fork (Green)": {
+   "id": "WY-ACC-0016",
+   "group": "Green River | 1",
+   "v2DistM": 9.4,
+   "v2Side": "river-left",
+   "chainM": 11518.4,
+   "hrNamedDistM": 21.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "The Bend (Green)": {
+   "id": "WY-ACC-0017",
+   "group": "Green River | 1",
+   "v2DistM": 22.4,
+   "v2Side": "river-left",
+   "chainM": 17087.9,
+   "hrNamedDistM": 12.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Campfire Ring (Green)": {
+   "id": "WY-ACC-0018",
+   "group": "Green River | 1",
+   "v2DistM": 61.1,
+   "v2Side": "river-left",
+   "chainM": 24361.3,
+   "hrNamedDistM": 18.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Warm Springs (Green)": {
+   "id": "WY-ACC-0019",
+   "group": "Green River | 1",
+   "v2DistM": 42.9,
+   "v2Side": "river-left",
+   "chainM": 32497.8,
+   "hrNamedDistM": 29.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Kendall Bridge (Green)": {
+   "id": "WY-ACC-0020",
+   "group": "Green River | 1",
+   "v2DistM": 5.3,
+   "v2Side": "river-right",
+   "chainM": 35753.4,
+   "hrNamedDistM": 22.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Whiskey Campground (Green)": {
+   "id": "WY-ACC-0021",
+   "group": "Green River | 1",
+   "v2DistM": 1.5,
+   "v2Side": "river-left",
+   "chainM": 37116.2,
+   "hrNamedDistM": 11.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "USFS Boundary (Green)": {
+   "id": "WY-ACC-0022",
+   "group": "Green River | 1",
+   "v2DistM": 17.3,
+   "v2Side": "river-left",
+   "chainM": 42370.1,
+   "hrNamedDistM": 10.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Warren Bridge BLM 12 (Green)": {
+   "id": "WY-ACC-0023",
+   "group": "Green River | 1",
+   "v2DistM": 50.6,
+   "v2Side": "river-right",
+   "chainM": 68906.3,
+   "hrNamedDistM": 34.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Warren Bridge BLM 6 (Green)": {
+   "id": "WY-ACC-0024",
+   "group": "Green River | 1",
+   "v2DistM": 33.7,
+   "v2Side": "river-right",
+   "chainM": 76613.4,
+   "hrNamedDistM": 19.2,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Warren Bridge BLM 4 (Green)": {
+   "id": "WY-ACC-0025",
+   "group": "Green River | 1",
+   "v2DistM": 40.1,
+   "v2Side": "river-right",
+   "chainM": 78464.8,
+   "hrNamedDistM": 31.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Warren Bridge BLM 2 (Green)": {
+   "id": "WY-ACC-0026",
+   "group": "Green River | 1",
+   "v2DistM": 20.0,
+   "v2Side": "river-right",
+   "chainM": 82957.9,
+   "hrNamedDistM": 15.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Warren Bridge BLM 1 (Green)": {
+   "id": "WY-ACC-0027",
+   "group": "Green River | 1",
+   "v2DistM": 15.8,
+   "v2Side": "river-right",
+   "chainM": 84306.4,
+   "hrNamedDistM": 26.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Warren Bridge Hwy 191 (Green)": {
+   "id": "WY-ACC-0028",
+   "group": "Green River | 1",
+   "v2DistM": 29.0,
+   "v2Side": "river-left",
+   "chainM": 85755.9,
+   "hrNamedDistM": 25.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Forty Rod (Green)": {
+   "id": "WY-ACC-0029",
+   "group": "Green River | 1",
+   "v2DistM": 13.0,
+   "v2Side": "river-left",
+   "chainM": 98801.9,
+   "hrNamedDistM": 13.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Daniel Hwy 189/Zach Roberts (Green)": {
+   "id": "WY-ACC-0030",
+   "group": "Green River | 1",
+   "v2DistM": 551.4,
+   "v2Side": "river-right",
+   "chainM": 113774.1,
+   "hrNamedDistM": 11.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Swains/Woods Bridge (Green)": {
+   "id": "WY-ACC-0031",
+   "group": "Green River | 1",
+   "v2DistM": 10.3,
+   "v2Side": "river-left",
+   "chainM": 125175.8,
+   "hrNamedDistM": 24.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Huston (Green)": {
+   "id": "WY-ACC-0032",
+   "group": "Green River | 1",
+   "v2DistM": 15.2,
+   "v2Side": "river-left",
+   "chainM": 132005.9,
+   "hrNamedDistM": 29.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Sommers (Green)": {
+   "id": "WY-ACC-0033",
+   "group": "Green River | 1",
+   "v2DistM": 67.6,
+   "v2Side": "river-left",
+   "chainM": 140586.4,
+   "hrNamedDistM": 17.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Hwy 351 (Green)": {
+   "id": "WY-ACC-0034",
+   "group": "Green River | 1",
+   "v2DistM": 394.4,
+   "v2Side": "river-right",
+   "chainM": 170125.0,
+   "hrNamedDistM": 11.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Fears/Ferry Island (Green)": {
+   "id": "WY-ACC-0035",
+   "group": "Green River | 1",
+   "v2DistM": 40.8,
+   "v2Side": "river-left",
+   "chainM": 190328.4,
+   "hrNamedDistM": 23.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Fears/Dry Piney-Reardon Draw (Green)": {
+   "id": "WY-ACC-0036",
+   "group": "Green River | 1",
+   "v2DistM": 42.7,
+   "v2Side": "river-right",
+   "chainM": 204091.2,
+   "hrNamedDistM": 38.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Gas Wells (Green)": {
+   "id": "WY-ACC-0037",
+   "group": "Green River | 1",
+   "v2DistM": 98.8,
+   "v2Side": "river-right",
+   "chainM": 224491.1,
+   "hrNamedDistM": 44.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "LaBarge Whelan Bridge (Green)": {
+   "id": "WY-ACC-0038",
+   "group": "Green River | 1",
+   "v2DistM": 72.6,
+   "v2Side": "river-left",
+   "chainM": 227679.9,
+   "hrNamedDistM": 47.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Delaney Canyon (Green)": {
+   "id": "WY-ACC-0039",
+   "group": "Green River | 1",
+   "v2DistM": 62.3,
+   "v2Side": "river-left",
+   "chainM": 239577.0,
+   "hrNamedDistM": 53.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Names Hill (Green)": {
+   "id": "WY-ACC-0040",
+   "group": "Green River | 1",
+   "v2DistM": 136.5,
+   "v2Side": "river-right",
+   "chainM": 243146.7,
+   "hrNamedDistM": 103.5,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Fontenelle Dam (Green)": {
+   "id": "WY-ACC-0041",
+   "group": "Green River | 2",
+   "v2DistM": 153.2,
+   "v2Side": "river-right",
+   "chainM": 293.1,
+   "hrNamedDistM": 18.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Weeping Rock (Green)": {
+   "id": "WY-ACC-0042",
+   "group": "Green River | 2",
+   "v2DistM": 7.1,
+   "v2Side": "river-right",
+   "chainM": 2159.1,
+   "hrNamedDistM": 20.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Slate Creek (Green)": {
+   "id": "WY-ACC-0043",
+   "group": "Green River | 2",
+   "v2DistM": 6.5,
+   "v2Side": "river-right",
+   "chainM": 7573.5,
+   "hrNamedDistM": 29.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Dodge Bottom (Green)": {
+   "id": "WY-ACC-0044",
+   "group": "Green River | 2",
+   "v2DistM": 32.8,
+   "v2Side": "river-right",
+   "chainM": 16305.9,
+   "hrNamedDistM": 27.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Hay Farm (Green)": {
+   "id": "WY-ACC-0045",
+   "group": "Green River | 2",
+   "v2DistM": 71.3,
+   "v2Side": "river-right",
+   "chainM": 27806.1,
+   "hrNamedDistM": 52.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Highway 28 (Green)": {
+   "id": "WY-ACC-0046",
+   "group": "Green River | 2",
+   "v2DistM": 53.9,
+   "v2Side": "river-right",
+   "chainM": 41698.3,
+   "hrNamedDistM": 53.5,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Six Mile (Green)": {
+   "id": "WY-ACC-0047",
+   "group": "Green River | 2",
+   "v2DistM": 72.8,
+   "v2Side": "river-right",
+   "chainM": 56279.3,
+   "hrNamedDistM": 54.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "OCI Bridge (Green)": {
+   "id": "WY-ACC-0048",
+   "group": "Green River | 2",
+   "v2DistM": 57.5,
+   "v2Side": "river-right",
+   "chainM": 73104.9,
+   "hrNamedDistM": 40.2,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Monument Hill (Green)": {
+   "id": "WY-ACC-0049",
+   "group": "Green River | 2",
+   "v2DistM": 36.7,
+   "v2Side": "river-left",
+   "chainM": 78672.3,
+   "hrNamedDistM": 41.5,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Alkali Creek (Green)": {
+   "id": "WY-ACC-0050",
+   "group": "Green River | 2",
+   "v2DistM": 1.6,
+   "v2Side": "river-right",
+   "chainM": 94241.8,
+   "hrNamedDistM": 24.5,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Blue Rim (Green)": {
+   "id": "WY-ACC-0051",
+   "group": "Green River | 2",
+   "v2DistM": 14.2,
+   "v2Side": "river-left",
+   "chainM": 98235.8,
+   "hrNamedDistM": 33.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "James Town (Green)": {
+   "id": "WY-ACC-0052",
+   "group": "Green River | 2",
+   "v2DistM": 51.6,
+   "v2Side": "river-right",
+   "chainM": 103017.9,
+   "hrNamedDistM": 33.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Expedition Island (Green)": {
+   "id": "WY-ACC-0053",
+   "group": "Green River | 2",
+   "v2DistM": 38.3,
+   "v2Side": "river-left",
+   "chainM": 110106.7,
+   "hrNamedDistM": 37.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Stratton Meyer (Green)": {
+   "id": "WY-ACC-0054",
+   "group": "Green River | 2",
+   "v2DistM": 59.7,
+   "v2Side": "river-right",
+   "chainM": 114040.3,
+   "hrNamedDistM": 43.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "FMC Park (Green)": {
+   "id": "WY-ACC-0055",
+   "group": "Green River | 2",
+   "v2DistM": 217.2,
+   "v2Side": "river-left",
+   "chainM": 117848.9,
+   "hrNamedDistM": 25.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Highway 189 Bridge (Hoback)": {
+   "id": "WY-ACC-0056",
+   "group": "Hoback River | 1",
+   "v2DistM": 22.3,
+   "v2Side": "river-left",
+   "chainM": 2025.0,
+   "hrNamedDistM": 17.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Granite Creek (Hoback)": {
+   "id": "WY-ACC-0057",
+   "group": "Hoback River | 1",
+   "v2DistM": 19.5,
+   "v2Side": "river-left",
+   "chainM": 8792.3,
+   "hrNamedDistM": 15.1,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Stinking Springs (Hoback)": {
+   "id": "WY-ACC-0058",
+   "group": "Hoback River | 1",
+   "v2DistM": 13.3,
+   "v2Side": "river-left",
+   "chainM": 16826.7,
+   "hrNamedDistM": 3.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Spotted Horse Ranch (Hoback)": {
+   "id": "WY-ACC-0059",
+   "group": "Hoback River | 1",
+   "v2DistM": 0.3,
+   "v2Side": "river-left",
+   "chainM": 23436.8,
+   "hrNamedDistM": 18.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Confluence (Hoback)": {
+   "id": "WY-ACC-0060",
+   "group": "Hoback River | 1",
+   "v2DistM": 16.1,
+   "v2Side": "river-right",
+   "chainM": 30002.3,
+   "hrNamedDistM": 25.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Tyler/Mesa Access (New Fork)": {
+   "id": "WY-ACC-0061",
+   "group": "New Fork River | 1",
+   "v2DistM": 15.6,
+   "v2Side": "river-right",
+   "chainM": 1738.8,
+   "hrNamedDistM": 1.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Airport (New Fork)": {
+   "id": "WY-ACC-0062",
+   "group": "New Fork River | 1",
+   "v2DistM": 219.5,
+   "v2Side": "river-right",
+   "chainM": 12032.8,
+   "hrNamedDistM": 38.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Hocker (New Fork)": {
+   "id": "WY-ACC-0063",
+   "group": "New Fork River | 1",
+   "v2DistM": 39.8,
+   "v2Side": "river-left",
+   "chainM": 14413.1,
+   "hrNamedDistM": 20.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Boulder Bridge (New Fork)": {
+   "id": "WY-ACC-0064",
+   "group": "New Fork River | 1",
+   "v2DistM": 59.4,
+   "v2Side": "river-left",
+   "chainM": 27264.8,
+   "hrNamedDistM": 28.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "East Fork Confluence (New Fork)": {
+   "id": "WY-ACC-0065",
+   "group": "New Fork River | 1",
+   "v2DistM": 56.8,
+   "v2Side": "river-left",
+   "chainM": 39147.4,
+   "hrNamedDistM": 18.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Gas Wells (New Fork)": {
+   "id": "WY-ACC-0066",
+   "group": "New Fork River | 1",
+   "v2DistM": 52.4,
+   "v2Side": "river-left",
+   "chainM": 46172.4,
+   "hrNamedDistM": 49.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Remmick (New Fork)": {
+   "id": "WY-ACC-0067",
+   "group": "New Fork River | 1",
+   "v2DistM": 3.0,
+   "v2Side": "river-right",
+   "chainM": 53155.1,
+   "hrNamedDistM": 32.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Hwy 351 (New Fork)": {
+   "id": "WY-ACC-0068",
+   "group": "New Fork River | 1",
+   "v2DistM": 10.3,
+   "v2Side": "river-right",
+   "chainM": 59030.0,
+   "hrNamedDistM": 30.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "USGS Gage Station (New Fork)": {
+   "id": "WY-ACC-0069",
+   "group": "New Fork River | 1",
+   "v2DistM": 13.9,
+   "v2Side": "river-left",
+   "chainM": 70086.1,
+   "hrNamedDistM": 32.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "BLM downstream of Gage Station (New Fork)": {
+   "id": "WY-ACC-0070",
+   "group": "New Fork River | 1",
+   "v2DistM": 23.1,
+   "v2Side": "river-left",
+   "chainM": 72847.2,
+   "hrNamedDistM": 33.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Sleeping Giant Ski Area (NF Shoshone)": {
+   "id": "WY-ACC-0071",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 25.5,
+   "v2Side": "river-left",
+   "chainM": 214.5,
+   "hrNamedDistM": 13.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Sleeping Giant Picnic Area (NF Shoshone)": {
+   "id": "WY-ACC-0072",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 17.2,
+   "v2Side": "river-left",
+   "chainM": 1094.4,
+   "hrNamedDistM": 30.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Eagle Creek Campground (NF Shoshone)": {
+   "id": "WY-ACC-0073",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 17.5,
+   "v2Side": "river-left",
+   "chainM": 6401.9,
+   "hrNamedDistM": 23.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Libby Creek (aka White Rocks) (NF Shoshone)": {
+   "id": "WY-ACC-0074",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 30.3,
+   "v2Side": "river-left",
+   "chainM": 10323.6,
+   "hrNamedDistM": 39.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Newton Creek (NF Shoshone)": {
+   "id": "WY-ACC-0075",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 27.0,
+   "v2Side": "river-left",
+   "chainM": 18499.9,
+   "hrNamedDistM": 23.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone)": {
+   "id": "WY-ACC-0076",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 0.2,
+   "v2Side": "river-right",
+   "chainM": 21369.5,
+   "hrNamedDistM": 15.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Elk Fork Cliffs (NF Shoshone)": {
+   "id": "WY-ACC-0077",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 14.2,
+   "v2Side": "river-right",
+   "chainM": 32405.4,
+   "hrNamedDistM": 4.5,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Forest Boundary (aka Laughing Pig) (NF Shoshone)": {
+   "id": "WY-ACC-0078",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 38.4,
+   "v2Side": "river-right",
+   "chainM": 41029.8,
+   "hrNamedDistM": 8.5,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Big Creek (aka Livermore) (NF Shoshone)": {
+   "id": "WY-ACC-0079",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 69.2,
+   "v2Side": "river-right",
+   "chainM": 45153.8,
+   "hrNamedDistM": 36.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Jim Creek (aka Rivers Rest, aka Wapiti) (NF Shoshone)": {
+   "id": "WY-ACC-0080",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 33.7,
+   "v2Side": "river-left",
+   "chainM": 51697.5,
+   "hrNamedDistM": 24.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Gibbs Bridge (NF Shoshone)": {
+   "id": "WY-ACC-0081",
+   "group": "North Fork Shoshone River | 1",
+   "v2DistM": 30.3,
+   "v2Side": "river-left",
+   "chainM": 60354.2,
+   "hrNamedDistM": 48.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Clark's Barn (Salt)": {
+   "id": "WY-ACC-0082",
+   "group": "Salt River | 1",
+   "v2DistM": 31.3,
+   "v2Side": "river-right",
+   "chainM": 0.0,
+   "hrNamedDistM": 25.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Upper Burton (Salt)": {
+   "id": "WY-ACC-0083",
+   "group": "Salt River | 1",
+   "v2DistM": 24.2,
+   "v2Side": "river-left",
+   "chainM": 1296.4,
+   "hrNamedDistM": 21.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Highway 237 Bridge (Auburn) (Salt)": {
+   "id": "WY-ACC-0084",
+   "group": "Salt River | 1",
+   "v2DistM": 8.2,
+   "v2Side": "river-left",
+   "chainM": 10175.3,
+   "hrNamedDistM": 22.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Highway 238 Bridge (Narrows) (Salt)": {
+   "id": "WY-ACC-0085",
+   "group": "Salt River | 1",
+   "v2DistM": 21.8,
+   "v2Side": "river-left",
+   "chainM": 20965.7,
+   "hrNamedDistM": 10.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Willow Creek (Salt)": {
+   "id": "WY-ACC-0086",
+   "group": "Salt River | 1",
+   "v2DistM": 22.5,
+   "v2Side": "river-right",
+   "chainM": 22382.7,
+   "hrNamedDistM": 22.2,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Wakeman's (Highway 89) (Salt)": {
+   "id": "WY-ACC-0087",
+   "group": "Salt River | 1",
+   "v2DistM": 5.0,
+   "v2Side": "river-right",
+   "chainM": 25593.0,
+   "hrNamedDistM": 11.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Eastside Diversion (Salt)": {
+   "id": "WY-ACC-0088",
+   "group": "Salt River | 1",
+   "v2DistM": 14.7,
+   "v2Side": "river-right",
+   "chainM": 29003.8,
+   "hrNamedDistM": 31.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Freedom Bridge (Salt)": {
+   "id": "WY-ACC-0089",
+   "group": "Salt River | 1",
+   "v2DistM": 190.5,
+   "v2Side": "river-left",
+   "chainM": 45039.4,
+   "hrNamedDistM": 7.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Creamery Lane (Etna) (Salt)": {
+   "id": "WY-ACC-0090",
+   "group": "Salt River | 1",
+   "v2DistM": 91.0,
+   "v2Side": "river-right",
+   "chainM": 54137.6,
+   "hrNamedDistM": 14.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Bateman's (Swimming Pool) (Salt)": {
+   "id": "WY-ACC-0091",
+   "group": "Salt River | 1",
+   "v2DistM": 41.5,
+   "v2Side": "river-right",
+   "chainM": 60914.0,
+   "hrNamedDistM": 29.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Perkes (Salt)": {
+   "id": "WY-ACC-0092",
+   "group": "Salt River | 1",
+   "v2DistM": 8.9,
+   "v2Side": "river-right",
+   "chainM": 63262.5,
+   "hrNamedDistM": 28.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "McCoy Creek (Salt)": {
+   "id": "WY-ACC-0093",
+   "group": "Salt River | 1",
+   "v2DistM": 71.9,
+   "v2Side": "river-right",
+   "chainM": 68465.2,
+   "hrNamedDistM": 52.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Demaris Hot Springs (Blanchard's property) (Shoshone)": {
+   "id": "WY-ACC-0094",
+   "group": "Shoshone River | 1",
+   "v2DistM": 9.7,
+   "v2Side": "river-left",
+   "chainM": 2075.6,
+   "hrNamedDistM": 31.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Belfry Bridge (Shoshone)": {
+   "id": "WY-ACC-0095",
+   "group": "Shoshone River | 1",
+   "v2DistM": 1.1,
+   "v2Side": "river-right",
+   "chainM": 8215.3,
+   "hrNamedDistM": 27.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Corbett Bridge (Shoshone)": {
+   "id": "WY-ACC-0096",
+   "group": "Shoshone River | 1",
+   "v2DistM": 40.5,
+   "v2Side": "river-left",
+   "chainM": 18433.9,
+   "hrNamedDistM": 41.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Corbett Dam (Shoshone)": {
+   "id": "WY-ACC-0097",
+   "group": "Shoshone River | 2",
+   "v2DistM": 43.1,
+   "v2Side": "river-left",
+   "chainM": 1584.3,
+   "hrNamedDistM": 26.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Buck Creek (Shoshone)": {
+   "id": "WY-ACC-0098",
+   "group": "Shoshone River | 2",
+   "v2DistM": 101.0,
+   "v2Side": "river-left",
+   "chainM": 11370.9,
+   "hrNamedDistM": 119.5,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Willwood Dam (Shoshone)": {
+   "id": "WY-ACC-0099",
+   "group": "Shoshone River | 3",
+   "v2DistM": 13.2,
+   "v2Side": "river-right",
+   "chainM": 2069.0,
+   "hrNamedDistM": 12.5,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Highway 295 (Willwood Rd) (Shoshone)": {
+   "id": "WY-ACC-0100",
+   "group": "Shoshone River | 3",
+   "v2DistM": 12.9,
+   "v2Side": "river-left",
+   "chainM": 18538.7,
+   "hrNamedDistM": 3.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Flagg Ranch (Snake)": {
+   "id": "WY-ACC-0101",
+   "group": "Snake River | 1",
+   "v2DistM": 29.1,
+   "v2Side": "river-right",
+   "chainM": 5602.8,
+   "hrNamedDistM": 35.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Lizard Creek (Jackson Lake) (Snake)": {
+   "id": "WY-ACC-0102",
+   "group": "Snake River | 1",
+   "v2DistM": 358.0,
+   "v2Side": "river-left",
+   "chainM": 21067.3,
+   "hrNamedDistM": 130.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Dam (Snake)": {
+   "id": "WY-ACC-0103",
+   "group": "Snake River | 2",
+   "v2DistM": 57.6,
+   "v2Side": "river-left",
+   "chainM": 881.4,
+   "hrNamedDistM": 41.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Pacific Creek (Snake)": {
+   "id": "WY-ACC-0104",
+   "group": "Snake River | 2",
+   "v2DistM": 59.3,
+   "v2Side": "river-left",
+   "chainM": 8137.8,
+   "hrNamedDistM": 61.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Deadman's (Snake)": {
+   "id": "WY-ACC-0105",
+   "group": "Snake River | 2",
+   "v2DistM": 37.9,
+   "v2Side": "river-left",
+   "chainM": 24798.6,
+   "hrNamedDistM": 68.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Moose (Snake)": {
+   "id": "WY-ACC-0106",
+   "group": "Snake River | 2",
+   "v2DistM": 50.8,
+   "v2Side": "river-right",
+   "chainM": 40575.6,
+   "hrNamedDistM": 42.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "R Lazy S (Snake)": {
+   "id": "WY-ACC-0107",
+   "group": "Snake River | 2",
+   "v2DistM": 271.4,
+   "v2Side": "river-right",
+   "chainM": 51400.6,
+   "hrNamedDistM": 232.7,
+   "hrSide": "river-right",
+   "within150m": false
+  },
+  "Snake River Ranch (upper) (Snake)": {
+   "id": "WY-ACC-0108",
+   "group": "Snake River | 2",
+   "v2DistM": 46.5,
+   "v2Side": "river-right",
+   "chainM": 53848.1,
+   "hrNamedDistM": 125.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Wilson (Snake)": {
+   "id": "WY-ACC-0109",
+   "group": "Snake River | 2",
+   "v2DistM": 109.6,
+   "v2Side": "river-right",
+   "chainM": 63274.0,
+   "hrNamedDistM": 72.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Snake River Ranch (lower) (Snake)": {
+   "id": "WY-ACC-0110",
+   "group": "Snake River | 2",
+   "v2DistM": 224.0,
+   "v2Side": "river-right",
+   "chainM": 75132.7,
+   "hrNamedDistM": 670.7,
+   "hrSide": "river-right",
+   "within150m": false
+  },
+  "South Park/Von Gontard Landing (Snake)": {
+   "id": "WY-ACC-0111",
+   "group": "Snake River | 2",
+   "v2DistM": 37.0,
+   "v2Side": "river-right",
+   "chainM": 83902.4,
+   "hrNamedDistM": 54.5,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Astoria (Snake)": {
+   "id": "WY-ACC-0112",
+   "group": "Snake River | 2",
+   "v2DistM": 92.8,
+   "v2Side": "river-right",
+   "chainM": 96981.9,
+   "hrNamedDistM": 57.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Prichard (Snake)": {
+   "id": "WY-ACC-0113",
+   "group": "Snake River | 2",
+   "v2DistM": 75.5,
+   "v2Side": "river-right",
+   "chainM": 98660.2,
+   "hrNamedDistM": 67.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Elbow (Snake)": {
+   "id": "WY-ACC-0114",
+   "group": "Snake River | 2",
+   "v2DistM": 21.5,
+   "v2Side": "river-right",
+   "chainM": 108320.0,
+   "hrNamedDistM": 55.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "East Table (Snake)": {
+   "id": "WY-ACC-0115",
+   "group": "Snake River | 2",
+   "v2DistM": 33.1,
+   "v2Side": "river-right",
+   "chainM": 110194.3,
+   "hrNamedDistM": 61.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "West Table (Snake)": {
+   "id": "WY-ACC-0116",
+   "group": "Snake River | 2",
+   "v2DistM": 36.5,
+   "v2Side": "river-right",
+   "chainM": 111335.6,
+   "hrNamedDistM": 36.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Sheep Gulch (Snake)": {
+   "id": "WY-ACC-0117",
+   "group": "Snake River | 2",
+   "v2DistM": 12.6,
+   "v2Side": "river-right",
+   "chainM": 123523.2,
+   "hrNamedDistM": 40.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Hunter Creek (SF Shoshone)": {
+   "id": "WY-ACC-0118",
+   "group": "South Fork Shoshone River | 1",
+   "v2DistM": 37.5,
+   "v2Side": "river-left",
+   "chainM": 66.0,
+   "hrNamedDistM": 46.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Mariposa Bridge (aka Ishawooa) (SF Shoshone)": {
+   "id": "WY-ACC-0119",
+   "group": "South Fork Shoshone River | 1",
+   "v2DistM": 8.1,
+   "v2Side": "river-right",
+   "chainM": 7525.9,
+   "hrNamedDistM": 20.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Bobcat-Hoolihan (SF Shoshone)": {
+   "id": "WY-ACC-0120",
+   "group": "South Fork Shoshone River | 1",
+   "v2DistM": 13.7,
+   "v2Side": "river-right",
+   "chainM": 14056.4,
+   "hrNamedDistM": 28.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Twin Creek (SF Shoshone)": {
+   "id": "WY-ACC-0121",
+   "group": "South Fork Shoshone River | 1",
+   "v2DistM": 67.9,
+   "v2Side": "river-right",
+   "chainM": 22020.2,
+   "hrNamedDistM": 66.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Castle Rock (SF Shoshone)": {
+   "id": "WY-ACC-0122",
+   "group": "South Fork Shoshone River | 1",
+   "v2DistM": 60.3,
+   "v2Side": "river-left",
+   "chainM": 35159.0,
+   "hrNamedDistM": 65.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Andy Martin Hill (SF Shoshone)": {
+   "id": "WY-ACC-0123",
+   "group": "South Fork Shoshone River | 1",
+   "v2DistM": 3.1,
+   "v2Side": "river-left",
+   "chainM": 40051.3,
+   "hrNamedDistM": 19.5,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Stoney Point (Wind)": {
+   "id": "WY-ACC-0124",
+   "group": "Wind River | 1",
+   "v2DistM": 27.4,
+   "v2Side": "river-left",
+   "chainM": 12658.4,
+   "hrNamedDistM": 6.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Dubois City Park (Wind)": {
+   "id": "WY-ACC-0125",
+   "group": "Wind River | 1",
+   "v2DistM": 25.7,
+   "v2Side": "river-left",
+   "chainM": 951.6,
+   "hrNamedDistM": 8.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Painted Hills (Wind)": {
+   "id": "WY-ACC-0126",
+   "group": "Wind River | 1",
+   "v2DistM": 16.9,
+   "v2Side": "river-right",
+   "chainM": 26460.5,
+   "hrNamedDistM": 18.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Picnic Tables - Upper Wind River (Wind)": {
+   "id": "WY-ACC-0127",
+   "group": "Wind River | 1",
+   "v2DistM": 48.6,
+   "v2Side": "river-right",
+   "chainM": 39410.0,
+   "hrNamedDistM": 50.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Dinwoody Creek Bridge (Wind)": {
+   "id": "WY-ACC-0128",
+   "group": "Wind River | 1",
+   "v2DistM": 23.9,
+   "v2Side": "river-right",
+   "chainM": 49195.3,
+   "hrNamedDistM": 30.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Below Boysen Dam (Wind)": {
+   "id": "WY-ACC-0129",
+   "group": "Bighorn/Wind River | 2",
+   "v2DistM": 48.4,
+   "v2Side": "river-right",
+   "chainM": 655.2,
+   "hrNamedDistM": 19.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Wolf Creek - Wind River Canyon (Wind)": {
+   "id": "WY-ACC-0130",
+   "group": "Bighorn/Wind River | 2",
+   "v2DistM": 12.3,
+   "v2Side": "river-right",
+   "chainM": 9391.3,
+   "hrNamedDistM": 19.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Odd Fellows (BLM Campground) (Encampment)": {
+   "id": "WY-ACC-0131",
+   "group": "Encampment River | 1",
+   "v2DistM": 25.1,
+   "v2Side": "river-left",
+   "chainM": 914.8,
+   "hrNamedDistM": 19.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Smelter Plant (Town of Riverside) (Encampment)": {
+   "id": "WY-ACC-0132",
+   "group": "Encampment River | 1",
+   "v2DistM": 20.6,
+   "v2Side": "river-left",
+   "chainM": 5245.1,
+   "hrNamedDistM": 19.5,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Baggot Rocks (Wyoming State Trust Lands) (Encampment)": {
+   "id": "WY-ACC-0133",
+   "group": "Encampment River | 1",
+   "v2DistM": 111.4,
+   "v2Side": "river-left",
+   "chainM": 13811.8,
+   "hrNamedDistM": 101.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "BLM overlook (Laramie)": {
+   "id": "WY-ACC-0134",
+   "group": null,
+   "v2DistM": null,
+   "v2Side": null,
+   "chainM": null,
+   "hrNamedDistM": null,
+   "hrSide": null,
+   "within150m": false
+  },
+  "Jelm (Laramie)": {
+   "id": "WY-ACC-0135",
+   "group": "Laramie River | 1",
+   "v2DistM": 8.2,
+   "v2Side": "river-right",
+   "chainM": 1841.4,
+   "hrNamedDistM": 13.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Woods Landing (Laramie)": {
+   "id": "WY-ACC-0136",
+   "group": "Laramie River | 1",
+   "v2DistM": 31.3,
+   "v2Side": "river-left",
+   "chainM": 6570.5,
+   "hrNamedDistM": 16.1,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Routt, Colorado (North Platte)": {
+   "id": "WY-ACC-0137",
+   "group": "North Platte River | 1",
+   "v2DistM": 66.5,
+   "v2Side": "river-left",
+   "chainM": 161.0,
+   "hrNamedDistM": 71.1,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Six Mile Gap (North Platte)": {
+   "id": "WY-ACC-0138",
+   "group": "North Platte River | 1",
+   "v2DistM": 230.1,
+   "v2Side": "river-left",
+   "chainM": 16109.9,
+   "hrNamedDistM": 239.4,
+   "hrSide": "river-left",
+   "within150m": false
+  },
+  "Prospect (North Platte)": {
+   "id": "WY-ACC-0139",
+   "group": "North Platte River | 1",
+   "v2DistM": 31.0,
+   "v2Side": "river-left",
+   "chainM": 30328.6,
+   "hrNamedDistM": 24.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Pickaroon (North Platte)": {
+   "id": "WY-ACC-0140",
+   "group": "North Platte River | 1",
+   "v2DistM": 18.2,
+   "v2Side": "river-right",
+   "chainM": 33521.4,
+   "hrNamedDistM": 41.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Bennett Peak (North Platte)": {
+   "id": "WY-ACC-0141",
+   "group": "North Platte River | 1",
+   "v2DistM": 30.1,
+   "v2Side": "river-right",
+   "chainM": 57946.3,
+   "hrNamedDistM": 33.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Treasure Island (North Platte)": {
+   "id": "WY-ACC-0142",
+   "group": "North Platte River | 1",
+   "v2DistM": 396.3,
+   "v2Side": "river-left",
+   "chainM": 76631.1,
+   "hrNamedDistM": 428.1,
+   "hrSide": "river-left",
+   "within150m": false
+  },
+  "Saratoga (North Platte)": {
+   "id": "WY-ACC-0143",
+   "group": "North Platte River | 1",
+   "v2DistM": 59.2,
+   "v2Side": "river-left",
+   "chainM": 95137.2,
+   "hrNamedDistM": 37.9,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Foote (North Platte)": {
+   "id": "WY-ACC-0144",
+   "group": "North Platte River | 1",
+   "v2DistM": 44.6,
+   "v2Side": "river-right",
+   "chainM": 104211.2,
+   "hrNamedDistM": 34.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Pick Bridge (North Platte)": {
+   "id": "WY-ACC-0145",
+   "group": "North Platte River | 1",
+   "v2DistM": 54.1,
+   "v2Side": "river-right",
+   "chainM": 111944.2,
+   "hrNamedDistM": 59.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Sanger - upstream (North Platte)": {
+   "id": "WY-ACC-0146",
+   "group": "North Platte River | 1",
+   "v2DistM": 58.1,
+   "v2Side": "river-left",
+   "chainM": 116450.8,
+   "hrNamedDistM": 48.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Sanger - downstream (North Platte)": {
+   "id": "WY-ACC-0147",
+   "group": "North Platte River | 1",
+   "v2DistM": 19.4,
+   "v2Side": "river-left",
+   "chainM": 119367.9,
+   "hrNamedDistM": 36.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Eagles Nest (North Platte)": {
+   "id": "WY-ACC-0148",
+   "group": "North Platte River | 1",
+   "v2DistM": 23.5,
+   "v2Side": "river-left",
+   "chainM": 149201.2,
+   "hrNamedDistM": 40.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "I-80 (North Platte)": {
+   "id": "WY-ACC-0149",
+   "group": "North Platte River | 1",
+   "v2DistM": 21.3,
+   "v2Side": "river-right",
+   "chainM": 165040.3,
+   "hrNamedDistM": 23.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Sinclair Recreation Area (North Platte)": {
+   "id": "WY-ACC-0150",
+   "group": "North Platte River | 1",
+   "v2DistM": 20.9,
+   "v2Side": "river-left",
+   "chainM": 177902.0,
+   "hrNamedDistM": 37.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Dugway (North Platte)": {
+   "id": "WY-ACC-0151",
+   "group": "North Platte River | 1",
+   "v2DistM": 40.1,
+   "v2Side": "river-left",
+   "chainM": 186190.0,
+   "hrNamedDistM": 38.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Shady Rest (North Platte)": {
+   "id": "WY-ACC-0152",
+   "group": "North Platte River | 1",
+   "v2DistM": 35.1,
+   "v2Side": "river-left",
+   "chainM": 189601.5,
+   "hrNamedDistM": 42.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Kortes (below Seminoe Dam) (North Platte)": {
+   "id": "WY-ACC-0153",
+   "group": "North Platte River | 2",
+   "v2DistM": 6.3,
+   "v2Side": "river-left",
+   "chainM": 179.3,
+   "hrNamedDistM": 29.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Miracle Mile (North Platte)": {
+   "id": "WY-ACC-0154",
+   "group": "North Platte River | 3",
+   "v2DistM": 54.1,
+   "v2Side": "river-right",
+   "chainM": 1644.5,
+   "hrNamedDistM": 44.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Alcova Afterbay (North Platte)": {
+   "id": "WY-ACC-0155",
+   "group": "North Platte River | 4",
+   "v2DistM": 106.9,
+   "v2Side": "river-left",
+   "chainM": 300.9,
+   "hrNamedDistM": 46.5,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Gray Reef (North Platte)": {
+   "id": "WY-ACC-0156",
+   "group": "North Platte River | 5",
+   "v2DistM": 75.8,
+   "v2Side": "river-left",
+   "chainM": 333.3,
+   "hrNamedDistM": 55.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Lusby (North Platte)": {
+   "id": "WY-ACC-0157",
+   "group": "North Platte River | 5",
+   "v2DistM": 25.1,
+   "v2Side": "river-left",
+   "chainM": 13225.2,
+   "hrNamedDistM": 18.0,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Government Bridge (North Platte)": {
+   "id": "WY-ACC-0158",
+   "group": "North Platte River | 5",
+   "v2DistM": 22.4,
+   "v2Side": "river-right",
+   "chainM": 20302.5,
+   "hrNamedDistM": 24.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Whitetail (North Platte)": {
+   "id": "WY-ACC-0159",
+   "group": "North Platte River | 5",
+   "v2DistM": 11.6,
+   "v2Side": "river-right",
+   "chainM": 23750.7,
+   "hrNamedDistM": 50.1,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Chalk Bluffs (North Platte)": {
+   "id": "WY-ACC-0160",
+   "group": "North Platte River | 5",
+   "v2DistM": 8.3,
+   "v2Side": "river-left",
+   "chainM": 25678.9,
+   "hrNamedDistM": 34.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Sechrist (North Platte)": {
+   "id": "WY-ACC-0161",
+   "group": "North Platte River | 5",
+   "v2DistM": 51.6,
+   "v2Side": "river-right",
+   "chainM": 37421.7,
+   "hrNamedDistM": 6.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Hartnett (North Platte)": {
+   "id": "WY-ACC-0162",
+   "group": "North Platte River | 5",
+   "v2DistM": 79.7,
+   "v2Side": "river-right",
+   "chainM": 43891.5,
+   "hrNamedDistM": 51.5,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Bessemer Bend (North Platte)": {
+   "id": "WY-ACC-0163",
+   "group": "North Platte River | 5",
+   "v2DistM": 36.2,
+   "v2Side": "river-left",
+   "chainM": 47430.7,
+   "hrNamedDistM": 18.1,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Robertson Road (North Platte)": {
+   "id": "WY-ACC-0164",
+   "group": "North Platte River | 5",
+   "v2DistM": 65.4,
+   "v2Side": "river-left",
+   "chainM": 61440.9,
+   "hrNamedDistM": 66.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Paradise Valley (North Platte)": {
+   "id": "WY-ACC-0165",
+   "group": "North Platte River | 5",
+   "v2DistM": 30.5,
+   "v2Side": "river-right",
+   "chainM": 65254.5,
+   "hrNamedDistM": 47.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Morad Park (North Platte)": {
+   "id": "WY-ACC-0166",
+   "group": "North Platte River | 5",
+   "v2DistM": 22.2,
+   "v2Side": "river-right",
+   "chainM": 67821.5,
+   "hrNamedDistM": 44.1,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Mills Bridge (North Platte)": {
+   "id": "WY-ACC-0167",
+   "group": "North Platte River | 5",
+   "v2DistM": 58.2,
+   "v2Side": "river-left",
+   "chainM": 71343.3,
+   "hrNamedDistM": 64.4,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Tate Pumphouse (North Platte)": {
+   "id": "WY-ACC-0168",
+   "group": "North Platte River | 5",
+   "v2DistM": 63.1,
+   "v2Side": "river-left",
+   "chainM": 73419.7,
+   "hrNamedDistM": 47.7,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "First Street (North Platte)": {
+   "id": "WY-ACC-0169",
+   "group": "North Platte River | 5",
+   "v2DistM": 16.5,
+   "v2Side": "river-right",
+   "chainM": 75386.7,
+   "hrNamedDistM": 22.4,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Riverside Park (North Platte)": {
+   "id": "WY-ACC-0170",
+   "group": "North Platte River | 5",
+   "v2DistM": 2.3,
+   "v2Side": "river-right",
+   "chainM": 77877.4,
+   "hrNamedDistM": 14.7,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Bryan Stock Trail (North Platte)": {
+   "id": "WY-ACC-0171",
+   "group": "North Platte River | 5",
+   "v2DistM": 14.8,
+   "v2Side": "river-right",
+   "chainM": 79420.9,
+   "hrNamedDistM": 24.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Reshaw Park (North Platte)": {
+   "id": "WY-ACC-0172",
+   "group": "North Platte River | 5",
+   "v2DistM": 21.5,
+   "v2Side": "river-right",
+   "chainM": 81859.4,
+   "hrNamedDistM": 41.6,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Edness Kimball Wilkins (North Platte)": {
+   "id": "WY-ACC-0173",
+   "group": "North Platte River | 5",
+   "v2DistM": 42.6,
+   "v2Side": "river-right",
+   "chainM": 91206.5,
+   "hrNamedDistM": 13.3,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Big Muddy Bridge (North Platte)": {
+   "id": "WY-ACC-0174",
+   "group": "North Platte River | 5",
+   "v2DistM": 29.6,
+   "v2Side": "river-left",
+   "chainM": 112452.2,
+   "hrNamedDistM": 23.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Rabbit Hill (North Platte)": {
+   "id": "WY-ACC-0175",
+   "group": "North Platte River | 5",
+   "v2DistM": 58.2,
+   "v2Side": "river-right",
+   "chainM": 119812.6,
+   "hrNamedDistM": 45.0,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Dave Johnston PP (North Platte)": {
+   "id": "WY-ACC-0176",
+   "group": "North Platte River | 5",
+   "v2DistM": 37.5,
+   "v2Side": "river-right",
+   "chainM": 130783.9,
+   "hrNamedDistM": 44.8,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "PacifiCorp (North Platte)": {
+   "id": "WY-ACC-0177",
+   "group": "North Platte River | 6",
+   "v2DistM": 64.3,
+   "v2Side": "river-left",
+   "chainM": 2876.6,
+   "hrNamedDistM": 44.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Bixby (North Platte)": {
+   "id": "WY-ACC-0178",
+   "group": "North Platte River | 6",
+   "v2DistM": 25.2,
+   "v2Side": "river-left",
+   "chainM": 10378.8,
+   "hrNamedDistM": 18.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Douglas (North Platte)": {
+   "id": "WY-ACC-0179",
+   "group": "North Platte River | 6",
+   "v2DistM": 56.7,
+   "v2Side": "river-left",
+   "chainM": 51080.6,
+   "hrNamedDistM": 44.8,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "South Douglas (North Platte)": {
+   "id": "WY-ACC-0180",
+   "group": "North Platte River | 6",
+   "v2DistM": 21.2,
+   "v2Side": "river-right",
+   "chainM": 62440.9,
+   "hrNamedDistM": 22.5,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Orin Junction (North Platte)": {
+   "id": "WY-ACC-0181",
+   "group": "North Platte River | 6",
+   "v2DistM": 17.4,
+   "v2Side": "river-left",
+   "chainM": 89704.7,
+   "hrNamedDistM": 36.2,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Glendo Powerplant (North Platte)": {
+   "id": "WY-ACC-0182",
+   "group": "North Platte River | 7",
+   "v2DistM": 55.3,
+   "v2Side": "river-left",
+   "chainM": 2430.6,
+   "hrNamedDistM": 59.6,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Wendover (North Platte)": {
+   "id": "WY-ACC-0183",
+   "group": "North Platte River | 7",
+   "v2DistM": 103.8,
+   "v2Side": "river-right",
+   "chainM": 26862.2,
+   "hrNamedDistM": 91.9,
+   "hrSide": "river-right",
+   "within150m": true
+  },
+  "Upstream of I90 (Tongue)": {
+   "id": "WY-ACC-0184",
+   "group": "Tongue River | 1",
+   "v2DistM": 1.9,
+   "v2Side": "river-right",
+   "chainM": 404.6,
+   "hrNamedDistM": 0.3,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Downstream of I90 (Tongue)": {
+   "id": "WY-ACC-0185",
+   "group": "Tongue River | 1",
+   "v2DistM": 26.2,
+   "v2Side": "river-left",
+   "chainM": 55450.0,
+   "hrNamedDistM": 16.1,
+   "hrSide": "river-left",
+   "within150m": true
+  },
+  "Southgate Launch (Snake)": {
+   "id": "WY-ACC-0186",
+   "group": "Snake River | 1",
+   "v2DistM": 106.7,
+   "v2Side": "river-right",
+   "chainM": 1589.3,
+   "hrNamedDistM": 16.2,
+   "hrSide": "river-right",
+   "within150m": true
+  }
+ },
+ "sections": {
+  "northern-reservation-boundary-mouth-of-canyon-to-wedding-of-the-waters": {
+   "putIn": "Northern Reservation boundary (mouth of canyon) (Bighorn)",
+   "takeOut": "Wedding of the Waters (Bighorn)",
+   "routedMiles": 0.5,
+   "publishedMiles": 0.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "wedding-of-the-waters-to-8th-street": {
+   "putIn": "Wedding of the Waters (Bighorn)",
+   "takeOut": "8th Street (Bighorn)",
+   "routedMiles": 5.2,
+   "publishedMiles": 5.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "8th-street-to-hot-springs-state-park": {
+   "putIn": "8th Street (Bighorn)",
+   "takeOut": "Hot Springs State Park (Bighorn)",
+   "routedMiles": 1.9,
+   "publishedMiles": 1.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "hot-springs-state-park-to-kirby-ditch": {
+   "putIn": "Hot Springs State Park (Bighorn)",
+   "takeOut": "Kirby Ditch (Bighorn)",
+   "routedMiles": 2.3,
+   "publishedMiles": 2.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "kirby-ditch-to-wakeley": {
+   "putIn": "Kirby Ditch (Bighorn)",
+   "takeOut": "Wakeley (Bighorn)",
+   "routedMiles": 4.0,
+   "publishedMiles": 4.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "wakeley-to-longwell": {
+   "putIn": "Wakeley (Bighorn)",
+   "takeOut": "Longwell (Bighorn)",
+   "routedMiles": 3.4,
+   "publishedMiles": 3.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "longwell-to-skelton": {
+   "putIn": "Longwell (Bighorn)",
+   "takeOut": "Skelton (Bighorn)",
+   "routedMiles": 2.0,
+   "publishedMiles": 2.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "skelton-to-eggert": {
+   "putIn": "Skelton (Bighorn)",
+   "takeOut": "Eggert (Bighorn)",
+   "routedMiles": 10.8,
+   "publishedMiles": 10.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12874015: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12874015/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "morrison-jeep-trail-to-river-runners": {
+   "putIn": "Morrison Jeep Trail (Clarks Fork)",
+   "takeOut": "River Runners (Clarks Fork)",
+   "routedMiles": 2.7,
+   "publishedMiles": 2.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4269370: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4269370/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "river-runners-to-beartooth-ranch-aka-drug-ranch": {
+   "putIn": "River Runners (Clarks Fork)",
+   "takeOut": "Beartooth Ranch (aka Drug Ranch) (Clarks Fork)",
+   "routedMiles": 5.3,
+   "publishedMiles": 5.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4269370: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4269370/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "beartooth-ranch-aka-drug-ranch-to-edelweiss": {
+   "putIn": "Beartooth Ranch (aka Drug Ranch) (Clarks Fork)",
+   "takeOut": "Edelweiss (Clarks Fork)",
+   "routedMiles": 8.2,
+   "publishedMiles": 8.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4269370: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4269370/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "edelweiss-to-wy-mt-state-line": {
+   "putIn": "Edelweiss (Clarks Fork)",
+   "takeOut": "WY/MT State Line (Clarks Fork)",
+   "routedMiles": 9.6,
+   "publishedMiles": 9.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4269370: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4269370/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "green-river-lake-to-roaring-fork": {
+   "putIn": "Green River Lake (Green)",
+   "takeOut": "Roaring Fork (Green)",
+   "routedMiles": 5.4,
+   "publishedMiles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "roaring-fork-to-the-bend": {
+   "putIn": "Roaring Fork (Green)",
+   "takeOut": "The Bend (Green)",
+   "routedMiles": 3.5,
+   "publishedMiles": 3.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "the-bend-to-campfire-ring": {
+   "putIn": "The Bend (Green)",
+   "takeOut": "Campfire Ring (Green)",
+   "routedMiles": 4.5,
+   "publishedMiles": 4.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "campfire-ring-to-warm-springs": {
+   "putIn": "Campfire Ring (Green)",
+   "takeOut": "Warm Springs (Green)",
+   "routedMiles": 5.1,
+   "publishedMiles": 5.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "warm-springs-to-kendall-bridge": {
+   "putIn": "Warm Springs (Green)",
+   "takeOut": "Kendall Bridge (Green)",
+   "routedMiles": 2.0,
+   "publishedMiles": 2.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "kendall-bridge-to-whiskey-campground": {
+   "putIn": "Kendall Bridge (Green)",
+   "takeOut": "Whiskey Campground (Green)",
+   "routedMiles": 0.8,
+   "publishedMiles": 0.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "whiskey-campground-to-usfs-boundary": {
+   "putIn": "Whiskey Campground (Green)",
+   "takeOut": "USFS Boundary (Green)",
+   "routedMiles": 3.3,
+   "publishedMiles": 3.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "usfs-boundary-to-warren-bridge-blm-12": {
+   "putIn": "USFS Boundary (Green)",
+   "takeOut": "Warren Bridge BLM 12 (Green)",
+   "routedMiles": 16.5,
+   "publishedMiles": 16.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "warren-bridge-blm-12-to-warren-bridge-blm-6": {
+   "putIn": "Warren Bridge BLM 12 (Green)",
+   "takeOut": "Warren Bridge BLM 6 (Green)",
+   "routedMiles": 4.8,
+   "publishedMiles": 4.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "warren-bridge-blm-6-to-warren-bridge-blm-4": {
+   "putIn": "Warren Bridge BLM 6 (Green)",
+   "takeOut": "Warren Bridge BLM 4 (Green)",
+   "routedMiles": 1.2,
+   "publishedMiles": 1.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "warren-bridge-blm-4-to-warren-bridge-blm-2": {
+   "putIn": "Warren Bridge BLM 4 (Green)",
+   "takeOut": "Warren Bridge BLM 2 (Green)",
+   "routedMiles": 2.8,
+   "publishedMiles": 2.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "warren-bridge-blm-2-to-warren-bridge-blm-1": {
+   "putIn": "Warren Bridge BLM 2 (Green)",
+   "takeOut": "Warren Bridge BLM 1 (Green)",
+   "routedMiles": 0.8,
+   "publishedMiles": 0.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "warren-bridge-blm-1-to-warren-bridge-hwy-191": {
+   "putIn": "Warren Bridge BLM 1 (Green)",
+   "takeOut": "Warren Bridge Hwy 191 (Green)",
+   "routedMiles": 0.9,
+   "publishedMiles": 0.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "warren-bridge-hwy-191-to-forty-rod": {
+   "putIn": "Warren Bridge Hwy 191 (Green)",
+   "takeOut": "Forty Rod (Green)",
+   "routedMiles": 8.1,
+   "publishedMiles": 8.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "forty-rod-to-daniel-hwy-189-zach-roberts": {
+   "putIn": "Forty Rod (Green)",
+   "takeOut": "Daniel Hwy 189/Zach Roberts (Green)",
+   "routedMiles": 9.3,
+   "publishedMiles": 9.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json). Endpoint(s) UGR16 (551.4 m) sit more than 300 m from the V2 line; miles are rougher."
+  },
+  "forty-rod-to-swains-woods-bridge": {
+   "putIn": "Forty Rod (Green)",
+   "takeOut": "Swains/Woods Bridge (Green)",
+   "routedMiles": 16.4,
+   "publishedMiles": 16.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "daniel-hwy-189-zach-roberts-to-swains-woods-bridge": {
+   "putIn": "Daniel Hwy 189/Zach Roberts (Green)",
+   "takeOut": "Swains/Woods Bridge (Green)",
+   "routedMiles": 7.1,
+   "publishedMiles": 7.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json). Endpoint(s) UGR16 (551.4 m) sit more than 300 m from the V2 line; miles are rougher."
+  },
+  "swains-woods-bridge-to-huston": {
+   "putIn": "Swains/Woods Bridge (Green)",
+   "takeOut": "Huston (Green)",
+   "routedMiles": 4.2,
+   "publishedMiles": 4.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "huston-to-sommers": {
+   "putIn": "Huston (Green)",
+   "takeOut": "Sommers (Green)",
+   "routedMiles": 5.3,
+   "publishedMiles": 5.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "sommers-to-hwy-351": {
+   "putIn": "Sommers (Green)",
+   "takeOut": "Hwy 351 (Green)",
+   "routedMiles": 18.4,
+   "publishedMiles": 18.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json). Endpoint(s) UGR20 (394.4 m) sit more than 300 m from the V2 line; miles are rougher."
+  },
+  "hwy-351-to-fears-ferry-island": {
+   "putIn": "Hwy 351 (Green)",
+   "takeOut": "Fears/Ferry Island (Green)",
+   "routedMiles": 12.6,
+   "publishedMiles": 12.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json). Endpoint(s) UGR20 (394.4 m) sit more than 300 m from the V2 line; miles are rougher."
+  },
+  "fears-ferry-island-to-fears-dry-piney-reardon-draw": {
+   "putIn": "Fears/Ferry Island (Green)",
+   "takeOut": "Fears/Dry Piney-Reardon Draw (Green)",
+   "routedMiles": 8.6,
+   "publishedMiles": 8.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "fears-dry-piney-reardon-draw-to-gas-wells": {
+   "putIn": "Fears/Dry Piney-Reardon Draw (Green)",
+   "takeOut": "Gas Wells (Green)",
+   "routedMiles": 12.7,
+   "publishedMiles": 12.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "gas-wells-to-labarge-whelan-bridge": {
+   "putIn": "Gas Wells (Green)",
+   "takeOut": "LaBarge Whelan Bridge (Green)",
+   "routedMiles": 2.0,
+   "publishedMiles": 2.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "labarge-whelan-bridge-to-delaney-canyon": {
+   "putIn": "LaBarge Whelan Bridge (Green)",
+   "takeOut": "Delaney Canyon (Green)",
+   "routedMiles": 7.4,
+   "publishedMiles": 7.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "delaney-canyon-to-names-hill": {
+   "putIn": "Delaney Canyon (Green)",
+   "takeOut": "Names Hill (Green)",
+   "routedMiles": 2.2,
+   "publishedMiles": 2.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18347189: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18347189/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "fontenelle-dam-to-weeping-rock": {
+   "putIn": "Fontenelle Dam (Green)",
+   "takeOut": "Weeping Rock (Green)",
+   "routedMiles": 1.2,
+   "publishedMiles": 1.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "weeping-rock-to-slate-creek": {
+   "putIn": "Weeping Rock (Green)",
+   "takeOut": "Slate Creek (Green)",
+   "routedMiles": 3.4,
+   "publishedMiles": 3.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "slate-creek-to-dodge-bottom": {
+   "putIn": "Slate Creek (Green)",
+   "takeOut": "Dodge Bottom (Green)",
+   "routedMiles": 5.4,
+   "publishedMiles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "dodge-bottom-to-hay-farm": {
+   "putIn": "Dodge Bottom (Green)",
+   "takeOut": "Hay Farm (Green)",
+   "routedMiles": 7.1,
+   "publishedMiles": 7.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "hay-farm-to-highway-28": {
+   "putIn": "Hay Farm (Green)",
+   "takeOut": "Highway 28 (Green)",
+   "routedMiles": 8.6,
+   "publishedMiles": 8.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "highway-28-to-six-mile": {
+   "putIn": "Highway 28 (Green)",
+   "takeOut": "Six Mile (Green)",
+   "routedMiles": 9.1,
+   "publishedMiles": 9.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "six-mile-to-oci-bridge": {
+   "putIn": "Six Mile (Green)",
+   "takeOut": "OCI Bridge (Green)",
+   "routedMiles": 10.5,
+   "publishedMiles": 10.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "oci-bridge-to-monument-hill": {
+   "putIn": "OCI Bridge (Green)",
+   "takeOut": "Monument Hill (Green)",
+   "routedMiles": 3.5,
+   "publishedMiles": 3.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "monument-hill-to-alkali-creek": {
+   "putIn": "Monument Hill (Green)",
+   "takeOut": "Alkali Creek (Green)",
+   "routedMiles": 9.7,
+   "publishedMiles": 9.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "alkali-creek-to-blue-rim": {
+   "putIn": "Alkali Creek (Green)",
+   "takeOut": "Blue Rim (Green)",
+   "routedMiles": 2.5,
+   "publishedMiles": 2.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "blue-rim-to-james-town": {
+   "putIn": "Blue Rim (Green)",
+   "takeOut": "James Town (Green)",
+   "routedMiles": 3.0,
+   "publishedMiles": 3.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "james-town-to-expedition-island": {
+   "putIn": "James Town (Green)",
+   "takeOut": "Expedition Island (Green)",
+   "routedMiles": 4.4,
+   "publishedMiles": 4.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "expedition-island-to-stratton-meyer": {
+   "putIn": "Expedition Island (Green)",
+   "takeOut": "Stratton Meyer (Green)",
+   "routedMiles": 2.4,
+   "publishedMiles": 2.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "stratton-meyer-to-fmc-park": {
+   "putIn": "Stratton Meyer (Green)",
+   "takeOut": "FMC Park (Green)",
+   "routedMiles": 2.4,
+   "publishedMiles": 2.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18312272: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18312272/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "highway-189-bridge-to-granite-creek": {
+   "putIn": "Highway 189 Bridge (Hoback)",
+   "takeOut": "Granite Creek (Hoback)",
+   "routedMiles": 4.2,
+   "publishedMiles": 4.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 24432473: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/24432473/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "granite-creek-to-stinking-springs": {
+   "putIn": "Granite Creek (Hoback)",
+   "takeOut": "Stinking Springs (Hoback)",
+   "routedMiles": 5.0,
+   "publishedMiles": 5.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 24432473: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/24432473/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "stinking-springs-to-spotted-horse-ranch": {
+   "putIn": "Stinking Springs (Hoback)",
+   "takeOut": "Spotted Horse Ranch (Hoback)",
+   "routedMiles": 4.1,
+   "publishedMiles": 4.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 24432473: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/24432473/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "spotted-horse-ranch-to-confluence": {
+   "putIn": "Spotted Horse Ranch (Hoback)",
+   "takeOut": "Confluence (Hoback)",
+   "routedMiles": 4.1,
+   "publishedMiles": 4.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 24432473: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/24432473/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "confluence-to-astoria": {
+   "putIn": "Confluence (Hoback)",
+   "takeOut": "Astoria (Snake)",
+   "routedMiles": 3.0,
+   "publishedMiles": 3.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 24432473: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/24432473/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "tyler-mesa-access-to-airport": {
+   "putIn": "Tyler/Mesa Access (New Fork)",
+   "takeOut": "Airport (New Fork)",
+   "routedMiles": 6.4,
+   "publishedMiles": 6.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "airport-to-hocker": {
+   "putIn": "Airport (New Fork)",
+   "takeOut": "Hocker (New Fork)",
+   "routedMiles": 1.5,
+   "publishedMiles": 1.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "airport-to-boulder-bridge": {
+   "putIn": "Airport (New Fork)",
+   "takeOut": "Boulder Bridge (New Fork)",
+   "routedMiles": 9.5,
+   "publishedMiles": 9.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "hocker-to-boulder-bridge": {
+   "putIn": "Hocker (New Fork)",
+   "takeOut": "Boulder Bridge (New Fork)",
+   "routedMiles": 8.0,
+   "publishedMiles": 8.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "boulder-bridge-to-east-fork-confluence": {
+   "putIn": "Boulder Bridge (New Fork)",
+   "takeOut": "East Fork Confluence (New Fork)",
+   "routedMiles": 7.4,
+   "publishedMiles": 7.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "east-fork-confluence-to-gas-wells": {
+   "putIn": "East Fork Confluence (New Fork)",
+   "takeOut": "Gas Wells (New Fork)",
+   "routedMiles": 4.4,
+   "publishedMiles": 4.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "gas-wells-to-remmick": {
+   "putIn": "Gas Wells (New Fork)",
+   "takeOut": "Remmick (New Fork)",
+   "routedMiles": 4.3,
+   "publishedMiles": 4.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "remmick-to-hwy-351": {
+   "putIn": "Remmick (New Fork)",
+   "takeOut": "Hwy 351 (New Fork)",
+   "routedMiles": 3.7,
+   "publishedMiles": 3.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "hwy-351-to-usgs-gage-station": {
+   "putIn": "Hwy 351 (New Fork)",
+   "takeOut": "USGS Gage Station (New Fork)",
+   "routedMiles": 6.9,
+   "publishedMiles": 6.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "usgs-gage-station-to-blm-downstream-of-gage-station": {
+   "putIn": "USGS Gage Station (New Fork)",
+   "takeOut": "BLM downstream of Gage Station (New Fork)",
+   "routedMiles": 1.7,
+   "publishedMiles": 1.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "blm-downstream-of-gage-station-to-fears-ferry-island": {
+   "putIn": "BLM downstream of Gage Station (New Fork)",
+   "takeOut": "Fears/Ferry Island (Green)",
+   "routedMiles": 10.2,
+   "publishedMiles": 10.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 18329262: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/18329262/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "sleeping-giant-ski-area-to-eagle-creek-campground": {
+   "putIn": "Sleeping Giant Ski Area (NF Shoshone)",
+   "takeOut": "Eagle Creek Campground (NF Shoshone)",
+   "routedMiles": 3.8,
+   "publishedMiles": 3.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "sleeping-giant-picnic-area-to-eagle-creek-campground": {
+   "putIn": "Sleeping Giant Picnic Area (NF Shoshone)",
+   "takeOut": "Eagle Creek Campground (NF Shoshone)",
+   "routedMiles": 3.3,
+   "publishedMiles": 3.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "eagle-creek-campground-to-libby-creek-aka-white-rocks": {
+   "putIn": "Eagle Creek Campground (NF Shoshone)",
+   "takeOut": "Libby Creek (aka White Rocks) (NF Shoshone)",
+   "routedMiles": 2.4,
+   "publishedMiles": 2.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "libby-creek-aka-white-rocks-to-newton-creek": {
+   "putIn": "Libby Creek (aka White Rocks) (NF Shoshone)",
+   "takeOut": "Newton Creek (NF Shoshone)",
+   "routedMiles": 5.1,
+   "publishedMiles": 5.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "newton-creek-to-mummy-cave-aka-old-rex-hale-aka-blackwater": {
+   "putIn": "Newton Creek (NF Shoshone)",
+   "takeOut": "Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone)",
+   "routedMiles": 1.8,
+   "publishedMiles": 1.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "mummy-cave-aka-old-rex-hale-aka-blackwater-to-elk-fork-cliffs": {
+   "putIn": "Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone)",
+   "takeOut": "Elk Fork Cliffs (NF Shoshone)",
+   "routedMiles": 6.9,
+   "publishedMiles": 6.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "elk-fork-cliffs-to-forest-boundary-aka-laughing-pig": {
+   "putIn": "Elk Fork Cliffs (NF Shoshone)",
+   "takeOut": "Forest Boundary (aka Laughing Pig) (NF Shoshone)",
+   "routedMiles": 5.4,
+   "publishedMiles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "forest-boundary-aka-laughing-pig-to-big-creek-aka-livermore": {
+   "putIn": "Forest Boundary (aka Laughing Pig) (NF Shoshone)",
+   "takeOut": "Big Creek (aka Livermore) (NF Shoshone)",
+   "routedMiles": 2.6,
+   "publishedMiles": 2.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "big-creek-aka-livermore-to-jim-creek-aka-rivers-rest-aka-wapiti": {
+   "putIn": "Big Creek (aka Livermore) (NF Shoshone)",
+   "takeOut": "Jim Creek (aka Rivers Rest, aka Wapiti) (NF Shoshone)",
+   "routedMiles": 4.1,
+   "publishedMiles": 4.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "jim-creek-aka-rivers-rest-aka-wapiti-to-gibbs-bridge": {
+   "putIn": "Jim Creek (aka Rivers Rest, aka Wapiti) (NF Shoshone)",
+   "takeOut": "Gibbs Bridge (NF Shoshone)",
+   "routedMiles": 5.4,
+   "publishedMiles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12794807: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12794807/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "clark-s-barn-to-upper-burton": {
+   "putIn": "Clark's Barn (Salt)",
+   "takeOut": "Upper Burton (Salt)",
+   "routedMiles": 0.8,
+   "publishedMiles": 0.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "upper-burton-to-highway-237-bridge-auburn": {
+   "putIn": "Upper Burton (Salt)",
+   "takeOut": "Highway 237 Bridge (Auburn) (Salt)",
+   "routedMiles": 5.5,
+   "publishedMiles": 5.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "highway-237-bridge-auburn-to-highway-238-bridge-narrows": {
+   "putIn": "Highway 237 Bridge (Auburn) (Salt)",
+   "takeOut": "Highway 238 Bridge (Narrows) (Salt)",
+   "routedMiles": 6.7,
+   "publishedMiles": 6.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "highway-238-bridge-narrows-to-willow-creek": {
+   "putIn": "Highway 238 Bridge (Narrows) (Salt)",
+   "takeOut": "Willow Creek (Salt)",
+   "routedMiles": 0.9,
+   "publishedMiles": 0.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "willow-creek-to-wakeman-s-highway-89": {
+   "putIn": "Willow Creek (Salt)",
+   "takeOut": "Wakeman's (Highway 89) (Salt)",
+   "routedMiles": 2.0,
+   "publishedMiles": 2.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "wakeman-s-highway-89-to-eastside-diversion": {
+   "putIn": "Wakeman's (Highway 89) (Salt)",
+   "takeOut": "Eastside Diversion (Salt)",
+   "routedMiles": 2.1,
+   "publishedMiles": 2.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "eastside-diversion-to-freedom-bridge": {
+   "putIn": "Eastside Diversion (Salt)",
+   "takeOut": "Freedom Bridge (Salt)",
+   "routedMiles": 10.0,
+   "publishedMiles": 10.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "freedom-bridge-to-creamery-lane-etna": {
+   "putIn": "Freedom Bridge (Salt)",
+   "takeOut": "Creamery Lane (Etna) (Salt)",
+   "routedMiles": 5.7,
+   "publishedMiles": 5.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "creamery-lane-etna-to-bateman-s-swimming-pool": {
+   "putIn": "Creamery Lane (Etna) (Salt)",
+   "takeOut": "Bateman's (Swimming Pool) (Salt)",
+   "routedMiles": 4.2,
+   "publishedMiles": 4.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "bateman-s-swimming-pool-to-perkes": {
+   "putIn": "Bateman's (Swimming Pool) (Salt)",
+   "takeOut": "Perkes (Salt)",
+   "routedMiles": 1.5,
+   "publishedMiles": 1.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "perkes-to-mccoy-creek": {
+   "putIn": "Perkes (Salt)",
+   "takeOut": "McCoy Creek (Salt)",
+   "routedMiles": 3.2,
+   "publishedMiles": 3.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23134247: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23134247/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "demaris-hot-springs-blanchard-s-property-to-belfry-bridge": {
+   "putIn": "Demaris Hot Springs (Blanchard's property) (Shoshone)",
+   "takeOut": "Belfry Bridge (Shoshone)",
+   "routedMiles": 3.8,
+   "publishedMiles": 3.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4425965: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4425965/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "belfry-bridge-to-corbett-bridge": {
+   "putIn": "Belfry Bridge (Shoshone)",
+   "takeOut": "Corbett Bridge (Shoshone)",
+   "routedMiles": 6.3,
+   "publishedMiles": 6.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4425965: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4425965/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "corbett-dam-to-buck-creek": {
+   "putIn": "Corbett Dam (Shoshone)",
+   "takeOut": "Buck Creek (Shoshone)",
+   "routedMiles": 6.1,
+   "publishedMiles": 6.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4428849: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4428849/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "willwood-dam-to-highway-295-willwood-rd": {
+   "putIn": "Willwood Dam (Shoshone)",
+   "takeOut": "Highway 295 (Willwood Rd) (Shoshone)",
+   "routedMiles": 10.2,
+   "publishedMiles": 10.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 4428823: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/4428823/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "southgate-launch-to-flagg-ranch": {
+   "putIn": "Southgate Launch (Snake)",
+   "takeOut": "Flagg Ranch (Snake)",
+   "routedMiles": 2.5,
+   "publishedMiles": 3,
+   "mileSource": "NPS Grand Teton float page",
+   "evidence": "https://www.nps.gov/grte/planyourvisit/float.htm"
+  },
+  "flagg-ranch-to-lizard-creek-jackson-lake": {
+   "putIn": "Flagg Ranch (Snake)",
+   "takeOut": "Lizard Creek (Jackson Lake) (Snake)",
+   "routedMiles": 9.6,
+   "publishedMiles": 10,
+   "mileSource": "NPS Grand Teton float page",
+   "evidence": "https://www.nps.gov/grte/planyourvisit/float.htm"
+  },
+  "dam-to-pacific-creek": {
+   "putIn": "Dam (Snake)",
+   "takeOut": "Pacific Creek (Snake)",
+   "routedMiles": 4.5,
+   "publishedMiles": 5,
+   "mileSource": "NPS Grand Teton float page",
+   "evidence": "https://www.nps.gov/grte/planyourvisit/float.htm"
+  },
+  "pacific-creek-to-deadman-s": {
+   "putIn": "Pacific Creek (Snake)",
+   "takeOut": "Deadman's (Snake)",
+   "routedMiles": 10.4,
+   "publishedMiles": 10,
+   "mileSource": "NPS Grand Teton float page",
+   "evidence": "https://www.nps.gov/grte/planyourvisit/float.htm"
+  },
+  "deadman-s-to-moose": {
+   "putIn": "Deadman's (Snake)",
+   "takeOut": "Moose (Snake)",
+   "routedMiles": 9.8,
+   "publishedMiles": 10,
+   "mileSource": "NPS Grand Teton float page",
+   "evidence": "https://www.nps.gov/grte/planyourvisit/float.htm"
+  },
+  "moose-to-wilson": {
+   "putIn": "Moose (Snake)",
+   "takeOut": "Wilson (Snake)",
+   "routedMiles": 14.1,
+   "publishedMiles": 14,
+   "mileSource": "NPS Grand Teton float page",
+   "evidence": "https://www.nps.gov/grte/planyourvisit/float.htm"
+  },
+  "r-lazy-s-to-snake-river-ranch-upper": {
+   "putIn": "R Lazy S (Snake)",
+   "takeOut": "Snake River Ranch (upper) (Snake)",
+   "routedMiles": 1.5,
+   "publishedMiles": 1.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "snake-river-ranch-upper-to-wilson": {
+   "putIn": "Snake River Ranch (upper) (Snake)",
+   "takeOut": "Wilson (Snake)",
+   "routedMiles": 5.9,
+   "publishedMiles": 5.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "wilson-to-snake-river-ranch-lower": {
+   "putIn": "Wilson (Snake)",
+   "takeOut": "Snake River Ranch (lower) (Snake)",
+   "routedMiles": 7.4,
+   "publishedMiles": 7.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "wilson-to-south-park-von-gontard-landing": {
+   "putIn": "Wilson (Snake)",
+   "takeOut": "South Park/Von Gontard Landing (Snake)",
+   "routedMiles": 12.8,
+   "publishedMiles": 12.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "snake-river-ranch-lower-to-south-park-von-gontard-landing": {
+   "putIn": "Snake River Ranch (lower) (Snake)",
+   "takeOut": "South Park/Von Gontard Landing (Snake)",
+   "routedMiles": 5.4,
+   "publishedMiles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "south-park-von-gontard-landing-to-astoria": {
+   "putIn": "South Park/Von Gontard Landing (Snake)",
+   "takeOut": "Astoria (Snake)",
+   "routedMiles": 8.1,
+   "publishedMiles": 8.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "astoria-to-prichard": {
+   "putIn": "Astoria (Snake)",
+   "takeOut": "Prichard (Snake)",
+   "routedMiles": 1.0,
+   "publishedMiles": 1.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "prichard-to-elbow": {
+   "putIn": "Prichard (Snake)",
+   "takeOut": "Elbow (Snake)",
+   "routedMiles": 6.0,
+   "publishedMiles": 6.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "elbow-to-east-table": {
+   "putIn": "Elbow (Snake)",
+   "takeOut": "East Table (Snake)",
+   "routedMiles": 1.2,
+   "publishedMiles": 1.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "east-table-to-west-table": {
+   "putIn": "East Table (Snake)",
+   "takeOut": "West Table (Snake)",
+   "routedMiles": 0.7,
+   "publishedMiles": 0.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "west-table-to-sheep-gulch": {
+   "putIn": "West Table (Snake)",
+   "takeOut": "Sheep Gulch (Snake)",
+   "routedMiles": 7.6,
+   "publishedMiles": 7.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 23123437: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/23123437/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "hunter-creek-to-mariposa-bridge-aka-ishawooa": {
+   "putIn": "Hunter Creek (SF Shoshone)",
+   "takeOut": "Mariposa Bridge (aka Ishawooa) (SF Shoshone)",
+   "routedMiles": 4.6,
+   "publishedMiles": 4.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12788124: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12788124/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "mariposa-bridge-aka-ishawooa-to-bobcat-hoolihan": {
+   "putIn": "Mariposa Bridge (aka Ishawooa) (SF Shoshone)",
+   "takeOut": "Bobcat-Hoolihan (SF Shoshone)",
+   "routedMiles": 4.1,
+   "publishedMiles": 4.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12788124: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12788124/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "bobcat-hoolihan-to-twin-creek": {
+   "putIn": "Bobcat-Hoolihan (SF Shoshone)",
+   "takeOut": "Twin Creek (SF Shoshone)",
+   "routedMiles": 4.9,
+   "publishedMiles": 4.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12788124: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12788124/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "twin-creek-to-castle-rock": {
+   "putIn": "Twin Creek (SF Shoshone)",
+   "takeOut": "Castle Rock (SF Shoshone)",
+   "routedMiles": 8.2,
+   "publishedMiles": 8.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12788124: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12788124/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "castle-rock-to-andy-martin-hill": {
+   "putIn": "Castle Rock (SF Shoshone)",
+   "takeOut": "Andy Martin Hill (SF Shoshone)",
+   "routedMiles": 3.0,
+   "publishedMiles": 3.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12788124: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12788124/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "dubois-city-park-to-painted-hills": {
+   "putIn": "Dubois City Park (Wind)",
+   "takeOut": "Painted Hills (Wind)",
+   "routedMiles": 15.9,
+   "publishedMiles": 15.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12898110: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12898110/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "stoney-point-to-painted-hills": {
+   "putIn": "Stoney Point (Wind)",
+   "takeOut": "Painted Hills (Wind)",
+   "routedMiles": 8.6,
+   "publishedMiles": 8.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12898110: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12898110/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "painted-hills-to-picnic-tables-upper-wind-river": {
+   "putIn": "Painted Hills (Wind)",
+   "takeOut": "Picnic Tables - Upper Wind River (Wind)",
+   "routedMiles": 8.0,
+   "publishedMiles": 8.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12898110: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12898110/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "painted-hills-to-dinwoody-creek-bridge": {
+   "putIn": "Painted Hills (Wind)",
+   "takeOut": "Dinwoody Creek Bridge (Wind)",
+   "routedMiles": 14.1,
+   "publishedMiles": 14.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12898110: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12898110/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "picnic-tables-upper-wind-river-to-dinwoody-creek-bridge": {
+   "putIn": "Picnic Tables - Upper Wind River (Wind)",
+   "takeOut": "Dinwoody Creek Bridge (Wind)",
+   "routedMiles": 6.1,
+   "publishedMiles": 6.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12898110: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12898110/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "below-boysen-dam-to-wolf-creek-wind-river-canyon": {
+   "putIn": "Below Boysen Dam (Wind)",
+   "takeOut": "Wolf Creek - Wind River Canyon (Wind)",
+   "routedMiles": 5.4,
+   "publishedMiles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12870023: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12870023/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "wolf-creek-wind-river-canyon-to-wedding-of-the-waters": {
+   "putIn": "Wolf Creek - Wind River Canyon (Wind)",
+   "takeOut": "Wedding of the Waters (Bighorn)",
+   "routedMiles": 8.2,
+   "publishedMiles": 8.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 12870023: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/12870023/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "odd-fellows-blm-campground-to-smelter-plant-town-of-riverside": {
+   "putIn": "Odd Fellows (BLM Campground) (Encampment)",
+   "takeOut": "Smelter Plant (Town of Riverside) (Encampment)",
+   "routedMiles": 2.7,
+   "publishedMiles": 2.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15984213: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15984213/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "smelter-plant-town-of-riverside-to-baggot-rocks-wyoming-state-trust-lands": {
+   "putIn": "Smelter Plant (Town of Riverside) (Encampment)",
+   "takeOut": "Baggot Rocks (Wyoming State Trust Lands) (Encampment)",
+   "routedMiles": 5.3,
+   "publishedMiles": 5.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15984213: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15984213/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "baggot-rocks-wyoming-state-trust-lands-to-treasure-island": {
+   "putIn": "Baggot Rocks (Wyoming State Trust Lands) (Encampment)",
+   "takeOut": "Treasure Island (North Platte)",
+   "routedMiles": 6.2,
+   "publishedMiles": 6.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15984213: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15984213/navigation/DM/flowlines?distance=400&f=json). Endpoint(s) NPU6 (396.3 m) sit more than 300 m from the V2 line; miles are rougher."
+  },
+  "jelm-to-woods-landing": {
+   "putIn": "Jelm (Laramie)",
+   "takeOut": "Woods Landing (Laramie)",
+   "routedMiles": 2.9,
+   "publishedMiles": 2.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 17494093: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/17494093/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "routt-colorado-to-six-mile-gap": {
+   "putIn": "Routt, Colorado (North Platte)",
+   "takeOut": "Six Mile Gap (North Platte)",
+   "routedMiles": 9.9,
+   "publishedMiles": 9.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "six-mile-gap-to-prospect": {
+   "putIn": "Six Mile Gap (North Platte)",
+   "takeOut": "Prospect (North Platte)",
+   "routedMiles": 8.8,
+   "publishedMiles": 8.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "prospect-to-pickaroon": {
+   "putIn": "Prospect (North Platte)",
+   "takeOut": "Pickaroon (North Platte)",
+   "routedMiles": 2.0,
+   "publishedMiles": 2.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "pickaroon-to-bennett-peak": {
+   "putIn": "Pickaroon (North Platte)",
+   "takeOut": "Bennett Peak (North Platte)",
+   "routedMiles": 15.2,
+   "publishedMiles": 15.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "bennett-peak-to-treasure-island": {
+   "putIn": "Bennett Peak (North Platte)",
+   "takeOut": "Treasure Island (North Platte)",
+   "routedMiles": 11.6,
+   "publishedMiles": 11.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json). Endpoint(s) NPU6 (396.3 m) sit more than 300 m from the V2 line; miles are rougher."
+  },
+  "treasure-island-to-saratoga": {
+   "putIn": "Treasure Island (North Platte)",
+   "takeOut": "Saratoga (North Platte)",
+   "routedMiles": 11.5,
+   "publishedMiles": 11.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json). Endpoint(s) NPU6 (396.3 m) sit more than 300 m from the V2 line; miles are rougher."
+  },
+  "saratoga-to-foote": {
+   "putIn": "Saratoga (North Platte)",
+   "takeOut": "Foote (North Platte)",
+   "routedMiles": 5.6,
+   "publishedMiles": 5.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "foote-to-pick-bridge": {
+   "putIn": "Foote (North Platte)",
+   "takeOut": "Pick Bridge (North Platte)",
+   "routedMiles": 4.8,
+   "publishedMiles": 4.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "pick-bridge-to-sanger-upstream": {
+   "putIn": "Pick Bridge (North Platte)",
+   "takeOut": "Sanger - upstream (North Platte)",
+   "routedMiles": 2.8,
+   "publishedMiles": 2.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "sanger-upstream-to-sanger-downstream": {
+   "putIn": "Sanger - upstream (North Platte)",
+   "takeOut": "Sanger - downstream (North Platte)",
+   "routedMiles": 1.8,
+   "publishedMiles": 1.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "sanger-downstream-to-eagles-nest": {
+   "putIn": "Sanger - downstream (North Platte)",
+   "takeOut": "Eagles Nest (North Platte)",
+   "routedMiles": 18.5,
+   "publishedMiles": 18.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "eagles-nest-to-i-80": {
+   "putIn": "Eagles Nest (North Platte)",
+   "takeOut": "I-80 (North Platte)",
+   "routedMiles": 9.8,
+   "publishedMiles": 9.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "i-80-to-sinclair-recreation-area": {
+   "putIn": "I-80 (North Platte)",
+   "takeOut": "Sinclair Recreation Area (North Platte)",
+   "routedMiles": 8.0,
+   "publishedMiles": 8.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "sinclair-recreation-area-to-dugway": {
+   "putIn": "Sinclair Recreation Area (North Platte)",
+   "takeOut": "Dugway (North Platte)",
+   "routedMiles": 5.1,
+   "publishedMiles": 5.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 15986157: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/15986157/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "gray-reef-to-lusby": {
+   "putIn": "Gray Reef (North Platte)",
+   "takeOut": "Lusby (North Platte)",
+   "routedMiles": 8.0,
+   "publishedMiles": 8.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "lusby-to-government-bridge": {
+   "putIn": "Lusby (North Platte)",
+   "takeOut": "Government Bridge (North Platte)",
+   "routedMiles": 4.4,
+   "publishedMiles": 4.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "government-bridge-to-whitetail": {
+   "putIn": "Government Bridge (North Platte)",
+   "takeOut": "Whitetail (North Platte)",
+   "routedMiles": 2.1,
+   "publishedMiles": 2.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "whitetail-to-chalk-bluffs": {
+   "putIn": "Whitetail (North Platte)",
+   "takeOut": "Chalk Bluffs (North Platte)",
+   "routedMiles": 1.2,
+   "publishedMiles": 1.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "chalk-bluffs-to-sechrist": {
+   "putIn": "Chalk Bluffs (North Platte)",
+   "takeOut": "Sechrist (North Platte)",
+   "routedMiles": 7.3,
+   "publishedMiles": 7.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "sechrist-to-hartnett": {
+   "putIn": "Sechrist (North Platte)",
+   "takeOut": "Hartnett (North Platte)",
+   "routedMiles": 4.0,
+   "publishedMiles": 4.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "hartnett-to-bessemer-bend": {
+   "putIn": "Hartnett (North Platte)",
+   "takeOut": "Bessemer Bend (North Platte)",
+   "routedMiles": 2.2,
+   "publishedMiles": 2.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "bessemer-bend-to-robertson-road": {
+   "putIn": "Bessemer Bend (North Platte)",
+   "takeOut": "Robertson Road (North Platte)",
+   "routedMiles": 8.7,
+   "publishedMiles": 8.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "robertson-road-to-paradise-valley": {
+   "putIn": "Robertson Road (North Platte)",
+   "takeOut": "Paradise Valley (North Platte)",
+   "routedMiles": 2.4,
+   "publishedMiles": 2.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "paradise-valley-to-morad-park": {
+   "putIn": "Paradise Valley (North Platte)",
+   "takeOut": "Morad Park (North Platte)",
+   "routedMiles": 1.6,
+   "publishedMiles": 1.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "morad-park-to-mills-bridge": {
+   "putIn": "Morad Park (North Platte)",
+   "takeOut": "Mills Bridge (North Platte)",
+   "routedMiles": 2.2,
+   "publishedMiles": 2.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "mills-bridge-to-tate-pumphouse": {
+   "putIn": "Mills Bridge (North Platte)",
+   "takeOut": "Tate Pumphouse (North Platte)",
+   "routedMiles": 1.3,
+   "publishedMiles": 1.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "tate-pumphouse-to-first-street": {
+   "putIn": "Tate Pumphouse (North Platte)",
+   "takeOut": "First Street (North Platte)",
+   "routedMiles": 1.2,
+   "publishedMiles": 1.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "first-street-to-riverside-park": {
+   "putIn": "First Street (North Platte)",
+   "takeOut": "Riverside Park (North Platte)",
+   "routedMiles": 1.5,
+   "publishedMiles": 1.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "riverside-park-to-bryan-stock-trail": {
+   "putIn": "Riverside Park (North Platte)",
+   "takeOut": "Bryan Stock Trail (North Platte)",
+   "routedMiles": 1.0,
+   "publishedMiles": 1.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "bryan-stock-trail-to-reshaw-park": {
+   "putIn": "Bryan Stock Trail (North Platte)",
+   "takeOut": "Reshaw Park (North Platte)",
+   "routedMiles": 1.5,
+   "publishedMiles": 1.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "reshaw-park-to-edness-kimball-wilkins": {
+   "putIn": "Reshaw Park (North Platte)",
+   "takeOut": "Edness Kimball Wilkins (North Platte)",
+   "routedMiles": 5.8,
+   "publishedMiles": 5.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "edness-kimball-wilkins-to-big-muddy-bridge": {
+   "putIn": "Edness Kimball Wilkins (North Platte)",
+   "takeOut": "Big Muddy Bridge (North Platte)",
+   "routedMiles": 13.2,
+   "publishedMiles": 13.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "big-muddy-bridge-to-rabbit-hill": {
+   "putIn": "Big Muddy Bridge (North Platte)",
+   "takeOut": "Rabbit Hill (North Platte)",
+   "routedMiles": 4.6,
+   "publishedMiles": 4.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "rabbit-hill-to-dave-johnston-pp": {
+   "putIn": "Rabbit Hill (North Platte)",
+   "takeOut": "Dave Johnston PP (North Platte)",
+   "routedMiles": 6.8,
+   "publishedMiles": 6.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22107749: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22107749/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "pacificorp-to-bixby": {
+   "putIn": "PacifiCorp (North Platte)",
+   "takeOut": "Bixby (North Platte)",
+   "routedMiles": 4.7,
+   "publishedMiles": 4.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22109475: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22109475/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "bixby-to-douglas": {
+   "putIn": "Bixby (North Platte)",
+   "takeOut": "Douglas (North Platte)",
+   "routedMiles": 25.3,
+   "publishedMiles": 25.3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22109475: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22109475/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "douglas-to-south-douglas": {
+   "putIn": "Douglas (North Platte)",
+   "takeOut": "South Douglas (North Platte)",
+   "routedMiles": 7.1,
+   "publishedMiles": 7.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22109475: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22109475/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "south-douglas-to-orin-junction": {
+   "putIn": "South Douglas (North Platte)",
+   "takeOut": "Orin Junction (North Platte)",
+   "routedMiles": 16.9,
+   "publishedMiles": 16.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22109475: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22109475/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "glendo-powerplant-to-wendover": {
+   "putIn": "Glendo Powerplant (North Platte)",
+   "takeOut": "Wendover (North Platte)",
+   "routedMiles": 15.2,
+   "publishedMiles": 15.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 22095111: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/22095111/navigation/DM/flowlines?distance=400&f=json)."
+  },
+  "upstream-of-i90-to-downstream-of-i90": {
+   "putIn": "Upstream of I90 (Tongue)",
+   "takeOut": "Downstream of I90 (Tongue)",
+   "routedMiles": 34.2,
+   "publishedMiles": 34.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "evidence": "Routed along USGS NLDI (NHDPlus V2) downstream-mainstem flowlines from comid 5335487: chainage difference between the two agency points (https://api.water.usgs.gov/nldi/linked-data/comid/5335487/navigation/DM/flowlines?distance=400&f=json)."
+  }
+ }
+}

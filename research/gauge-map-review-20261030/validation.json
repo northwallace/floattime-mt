@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-30T15:51:51.482890+00:00",
+  "scope": "local only; no commit, push or deployment",
+  "previewUrl": "http://127.0.0.1:8781/",
+  "catalog": {
+    "rivers": 125,
+    "sections": 342,
+    "states": 9,
+    "accessIds": 459,
+    "releasedMapsLocal": 221,
+    "reviewedDottedPaths": 59
+  },
+  "newInBatch": {
+    "currentDischargeSources": 5,
+    "accessMaps": 4,
+    "dottedPaths": 0,
+    "rivers": 0
+  },
+  "remaining": {
+    "gaugeGaps": 4,
+    "heldAccessMaps": {
+      "MT": 14,
+      "WY": 33
+    }
+  },
+  "tests": {
+    "python": {
+      "passed": 107,
+      "failed": 0,
+      "skipped": 0
+    },
+    "javascript": {
+      "passed": 40,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "checks": {
+    "catalogGeneratedAssets": "passed",
+    "privateReviewQueue": "passed: 342 sections / 970 research items",
+    "httpPagesAndAssets": "337 HTTP 200; zero failures",
+    "diffWhitespace": "passed",
+    "nineGapAdapterAudit": "five current readings, four no-discharge; expected audit exit 1",
+    "pilotAndMontanaFilesUnchanged": 38
+  },
+  "browserChecks": [
+    "Glendo shows current Reclamation flow, source, age and provisional label with no unavailable-flow error.",
+    "All four new section map links load two approximate access markers and dated evidence.",
+    "Dubois corrected location displays with mileage and timing held for review.",
+    "Dubois mobile preview has no horizontal overflow; map fits narrow viewport.",
+    "Final Dubois preview has zero captured console errors."
+  ],
+  "screenshots": [
+    "/Users/home/Documents/Codex/FloatETA-gauge-review-20261030.png",
+    "/Users/home/Documents/Codex/FloatETA-Dubois-map-20261030.png",
+    "/Users/home/Documents/Codex/FloatETA-Dubois-mobile-20261030.png"
+  ],
+  "limitations": [
+    "Four discharge gaps remain; current portal metadata is not a tested automated feed.",
+    "New map markers identify approximate access areas, not exact landings.",
+    "The corrected Dubois reach still needs new route distance evidence.",
+    "Reclamation observations are provisional and provide context; Wyoming ETA models remain unavailable.",
+    "No new dotted paths or GPS remaining-time were enabled; the existing Greycliff pilot still needs a phone field test.",
+    "All counts and network checks describe this local snapshot, not a production release."
+  ]
+}

@@ -1,0 +1,4301 @@
+{
+ "package": "floateta-arkansas-v1",
+ "created": "2026-10-30",
+ "fileCount": 716,
+ "totalBytes": 217907166,
+ "notBundled": {
+  "NHD HR HU4 GeoPackages": "see research/sources.json ids nhd_hr_* (url + zipSha256)"
+ },
+ "files": [
+  {
+   "path": "AR-SUMMARY.md",
+   "bytes": 9557,
+   "sha256": "a14b0f80a3e8636aa4d85c98f8bf9ab9376d7e7ab5f026582b90da0e72ddcf3d",
+   "zip": "slim"
+  },
+  {
+   "path": "CHANGELOG.md",
+   "bytes": 1148,
+   "sha256": "aac31d59194d2cb94290d8db34025b48cf8705334784b33f91be6322c498a107",
+   "zip": "slim"
+  },
+  {
+   "path": "CLAUDE_INSTRUCTIONS.md",
+   "bytes": 4863,
+   "sha256": "26a72a766bc5b8bdb956b9e3ec7c9fa9e3ba4eaadc34e1ec4dbbacc78c0d9969",
+   "zip": "slim"
+  },
+  {
+   "path": "FINAL_REPORT.md",
+   "bytes": 19666,
+   "sha256": "1a25b2c95d128082446e7b1ff88aad1b64a511bad12cb723f9cea8a7eaf1adae",
+   "zip": "slim"
+  },
+  {
+   "path": "PROGRESS.md",
+   "bytes": 3369,
+   "sha256": "ca50fcc0f99b491169a06c248f2fa70069e9021f21e80f1340a6881baa55866a",
+   "zip": "slim"
+  },
+  {
+   "path": "README.md",
+   "bytes": 1458,
+   "sha256": "57c6abfdb0aa23b81d11b22553e5c7f39f70592cb4d6ded47864d3157819f8b2",
+   "zip": "slim"
+  },
+  {
+   "path": "ar-state-entry.json",
+   "bytes": 1019,
+   "sha256": "1d57df9f19c743c3f842f4cb8df077c345e108a5f53f06282081306ff532eb3b",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/map_points/AR.json",
+   "bytes": 148210,
+   "sha256": "b0bb095bbe837631ced587a3c879fba3a7d183d4d47b10446ca2ad8e24aa2e98",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/bayou-deview.json",
+   "bytes": 3349,
+   "sha256": "a3e71894ce38eeef6b4e5f488cb2a8e85a7cbb29166f40922f5a5e194635bb92",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/black-river-ar.json",
+   "bytes": 5019,
+   "sha256": "21d14f47aa4ce83a0138941db8ba3bc2b8c14b14e880cad241635b0b63cf1a37",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/buffalo-river.json",
+   "bytes": 31123,
+   "sha256": "d250d3ece2a2e740e3d5744725415ce3a792ba36b577f74b4909a49a92380ed2",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/caddo-river.json",
+   "bytes": 3537,
+   "sha256": "02424fe756167c680ccf28f7f0a8fdc38b07075acf63cdd3cf84aab7a879eddc",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/cadron-creek.json",
+   "bytes": 2912,
+   "sha256": "f078f3d2651270e402cf99405c2414ae75175cedd65e79e538acfa18608c88b9",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/crooked-creek.json",
+   "bytes": 5024,
+   "sha256": "cdc02022ce714e585fb870eeabfc2171551028d40826a762eea5b3c5bb5dd331",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/eleven-point-river-ar.json",
+   "bytes": 1365,
+   "sha256": "4d0e366975f62ee58b6e756dbf8c4a2a2480d97d8b382dcf4a3289e1d59dea2e",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/illinois-river-ar.json",
+   "bytes": 2603,
+   "sha256": "98f223760e1c3994e6732dca4ae0f12faf8d3fe5c3117437827cf8d6adddf71d",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/kings-river.json",
+   "bytes": 3780,
+   "sha256": "e8cc949796a651bd73a279e085db19754fd1acb64d0a2f9c07011e44ab18bf8a",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/little-missouri-river.json",
+   "bytes": 4599,
+   "sha256": "2ffeaab148f46ccb0406c8b2de2b31969c7880fba33922316801c10558cd34c7",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/little-red-river.json",
+   "bytes": 3636,
+   "sha256": "9ddbfa8c3da6952d33dc0a53a48b439fd692971dddb5aa3418b68c0847f65529",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/mulberry-river.json",
+   "bytes": 5224,
+   "sha256": "87464846d2823ec27e73a55612da69b6e5a36238032104edf1e77254a8dcb1df",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/north-fork-river-ar.json",
+   "bytes": 1462,
+   "sha256": "e0722ad0c9df3a2b140db4c69b9b28ffd7b5d525f24c4ee3e4b0d81b69b45b3b",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/ouachita-river-upper.json",
+   "bytes": 5530,
+   "sha256": "1d3764b498f739b169a6add9b77ef50e0f6735d9a3c45ddbd4d167b0f5708933",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/petit-jean-river.json",
+   "bytes": 4392,
+   "sha256": "d5b43fab4ff7dc628cbf0323de79bd3a7ca455f51101fb8e5dcaa1704d813eb2",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/saline-river.json",
+   "bytes": 5197,
+   "sha256": "35e548415f35e30b8128da283997e821d1c5a7f466499751ca2f73ce21297918",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/south-fork-spring-river.json",
+   "bytes": 2141,
+   "sha256": "1bc816e85f1e98fac0de2dc10fe6438eea9294de4b6705c39bbafdc946bdef2b",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/spring-river-ar.json",
+   "bytes": 4936,
+   "sha256": "a54ae1bad2407aa57bb14a57469fa14b95eeab4a2a84d16c5931070d5cf11a43",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/strawberry-river.json",
+   "bytes": 3743,
+   "sha256": "648784117fdb51e4472d8682f5217b335a060c711e493867304d85f9e7e498b2",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/white-river-beaver-tailwater.json",
+   "bytes": 2214,
+   "sha256": "5c5f2e3abdf574b16f9c218d47ef6b870f38b11239e9e1260353c24dcf4caedb",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/white-river-bull-shoals.json",
+   "bytes": 16764,
+   "sha256": "629c37878c6129235958c9d3fedde5157a5595dcb1e90480b64888d5c6530795",
+   "zip": "slim"
+  },
+  {
+   "path": "catalog/rivers/white-river-upper.json",
+   "bytes": 1421,
+   "sha256": "90075610b89fffa48cc108ab1083e2d44f326cfa3c3cf3711d027779a7ac3601",
+   "zip": "slim"
+  },
+  {
+   "path": "research/access-grades/AR.json",
+   "bytes": 82195,
+   "sha256": "b2e28e65cdf537c00966ace4cefee4478bb1879a88cbf7852d6410d6f3350c73",
+   "zip": "slim"
+  },
+  {
+   "path": "research/access-points.json",
+   "bytes": 272933,
+   "sha256": "b91471d3cf0bed2a5468ca63370f4812d8eba2f2c56695a3d9708450f9b71b18",
+   "zip": "slim"
+  },
+  {
+   "path": "research/agency-source-registry.json",
+   "bytes": 5657,
+   "sha256": "adb647d82800bc30418e49dfbf49726949ed2befed6bffee986f8ace9734dd68",
+   "zip": "slim"
+  },
+  {
+   "path": "research/cross-state-references.json",
+   "bytes": 4441,
+   "sha256": "40596f4096178380bf500bf4930c97a57933f49c9607d949a5ecfd6617072ceb",
+   "zip": "slim"
+  },
+  {
+   "path": "research/distances.json",
+   "bytes": 55438,
+   "sha256": "d5d22e0da28fbd365004c999ad02ba58e97beddc5fc93b6d657ef89fc12dd1eb",
+   "zip": "slim"
+  },
+  {
+   "path": "research/gauge-checks.json",
+   "bytes": 22766,
+   "sha256": "43b90df14382148e21610bf641a263ce11c54b0adb471584fd6949d64c1a5113",
+   "zip": "slim"
+  },
+  {
+   "path": "research/geo-checks-nhd-AR.json",
+   "bytes": 342283,
+   "sha256": "7e6dd69d0af84e2901796ccb20110bc562cd2b058fb0e83d6d9422d4d5318195",
+   "zip": "slim"
+  },
+  {
+   "path": "research/pending-map-points/AR.json",
+   "bytes": 215,
+   "sha256": "d6f24d54c2c144eba8ca8458c9b421c51335565c7f5b513376af931bed1c453a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_boating_access_0.json",
+   "bytes": 365641,
+   "sha256": "e8d86ed315cd1f6946a16528fa630ab666bf1234774e0ee8fdb5c17470fa3afd",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_boating_access_1000.json",
+   "bytes": 2601,
+   "sha256": "2769724a914a6c24bf0d215226140f19c169608e5f5b72948931e4432a9d557b",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_boating_access_500.json",
+   "bytes": 274852,
+   "sha256": "6459f249d536fd8e7cbf34c08b92b3d18df47f3eac599d4bbf368902638369a7",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_bull_shoals_tailwater_map.pdf",
+   "bytes": 116390,
+   "sha256": "1c64614532595dc219cff7406174f7fa1543f6a51ec5b03770c1dc913f3a94ac",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_bull_shoals_tailwater_map.txt",
+   "bytes": 12679,
+   "sha256": "5d51f2cd36959a83203396cb0d62bfb8435cb51b40d62ec3aef4e6d653cf72cf",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_code_37_11.pdf",
+   "bytes": 29341,
+   "sha256": "9b916c2f2f302f1d5f2dfc233e1ccdd130870e7c41d0614b4b170ebca6be8ae6",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_code_37_11.txt",
+   "bytes": 1327,
+   "sha256": "d9558b6ac83666b6a4dd49974a064625b815c39d2cda5e0c406f7bf8418b35ab",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_data_layers.json",
+   "bytes": 2024090,
+   "sha256": "da326fb95ee018f8c21a94a9ea18b2d215a572dee5612065ba6123eeff946afc",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_paddle_sports.html",
+   "bytes": 135658,
+   "sha256": "8e9b8fb4c2a3003fac698c34d9529593bd88175ffd85495bd31f36a717d76586",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_paddle_sports.txt",
+   "bytes": 8764,
+   "sha256": "b63a2e7eb0fe49e8abd2619cbcec8d6cc64e19b26ecb0413a5eb1df195a48f5e",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_public_use_facilities.json",
+   "bytes": 4499600,
+   "sha256": "5528ab3b4150a9dbba5931a22c527bee5762c12a4fcc68445eeaa18fe81f1c0b",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_arkansas_post.html",
+   "bytes": 155480,
+   "sha256": "48a9b77b708086805090184b02080e780849d8aa16b34adfdfdd33f3e18be67c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_arkansas_post.txt",
+   "bytes": 10346,
+   "sha256": "fc5170d322af2c766c5a02afde4be8454f8804cbb1e0962e57b8b313eeaa04cb",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_bayou_bartholomew.html",
+   "bytes": 158746,
+   "sha256": "9a0a395fd9ca5c6a82b5ec80e3a5e8fe594c70d29ce330393ae3268bf8bb848e",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_bayou_bartholomew.txt",
+   "bytes": 9505,
+   "sha256": "dc6d26002e7cd78c4a15cfc3e21a6684f55c4d714ad94065abee4d5e0b4e240c",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_bayou_deview.html",
+   "bytes": 169966,
+   "sha256": "6840751b16c2429f18275b5f00bdfa1eec0995868317aea1417ac1aae4509a58",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_bayou_deview.txt",
+   "bytes": 12242,
+   "sha256": "dab5dd4cf2fd742594b0e083d6484aa5364987e1e62a4166f9343255c29617d5",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_crooked_creek.html",
+   "bytes": 168072,
+   "sha256": "23a320482b471b27791b76ccda7a0691ea8b96e11c327fb9ac338be21cc47696",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_crooked_creek.txt",
+   "bytes": 11311,
+   "sha256": "96bd70adf7791120c28c1f5fb125dddc6d903e5344c1b8ada34172ffb9f633ab",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_cut_off_creek.html",
+   "bytes": 162400,
+   "sha256": "534c7123f78e56bbdb1bff53fbb5b2f7b39b8e98f144f848ab76c490c80f326a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_cut_off_creek.txt",
+   "bytes": 10806,
+   "sha256": "bedb025cbb12cb1034637a42089df49d96b17bc09d269c3526f5c333392bb401",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_fourche_creek_urban.html",
+   "bytes": 160769,
+   "sha256": "4fdabb628305981decbbe7ef3dd1ebcfab88f75db28e6a62d56473a8a72c6b07",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_fourche_creek_urban.txt",
+   "bytes": 10161,
+   "sha256": "77cdb1c20ade8d87f6ffb23ce1f4b854e169648b1d558899e545cd5d143aff49",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_index.html",
+   "bytes": 159175,
+   "sha256": "f57505427fe520a6226039f1352bf285b3f4b0c933c440967d6972a0b2db7df1",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_index.txt",
+   "bytes": 11999,
+   "sha256": "983b3ee9f2cb77f970535a89339181399aee42141eb19f492fc2ed84bb87613a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_little_maumelle_river.html",
+   "bytes": 160897,
+   "sha256": "2892f7f8b8308022ebffa082a4c5bbaef4e86b8a74dbf4f5cac97655148ea45a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_little_maumelle_river.txt",
+   "bytes": 10402,
+   "sha256": "47e9693aa3d56c3da50e69a9942ed02b8fdaf95fd879e9be17763725d1237a82",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_mercer_bayou.html",
+   "bytes": 165145,
+   "sha256": "b02b65fb36655d3f0a99d2a5aaad14015c4c991e578dfd2bd983ce1165890263",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_mercer_bayou.txt",
+   "bytes": 9984,
+   "sha256": "73270ec670daa97fa9e2ed425e6be70cda98faf85854c04c8e81004bcbeac093",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_robe_bayou.html",
+   "bytes": 155449,
+   "sha256": "9a4c2b2ea05c3de325cb772e6a6277af73fb18b9d64747b858c3bd0085765fc4",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_robe_bayou.txt",
+   "bytes": 10104,
+   "sha256": "c7a77d4c5813da9a679db4e5b6f8f13d1f1ea93d8944a16b93272be35cda384c",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_saline_river.html",
+   "bytes": 184043,
+   "sha256": "5c303ddfd8c4ad1dc4e2335f5fc161a14840f897dcd55526c0495220bb360e5a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_saline_river.txt",
+   "bytes": 12983,
+   "sha256": "d6866a5ee3575b8d2005efd69635a79996935ab7f11fe2816b17a2c35749569f",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_sleepy_hollow.html",
+   "bytes": 152482,
+   "sha256": "6459581443898dab59f62e72c181fe2e2bc40326055ca2a5ac602cddf8f9aa32",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_sleepy_hollow.txt",
+   "bytes": 9238,
+   "sha256": "07dabe327573ad1cc1e12e0319d404e124593a3732b22d0440d52c6e090d9caf",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_st_francis_sunken_lands.html",
+   "bytes": 163708,
+   "sha256": "29b08b633b2385782444d54a0d7184bf5b24fd8f43def3ca425f1dd4302244bd",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_st_francis_sunken_lands.txt",
+   "bytes": 11284,
+   "sha256": "b5588b1c3eb344433b5f9546f4cc00200fc9b5b0582127040fb98cb88403220f",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_upper_illinois_river.html",
+   "bytes": 153540,
+   "sha256": "b38accd25aefd732deb9610ce32917fa087bc067397148c4ee1e3bcfbfa5a7e3",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_upper_illinois_river.txt",
+   "bytes": 8418,
+   "sha256": "92cb717828a593361e97a5e82b79eb4bc9eb7847ffb71823420626b8a893b3ba",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_wattensaw_bayou.html",
+   "bytes": 163016,
+   "sha256": "b1d4ffd25a4f5de7265981a35404321c1e047fe9fd0ec3a0c1dafc3879b10441",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/agfc_wt_wattensaw_bayou.txt",
+   "bytes": 10535,
+   "sha256": "50e4ed0f1e2eb2803a13557772463dbc6e07e72db51726bebb8c01a212c6f058",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/ar_code_8_6_418.html",
+   "bytes": 114494,
+   "sha256": "3531c2732e66b5cd949393f07d6d47f4f1259e5776d2b8a3a8d4071be3169f6f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/ar_code_8_6_418.txt",
+   "bytes": 7695,
+   "sha256": "5f8669a05db6987df7131a6da2ab8610a967429a145959f1c34248b3727ac3b0",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/ar_mcilroy_1980_oj.html",
+   "bytes": 504891,
+   "sha256": "dd1621ac9591c6abe611f3369e6dac968c716d56a58c1cce8f04f9b194702276",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/ar_mcilroy_1980_oj.txt",
+   "bytes": 49608,
+   "sha256": "613eb9d952dd282f14e9c9b77a3f2b79084dd9ec639f16b1247ecc07d40d8fa1",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_api_campgrounds_buff.json",
+   "bytes": 88461,
+   "sha256": "dea3959c57c0663c8d88f886bdc5a6492fdd9ff895a73d6a0188341ff3d0161c",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_api_places_buff.json",
+   "bytes": 36376,
+   "sha256": "ef1bda400b60765013dde6dfa1de554aba91de85df2c6b943203f657aad2e6be",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_api_thingstodo_buff.json",
+   "bytes": 207590,
+   "sha256": "e9d7d54630a73760f5e55a8a9ca0fa4df0497b700d70e672661f9ef311fe8bed",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_alcohol.html",
+   "bytes": 34769,
+   "sha256": "4c47d55a4ca48766476c097174e9b315dc5ca9802e4f7069d2b8090800a351fa",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_alcohol.txt",
+   "bytes": 1974,
+   "sha256": "b01bd52d6c2ca64d9ac8398177992f4d07fbc97485b707c8cb139a040f67b154",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_basicinfo.html",
+   "bytes": 41270,
+   "sha256": "41d98742d1216ee374933a17245534192c3e9616a139c3f899cd2a1478b66775",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_basicinfo.txt",
+   "bytes": 2098,
+   "sha256": "2c5e2627b2cfe549ff1729106248b8b0dc5ce46714a77d3b37dc633273f3ce9b",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_compendium.html",
+   "bytes": 62452,
+   "sha256": "0aceb3406de00724536abebedac9f4d633aa27f757a84b60914c47039a3bb075",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_compendium.txt",
+   "bytes": 14509,
+   "sha256": "4555325fa55851fbe4fe2046d999365e50292db3069cd7145e1c6a0a70ef829a",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_compendium_1_5.html",
+   "bytes": 84463,
+   "sha256": "5698f35a3023580bf0a6742a283108d4b549a3e0039843b83c8f700f453964d9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_compendium_1_5.txt",
+   "bytes": 37964,
+   "sha256": "5425d62171951130f4323cfa0d8f3c763252274dd0053974fac5ebdf432cc5c5",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_conditions.html",
+   "bytes": 45393,
+   "sha256": "7fae39ec3c52d563227d7ce7de546c03ff2fb025108e21e2403717d7b6e49645",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_conditions.txt",
+   "bytes": 1475,
+   "sha256": "898c17401639a590e990b322630fae1da713af4320c58b6abf19262a48297a44",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_faqs.html",
+   "bytes": 41737,
+   "sha256": "a938c7e45ef9b5d51a448e78d81b6b8d3d14505f13db6f71c99f7165702f7767",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_faqs.txt",
+   "bytes": 6187,
+   "sha256": "6ebf69d25da3a760a646f2c74a9b512fd14a7d26375fbf4fc37724fe12719bba",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_general_regs.html",
+   "bytes": 87489,
+   "sha256": "1463cc2f2331a7add14f1e299922e0733320f47abe9a055e4f02996b0c5facc9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_general_regs.txt",
+   "bytes": 37200,
+   "sha256": "477787853e7e532c01288f97a9ccc47852c0cfa80323bcf8a2a785d3aa19f91e",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_maps.html",
+   "bytes": 42708,
+   "sha256": "4f8c6e3730ec048b69c4475a669df3091b99808dc487e2c48dcec921c0b3157f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_maps.txt",
+   "bytes": 2174,
+   "sha256": "455fe97318209280d6e18af9db19a5c45df1fd9edc6cd7094f3f9cf802f195ba",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_mileage.html",
+   "bytes": 56837,
+   "sha256": "a1f1d38fb10de8efb75db70251c607a7dec762f05fa3b5bc30ca61d7acf1e04d",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_mileage.txt",
+   "bytes": 4845,
+   "sha256": "e6f1a419ec3b5d3759286a31e083c7e4bb13025c33d8027997c678b29c38df22",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_paddling.html",
+   "bytes": 53100,
+   "sha256": "874e5ec38c3bc69b5cc85020d86ba2a2bb3a687dbc8289f6fe74eaf160fa1be2",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_paddling.txt",
+   "bytes": 11758,
+   "sha256": "28471be9ba30ae2b1c9086a0d8a34331affe80099859ff477d08de5d54105f66",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_rentals.html",
+   "bytes": 39438,
+   "sha256": "7e587aac13dac3d9bd1800d594c118ed56b8f5eee76cfb31c4df70da0900ef34",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_rentals.txt",
+   "bytes": 3901,
+   "sha256": "1b94ff5c28944621b79805ee40f6d612c0f23a4c737f6899fc66af4e7a0f9183",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_river_rules.html",
+   "bytes": 38687,
+   "sha256": "4961344fb8ded2a8e222b04d0a5f30029d55afcd97387552026569c2b5ea992b",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_river_rules.txt",
+   "bytes": 4413,
+   "sha256": "cd77631c493958683d86fc437afd6b5f2e9be2eb1fec0c00c2067347ddad7e38",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_siteindex.html",
+   "bytes": 34572,
+   "sha256": "2e4cc91acfe16a2d09a6658845dd13bff251e424c95d667fcad5d18fb863f316",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/nps_buff_siteindex.txt",
+   "bytes": 1450,
+   "sha256": "36d62c15950a3a5bf6a1cb50d1973586a50aa3650b7a0fe17a39228ea374cb38",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_parking_buff.json",
+   "bytes": 4250,
+   "sha256": "a6189223a8f086f099e0ff2ab42fa558a97f73a48148872a61b83971a10bd831",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/nps_pois_buff.json",
+   "bytes": 213087,
+   "sha256": "0bc10f6eaf1af5c5979162609df7165c2c80a25a314d71ba223a16a8af0e5ccf",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/swpa_generation.html",
+   "bytes": 113326,
+   "sha256": "d5197d0fba30aaf98e0697583643fe60d54311a483cc566b0d56bf54eacb5435",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/agency/swpa_generation.txt",
+   "bytes": 6005,
+   "sha256": "7114758360f59faf1885732a47d0585f1ecc21a1d8ad8d62c4d8b5b48377ef08",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/agency/usfs_edw_recopp_AR.json",
+   "bytes": 163241,
+   "sha256": "1c85bbc245a4f1b92f9ba8d066398db24218a8ec476d7b5386029e812ae4ae6e",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/fetch-log.json",
+   "bytes": 28810,
+   "sha256": "e093174113f41c7c036978b52c41b990ec11d683ea869adab14f949ff62143c1",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gauges/gauge-checks-raw-AR.json",
+   "bytes": 82134,
+   "sha256": "9e9be7b27e606fafa92068beeff83a240eae4bb43da55674dcbbb1e5fe679975",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gauges/gauge-recent-daily-AR.json",
+   "bytes": 6798,
+   "sha256": "6a114580f7b039405e1a5a92a2a08c7dc48127a81f702932f4e851887159850b",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/gauges/nldi_nwissites_AR.json",
+   "bytes": 72926,
+   "sha256": "10987441c0dbc1a1637532398c00e99aeaa4112eb4317e7879198cb58218c9c6",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/albert-pike-usfs_area.json",
+   "bytes": 10361,
+   "sha256": "00adcf25cd5c2339dde5224b5ba5310d9380c6edcebc62a7e37c254de9a2061a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/albert-pike-usfs_fl.json",
+   "bytes": 9270,
+   "sha256": "1c54564b0109d55b3bb6133a9efcf71867df4df5e3ce7419e7a263f02445e937",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/amity-landing-boat-ramp_area.json",
+   "bytes": 832008,
+   "sha256": "13100998fc9ab2dce8f9c3091b8d2c0ec3b50cbb1ae14249fd1eb5492f477569",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/amity-landing-boat-ramp_fl.json",
+   "bytes": 6650,
+   "sha256": "e656ca0f78b966dcd432588d9d5ae8bd818a51d6bbeaa55969e4229d28455cbc",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/apple-lake-boat-access_area.json",
+   "bytes": 887684,
+   "sha256": "d0029d2d56457f8c1f6502c397ffbb1058a319b0b8c557e2d852cae5a3220f03",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/apple-lake-boat-access_fl.json",
+   "bytes": 2950,
+   "sha256": "b529701d7d6f676368c8a6efbe9b8f1dd1771d03534b7a062c89f29e280218e0",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/baker-ford-buffalo-nr_area.json",
+   "bytes": 100128,
+   "sha256": "2c89d3abe14254e5def69f4426d8176556245b2b02344e54dbae01a8ca8cf675",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/baker-ford-buffalo-nr_fl.json",
+   "bytes": 21771,
+   "sha256": "11c2fb52a72b226a888b11456c4c6102621e1817cf5ec7d4c44a82c97fbdc872",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bank-of-brinkley-boating-access_area.json",
+   "bytes": 887684,
+   "sha256": "d0029d2d56457f8c1f6502c397ffbb1058a319b0b8c557e2d852cae5a3220f03",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bank-of-brinkley-boating-access_fl.json",
+   "bytes": 34545,
+   "sha256": "471e2d7d9aa4f21d7238ecc69459084379f03c343e41edeea5a775f2a40ae54e",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/barnett-boat-ramp_area.json",
+   "bytes": 678787,
+   "sha256": "f332d344287cd5dd78fa8f10a7ed793322e1d499d4dd3c428c440474e44e43de",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/barnett-boat-ramp_fl.json",
+   "bytes": 18402,
+   "sha256": "b5074d8f1541ab4cc1b41e5d674fe4abdd4a8ad40c191763e6540e6636b09a27",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bayou-bluff-usfs_area.json",
+   "bytes": 126318,
+   "sha256": "fb21b6ab63149c984125fa76a0f0f9acc7000114223df35b71d5b06ef12d70d1",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bayou-bluff-usfs_fl.json",
+   "bytes": 11026,
+   "sha256": "6b9105a52f2beeed4173791585dc55afed337ae40a496f21b98ed6a88c12c885",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bayou-boat-ramp_area.json",
+   "bytes": 2711993,
+   "sha256": "f401b6fd00c0487c0a97a2cd17885b0a17f409154e0e481dc18ae05b5c7c227e",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bayou-boat-ramp_fl.json",
+   "bytes": 9028,
+   "sha256": "765e796bb41686a1923e657656ed0e0639e6cebb96ae858f42c0e7644e0141e8",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/beaver-lake-dam-site-boat-ramp_area.json",
+   "bytes": 374705,
+   "sha256": "e4f77660dc2c234673140fb980a7e57dc02036bf83f2cd7a015cfd0e83c2667f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/beaver-lake-dam-site-boat-ramp_fl.json",
+   "bytes": 4790,
+   "sha256": "5d9bf72bb3b04260b148b7f94f386fabb97629bdca9233804e2ced7c723ce9b0",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bertrand-boat-ramp_area.json",
+   "bytes": 130903,
+   "sha256": "49a0c04a873e98c85fed65deb9fcda6f6f1905e2f55eac4a589730e5034b1328",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bertrand-boat-ramp_fl.json",
+   "bytes": 9008,
+   "sha256": "d5bda192acf2fef72920af2b18f3dbf3397eba7b53f73cf639c445827092c3a4",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/big-eddy-canoe-access_area.json",
+   "bytes": 21626,
+   "sha256": "946e5b4d24093a90d7ea8225aa0e813f8a98ef275adf81594f7ddd2888d00baf",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/big-eddy-canoe-access_fl.json",
+   "bytes": 9047,
+   "sha256": "5a865fa439b4b3334dd91b7f24c657324483e60aa5b2e5edb0b5847369d2f5ac",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/black-rock-boating-access_area.json",
+   "bytes": 929685,
+   "sha256": "d88d4db16f2d35751d5dcaf1228bb15c78dd700a1d1da5cc403bc9ccc9fe7d63",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/black-rock-boating-access_fl.json",
+   "bytes": 37251,
+   "sha256": "6b40c881abac4789bd1ddbaa99f365405ef0b6f380f6d7216799a12809730f17",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bluff-hole-park-boating-access_area.json",
+   "bytes": 262018,
+   "sha256": "c2e5f726c3e8335765203b00328e1d8cf992bdedfbba24f966885d957dd504c7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bluff-hole-park-boating-access_fl.json",
+   "bytes": 39506,
+   "sha256": "ed08319a7aa21c131acb780103ff405c4cfd95864e49a2f2f6b8835b92366ac1",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/boswell-shoals-boating-access_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/boswell-shoals-boating-access_fl.json",
+   "bytes": 17223,
+   "sha256": "61330b81d1540ae5cfa47edc463df5ea1ed8a6ff8f45e23462f52f01fe4bfda5",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/boxley-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/boxley-buffalo-nr_fl.json",
+   "bytes": 16383,
+   "sha256": "2db130626b677c661d02df80ad45fe695c20e94bd3a5ed58a92ceaabe24814e5",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/brookings-boat-ramp_area.json",
+   "bytes": 2120261,
+   "sha256": "03a88789fefb3199a62df3b480d38b513ce3d03d09fc5719c56a99fe3e1ef1f8",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/brookings-boat-ramp_fl.json",
+   "bytes": 11970,
+   "sha256": "22e2655cfdc3c0f2ba61422103e2800b8c76ee41db251ba297d305650793ee60",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/buffalo-point-buffalo-nr_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/buffalo-point-buffalo-nr_fl.json",
+   "bytes": 20649,
+   "sha256": "23741eba7b45d98d456d3c0800b6c6fd78a648f8ed72edd624548658c4ee37e9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bull-shoals-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/bull-shoals-boat-ramp_fl.json",
+   "bytes": 17689,
+   "sha256": "1809daf18c318115794ed5cada64c3ac693c00dc307cf8d1d60edb4baa320bd0",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/calico-rock-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/calico-rock-boat-ramp_fl.json",
+   "bytes": 7186,
+   "sha256": "8c19c0e80b011cd03dbba9a771d078c7c294b339f7f53405ed7c95cdea23ec40",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/calvin-road-boat-ramp_area.json",
+   "bytes": 431123,
+   "sha256": "81eae0c9750bb1a51ea4ccfb3d2bef7fc29ee0786d4d1297ee2a1d6eab256241",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/calvin-road-boat-ramp_fl.json",
+   "bytes": 4063,
+   "sha256": "65f51b016985dc1d533b5b164b9f1aa17f4a6f4b780c983cda31c5e79ae4a913",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/campbell-cemetery-canoe-access_area.json",
+   "bytes": 262018,
+   "sha256": "c2e5f726c3e8335765203b00328e1d8cf992bdedfbba24f966885d957dd504c7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/campbell-cemetery-canoe-access_fl.json",
+   "bytes": 5981,
+   "sha256": "a1f7e3b298af14523c72b91ef4b4710f70e07b3b3c75506e1e4d64b74ecf027a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cartney-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cartney-boat-ramp_fl.json",
+   "bytes": 10079,
+   "sha256": "a5fbe0e65b785b436d0062032dce894f0c909f1dcbf9e25f7ea93279cb47b901",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/carver-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/carver-buffalo-nr_fl.json",
+   "bytes": 34127,
+   "sha256": "52ca02e2e8521f6f32b5e60a9e230025b6bb5edd3424883dae1b33265f531d32",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/chamber-springs-boating-access_area.json",
+   "bytes": 30158,
+   "sha256": "8cf38a37285174d45f50d0e8f0f426e6c0f2410da92a355ac662498c200c11d8",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/chamber-springs-boating-access_fl.json",
+   "bytes": 56096,
+   "sha256": "f3f7c276a8e509bc6ab8a3f3d70c9fad10bc328fc54cb10b161db5aff25c84bb",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cherry-hill-boat-ramp_area.json",
+   "bytes": 339362,
+   "sha256": "7bbe561178ee9c676c2cfd34c42c2fa0b349d145fa2dfa78ca5ac7e29ce3d7d5",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cherry-hill-boat-ramp_fl.json",
+   "bytes": 35032,
+   "sha256": "1f8ba8f520b48ecd61174e7aef0a269a472461c336e5c0907378147ce7002cdb",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/chesmond-ferry-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/chesmond-ferry-boat-ramp_fl.json",
+   "bytes": 9798,
+   "sha256": "ce0898699e382a1a8e7ccc587ca0d15fe41596b7d6292f26348400820eff985f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/coffey-access-boat-ramp_area.json",
+   "bytes": 929685,
+   "sha256": "d88d4db16f2d35751d5dcaf1228bb15c78dd700a1d1da5cc403bc9ccc9fe7d63",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/coffey-access-boat-ramp_fl.json",
+   "bytes": 12686,
+   "sha256": "a73492e2ac7c69238f429c0d8b37e06a76133ad625c29ce3087d974b35144e76",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cold-springs-boat-ramp_area.json",
+   "bytes": 2138073,
+   "sha256": "49b6b3640464672bf5f96f75701e36c467145cefcddbce3d134dcfcfb3c2f62d",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cold-springs-boat-ramp_fl.json",
+   "bytes": 22478,
+   "sha256": "698bed7996d084aff6a081bea1fe17333ba077646bca80022604bba9d040c586",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cotter-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cotter-boat-ramp_fl.json",
+   "bytes": 7311,
+   "sha256": "6f54d433989affc8521ef1bc58a28543ff3c4acadd0b4de08d8b62f04aac8f55",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cowford-boat-ramp_area.json",
+   "bytes": 510170,
+   "sha256": "b8e59b9d21f8abbe31f4eba1b81a4face0e9da63702e59b746a5358effb9f4c9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/cowford-boat-ramp_fl.json",
+   "bytes": 16227,
+   "sha256": "a05b3bd75c6400da8c1763e0e1139044bfca05ff4ee37166d0b2b35457e44f02",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dale-bend-boat-ramp_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dale-bend-boat-ramp_fl.json",
+   "bytes": 3817,
+   "sha256": "7cf0b4e6e1183ee2c9188bcba7489688a98e74acbf41f1c1e9009c074b575cdc",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dalton-boat-ramp_area.json",
+   "bytes": 4694550,
+   "sha256": "775dd1a56bb4b6d0e2d14025d126f1ba9a19dba7160abc06c35490d545680a4f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dalton-boat-ramp_fl.json",
+   "bytes": 30217,
+   "sha256": "eebce568db84169dcbf367afd4917414712df8e2fbf1c37384e563b3cf3a637c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dam-3-boat-ramp_area.json",
+   "bytes": 2729805,
+   "sha256": "c81db01c7fb10f37ad354b1a9ce32b93f8d2487e4b0b6cdc9025671f882b8564",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dam-3-boat-ramp_fl.json",
+   "bytes": 12239,
+   "sha256": "2e1a459e6602be268989357e918154c81904f07983564993910d65781bb3ef0a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dam-quarry-boat-ramp_area.json",
+   "bytes": 2613857,
+   "sha256": "d18888c05d88462d93408476d347be3d41c94a1fad24632e1eeba49acaac5ff9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dam-quarry-boat-ramp_fl.json",
+   "bytes": 8538,
+   "sha256": "427a4d7ffe3b26cbef88f24d1a7e8251f54442bcfe3446eddeb82242426312bf",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dark-corner-spur-boating-access_area.json",
+   "bytes": 6296,
+   "sha256": "b4c40f8ab8541cfaa2ce86842009e0b369eb3b29fe365b41c2276c03130c3185",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dark-corner-spur-boating-access_fl.json",
+   "bytes": 32970,
+   "sha256": "9e69d97cee912abd01fe749cd876d3d0cb4970e9e9408ddf0f674cd336a5cbf1",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dillards-ferry-buffalo-nr_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dillards-ferry-buffalo-nr_fl.json",
+   "bytes": 35559,
+   "sha256": "8ac8891710bb2d83617723697054a83742361dd7ed17fb501ed3569a8787b3e0",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dixie-lee-boat-ramp_area.json",
+   "bytes": 929685,
+   "sha256": "d88d4db16f2d35751d5dcaf1228bb15c78dd700a1d1da5cc403bc9ccc9fe7d63",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dixie-lee-boat-ramp_fl.json",
+   "bytes": 16420,
+   "sha256": "f7db58fc7dd6c8730ca0fc8a9fa96bb70ffa1905468e00e9407fdc2c301b5bdc",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dragover-usfs_area.json",
+   "bytes": 339362,
+   "sha256": "7bbe561178ee9c676c2cfd34c42c2fa0b349d145fa2dfa78ca5ac7e29ce3d7d5",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dragover-usfs_fl.json",
+   "bytes": 12944,
+   "sha256": "65daa59128eee116b276a127e4fcc9d4a68132a9fc1f63269139ccf1d05d0060",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dripping-springs-boat-ramp_area.json",
+   "bytes": 678787,
+   "sha256": "f332d344287cd5dd78fa8f10a7ed793322e1d499d4dd3c428c440474e44e43de",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/dripping-springs-boat-ramp_fl.json",
+   "bytes": 8889,
+   "sha256": "33c1106fa65fdf526f881dfcd5756c73c38f594e7e084351aa820c85b085d6a4",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/eleven-point-boat-ramp_area.json",
+   "bytes": 4694550,
+   "sha256": "775dd1a56bb4b6d0e2d14025d126f1ba9a19dba7160abc06c35490d545680a4f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/eleven-point-boat-ramp_fl.json",
+   "bytes": 15121,
+   "sha256": "d2fbedad7ad5351007cf04c7d45382690f4af2be6a1901646e68f81ab3962dcd",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/erbie-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/erbie-buffalo-nr_fl.json",
+   "bytes": 33899,
+   "sha256": "6a9cc264cd493629d2a9c788a9000504cdb99e650b67d2d1676ae73f75bbf86f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fitzhugh-boat-ramp_area.json",
+   "bytes": 425452,
+   "sha256": "cac150e14aefd1447e30133fe36fb2076d3a8ebce9e36cebebe6ca293b7ccb8a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fitzhugh-boat-ramp_fl.json",
+   "bytes": 16376,
+   "sha256": "23049ed186f9bfddeb0f06160e1ed3838540d9fcefb780a09404b56a92c985b8",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/forrest-nina-wood-rivercliff-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/forrest-nina-wood-rivercliff-boat-ramp_fl.json",
+   "bytes": 18885,
+   "sha256": "3561b55fb72566f7d1c5bdc6ce832c4a0845f67fbeefd34b1f62a978f93cc955",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fourche-lafave-river-access_area.json",
+   "bytes": 293735,
+   "sha256": "dfc72c1a92fd91d5855b958461b31217ee719f982dcd812ec3a5e10e2c399099",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fourche-lafave-river-access_fl.json",
+   "bytes": 13030,
+   "sha256": "87877f6fa573cba442b78ab3f8c208160a41fdc4e82c2a3d9b3d7bb263998b38",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fourche-lafave-river-seasonal-boating-access_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fourche-lafave-river-seasonal-boating-access_fl.json",
+   "bytes": 12503,
+   "sha256": "50cdf2b228587b80d56ffaf18fff92133b71d817e69bca07b23d368b8a8a8f49",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fulton-branch-usfs_area.json",
+   "bytes": 339362,
+   "sha256": "7bbe561178ee9c676c2cfd34c42c2fa0b349d145fa2dfa78ca5ac7e29ce3d7d5",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/fulton-branch-usfs_fl.json",
+   "bytes": 15495,
+   "sha256": "d52e85845c04cb72d9284e7da24f3d0d7c9f1dd49608e383a293b6a5a618d30d",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/gaston-s-resort-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/gaston-s-resort-boat-ramp_fl.json",
+   "bytes": 7967,
+   "sha256": "0937dd8e2b3714fede5ba6b4e2ecdc79877dd3a2219034240a993c1ca630c9df",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/gilbert-buffalo-nr_area.json",
+   "bytes": 103762,
+   "sha256": "d8f4f789f78cb5d26328cb206cda47a438c312c43e3cdedd477f90f0819ac021",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/gilbert-buffalo-nr_fl.json",
+   "bytes": 20005,
+   "sha256": "62ac22f3dd5f4f88febf62029dc76540c71665f0b1fa2d9c84048a431cc33fd4",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/glenwood-boat-ramp_area.json",
+   "bytes": 25401,
+   "sha256": "e4ebfc6a149409bcd2ace47e8bdce43c0cada6cc3cdf5d29ac9b2401c2cc628c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/glenwood-boat-ramp_fl.json",
+   "bytes": 3439,
+   "sha256": "8d32b2b63a4536990fa294ca7b8e69541634b063a99e87450417c5e02ba75a9d",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/grinders-ferry-buffalo-nr_area.json",
+   "bytes": 100128,
+   "sha256": "2c89d3abe14254e5def69f4426d8176556245b2b02344e54dbae01a8ca8cf675",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/grinders-ferry-buffalo-nr_fl.json",
+   "bytes": 45888,
+   "sha256": "c2e2857f529a86002fcfb73540416348b1e7f8e9420615c1d3a18308ec5f22a8",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/guion-boat-ramp-izard-county_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/guion-boat-ramp-izard-county_fl.json",
+   "bytes": 26389,
+   "sha256": "d6903d15cebdae508a24eb8591e758290f4ffc3b3e1213aca06abd4e03c90573",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hardy-beach-access-boat-ramp_area.json",
+   "bytes": 2715187,
+   "sha256": "9e580484cd6e0ad95bf13f67bc8ac6bf9b1739bf00955f0c1888b651f4abd7f3",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hardy-beach-access-boat-ramp_fl.json",
+   "bytes": 13763,
+   "sha256": "f691768c80f6d31322c099f9ccbc5ae74327e8c93f2e33cc73887da96453c36a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hasty-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hasty-buffalo-nr_fl.json",
+   "bytes": 16423,
+   "sha256": "ef8a22c5bb2b60f863e24853238e6c2c8b529466002b02e86bd81339a506d860",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hickson-lake-boat-ramp_area.json",
+   "bytes": 907832,
+   "sha256": "e645b80932bc469d8542ca1d031ce574d6d89223ebe76b45337e3ab5fcec988d",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hickson-lake-boat-ramp_fl.json",
+   "bytes": 12613,
+   "sha256": "522b590afc095383ffec641e7fd1a253ce0ddf4d3ff2e4b5c04d673340782c78",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/high-bank-access_area.json",
+   "bytes": 6391,
+   "sha256": "ec20373e2d89b8f38883c5af3f3a6ba073a533d22947f83813daeb635d1c0750",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/high-bank-access_fl.json",
+   "bytes": 14149,
+   "sha256": "3c62eded1cd3a760ee7ba7a4b3ecb9bf4001507f0d9151aac58c59b4c57232cf",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/highway-17-boating-access_area.json",
+   "bytes": 693,
+   "sha256": "c306f6c99d5116cd464e916104a58f86762e78455a9ef916da1de81c0788a753",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/highway-17-boating-access_fl.json",
+   "bytes": 17086,
+   "sha256": "6666a1804e6858cbb39c6dcb1db37a664194fe6a5f17d4faca7bb3d728ffd806",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/highway-19-boating-access-little-missouri-river_area.json",
+   "bytes": 684076,
+   "sha256": "5a9d203dd54d38f58b7fc145137f80c6d2fca9559172a7cd96e4df6c451ecc2c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/highway-19-boating-access-little-missouri-river_fl.json",
+   "bytes": 14434,
+   "sha256": "3cb91d4c3e8a76dbc93a0eee80f59b354b347d3b969aaea7f1b5750756043730",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/highway-270-boat-ramp_area.json",
+   "bytes": 425452,
+   "sha256": "cac150e14aefd1447e30133fe36fb2076d3a8ebce9e36cebebe6ca293b7ccb8a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/highway-270-boat-ramp_fl.json",
+   "bytes": 13941,
+   "sha256": "cfd10be8c70f33535d78fdfc7b8252083cb53cb77f284606bb941cd1f7089683",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/horseshoe-bend-boat-ramp_area.json",
+   "bytes": 1564736,
+   "sha256": "639aee56aeb6bd2a01ca9547ecb1f372cb07e95ea6b271f011d7f595daf4391b",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/horseshoe-bend-boat-ramp_fl.json",
+   "bytes": 26859,
+   "sha256": "fa64cd6781a883c055fdb27d09adb459ce508099d68e305df8b4b2809ba0f0c2",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/houseman-boat-ramp_area.json",
+   "bytes": 464851,
+   "sha256": "4e76cd3fb4d509c6abb3119704743b0af12dbd82335d00a82601b1aafdf9e508",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/houseman-boat-ramp_fl.json",
+   "bytes": 12832,
+   "sha256": "6254eae9308ef683b9239581051d44368ff1c3d8eb143e19b3a207699ce895d7",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-15-63-boat-ramp_area.json",
+   "bytes": 510170,
+   "sha256": "b8e59b9d21f8abbe31f4eba1b81a4face0e9da63702e59b746a5358effb9f4c9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-15-63-boat-ramp_fl.json",
+   "bytes": 18615,
+   "sha256": "68da5906c8d1c4dbde411a68f276ff28c2e89ae3ea14a4b0606503f054589c64",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-167-boat-ramp_area.json",
+   "bytes": 541970,
+   "sha256": "e4d0c9ab5dacb2e800ed50a77868765c4befbc213176db4712674a35a71a7742",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-167-boat-ramp_fl.json",
+   "bytes": 27382,
+   "sha256": "f0bf4eec816af44c06aa97e1913e3671e0d0a4dc72ef7f8e243eb9d146d5289a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-182-amity-boat-ramp_area.json",
+   "bytes": 109500,
+   "sha256": "9c416ff2880b76bbcc90f71f19bc2588ad6032a8bdb180813c067c9a28c50a90",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-182-amity-boat-ramp_fl.json",
+   "bytes": 10383,
+   "sha256": "e4d4f30314c41769533d7d6ba78b024a3ebd6a405dfa79d76edc769f19e02c71",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-278-boat-ramp_area.json",
+   "bytes": 1605088,
+   "sha256": "19eb528b9289de97f84b3f5ac0367f22212f4115b537d2ff70593892c73e67a9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-278-boat-ramp_fl.json",
+   "bytes": 20635,
+   "sha256": "1265e8e788bdbb6d3ac5ec904a88ffcf0df5e83904a36b06468a4ae3c8da0913",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-285-boat-ramp_area.json",
+   "bytes": 383215,
+   "sha256": "569d6241a1733508cb2907b1e360396a6c4e6a56bd7a844db6ed16865ea20ceb",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-285-boat-ramp_fl.json",
+   "bytes": 37894,
+   "sha256": "f1afa17dda5af681de69f67a21dc5a197136a26e7e8afd5c008d614311756662",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-395-boat-ramp_area.json",
+   "bytes": 76174,
+   "sha256": "c2e1dcea92db27c6937557430ec3b8d7478e954f24a63dc6b07d971cdfde9b55",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-395-boat-ramp_fl.json",
+   "bytes": 16639,
+   "sha256": "7bd2b898d9c53cec9833dad2bb891e1a9808a47d9033c7ed5f4de5d88887c285",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-45-boat-ramp_area.json",
+   "bytes": 48199,
+   "sha256": "053ce2531aff2f694ca0231191107ad235959348053e29ffd572a05b4b8c25bb",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-45-boat-ramp_fl.json",
+   "bytes": 10158,
+   "sha256": "3ae9a5cc41305cab71b5bca164819d6d32f438bd48680cf58557befea203b35e",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-64-boat-ramp_area.json",
+   "bytes": 2062557,
+   "sha256": "46690d3fd8f71c3b91068148ab9e0574fb04c70d595b0a3bf746a8498dc7826f",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-64-boat-ramp_fl.json",
+   "bytes": 7935,
+   "sha256": "d865886927ad98dd93ae771a2fced386c4432df44e476cf4fa62f0811d1cb752",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-65-boat-ramp_area.json",
+   "bytes": 392800,
+   "sha256": "57da05eb8f866a06ebe426411e7c3ee91100b343776d5d509dbfa0cff72c5c39",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-65-boat-ramp_fl.json",
+   "bytes": 13935,
+   "sha256": "3836485d068dbe10457e611cb4dc9d94338759110c7d502cf0fe2526d168bed5",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-67-boat-ramp_area.json",
+   "bytes": 684076,
+   "sha256": "5a9d203dd54d38f58b7fc145137f80c6d2fca9559172a7cd96e4df6c451ecc2c",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-67-boat-ramp_fl.json",
+   "bytes": 18868,
+   "sha256": "d60c26fb61a0932e4f0b299b6db423583762889e2467df43084b91fdf0ea498a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-79-pool-boat-ramp_area.json",
+   "bytes": 510170,
+   "sha256": "b8e59b9d21f8abbe31f4eba1b81a4face0e9da63702e59b746a5358effb9f4c9",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/hwy-79-pool-boat-ramp_fl.json",
+   "bytes": 10508,
+   "sha256": "7fcc283e2257cd3047c0e45122350c95f6adb2166448679d73514c7e86acf7cf",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/i-30-cherry-gingles-boat-ramp_area.json",
+   "bytes": 425452,
+   "sha256": "cac150e14aefd1447e30133fe36fb2076d3a8ebce9e36cebebe6ca293b7ccb8a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/i-30-cherry-gingles-boat-ramp_fl.json",
+   "bytes": 21151,
+   "sha256": "8cbe25961c6b132a17d28e112bd6699923b4788723ffe948c76e1efb611854da",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/imboden-boat-ramp_area.json",
+   "bytes": 2574980,
+   "sha256": "b6647d1cda3a514089dc482b0102363c609a196ace99de8ac16f3606667acb8a",
+   "zip": "evidence-part01"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/imboden-boat-ramp_fl.json",
+   "bytes": 15335,
+   "sha256": "83c079f0e17bb8d29a44745830f3e65b94d8224ac236bf1b21a2ca9e5ec0ea34",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/indian-creek-access_area.json",
+   "bytes": 13252,
+   "sha256": "9888fe604fdc1e471c9ee162665677c58552c50cac21d3ac76e318b930494404",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/indian-creek-access_fl.json",
+   "bytes": 9884,
+   "sha256": "624522d005bbd831bdb707e44dff2250195048cee610f47cec8aaa2245ce42a0",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/j-d-fletcher-kings-river-boating-access_area.json",
+   "bytes": 408426,
+   "sha256": "2f3e1359edffd34539ab3604c278303093f3f624bfa7eb9e1455f07e9395179f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/j-d-fletcher-kings-river-boating-access_fl.json",
+   "bytes": 9329,
+   "sha256": "18dc384099a155926f722cee3c99be568605b477fc1a813e32ef4adabf469a75",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/jenkins-ferry-boat-ramp_area.json",
+   "bytes": 425452,
+   "sha256": "cac150e14aefd1447e30133fe36fb2076d3a8ebce9e36cebebe6ca293b7ccb8a",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/jenkins-ferry-boat-ramp_fl.json",
+   "bytes": 27080,
+   "sha256": "d8bb453f344aac4ea435dfe13b993a73f57c16514156c61b7fa69d7a1b87c712",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/jfk-park-boat-ramp_area.json",
+   "bytes": 3456842,
+   "sha256": "746e3f5130224efac6026f3097bdef30523566c0006d5cb0e9d01a4e226b195d",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/jfk-park-boat-ramp_fl.json",
+   "bytes": 19743,
+   "sha256": "462ce087bf70a023426fdfe9ee7bfb3d276ff459120786d81ff1fc036414be1b",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/jim-griffin-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/jim-griffin-boat-ramp_fl.json",
+   "bytes": 18885,
+   "sha256": "3561b55fb72566f7d1c5bdc6ce832c4a0845f67fbeefd34b1f62a978f93cc955",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/johnston-s-eddy-boat-ramp_area.json",
+   "bytes": 2120261,
+   "sha256": "03a88789fefb3199a62df3b480d38b513ce3d03d09fc5719c56a99fe3e1ef1f8",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/johnston-s-eddy-boat-ramp_fl.json",
+   "bytes": 24215,
+   "sha256": "e3e0a0eecd24f80c4abcb74c9fff3221c215e5bd9bce74723c4f858175a2f0a8",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/kelly-s-slab-crooked-creek-boat-ramp_area.json",
+   "bytes": 148797,
+   "sha256": "907468dcf6c162651cad8340bd4b078a4e7609f0d8e2a532f68410fc12d9adc6",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/kelly-s-slab-crooked-creek-boat-ramp_fl.json",
+   "bytes": 8249,
+   "sha256": "50fbf82756ebeac4501cff049a9d09797be8fe055476ba08cbf18cf9171b6ea2",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/kody-riggan-datto-boat-ramp_area.json",
+   "bytes": 2120261,
+   "sha256": "03a88789fefb3199a62df3b480d38b513ce3d03d09fc5719c56a99fe3e1ef1f8",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/kody-riggan-datto-boat-ramp_fl.json",
+   "bytes": 9950,
+   "sha256": "39a8fc6e8badc4b2909615a3fdb2a742ef7aa217fe1cfc146222503681f47f14",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/kyles-landing-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/kyles-landing-buffalo-nr_fl.json",
+   "bytes": 35598,
+   "sha256": "38d3844ec2e91c3a01bab0435e063f170019e74ae76dacc6b5f7f0efa94ce1ae",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lb-access-boat-ramp_area.json",
+   "bytes": 3965890,
+   "sha256": "90b7063e985283bfc8f69f7fecc8d6dec9516890d2508e16e52c2532980a43d3",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lb-access-boat-ramp_fl.json",
+   "bytes": 19894,
+   "sha256": "4724b7c503b601eecd88d14036b07a483f16dbabf6f41f19b89f33809d30e831",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lee-s-ferry-boat-ramp_area.json",
+   "bytes": 117209,
+   "sha256": "64a7f1ae596090204c39cd415ca333e2f6ee2ff1bbcf7f9695b5fec404e72351",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lee-s-ferry-boat-ramp_fl.json",
+   "bytes": 21504,
+   "sha256": "720e6ad1624d16083202731c5ed07b8899bc45e8ecb385515fb9f137560dde90",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/little-missouri-hwy-27-boating-access_area.json",
+   "bytes": 78121,
+   "sha256": "1d413d01dd8a824cba7d8eb3cb7a709f14ece1b9fa1406adf2e9c7f38758515a",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/little-missouri-hwy-27-boating-access_fl.json",
+   "bytes": 6766,
+   "sha256": "417d1f9a07f393d83b22c3b2d16e92ebbfc5faa02d28e2b155e03245b60113ea",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lobo-landing-boat-ramp_area.json",
+   "bytes": 678787,
+   "sha256": "f332d344287cd5dd78fa8f10a7ed793322e1d499d4dd3c428c440474e44e43de",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lobo-landing-boat-ramp_fl.json",
+   "bytes": 28585,
+   "sha256": "813d8987f6a3ae9ce0e0c1b00b0d8262199dbab40804c7ce3d585aaa24fc18ea",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/long-pool-recreation-area-usfs_area.json",
+   "bytes": 18677,
+   "sha256": "cded2632418785bef47a35b4e6426f026e3eb82ad165cdbb16e4cc069c87f2fa",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/long-pool-recreation-area-usfs_fl.json",
+   "bytes": 3659,
+   "sha256": "d5035ca7fa9098f8a878cc1d8a5e7b27c052d3496d4e5473828515d1032120a1",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/longview-boat-ramp_area.json",
+   "bytes": 1605088,
+   "sha256": "19eb528b9289de97f84b3f5ac0367f22212f4115b537d2ff70593892c73e67a9",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/longview-boat-ramp_fl.json",
+   "bytes": 19114,
+   "sha256": "1d712a1d23a8817375e3af79662bc5bdcbaf469bd1ccc319d5ac9860889c33df",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lower-crooked-creek-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lower-crooked-creek-boat-ramp_fl.json",
+   "bytes": 5075,
+   "sha256": "ce1a0f7206d4bfca56181d46ec9fd756ecc512522e32989660310b47f2b4ac22",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lyle-park-boat-ramp_area.json",
+   "bytes": 425452,
+   "sha256": "cac150e14aefd1447e30133fe36fb2076d3a8ebce9e36cebebe6ca293b7ccb8a",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/lyle-park-boat-ramp_fl.json",
+   "bytes": 24634,
+   "sha256": "99e440285a449744bbc183f96a37985c03c88b3af2e3ca622d92fa5e6018c283",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/marble-access-kings-river-boating-access_area.json",
+   "bytes": 80787,
+   "sha256": "beb5d71d8a49dd663fab79f21d73455223641ad655c6f4a4e43ccea3e527519d",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/marble-access-kings-river-boating-access_fl.json",
+   "bytes": 19422,
+   "sha256": "f28491ba0d1805b9cf88a44e7de8b20ba795ab8a7bfcd3ebebc7c5884a02bc87",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mark-oliver-crooked-creek-boat-ramp_area.json",
+   "bytes": 148797,
+   "sha256": "907468dcf6c162651cad8340bd4b078a4e7609f0d8e2a532f68410fc12d9adc6",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mark-oliver-crooked-creek-boat-ramp_fl.json",
+   "bytes": 19044,
+   "sha256": "373fceb0532cd5349b4c57040a88f19333577ccfbef3a34930c127cc74ea73a8",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mcguire-boating-access_area.json",
+   "bytes": 11629,
+   "sha256": "9fa5f06901207ff082808c8f8ef2ca56c7c2e82190c4fea2a3e6aaa01f07217c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mcguire-boating-access_fl.json",
+   "bytes": 5985,
+   "sha256": "e1242db28a4fadeb52d738496ede9b1c2e8cc9d81af310451f89086d5e2be085",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mickles-switch-boating-access_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mickles-switch-boating-access_fl.json",
+   "bytes": 8334,
+   "sha256": "e531a2cac50fb969a49bd26cfa81a66ef0ca084ede71373254721df71129e9b3",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/monaghan-womack-hwy-305-boat-ramp_area.json",
+   "bytes": 678787,
+   "sha256": "f332d344287cd5dd78fa8f10a7ed793322e1d499d4dd3c428c440474e44e43de",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/monaghan-womack-hwy-305-boat-ramp_fl.json",
+   "bytes": 10573,
+   "sha256": "278e60cd0293d343138ad39b9363bd2538207c03d1dbf43e37ba75894d725471",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mount-olive-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mount-olive-boat-ramp_fl.json",
+   "bytes": 11775,
+   "sha256": "8a879766133735898ac1c5c9dbdb59be2af4d3ed153c8be95d99569f0abbafa7",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mt-george-boat-ramp_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mt-george-boat-ramp_fl.json",
+   "bytes": 16439,
+   "sha256": "26a5ea9fc9cad0285e6a2b05dafa559f6fad5d980c15b2cc2f12a8ebfc48373d",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mt-hersey-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/mt-hersey-buffalo-nr_fl.json",
+   "bytes": 38494,
+   "sha256": "6a626ebdd53f98027ba7888a2ac0a08ee942ba2757d0520d3a852b7440693174",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/norfork-1-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/norfork-1-boat-ramp_fl.json",
+   "bytes": 17933,
+   "sha256": "0cd2bafbfd2a240743b6fe470ff6c3c8b53c18508f702efdb0b8e297023bc843",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/norfork-2-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/norfork-2-boat-ramp_fl.json",
+   "bytes": 17933,
+   "sha256": "0cd2bafbfd2a240743b6fe470ff6c3c8b53c18508f702efdb0b8e297023bc843",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/norman-boating-access_area.json",
+   "bytes": 25231,
+   "sha256": "dee28acc68b3a44fb1a42ec35fce698bf542c655ab4218979fd6d226e47bfe50",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/norman-boating-access_fl.json",
+   "bytes": 13801,
+   "sha256": "8e2da110f154f78a0affe2003253925b7085e7eb8910a29d80b7b76dc5e86176",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/north-maumee-buffalo-nr_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/north-maumee-buffalo-nr_fl.json",
+   "bytes": 34282,
+   "sha256": "913e3cbb94a9fe6f9697afca063a887b936739382cb80b81590ecd2ab6be95fa",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/nubin-hill-boat-ramp_area.json",
+   "bytes": 730891,
+   "sha256": "8f0283d0e844e05577a2e9341cd6ef09e40e226680aa14417025eb24fdcbd12c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/nubin-hill-boat-ramp_fl.json",
+   "bytes": 17324,
+   "sha256": "81e56e62646ebafe012545415b951bb47817cc92f79e3df66ccd8c858375008c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/oden-boating-access_area.json",
+   "bytes": 339362,
+   "sha256": "7bbe561178ee9c676c2cfd34c42c2fa0b349d145fa2dfa78ca5ac7e29ce3d7d5",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/oden-boating-access_fl.json",
+   "bytes": 15633,
+   "sha256": "8e1016860fcb3bc0cd22b429f6b0af4f1547bb3177d1a2726144aedae6f19dbb",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ozark-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ozark-buffalo-nr_fl.json",
+   "bytes": 35476,
+   "sha256": "40fd10abfcdae2c4084b5e6eac8e0589f38dcc1e1526a2cf5fe1859ff7e75698",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ozment-bluff-boat-ramp_area.json",
+   "bytes": 1605088,
+   "sha256": "19eb528b9289de97f84b3f5ac0367f22212f4115b537d2ff70593892c73e67a9",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ozment-bluff-boat-ramp_fl.json",
+   "bytes": 17804,
+   "sha256": "5fbd0fa0b8bb64d57dafd01805e205092b4e13a0826450b6535213cc47dc6e86",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/peebles-bluff-access-boat-ramp_area.json",
+   "bytes": 2911330,
+   "sha256": "736035b69585360ac2c5b00caa69e29a834159bb1dc214c99c708946463a6dcb",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/peebles-bluff-access-boat-ramp_fl.json",
+   "bytes": 30289,
+   "sha256": "f3bd8cc70f55ea3770923081404b0e1217bd0723708a0fed4148f5af2bb532bf",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/peeler-bend-boat-ramp_area.json",
+   "bytes": 425452,
+   "sha256": "cac150e14aefd1447e30133fe36fb2076d3a8ebce9e36cebebe6ca293b7ccb8a",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/peeler-bend-boat-ramp_fl.json",
+   "bytes": 16010,
+   "sha256": "0f49cd40b5ebbd48308758fdbf5103c6dd621e9d9076de9288e3e506a104e191",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/perryville-public-access-fourche-lafave-river_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/perryville-public-access-fourche-lafave-river_fl.json",
+   "bytes": 10414,
+   "sha256": "a72485f5dee07d4a29195a4e67649e82cbb7a56915e4ac0f44ce6107ce82bc75",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/petit-jean-river-highway-7-boat-ramp_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/petit-jean-river-highway-7-boat-ramp_fl.json",
+   "bytes": 16635,
+   "sha256": "b900023514988d3f8a8940f60332777ff07d165601b15ede95954ece5f007801",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pinnacle-mountain-state-park-little-maumelle-boat-ramp_area.json",
+   "bytes": 28359,
+   "sha256": "e46e22ac5caad739e7bd25294eb66ce40f324335d8b59b925bf308910722688f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pinnacle-mountain-state-park-little-maumelle-boat-ramp_fl.json",
+   "bytes": 8683,
+   "sha256": "5b152cb9a14df9794709f2618fd1a066b054bb22de61a180dc15536305ae5b59",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pinnacle-mountain-state-park-west-summit-boating-access_area.json",
+   "bytes": 113890,
+   "sha256": "5b4254032281e3a4d9a21d48ddd83e3d4769c362441df58f62551007f7958265",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pinnacle-mountain-state-park-west-summit-boating-access_fl.json",
+   "bytes": 6179,
+   "sha256": "fdebbece4f03b40bfa3b15aba90440187c529a4be432301d48e1d0e51c3b7573",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pocahontas-boat-ramp_area.json",
+   "bytes": 3049255,
+   "sha256": "da8d741b2bb652df03a5789d7476a839e6414e22a09f42174227f0f25ee7128d",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pocahontas-boat-ramp_fl.json",
+   "bytes": 14044,
+   "sha256": "1f75e58c00ee1e9926897200db0fc1bd25b14b1dcd1135e43043660b860d99a1",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ponca-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ponca-buffalo-nr_fl.json",
+   "bytes": 19730,
+   "sha256": "c24f3a8f77299cb505146a5f06484328bca490b8b0e5b5dc350b02949c1a71f9",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pontoon-park-boat-ramp_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pontoon-park-boat-ramp_fl.json",
+   "bytes": 8483,
+   "sha256": "4d0b9748f2c5cab8aceda67d92dd6f4f46e1e65c439808e3b0daa6ab99f39a83",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/powhatan-access_area.json",
+   "bytes": 929685,
+   "sha256": "d88d4db16f2d35751d5dcaf1228bb15c78dd700a1d1da5cc403bc9ccc9fe7d63",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/powhatan-access_fl.json",
+   "bytes": 19894,
+   "sha256": "d420c0a08a6d5022e0700980736f1f724d34ad3f6650d2f45f28aff6b1f2ed2a",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pruitt-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pruitt-buffalo-nr_fl.json",
+   "bytes": 25676,
+   "sha256": "f4e3203e730a5e93d4a152af71e60e39878a83368066e85c8686135bf1305c15",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pyatt-1-crooked-creek-boat-ramp_area.json",
+   "bytes": 148797,
+   "sha256": "907468dcf6c162651cad8340bd4b078a4e7609f0d8e2a532f68410fc12d9adc6",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pyatt-1-crooked-creek-boat-ramp_fl.json",
+   "bytes": 9182,
+   "sha256": "f1648c4e501ad1df85d11c3e180b97b06d169d823a49241dcf29a0eb89388992",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pyatt-2-boat-ramp_area.json",
+   "bytes": 148797,
+   "sha256": "907468dcf6c162651cad8340bd4b078a4e7609f0d8e2a532f68410fc12d9adc6",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/pyatt-2-boat-ramp_fl.json",
+   "bytes": 4807,
+   "sha256": "6704c8a424e4fe35b1aaa9a03c7012fc6756626359d0df414d904ab48386cbe6",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ramsey-boat-ramp_area.json",
+   "bytes": 678787,
+   "sha256": "f332d344287cd5dd78fa8f10a7ed793322e1d499d4dd3c428c440474e44e43de",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ramsey-boat-ramp_fl.json",
+   "bytes": 30770,
+   "sha256": "90c15debf184f7190096dcab214c47a397814580099abd34c4b3d6b5d37a2044",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ranchette-boat-ramp-2_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ranchette-boat-ramp-2_fl.json",
+   "bytes": 12656,
+   "sha256": "ac54b49f53a92afa9abfa7be39b329e00d9090cd213a5624c81a9f166fddce01",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ransom-w-smith-access_area.json",
+   "bytes": 1982336,
+   "sha256": "7d1d2ffe113a2beea820500ba638a33054524609d7d5d26baec4ed7717c35af9",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ransom-w-smith-access_fl.json",
+   "bytes": 22251,
+   "sha256": "eb84cc83b97ca8c32c80b7613a0e1e1ea63b92f0041b24abe4f521608b8bb9a9",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ravenden-boat-ramp_area.json",
+   "bytes": 4694550,
+   "sha256": "775dd1a56bb4b6d0e2d14025d126f1ba9a19dba7160abc06c35490d545680a4f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/ravenden-boat-ramp_fl.json",
+   "bytes": 19657,
+   "sha256": "65c85db655f507b4994b3dcde57bc5e1488f8af73e5daa15feddb747dc3438eb",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/red-s-landing-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/red-s-landing-boat-ramp_fl.json",
+   "bytes": 9466,
+   "sha256": "1e0f9672d68c6f01e9187b6b05b292af94e864b35112fcf3fd8c726039aef764",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/redding-recreation-area-canoe-access_area.json",
+   "bytes": 5430,
+   "sha256": "56b4d13acb0404fca61b3234b94e7b3a62307d7caa29e326ba3bb8b176cd249d",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/redding-recreation-area-canoe-access_fl.json",
+   "bytes": 3597,
+   "sha256": "b64ba750aa5f17fc8c1c8e07848568c7d5704f917e0d2102c90f4e73477bb6d1",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/reed-barringer-boat-ramp_area.json",
+   "bytes": 684076,
+   "sha256": "5a9d203dd54d38f58b7fc145137f80c6d2fca9559172a7cd96e4df6c451ecc2c",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/reed-barringer-boat-ramp_fl.json",
+   "bytes": 19450,
+   "sha256": "46e516572f2efd7ebecf18215501f12ef136f0380e8a6e447ef89c370c425ec4",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/richland-creek-recreation-area-usfs_area.json",
+   "bytes": 2806,
+   "sha256": "c0af1aa0dc35a8a2e90a02d08de9cc1acd9fb560562f4851734f0b07d0180d5f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/richland-creek-recreation-area-usfs_fl.json",
+   "bytes": 14964,
+   "sha256": "d59290696e73cfd5721b89c1e7bc1b0be50adc984e1c35e82e6da44ac3aae017",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rim-shoals-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rim-shoals-boat-ramp_fl.json",
+   "bytes": 39590,
+   "sha256": "ae8c53449b1e8960d7556991d3242ba89382cf41625c9cbbe9488d71ff537888",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/river-bluff-usfs_area.json",
+   "bytes": 339362,
+   "sha256": "7bbe561178ee9c676c2cfd34c42c2fa0b349d145fa2dfa78ca5ac7e29ce3d7d5",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/river-bluff-usfs_fl.json",
+   "bytes": 13844,
+   "sha256": "7bd8c13abe935a3a1e872c9c0b2527984cc89574c5edebc24aa2ca56fde44d77",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/riverview-school-access-boat-ramp_area.json",
+   "bytes": 1658420,
+   "sha256": "c9c801e58eeb622169d4a9d4508a75a8b72c3c4f68a7473ecb4c56cbe3e5dec2",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/riverview-school-access-boat-ramp_fl.json",
+   "bytes": 26647,
+   "sha256": "6549c2bb8e49ef7b286602178d231a4d080a8415328dc5e5cae68776c737c49f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rock-island-rr-boating-access_area.json",
+   "bytes": 887684,
+   "sha256": "d0029d2d56457f8c1f6502c397ffbb1058a319b0b8c557e2d852cae5a3220f03",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rock-island-rr-boating-access_fl.json",
+   "bytes": 4344,
+   "sha256": "d53e980641763ea636901b253749395e0f6c7db23ee5e307c7a0a936c3f126f0",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rockhouse-canoe-kayak-access_area.json",
+   "bytes": 408426,
+   "sha256": "2f3e1359edffd34539ab3604c278303093f3f624bfa7eb9e1455f07e9395179f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rockhouse-canoe-kayak-access_fl.json",
+   "bytes": 12482,
+   "sha256": "f9f9bd0acbf52742c11942f92b795d3bc35d44e6f80f6c7a658c1cc4ae9d563f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rocky-shoals-usfs_area.json",
+   "bytes": 339362,
+   "sha256": "7bbe561178ee9c676c2cfd34c42c2fa0b349d145fa2dfa78ca5ac7e29ce3d7d5",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rocky-shoals-usfs_fl.json",
+   "bytes": 18629,
+   "sha256": "a5e3b10fdae8661706c18d3988944bdb9a0c10908e8a214192621bce90c49fb9",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/romp-hole-boat-ramp_area.json",
+   "bytes": 670011,
+   "sha256": "67ee88b4c6a4b68ab5121800b4ddc898928f93e9d0c1b6746c4092abde87c1a2",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/romp-hole-boat-ramp_fl.json",
+   "bytes": 8461,
+   "sha256": "c090cc92a6b3f1ebee4300a3d9d8451f7abcb1d55f77874afe72c4e1670ec121",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/round-bottom-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/round-bottom-boat-ramp_fl.json",
+   "bytes": 14307,
+   "sha256": "94e8e60184c1fbe081f586ec193f90280ef0638c376540078e698cb74c7a7393",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rush-buffalo-nr_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/rush-buffalo-nr_fl.json",
+   "bytes": 42666,
+   "sha256": "effb88a55e5c68f287c8bbfa8a3c62ca473d00986e4f7557694d5b3456491f50",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/salem-boat-ramp_area.json",
+   "bytes": 76174,
+   "sha256": "c2e1dcea92db27c6937557430ec3b8d7478e954f24a63dc6b07d971cdfde9b55",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/salem-boat-ramp_fl.json",
+   "bytes": 10054,
+   "sha256": "ac015a15e5374be45e6fbb234447d8426d8f0e84581bd0667ccf5f69a706d174",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/schaeffer-s-eddy-boat-ramp_area.json",
+   "bytes": 2120261,
+   "sha256": "03a88789fefb3199a62df3b480d38b513ce3d03d09fc5719c56a99fe3e1ef1f8",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/schaeffer-s-eddy-boat-ramp_fl.json",
+   "bytes": 5945,
+   "sha256": "5598a672781a8033821c0805ff3956db0f12cad1e750061a0de9529bddd7c195",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/shaw-bridge-boat-ramp_area.json",
+   "bytes": 2062557,
+   "sha256": "46690d3fd8f71c3b91068148ab9e0574fb04c70d595b0a3bf746a8498dc7826f",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/shaw-bridge-boat-ramp_fl.json",
+   "bytes": 20350,
+   "sha256": "5145a43e59cdab20730dbb1fab5e20cfdc25c7b28963212edb5ee604fffa2c5b",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/shipp-s-ferry-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part02"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/shipp-s-ferry-boat-ramp_fl.json",
+   "bytes": 28872,
+   "sha256": "01794155c102f15ed42f14d952a61c3946798cc6fa3774fa6b7ccdee063798c9",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/shirley-creek-usfs_area.json",
+   "bytes": 339362,
+   "sha256": "7bbe561178ee9c676c2cfd34c42c2fa0b349d145fa2dfa78ca5ac7e29ce3d7d5",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/shirley-creek-usfs_fl.json",
+   "bytes": 13639,
+   "sha256": "5a8550adc7e68552d66251ff8e740caf873ad5232bd9139fec3b3a0532fedb24",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/siloam-springs-kayak-park-access_area.json",
+   "bytes": 659971,
+   "sha256": "afd163085bc42e31b9b654c249ce404a8ca535a800a87c7372f366cdfb90f228",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/siloam-springs-kayak-park-access_fl.json",
+   "bytes": 55746,
+   "sha256": "ad2bc3ab37233a559024a72c18d1018ba169d3f29d6a0e8cf91ff68e2e1e9814",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/simstown-canoe-access_area.json",
+   "bytes": 1982336,
+   "sha256": "7d1d2ffe113a2beea820500ba638a33054524609d7d5d26baec4ed7717c35af9",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/simstown-canoe-access_fl.json",
+   "bytes": 18259,
+   "sha256": "1d1b5b8d2e713d33c6cc4636a040eece2ffd52442eb16253a79c37f44ed4d7f9",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/slaty-crossing-boat-ramp_area.json",
+   "bytes": 1680033,
+   "sha256": "222690d01d7106a97b30298f5d978b0e6678042cd9265664a36b1bda7cab9102",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/slaty-crossing-boat-ramp_fl.json",
+   "bytes": 11555,
+   "sha256": "cd106d1389c6ffacfe1f28d12ff8b2275c495219b4da99adf811ae3626ef0dad",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/sneed-creek-boat-ramp_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/sneed-creek-boat-ramp_fl.json",
+   "bytes": 10830,
+   "sha256": "2e3a9355bd0a725c57bf4b0367a5ae5a3dab74f9fdfce3db18c7c5e1721e7ffb",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/snow-crooked-creek-boat-ramp_area.json",
+   "bytes": 148797,
+   "sha256": "907468dcf6c162651cad8340bd4b078a4e7609f0d8e2a532f68410fc12d9adc6",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/snow-crooked-creek-boat-ramp_fl.json",
+   "bytes": 8325,
+   "sha256": "18c0e956ca6db7c41248714cb0eb20514738f18ac958ca3313aa9b35a3655bc8",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/south-maumee-buffalo-nr_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/south-maumee-buffalo-nr_fl.json",
+   "bytes": 38372,
+   "sha256": "3d09e67def5f9d2c0c5a33fd035d48f607be25479086c72ea5c9ba01ceea673a",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/spring-creek-buffalo-nr_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/spring-creek-buffalo-nr_fl.json",
+   "bytes": 34428,
+   "sha256": "25881c99a46eb393da6a5f56b6ec88dc2f0f097974efbc2773b0d95a96cc8cce",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/st-francis-boat-ramp_area.json",
+   "bytes": 1241007,
+   "sha256": "4fdd6dc096aacc1b8bd41f203aa282ed722fa752558dc6316161a905af40fe4b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/st-francis-boat-ramp_fl.json",
+   "bytes": 4905,
+   "sha256": "bc6d28050938b727a5fd57f7f4b6f8868830e6e895403a4bdfc287392aba7f44",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/steel-bridge-access_area.json",
+   "bytes": 2282523,
+   "sha256": "acd83ba5d9a9d53dde0dcb3b456fc4ae8371a04d7489b22583a21c630d0fff62",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/steel-bridge-access_fl.json",
+   "bytes": 12311,
+   "sha256": "178dd8104c0a98044350dc97b7d20cf5748c30a56a7620029db26d9ab9357fbc",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/steel-creek-buffalo-nr_area.json",
+   "bytes": 264602,
+   "sha256": "f22fc005ea821f487c6e2925ab5ebd2dc986f8a8bf13d737d7227bc53b816d8c",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/steel-creek-buffalo-nr_fl.json",
+   "bytes": 25600,
+   "sha256": "07defc72f3e7c3cf98af773b5e9f1b679c38655e8ad006d7c1f5f2550526a8fe",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/stoney-point-boating-access_area.json",
+   "bytes": 408426,
+   "sha256": "2f3e1359edffd34539ab3604c278303093f3f624bfa7eb9e1455f07e9395179f",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/stoney-point-boating-access_fl.json",
+   "bytes": 10321,
+   "sha256": "2e528eb71a1541d6bacf9deaf28dd48a774eb064ab59f4dcc2f719129af88d02",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/sunrise-boating-access_area.json",
+   "bytes": 91536,
+   "sha256": "c0eb54e87d805e72a0ffd7ff60a8d3989f2df132fb8a4746c5bd4ad434cb2f6e",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/sunrise-boating-access_fl.json",
+   "bytes": 13306,
+   "sha256": "7d1b0d3c29986d870f29031b7872d12a1dc8d1411213d86e7b7890a5191735df",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/swinging-bridge-boat-ramp_area.json",
+   "bytes": 67389,
+   "sha256": "f71faa1793c0aa8b65be77127419807ced7249018469e3c5a53b7c4fa1aae930",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/swinging-bridge-boat-ramp_fl.json",
+   "bytes": 15479,
+   "sha256": "cda89a0a33aca65da314e17da261ca2747e6bfed89831c731ae5865cedf692a3",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/sylamore-ferry-boating-access_area.json",
+   "bytes": 1253601,
+   "sha256": "bca49eb96bde0b09e647c7a86e3865c2e009050fbc7837f9c0085afba1b0a5ff",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/sylamore-ferry-boating-access_fl.json",
+   "bytes": 6126,
+   "sha256": "ffc0b8e78261c349032c5e9c404b0ce242e50a1e4b98019764d5c4448c6ea12e",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/terrell-access-boat-ramp_area.json",
+   "bytes": 78121,
+   "sha256": "1d413d01dd8a824cba7d8eb3cb7a709f14ece1b9fa1406adf2e9c7f38758515a",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/terrell-access-boat-ramp_fl.json",
+   "bytes": 14074,
+   "sha256": "ff082ad7d8eeb87b6111366ab92e4b8e5580f08d50fcfc8f146ab90622e2bd1e",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/tyler-bend-buffalo-nr_area.json",
+   "bytes": 100128,
+   "sha256": "2c89d3abe14254e5def69f4426d8176556245b2b02344e54dbae01a8ca8cf675",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/tyler-bend-buffalo-nr_fl.json",
+   "bytes": 19602,
+   "sha256": "578d4d502458b34bbc5fcebf027ece9476bd0c1de6f04ea09357e0491dec42f4",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/upper-white-river-magness-family-access-boat-ramp_area.json",
+   "bytes": 48199,
+   "sha256": "053ce2531aff2f694ca0231191107ad235959348053e29ffd572a05b4b8c25bb",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/upper-white-river-magness-family-access-boat-ramp_fl.json",
+   "bytes": 20045,
+   "sha256": "23a6f32c478b4008fd15fa88e3e30ad96e31b8ae968dcfc855645bcafb2cac88",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/white-hole-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/white-hole-boat-ramp_fl.json",
+   "bytes": 11398,
+   "sha256": "09bf4ba5c675d201611181c8fabcc24d79853dd4e49bb25d5da73b906850e825",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/wildcat-shoals-boat-ramp_area.json",
+   "bytes": 383966,
+   "sha256": "103986e6212a2c3e6c9b52a988f2706ba7b2e59112bb084f248f3950bed55da7",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/wildcat-shoals-boat-ramp_fl.json",
+   "bytes": 3391,
+   "sha256": "f95ab8229a91d03a81de0b67faf3c8977442a7c5f064bd256e457eac8f396125",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/withrow-springs-state-park-boating-access_area.json",
+   "bytes": 8112,
+   "sha256": "8e03899845ccb1d638d642576f13425e2ac11adf71a19d820388c6a8fd1927bc",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/withrow-springs-state-park-boating-access_fl.json",
+   "bytes": 26782,
+   "sha256": "2162cccba21404cb2674e4357a161eea4bb8998b62babb3989cf0a330337f65d",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/woka-whitewater-park-canoe-kayakng-access_area.json",
+   "bytes": 659971,
+   "sha256": "afd163085bc42e31b9b654c249ce404a8ca535a800a87c7372f366cdfb90f228",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/woka-whitewater-park-canoe-kayakng-access_fl.json",
+   "bytes": 7315,
+   "sha256": "6a2272a684f05af0b7f7d83e3fb1b0a63dd2cf7e05769c98b080e7f88ed95560",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/wolf-pen-recreation-area-canoe-access_area.json",
+   "bytes": 6218,
+   "sha256": "cfecdeb3ed8fb8d0685c96dae59fe3327f7303a12a9dcdced34f8adde5b9c794",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/wolf-pen-recreation-area-canoe-access_fl.json",
+   "bytes": 18878,
+   "sha256": "d64c0c47b7c9d12113feff2167b90b35e25820967825bb32163bfd24846d02c1",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/woolum-buffalo-nr_area.json",
+   "bytes": 100128,
+   "sha256": "2c89d3abe14254e5def69f4426d8176556245b2b02344e54dbae01a8ca8cf675",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/woolum-buffalo-nr_fl.json",
+   "bytes": 34252,
+   "sha256": "65aebf1770d6d5ac9ae11b7e420361d2b4f11b71aa0a83f231db3d57c87aa784",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/yellville-crooked-creek-boat-ramp_area.json",
+   "bytes": 532072,
+   "sha256": "a6addd0c003df7d3581e9711991ef810e25e38f91dc700b26daf8ffb8b643f42",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_flowline/yellville-crooked-creek-boat-ramp_fl.json",
+   "bytes": 8365,
+   "sha256": "8f693f855b70bc01fe331b782760d78ffafccefbc8ad1f95f702d361f580d502",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nhd_hr_gpkg_sources.json",
+   "bytes": 1866,
+   "sha256": "96f51e23deedcd0fe8b3610c92a0be3e615f48e71b249be566ea2d5f75dbb6c1",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_11775003_50.json",
+   "bytes": 23101,
+   "sha256": "6e460349b7633f5f734497b254e278ff26e493f1fbfd7a04e7b4fe67c4ad3e3b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_11808890_130.json",
+   "bytes": 67750,
+   "sha256": "5b87d39d6c3ad811636e5ee220bcb9ee168393863b7aa012624ca505b17a0e0b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_11819291_240.json",
+   "bytes": 107638,
+   "sha256": "d45ec7953f00db6b6a67e8de528f01e2ec990b0b269b80b0bd8437341ed9d78c",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15236384_120.json",
+   "bytes": 54381,
+   "sha256": "05d1244fd89bded073de1f4e52150cfdf75704a35e70ce4079962f13d07e85be",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_15236384_60.json",
+   "bytes": 34410,
+   "sha256": "13142f58cf3a6c06c77165e62167f6c2fd2d9f808d7f66dc1c99fda4adb125b9",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_21928243_260.json",
+   "bytes": 110344,
+   "sha256": "4b0cc9a95c6bfc2585c4b6cf25e361ac1df5172cc55b917e7303f6b3d7fede89",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22000440_60.json",
+   "bytes": 29969,
+   "sha256": "53f0f7366c71614b4a152cecfe49415bba5201f37a3dbdc462aa93c5086413f4",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22700354_110.json",
+   "bytes": 73264,
+   "sha256": "13bad28ae135da759072ab465805416e25a9a2c5c2ca05a7a86d7a0c3cab8072",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22700354_180.json",
+   "bytes": 115902,
+   "sha256": "f457942a95420177758e1c3edc596f05444a6ee20ef254c7f9bbf0a8f018cc56",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22847749_10.json",
+   "bytes": 14670,
+   "sha256": "83e7816897719568163a813443190bda12742ffe461b617e4b0a7769da5668ea",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_22847749_30.json",
+   "bytes": 20380,
+   "sha256": "f4f45eb461334b391ad5b25af4c6a02aa9815788145e16cf086261770b47d449",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_25722582_40.json",
+   "bytes": 34442,
+   "sha256": "29f402c2e44c80abf565331e1c1a9cc9e9a61f69ef3693d6ffe40bd52b75e41c",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_27067219_90.json",
+   "bytes": 54619,
+   "sha256": "aca6100ae8bd703183504bc465a5874ebcfb7d82ad8d23ce32fba1ea41296414",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_397968_40.json",
+   "bytes": 24717,
+   "sha256": "d50c5bedb045a709d768e379ef888ba4a6d280ff92c27d62c6f018fdb2df31f7",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7559791_30.json",
+   "bytes": 17846,
+   "sha256": "2ca3de0ccb22676e5d5f1df7942401bc8a2f4855c2bb05e4fee5eb8e9fa5d145",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7561641_90.json",
+   "bytes": 43422,
+   "sha256": "4862b5e54a457bf3f8c4fdc8e56fb7b12766a92a275ffaef9b3deac5b8116fcb",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7573983_50.json",
+   "bytes": 33941,
+   "sha256": "ef897fbdbc5875cfb066d800dd74547b0a0dd02856cb186b4f4e00c31d571e28",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7628850_120.json",
+   "bytes": 50186,
+   "sha256": "850079eacd788f48e9df35537f6b55975f9a3a9059ab23d338ce754940f45f49",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7628850_60.json",
+   "bytes": 31731,
+   "sha256": "0c4b03ca3dbbbd37a1016a9a4c54e402ac8e583f1529cc3d2b8a88f897988e6f",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7629290_160.json",
+   "bytes": 43479,
+   "sha256": "3afd342f823c863540415293db54c088b31cad33552284341256f7ae9dbb7d97",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7653869_15.json",
+   "bytes": 5691,
+   "sha256": "56099791219ef8556ec92408e23d4ec464e1320d27a1b0b629d7bb43cf534a03",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7672838_120.json",
+   "bytes": 40395,
+   "sha256": "47083b4c3df369eb18bfaf32c01b3e97c52a69327bcef938946d77f4a577a5b8",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7751704_110.json",
+   "bytes": 47165,
+   "sha256": "3085550bf6666ee51323a050f5cd0367088fc379643972829882a0c9232f5287",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7803357_40.json",
+   "bytes": 12041,
+   "sha256": "2e8c77dd130069e4768fc3df37d2fa35dea4fc1618ed6b1654cb4baf0711e1bf",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7803357_80.json",
+   "bytes": 22311,
+   "sha256": "82962438298719f873e0fc309f024519eb7c8b720ce3a198dbe8de6430af4752",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7817394_40.json",
+   "bytes": 20396,
+   "sha256": "9246ed2f4579adab5159129a6ad166f9074d9f8d1019ff0a3d28e6ff03da7487",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7817394_80.json",
+   "bytes": 35745,
+   "sha256": "716cec8ee4e197afff3fae6a0c33fe470a46e562810214bb1919c8ff87ca7889",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_7830396_160.json",
+   "bytes": 65231,
+   "sha256": "c0cca80dccad58ffdf99ba261aa87bfb385909993e35bce2c09b75285268fd06",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_8588386_110.json",
+   "bytes": 51736,
+   "sha256": "f1ae08a4b1e9aa23ff0ba27d6a7cca89cf7298a03e2d98df0738b22e319174fe",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_8589606_15.json",
+   "bytes": 4848,
+   "sha256": "961e2a5e3a77834f19f6a07172cfd5dc47c93e99c071b4ecd92c57bd1e9179b6",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_dm_8590894_30.json",
+   "bytes": 16513,
+   "sha256": "560cd081b916774085a7e551681c12426d2e5c1a603b7891f9bd8991c0527ac9",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_order_AR.json",
+   "bytes": 40512,
+   "sha256": "f3a1bef04f744f206dc7c8adde69fb52480565c1b7d9976bdc89e6152a546736",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.04864_m93.72046.json",
+   "bytes": 666,
+   "sha256": "38a8c15e042da73b8e81833e5be749d451baf06495371d1a7a1d849e90b35d5b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.11538_m92.40624.json",
+   "bytes": 486,
+   "sha256": "53c5c609a58802c187abad25efd8a6e0a3ccf6349fe4d5dedcffc3008630ad01",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.45032_m93.67874.json",
+   "bytes": 639,
+   "sha256": "c479796d7cb13df07f0697a8bc6e508104ec3947e01748ec980b0eb839adc336",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.56356_m94.06512.json",
+   "bytes": 792,
+   "sha256": "1abbefc1b6f2e6af24a3be1fbe85a37824b5e403edf405b0a9e0c18dac1f13a4",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.58523_m92.64664.json",
+   "bytes": 482,
+   "sha256": "16768b769f331f9d14da3895eca4d2461986fec755fd08d6c54847ee6a6c649d",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.80950_m93.83191.json",
+   "bytes": 477,
+   "sha256": "3f4d0d5dd76b102e9e5a05e5c45903a070507039d39b4dd1af56293d7734f3f9",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.83866_m92.49114.json",
+   "bytes": 1428,
+   "sha256": "c0ca272ebf3098ff1b0afa2c23ec8d3ae9c027ba5106ac205f751338d7b49361",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_34.93570_m91.24092.json",
+   "bytes": 482,
+   "sha256": "0f42f8161fc77324cc5c58839594ce4c961016d9f0101dd80b874d36ae31e8c4",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_35.07249_m93.29691.json",
+   "bytes": 1849,
+   "sha256": "eafbbdc40fabfd98fbdc0203fde5c0b083b85cf8b8a3cd21dea62ae47d4b59d6",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_35.29925_m92.40297.json",
+   "bytes": 5418,
+   "sha256": "f59f6ca956b31be5b4006655d98387374f35d28e2ed4448c85108468c8196ce3",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_35.51110_m91.99590.json",
+   "bytes": 693,
+   "sha256": "3064beb267534a10eeef6637aa9b87d7bc8c3eb0955fa620b28bd04a3d1b5a35",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_35.67444_m93.63178.json",
+   "bytes": 513,
+   "sha256": "8151d39e43b1516ba314c3425540e8b6313ec1c73d24e254f89db8c4b944d35b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_35.96099_m93.40416.json",
+   "bytes": 1399,
+   "sha256": "93ce33470705156b454cfcec3481a5bd8c5db6e2eaf7563d2deb94ed658cda7a",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.07340_m94.08090.json",
+   "bytes": 1460,
+   "sha256": "e40d3eb02b25bdbbaba9e42d1716b68692150e163e9f4d91e6639cd4b7578c5c",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.14351_m93.59431.json",
+   "bytes": 695,
+   "sha256": "79a41e66ba71045d3d6a4fb29bc01918a826ba5396d87ae43366542cb9421af1",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.16681_m94.43451.json",
+   "bytes": 600,
+   "sha256": "78bf0ab2cf0cec8c15f6d425b2103b105495177210c0357e933c28a35e04a672",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.20075_m91.76069.json",
+   "bytes": 2799,
+   "sha256": "82003256a3cb60a6614e66506b7950d981f5716a33c58fd6966a23feb8cc2e8c",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.24609_m92.24415.json",
+   "bytes": 449,
+   "sha256": "ad209f90fefd8de67a30b50c3f90e35fc32a6eea6c41e4f980c6e22af546ce99",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.24812_m92.84355.json",
+   "bytes": 1613,
+   "sha256": "6cf4532c9a45dfd3ec5d5ee937f083e0671f78ab16e8e66d8645f930f144a248",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.33214_m90.71350.json",
+   "bytes": 2010,
+   "sha256": "4f1e4dbe9d2b638e6ab493dab76c0df270f142b575a1b705124a65eac20dd6a1",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.35466_m92.59461.json",
+   "bytes": 695,
+   "sha256": "734cbfe43aaf54d1e4fe2546532a66a25c90cd212576077436455a9209fc0eaa",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.42197_m91.14019.json",
+   "bytes": 418,
+   "sha256": "ea3e8254e085ea10d7187e8b590e70dccfb69e495e9150c17dbe4c9393cdedfc",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.42275_m93.84239.json",
+   "bytes": 692,
+   "sha256": "15aad8291ea917fb1d41fdcff9c08f0f56661ead7314e3fb4926b5e5b3794829",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.45731_m91.86373.json",
+   "bytes": 873,
+   "sha256": "4b242077c59f86d4105590c10efa74d518524bcb3a2654e728e77c3f389bb6b5",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/geo_cache/nldi_pos_36.47680_m91.52429.json",
+   "bytes": 759,
+   "sha256": "10530ef00c542dc6da431a9d0a08b94eb7fb12bf9e0dc4caf422d566f779c817",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/gis/ar_assign.json",
+   "bytes": 523966,
+   "sha256": "1f93910ceed7e11af6b7ddfac8fe4c74276ae1404182474842bcfcf4c4df019d",
+   "zip": "slim"
+  },
+  {
+   "path": "research/raw/imagery/albert-pike-usfs.jpg",
+   "bytes": 366001,
+   "sha256": "1af5e543ef96ff6e3b3a848c138402316e596c680635030e28a8f25ffa4bc587",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/amity-landing-boat-ramp.jpg",
+   "bytes": 444370,
+   "sha256": "b93ab8bb089855a9110a89b55ebe58f17d5af69bb44ff7f4f0b2626ba2e3ea23",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/apple-lake-boat-access.jpg",
+   "bytes": 395755,
+   "sha256": "487fe279f22aca9daf47559e34304a67aca2c50d4a79abd44b48affb37ec8547",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/baker-ford-buffalo-nr.jpg",
+   "bytes": 394633,
+   "sha256": "da0197c817582321b2ae20cef8d2ad9339f57d1c518a499ba1f23d28bbcc9413",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/bank-of-brinkley-boating-access.jpg",
+   "bytes": 419761,
+   "sha256": "0c6c424380e1215e41363c17eea743834cd8526ed14d1b00685efb9bc50a6bb8",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/barnett-boat-ramp.jpg",
+   "bytes": 314565,
+   "sha256": "f38783ab2e4b1e70439eab279128ac7c5ef571a0fcd9fff62a4c133272c98bc4",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/bayou-bluff-usfs.jpg",
+   "bytes": 398847,
+   "sha256": "5812dfd745d696bb2e5230be75d9c62485751cd0fe8fb1410ee22c42da84a316",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/bayou-boat-ramp.jpg",
+   "bytes": 320137,
+   "sha256": "96dd2ddcdc09801fb9bbda3e0339c8fe28253f213c887508532ac55f048a8837",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/beaver-lake-dam-site-boat-ramp.jpg",
+   "bytes": 286300,
+   "sha256": "2488ea36628ecd6b7797b09da621d8479f03c9402266b9fe5fb8a61ed40050a8",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/bertrand-boat-ramp.jpg",
+   "bytes": 325799,
+   "sha256": "86c5d260555a13ce8f00c54e309840bed3ab8480d442844b4fe2eafae9b6b346",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/big-eddy-canoe-access.jpg",
+   "bytes": 421621,
+   "sha256": "ef528b58860686964c617d2f1d797001ec1e0c22ef12cd63c620fd1621f3dd38",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/black-rock-boating-access.jpg",
+   "bytes": 278304,
+   "sha256": "9a13f4bc565dc3e457493bcbd2320aacbf1c1df2a99cceec4c87a49b8c5f3510",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/bluff-hole-park-boating-access.jpg",
+   "bytes": 354386,
+   "sha256": "8cc4a16d641244823af1811ddd6a48a6af3d236ed77ecab757ca09f2b6aea786",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/boswell-shoals-boating-access.jpg",
+   "bytes": 328660,
+   "sha256": "23a0a0f50bd64c5a5e83e97b0b5a4db0e7c2c14860350e5cd34ebbfa22cbe44b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/boxley-buffalo-nr.jpg",
+   "bytes": 337235,
+   "sha256": "59b004744c0afaebf67c4ed6c44adeea8dc2b7aa2c30143995e507035d7a700c",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/brookings-boat-ramp.jpg",
+   "bytes": 407617,
+   "sha256": "d81554c5340581daa73bdb1193d1b191f572759ce3e9f833562af1f6bd5c3c7b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/buffalo-point-buffalo-nr.jpg",
+   "bytes": 353103,
+   "sha256": "874b8b0ccc65b8c1c45a30f27ee01cb6858f83ea9ef9cfb259ef45a3af8bda1f",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/bull-shoals-boat-ramp.jpg",
+   "bytes": 407919,
+   "sha256": "3c30e8f13858bec59a2d8b06f2d54c65f070c5a885a9e276b79df64a3aa45408",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/calico-rock-boat-ramp.jpg",
+   "bytes": 321759,
+   "sha256": "6ab307adc2b498501a6343c2195449425a28752cd22e8559010285cd67ca1cf3",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/calvin-road-boat-ramp.jpg",
+   "bytes": 429296,
+   "sha256": "b8e06c66dfc9ad4ebc147417365bddbecf62126f9b9fef29183c81e04f228d69",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/campbell-cemetery-canoe-access.jpg",
+   "bytes": 409106,
+   "sha256": "fd89902c96d5cc71da5b7b1e9dfcb929ff54487ff35d46e273fa7e289304622e",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/cartney-boat-ramp.jpg",
+   "bytes": 341635,
+   "sha256": "919c3e683d00229c039be87c0730d70384a5d75eae3cd18c58abe2b15aca0f2e",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/carver-buffalo-nr.jpg",
+   "bytes": 392517,
+   "sha256": "3a2273ab543706285f3bdc516766f5e9ef3b23cbd67417506ad76c9cf1b93371",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/chamber-springs-boating-access.jpg",
+   "bytes": 340006,
+   "sha256": "3ef5036cd2b39f794d392dbd66092e3da67cd0c789472a092b95744ec27bfaa2",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/cherry-hill-boat-ramp.jpg",
+   "bytes": 327174,
+   "sha256": "1cbf8b20a44ff0e74f813df3c9ac86ca8421d74b8f441ce7503bd71c625cd9f1",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/chesmond-ferry-boat-ramp.jpg",
+   "bytes": 305386,
+   "sha256": "1637e93adad1ebb61e2c03f43458cb74ac05f8df02d60225efd5e38ca98debbe",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/coffey-access-boat-ramp.jpg",
+   "bytes": 299888,
+   "sha256": "444c6931fddd39d7c35782be6929f76ce9ee09f88c9b30085bfe6a0399a443d6",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/cold-springs-boat-ramp.jpg",
+   "bytes": 331803,
+   "sha256": "194611c23e7f3b236c50aff036460028e4e094a9237de9343e154518d92b2e83",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/cotter-boat-ramp.jpg",
+   "bytes": 360005,
+   "sha256": "721743da734ca2924133eb60ffc91d7348058572e71dd5139e5a2ce8dda03d9b",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/cowford-boat-ramp.jpg",
+   "bytes": 389665,
+   "sha256": "bb02348697d38457332e9dc1b1d2d798b34bc0569f8fd2b2d4e316f0ef17d4a8",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dale-bend-boat-ramp.jpg",
+   "bytes": 349651,
+   "sha256": "cf00a2a7578a1d1a5a3382625637dd99d49135fa835e0caad2cad5e4b105943f",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dalton-boat-ramp.jpg",
+   "bytes": 355059,
+   "sha256": "e1466f84874ef4cbda7cf75abf2468cef31aad2614875e7bcac59fc727b083f7",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dam-3-boat-ramp.jpg",
+   "bytes": 369170,
+   "sha256": "af007e40c4cc5b165f574d357535239fd5a34dfe2db6a844c7a8ccbfe7751deb",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dam-quarry-boat-ramp.jpg",
+   "bytes": 335656,
+   "sha256": "d1d0a2a7e91e470c2f1d45def9258a8bc170d849db03bfe9e91b744ff643c2be",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dark-corner-spur-boating-access.jpg",
+   "bytes": 373331,
+   "sha256": "2c77c8ee254f6f9e5b676d02ab9c32a3be764c17c3f3b266df33123adf26632f",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dillards-ferry-buffalo-nr.jpg",
+   "bytes": 358456,
+   "sha256": "03dc5df3577500e4bdad9cb6bdc73a8be3cbd2e1b2de51d6aa0eb375cc8e5d7f",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dixie-lee-boat-ramp.jpg",
+   "bytes": 292246,
+   "sha256": "bc19401a11e5203a73e95ce4b54b1fb7ba26fc10c859e2ffc5e61aa703a998cb",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dragover-usfs.jpg",
+   "bytes": 359783,
+   "sha256": "05250c0d7fe64d824ff29e6d02ae83e5fc5a16d3a9921c12d8da75d4eb9cd844",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/dripping-springs-boat-ramp.jpg",
+   "bytes": 305283,
+   "sha256": "11e9b2a48b3137a72a6f0e738637e079aa0623bf49f2d9bef6e075627a73dc9a",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/eleven-point-boat-ramp.jpg",
+   "bytes": 332148,
+   "sha256": "b85cd51e33f1b8f7d08f74f863b399b6e15332392ac693f8acfb9e119c24234f",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/erbie-buffalo-nr.jpg",
+   "bytes": 353818,
+   "sha256": "8642376e93c07cef6fe5ddd45f767250830139c489b5eee0f2b44c8ef4a27411",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/fitzhugh-boat-ramp.jpg",
+   "bytes": 428508,
+   "sha256": "b06b76859aede1774142f12e05473903972a463a9334d326a3806996f96f571d",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/forrest-nina-wood-rivercliff-boat-ramp.jpg",
+   "bytes": 401240,
+   "sha256": "be9b53fdbabb39d352de70baad72f19981cb2234d6c9158c3663bdcadbc44dfa",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/fourche-lafave-river-access.jpg",
+   "bytes": 296549,
+   "sha256": "b60f34cd6d76b35e33d51d0124f9a67ceca8419fc12aef71f328683babec89e3",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/fourche-lafave-river-seasonal-boating-access.jpg",
+   "bytes": 443925,
+   "sha256": "4967d8423785278d3db66f34997743f82147733d00180dbc77fbdc9daf53c57a",
+   "zip": "evidence-part03"
+  },
+  {
+   "path": "research/raw/imagery/fulton-branch-usfs.jpg",
+   "bytes": 341055,
+   "sha256": "97ba5728947aba0505e5d2dccb6189fd75ccfdc498da7e186ac02f4a6cba8dd0",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/gaston-s-resort-boat-ramp.jpg",
+   "bytes": 262304,
+   "sha256": "241bfedd48b70fd476cf3c174d59e9c4477f1d1d5b675d701cb66c6bbb66e995",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/gilbert-buffalo-nr.jpg",
+   "bytes": 370014,
+   "sha256": "a55edd935145587acb6a9f1ac0fb015230681828ff5d44d1ef3022122f118c6c",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/glenwood-boat-ramp.jpg",
+   "bytes": 318475,
+   "sha256": "da73dac9c2ea03307cebd1646a0f519e8357fc6fd22e78a87d5f77c324557a32",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/grinders-ferry-buffalo-nr.jpg",
+   "bytes": 344083,
+   "sha256": "0a53380cf93c8cb5433d54fac09b151083587720f1ef9f85787e38e96270e2f3",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/guion-boat-ramp-izard-county.jpg",
+   "bytes": 238298,
+   "sha256": "9516d1ac66f8ca778e9f15a2c9ff0d01294d98fdbc8ffb1b88dc9e97ed88c7ed",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hardy-beach-access-boat-ramp.jpg",
+   "bytes": 354221,
+   "sha256": "e3a7e212e0300f71fb240e34461b33b48f954b8036504a5b7ea63f4681a36890",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hasty-buffalo-nr.jpg",
+   "bytes": 419019,
+   "sha256": "dbb51806d68179efe4ccf7f61882b74f4d57836b7e86c59a87cb57a9f870ecd3",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hickson-lake-boat-ramp.jpg",
+   "bytes": 434963,
+   "sha256": "f648b3ff4d5150230e5d9cd3c4d1708720fb2d85bbd6766767444d5b7e378a49",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/high-bank-access.jpg",
+   "bytes": 356888,
+   "sha256": "c8ee142668b6dd60b529567d7795f0876d52281142e6e8dace27dac28bd7e468",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/highway-17-boating-access.jpg",
+   "bytes": 378313,
+   "sha256": "a7727982e9136b871b3c320199c4659763ed1eaa6dbc97475cfa66887b9467bf",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/highway-19-boating-access-little-missouri-river.jpg",
+   "bytes": 470990,
+   "sha256": "2f9f24e0302ba891f0d1dd44c37f4ac04e1de5dd87c2c5b02c7c8ba47d7252fd",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/highway-270-boat-ramp.jpg",
+   "bytes": 394324,
+   "sha256": "04e73d00e9a36607fdb7c09885c44b8362992589fb12a96b0dc19200b71858c9",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/horseshoe-bend-boat-ramp.jpg",
+   "bytes": 375589,
+   "sha256": "c7c770ed5554e98667486d182dbe02b8b4a6ceada88a9f59d7c8c9fd2661ebfb",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/houseman-boat-ramp.jpg",
+   "bytes": 312787,
+   "sha256": "3a9204b2b67bf8eaf6eb991bb2894e8cab52b2dcd3f7fc34c7c26f87c3c184b9",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-15-63-boat-ramp.jpg",
+   "bytes": 356341,
+   "sha256": "2cc37824ea72a717e4e7193624b3b510662f991ba8adf84b9acd7acd59a8b6e0",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-167-boat-ramp.jpg",
+   "bytes": 349704,
+   "sha256": "f1e0e803ab1ebdb047cd3314ecb5f085ab2856869a760dd2d64891301af8064c",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-182-amity-boat-ramp.jpg",
+   "bytes": 363206,
+   "sha256": "375f6c0b7725448aecfa726154ad8a72b1abb197da6a92c3348dcf9939d06ca3",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-278-boat-ramp.jpg",
+   "bytes": 410764,
+   "sha256": "4e44c327006be6ab77319927d7fc6a0650dffc431418b7a70d213b9e24ae2b7c",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-285-boat-ramp.jpg",
+   "bytes": 371142,
+   "sha256": "3e2e9f59aadb9cc92ced2e848318d782c8fce6b65b5f1579779cf077810529d5",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-395-boat-ramp.jpg",
+   "bytes": 331746,
+   "sha256": "46f7d63783912fe3ec5d711166b44f0790847ecef6c2f50f45e63b361073eea9",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-45-boat-ramp.jpg",
+   "bytes": 347282,
+   "sha256": "0bd9c86e85af496526da6ee979ed7e9cc55dcf2d6aa07363233677ea72ec857b",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-64-boat-ramp.jpg",
+   "bytes": 366817,
+   "sha256": "8c221c8e01db61d6c2ece44b8645cd0023ce3663e2f2440b464ff988228ac78e",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-65-boat-ramp.jpg",
+   "bytes": 368170,
+   "sha256": "d287e81ca95cec47785abcb8b9d6b80361a947407f6a2fc960a690d1a08fb5f3",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-67-boat-ramp.jpg",
+   "bytes": 351801,
+   "sha256": "9a812a579d196ae18b6366a862375b7a5cdc3c365146e8a3786f67c06b679071",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/hwy-79-pool-boat-ramp.jpg",
+   "bytes": 419066,
+   "sha256": "5cd6bc3c871528ecb3da204c95e009327e8166a86153d392cc40e0e3a70deaa0",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/i-30-cherry-gingles-boat-ramp.jpg",
+   "bytes": 399479,
+   "sha256": "399bcef33f127f951f0a2e01c82ddc2fea58a868be60007605217bdda396e130",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/imboden-boat-ramp.jpg",
+   "bytes": 334855,
+   "sha256": "453f436fecb3ddecbb27eceffc38df06298fb528b01074e79b20715670cc799c",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/indian-creek-access.jpg",
+   "bytes": 330022,
+   "sha256": "a93e2ef4320fcf8cba96de341213092214550439bd35792ea17e7625ed74ae3d",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/j-d-fletcher-kings-river-boating-access.jpg",
+   "bytes": 395993,
+   "sha256": "44d8e09366e1c0c9ce843723ddada26ae6766a56d66fea7b3134b3d6806dbadd",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/jenkins-ferry-boat-ramp.jpg",
+   "bytes": 411062,
+   "sha256": "cf07e63ee6dd77235ce4b76d052d62925a31fd15d38d230687a2eb3b38ed8f9f",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/jfk-park-boat-ramp.jpg",
+   "bytes": 402867,
+   "sha256": "cd3dc4d79387cb0db41ad7b4c42919b744782fc94ad0391993448e35d42950cc",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/jim-griffin-boat-ramp.jpg",
+   "bytes": 417116,
+   "sha256": "f88ed9f33e2ed31edec1db0087936389cd17b5dd8e10832fd7b6e6e58eb3186a",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/johnston-s-eddy-boat-ramp.jpg",
+   "bytes": 345287,
+   "sha256": "ecd890ab20cd6a432bf9407705ddd174c444165eaa52ef29f95ab7869eaad28f",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/kelly-s-slab-crooked-creek-boat-ramp.jpg",
+   "bytes": 286636,
+   "sha256": "07c6b5eaf59cc390dcdb0d63725c0aa372d68dbc1a93195aaa05d66cbe50a1ff",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/kody-riggan-datto-boat-ramp.jpg",
+   "bytes": 365332,
+   "sha256": "65dcdb9670d52dcc4b964b0a1d7815efb81553425e1ac1a385faf02301ebbd31",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/kyles-landing-buffalo-nr.jpg",
+   "bytes": 490847,
+   "sha256": "a49730e39509c5367fe04e8dfd7e9524a2d594fca04369f04b5d16b31d4f5c9a",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/lb-access-boat-ramp.jpg",
+   "bytes": 349083,
+   "sha256": "6b4c1d7eaf7b446957236df2635bd1497fe4933be55c019a6269175cb3189a39",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/lee-s-ferry-boat-ramp.jpg",
+   "bytes": 450973,
+   "sha256": "b2a27d5d64eb8badcdca759b49a48fc581dc2c3db163292095f4be8860044f25",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/little-missouri-hwy-27-boating-access.jpg",
+   "bytes": 301202,
+   "sha256": "cf4f3f39b0df553fe2baec53d728b71d19fc527b3212b430140792e6d58f6b6a",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/lobo-landing-boat-ramp.jpg",
+   "bytes": 356437,
+   "sha256": "8a8792e70ab4709829fab0fb7dd275d51ca02e8d8050186165712356d522ed45",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/long-pool-recreation-area-usfs.jpg",
+   "bytes": 411394,
+   "sha256": "648a098a58e7e691ef38959a1617b9db523557f3c44f51acc290b44805b25cda",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/longview-boat-ramp.jpg",
+   "bytes": 264072,
+   "sha256": "bffdca0a7550c9fe0ee6d5788db596f0ebf99cc8e3563e19c21f2c7551df1edb",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/lower-crooked-creek-boat-ramp.jpg",
+   "bytes": 393178,
+   "sha256": "31624754dfccefe000203d8be847a10be32382371f8eea1092a13385ac7b1b11",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/lyle-park-boat-ramp.jpg",
+   "bytes": 377016,
+   "sha256": "4e18f39ac3b1f7779c9cca2076343f3044f589dcae18f0aa76a28a9b16540d2e",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/marble-access-kings-river-boating-access.jpg",
+   "bytes": 332178,
+   "sha256": "1dedfe81cdd405382a36cb654b19590b19ba2ea78feeecc7907a276342ccb07e",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/mark-oliver-crooked-creek-boat-ramp.jpg",
+   "bytes": 286153,
+   "sha256": "9cbc5369c8a79be16fb8373c96d3e43da64b9adc60e856476a2db26af9ae8713",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/mcguire-boating-access.jpg",
+   "bytes": 426211,
+   "sha256": "4c01eba90e3b9f24a04295d92378715f53636c84cc631786e575998941e83ad7",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/mickles-switch-boating-access.jpg",
+   "bytes": 352386,
+   "sha256": "e30f3893642c5cf1d5ad957af6d01e342bbe31b730b08ba41569a47b67a2eaa7",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/monaghan-womack-hwy-305-boat-ramp.jpg",
+   "bytes": 347667,
+   "sha256": "142ee043fb1100fcd9e13d3d1e4ea43529970da0efd9322d2aa3d00e3feae9ae",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/mount-olive-boat-ramp.jpg",
+   "bytes": 326637,
+   "sha256": "88bdf7ec561dfc61793f8f70648b9ad90093f1e85bd868e86736425c3e9d8aef",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/mt-george-boat-ramp.jpg",
+   "bytes": 340779,
+   "sha256": "5ea8ac5ad66b8395ede11f1c11b022de86555f4b1cbbfd33319831680d59f5c0",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/mt-hersey-buffalo-nr.jpg",
+   "bytes": 384499,
+   "sha256": "ffa4f7561b71128921fd22e5422786be4d8693292c9c36368004704b463912c4",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/norfork-1-boat-ramp.jpg",
+   "bytes": 306641,
+   "sha256": "aa04ce43c768215f423909f301810c79f4d3216c464b45afad1a70f2461b54cd",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/norfork-2-boat-ramp.jpg",
+   "bytes": 274155,
+   "sha256": "778b650831ab771ebf57882256b6b0f621664e250b28b4805721853565e15052",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/norman-boating-access.jpg",
+   "bytes": 384775,
+   "sha256": "1e2ab5f477e666e4e5380a6a23270deca2c8ad928d7a588aca1abbc351f27cd7",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/north-maumee-buffalo-nr.jpg",
+   "bytes": 359734,
+   "sha256": "9f42d512da7e163348440faa704f6f34b26b2ffc4edf324908fad6a4016c929e",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/nubin-hill-boat-ramp.jpg",
+   "bytes": 362915,
+   "sha256": "b4cd5bef95e1eaedfb5c04b204fcc77b73384da985950c678b5cf79c2ab5a612",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/oden-boating-access.jpg",
+   "bytes": 331715,
+   "sha256": "0b9cf3fce1042736d3d0389ea7e952c0c900e2959e289301eddf461f24f6cb97",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/ozark-buffalo-nr.jpg",
+   "bytes": 387978,
+   "sha256": "5bbb3a214e5c6f0dcfb3973cabbe2790ebea0e8d02eda78172705d9dac3002a6",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/ozment-bluff-boat-ramp.jpg",
+   "bytes": 376031,
+   "sha256": "e2ef0f7f03b9d0484c21d16e0ab7e8d7349cbe8f47bc8eb991d3c74b193206a7",
+   "zip": "evidence-part04"
+  },
+  {
+   "path": "research/raw/imagery/peebles-bluff-access-boat-ramp.jpg",
+   "bytes": 311111,
+   "sha256": "9ae3b852615edd25fb2ce12b88ed4b5b79e855a4e88e11c85b2a3658cbe5693d",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/peeler-bend-boat-ramp.jpg",
+   "bytes": 364225,
+   "sha256": "25cc78e221a840d265d4dcf27508c1f0dedf562f1d4e6eaa9daf174e99cc1d65",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/perryville-public-access-fourche-lafave-river.jpg",
+   "bytes": 392498,
+   "sha256": "84f232044f094948d9af2661fedb5490f31b945adebdbd36a8ebdc4071b45caa",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/petit-jean-river-highway-7-boat-ramp.jpg",
+   "bytes": 373465,
+   "sha256": "ad6aa0e6612e6ab7f98d8eada5c52e3d8451ac43d4b1dbb16efb7403dc6f535c",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/pinnacle-mountain-state-park-little-maumelle-boat-ramp.jpg",
+   "bytes": 321316,
+   "sha256": "2d12f01cddca352a51f1c5d1479e507e345ea02011eec49d0eed651fadb29bac",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/pinnacle-mountain-state-park-west-summit-boating-access.jpg",
+   "bytes": 393836,
+   "sha256": "82c30c61b56c0b1b7f8bde086cbe8651a552e1f9e8911cf9a09372bb292bf53a",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/pocahontas-boat-ramp.jpg",
+   "bytes": 330825,
+   "sha256": "8628a09d438ccbdc463012238e4a187369b6510bf2e35fc0d5dde41abff23dae",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/ponca-buffalo-nr.jpg",
+   "bytes": 374881,
+   "sha256": "45500ac4a9ef1948d1cc17ffecbc4dd814e49acd5f9b8f4a3690873a9f68f301",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/pontoon-park-boat-ramp.jpg",
+   "bytes": 318555,
+   "sha256": "d1c24930b44cbb8f987466c6ec056120c37d433c2010b38b23ba1477e9e42cbf",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/powhatan-access.jpg",
+   "bytes": 282159,
+   "sha256": "6c94d1e2af1c3f4aebb180b3a0e742d8aef2d2690449f05b9e10bf4198125031",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/pruitt-buffalo-nr.jpg",
+   "bytes": 390741,
+   "sha256": "746504cfd23786a1681546fe572f43432c129ddc8f4751def8d8f18594eb829c",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/pyatt-1-crooked-creek-boat-ramp.jpg",
+   "bytes": 468155,
+   "sha256": "bf422e2ae623cc57001ad526daa23367d5cc4a9211be2060acabe45dac633d3e",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/pyatt-2-boat-ramp.jpg",
+   "bytes": 437969,
+   "sha256": "43bf26a26989754d842ea69d6deb49fe061ced01295f61b66f512832494be7bd",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/ramsey-boat-ramp.jpg",
+   "bytes": 237554,
+   "sha256": "797eb9b40850757352c09a04edd79f00dc531f5e909be92805bb49c070654574",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/ranchette-boat-ramp-2.jpg",
+   "bytes": 302522,
+   "sha256": "696c5c408f6e081a4c25ff9d990642f0fdd467d6c7e5f041eecb9e7b50918d36",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/ransom-w-smith-access.jpg",
+   "bytes": 285218,
+   "sha256": "8f3496464326756f504990b5b26ad5fd7fdb1ccfaf05e26a2f155d1c77842ba9",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/ravenden-boat-ramp.jpg",
+   "bytes": 303814,
+   "sha256": "22cb6e6ab99ef14a355a33e27cc7a0bc4d383d0d459edc759339806195a43840",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/red-s-landing-boat-ramp.jpg",
+   "bytes": 314211,
+   "sha256": "136d89887ccefc281e96fabd033b51e73c4ca6bc7fd076831bbf36d2b45f5cd1",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/redding-recreation-area-canoe-access.jpg",
+   "bytes": 396432,
+   "sha256": "a10799f7d3f2100a5529c95cd6b9f262ac246b925fed005e6c3b44333bc94082",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/reed-barringer-boat-ramp.jpg",
+   "bytes": 342175,
+   "sha256": "66c6e342c411161637f3c6f829d4254ce859b1bb65547b5d9247587a5e36bcc4",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/richland-creek-recreation-area-usfs.jpg",
+   "bytes": 389078,
+   "sha256": "ab4b86262ab1a8a90f0764b37fd60fff6c42ce77d520933ff89b62539ef1fea5",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/rim-shoals-boat-ramp.jpg",
+   "bytes": 365736,
+   "sha256": "f1245cc20739970355c867c3715b641ac2e25e2eddc6e1944f3b6ea4d93ecea6",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/river-bluff-usfs.jpg",
+   "bytes": 360153,
+   "sha256": "e67b3ee72c1b56b6191fcfd54daf4e7b6b12469e2193d4b0a050a69a8f2b5eb9",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/riverview-school-access-boat-ramp.jpg",
+   "bytes": 231831,
+   "sha256": "659bb858e1affc5824c1f25b99f263020a9c0ccafcee3efabaf45ff2824565ca",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/rock-island-rr-boating-access.jpg",
+   "bytes": 435569,
+   "sha256": "9faa65382d06b7902f37846bcb1b4329b2826124a7c30a66fb23b66a05229ed4",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/rockhouse-canoe-kayak-access.jpg",
+   "bytes": 350155,
+   "sha256": "1326719dbe0660d2043f11a2c9ff3c4e0aef0fbad2f57f71c198af86a3f76bb3",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/rocky-shoals-usfs.jpg",
+   "bytes": 328635,
+   "sha256": "5c2edd02ca55f174c4ca51e96ab92e7073362576b8baea36f3e961d2b06f56c1",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/romp-hole-boat-ramp.jpg",
+   "bytes": 321603,
+   "sha256": "5d42783cd8429f8355a976d7a8e1106eacbfd5d638fa8ce4d53f42376651bf5d",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/round-bottom-boat-ramp.jpg",
+   "bytes": 235325,
+   "sha256": "c0b4dcaabf27f592efaacf7d815927e434bdfc27e5e8b783e8a0a19a697c9150",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/rush-buffalo-nr.jpg",
+   "bytes": 379985,
+   "sha256": "50cd8ab197faa62e8b5898c2925915f5cdc0d1e14f7e6ca4c5e110cbe3e8a1f5",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/salem-boat-ramp.jpg",
+   "bytes": 334214,
+   "sha256": "93e0567785c47fb2839414be24abd1e012162c98ca2c8a0efda25de0ffec9c28",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/schaeffer-s-eddy-boat-ramp.jpg",
+   "bytes": 384992,
+   "sha256": "e20546bea5fae2de0ab78794754f9e42bf770ffaca53228e0ecf65d839e3ad2d",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/shaw-bridge-boat-ramp.jpg",
+   "bytes": 368558,
+   "sha256": "08c341556de079dc1872083cd6ca59e99ef51c6c4f532c13018211eb60a44bc8",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/shipp-s-ferry-boat-ramp.jpg",
+   "bytes": 320426,
+   "sha256": "573e4bebb55828ecb847a062d0959e60954b1d6765bfdd8cf99ed04c7eab6361",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/shirley-creek-usfs.jpg",
+   "bytes": 351056,
+   "sha256": "9126d05910a318d875f7a696515044048e573041589ca2a5fa6dda696d197932",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/siloam-springs-kayak-park-access.jpg",
+   "bytes": 242365,
+   "sha256": "7a297444dda03f1644b91f1deb2653fdb73059c87296179f8e3bd6c0c1b62ad4",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/simstown-canoe-access.jpg",
+   "bytes": 336204,
+   "sha256": "72bee13b73896c95f4384e5c89192d746e2e5fc987a51cd5ffebb58dbac288d7",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/slaty-crossing-boat-ramp.jpg",
+   "bytes": 331516,
+   "sha256": "e78b8c49b3195dbb18a88e2fc0d82061c81fc66167cb00a86a4ebb41492d3485",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/sneed-creek-boat-ramp.jpg",
+   "bytes": 304520,
+   "sha256": "d2f6b4ed1696c799f48715e3e49d641655c29fbd7e7d76dffa5f71d36f676674",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/snow-crooked-creek-boat-ramp.jpg",
+   "bytes": 359146,
+   "sha256": "51a0a8a7b7b7da233bcefa2e48e2a26d6ca2e9c61fc61dfc0bda8fdaa8e7b7a2",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/south-maumee-buffalo-nr.jpg",
+   "bytes": 349712,
+   "sha256": "8c650319c17687575fb8780a3450b3c545f0525c77fb8daefd296a9b8bce4241",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/spring-creek-buffalo-nr.jpg",
+   "bytes": 349024,
+   "sha256": "069a2a8ca1ba4c6347639af9b81232383473c4a81df199e796d1208e6ca93d6e",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/st-francis-boat-ramp.jpg",
+   "bytes": 337477,
+   "sha256": "000fbd30922963e8d374f80d6af72a13eed4672bf619de883240f371bd5c7a24",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/steel-bridge-access.jpg",
+   "bytes": 290028,
+   "sha256": "323d592ac9a83a35bd72fa3f67b92c797cad35b5146b603b72a1a90f93ab3ec1",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/steel-creek-buffalo-nr.jpg",
+   "bytes": 444368,
+   "sha256": "4e73628ad2edcefd7f045719d33069dedd61141d2356768298a238362eed6b33",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/stoney-point-boating-access.jpg",
+   "bytes": 345081,
+   "sha256": "7152142893ecd84bb1427c37089dda85248d81d68f1755909e34ee57af251c01",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/sunrise-boating-access.jpg",
+   "bytes": 328755,
+   "sha256": "4a2474547e9fa5200389a1d6637c9116a34132fb23f264585bdc366f449497dc",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/swinging-bridge-boat-ramp.jpg",
+   "bytes": 276550,
+   "sha256": "25da3fb8e95f4eb9a81544bfa5f8937fdac7bcaba49f061dbe064702a9d1a790",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/sylamore-ferry-boating-access.jpg",
+   "bytes": 321711,
+   "sha256": "e623510d12fc1575f2952f645d5fb882583d060134be9e4952b41e097a1f69b4",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/terrell-access-boat-ramp.jpg",
+   "bytes": 323240,
+   "sha256": "bc62f6c76469677bfe697d2e0a0314c54a3673aa8231b1dbe39b7139890730f7",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/tyler-bend-buffalo-nr.jpg",
+   "bytes": 347912,
+   "sha256": "a4ee2107cf2b9bc7a2ad1f4d3eb2a2ed467d49ee4fd37e848682b7af99942fcf",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/upper-white-river-magness-family-access-boat-ramp.jpg",
+   "bytes": 320767,
+   "sha256": "404191ee3d202e1a7bce4316d9cf421924789ff565a0e0fd0a9581f20a89fe3e",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/white-hole-boat-ramp.jpg",
+   "bytes": 351096,
+   "sha256": "5cfd06c2a263cb39ad23ef73b659c20f56b5fb2e081948cea25ad5bb37250df7",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/wildcat-shoals-boat-ramp.jpg",
+   "bytes": 330287,
+   "sha256": "b1257580be19ec3a76f9058219f8ff2fa13475a55bccbe4c559f992b944b9219",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/withrow-springs-state-park-boating-access.jpg",
+   "bytes": 362848,
+   "sha256": "ac43e94d0286949e9243ea4969ba4f4952f4612fc3a40ef06283a199ba5aa135",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/woka-whitewater-park-canoe-kayakng-access.jpg",
+   "bytes": 321626,
+   "sha256": "89add4f401b725252bfff8e27fec7072df6da13f4877f9b74d44509a7ad3a9f1",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/wolf-pen-recreation-area-canoe-access.jpg",
+   "bytes": 395728,
+   "sha256": "2c6d285145b71222e6b7c6e508404adbf4a8e5e1a6358350515a71fe7d5a9acf",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/woolum-buffalo-nr.jpg",
+   "bytes": 364984,
+   "sha256": "ff9d6f7665017bd3e1db709c6b4af94725d2d4fb07fe88e1642df5c929d08fe1",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery/yellville-crooked-creek-boat-ramp.jpg",
+   "bytes": 319550,
+   "sha256": "62a390a40e42d7360518bf68b5d9c499fda53e0327293e767a4f6f6104a12ba9",
+   "zip": "evidence-part05"
+  },
+  {
+   "path": "research/raw/imagery-review-AR.json",
+   "bytes": 26812,
+   "sha256": "0d6db70e2e27690ab761e9e7e38afdcd287d475c2cfc56b84b55a7039248fa33",
+   "zip": "slim"
+  },
+  {
+   "path": "research/readiness-status.json",
+   "bytes": 6081,
+   "sha256": "4fce6f663af6b63f52b69412b76f781cc470aa49cbc67a92803ba2cacc5ab857",
+   "zip": "slim"
+  },
+  {
+   "path": "research/replacement-proposals.json",
+   "bytes": 5556,
+   "sha256": "90df4b164355278cd55373fceb71df2a74a7d88c64fe1a3623aa9fdd33ccd434",
+   "zip": "slim"
+  },
+  {
+   "path": "research/restrictions.json",
+   "bytes": 38947,
+   "sha256": "49135f83411b4db6952cbec2798f85c8a2419f90f0f19d08ca070d5669102ea4",
+   "zip": "slim"
+  },
+  {
+   "path": "research/review-queue.json",
+   "bytes": 25286,
+   "sha256": "aef659f3c754642b093fbaae0fd80b8aeeb23f86fdc84c4788353aa9e663de92",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/big-piney-creek.json",
+   "bytes": 622,
+   "sha256": "5b60fddc09c9dd6eb0aeb8a181168c16482618628603e544590666bf41369387",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/cossatot-river.json",
+   "bytes": 367,
+   "sha256": "565b422ed47089d67b71e56d70bad768c0fa6607780785f16e1ac02907c559b2",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/current-river-ar.json",
+   "bytes": 616,
+   "sha256": "0e4d8701aadb9eafb4e50c4ffb9cc616a64d3673556149acf2de33ae5a610541",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/fourche-lafave-river.json",
+   "bytes": 2427,
+   "sha256": "bd38e76a2154140bd3d0572c75fa020eeb370bd07b92c27cf90867a533201bb1",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/illinois-bayou.json",
+   "bytes": 576,
+   "sha256": "7adb10e5936b84926359a792f6fea5cb51b5b92ef50d71f9e7af8b43d4cea236",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/little-maumelle-river.json",
+   "bytes": 993,
+   "sha256": "9c9e47e54bad98ff18026d2ef231cf87d5c9276f372bda4a2d3db342f2037533",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/little-missouri-river-upper.json",
+   "bytes": 637,
+   "sha256": "527392622bcfbae92f9740ff6c7c3a5277dacb29acfbede94cd7e699cc0f8e84",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/richland-creek.json",
+   "bytes": 617,
+   "sha256": "bc26af2eec690af235de87f984ce086158a98a96df6f6366d7fc6c263320d435",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/saline-river-lower.json",
+   "bytes": 4361,
+   "sha256": "20d1aa3cda2c875b3c834ad7836f1aa7c6e004d9279e5e65ea15a3bfdc09ba74",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/st-francis-river-ar.json",
+   "bytes": 569,
+   "sha256": "9503b9a31957c8eab6f8eb850901fa80ba25671d299c2a7d99e3168aafa244fc",
+   "zip": "slim"
+  },
+  {
+   "path": "research/river-drafts/war-eagle-creek.json",
+   "bytes": 594,
+   "sha256": "9f1438c53aaae483d15e2127fad7423e006cbf29afc2cf59ceb7be601b6ce086",
+   "zip": "slim"
+  },
+  {
+   "path": "research/sections.json",
+   "bytes": 242725,
+   "sha256": "d67bf732c7c04a8659400824d164b051f5a74b76e32c16d752b224d4ab136b45",
+   "zip": "slim"
+  },
+  {
+   "path": "research/sources.json",
+   "bytes": 97857,
+   "sha256": "9acda2d449fd87fbf334dc13e59b7a12fc5975286d2ffed7a743699b6be9ab40",
+   "zip": "slim"
+  },
+  {
+   "path": "research/timing.json",
+   "bytes": 20673,
+   "sha256": "7d0d0cd9ece9d0375967e29da12c1a9fd3b063f5973367ed47eb7970550f35bb",
+   "zip": "slim"
+  },
+  {
+   "path": "research/trip-times/AR.json",
+   "bytes": 194,
+   "sha256": "4873ab92dd9607b4e1bb0cad79f995a4196cae8a30de184761e9d2a262ba10c0",
+   "zip": "slim"
+  },
+  {
+   "path": "research/trip-times/timing-status-AR.json",
+   "bytes": 8871,
+   "sha256": "4641dad6bdd6f6d2bfaa6b2b6e9e3bfd73948ae457bfa046edd883dff90642a7",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_assign.py",
+   "bytes": 3221,
+   "sha256": "9749cf94372e68b71005c5e1fd679b702daa831c5b30d9236a4d61bfaf0e803d",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_build.py",
+   "bytes": 71311,
+   "sha256": "ce6e11206c005f1fc33df934439db7c39218dcb09b7be216f8a92d3343df9124",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_contact_sheets.py",
+   "bytes": 1256,
+   "sha256": "0a3a09003f378fd38804902731c09f593d5c27eaaa2604f20e457d3178b599b9",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_data.py",
+   "bytes": 19478,
+   "sha256": "c863ba7a8997befc10970b01afb652aaf70f001d95700529f0af67aa5f7099ca",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_docs.py",
+   "bytes": 17230,
+   "sha256": "bdeee40c920521e914d19074437bc30a4ac91b1797a5f7324558f9951422c8eb",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_gauge_find.py",
+   "bytes": 1499,
+   "sha256": "c6137d441c3bfad8a3b7979b60887be8945104fd8eb31c95082e7afde9a7151f",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_geo_checks.py",
+   "bytes": 10377,
+   "sha256": "3fa2616e10b74579c4693bcd12d524c7cf4ab066c5dd52049ccff89428b95247",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_nhd.py",
+   "bytes": 4319,
+   "sha256": "be1845dd645552c9e69aeca95f666001186d0294ae0bf8635bbdda8519c9ba63",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_nldi.py",
+   "bytes": 3430,
+   "sha256": "68c32b6da8b0e11d37abc20f78510968143d03bec4aa4fbc9e51d827e4f6482d",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/ar_package.py",
+   "bytes": 3677,
+   "sha256": "58095ca6b6006bb2ad08a56d895dd556912f5a308930f00dcd6ec0bf53c46662",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/aw_reaches.py",
+   "bytes": 2848,
+   "sha256": "d09b37eb08c531e31d7934192641fc4918e7057aad20209ec23ea2f852feb1ff",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/co_geo.py",
+   "bytes": 3248,
+   "sha256": "c05b8759b52862add3742b57c717d94197d67c20950c89a334023199b90f2265",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/fetch.py",
+   "bytes": 2264,
+   "sha256": "3dcf8381a666958dcb8083a9aedceca7caced2e3dbfef56ab11ff5a0b4543356",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/gauge_check.py",
+   "bytes": 3677,
+   "sha256": "14deecf0ab6f8d99e638851c791112fc4ce90e1d0c51bd371edbff220665bd01",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/gauge_recent.py",
+   "bytes": 1641,
+   "sha256": "3d77803b952d7cd85e05abb98a8d2519969b81b092a95f9c74e7addf72063f44",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/geo_lib.py",
+   "bytes": 18974,
+   "sha256": "e8d2a37a9eb53697fa194e222b0e517a1730db900560dfcb28bd13b78cc346d4",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/html2txt.py",
+   "bytes": 385,
+   "sha256": "8b0725392e5d3d716e7866e843b23b2857cd3a8eb7fe43eacd266dcd83ef825b",
+   "zip": "slim"
+  },
+  {
+   "path": "tools/validate_ar.py",
+   "bytes": 11330,
+   "sha256": "fa6c98c40ffed1714aa00806120cea54734d2e845ec604d7742495d80d5aa470",
+   "zip": "slim"
+  },
+  {
+   "path": "validation-results.txt",
+   "bytes": 187624,
+   "sha256": "46a776fe6b35c4f233e2698c904d875447a8f2cc82f940de3def4c7e1d7fc787",
+   "zip": "slim"
+  }
+ ]
+}

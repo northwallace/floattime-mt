@@ -1,0 +1,3105 @@
+{
+  "operationalLayers": [
+    {
+      "id": "182b20c30fd-layer-11",
+      "showLegend": false,
+      "opacity": 1,
+      "disablePopup": false,
+      "title": "Boated Waterway",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Oregon_Boated_Waterways_Public/FeatureServer/0",
+      "visibility": true,
+      "itemId": "dccc0d80f829433188f64695553c995f",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 0,
+        "maxScale": 0,
+        "fieldConfigurations": [
+          {
+            "name": "Shape__Area",
+            "fieldFormat": {
+              "type": "number",
+              "minimumFractionDigits": 2,
+              "useGrouping": "always"
+            }
+          },
+          {
+            "name": "Shape__Length",
+            "fieldFormat": {
+              "type": "number",
+              "minimumFractionDigits": 2,
+              "useGrouping": "always"
+            }
+          }
+        ],
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "visualVariables": [],
+            "label": "Oregon_Boated_Waterways",
+            "symbol": {
+              "type": "esriSFS",
+              "color": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  79,
+                  147,
+                  214,
+                  227
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "style": "esriSFSSolid"
+            }
+          }
+        }
+      },
+      "effect": null,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<p><span>{Waterway_NM}</span>&nbsp;</p><p>Is this river section exempt from the waterway access permit? <span><strong>{Exempt}</strong></span><strong>&nbsp;</strong></p>"
+          }
+        ],
+        "description": "<p><span>{Waterway_NM}</span>&nbsp;</p><p>Is this river section exempt from the waterway access permit? <span><strong>{Exempt}</strong></span><strong>&nbsp;</strong></p>",
+        "fieldInfos": [
+          {
+            "fieldName": "objectid",
+            "isEditable": true,
+            "label": "ObjectID",
+            "visible": false
+          },
+          {
+            "fieldName": "Waterway_Desc",
+            "isEditable": true,
+            "label": "Description of waterway",
+            "visible": true
+          },
+          {
+            "fieldName": "globalid",
+            "isEditable": true,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "PublicMap_NT",
+            "isEditable": true,
+            "label": "Note for public map",
+            "visible": true
+          },
+          {
+            "fieldName": "Shape__Area",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "isEditable": true,
+            "label": "Shape__Area",
+            "visible": false
+          },
+          {
+            "fieldName": "Shape__Length",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "isEditable": true,
+            "label": "Shape__Length",
+            "visible": false
+          },
+          {
+            "fieldName": "Waterway_NM",
+            "isEditable": true,
+            "label": "Waterway Name",
+            "visible": true
+          },
+          {
+            "fieldName": "Boated",
+            "isEditable": true,
+            "label": "Is it boated?",
+            "visible": false
+          },
+          {
+            "fieldName": "MotorUse",
+            "isEditable": true,
+            "label": "What is the motor use by rule?",
+            "visible": false
+          },
+          {
+            "fieldName": "MotorUseSub",
+            "isEditable": true,
+            "label": "What is the duration of the rule?",
+            "visible": false
+          },
+          {
+            "fieldName": "MotorUseCov",
+            "isEditable": true,
+            "label": "What is the coverage of the rule?",
+            "visible": false
+          },
+          {
+            "fieldName": "OSMB_NT",
+            "isEditable": true,
+            "label": "OSMB Note",
+            "visible": false
+          },
+          {
+            "fieldName": "COUNTY",
+            "isEditable": true,
+            "label": "County Name",
+            "visible": false
+          },
+          {
+            "fieldName": "Region",
+            "isEditable": true,
+            "label": "Region",
+            "visible": false
+          },
+          {
+            "fieldName": "Zone",
+            "isEditable": true,
+            "label": "Zone",
+            "visible": false
+          },
+          {
+            "fieldName": "Navigable",
+            "isEditable": true,
+            "label": "Navigable",
+            "visible": false
+          },
+          {
+            "fieldName": "NavDesc",
+            "isEditable": true,
+            "label": "Navigability Description",
+            "visible": false
+          },
+          {
+            "fieldName": "Exempt",
+            "isEditable": true,
+            "label": "WAP Exempt",
+            "visible": false
+          },
+          {
+            "fieldName": "AW_URL",
+            "isEditable": true,
+            "label": "AW URL",
+            "visible": false
+          }
+        ],
+        "showLastEditInfo": false,
+        "title": "- Oregon Boated Waterway -"
+      }
+    },
+    {
+      "id": "180528e0d4f-layer-65",
+      "opacity": 1,
+      "title": "Boating Regulation",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Boating_Regulations_Public_0422/FeatureServer/0",
+      "visibility": true,
+      "itemId": "c938bcba833f4f1f9da126ecc52d595c",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 80000,
+        "maxScale": 0,
+        "featureReduction": null,
+        "fieldConfigurations": [
+          {
+            "alias": "Rule Type",
+            "name": "Symbol_Class"
+          }
+        ],
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "field1": "Symbol_Class",
+            "drawInClassOrder": true,
+            "uniqueValueGroups": [
+              {
+                "classes": [
+                  {
+                    "label": "All Boats Prohibited",
+                    "symbol": {
+                      "type": "esriSFS",
+                      "color": [
+                        230,
+                        0,
+                        0,
+                        131
+                      ],
+                      "outline": {
+                        "type": "esriSLS",
+                        "color": [
+                          0,
+                          0,
+                          0,
+                          128
+                        ],
+                        "width": 0.75,
+                        "style": "esriSLSSolid"
+                      },
+                      "style": "esriSFSSolid"
+                    },
+                    "values": [
+                      [
+                        "All Boats Prohibited"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Slow No-Wake",
+                    "symbol": {
+                      "type": "esriSFS",
+                      "color": [
+                        255,
+                        190,
+                        190,
+                        203
+                      ],
+                      "outline": {
+                        "type": "esriSLS",
+                        "color": [
+                          255,
+                          130,
+                          0,
+                          216
+                        ],
+                        "width": 1.5,
+                        "style": "esriSLSDot"
+                      },
+                      "style": "esriSFSSolid"
+                    },
+                    "values": [
+                      [
+                        "Slow No-Wake"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Boat Speed Restriction",
+                    "symbol": {
+                      "type": "esriSFS",
+                      "color": [
+                        255,
+                        0,
+                        197,
+                        131
+                      ],
+                      "outline": {
+                        "type": "esriSLS",
+                        "color": [
+                          252,
+                          140,
+                          226,
+                          198
+                        ],
+                        "width": 0.75,
+                        "style": "esriSLSShortDashDot"
+                      },
+                      "style": "esriSFSSolid"
+                    },
+                    "values": [
+                      [
+                        "Speed Restriction"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Boat Motor Restriction",
+                    "symbol": {
+                      "type": "esriSFS",
+                      "color": [
+                        60,
+                        175,
+                        153,
+                        133
+                      ],
+                      "outline": {
+                        "type": "esriSLS",
+                        "color": [
+                          0,
+                          137,
+                          119,
+                          255
+                        ],
+                        "width": 1.5,
+                        "style": "esriSLSDash"
+                      },
+                      "style": "esriSFSSolid"
+                    },
+                    "values": [
+                      [
+                        "Motor Restriction"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Boat Operation Restriction",
+                    "symbol": {
+                      "type": "esriSFS",
+                      "color": [
+                        223,
+                        115,
+                        255,
+                        102
+                      ],
+                      "outline": {
+                        "type": "esriSLS",
+                        "color": [
+                          241,
+                          203,
+                          247,
+                          255
+                        ],
+                        "width": 1.5,
+                        "style": "esriSLSSolid"
+                      },
+                      "style": "esriSFSSolid"
+                    },
+                    "values": [
+                      [
+                        "Boating Operation Restriction"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uniqueValueInfos": [
+              {
+                "label": "All Boats Prohibited",
+                "symbol": {
+                  "type": "esriSFS",
+                  "color": [
+                    230,
+                    0,
+                    0,
+                    131
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      0,
+                      0,
+                      0,
+                      128
+                    ],
+                    "width": 0.75,
+                    "style": "esriSLSSolid"
+                  },
+                  "style": "esriSFSSolid"
+                },
+                "value": "All Boats Prohibited"
+              },
+              {
+                "label": "Slow No-Wake",
+                "symbol": {
+                  "type": "esriSFS",
+                  "color": [
+                    255,
+                    190,
+                    190,
+                    203
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      255,
+                      130,
+                      0,
+                      216
+                    ],
+                    "width": 1.5,
+                    "style": "esriSLSDot"
+                  },
+                  "style": "esriSFSSolid"
+                },
+                "value": "Slow No-Wake"
+              },
+              {
+                "label": "Boat Speed Restriction",
+                "symbol": {
+                  "type": "esriSFS",
+                  "color": [
+                    255,
+                    0,
+                    197,
+                    131
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      252,
+                      140,
+                      226,
+                      198
+                    ],
+                    "width": 0.75,
+                    "style": "esriSLSShortDashDot"
+                  },
+                  "style": "esriSFSSolid"
+                },
+                "value": "Speed Restriction"
+              },
+              {
+                "label": "Boat Motor Restriction",
+                "symbol": {
+                  "type": "esriSFS",
+                  "color": [
+                    60,
+                    175,
+                    153,
+                    133
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      0,
+                      137,
+                      119,
+                      255
+                    ],
+                    "width": 1.5,
+                    "style": "esriSLSDash"
+                  },
+                  "style": "esriSFSSolid"
+                },
+                "value": "Motor Restriction"
+              },
+              {
+                "label": "Boat Operation Restriction",
+                "symbol": {
+                  "type": "esriSFS",
+                  "color": [
+                    223,
+                    115,
+                    255,
+                    102
+                  ],
+                  "outline": {
+                    "type": "esriSLS",
+                    "color": [
+                      241,
+                      203,
+                      247,
+                      255
+                    ],
+                    "width": 1.5,
+                    "style": "esriSLSSolid"
+                  },
+                  "style": "esriSFSSolid"
+                },
+                "value": "Boating Operation Restriction"
+              }
+            ]
+          }
+        }
+      },
+      "effect": [
+        {
+          "type": "drop-shadow",
+          "xoffset": 1.5,
+          "yoffset": 1.5,
+          "blurRadius": 1.5,
+          "color": [
+            150,
+            146,
+            146,
+            86.7
+          ]
+        }
+      ],
+      "featureEffect": null,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<p style='text-align:center;'><span style='font-size:medium;'><font><strong>{Waterway} </strong>in<strong> {County} County</strong>&nbsp;</font></span></p><p style='text-align:center;'><span style='font-size:medium;'><font>has a {Symbol_Class} &nbsp;</font></span></p><p style='text-align:center;'><span style='font-size:medium;'><font><i>{Restriction}&nbsp;</i></font></span></p><p style='text-align:center;'><a href='{Rule_Link}' rel='nofollow ugc'><span style='font-size:medium;'><font><strong><u>{Rule_Reference}</u></strong></font></span></a></p>"
+          }
+        ],
+        "description": "<p style='text-align:center;'><span style='font-size:medium;'><font><strong>{Waterway} </strong>in<strong> {County} County</strong>&nbsp;</font></span></p><p style='text-align:center;'><span style='font-size:medium;'><font>has a {Symbol_Class} &nbsp;</font></span></p><p style='text-align:center;'><span style='font-size:medium;'><font><i>{Restriction}&nbsp;</i></font></span></p><p style='text-align:center;'><a href='{Rule_Link}' rel='nofollow ugc'><span style='font-size:medium;'><font><strong><u>{Rule_Reference}</u></strong></font></span></a></p>",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "OBJECTID",
+            "visible": true
+          },
+          {
+            "fieldName": "Name",
+            "isEditable": true,
+            "label": "Name",
+            "visible": true
+          },
+          {
+            "fieldName": "Rule_Reference",
+            "isEditable": true,
+            "label": "Rule_Reference",
+            "visible": true
+          },
+          {
+            "fieldName": "County",
+            "isEditable": true,
+            "label": "County",
+            "visible": true
+          },
+          {
+            "fieldName": "Waterway",
+            "isEditable": true,
+            "label": "Waterway",
+            "visible": true
+          },
+          {
+            "fieldName": "Rule_Type",
+            "isEditable": true,
+            "label": "Rule_Type",
+            "visible": true
+          },
+          {
+            "fieldName": "Restriction",
+            "isEditable": true,
+            "label": "Restriction",
+            "visible": true
+          },
+          {
+            "fieldName": "Rule_Link",
+            "isEditable": true,
+            "label": "Rule_Link",
+            "visible": true
+          },
+          {
+            "fieldName": "GlobalID",
+            "isEditable": true,
+            "label": "GlobalID",
+            "visible": true
+          },
+          {
+            "fieldName": "Region",
+            "isEditable": true,
+            "label": "Region",
+            "visible": true
+          },
+          {
+            "fieldName": "Symbol_Class",
+            "isEditable": true,
+            "label": "Rule Type",
+            "visible": false
+          },
+          {
+            "fieldName": "Status",
+            "isEditable": true,
+            "label": "Rule_Status",
+            "visible": false
+          }
+        ],
+        "title": "- Boating Regulation -"
+      }
+    },
+    {
+      "id": "1890d8dee50-layer-13",
+      "title": "Rivers PWCs Allowed",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Rivers_PWCs_Allowed/FeatureServer/0",
+      "visibility": false,
+      "itemId": "180279a6bfe24ea99479836f6eb36cbd",
+      "layerType": "ArcGISFeatureLayer",
+      "effect": [
+        {
+          "scale": 72223.819288,
+          "value": [
+            {
+              "type": "drop-shadow",
+              "xoffset": 0.75,
+              "yoffset": 0.75,
+              "blurRadius": 1.125,
+              "color": [
+                0,
+                0,
+                0,
+                130.05
+              ]
+            }
+          ]
+        },
+        {
+          "scale": 18055.954822,
+          "value": [
+            {
+              "type": "drop-shadow",
+              "xoffset": 1.5,
+              "yoffset": 1.5,
+              "blurRadius": 2.25,
+              "color": [
+                0,
+                0,
+                0,
+                130.05
+              ]
+            }
+          ]
+        },
+        {
+          "scale": 4513.9887055,
+          "value": [
+            {
+              "type": "drop-shadow",
+              "xoffset": 3,
+              "yoffset": 3,
+              "blurRadius": 4.5,
+              "color": [
+                0,
+                0,
+                0,
+                130.05
+              ]
+            }
+          ]
+        }
+      ],
+      "layerDefinition": {
+        "featureReduction": null,
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "description": "",
+            "label": "",
+            "symbol": {
+              "type": "esriSFS",
+              "color": [
+                47,
+                237,
+                33,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  110,
+                  110,
+                  110,
+                  255
+                ],
+                "width": 0.4,
+                "style": "esriSLSSolid"
+              },
+              "style": "esriSFSSolid"
+            }
+          }
+        }
+      },
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<p style='text-align:center;'>This area of the <strong>{GNIS_Name} </strong>allows the use of <strong>Personal Watercrafts (PWC)</strong> <i>from {Segment_Open}&nbsp;</i></p><p style='text-align:center;'>To learn more about PWCs please visit our website at: <a target='_blank' href='https://www.oregon.gov/osmb/boater-info/Pages/PWC.aspx' rel='nofollow ugc noopener noreferrer'>https://www.oregon.gov/osmb/boater-info/Pages/PWC.aspx</a></p><p style='text-align:center;'><a target='_blank' rel='noopener noreferrer'>Also see the link below for official rules</a> <a target='_blank' href='https://secure.sos.state.or.us/oard/viewSingleRule.action?ruleVrsnRsn=296925' rel='nofollow ugc noopener noreferrer'>https://secure.sos.state.or.us/oard/viewSingleRule.action?ruleVrsnRsn=296925</a></p>"
+          }
+        ],
+        "description": "<p style='text-align:center;'>This area of the <strong>{GNIS_Name} </strong>allows the use of <strong>Personal Watercrafts (PWC)</strong> <i>from {Segment_Open}&nbsp;</i></p><p style='text-align:center;'>To learn more about PWCs please visit our website at: <a target='_blank' href='https://www.oregon.gov/osmb/boater-info/Pages/PWC.aspx' rel='nofollow ugc noopener noreferrer'>https://www.oregon.gov/osmb/boater-info/Pages/PWC.aspx</a></p><p style='text-align:center;'><a target='_blank' rel='noopener noreferrer'>Also see the link below for official rules</a> <a target='_blank' href='https://secure.sos.state.or.us/oard/viewSingleRule.action?ruleVrsnRsn=296925' rel='nofollow ugc noopener noreferrer'>https://secure.sos.state.or.us/oard/viewSingleRule.action?ruleVrsnRsn=296925</a></p>",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "isEditable": false,
+            "label": "OBJECTID",
+            "visible": false
+          },
+          {
+            "fieldName": "GNIS_ID",
+            "isEditable": true,
+            "label": "GNIS_ID",
+            "visible": true
+          },
+          {
+            "fieldName": "GNIS_Name",
+            "isEditable": true,
+            "label": "GNIS_Name",
+            "visible": true
+          },
+          {
+            "fieldName": "Rule_Reference",
+            "isEditable": true,
+            "label": "Rule_Reference",
+            "visible": true
+          },
+          {
+            "fieldName": "Segment_Open",
+            "isEditable": true,
+            "label": "Segment_Open",
+            "visible": true
+          }
+        ],
+        "title": "Rivers PWCs Allowed: {GNIS_Name}"
+      }
+    },
+    {
+      "id": "19a4b7b2bfe-layer-11",
+      "disablePopup": false,
+      "title": "Whitewater Exemption",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Proposed_Whitewater_Exemptions/FeatureServer/0",
+      "visibility": false,
+      "itemId": "b331da62165c4b72892404adfdba6e8f",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "CreationDate",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "long",
+              "hour12": "always"
+            }
+          },
+          {
+            "name": "EditDate",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "long",
+              "hour12": "always"
+            }
+          },
+          {
+            "alias": "SHAPE__Length",
+            "name": "Shape__Length",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          },
+          {
+            "alias": "SHAPE__Area",
+            "name": "Shape__Area",
+            "fieldFormat": {
+              "type": "number",
+              "maximumFractionDigits": 6,
+              "minimumFractionDigits": 6,
+              "useGrouping": "never"
+            }
+          }
+        ],
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "visualVariables": [
+              {
+                "type": "sizeInfo",
+                "valueExpression": "$view.scale",
+                "stops": [
+                  {
+                    "size": 3,
+                    "value": 153240
+                  },
+                  {
+                    "size": 1.5,
+                    "value": 478874
+                  },
+                  {
+                    "size": 1.125,
+                    "value": 1915496
+                  },
+                  {
+                    "size": 0.75,
+                    "value": 3830993
+                  }
+                ],
+                "target": "outline"
+              }
+            ],
+            "symbol": {
+              "type": "esriSFS",
+              "color": [
+                255,
+                187,
+                0,
+                255
+              ],
+              "outline": {
+                "type": "esriSLS",
+                "color": [
+                  250,
+                  183,
+                  0,
+                  255
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "style": "esriSFSSolid"
+            }
+          }
+        }
+      },
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<p><span>{Waterway_NM}</span>&nbsp;</p><p>Is this river section exempt from the waterway access permit? <span><strong>{Exempt}</strong></span><strong>&nbsp;</strong></p><p><strong>OAR 250-010-0760 (f)</strong> Nonmotorized boats less than 10 feet in length engaging in whitewater recreation activities while operating on Whitewater Exempt Waterways as identified on OSMB\u2019s Boat Oregon Online Map.</p>"
+          }
+        ],
+        "description": "<p><span>{Waterway_NM}</span>&nbsp;</p><p>Is this river section exempt from the waterway access permit? <span><strong>{Exempt}</strong></span><strong>&nbsp;</strong></p><p><strong>OAR 250-010-0760 (f)</strong> Nonmotorized boats less than 10 feet in length engaging in whitewater recreation activities while operating on Whitewater Exempt Waterways as identified on OSMB\u2019s Boat Oregon Online Map.</p>",
+        "expressionInfos": [],
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "format": {
+              "digitSeparator": false,
+              "places": 0
+            },
+            "isEditable": false,
+            "label": "ObjectID",
+            "visible": false
+          },
+          {
+            "fieldName": "Waterway_NM",
+            "isEditable": true,
+            "label": "Waterway Name",
+            "visible": true
+          },
+          {
+            "fieldName": "Exempt",
+            "isEditable": true,
+            "label": "WAP Exempt",
+            "visible": true
+          },
+          {
+            "fieldName": "globalid",
+            "isEditable": false,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "CreationDate",
+            "format": {
+              "dateFormat": "longMonthDayYear",
+              "digitSeparator": false
+            },
+            "isEditable": true,
+            "label": "CreationDate",
+            "visible": true
+          },
+          {
+            "fieldName": "Creator",
+            "isEditable": true,
+            "label": "Creator",
+            "visible": true
+          },
+          {
+            "fieldName": "EditDate",
+            "format": {
+              "dateFormat": "longMonthDayYear",
+              "digitSeparator": false
+            },
+            "isEditable": true,
+            "label": "EditDate",
+            "visible": true
+          },
+          {
+            "fieldName": "Editor",
+            "isEditable": true,
+            "label": "Editor",
+            "visible": true
+          },
+          {
+            "fieldName": "Shape__Length",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": false,
+            "label": "SHAPE__Length",
+            "visible": true
+          },
+          {
+            "fieldName": "Shape__Area",
+            "format": {
+              "digitSeparator": false,
+              "places": 6
+            },
+            "isEditable": false,
+            "label": "SHAPE__Area",
+            "visible": true
+          }
+        ],
+        "title": "Whitewater Exemption"
+      }
+    },
+    {
+      "id": "Quad_rivermiles_7144",
+      "showLegend": false,
+      "opacity": 1,
+      "disablePopup": true,
+      "title": "River Mile",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Quad_rivermiles/FeatureServer/0",
+      "visibility": true,
+      "itemId": "017f92c77a23497a9cf514af63a569a3",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 41034.497371,
+        "maxScale": 0,
+        "fieldConfigurations": [
+          {
+            "name": "quad_rivermile",
+            "fieldFormat": {
+              "type": "number",
+              "minimumFractionDigits": 2,
+              "useGrouping": "always"
+            }
+          },
+          {
+            "name": "rec_creation_date",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "short",
+              "hour12": "always",
+              "timeStyle": "short"
+            }
+          }
+        ],
+        "drawingInfo": {
+          "labelingInfo": [
+            {
+              "name": "Custom",
+              "labelExpressionInfo": {
+                "expression": "// Write a script that will be used to label features.\n// For example, append the value of two fields:\n// $feature.name + \" \" + $feature.status\n\n\"RM \" + $feature[\"quad_rivermile\"]"
+              },
+              "labelPlacement": "esriServerPointLabelPlacementCenterRight",
+              "maxScale": 0,
+              "minScale": 39172.344984,
+              "repeatLabel": true,
+              "symbol": {
+                "type": "esriTS",
+                "color": [
+                  255,
+                  140,
+                  0,
+                  255
+                ],
+                "font": {
+                  "family": "Arial",
+                  "size": 9,
+                  "weight": "bold"
+                },
+                "horizontalAlignment": "center",
+                "kerning": true,
+                "haloColor": [
+                  43,
+                  43,
+                  43,
+                  255
+                ],
+                "haloSize": 1.5,
+                "rightToLeft": false,
+                "rotated": false,
+                "text": "",
+                "verticalAlignment": "baseline",
+                "xoffset": -6.999999999999999,
+                "yoffset": 0,
+                "angle": 0
+              },
+              "useCodedValues": true
+            }
+          ],
+          "renderer": {
+            "type": "simple",
+            "symbol": {
+              "type": "esriPMS",
+              "angle": 0,
+              "xoffset": 0,
+              "yoffset": 0,
+              "contentType": "image/png",
+              "imageData": "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",
+              "url": "https://static.arcgis.com/images/Symbols/Firefly/FireflyB19.png",
+              "height": 11.25,
+              "width": 11.25
+            }
+          }
+        }
+      },
+      "showLabels": true,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "fields",
+            "description": "",
+            "fieldInfos": [
+              {
+                "fieldFormat": {
+                  "type": "number",
+                  "minimumFractionDigits": 2,
+                  "useGrouping": "always"
+                },
+                "fieldName": "quad_rivermile",
+                "format": {
+                  "digitSeparator": true,
+                  "places": 2
+                },
+                "isEditable": true,
+                "label": "quad_rivermile",
+                "visible": true
+              },
+              {
+                "fieldName": "rec_creation_date",
+                "isEditable": true,
+                "label": "rec_creation_date",
+                "visible": true
+              },
+              {
+                "fieldName": "rec_creation_userid",
+                "isEditable": true,
+                "label": "rec_creation_userid",
+                "visible": true
+              },
+              {
+                "fieldName": "source_method",
+                "isEditable": true,
+                "label": "source_method",
+                "visible": true
+              },
+              {
+                "fieldName": "stream_name",
+                "isEditable": true,
+                "label": "stream_name",
+                "visible": true
+              },
+              {
+                "fieldName": "streamcode",
+                "isEditable": true,
+                "label": "streamcode",
+                "visible": true
+              }
+            ],
+            "title": ""
+          }
+        ],
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "isEditable": false,
+            "label": "OBJECTID",
+            "visible": false
+          },
+          {
+            "fieldName": "GlobalID",
+            "isEditable": false,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "quad_rivermile",
+            "format": {
+              "digitSeparator": true,
+              "places": 2
+            },
+            "isEditable": true,
+            "label": "quad_rivermile",
+            "visible": true
+          },
+          {
+            "fieldName": "rec_creation_date",
+            "isEditable": true,
+            "label": "rec_creation_date",
+            "visible": true
+          },
+          {
+            "fieldName": "rec_creation_userid",
+            "isEditable": true,
+            "label": "rec_creation_userid",
+            "visible": true
+          },
+          {
+            "fieldName": "source_method",
+            "isEditable": true,
+            "label": "source_method",
+            "visible": true
+          },
+          {
+            "fieldName": "stream_name",
+            "isEditable": true,
+            "label": "stream_name",
+            "visible": true
+          },
+          {
+            "fieldName": "streamcode",
+            "isEditable": true,
+            "label": "streamcode",
+            "visible": true
+          }
+        ],
+        "title": "River Mile: {stream_name}"
+      }
+    },
+    {
+      "id": "18293a7b56e-layer-11",
+      "opacity": 1,
+      "title": "Dam, Weir, or Permanent Structure",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/service_d258e7b477f546d0917e868b1330ab3c/FeatureServer/0",
+      "visibility": true,
+      "itemId": "b918c234650348f1b3e2c0a921d6193d",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 80000,
+        "maxScale": 100,
+        "fieldConfigurations": [
+          {
+            "name": "CreationDate",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "long",
+              "hour12": "always"
+            }
+          },
+          {
+            "name": "recordtime",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "long",
+              "hour12": "always"
+            }
+          },
+          {
+            "name": "EditDate",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "long",
+              "hour12": "always"
+            }
+          },
+          {
+            "name": "damheight",
+            "fieldFormat": {
+              "type": "number",
+              "useGrouping": "always"
+            }
+          },
+          {
+            "alias": " ",
+            "name": "status"
+          },
+          {
+            "name": "damwidth",
+            "fieldFormat": {
+              "type": "number",
+              "useGrouping": "always"
+            }
+          }
+        ],
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "field1": "status",
+            "uniqueValueGroups": [
+              {
+                "classes": [
+                  {
+                    "label": "Dam / Weir / Structure",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 0,
+                      "contentType": "image/png",
+                      "imageData": "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",
+                      "url": "https://static.arcgis.com/images/Symbols/Government/Dam.png",
+                      "height": 13.5,
+                      "width": 13.5
+                    },
+                    "values": [
+                      [
+                        "Dam"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uniqueValueInfos": [
+              {
+                "label": "Dam / Weir / Structure",
+                "symbol": {
+                  "type": "esriPMS",
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "contentType": "image/png",
+                  "imageData": "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",
+                  "url": "https://static.arcgis.com/images/Symbols/Government/Dam.png",
+                  "height": 13.5,
+                  "width": 13.5
+                },
+                "value": "Dam"
+              }
+            ]
+          }
+        }
+      },
+      "effect": [
+        {
+          "scale": 72223.819288,
+          "value": [
+            {
+              "type": "drop-shadow",
+              "xoffset": 0.75,
+              "yoffset": 0.75,
+              "blurRadius": 0.75,
+              "color": [
+                0,
+                0,
+                0,
+                56.1
+              ]
+            }
+          ]
+        },
+        {
+          "scale": 18055.954822,
+          "value": [
+            {
+              "type": "drop-shadow",
+              "xoffset": 1.5,
+              "yoffset": 1.5,
+              "blurRadius": 1.5,
+              "color": [
+                0,
+                0,
+                0,
+                56.1
+              ]
+            }
+          ]
+        },
+        {
+          "scale": 4513.9887055,
+          "value": [
+            {
+              "type": "drop-shadow",
+              "xoffset": 3,
+              "yoffset": 3,
+              "blurRadius": 3,
+              "color": [
+                0,
+                0,
+                0,
+                56.1
+              ]
+            }
+          ]
+        }
+      ],
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<p><span style='font-size:18px;'><strong>{damname}\u00a0</strong></span></p><figure><table><tbody><tr><td>Waterway:</td><td>{waterbody}\u00a0</td></tr><tr><td>Comments:</td><td>{portagedesc}\u00a0</td></tr></tbody></table></figure>"
+          },
+          {
+            "type": "attachments",
+            "displayType": "auto"
+          }
+        ],
+        "description": "<p><span style='font-size:18px;'><strong>{damname}\u00a0</strong></span></p><figure><table><tbody><tr><td>Waterway:</td><td>{waterbody}\u00a0</td></tr><tr><td>Comments:</td><td>{portagedesc}\u00a0</td></tr></tbody></table></figure>",
+        "showAttachments": true,
+        "fieldInfos": [
+          {
+            "fieldName": "objectid",
+            "isEditable": true,
+            "label": "ObjectID",
+            "visible": false
+          },
+          {
+            "fieldName": "CreationDate",
+            "format": {
+              "dateFormat": "longMonthDayYear",
+              "digitSeparator": false
+            },
+            "isEditable": true,
+            "label": "CreationDate",
+            "visible": false
+          },
+          {
+            "fieldName": "Creator",
+            "isEditable": true,
+            "label": "Creator",
+            "visible": false
+          },
+          {
+            "fieldName": "damid",
+            "isEditable": true,
+            "label": "Dam ID",
+            "visible": true
+          },
+          {
+            "fieldName": "damowner",
+            "isEditable": true,
+            "label": "Dam Owner",
+            "visible": true
+          },
+          {
+            "fieldName": "recordtime",
+            "format": {
+              "dateFormat": "longMonthDayYear",
+              "digitSeparator": false
+            },
+            "isEditable": true,
+            "label": "Date of Notification",
+            "visible": true
+          },
+          {
+            "fieldName": "obslocationdesc",
+            "isEditable": true,
+            "label": "Describe the obstruction location?",
+            "visible": true
+          },
+          {
+            "fieldName": "EditDate",
+            "format": {
+              "dateFormat": "longMonthDayYear",
+              "digitSeparator": false
+            },
+            "isEditable": true,
+            "label": "EditDate",
+            "visible": false
+          },
+          {
+            "fieldName": "Editor",
+            "isEditable": true,
+            "label": "Editor",
+            "visible": false
+          },
+          {
+            "fieldName": "globalid",
+            "isEditable": true,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "damheight",
+            "format": {
+              "digitSeparator": true,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "Height of dam",
+            "visible": true
+          },
+          {
+            "fieldName": "portagedesc",
+            "isEditable": true,
+            "label": "If portage, please describe.",
+            "visible": true
+          },
+          {
+            "fieldName": "damname",
+            "isEditable": true,
+            "label": "Name of dam structure",
+            "visible": true
+          },
+          {
+            "fieldName": "obslocation",
+            "isEditable": true,
+            "label": "Obstruction location?",
+            "visible": true
+          },
+          {
+            "fieldName": "navigate",
+            "isEditable": true,
+            "label": "Safely and legally portage or navigate ?",
+            "visible": true
+          },
+          {
+            "fieldName": "status",
+            "isEditable": true,
+            "label": " ",
+            "visible": true
+          },
+          {
+            "fieldName": "username",
+            "isEditable": true,
+            "label": "username",
+            "visible": true
+          },
+          {
+            "fieldName": "waterbody",
+            "isEditable": true,
+            "label": "Waterway",
+            "visible": true
+          },
+          {
+            "fieldName": "damwidth",
+            "format": {
+              "digitSeparator": true,
+              "places": 0
+            },
+            "isEditable": true,
+            "label": "Width of dam",
+            "visible": true
+          }
+        ],
+        "showLastEditInfo": false,
+        "title": "Dams/Weirs/Other Permanent Water Structures"
+      }
+    },
+    {
+      "id": "18c70007e96-layer-12",
+      "title": "Life Jacket Loaner Station",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Life_Jacket_Loaner_Stations_Public/FeatureServer/0",
+      "itemId": "fe8bcc6c63ba40559601fdbcc2dfaeec",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 40000
+      },
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<p style='text-align:center;'><span style='font-size:18px;'><strong>{name}&nbsp;</strong></span></p>"
+          },
+          {
+            "type": "attachments",
+            "description": "",
+            "displayType": "auto",
+            "title": ""
+          },
+          {
+            "type": "text",
+            "text": "<p style='text-align:center;'><span style='font-family:&quot;Calibri&quot;,sans-serif;font-size:18px;'><strong>Kiosk may only be seasonal, so plan ahead and be prepared.</strong></span></p><p style='text-align:center;'>Thanks to <strong>{host}</strong> and local public facility owners, the <strong>Marine Board</strong> works as a funding partner to host life jacket loaner stations. Life jacket loaner stations have life jackets to borrow, thanks to the <strong>Nautical Safety Foundation</strong> and other <strong>non-profit organizations</strong>.</p><p style='text-align:center;'>Life jacket loaner stations use the honor system and are essential for safety in the local communities. Anyone who needs to use a life jacket can borrow one but need to be put back for others to use.</p><p style='text-align:center;'>To learn more about Life Jackets and other required safety equipment visit here:</p><p style='text-align:center;'><a target='_blank' href='https://www.oregon.gov/osmb/boater-info/Pages/Equipment-and-Regulations.aspx' rel='nofollow ugc noopener noreferrer'>https://www.oregon.gov/osmb/boater-info/Pages/Equipment-and-Regulations.aspx</a></p>"
+          }
+        ],
+        "description": "<p style='text-align:center;'><span style='font-size:18px;'><strong>{name}&nbsp;</strong></span></p>",
+        "showAttachments": true,
+        "fieldInfos": [
+          {
+            "fieldName": "objectid",
+            "isEditable": false,
+            "label": "ObjectID",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "globalid",
+            "isEditable": false,
+            "label": "GlobalID",
+            "tooltip": "",
+            "visible": false
+          },
+          {
+            "fieldName": "name",
+            "isEditable": true,
+            "label": "Name of the station or waterway access site ?",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "host",
+            "isEditable": true,
+            "label": "Who is the primary Loaner Station host ?",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "status",
+            "isEditable": true,
+            "label": "What is the status of the station ?",
+            "tooltip": "",
+            "visible": true
+          },
+          {
+            "fieldName": "photoURL",
+            "isEditable": true,
+            "label": "Photo URL string",
+            "visible": true
+          }
+        ],
+        "title": "PFD Loaner Stations"
+      }
+    },
+    {
+      "id": "19cbefabd7a-layer-12",
+      "title": "Marine Waste (CVA) Amenity",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Boating_Access_Sites_OA/FeatureServer/0",
+      "visibility": true,
+      "itemId": "63176689a50541b8863b530b29f9ea36",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 38726.523863,
+        "definitionExpression": "facility_type IN ('Pump and Dump Station','FRR')",
+        "drawingInfo": {
+          "renderer": {
+            "type": "uniqueValue",
+            "field1": "facility_type",
+            "uniqueValueGroups": [
+              {
+                "classes": [
+                  {
+                    "label": "Pump and Dump Station",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 0,
+                      "contentType": "image/png",
+                      "imageData": "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",
+                      "height": 18.09,
+                      "width": 25.5
+                    },
+                    "values": [
+                      [
+                        "Pump and Dump Station"
+                      ]
+                    ]
+                  },
+                  {
+                    "label": "Floating Restroom",
+                    "symbol": {
+                      "type": "esriPMS",
+                      "angle": 0,
+                      "xoffset": 0,
+                      "yoffset": 0,
+                      "contentType": "image/png",
+                      "imageData": "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",
+                      "height": 16.5,
+                      "width": 16.5
+                    },
+                    "values": [
+                      [
+                        "FRR"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uniqueValueInfos": [
+              {
+                "label": "Pump and Dump Station",
+                "symbol": {
+                  "type": "esriPMS",
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "contentType": "image/png",
+                  "imageData": "iVBORw0KGgoAAAANSUhEUgAAAHAAAABQCAYAAADBTPF9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADE0AAAxNAdLOrU4AABKjSURBVHhe7VwJeE3X2tYaMyATxdXbqCFkOhlEREgIGZAYQkIFMQdVEfkJqvUbSgYaw5EIErdFKWooNZOa2mpNRdvbUfvfUvMJNSXnnPXed+2zU/rc6m0j+jvs9/E9a+1vrbV31nr3t9b3rb2OCho0aNCgQYMGDRo0aNCgQYMGDRo0aNCgQYMGDRo0PGIAYI+cHEckT3FAYrKDkpaKvFZ02Q7IXmaRKcyXlst8NmUZ9VKUOryeItMNDthQaJFlqpTe415Zxnq/lDMv20qR+sLjd++xQeZLr9V84Zm7ctxAYfrDD44CsFO793iCpFUSn70VaNaPmVE8see35tjg6yK4uUG0aWkQEa0NIirEIMKDDCKM122o7xBoEDFhBtGFEt3WICJZJ7wF860Mogfr9ulokR7tWa8d9Z0NIi7eIPr1ofRShddxXViHZd1Yt0sUJZLX3Qyi9wuU3sz3sLTtEmMQA/sZxMihBjGkr0EMpgzh9SBKb96nF+/Xv79BDB1sEMMoSUksZ91hfF7awOsibcBp8eqY6cZtqyMvAzXUbj8eEN/va2DOf2mLiHG7KdztBZ59CqhLTl2fBhpVAtyYb0Zxo74ZpbHMU3Qs11UE/KoA3tR7UOdJnRS/qoA/9bLcg2VNq1FvD/jUpL4GhWlzXvvaAl4UD9Z157PcWd/Thu1YrmM9L9bxZLm/ExBch22ob1kLCK0HBDnzOazjXZnCtoGs17I661Fk6s17yr/bnc/35/MDnGCK0xlvTu65/UbuHJ3afesGcnNdxaCIDxHMgWrKzjZ8CmbfZzhAPkBkW6BrFNCvKzCwG9A32pJ/oSOQIPOU/l1Y1t1S1jsc6BnBtDMwoAfQh7p41u3eAYhhWRyvE2JZzlSW9e4ExLIslmUxIUCHACA6GOgWCXShrjOfHxUKc2QoRKcwiM7tYI4Oo8g2UTB3C2dZCExRATBGNoepcyD1rfg38B49goCO7EO4NxDixRelMfAcCW/AF8vPGca4Tv9XnL+4P2eeiupQWB9gOOMqhnQ/jGaOEPUrwhzEzs5Jh/j2K+DmLeD2HaDECAiuIPwHs5oq1xSzGTCZLGlp3ijlnrxsX1xCKWZepvfIHepu3baIfN71n4Gfb6g6Xt+8abn+Wep/hrhHcOMGhBS2EdeuW+T6deoN9wgny6JLwLlzwInPgYIVMEdFQjThCxpcHyWJoaJk/cKX1eGwLkhHxZSb8gGCHIFnq8AY4Q/TiSNUP94QF87D9MoYGFtw2m1ZAcWxnoaS/LxQdVisB1i5tIeI8BRw57oQHAzT58fULj7+ELdv4XbaCE6nXDObOOBmYsJ2qiupQ2MdKEnp+yaa0SHwrAORt9TSsycI4oczECHNuOZXw60QH4Nh7Eu+6tA8+rj9ycGGJQOjDXi+IkwddBBnf1S79WTBOH0UhBu9Xv+GMMXEJKrD8+hDjBqlQ3hzTiEVYBzUBcJMZ+MJxO0NBbjjI8MbOnEjh+xSh+fRhwjurIM/XWvGbYIEKt7lEwjziU8gAhswfqwHc+/O76vD8+hD+ETo4OvJIJnTx5CeXBDUHj1p+PRTeqJuQGtXGPvGWBGBESQwqAmnDrrSSQmWmO4vwsULF7Fjx05s2vSuIqtXr8Kbby5HXl4eli5dgmXLliEnJwcFBfk4ffq02uoh4dRxxoMNgSBKYi8rI7BV47+cwE/5xgc0D0D16vawt7eHrZ0tbG1tUbVqNdhUs+RtbGxYXh0ODg6oW7cuMtIz1NYPAZ+RwDB6opLAhDgrJNCjEjBC7iY9fAi+JNHR0bCzs0P9+vXh4eEBHx8f+Pr6wN/fH35+/tDpdPD09KJ4ws2tCWrVcoGLSy3s3Vuo3qV8IU4ehWjDcWjdCMbeXa2QQLlxPHqw2p2Hi6KiInh5eaFmzZqYMmUKrl65gsuXr+DSpUuKXLx4UZHS68OHD8PV1VWxxsWLl6h3KWd8TgsMacR1sAGK461pDWwn10CVwJcGqb15uLhy+TJ8aXGSwPz8fFV7f5w7d06xUjmt5ixcoGrLGXIKDaIXGvAsCbQmL7R7vA4hqhea/NdY4PVrRdB5e6N6Dfs/ZFEXzl/gVOrBtdIO2dlzVW0549Qxklcf8KuDOz0irIjAvkk6dPC3fMNLGaL25uHi2rVrXPN0qFFDTomLVe39ce7cT/AggTVIeNqECaq2nCG90ObP0Jlzwe3YdlZGYHs/lcCham8eLiSB0kmxrGl5qvb+OHf2HNw93OmN1sCrr05RtbTk69dx+OPD6tUD4jQJDCCBHrVwMzbUmggcSAJ9AV9OoanD1N48XFy9ehle9C5l+LB48SJVe3+c/+m8sgZKCxwwIBFnzpxRnJuTJ0/Ch57rqlUr1Zplh7ITo6vFpcQZJqtyYkot0I8E/kUWaLh6Be7N3ElIDSxZ8se8yn79+jLssGU8WAeNGjWCu7s7GjduDEdHJyXEyM9/sK8opmOfwOztohCIXtYURkgLDKMF+jAOHPXwvNDvvvsO27dvR2HhXixZupTx37OcEmtixPAkvP9+IXbu3KnI7t27sW3rVly4eEFtacGZM98hIiICTs5OcHJyUsiXmwB16tRBtWrVkJqaqtYsGxQCpQVKEq0qDpQEhnpbzsC8+HAIPPzRYUSERyB17FhMmjgRgwYNUnZWateujbahoXj55UmYNu1/8dprM5GenoHpU2fgm6+/VVvfhcFQhCNHjuDgwYPYs2cvVq1epWwEjB+fBpPJrNYqG8Spo0CLeoCOFtinu5VNoe04hTYhgcMS1e6UHw4dOoTw8A60sn2qBly/LqJp06aM6+yUvc6ywmAwKFPw7du3Vc0D4CQJlNOnDy3QqvZCB5LAcIYRjUjgkD5qb8oHu3buQlRUR3zy8a/P11w4fx5NmjRWpsG8vP/uxPwVEMc+4vRJAuUU2t+a9kLlFNqGgbw83zm0F7vyYFNRKTZv3sw1KxLHj59QNXdx+fIlepXSC7XDokW5qvb/GadIYEBdEujEmSjBigiMJ4Gt3S1T6JDyIXDt2rWKw3G/T0BXrlyCp5en4oQ8KgSKjw8wkCeBksQh/a2MwDZeFgu8h0C5/zhv3nzMzZ6P7OxsZGRkIiM9E3PmZCEzM50B9STMmjWT+lmYPHkiXp40EVOnvoqxKWMQExONL7/8QrnPb0ES6O3tBTtbG+j1ekX3zTffcJ3ciwMH9uHgof0o3LsX++id7t61S3FYDuzfj/379iue6p49e1heiC//+Z/POHrkGAoKCrBmzRpF1r+zHhs3blRk8+YteO+997CVIu/79ddfqq1I4NFDgD8Def861kbgKB1CArkGPg0MimdXLGdiTCYjxo0bzxirFtatW4ttDAG2b2Xnt2ymvIstm+VH2E3Y/O5GrF//DtatXadY3rp17+A817jfgwzk5aejypUrY/78+YouKSmJ4UBVJURwcnJkfOfA1EEJNeT3QKlzdnb+RWxtbNEv4T/X7LffXoPk0aMxIW080igTJqQp6bjxqexPKq/H0RMejx49e6B3r54wl54BOs11Wvmg62plTkx8ioXAxiRwcBx7cncKNZvNmDhpEpKTk5V8eaGUwCpVqv5C4IjhwxVCXVxcSJCL8uLIfK3aMq2lfg+8K7a03ri4nkrbsuDUqVPo378PSuQJcYkvjgOtLJ+TMLiPNTkxpRZYUZ1Cf30qzWi0WKKM4X7p7ANCTqHyA678+r5ggeXz0HBaYNWqVWh5jgphkkQLWRYipUjrlOUyrVK1KnrEdlfalgVyGy4xMeFunz47BrRtQgJpgYOsyYkZSAsMC6ITQwsclsCe/LalyZ2O0aNf4tT64McO5T6mr4+vsoOSmWE5JpGYmKhsbkuipLXJLTJJ1r1iIdCyEyOPYPSIjVXalgXHjh1DwgtxMJYSKE+jt3UDAv8Os1URmJTGODAEcFPPxNyHQGmJksCxY1MemER5mMnbW8cptAqmT5um6F58ceRvEGghyyKlRFqu5XmZ7t26KW3LAnkmp098LErkD20kztChCWM4FegKU39rWgOTJusQGQo0q0IC+7En9z/UdKf4DgkcS6cg7e7iXwbcuHEDgYGBCglt2rTB3LnZCAkJQc2a1eHobHFeXFxoccw7ONbgdOpIUp3hUtsJLkzt7G1Y1+GBdnHkDlHnjhEoZp8UnGHIE9UUaPE3roHWZIGjpukQ0dbyo8thA9iT3z+VJi0xOXk0p9QUrh9GVfvnsVC/gI6IPb1JO1R8upJifU5ONZVPRvb2tqjpYEfyqqN6DTs416oJZxLqyGubalXg5+uNnbt2qHf68zhy9KiyQ7RkyT3fIv9FC4zhGhhYT3rjVkRgCgns1B5wt6MnMVDtze9DLvyjRo1SplOjsWyOjXzzlxW8gZjo7mgZ2BYBfq3h5xMAH50/dN6+TP3g5eUDT3cd/HUtFZ2Hhw5jxqTgxx/Pqnf5c5Avn7TayMhwxpK7Va2Kf30OdLNYoLmXNZ2JkRYYFWYhcGBfLoF/7FxoSUkxSRyBiRPTVE3ZYDSaOKXeQlHRdRQZrikn1oqKLOnVqwYYrhbhmlJGPaWs6+/Zs+cwcMAADBs2lC/Ab/yA5/svIKLpxATUhTGuozWtgZLAdlwDbYEEBvLyF7V/EPIrwIgRw5XPQeUZJ5Y3duzYho6dorAoN0exwt/EGVqgJLBFPRjjO1mZExNFJ6apDdCXceCf/K5WTC9u5MgRGDp0MJYv/wdWrFyO5SveVFIpq1a/hTVr1irf7t5atfIXWfmWlDexbFke8gtysWRpDvIWLcT8BfOgXzgPs2dnIouSmTkT06ZNwfTpU5CRMZP6DOozkD3vdcybPxdz52djYc585ObqOT0uUL5uyKOKixYtUo7kp6SMRdeuXXD06H/50aoksGNjwL82LTDSigiclaQT8e4QDStA9GEY8ScssBS3bt3CypUrkJ09G/PmZUOvn6vIAkkGnRXpLCxYMJ/5eVhIcuTgZ2RlcPDnYM7rGUjPfA2Zs9Mxe04mZqW/hjlzSFJWOmbOeo26DGRmzURW5ixkz51DQiWBmSSPBPI+r2dnKfrsbN6L7efOI6lz57KeJD+TxOZwKr6i/qX3h/jmCEwR9ED9nYG4LtZDYPFn2zzML0WZ4FoB6NAS+OnXRxmeFIjtK2BuQU+c3rgYm7JFHZ5HH/zbK5nHJGxFs8oQDSrBvOltS4+eNMwaBXg9BfjWhujXp486PNYB07jkOHOrv5vlN0FTfGvg8iW1V08Ijn4EtHMFmtuiJL7NT8Vr13qoQ2MdEF99VbW4d/e9yv+G1OxpGKf+D8Sdm2rvHm/I/2pEJMYpO1EipDauTh6SpQ6LdUEsfTtItPM8C68qKPFzwbXUXhAnD9GpUfcKHzuYYf70AIpfjIPJ+3kS6ADTkMivxPcnGqhDYn24Om1c9M2eba/Lr9Jmf3uIli7A8M7A7FSgYAZEfjqQkwnkZQFLs4HlC1VZRFlikRWLKUxXFQDr1wAb3rGk67i2vrOW+Q3Au+8Bm7eybDP1m4C1lHUbgU0s28S8TLdsAd6jyLobmK5/l22YZ0yHXTuBve8D+/YDhZQ9hdTtZZ66Dz4EDh8GDvLl23+QdSgHKB9KYd0PdgBrciAmDoUp8m8QQYx/WzSEqVP012LBoubqUFgn+Fo+JfLmhRqH9fwnWtYHfJwA18rA81zcm1Wih8Z8w4pMqwCedoC3vSrUy/9ITh7LkGdrZN6rAsy+9Oh8GF82ZdvGvIdHJQhftvOSB2ifAdx4/6actt1qKhagHOmT51Ka1wEC+Xy5sexXm/UdAXfW8WKdFrwOZlmgPL/Cei3Ug0iy3JchQMjfgfa0qEDW8+Fz5D3ls3zZJuBZ5TfwaNOAepb7N4K5YzBupL2wt3j3aj91GKwf4sSh2iJ9wsslL4RvK24fcKHY3/WOMeg5gdDngDAGuxFNgUh3oBOlixcQRV1bDlpYIyBclruxnHXaM5X12zXkwDZhmMK6nXWsI/PUhcrB5mBKkW0jfIHoFgyo/VivOeuwbmvWU8giCW35fBlsy+eFy2dRwtg2qB5JIUHyvhEskwRKp6QVX4AWbCeJa866rXn/yNYwx7QXIqbjz2Jo0n6x9I2xArBRu/54gRb59O1FmQ0vdmnva3gjK/VG/pxckavXi7wllFy9+EeeXqxZrhdLKfPfsMjClXqRu4qyWi+yeZ3BulmUmaw7c6FezGD7GdP0YuoEvZiUohfJIyySOpr6mayfoRevTGHZJOrG6cWAAXrRs6texHbTi5SRlrYzXtGLCal6MXm8XoymbhDrJLP91Ml6MUWVV2T7ZL0YxfJJfFbWVP49vHdBfq5pzZoJd5Zv5Nv3mBKnQYMGDRo0aNCgQYMGDRo0aNCgQYMGDRo0aNCgwfpQocK/AS0pwyTTmoXoAAAAAElFTkSuQmCC",
+                  "height": 18.09,
+                  "width": 25.5
+                },
+                "value": "Pump and Dump Station"
+              },
+              {
+                "label": "Floating Restroom",
+                "symbol": {
+                  "type": "esriPMS",
+                  "angle": 0,
+                  "xoffset": 0,
+                  "yoffset": 0,
+                  "contentType": "image/png",
+                  "imageData": "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",
+                  "height": 16.5,
+                  "width": 16.5
+                },
+                "value": "FRR"
+              }
+            ]
+          }
+        }
+      },
+      "featureEffect": null,
+      "showLabels": false,
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<div style='text-align:center;'><span style='background-color:rgb(255,255,0); color:#000000; font-size:medium;'><font><strong>{oa_status}</strong></font></span></div><div style='text-align:center;'><span style='font-size:large;'><font><strong>{name}</strong></font></span></div><div style='text-align:center;'>a boating facility located on</div><div style='text-align:center;'><span style='font-size:large;'><font><strong>{waterway_name}</strong></font></span></div><div style='text-align:center;'>managed by</div><div style='text-align:center;'><span style='font-size:medium;'><font><strong>{manager}&nbsp;</strong></font></span></div><div style='text-align:center;'><strong>{manager_phone}&nbsp;</strong></div><div style='text-align:center;'><a href='{web_url}' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='color:#5298c7;'><strong><u>Website</u></strong></span></a></div><div style='text-align:center;'>{expression/expr26} {operating_dates}&nbsp;</div><div style='text-align:center;'>&nbsp;</div><div style='text-align:center;'><strong><u>Boat Access Amenities</u></strong></div><div style='text-align:center;'><img style='display:{expression/expr1};' src='{expression/expr0}' alt='' width='15%' /><img style='display:{expression/expr3};' src='{expression/expr2}' alt='' width='15%' /><img style='display:{expression/expr7};' src='{expression/expr6}' alt='' width='15%' /><img style='display:{expression/expr9};' src='{expression/expr8}' alt='' width='15%' /><img style='display:{expression/expr11};' src='{expression/expr10}' alt='' width='15%' /><img style='display:{expression/expr13};' src='{expression/expr12}' alt='' width='15%' /></div><div style='text-align:center;'><strong><u>{expression/expr14}</u></strong>&nbsp;</div><div style='text-align:center;'><p><img style='display:{expression/expr16};' src='{expression/expr15}' alt='' width='15%' /><img style='display:{expression/expr18};' src='{expression/expr17}' alt='' width='15%' /><img style='display:{expression/expr20};' src='{expression/expr19}' alt='' width='15%' /><img style='display:{expression/expr22};' src='{expression/expr21}' alt='' width='15%' /><img style='display:{expression/expr5};' src='{expression/expr4}' alt='' width='15%' /></p></div><div style='text-align:center;'><strong><u>{expression/expr23}</u></strong>&nbsp;</div><div style='text-align:center;'><span style='font-size:18px;'><strong>{oa_status}</strong></span></div><div style='text-align:center;'>&nbsp;</div><div style='text-align:center;'><i>{oa_note}</i></div><div style='text-align:center;'>&nbsp;</div><div style='text-align:center;'>{expression/expr24}&nbsp;</div><div style='text-align:center;'>{oa_closuredt} {expression/expr25} {oa_antopendt}&nbsp;</div>"
+          },
+          {
+            "type": "attachments",
+            "description": "",
+            "displayType": "auto",
+            "title": ""
+          }
+        ],
+        "description": "<div style='text-align:center;'><span style='background-color:rgb(255,255,0); color:#000000; font-size:medium;'><font><strong>{oa_status}</strong></font></span></div><div style='text-align:center;'><span style='font-size:large;'><font><strong>{name}</strong></font></span></div><div style='text-align:center;'>a boating facility located on</div><div style='text-align:center;'><span style='font-size:large;'><font><strong>{waterway_name}</strong></font></span></div><div style='text-align:center;'>managed by</div><div style='text-align:center;'><span style='font-size:medium;'><font><strong>{manager}&nbsp;</strong></font></span></div><div style='text-align:center;'><strong>{manager_phone}&nbsp;</strong></div><div style='text-align:center;'><a href='{web_url}' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='color:#5298c7;'><strong><u>Website</u></strong></span></a></div><div style='text-align:center;'>{expression/expr26} {operating_dates}&nbsp;</div><div style='text-align:center;'>&nbsp;</div><div style='text-align:center;'><strong><u>Boat Access Amenities</u></strong></div><div style='text-align:center;'><img style='display:{expression/expr1};' src='{expression/expr0}' alt='' width='15%' /><img style='display:{expression/expr3};' src='{expression/expr2}' alt='' width='15%' /><img style='display:{expression/expr7};' src='{expression/expr6}' alt='' width='15%' /><img style='display:{expression/expr9};' src='{expression/expr8}' alt='' width='15%' /><img style='display:{expression/expr11};' src='{expression/expr10}' alt='' width='15%' /><img style='display:{expression/expr13};' src='{expression/expr12}' alt='' width='15%' /></div><div style='text-align:center;'><strong><u>{expression/expr14}</u></strong>&nbsp;</div><div style='text-align:center;'><p><img style='display:{expression/expr16};' src='{expression/expr15}' alt='' width='15%' /><img style='display:{expression/expr18};' src='{expression/expr17}' alt='' width='15%' /><img style='display:{expression/expr20};' src='{expression/expr19}' alt='' width='15%' /><img style='display:{expression/expr22};' src='{expression/expr21}' alt='' width='15%' /><img style='display:{expression/expr5};' src='{expression/expr4}' alt='' width='15%' /></p></div><div style='text-align:center;'><strong><u>{expression/expr23}</u></strong>&nbsp;</div><div style='text-align:center;'><span style='font-size:18px;'><strong>{oa_status}</strong></span></div><div style='text-align:center;'>&nbsp;</div><div style='text-align:center;'><i>{oa_note}</i></div><div style='text-align:center;'>&nbsp;</div><div style='text-align:center;'>{expression/expr24}&nbsp;</div><div style='text-align:center;'>{oa_closuredt} {expression/expr25} {oa_antopendt}&nbsp;</div>",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Ramp 1",
+            "expression": "var checkvalue = $feature.RAMP\u202f \r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20BOAT%20RAMP.png\"\u202f \r\nvar img_no = \"#\"\u202f \r\niif(checkvalue=='Yes',img_show,$feature.RAMP)",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Ramp 2",
+            "expression": "return iif($feature.RAMP == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Hand Launch 1",
+            "expression": "var checkvalue = $feature.HAND\u202f \r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20HAND%20LAUNCH.png\"\u202f \r\niif(checkvalue=='Yes',img_show,$feature.HAND)",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Hand Launch 2",
+            "expression": "return iif($feature.HAND == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Hoist 1",
+            "expression": "var checkvalue = $feature.HOIST\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20BOAT%20HOIST.png\"\u202f\u202f \r\niif(checkvalue=='Yes', img_show, \"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Hoist 2",
+            "expression": "return iif($feature.HOIST == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Parking 1",
+            "expression": "var checkvalue = $feature.PARKING\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20PARKING.png\"\u202f \r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Parking 2",
+            "expression": "return iif($feature.PARKING == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr8",
+            "title": "Sanitation 1",
+            "expression": "var checkvalue = $feature.SANITATION\r\nvar img_show = 'https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20RESTROOM.png'\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr9",
+            "title": "Sanitation 2",
+            "expression": "return iif($feature.SANITATION == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr10",
+            "title": "Use Fee",
+            "expression": "var checkvalue = $feature.USEFEE\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20USER%20FEE.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr11",
+            "title": "Use Fee 2",
+            "expression": "return iif($feature.USEFEE == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr12",
+            "title": "PFD 1",
+            "expression": "var checkvalue = $feature.PFD\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20LIFE%20JACKET%20KIOSK.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr13",
+            "title": "PFD 2",
+            "expression": "return iif($feature.PFD == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr14",
+            "title": "Marina Text",
+            "expression": "var checkvalue = $feature.MARINA\r\niif(checkvalue=='Yes',\"Marina, Tie-Up, and other Services\",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr15",
+            "title": "Clean Marina 1",
+            "expression": "var checkvalue = $feature.CLEAN\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20CLEAN%20MARINA.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr16",
+            "title": "Clean Marina 2",
+            "expression": "return iif($feature.CLEAN == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr17",
+            "title": "ShortTermTieUp 1",
+            "expression": "var checkvalue = $feature.SHORTTIE\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20MARINA.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr18",
+            "title": "ShortTermTieUp 2",
+            "expression": "return iif($feature.SHORTTIE == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr19",
+            "title": "CVA 1",
+            "expression": "var checkvalue = $feature.CVA\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20CVA1.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr20",
+            "title": "CVA 2",
+            "expression": "return iif($feature.CVA == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr21",
+            "title": "Fuel 1",
+            "expression": "var checkvalue = $feature.FUEL\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20FUEL.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr22",
+            "title": "Fuel 2",
+            "expression": "return iif($feature.FUEL == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr23",
+            "title": "Status",
+            "expression": "iif(!IsEmpty($feature.oa_status),\"Boating Facility Status\",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr24",
+            "title": "Dates Note",
+            "expression": "iif(!IsEmpty($feature.oa_closuredt),\"Dates of Note:\",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr25",
+            "title": "Closure Dt",
+            "expression": "iif(!IsEmpty($feature.oa_closuredt),\" - \",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr26",
+            "title": "Operating Dates",
+            "expression": "iif(!IsEmpty($feature.operating_dates),\"Operating Dates (Typical):\",\"\")",
+            "returnType": "string"
+          }
+        ],
+        "fieldInfos": [
+          {
+            "fieldName": "ObjectId",
+            "isEditable": false,
+            "label": "ObjectId",
+            "visible": false
+          },
+          {
+            "fieldName": "name",
+            "isEditable": true,
+            "label": "Official Name",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_map",
+            "isEditable": true,
+            "label": "Active Notification?",
+            "visible": true
+          },
+          {
+            "fieldName": "name_alias",
+            "isEditable": true,
+            "label": "Alias Name",
+            "visible": true
+          },
+          {
+            "fieldName": "HOIST",
+            "isEditable": true,
+            "label": "Boat Hoist",
+            "visible": true
+          },
+          {
+            "fieldName": "SLIDE",
+            "isEditable": true,
+            "label": "Boat Slide",
+            "visible": true
+          },
+          {
+            "fieldName": "CLEAN",
+            "isEditable": true,
+            "label": "Clean Marina",
+            "visible": true
+          },
+          {
+            "fieldName": "county",
+            "isEditable": true,
+            "label": "County",
+            "visible": true
+          },
+          {
+            "fieldName": "CreationDate",
+            "isEditable": false,
+            "label": "CreationDate",
+            "visible": true
+          },
+          {
+            "fieldName": "CreationDate_1772575817088",
+            "isEditable": false,
+            "label": "CreationDate",
+            "visible": true
+          },
+          {
+            "fieldName": "Creator",
+            "isEditable": false,
+            "label": "Creator",
+            "visible": true
+          },
+          {
+            "fieldName": "Creator_1772575817088",
+            "isEditable": false,
+            "label": "Creator",
+            "visible": true
+          },
+          {
+            "fieldName": "fees",
+            "isEditable": true,
+            "label": "Describe what the access fee is",
+            "visible": true
+          },
+          {
+            "fieldName": "public_display",
+            "isEditable": true,
+            "label": "Display on public maps?",
+            "visible": true
+          },
+          {
+            "fieldName": "district",
+            "isEditable": true,
+            "label": "District",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_hb2549",
+            "isEditable": true,
+            "label": "Does this qualify for HB 2549",
+            "visible": true
+          },
+          {
+            "fieldName": "EditDate",
+            "isEditable": false,
+            "label": "EditDate",
+            "visible": true
+          },
+          {
+            "fieldName": "EditDate_1772575817088",
+            "isEditable": false,
+            "label": "EditDate",
+            "visible": true
+          },
+          {
+            "fieldName": "Editor",
+            "isEditable": false,
+            "label": "Editor",
+            "visible": true
+          },
+          {
+            "fieldName": "Editor_1772575817088",
+            "isEditable": false,
+            "label": "Editor",
+            "visible": true
+          },
+          {
+            "fieldName": "manager",
+            "isEditable": true,
+            "label": "Facility Manager",
+            "visible": true
+          },
+          {
+            "fieldName": "owner",
+            "isEditable": true,
+            "label": "Facility Owner",
+            "visible": true
+          },
+          {
+            "fieldName": "facility_type",
+            "isEditable": true,
+            "label": "Facility Type",
+            "visible": true
+          },
+          {
+            "fieldName": "FUEL",
+            "isEditable": true,
+            "label": "Floating Fuel Dock",
+            "visible": true
+          },
+          {
+            "fieldName": "NONMOTOR",
+            "isEditable": true,
+            "label": "Floating Kayak Launch",
+            "visible": true
+          },
+          {
+            "fieldName": "globalid",
+            "isEditable": false,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "HAND",
+            "isEditable": true,
+            "label": "Hand Launch",
+            "visible": true
+          },
+          {
+            "fieldName": "launch_type",
+            "isEditable": true,
+            "label": "Launch Type",
+            "visible": true
+          },
+          {
+            "fieldName": "PFD",
+            "isEditable": true,
+            "label": "Life Jacket Loaner Station",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_mapedt",
+            "isEditable": true,
+            "label": "Map End Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_mapsdt",
+            "isEditable": true,
+            "label": "Map Start Date",
+            "visible": true
+          },
+          {
+            "fieldName": "MARINA",
+            "isEditable": true,
+            "label": "Marina Services",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_actopendt",
+            "isEditable": true,
+            "label": "OAR Actual Open Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_antopendt",
+            "isEditable": true,
+            "label": "OAR Anticipated Open Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_closuredt",
+            "isEditable": true,
+            "label": "OAR Closure Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_note",
+            "isEditable": true,
+            "label": "OAR Note",
+            "visible": true
+          },
+          {
+            "fieldName": "operating_dates",
+            "isEditable": true,
+            "label": "Operating Dates",
+            "visible": true
+          },
+          {
+            "fieldName": "operating_hours",
+            "isEditable": true,
+            "label": "Operating Hours",
+            "visible": true
+          },
+          {
+            "fieldName": "web_url",
+            "isEditable": true,
+            "label": "Operator Web URL",
+            "visible": true
+          },
+          {
+            "fieldName": "PARKING",
+            "isEditable": true,
+            "label": "Parking",
+            "visible": true
+          },
+          {
+            "fieldName": "manager_phone",
+            "isEditable": true,
+            "label": "Phone Number",
+            "visible": true
+          },
+          {
+            "fieldName": "POLESLIDE",
+            "isEditable": true,
+            "label": "Pole Slide",
+            "visible": true
+          },
+          {
+            "fieldName": "CVA",
+            "isEditable": true,
+            "label": "Pump/Dump Station",
+            "visible": true
+          },
+          {
+            "fieldName": "ramp_lanes",
+            "isEditable": true,
+            "label": "Ramp Lanes",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_reason",
+            "isEditable": true,
+            "label": "Reason for status change",
+            "visible": true
+          },
+          {
+            "fieldName": "region",
+            "isEditable": true,
+            "label": "Region",
+            "visible": true
+          },
+          {
+            "fieldName": "SANITATION",
+            "isEditable": true,
+            "label": "Sanitation",
+            "visible": true
+          },
+          {
+            "fieldName": "SHORTTIE",
+            "isEditable": true,
+            "label": "Short Term Tie Up Dock",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_status",
+            "isEditable": true,
+            "label": "Status",
+            "visible": true
+          },
+          {
+            "fieldName": "RAMP",
+            "isEditable": true,
+            "label": "Trailered Boat Launch",
+            "visible": true
+          },
+          {
+            "fieldName": "USEFEE",
+            "isEditable": true,
+            "label": "Use Fee",
+            "visible": true
+          },
+          {
+            "fieldName": "waterway_alias",
+            "isEditable": true,
+            "label": "Waterway Alias",
+            "visible": true
+          },
+          {
+            "fieldName": "waterway_name",
+            "isEditable": true,
+            "label": "Waterway Name",
+            "visible": true
+          },
+          {
+            "fieldName": "camera_url",
+            "isEditable": true,
+            "label": "Web Camera URL",
+            "visible": true
+          },
+          {
+            "fieldName": "WINDSURF",
+            "isEditable": true,
+            "label": "Wind Surfing",
+            "visible": true
+          },
+          {
+            "fieldName": "globalid_1772575817088",
+            "isEditable": true,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "parentglobalid",
+            "isEditable": true,
+            "label": "ParentGlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr0",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr1",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr2",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr3",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr4",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr5",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr6",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr7",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr8",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr9",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr10",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr11",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr12",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr13",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr14",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr15",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr16",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr17",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr18",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr19",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr20",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr21",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr22",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr23",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr24",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr25",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr26",
+            "isEditable": true,
+            "visible": false
+          }
+        ],
+        "title": "Marine Waste (CVA) Amenity:"
+      }
+    },
+    {
+      "id": "18c5ae38180-layer-12",
+      "title": "Boating Obstruction",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/BORT_Public_View/FeatureServer/0",
+      "itemId": "96d04ef37a334f1098175e4565b6d963",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "minScale": 80000,
+        "fieldConfigurations": [
+          {
+            "name": "reviewdate",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "short",
+              "hour12": "always"
+            }
+          },
+          {
+            "name": "recordtime",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "short",
+              "hour12": "always"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "19cbed4458d-layer-11",
+      "title": "Boating Access Site",
+      "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/arcgis/rest/services/Boating_Access_Sites_OA/FeatureServer/0",
+      "visibility": true,
+      "itemId": "63176689a50541b8863b530b29f9ea36",
+      "layerType": "ArcGISFeatureLayer",
+      "featureEffect": null,
+      "layerDefinition": {
+        "definitionExpression": "(public_display = 'Yes') AND (facility_type NOT IN ('Pump and Dump Station','FRR','Statewide Regional Project','Gap in Access'))"
+      },
+      "popupInfo": {
+        "popupElements": [
+          {
+            "type": "text",
+            "text": "<div style='margin:0 0 10px; text-align:center;'><div><strong>{expression/expr23}</strong></div><div style='font-size:18px; margin-top:4px;'><strong>{oa_status}</strong></div><div style='margin-top:6px;'><i>{oa_note}</i></div><hr /></div>"
+          },
+          {
+            "type": "text",
+            "text": "<div style='font-size:1.2em; text-align:center;'><strong>{name}</strong></div><div style='text-align:center;'>a boating facility located on</div><div style='font-size:1.1em; text-align:center;'><p><strong>{waterway_name}</strong></p><div style='margin-top:6px; text-align:center;'>managed by</div><div style='text-align:center;'><strong>{manager}</strong></div><div style='text-align:center;'>{manager_phone}</div><div style='text-align:center;'><a style='color:#0066CC;' href='{web_url}' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Visit Facility Website</strong></a></div><div style='margin-top:6px; text-align:center;'>{expression/expr26} {operating_dates}</div><hr /></div>"
+          },
+          {
+            "type": "text",
+            "text": "<div style='text-align:center;'><strong>Boat Access Amenities</strong></div><div style='text-align:center;'><img style='display:{expression/expr1};' src='{expression/expr0}' alt='' width='15%' /><img style='display:{expression/expr3};' src='{expression/expr2}' alt='' width='15%' /><img style='display:{expression/expr7};' src='{expression/expr6}' alt='' width='15%' /><img style='display:{expression/expr9};' src='{expression/expr8}' alt='' width='15%' /><img style='display:{expression/expr11};' src='{expression/expr10}' alt='' width='15%' /><img style='display:{expression/expr13};' src='{expression/expr12}' alt='' width='15%' /><img style='display:{expression/expr30};' src='{expression/expr29}' alt='' width='15%' /><img style='display:{expression/expr32};' src='{expression/expr31}' alt='' width='15%' /></div><p style='text-align:center;'>{expression/expr27}</p><div style='text-align:center;'><strong>{expression/expr14}</strong></div><div style='margin-top:6px; text-align:center;'><img style='display:{expression/expr16};' src='{expression/expr15}' alt='' width='15%' /><img style='display:{expression/expr18};' src='{expression/expr17}' alt='' width='15%' /><img style='display:{expression/expr20};' src='{expression/expr19}' alt='' width='15%' /><img style='display:{expression/expr22};' src='{expression/expr21}' alt='' width='15%' /><img style='display:{expression/expr5};' src='{expression/expr4}' alt='' width='15%' /></div><p style='text-align:center;'>{expression/expr28}</p><hr />"
+          },
+          {
+            "type": "attachments",
+            "description": "",
+            "displayType": "auto",
+            "title": ""
+          }
+        ],
+        "description": "<div style='margin:0 0 10px; text-align:center;'><div><strong>{expression/expr23}</strong></div><div style='font-size:18px; margin-top:4px;'><strong>{oa_status}</strong></div><div style='margin-top:6px;'><i>{oa_note}</i></div><hr /></div>",
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Ramp 1",
+            "expression": "var checkvalue = $feature.RAMP\u202f \r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20BOAT%20RAMP.png\"\u202f \r\nvar img_no = \"#\"\u202f \r\niif(checkvalue=='Yes',img_show,$feature.RAMP)",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "Ramp 2",
+            "expression": "return iif($feature.RAMP == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr2",
+            "title": "Hand Launch 1",
+            "expression": "var checkvalue = $feature.HAND\u202f \r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20HAND%20LAUNCH.png\"\u202f \r\niif(checkvalue=='Yes',img_show,$feature.HAND)",
+            "returnType": "string"
+          },
+          {
+            "name": "expr3",
+            "title": "Hand Launch 2",
+            "expression": "return iif($feature.HAND == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr4",
+            "title": "Hoist 1",
+            "expression": "var checkvalue = $feature.HOIST\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20BOAT%20HOIST.png\"\u202f\u202f \r\niif(checkvalue=='Yes', img_show, \"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr5",
+            "title": "Hoist 2",
+            "expression": "return iif($feature.HOIST == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr6",
+            "title": "Parking 1",
+            "expression": "var checkvalue = $feature.PARKING\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20PARKING.png\"\u202f \r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr7",
+            "title": "Parking 2",
+            "expression": "return iif($feature.PARKING == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr8",
+            "title": "Sanitation 1",
+            "expression": "var checkvalue = $feature.SANITATION\r\nvar img_show = 'https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20RESTROOM.png'\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr9",
+            "title": "Sanitation 2",
+            "expression": "return iif($feature.SANITATION == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr10",
+            "title": "Use Fee",
+            "expression": "var checkvalue = $feature.USEFEE\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20USER%20FEE.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr11",
+            "title": "Use Fee 2",
+            "expression": "return iif($feature.USEFEE == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr12",
+            "title": "PFD 1",
+            "expression": "var checkvalue = $feature.PFD\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20LIFE%20JACKET%20KIOSK.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr13",
+            "title": "PFD 2",
+            "expression": "return iif($feature.PFD == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr14",
+            "title": "Marina Text",
+            "expression": "var checkvalue = $feature.MARINA\r\niif(checkvalue=='Yes',\"Marina, Tie-Up, and other Services\",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr15",
+            "title": "Clean Marina 1",
+            "expression": "var checkvalue = $feature.CLEAN\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20CLEAN%20MARINA.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr16",
+            "title": "Clean Marina 2",
+            "expression": "return iif($feature.CLEAN == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr17",
+            "title": "ShortTermTieUp 1",
+            "expression": "var checkvalue = $feature.SHORTTIE\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20MARINA.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr18",
+            "title": "ShortTermTieUp 2",
+            "expression": "return iif($feature.SHORTTIE == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr19",
+            "title": "CVA 1",
+            "expression": "var checkvalue = $feature.CVA\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20CVA1.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr20",
+            "title": "CVA 2",
+            "expression": "return iif($feature.CVA == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr21",
+            "title": "Fuel 1",
+            "expression": "var checkvalue = $feature.FUEL\r\nvar img_show = \"https://www.oregon.gov/osmb/boater-info/PublishingImages/Icons/ICON%20FUEL.png\"\r\niif(checkvalue=='Yes',img_show,\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr22",
+            "title": "Fuel 2",
+            "expression": "return iif($feature.FUEL == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr23",
+            "title": "Status",
+            "expression": "iif(!IsEmpty($feature.oa_status),\"Boating Facility Status\",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr24",
+            "title": "Dates Note",
+            "expression": "iif(!IsEmpty($feature.oa_closuredt),\"Dates of Note:\",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr25",
+            "title": "Closure Dt",
+            "expression": "iif(!IsEmpty($feature.oa_closuredt),\" - \",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr26",
+            "title": "Operating Dates",
+            "expression": "iif(!IsEmpty($feature.operating_dates),\"Operating Dates (Typical):\",\"\")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr27",
+            "title": "Amenities List",
+            "expression": "var amenities = []\r\nif ($feature.RAMP == \"Yes\") {Push(amenities, \"Trailered Boat Ramp\")}\r\nif ($feature.HAND == \"Yes\") {Push(amenities, \"Hand Carry Boat Launch\")}\r\nif ($feature.PARKING == \"Yes\") {Push(amenities, \"Parking\")}\r\nif ($feature.SANITATION == \"Yes\") {Push(amenities, \"Sanitation\")}\r\nif ($feature.USEFEE == \"Yes\") {Push(amenities, \"Use Fee\")}\r\nif ($feature.PFD == \"Yes\") {Push(amenities, \"PFD Loaner Station\")}\r\nif ($feature.WINDSURF == \"Yes\") {Push(amenities, \"Wind Surfing\")}\r\nif ($feature.POLESLIDE == \"Yes\") {Push(amenities, \"Boat Slide Launch\")}\r\nreturn Concatenate(amenities, \", \")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr28",
+            "title": "Marina Amenities",
+            "expression": "var amenitiesm = []\r\nif ($feature.CLEAN == \"Yes\") {Push(amenitiesm, \"Certified Clean Marina\")}\r\nif ($feature.SHORTTIE == \"Yes\") {Push(amenitiesm, \"Short Term Tie-Up Dock\")}\r\nif ($feature.CVA == \"Yes\") {Push(amenitiesm, \"Pumpout Dumpstation\")}\r\nif ($feature.FUEL == \"Yes\") {Push(amenitiesm, \"On-Water Fuel\")}\r\nif ($feature.HOIST == \"Yes\") {Push(amenitiesm, \"Hoist\")}\r\nreturn Concatenate(amenitiesm, \", \")",
+            "returnType": "string"
+          },
+          {
+            "name": "expr29",
+            "title": "WINDSURF",
+            "expression": "var checkvalue = $feature.WINDSURF \r\nvar img_show = \"https://www.oregon.gov/osmb/PublishingImages/Icons/ICON-WIND-SURF.png\"\u202f \r\nvar img_no = \"#\"\u202f \r\niif(checkvalue=='Yes',img_show,$feature.WINDSURF)",
+            "returnType": "string"
+          },
+          {
+            "name": "expr30",
+            "title": "WINDSURF2",
+            "expression": "return iif($feature.WINDSURF == 'No', 'none', 'inline')",
+            "returnType": "string"
+          },
+          {
+            "name": "expr31",
+            "title": "POLE SLIDE 1",
+            "expression": "var checkvalue = $feature.POLESLIDE \r\nvar img_show = \"https://www.oregon.gov/osmb/PublishingImages/Icons/ICON-POLE-SLIDE.png\"\u202f \r\nvar img_no = \"#\"\u202f \r\niif(checkvalue=='Yes',img_show,$feature.POLESLIDE)",
+            "returnType": "string"
+          },
+          {
+            "name": "expr32",
+            "title": "POLE SLIDE 2",
+            "expression": "return iif($feature.POLESLIDE == 'No', 'none', 'inline')",
+            "returnType": "string"
+          }
+        ],
+        "fieldInfos": [
+          {
+            "fieldName": "ObjectId",
+            "isEditable": false,
+            "label": "ObjectId",
+            "visible": false
+          },
+          {
+            "fieldName": "name",
+            "isEditable": true,
+            "label": "Official Name",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_map",
+            "isEditable": true,
+            "label": "Active Notification?",
+            "visible": true
+          },
+          {
+            "fieldName": "name_alias",
+            "isEditable": true,
+            "label": "Alias Name",
+            "visible": true
+          },
+          {
+            "fieldName": "HOIST",
+            "isEditable": true,
+            "label": "Boat Hoist",
+            "visible": true
+          },
+          {
+            "fieldName": "SLIDE",
+            "isEditable": true,
+            "label": "Boat Slide",
+            "visible": true
+          },
+          {
+            "fieldName": "CLEAN",
+            "isEditable": true,
+            "label": "Clean Marina",
+            "visible": true
+          },
+          {
+            "fieldName": "county",
+            "isEditable": true,
+            "label": "County",
+            "visible": true
+          },
+          {
+            "fieldName": "CreationDate",
+            "isEditable": false,
+            "label": "CreationDate",
+            "visible": true
+          },
+          {
+            "fieldName": "CreationDate_1772575817088",
+            "isEditable": false,
+            "label": "CreationDate",
+            "visible": true
+          },
+          {
+            "fieldName": "Creator",
+            "isEditable": false,
+            "label": "Creator",
+            "visible": true
+          },
+          {
+            "fieldName": "Creator_1772575817088",
+            "isEditable": false,
+            "label": "Creator",
+            "visible": true
+          },
+          {
+            "fieldName": "fees",
+            "isEditable": true,
+            "label": "Describe what the access fee is",
+            "visible": true
+          },
+          {
+            "fieldName": "public_display",
+            "isEditable": true,
+            "label": "Display on public maps?",
+            "visible": true
+          },
+          {
+            "fieldName": "district",
+            "isEditable": true,
+            "label": "District",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_hb2549",
+            "isEditable": true,
+            "label": "Does this qualify for HB 2549",
+            "visible": true
+          },
+          {
+            "fieldName": "EditDate",
+            "isEditable": false,
+            "label": "EditDate",
+            "visible": true
+          },
+          {
+            "fieldName": "EditDate_1772575817088",
+            "isEditable": false,
+            "label": "EditDate",
+            "visible": true
+          },
+          {
+            "fieldName": "Editor",
+            "isEditable": false,
+            "label": "Editor",
+            "visible": true
+          },
+          {
+            "fieldName": "Editor_1772575817088",
+            "isEditable": false,
+            "label": "Editor",
+            "visible": true
+          },
+          {
+            "fieldName": "manager",
+            "isEditable": true,
+            "label": "Facility Manager",
+            "visible": true
+          },
+          {
+            "fieldName": "owner",
+            "isEditable": true,
+            "label": "Facility Owner",
+            "visible": true
+          },
+          {
+            "fieldName": "facility_type",
+            "isEditable": true,
+            "label": "Facility Type",
+            "visible": true
+          },
+          {
+            "fieldName": "FUEL",
+            "isEditable": true,
+            "label": "Floating Fuel Dock",
+            "visible": true
+          },
+          {
+            "fieldName": "NONMOTOR",
+            "isEditable": true,
+            "label": "Floating Kayak Launch",
+            "visible": true
+          },
+          {
+            "fieldName": "globalid",
+            "isEditable": false,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "HAND",
+            "isEditable": true,
+            "label": "Hand Launch",
+            "visible": true
+          },
+          {
+            "fieldName": "launch_type",
+            "isEditable": true,
+            "label": "Launch Type",
+            "visible": true
+          },
+          {
+            "fieldName": "PFD",
+            "isEditable": true,
+            "label": "Life Jacket Loaner Station",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_mapedt",
+            "isEditable": true,
+            "label": "Map End Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_mapsdt",
+            "isEditable": true,
+            "label": "Map Start Date",
+            "visible": true
+          },
+          {
+            "fieldName": "MARINA",
+            "isEditable": true,
+            "label": "Marina Services",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_actopendt",
+            "isEditable": true,
+            "label": "OAR Actual Open Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_antopendt",
+            "isEditable": true,
+            "label": "OAR Anticipated Open Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_closuredt",
+            "isEditable": true,
+            "label": "OAR Closure Date",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_note",
+            "isEditable": true,
+            "label": "OAR Note",
+            "visible": true
+          },
+          {
+            "fieldName": "operating_dates",
+            "isEditable": true,
+            "label": "Operating Dates",
+            "visible": true
+          },
+          {
+            "fieldName": "operating_hours",
+            "isEditable": true,
+            "label": "Operating Hours",
+            "visible": true
+          },
+          {
+            "fieldName": "web_url",
+            "isEditable": true,
+            "label": "Operator Web URL",
+            "visible": true
+          },
+          {
+            "fieldName": "PARKING",
+            "isEditable": true,
+            "label": "Parking",
+            "visible": true
+          },
+          {
+            "fieldName": "manager_phone",
+            "isEditable": true,
+            "label": "Phone Number",
+            "visible": true
+          },
+          {
+            "fieldName": "POLESLIDE",
+            "isEditable": true,
+            "label": "Pole Slide",
+            "visible": true
+          },
+          {
+            "fieldName": "CVA",
+            "isEditable": true,
+            "label": "Pump/Dump Station",
+            "visible": true
+          },
+          {
+            "fieldName": "ramp_lanes",
+            "isEditable": true,
+            "label": "Ramp Lanes",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_reason",
+            "isEditable": true,
+            "label": "Reason for status change",
+            "visible": true
+          },
+          {
+            "fieldName": "region",
+            "isEditable": true,
+            "label": "Region",
+            "visible": true
+          },
+          {
+            "fieldName": "SANITATION",
+            "isEditable": true,
+            "label": "Sanitation",
+            "visible": true
+          },
+          {
+            "fieldName": "SHORTTIE",
+            "isEditable": true,
+            "label": "Short Term Tie Up Dock",
+            "visible": true
+          },
+          {
+            "fieldName": "oa_status",
+            "isEditable": true,
+            "label": "Status",
+            "visible": true
+          },
+          {
+            "fieldName": "RAMP",
+            "isEditable": true,
+            "label": "Trailered Boat Launch",
+            "visible": true
+          },
+          {
+            "fieldName": "USEFEE",
+            "isEditable": true,
+            "label": "Use Fee",
+            "visible": true
+          },
+          {
+            "fieldName": "waterway_alias",
+            "isEditable": true,
+            "label": "Waterway Alias",
+            "visible": true
+          },
+          {
+            "fieldName": "waterway_name",
+            "isEditable": true,
+            "label": "Waterway Name",
+            "visible": true
+          },
+          {
+            "fieldName": "camera_url",
+            "isEditable": true,
+            "label": "Web Camera URL",
+            "visible": true
+          },
+          {
+            "fieldName": "WINDSURF",
+            "isEditable": true,
+            "label": "Wind Surfing",
+            "visible": true
+          },
+          {
+            "fieldName": "globalid_1772575817088",
+            "isEditable": true,
+            "label": "GlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "parentglobalid",
+            "isEditable": true,
+            "label": "ParentGlobalID",
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr0",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr1",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr2",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr3",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr4",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr5",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr6",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr7",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr8",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr9",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr10",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr11",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr12",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr13",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr14",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr15",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr16",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr17",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr18",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr19",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr20",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr21",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr22",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr23",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr24",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr25",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr26",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr27",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr28",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr29",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr30",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr31",
+            "isEditable": true,
+            "visible": false
+          },
+          {
+            "fieldName": "expression/expr32",
+            "isEditable": true,
+            "visible": false
+          }
+        ],
+        "title": "Boating Access Site:"
+      }
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "World_Street_Map_8421",
+        "opacity": 1,
+        "title": "World Street Map",
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer",
+        "visibility": true,
+        "layerType": "ArcGISTiledMapServiceLayer"
+      }
+    ],
+    "title": "Streets"
+  },
+  "applicationProperties": {
+    "viewing": {
+      "search": {
+        "disablePlaceFinder": false,
+        "enabled": true,
+        "hintText": "facility name or waterbody",
+        "layers": [
+          {
+            "field": {
+              "exactMatch": false,
+              "name": "Waterway_NM",
+              "type": "esriFieldTypeString"
+            },
+            "id": "182b20c30fd-layer-11"
+          }
+        ]
+      }
+    }
+  },
+  "authoringApp": "ArcGISMapViewer",
+  "authoringAppVersion": "2026.1",
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -14018013.37427326,
+        "ymin": 4940783.06945097,
+        "xmax": -12728979.32927239,
+        "ymax": 5986441.616391904
+      }
+    }
+  },
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "timeZone": "system",
+  "version": "2.36"
+}

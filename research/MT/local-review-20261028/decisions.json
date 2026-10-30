@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "state": "MT",
+  "checkedOn": "2026-10-28",
+  "localOnly": true,
+  "items": [
+    {
+      "id": "cinnabar-replacement",
+      "subject": "Cinnabar (USFS)",
+      "riverId": "yellowstone-upper",
+      "sectionId": "corwin-yankee-jim",
+      "accessId": "acc-1dc7746074b75874a3af",
+      "decision": "approximate-map-only",
+      "sourceUrls": [
+        "https://fwp.mt.gov/binaries/content/assets/fwp/commission/2024/oct/parks/pi-sheet_brogans-landing-closure-fw-comm-proposal-sheet-10102024.pdf",
+        "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=upper%28recareaname%29+LIKE+%27%25CINNABAR%25%27+OR+upper%28recareaname%29+LIKE+%27%25CORWIN%25%27&outFields=%2A&outSR=4326&f=json"
+      ],
+      "note": "The launch has been explicitly changed to the separate Cinnabar facility. The old 7-mile listing is shorter than the direct distance between these access areas, so it is withheld. A reviewed Cinnabar–Carbella river measurement is required before restoring distance or time estimates."
+    },
+    {
+      "id": "greek-creek-hold",
+      "subject": "Greek Creek / Storm Castle",
+      "decision": "hold",
+      "sourceUrls": [
+        "https://gallatinrivertaskforce.org/greek-creek/"
+      ],
+      "note": "Restoration confirms low-impact access but not the intended raft landing; USFS campground centroid is not a ramp. No promotion."
+    }
+  ]
+}

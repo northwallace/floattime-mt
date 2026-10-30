@@ -51,7 +51,27 @@
           "sourceUrl": "https://cpw.widen.net/content/youugg69le/original/AHRA-River-Safety-Information-Map.pdf?u=45lowo&download=true",
           "checkedOn": "2026-10-26"
         }
-      ]
+      ],
+      "putInAccessId": "acc-d1ba9e7f9ddb528bac90",
+      "takeOutAccessId": "acc-3f5ca35b70a15463bb97"
     }
-  ]
+  ],
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "Colorado DWR measures discharge at Salida within this reach. The CPW Stone Bridge portage threshold specifically refers to the upstream Nathrop gauge; do not apply it to this Salida reading. This reading does not establish safe passage through the low-head dam or whitewater park.",
+    "sourceName": "Colorado Division of Water Resources",
+    "sourceUrl": "https://dwr.state.co.us/Tools/Stations/ARKSALCO",
+    "checkedOn": "2026-10-30"
+  },
+  "flowSource": {
+    "provider": "colorado-dwr",
+    "station": "ARKSALCO",
+    "parameter": "DISCHRG",
+    "timeZone": "America/Denver",
+    "kind": "streamflow",
+    "name": "Arkansas River at Salida",
+    "note": "Colorado DWR operates this active station within the Stone Bridge–Rincon reach. Provides current discharge context while upstream USGS Nathrop is seasonal; no timing calibration is added.",
+    "sourceUrl": "https://dwr.state.co.us/Tools/Stations/ARKSALCO",
+    "checkedOn": "2026-10-30"
+  }
 }

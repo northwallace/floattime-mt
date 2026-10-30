@@ -1,6 +1,6 @@
 async function initDirectory(){
 try {
-const catalog=await (await fetch("/catalog.json",{signal:AbortSignal.timeout(15000)})).json();
+const catalog=await (await fetch("/catalog-index.json",{signal:AbortSignal.timeout(15000)})).json();
 const RIVERS=catalog.rivers,STATES=catalog.states;
 const stateSelect=document.getElementById('directoryState'), search=document.getElementById('directorySearch'), results=document.getElementById('directoryResults'), status=document.getElementById('directoryStatus'), more=document.getElementById('directoryMore');
 const escapeText=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

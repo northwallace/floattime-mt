@@ -1,0 +1,4164 @@
+{
+ "version": "1",
+ "state": "MO",
+ "purpose": "Research-only three-level access grades with an Esri imagery check. NOT read by the app; the catalog registry (catalog/map_points/MO.json) carries the published status.",
+ "levels": {
+  "verified": "managing-agency launch feature (MDC boat ramp / NPS canoe-kayak access POI / USFS boat launch) within the NHD HR named-river limit and imagery pass / pass-ramp-head",
+  "access-verified": "agency-documented public access, but the coordinate is a conservation-area centroid, parking lot or recreation-area point, exceeds the NHD HR distance limit, or the imagery did not show a launch at the pin (approximate area)",
+  "pending": "no agency coordinate, identity unconfirmed, motorized-only, excluded (lake ramp), or imagery not graded"
+ },
+ "imageryVerdicts": {
+  "pass": "pin at the water's edge / launch",
+  "pass-ramp-head": "pin at the parking/ramp head with a visible route to water within ~40 m",
+  "flag": "location doubtful; published as access-verified",
+  "downgrade": "verified candidate whose pin is not at a usable launch; published as access-verified",
+  "not-graded": "image unusable (cloud/tiles); left pending"
+ },
+ "imageryVerdictCounts": {
+  "flag": 26,
+  "pass": 111,
+  "downgrade": 6,
+  "pass-ramp-head": 23,
+  "not-graded": 7
+ },
+ "imageryCheck": {
+  "tiles": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "files": "research/raw/imagery/*.jpg",
+  "review": "research/raw/imagery-review-MO.json"
+ },
+ "nhdHR": {
+  "service": "USGS NHD High Resolution HU4 GeoPackages",
+  "sources": "research/raw/geo_cache/nhd_hr_gpkg_sources.json",
+  "checks": "research/geo-checks-nhd-MO.json"
+ },
+ "limitations": "Esri tiles carry no capture date; Ozark gravel bars and channels move after floods, and NHD HR geometry can lag the current channel.",
+ "closureUncertain": [
+  "Round Spring (Ozark NSR)"
+ ],
+ "closed": [],
+ "points": {
+  "Akers (Ozark NSR)": {
+   "id": "MO-ACC-0001",
+   "grade": "verified",
+   "nhdNamedDistM": 16.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 16.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Allen Bridge Access": {
+   "id": "MO-ACC-0002",
+   "grade": "verified",
+   "nhdNamedDistM": 23.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Allenton Access": {
+   "id": "MO-ACC-0003",
+   "grade": "verified",
+   "nhdNamedDistM": 58.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 58.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Alley Spring (Ozark NSR)": {
+   "id": "MO-ACC-0004",
+   "grade": "verified",
+   "nhdNamedDistM": 25.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 25.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Anna M. Adams Access": {
+   "id": "MO-ACC-0005",
+   "grade": "verified",
+   "nhdNamedDistM": 23.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Baptist (Ozark NSR)": {
+   "id": "MO-ACC-0006",
+   "grade": "access-verified",
+   "nhdNamedDistM": 61.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 61.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the NPS record is a parking lot near the landing, not the landing itself",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Baptist Camp Access": {
+   "id": "MO-ACC-0007",
+   "grade": "access-verified",
+   "nhdNamedDistM": 33.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 33.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Barclay Conservation Area": {
+   "id": "MO-ACC-0008",
+   "grade": "verified",
+   "nhdNamedDistM": 41.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 41.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bay Creek (Ozark NSR)": {
+   "id": "MO-ACC-0009",
+   "grade": "verified",
+   "nhdNamedDistM": 15.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 15.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bay Nothing Gravel Boat Launch (USFS)": {
+   "id": "MO-ACC-0010",
+   "grade": "verified",
+   "nhdNamedDistM": 69.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 69.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Beal Landing (Ozark NSR)": {
+   "id": "MO-ACC-0011",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 37) but no NPS feature with a usable coordinate was found",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Bell Chute Access": {
+   "id": "MO-ACC-0012",
+   "grade": "verified",
+   "nhdNamedDistM": 37.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 37.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bennett Spring Access": {
+   "id": "MO-ACC-0013",
+   "grade": "verified",
+   "nhdNamedDistM": 22.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Big John Access": {
+   "id": "MO-ACC-0014",
+   "grade": "verified",
+   "nhdNamedDistM": 15.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 15.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Big Spring (Ozark NSR)": {
+   "id": "MO-ACC-0015",
+   "grade": "access-verified",
+   "nhdNamedDistM": 62.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 62.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Binder Community Lake": {
+   "id": "MO-ACC-0016",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 6264.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Blackjack Access": {
+   "id": "MO-ACC-0017",
+   "grade": "verified",
+   "nhdNamedDistM": 49.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 49.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Blair Bridge Access": {
+   "id": "MO-ACC-0018",
+   "grade": "verified",
+   "nhdNamedDistM": 23.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Blanchette Landing Access": {
+   "id": "MO-ACC-0019",
+   "grade": "verified",
+   "nhdNamedDistM": 164.1,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 164.1,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Blue Spring (Jacks Fork, Ozark NSR)": {
+   "id": "MO-ACC-0020",
+   "grade": "verified",
+   "nhdNamedDistM": 27.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Blue Springs Creek Conservation Area": {
+   "id": "MO-ACC-0021",
+   "grade": "verified",
+   "nhdNamedDistM": 36.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 36.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bluff View (Ozark NSR)": {
+   "id": "MO-ACC-0022",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 87) but no NPS feature with a usable coordinate was found",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Boiling Spring Access": {
+   "id": "MO-ACC-0023",
+   "grade": "verified",
+   "nhdNamedDistM": 13.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 13.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bonnots Mill Access": {
+   "id": "MO-ACC-0024",
+   "grade": "verified",
+   "nhdNamedDistM": 121.4,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 121.4,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bootleg Access": {
+   "id": "MO-ACC-0025",
+   "grade": "access-verified",
+   "nhdNamedDistM": 220.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "downgrade",
+    "note": "Pin not at an identifiable access feature and more than ~150 m from the mapped river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 220.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "downgrade"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bradley A. Hammer Memorial Conservation Area": {
+   "id": "MO-ACC-0026",
+   "grade": "verified",
+   "nhdNamedDistM": 32.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 32.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Brown's Ford Access": {
+   "id": "MO-ACC-0027",
+   "grade": "verified",
+   "nhdNamedDistM": 36.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 36.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Brunswick Access": {
+   "id": "MO-ACC-0028",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 3328.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Buck Hollow (Ozark NSR)": {
+   "id": "MO-ACC-0029",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 88) but no NPS feature with a usable coordinate was found",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Buzzard Bluff Access": {
+   "id": "MO-ACC-0030",
+   "grade": "verified",
+   "nhdNamedDistM": 20.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 20.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Campbell Bridge Access": {
+   "id": "MO-ACC-0031",
+   "grade": "verified",
+   "nhdNamedDistM": 35.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 35.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cane Bluff River Access (USFS)": {
+   "id": "MO-ACC-0032",
+   "grade": "verified",
+   "nhdNamedDistM": 28.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 28.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Carl R. Noren Access (Jefferson City)": {
+   "id": "MO-ACC-0033",
+   "grade": "verified",
+   "nhdNamedDistM": 171.9,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 171.9,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cedar Grove (Ozark NSR)": {
+   "id": "MO-ACC-0034",
+   "grade": "verified",
+   "nhdNamedDistM": 28.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 28.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Chamois Access": {
+   "id": "MO-ACC-0035",
+   "grade": "verified",
+   "nhdNamedDistM": 177.1,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 177.1,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Charity Access": {
+   "id": "MO-ACC-0036",
+   "grade": "verified",
+   "nhdNamedDistM": 21.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cherry Corner Access": {
+   "id": "MO-ACC-0037",
+   "grade": "verified",
+   "nhdNamedDistM": 13.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 13.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Chilton Creek (Ozark NSR)": {
+   "id": "MO-ACC-0038",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 29) but no NPS feature with a usable coordinate was found; Compendium §3.8: Chilton Creek ramp is designated for motorized vessels only; no floater access",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Chouteau Claim Access": {
+   "id": "MO-ACC-0039",
+   "grade": "verified",
+   "nhdNamedDistM": 20.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 20.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "City of Pineville Elk River Access": {
+   "id": "MO-ACC-0040",
+   "grade": "verified",
+   "nhdNamedDistM": 51.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 51.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Clarksville Riverfront Park": {
+   "id": "MO-ACC-0041",
+   "grade": "verified",
+   "nhdNamedDistM": 311.3,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 311.3,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Columbia Bottom Conservation Area — Mississippi River": {
+   "id": "MO-ACC-0042",
+   "grade": "verified",
+   "nhdNamedDistM": 286.8,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 286.8,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Columbia Bottom Conservation Area — Missouri River": {
+   "id": "MO-ACC-0043",
+   "grade": "verified",
+   "nhdNamedDistM": 175.9,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 175.9,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cooley Lake Conservation Area": {
+   "id": "MO-ACC-0044",
+   "grade": "verified",
+   "nhdNamedDistM": 208.4,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Ramp is on the Missouri River bank (not on Cooley Lake); river sandbars visible."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 208.4,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Coon Island Conservation Area": {
+   "id": "MO-ACC-0045",
+   "grade": "verified",
+   "nhdNamedDistM": 38.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 38.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cowskin Access": {
+   "id": "MO-ACC-0046",
+   "grade": "verified",
+   "nhdNamedDistM": 31.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cross Timbers Access": {
+   "id": "MO-ACC-0047",
+   "grade": "verified",
+   "nhdNamedDistM": 51.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 51.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Crossroads Access (USFS)": {
+   "id": "MO-ACC-0048",
+   "grade": "access-verified",
+   "nhdNamedDistM": 209.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "downgrade",
+    "note": "Pin not at an identifiable access feature and more than ~150 m from the mapped river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 209.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "downgrade"
+   },
+   "whyNotLevel1": "NHD HR named-river distance 209.2 m exceeds 150 m",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "D. C. Rogers Lake (Fayette)": {
+   "id": "MO-ACC-0049",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 12674.5 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Dalton Bottoms Access": {
+   "id": "MO-ACC-0050",
+   "grade": "verified",
+   "nhdNamedDistM": 196.2,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 196.2,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dan River Access": {
+   "id": "MO-ACC-0051",
+   "grade": "verified",
+   "nhdNamedDistM": 17.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 17.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Davis Ford Access": {
+   "id": "MO-ACC-0052",
+   "grade": "verified",
+   "nhdNamedDistM": 48.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 48.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Delaware Town Access": {
+   "id": "MO-ACC-0053",
+   "grade": "access-verified",
+   "nhdNamedDistM": 51.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 51.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dogs Bluff Access": {
+   "id": "MO-ACC-0054",
+   "grade": "verified",
+   "nhdNamedDistM": 16.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 16.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dr. Henry A. and Amalia Uhlemeyer Access": {
+   "id": "MO-ACC-0055",
+   "grade": "verified",
+   "nhdNamedDistM": 39.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 39.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Drynob Access": {
+   "id": "MO-ACC-0056",
+   "grade": "verified",
+   "nhdNamedDistM": 34.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Eagle Bluffs Conservation Area": {
+   "id": "MO-ACC-0057",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 1389.4 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "East Gate Access (USFS)": {
+   "id": "MO-ACC-0058",
+   "grade": "access-verified",
+   "nhdNamedDistM": 88.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 88.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Flo Cook Access": {
+   "id": "MO-ACC-0059",
+   "grade": "access-verified",
+   "nhdNamedDistM": 56.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 56.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Float Camp Recreation Area (USFS)": {
+   "id": "MO-ACC-0060",
+   "grade": "access-verified",
+   "nhdNamedDistM": 116.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 116.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area point, not a boat-launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Fort Osage County Park (Jackson County)": {
+   "id": "MO-ACC-0061",
+   "grade": "verified",
+   "nhdNamedDistM": 160.0,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 160.0,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Franklin Island Conservation Area": {
+   "id": "MO-ACC-0062",
+   "grade": "verified",
+   "nhdNamedDistM": 197.7,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 197.7,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Fredericksburg Ferry Access": {
+   "id": "MO-ACC-0063",
+   "grade": "verified",
+   "nhdNamedDistM": 51.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 51.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Gasconade Park Access": {
+   "id": "MO-ACC-0064",
+   "grade": "verified",
+   "nhdNamedDistM": 68.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 68.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Gooseneck (Ozark NSR)": {
+   "id": "MO-ACC-0065",
+   "grade": "access-verified",
+   "nhdNamedDistM": 70.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 70.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Grand Pass Conservation Area": {
+   "id": "MO-ACC-0066",
+   "grade": "pending",
+   "nhdNamedDistM": 332.1,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": 332.1,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 363.0 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Greer Crossing (USFS)": {
+   "id": "MO-ACC-0067",
+   "grade": "access-verified",
+   "nhdNamedDistM": 157.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 157.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "NHD HR named-river distance 157.0 m exceeds 150 m",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Gruner Ford Access": {
+   "id": "MO-ACC-0068",
+   "grade": "access-verified",
+   "nhdNamedDistM": 60.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 60.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hamburg Ferry Access": {
+   "id": "MO-ACC-0069",
+   "grade": "verified",
+   "nhdNamedDistM": 225.7,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 225.7,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Hartsburg Access": {
+   "id": "MO-ACC-0070",
+   "grade": "verified",
+   "nhdNamedDistM": 195.0,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 195.0,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hazel Hill Community Lake": {
+   "id": "MO-ACC-0071",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 36543.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Hazelgreen Access": {
+   "id": "MO-ACC-0072",
+   "grade": "verified",
+   "nhdNamedDistM": 34.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hebron Access": {
+   "id": "MO-ACC-0073",
+   "grade": "access-verified",
+   "nhdNamedDistM": 113.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 113.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Helds Island Access": {
+   "id": "MO-ACC-0074",
+   "grade": "verified",
+   "nhdNamedDistM": 63.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 63.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hendrickson Boat Launch (USFS)": {
+   "id": "MO-ACC-0075",
+   "grade": "access-verified",
+   "nhdNamedDistM": 265.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 265.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "NHD HR named-river distance 265.3 m exceeds 150 m",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hermann Riverfront Park": {
+   "id": "MO-ACC-0076",
+   "grade": "verified",
+   "nhdNamedDistM": 173.7,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 173.7,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hermitage Access": {
+   "id": "MO-ACC-0077",
+   "grade": "verified",
+   "nhdNamedDistM": 48.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 48.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hickory Landing (Ozark NSR)": {
+   "id": "MO-ACC-0078",
+   "grade": "verified",
+   "nhdNamedDistM": 31.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin at the river edge at the mouth of a side stream; no ramp visible but the landing is on the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Higginsville City Lake": {
+   "id": "MO-ACC-0079",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 15876.0 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Highway 142 River Access (The Narrows, USFS)": {
+   "id": "MO-ACC-0080",
+   "grade": "access-verified",
+   "nhdNamedDistM": 92.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 92.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hilliard Access": {
+   "id": "MO-ACC-0081",
+   "grade": "verified",
+   "nhdNamedDistM": 30.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Holden City Lake": {
+   "id": "MO-ACC-0082",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 41067.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Hooten Town Access": {
+   "id": "MO-ACC-0083",
+   "grade": "verified",
+   "nhdNamedDistM": 49.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 49.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hull Ford Access": {
+   "id": "MO-ACC-0084",
+   "grade": "verified",
+   "nhdNamedDistM": 17.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 17.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Huzzah Conservation Area — Courtois Creek": {
+   "id": "MO-ACC-0085",
+   "grade": "verified",
+   "nhdNamedDistM": 8.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 8.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Huzzah Conservation Area — Huzzah Creek": {
+   "id": "MO-ACC-0086",
+   "grade": "verified",
+   "nhdNamedDistM": 17.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 17.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "J. N. Turkey Kearn Memorial Wildlife Area": {
+   "id": "MO-ACC-0087",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 64183.9 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Jerktail Landing (Ozark NSR)": {
+   "id": "MO-ACC-0088",
+   "grade": "access-verified",
+   "nhdNamedDistM": 48.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 48.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Jerome Access": {
+   "id": "MO-ACC-0089",
+   "grade": "verified",
+   "nhdNamedDistM": 12.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 12.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Joe Crighton Access": {
+   "id": "MO-ACC-0090",
+   "grade": "verified",
+   "nhdNamedDistM": 19.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 19.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Joshua T. Chilton Memorial Landing (Eminence)": {
+   "id": "MO-ACC-0091",
+   "grade": "verified",
+   "nhdNamedDistM": 22.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Kansas City Riverfront Park Access": {
+   "id": "MO-ACC-0092",
+   "grade": "verified",
+   "nhdNamedDistM": 152.7,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 152.7,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Kings Bluff Access": {
+   "id": "MO-ACC-0093",
+   "grade": "verified",
+   "nhdNamedDistM": 110.3,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 110.3,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "La Russell Access": {
+   "id": "MO-ACC-0094",
+   "grade": "verified",
+   "nhdNamedDistM": 10.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 10.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "LaBenite Park (Sugar Creek)": {
+   "id": "MO-ACC-0095",
+   "grade": "verified",
+   "nhdNamedDistM": 144.6,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 144.6,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lake Jacomo (Jackson County)": {
+   "id": "MO-ACC-0096",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 20221.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Lakeview Park Lake (Mexico)": {
+   "id": "MO-ACC-0097",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 51539.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Lane Spring Recreation Area (USFS)": {
+   "id": "MO-ACC-0098",
+   "grade": "access-verified",
+   "nhdNamedDistM": 104.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 104.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area point, not a boat-launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lead Mine Conservation Area": {
+   "id": "MO-ACC-0099",
+   "grade": "verified",
+   "nhdNamedDistM": 29.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 29.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Leadwood Access": {
+   "id": "MO-ACC-0100",
+   "grade": "access-verified",
+   "nhdNamedDistM": 53.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 53.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lexington Riverfront Park": {
+   "id": "MO-ACC-0101",
+   "grade": "verified",
+   "nhdNamedDistM": 113.9,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 113.9,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lick Creek Conservation Area": {
+   "id": "MO-ACC-0102",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 24838.9 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Lions Lake (Warrensburg)": {
+   "id": "MO-ACC-0103",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 47251.2 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Log Yard (Ozark NSR)": {
+   "id": "MO-ACC-0104",
+   "grade": "access-verified",
+   "nhdNamedDistM": 80.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 80.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lone Jack Lake Conservation Area": {
+   "id": "MO-ACC-0105",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 28291.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Long Ford Access": {
+   "id": "MO-ACC-0106",
+   "grade": "verified",
+   "nhdNamedDistM": 19.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 19.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mammoth Access": {
+   "id": "MO-ACC-0107",
+   "grade": "verified",
+   "nhdNamedDistM": 20.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 20.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Maple Leaf Lake Conservation Area": {
+   "id": "MO-ACC-0108",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 22488.2 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Mari-Osa Access": {
+   "id": "MO-ACC-0109",
+   "grade": "verified",
+   "nhdNamedDistM": 91.1,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 91.1,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Marshall (Amary Lake)": {
+   "id": "MO-ACC-0110",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 18395.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Mason Bridge Access": {
+   "id": "MO-ACC-0111",
+   "grade": "verified",
+   "nhdNamedDistM": 36.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 36.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Meramec Landing (Valley Park)": {
+   "id": "MO-ACC-0112",
+   "grade": "verified",
+   "nhdNamedDistM": 29.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 29.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Merrill Horse Access": {
+   "id": "MO-ACC-0113",
+   "grade": "verified",
+   "nhdNamedDistM": 26.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 26.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Miami Access": {
+   "id": "MO-ACC-0114",
+   "grade": "verified",
+   "nhdNamedDistM": 162.7,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 162.7,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mill Rock Access": {
+   "id": "MO-ACC-0115",
+   "grade": "verified",
+   "nhdNamedDistM": 11.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 11.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Millstream Gardens Conservation Area": {
+   "id": "MO-ACC-0116",
+   "grade": "verified",
+   "nhdNamedDistM": 30.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mineral Springs Access": {
+   "id": "MO-ACC-0117",
+   "grade": "verified",
+   "nhdNamedDistM": 12.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 12.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mint Spring Access": {
+   "id": "MO-ACC-0118",
+   "grade": "verified",
+   "nhdNamedDistM": 38.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 38.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mitschele Access": {
+   "id": "MO-ACC-0119",
+   "grade": "verified",
+   "nhdNamedDistM": 14.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 14.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Moon Valley Access": {
+   "id": "MO-ACC-0120",
+   "grade": "verified",
+   "nhdNamedDistM": 16.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 16.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mount Shira Access": {
+   "id": "MO-ACC-0121",
+   "grade": "verified",
+   "nhdNamedDistM": 39.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 39.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Myrtle Access": {
+   "id": "MO-ACC-0122",
+   "grade": "verified",
+   "nhdNamedDistM": 44.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin at the ramp on the bank (point is flagged cross-state: it is the last Missouri access before Arkansas)."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 44.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "New Haven Access": {
+   "id": "MO-ACC-0123",
+   "grade": "verified",
+   "nhdNamedDistM": 112.2,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 112.2,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "North Fork Recreation Area (USFS)": {
+   "id": "MO-ACC-0124",
+   "grade": "access-verified",
+   "nhdNamedDistM": 128.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 128.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Odessa City Lake": {
+   "id": "MO-ACC-0125",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 18914.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Osage-Tavern Access": {
+   "id": "MO-ACC-0126",
+   "grade": "verified",
+   "nhdNamedDistM": 102.0,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 102.0,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pacific Palisades Conservation Area": {
+   "id": "MO-ACC-0127",
+   "grade": "verified",
+   "nhdNamedDistM": 44.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 44.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Paint Rock (Ozark NSR)": {
+   "id": "MO-ACC-0128",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 33) but no NPS feature with a usable coordinate was found",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Patrick Bridge Access": {
+   "id": "MO-ACC-0129",
+   "grade": "verified",
+   "nhdNamedDistM": 0.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 0.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Paydown Access": {
+   "id": "MO-ACC-0130",
+   "grade": "verified",
+   "nhdNamedDistM": 45.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 45.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pelican Island Access": {
+   "id": "MO-ACC-0131",
+   "grade": "verified",
+   "nhdNamedDistM": 177.7,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 177.7,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Peters Lake (Fayette)": {
+   "id": "MO-ACC-0132",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 11836.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Pikes Camp Access": {
+   "id": "MO-ACC-0133",
+   "grade": "verified",
+   "nhdNamedDistM": 84.9,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 84.9,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pine Ridge Lake (Salisbury)": {
+   "id": "MO-ACC-0134",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 16663.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Pointers Creek Access": {
+   "id": "MO-ACC-0135",
+   "grade": "verified",
+   "nhdNamedDistM": 27.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Powder Mill (Ozark NSR)": {
+   "id": "MO-ACC-0136",
+   "grade": "access-verified",
+   "nhdNamedDistM": 200.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 200.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the NPS record is a parking lot near the landing, not the landing itself",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Prairie Slough Conservation Area": {
+   "id": "MO-ACC-0137",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 49838.4 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Prosperine Access": {
+   "id": "MO-ACC-0138",
+   "grade": "verified",
+   "nhdNamedDistM": 23.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pulltite (Ozark NSR)": {
+   "id": "MO-ACC-0139",
+   "grade": "verified",
+   "nhdNamedDistM": 21.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rader Access": {
+   "id": "MO-ACC-0140",
+   "grade": "access-verified",
+   "nhdNamedDistM": 161.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "downgrade",
+    "note": "Pin not at an identifiable access feature and more than ~150 m from the mapped river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 161.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "downgrade"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Raftyard (Ozark NSR)": {
+   "id": "MO-ACC-0141",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 24) but no NPS feature with a usable coordinate was found",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Ralph Cox Memorial Access": {
+   "id": "MO-ACC-0142",
+   "grade": "verified",
+   "nhdNamedDistM": 38.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Ramp on the James River channel (riverine, not the lake pool) in this image."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 38.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ray County Community Lake": {
+   "id": "MO-ACC-0143",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 15553.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Red Bluff Recreation Area (USFS)": {
+   "id": "MO-ACC-0144",
+   "grade": "access-verified",
+   "nhdNamedDistM": 148.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 148.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area point, not a boat-launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Red Star Access": {
+   "id": "MO-ACC-0145",
+   "grade": "verified",
+   "nhdNamedDistM": 260.8,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 260.8,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Redhorse Access": {
+   "id": "MO-ACC-0146",
+   "grade": "verified",
+   "nhdNamedDistM": 47.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 47.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Reiker Ford Access": {
+   "id": "MO-ACC-0147",
+   "grade": "access-verified",
+   "nhdNamedDistM": 62.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 62.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Riddle Bridge Access": {
+   "id": "MO-ACC-0148",
+   "grade": "verified",
+   "nhdNamedDistM": 42.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 42.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "River 'Round Conservation Area": {
+   "id": "MO-ACC-0149",
+   "grade": "verified",
+   "nhdNamedDistM": 38.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 38.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Riverton East River Access (USFS)": {
+   "id": "MO-ACC-0150",
+   "grade": "verified",
+   "nhdNamedDistM": 52.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 52.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Riverton West River Access (USFS)": {
+   "id": "MO-ACC-0151",
+   "grade": "access-verified",
+   "nhdNamedDistM": 266.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "downgrade",
+    "note": "Pin not at an identifiable access feature and more than ~150 m from the mapped river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 266.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "downgrade"
+   },
+   "whyNotLevel1": "NHD HR named-river distance 266.4 m exceeds 150 m",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Riverview Access": {
+   "id": "MO-ACC-0152",
+   "grade": "verified",
+   "nhdNamedDistM": 18.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 18.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Roberts Field (Ozark NSR)": {
+   "id": "MO-ACC-0153",
+   "grade": "access-verified",
+   "nhdNamedDistM": 51.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 51.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rocky Creek Conservation Area": {
+   "id": "MO-ACC-0154",
+   "grade": "access-verified",
+   "nhdNamedDistM": 50.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 50.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rollins Ferry Access": {
+   "id": "MO-ACC-0155",
+   "grade": "verified",
+   "nhdNamedDistM": 43.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 43.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Roselle Access": {
+   "id": "MO-ACC-0156",
+   "grade": "verified",
+   "nhdNamedDistM": 27.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ross Access": {
+   "id": "MO-ACC-0157",
+   "grade": "verified",
+   "nhdNamedDistM": 9.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 9.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rothwell Park Lake (Moberly)": {
+   "id": "MO-ACC-0158",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 39229.7 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Round Spring (Ozark NSR)": {
+   "id": "MO-ACC-0159",
+   "grade": "access-verified",
+   "nhdNamedDistM": 41.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 41.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rudolf Bennitt Conservation Area": {
+   "id": "MO-ACC-0160",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 31555.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Rymers (Ozark NSR)": {
+   "id": "MO-ACC-0161",
+   "grade": "verified",
+   "nhdNamedDistM": 45.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 45.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Sand Ford Access": {
+   "id": "MO-ACC-0162",
+   "grade": "verified",
+   "nhdNamedDistM": 25.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 25.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Sappington Bridge Access": {
+   "id": "MO-ACC-0163",
+   "grade": "verified",
+   "nhdNamedDistM": 22.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Schlicht Springs Access": {
+   "id": "MO-ACC-0164",
+   "grade": "verified",
+   "nhdNamedDistM": 18.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 18.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Scotts Ford Access": {
+   "id": "MO-ACC-0165",
+   "grade": "verified",
+   "nhdNamedDistM": 22.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Seventy-Six Conservation Area": {
+   "id": "MO-ACC-0166",
+   "grade": "verified",
+   "nhdNamedDistM": 342.1,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 342.1,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Shawnee Creek (Ozark NSR)": {
+   "id": "MO-ACC-0167",
+   "grade": "access-verified",
+   "nhdNamedDistM": 76.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 76.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the NPS POI is not a canoe-access feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Shelvin Rock Access": {
+   "id": "MO-ACC-0168",
+   "grade": "verified",
+   "nhdNamedDistM": 30.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Short Bend Access": {
+   "id": "MO-ACC-0169",
+   "grade": "access-verified",
+   "nhdNamedDistM": 163.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "downgrade",
+    "note": "Pin not at an identifiable access feature and more than ~150 m from the mapped river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 163.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "downgrade"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Simmons Ford Access": {
+   "id": "MO-ACC-0170",
+   "grade": "verified",
+   "nhdNamedDistM": 7.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 7.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Slabtown Recreation Area (USFS)": {
+   "id": "MO-ACC-0171",
+   "grade": "access-verified",
+   "nhdNamedDistM": 64.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 64.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area point, not a boat-launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Spanish Lake (St. Louis County)": {
+   "id": "MO-ACC-0172",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 2731.0 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Sportsman's Park Access (Poplar Bluff)": {
+   "id": "MO-ACC-0173",
+   "grade": "verified",
+   "nhdNamedDistM": 32.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 32.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "St. Thomas Ferry Access": {
+   "id": "MO-ACC-0174",
+   "grade": "verified",
+   "nhdNamedDistM": 56.3,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 56.3,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Sterling Price Community Lake": {
+   "id": "MO-ACC-0175",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 14195.7 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Stump Island Park Access": {
+   "id": "MO-ACC-0176",
+   "grade": "verified",
+   "nhdNamedDistM": 199.4,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 199.4,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Sunfish Lake (St. Louis County)": {
+   "id": "MO-ACC-0177",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 2023.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Sycamore Access": {
+   "id": "MO-ACC-0178",
+   "grade": "verified",
+   "nhdNamedDistM": 18.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 18.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Syenite Access": {
+   "id": "MO-ACC-0179",
+   "grade": "verified",
+   "nhdNamedDistM": 21.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "T. L. Wright Memorial Access (Doniphan)": {
+   "id": "MO-ACC-0180",
+   "grade": "verified",
+   "nhdNamedDistM": 55.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 55.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Taylors Landing Access": {
+   "id": "MO-ACC-0181",
+   "grade": "verified",
+   "nhdNamedDistM": 177.4,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 177.4,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Tea Access": {
+   "id": "MO-ACC-0182",
+   "grade": "access-verified",
+   "nhdNamedDistM": 76.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 76.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Teal Lake (Mexico)": {
+   "id": "MO-ACC-0183",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 50761.1 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Thomasville River Access (USFS)": {
+   "id": "MO-ACC-0184",
+   "grade": "verified",
+   "nhdNamedDistM": 35.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin beside the small upper Eleven Point channel on the access loop road."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 35.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Tipton Ford Access": {
+   "id": "MO-ACC-0185",
+   "grade": "verified",
+   "nhdNamedDistM": 22.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Tri-City Community Lake": {
+   "id": "MO-ACC-0186",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 38670.4 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Truman Access": {
+   "id": "MO-ACC-0187",
+   "grade": "verified",
+   "nhdNamedDistM": 245.3,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 245.3,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Turner Mill North River Access (USFS)": {
+   "id": "MO-ACC-0188",
+   "grade": "verified",
+   "nhdNamedDistM": 77.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 77.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Turner Mill South River Access (USFS)": {
+   "id": "MO-ACC-0189",
+   "grade": "verified",
+   "nhdNamedDistM": 41.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 41.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Two Rivers (Ozark NSR)": {
+   "id": "MO-ACC-0190",
+   "grade": "verified",
+   "nhdNamedDistM": 40.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 40.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Unidentified NPS canoe access POI 14342": {
+   "id": "MO-ACC-0191",
+   "grade": "pending",
+   "nhdNamedDistM": 66.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "not-graded",
+    "note": "Unidentified NPS canoe-access POI (identity not established); imagery not used for grading."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 66.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "not-graded"
+   },
+   "whyNotLevel1": "Unlabelled canoe/kayak POI (possibly Chilton Creek, motorized-only per compendium, or Waymeyer). Identity unconfirmed",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Unidentified NPS canoe access POI 15210": {
+   "id": "MO-ACC-0192",
+   "grade": "pending",
+   "nhdNamedDistM": 11.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "not-graded",
+    "note": "Unidentified NPS canoe-access POI (identity not established); imagery not used for grading."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 11.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "not-graded"
+   },
+   "whyNotLevel1": "Unlabelled canoe/kayak POI near Hwy 17 (probably Buck Hollow, RM 88). Identity unconfirmed",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Unidentified NPS canoe access POI 15653": {
+   "id": "MO-ACC-0193",
+   "grade": "pending",
+   "nhdNamedDistM": 42.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "not-graded",
+    "note": "Unidentified NPS canoe-access POI (identity not established); imagery not used for grading."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 42.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "not-graded"
+   },
+   "whyNotLevel1": "Unlabelled canoe/kayak POI between Log Yard and Van Buren (possibly Paint Rock, RM 33). Identity unconfirmed",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Unidentified NPS canoe access POI 15840": {
+   "id": "MO-ACC-0194",
+   "grade": "pending",
+   "nhdNamedDistM": 12.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "not-graded",
+    "note": "Unidentified NPS canoe-access POI (identity not established); imagery not used for grading."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 12.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "not-graded"
+   },
+   "whyNotLevel1": "Unlabelled canoe/kayak POI ~400 m from Blue Spring campground (possibly Bluff View, RM 87). Identity unconfirmed",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Unidentified NPS canoe access POI 15997": {
+   "id": "MO-ACC-0195",
+   "grade": "pending",
+   "nhdNamedDistM": 83.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "not-graded",
+    "note": "Unidentified NPS canoe-access POI (identity not established); imagery not used for grading."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 83.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "not-graded"
+   },
+   "whyNotLevel1": "Unlabelled canoe/kayak POI ~1.6 km from Log Yard (possibly Beal Landing, RM 37). Identity unconfirmed",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Unidentified NPS canoe access POI 16322": {
+   "id": "MO-ACC-0196",
+   "grade": "pending",
+   "nhdNamedDistM": 35.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "not-graded",
+    "note": "Unidentified NPS canoe-access POI (identity not established); imagery not used for grading."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 35.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "not-graded"
+   },
+   "whyNotLevel1": "Unlabelled canoe/kayak POI near Montauk (probably Tan Vat, the first NPS landing below Montauk State Park). Not in the brochure mileage list; identity unconfirmed",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Unidentified NPS canoe access POI 16736": {
+   "id": "MO-ACC-0197",
+   "grade": "pending",
+   "nhdNamedDistM": 17.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "not-graded",
+    "note": "Unidentified NPS canoe-access POI (identity not established); imagery not used for grading."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 17.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "not-graded"
+   },
+   "whyNotLevel1": "Unlabelled canoe/kayak POI ~2 km upstream of Akers (probably Welch Landing, brochure RM 92). Identity unconfirmed",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Union Access": {
+   "id": "MO-ACC-0198",
+   "grade": "verified",
+   "nhdNamedDistM": 25.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 25.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Van Buren (Ozark NSR)": {
+   "id": "MO-ACC-0199",
+   "grade": "verified",
+   "nhdNamedDistM": 57.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 57.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Van Buren Riverfront Park": {
+   "id": "MO-ACC-0200",
+   "grade": "verified",
+   "nhdNamedDistM": 32.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 32.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Vandalia Community Lake": {
+   "id": "MO-ACC-0201",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 58827.5 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Warren Bridge Access": {
+   "id": "MO-ACC-0202",
+   "grade": "verified",
+   "nhdNamedDistM": 20.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 20.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Water Works Lake (Moberly)": {
+   "id": "MO-ACC-0203",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 38929.1 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Waymeyer (Ozark NSR)": {
+   "id": "MO-ACC-0204",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 27) but no NPS feature with a usable coordinate was found",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Welch Landing (Ozark NSR)": {
+   "id": "MO-ACC-0205",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Named in the NPS brochure/compendium (RM 92) but no NPS feature with a usable coordinate was found",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Weldon Spring Conservation Area": {
+   "id": "MO-ACC-0206",
+   "grade": "verified",
+   "nhdNamedDistM": 139.0,
+   "limitM": 350,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 139.0,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Wenkel Ford Access": {
+   "id": "MO-ACC-0207",
+   "grade": "access-verified",
+   "nhdNamedDistM": 69.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 69.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Whitten River Access (USFS)": {
+   "id": "MO-ACC-0208",
+   "grade": "verified",
+   "nhdNamedDistM": 66.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 66.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Wilbur Allen Memorial Conservation Area": {
+   "id": "MO-ACC-0209",
+   "grade": "verified",
+   "nhdNamedDistM": 43.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head within roughly 40-60 m of the water with a visible route to the bank."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 43.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Wildcat Access": {
+   "id": "MO-ACC-0210",
+   "grade": "verified",
+   "nhdNamedDistM": 31.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "William G. and Erma Parke White Memorial Wildlife Area": {
+   "id": "MO-ACC-0211",
+   "grade": "pending",
+   "nhdNamedDistM": null,
+   "limitM": 350,
+   "imagery": null,
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 350
+   },
+   "imageryCheck": {
+    "verdict": null
+   },
+   "whyNotLevel1": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 57889.5 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Williams Ford Access": {
+   "id": "MO-ACC-0212",
+   "grade": "access-verified",
+   "nhdNamedDistM": 202.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "downgrade",
+    "note": "Pin not at an identifiable access feature and more than ~150 m from the mapped river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 202.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "downgrade"
+   },
+   "whyNotLevel1": "the MDC record is a conservation-area centroid, not a launch feature",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  }
+ }
+}

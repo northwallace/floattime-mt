@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "id": "AR-agfc-access",
+  "state": "AR",
+  "agency": "Arkansas Game and Fish Commission",
+  "discoveryUrl": "https://www.agfc.com/things-to-do/boating/",
+  "url": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1",
+  "where": "ftype IN ('Boating Access', 'Canoe-Kayak Access')",
+  "fields": [
+    "globalid",
+    "fname",
+    "ftype",
+    "fdescrip",
+    "owner",
+    "comments",
+    "waterbody",
+    "location",
+    "hyp_1",
+    "last_verified_date",
+    "lat_wgs84",
+    "lon_wgs84"
+  ],
+  "note": "Agency evidence only. No automatic coordinate promotion or section release; exact landing, permission, restrictions and imagery need separate review.",
+  "stableFeatureField": "globalid"
+}

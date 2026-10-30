@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "WY-river-access",
+    "state": "WY",
+    "agency": "Wyoming Game and Fish Department",
+    "discoveryUrl": "https://wgfd.maps.arcgis.com/home/item.html?id=40f1ee842ae6432f8dcc8dcbb3aa3a37",
+    "url": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0",
+    "where": "1=1",
+    "fields": [
+      "GlobalID",
+      "StreamID",
+      "UpStreamToDownID",
+      "StreamName",
+      "LaunchLocation",
+      "IsLaunch",
+      "IsEgress",
+      "Sections",
+      "EgressID",
+      "Egress_Location_Notes",
+      "Notes_Explanation"
+    ],
+    "stableFeatureField": "GlobalID",
+    "note": "Official WGFD river access inventory. Use GlobalID to track changes, not spatial proximity or mutable OBJECTID alone. Agency-listed access is evidence; exact landing precision and access restrictions require separate review."
+  },
+  "retrievedAt": "2026-10-30T18:45:02.328787+00:00",
+  "file": "research/agency-sources/WY-river-access/cff6b8903e709d640e0ead1b793eeea0ce456bef2600c695bb3776f8cf7fe229.json",
+  "sha256": "cff6b8903e709d640e0ead1b793eeea0ce456bef2600c695bb3776f8cf7fe229",
+  "features": 185,
+  "changes": null,
+  "reviewStatus": "research-only"
+}

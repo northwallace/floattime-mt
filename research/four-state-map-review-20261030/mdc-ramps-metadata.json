@@ -1,0 +1,551 @@
+{
+  "currentVersion": 11.5,
+  "cimVersion": "3.5.0",
+  "id": 17,
+  "name": "Boat Ramps",
+  "type": "Feature Layer",
+  "parentLayer": null,
+  "defaultVisibility": true,
+  "minScale": 100000,
+  "maxScale": 0,
+  "canScaleSymbols": false,
+  "geometryType": "esriGeometryPoint",
+  "description": "",
+  "copyrightText": "",
+  "editFieldsInfo": null,
+  "ownershipBasedAccessControlForFeatures": null,
+  "syncCanReturnChanges": false,
+  "relationships": [],
+  "isDataVersioned": false,
+  "isDataArchived": false,
+  "infoInEstimates": [
+    "count"
+  ],
+  "isDataBranchVersioned": false,
+  "isDataReplicaTracked": false,
+  "isCoGoEnabled": false,
+  "supportsRollbackOnFailureParameter": true,
+  "archivingInfo": {
+    "supportsQueryWithHistoricMoment": false,
+    "startArchivingMoment": -1
+  },
+  "supportsStatistics": true,
+  "supportsExceedsLimitStatistics": true,
+  "supportsAdvancedQueries": true,
+  "supportsValidateSQL": true,
+  "supportsCoordinatesQuantization": true,
+  "supportsQuantizationEditMode": true,
+  "supportsCalculate": false,
+  "supportsASyncCalculate": false,
+  "hasContingentValuesDefinition": false,
+  "supportsDurableUrlForSyncModelNone": false,
+  "supportsDatumTransformation": true,
+  "advancedQueryCapabilities": {
+    "supportsPagination": true,
+    "supportsQueryWithDistance": true,
+    "supportsReturningQueryExtent": true,
+    "supportsStatistics": true,
+    "supportsPercentileStatistics": true,
+    "supportsHavingClause": true,
+    "supportsOrderBy": true,
+    "supportsDistinct": true,
+    "supportsCountDistinct": true,
+    "supportsAdvancedQueryRelated": true,
+    "supportsQueryRelatedPagination": true,
+    "supportsCurrentUserQueries": true,
+    "supportsFullTextSearch": true,
+    "fullTextSearchCapabilities": {
+      "supportsSearchOperator": true,
+      "supportsOperator": false,
+      "supportsSqlExpressionInFullText": true
+    },
+    "fullTextSearchableFields": [],
+    "supportsQueryWithResultType": true,
+    "supportsReturningGeometryCentroid": false,
+    "supportsReturningGeometryEnvelope": false,
+    "supportsSqlExpression": true,
+    "supportsQueryWithDatumTransformation": true,
+    "supportsLod": false,
+    "supportsQueryWithLodSR": false,
+    "supportsQueryAnalytic": true,
+    "supportsQueryWithCacheHint": false
+  },
+  "advancedQueryAnalyticCapabilities": {
+    "supportsLinearRegression": true,
+    "supportsAsync": true,
+    "supportsPercentileAnalytic": true
+  },
+  "advancedEditingCapabilities": {
+    "supportedSqlFormatsInCalculate": [
+      "standard"
+    ],
+    "supportsAsyncApplyEdits": true,
+    "supportsApplyEditsbyUploadID": true,
+    "supportedApplyEditsUploadIDFormats": "JSON,PBF"
+  },
+  "hasMetadata": true,
+  "extent": {
+    "xmin": 273140.5047000004,
+    "ymin": 3988562.2761000004,
+    "xmax": 845497.0645000003,
+    "ymax": 4493517.554500001,
+    "spatialReference": {
+      "wkid": 26915,
+      "latestWkid": 26915,
+      "xyTolerance": 0.001,
+      "zTolerance": 0.001,
+      "mTolerance": 0.001,
+      "falseX": -5120900,
+      "falseY": -9998100,
+      "xyUnits": 10000,
+      "falseZ": -100000,
+      "zUnits": 10000,
+      "falseM": -100000,
+      "mUnits": 10000
+    }
+  },
+  "spatialReference": {
+    "wkid": 26915,
+    "latestWkid": 26915,
+    "xyTolerance": 0.001,
+    "zTolerance": 0.001,
+    "mTolerance": 0.001,
+    "falseX": -5120900,
+    "falseY": -9998100,
+    "xyUnits": 10000,
+    "falseZ": -100000,
+    "zUnits": 10000,
+    "falseM": -100000,
+    "mUnits": 10000
+  },
+  "sourceSpatialReference": {
+    "wkid": 26915,
+    "latestWkid": 26915,
+    "xyTolerance": 0.001,
+    "zTolerance": 0.001,
+    "mTolerance": 0.001,
+    "falseX": -5120900,
+    "falseY": -9998100,
+    "xyUnits": 10000,
+    "falseZ": -100000,
+    "zUnits": 10000,
+    "falseM": -100000,
+    "mUnits": 10000
+  },
+  "drawingInfo": {
+    "renderer": {
+      "type": "uniqueValue",
+      "valueExpression": "var a = $feature.ADA\nif(a == 'Yes'){\nreturn \"Boat Ramp (ADA)\";\n} else {\nreturn \"Boat Ramp\";\n}",
+      "valueExpressionTitle": "ADA Designation",
+      "uniqueValueGroups": [
+        {
+          "heading": "",
+          "classes": [
+            {
+              "label": "Boat Ramp (ADA)",
+              "description": "Boat Ramp (ADA)",
+              "symbol": {
+                "type": "esriPMS",
+                "url": "8ef5ac3494231c8e311cc73fa909c668",
+                "imageData": "iVBORw0KGgoAAAANSUhEUgAAACoAAAA4CAYAAACL3WrLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM1MiwgMjAyMC8wMS8zMC0xNTo1MDozOCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NGIzN2ViOC1iNjY4LTQ3OTUtOWQzNC1mM2IyYjRlZDRiMWUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDgyQTZCQjFDODU5MTFFQTgyMTZCODM1QzRCOUQwRUEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDgyQTZCQjBDODU5MTFFQTgyMTZCODM1QzRCOUQwRUEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxMjI4NEYzRjhDQjMxMUU3QkIwQkEyMDNCM0M2OEI0NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxMjI4NEY0MDhDQjMxMUU3QkIwQkEyMDNCM0M2OEI0NCIvPiA8L3Jk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",
+                "contentType": "image/png",
+                "width": 25,
+                "height": 25,
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0
+              },
+              "values": [
+                [
+                  "Boat Ramp (ADA)"
+                ]
+              ]
+            },
+            {
+              "label": "Boat Ramp",
+              "description": "Boat Ramp",
+              "symbol": {
+                "type": "esriPMS",
+                "url": "b6a38a5d298391a03ceeb906d65be3a0",
+                "imageData": "iVBORw0KGgoAAAANSUhEUgAAACoAAAA4CAYAAACL3WrLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NGIzN2ViOC1iNjY4LTQ3OTUtOWQzNC1mM2IyYjRlZDRiMWUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTIyODRGNDA4Q0IzMTFFN0JCMEJBMjAzQjNDNjhCNDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTIyODRGM0Y4Q0IzMTFFN0JCMEJBMjAzQjNDNjhCNDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NGIzN2ViOC1iNjY4LTQ3OTUtOWQzNC1mM2IyYjRlZDRiMWUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzRiMzdlYjgtYjY2OC00Nzk1LTlkMzQtZjNiMmI0ZWQ0YjFl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",
+                "contentType": "image/png",
+                "width": 25,
+                "height": 25,
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0
+              },
+              "values": [
+                [
+                  "Boat Ramp"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "uniqueValueInfos": [
+        {
+          "symbol": {
+            "type": "esriPMS",
+            "url": "8ef5ac3494231c8e311cc73fa909c668",
+            "imageData": "iVBORw0KGgoAAAANSUhEUgAAACoAAAA4CAYAAACL3WrLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDM1MiwgMjAyMC8wMS8zMC0xNTo1MDozOCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NGIzN2ViOC1iNjY4LTQ3OTUtOWQzNC1mM2IyYjRlZDRiMWUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDgyQTZCQjFDODU5MTFFQTgyMTZCODM1QzRCOUQwRUEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDgyQTZCQjBDODU5MTFFQTgyMTZCODM1QzRCOUQwRUEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxMjI4NEYzRjhDQjMxMUU3QkIwQkEyMDNCM0M2OEI0NCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxMjI4NEY0MDhDQjMxMUU3QkIwQkEyMDNCM0M2OEI0NCIvPiA8L3Jk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",
+            "contentType": "image/png",
+            "width": 25,
+            "height": 25,
+            "angle": 0,
+            "xoffset": 0,
+            "yoffset": 0
+          },
+          "value": "Boat Ramp (ADA)",
+          "label": "Boat Ramp (ADA)"
+        },
+        {
+          "symbol": {
+            "type": "esriPMS",
+            "url": "b6a38a5d298391a03ceeb906d65be3a0",
+            "imageData": "iVBORw0KGgoAAAANSUhEUgAAACoAAAA4CAYAAACL3WrLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NGIzN2ViOC1iNjY4LTQ3OTUtOWQzNC1mM2IyYjRlZDRiMWUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTIyODRGNDA4Q0IzMTFFN0JCMEJBMjAzQjNDNjhCNDQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTIyODRGM0Y4Q0IzMTFFN0JCMEJBMjAzQjNDNjhCNDQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NGIzN2ViOC1iNjY4LTQ3OTUtOWQzNC1mM2IyYjRlZDRiMWUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzRiMzdlYjgtYjY2OC00Nzk1LTlkMzQtZjNiMmI0ZWQ0YjFl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",
+            "contentType": "image/png",
+            "width": 25,
+            "height": 25,
+            "angle": 0,
+            "xoffset": 0,
+            "yoffset": 0
+          },
+          "value": "Boat Ramp",
+          "label": "Boat Ramp"
+        }
+      ],
+      "fieldDelimiter": ",",
+      "authoringInfo": {
+        "colorRamp": {
+          "type": "multipart",
+          "colorRamps": [
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                212,
+                252,
+                218,
+                255
+              ],
+              "toColor": [
+                212,
+                252,
+                218,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                204,
+                182,
+                252,
+                255
+              ],
+              "toColor": [
+                204,
+                182,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                184,
+                184,
+                255
+              ],
+              "toColor": [
+                252,
+                184,
+                184,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                194,
+                230,
+                252,
+                255
+              ],
+              "toColor": [
+                194,
+                230,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                250,
+                252,
+                179,
+                255
+              ],
+              "toColor": [
+                250,
+                252,
+                179,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                212,
+                245,
+                255
+              ],
+              "toColor": [
+                252,
+                212,
+                245,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                228,
+                204,
+                255
+              ],
+              "toColor": [
+                252,
+                228,
+                204,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                182,
+                252,
+                183,
+                255
+              ],
+              "toColor": [
+                182,
+                252,
+                183,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                182,
+                252,
+                250,
+                255
+              ],
+              "toColor": [
+                182,
+                252,
+                250,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                189,
+                202,
+                252,
+                255
+              ],
+              "toColor": [
+                189,
+                202,
+                252,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                187,
+                246,
+                255
+              ],
+              "toColor": [
+                252,
+                187,
+                246,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                247,
+                252,
+                210,
+                255
+              ],
+              "toColor": [
+                247,
+                252,
+                210,
+                255
+              ]
+            },
+            {
+              "type": "algorithmic",
+              "algorithm": "esriCIELabAlgorithm",
+              "fromColor": [
+                252,
+                215,
+                215,
+                255
+              ],
+              "toColor": [
+                252,
+                215,
+                215,
+                255
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "scaleSymbols": true,
+    "transparency": 0,
+    "labelingInfo": null
+  },
+  "hasM": false,
+  "hasZ": false,
+  "allowGeometryUpdates": false,
+  "allowTrueCurvesUpdates": true,
+  "onlyAllowTrueCurveUpdatesByTrueCurveClients": true,
+  "hasAttachments": false,
+  "supportsApplyEditsWithGlobalIds": false,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "objectIdField": "OBJECTID",
+  "globalIdField": "",
+  "displayField": "Area_Name",
+  "typeIdField": "",
+  "subtypeField": "",
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "domain": null,
+      "editable": false,
+      "nullable": false,
+      "defaultValue": null,
+      "modelName": "OBJECTID"
+    },
+    {
+      "name": "Area_ID",
+      "type": "esriFieldTypeInteger",
+      "alias": "Area_ID",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "defaultValue": null,
+      "modelName": "Area_ID"
+    },
+    {
+      "name": "Area_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Area Name",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 500,
+      "defaultValue": null,
+      "modelName": "Area_Name"
+    },
+    {
+      "name": "ADA",
+      "type": "esriFieldTypeString",
+      "alias": "ADA",
+      "domain": null,
+      "editable": true,
+      "nullable": true,
+      "length": 50,
+      "defaultValue": null,
+      "modelName": "ADA"
+    }
+  ],
+  "geometryField": {
+    "name": "SHAPE",
+    "type": "esriFieldTypeGeometry",
+    "alias": "SHAPE",
+    "domain": null,
+    "editable": false,
+    "nullable": true,
+    "defaultValue": null,
+    "modelName": "SHAPE"
+  },
+  "datesInUnknownTimezone": false,
+  "dateFieldsTimeReference": {
+    "timeZone": "UTC",
+    "timeZoneIANA": "Etc/UTC",
+    "respectsDaylightSaving": false
+  },
+  "preferredTimeReference": null,
+  "types": [],
+  "templates": [
+    {
+      "name": "Boat Ramps",
+      "description": "",
+      "prototype": {
+        "attributes": {
+          "Area_Name": null,
+          "Area_ID": null,
+          "ADA": null
+        }
+      },
+      "drawingTool": "esriFeatureEditToolPoint"
+    }
+  ],
+  "maxRecordCount": 3500,
+  "supportedQueryFormats": "JSON, geoJSON, PBF",
+  "supportedExportFormats": "sqlite,filegdb,shapefile,csv,geojson",
+  "capabilities": "Query,Extract",
+  "useStandardizedQueries": true,
+  "supportedSpatialRelationships": [
+    "esriSpatialRelIntersects",
+    "esriSpatialRelContains",
+    "esriSpatialRelCrosses",
+    "esriSpatialRelEnvelopeIntersects",
+    "esriSpatialRelIndexIntersects",
+    "esriSpatialRelOverlaps",
+    "esriSpatialRelTouches",
+    "esriSpatialRelWithin",
+    "esriSpatialRelRelation"
+  ],
+  "supportsAppend": true,
+  "supportedAppendFormats": "FILEGDB,PBF",
+  "standardMaxRecordCount": 32000,
+  "tileMaxRecordCount": 8000,
+  "standardMaxRecordCountNoGeometry": 32000,
+  "maxRecordCountFactor": 1
+}

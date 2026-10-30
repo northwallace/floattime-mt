@@ -1,0 +1,47 @@
+{
+ "id": "bighorn-river-thermopolis-draft-sections",
+ "name": "Bighorn River — Wedding of the Waters (Thermopolis) to Eggert Tract — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "tribal"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0001",
+   "name": "Northern Reservation boundary (mouth of canyon) (Bighorn)",
+   "grade": "pending",
+   "flags": [
+    "tribal"
+   ]
+  },
+  {
+   "id": "WY-ACC-0002",
+   "name": "Wedding of the Waters (Bighorn)",
+   "grade": "verified",
+   "flags": []
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "northern-reservation-boundary-mouth-of-canyon-to-wedding-of-the-waters",
+   "putIn": "Northern Reservation boundary (mouth of canyon) (Bighorn)",
+   "takeOut": "Wedding of the Waters (Bighorn)",
+   "miles": 0.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004",
+    "WY-RES-007",
+    "WY-RES-008"
+   ]
+  }
+ ]
+}

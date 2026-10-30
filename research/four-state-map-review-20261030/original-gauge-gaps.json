@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-30T19:21:06.278021+00:00",
+  "baseUrl": "http://127.0.0.1:8783",
+  "note": "Point-in-time discharge check. Current data does not verify station suitability, access, safety or timing calibration.",
+  "gauges": [
+    {
+      "gauge": "06283000",
+      "rivers": [
+        "shoshone-river-corbett"
+      ],
+      "status": "no-discharge",
+      "flow": null,
+      "ageMinutes": null
+    },
+    {
+      "gauge": "06299980",
+      "rivers": [
+        "tongue-river-wy"
+      ],
+      "status": "no-discharge",
+      "flow": null,
+      "ageMinutes": null
+    },
+    {
+      "gauge": "06659000",
+      "rivers": [
+        "laramie-river-woods-landing"
+      ],
+      "status": "no-discharge",
+      "flow": null,
+      "ageMinutes": null
+    },
+    {
+      "gauge": "CDWR:ARKSALCO:DISCHRG",
+      "rivers": [
+        "arkansas-river-salida"
+      ],
+      "status": "current",
+      "flow": 258.0,
+      "ageMinutes": 66.1,
+      "meetsFlowFreshnessCheck": true,
+      "staleCache": false
+    }
+  ]
+}

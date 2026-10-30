@@ -1,0 +1,69 @@
+{
+ "id": "snake-river-jackson-hole-draft-sections",
+ "name": "Snake River — Wilson to South Park and Astoria (Jackson Hole) — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "permission"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0109",
+   "name": "Wilson (Snake)",
+   "grade": "verified",
+   "flags": []
+  },
+  {
+   "id": "WY-ACC-0110",
+   "name": "Snake River Ranch (lower) (Snake)",
+   "grade": "pending",
+   "flags": [
+    "permission"
+   ]
+  },
+  {
+   "id": "WY-ACC-0111",
+   "name": "South Park/Von Gontard Landing (Snake)",
+   "grade": "verified",
+   "flags": []
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "wilson-to-snake-river-ranch-lower",
+   "putIn": "Wilson (Snake)",
+   "takeOut": "Snake River Ranch (lower) (Snake)",
+   "miles": 7.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  },
+  {
+   "id": "snake-river-ranch-lower-to-south-park-von-gontard-landing",
+   "putIn": "Snake River Ranch (lower) (Snake)",
+   "takeOut": "South Park/Von Gontard Landing (Snake)",
+   "miles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004",
+    "WY-RES-010"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "south-fork-shoshone",
+  "name": "South Fork Shoshone River — Hunter Creek to Andy Martin Hill",
+  "gauge": "06281000",
+  "gaugeName": "South Fork Shoshone River Ab Buffalo Bill Res, WY (USGS 06281000)",
+  "lat": 44.20778,
+  "lon": -109.55541,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "South Fork Shoshone River: sections between Wyoming Game and Fish Department river access points.",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "hunter-creek-to-mariposa-bridge-aka-ishawooa",
+      "putIn": "Hunter Creek (SF Shoshone)",
+      "takeOut": "Mariposa Bridge (aka Ishawooa) (SF Shoshone)",
+      "miles": 4.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Hunter Creek (SF Shoshone): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Take-out Mariposa Bridge (aka Ishawooa) (SF Shoshone): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (4.6 mi); no agency mileage found.",
+      "putInAccessId": "acc-b59c0a92c5eb5d359662",
+      "takeOutAccessId": "acc-25876d8430475a1abc05"
+    },
+    {
+      "id": "mariposa-bridge-aka-ishawooa-to-bobcat-hoolihan",
+      "putIn": "Mariposa Bridge (aka Ishawooa) (SF Shoshone)",
+      "takeOut": "Bobcat-Hoolihan (SF Shoshone)",
+      "miles": 4.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Mariposa Bridge (aka Ishawooa) (SF Shoshone): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Take-out Bobcat-Hoolihan (SF Shoshone): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (4.1 mi); no agency mileage found.",
+      "putInAccessId": "acc-25876d8430475a1abc05",
+      "takeOutAccessId": "acc-b70df4f07b145600bf67"
+    },
+    {
+      "id": "bobcat-hoolihan-to-twin-creek",
+      "putIn": "Bobcat-Hoolihan (SF Shoshone)",
+      "takeOut": "Twin Creek (SF Shoshone)",
+      "miles": 4.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Bobcat-Hoolihan (SF Shoshone): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Take-out Twin Creek (SF Shoshone): approximate area only. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (4.9 mi); no agency mileage found.",
+      "putInAccessId": "acc-b70df4f07b145600bf67",
+      "takeOutAccessId": "acc-7732da734165563594ef"
+    },
+    {
+      "id": "twin-creek-to-castle-rock",
+      "putIn": "Twin Creek (SF Shoshone)",
+      "takeOut": "Castle Rock (SF Shoshone)",
+      "miles": 8.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Twin Creek (SF Shoshone): approximate area only. Take-out Castle Rock (SF Shoshone): approximate area only. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (8.2 mi); no agency mileage found.",
+      "putInAccessId": "acc-7732da734165563594ef",
+      "takeOutAccessId": "acc-570d5118a8f3584da311"
+    },
+    {
+      "id": "castle-rock-to-andy-martin-hill",
+      "putIn": "Castle Rock (SF Shoshone)",
+      "takeOut": "Andy Martin Hill (SF Shoshone)",
+      "miles": 3.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Castle Rock (SF Shoshone): approximate area only. Take-out Andy Martin Hill (SF Shoshone): exact agency facility pin. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (3.0 mi); no agency mileage found.",
+      "putInAccessId": "acc-570d5118a8f3584da311",
+      "takeOutAccessId": "acc-7aeda4d7b90e599682b0"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "russian-river-forestville",
+  "name": "Russian River (Forestville)",
+  "state": "CA",
+  "gauge": "11467000",
+  "gaugeName": "Russian River at Hacienda Bridge near Guerneville",
+  "lat": 38.5,
+  "lon": -122.917,
+  "timezone": "America/Los_Angeles",
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "Sonoma County publishes a summertime tubing guide time. A reliable relationship between gauge flow, craft and travel speed has not been established; the guide time is not a live ETA."
+  },
+  "blurb": "A short summer tubing float between two public beaches near Forestville. Slow current means this two-mile trip can take much of the afternoon.",
+  "sections": [
+    {
+      "id": "steelhead-sunset",
+      "putIn": "Steelhead Beach Regional Park",
+      "takeOut": "Sunset Beach River Park",
+      "putInAccessId": "acc-1b8b4d6c2d5e50e483d5",
+      "takeOutAccessId": "acc-f66b82bc52fb5cf4ac3a",
+      "miles": 2,
+      "difficulty": "Summer tubing; conditions vary",
+      "notes": "Sonoma County recommends this route for summer tubing, between Memorial Day and Labor Day. Arrange a seasonal river shuttle or two vehicles in advance; River Road is not a suitable walking shuttle. Beach access is for hand-carried craft. The seasonal large-boat ramp at Steelhead has separate permit rules.",
+      "guideTimes": [
+        {
+          "min": 4.5,
+          "max": 4.5,
+          "unit": "hours",
+          "conditions": "County estimate for summer inner-tube floats only. Slow current, wind and stops can extend the trip; this is not a current-condition prediction.",
+          "sourceName": "Sonoma County Regional Parks tubing guide",
+          "sourceUrl": "https://parks.sonomacounty.ca.gov/learn/blog/tubing-the-russian-river-how-to-plan-a-float-trip",
+          "checkedOn": "2026-10-29"
+        }
+      ],
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 2,
+        "sourceName": "Sonoma County Regional Parks tubing guide",
+        "sourceUrl": "https://parks.sonomacounty.ca.gov/learn/blog/tubing-the-russian-river-how-to-plan-a-float-trip",
+        "checkedOn": "2026-10-29",
+        "streamId": "Russian River / Forestville",
+        "putIn": {
+          "name": "Steelhead Beach Regional Park",
+          "sourceLocation": "Travel the best route — Steelhead Beach to Sunset Beach"
+        },
+        "takeOut": {
+          "name": "Sunset Beach River Park",
+          "sourceLocation": "Travel the best route — two-mile stretch"
+        },
+        "note": "Published approximate trip length, not a traced route or measured landing-to-landing distance."
+      },
+      "notices": [
+        {
+          "title": "A summer float, with slow current",
+          "text": "The county recommends tubing in the summer season. Check water conditions before launch; this guide does not establish safe winter, high-water or storm conditions. Mobile service is limited.",
+          "sourceName": "Sonoma County Regional Parks",
+          "sourceUrl": "https://parks.sonomacounty.ca.gov/learn/blog/tubing-the-russian-river-how-to-plan-a-float-trip",
+          "checkedOn": "2026-10-29"
+        }
+      ]
+    }
+  ]
+}

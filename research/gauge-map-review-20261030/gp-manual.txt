@@ -1,0 +1,189 @@
+Missouri Basin Regional Office 
+Missouri Basin Regional Office 
+ 
+ 
+ 
+Missouri Basin Region Hydromet Tools 
+Public Version User’s Manual 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bighorn Reservoir, Montana 
+Missouri Basin Regional Office 
+U.S. Department of Interior January 26, 2026 
+ 
+ 
+Contents 
+Introduction ........................................................................................................................................................ 3 
+Querying Data .................................................................................................................................................... 4 
+Instant Data ........................................................................................................................................................ 5 
+Daily Data ........................................................................................................................................................... 8 
+Data Analysis ...................................................................................................................................................... 9 
+Reservoirs .......................................................................................................................................................... 10 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Introduction 
+ 
+Hydromet Tools is a desktop application that allows users to graph and view series data such as 
+gauge height, river flow, water temperature, etc. The public version of the software has three basic 
+functions: querying data, performing simple statistical analysis, and comparing data over different 
+periods.  
+ 
+Requirements: 
+• Windows- XP or higher 
+• .net 2.0 or higher 
+ 
+Download Hydromet Tools from: 
+https://www.usbr.gov/gp/hydromet/Downloads.html 
+ 
+This version is not password protected. 
+Once you have the software installed, open Hydromet Tools and go to the Settings tab. Under 
+the Settings tab, select Billings Hydromet to work with data coming from the Missouri Plains Region 
+Hydromet respectively. 
+ 
+ 
+ 
+ 
+
+Querying Data 
+ 
+The first two tabs in Hydromet Tools, Instant and Daily, are used to query data. Instant or Daily 
+refer to the time interval of data.  
+Hydromet data is queried using a site and parameter code like this: ‘BHR FB’. The site is the short 
+name for a Hydromet site, such as BHR (Bighorn Lake).  The site tells you where the data is coming 
+from.  The parameter code, such as FB (forebay), tells what type of data you want. The button to the 
+right of the input with three dots on it opens a searchable list of sites. Search for keywords, 
+locations, or site codes.  
+For example, enter the query BHR FB as shown below and click the Query Data button.  
+ 
+The forebay data is graphed on the left and tabulated on the right.   
+More query examples: 
+Example Description 
+BHR FB Bighorn Lake forebay 
+BHR FB,AF Bighorn Lake forebay and 
+storage (acre-feet) 
+
+BHR Bighorn Lake. All 
+parameters are plotted 
+because only the site is 
+entered. 
+ 
+To quickly query multiple site and parameter combinations, you can create a text file with a list of 
+combinations. The example created generates a list of elevations for all South Dakota reservoirs:   
+  AGR FB, SHR FB, PTR FB, DFR FB, BFR FB 
+Save this text to a text file, then open Hydromet Tools. Select the folder icon in the upper right 
+corner and select the created text file. Hit the dropdown icon in the input box to see the list of 
+stations appear. This is particularly useful for operators who query the same data repeatedly.  
+ 
+ 
+Instant Data 
+ 
+Click the Instant Tab to view instant data. This is the equivalent of Dayfile data in SmarTerm. It is 
+recording in 15, 30, or 60-minute intervals depending on the station. You can observe the graphed 
+data on the left and edit the data on the right.  
+
+ 
+ 
+All data is queried through two types of codes, SITE and PCODE. An example of a site code is 
+AGR (Angostura Reservoir) and of PCODE is FB(Forebay). If only AGR is entered, all of the 
+instant parameters for the site are returned. 
+Hydromet Tools also has the ability to graph multiple site codes and PCODES at once. You can see 
+on the graph below under the filename box there is a single site code followed by two PCODES, 
+and this process is repeated multiple times. 
+
+ 
+The range at which you view this data can be changed using the Start and End Dates. 
+ 
+Graph flagged  data  means data that is outside the acceptable ranges still gets graphed. 
+Show point s shows data points on your graph. 
+ 
+ 
+ 
+ 
+ 
+
+For example:  This is a graph depicting flagged data  starting at 3/19/2019 08:45. 
+ 
+Daily Data  
+ 
+Daily data is retrieved the same way instant data is. Daily data is very similar to instant data except 
+it’s the daily values graphed instead of 15 minute intervals. In Hydromet SmarTerm, daily data is 
+called Archives. Most of the daily data is calculated using the instant data. Other daily data is 
+computed from daily data or manually entered.  
+
+Data Analysis 
+The DataAnalysis tab is useful for looking at trends and statistics for the data that you're looking at. 
+Before using the DataAnalysis tab, it would help to be familiar with the data codes that you would 
+need for the data that you're trying to analyze.  
+ 
+As an example, let’s look at trends and statistics for the Blackwater, Wyoming SNOTEL gage. Let's 
+put in BLWY and SE in the station and parameter code textboxes as shown below. Let's also check 
+the Percentiles check box to also plot the normal range of streamflow values for the data. The result 
+should show something similar to the screen shown below. 
+ 
+ 
+ 
+ 
+Based on the image above, you can see that the 2020 snow water equivalent has been roughly in line 
+with the 50th percentile snow water equivalent. From here, you can click on the DataTable tab to 
+view the data and if needed, export the data into a csv file for Excel. You can also: 
+
+• add other years to the analysis list above the month selector (separate years with spaces; 
+Ex: 2020 2019) 
+• look at a range of years to analyze (type in years with a dash in between; Ex: 1980-2000) 
+• change the time period for when the stats are calculated 
+• also include the average, minimum, or maximum 
+• change the percentile values that you want to calculate and plot 
+• clip data to certain consecutive months 
+• switch to displaying and tabulating data to calendar years instead of water years 
+You may also check the Use List option to input multiple data codes to analyze. As an example, you 
+can try typing in BHR FB, BBR FB on the textbox to perform the same analysis for both datasets. 
+Reservoirs 
+The Reservoirs tab is useful for viewing reservoir data (inflows, outflows, storage content, and 
+elevation). On the Reservoirs tab all you need to do is select a reservoir from the drop-down menu 
+and the tab will update with the data for your selected option. 
+ 
+For this exercise, let's select Bighorn Reservoir. The result should look like the screen shown below. 
+It shows the inflows, outflows, and the storage content for the current water year. 
+ 
+ 
+ 
+ 
+
+From here, you can: 
+• select to show elevation instead of storage content 
+• select to show the instantaneous (15-minute) data for the storage or elevation 
+• type in a different water year to plot in the initial year text box 
+• type in another water year to plot and compare in the comparison year text box 
+• opt to only show data for certain consecutive months 
+ 

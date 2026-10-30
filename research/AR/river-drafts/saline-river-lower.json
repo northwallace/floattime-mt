@@ -1,0 +1,127 @@
+{
+ "id": "saline-river-lower",
+ "name": "Saline River — Lower (Hwy 167 to Felsenthal)",
+ "state": "AR",
+ "status": "draft",
+ "whyDraft": "Lower Saline below the Saline River Water Trail: boat ramps 5.5-23 river miles apart, no AGFC water-trail page or mileage table; kept as draft for a later decision.",
+ "blockers": [
+  "not-selected-for-catalog"
+ ],
+ "accessPoints": [
+  {
+   "id": "AR-ACC-0030",
+   "name": "Cowford Boat Ramp",
+   "grade": "verified",
+   "lat": 33.746071,
+   "lon": -92.060373,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D214&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0061",
+   "name": "Hwy 15/63 Boat Ramp",
+   "grade": "verified",
+   "lat": 33.701264,
+   "lon": -92.02603,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D631&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0062",
+   "name": "Hwy 167 Boat Ramp",
+   "grade": "access-verified",
+   "lat": 34.115378,
+   "lon": -92.406242,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D164&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0064",
+   "name": "Hwy 278 Boat Ramp",
+   "grade": "verified",
+   "lat": 33.606843,
+   "lon": -92.011476,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1835&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0070",
+   "name": "Hwy 79 Pool Boat Ramp",
+   "grade": "access-verified",
+   "lat": 33.895318,
+   "lon": -92.233469,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D676&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0084",
+   "name": "Lee's Ferry Boat Ramp",
+   "grade": "verified",
+   "lat": 34.071362,
+   "lon": -92.365746,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D144&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0088",
+   "name": "Longview Boat Ramp",
+   "grade": "verified",
+   "lat": 33.379529,
+   "lon": -91.959804,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1834&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0106",
+   "name": "Ozment Bluff Boat Ramp",
+   "grade": "verified",
+   "lat": 33.499352,
+   "lon": -91.99931,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D782&outFields=*&outSR=4326&f=json"
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "hwy-167-boat-ramp-to-lee-s-ferry-boat-ramp",
+   "putIn": "Hwy 167 Boat Ramp",
+   "takeOut": "Lee's Ferry Boat Ramp",
+   "miles": 6.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "lee-s-ferry-boat-ramp-to-hwy-79-pool-boat-ramp",
+   "putIn": "Lee's Ferry Boat Ramp",
+   "takeOut": "Hwy 79 Pool Boat Ramp",
+   "miles": 22.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "hwy-79-pool-boat-ramp-to-cowford-boat-ramp",
+   "putIn": "Hwy 79 Pool Boat Ramp",
+   "takeOut": "Cowford Boat Ramp",
+   "miles": 22.7,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "cowford-boat-ramp-to-hwy-15-63-boat-ramp",
+   "putIn": "Cowford Boat Ramp",
+   "takeOut": "Hwy 15/63 Boat Ramp",
+   "miles": 5.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "hwy-15-63-boat-ramp-to-hwy-278-boat-ramp",
+   "putIn": "Hwy 15/63 Boat Ramp",
+   "takeOut": "Hwy 278 Boat Ramp",
+   "miles": 11.1,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "hwy-278-boat-ramp-to-ozment-bluff-boat-ramp",
+   "putIn": "Hwy 278 Boat Ramp",
+   "takeOut": "Ozment Bluff Boat Ramp",
+   "miles": 12.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "ozment-bluff-boat-ramp-to-longview-boat-ramp",
+   "putIn": "Ozment Bluff Boat Ramp",
+   "takeOut": "Longview Boat Ramp",
+   "miles": 11.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  }
+ ]
+}

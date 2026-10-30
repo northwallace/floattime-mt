@@ -1,0 +1,52 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-10-30",
+  "rivers": 170,
+  "sections": 598,
+  "accessIds": 749,
+  "maps": {
+    "AR": 98,
+    "AZ": 6,
+    "CA": 1,
+    "CO": 17,
+    "ID": 1,
+    "MO": 111,
+    "MT": 42,
+    "OR": 13,
+    "UT": 13,
+    "WA": 12,
+    "WY": 124
+  },
+  "agencyBindingsChecked": 294,
+  "agencyBindingFailures": 0,
+  "httpPublicPassed": 359,
+  "httpPrivateBlocked": 5,
+  "preservedPilotFiles": [
+    "catalog/field_pilots.json",
+    "public/field-pilots/greycliff.json"
+  ],
+  "dottedPathFilesUnchanged": 59,
+  "pythonTests": 115,
+  "javascriptTests": 40,
+  "browser": {
+    "status": "passed",
+    "views": [
+      "390px phone width",
+      "desktop"
+    ],
+    "scenarios": [
+      "WY Campfire to Warm Springs approximate markers and scrollable source popup",
+      "MO Current River Cedar Grove to Akers satellite map and source popup",
+      "AR Buffalo Ponca to Steel Creek satellite map and source popup",
+      "WY Libby Creek to Newton Creek approximate markers and contained source popup",
+      "MT Blackfoot Johnsrud to Weigh Station dotted path and new markers",
+      "Greycliff pilot retains Area put-in and user-confirmed Pilot take-out labels"
+    ],
+    "horizontalOverflow": false,
+    "consoleErrorsObserved": 0,
+    "geolocationFieldTested": false,
+    "screenshot": "/Users/home/Documents/Codex/floateta-modern-map-pins-local-20261030.png"
+  },
+  "finalFocusedPythonTests": 29,
+  "finalJavascriptTests": 40
+}

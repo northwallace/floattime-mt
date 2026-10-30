@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:16px;">
+<head>
+    <meta charset="utf-8" />
+    <title>Data - Wy SEO WebPortal</title>
+
+        <link href="/Account/GetFavicon" rel="shortcut icon" type="image/x-icon" />
+
+    <link rel="manifest" href="/Content/site.manifest">
+    <link rel="apple-touch-icon" href="/Content/icon.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="theme-color" content="#fff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/Content/kendo/bundles/aqPortalKendoStyle.min.css?v=ZcE-V0HUEJfT9o55-3vmOIKVBZk" />
+    <link rel="stylesheet" href="/bundles/aqPortalContentStyle.css?v=okV8LSStRM8b6eqig0FgvzyEgSs" />
+    <link rel="stylesheet" href="/Content/styles/bundles/aqPortalStyle.css?v=ooRlMaT17c1pFPrzcuwjijQs6tQ" />
+    <script src="/bundles/aqPortalMin.js?v=Vzdt9bXE6Vg7IRCbbGznsbwjl8Y"></script>
+    <script src="/bundles/aqPortal.js?v=kCT3rz0chWMXXy6jGwUJ3l5dsJI"></script>
+    <script src="/bundles/admin.js?v=FCBRMRGnGNDq_n2lJd0vndsjtyw"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            aqPortal.Init();
+            aqPortal.LibraryLocalisation.Init();
+        });
+
+        dojoConfig = {
+            locale: aqPortal.LibraryLocalisation.GetArcGISLocale(),
+            parseOnLoad: false
+        };
+
+        kendo.culture(aqPortal.LibraryLocalisation.GetKendoLocale());
+
+        moment.locale(aqPortal.LibraryLocalisation.GetMomentLocale());
+
+        window.maintenanceTimeFrame = "";
+    </script>
+
+</head>
+<body class=" aside-toggled offsidebar-open">
+    <div id="baseSiteUrl" class="hidden">/</div>
+    <div id="CurrentViewGroupName" class="hidden">Anonymous</div>
+        <ol class="hidden LineColours" id="DefaultLineColours">
+                <li data-id="0"><input value="#7CB5EC" /></li>
+                <li data-id="1"><input value="#67CC34" /></li>
+                <li data-id="2"><input value="#FF9933" /></li>
+                <li data-id="3"><input value="#333266" /></li>
+                <li data-id="4"><input value="#990600" /></li>
+                <li data-id="5"><input value="#FFCC02" /></li>
+                <li data-id="6"><input value="#0166CC" /></li>
+                <li data-id="7"><input value="#FE3200" /></li>
+                <li data-id="8"><input value="#B4E2FF" /></li>
+                <li data-id="9"><input value="#444444" /></li>
+        </ol>
+        <ol class="hidden MarkerColours" id="DefaultMarkerColours">
+                <li data-id="0"><input value="#7CB5EC" /></li>
+                <li data-id="1"><input value="#67CC34" /></li>
+                <li data-id="2"><input value="#FF9933" /></li>
+                <li data-id="3"><input value="#333266" /></li>
+                <li data-id="4"><input value="#990600" /></li>
+                <li data-id="5"><input value="#FFCC02" /></li>
+                <li data-id="6"><input value="#0166CC" /></li>
+                <li data-id="7"><input value="#FE3200" /></li>
+                <li data-id="8"><input value="#B4E2FF" /></li>
+                <li data-id="9"><input value="#444444" /></li>
+        </ol>
+    <section class="wrapper">
+        <nav role="navigation" aria-label="main" class="navbar navbar-default navbar-top navbar-fixed-top">
+            <div class="navbar-header   navbar-brand-custom " >
+    <button  type="button" class="sitenav navbar-toggle collapsed btn btn-sm" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" style="z-index: 1000;">
+        <span class="sr-only">Toggle Site Navigation</span>
+        <span class="material-icons close">close</span>
+        <span class="material-icons navbar-toggle-icon">account_circle</span>
+    </button>
+        <button  type="button" class="datanav navbar-toggle offcanvas btn btn-sm pull-left toggle-datamenu" data-toggle="offcanvas" aria-expanded="false">
+            <span class="sr-only">Toggle Data Navigation</span>
+            <span class="material-icons close">close</span>
+            <span class="material-icons navbar-toggle-icon">dehaze</span>
+        </button>
+
+    <a class="navbar-brand" href=https://seo.wyo.gov/>
+        <span class="sr-only">Aquatic Informatics Web Site</span>
+            <div class="brand-logo-customer">
+                <img src="/Account/GetLogo" alt="AQUARIUS WebPortal"/>
+            </div>
+    </a>
+</div>
+<div class="nav-wrapper" >
+        <div class="navbar-title">
+        </div>
+        <div class="navbar-alert">
+            
+        </div>
+
+    <ul class="nav navbar-nav hidden-xs">
+        <li> <a href="#" class="btn toggle-aside" data-toggle="aside"><span class="sr-only">Hide/Expand Tabbed Navigation</span> <em class="fa"></em> </a> </li>
+    </ul>
+    <div class="desktop">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right" >
+                    <!-- #region Data -->
+                        <li>
+                            <a  href="/Data">
+                                <span class="material-icons" data-toggle="tooltip" data-placement="bottom" title="Data">assessment</span>
+                            </a>
+                        </li>
+                    <!-- #endregion -->
+                    <!-- #region Support resources menu -->
+                        <li>
+                            <a class="support-resources" ><span class="material-icons" data-toggle="tooltip" data-placement="bottom" title="Support resources">support</span></a>
+                        </li>
+                    <!-- #endregion -->
+                    <!-- #region Admin and View Group -->
+                    <!-- #endregion -->
+                    <!-- #region Language -->
+                            <li class="dropdown">
+                                <button  data-toggle="dropdown" class="dropdown-toggle">
+                                    <span class="material-icons" data-toggle="tooltip" data-placement="bottom" title="Language">language</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right languageSelector">
+                                        <li data-language="en" class="active">
+                                            <button onclick="aqPortal.setLocale('en')"> English</button>
+                                        </li>
+                                        <li data-language="de" class="">
+                                            <button onclick="aqPortal.setLocale('de')"> Deutsch</button>
+                                        </li>
+                                        <li data-language="es-AR" class="">
+                                            <button onclick="aqPortal.setLocale('es-AR')"> Espa&#xF1;ol</button>
+                                        </li>
+                                        <li data-language="fr" class="">
+                                            <button onclick="aqPortal.setLocale('fr')"> Fran&#xE7;ais</button>
+                                        </li>
+                                </ul>
+                            </li>
+                    <!-- #endregion -->
+                    <!-- #region Account -->
+                            <li class=" right-end-menu-item">
+                                <a  href="/Account/SignIn">
+                                    <span class="material-icons" data-toggle="tooltip" data-placement="bottom" title="Sign in">account_circle</span>&nbsp;Sign in
+                                </a>
+                            </li>
+                    <!-- #endregion -->
+                    <!-- #region Apps -->
+                    <!-- #endregion -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="collapse navbar-collapse" id="main-header-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                    <!-- #region Data -->
+                        <li>
+                            <a href="/Data"><span class="material-icons mobile-item">assessment</span>Data</a>
+                        </li>
+                    <li class="divider"></li>
+                    <!-- #endregion -->
+                    <!-- #region Account -->
+                    <!-- #endregion -->
+                    <!-- #region Admin settings -->
+                    <!-- #endregion -->
+                    <!-- #region View Group -->
+                    <!-- #endregion -->
+                    <!-- #region Apps -->
+                    <!-- #endregion -->
+                    <!-- #region Authenticate -->
+                            <li class="">
+                                <a href="/Account/SignIn"> <span class="material-icons mobile-item">login</span>Sign in</a>
+                            </li>
+                        <li class="divider"></li>
+                    <!-- #endregion -->
+                    <!-- #region Language -->
+                        <li class="dropdown">
+                            <button class ="dropdown-toggle" id="languageSelectorMobile" data-toggle="dropdown">
+                                <span class="dropdown-left">
+                                    <span class="material-icons mobile-item">language</span>
+                                 English
+                                 </span>
+                                <div class="expand"><span class="material-icons pull-right">expand_more</span></div>
+                            </button>
+
+                            <ul class="dropdown-menu languageSelectorMobile">
+                                    <li class="dictionary-item dropdown-item-checked" data-language="en" data-content="English">
+                                        <button class="dropdown-item" onclick="aqPortal.setLocale('en')">English</button>
+                                    </li>
+                                    <li class="dictionary-item " data-language="de" data-content="Deutsch">
+                                        <button class="dropdown-item" onclick="aqPortal.setLocale('de')">Deutsch</button>
+                                    </li>
+                                    <li class="dictionary-item " data-language="es-AR" data-content="Espa&#xF1;ol">
+                                        <button class="dropdown-item" onclick="aqPortal.setLocale('es-AR')">Espa&#xF1;ol</button>
+                                    </li>
+                                    <li class="dictionary-item " data-language="fr" data-content="Fran&#xE7;ais">
+                                        <button class="dropdown-item" onclick="aqPortal.setLocale('fr')">Fran&#xE7;ais</button>
+                                    </li>
+                            </ul>
+                        </li>
+                            <li class="divider"></li>
+                    <!-- #endregion -->
+
+                <!-- #region Support Resources -->
+                    <li class="dropdown">
+                        <button class="dropdown-toggle" id="supportResourcesMobile" data-toggle="dropdown">
+                            <span class="dropdown-left">
+                                <span class="material-icons mobile-item">support</span>
+                                Support resources
+                            </span>
+                            <div class="expand"><span class="material-icons pull-right">expand_more</span></div>
+                        </button>
+
+                        <ul class="dropdown-menu supportResourcesMobile">
+                            <li>
+                                <a href="/Content/Manuals/en/UserGuide.pdf" target="_blank" data-umami-event="WP: Help"><span class="material-icons">help</span> <span>Go to Help</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                <!-- #endregion -->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="support-resources-float collapse">
+    <button type="button" class="close" data-toggle="tooltip" data-placement="bottom" title="Close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h2>Support resources</h2>
+    <ul>
+        <li>
+            <a href="/Content/Manuals/en/UserGuide.pdf" target="_blank" data-umami-event="WP: Help" data-toggle="tooltip" data-placement="bottom" title="Access your comprehensive Help guide to learn, use, and administer this application."><span class="material-icons">help</span> <span>Go to Help</span></a>
+        </li>
+    </ul>
+    <div class="policies">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="https://us.aquaticinformatics.net/legal/privacy-policy" target="_blank">Privacy policy</a>
+                <a href="https://us.aquaticinformatics.net/legal/cookie-policy" target="_blank">Cookie policy</a>
+                <a href="https://us.aquaticinformatics.net/legal/terms-of-use" target="_blank">Terms of use</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="https://us.aquaticinformatics.net/legal/ccpa-policy" target="_blank">Do not sell or share my data</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        aqPortal.FloodingSetup.InitAdminAndFloodSettings();
+    });
+</script>
+
+        </nav>
+        
+<script src="/bundles/roundingExtra.js?v=V4mc4G5v6-7ilBOpHY2TKj2rRPo"></script>
+<script src="/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="/bundles/dataControl.js?v=Y2NzTtgjcErOwmGIFmal9WHehL4"></script>
+
+    <script src="/bundles/highCharts.min.js?v=JwUPFEbUXKu7A8xcH24kTSUhYoo"></script>
+
+<aside class="aside">
+    <nav class="sidebar">
+    <div class="toggleContainer hidden-xs">
+        <a href="#" class="btn btn-sm toggle-aside" data-toggle="aside" title="Hide/Expand Tabbed Navigation"><span class="sr-only">Hide/Expand Tabbed Navigation</span><em class="fa"></em></a>
+    </div>
+    <ul class="nav">
+
+                <li class="active">
+                    <a href="/Data/Map" data-href="#tab_map" class="no-submenu" aria-label="Map">
+                        <em class="fa fa-globe fa-fw"></em>
+                        <span class="item-text">Map</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/Data/List" data-href="#tab_list" class="no-submenu" aria-label="List">
+                        <em class="fa fa-table fa-fw"></em>
+                        <span class="item-text">List</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/Data/Folder" data-href="#tab_folder" class="no-submenu" aria-label="Folder">
+                        <em class="fa fa-folder-open-o fa-fw"></em>
+                        <span class="item-text">Folder</span>
+                    </a>
+                </li>
+                <li id="locationTabMenu" class="">
+                    <a href="/Data/Location" data-href="#tab_location" class="no-submenu" aria-label="Location">
+                        <em class="fa fa-map-marker fa-fw"></em>
+                        <span class="item-text">Location</span>
+                    </a>
+                </li>
+                <li id="dataSetTabMenu" class="">
+                    <a href="/Data/Dataset" data-href="#tab_dataset" class="no-submenu" aria-label="Data Set">
+                        <em class="fa fa-line-chart fa-fw"></em>
+                        <span class="item-text">Data Set</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/Data/Chart" data-href="#tab_chart" class="no-submenu" aria-label="Chart">
+                        <em class="fa fa-area-chart fa-fw"></em>
+                        <span class="item-text">Chart</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/Data/Export" data-href="#tab_export" class="no-submenu" aria-label="Export">
+                        <em class="fa fa-download fa-fw"></em>
+                        <span class="item-text">Export</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/Data/Alert" data-href="#tab_alerts" class="no-submenu" aria-label="Alerts">
+                        <em class="fa fa-exclamation-triangle fa-fw"></em>
+                        <span class="item-text">Alerts</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/Data/Report" data-href="#tab_reports" class="no-submenu" aria-label="Reports">
+                        <em class="fa fa-book fa-fw"></em>
+                        <span class="item-text">Reports</span>
+                    </a>
+                </li>
+
+            <li class="nav-footer">
+        <div class="nav-footer-divider"></div>
+        <div>
+                <div>AQUARIUS WebPortal v2026.2.57</div>
+                <div>© 2026 State of Wyoming</div>
+        </div>
+    </li>
+
+    </ul>
+</nav>
+
+</aside>
+<section>
+
+    
+
+
+    <section class="main-content" role="main">
+        
+<div class="hidden" aria-hidden="true">
+    <div>
+        <select class="form-control interval show-tick" title="Interval..." data-header="Interval" data-width="297px" data-live-search="true" data-size="auto">
+                            <option data-intervaltype="Periodic" value="Latest" title="Interval: Latest" selected="selected">Latest</option>
+                        <optgroup label="Periodic" data-groupid="Periodic">
+                                <option data-intervaltype="Periodic" title="Interval: Daily" value="Daily">Daily</option>
+                                <option data-intervaltype="Periodic" title="Interval: Monthly" value="Monthly">Monthly</option>
+                                <option data-intervaltype="Periodic" title="Interval: Yearly" value="Yearly">Yearly</option>
+                        </optgroup>
+                        <optgroup label="Seasonal" data-groupid="Seasonal">
+                                <option data-intervaltype="Seasonal" title="Interval: Seasonal Daily" value="SeasonalDaily">Daily</option>
+                                <option data-intervaltype="Seasonal" title="Interval: Seasonal Monthly" value="SeasonalMonthly">Monthly</option>
+                                <option data-intervaltype="Seasonal" title="Interval: Seasonal Annual" value="SeasonalAnnual">Annual</option>
+                        </optgroup>
+                            <option data-intervaltype="Periodic" value="Custom" title="Interval: Custom">Custom</option>
+                                <option data-divider="true"></option>
+                            <option data-intervaltype="Periodic" value="AllData" title="Interval: All Data">All Data</option>
+        </select>
+    </div>
+    <div>
+        <select class="form-control refperiod show-tick" data-header="Reference Period" data-width="100%" data-live-search="true" data-size="auto">
+        </select>
+    </div>
+    <div>
+        <select class="form-control calendar show-tick" data-header="Calendar" data-width="100%" data-live-search="true" data-size="auto">
+                    <option value="1" title="Calendar: Calendar Year" data-date-offset="0" data-year-offset="0" data-subtext="CALENDARYEAR" selected="selected">Calendar Year</option>
+        </select>
+    </div>
+    <div class="datepickers">
+        <div class="daySelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <span class="daypickerdisplay form-control-overlay">2026-10-30</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+                <input type="text" class="datepicker form-control" value="2026-10-30" />
+                
+            </div>
+        </div>
+
+        <div class="monthSelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <span class="monthpickerdisplay form-control-overlay">Oct 2026</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+                <input type="text" class="monthpicker form-control" value="2026-10-01" />
+            </div>
+        </div>
+
+        <div class="yearSelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <span class="yearpickerdisplay form-control-overlay">2026</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+                <input type="text" class="yearpicker form-control" value="2026-01-01" />
+            </div>
+        </div>
+
+        <div class="decadeSelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <span class="decadepickerdisplay form-control-overlay">2020 - 2029</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+                <input type="text" class="decadepicker form-control" value="2026-01-01" />
+            </div>
+        </div>
+
+        <div class="centurySelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <span class="centurypickerdisplay form-control-overlay">2000 - 2099</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+                <input type="text" class="centurypicker form-control" value="2026-01-01" />
+            </div>
+        </div>
+
+        <div class="seasonalDaySelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <span class="seasonalDayDisplay form-control-overlay">Oct 30</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+                <input type="text" class="seasonalDayPicker form-control" value="2026-10-30" />
+            </div>
+        </div>
+
+        <div class="seasonalMonthSelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <span class="seasonalMonthDisplay form-control-overlay">October</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+                <input type="text" class="seasonalMonthPicker form-control" value="2026-10-30" />
+            </div>
+        </div>
+
+        <div class="customSelect">
+            <div class="has-feedback input-group-sm" style="max-width: 300px;">
+                <input type="hidden" class="datepickerEnd form-control" value="2026-10-31" />
+                <div class="custompicker form-control">
+                    <span>2026-10-30 - 2026-10-31</span>
+                </div>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="hidden filterPopoverHiddenContent" aria-hidden="true">
+    <div class="saved-filters">
+        <label>Saved Filters</label>
+        
+        <select>
+            <option></option>
+                    <optgroup label="Global">
+                            <option value="1" data-islocation="false">Active Time Series</option>
+                            <option value="2" data-islocation="false">Year Round Monitoring</option>
+                    </optgroup>
+        </select>
+    </div>
+        <div class="text-right" style="padding-top: 5px;">
+            <button class="btn btn-sm ai-action-button"><span class="fa fa-filter"></span> New Filter</button>
+        </div>
+</div>
+        <input type="hidden" id="MaxDataSets" value="20" />
+        <input type="hidden" id="MaxDataSetsBeforeWarning" value="10" />
+        <input type="hidden" id="MaxExportDataSets" value="20" />
+        <input type="hidden" id="MaxExportDataSetsBeforeWarning" value="10" />
+        <input type="hidden" id="InitialFilterId" />
+        <div class="tab-content">
+                    <div class="tab-pane active" id="tab_map">
+                        
+<script src="/Scripts/arcgis/4.32/init.js" data-dojo-config="async: true"></script>
+<link href="/Scripts/arcgis/4.32/esri/themes/light/main.css" rel="stylesheet" />
+
+<div class="row-offcanvas-left">
+    <div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+    <div class="row controls_row">
+        <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+        <button type="button" class="btn ai-white btn-sm col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+            <label class="contextDateSummary"></label>
+        </button>
+        <div class="collapse navbar-collapse control-row-collapse">
+            <div class="navbar-form navbar-right navbar-toggle-right">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+            
+
+            
+<div class="navbar-form navbar-left">
+    <select class="form-control selectpicker parameters" id="parameterSelect_1" title="Parameters..." data-header="Parameters" data-width="200" data-live-search="true" data-size="auto" >
+                <option data-subtext="None"></option>
+                <optgroup label="">
+                            <option value="69" data-code="Air Temp" data-subtext="Air Temp">Air Temperature</option>
+                            <option value="46" data-code="Atmos Pres" data-subtext="Atmos Pres">Atmospheric Pressure</option>
+                            <option value="105" data-code="Battery Voltage Under Load" data-subtext="Battery Voltage Under Load">Battery Voltage Under Load</option>
+                            <option value="49" data-code="Bubbler PSI" data-subtext="Bubbler PSI">Bubbler PSI</option>
+                            <option value="82" data-code="Cond" data-subtext="Cond">Conductivity</option>
+                            <option value="12" data-code="Depth" data-subtext="Depth">Depth</option>
+                            <option value="24" data-code="Well Depth" data-subtext="Well Depth">Depth of Reading below Surface</option>
+                            <option value="57" data-code="Discharge" data-subtext="Discharge" selected="selected">Discharge</option>
+                            <option value="58" data-code="Discharge Total" data-subtext="Discharge Total">Discharge cumulative volume increment</option>
+                            <option value="54" data-code="Discharge Q" data-subtext="Discharge Q">Discharge Q</option>
+                            <option value="55" data-code="Discharge Velocity" data-subtext="Discharge Velocity">Discharge velocity</option>
+                            <option value="86" data-code="O2 (Dis)" data-subtext="O2 (Dis)">Dissolved Oxygen Concentration</option>
+                            <option value="18" data-code="Evapotrans" data-subtext="Evapotrans">Evapotranspiration amount</option>
+                            <option value="80" data-code="Flow Gauge" data-subtext="Flow Gauge">Flow Gauge</option>
+                            <option value="22" data-code="GZF" data-subtext="GZF">Gage Height at Zero Flow</option>
+                            <option value="42" data-code="Gate Height" data-subtext="Gate Height">Gate Height</option>
+                            <option value="41" data-code="Gate Opening" data-subtext="Gate Opening">Gate Opening</option>
+                            <option value="23" data-code="H350" data-subtext="H350">H350 PSI</option>
+                            <option value="25" data-code="Stage" data-subtext="Stage">Height of Gauge (River Stage)</option>
+                            <option value="26" data-code="Stage ~ 24 Hour Average" data-subtext="Stage ~ 24 Hour Average">Height of Gauge (River Stage) ~ 24 Hour Average</option>
+                            <option value="30" data-code="Spillway Height" data-subtext="Spillway Height">Height of spillway forebay</option>
+                            <option value="34" data-code="Lake/res elevation" data-subtext="Lake/res elevation">Lake/res elevation</option>
+                            <option value="48" data-code="Precipitation" data-subtext="Precipitation">Precipitation</option>
+                            <option value="56" data-code="Pump Discharge" data-subtext="Pump Discharge">Pump Discharge</option>
+                            <option value="104" data-code="Rel Humidity" data-subtext="Rel Humidity">Relative Humidity</option>
+                            <option value="29" data-code="Reservoir Elevation" data-subtext="Reservoir Elevation">Reservoir Elevation</option>
+                            <option value="1" data-code="Reservoir Elevation BUILT IN" data-subtext="Reservoir Elevation BUILT IN">Reservoir Elevation BUILT IN</option>
+                            <option value="61" data-code="River X Area" data-subtext="River X Area">River Cross Section Area</option>
+                            <option value="83" data-code="RiverXDepth" data-subtext="RiverXDepth">River Cross Section Mean Depth</option>
+                            <option value="62" data-code="River X Width" data-subtext="River X Width">River Cross Section Width</option>
+                            <option value="68" data-code="SWE" data-subtext="SWE">Snow Water Equivalent</option>
+                            <option value="27" data-code="Stage Change" data-subtext="Stage Change">Stage Change During Location Visit</option>
+                            <option value="107" data-code="Tank Pressure" data-subtext="Tank Pressure">Tank Pressure</option>
+                            <option value="2" data-code="Temperature" data-subtext="Temperature">Temperature</option>
+                            <option value="74" data-code="Water Temp" data-subtext="Water Temp">Temperature of Water</option>
+                            <option value="37" data-code="Total Storage" data-subtext="Total Storage">Total Lake/Reservoir Storage Volume</option>
+                            <option value="100" data-code="Turbidity, Nephelom" data-subtext="Turbidity, Nephelom">Turbidity, water, unfiltered, broad band light source (400-680 nm), detection angle 90 &#x2B;-30 degrees to incident light, nephelometric turbidity units (NTU)</option>
+                            <option value="79" data-code="Voltage" data-subtext="Voltage">Voltage</option>
+                            <option value="81" data-code="Water Level" data-subtext="Water Level">Water Level</option>
+                            <option value="87" data-code="Water pH" data-subtext="Water pH">Water pH</option>
+                            <option value="66" data-code="Sensor Velocity" data-subtext="Sensor Velocity">Water Velocity</option>
+                            <option value="101" data-code="Water Velocity" data-subtext="Water Velocity">Water, velocity</option>
+                            <option value="75" data-code="Wind Dir" data-subtext="Wind Dir">Wind Direction</option>
+                            <option value="78" data-code="Wind Vel" data-subtext="Wind Vel">Wind Velocity</option>
+                </optgroup>
+    </select>
+</div>
+
+            
+    <div class="navbar-form navbar-left">
+        <select class="form-control values selectpicker" id="valuesSelect_1" title="Value..." data-header="Value" data-width="200" data-live-search="true" data-size="auto">
+            <option data-subtext="None"></option>
+                    <optgroup data-id="Statistic" label="Statistics" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="2" data-code="LATEST" data-subtext="LATEST" selected="selected">Latest</option>
+                                <option value="4" data-code="Yesterdays Average" data-subtext="Yesterdays Average">Yesterday&#x27;s Average</option>
+                    </optgroup>
+                    <optgroup data-id="Location" label="Location Attributes" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="Location_1" data-code="Identifier" data-subtext="Identifier">Location Identifier</option>
+                                <option value="Location_0" data-code="Name" data-subtext="Name">Location Name</option>
+                    </optgroup>
+                    <optgroup data-id="State" label="Location States" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="State_4" data-code="LocationCurrencyState" data-subtext="LocationCurrencyState">Location Currency State</option>
+                    </optgroup>
+                    <optgroup data-id="ParameterRange" label="Discharge Status" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="ParameterRanges_1" data-code="Discharge Status 1" data-subtext="Discharge Status 1">Not Calculated</option>
+                                <option value="ParameterRanges_2" data-code="Discharge Status 2" data-subtext="Discharge Status 2">Medium</option>
+                                <option value="ParameterRanges_3" data-code="Discharge Status 3" data-subtext="Discharge Status 3">High</option>
+                                <option value="ParameterRanges_4" data-code="Discharge Status 4" data-subtext="Discharge Status 4">Extreme</option>
+                    </optgroup>
+        </select>
+    </div>
+
+            
+
+            
+    <div class="navbar-form navbar-left dateCombo">
+        <label>Date: </label>
+        <div class="btn-group datePopoverGroup noControls" role="group" 
+             data-alldata="False" 
+             data-seasonal="False"
+             data-allowseasonal="True"
+             data-custom="False" 
+             data-referenceperiod="True" 
+             data-calendar="True" 
+             data-referenceperiodselect="True"
+             data-periodic="True">
+            <button class="btn btn-default btn-sm prev" aria-label="Previous"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn btn-default btn-sm datePopover">
+                <span class="datePopoverSummary">-</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </button>
+            <button class="btn btn-default btn-sm next" aria-label="Next"><span class="fa fa-chevron-right"></span></button>
+        </div>
+    </div>
+
+            <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/Map" data-baseurl="/Data/Map" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Grid</li><li class="exportactions"><button class="export_data" name="csv"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To CSV</button></li><li class="exportactions"><button class="export_data" name="excel"><span class="fa fa-file-excel-o fa-fw"></span>&nbsp; To Excel</button></li><li class="divider"></li><li class="bulkactions dropdown-header"><span class="fa fa-chevron-circle-right fa-fw"></span>&nbsp; Bulk Data Set Actions</li><li class="bulkactions"><button class="showonchart"><span class="fa fa-area-chart fa-fw"></span>&nbsp; Send to Chart</button></li><li class="bulkactions"><button class="sendtoexport"><span class="fa fa-download fa-fw"></span>&nbsp; Send to Export</button></li><li class="divider"></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+            
+    <div class="navbar-form navbar-right navbar-filter no-filters">
+        <button class="btn btn-sm ai-action-button"><span class="fa fa-filter"></span> Filter</button>
+    </div>
+    <div class="navbar-form navbar-right navbar-filter clear-filters no-filters">
+        <div class="filter-display">
+            <span class="filter-name">Filter</span>
+                <a class="filter-edit">Edit</a>
+            <span class="filter-clear"><a class="clearAllFilters" title="Remove Filter"><span class="fa fa-times"></span></a></span>
+        </div>
+    </div>
+
+        </div>
+    </div>
+    <div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+        <button type="button" class="btn ai-white btn-sm col-xs-12 collapsed visible-xs" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+            <label class="contextDateSummary"></label>
+        </button>
+        
+    <div class="navbar-form navbar-right navbar-filter no-filters">
+        <button class="btn btn-sm ai-action-button"><span class="fa fa-filter"></span> Filter</button>
+        <div class="filter-display">
+            <span class="filter-name">Filter</span>
+            <div>
+                    <a class="filter-edit">Edit</a>
+                <span class="filter-clear"><a class="clearAllFilters" title="Remove Filter"><span class="fa fa-times"></span></a></span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="row mapContainer">
+        <div id="Map" dir="ltr" class="col-sm-12" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'" style="height: 600px;"></div>
+    </div>
+</div>
+<div class="offsidebar">
+    
+<div id="mapOptions-collapse" class="collapse navbar-collapse sidemenu-collapse">
+    <div class="modal-backdrop fade underHeader lowerMenuDialog" style="display: none;"></div>
+    <div class="toggleContainer">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+    <div class="offsidebarContent">
+        <div class="sidebar-content">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <button class="btn btn-xs ai-white pull-right " type="button" data-toggle="collapse" data-target="#mapOptions" aria-expanded="true" aria-controls="mapOptions" aria-label="Collapse Panel">
+                        <span class="fa fa-chevron-down fa-fw"></span>
+                    </button>
+                    Map Options
+                </div>
+                <div class="panel-body collapse in" id="mapOptions">
+                    <div style="width: 100%;">
+                            <label class="boot-check" for="displayIndicators">&nbsp; <input type="checkbox" id="displayIndicators" class="displayIndicators" checked="checked">&nbsp; Display Indicators</label>
+                            <label class="boot-check" for="aggregateIndicators" id="aggregateIndicatorsLabel">&nbsp; <input type="checkbox" id="aggregateIndicators" class="aggregateIndicators"   >&nbsp; Aggregate Indicators</label>
+                            <label class="boot-check" for="displayValues">&nbsp; <input type="checkbox" id="displayValues" class="displayValues" checked=checked>&nbsp; Display Values</label>
+                    </div>
+
+                    
+    <select class="form-control btn-group-sm selectpicker legend" id="legendSelect_1" title="Legend..." data-header="Legend" data-live-search="true" data-dropdown-align-right="true" data-container="body">
+        <option data-subtext="None"></option>
+                <optgroup label="State Legends">
+                        <option value="8" data-showvalueoverride="false">Location Currency</option>
+                </optgroup>
+    </select>
+
+                </div>
+            </div>
+            <div style="display:none;">
+
+
+
+                    <input type="checkbox" aria-hidden="true" class="valuesInIndicators" >
+            </div>
+        </div>
+
+        <div class="sidebar-content">
+            <div class="indicatorLegend legendDisplayAlt">
+                            <div class="legendInstance" data-legendid="8" style="display: none;">
+                                <div class="panel">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="3">
+                                                    <button class="btn btn-xs ai-white pull-right " type="button" data-toggle="collapse" data-target="#legendMapBody8" aria-expanded="true" aria-controls="legendMapBody8" aria-label="Collapse Panel">
+                                                        <span class="fa fa-chevron-down fa-fw"></span>
+                                                    </button>
+                                                    Location Currency&nbsp;<span class='badge legendCounter legendCounter-total'>-</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="collapse in" id="legendMapBody8">
+                                                <tr>
+                                                    <td><div class="btn nolink" style="background-color:#444444;">&nbsp;</div></td>
+                                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle1" value="1" label="toggle" checked="checked" /></td>
+                                                    <td>No Data&nbsp;<span class='badge pull-right legendCounter legendCounter1'>-</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="btn nolink" style="background-color:#fe3200;">&nbsp;</div></td>
+                                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle3" value="3" label="toggle" checked="checked" /></td>
+                                                    <td>Overdue&nbsp;<span class='badge pull-right legendCounter legendCounter3'>-</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="btn nolink" style="background-color:#67cc34;">&nbsp;</div></td>
+                                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle4" value="4" label="toggle" checked="checked" /></td>
+                                                    <td>Current&nbsp;<span class='badge pull-right legendCounter legendCounter4'>-</span></td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                <div class="legendInstance legendInstanceDefault" style="">
+                    <div class="panel">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">
+                                        <button class="btn btn-xs ai-white pull-right " type="button" data-toggle="collapse" data-target="#legendMapBodyDefaultLocations" aria-expanded="true" aria-controls="legendMapBodyDefaultLocations" aria-label="Collapse Panel">
+                                            <span class="fa fa-chevron-down fa-fw"></span>
+                                        </button>
+                                        <span class="legendInstanceDefaultLocations">Locations</span><span class="legendInstanceDefaultDatasets" style="display:none;">Data Sets</span>&nbsp;<span class='badge legendCounter legendCounter-total'>-</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="collapse in" id="legendMapBodyDefaultLocations">
+                                <tr>
+                                    <td><div class="btn nolink" style="background-color:#fff;">&nbsp;</div></td>
+                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle0" value="0" label="toggle" checked="checked" /></td>
+                                    <td><span class="legendInstanceDefaultLocations">Locations</span><span class="legendInstanceDefaultDatasets" style="display:none;">Data Sets</span>&nbsp;<span class='badge pull-right legendCounter legendCounter0'>-</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="sidebar-content">
+            <div class="reflocLegend legendDisplayAlt"></div>
+        </div>
+        <div class="sidebar-content">
+            <div id="heatmapGroups" data-panel-expanded="true"></div>
+            <div class="heatmapLegend legendDisplayAlt"></div>
+        </div>
+        <div class="sidebar-content">
+            <div id="layersGroups" data-panel-expanded="true"></div>
+        </div>
+        <div class="sidebar-content">
+            
+    <script type="text/javascript">
+        function InundationStartup() { }
+    </script>
+
+        </div>
+    </div>
+</div>
+
+    <button id="mapoptions-button" type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target="#mapOptions-collapse" aria-expanded="false">
+        <label>Map Options:</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+</div>
+
+<div id="MapLocalisedText" class="hidden" aria-hidden="true">
+    <div class="MapLoadFail">Map has failed to load. Please refresh this page and try again.<br /><br />Reason:</div>
+    <div class="MapCredentialsLoadFail">There is an error in the Map Credentials configurations. Secure map services won't work until this is fixed.</div>
+    <div class="LastUpdated">Last Updated</div>
+    <div class="HeatMapTitle">Heat Maps and Isolines</div>
+    <div class="Connected">Connected</div>
+    <div class="Connecting">Connecting</div>
+    <div class="Reconnecting">Reconnecting</div>
+    <div class="Disconnected">Disconnected</div>
+    <div class="HeatMap">Heat Map</div>
+    <div class="Isolines">Isolines</div>
+    <div class="Latitude">Latitude</div>
+    <div class="Longitude">Longitude</div>
+    <div class="SwitchToStatistic">Switch To Statistic</div>
+    <div class="ToggleReferenceLocations">Toggle Reference Locations</div>
+    <div class="ToggleHeatMap">Toggle Heat Map</div>
+    <div class="ToggleIsolines">Toggle Isolines</div>
+    <div class="ToggleMapLayer">Toggle Map Layer</div>
+</div>
+
+<script type="text/javascript">
+    window.ESRIMapSettings =  "{  \"credentials\": false, \"baseMapCredentials\": false, \"credentialsError\": false,  \"settings\": {\"activeBaseMapGroup\":\"DefaultMaps\",\"center\":[-107.635069,43.092036],\"zoom\":7,\"homeButton\":true,\"locateButton\":true,\"baseMapButton\":true,\"locationSearch\":true,\"coordinates\":true,\"dimensionButton\":true,\"startDimension\":2,\"scalebar\":{\"scalebarStyle\":\"line\",\"scalebarUnit\":\"dual\"},\"autoZoom\":false,\"indicatorLabels\":{\"textSize\":9,\"haloSize\":1,\"textColor\":\"black\",\"haloColor\":\"white\",\"bold\":false},\"spatialSearch\":true}, \"layerGroups\": [ {\"id\":\"DefaultMaps\",\"type\":\"map\",\"layers\":[{\"isDefault\":true,\"title\":\"Open Street Map\",\"thumbnail\":\"/Content/esri/openstreet.jpg\",\"layers\":[{\"type\":\"OpenStreetMapLayer\",\"options\":{}}]},{\"title\":\"Satellite Imagery\",\"thumbnail\":\"/Content/esri/satellite.jpg\",\"layers\":[{\"type\":\"TileLayer\",\"options\":{\"url\":\"https://services.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer\"}},{\"type\":\"TileLayer\",\"options\":{\"url\":\"https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer\"}}]}]} ] }";;
+    window.ESRILayerSettings =  "{ \"layerGroups\": [] }";;
+    window.ESRILocX = null;
+    window.ESRILocY = null;
+    window.ESRIZoom = null;
+</script>
+
+                    </div>
+                    <div class="tab-pane" id="tab_list">
+                        <div class="row-offcanvas-left">
+    <div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+    <div class="row controls_row">
+        <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+        <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+            <label class="contextDateSummary"></label>
+        </button>
+        <div class="collapse navbar-collapse control-row-collapse">
+            <div class="navbar-form navbar-right navbar-toggle-right">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+            
+
+            
+<div class="navbar-form navbar-left">
+    <select class="form-control selectpicker parameters" id="parameterSelect_2" title="Parameters..." data-header="Parameters" data-width="200" data-live-search="true" data-size="auto" >
+                <option data-subtext="None"></option>
+                <optgroup label="">
+                            <option value="69" data-code="Air Temp" data-subtext="Air Temp">Air Temperature</option>
+                            <option value="46" data-code="Atmos Pres" data-subtext="Atmos Pres">Atmospheric Pressure</option>
+                            <option value="105" data-code="Battery Voltage Under Load" data-subtext="Battery Voltage Under Load">Battery Voltage Under Load</option>
+                            <option value="49" data-code="Bubbler PSI" data-subtext="Bubbler PSI">Bubbler PSI</option>
+                            <option value="82" data-code="Cond" data-subtext="Cond">Conductivity</option>
+                            <option value="12" data-code="Depth" data-subtext="Depth">Depth</option>
+                            <option value="24" data-code="Well Depth" data-subtext="Well Depth">Depth of Reading below Surface</option>
+                            <option value="57" data-code="Discharge" data-subtext="Discharge" selected="selected">Discharge</option>
+                            <option value="58" data-code="Discharge Total" data-subtext="Discharge Total">Discharge cumulative volume increment</option>
+                            <option value="54" data-code="Discharge Q" data-subtext="Discharge Q">Discharge Q</option>
+                            <option value="55" data-code="Discharge Velocity" data-subtext="Discharge Velocity">Discharge velocity</option>
+                            <option value="86" data-code="O2 (Dis)" data-subtext="O2 (Dis)">Dissolved Oxygen Concentration</option>
+                            <option value="18" data-code="Evapotrans" data-subtext="Evapotrans">Evapotranspiration amount</option>
+                            <option value="80" data-code="Flow Gauge" data-subtext="Flow Gauge">Flow Gauge</option>
+                            <option value="22" data-code="GZF" data-subtext="GZF">Gage Height at Zero Flow</option>
+                            <option value="42" data-code="Gate Height" data-subtext="Gate Height">Gate Height</option>
+                            <option value="41" data-code="Gate Opening" data-subtext="Gate Opening">Gate Opening</option>
+                            <option value="23" data-code="H350" data-subtext="H350">H350 PSI</option>
+                            <option value="25" data-code="Stage" data-subtext="Stage">Height of Gauge (River Stage)</option>
+                            <option value="26" data-code="Stage ~ 24 Hour Average" data-subtext="Stage ~ 24 Hour Average">Height of Gauge (River Stage) ~ 24 Hour Average</option>
+                            <option value="30" data-code="Spillway Height" data-subtext="Spillway Height">Height of spillway forebay</option>
+                            <option value="34" data-code="Lake/res elevation" data-subtext="Lake/res elevation">Lake/res elevation</option>
+                            <option value="48" data-code="Precipitation" data-subtext="Precipitation">Precipitation</option>
+                            <option value="56" data-code="Pump Discharge" data-subtext="Pump Discharge">Pump Discharge</option>
+                            <option value="104" data-code="Rel Humidity" data-subtext="Rel Humidity">Relative Humidity</option>
+                            <option value="29" data-code="Reservoir Elevation" data-subtext="Reservoir Elevation">Reservoir Elevation</option>
+                            <option value="1" data-code="Reservoir Elevation BUILT IN" data-subtext="Reservoir Elevation BUILT IN">Reservoir Elevation BUILT IN</option>
+                            <option value="61" data-code="River X Area" data-subtext="River X Area">River Cross Section Area</option>
+                            <option value="83" data-code="RiverXDepth" data-subtext="RiverXDepth">River Cross Section Mean Depth</option>
+                            <option value="62" data-code="River X Width" data-subtext="River X Width">River Cross Section Width</option>
+                            <option value="68" data-code="SWE" data-subtext="SWE">Snow Water Equivalent</option>
+                            <option value="27" data-code="Stage Change" data-subtext="Stage Change">Stage Change During Location Visit</option>
+                            <option value="107" data-code="Tank Pressure" data-subtext="Tank Pressure">Tank Pressure</option>
+                            <option value="2" data-code="Temperature" data-subtext="Temperature">Temperature</option>
+                            <option value="74" data-code="Water Temp" data-subtext="Water Temp">Temperature of Water</option>
+                            <option value="37" data-code="Total Storage" data-subtext="Total Storage">Total Lake/Reservoir Storage Volume</option>
+                            <option value="100" data-code="Turbidity, Nephelom" data-subtext="Turbidity, Nephelom">Turbidity, water, unfiltered, broad band light source (400-680 nm), detection angle 90 &#x2B;-30 degrees to incident light, nephelometric turbidity units (NTU)</option>
+                            <option value="79" data-code="Voltage" data-subtext="Voltage">Voltage</option>
+                            <option value="81" data-code="Water Level" data-subtext="Water Level">Water Level</option>
+                            <option value="87" data-code="Water pH" data-subtext="Water pH">Water pH</option>
+                            <option value="66" data-code="Sensor Velocity" data-subtext="Sensor Velocity">Water Velocity</option>
+                            <option value="101" data-code="Water Velocity" data-subtext="Water Velocity">Water, velocity</option>
+                            <option value="75" data-code="Wind Dir" data-subtext="Wind Dir">Wind Direction</option>
+                            <option value="78" data-code="Wind Vel" data-subtext="Wind Vel">Wind Velocity</option>
+                </optgroup>
+    </select>
+</div>
+
+            
+    <div class="navbar-form navbar-left">
+        <select class="form-control values selectpicker" id="valuesSelect_2" title="Value..." data-header="Value" data-width="200" data-live-search="true" data-size="auto">
+            <option data-subtext="None"></option>
+                    <optgroup data-id="Statistic" label="Statistics" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="2" data-code="LATEST" data-subtext="LATEST" selected="selected">Latest</option>
+                                <option value="4" data-code="Yesterdays Average" data-subtext="Yesterdays Average">Yesterday&#x27;s Average</option>
+                    </optgroup>
+                    <optgroup data-id="Location" label="Location Attributes" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="Location_1" data-code="Identifier" data-subtext="Identifier">Location Identifier</option>
+                                <option value="Location_0" data-code="Name" data-subtext="Name">Location Name</option>
+                    </optgroup>
+                    <optgroup data-id="State" label="Location States" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="State_4" data-code="LocationCurrencyState" data-subtext="LocationCurrencyState">Location Currency State</option>
+                    </optgroup>
+                    <optgroup data-id="ParameterRange" label="Discharge Status" data-subvaluetype="" data-subvaluepermalink="">
+                                <option value="ParameterRanges_1" data-code="Discharge Status 1" data-subtext="Discharge Status 1">Not Calculated</option>
+                                <option value="ParameterRanges_2" data-code="Discharge Status 2" data-subtext="Discharge Status 2">Medium</option>
+                                <option value="ParameterRanges_3" data-code="Discharge Status 3" data-subtext="Discharge Status 3">High</option>
+                                <option value="ParameterRanges_4" data-code="Discharge Status 4" data-subtext="Discharge Status 4">Extreme</option>
+                    </optgroup>
+        </select>
+    </div>
+
+            
+
+            
+    <div class="navbar-form navbar-left dateCombo">
+        <label>Date: </label>
+        <div class="btn-group datePopoverGroup noControls" role="group" 
+             data-alldata="False" 
+             data-seasonal="False"
+             data-allowseasonal="True"
+             data-custom="False" 
+             data-referenceperiod="True" 
+             data-calendar="True" 
+             data-referenceperiodselect="True"
+             data-periodic="True">
+            <button class="btn btn-default btn-sm prev" aria-label="Previous"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn btn-default btn-sm datePopover">
+                <span class="datePopoverSummary">-</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </button>
+            <button class="btn btn-default btn-sm next" aria-label="Next"><span class="fa fa-chevron-right"></span></button>
+        </div>
+    </div>
+
+            <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/List" data-baseurl="/Data/List" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Grid</li><li class="exportactions"><button class="export_data" name="csv"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To CSV</button></li><li class="exportactions"><button class="export_data" name="excel"><span class="fa fa-file-excel-o fa-fw"></span>&nbsp; To Excel</button></li><li class="divider"></li><li class="bulkactions dropdown-header"><span class="fa fa-chevron-circle-right fa-fw"></span>&nbsp; Bulk Data Set Actions</li><li class="bulkactions"><button class="showonchart"><span class="fa fa-area-chart fa-fw"></span>&nbsp; Send to Chart</button></li><li class="bulkactions"><button class="sendtoexport"><span class="fa fa-download fa-fw"></span>&nbsp; Send to Export</button></li><li class="divider"></li><li><button class="reset_data"><span class="fa fa-eraser fa-fw"></span>&nbsp; Reset Sort, Clear Filters</button></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+            <div class="hidden listGridOptions" data-showstatecolumnds="False" data-showstatecolumnl="True"></div>
+            
+    <div class="navbar-form navbar-right navbar-filter no-filters">
+        <button class="btn btn-sm ai-action-button"><span class="fa fa-filter"></span> Filter</button>
+    </div>
+    <div class="navbar-form navbar-right navbar-filter clear-filters no-filters">
+        <div class="filter-display">
+            <span class="filter-name">Filter</span>
+                <a class="filter-edit">Edit</a>
+            <span class="filter-clear"><a class="clearAllFilters" title="Remove Filter"><span class="fa fa-times"></span></a></span>
+        </div>
+    </div>
+
+        </div>
+    </div>
+    <div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+        <button type="button" class="btn ai-white btn-sm col-xs-12 collapsed visible-xs" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+            <label class="contextDateSummary"></label>
+        </button>
+        
+    <div class="navbar-form navbar-right navbar-filter no-filters">
+        <button class="btn btn-sm ai-action-button"><span class="fa fa-filter"></span> Filter</button>
+        <div class="filter-display">
+            <span class="filter-name">Filter</span>
+            <div>
+                    <a class="filter-edit">Edit</a>
+                <span class="filter-clear"><a class="clearAllFilters" title="Remove Filter"><span class="fa fa-times"></span></a></span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="content_row" data-defaultsort="Sequence" data-sortdirection="desc">
+
+    </div>
+    <div class="errorJumbo" style="display:none;">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>An unexpected error has occurred: Please try reloading the List.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offsidebar">
+    
+<div id="listOptions-collapse" class="collapse navbar-collapse sidemenu-collapse">
+    <div class="modal-backdrop fade underHeader lowerMenuDialog" style="display: none;"></div>
+    <div class="toggleContainer">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+    <div class="offsidebarContent">
+        <div class="sidebar-content">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <button class="btn btn-xs ai-white pull-right collapsed" type="button" data-toggle="collapse" data-target="#listOptions" aria-expanded="false" aria-controls="listOptions" aria-label="Collapse Panel">
+                        <span class="fa fa-chevron-down fa-fw"></span>
+                    </button>
+                    List Options
+                </div>
+                <div class="panel-body collapse " id="listOptions">
+                    
+    <select class="form-control btn-group-sm selectpicker legend" id="legendSelect_2" title="Legend..." data-header="Legend" data-live-search="true" data-dropdown-align-right="true" data-container="body">
+        <option data-subtext="None"></option>
+                <optgroup label="State Legends">
+                        <option value="8" data-showvalueoverride="false">Location Currency</option>
+                </optgroup>
+    </select>
+
+                </div>
+            </div>
+
+            <div class="indicatorLegendList legendDisplayAlt">
+                            <div class="legendInstance" data-legendid="8" style="display: none;">
+                                <div class="panel">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="3">
+                                                    <button class="btn btn-xs ai-white pull-right collapsed" type="button" data-toggle="collapse" data-target="#legendListBody8" aria-expanded="false" aria-controls="legendListBody8" aria-label="Collapse Panel">
+                                                        <span class="fa fa-chevron-down fa-fw"></span>
+                                                    </button>
+                                                    Location Currency&nbsp;<span class='badge legendCounter legendCounter-total'>-</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="collapse " id="legendListBody8">
+                                                <tr>
+                                                    <td><div class="btn nolink" style="background-color:#444444;">&nbsp;</div></td>
+                                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle1" value="1" label="toggle" checked="checked" /></td>
+                                                    <td>No Data&nbsp;<span class='badge pull-right legendCounter legendCounter1'>-</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="btn nolink" style="background-color:#fe3200;">&nbsp;</div></td>
+                                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle3" value="3" label="toggle" checked="checked" /></td>
+                                                    <td>Overdue&nbsp;<span class='badge pull-right legendCounter legendCounter3'>-</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="btn nolink" style="background-color:#67cc34;">&nbsp;</div></td>
+                                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle4" value="4" label="toggle" checked="checked" /></td>
+                                                    <td>Current&nbsp;<span class='badge pull-right legendCounter legendCounter4'>-</span></td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                <div class="legendInstance legendInstanceDefault" style="">
+                    <div class="panel">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="3">
+                                        <button class="btn btn-xs ai-white pull-right collapsed" type="button" data-toggle="collapse" data-target="#legendListBodyDefaultLocations" aria-expanded="false" aria-controls="legendListBodyDefaultLocations" aria-label="Collapse Panel">
+                                            <span class="fa fa-chevron-down fa-fw"></span>
+                                        </button>
+                                        <span class="legendInstanceDefaultLocations">Locations</span><span class="legendInstanceDefaultDatasets" style="display:none;">Data Sets</span>&nbsp;<span class='badge legendCounter legendCounter-total'>-</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="collapse " id="legendListBodyDefaultLocations">
+                                <tr>
+                                    <td><div class="btn nolink" style="background-color:#fff;">&nbsp;</div></td>
+                                    <td class="toggleColumn"><input type="checkbox" class="legendToggle legendToggle0" value="0" label="toggle" checked="checked" /></td>
+                                    <td><span class="legendInstanceDefaultLocations">Locations</span><span class="legendInstanceDefaultDatasets" style="display:none;">Data Sets</span>&nbsp;<span class='badge pull-right legendCounter legendCounter0'>-</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <button id="listoptions-button" type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target="#listOptions-collapse" aria-expanded="false">
+        <label>List Options:</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+</div>
+
+                    </div>
+                    <div class="tab-pane" id="tab_folder">
+                        
+<div class="row-offcanvas-left">
+    <div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+    <div class="row controls_row">
+        <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+        <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+        </button>
+        <div class="collapse navbar-collapse control-row-collapse">
+            <div class="navbar-form navbar-right navbar-toggle-right">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+            
+    <div class="navbar-form navbar-left foldersMenu autocompleteSearch">
+        <select class="folderid form-control selectpicker closeOnClick" id="foldersSearch_3" title="Folder..." data-header="Folder" data-width="300" data-live-search="true" data-size="auto">
+        </select>
+    </div>
+
+            
+    <div class="navbar-form navbar-left dateCombo">
+        <label>Date: </label>
+        <div class="btn-group datePopoverGroup noControls" role="group" 
+             data-alldata="False" 
+             data-seasonal="False"
+             data-allowseasonal="True"
+             data-custom="True" 
+             data-referenceperiod="False" 
+             data-calendar="True" 
+             data-referenceperiodselect="True"
+             data-periodic="True">
+            <button class="btn btn-default btn-sm prev" aria-label="Previous"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn btn-default btn-sm datePopover">
+                <span class="datePopoverSummary">-</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </button>
+            <button class="btn btn-default btn-sm next" aria-label="Next"><span class="fa fa-chevron-right"></span></button>
+        </div>
+    </div>
+
+
+            <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/Folder" data-baseurl="/Data/Folder" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Grid</li><li class="exportactions"><button class="export_data" name="csv"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To CSV</button></li><li class="exportactions"><button class="export_data" name="excel"><span class="fa fa-file-excel-o fa-fw"></span>&nbsp; To Excel</button></li><li class="divider"></li><li><button class="reset_data"><span class="fa fa-eraser fa-fw"></span>&nbsp; Reset Sort, Clear Filters</button></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+        </div>
+        <input type="hidden" class="FolderDefaultTab" value="" />
+    </div>
+    <div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+        <button type="button" class="btn btn-sm col-xs-12 collapsed visible-xs" aria-expanded="false"><label>Select Data</label></button>
+    </div>
+
+    <div class="selectJumbo">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>Search for a Folder to display the Folder</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="errorJumbo" style="display: none;">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>An unexpected error has occurred: Please try reloading the Folder.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content_row context_tabs" style="display: none;">
+
+    </div>
+
+    <div id="FolderLocalisedText" class="hidden" aria-hidden="true">
+        <div class="SelectFolderAlert">Please select a Folder to export</div>
+        <div class="ExportDataAlert">Cannot export Data from this tab, switch to an alternative tab to export Data</div>
+        <div class="UnknownExportAlert">Unknown Export Request</div>
+        <div class="Folder">Folder</div>
+    </div>
+</div>
+<div class="offsidebar">
+    <div id="folderOptions-collapse" class="collapse navbar-collapse sidemenu-collapse">
+        <div class="toggleContainer">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+        <div class="offsidebarContent">
+            <div class="content-seriesside">
+
+            </div>
+        </div>
+    </div>
+    <button id="folderOptions-button" type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target="#folderOptions-collapse" aria-expanded="false">
+        <label>Folder Options:</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+</div>
+
+                    </div>
+                    <div class="tab-pane" id="tab_location">
+                        
+<div class="row-offcanvas-left">
+    <div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+    <div class="row controls_row">
+        <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+        <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+        </button>
+        <div class="collapse navbar-collapse control-row-collapse">
+            <div class="navbar-form navbar-right navbar-toggle-right">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+            
+
+            
+<div class="navbar-form navbar-left locationsMenu autocompleteSearch">
+    <select class="locationid form-control selectpicker closeOnClick " id="locationsSearch_1" title="Location..." data-header="Location" data-width="300" data-live-search="true" data-size="auto">
+    </select>
+</div>
+
+            
+    <div class="navbar-form navbar-left dateCombo">
+        <label>Date: </label>
+        <div class="btn-group datePopoverGroup noControls" role="group" 
+             data-alldata="False" 
+             data-seasonal="True"
+             data-allowseasonal="True"
+             data-custom="True" 
+             data-referenceperiod="False" 
+             data-calendar="True" 
+             data-referenceperiodselect="True"
+             data-periodic="True">
+            <button class="btn btn-default btn-sm prev" aria-label="Previous"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn btn-default btn-sm datePopover">
+                <span class="datePopoverSummary">-</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </button>
+            <button class="btn btn-default btn-sm next" aria-label="Next"><span class="fa fa-chevron-right"></span></button>
+        </div>
+    </div>
+
+
+            <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/Location" data-baseurl="/Data/Location" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Grid</li><li class="exportactions"><button class="export_data" name="csv"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To CSV</button></li><li class="exportactions"><button class="export_data" name="excel"><span class="fa fa-file-excel-o fa-fw"></span>&nbsp; To Excel</button></li><li class="divider"></li><li><button class="reset_data"><span class="fa fa-eraser fa-fw"></span>&nbsp; Reset Sort, Clear Filters</button></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+        </div>
+        <input type="hidden" class="LocationDefaultTab" value="" />
+    </div>
+    <div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+        <button type="button" class="btn btn-sm col-xs-12 collapsed visible-xs" aria-expanded="false"><label>Select Data</label></button>
+    </div>
+
+    <div class="selectJumbo">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>Search for a location using the filters above.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="errorJumbo" style="display: none;">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>An unexpected error has occurred: Please try reloading the Location.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content_row context_tabs" style="display: none;">
+
+    </div>
+
+    <div id="LocationLocalisedText" class="hidden" aria-hidden="true">
+        <div class="SelectLocationAlert">Please select a Location to export</div>
+        <div class="ExportDataAlert">Cannot export Data from this tab, switch to an alternative tab to export Data</div>
+        <div class="UnknownExportAlert">Unknown Export Request</div>
+        <div class="Location">Location</div>
+    </div>
+</div>
+<div class="offsidebar">
+    <div id="locationOptions-collapse" class="collapse navbar-collapse sidemenu-collapse">
+        <div class="toggleContainer">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+        <div class="offsidebarContent">
+            <div class="content-seriesside">
+
+            </div>
+        </div>
+    </div>
+    <button id="locationOptions-button" type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target="#locationOptions-collapse" aria-expanded="false">
+        <label>Location Options:</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+</div>
+
+                    </div>
+                    <div class="tab-pane" id="tab_dataset">
+                        
+<div class="row-offcanvas-left">
+    <div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+    <div class="row controls_row">
+        <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+        <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+        </button>
+        <div class="collapse navbar-collapse control-row-collapse">
+            <div class="navbar-form navbar-right navbar-toggle-right">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+            
+
+            
+<div class="navbar-form navbar-left locationsMenu autocompleteSearch">
+    <select class="locationid form-control selectpicker  " id="locationsSearch_2" title="Location..." data-header="Location" data-width="300" data-live-search="true" data-size="auto">
+    </select>
+</div>
+
+            
+
+<div class="navbar-form navbar-left datasetsMenu">
+    <select class="datasetid form-control selectpicker" id="datasetsSearch_1" title="Data Set..." data-header="Data Set" data-width="300" data-live-search="true" data-size="auto">
+        <option data-subtext="None"></option>
+    </select>
+</div>
+
+            
+    <div class="navbar-form navbar-left dateCombo">
+        <label>Date: </label>
+        <div class="btn-group datePopoverGroup noControls" role="group" 
+             data-alldata="True" 
+             data-seasonal="True"
+             data-allowseasonal="True"
+             data-custom="True" 
+             data-referenceperiod="False" 
+             data-calendar="True" 
+             data-referenceperiodselect="True"
+             data-periodic="True">
+            <button class="btn btn-default btn-sm prev" aria-label="Previous"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn btn-default btn-sm datePopover">
+                <span class="datePopoverSummary">-</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </button>
+            <button class="btn btn-default btn-sm next" aria-label="Next"><span class="fa fa-chevron-right"></span></button>
+        </div>
+    </div>
+
+
+            <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/DataSet" data-baseurl="/Data/DataSet" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Image</li><li><button class="export_data" name="png"><span class="fa fa-file-image-o fa-fw"></span>&nbsp; To PNG</button></li><li><button class="export_data" name="jpg"><span class="fa fa-file-image-o fa-fw"></span>&nbsp; To JPG</button></li><li class="exportactions divider"></li><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Grid</li><li class="exportactions"><button class="export_data" name="csv"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To CSV</button></li><li class="exportactions"><button class="export_data" name="excel"><span class="fa fa-file-excel-o fa-fw"></span>&nbsp; To Excel</button></li><li class="divider"></li><li><button class="reset_data"><span class="fa fa-eraser fa-fw"></span>&nbsp; Reset Sort, Clear Filters</button></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+
+        </div>
+        <input type="hidden" class="DataSetDefaultTab" value="" />
+    </div>
+    <div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+        <button type="button" class="btn btn-sm col-xs-12 collapsed visible-xs" aria-expanded="false"><label>Select Data</label></button>
+    </div>
+    <div class="selectJumbo">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>Search for a location, then select a data set using the filters above.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="errorJumbo" style="display:none;">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>An unexpected error has occurred: Please try reloading the Data Set.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content_row context_tabs" style="display: none;">
+
+    </div>
+
+    <div id="DataSetLocalisedText" class="hidden" aria-hidden="true">
+        <div class="ExportImageAlert">Cannot export Image from this tab, switch to the Chart tab to export Images</div>
+        <div class="ExportDataAlert">Cannot export Data from this tab, switch to an alternative tab to export Data</div>
+        <div class="UnknownExportAlert">Unknown Export Request</div>
+        <div class="SelectDataSetImageAlert">Select a Data Set first to Export Images</div>
+        <div class="SelectDataSetDataAlert">Select a Data Set first to Export Data</div>
+        <div class="ChartNotFoundAlert">Chart couldn't be found, export has failed</div>
+        <div class="ChartError">An unexpected error has occurred: Please try refreshing the Chart data.</div>
+        <div class="PercentileError">One or more Percentile Layers could not be displayed.</div>
+        <div class="StatisticRequired">A statistic is required</div>
+        <div class="Compress">Compress</div>
+        <div class="ShowAll">Show all</div>
+    </div>
+</div>
+<div class="offsidebar">
+    <div class="toggleContainer">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+    <div class="collapse navbar-collapse sidemenu-collapse datasetOptions-collapse">
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8JyZZJPWLbxKkN3lE_j9KJfwAwobezgHpxvnAVvFT05CaD7G5zqZyQFmK9Md2GfFHXTa1mVLaMBq-MLQ1YV1S_RfsIR3IchSLup-RCusM1snvyzKG2MUnsHNGMqzHW-B4jQDXpsF-rJW_kkCjnT5bYs" />
+        <div class="offsidebarContent">
+            <div class="content-seriesside chartSidebar">
+
+            </div>
+        </div>
+    </div>
+    <button id="datasetOptions-button" type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".datasetOptions-collapse" aria-expanded="false">
+        <label>Data Set Options:</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+</div>
+
+                    </div>
+                    <div class="tab-pane" id="tab_chart">
+                        
+    <div class="row-offcanvas-left">
+        <div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+        <div class="row controls_row">
+            <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+            <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+                <label class="contextSummary">Select Data</label>
+                <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+            </button>
+            <div class="collapse navbar-collapse control-row-collapse">
+                <div class="navbar-form navbar-right navbar-toggle-right">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+                
+
+<div class="navbar-form navbar-left">
+    <select class="form-control selectpicker chartid closeOnClick" id="chartSelect_1" title="Chart..." data-header="Chart" data-width="200" data-live-search="true" data-size="auto">
+        <option data-subtext="None" data-none="true"></option>
+    </select>
+</div>
+
+                
+<div class="navbar-form navbar-left locationsMenu autocompleteSearch">
+    <select class="locationid form-control selectpicker closeOnClick " id="locationsSearch_3" title="Location..." data-header="Location" data-width="300" data-live-search="true" data-size="auto">
+    </select>
+</div>
+
+                
+    <div class="navbar-form navbar-left dateCombo">
+        <label>Date: </label>
+        <div class="btn-group datePopoverGroup noControls" role="group" 
+             data-alldata="True" 
+             data-seasonal="True"
+             data-allowseasonal="True"
+             data-custom="True" 
+             data-referenceperiod="False" 
+             data-calendar="True" 
+             data-referenceperiodselect="True"
+             data-periodic="True">
+            <button class="btn btn-default btn-sm prev" aria-label="Previous"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn btn-default btn-sm datePopover">
+                <span class="datePopoverSummary">-</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </button>
+            <button class="btn btn-default btn-sm next" aria-label="Next"><span class="fa fa-chevron-right"></span></button>
+        </div>
+    </div>
+
+
+                <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/Chart" data-baseurl="/Data/Chart" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Image</li><li><button class="export_data" name="png"><span class="fa fa-file-image-o fa-fw"></span>&nbsp; To PNG</button></li><li><button class="export_data" name="jpg"><span class="fa fa-file-image-o fa-fw"></span>&nbsp; To JPG</button></li><li class="exportactions divider"></li><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export all Data Sets</li><li class="exportactions"><button class="export_data" name="csv"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To CSV</button></li><li class="exportactions"><button class="export_data" name="excel"><span class="fa fa-file-excel-o fa-fw"></span>&nbsp; To Excel</button></li><li class="divider"></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+            </div>
+        </div>
+        <div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+            <button type="button" class="btn btn-sm col-xs-12 collapsed visible-xs" aria-expanded="false"><label>Select Data</label></button>
+        </div>
+        <div class="selectJumbo">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="jumbotron">
+                        <span>Press the 'Create Chart' button to the right, to make a new Chart</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="errorJumbo" style="display:none;">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="jumbotron">
+                <span>An unexpected error has occurred: Please try reloading the Chart.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="locationJumbo" style="display:none;">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="jumbotron">
+                    <span>Select a Location above to display the Location Chart, or press the 'Create Chart' button to the right, to make a new Chart</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_row context_tabs" style="display:none;">
+
+        </div>
+        <div id="ChartLocalisedText" class="hidden" aria-hidden="true">
+            <div class="SelectAChart">Please select a Chart to export.</div>
+            <div class="Chart">Chart</div>
+        </div>
+    </div>
+<div class="offsidebar">
+    <div class="toggleContainer">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+    <div class="collapse navbar-collapse sidemenu-collapse chartoptions-collapse" id="chartoptions-collapse">
+        <div class="offsidebarContent">
+            <div class="content-seriesside sidebar-content createButton">
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8JyZZJPWLbxKkN3lE_j9KJfwAwobezgHpxvnAVvFT05CaD7G5zqZyQFmK9Md2GfFHXTa1mVLaMBq-MLQ1YV1S_RfsIR3IchSLup-RCusM1snvyzKG2MUnsHNGMqzHW-B4jQDXpsF-rJW_kkCjnT5bYs" />
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <button class="btn btn-xs ai-white pull-right collapsed" type="button" data-toggle="collapse" data-target="#chartListOptions" aria-expanded="false" aria-controls="chartListOptions" aria-label="Collapse Panel">
+                            <span class="fa fa-chevron-down fa-fw"></span>
+                        </button>Chart Options
+                    </div>
+                    <div class="panel-body collapse " id="chartListOptions">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <button class="btn btn-default btn-sm addChart closeOnClick"><span class="fa fa-plus fa-fw"></span> Create Chart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-seriesside chartSidebar">
+
+            </div>
+
+        </div>
+    </div>
+    <button id="chartoptions-button" type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target="#chartoptions-collapse" aria-expanded="false">
+        <label>Chart Options:</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+</div>
+
+                    </div>
+                    <div class="tab-pane" id="tab_export">
+                        
+<div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+<input type="hidden" id="exportdefault"/>
+<div class="row controls_row">
+    <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+    <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+        <label class="contextSummary">Select Data</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+    <div class="collapse navbar-collapse control-row-collapse closeOnClick">
+        <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/Export" data-baseurl="/Data/Export" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+    </div>
+</div>
+<div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+    <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" aria-expanded="false"><label>Select Data</label></button>
+</div>
+<div class="content_row" style="overflow-y: scroll;">
+
+</div>
+<div class="errorJumbo" style="display:none;">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="jumbotron">
+            <span>An unexpected error has occurred: Please try reloading the Export.</span>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tab-pane" id="tab_alerts">
+                        
+<div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+<div class="row controls_row">
+    <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+    <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+        <label class="contextSummary">Select Data</label>
+        <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+    </button>
+    <div class="collapse navbar-collapse control-row-collapse closeOnClick">
+        
+    <div class="navbar-form navbar-left dateCombo">
+        <label>Date: </label>
+        <div class="btn-group datePopoverGroup noControls" role="group" 
+             data-alldata="False" 
+             data-seasonal="False"
+             data-allowseasonal="True"
+             data-custom="True" 
+             data-referenceperiod="False" 
+             data-calendar="True" 
+             data-referenceperiodselect="True"
+             data-periodic="True">
+            <button class="btn btn-default btn-sm prev" aria-label="Previous"><span class="fa fa-chevron-left"></span></button>
+            <button type="button" class="btn btn-default btn-sm datePopover">
+                <span class="datePopoverSummary">-</span>
+                <span class="fa fa-calendar form-control-feedback text-muted"></span>
+            </button>
+            <button class="btn btn-default btn-sm next" aria-label="Next"><span class="fa fa-chevron-right"></span></button>
+        </div>
+    </div>
+
+
+        <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/Alert" data-baseurl="/Data/Alert" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Grid</li><li class="exportactions"><button class="export_data" name="csv"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To CSV</button></li><li class="exportactions"><button class="export_data" name="excel"><span class="fa fa-file-excel-o fa-fw"></span>&nbsp; To Excel</button></li><li class="divider"></li><li><button class="reset_data"><span class="fa fa-eraser fa-fw"></span>&nbsp; Reset Sort, Clear Filters</button></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+    </div>
+</div>
+<div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+    <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" aria-expanded="false"><label>Select Data</label></button>
+</div>
+<div class="content_row" data-defaultsort="CreatedTimeLocal" data-sortdirection="desc">
+
+</div>
+<div class="errorJumbo" style="display:none;">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="jumbotron">
+            <span>An unexpected error has occurred: Please try reloading the Alerts.</span>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                    <div class="tab-pane" id="tab_reports">
+                        
+<div class="row-offcanvas-left">
+    <div class="modal-backdrop fade underHeader subMenuDialog" style="display: none;"></div>
+    <div class="row controls_row">
+        <div class="modal-backdrop fade underHeader subSubMenuDialog" style="display: none;"></div>
+        <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".control-row-collapse" aria-expanded="false">
+            <label class="contextSummary">Select Data</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+        </button>
+        <div class="collapse navbar-collapse control-row-collapse">
+            <div class="navbar-form navbar-right navbar-toggle-right">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+
+
+    <div class="navbar-form navbar-left">
+        <div class="form-group">
+            <select class="form-control selectpicker inforequest" id="infoRequestSelect_1" title="Info Request..." data-header="Info Request" data-width="200px" data-live-search=true>
+                <option data-subtext="None"></option>
+            </select>
+        </div>
+    </div>
+    <div class="navbar-form navbar-left infoArgs">
+        <div class="form-group">
+            <input type="text" id="infoRequestArguments_1" class="form-control input-sm" placeholder="Info Request Arguments" />
+        </div>
+    </div>
+    <div class="navbar-form navbar-left">
+        <button class="btn btn-sm ai-white run_inforequest closeOnClick" title="Run Info Request" style=""><span class="fa fa-info-circle fa-fw"></span> Run Info Request</button>
+    </div>
+
+            <div class="navbar-form pull-right">    <div class="btn-group text-left">        <button class="btn btn-flat btn-sm dropdown-toggle" title="Options Menu" data-toggle="dropdown">            <span class="visible-xs" style="float: left; ">Options</span><span class="sr-only">Options Menu</span> <span class="fa fa-sliders fa-fw"></span> <span class="caret"></span>        </button>        <span class="permalink"><input type="hidden" value="/Data/Report" data-baseurl="/Data/Report" /></span>        <ul class="dropdown-menu dropdown-menu-right"><li class="exportactions dropdown-header"><span class="fa fa-download fa-fw"></span>&nbsp; Export Grid</li><li class="exportactions"><button class="export_data" name="txt"><span class="fa fa-file-text-o fa-fw"></span>&nbsp; To Text</button></li><li class="divider"></li><li><button class="refresh_data"><span class="fa fa-refresh fa-fw"></span>&nbsp; Refresh Data</button></li>        </ul>    </div></div>
+        </div>
+    </div>
+    <div class="row controls_row visible-xs hidden-menu" style="position: relative; z-index: 0;">
+        <button type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" aria-expanded="false"><label>Select Data</label></button>
+    </div>
+
+<div class="content_row selectJumbo">
+    <div class="col-sm-10 col-sm-offset-1">
+            <div class="jumbotron">
+                <span>Select a Report to be downloaded to your machine</span>
+            </div>
+    </div>
+</div>
+
+<div class="content_row errorJumbo" style="display:none;">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="jumbotron">
+            <span>An unexpected error has occurred: Please try reloading the Information Request.</span>
+        </div>
+    </div>
+</div>
+
+<div class="content_row infoJumbo" style="display:none;">
+    <div class="col-sm-10 col-sm-offset-1">
+        <div class="jumbotron">
+            <span>Type Info Request Arguments and press the "Run Info Request" button.</span>
+            <br />
+        </div>
+    </div>
+</div>
+
+<div class="content_row infoRequestDisplay" style="display:none;">
+
+</div>
+</div>
+
+    <div class="offsidebar">
+        <div class="collapse navbar-collapse sidemenu-collapse reportOptions-collapse">
+            <div class="toggleContainer">
+    <a href="#" class="btn btn-sm toggle-offside hidden-xs" data-toggle="offsidebar" title="Hide/Expand Right-Side Panel"><span class="sr-only">Hide/Expand Right-Side Panel</span><em class="fa"></em></a>
+</div>
+            <div class="modal-backdrop fade underHeader lowerMenuDialog" style="display: none;"></div>
+            <div class="offsidebarContent">
+                <div class="sidebar-content">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <button class="btn btn-xs ai-white pull-right " type="button" data-toggle="collapse" data-target="#reportsPanel" aria-expanded="true" aria-controls="reportsPanel" aria-label="Collapse Panel">
+                                <span class="fa fa-chevron-down fa-fw"></span>
+                            </button>
+                                <button class="btn btn-default btn-xs pull-right refresh_reportstree" style="margin-right: 5px;">
+                                    <span class="fa fa-fw fa-refresh"></span>
+                                </button>
+                                <span>Downloadable Reports</span>
+                        </div>
+                        <div class="panel-body collapse in" id="reportsPanel">
+<div class="tree" style="border: 0;padding:0;margin:0;">
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="reportOptions-button" type="button" class="btn btn-sm ai-white col-xs-12 collapsed visible-xs" data-toggle="collapse" data-target=".reportOptions-collapse" aria-expanded="false">
+                <label>Downloadable Reports:</label>
+            <span class="fa fa-caret-down fa-fw" style="float: right;"></span>
+        </button>
+    </div>
+
+<div id="ReportsLocalisedText" class="hidden" aria-hidden="true">
+    <div class="CollapseBranch">Collapse this branch</div>
+    <div class="ExpandBranch">Expand this branch</div>
+    <div class="ErrorLoading">There was an error loading the Reports List. Refresh the page to try again.</div>
+    <div class="EnterArguments">Please type some arguments to export the Info Request</div>
+    <div class="SelectInfoRequest">Please select an Info Request to export</div>
+    <div class="NoneAvailable">None available</div>
+    <div class="InfoRequest">Info Request</div>
+</div>
+
+                    </div>
+        </div>
+    </section>
+</section>
+<div id="filterDialog" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" data-keyboard="false" data-filters-dataset="0" role="dialog"></div>
+<div id="filterDialogPermalink" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" data-keyboard="false" role="dialog"><div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title"><span class="fa fa-fw fa-share-alt"></span>&nbsp; Filter Share Permalink</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    The following link can be used to share the Filter:
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <textarea class="form-control filterPermalinkAddress" rows="4" readonly="readonly"></textarea>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-default copyText" data-clipboard-target="#filterDialogPermalink .filterPermalinkAddress">Copy to Clipboard</button>
+                    <h6 class="copiedText" style="display:none;">Text Copied</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        </div>
+    </div>
+</div></div>
+<script type="text/javascript">
+    $(function () {
+        aqPortal.Control.Init(false, false, true, false, null, "Anonymous", "Anonymous", "", "Anonymous", 2, "Anonymous", function ()
+        {
+aqPortal.SetAutoComplete($(".locationsMenu"), aqPortal.BaseSiteURL() + "/Data/SearchLocations", 10, aqPortal.Control.GetFolderAutocompleteFilter);
+
+            aqPortal.SetAutoComplete($(".foldersMenu"), aqPortal.BaseSiteURL() + "/Data/SearchFolders", 10);
+        });
+
+        
+    });
+
+    window.initialFolderSubtab = "";
+    window.initialLocationSubtab = "";
+    window.initialDatasetSubtab = "";
+
+    window.showLocationFolder = "true";
+    window.showLocationType = "true";
+
+</script>
+
+        <div id="menuDialog" class="modal-backdrop fade underHeader" style="display: none;"></div>
+    </section>
+    <div id="widgetDialog" class="largeModal modal fade" tabindex="-1" aria-label="Widget" data-backdrop="static" data-keyboard="false" role="dialog"></div>
+    <div id="formDialog" class="largeModal modal fade" tabindex="-1" aria-label="Form" data-keyboard="false" role="dialog"></div>
+    <div id="datasetChartDialog" class="modal fade largeModal" tabindex="-1" aria-label="Chart" data-keyboard="false" data-changed="false" data-msg="Changes have been made to the current Chart. Are you sure you want to clear those changes?" data-delete="Are you sure you want to delete this Chart?" role="dialog"></div>
+    <div id="chartDialog" class="modal fade largeModal" tabindex="-1" aria-label="Chart" data-keyboard="false" data-changed="false" data-msg="Changes have been made to the current Chart. Are you sure you want to clear those changes?" data-delete="Are you sure you want to delete this Chart?" role="dialog"></div>
+    <div id="notificationDialog" class="modal fade" tabindex="-1" aria-label="Notification" data-backdrop="static" data-keyboard="false" role="dialog"></div>
+
+
+    <div id="LocalisedText" class="hidden" aria-hidden="true">
+    <div class="UnexpectedError">An unexpected error has occurred.</div>
+    <div class="LoadError">Error loading content, please refresh and try again. If the error is persistent, please contact your WebPortal Administrator.</div>
+    <div class="AutoCompleteResults">Displaying TOTAL of EXTRA</div>
+    <div class="AutoCompleteNoResults">No results found</div>
+    <div class="SearchLocation">Search for a Location</div>
+    <div class="SearchPerson">Search for a Person</div>
+    <div class="None">None</div>
+    <div class="Close">Close</div>
+    <div class="Error">Error</div>
+    <div class="OK">OK</div>
+    <div class="Cancel">Cancel</div>
+    <div class="Apply">Apply</div>
+    <div class="DataSets">Data Sets</div>
+    <div class="DataSet">Data Set</div>
+    <div class="Location">Location</div>
+    <div class="Custom">Custom Range</div>
+    <div class="True">True</div>
+    <div class="False">False</div>
+    <div class="NA">N/A</div>
+    <div class="AlertMessage">Message</div>
+    <div class="Data">Data</div>
+    <div class="SelectData">Select Data</div>
+    <div class="Percentile">Percentile</div>
+    <div class="Seasonal">Seasonal</div>
+    <div class="Latest">Latest Data</div>
+    <div class="Date">Date</div>
+    <div class="Undo">Undo</div>
+    <div class="And">and</div>
+    <div class="ChangesMade">Changes Made</div>
+    <div class="FieldRequired">This field is required.</div>
+    <div class="SuccessfullySavedExportTemplate">Successfully saved the Export Template.</div>
+    <div class="AtleastOneDataset">At least one Data Set must be added to the Export.</div>
+    <div class="HiddenDatasets">The COUNT selected Data Sets have been hidden. </div>
+    <div class="1HiddenDataset">The 1 selected Data Set has been hidden. </div>
+    <div class="ClickToDisplay">Click here to display them.</div>
+    <div class="CollapsePanel">Collapse Panel</div>
+    <div class="ToggleLegend">Toggle Legend</div>
+    <div class="Toggle">Toggle</div>
+    <div class="Global">Global</div>
+    <div class="ViewGroup">View Group</div>
+    <div class="User">User</div>
+    <div class="SelectValue">Select Value</div>
+
+    <div class="SelectNoResults">Nothing selected</div>
+    <div class="SelectItemsSelected">Items selected: {0}</div>
+    <div class="SelectAll">Select All</div>
+    <div class="DeselectAll">Deselect All</div>
+    <div class="AllData">All Data</div>
+
+    <div class="Filter">Filter</div>
+    <div class="Filters">Filters</div>
+    <div class="SavedFilter">Successfully saved the Filter.</div>
+    <div class="FilterLoadFail">An unexpected error has occurred: Unable to load the selected Filter.</div>
+    <div class="UnexpectedErrorFilters">An unexpected error has occurred: Unable to retrieve the Filters list.</div>
+    <div class="SaveFilterValidationError">Validation errors saving filter:<br /></div>
+    <div class="SaveFilterError">An unspecified error occurred trying to save the Filter.</div>
+    <div class="NoFilter">You must add at least one Filter before trying to save.</div>
+    <div class="LocationCount">1 Location</div>
+    <div class="LocationsCount">COUNT Locations</div>
+    <div class="DataSetCount">1 Data Set</div>
+    <div class="DataSetsCount">COUNT Data Sets</div>
+    <div class="ClearFilter">Clear 1 Filter</div>
+    <div class="ClearFilters">Clear COUNT Filters</div>
+    <div class="MapPOLYGON">Polygon</div>
+    <div class="MapCIRCLE">Circle</div>
+    <div class="MapRECTANGLE">Rectangle</div>
+    <div class="MapSelectionFailed">An error occured trying to filter the map by the spatial selection.</div>
+    <div class="NormalizeMapSelectionFailed">An error occured trying to filter the map by the spatial selection.<br><br>Note: It is not possible to filter by a spatial selection that crosses the International Date Line.</div>
+    <div class="CanBeShared">Can be shared with everyone</div>
+    <div class="CanBeVGShared">Can be shared with members of the 'VIEWGROUP' View Group</div>
+    <div class="CannotBeShared">Cannot be shared - only visible to you</div>
+    <div class="SelectAParameter">Select a Parameter to enable Data Set Attribute Filters</div>
+    <div class="AllValues">All values:</div>
+    <div class="AnyValue">Any value:</div>
+    <div class="AnyValueGlobal">Any value in any tag list:</div>
+    <div class="Remove">Remove</div>
+
+    <div class="ParameterChangeWithSeasonalChart">The selected Parameter has no reference periods, and will switch to a Periodic interval, clearing the current Chart. Are you sure you want to proceed?</div>
+    <div class="AlertResetData">Unable to reset the data, grid was not found.</div>
+    <div class="UnexpectedErrorCharts">An unexpected error has occurred: Unable to retrieve the Charts list.</div>
+    <div class="UnexpectedErrorFilterData">An unexpected error has occurred: Unable to retrieve the Filter Data dialog.</div>
+    <div class="Today">Today</div>
+    <div class="Week">Last 7 Days</div>
+    <div class="Month">Last 30 Days</div>
+    <div class="6Month">6 Months</div>
+    <div class="1Year">1 Year</div>
+
+    <div class="From">From</div>
+    <div class="To">to</div>
+    <div class="Days">Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday</div>
+    <div class="DaysShort">Su,Mo,Tu,We,Th,Fr,Sa</div>
+    <div class="Months">January,February,March,April,May,June,July,August,September,October,November,December</div>
+    <div class="MonthsShort">Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec</div>
+    <div class="CurrentDate">Current Date</div>
+    <div class="ClearDate">Clear Date</div>
+    <div class="CurrentMonth">Current Month</div>
+    <div class="CurrentYear">Current Year</div>
+    <div class="CurrentDecade">Current Decade</div>
+    <div class="CurrentCentury">Current Century</div>
+
+    <div class="PleaseConfirm">Please confirm</div>
+    <div class="NotifyNoMessage">Notify: No message specified</div>
+    <div class="ExportError">An unexpected error has occurred: Export failed. Please try again later.</div>
+    <div class="ExportSaveError">An unexpected error has occurred: Failed to Save the Export Template. Please try again later.</div>
+    <div class="ApiUrlTooLong">Export API URL would exceed maximum URL length.</div>
+    <div class="ExportFormInvalid">Selected export options are incomplete or contain errors.</div>
+    <div class="MaintenanceMessage">AQUARIUS WebPortal will undergo scheduled maintenance from STARTDATE to ENDDATE (UTCOFFSET)</div>
+
+    <div class="Loading">Loading</div>
+    <div class="NoChartData">There is no Data to display for the selected Date, Zoom Level or Approval Level</div>
+    <div class="ChartError">An unexpected error has occurred: Please try refreshing the Chart data.</div>
+    <div class="AxisNameUnique">The Axis Name must be unique.</div>
+    <div class="Less">Less</div>
+    <div class="More">More</div>
+    <div class="SuccessfullySavedChart">Successfully saved the Chart.</div>
+    <div class="NoneAvailable">None Available at Location</div>
+    <div class="NoneForParameter">None Available for this Parameter</div>
+    <div class="Grade">Grade</div>
+    <div class="Approval">Approval</div>
+    <div class="Approvals">Approvals</div>
+    <div class="Qualifier">Qualifier</div>
+    <div class="Qualifiers">Qualifiers</div>
+    <div class="ShowOnChart">To Chart</div>
+    <div class="TooManyDataSets">Too Many Data Sets Selected</div>
+    <div class="SendAllDataSets">Send all Data Sets</div>
+    <div class="TooManyDataSetsWarn">TOTAL Data Sets have been selected to display on a Chart. Are you sure you want to continue to the Chart? </div>
+    <div class="TooManyDataSetsExportWarn">TOTAL Data Sets have been selected to export. Are you sure you want to continue? </div>
+    <div class="TooManyDataSetsExportInlineWarn">TOTAL Data Sets have been selected to export. Exporting a large number of Data Sets may take some time.</div>
+    <div class="TooManyDataSetsExportInlineError">Too Many Data Sets Selected to Export. No more than TOTAL can be exported at once.</div>
+    <div class="Now">Now</div>
+    <div class="FieldVisitAdded">Field Visits added</div>
+    <div class="LocationNotes">Location Notes</div>
+    <div class="Notes">Notes</div>
+
+    <div class="NoResults">No Results</div>
+    <div class="EmptySchematicQuery">The Schematic query returned no results</div>
+    <div class="FailedSchematicQuery">An unexpected error has occurred: Unable to load the Schematic data</div>
+
+    <div class="MapNotSpecified">An unexpected error has occurred: Map settings not specified.</div>
+    <div class="MapParseError">An unexpected error has occurred: Map settings failed to parse.</div>
+    <div class="NoMapGroupsLayers">An unexpected error has occurred: No map/layer groups specified.</div>
+    <div class="NoMapGroups">An unexpected error has occurred: No map groups specified.</div>
+    <div class="NoSettingsMapGroups">An unexpected error has occurred: Map settings not specified and there are no map groups or layers.</div>
+    <div class="LayerTypeNotSupported">An unexpected error has occurred: Layer type: TYPE not supported.</div>
+    <div class="PopupDataError">Unable to load popup data for {LOCATION}.</div>
+    <div class="SelectBaseMap">Select a Base Map</div>
+    <div class="MapSelectionFilter">Filter by map selection</div>
+    <div class="Switch3D">Switch to 3D</div>
+    <div class="Switch2D">Switch to 2D</div>
+    <div class="ClusterCount">This aggregation represents {cluster_count} Locations.</div>
+    <div class="RelatedDataSet">Related Data Set</div>
+    <div class="LocationNotOnMap">The Location you have searched for is not currently visible on the map.<br />To show the Location on the map, try removing any filters or switching to Parameters 'None'.</div>
+    <div class="ShapeRadius">Radius:</div>
+    <div class="ShapeRadiusKilometers">km</div>
+    <div class="ShapeRadiusMiles">miles</div>
+
+    <div class="Unlimited">Unlimited</div>
+
+    <div class="EnterUsername">Enter the username of the TYPE Account</div>
+    <div class="AccountLinked">WebPortal account linked to TYPE Account:</div>
+    <div class="AreYouSureRemove">Are you sure you want to remove the Link to this TYPE Account?</div>
+
+    <div class="UnspecifiedError">An unexpected error has occurred: Unable to load the Status Message</div>
+    <div class="Secs">secs</div>
+
+    <div class="DefineAlertMessage">Define a 'Trigger Function' and 'Alert Trigger - Message Definition' to test the trigger.</div>
+    <div class="SelectGlobalSetting">Please select a Global Setting group first</div>
+    <div class="MicrosoftAzure">Microsoft Azure</div>
+
+    <div class="StopSyncing">Are you sure you want to stop synchronising this item?</div>
+
+    <div>Average</div>
+    <div>Minimum</div>
+    <div>Maximum</div>
+    <div>Value at End of Interval</div>
+    <div>Total</div>
+    <div>Average Rate</div>
+
+    <div>Flooding Level</div>
+    <div>Intensity</div>
+    <div class="FloodingPublishSuccessful">Successfully published the flood monitoring setup.</div>
+</div>
+
+    <div id="bdialog" class="modal fade" tabindex="-1" aria-label="Dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn ai-action-button">OK</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

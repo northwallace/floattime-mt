@@ -4,42 +4,12 @@
 
 const P = FloatPlanner;
 let RIVERS = [], STATES = [], CRAFT = [];
-const gaugeCache = new Map(), weatherCache = new Map();
+const gaugeCache = new Map(), weatherCache = new Map(), riverDetailCache = new Map();
 const SPEED_EXPONENT = 0.34; // hydraulic geometry: v ∝ Q^0.34
 const MIN_SPEED_MPH = 0.8;
 const MAX_SPEED_MPH = 9.0;
 const FLOAT_DAY_HOURS = 10; // sections longer than this at current speed = multi-day
 const FISH_MIN_PER_MILE = 25; // extra time if stopping to fish
-const MAPLIBRE_VERSION = "5.15.0";
-const MAPLIBRE_JS = `https://unpkg.com/maplibre-gl@${MAPLIBRE_VERSION}/dist/maplibre-gl.js`;
-const MAPLIBRE_CSS = `https://unpkg.com/maplibre-gl@${MAPLIBRE_VERSION}/dist/maplibre-gl.css`;
-// Browser-visible, referrer-restricted map key comes from runtime configuration.
-// Never place account credentials or private application secrets here.
-function satelliteMapStyle(apiKey) {
-  if (typeof apiKey !== "string" || !apiKey.trim()) throw new Error("Satellite maps are not configured.");
-  const token = encodeURIComponent(apiKey);
-  return {
-    version: 8,
-    sources: {
-      "world-imagery": {
-        type: "raster",
-        tiles: [`https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}?token=${token}`],
-        tileSize: 256, maxzoom: 23,
-        attribution: 'Powered by <a href="https://www.esri.com/" target="_blank" rel="noopener">Esri</a> &mdash; Esri, Vantor, GeoEye, Earthstar Geographics, CNES/Airbus DS, USDA, USGS, AeroGRID, IGN, and the GIS User Community',
-      },
-      "imagery-labels": {
-        type: "raster",
-        tiles: [`https://static-map-tiles-api.arcgis.com/arcgis/rest/services/static-basemap-tiles-service/v1/arcgis/imagery/labels/static/tile/{z}/{y}/{x}?token=${token}`],
-        tileSize: 512, maxzoom: 22,
-        attribution: 'Esri, TomTom, Garmin, FAO, NOAA, USGS, &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>, and the GIS User Community',
-      },
-    },
-    layers: [
-      {id: "world-imagery", type: "raster", source: "world-imagery"},
-      {id: "imagery-labels", type: "raster", source: "imagery-labels"},
-    ],
-  };
-}
 const $ = (id) => document.getElementById(id);
 const riverState = (river) => (river && river.state) || "MT";
 
@@ -59,7 +29,7 @@ const state = {
   landMapSection: null,
 };
 
-let mapLibraryPromise;
+
 
 // ---------------------------------------------------------------------
 // Sunset (NOAA simplified algorithm) — good to ~1 minute, plenty here.
@@ -87,23 +57,6 @@ function cached(map, key, load, ttl = 300000) {
   return entry.promise;
 }
 
-function loadMapLibrary() {
-  if (window.maplibregl) return Promise.resolve(window.maplibregl);
-  if (mapLibraryPromise) return mapLibraryPromise;
-  mapLibraryPromise = new Promise((resolve, reject) => {
-    if (!document.querySelector(`link[href="${MAPLIBRE_CSS}"]`)) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet"; link.href = MAPLIBRE_CSS;
-      document.head.appendChild(link);
-    }
-    const script = document.createElement("script");
-    script.src = MAPLIBRE_JS; script.async = true;
-    script.onload = () => resolve(window.maplibregl);
-    script.onerror = () => reject(new Error("The map library could not load."));
-    document.head.appendChild(script);
-  });
-  return mapLibraryPromise;
-}
 
 function closeLandMap() {
   state.mapGeneration = (state.mapGeneration || 0) + 1;
@@ -263,7 +216,7 @@ async function showLandMap(section) {
   locationStatus.textContent = navigator.geolocation
     ? "Tap the target button to show your approximate location. Float ETA does not save it; the map provider receives the area needed to draw the map."
     : "Location is unavailable in this browser.";
-  panel.scrollIntoView({behavior:"smooth", block:"nearest"});
+  panel.scrollIntoView({behavior:"smooth", block:"start"});
   try {
     const fieldTestId = new URL(location.href).searchParams.get("fieldtest") || "";
     const [maplibregl, mapConfig] = await Promise.all([loadMapLibrary(), json("/api/map-config" + (fieldTestId ? "?fieldtest=" + encodeURIComponent(fieldTestId) : ""))]);
@@ -298,19 +251,13 @@ async function showLandMap(section) {
     const bounds = new maplibregl.LngLatBounds();
     for (const point of points) bounds.extend([point.lon, point.lat]);
     if (route) for (const point of route.coordinates) bounds.extend(point);
-    const style = satelliteMapStyle(mapConfig.arcgisApiKey);
-    if (fieldTest) {
-      // The pilot needs imagery and its river path, without depending on the
-      // separately licensed optional labels service to initialize GPS timing.
-      delete style.sources["imagery-labels"];
-      style.layers = style.layers.filter(layer => layer.id !== "imagery-labels");
-    }
+    const style = satelliteMapStyle(mapConfig.arcgisApiKey, {labels: !fieldTest && mapConfig.imageryLabelsEnabled === true});
     const map = new maplibregl.Map({
       container: "landMap",
       style,
       bounds,
       // Leave room for expanded provider credits so they do not cover a landing.
-      fitBoundsOptions: {padding: {top:54, left:54, right:54, bottom:$("landMap").clientWidth < 640 ? 150 : 100}},
+      fitBoundsOptions: {padding: {top:90, left:76, right:76, bottom:$("landMap").clientWidth < 640 ? 150 : 100}},
       attributionControl: false,
     });
     state.landMap = map;
@@ -347,8 +294,22 @@ async function showLandMap(section) {
       const reportedTakeout = fieldTest && className === "take-out";
       const approximate = access.status === "access-verified" && !reportedTakeout;
       if (approximate) marker.className += " approximate-access";
-      marker.textContent = (className === "put-in" ? "P" : "T") + (reportedTakeout ? "*" : approximate ? "~" : "");
-      marker.setAttribute("aria-label", `${className === "put-in" ? "Put-in" : "Take-out"}: ${label}`);
+      const markerName = className === "put-in" ? "Put-in" : "Take-out";
+      const markerLabel = document.createElement("span");
+      markerLabel.className = "access-marker-label";
+      markerLabel.textContent = markerName;
+      marker.appendChild(markerLabel);
+      const pin = document.createElement("span"); pin.className = "access-marker-pin";
+      // Static SVG artwork; access names are inserted separately as text.
+      pin.innerHTML = `<svg viewBox="0 0 44 52" aria-hidden="true" focusable="false"><path class="access-pin-body" d="M22 50C18 43 3 35 3 22a19 19 0 1 1 38 0c0 13-15 21-19 28Z"/><g transform="translate(12 11)" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${className === "put-in"
+        ? '<path d="M10 2v11m-4-4 4 4 4-4M2 18c2-2 4 2 6 0s4 2 6 0 4 2 4 2"/>'
+        : '<path d="M4 20V2m0 1c3-2 5 2 8 0s4-1 5 0v9c-3-2-5 2-8 0s-4-1-5 0"/>'}</g></svg>`;
+      marker.appendChild(pin);
+      if (approximate || reportedTakeout) {
+        const precision = document.createElement("span"); precision.className = "access-marker-precision";
+        precision.textContent = reportedTakeout ? "Pilot" : "Area"; marker.appendChild(precision);
+      }
+      marker.setAttribute("aria-label", `${markerName}: ${label}${reportedTakeout ? " — user-confirmed pilot" : approximate ? " — approximate access area" : " — agency access point"}`);
       const popup = document.createElement("div");
       const title = document.createElement("strong"); title.textContent = label; popup.appendChild(title);
       const detail = document.createElement("p"); detail.textContent = `${access.accessType || "Access area"}${access.operator ? ` · ${access.operator}` : ""}`; popup.appendChild(detail);
@@ -377,65 +338,76 @@ async function showLandMap(section) {
         popup.appendChild(bankSource);
       }
       const phoneMap = map.getContainer().clientWidth < 640;
-      const accessPopup = new maplibregl.Popup({offset:18, maxWidth:"230px", ...(phoneMap ? {anchor:"bottom"} : {})}).setDOMContent(popup);
-      if (phoneMap) accessPopup.on("open", () => {
-        // Keep the whole source card inside a narrow map when a marker is tapped.
+      const accessPopup = new maplibregl.Popup({offset:{top:[0,8], "top-left":[0,8], "top-right":[0,8], bottom:[0,-76], "bottom-left":[0,-76], "bottom-right":[0,-76], left:[24,-30], right:[-24,-30]}, maxWidth:phoneMap ? `${Math.min(240, map.getContainer().clientWidth - 76)}px` : "260px", anchor:"bottom"}).setDOMContent(popup);
+      accessPopup.on("open", () => {
+        // Keep source cards above their pin and clear of controls/credits at every width.
         const container = map.getContainer();
         const creditsHeight = container.querySelector(".maplibregl-ctrl-attrib")?.getBoundingClientRect().height || 0;
-        const offsetY = Math.min(70, container.clientHeight / 2 - creditsHeight - 28);
+        const popupContent = accessPopup.getElement().querySelector(".maplibregl-popup-content");
+        if (popupContent) popupContent.style.maxHeight = `${Math.min(240, Math.max(120, container.clientHeight - creditsHeight - 110))}px`;
+        const offsetY = Math.min(110, container.clientHeight / 2 - creditsHeight - 16);
         map.panTo([point.lon, point.lat], {offset:[0,offsetY], duration:0});
       });
-      new maplibregl.Marker({element:marker}).setLngLat([point.lon, point.lat]).setPopup(accessPopup).addTo(map);
+      new maplibregl.Marker({element:marker, anchor:"bottom"}).setLngLat([point.lon, point.lat]).setPopup(accessPopup).addTo(map);
     }
+    let labelsUnavailable = false;
     await new Promise((resolve, reject) => {
-      map.once("load", resolve);
-      map.once("error", event => reject(event.error || new Error("The basemap could not load.")));
+      function onError(event) {
+        if (event.sourceId === "imagery-labels" || String(event.error?.message).includes("static-map-tiles-api.arcgis.com")) {
+          labelsUnavailable = true;
+          if (map.getLayer("imagery-labels")) map.removeLayer("imagery-labels");
+          if (map.getSource("imagery-labels")) map.removeSource("imagery-labels");
+          return;
+        }
+        map.off("error", onError);
+        reject(event.error || new Error("The satellite imagery could not load."));
+      }
+      map.on("error", onError);
+      map.once("load", () => { map.off("error", onError); resolve(); });
     });
     if (geolocateButton?.disabled) {
       locationStatus.textContent = "Location is unavailable in this browser. On a phone, open the HTTPS site in Safari or Chrome and allow location access.";
     }
     if (generation !== state.mapGeneration) return;
-    if (!isMontana) {
-      status.textContent = section.mapPrecision === "approximate"
-        ? "Markers with ~ show approximate facility locations, not confirmed landings. Open each marker for access directions and sources."
-        : `Access sources checked: put-in ${section.putInAccess.verifiedOn}; take-out ${section.takeOutAccess.verifiedOn}.`;
-      return;
-    }
     // Only reviewed river corridors identify land near the float. An endpoint
     // bounding box includes unrelated inland properties, especially on long trips.
-    const landUnavailable = !pilot?.land;
+    const landUnavailable = !isMontana || !pilot?.land;
     const parcels = {type:"FeatureCollection", features:pilot?.land?.features || []};
     $("landMapLandLegend").hidden = landUnavailable;
     $("landMapLandNote").hidden = landUnavailable;
     if (landUnavailable) $("landMapPanel").querySelector("h3").textContent = "River access map";
-    map.addSource("mt-trust-land", {type:"geojson", data:parcels});
-    const accessColors = ["match", ["get","mapAccess"], "public","#3f8d60", "special","#d7a93b", "no","#b95d4b", "#7a857d"];
-    map.addLayer({id:"mt-trust-land-fill", type:"fill", source:"mt-trust-land", paint:{"fill-color":accessColors,"fill-opacity":.3}});
-    map.addLayer({id:"mt-trust-land-line", type:"line", source:"mt-trust-land", paint:{"line-color":accessColors,"line-width":2}});
-    map.on("click", "mt-trust-land-fill", event => {
-      const feature = event.features?.[0];
-      if (!feature) return;
-      new maplibregl.Popup().setLngLat(event.lngLat).setDOMContent(parcelPopup(feature.properties)).addTo(map);
-    });
-    map.on("mouseenter", "mt-trust-land-fill", () => { map.getCanvas().style.cursor = "pointer"; });
-    map.on("mouseleave", "mt-trust-land-fill", () => { map.getCanvas().style.cursor = ""; });
+    if (!landUnavailable) {
+      map.addSource("mt-trust-land", {type:"geojson", data:parcels});
+      const accessColors = ["match", ["get","mapAccess"], "public","#3f8d60", "special","#d7a93b", "no","#b95d4b", "#7a857d"];
+      map.addLayer({id:"mt-trust-land-fill", type:"fill", source:"mt-trust-land", paint:{"fill-color":accessColors,"fill-opacity":.3}});
+      map.addLayer({id:"mt-trust-land-line", type:"line", source:"mt-trust-land", paint:{"line-color":accessColors,"line-width":2}});
+      map.on("click", "mt-trust-land-fill", event => {
+        const feature = event.features?.[0];
+        if (!feature) return;
+        new maplibregl.Popup().setLngLat(event.lngLat).setDOMContent(parcelPopup(feature.properties)).addTo(map);
+      });
+      map.on("mouseenter", "mt-trust-land-fill", () => { map.getCanvas().style.cursor = "pointer"; });
+      map.on("mouseleave", "mt-trust-land-fill", () => { map.getCanvas().style.cursor = ""; });
+    }
     if (pilot) {
       map.addSource("pilot-river", {type:"geojson", data:{type:"Feature", properties:{}, geometry:pilot.geometry}});
       map.addLayer({id:"pilot-river-line",type:"line",source:"pilot-river",paint:{"line-color":"#7de4ff","line-width":3,"line-dasharray":[3,2]}});
       if (pilot.land) $("landMapLandNote").textContent = pilot.landNote + " State ownership does not guarantee unrestricted access. Check current DNRC rules and signs.";
       const evidence = $("landMapRouteEvidence"); evidence.hidden = false; evidence.replaceChildren();
       const description = document.createElement("span");
-      description.textContent = `Approximate mapped river path: ${pilot.routeMiles.toFixed(1)} mi. Planning distance remains ${section.miles} mi. Dashed line is an agency centerline, not a recommended navigation channel. ` + (fieldTest ? "T* marks the user-confirmed pilot destination; P~ is the approximate put-in area. " : "");
+      description.textContent = `Approximate mapped river path: ${pilot.routeMiles.toFixed(1)} mi. Planning distance remains ${section.miles} mi. Dashed line is an agency centerline, not a recommended navigation channel. ` + (fieldTest ? "The Pilot take-out marks the user-confirmed destination; the Area put-in marks approximate access. " : "");
       evidence.appendChild(description);
       const source = document.createElement("a"); source.href = pilot.sourceUrl; source.target = "_blank"; source.rel = "noopener"; source.textContent = `River-line source · checked ${pilot.checkedOn}`; evidence.appendChild(source);
       // The saved GPS experiment is independently opt-in; ordinary route maps never enable it.
       if (fieldTest || (!mapConfig.routes && mapConfig.routePilots && pilot.status === "local-pilot")) state.progress = mountFloatProgress(map, maplibregl, pilot, route, river, section, fieldTest);
     }
     if (routeUnavailable) { $("landMapRouteEvidence").hidden = false; $("landMapRouteEvidence").textContent = "The reviewed river line is unavailable. Access markers remain available."; }
-    const verified = fieldTest ? "Pilot takeout: user-confirmed Greycliff ramp, checked against imagery. P~ remains an approximate access-area marker. " : (section.mapPrecision === "approximate"
-      ? "Markers with ~ show approximate facility locations, not confirmed landings. " : "") +
+    const verified = fieldTest ? "Pilot takeout: user-confirmed Greycliff ramp, checked against imagery. The Area put-in marks approximate access. " : (section.mapPrecision === "approximate"
+      ? "Markers labelled Area show approximate facility locations, not confirmed landings. " : "") +
       `Access sources checked: put-in ${section.putInAccess.verifiedOn}; take-out ${section.takeOutAccess.verifiedOn}. `;
-    status.textContent = verified + (landUnavailable
+    status.textContent = (labelsUnavailable ? "Map labels are unavailable; satellite imagery and access markers remain usable. " : "") + verified + (!isMontana
+      ? (pilot ? "Approximate river line shown dashed; channels and conditions may differ." : "Open each marker for access directions and sources.")
+      : landUnavailable
       ? "Land shading is not shown until a reviewed river corridor is available. Access markers remain visible."
       : `Approximate river line shown dashed. ${parcels.features.length} trust-land tract${parcels.features.length === 1 ? "" : "s"} clipped to within ${pilot.corridorMeters} metres of the river; DNRC data checked ${pilot.landCheckedOn}.`);
   } catch (error) {
@@ -446,9 +418,22 @@ async function showLandMap(section) {
     console.warn("Land map preview failed");
   }
 }
+function gaugeKey(river) {
+  if (["none", "other-river-reference"].includes(P.gaugeRelationship(river))) return null;
+  const source = river.flowSource;
+  return source ? `${source.provider === "colorado-dwr" ? "CDWR" : "USBR"}:${source.station}:${source.parameter}` : river.gauge || null;
+}
+function gaugeProvider(river) {
+  return river.flowSource?.provider === "colorado-dwr" ? "Colorado DWR" : river.flowSource ? "Reclamation" : "USGS";
+}
+function gaugeLabel(river) {
+  if (P.gaugeRelationship(river) === "none") return "No suitable flow gauge assigned";
+  return river.flowSource ? `${gaugeProvider(river)} ${river.flowSource.station} — ${river.flowSource.name}` : `USGS ${river.gauge} — ${river.gaugeName}`;
+}
 function gaugeFor(river) {
-  return cached(gaugeCache, river.gauge, () =>
-    json(`/api/gauge?site=${encodeURIComponent(river.gauge)}`),
+  if (!gaugeKey(river)) return Promise.resolve(null);
+  return cached(gaugeCache, gaugeKey(river), () =>
+    json(`/api/gauge?site=${encodeURIComponent(gaugeKey(river))}`),
   );
 }
 function weatherFor(river) {
@@ -468,6 +453,7 @@ function riverSpeedMph(river, flowCfs) {
 }
 
 function conditionFor(river, flowCfs) {
+  if (P.gaugeRelationship(river) !== "representative") return {cls:"cond-low", label:"Reference reading", note:"This gauge does not measure conditions at every listed section. It is not used for trip estimates.", craft:"Check the managing agency and local conditions."};
   if (!Number.isFinite(river.refFlowCfs) || river.refFlowCfs <= 0) return {cls:"cond-mellow",label:"Live flow",note:"A reference-flow comparison is not established for this river.",craft:"Check agency guidance, access restrictions, and local conditions."};
   const ratio = flowCfs / river.refFlowCfs;
   const level = ratio < .4 ? ["cond-low", "Well below reference"] : ratio < .8 ? ["cond-mellow", "Below reference"] : ratio < 1.5 ? ["cond-prime", "Near reference"] : ratio < 2.5 ? ["cond-high", "Above reference"] : ["cond-danger", "Well above reference"];
@@ -524,6 +510,7 @@ function waterTempLabel(tempC) {
 
 function drawSparkline(svg, series) {
   svg.innerHTML = "";
+  svg.setAttribute("data-empty", String(series.length < 2));
   if (series.length < 2) return;
   const W = 300, H = 60, pad = 4;
   const t0 = series[0].t, t1 = series[series.length - 1].t;
@@ -574,7 +561,8 @@ function reportMatches(r, river) { return r.riverId ? r.riverId === river.id : r
 function distanceEvidenceHtml(section) {
   const e = section.distanceEvidence;
   if (!e) return "";
-  return `<details class="distance-source"><summary>How this distance was checked</summary><p>${esc(e.note)}</p><a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.sourceName)}</a><p>River mile ${esc(e.putIn.riverMile)} to ${esc(e.takeOut.riverMile)} · checked ${esc(e.checkedOn)}</p></details>`;
+  const distance = e.method === "published-trip-length" ? `Published trip length: ${esc(e.miles)} mi` : `River mile ${esc(e.putIn.riverMile)} to ${esc(e.takeOut.riverMile)}`;
+  return `<details class="distance-source"><summary>How this distance was checked</summary><p>${esc(e.note)}</p><a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.sourceName)}</a><p>${distance} · checked ${esc(e.checkedOn)}</p></details>`;
 }
 function renderSections(river, gauge, sunset) {
   state.progress?.refresh();
@@ -593,10 +581,11 @@ function renderSections(river, gauge, sunset) {
       timing = `<div class="section-notice"><strong>Distance and endpoints under review</strong><p>${esc(sec.distanceReview)}</p></div>`;
     } else if (restricted) {
       timing = '<p class="fc-launch tight">Class III+ whitewater: no tube or recreational paddleboard estimate. Check local guidance and choose an appropriate craft.</p>';
-    } else if (river.timing?.mode === "unavailable") {
-      timing = '<p class="fc-launch tight">A live float-time estimate is not available for this river yet.</p>';
+    } else if (!P.supportsLiveTiming(river)) {
+      const reason = P.gaugeRelationship(river) === "none" ? "No suitable flow gauge is assigned." : P.gaugeRelationship(river) !== "representative" ? "The assigned gauge is for reference only." : "A reviewed flow-to-speed model is not available yet.";
+      timing = `<p class="fc-launch tight"><span class="estimate-unavailable">Live estimate unavailable</span> ${reason}</p>`;
     } else if (!estimate) {
-      timing = '<p class="fc-launch tight">No recent, positive flow reading is available. A current estimate cannot be calculated.</p>';
+      timing = '<p class="fc-launch tight"><span class="estimate-unavailable">Live estimate unavailable</span> No recent, positive flow reading is available.</p>';
     } else {
       duration = P.duration(estimate.minutes);
       detail = `~${estimate.speed.toFixed(1)} mph · rounded to 5 minutes${state.fishing ? ` · includes ${P.duration(stops)} for fishing` : ""}`;
@@ -621,13 +610,14 @@ function renderSections(river, gauge, sunset) {
     const card = document.createElement("article"); card.className = "float-card"; card.id = `section-${sec.id}`;
     const bank = riverBankLabel(sec.takeOutAccess);
     const mapButton = sec.mapReleased && sec.putInCoords && sec.takeOutCoords ? `<div class="map-card-actions"><button class="map-preview-button" type="button" data-map-section="${esc(sec.id)}"><span aria-hidden="true">⌖</span> ${sec.mapPrecision === "approximate" ? "View access map · approximate locations" : (sec.distanceReview ? "Inspect access map · under review" : "View verified access map")} <small>Sources</small></button>${bank ? `<span class="takeout-bank">Take-out: ${bank.toLowerCase()} <small>facing downstream</small></span>` : ""}</div>` : "";
-    const mapPending = sec.mapPilot && !sec.mapReleased ? '<p class="map-pending-note">Access maps for this state are being reviewed for release.</p>' : sec.mapPendingReason ? `<div class="map-pending-note"><strong>Map unavailable:</strong> ${esc(sec.mapPendingReason)}</div>` : "";
-    const guides = (sec.guideTimes || []).map(g => `<div class="guide-time"><strong>Published guide: ${esc(g.min === g.max ? g.min : `${g.min}–${g.max}`)} ${esc(g.unit)}</strong><p>${esc(g.conditions)}</p><a href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">${esc(g.sourceName)}</a></div>`).join("");
+    const mapPending = sec.mapPilot && !sec.mapReleased ? '<p class="map-pending-note">This section’s access map is still under review.</p>' : sec.mapPendingReason ? `<div class="map-pending-note"><strong>Map unavailable:</strong> ${esc(sec.mapPendingReason)}</div>` : "";
+    const guides = (sec.accessReview || sec.distanceReview ? [] : sec.guideTimes || []).map(g => `<div class="guide-time"><strong>Published guide: ${esc(g.min === g.max ? g.min : `${g.min}–${g.max}`)} ${esc(g.unit)}</strong><p>${esc(g.conditions)}</p><a href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">${esc(g.sourceName)}</a></div>`).join("");
     const notices = (sec.notices || []).map(n => `<div class="section-notice"><strong>${esc(n.title)}</strong><p>${esc(n.text)}</p><a href="${esc(n.sourceUrl)}" target="_blank" rel="noopener">${esc(n.sourceName)}</a><small>Source checked ${esc(n.checkedOn)}</small></div>`).join("");
     const guideNote = guides ? '<p class="fc-notes">Guide times are published planning guidance. They are not adjusted for today’s flow, your craft, fishing stops, or put-in time.</p>' : "";
     const correctionUrl = '/feedback.html?' + new URLSearchParams({type:'correction',riverId:river.id,sectionId:sec.id});
-    const correction = `<a class="section-correction" href="${esc(correctionUrl)}">Suggest a correction <span class="sr-only">for ${esc(sec.putIn)} to ${esc(sec.takeOut)}</span></a>`;
-    card.innerHTML = `<div class="fc-route">${esc(sec.putIn)}<span class="arrow">→</span>${esc(sec.takeOut)}</div><div class="fc-meta"><span>${sec.distanceEvidence ? "≈ " : ""}${sec.miles} mi${sec.distanceReview || sec.accessReview ? " · unverified" : ""}</span><span class="diff">${sec.accessReview ? "Route under review" : esc(sec.difficulty)}</span></div><div class="fc-time"${(sec.accessReview || sec.distanceReview || river.timing?.mode === "unavailable" || restricted) ? ' hidden' : ''}><span class="fc-time-label">${estimate?.multiDay ? "Total estimated time on water" : state.fishing ? "Estimated time (fishing)" : "Estimated float time"}</span>${duration}</div><div class="fc-speed">${detail}</div>${notices}${timing}${guides}${guideNote}${hazards}<div class="fc-notes">${esc(sec.notes)}</div>${distanceEvidenceHtml(sec)}${mapPending}${mapButton}${correction}`;
+    const accessUrl = '/feedback.html?' + new URLSearchParams({type:'access-suggestion',riverId:river.id,sectionId:sec.id});
+    const correction = `<div class="section-community-actions"><a class="section-correction" href="${esc(accessUrl)}">${sec.mapReleased ? "Suggest another access" : "Help locate this access"}</a> <a class="section-correction" href="${esc(correctionUrl)}">Suggest a correction <span class="sr-only">for ${esc(sec.putIn)} to ${esc(sec.takeOut)}</span></a></div>`;
+    card.innerHTML = `<div class="fc-route">${esc(sec.putIn)}<span class="arrow">→</span>${esc(sec.takeOut)}</div><div class="fc-meta"><span>${sec.distanceReview ? "Distance under review" : `${sec.distanceEvidence ? "≈ " : ""}${sec.miles} mi${sec.accessReview ? " · unverified" : ""}`}</span><span class="diff">${sec.accessReview ? "Route under review" : esc(sec.difficulty)}</span></div><div class="fc-time"${(sec.accessReview || sec.distanceReview || !P.supportsLiveTiming(river) || restricted) ? ' hidden' : ''}><span class="fc-time-label">${estimate?.multiDay ? "Total estimated time on water" : state.fishing ? "Estimated time (fishing)" : "Estimated float time"}</span>${duration}</div><div class="fc-speed">${detail}</div>${notices}${timing}${guides}${guideNote}${hazards}<div class="fc-notes">${esc(sec.notes)}</div>${distanceEvidenceHtml(sec)}${mapPending}${mapButton}${correction}`;
     container.appendChild(card);
   }
 }
@@ -646,13 +636,19 @@ async function renderRiver() {
     permitNotice.hidden = true;
     permitNotice.replaceChildren();
   }
-  $("loadError").hidden = true;
+  $("gaugeStatus").hidden = true;
   $("riverBlurb").textContent = river.blurb;
   const st = STATES.find(s => s.id === river.state);
   $("agencyLink").textContent = st.agency; $("agencyLink").href = st.agencyUrl;
-  $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName} · checking reading…`;
+  const relation = P.gaugeRelationship(river), canRead = !!gaugeKey(river);
+  $("flowHeading").textContent = relation === "same-river-reference" ? "Reference gauge flow" : relation === "other-river-reference" ? "Nearby gauge · other river" : "Current flow";
+  $("flowProvider").textContent = relation === "none" ? "" : gaugeProvider(river);
+  $("flowUnit").hidden = !canRead;
+  $("gaugeName").textContent = `${gaugeLabel(river)}${canRead ? " · checking reading…" : ""}`;
+  $("gaugeContext").hidden = !river.gaugeContext;
+  $("gaugeContext").innerHTML = gaugeContextHtml(river);
   for (const id of ["flowValue","flowTrend","waterTemp","airTemp","windSpeed","rainToday","rainTomorrow","uvIndex"]) $(id).textContent = "—";
-  $("conditionBadge").textContent = "Checking flow";
+  $("conditionBadge").textContent = canRead ? "Checking flow" : "Flow unavailable";
   $("conditionBadge").className = "condition-badge";
   $("conditionNote").textContent = ""; $("craftHint").textContent = "";
   $("packWear").textContent = "Checking water temperature…"; $("packHighLow").textContent = "";
@@ -670,19 +666,25 @@ async function renderRiver() {
   }).catch(() => {if (request===state.request) $("packHighLow").textContent="Weather unavailable. Check the local forecast.";});
   let gauge = null;
   try { gauge = await gaugeFor(river); }
-  catch { /* Keep route details and daylight visible when USGS is unavailable. */ }
+  catch { /* Keep route details and daylight visible when the flow service is unavailable. */ }
   if (request !== state.request) return;
   state.gauge = gauge;
   $("flowValue").textContent = gauge?.flow == null ? "—" : gauge.flow.toLocaleString();
-  $("gaugeName").textContent = `USGS ${river.gauge} — ${river.gaugeName} · ${gaugeAge(gauge?.at)}${gauge?.stale ? " · cached reading; USGS refresh unavailable" : ""}`;
+  $("gaugeName").textContent = `${gaugeLabel(river)}${Number.isFinite(gauge?.at) ? ` · ${gaugeAge(gauge.at)}` : ""}${gauge?.provisional ? " · provisional" : ""}${gauge?.stale ? " · cached reading; refresh unavailable" : ""}`;
   if (gauge) { const trend=trendFor(gauge.series); $("flowTrend").textContent=trend.text; $("flowTrend").className=`dash-sub ${trend.cls}`; drawSparkline($("sparkline"),gauge.series); }
-  const current = P.fresh(gauge), cond = current ? conditionFor(river,gauge.flow) : {label:gauge?.flow > 0 ? "Stale reading" : "Reading unavailable",cls:"cond-low",note:"A recent positive flow is needed for estimates.",craft:""};
+  const current = P.fresh(gauge), zero = gauge?.flow === 0 && Number.isFinite(gauge.at) && Date.now()-gauge.at >= -300000 && Date.now()-gauge.at <= 7200000;
+  const cond = current ? conditionFor(river,gauge.flow) : {label:zero ? "Zero flow reported" : Number.isFinite(gauge?.flow) ? "Stale reading" : "Flow unavailable",cls:"cond-low",note:relation === "other-river-reference" ? "This station measures another river. Its readings are not used for this river’s flow or estimates." : relation === "none" ? "Reviewed maps and published guide times remain available." : "A recent positive flow is needed for live estimates.",craft:""};
   $("conditionBadge").textContent=cond.label; $("conditionBadge").className=`condition-badge ${cond.cls}`;
   $("conditionNote").textContent=cond.note; $("craftHint").textContent=cond.craft;
-  const tempFresh = gauge?.temp != null && Number.isFinite(gauge.tempAt) && Date.now()-gauge.tempAt >= -300000 && Date.now()-gauge.tempAt <=7200000;
+  const tempFresh = relation === "representative" && gauge?.temp != null && Number.isFinite(gauge.tempAt) && Date.now()-gauge.tempAt >= -300000 && Date.now()-gauge.tempAt <=7200000;
   $("waterTemp").textContent=tempFresh ? waterTempLabel(gauge.temp) : "n/a";
   $("packWear").textContent=dressFor(tempFresh ? gauge.temp : null);
-  if (!current) { $("loadError").hidden=false; $("loadError").innerHTML='Current estimates are unavailable. <button type="button" id="retryGauge" class="btn-primary">Retry gauge</button>'; $("retryGauge").onclick=()=>{gaugeCache.delete(river.gauge);renderRiver();}; }
+  if (!current || gauge?.stale) {
+    $("gaugeStatus").hidden=false;
+    const message = !canRead ? (relation === "none" ? "No suitable gauge" : "Reference link only") : zero ? "Zero flow reported · no live estimate" : gauge?.stale ? "Cached reading · refresh unavailable" : Number.isFinite(gauge?.flow) ? "Reading out of date" : "Current flow unavailable";
+    $("gaugeStatus").innerHTML = `${message}${canRead ? ' · checks automatically <button type="button" id="retryGauge" class="gauge-retry">Check again</button>' : ''}`;
+    if (canRead) $("retryGauge").onclick=()=>{gaugeCache.delete(gaugeKey(river));renderRiver();};
+  }
   renderSections(river,gauge,renderDaylight(river));
 }
 
@@ -694,6 +696,11 @@ function esc(s) {
   const d = document.createElement("div");
   d.textContent = s == null ? "" : String(s);
   return d.innerHTML;
+}
+
+function gaugeContextHtml(river) {
+  const context = river.gaugeContext;
+  return context ? `${esc(context.note)} <a href="${esc(context.sourceUrl)}" target="_blank" rel="noopener">${esc(context.sourceName)}</a> · Checked ${esc(context.checkedOn)}.` : "";
 }
 
 const TYPE_LABELS = {
@@ -819,7 +826,7 @@ async function submitReport(ev) {
 async function init() {
   try {state.votedIds=new Set(JSON.parse(localStorage.getItem("ft_voted") || "[]"));} catch {}
   try {
-    const catalog=await json("/catalog.json");
+    const catalog=await json("/catalog-index.json");
     RIVERS=catalog.rivers; STATES=catalog.states; CRAFT=catalog.craft;
     if(!RIVERS?.length || !STATES?.length || !CRAFT?.length)throw new Error("Invalid catalog");
   } catch {
@@ -874,17 +881,36 @@ async function init() {
     if (!state.landMapSection) { url.searchParams.delete("section"); url.searchParams.delete("map"); }
     history.replaceState(null, "", url.pathname + url.search + url.hash);
   }
-  function chooseRiver() {
+  let chooseGeneration = 0;
+  async function chooseRiver() {
+    const generation = ++chooseGeneration;
     closeLandMap();
     state.request++;
-    state.river = RIVERS.find(r => r.id === riverSel.value) || null;
+    state.river = null;
+    state.gauge = null;
+    const summary = RIVERS.find(r => r.id === riverSel.value);
+    if (summary) {
+      $("riverDash").hidden = true; $("locationPrompt").hidden = false;
+      $("locationPromptText").textContent = "Loading river details…";
+      craftSel.disabled = $("putInTime").disabled = $("fishingToggle").disabled = true;
+      try {
+        const river = await cached(riverDetailCache, summary.file, () => json('/' + summary.file));
+        if (generation !== chooseGeneration) return;
+        if (river.id !== summary.id || river.state !== summary.state) throw Error('River identity mismatch');
+        state.river = river;
+      } catch {
+        if (generation !== chooseGeneration) return;
+        $("locationPromptText").textContent = "River details could not load. Choose the river again to retry.";
+        return;
+      }
+    }
     const chosen = !!state.river;
-    $("riverDash").hidden = !chosen; $("loadError").hidden = true;
+    $("riverDash").hidden = !chosen;
     $("locationPrompt").hidden = chosen;
     $("locationPromptText").textContent = stateSel.value ? "Now choose your river to see its live gauges and float sections." : "Choose a state and river to see live flow, weather, and float times.";
     $("statDaylight").parentElement.hidden = !chosen;
     craftSel.disabled = !chosen; $("putInTime").disabled = !chosen; $("fishingToggle").disabled = !chosen;
-    const liveTiming = chosen && state.river.timing?.mode !== "unavailable";
+    const liveTiming = chosen && P.supportsLiveTiming(state.river);
     $("putInTime").disabled = !liveTiming;
     $("fishingToggle").disabled = !liveTiming;
     $("putInTime").title = $("fishingToggle").title = chosen && !liveTiming ? "Published guide times are not adjusted for launch time or fishing stops." : "";
@@ -903,9 +929,7 @@ async function init() {
   state.fishing=params.get("fishing")==="1"; $("fishingToggle").checked=state.fishing;
   const start = RIVERS.find(r => r.id === params.get("river"));
   const code = start ? riverState(start) : STATES.find(st => st.id === (params.get("state") || "").toUpperCase())?.id || "";
-  stateSel.value = code; fillRivers(code, start?.id); chooseRiver();
-  const linkedSection = start?.sections.find(sec => sec.id === params.get("section") && sec.mapReleased);
-  if (params.get("map") === "1" && linkedSection) showLandMap(linkedSection);
+  stateSel.value = code; fillRivers(code, start?.id);
   stateSel.addEventListener("change", () => { fillRivers(stateSel.value); chooseRiver(); });
   riverSel.addEventListener("change", chooseRiver);
   craftSel.addEventListener("change", () => { state.craft=CRAFT.find(c=>c.id===craftSel.value); syncUrl(); if(state.river)renderRiver(); });
@@ -921,6 +945,14 @@ async function init() {
     if (section) showLandMap(section);
   });
   $("landMapClose").addEventListener("click", closeLandMap);
+  // Wire changes before the initial detail request yields. Otherwise a fast
+  // state change can leave the selected state and river list out of sync.
+  stateSel.disabled = false;
+  const initialGeneration = chooseGeneration + 1;
+  await chooseRiver();
+  const linkedSection = chooseGeneration === initialGeneration && state.river?.id === start?.id
+    ? state.river?.sections.find(sec => sec.id === params.get("section") && sec.mapReleased) : null;
+  if (params.get("map") === "1" && linkedSection) showLandMap(linkedSection);
   loadReports();
   setInterval(()=>{if(!document.hidden && state.river) {renderDaylight(state.river);renderSections(state.river,state.gauge,sunsetToday(state.river.lat,state.river.lon));}},60000);
   setInterval(()=>{if(!document.hidden && state.river){renderRiver();loadReports();}},300000);

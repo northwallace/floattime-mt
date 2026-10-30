@@ -1,0 +1,1094 @@
+{
+  "checkedAt": "2026-10-30T20:18:07.102100+00:00",
+  "localOnly": true,
+  "catalogRivers": 170,
+  "states": {
+    "MT": {
+      "rivers": 24,
+      "sections": 56,
+      "accessMaps": 42,
+      "inspectionOnlyMaps": 3,
+      "heldMaps": 14,
+      "sectionsWithPublishedGuideTimes": 0
+    },
+    "ID": {
+      "rivers": 15,
+      "sections": 26,
+      "accessMaps": 1,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 25,
+      "sectionsWithPublishedGuideTimes": 1
+    },
+    "OR": {
+      "rivers": 9,
+      "sections": 15,
+      "accessMaps": 13,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 2,
+      "sectionsWithPublishedGuideTimes": 1
+    },
+    "WA": {
+      "rivers": 22,
+      "sections": 35,
+      "accessMaps": 12,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 23,
+      "sectionsWithPublishedGuideTimes": 0
+    },
+    "UT": {
+      "rivers": 10,
+      "sections": 16,
+      "accessMaps": 13,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 3,
+      "sectionsWithPublishedGuideTimes": 5
+    },
+    "AZ": {
+      "rivers": 10,
+      "sections": 19,
+      "accessMaps": 6,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 13,
+      "sectionsWithPublishedGuideTimes": 5
+    },
+    "CO": {
+      "rivers": 10,
+      "sections": 25,
+      "accessMaps": 17,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 8,
+      "sectionsWithPublishedGuideTimes": 12
+    },
+    "WY": {
+      "rivers": 24,
+      "sections": 149,
+      "accessMaps": 124,
+      "inspectionOnlyMaps": 1,
+      "heldMaps": 25,
+      "sectionsWithPublishedGuideTimes": 0
+    },
+    "CA": {
+      "rivers": 1,
+      "sections": 1,
+      "accessMaps": 1,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 0,
+      "sectionsWithPublishedGuideTimes": 1
+    },
+    "MO": {
+      "rivers": 23,
+      "sections": 141,
+      "accessMaps": 111,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 30,
+      "sectionsWithPublishedGuideTimes": 16
+    },
+    "AR": {
+      "rivers": 22,
+      "sections": 115,
+      "accessMaps": 98,
+      "inspectionOnlyMaps": 0,
+      "heldMaps": 17,
+      "sectionsWithPublishedGuideTimes": 16
+    }
+  },
+  "gaugeRelationships": {
+    "representative": 164,
+    "same-river-reference": 6
+  },
+  "riversWithTimingModel": 51,
+  "note": "Map availability, current discharge and timing-model support are separate. This check makes no network requests and does not certify current access conditions.",
+  "inspectionOnlyMaps": [
+    {
+      "river": "bitterroot",
+      "section": "stevi-florence",
+      "state": "MT",
+      "reason": "The existing 9-mile figure conflicts with the FWP centerline (about 10 miles between these facility locations). The map is approximate; float-time estimates await a reviewed landing-to-landing distance."
+    },
+    {
+      "river": "clark-fork",
+      "section": "sharon-caras",
+      "state": "MT",
+      "reason": "Caras Terrace access is documented, but the legacy 6-mile distance has not been reconciled with the completed walk-in exit. Distance and float-time estimates remain withheld pending a reviewed river measurement."
+    },
+    {
+      "river": "yellowstone-upper",
+      "section": "corwin-yankee-jim",
+      "state": "MT",
+      "reason": "The launch has been explicitly changed to the separate Cinnabar facility. The old 7-mile listing is shorter than the direct distance between these access areas, so it is withheld. A reviewed Cinnabar\u2013Carbella river measurement is required before restoring distance or time estimates."
+    },
+    {
+      "river": "wind-river-dubois",
+      "section": "dubois-city-park-to-painted-hills",
+      "state": "WY",
+      "reason": "The town\u2019s official park location corrects an upstream agency marker error. The old 15.9-mile route started at that incorrect point; distance and timing are withheld until the corrected reach is measured."
+    }
+  ],
+  "heldMaps": [
+    {
+      "river": "beaverhead",
+      "section": "dam-high-bridge",
+      "state": "MT",
+      "reason": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch."
+    },
+    {
+      "river": "beaverhead",
+      "section": "high-bridge-barretts",
+      "state": "MT",
+      "reason": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam."
+    },
+    {
+      "river": "bitterroot",
+      "section": "florence-buckhouse",
+      "state": "MT",
+      "reason": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch."
+    },
+    {
+      "river": "clark-fork",
+      "section": "caras-kelly-island",
+      "state": "MT",
+      "reason": "Do not use this listing to plan a casual float. Missoula identifies Silver Park as the last public exit before the downstream Grass Valley diversion dam, with Kelly Island below the dam. A suitable route and access plan have not been established."
+    },
+    {
+      "river": "clarks-fork-yst",
+      "section": "bridger-edgar",
+      "state": "MT",
+      "reason": "An exact legal take-out at Edgar has not been established for this listing. A town or bridge name is not enough to plan an exit."
+    },
+    {
+      "river": "gallatin-canyon",
+      "section": "greek-creek-storm-castle",
+      "state": "MT",
+      "reason": "Greek Creek Campground now has a restored rock-terrace river access (completed May 2025), but the project documentation does not identify a designated raft launch. The older survey also distinguishes the campground from an upstream pull-out and Upper from Lower Storm Castle. Confirm the intended launch and take-out before mapping or using the old mileage."
+    },
+    {
+      "river": "gallatin-lower",
+      "section": "gateway-shedds",
+      "state": "MT",
+      "reason": "Shedd's Bridge: The official FWP access guide marks this site closed for public safety due to an unstable river bank, and it is absent from the current managed-access inventory. Do not use it as a take-out without current agency confirmation."
+    },
+    {
+      "river": "jefferson-upper",
+      "section": "silver-star-parsons",
+      "state": "MT",
+      "reason": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check."
+    },
+    {
+      "river": "jefferson-upper",
+      "section": "parsons-parrott",
+      "state": "MT",
+      "reason": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing."
+    },
+    {
+      "river": "rock-creek",
+      "section": "dalles",
+      "state": "MT",
+      "reason": "The launch label combines Bitterroot Flat and Dalles, which are different locations. This section needs a single confirmed put-in and landing before its mileage and timing can be offered."
+    },
+    {
+      "river": "rock-creek",
+      "section": "harrys-votm",
+      "state": "MT",
+      "reason": "The former Valley of the Moon pin was across the road from river access. The actual usable take-out remains unconfirmed; this listing is not ready for trip planning."
+    },
+    {
+      "river": "rock-creek",
+      "section": "votm-clinton",
+      "state": "MT",
+      "reason": "The Valley of the Moon launch and a legal boat take-out near Clinton / the Clark Fork confluence remain unconfirmed. Do not treat the confluence as a guaranteed exit."
+    },
+    {
+      "river": "swan",
+      "section": "swan-lake-bigfork",
+      "state": "MT",
+      "reason": "A usable take-out above the Wild Mile has not been confirmed. The mapped Bigfork boat ramp is a different location and must not be substituted. This section is not ready for trip planning."
+    },
+    {
+      "river": "yellowstone-upper",
+      "section": "gardiner-corwin",
+      "state": "MT",
+      "reason": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing."
+    },
+    {
+      "river": "boise",
+      "section": "ann-morrison-eagle",
+      "state": "ID",
+      "reason": "The former Class I Ann Morrison\u2013Eagle listing crosses diversion-dam and whitewater-park hazards. Boise identifies a low-head dam below the designated floater takeout; a suitable through-route and exact Eagle exit have not been established. This listing is withheld from trip planning."
+    },
+    {
+      "river": "clearwater",
+      "section": "orofino-peck",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "clearwater",
+      "section": "peck-spalding",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "henrys-fork-ashton",
+      "section": "warm-river-ashton",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "henrys-fork-ashton",
+      "section": "vernon-st-anthony",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "henrys-fork-box",
+      "section": "box-canyon",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "lochsa",
+      "section": "knife-fish",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "lochsa",
+      "section": "gateway-lowell",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "payette-nf",
+      "section": "cabarton-banks",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "payette-main",
+      "section": "banks-beehive",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "payette-main",
+      "section": "beehive-hsb",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "salmon-riggins",
+      "section": "riggins-lucile",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "salmon-riggins",
+      "section": "hammer-heller",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "salmon-salmon",
+      "section": "salmon-north-fork",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "selway",
+      "section": "paradise-race-creek",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "payette-sf",
+      "section": "lowman-deadwood",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "payette-sf",
+      "section": "danskin-confluence",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "snake-sf-canyon",
+      "section": "conant-byington",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "snake-sf-canyon",
+      "section": "byington-lorenzo",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "snake-sf-swan",
+      "section": "palisades-spring",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "snake-sf-swan",
+      "section": "spring-conant",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "st-joe",
+      "section": "avery-calder",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "st-joe",
+      "section": "calder-st-maries",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "teton",
+      "section": "bates-rainey",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "teton",
+      "section": "rainey-cache",
+      "state": "ID",
+      "reason": "No reviewed map yet"
+    },
+    {
+      "river": "sandy",
+      "section": "dodge-oxbow",
+      "state": "OR",
+      "reason": "This trip depends on the closed Oxbow boat launch. Map and timing remain withheld until the park reopens and access is rechecked."
+    },
+    {
+      "river": "sandy",
+      "section": "oxbow-dabney",
+      "state": "OR",
+      "reason": "This trip depends on the closed Oxbow boat launch. Map and timing remain withheld until the park reopens and access is rechecked."
+    },
+    {
+      "river": "cowlitz",
+      "section": "salmon-hatchery-trout-hatchery",
+      "state": "WA",
+      "reason": "Blue Creek (Cowlitz Trout Hatchery): Batch 1 (2026-10-25). Legal access is confirmed: Tacoma Power's Cowlitz Trout Hatchery page says Blue Creek Boat Launch (273 Blue Creek Lane, Toledo) gives free public river access, with 3-day camping in the lot. It gives an address only. No agency coordinate exists: WDFW's Facilities GIS has no ramp here, and its Blue Creek parking feature comment says it 'does not account for Tacoma Power's boat launch and assoc facilities'. The WDFW Blue Creek page is the ADA fishing-platform site. Imagery shows a ramp to the shore south of the lot near 46.4838, -122.7311, and boatlaunchmap/OSM give 46.48381, -122.73049, but neither is an agency source, and OSM maps a second unnamed ramp about 400 m upstream. Bank is river-right on NHDPlus HR (flow ~250), not usable until the point is verified. Imagery pass (2026-10-25, not promoted): Disputed site. Imagery (research/raw/batch4/bc19_g.png, z19): a paved lane from the trailer lot reaches the water (~46.48381,-122.73049, matching OSM), but OSM also maps a second ramp ~400 m upstream and no agency source says which one is Tacoma Power's. Not placed."
+    },
+    {
+      "river": "green-flaming-geyser",
+      "section": "flaming-geyser-whitney",
+      "state": "WA",
+      "reason": "Flaming Geyser State Park: Final run (2026-10-25): State Parks' Boat Launches layer has no Flaming Geyser feature; King County's POI is the park centroid (585 m). No agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/flaming_g.png): the v1 point is in the parking loop; a dirt track reaches the river but there are several possible spots; no State Parks launch statement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "green-gorge",
+      "section": "headworks-kanaskat",
+      "state": "WA",
+      "reason": "Headworks (Green River): Final run (2026-10-25): No King County, WDFW or State Parks launch feature near the Headworks put-in (Tacoma Water land). Needs Tacoma Water/agency answer on legal access and position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Kanaskat-Palmer State Park: Final run (2026-10-25): State Parks' Boat Launches layer (117 features) has no Kanaskat-Palmer feature; King County layers list only State Parks camping (1.1 km). Legal access per State Parks, but no agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/kanaskat_g.png): canyon and dense tree cover; launch not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "green-gorge",
+      "section": "kanaskat-flaming-geyser",
+      "state": "WA",
+      "reason": "Kanaskat-Palmer State Park: Final run (2026-10-25): State Parks' Boat Launches layer (117 features) has no Kanaskat-Palmer feature; King County layers list only State Parks camping (1.1 km). Legal access per State Parks, but no agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/kanaskat_g.png): canyon and dense tree cover; launch not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Flaming Geyser State Park: Final run (2026-10-25): State Parks' Boat Launches layer has no Flaming Geyser feature; King County's POI is the park centroid (585 m). No agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/flaming_g.png): the v1 point is in the parking loop; a dirt track reaches the river but there are several possible spots; no State Parks launch statement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "hoh",
+      "section": "hoh-campground-oxbow",
+      "state": "WA",
+      "reason": "Hoh Rainforest Campground: Final run (2026-10-25): NPS Public POIs near Hoh Rain Forest have campground, visitor-center and picnic features only; no boat-launch POI. No agency coordinate for a river launch. Needs NPS answer or in-person position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+    },
+    {
+      "river": "methow-lower",
+      "section": "averill-pateros",
+      "state": "WA",
+      "reason": "Pateros Take-out: Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none; city/port GIS not found). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pateros_g.png): a gravel lot reaches the Methow, but no agency source confirms public access. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "methow-upper",
+      "section": "red-barn-big-eddy",
+      "state": "WA",
+      "reason": "Red Barn Access (Winthrop): Final run (2026-10-25): Red Barn is the Town of Winthrop's Mack Lloyd Park (WWRP grant record), but no Town GIS/launch coordinate or access page was found; USFWS features nearby are Winthrop hatchery only. Needs Town of Winthrop answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/rb19_g.png, z19) shows a clear path from the lot behind the Barn to the gravel shore (water end ~48.47608,-120.18798; river-left per NHDPlus 144385429). But access status is not clear enough: the Town's 2024 Park Plan (https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf) says the bank 'has been used informally' for water access, is severely eroding, and the Town 'has funding to install a new water access pathway' for hand launch (RCO-funded, construction anticipated 2024); completion was not confirmed. Construction/legal-status uncertainty, so not placed. Big Eddy (Methow): Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "methow-upper",
+      "section": "big-eddy-twisp",
+      "state": "WA",
+      "reason": "Big Eddy (Methow): Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Twisp Access: Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/twisp_g.png): no launch visible at the park/pool lot; no agency access source. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "snoqualmie-mf",
+      "section": "bridge-view-concrete-bridge",
+      "state": "WA",
+      "reason": "Bridge View (Middle Fork Snoqualmie): Final run (2026-10-25): No agency launch feature: King County facility points, DNR recreation sites and USFS INFRA found none near Bridge View. Manager unknown (likely USFS road corridor). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Concrete Bridge (Middle Fork Snoqualmie): King County's Middle Fork Snoqualmie Natural Area page confirms a public hand-boat access 'just below the concrete bridge' on SE Lake Dorothy Rd (shoulder parking) but gives no coordinate; the AW candidate is ~100 m from the river centreline. Final run: DNR Recreation Sites has only Granite Creek trailhead (318 m) and Champion Beach (691 m); no feature at the concrete bridge access. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/concrete_g.png): dense tree cover; no launch visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "snoqualmie-mf",
+      "section": "concrete-bridge-tanner",
+      "state": "WA",
+      "reason": "Concrete Bridge (Middle Fork Snoqualmie): King County's Middle Fork Snoqualmie Natural Area page confirms a public hand-boat access 'just below the concrete bridge' on SE Lake Dorothy Rd (shoulder parking) but gives no coordinate; the AW candidate is ~100 m from the river centreline. Final run: DNR Recreation Sites has only Granite Creek trailhead (318 m) and Champion Beach (691 m); no feature at the concrete bridge access. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/concrete_g.png): dense tree cover; no launch visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Tanner Road Access: Candidate is American Whitewater only (designated parking on Tanner Road per AW); no city/county agency page or coordinate found. Final run: King County features nearby are Snoqualmie Valley Trail only (~790 m); DNR has Mount Si trailheads (1.4 km). No agency launch. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "queets",
+      "section": "queets-trailhead-streator",
+      "state": "WA",
+      "reason": "Queets Trailhead: Final run (2026-10-25): The nearest NPS launch POI is 'Queets Campground' Boat Launch (OBJECTID 20692; 47.628058, -124.017520), 427 m from v1's Queets Trailhead point, so it is a different site. Promote only if North/the coding agent agrees to relabel the put-in as Queets Campground (label change not made here). Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Queets relabel not approved."
+    },
+    {
+      "river": "sauk",
+      "section": "sauk-prairie-lower-sauk",
+      "state": "WA",
+      "reason": "Sauk Prairie (Darrington): Final run (2026-10-25): No agency launch feature found in USFS INFRA, WDFW, Snohomish County Parks or DNR layers. Manager unknown. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Lower Sauk Boat Launch: USFS Lower Sauk Boat Launch page confirms public access (no fee, day use) and lists lat/lon 48.3448,-121.5499, but on Esri imagery (2026-10-25) that point is the site entrance road ~100 m from the river. Launch position not confirmed. Final run: USFS INFRA has the same point; no ramp feature in WDFW layers. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/ls19_g.png, z19): the lot ends ~25 m from the gravel bar under canopy; no ramp visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "sauk",
+      "section": "lower-sauk-government-bridge",
+      "state": "WA",
+      "reason": "Lower Sauk Boat Launch: USFS Lower Sauk Boat Launch page confirms public access (no fee, day use) and lists lat/lon 48.3448,-121.5499, but on Esri imagery (2026-10-25) that point is the site entrance road ~100 m from the river. Launch position not confirmed. Final run: USFS INFRA has the same point; no ramp feature in WDFW layers. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/ls19_g.png, z19): the lot ends ~25 m from the gravel bar under canopy; no ramp visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Government Bridge (Sauk): Final run (2026-10-25): No agency source. The nearest agency site is USFS 'White Creek River Access', 711 m away (a different site). Government Bridge appears informal; manager unknown. Needs agency answer or relabel decision. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "skagit-eagle",
+      "section": "marblemount-howard-miller",
+      "state": "WA",
+      "reason": "Howard Miller Steelhead Park: Final run (2026-10-25): Skagit County park; no Skagit County GIS layer for park facilities was found publicly. WDFW's nearest site (Barnaby Slough) is 1 km away. Needs Skagit County answer. Imagery pass (2026-10-25, not promoted): Access OK (Skagit County: park open for day use year-round; county 2025 fee schedule lists an annual boat launch permit). Imagery (research/raw/batch4/hm19_g.png, z19) around the AW ramp points (48.48456,-121.59497): the lot edge drops into tree canopy; the concrete ramp and its water end are not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "skykomish",
+      "section": "big-eddy-sultan",
+      "state": "WA",
+      "reason": "Sultan Sportsman Park: Final run (2026-10-25): No agency launch feature: King County/Snohomish County layers found nothing; WDFW's nearest is Jonker (560 m, different site). City of Sultan GIS not found. Needs City of Sultan answer. Imagery pass (2026-10-25, not promoted): Access OK in principle (Snohomish County shoreline access inventory lists 'Sportsman's Park, WDFW, Boat launch'). Imagery (research/raw/batch4/su19_g.png, su19b_g.png, z19) around AW 47.86078,-121.82127: the confluence point is wooded, the lot north of US 2 looks like a gravel/staging yard, and no ramp to the water is visible. Not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "skykomish",
+      "section": "sultan-lewis-street",
+      "state": "WA",
+      "reason": "Sultan Sportsman Park: Final run (2026-10-25): No agency launch feature: King County/Snohomish County layers found nothing; WDFW's nearest is Jonker (560 m, different site). City of Sultan GIS not found. Needs City of Sultan answer. Imagery pass (2026-10-25, not promoted): Access OK in principle (Snohomish County shoreline access inventory lists 'Sportsman's Park, WDFW, Boat launch'). Imagery (research/raw/batch4/su19_g.png, su19b_g.png, z19) around AW 47.86078,-121.82127: the confluence point is wooded, the lot north of US 2 looks like a gravel/staging yard, and no ramp to the water is visible. Not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "snoqualmie-fall-city",
+      "section": "plum-landing-fall-city",
+      "state": "WA",
+      "reason": "Fall City Access: Batch 2 (2026-10-25) finding, not promoted: the nearest WDFW access is 'Raging River' (WDFW page https://wdfw.wa.gov/places-to-go/water-access-sites/raging-river-627; 1 concrete ramp, WDFW-managed, no closure). Its WDFW ramp feature (layer 5, 211; 47.567983, -121.882314) is at the south-bank water's edge on imagery (river-left on NHDPlus HR 163859671), but it is a different site from v1's Fall City Access below the SR 202 bridge (47.5696, -121.8882), about 500 m away. Needs a decision on whether to relocate the take-out to Raging River before promotion. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Label kept unchanged as instructed."
+    },
+    {
+      "river": "spokane",
+      "section": "meenach-plese-flats",
+      "state": "WA",
+      "reason": "T.J. Meenach Bridge: Candidate is a generic American Whitewater 'Put In' point only; no managing-agency source or coordinate for a T.J. Meenach Bridge launch found. Final run: no City of Spokane or Spokane County launch feature found. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Plese Flats: Washington State Parks lists Plese Flats (Riverside State Park) as a non-motorized launch but publishes no coordinate; candidate is an OpenStreetMap slipway. Plese Flats is not on State Parks' 2026-08-28 list of areas still closed after the August 2026 wildfires. Final run: State Parks' Boat Launches layer (117 features) has no Plese Flats/Riverside feature; Spokane County Parks MapServer returned non-JSON. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pl19_g.png): shore in shadow, no distinct ramp; some residual closure uncertainty. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "wenatchee-upper",
+      "section": "lake-wenatchee-plain",
+      "state": "WA",
+      "reason": "Plain Access: Final run (2026-10-25): No agency coordinate or manager found (WDFW, State Parks, USFS, DNR: none within 2 km). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "wenatchee-upper",
+      "section": "plain-hwy2",
+      "state": "WA",
+      "reason": "Plain Access: Final run (2026-10-25): No agency coordinate or manager found (WDFW, State Parks, USFS, DNR: none within 2 km). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Highway 2 Bridge (Tumwater): Final run (2026-10-25): No agency coordinate or manager found for the Hwy 2 (Tumwater) bridge take-out. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "wenatchee-leavenworth",
+      "section": "leavenworth-peshastin",
+      "state": "WA",
+      "reason": "Waterfront Park (Leavenworth): Final run (2026-10-25): City of Leavenworth's ArcGIS layers are District_Park and Parking_Zones only (no launch feature); no agency launch coordinate. Needs City of Leavenworth answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/waterfront_g.png): several beaches, no single launch; no City access page found."
+    },
+    {
+      "river": "wenatchee-leavenworth",
+      "section": "dryden-cashmere",
+      "state": "WA",
+      "reason": "Cashmere Riverside Park: Final run (2026-10-25): City of Cashmere park; no city/county GIS launch feature found on ArcGIS Online and city pages could not be read. Spring-2026 flood-rock blockage of the ramp not confirmed cleared. Needs City of Cashmere answer. Imagery pass (2026-10-25, not promoted): Closure uncertainty (flood rock reported); not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "white-salmon",
+      "section": "bz-husum",
+      "state": "WA",
+      "reason": "Husum (above the falls): USFS Husum Boating Site page confirms public access above Husum Falls (no fee) and lists lat/lon 45.799923,-121.486067; on Esri imagery (2026-10-25) that is the SR 141 roadside pull-out ~25-30 m from the water, not a confirmed water's-edge take-out. Final run: USFS INFRA has the same point; no separate take-out coordinate. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/husum_g.png): the USFS point is an SR 141 roadside pullout; the bank is under trees and the water end is not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "river": "colorado-river-meander",
+      "section": "moab-potash",
+      "state": "UT",
+      "reason": "Moab Bridge Boat Ramp: No current managing-agency page found for the Moab (US-191 bridge) ramp; UGRC 2009 attributes list State Sovereign Land. Coordinate is a candidate only."
+    },
+    {
+      "river": "san-juan",
+      "section": "mexican-hat-clay-hills",
+      "state": "UT",
+      "reason": "Clay Hills Boat Ramp: Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the BLM point is on a dirt track with no river visible; it is 263 m from the NHD centreline. The Clay Hills take-out shifts with Lake Powell sediment. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "river": "white-river",
+      "section": "bonanza-enron",
+      "state": "UT",
+      "reason": "Bonanza Bridge Boat Launch: BLM's own site record says the launch is on private property and open April 1-October 1 only; access permission/season not confirmable as public. Kept pending."
+    },
+    {
+      "river": "colorado-river-lower-gorge",
+      "section": "diamond-creek-pearce-ferry",
+      "state": "AZ",
+      "reason": "Diamond Creek (Grand Canyon): Research-only grade: access-verified (official source names boating access; approximate area only). Access crosses Hualapai tribal land and the Tribe charges its own fees; the managing authority for road and landing is the Hualapai Tribe, not NPS, so this stays in the access-verified tier."
+    },
+    {
+      "river": "colorado-river-grand-canyon",
+      "section": "lees-ferry-diamond-creek",
+      "state": "AZ",
+      "reason": "Diamond Creek (Grand Canyon): Research-only grade: access-verified (official source names boating access; approximate area only). Access crosses Hualapai tribal land and the Tribe charges its own fees; the managing authority for road and landing is the Hualapai Tribe, not NPS, so this stays in the access-verified tier."
+    },
+    {
+      "river": "gila-river-gila-box",
+      "section": "gila-box-put-in-dry-canyon",
+      "state": "AZ",
+      "reason": "Dry Canyon Boat Take-Out (Gila Box): Closure-uncertain: a non-agency (American Whitewater) report dated Oct 4, 2026 describes a road washout on the take-out access; no BLM notice was found either way. The BLM page coordinate is more than 400 m from any NHD Gila River flowline (no flowline in the 0.004-degree NHD query)."
+    },
+    {
+      "river": "salt-river-lower",
+      "section": "lsr-water-users-blue-point",
+      "state": "AZ",
+      "reason": "Blue Point Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the point is in the day-use parking lot about 110 m east of the river channel. v1.3: North's owner-supplied point (33.5539720, -111.5750868) is at the water's edge on the beach just south of the Bush Highway bridge (NHD 49 m, river right), but that beach is on the Pebble Beach side of the highway (175 m from the Pebble Beach page coordinate, 193 m from the Blue Point one), so it was not applied. v1.4: reassessed with North's statement that Sheeps Crossing is the other side (his Sheeps point is river-left, 432 m away) and the USFS INFRA site points (Pebble Beach 95705 serves the south lots; Blue Point 95316 is the lot north of the highway); still not applied (research/replacement-proposals-AZ.json). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "river": "salt-river-lower",
+      "section": "lsr-water-users-goldfield",
+      "state": "AZ",
+      "reason": "Goldfield Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Agency point is 257 m from the NHD centreline (>150 m). Tonto order 03-12-03-24-65 closes a described Goldfield-area eagle zone Dec 1-Jun 30 each year (order text runs to Jun 30, 2026; renewal for 2026-27 not found this pass)."
+    },
+    {
+      "river": "salt-river-lower",
+      "section": "lsr-blue-point-phon-d",
+      "state": "AZ",
+      "reason": "Blue Point Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the point is in the day-use parking lot about 110 m east of the river channel. v1.3: North's owner-supplied point (33.5539720, -111.5750868) is at the water's edge on the beach just south of the Bush Highway bridge (NHD 49 m, river right), but that beach is on the Pebble Beach side of the highway (175 m from the Pebble Beach page coordinate, 193 m from the Blue Point one), so it was not applied. v1.4: reassessed with North's statement that Sheeps Crossing is the other side (his Sheeps point is river-left, 432 m away) and the USFS INFRA site points (Pebble Beach 95705 serves the south lots; Blue Point 95316 is the lot north of the highway); still not applied (research/replacement-proposals-AZ.json). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "river": "salt-river-lower",
+      "section": "lsr-goldfield-phon-d",
+      "state": "AZ",
+      "reason": "Goldfield Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Agency point is 257 m from the NHD centreline (>150 m). Tonto order 03-12-03-24-65 closes a described Goldfield-area eagle zone Dec 1-Jun 30 each year (order text runs to Jun 30, 2026; renewal for 2026-27 not found this pass)."
+    },
+    {
+      "river": "salt-river-upper",
+      "section": "upper-salt-first-camp-hwy-288",
+      "state": "AZ",
+      "reason": "First Campground (Upper Salt put-in): No managing-agency coordinate: the launch is on White Mountain Apache land (tribal permit required); the Tonto NF area map PDF is image-only and gives no coordinates. Highway 288 Bridge Take-out (Upper Salt): Tonto NF names the take-out (just downstream of the Highway 288 Bridge, river left) but publishes no coordinate for it."
+    },
+    {
+      "river": "verde-river-lower",
+      "section": "needle-rock-box-bar",
+      "state": "AZ",
+      "reason": "Needle Rock Day Use Area (Verde): The page names a non-motorized beach and lists non-motorized boating, but it never says launch/put-in, so it stays pending. Box Bar River Access Point (Verde): Imagery: the Tonto page coordinate is in the dispersed parking/camping flat about 120 m west of the river."
+    },
+    {
+      "river": "verde-river-upper",
+      "section": "tuzigoot-dead-horse-ranch",
+      "state": "AZ",
+      "reason": "Tuzigoot River Access Point (Verde): No agency coordinate for the launch itself (Clarkdale page 403 to curl; text captured via WebFetch fallback; AZSP gives only the park-entrance coordinate). Dead Horse Ranch State Park River Day Use Area (Verde): No agency coordinate for the river day-use landing (the Dead Horse facility page's boat ramp is at the lagoons, not the river)."
+    },
+    {
+      "river": "verde-river-scenic",
+      "section": "beasley-flat-childs",
+      "state": "AZ",
+      "reason": "Childs River Access Point (Verde): The only agency coordinate is for the Childs dispersed camping area; the current Coconino page does not mention boating, and the boating statement comes from a 2006-07 paddle guide."
+    },
+    {
+      "river": "verde-river-wild",
+      "section": "childs-sheep-bridge",
+      "state": "AZ",
+      "reason": "Childs River Access Point (Verde): The only agency coordinate is for the Childs dispersed camping area; the current Coconino page does not mention boating, and the boating statement comes from a 2006-07 paddle guide. Sheep Bridge (Verde): Tonto page lists non-motorized boating but gives no launch/take-out statement; the 2006-07 paddle guide calls it a River Access Point. Road is rocky and technical (4x4)."
+    },
+    {
+      "river": "verde-river-wild",
+      "section": "sheep-bridge-horseshoe",
+      "state": "AZ",
+      "reason": "Sheep Bridge (Verde): Tonto page lists non-motorized boating but gives no launch/take-out statement; the 2006-07 paddle guide calls it a River Access Point. Road is rocky and technical (4x4). Horseshoe Campground (Verde): Road closure order 03-12-01-26-26 (motor vehicles prohibited on Horseshoe Dam Road, NFSR 205, Sep 29-Nov 2, 2026, flood repairs). Campground access is via campsites 11-12, not a designated launch."
+    },
+    {
+      "river": "colorado-river-pumphouse",
+      "section": "radium-to-rancho-del-rio",
+      "state": "CO",
+      "reason": "Rancho del Rio: Private fee site (Rancho del Rio); terms set by the owner and not verified from an official source. Official text: Private recreation fee site (guide RM 21.5); permission is the owner's, terms not verified."
+    },
+    {
+      "river": "colorado-river-pumphouse",
+      "section": "rancho-del-rio-to-state-bridge",
+      "state": "CO",
+      "reason": "Rancho del Rio: Private fee site (Rancho del Rio); terms set by the owner and not verified from an official source. Official text: Private recreation fee site (guide RM 21.5); permission is the owner's, terms not verified."
+    },
+    {
+      "river": "colorado-river-state-bridge",
+      "section": "pinball-to-horse-creek",
+      "state": "CO",
+      "reason": "Horse Creek River Access: No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: Free site on a conservation easement managed by Eagle County (guide RM 57.7)."
+    },
+    {
+      "river": "colorado-river-state-bridge",
+      "section": "horse-creek-to-cottonwood-island",
+      "state": "CO",
+      "reason": "Horse Creek River Access: No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: Free site on a conservation easement managed by Eagle County (guide RM 57.7)."
+    },
+    {
+      "river": "gunnison-river-denca",
+      "section": "confluence-park-to-whitewater",
+      "state": "CO",
+      "reason": "Confluence Park Boat Launch (Delta): No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: City park boat launch at 440 North Palmer Street, Delta (BLM DENCA float guide)."
+    },
+    {
+      "river": "yampa-river-craig",
+      "section": "golf-course-to-loudy-simpson",
+      "state": "CO",
+      "reason": "Loudy Simpson Park: No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: Moffat County park with launch/parking area (CPW)."
+    },
+    {
+      "river": "yampa-river-craig",
+      "section": "loudy-simpson-to-south-beach",
+      "state": "CO",
+      "reason": "Loudy Simpson Park: No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: Moffat County park with launch/parking area (CPW)."
+    },
+    {
+      "river": "yampa-river-hayden",
+      "section": "headquarters-to-state-wildlife-area",
+      "state": "CO",
+      "reason": "Yampa River State Wildlife Area Boat Ramp: CPW State Wildlife Area: CPW text addresses licensed hunters/anglers only; access terms for non-angling boaters not confirmed."
+    },
+    {
+      "river": "green-river-upper-wy",
+      "section": "warm-springs-to-kendall-bridge",
+      "state": "WY",
+      "reason": "Kendall Bridge (Green): WGFD lists this as river access, but its Green River guide marks a closed approach road near Kendall Bridge. The current legal vehicle approach and usable landing need to be reconciled before publishing a marker. Do not route visitors onto a road shown as closed."
+    },
+    {
+      "river": "green-river-upper-wy",
+      "section": "kendall-bridge-to-whiskey-campground",
+      "state": "WY",
+      "reason": "Kendall Bridge (Green): WGFD lists this as river access, but its Green River guide marks a closed approach road near Kendall Bridge. The current legal vehicle approach and usable landing need to be reconciled before publishing a marker. Do not route visitors onto a road shown as closed. Whiskey Campground (Green): WGFD and Forest Service recreation coordinates disagree by about 500 metres. The Green River guide labels Whiskey Grove near Kendall Bridge; the current campground landing and the direction/order of these nearby sites need to be reconciled before mapping."
+    },
+    {
+      "river": "green-river-upper-wy",
+      "section": "whiskey-campground-to-usfs-boundary",
+      "state": "WY",
+      "reason": "Whiskey Campground (Green): WGFD and Forest Service recreation coordinates disagree by about 500 metres. The Green River guide labels Whiskey Grove near Kendall Bridge; the current campground landing and the direction/order of these nearby sites need to be reconciled before mapping."
+    },
+    {
+      "river": "green-river-upper-wy",
+      "section": "fears-dry-piney-reardon-draw-to-gas-wells",
+      "state": "WY",
+      "reason": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out)."
+    },
+    {
+      "river": "green-river-upper-wy",
+      "section": "gas-wells-to-labarge-whelan-bridge",
+      "state": "WY",
+      "reason": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out)."
+    },
+    {
+      "river": "green-river-fontenelle",
+      "section": "james-town-to-expedition-island",
+      "state": "WY",
+      "reason": "WGFD advises taking out at James Town before the diversion hazards at river miles 67\u201370. This downstream trip is withheld; a safe, authorized route around the hazards has not been established."
+    },
+    {
+      "river": "green-river-fontenelle",
+      "section": "expedition-island-to-stratton-meyer",
+      "state": "WY",
+      "reason": "The launch is documented, but the exact launch/channel relationship to the guide\u2019s river-mile 67\u201370 hazard reach still needs review. Do not infer a safe through-route from the access marker."
+    },
+    {
+      "river": "hoback-river",
+      "section": "highway-189-bridge-to-granite-creek",
+      "state": "WY",
+      "reason": "Highway 189 Bridge (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 56 ('Highway 189 Bridge', listed as a launch and take-out). Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out)."
+    },
+    {
+      "river": "hoback-river",
+      "section": "granite-creek-to-stinking-springs",
+      "state": "WY",
+      "reason": "Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out). Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out)."
+    },
+    {
+      "river": "hoback-river",
+      "section": "stinking-springs-to-spotted-horse-ranch",
+      "state": "WY",
+      "reason": "Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out). Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out)."
+    },
+    {
+      "river": "hoback-river",
+      "section": "spotted-horse-ranch-to-confluence",
+      "state": "WY",
+      "reason": "Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out). Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out)."
+    },
+    {
+      "river": "hoback-river",
+      "section": "confluence-to-astoria",
+      "state": "WY",
+      "reason": "Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out)."
+    },
+    {
+      "river": "new-fork-river",
+      "section": "east-fork-confluence-to-gas-wells",
+      "state": "WY",
+      "reason": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out)."
+    },
+    {
+      "river": "new-fork-river",
+      "section": "gas-wells-to-remmick",
+      "state": "WY",
+      "reason": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out)."
+    },
+    {
+      "river": "new-fork-river",
+      "section": "usgs-gage-station-to-blm-downstream-of-gage-station",
+      "state": "WY",
+      "reason": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out)."
+    },
+    {
+      "river": "new-fork-river",
+      "section": "blm-downstream-of-gage-station-to-fears-ferry-island",
+      "state": "WY",
+      "reason": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out)."
+    },
+    {
+      "river": "north-fork-shoshone",
+      "section": "sleeping-giant-ski-area-to-eagle-creek-campground",
+      "state": "WY",
+      "reason": "Sleeping Giant Ski Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 71 ('Sleeping Giant Ski Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "river": "north-fork-shoshone",
+      "section": "sleeping-giant-picnic-area-to-eagle-creek-campground",
+      "state": "WY",
+      "reason": "Sleeping Giant Picnic Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 72 ('Sleeping Giant Picnic Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "river": "north-fork-shoshone",
+      "section": "eagle-creek-campground-to-libby-creek-aka-white-rocks",
+      "state": "WY",
+      "reason": "Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "river": "shoshone-river-corbett",
+      "section": "corbett-dam-to-buck-creek",
+      "state": "WY",
+      "reason": "Buck Creek (Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 98 ('Buck Creek', listed as a take-out)."
+    },
+    {
+      "river": "south-fork-shoshone",
+      "section": "hunter-creek-to-mariposa-bridge-aka-ishawooa",
+      "state": "WY",
+      "reason": "Hunter Creek (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 118 ('Hunter Creek', listed as a launch). Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out)."
+    },
+    {
+      "river": "south-fork-shoshone",
+      "section": "mariposa-bridge-aka-ishawooa-to-bobcat-hoolihan",
+      "state": "WY",
+      "reason": "Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out). Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out)."
+    },
+    {
+      "river": "south-fork-shoshone",
+      "section": "bobcat-hoolihan-to-twin-creek",
+      "state": "WY",
+      "reason": "Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out)."
+    },
+    {
+      "river": "tongue-river-wy",
+      "section": "upstream-of-i90-to-downstream-of-i90",
+      "state": "WY",
+      "reason": "Upstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 184 ('Upstream of I90', listed as a launch and take-out). Downstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 185 ('Downstream of I90', listed as a launch and take-out)."
+    },
+    {
+      "river": "wind-river-dubois",
+      "section": "stoney-point-to-painted-hills",
+      "state": "WY",
+      "reason": "Stoney Point (Wind): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 124 ('Stoney Point', listed as a launch)."
+    },
+    {
+      "river": "big-piney-river",
+      "section": "simmons-ford-access-to-baptist-camp-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "big-piney-river",
+      "section": "baptist-camp-access-to-dogs-bluff-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "big-piney-river",
+      "section": "mason-bridge-access-to-slabtown-recreation-area",
+      "state": "MO",
+      "reason": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "river": "big-piney-river",
+      "section": "slabtown-recreation-area-to-ross-access",
+      "state": "MO",
+      "reason": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "river": "big-piney-river",
+      "section": "ross-access-to-east-gate-access",
+      "state": "MO",
+      "reason": "This reach passes through Fort Leonard Wood. Confirm installation access requirements, a legal shuttle and the intended East Gate landing before planning this section."
+    },
+    {
+      "river": "big-river",
+      "section": "bootleg-access-to-leadwood-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "big-river",
+      "section": "leadwood-access-to-mammoth-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "bourbeuse-river",
+      "section": "mint-spring-access-to-tea-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "bourbeuse-river",
+      "section": "tea-access-to-mill-rock-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "bourbeuse-river",
+      "section": "mill-rock-access-to-wenkel-ford-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "bourbeuse-river",
+      "section": "wenkel-ford-access-to-reiker-ford-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "bourbeuse-river",
+      "section": "reiker-ford-access-to-union-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "bryant-creek",
+      "section": "warren-bridge-access-to-flo-cook-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-upper",
+      "section": "baptist-to-cedar-grove",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-upper",
+      "section": "pulltite-to-round-spring",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-upper",
+      "section": "round-spring-to-jerktail-landing",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-upper",
+      "section": "round-spring-to-two-rivers",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-lower",
+      "section": "two-rivers-to-powder-mill",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-lower",
+      "section": "powder-mill-to-rocky-creek-conservation-area",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-lower",
+      "section": "bay-nothing-gravel-boat-launch-to-float-camp-recreation-area",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-lower",
+      "section": "float-camp-recreation-area-to-t-l-wright-memorial-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "current-river-lower",
+      "section": "powder-mill-to-van-buren",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "huzzah-creek",
+      "section": "red-bluff-recreation-area-to-huzzah-conservation-area-huzzah-creek",
+      "state": "MO",
+      "reason": "Red Bluff Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "river": "little-piney-creek",
+      "section": "lane-spring-recreation-area-to-jerome-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "meramec-river",
+      "section": "short-bend-access-to-scotts-ford-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "niangua-river",
+      "section": "big-john-access-to-williams-ford-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "niangua-river",
+      "section": "williams-ford-access-to-moon-valley-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "north-fork-river",
+      "section": "hebron-access-to-north-fork-recreation-area",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "osage-fork",
+      "section": "rader-access-to-long-ford-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "st-francis-river",
+      "section": "gruner-ford-access-to-syenite-access",
+      "state": "MO",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "buffalo-river",
+      "section": "baker-ford-to-tyler-bend",
+      "state": "AR",
+      "reason": "Tyler Bend has more than one launch. The supplied launch coordinate conflicts with the NPS mileage to Grinders Ferry. Confirm the intended landing and corresponding mileage before trip planning."
+    },
+    {
+      "river": "buffalo-river",
+      "section": "tyler-bend-to-grinders-ferry",
+      "state": "AR",
+      "reason": "Tyler Bend has more than one launch. The supplied launch coordinate conflicts with the NPS mileage to Grinders Ferry. Confirm the intended landing and corresponding mileage before trip planning."
+    },
+    {
+      "river": "buffalo-river",
+      "section": "dillards-ferry-to-buffalo-point",
+      "state": "AR",
+      "reason": "NPS says the road to the Buffalo Point launch is closed; boats and gear must be carried up a large, steep gravel bar. Confirm the current carry access and craft suitability before using this listing. Dillards Ferry is an agency-listed alternative upstream."
+    },
+    {
+      "river": "buffalo-river",
+      "section": "buffalo-point-to-rush",
+      "state": "AR",
+      "reason": "NPS says the road to the Buffalo Point launch is closed; boats and gear must be carried up a large, steep gravel bar. Confirm the current carry access and craft suitability before using this listing. Dillards Ferry is an agency-listed alternative upstream."
+    },
+    {
+      "river": "cadron-creek",
+      "section": "hwy-285-boat-ramp-to-shaw-bridge-boat-ramp",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "cadron-creek",
+      "section": "shaw-bridge-boat-ramp-to-hwy-64-boat-ramp",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "illinois-river-ar",
+      "section": "chamber-springs-boating-access-to-siloam-springs-kayak-park-access",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "illinois-river-ar",
+      "section": "siloam-springs-kayak-park-access-to-woka-whitewater-park-canoe-kayakng-access",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "ouachita-river-upper",
+      "section": "oden-boating-access-to-rocky-shoals",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "ouachita-river-upper",
+      "section": "rocky-shoals-to-fulton-branch",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "ouachita-river-upper",
+      "section": "fulton-branch-to-dragover",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "ouachita-river-upper",
+      "section": "dragover-to-river-bluff",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "saline-river",
+      "section": "peeler-bend-boat-ramp-to-lyle-park-boat-ramp",
+      "state": "AR",
+      "reason": "AGFC documents a low-water bridge on this reach that can block boats as water rises. Confirm a safe, legal portage and current river conditions before using this listing. Do not rely on the map or a gauge height alone to pass beneath the bridge."
+    },
+    {
+      "river": "saline-river",
+      "section": "lyle-park-boat-ramp-to-i-30-cherry-gingles-boat-ramp",
+      "state": "AR",
+      "reason": "The Cherry Gingles / Cherry Demuth landing identity and current access need reconciliation. AGFC lists Cherry Demuth as closed and documents a hazardous spillway downstream of Lyle Park. A usable landing and any required portage must be confirmed before this map is released."
+    },
+    {
+      "river": "saline-river",
+      "section": "i-30-cherry-gingles-boat-ramp-to-fitzhugh-boat-ramp",
+      "state": "AR",
+      "reason": "The Cherry Gingles / Cherry Demuth landing identity and current access need reconciliation. AGFC lists Cherry Demuth as closed and documents a hazardous spillway downstream of Lyle Park. A usable landing and any required portage must be confirmed before this map is released."
+    },
+    {
+      "river": "spring-river-ar",
+      "section": "cold-springs-boat-ramp-to-dam-3-boat-ramp",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    },
+    {
+      "river": "spring-river-ar",
+      "section": "dam-3-boat-ramp-to-bayou-boat-ramp",
+      "state": "AR",
+      "reason": "This section awaits map review or its evidence has changed."
+    }
+  ],
+  "deploymentChecksStillRequired": [
+    "Confirm Render production basemap credential and persistent data mount without changing the hosting plan.",
+    "After an authorized deployment, verify both HTTPS domains, a satellite map, a current gauge, a withheld map, and a private correction submission.",
+    "Ordinary GPS time remaining stays disabled; the existing Greycliff pilot is unchanged and still needs a phone field test."
+  ]
+}

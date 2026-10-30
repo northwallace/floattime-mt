@@ -1,0 +1,40 @@
+{
+  "id": "wind-river-dubois",
+  "name": "Wind River — Dubois to Dinwoody Creek",
+  "gauge": "06220800",
+  "gaugeName": "Wind River Above Red Creek, Near Dubois, WY (USGS 06220800)",
+  "lat": 43.57827,
+  "lon": -109.75592,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Wind River: sections between Wyoming Game and Fish Department river access points (some reaches have federal or tribal rules; see notes).",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "dubois-city-park-to-painted-hills",
+      "putIn": "Dubois City Park (Wind)",
+      "takeOut": "Painted Hills (Wind)",
+      "miles": 15.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Dubois City Park (Wind): approximate agency-documented access area. Take-out Painted Hills (Wind): approximate area only. Wind River Indian Reservation: non-members need a tribal permit to \"camp, hike, boat, and picnic\" plus a $20 Recreation Stamp; every person in a boat or raft must wear a USCG life jacket, and all non-members in the boat must hold a valid permit. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. The former 15.9-mile figure is invalid after correcting the park location. Only the approximate access areas are shown while route distance is reviewed.",
+      "putInAccessId": "acc-c48e7f18d82b5d83b74d",
+      "takeOutAccessId": "acc-e9f1c01c1e5a552d905d",
+      "distanceReview": "The town’s official park location corrects an upstream agency marker error. The old 15.9-mile route started at that incorrect point; distance and timing are withheld until the corrected reach is measured."
+    },
+    {
+      "id": "stoney-point-to-painted-hills",
+      "putIn": "Stoney Point (Wind)",
+      "takeOut": "Painted Hills (Wind)",
+      "miles": 8.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Stoney Point (Wind): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Take-out Painted Hills (Wind): approximate area only. Wind River Indian Reservation: non-members need a tribal permit to \"camp, hike, boat, and picnic\" plus a $20 Recreation Stamp; every person in a boat or raft must wear a USCG life jacket, and all non-members in the boat must hold a valid permit. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (8.6 mi); no agency mileage found.",
+      "putInAccessId": "acc-33ee1649b6ea5533ba8a",
+      "takeOutAccessId": "acc-e9f1c01c1e5a552d905d"
+    }
+  ]
+}

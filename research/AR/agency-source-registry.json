@@ -1,0 +1,106 @@
+{
+ "state": "AR",
+ "checkedOn": "2026-10-30",
+ "agencies": [
+  {
+   "agency": "Arkansas Game and Fish Commission",
+   "role": "Primary coordinate source for all non-NPS/USFS accesses (Public Use Facilities layer, 'Boating Access' features); water-trail pages give access identities, mileages, a gauge-level trip-time table (Saline) and hazards; AGFC Code 37.11",
+   "layers": [
+    "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1 (Public Use Facilities)",
+    "https://gis.arkansas.gov/arcgis/rest/services/Apps/RapidDeploy/MapServer/1 (boating-access cross-check)"
+   ],
+   "pages": [
+    "https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulation_37.11_large.pdf",
+    "https://www.agfc.com/things-to-do/boating/paddle-sports/",
+    "https://www.agfc.com/things-to-do/water-trails/",
+    "https://www.agfc.com/things-to-do/water-trails/arkansas-post/",
+    "https://www.agfc.com/things-to-do/water-trails/bayou-bartholomew-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/bayou-deview-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/crooked-creek/",
+    "https://www.agfc.com/things-to-do/water-trails/cut-off-creek-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/fourche-creek-urban-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/little-maumelle-river-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/mercer-bayou-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/robe-bayou-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/saline-river-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/sleepy-hollow-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/st-francis-sunken-lands-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/upper-illinois-river-water-trail/",
+    "https://www.agfc.com/things-to-do/water-trails/wattensaw-bayou-water-trail/",
+    "https://www.agfc.com/wp-content/uploads/2023/05/bull_shoals_lake_tailwater.pdf"
+   ]
+  },
+  {
+   "agency": "National Park Service — Buffalo National River",
+   "role": "NPS river accesses (POIs), river-mile chart, Things To Do trip durations, river rules, compendium",
+   "layers": [
+    "NPS Public POIs (research/raw/agency/nps_pois_buff.json)",
+    "NPS API places / thingstodo / campgrounds"
+   ],
+   "pages": [
+    "https://developer.nps.gov/api/v1/campgrounds?parkCode=buff&limit=100&api_key=DEMO_KEY",
+    "https://developer.nps.gov/api/v1/places?parkCode=buff&limit=500&api_key=DEMO_KEY",
+    "https://developer.nps.gov/api/v1/thingstodo?parkCode=buff&limit=200&api_key=DEMO_KEY",
+    "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=UNITCODE%3D%27BUFF%27&outFields=*&outSR=4326&f=json",
+    "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_ParkingLots_Geographic/MapServer/0/query?where=UNITCODE%3D%27BUFF%27&outFields=*&outSR=4326&returnCentroid=true&f=json",
+    "https://www.nps.gov/buff/faqs.htm",
+    "https://www.nps.gov/buff/learn/management/compendium-1-5.htm",
+    "https://www.nps.gov/buff/learn/management/general-regulations.htm",
+    "https://www.nps.gov/buff/learn/management/superintendent-s-compendium.htm",
+    "https://www.nps.gov/buff/planyourvisit/alcohol-in-the-park.htm",
+    "https://www.nps.gov/buff/planyourvisit/basicinfo.htm",
+    "https://www.nps.gov/buff/planyourvisit/conditions.htm",
+    "https://www.nps.gov/buff/planyourvisit/maps.htm",
+    "https://www.nps.gov/buff/planyourvisit/paddling.htm",
+    "https://www.nps.gov/buff/planyourvisit/river-accesses-mileage.htm",
+    "https://www.nps.gov/buff/planyourvisit/river-rules.htm",
+    "https://www.nps.gov/buff/rentals-and-other-services.htm",
+    "https://www.nps.gov/buff/siteindex.htm"
+   ]
+  },
+  {
+   "agency": "U.S. Forest Service — Ouachita NF and Ozark-St. Francis NF",
+   "role": "Ouachita River float camps, Albert Pike (Little Missouri), Long Pool (Big Piney), Bayou Bluff (Illinois Bayou), Richland Creek recreation sites",
+   "layers": [
+    "USFS EDW Recreation Opportunities"
+   ],
+   "pages": [
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=1%3D1&geometry=-94.62,33.00,-89.64,36.50&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&outSR=4326&f=json"
+   ]
+  },
+  {
+   "agency": "Southwestern Power Administration / U.S. Army Corps of Engineers",
+   "role": "Tailwater generation schedules (Bull Shoals, Norfork, Beaver, Greers Ferry). USACE district pages were not fetched; the AGFC Bull Shoals tailwater map gives the Corps phone line.",
+   "layers": [],
+   "pages": [
+    "https://www.energy.gov/swpa/generation-schedules"
+   ]
+  },
+  {
+   "agency": "U.S. Geological Survey",
+   "role": "Gauges (Water Data APIs), NLDI routing, NHD High Resolution",
+   "layers": [
+    "NHD HR HU4 GeoPackages",
+    "NLDI"
+   ],
+   "pages": [
+    "https://waterdata.usgs.gov/"
+   ]
+  },
+  {
+   "agency": "Arkansas Code / Arkansas Supreme Court (legal text via FindLaw / OpenJurist copies)",
+   "role": "Container law (§ 8-6-418); navigability (State v. McIlroy, 1980)",
+   "layers": [],
+   "pages": [
+    "https://codes.findlaw.com/ar/title-8-environmental-law/ar-code-sect-8-6-418/",
+    "https://openjurist.org/268/ark/227/state-v-mcilroy"
+   ]
+  },
+  {
+   "agency": "Arkansas State Parks",
+   "role": "Not used as a coordinate source: state-park accesses appear only where AGFC lists them (owner 'ASP' in the facility record).",
+   "layers": [],
+   "pages": []
+  }
+ ]
+}

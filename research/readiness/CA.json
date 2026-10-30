@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "state": "CA",
+  "generatedOn": "2026-10-30",
+  "sections": [
+    {
+      "id": "russian-river-forestville/steelhead-sunset",
+      "state": "CA",
+      "river": "Russian River (Forestville)",
+      "riverId": "russian-river-forestville",
+      "sectionId": "steelhead-sunset",
+      "label": "Steelhead Beach Regional Park → Sunset Beach River Park",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "unavailable",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Steelhead Beach Regional Park",
+          "accessId": "acc-1b8b4d6c2d5e50e483d5",
+          "existing": {
+            "id": "acc-1b8b4d6c2d5e50e483d5",
+            "aliases": [],
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 38.49593389,
+              "lon": -122.8991681,
+              "feature": "County-published park directions destination"
+            },
+            "accessType": "Public beach / hand-carry access",
+            "operator": "Sonoma County Regional Parks",
+            "sourceName": "Sonoma County Regional Parks — park page and tubing guide",
+            "sourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/steelhead-beach-regional-park",
+            "coordinateSourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/steelhead-beach-regional-park",
+            "verifiedOn": "2026-10-29",
+            "directions": "9000 River Road, Forestville. Follow the park’s signed beach access; the marker is the park directions destination, not the river landing.",
+            "note": "Public hand-carry river access is documented by the county. Coordinates come from its Get Directions link and identify the park approach. The exact seasonal beach landing is not verified; no boat-ramp or takeout-bank claim is made.",
+            "name": "Steelhead Beach Regional Park",
+            "state": "CA"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Sunset Beach River Park",
+          "accessId": "acc-f66b82bc52fb5cf4ac3a",
+          "existing": {
+            "id": "acc-f66b82bc52fb5cf4ac3a",
+            "aliases": [],
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 38.502355,
+              "lon": -122.9351161,
+              "feature": "County-published park directions destination"
+            },
+            "accessType": "Public beach / hand-carry access",
+            "operator": "Sonoma County Regional Parks",
+            "sourceName": "Sonoma County Regional Parks — park page and tubing guide",
+            "sourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/sunset-beach-river-park",
+            "coordinateSourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/sunset-beach-river-park",
+            "verifiedOn": "2026-10-29",
+            "directions": "11403 River Road, Forestville. Follow the park’s signed beach access; the marker is the park directions destination, not the river landing.",
+            "note": "Public hand-carry river access is documented by the county. Coordinates come from its Get Directions link and identify the park approach. The exact seasonal beach landing is not verified; no boat-ramp or takeout-bank claim is made.",
+            "name": "Sunset Beach River Park",
+            "state": "CA"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    }
+  ]
+}

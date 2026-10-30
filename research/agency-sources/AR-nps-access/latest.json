@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "AR-nps-access",
+    "state": "AR",
+    "agency": "National Park Service",
+    "discoveryUrl": "https://www.nps.gov/subjects/gisandmapping/tools-and-data.htm",
+    "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0",
+    "where": "UNITCODE = 'BUFF'",
+    "fields": [
+      "POINAME",
+      "POITYPE",
+      "POISTATUS",
+      "PUBLICDISPLAY",
+      "DATAACCESS",
+      "ACCESSNOTES",
+      "UNITCODE",
+      "MAPMETHOD",
+      "MAPSOURCE",
+      "XYACCURACY",
+      "GEOMETRYID",
+      "FEATUREID",
+      "ISEXTANT",
+      "OPENTOPUBLIC",
+      "SEASONAL",
+      "SEASDESC",
+      "NOTES"
+    ],
+    "note": "Agency evidence only. No automatic coordinate promotion or section release; exact landing, permission, restrictions and imagery need separate review."
+  },
+  "retrievedAt": "2026-10-30T19:15:31.759560+00:00",
+  "file": "research/agency-sources/AR-nps-access/e9bded906fdacc3e798c99ab71bed3057ba7b6e79525293d74e107d2556af001.json",
+  "sha256": "e9bded906fdacc3e798c99ab71bed3057ba7b6e79525293d74e107d2556af001",
+  "features": 214,
+  "changes": null,
+  "reviewStatus": "research-only"
+}

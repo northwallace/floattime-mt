@@ -1,7 +1,12 @@
 const { test } = require("node:test");
 const assert = require("node:assert/strict");
 const P = require("../public/planner.js");
-const river = { refFlowCfs: 1100, refSpeedMph: 4 };
+const river = { gauge: "12345678", refFlowCfs: 1100, refSpeedMph: 4 };
+test("missing and reference gauges cannot enable timing even with a supplied flow", () => {
+  for (const gaugeRelationship of ["none", "same-river-reference", "other-river-reference"])
+    assert.equal(P.estimate({...river,gaugeRelationship},{miles:8},1100,1,0),null);
+  assert.equal(P.estimate({...river,gauge:null},{miles:8},1100,1,0),null);
+});
 test("zero/invalid flow never produces an estimate", () => {
   for (const q of [0, -1, NaN, Infinity])
     assert.equal(P.estimate(river, { miles: 8 }, q, 1, 0), null);

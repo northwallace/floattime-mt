@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-10-30T02:14:15.906050+00:00",
+  "scope": "local only; no deployment or push",
+  "previewUrl": "http://127.0.0.1:8780/",
+  "catalog": {
+    "rivers": 125,
+    "sections": 342,
+    "states": 9,
+    "accessIds": 459,
+    "releasedMapsLocal": 217,
+    "reviewedDottedPaths": 59
+  },
+  "newInBatch": {
+    "rivers": 1,
+    "sections": 6,
+    "maps": 17,
+    "states": [
+      "CA"
+    ]
+  },
+  "tests": {
+    "python": {
+      "passed": 99,
+      "failed": 0,
+      "skipped": 0
+    },
+    "javascript": {
+      "passed": 39,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "checks": {
+    "catalogGeneratedAssets": "passed",
+    "privateReviewQueue": "passed: 342 sections / 966 research items",
+    "agencyFeatureBindings": "23 unchanged",
+    "httpPagesAndAssets": "269 HTTP 200",
+    "diffWhitespace": "passed",
+    "mapDistanceAudit": {
+      "coverage": {
+        "MT": {
+          "unavailable": 14,
+          "exact": 28,
+          "approximate": 14
+        },
+        "ID": {
+          "exact": 1,
+          "unavailable": 25
+        },
+        "OR": {
+          "approximate": 13,
+          "unavailable": 2
+        },
+        "WA": {
+          "exact": 10,
+          "unavailable": 23,
+          "approximate": 2
+        },
+        "UT": {
+          "unavailable": 3,
+          "exact": 10,
+          "approximate": 3
+        },
+        "AZ": {
+          "unavailable": 13,
+          "approximate": 4,
+          "exact": 2
+        },
+        "CO": {
+          "exact": 13,
+          "unavailable": 8,
+          "approximate": 4
+        },
+        "WY": {
+          "exact": 80,
+          "approximate": 32,
+          "unavailable": 37
+        },
+        "CA": {
+          "approximate": 1
+        }
+      },
+      "distanceFlags": [
+        {
+          "river": "yellowstone-upper",
+          "section": "corwin-yankee-jim",
+          "listedMiles": 7,
+          "straightLineMiles": 8.98,
+          "acknowledged": true
+        }
+      ]
+    }
+  },
+  "gaugeAudit": {
+    "initialAssignments": 120,
+    "initialRecentPositive": 110,
+    "correctedStation": {
+      "river": "encampment-river",
+      "from": "06624500",
+      "to": "06625000",
+      "actualAdapterCheck": "passed"
+    },
+    "remainingGaps": 9,
+    "remainingRivers": [
+      "arkansas-river-salida",
+      "bighorn-river-thermopolis",
+      "laramie-river-woods-landing",
+      "north-platte-glendo",
+      "north-platte-gray-reef-casper",
+      "shoshone-river-cody",
+      "shoshone-river-corbett",
+      "shoshone-river-willwood",
+      "tongue-river-wy"
+    ],
+    "note": "A current gauge does not establish calibrated timing. All affected new-state river models remain unavailable."
+  },
+  "browserChecks": [
+    "desktop and 390px mobile: Russian River access map, no horizontal overflow, imagery, approximation and attribution visible",
+    "Boise river-left takeout and downstream access hold",
+    "Sandy closure: no map button or estimate",
+    "fast state change during initial details request: correct state and river options",
+    "John Day guide: per-stretch distance range and sources",
+    "Encampment: active 06625000 reading and reach-context note"
+  ],
+  "limits": [
+    "No real GPS phone field test; existing Greycliff opt-in pilot remains untested on water",
+    "New approximate access maps do not certify exact landing positions or bank side",
+    "One pre-existing Yellowstone distance conflict remains acknowledged with estimate withheld",
+    "No new river paths or nationwide GPS remaining-time release",
+    "USGS source snapshots are point-in-time evidence; repeat freshness checks before publication"
+  ]
+}

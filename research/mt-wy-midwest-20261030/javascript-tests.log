@@ -1,0 +1,48 @@
+✔ coordinate input accepts pairs and explicit Google links; rejects guesses (4.747541ms)
+✔ reviewed provider override uses a separate cache key and honest source label (9.261416ms)
+✔ gauge context explains seasonal and historical gaps without injecting markup (3.214334ms)
+✔ published trip distances show their source without invented river mile numbers (5.6275ms)
+✔ gauge proxy response preserves current flow and graph (2.978833ms)
+✔ stale reading keeps routes but never shows a calculated duration (3.49975ms)
+✔ fresh flow with unavailable calibration shows guides without calculated finish or launch advice (40.539083ms)
+✔ fishing on long routes keeps total hours and rounds days up (1.114625ms)
+✔ Class III tube never gets an estimate (0.620458ms)
+✔ failed reports stay explicitly unavailable (1.417083ms)
+✔ failed votes are not marked as successful locally (1.715084ms)
+✔ distance conflicts block estimates and show an explicit review notice (3.426834ms)
+✔ satellite sources authenticate only to Esri and respect both tile grids (3.239083ms)
+✔ progress controller uses GPS, current gauge and fishing; clears on errors and cleanup (8.000542ms)
+✔ map route review is independent of GPS and rejects stale endpoint snapshots (14.611417ms)
+✔ access review suppresses times and map even when fresh flow and coordinates exist (2.245958ms)
+✔ unreleased state map cannot be opened through direct map function (0.951041ms)
+✔ Wyoming maps draw reviewed paths without Montana land layers or GPS timing (3.981667ms)
+✔ changing state during initial river load discards stale details and linked map (1.178333ms)
+✔ actual progress UI responds to GPS, fishing, stale flow, stale GPS, and cleanup (25.171125ms)
+✔ pilot is explicitly selected for just this section and file is unchanged (2.221542ms)
+✔ actual primary USGS path progresses to the user-confirmed ramp (0.974791ms)
+✔ GPS failures cannot produce remaining distance; stale flow cannot produce live timing (0.488708ms)
+✔ changed access, river, distance, reversed line or incorrect destination blocks the pilot (0.31075ms)
+✔ zero/invalid flow never produces an estimate (2.960375ms)
+✔ unavailable or missing calibration never produces an ETA even with fresh flow (0.103791ms)
+✔ rounds total duration without 60-minute remainder (0.064333ms)
+✔ stops and craft alter duration (0.144625ms)
+✔ multi-day uses ceiling and retains total hours (0.245708ms)
+✔ one multi-day section does not label a whole mixed river (1.026375ms)
+✔ freshness excludes stale, future and zero readings (0.3665ms)
+✔ launch uses river timezone independent of computer timezone (63.273ms)
+✔ sunset stays on the river calendar date near UTC midnight (0.989209ms)
+✔ invalid DST local launch is rejected (0.958583ms)
+✔ access under review never yields an estimate (0.201375ms)
+✔ real Blackfoot pilot follows river mileage and progresses downstream (3.6565ms)
+✔ missing, old, future, poor, and off-river GPS cannot yield ETA distance (0.950459ms)
+✔ parallel hairpin branches with distant river mileage are ambiguous (0.213708ms)
+✔ invalid or discontinuous route and mileage disagreement fail closed (0.19525ms)
+✔ pilot still matches published access points and section distance (16.735916ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 232.557

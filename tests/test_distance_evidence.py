@@ -15,6 +15,19 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class DistanceEvidenceTests(unittest.TestCase):
+    def test_overlapping_sections_are_not_added_as_river_coverage(self):
+        river = next(r for r in build()['rivers'] if r['id']=='john-day')
+        page = seo.river_html(river)
+        self.assertIn('25.2–69.6 mi per stretch', page)
+        self.assertNotIn('139.2 river miles', page)
+        self.assertEqual(seo._section_distance_label([{'miles':99,'distanceReview':'conflict'}]), 'Distances under review')
+
+    def test_published_trip_lengths_render_without_invented_river_markers(self):
+        river = next(r for r in build()['rivers'] if r['id']=='russian-river-forestville')
+        page = seo.river_html(river)
+        self.assertIn('Published trip length: 2 mi', page)
+        self.assertNotIn('River mile', seo._distance_html(river['sections'][0]))
+
     def test_published_guide_miles_support_both_directions(self):
         rivers = {r['id']: r for r in build()['rivers']}
         self.assertEqual(rivers['madison-lower']['sections'][2]['miles'], 4)

@@ -1,0 +1,48 @@
+{
+  "id": "shoshone-river-willwood",
+  "name": "Shoshone River — Willwood Dam to Hwy 295",
+  "gauge": "06284200",
+  "gaugeName": "Shoshone River At Willwood, WY (USGS 06284200)",
+  "lat": 44.67514,
+  "lon": -108.91612,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Shoshone River: sections between Wyoming Game and Fish Department river access points.",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "willwood-dam-to-highway-295-willwood-rd",
+      "putIn": "Willwood Dam (Shoshone)",
+      "takeOut": "Highway 295 (Willwood Rd) (Shoshone)",
+      "miles": 10.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Willwood Dam (Shoshone): exact agency facility pin. Take-out Highway 295 (Willwood Rd) (Shoshone): exact agency facility pin. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (10.2 mi); no agency mileage found.",
+      "putInAccessId": "acc-6e066900efcc5f8b9e6d",
+      "takeOutAccessId": "acc-d96253c27bf85484bd00"
+    }
+  ],
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "Flow is measured below Willwood Dam. Diversions and tributaries can change discharge downstream; check current local conditions before launching.",
+    "sourceName": "Bureau of Reclamation Hydromet",
+    "sourceUrl": "https://www.usbr.gov/gp-bin/hydromet_dayfiles.pl?SRBW",
+    "checkedOn": "2026-10-30"
+  },
+  "flowSource": {
+    "provider": "usbr-gp",
+    "station": "SRBW",
+    "parameter": "Q",
+    "timeZone": "America/Denver",
+    "kind": "streamflow",
+    "name": "Shoshone River below Willwood Dam",
+    "note": "Replaces historical USGS 06284200 for displayed discharge only. Reclamation observations are provisional; no timing calibration is added.",
+    "sourceUrl": "https://www.usbr.gov/gp-bin/hydromet_dayfiles.pl?SRBW",
+    "checkedOn": "2026-10-30"
+  },
+  "gaugeRelationship": "same-river-reference"
+}

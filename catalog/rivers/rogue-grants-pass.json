@@ -16,7 +16,45 @@
       "takeOut": "Galice",
       "miles": 8,
       "difficulty": "Class II",
-      "notes": "Floats through Hellgate Canyon. Watch for jet boats and give them room in narrow spots."
+      "notes": "Floats through Hellgate Canyon. Watch for jet boats and give them room in narrow spots.",
+      "putInAccessId": "acc-093cfc90bf3a583ca311",
+      "takeOutAccessId": "acc-981c5ddda34251caa217"
+    },
+    {
+      "id": "galice-grave-creek",
+      "putIn": "Galice",
+      "takeOut": "Grave Creek",
+      "putInAccessId": "acc-981c5ddda34251caa217",
+      "takeOutAccessId": "acc-acdad961eabd511abbae",
+      "miles": 7.3,
+      "difficulty": "Class II–III",
+      "notes": "A day float below Galice ending at Grave Creek. Arrange a road shuttle first and check current road/launch conditions. Stop at Grave Creek; continuing downstream enters the remote Wild Rogue permit section.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 7.3,
+        "sourceName": "BLM Hellgate Recreation Area trip table",
+        "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/rogue-wsr/camping/hellgate",
+        "checkedOn": "2026-10-29",
+        "streamId": "Rogue River / Hellgate",
+        "putIn": {
+          "name": "Galice",
+          "sourceLocation": "Galice Store to Almeda Park: 3.5 miles"
+        },
+        "takeOut": {
+          "name": "Grave Creek",
+          "sourceLocation": "Almeda Park to Grave Creek: 3.8 miles"
+        },
+        "note": "Combined adjacent guide segments (3.5 + 3.8 miles). Galice refers to the public landing, not access through a private business."
+      },
+      "notices": [
+        {
+          "title": "Stop before the Wild Rogue",
+          "text": "Grave Creek is the end of this day trip. Downstream trips enter the wilderness river corridor and require separate planning and applicable permits.",
+          "sourceName": "BLM Rogue River recreation guidance",
+          "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/rogue-wsr/camping/hellgate",
+          "checkedOn": "2026-10-29"
+        }
+      ]
     }
   ],
   "timezone": "America/Los_Angeles"

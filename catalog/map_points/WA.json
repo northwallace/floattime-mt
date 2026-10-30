@@ -106,7 +106,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165043454%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~31), the ramp is left of the NHD centreline. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~31), the ramp is left of the NHD centreline. Confirmed on imagery.",
+      "id": "acc-2ee1cec99ffe5efea7a9",
+      "aliases": []
     },
     "BZ Corner": {
       "status": "access-verified",
@@ -121,7 +123,9 @@
       "coordinateSourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
       "verifiedOn": "2026-10-25",
       "directions": "Park in the USFS BZ Launch Site lot at BZ Corner (SR 141). From the offloading area carry down the 0.1-mile launch trail (metal boat-slide railing) to the river; put in at the bottom of the trail.",
-      "note": "USFS point is the parking/offloading loop ~150 m from the water; the river end of the trail has no agency coordinate and is hidden by canyon/tree cover in imagery (research/raw/batch4/bz_g.png). Restrictions: steep-carry-0.1mi; commercial-use-permits-apply-to-outfitters"
+      "note": "USFS point is the parking/offloading loop ~150 m from the water; the river end of the trail has no agency coordinate and is hidden by canyon/tree cover in imagery (research/raw/batch4/bz_g.png). Restrictions: steep-carry-0.1mi; commercial-use-permits-apply-to-outfitters",
+      "id": "acc-614954b70d50574288b6",
+      "aliases": []
     },
     "Barrier Dam (Cowlitz Salmon Hatchery)": {
       "status": "access-verified",
@@ -136,11 +140,15 @@
       "coordinateSourceUrl": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/ApplicationServices/Facilities/FeatureServer/5/query?objectIds=146&outFields=*&outSR=4326&f=json",
       "verifiedOn": "2026-10-25",
       "directions": "Tacoma Power Barrier Dam Boat Launch below the Cowlitz Salmon Hatchery barrier dam; ramp from the paved lot down the gravel shore.",
-      "note": "WDFW ramp feature is at the paved lot edge ~30-35 m from the waterline; water end on the gravel shore not resolvable (research/raw/batch4/bd19_g.png). Restrictions: posted hours; heavy fishing traffic"
+      "note": "WDFW ramp feature is at the paved lot edge ~30-35 m from the waterline; water end on the gravel shore not resolvable (research/raw/batch4/bd19_g.png). Restrictions: posted hours; heavy fishing traffic",
+      "id": "acc-d30bc820d3525f3a8232",
+      "aliases": []
     },
     "Big Eddy (Methow)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-fa243bd7163b5feba671",
+      "aliases": []
     },
     "Big Eddy (Skykomish)": {
       "status": "verified",
@@ -156,7 +164,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165058188%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream, the hand launch is left of the NHD centreline (~23 m). Confirmed on imagery."
+      "bankNote": "Facing downstream, the hand launch is left of the NHD centreline (~23 m). Confirmed on imagery.",
+      "id": "acc-3e34375ea52156f88604",
+      "aliases": []
     },
     "Big Horn Recreation Site": {
       "status": "verified",
@@ -172,11 +182,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336243%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (NHDPlus HR flow bearing ~128, SE through the canyon), the launch is on the north-east bank, left of the NHD centreline (~41 m; ftype 558 artificial path). On imagery SR 821 runs along the same (left) bank and the railway along the opposite (right, south-west) bank."
+      "bankNote": "Facing downstream (NHDPlus HR flow bearing ~128, SE through the canyon), the launch is on the north-east bank, left of the NHD centreline (~41 m; ftype 558 artificial path). On imagery SR 821 runs along the same (left) bank and the railway along the opposite (right, south-west) bank.",
+      "id": "acc-5f25358b5693520e8fc1",
+      "aliases": []
     },
     "Blue Creek (Cowlitz Trout Hatchery)": {
       "status": "pending",
-      "note": "Batch 1 (2026-10-25). Legal access is confirmed: Tacoma Power's Cowlitz Trout Hatchery page says Blue Creek Boat Launch (273 Blue Creek Lane, Toledo) gives free public river access, with 3-day camping in the lot. It gives an address only. No agency coordinate exists: WDFW's Facilities GIS has no ramp here, and its Blue Creek parking feature comment says it 'does not account for Tacoma Power's boat launch and assoc facilities'. The WDFW Blue Creek page is the ADA fishing-platform site. Imagery shows a ramp to the shore south of the lot near 46.4838, -122.7311, and boatlaunchmap/OSM give 46.48381, -122.73049, but neither is an agency source, and OSM maps a second unnamed ramp about 400 m upstream. Bank is river-right on NHDPlus HR (flow ~250), not usable until the point is verified. Imagery pass (2026-10-25, not promoted): Disputed site. Imagery (research/raw/batch4/bc19_g.png, z19): a paved lane from the trailer lot reaches the water (~46.48381,-122.73049, matching OSM), but OSM also maps a second ramp ~400 m upstream and no agency source says which one is Tacoma Power's. Not placed."
+      "note": "Batch 1 (2026-10-25). Legal access is confirmed: Tacoma Power's Cowlitz Trout Hatchery page says Blue Creek Boat Launch (273 Blue Creek Lane, Toledo) gives free public river access, with 3-day camping in the lot. It gives an address only. No agency coordinate exists: WDFW's Facilities GIS has no ramp here, and its Blue Creek parking feature comment says it 'does not account for Tacoma Power's boat launch and assoc facilities'. The WDFW Blue Creek page is the ADA fishing-platform site. Imagery shows a ramp to the shore south of the lot near 46.4838, -122.7311, and boatlaunchmap/OSM give 46.48381, -122.73049, but neither is an agency source, and OSM maps a second unnamed ramp about 400 m upstream. Bank is river-right on NHDPlus HR (flow ~250), not usable until the point is verified. Imagery pass (2026-10-25, not promoted): Disputed site. Imagery (research/raw/batch4/bc19_g.png, z19): a paved lane from the trailer lot reaches the water (~46.48381,-122.73049, matching OSM), but OSM also maps a second ramp ~400 m upstream and no agency source says which one is Tacoma Power's. Not placed.",
+      "id": "acc-3c950d3e114d57e18125",
+      "aliases": []
     },
     "Boggans Access": {
       "status": "verified",
@@ -192,11 +206,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27109438794%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~163; the river turns south here), the ramp is on the west bank, right of the NHD centreline. WDFW's note about the north bank below the bridge is consistent with this bend."
+      "bankNote": "Facing downstream (flow bearing ~163; the river turns south here), the ramp is on the west bank, right of the NHD centreline. WDFW's note about the north bank below the bridge is consistent with this bend.",
+      "id": "acc-1d6e65832d975bfcaa37",
+      "aliases": []
     },
     "Bridge View (Middle Fork Snoqualmie)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency launch feature: King County facility points, DNR recreation sites and USFS INFRA found none near Bridge View. Manager unknown (likely USFS road corridor). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+      "note": "Final run (2026-10-25): No agency launch feature: King County facility points, DNR recreation sites and USFS INFRA found none near Bridge View. Manager unknown (likely USFS road corridor). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement.",
+      "id": "acc-9f708b8bd6115555979c",
+      "aliases": []
     },
     "Carlton Access": {
       "status": "verified",
@@ -212,15 +230,21 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165041427%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~120), the ramp is left of the NHD centreline. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~120), the ramp is left of the NHD centreline. Confirmed on imagery.",
+      "id": "acc-46ad3bd157055a7b9e95",
+      "aliases": []
     },
     "Cashmere Riverside Park": {
       "status": "pending",
-      "note": "Final run (2026-10-25): City of Cashmere park; no city/county GIS launch feature found on ArcGIS Online and city pages could not be read. Spring-2026 flood-rock blockage of the ramp not confirmed cleared. Needs City of Cashmere answer. Imagery pass (2026-10-25, not promoted): Closure uncertainty (flood rock reported); not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): City of Cashmere park; no city/county GIS launch feature found on ArcGIS Online and city pages could not be read. Spring-2026 flood-rock blockage of the ramp not confirmed cleared. Needs City of Cashmere answer. Imagery pass (2026-10-25, not promoted): Closure uncertainty (flood rock reported); not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-649cb7b200295446b624",
+      "aliases": []
     },
     "Concrete Bridge (Middle Fork Snoqualmie)": {
       "status": "pending",
-      "note": "King County's Middle Fork Snoqualmie Natural Area page confirms a public hand-boat access 'just below the concrete bridge' on SE Lake Dorothy Rd (shoulder parking) but gives no coordinate; the AW candidate is ~100 m from the river centreline. Final run: DNR Recreation Sites has only Granite Creek trailhead (318 m) and Champion Beach (691 m); no feature at the concrete bridge access. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/concrete_g.png): dense tree cover; no launch visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "King County's Middle Fork Snoqualmie Natural Area page confirms a public hand-boat access 'just below the concrete bridge' on SE Lake Dorothy Rd (shoulder parking) but gives no coordinate; the AW candidate is ~100 m from the river centreline. Final run: DNR Recreation Sites has only Granite Creek trailhead (318 m) and Champion Beach (691 m); no feature at the concrete bridge access. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/concrete_g.png): dense tree cover; no launch visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-331a7b35b40f5d32affb",
+      "aliases": []
     },
     "Copper Creek": {
       "status": "verified",
@@ -236,7 +260,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27130064055%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~271, west), the take-out is on the north bank, right of the NHD centreline (~60 m; ftype 558 artificial path through the wide channel). Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~271, west), the take-out is on the north bank, right of the NHD centreline (~60 m; ftype 558 artificial path through the wide channel). Confirmed on imagery.",
+      "id": "acc-45e2498bf0fe5dd4a8ea",
+      "aliases": []
     },
     "Dryden Dam Access": {
       "status": "verified",
@@ -252,15 +278,21 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150857505%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream, the hand launch is right of the NHD centreline (~46 m; artificial path). Confirmed on imagery."
+      "bankNote": "Facing downstream, the hand launch is right of the NHD centreline (~46 m; artificial path). Confirmed on imagery.",
+      "id": "acc-29934d6a25805cfc95b1",
+      "aliases": []
     },
     "Fall City Access": {
       "status": "pending",
-      "note": "Batch 2 (2026-10-25) finding, not promoted: the nearest WDFW access is 'Raging River' (WDFW page https://wdfw.wa.gov/places-to-go/water-access-sites/raging-river-627; 1 concrete ramp, WDFW-managed, no closure). Its WDFW ramp feature (layer 5, 211; 47.567983, -121.882314) is at the south-bank water's edge on imagery (river-left on NHDPlus HR 163859671), but it is a different site from v1's Fall City Access below the SR 202 bridge (47.5696, -121.8882), about 500 m away. Needs a decision on whether to relocate the take-out to Raging River before promotion. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Label kept unchanged as instructed."
+      "note": "Batch 2 (2026-10-25) finding, not promoted: the nearest WDFW access is 'Raging River' (WDFW page https://wdfw.wa.gov/places-to-go/water-access-sites/raging-river-627; 1 concrete ramp, WDFW-managed, no closure). Its WDFW ramp feature (layer 5, 211; 47.567983, -121.882314) is at the south-bank water's edge on imagery (river-left on NHDPlus HR 163859671), but it is a different site from v1's Fall City Access below the SR 202 bridge (47.5696, -121.8882), about 500 m away. Needs a decision on whether to relocate the take-out to Raging River before promotion. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Label kept unchanged as instructed.",
+      "id": "acc-0d6867f78a505f75b65e",
+      "aliases": []
     },
     "Flaming Geyser State Park": {
       "status": "pending",
-      "note": "Final run (2026-10-25): State Parks' Boat Launches layer has no Flaming Geyser feature; King County's POI is the park centroid (585 m). No agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/flaming_g.png): the v1 point is in the parking loop; a dirt track reaches the river but there are several possible spots; no State Parks launch statement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): State Parks' Boat Launches layer has no Flaming Geyser feature; King County's POI is the park centroid (585 m). No agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/flaming_g.png): the v1 point is in the parking loop; a dirt track reaches the river but there are several possible spots; no State Parks launch statement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-601d294c8b9a51658dcc",
+      "aliases": []
     },
     "Goodell Creek": {
       "status": "verified",
@@ -276,11 +308,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27161411917%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~236), the launch is right of the NHD centreline (~65 m; artificial path). Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~236), the launch is right of the NHD centreline (~65 m; artificial path). Confirmed on imagery.",
+      "id": "acc-16eedffa0ba353e48220",
+      "aliases": []
     },
     "Government Bridge (Sauk)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency source. The nearest agency site is USFS 'White Creek River Access', 711 m away (a different site). Government Bridge appears informal; manager unknown. Needs agency answer or relabel decision. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): No agency source. The nearest agency site is USFS 'White Creek River Access', 711 m away (a different site). Government Bridge appears informal; manager unknown. Needs agency answer or relabel decision. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-81f43f0242b45bb5b155",
+      "aliases": []
     },
     "Hartzell Creek Boat Launch": {
       "status": "access-verified",
@@ -295,11 +331,15 @@
       "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?outFields=*&outSR=4326&f=json&objectIds=33194",
       "verifiedOn": "2026-10-25",
       "directions": "Queets River Rd (off US 101) to the NPS Hartzell boat launch; carry across the gravel bar to the Queets.",
-      "note": "NPS POI sits ~35-45 m inland of the gravel bar in forest, not at the water (research/raw/batch3/hartzell.png). Restrictions: winter storms can damage roads and boat launches (NPS); log-jam hazards (NPS); low water late summer"
+      "note": "NPS POI sits ~35-45 m inland of the gravel bar in forest, not at the water (research/raw/batch3/hartzell.png). Restrictions: winter storms can damage roads and boat launches (NPS); log-jam hazards (NPS); low water late summer",
+      "id": "acc-fdfa0f97aa195e058359",
+      "aliases": []
     },
     "Headworks (Green River)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No King County, WDFW or State Parks launch feature near the Headworks put-in (Tacoma Water land). Needs Tacoma Water/agency answer on legal access and position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+      "note": "Final run (2026-10-25): No King County, WDFW or State Parks launch feature near the Headworks put-in (Tacoma Water land). Needs Tacoma Water/agency answer on legal access and position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement.",
+      "id": "acc-5453b3e826ac5220928b",
+      "aliases": []
     },
     "Heller Bar": {
       "status": "verified",
@@ -315,11 +355,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27163873316%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream on the Snake (flow bearing ~5, north), the ramp is on the west bank, left of the NHD centreline. Confirmed on imagery."
+      "bankNote": "Facing downstream on the Snake (flow bearing ~5, north), the ramp is on the west bank, left of the NHD centreline. Confirmed on imagery.",
+      "id": "acc-2aefb784ba22590db8e8",
+      "aliases": []
     },
     "Highway 2 Bridge (Tumwater)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency coordinate or manager found for the Hwy 2 (Tumwater) bridge take-out. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): No agency coordinate or manager found for the Hwy 2 (Tumwater) bridge take-out. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-8188faa9000059108744",
+      "aliases": []
     },
     "Hoh Oxbow Campground": {
       "status": "access-verified",
@@ -334,23 +378,33 @@
       "coordinateSourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
       "verifiedOn": "2026-10-25",
       "directions": "DNR Hoh Oxbow Campground off US 101 at the Hoh River bridge; hand-carry the 0.25-mile trail from the campground to the river.",
-      "note": "DNR coordinate is the campground; trail and water end under dense forest (research/raw/batch4/hohoxbow_g.png). Restrictions: hand-carry-0.25mi; Discover Pass may be required on DNR land"
+      "note": "DNR coordinate is the campground; trail and water end under dense forest (research/raw/batch4/hohoxbow_g.png). Restrictions: hand-carry-0.25mi; Discover Pass may be required on DNR land",
+      "id": "acc-6bcf44d1483f5f3182ac",
+      "aliases": []
     },
     "Hoh Rainforest Campground": {
       "status": "pending",
-      "note": "Final run (2026-10-25): NPS Public POIs near Hoh Rain Forest have campground, visitor-center and picnic features only; no boat-launch POI. No agency coordinate for a river launch. Needs NPS answer or in-person position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+      "note": "Final run (2026-10-25): NPS Public POIs near Hoh Rain Forest have campground, visitor-center and picnic features only; no boat-launch POI. No agency coordinate for a river launch. Needs NPS answer or in-person position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement.",
+      "id": "acc-902ff3f31a87549ba371",
+      "aliases": []
     },
     "Howard Miller Steelhead Park": {
       "status": "pending",
-      "note": "Final run (2026-10-25): Skagit County park; no Skagit County GIS layer for park facilities was found publicly. WDFW's nearest site (Barnaby Slough) is 1 km away. Needs Skagit County answer. Imagery pass (2026-10-25, not promoted): Access OK (Skagit County: park open for day use year-round; county 2025 fee schedule lists an annual boat launch permit). Imagery (research/raw/batch4/hm19_g.png, z19) around the AW ramp points (48.48456,-121.59497): the lot edge drops into tree canopy; the concrete ramp and its water end are not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): Skagit County park; no Skagit County GIS layer for park facilities was found publicly. WDFW's nearest site (Barnaby Slough) is 1 km away. Needs Skagit County answer. Imagery pass (2026-10-25, not promoted): Access OK (Skagit County: park open for day use year-round; county 2025 fee schedule lists an annual boat launch permit). Imagery (research/raw/batch4/hm19_g.png, z19) around the AW ramp points (48.48456,-121.59497): the lot edge drops into tree canopy; the concrete ramp and its water end are not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-40359c0a14295b86a29d",
+      "aliases": []
     },
     "Husum (above the falls)": {
       "status": "pending",
-      "note": "USFS Husum Boating Site page confirms public access above Husum Falls (no fee) and lists lat/lon 45.799923,-121.486067; on Esri imagery (2026-10-25) that is the SR 141 roadside pull-out ~25-30 m from the water, not a confirmed water's-edge take-out. Final run: USFS INFRA has the same point; no separate take-out coordinate. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/husum_g.png): the USFS point is an SR 141 roadside pullout; the bank is under trees and the water end is not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "USFS Husum Boating Site page confirms public access above Husum Falls (no fee) and lists lat/lon 45.799923,-121.486067; on Esri imagery (2026-10-25) that is the SR 141 roadside pull-out ~25-30 m from the water, not a confirmed water's-edge take-out. Final run: USFS INFRA has the same point; no separate take-out coordinate. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/husum_g.png): the USFS point is an SR 141 roadside pullout; the bank is under trees and the water end is not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-815155758939551a879b",
+      "aliases": []
     },
     "Kanaskat-Palmer State Park": {
       "status": "pending",
-      "note": "Final run (2026-10-25): State Parks' Boat Launches layer (117 features) has no Kanaskat-Palmer feature; King County layers list only State Parks camping (1.1 km). Legal access per State Parks, but no agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/kanaskat_g.png): canyon and dense tree cover; launch not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): State Parks' Boat Launches layer (117 features) has no Kanaskat-Palmer feature; King County layers list only State Parks camping (1.1 km). Legal access per State Parks, but no agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/kanaskat_g.png): canyon and dense tree cover; launch not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-eadae2719ee65a639233",
+      "aliases": []
     },
     "Lake Wenatchee State Park": {
       "status": "verified",
@@ -366,7 +420,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150856779%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~101, east) on the Wenatchee River flowline through the outlet, the launch is on the south shore, right of the centreline (~49 m). Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~101, east) on the Wenatchee River flowline through the outlet, the launch is on the south shore, right of the centreline (~49 m). Confirmed on imagery.",
+      "id": "acc-5a59a38e220b5fada598",
+      "aliases": []
     },
     "Leidl Campground": {
       "status": "verified",
@@ -382,7 +438,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27147210338%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~307 on the flowline), the ramp is about 27 m right of the NHD centreline. Matches imagery, v1 and AW."
+      "bankNote": "Facing downstream (flow bearing ~307 on the flowline), the ramp is about 27 m right of the NHD centreline. Matches imagery, v1 and AW.",
+      "id": "acc-3baa9621af8e5cbea671",
+      "aliases": []
     },
     "Lewis Street Access (Monroe)": {
       "status": "verified",
@@ -398,7 +456,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27165058202%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~234), the ramp is right of the NHD centreline. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~234), the ramp is right of the NHD centreline. Confirmed on imagery.",
+      "id": "acc-3458e093f05a540ab7fd",
+      "aliases": []
     },
     "Lmuma Creek Recreation Site": {
       "status": "verified",
@@ -414,11 +474,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336895%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~87, east), the ramp is on the north bank, left of the NHD centreline (~51 m). Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~87, east), the ramp is on the north bank, left of the NHD centreline (~51 m). Confirmed on imagery.",
+      "id": "acc-2a081f976aca5556bedd",
+      "aliases": []
     },
     "Lower Sauk Boat Launch": {
       "status": "pending",
-      "note": "USFS Lower Sauk Boat Launch page confirms public access (no fee, day use) and lists lat/lon 48.3448,-121.5499, but on Esri imagery (2026-10-25) that point is the site entrance road ~100 m from the river. Launch position not confirmed. Final run: USFS INFRA has the same point; no ramp feature in WDFW layers. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/ls19_g.png, z19): the lot ends ~25 m from the gravel bar under canopy; no ramp visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "USFS Lower Sauk Boat Launch page confirms public access (no fee, day use) and lists lat/lon 48.3448,-121.5499, but on Esri imagery (2026-10-25) that point is the site entrance road ~100 m from the river. Launch position not confirmed. Final run: USFS INFRA has the same point; no ramp feature in WDFW layers. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/ls19_g.png, z19): the lot ends ~25 m from the gravel bar under canopy; no ramp visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-4d5970bf20755bfeb208",
+      "aliases": []
     },
     "Marblemount Boat Launch": {
       "status": "access-verified",
@@ -433,7 +497,9 @@
       "coordinateSourceUrl": "https://www.fs.usda.gov/r06/mbs/recreation/marblemount-boat-launch",
       "verifiedOn": "2026-10-25",
       "directions": "USFS Marblemount Boat Launch by the Cascade River Rd bridge at Marblemount; the launch is on the right just after the bridge (USFS description), reached from the gravel parking loop.",
-      "note": "USFS point is the parking loop ~90 m from the Skagit; shoreline under canopy, no ramp visible (research/raw/batch4/mm19_g.png). Restrictions: eagle-season (Dec-Feb): Skagit Bald Eagle area guidance - limited launch hours and no beaching; check before winter trips"
+      "note": "USFS point is the parking loop ~90 m from the Skagit; shoreline under canopy, no ramp visible (research/raw/batch4/mm19_g.png). Restrictions: eagle-season (Dec-Feb): Skagit Bald Eagle area guidance - limited launch hours and no beaching; check before winter trips",
+      "id": "acc-b242181174075661ba07",
+      "aliases": []
     },
     "Mineral Springs (Icehouse)": {
       "status": "verified",
@@ -449,11 +515,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27147210136%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~225), the ramp is about 22 m right of the NHD centreline, on the west/north-west bank. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~225), the ramp is about 22 m right of the NHD centreline, on the west/north-west bank. Confirmed on imagery.",
+      "id": "acc-3d1bb88108af55c5a9be",
+      "aliases": []
     },
     "Pateros Take-out": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none; city/port GIS not found). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pateros_g.png): a gravel lot reaches the Methow, but no agency source confirms public access. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none; city/port GIS not found). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pateros_g.png): a gravel lot reaches the Methow, but no agency source confirms public access. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-9033d18421e15abf99ad",
+      "aliases": []
     },
     "Peshastin Access": {
       "status": "verified",
@@ -469,15 +539,21 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150856568%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~57), the hand launch is left of the NHD centreline. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~57), the hand launch is left of the NHD centreline. Confirmed on imagery.",
+      "id": "acc-1dcbc6b4d4415e64b8f1",
+      "aliases": []
     },
     "Plain Access": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW, State Parks, USFS, DNR: none within 2 km). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW, State Parks, USFS, DNR: none within 2 km). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-a75e03cd8a645c829437",
+      "aliases": []
     },
     "Plese Flats": {
       "status": "pending",
-      "note": "Washington State Parks lists Plese Flats (Riverside State Park) as a non-motorized launch but publishes no coordinate; candidate is an OpenStreetMap slipway. Plese Flats is not on State Parks' 2026-08-28 list of areas still closed after the August 2026 wildfires. Final run: State Parks' Boat Launches layer (117 features) has no Plese Flats/Riverside feature; Spokane County Parks MapServer returned non-JSON. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pl19_g.png): shore in shadow, no distinct ramp; some residual closure uncertainty. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Washington State Parks lists Plese Flats (Riverside State Park) as a non-motorized launch but publishes no coordinate; candidate is an OpenStreetMap slipway. Plese Flats is not on State Parks' 2026-08-28 list of areas still closed after the August 2026 wildfires. Final run: State Parks' Boat Launches layer (117 features) has no Plese Flats/Riverside feature; Spokane County Parks MapServer returned non-JSON. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pl19_g.png): shore in shadow, no distinct ramp; some residual closure uncertainty. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-9916a06a02a8513aa882",
+      "aliases": []
     },
     "Plum Landing": {
       "status": "verified",
@@ -493,15 +569,21 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27129059046%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~323), the ramp is right of the NHD centreline. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~323), the ramp is right of the NHD centreline. Confirmed on imagery.",
+      "id": "acc-6946d97a92365732acfa",
+      "aliases": []
     },
     "Queets Trailhead": {
       "status": "pending",
-      "note": "Final run (2026-10-25): The nearest NPS launch POI is 'Queets Campground' Boat Launch (OBJECTID 20692; 47.628058, -124.017520), 427 m from v1's Queets Trailhead point, so it is a different site. Promote only if North/the coding agent agrees to relabel the put-in as Queets Campground (label change not made here). Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Queets relabel not approved."
+      "note": "Final run (2026-10-25): The nearest NPS launch POI is 'Queets Campground' Boat Launch (OBJECTID 20692; 47.628058, -124.017520), 427 m from v1's Queets Trailhead point, so it is a different site. Promote only if North/the coding agent agrees to relabel the put-in as Queets Campground (label change not made here). Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Queets relabel not approved.",
+      "id": "acc-5d1fa62604015fc88c24",
+      "aliases": []
     },
     "Red Barn Access (Winthrop)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): Red Barn is the Town of Winthrop's Mack Lloyd Park (WWRP grant record), but no Town GIS/launch coordinate or access page was found; USFWS features nearby are Winthrop hatchery only. Needs Town of Winthrop answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/rb19_g.png, z19) shows a clear path from the lot behind the Barn to the gravel shore (water end ~48.47608,-120.18798; river-left per NHDPlus 144385429). But access status is not clear enough: the Town's 2024 Park Plan (https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf) says the bank 'has been used informally' for water access, is severely eroding, and the Town 'has funding to install a new water access pathway' for hand launch (RCO-funded, construction anticipated 2024); completion was not confirmed. Construction/legal-status uncertainty, so not placed."
+      "note": "Final run (2026-10-25): Red Barn is the Town of Winthrop's Mack Lloyd Park (WWRP grant record), but no Town GIS/launch coordinate or access page was found; USFWS features nearby are Winthrop hatchery only. Needs Town of Winthrop answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/rb19_g.png, z19) shows a clear path from the lot behind the Barn to the gravel shore (water end ~48.47608,-120.18798; river-left per NHDPlus 144385429). But access status is not clear enough: the Town's 2024 Park Plan (https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf) says the bank 'has been used informally' for water access, is severely eroding, and the Town 'has funding to install a new water access pathway' for hand launch (RCO-funded, construction anticipated 2024); completion was not confirmed. Construction/legal-status uncertainty, so not placed.",
+      "id": "acc-0656ea1d40c052f6888a",
+      "aliases": []
     },
     "Roza Recreation Site": {
       "status": "verified",
@@ -517,11 +599,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336224%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~116), the ramp is on the north-east bank, left of the NHD centreline (~30 m). Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~116), the ramp is on the north-east bank, left of the NHD centreline (~30 m). Confirmed on imagery.",
+      "id": "acc-2090b968ef355d4382b9",
+      "aliases": []
     },
     "Sauk Prairie (Darrington)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency launch feature found in USFS INFRA, WDFW, Snohomish County Parks or DNR layers. Manager unknown. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+      "note": "Final run (2026-10-25): No agency launch feature found in USFS INFRA, WDFW, Snohomish County Parks or DNR layers. Manager unknown. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement.",
+      "id": "acc-5edbb8d246a25a818d5a",
+      "aliases": []
     },
     "Streator Crossing": {
       "status": "access-verified",
@@ -536,19 +622,27 @@
       "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?outFields=*&outSR=4326&f=json&objectIds=21737",
       "verifiedOn": "2026-10-25",
       "directions": "Queets River Rd to the NPS Streator Crossing launch; the main channel is ~60 m beyond the POI across a gravel bar (a side channel is closer).",
-      "note": "NPS POI is in vegetation ~60 m from the main channel (~20 m from a side channel) (research/raw/batch3/streaters.png). Restrictions: winter storms can damage roads and boat launches (NPS); log-jam hazards (NPS); side-channel vs main channel"
+      "note": "NPS POI is in vegetation ~60 m from the main channel (~20 m from a side channel) (research/raw/batch3/streaters.png). Restrictions: winter storms can damage roads and boat launches (NPS); log-jam hazards (NPS); side-channel vs main channel",
+      "id": "acc-d9ebfda384695c8fa7fc",
+      "aliases": []
     },
     "Sultan Sportsman Park": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency launch feature: King County/Snohomish County layers found nothing; WDFW's nearest is Jonker (560 m, different site). City of Sultan GIS not found. Needs City of Sultan answer. Imagery pass (2026-10-25, not promoted): Access OK in principle (Snohomish County shoreline access inventory lists 'Sportsman's Park, WDFW, Boat launch'). Imagery (research/raw/batch4/su19_g.png, su19b_g.png, z19) around AW 47.86078,-121.82127: the confluence point is wooded, the lot north of US 2 looks like a gravel/staging yard, and no ramp to the water is visible. Not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): No agency launch feature: King County/Snohomish County layers found nothing; WDFW's nearest is Jonker (560 m, different site). City of Sultan GIS not found. Needs City of Sultan answer. Imagery pass (2026-10-25, not promoted): Access OK in principle (Snohomish County shoreline access inventory lists 'Sportsman's Park, WDFW, Boat launch'). Imagery (research/raw/batch4/su19_g.png, su19b_g.png, z19) around AW 47.86078,-121.82127: the confluence point is wooded, the lot north of US 2 looks like a gravel/staging yard, and no ramp to the water is visible. Not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-5288d2de2beb53a2a50c",
+      "aliases": []
     },
     "T.J. Meenach Bridge": {
       "status": "pending",
-      "note": "Candidate is a generic American Whitewater 'Put In' point only; no managing-agency source or coordinate for a T.J. Meenach Bridge launch found. Final run: no City of Spokane or Spokane County launch feature found. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+      "note": "Candidate is a generic American Whitewater 'Put In' point only; no managing-agency source or coordinate for a T.J. Meenach Bridge launch found. Final run: no City of Spokane or Spokane County launch feature found. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement.",
+      "id": "acc-d1e97aa1892153999112",
+      "aliases": []
     },
     "Tanner Road Access": {
       "status": "pending",
-      "note": "Candidate is American Whitewater only (designated parking on Tanner Road per AW); no city/county agency page or coordinate found. Final run: King County features nearby are Snoqualmie Valley Trail only (~790 m); DNR has Mount Si trailheads (1.4 km). No agency launch. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Candidate is American Whitewater only (designated parking on Tanner Road per AW); no city/county agency page or coordinate found. Final run: King County features nearby are Snoqualmie Valley Trail only (~790 m); DNR has Mount Si trailheads (1.4 km). No agency launch. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-71b065ac7998582a9373",
+      "aliases": []
     },
     "Troy Boat Launch": {
       "status": "verified",
@@ -564,7 +658,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27109440274%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~47 on the flowline), the access is on the south-east bank, right of the NHD centreline. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~47 on the flowline), the access is on the south-east bank, right of the NHD centreline. Confirmed on imagery.",
+      "id": "acc-65a64e5116285aa886de",
+      "aliases": []
     },
     "Turkey Hole": {
       "status": "verified",
@@ -580,11 +676,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27147210062%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~255), the take-out is about 23 m left of the NHD centreline, on the south bank. The WDFW parking point is also south. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~255), the take-out is about 23 m left of the NHD centreline, on the south bank. The WDFW parking point is also south. Confirmed on imagery.",
+      "id": "acc-4c1bba8415475fcbb81f",
+      "aliases": []
     },
     "Twisp Access": {
       "status": "pending",
-      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/twisp_g.png): no launch visible at the park/pool lot; no agency access source. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/twisp_g.png): no launch visible at the park/pool lot; no agency access source. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+      "id": "acc-041fdb0bf8ee57ffb898",
+      "aliases": []
     },
     "Umtanum Recreation Site": {
       "status": "verified",
@@ -600,7 +700,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27149336248%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~197, south), the ramp is on the east bank, left of the NHD centreline (~34 m). Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~197, south), the ramp is on the east bank, left of the NHD centreline (~34 m). Confirmed on imagery.",
+      "id": "acc-4fecfdda9dbf55ed8d38",
+      "aliases": []
     },
     "Vernita Bridge": {
       "status": "verified",
@@ -616,11 +718,15 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150580585%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~62 on the flowline), the ramp is on the north shore, left of the NHD centreline. Matches imagery and NPS."
+      "bankNote": "Facing downstream (flow bearing ~62 on the flowline), the ramp is on the north shore, left of the NHD centreline. Matches imagery and NPS.",
+      "id": "acc-2c2dca2b9c2e5a02b8d1",
+      "aliases": []
     },
     "Waterfront Park (Leavenworth)": {
       "status": "pending",
-      "note": "Final run (2026-10-25): City of Leavenworth's ArcGIS layers are District_Park and Parking_Zones only (no launch feature); no agency launch coordinate. Needs City of Leavenworth answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/waterfront_g.png): several beaches, no single launch; no City access page found."
+      "note": "Final run (2026-10-25): City of Leavenworth's ArcGIS layers are District_Park and Parking_Zones only (no launch feature); no agency launch coordinate. Needs City of Leavenworth answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/waterfront_g.png): several beaches, no single launch; no City access page found.",
+      "id": "acc-bec66ad1dfa75d3b83a4",
+      "aliases": []
     },
     "White Bluffs Boat Launch": {
       "status": "verified",
@@ -636,7 +742,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27150580600%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~204), the ramp is on the east/south-east bank, left of the NHD centreline (~270 m; the reach is wide here). Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~204), the ramp is on the east/south-east bank, left of the NHD centreline (~270 m; the reach is wide here). Confirmed on imagery.",
+      "id": "acc-6e3924206e215ee281e9",
+      "aliases": []
     },
     "Whitney Bridge": {
       "status": "verified",
@@ -652,7 +760,9 @@
       "bankVerifiedOn": "2026-10-25",
       "bankSourceName": "USGS NHDPlus HR flowline (flow-direction digitized) + Esri World Imagery",
       "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3/query?where=permanent_identifier%3D%27130904196%27&outFields=permanent_identifier,gnis_name,flowdir&returnGeometry=true&outSR=4326&f=json",
-      "bankNote": "Facing downstream (flow bearing ~289), the put-in area is on the north bank, right of the NHD centreline (~47 m; artificial path). Matches AW's 'take out on river right at Whitney Bridge'. Confirmed on imagery."
+      "bankNote": "Facing downstream (flow bearing ~289), the put-in area is on the north bank, right of the NHD centreline (~47 m; artificial path). Matches AW's 'take out on river right at Whitney Bridge'. Confirmed on imagery.",
+      "id": "acc-b63a43c2574350c4a8f5",
+      "aliases": []
     }
   }
 }

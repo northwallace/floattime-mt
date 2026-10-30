@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "MO-usfs-access",
+    "state": "MO",
+    "agency": "USDA Forest Service",
+    "discoveryUrl": "https://data-usfs.hub.arcgis.com/",
+    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
+    "where": "objectid IN (6642,6667,6774,6765,6651,6677,6799,6729,6864,6718,6823,6730,6764,6666,6686,6708)",
+    "fields": [
+      "recareaname",
+      "longitude",
+      "latitude",
+      "recareaurl",
+      "forestname",
+      "recareaid",
+      "markertype",
+      "markeractivity",
+      "recareadescription",
+      "restrictions",
+      "openstatus",
+      "operational_hours",
+      "open_season_start",
+      "open_season_end"
+    ],
+    "stableFeatureField": "recareaid",
+    "note": "Complete declared subset of recreation records referenced by the current state catalog; not a complete statewide boating inventory. A recreation point alone does not establish a launch."
+  },
+  "retrievedAt": "2026-10-30T19:25:10.261281+00:00",
+  "file": "research/agency-sources/MO-usfs-access/4b342d99cf378c3de6d5a9053db1f8c31638db739e08333eac203359943200c5.json",
+  "sha256": "4b342d99cf378c3de6d5a9053db1f8c31638db739e08333eac203359943200c5",
+  "features": 16,
+  "changes": null,
+  "reviewStatus": "research-only"
+}

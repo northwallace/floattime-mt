@@ -1,0 +1,68 @@
+{
+ "id": "new-fork-river-draft-sections",
+ "name": "New Fork River — Mesa Bridge to Green River — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "permission"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0062",
+   "name": "Airport (New Fork)",
+   "grade": "verified",
+   "flags": []
+  },
+  {
+   "id": "WY-ACC-0063",
+   "name": "Hocker (New Fork)",
+   "grade": "pending",
+   "flags": [
+    "permission"
+   ]
+  },
+  {
+   "id": "WY-ACC-0064",
+   "name": "Boulder Bridge (New Fork)",
+   "grade": "verified",
+   "flags": []
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "airport-to-hocker",
+   "putIn": "Airport (New Fork)",
+   "takeOut": "Hocker (New Fork)",
+   "miles": 1.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  },
+  {
+   "id": "hocker-to-boulder-bridge",
+   "putIn": "Hocker (New Fork)",
+   "takeOut": "Boulder Bridge (New Fork)",
+   "miles": 8.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  }
+ ]
+}

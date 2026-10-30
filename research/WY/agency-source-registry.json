@@ -1,0 +1,93 @@
+{
+ "state": "WY",
+ "checkedOn": "2026-10-27",
+ "agencies": [
+  {
+   "agency": "Wyoming Game and Fish Department",
+   "role": "statewide river access point list, fishing-guide facilities, Public Access Areas, AIS, stream-access law",
+   "layers": [
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/Facilities_FishingGuide_PublicView/FeatureServer/0",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Facilities/FeatureServer/3",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Locations/FeatureServer/4"
+   ],
+   "pages": [
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json&resultRecordCount=2000",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0?f=json",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/Facilities_FishingGuide_PublicView/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json&resultRecordCount=2000",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/Facilities_FishingGuide_PublicView/FeatureServer/0?f=json",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Facilities/FeatureServer/3/query?where=1%3D1&outFields=*&outSR=4326&f=json&resultRecordCount=2000",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Locations/FeatureServer/4/query?where=1%3D1&outFields=*&outSR=4326&f=json&resultRecordCount=2000",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Locations/FeatureServer/4?f=json",
+    "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/PAA_Facilities/FeatureServer/3?f=json",
+    "https://wgfd.wyo.gov/fishing-boating/aquatic-invasive-species-prevention",
+    "https://wgfd.wyo.gov/Fishing-Update/Fishing-Access-What-is-trespassing",
+    "https://wgfd.wyo.gov/Public-Access/Public-Access-Areas/Green-River-Sommers-Boat-Launch",
+    "https://wgfd.wyo.gov/Ask-Game-and-Fish/span-id-docs-internal-guid-e06514ae-7fff-e5a7-686c"
+   ]
+  },
+  {
+   "agency": "National Park Service (Grand Teton, Yellowstone, Bighorn Canyon)",
+   "role": "Snake River float guide, boat permits, Yellowstone river closure",
+   "layers": [
+    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Public_POIs/FeatureServer/0"
+   ],
+   "pages": [
+    "https://www.nps.gov/grte/planyourvisit/boat.htm",
+    "https://www.nps.gov/grte/planyourvisit/float.htm",
+    "https://www.nps.gov/places/000/moose-landing.htm",
+    "https://www.nps.gov/yell/planyourvisit/boating.htm",
+    "https://www.nps.gov/bica/planyourvisit/boating.htm"
+   ]
+  },
+  {
+   "agency": "USDA Forest Service (Bridger-Teton, Shoshone, Medicine Bow NFs)",
+   "role": "Snake River SRA permits/fees, canyon group permits, recreation sites",
+   "layers": [
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0"
+   ],
+   "pages": [
+    "https://www.fs.usda.gov/r04/bridger-teton/recreation/west-table-boating-site",
+    "https://www.fs.usda.gov/r04/bridger-teton/permits/snake-river-permits",
+    "https://www.fs.usda.gov/r04/bridger-teton/recreation/snake-river-canyon"
+   ]
+  },
+  {
+   "agency": "Bureau of Land Management",
+   "role": "recreation sites (fishing access, boat ramps) on the North Platte, Green, Clarks Fork, Tongue",
+   "layers": [
+    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2"
+   ],
+   "pages": [
+    "https://www.blm.gov/visit/north-platte-river"
+   ]
+  },
+  {
+   "agency": "Eastern Shoshone and Northern Arapaho Tribes (Wind River Indian Reservation)",
+   "role": "tribal fishing/recreation permits, Wind River Canyon rafting approval",
+   "layers": [],
+   "pages": [
+    "https://www.windriverfishandgame.com/what-you-need-to-know/",
+    "https://www.windriverfishandgame.com/wp-content/uploads/2026/07/F16881-Fishing-Regulations-Singles-2026.pdf"
+   ]
+  },
+  {
+   "agency": "Wyoming State Parks",
+   "role": "Boysen and Hot Springs state parks (context)",
+   "layers": [],
+   "pages": [
+    "https://wyoparks.wyo.gov/index.php/places-to-go/boysen",
+    "https://wyoparks.wyo.gov/index.php/places-to-go/hot-springs"
+   ]
+  },
+  {
+   "agency": "USGS",
+   "role": "NWIS gauges, NLDI routing, NHD High Resolution",
+   "layers": [
+    "https://api.water.usgs.gov/nldi/linked-data",
+    "https://waterservices.usgs.gov/nwis/iv/"
+   ],
+   "pages": []
+  }
+ ]
+}

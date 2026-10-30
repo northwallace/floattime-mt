@@ -1,0 +1,567 @@
+{
+ "state": "AR",
+ "checkedOn": "2026-10-30",
+ "count": 41,
+ "items": [
+  {
+   "id": "AR-RQ-001",
+   "blocker": "in-lake-polygon",
+   "subject": "Beaver Lake Dam Site Boat Ramp",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "Pin plots inside NHD waterbody ['Table Rock Lake']; imagery decides.",
+   "nextAction": "Confirm against a published agency page before publishing; do not contact agencies from this package.",
+   "affectedSections": [
+    "beaver-lake-dam-site-boat-ramp-to-bertrand-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-002",
+   "blocker": "access-change",
+   "subject": "Buffalo Point (Buffalo NR)",
+   "priority": "high",
+   "checkedOn": "2026-10-30",
+   "explanation": "NPS mileage page: 'The road down to the launch at Buffalo Point is closed. If you put in or take out at Buffalo Point you will need to carry your boat and gear up the large and steep gravel bar to the parking lot. You may want to consider taking out at Dillards Ferry, which is 1.5 miles upstream from Buffalo Point.'",
+   "nextAction": "Confirm against a published agency page before publishing; do not contact agencies from this package.",
+   "affectedSections": [
+    "dillards-ferry-to-buffalo-point",
+    "buffalo-point-to-rush"
+   ]
+  },
+  {
+   "id": "AR-RQ-003",
+   "blocker": "owner-unlisted",
+   "subject": "Hwy 64 Boat Ramp",
+   "priority": "high",
+   "checkedOn": "2026-10-30",
+   "explanation": "AGFC facility record owner is 'Other' — AHTD Right of Way, Project needs sign designating area from HWY 64.; public-use status comes from the AGFC Public Use Facilities layer only.",
+   "nextAction": "Confirm against a published agency page before publishing; do not contact agencies from this package.",
+   "affectedSections": [
+    "shaw-bridge-boat-ramp-to-hwy-64-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-004",
+   "blocker": "nhd-name",
+   "subject": "Peeler Bend Boat Ramp",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "NHD HR names the channel at this ramp 'Alum Fork Saline River'; AGFC Saline River Water Trail lists Peeler Bend on the Saline River trail.",
+   "nextAction": "Confirm against a published agency page before publishing; do not contact agencies from this package.",
+   "affectedSections": [
+    "peeler-bend-boat-ramp-to-lyle-park-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-005",
+   "blocker": "owner-unlisted",
+   "subject": "Shaw Bridge Boat Ramp",
+   "priority": "high",
+   "checkedOn": "2026-10-30",
+   "explanation": "AGFC facility record owner is 'Other' — AHTD Right of Way; public-use status comes from the AGFC Public Use Facilities layer only.",
+   "nextAction": "Confirm against a published agency page before publishing; do not contact agencies from this package.",
+   "affectedSections": [
+    "hwy-285-boat-ramp-to-shaw-bridge-boat-ramp",
+    "shaw-bridge-boat-ramp-to-hwy-64-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-006",
+   "blocker": "owner-unlisted",
+   "subject": "WOKA Whitewater Park Canoe-Kayakng Access",
+   "priority": "high",
+   "checkedOn": "2026-10-30",
+   "explanation": "AGFC facility record owner is 'Other - See Comments' — Ownership belongs to GRDA (Grand River Dam Authority); public-use status comes from the AGFC Public Use Facilities layer only.",
+   "nextAction": "Confirm against a published agency page before publishing; do not contact agencies from this package.",
+   "affectedSections": [
+    "siloam-springs-kayak-park-access-to-woka-whitewater-park-canoe-kayakng-access"
+   ]
+  },
+  {
+   "id": "AR-RQ-007",
+   "blocker": "off-reach",
+   "subject": "Brookings Boat Ramp",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Off the routed reach (NLDI distance 2060.8 m): 2.1 km from the routed NHDPlus V2 Black River line (likely an old channel/slough); research-only.",
+   "nextAction": "Keep research-only unless an agency page confirms it is on the floated channel.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-008",
+   "blocker": "off-reach",
+   "subject": "Dripping Springs Boat Ramp",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Off the routed reach (NLDI distance 1110.7 m): 1.1 km from the routed NHDPlus V2 Little Red River line; research-only.",
+   "nextAction": "Keep research-only unless an agency page confirms it is on the floated channel.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-009",
+   "blocker": "off-reach",
+   "subject": "Pinnacle Mountain State Park - Little Maumelle Boat Ramp",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Off the routed reach (NLDI distance 1693.2 m): routes to the Maumelle River, not the Little Maumelle; research-only.",
+   "nextAction": "Keep research-only unless an agency page confirms it is on the floated channel.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-010",
+   "blocker": "off-reach",
+   "subject": "Dark Corner Spur Boating Access",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Off the routed reach (NLDI distance 489.0 m): off the main Bayou DeView channel (spur); AGFC lists Dark Corner as a water-trail access; research-only.",
+   "nextAction": "Keep research-only unless an agency page confirms it is on the floated channel.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-011",
+   "blocker": "off-reach",
+   "subject": "Hickson Lake Boat Ramp",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Off the routed reach (NLDI distance 1843.1 m): on Hickson Lake (oxbow) off the routed Bayou DeView line; AGFC lists it as a water-trail access; research-only.",
+   "nextAction": "Keep research-only unless an agency page confirms it is on the floated channel.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-012",
+   "blocker": "put-in/take-out approximate",
+   "subject": "Dalton Boat Ramp",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "imagery verdict 'flag': Pin among buildings roughly 80 m from the river; ramp not identifiable at the pin",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "dalton-boat-ramp-to-eleven-point-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-013",
+   "blocker": "put-in/take-out approximate",
+   "subject": "Indian Creek Access",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "imagery verdict 'flag': Pin at a parking loop roughly 60-70 m from the river",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "high-bank-access-to-indian-creek-access",
+    "indian-creek-access-to-redding-recreation-area-canoe-access"
+   ]
+  },
+  {
+   "id": "AR-RQ-014",
+   "blocker": "put-in/take-out approximate",
+   "subject": "Shirley Creek (USFS)",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "imagery verdict 'flag': Pin in woods roughly 100 m from the river",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "cherry-hill-boat-ramp-to-shirley-creek",
+    "shirley-creek-to-oden-boating-access"
+   ]
+  },
+  {
+   "id": "AR-RQ-015",
+   "blocker": "put-in/take-out approximate",
+   "subject": "Rocky Shoals (USFS)",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "oden-boating-access-to-rocky-shoals",
+    "rocky-shoals-to-fulton-branch"
+   ]
+  },
+  {
+   "id": "AR-RQ-016",
+   "blocker": "put-in/take-out approximate",
+   "subject": "Fulton Branch (USFS)",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "rocky-shoals-to-fulton-branch",
+    "fulton-branch-to-dragover"
+   ]
+  },
+  {
+   "id": "AR-RQ-017",
+   "blocker": "put-in/take-out approximate",
+   "subject": "River Bluff (USFS)",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "dragover-to-river-bluff"
+   ]
+  },
+  {
+   "id": "AR-RQ-018",
+   "blocker": "put-in/take-out approximate",
+   "subject": "Rock Island RR Boating Access",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "imagery verdict 'flag': Pin on a linear clearing in forest roughly 100 m from the mapped channel; launch not identifiable",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "highway-17-boating-access-to-rock-island-rr-boating-access",
+    "rock-island-rr-boating-access-to-apple-lake-boat-access"
+   ]
+  },
+  {
+   "id": "AR-RQ-019",
+   "blocker": "put-in/take-out approximate",
+   "subject": "Apple Lake Boat Access",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "NHD HR named-river distance 272.4 m exceeds 150 m",
+   "nextAction": "Find a launch-level agency coordinate; until then the app shows an approximate area.",
+   "affectedSections": [
+    "rock-island-rr-boating-access-to-apple-lake-boat-access",
+    "apple-lake-boat-access-to-bank-of-brinkley-boating-access"
+   ]
+  },
+  {
+   "id": "AR-RQ-020",
+   "blocker": "timing-unmatched",
+   "subject": "Rush (Buffalo NR) → Shipp's Ferry Boat Ramp",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "duration is in days (multi-day); kept in the section note, not as hourly guideTimes",
+   "nextAction": "Attach the time once both endpoints exist.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-021",
+   "blocker": "timing-unmatched",
+   "subject": "Tony Kelly → Lyle Park",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Tony Kelly Ford is not a point in this package (no AGFC facility record selected).",
+   "nextAction": "Attach the time once both endpoints exist.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-022",
+   "blocker": "timing-unmatched",
+   "subject": "Lyle Park → Saline Crossing",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Saline Crossing / Cherry Demuth are not confirmed to be the AGFC 'I -30 Cherry Gingles Boat Ramp' record (identity open; see review queue).",
+   "nextAction": "Attach the time once both endpoints exist.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-023",
+   "blocker": "timing-unmatched",
+   "subject": "Moore Ford → Peeler Bend",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Moore Ford is not a point in this package.",
+   "nextAction": "Attach the time once both endpoints exist.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-024",
+   "blocker": "source-unavailable",
+   "subject": "https://www.agfc.com/education/arkansas-water-trails/",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-025",
+   "blocker": "source-unavailable",
+   "subject": "https://www.agfc.com/en/explore-outdoors/canoeing-and-kayaking/water-trails/",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-026",
+   "blocker": "source-unavailable",
+   "subject": "https://law.justia.com/cases/arkansas/supreme-court/1980/79-320-0.html",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 403: Forbidden",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-027",
+   "blocker": "source-unavailable",
+   "subject": "https://www.nps.gov/buff/planyourvisit/brochures.htm",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-028",
+   "blocker": "source-unavailable",
+   "subject": "https://www.nps.gov/buff/planyourvisit/floating.htm",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-029",
+   "blocker": "source-unavailable",
+   "subject": "https://www.nps.gov/buff/planyourvisit/canoeing-outfitters.htm",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-030",
+   "blocker": "source-unavailable",
+   "subject": "https://www.nps.gov/buff/planyourvisit/preventive-search-and-rescue.htm",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-031",
+   "blocker": "source-unavailable",
+   "subject": "https://www.nps.gov/buff/planyourvisit/river-levels.htm",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-032",
+   "blocker": "source-unavailable",
+   "subject": "https://www.nps.gov/buff/planyourvisit/rules-and-regulations.htm",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Fetch failed: HTTP Error 404: Not Found",
+   "nextAction": "Retry later; nothing in the catalog depends on it.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-033",
+   "blocker": "timing",
+   "subject": "All catalog rivers",
+   "priority": "high",
+   "checkedOn": "2026-10-30",
+   "explanation": "No flow-to-speed calibration; timing.mode is 'unavailable' everywhere. NPS guideTimes cover Buffalo sections and AGFC covers Peeler Bend → Lyle Park. AGFC 'about 2 mph' (Crooked, Saline) and '1-2 mph' (Bayou DeView) rules of thumb were NOT applied.",
+   "nextAction": "North: decide whether guide ranges alone are enough for visitors, and whether agency mph statements may ever be used.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-034",
+   "blocker": "mileage-preliminary",
+   "subject": "NLDI-only mileages",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "96 sections use NHDPlus V2 routed distance (no agency river miles).",
+   "nextAction": "Accept as preliminary or find agency mile tables.",
+   "affectedSections": [
+    "upper-white-river-magness-family-access-boat-ramp-to-hwy-45-boat-ramp",
+    "beaver-lake-dam-site-boat-ramp-to-bertrand-boat-ramp",
+    "bertrand-boat-ramp-to-houseman-boat-ramp",
+    "bull-shoals-boat-ramp-to-gaston-s-resort-boat-ramp",
+    "gaston-s-resort-boat-ramp-to-white-hole-boat-ramp",
+    "white-hole-boat-ramp-to-wildcat-shoals-boat-ramp",
+    "wildcat-shoals-boat-ramp-to-cotter-boat-ramp",
+    "cotter-boat-ramp-to-rim-shoals-boat-ramp",
+    "rim-shoals-boat-ramp-to-ranchette-boat-ramp-2",
+    "ranchette-boat-ramp-2-to-cartney-boat-ramp",
+    "cartney-boat-ramp-to-shipp-s-ferry-boat-ramp",
+    "shipp-s-ferry-boat-ramp-to-norfork-2-boat-ramp",
+    "norfork-2-boat-ramp-to-red-s-landing-boat-ramp",
+    "red-s-landing-boat-ramp-to-sneed-creek-boat-ramp",
+    "sneed-creek-boat-ramp-to-chesmond-ferry-boat-ramp",
+    "chesmond-ferry-boat-ramp-to-calico-rock-boat-ramp",
+    "calico-rock-boat-ramp-to-boswell-shoals-boating-access",
+    "boswell-shoals-boating-access-to-mount-olive-boat-ramp",
+    "mount-olive-boat-ramp-to-sylamore-ferry-boating-access",
+    "sylamore-ferry-boating-access-to-round-bottom-boat-ramp",
+    "round-bottom-boat-ramp-to-guion-boat-ramp-izard-county",
+    "dam-quarry-boat-ramp-to-norfork-1-boat-ramp",
+    "dalton-boat-ramp-to-eleven-point-boat-ramp",
+    "cold-springs-boat-ramp-to-dam-3-boat-ramp",
+    "dam-3-boat-ramp-to-bayou-boat-ramp",
+    "bayou-boat-ramp-to-hardy-beach-access-boat-ramp",
+    "hardy-beach-access-boat-ramp-to-lb-access-boat-ramp",
+    "lb-access-boat-ramp-to-ravenden-boat-ramp",
+    "ravenden-boat-ramp-to-imboden-boat-ramp",
+    "sunrise-boating-access-to-hwy-395-boat-ramp",
+    "hwy-395-boat-ramp-to-salem-boat-ramp",
+    "horseshoe-bend-boat-ramp-to-simstown-canoe-access",
+    "simstown-canoe-access-to-ransom-w-smith-access",
+    "ransom-w-smith-access-to-peebles-bluff-access-boat-ramp",
+    "peebles-bluff-access-boat-ramp-to-riverview-school-access-boat-ramp",
+    "kody-riggan-datto-boat-ramp-to-schaeffer-s-eddy-boat-ramp",
+    "schaeffer-s-eddy-boat-ramp-to-pocahontas-boat-ramp",
+    "pocahontas-boat-ramp-to-black-rock-boating-access",
+    "black-rock-boating-access-to-powhatan-access",
+    "powhatan-access-to-dixie-lee-boat-ramp",
+    "dixie-lee-boat-ramp-to-coffey-access-boat-ramp",
+    "jfk-park-boat-ramp-to-barnett-boat-ramp",
+    "barnett-boat-ramp-to-lobo-landing-boat-ramp",
+    "lobo-landing-boat-ramp-to-ramsey-boat-ramp",
+    "ramsey-boat-ramp-to-monaghan-womack-hwy-305-boat-ramp",
+    "marble-access-kings-river-boating-access-to-rockhouse-canoe-kayak-access",
+    "rockhouse-canoe-kayak-access-to-j-d-fletcher-kings-river-boating-access",
+    "j-d-fletcher-kings-river-boating-access-to-stoney-point-boating-access",
+    "stoney-point-boating-access-to-romp-hole-boat-ramp",
+    "wolf-pen-recreation-area-canoe-access-to-high-bank-access",
+    "high-bank-access-to-indian-creek-access",
+    "indian-creek-access-to-redding-recreation-area-canoe-access",
+    "redding-recreation-area-canoe-access-to-big-eddy-canoe-access",
+    "big-eddy-canoe-access-to-campbell-cemetery-canoe-access",
+    "campbell-cemetery-canoe-access-to-bluff-hole-park-boating-access",
+    "mcguire-boating-access-to-cherry-hill-boat-ramp",
+    "cherry-hill-boat-ramp-to-shirley-creek",
+    "shirley-creek-to-oden-boating-access",
+    "oden-boating-access-to-rocky-shoals",
+    "rocky-shoals-to-fulton-branch",
+    "fulton-branch-to-dragover",
+    "dragover-to-river-bluff",
+    "little-missouri-hwy-27-boating-access-to-terrell-access-boat-ramp",
+    "terrell-access-boat-ramp-to-highway-19-boating-access-little-missouri-river",
+    "highway-19-boating-access-little-missouri-river-to-nubin-hill-boat-ramp",
+    "nubin-hill-boat-ramp-to-hwy-67-boat-ramp",
+    "hwy-67-boat-ramp-to-reed-barringer-boat-ramp",
+    "norman-boating-access-to-swinging-bridge-boat-ramp",
+    "swinging-bridge-boat-ramp-to-glenwood-boat-ramp",
+    "glenwood-boat-ramp-to-hwy-182-amity-boat-ramp",
+    "hwy-182-amity-boat-ramp-to-calvin-road-boat-ramp",
+    "lyle-park-boat-ramp-to-i-30-cherry-gingles-boat-ramp",
+    "i-30-cherry-gingles-boat-ramp-to-fitzhugh-boat-ramp",
+    "fitzhugh-boat-ramp-to-highway-270-boat-ramp",
+    "highway-270-boat-ramp-to-jenkins-ferry-boat-ramp",
+    "hwy-167-boat-ramp-to-lee-s-ferry-boat-ramp",
+    "lee-s-ferry-boat-ramp-to-hwy-79-pool-boat-ramp",
+    "hwy-79-pool-boat-ramp-to-cowford-boat-ramp",
+    "cowford-boat-ramp-to-hwy-15-63-boat-ramp",
+    "hwy-15-63-boat-ramp-to-hwy-278-boat-ramp",
+    "hwy-278-boat-ramp-to-ozment-bluff-boat-ramp",
+    "ozment-bluff-boat-ramp-to-longview-boat-ramp",
+    "fourche-lafave-river-access-to-steel-bridge-access",
+    "steel-bridge-access-to-perryville-public-access-fourche-lafave-river",
+    "perryville-public-access-fourche-lafave-river-to-fourche-lafave-river-seasonal-boating-access",
+    "hwy-65-boat-ramp-to-hwy-285-boat-ramp",
+    "hwy-285-boat-ramp-to-shaw-bridge-boat-ramp",
+    "shaw-bridge-boat-ramp-to-hwy-64-boat-ramp",
+    "mickles-switch-boating-access-to-mt-george-boat-ramp",
+    "mt-george-boat-ramp-to-dale-bend-boat-ramp",
+    "dale-bend-boat-ramp-to-petit-jean-river-highway-7-boat-ramp",
+    "petit-jean-river-highway-7-boat-ramp-to-slaty-crossing-boat-ramp",
+    "slaty-crossing-boat-ramp-to-pontoon-park-boat-ramp",
+    "pyatt-2-boat-ramp-to-snow-crooked-creek-boat-ramp",
+    "yellville-crooked-creek-boat-ramp-to-lower-crooked-creek-boat-ramp",
+    "highway-17-boating-access-to-rock-island-rr-boating-access"
+   ]
+  },
+  {
+   "id": "AR-RQ-035",
+   "blocker": "long-sections",
+   "subject": "Long reaches (> 20 mi)",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "9 catalog sections are longer than 20 river miles (rivers: Black River — Arkansas line to Black Rock, Buffalo National River — Boxley to Buffalo City, Kings River, Little Missouri River — below Narrows Dam, Saline River — Benton to Jenkins Ferry, Strawberry River). Rush → Shipp's Ferry (30.2 mi) is an NPS multi-day trip.",
+   "nextAction": "North: decide whether to show these as day trips or split them.",
+   "affectedSections": [
+    "rush-to-shipp-s-ferry-boat-ramp",
+    "horseshoe-bend-boat-ramp-to-simstown-canoe-access",
+    "peebles-bluff-access-boat-ramp-to-riverview-school-access-boat-ramp",
+    "pocahontas-boat-ramp-to-black-rock-boating-access",
+    "marble-access-kings-river-boating-access-to-rockhouse-canoe-kayak-access",
+    "rockhouse-canoe-kayak-access-to-j-d-fletcher-kings-river-boating-access",
+    "terrell-access-boat-ramp-to-highway-19-boating-access-little-missouri-river",
+    "hwy-67-boat-ramp-to-reed-barringer-boat-ramp",
+    "i-30-cherry-gingles-boat-ramp-to-fitzhugh-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-036",
+   "blocker": "identity",
+   "subject": "Crooked Creek Pyatt accesses",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "AGFC water trail names 'Lower Pyatt' (US 62 bridge) and 'Upper Pyatt' (~1 mi upstream, US 62 Spur); the AGFC facility layer has 'Pyatt #1' and 'Pyatt #2'. Which is which is not stated, so the AGFC 6.7-mile Lower Pyatt→Snow figure was not applied.",
+   "nextAction": "Match from a published AGFC map.",
+   "affectedSections": [
+    "pyatt-2-boat-ramp-to-snow-crooked-creek-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-037",
+   "blocker": "identity",
+   "subject": "Bayou DeView Highway 17 / Benson Creek",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "AGFC water trail starts at 'Benson Creek'; the AGFC layer point is 'Highway 17 Boating Access'. Identity not confirmed, so the AGFC Benson Creek mileages were not applied.",
+   "nextAction": "Match from a published AGFC map.",
+   "affectedSections": [
+    "highway-17-boating-access-to-rock-island-rr-boating-access"
+   ]
+  },
+  {
+   "id": "AR-RQ-038",
+   "blocker": "identity",
+   "subject": "Saline Crossing / Cherry Demuth vs 'I -30 Cherry Gingles Boat Ramp'",
+   "priority": "medium",
+   "checkedOn": "2026-10-30",
+   "explanation": "AGFC water trail lists Cherry Demuth (temporarily closed at low water) and Saline Crossing; the facility layer has 'I -30 Cherry Gingles Boat Ramp'. Identity not confirmed, so AGFC Lyle Park→Saline Crossing (4.2 mi / 2-3 h) was not attached.",
+   "nextAction": "Match from a published AGFC map.",
+   "affectedSections": [
+    "lyle-park-boat-ramp-to-i-30-cherry-gingles-boat-ramp",
+    "i-30-cherry-gingles-boat-ramp-to-fitzhugh-boat-ramp"
+   ]
+  },
+  {
+   "id": "AR-RQ-039",
+   "blocker": "source-unavailable",
+   "subject": "Buffalo NR floating / river-levels / PSAR pages",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Several NPS Buffalo pages returned errors; the NPS conditions page carries no alert text in its static HTML, so current road/low-water closures (e.g. Kyles Landing road, Woolum low-water crossing) are not captured.",
+   "nextAction": "Check https://www.nps.gov/buff/planyourvisit/conditions.htm before each season.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-040",
+   "blocker": "gauge-missing",
+   "subject": "Rivers without a live gauge",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Assigned gauge has no current USGS discharge for: white-river-beaver-tailwater, north-fork-river-ar, south-fork-spring-river, strawberry-river, little-missouri-river, crooked-creek, bayou-deview. Live estimates are hidden only; the station id is kept because the app requires one.",
+   "nextAction": "Optional: find a suitable USGS gauge.",
+   "affectedSections": []
+  },
+  {
+   "id": "AR-RQ-041",
+   "blocker": "cross-state",
+   "subject": "MO → AR sections",
+   "priority": "low",
+   "checkedOn": "2026-10-30",
+   "explanation": "Myrtle → Dalton, Coon Island → Kody Riggan Datto, T. L. Wright → Johnston's Eddy are PROPOSED only (see research/cross-state-references.json).",
+   "nextAction": "Coder: decide whether to support cross-state endpoints.",
+   "affectedSections": []
+  }
+ ]
+}

@@ -11,6 +11,7 @@ import shutil
 import tempfile
 from pathlib import Path
 from build_catalog import ROOT, build, require
+from access_registry import migrate
 
 
 def read(path):
@@ -29,6 +30,7 @@ def prepare(package, root):
         require(existing['slug'] == state['slug'], 'State slug cannot change during import')
     else:
         settings['states'].append(state)
+        settings.setdefault('mapReviewRequiredStates', []).append(code)
     (root/'catalog/settings.json').write_text(json.dumps(settings, indent=2)+'\n')
     timing_path = package/f'research/trip-times/timing-status-{code}.json'
     timings = read(timing_path).get('rivers', {}) if timing_path.exists() else {}
@@ -47,7 +49,16 @@ def prepare(package, root):
             river['refFlowCfs'] = None
             river['refSpeedMph'] = None
         dest.write_text(json.dumps(river, indent=2, ensure_ascii=False)+'\n')
-    shutil.copyfile(package/f'catalog/map_points/{code}.json', root/f'catalog/map_points/{code}.json')
+    incoming = read(package/f'catalog/map_points/{code}.json')
+    previous_path = root/f'catalog/map_points/{code}.json'
+    previous = read(previous_path).get('points', {}) if previous_path.exists() else {}
+    for name, point in incoming['points'].items():
+        if name in previous and previous[name].get('id'):
+            require(not point.get('id') or point['id'] == previous[name]['id'], 'Access identity changed: '+name)
+            point['id'] = previous[name]['id']
+            point.setdefault('aliases', previous[name].get('aliases', []))
+    previous_path.write_text(json.dumps(incoming, indent=2, ensure_ascii=False)+'\n')
+    migrate(root)
     return code
 
 
@@ -55,11 +66,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('package', type=Path)
     parser.add_argument('--apply', action='store_true')
+    parser.add_argument('--replace-existing', action='store_true', help='Explicitly replace an existing state after inspecting the dry-run and backing up curated records')
     args = parser.parse_args()
     package = args.package.resolve()
     with tempfile.TemporaryDirectory() as td:
         temp = Path(td)
         shutil.copytree(ROOT/'catalog', temp/'catalog')
+        shutil.copytree(ROOT/'research/routes', temp/'research/routes')
         code = prepare(package, temp)
         catalog = build(temp)
         incoming = [r for r in catalog['rivers'] if r['state'] == code]
@@ -68,6 +81,8 @@ def main():
         if not args.apply:
             print('Dry run passed. Use --apply to stage locally.')
             return
+        if any(r['state'] == code for r in build()['rivers']) and not args.replace_existing:
+            parser.error('Existing state: inspect the dry-run and backup/diff first, then use --apply --replace-existing. Existing curated records were not changed.')
         # All records pass the real builder before any catalog mutation.
         for file in (temp/'catalog/rivers').glob('*.json'):
             if read(file)['state'] == code:

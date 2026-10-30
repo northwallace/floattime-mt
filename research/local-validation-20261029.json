@@ -1,0 +1,46 @@
+{
+  "checkedOn": "2026-10-29",
+  "localOnly": true,
+  "preview": "http://127.0.0.1:8778",
+  "productionTouched": false,
+  "rivers": 124,
+  "sections": 336,
+  "accessMaps": {
+    "AZ": 6,
+    "CO": 17,
+    "MT": 40,
+    "UT": 13,
+    "WA": 12,
+    "WY": 112
+  },
+  "heldAccessMaps": {
+    "MT": 14,
+    "WY": 37
+  },
+  "dottedPaths": {
+    "MT": 13,
+    "WY": 46
+  },
+  "httpChecks": 316,
+  "httpFailures": [],
+  "pythonTests": {
+    "passed": 79
+  },
+  "nodeTests": {
+    "passed": 31
+  },
+  "routeVisualReview": "All 46 new paths compared in six full-section geometry overlay sheets; browser spot checks on Gray Reef and Snake Canyon. Approximate reference geometry, not field verification.",
+  "limits": [
+    "Wyoming live timing and GPS remaining time remain disabled.",
+    "Some optional Esri place-name labels return 401 on port 8778; satellite imagery and access pins load. Provider credentials were not changed.",
+    "Phone GPS permissions and real on-water behavior are not tested.",
+    "14 Montana and 37 Wyoming sections remain withheld for unresolved access or route evidence."
+  ],
+  "clientRouteGeometryChecks": 59,
+  "browserChecks": [
+    "Gray Reef\u2013Lusby: generalized dotted path, satellite imagery, source note, no GPS timing",
+    "West Table\u2013Sheep Gulch: high-resolution dotted path",
+    "First Street Gateway: approximate marker and readable source popup at 390x844",
+    "Sha-Ron\u2013Caras Terrace: approximate access map with distance/time hold retained"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "version": "1",
+ "state": "MO",
+ "type": "PROPOSED APP FEATURE — not implemented, not read by the app",
+ "checkedOn": "2026-10-30",
+ "problem": "Several Missouri rivers continue into Arkansas below the last Missouri access; a section that ends in another state cannot be expressed in one state's catalog.",
+ "proposal": "Allow a section endpoint to reference another state's registry (e.g. {state: 'AR', point: '<name>'}) once that state's package exists.",
+ "notDone": "No Arkansas points were researched or added; no cross-state sections are in the catalog. Mississippi and Missouri River border reaches (IL, KS, NE) are not covered.",
+ "references": [
+  {
+   "moEndpointId": "MO-ACC-0122",
+   "moEndpointName": "Myrtle Access",
+   "moRegistryStatusToday": "verified",
+   "otherState": "AR",
+   "otherRegistry": "catalog/map_points/AR.json (does not exist yet)",
+   "proposedSection": "Myrtle Access (MO) → first public Eleven Point access in Arkansas (to be researched with the AR package)",
+   "note": "Myrtle is the last Missouri access on the Eleven Point, about 1 mile above the Arkansas line.",
+   "sectionsThatWouldUnlock": [
+    "eleven-point-river: Myrtle Access → AR take-out"
+   ]
+  },
+  {
+   "moEndpointId": "MO-ACC-0045",
+   "moEndpointName": "Coon Island Conservation Area",
+   "moRegistryStatusToday": "verified",
+   "otherState": "AR",
+   "otherRegistry": "catalog/map_points/AR.json (does not exist yet)",
+   "proposedSection": "Coon Island CA (MO) → first public Black River access in Arkansas",
+   "note": "Southern-most Missouri Black River ramp; the river continues into Arkansas.",
+   "sectionsThatWouldUnlock": [
+    "black-river: Coon Island → AR take-out"
+   ]
+  },
+  {
+   "moEndpointId": null,
+   "moEndpointName": "St. Francis River below Wappapello Lake",
+   "moRegistryStatusToday": null,
+   "otherState": "AR",
+   "otherRegistry": "catalog/map_points/AR.json (does not exist yet)",
+   "proposedSection": null,
+   "note": "Informational only: the catalogued St. Francis reach is the upper whitewater/float reach above Wappapello Lake; below the dam the river forms the MO–AR border. No section proposed.",
+   "sectionsThatWouldUnlock": []
+  }
+ ]
+}

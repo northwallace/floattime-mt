@@ -33,7 +33,19 @@ def geometry_checks(record):
     if max(offsets)>100: issues.append('endpoint-offset-over-100m')
     if difference>.05: issues.append('mileage-difference-over-5-percent')
     d=record.get('direction',{})
-    if d.get('method')!='agency-measures-increase-upstream' or not all(finite(d.get(k)) for k in ('putInMeasure','takeOutMeasure')) or d['putInMeasure']<=d['takeOutMeasure']:
+    measured = (d.get('method')=='agency-measures-increase-upstream'
+                and all(finite(d.get(k)) for k in ('putInMeasure','takeOutMeasure'))
+                and d['putInMeasure']>d['takeOutMeasure'])
+    downstream = (d.get('method')=='usgs-downstream-mainstem'
+                  and all(finite(d.get(k)) for k in ('putInChainageMeters','takeOutChainageMeters'))
+                  and 0<=d['putInChainageMeters']<d['takeOutChainageMeters']
+                  and isinstance(d.get('featureIds'),list) and bool(d['featureIds'])
+                  and all(isinstance(v,str) and v.isdigit() for v in d['featureIds']))
+    directed = (d.get('method')=='usgs-flow-directed-network'
+                and isinstance(d.get('featureIds'),list) and bool(d['featureIds'])
+                and all(isinstance(v,str) and bool(v) for v in d['featureIds'])
+                and all(finite(d.get(k)) and d[k]>=0 for k in ('putInOffsetMeters','takeOutOffsetMeters')))
+    if not (measured or downstream or directed):
         issues.append('downstream-order-unconfirmed')
     return {'routeMiles':round(miles,4),'endpointOffsetsMeters':[round(v,1) for v in offsets],'mileageDifferencePercent':round(difference*100,2),'maxSegmentMeters':round(max(lengths),1),'vertices':len(c)},issues
 
@@ -57,6 +69,32 @@ def validate(record,catalog,root):
     require(date.fromisoformat(source['checkedOn'])<=date.today(),'Future route source date')
     evidence=safe_file(root,source['evidenceFile'],'research')
     require(hashlib.sha256(evidence.read_bytes()).hexdigest()==source['sha256'],'Source evidence changed; re-review route')
+    if record.get('direction',{}).get('method')=='usgs-downstream-mainstem':
+        require(source['url'].startswith('https://api.water.usgs.gov/nldi/linked-data/comid/') and '/navigation/DM/flowlines?' in source['url'],'Downstream route requires USGS mainstem evidence')
+        payload=json.loads(evidence.read_text())
+        available={str(f.get('properties',{}).get('nhdplus_comid')):f for f in payload.get('features',[])}
+        ids=record['direction']['featureIds']
+        require(len(ids)==len(set(ids)), 'Route contains a network loop')
+        require(set(ids)<=available.keys(),'Route feature missing from source evidence')
+        previous=None
+        for key in ids:
+            geometry=available[key].get('geometry',{})
+            require(geometry.get('type')=='LineString','Invalid mainstem source geometry')
+            line=geometry['coordinates']
+            if previous is not None:require(distance(previous,line[0])<1,'Mainstem source path is disconnected or reversed')
+            previous=line[-1]
+    if record.get('direction',{}).get('method')=='usgs-flow-directed-network':
+        require(source['url']=='https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6' or source['url'].startswith('https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/'),'Directed route requires USGS high-resolution source')
+        payload=json.loads(evidence.read_text());features={str(f['attributes']['permanent_identifier']):f for f in payload.get('features',[])}
+        ids=record['direction']['featureIds'];require(len(ids)==len(set(ids)),'Route contains a network loop')
+        previous=None
+        for key in ids:
+            require(key in features,'Route feature missing from source evidence');f=features[key]
+            require(f['attributes']['flowdir']==1 and len(f['geometry']['paths'])==1,'Flow direction is not established')
+            line=f['geometry']['paths'][0]
+            if previous is not None:require(distance(previous,line[0])<1,'Directed source path is disconnected')
+            previous=line[-1]
+        if len(ids)==1:require(record['direction']['putInOffsetMeters']<record['direction']['takeOutOffsetMeters'],'Single-feature route is reversed')
     flags=record.get('features',{})
     require(set(flags)==FEATURES and all(type(v) is bool for v in flags.values()),'Invalid route feature flags')
     # These are reserved, separately reviewed future capabilities; never enabled by map review.
@@ -67,6 +105,18 @@ def validate(record,catalog,root):
     require(isinstance(record['checks'].get('issues'),list),'Route check issues required')
     if record['status']!='reviewed':
         require(not any(flags.values()),'Unreviewed route cannot enable features');return section,metrics
+    if record.get('direction',{}).get('method')=='usgs-downstream-mainstem':
+        cross=record.get('resolutionReview',{})
+        comparison=safe_file(root,cross.get('file'),'research')
+        require(hashlib.sha256(comparison.read_bytes()).hexdigest()==cross.get('sha256'),'Resolution review changed; re-review route')
+        payload=json.loads(comparison.read_text())
+        require(payload.get('sampleSpacingMeters')==25,'Invalid resolution review sampling')
+        match=next((r for r in payload['routes'] if r['riverId']==record['riverId'] and r['sectionId']==record['sectionId']),None)
+        require(match is not None and finite(match.get('maxOffset')) and match['maxOffset']<=75,'Generalized source needs finer geometry')
+        geometry_hash=hashlib.sha256(json.dumps(record['geometry'],sort_keys=True,separators=(',',':')).encode()).hexdigest()
+        require(match.get('geometrySha256')==geometry_hash,'Resolution review belongs to a different route')
+        fine=safe_file(root,match.get('highResolutionEvidenceFile'),'research')
+        require(hashlib.sha256(fine.read_bytes()).hexdigest()==match.get('highResolutionSha256'),'High-resolution comparison evidence changed')
     require(not issues and not record['checks']['issues'],'Reviewed route has unresolved checks')
     require(section.get('mapPilot') and section.get('mapPrecision')=='exact' and not section.get('distanceReview') and not section.get('accessReview'),'Reviewed route needs eligible access points')
     require(record['catalogMiles']==section['miles'],'Published section mileage changed; re-review route')

@@ -1,0 +1,124 @@
+{
+ "state": "MO",
+ "checkedOn": "2026-10-30",
+ "agencies": [
+  {
+   "agency": "Missouri Department of Conservation",
+   "role": "Primary coordinate source for ~all non-NPS/USFS accesses; area pages give directions, hours and area regulations",
+   "layers": [
+    "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17 (Boat Ramp features)",
+    "MDC conservation-area boundary/centroid layer (see research/raw/agency/mdc_ca_centroids.json)"
+   ],
+   "pages": [
+    "https://mdc.mo.gov/conservation-area/a200003",
+    "https://mdc.mo.gov/conservation-area/a200005",
+    "https://mdc.mo.gov/conservation-area/a200104",
+    "https://mdc.mo.gov/conservation-area/a200109",
+    "https://mdc.mo.gov/conservation-area/a200201",
+    "https://mdc.mo.gov/conservation-area/a200405",
+    "https://mdc.mo.gov/conservation-area/a200406",
+    "https://mdc.mo.gov/conservation-area/a200511",
+    "https://mdc.mo.gov/conservation-area/a200814",
+    "https://mdc.mo.gov/conservation-area/a4629",
+    "https://mdc.mo.gov/conservation-area/a5702",
+    "https://mdc.mo.gov/conservation-area/a5912",
+    "… (all MDC area pages in research/sources.json)"
+   ]
+  },
+  {
+   "agency": "National Park Service — Ozark National Scenic Riverways",
+   "role": "NPS landings (POIs), brochure river miles, paddle float times, Superintendent's Compendium",
+   "layers": [
+    "NPS POI service (research/raw/agency/nps_pois_ozar.json)"
+   ],
+   "pages": [
+    "https://developer.nps.gov/api/v1/campgrounds?parkCode=ozar&limit=100&api_key=DEMO_KEY",
+    "https://developer.nps.gov/api/v1/places?parkCode=ozar&limit=500&api_key=DEMO_KEY",
+    "https://developer.nps.gov/api/v1/thingstodo?parkCode=ozar&limit=200&api_key=DEMO_KEY",
+    "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=UNITCODE%3D%27OZAR%27&outFields=*&outSR=4326&f=json",
+    "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_ParkingLots_Geographic/MapServer/0/query?where=UNITCODE%3D%27OZAR%27&outFields=*&outSR=4326&returnCentroid=true&f=json",
+    "https://nps.gov/subjects/concessions/cc-ozar011-28.htm",
+    "https://www.nps.gov/ozar/learn/management/ozar-superintendent-s-compendium.htm",
+    "https://www.nps.gov/ozar/learn/news/update-on-river-access-at-ozark-national-scenic-riverways.htm",
+    "https://www.nps.gov/ozar/planyourvisit/conditions.htm",
+    "https://www.nps.gov/ozar/planyourvisit/floating.htm",
+    "https://www.nps.gov/ozar/planyourvisit/park-brochure.htm",
+    "https://www.nps.gov/thingstodo/paddle-jacks-fork-river.htm",
+    "https://www.nps.gov/thingstodo/paddle-the-lower-current-river.htm",
+    "https://www.nps.gov/thingstodo/paddle-the-upper-current-river.htm"
+   ]
+  },
+  {
+   "agency": "U.S. Forest Service — Mark Twain National Forest",
+   "role": "Eleven Point Wild & Scenic River launches, Current River tuber launch text, forest order",
+   "layers": [
+    "USFS EDW recreation sites"
+   ],
+   "pages": [
+    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=1%3D1&geometry=-95.78,35.99,-89.09,40.62&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&outSR=4326&f=json",
+    "https://www.fs.usda.gov/r09/marktwain/alerts/forest-order-09-05-12-09-eleven-point-wild-and-scenic-river-zone",
+    "https://www.fs.usda.gov/r09/marktwain/recreation/eleven-point-national-wild-and-scenic-river",
+    "https://www.fs.usda.gov/r09/marktwain/recreation/opportunities/water-activities"
+   ]
+  },
+  {
+   "agency": "U.S. Geological Survey",
+   "role": "Gauges (Water Data APIs), NLDI routing, NHD High Resolution",
+   "layers": [
+    "NHD HR HU4 GeoPackages",
+    "NLDI"
+   ],
+   "pages": [
+    "https://waterdata.usgs.gov/"
+   ]
+  },
+  {
+   "agency": "Missouri Revisor of Statutes / Secretary of State",
+   "role": "Statewide boating/float law (RSMo 306.*)",
+   "layers": [],
+   "pages": [
+    "https://revisor.mo.gov/main/OneSection.aspx?section=306.100",
+    "https://revisor.mo.gov/main/OneSection.aspx?section=306.109",
+    "https://revisor.mo.gov/main/OneSection.aspx?section=306.127",
+    "https://revisor.mo.gov/main/OneSection.aspx?section=306.220",
+    "https://revisor.mo.gov/main/OneSection.aspx?section=306.325",
+    "https://revisor.mo.gov/main/OneSection.aspx?section=577.070",
+    "https://www.sos.mo.gov/cmsimages/adrules/csr/current/3csr/3c10-11.pdf",
+    "https://www.sos.mo.gov/cmsimages/adrules/csr/current/3csr/3c10-12.pdf"
+   ]
+  },
+  {
+   "agency": "Missouri State Parks",
+   "role": "Meramec SP and other state-park river access text",
+   "layers": [],
+   "pages": [
+    "https://mostateparks.com/park/bennett-spring-state-park",
+    "https://mostateparks.com/park/echo-bluff-state-park",
+    "https://mostateparks.com/park/katy-trail-state-park",
+    "https://mostateparks.com/park/meramec-state-park",
+    "https://mostateparks.com/park/montauk-state-park"
+   ]
+  },
+  {
+   "agency": "U.S. Army Corps of Engineers",
+   "role": "Clearwater Lake (Black River) dam operations; Wappapello / Norfork / NWK pages returned 403",
+   "layers": [],
+   "pages": [
+    "https://www.mvs.usace.army.mil/Missions/Recreation/Wappapello-Lake/",
+    "https://www.nwk.usace.army.mil/Missions/Civil-Works/Navigation/",
+    "https://www.swl.usace.army.mil/Missions/Recreation/Lakes/Clearwater-Lake/",
+    "https://www.swl.usace.army.mil/Missions/Recreation/Lakes/Norfork-Lake/"
+   ]
+  },
+  {
+   "agency": "Missouri State Highway Patrol — Water Patrol",
+   "role": "Boating safety (page 404 on fetch; statutes used instead)",
+   "layers": [],
+   "pages": [
+    "https://www.mshp.dps.missouri.gov/MSHPWeb/WaterPatrol/BoatingLaws_Education/boatingLifeJacket.html",
+    "https://www.mshp.dps.missouri.gov/MSHPWeb/WaterPatrol/BoatingSafety/index.html",
+    "https://www.mshp.dps.mo.gov/MSHPWeb/WaterPatrol/moBoatingLawsResponsibilities.html"
+   ]
+  }
+ ]
+}

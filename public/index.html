@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>River Float Times &amp; Live USGS Gauges | Float ETA</title>
-  <meta name="description" content="See how long a river float will actually take. Live USGS flow, sunset take-out times, and obstruction reports for Montana, Idaho, Oregon, Washington, Utah, and Arizona.">
+  <title>River Float Times &amp; Live River Gauges | Float ETA</title>
+  <meta name="description" content="See how long a river float will actually take. Current river flow, sunset take-out times, and obstruction reports for rivers across the western United States.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
   <meta name="author" content="Float ETA">
   <meta name="theme-color" content="#0e1a14">
@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="Float ETA">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="River Float Times | Western Rivers | Float ETA">
-  <meta property="og:description" content="Live USGS flow turned into real float times for Montana, Idaho, Oregon, Washington, Utah, and Arizona rivers — plus daylight and community hazard reports.">
+  <meta property="og:description" content="Current river flow turned into real float times for rivers across the western United States — plus daylight and community hazard reports.">
   <meta property="og:url" content="https://www.floateta.com/">
   <meta property="og:image" content="https://www.floateta.com/float-eta-share.png">
   <meta property="og:image:url" content="https://www.floateta.com/float-eta-share.png">
@@ -23,12 +23,12 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Float ETA — live river float times from USGS flow">
+  <meta property="og:image:alt" content="Float ETA — river float planning with current flow">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="River Float Times | Western Rivers | Float ETA">
-  <meta name="twitter:description" content="Live USGS flow turned into real float times for Montana, Idaho, Oregon, Washington, Utah, and Arizona rivers.">
+  <meta name="twitter:description" content="Current river flow turned into real float times for rivers across the western United States.">
   <meta name="twitter:image" content="https://www.floateta.com/float-eta-share.png">
-  <meta name="twitter:image:alt" content="Float ETA — live river float times from USGS flow">
+  <meta name="twitter:image:alt" content="Float ETA — river float planning with current flow">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -51,12 +51,14 @@
         <details class="nav-drop">
           <summary>Rivers</summary>
           <div class="nav-drop-menu">
+            <!-- catalog:state-navigation -->
             <a href="/montana">Montana</a>
             <a href="/idaho">Idaho</a>
             <a href="/oregon">Oregon</a>
             <a href="/washington">Washington</a>
             <a href="/utah">Utah</a>
-            <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a>
+            <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a> · <a href="/wyoming">Wyoming</a>
+            <!-- /catalog:state-navigation -->
           </div>
         </details>
         <a href="#reports">River reports</a>
@@ -65,11 +67,11 @@
     </nav>
     <div class="hero-content">
       <h1>How long will your river float <em>actually</em> take?</h1>
-      <p class="hero-sub">Plan your float with USGS flow, daylight, and trip-time guidance. Access maps are available on reviewed Montana sections.</p>
-      <p class="coming-soon-pill">Montana · Idaho · Oregon · Washington · Utah · Arizona · Colorado</p>
+      <p class="hero-sub">Plan your float with current river flow, daylight, and trip-time guidance. Access maps are available on reviewed river sections.</p>
+      <p class="coming-soon-pill"><!-- catalog:state-coverage -->Explore rivers by state<!-- /catalog:state-coverage --></p>
       <div class="hero-stats" id="heroStats">
-        <div class="hero-stat"><span class="hs-num" id="statRivers">–</span><span class="hs-label">rivers tracked</span></div>
-        <div class="hero-stat"><span class="hs-num" id="statSections">–</span><span class="hs-label">float sections</span></div>
+        <div class="hero-stat"><span class="hs-num" id="statRivers"><!-- catalog:river-count -->–<!-- /catalog:river-count --></span><span class="hs-label">rivers tracked</span></div>
+        <div class="hero-stat"><span class="hs-num" id="statSections"><!-- catalog:section-count -->–<!-- /catalog:section-count --></span><span class="hs-label">float sections</span></div>
         <div class="hero-stat"><span class="hs-num" id="statDaylight">–</span><span class="hs-label">daylight left today</span></div>
       </div>
     </div>
@@ -89,11 +91,11 @@
       <div class="controls">
         <div class="control">
           <label for="stateSelect">State</label>
-          <select id="stateSelect"></select>
+          <select id="stateSelect" disabled></select>
         </div>
         <div class="control">
           <label for="riverSelect">River</label>
-          <select id="riverSelect"></select>
+          <select id="riverSelect" disabled></select>
         </div>
         <div class="control">
           <label for="craftSelect">What are you floating in?</label>
@@ -121,11 +123,13 @@
       <div id="riverDash" class="river-dash" hidden>
         <div class="dash-grid">
           <div class="dash-card flow-card">
-            <div class="dash-label">Current flow <span class="data-tag">USGS</span></div>
-            <div class="dash-big"><span id="flowValue">–</span> <span class="unit">cfs</span></div>
+            <div class="dash-label"><span id="flowHeading">Current flow</span> <span id="flowProvider" class="data-tag">USGS</span></div>
+            <div class="dash-big"><span id="flowValue">–</span> <span id="flowUnit" class="unit">cfs</span></div>
+            <p id="gaugeStatus" class="gauge-status" role="status" hidden></p>
             <div class="dash-sub" id="flowTrend">–</div>
             <svg role="img" aria-label="Flow over the last seven days" id="sparkline" class="sparkline" viewBox="0 0 300 60" preserveAspectRatio="none"></svg>
             <div class="dash-foot" id="gaugeName">–</div>
+            <p class="dash-foot" id="gaugeContext" hidden></p>
           </div>
           <div class="dash-card">
             <div class="dash-label">Conditions</div>
@@ -205,7 +209,6 @@
         <p id="permitNotice" class="permit-notice" hidden></p>
       </div>
 
-      <div id="loadError" class="load-error" hidden>Couldn't reach the USGS gauge service. Check your connection and try again.</div>
     </section>
 
     <section id="reports" class="section">
@@ -275,7 +278,7 @@
         <div class="how-card">
           <div class="how-num">1</div>
           <h3>Live gauge data</h3>
-          <p>Every river here is tied to a USGS streamgage. We pull the instantaneous discharge (cfs) and water temperature, checked every five minutes while the page is active. Estimates require a positive reading from the last two hours.</p>
+          <p>We use reviewed USGS gauges and selected Reclamation and Colorado DWR discharge stations. The source and reading age appear beside the flow. USGS readings are cached for five minutes; Reclamation and Colorado DWR readings for fifteen. Water temperature is shown when available. Estimates require a calibrated river model and a positive reading from the last two hours.</p>
         </div>
         <div class="how-card">
           <div class="how-num">2</div>
@@ -313,7 +316,7 @@
         </details>
         <details class="faq-item">
           <summary>How does Float ETA calculate float time?</summary>
-          <p>Each river is tied to a USGS streamgage. Where a timing model is available, we take a reference raft drift speed at a reference flow, then scale it with hydraulic geometry (speed rises with discharge to the 0.34 power). Kayaks, tubes, and paddleboards get their own multipliers. Optional fishing adds 25 minutes per mile.</p>
+          <p>Each river names its flow source. Where a timing model is available, we take a reference raft drift speed at a reference flow, then scale it with hydraulic geometry (speed rises with discharge to the 0.34 power). Kayaks, tubes, and paddleboards get their own multipliers. Optional fishing adds 25 minutes per mile.</p>
         </details>
         <details class="faq-item">
           <summary>What CFS is good for floating?</summary>
@@ -340,16 +343,18 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="brand"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></div>
-      <p>Flow data courtesy of the <a href="https://api.waterdata.usgs.gov/" target="_blank" rel="noopener">USGS Water Data API</a>.
+      <p>Flow data courtesy of the <a href="https://api.waterdata.usgs.gov/" target="_blank" rel="noopener">USGS Water Data API</a> and <a href="https://www.usbr.gov/gp/hydromet/" target="_blank" rel="noopener">Bureau of Reclamation Hydromet</a> and <a href="https://dwr.state.co.us/Tools/Stations" target="_blank" rel="noopener">Colorado Division of Water Resources</a>.
       Weather by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>.
       Not a substitute for scouting, judgment, or a PFD. Rivers can kill you; this website cannot save you.</p>
-      <p class="footer-links"><a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/washington">Washington</a> · <a href="/utah">Utah</a> · <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a> · <a href="/feedback.html?type=float-request">Request a float</a></p>
+      <p class="footer-links"><!-- catalog:state-footer --><a href="/directory.html">All states</a><!-- /catalog:state-footer --> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a> · <a href="/feedback.html?type=float-request">Request a float</a></p>
       <p class="copyright">© <span id="year"></span> Float ETA · <a href="https://www.floateta.com">floateta.com</a></p>
     </div>
   </footer>
 
 
+<script src="map-base.js"></script>
 <script src="river-route.js"></script>
+<script src="access-location.js"></script>
 <script src="route-progress.js"></script>
 <script src="field-pilot.js"></script>
 <script src="planner.js?v=20261027-1"></script>

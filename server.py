@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from feedback_location import validate_location
 """
 Float ETA — development/production server.
 Serves the static site from ./public and a small JSON API for
@@ -26,6 +27,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlencode, urlsplit
 
 import seo
+from tools.flow_sources import flow_key, dayfile_url, parse_dayfile, cdwr_urls, parse_cdwr
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
@@ -69,7 +71,7 @@ ASSET_LINK = re.compile(r'''((?:src|href)=["'])(/?[A-Za-z0-9_-]+\.(?:css|js))(?:
 
 def _fingerprint_html(body):
     """Serve current asset URLs without requiring editors to bump version strings."""
-    text = body.decode('utf-8') if isinstance(body, bytes) else body
+    text = seo.catalog_slots(body.decode('utf-8') if isinstance(body, bytes) else body)
     def replace(match):
         try:
             with open(os.path.join(PUBLIC, match[2].lstrip('/')), 'rb') as f:
@@ -94,6 +96,8 @@ def _map_config(field_test=""):
     if not isinstance(key, str) or not key.strip():
         return None
     config = {"arcgisApiKey": key.strip()}
+    if os.environ.get('ARCGIS_LABELS_ENABLED') == 'true' or local.get('imageryLabelsEnabled') is True:
+        config['imageryLabelsEnabled'] = True
     # Explicit local opt-in. Production environment credentials never enable it.
     if local.get("routePilotEnabled") is True:
         try:
@@ -193,11 +197,29 @@ def _clean(text, max_len):
 
 
 def _allowed_gauges():
-    return {river["gauge"] for river in seo.load_rivers()}
+    return {key for river in seo.load_rivers() if (key := flow_key(river))}
 
 
 def _download_gauge(gauge):
-    """Return seven days of discharge/temperature from the modern USGS API."""
+    """Return reviewed discharge data, plus USGS temperature where available."""
+    if gauge.startswith(('USBR:', 'CDWR:')):
+        source = next((r['flowSource'] for r in seo.load_rivers() if flow_key(r) == gauge), None)
+        if source is None:
+            raise ValueError('Unknown flow source')
+        now = datetime.now(timezone.utc)
+        if source['provider'] == 'colorado-dwr':
+            payloads = []
+            for url in cdwr_urls(source, now):
+                request = urllib.request.Request(url, headers={
+                    'User-Agent': 'FloatETA/2.0 (https://www.floateta.com/)', 'Accept': 'application/json'})
+                with urllib.request.urlopen(request, timeout=12) as response:
+                    payloads.append(json.loads(response.read(2_000_000)))
+            return parse_cdwr(*payloads, source, datetime.now(timezone.utc))
+        request = urllib.request.Request(dayfile_url(source, now), headers={
+            'User-Agent': 'FloatETA/2.0 (https://www.floateta.com/)', 'Accept': 'text/html'})
+        with urllib.request.urlopen(request, timeout=12) as response:
+            text = response.read(2_000_000).decode('utf-8')
+        return parse_dayfile(text, source, datetime.now(timezone.utc))
     end = datetime.now(timezone.utc)
     start = end - timedelta(days=7)
     params = {
@@ -254,16 +276,23 @@ def _gauge_reading(gauge):
 
 def _cached_gauge_reading(gauge):
     now = time.time()
+    ttl = 900 if gauge.startswith(('USBR:', 'CDWR:')) else GAUGE_TTL
+    retry_delay = 900 if gauge.startswith(('USBR:', 'CDWR:')) else 60
     with _gauge_lock:
         entry = _gauge_cache.get(gauge)
-        if entry and now - entry["fetchedAt"] < GAUGE_TTL:
+        if entry and 'data' in entry and now - entry["fetchedAt"] < ttl:
             return entry["data"]
+        if entry and 'failedAt' in entry and now - entry['failedAt'] < retry_delay:
+            if 'data' in entry and now - entry['fetchedAt'] < GAUGE_STALE_TTL:
+                return {**entry['data'], 'stale': True}
+            raise OSError('Flow source temporarily unavailable')
     try:
         data = _download_gauge(gauge)
-    except (OSError, urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+    except (OSError, urllib.error.URLError, TimeoutError, ValueError):
         with _gauge_lock:
-            entry = _gauge_cache.get(gauge)
-            if entry and now - entry["fetchedAt"] < GAUGE_STALE_TTL:
+            entry = _gauge_cache.setdefault(gauge, {})
+            entry['failedAt'] = now
+            if 'data' in entry and now - entry["fetchedAt"] < GAUGE_STALE_TTL:
                 return {**entry["data"], "stale": True}
         raise
     with _gauge_lock:
@@ -399,7 +428,7 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 self._send_json(_gauge_reading(gauge))
             except Exception:
-                self._send_json({"error": "USGS gauge service is temporarily unavailable"}, 502)
+                self._send_json({"error": "Gauge service is temporarily unavailable"}, 502)
             return
 
         if path == "/api/reports":
@@ -453,8 +482,8 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/":
             path = "/index.html"
         safe = os.path.normpath(path).lstrip("/")
-        full = os.path.join(PUBLIC, safe)
-        if not full.startswith(PUBLIC):
+        full = os.path.realpath(os.path.join(PUBLIC, safe))
+        if os.path.commonpath((os.path.realpath(PUBLIC), full)) != os.path.realpath(PUBLIC):
             self.send_error(403, "Forbidden")
             return
         self._send_file(full, versioned=query.get("v", [None])[0])
@@ -485,7 +514,7 @@ class Handler(BaseHTTPRequestHandler):
                 return
             fields = {key: _clean(body.get(key), limit) for key, limit in limits.items()}
             kind = fields['type']
-            if kind not in ('correction', 'float-request') or not fields['message']:
+            if kind not in ('correction', 'float-request', 'access-suggestion') or not fields['message']:
                 self._send_json({'error': 'Choose a suggestion type and describe your suggestion'}, 400)
                 return
             if fields['email'] and not EMAIL_RE.match(fields['email']):
@@ -501,7 +530,15 @@ class Handler(BaseHTTPRequestHandler):
                 return
             entry = {key: fields[key] for key in ('type', 'message', 'sourceUrl', 'name', 'email')}
             entry['email'] = fields['email'].lower()
-            if kind == 'correction':
+            if 'location' in body:
+                try: entry['location'] = validate_location(body['location'])
+                except ValueError as exc:
+                    self._send_json({'error': str(exc)}, 400)
+                    return
+            if kind == 'access-suggestion' and 'location' not in entry:
+                self._send_json({'error': 'Add a proposed location for this access'}, 400)
+                return
+            if kind in ('correction', 'access-suggestion'):
                 river = next((r for r in seo.load_rivers() if r['id'] == fields['riverId']), None)
                 section = next((s for s in river['sections'] if s['id'] == fields['sectionId']), None) if river else None
                 if not river or (fields['sectionId'] and not section):
@@ -518,6 +555,9 @@ class Handler(BaseHTTPRequestHandler):
                     self._send_json({'error': 'State, river, put-in and take-out are required'}, 400)
                     return
                 entry.update({key: fields[key] for key in ('state', 'riverName', 'putIn', 'takeOut')})
+            if kind in ('correction', 'access-suggestion') and section:
+                if entry.get('location', {}).get('endpoint') in ('putIn', 'takeOut'):
+                    entry['accessId'] = section.get(entry['location']['endpoint'] + 'AccessId', '')
             entry.update(id=uuid.uuid4().hex[:12], status='pending', createdAt=time.time())
             try:
                 with _lock:

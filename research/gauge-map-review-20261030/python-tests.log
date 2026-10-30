@@ -1,0 +1,90 @@
+................................................................127.0.0.1 - "GET /api/private-review HTTP/1.1" 403 -
+127.0.0.1 - "GET /api/private-review HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/private-review/decision HTTP/1.1" 403 -
+127.0.0.1 - code 400, message Bad request version ('note"}')
+127.0.0.1 - "{"id": "colorado-river-lower-gorge/diamond-creek-pearce-ferry", "status": "reviewed", "note": "Test note"}" 400 -
+127.0.0.1 - "POST /api/private-review/decision HTTP/1.1" 403 -
+127.0.0.1 - code 400, message Bad request version ('note"}')
+127.0.0.1 - "{"id": "colorado-river-lower-gorge/diamond-creek-pearce-ferry", "status": "reviewed", "note": "Test note"}" 400 -
+127.0.0.1 - "POST /api/private-review/decision HTTP/1.1" 201 -
+.127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "GET /api/private-review HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+.............127.0.0.1 - "GET / HTTP/1.1" 200 -
+127.0.0.1 - "GET / HTTP/1.1" 200 -
+.127.0.0.1 - "POST /api/contact HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/contact HTTP/1.1" 201 -
+.127.0.0.1 - "POST /api/reports HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/reports HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/reports HTTP/1.1" 503 -
+127.0.0.1 - "GET /api/reports HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/reports/123456789abc/confirm HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/contact HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/contact HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/contact HTTP/1.1" 503 -
+.127.0.0.1 - "GET /directory.html HTTP/1.1" 200 -
+.127.0.0.1 - "GET /api/reports HTTP/1.1" 200 -
+.127.0.0.1 - "POST /api/feedback HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 503 -
+.127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 429 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+.127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+127.0.0.1 - "POST /api/feedback HTTP/1.1" 400 -
+.127.0.0.1 - "GET /api/gauge?site=06041000 HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/gauge?site=06041000 HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/gauge?site=00000000 HTTP/1.1" 404 -
+.127.0.0.1 - "GET / HTTP/1.1" 200 -
+.127.0.0.1 - "POST /api/reports HTTP/1.1" 400 -
+.127.0.0.1 - "GET /api/map-config HTTP/1.1" 200 -
+127.0.0.1 - "GET /map-config.local.json HTTP/1.1" 404 -
+.127.0.0.1 - "GET /api/map-config HTTP/1.1" 503 -
+127.0.0.1 - "GET /api/map-config HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/map-config HTTP/1.1" 503 -
+..127.0.0.1 - "GET /api/gauge?site=USBR%3AGLWY%3AQ HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/gauge?site=USBR%3AGLWY%3AQ HTTP/1.1" 200 -
+127.0.0.1 - "GET /api/gauge?site=USBR:UNKNOWN:Q HTTP/1.1" 404 -
+127.0.0.1 - "GET /api/gauge?site=USBR:GLWY:GH HTTP/1.1" 404 -
+127.0.0.1 - "GET /api/gauge?site=https://example.com/ HTTP/1.1" 404 -
+.127.0.0.1 - code 403, message Forbidden
+127.0.0.1 - "GET ../server.py HTTP/1.1" 403 -
+127.0.0.1 - code 403, message Forbidden
+127.0.0.1 - "GET ../map-config.local.json HTTP/1.1" 403 -
+127.0.0.1 - code 403, message Forbidden
+127.0.0.1 - "GET ../data/feedback.json HTTP/1.1" 403 -
+.127.0.0.1 - "POST /api/reports HTTP/1.1" 201 -
+127.0.0.1 - "POST /api/reports/e9e6d9345cb3/cleared HTTP/1.1" 200 -
+127.0.0.1 - "POST /api/reports/e9e6d9345cb3/cleared HTTP/1.1" 409 -
+127.0.0.1 - "GET /api/reports HTTP/1.1" 200 -
+.127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+...127.0.0.1 - "POST /api/feedback HTTP/1.1" 201 -
+127.0.0.1 - "GET /api/feedback HTTP/1.1" 404 -
+127.0.0.1 - "GET /api/private-review HTTP/1.1" 404 -
+127.0.0.1 - "GET /review HTTP/1.1" 404 -
+127.0.0.1 - "GET /data/feedback.json HTTP/1.1" 404 -
+.127.0.0.1 - "GET /styles.css?v=66aaf6fe0eab1470cf43 HTTP/1.1" 200 -
+127.0.0.1 - "GET /styles.css?v=66aaf6fe0eab1470cf43 HTTP/1.1" 304 -
+127.0.0.1 - "GET /styles.css?v=old-version HTTP/1.1" 200 -
+...127.0.0.1 - "GET / HTTP/1.1" 200 -
+127.0.0.1 - "GET /about.html HTTP/1.1" 200 -
+127.0.0.1 - "GET /directory.html HTTP/1.1" 200 -
+127.0.0.1 - "GET /rivers/blackfoot HTTP/1.1" 200 -
+.127.0.0.1 - "POST /api/reports HTTP/1.1" 503 -
+127.0.0.1 - "POST /api/contact HTTP/1.1" 503 -
+....
+----------------------------------------------------------------------
+Ran 107 tests in 66.565s
+
+OK

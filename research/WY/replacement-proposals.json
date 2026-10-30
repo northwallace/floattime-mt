@@ -1,0 +1,121 @@
+{
+ "state": "WY",
+ "checkedOn": "2026-10-27",
+ "proposals": [
+  {
+   "id": "WY-PRO-001",
+   "type": "app-support",
+   "sections": [
+    "edelweiss-to-bridger-mt"
+   ],
+   "endpoint": "Bridger (MT)",
+   "proposal": "PROPOSED APP FEATURE: cross-state endpoint lookup (WY section → MT registry 'Bridger').",
+   "detail": "research/cross-state-references.json"
+  },
+  {
+   "id": "WY-PRO-002",
+   "type": "app-support",
+   "sections": [],
+   "endpoint": "Kortes / Miracle Mile / Alcova Afterbay (North Platte)",
+   "proposal": "PROPOSED APP FEATURE: out-and-back sections (put-in = take-out). WGFD lists these three North Platte tailwater sites as single launch/egress points with no paired downstream access in the same section; the catalog requires two endpoints.",
+   "detail": "research/river-drafts/north-platte-out-and-back.json"
+  },
+  {
+   "id": "WY-PRO-003",
+   "type": "coordinate-replacement",
+   "sections": [
+    "routt-colorado-to-six-mile-gap",
+    "six-mile-gap-to-prospect"
+   ],
+   "endpoint": "Six Mile Gap (North Platte)",
+   "proposal": "WGFD-FAC OBJECTID 752 'Six Mile Gap Boat Ramp' lies 191 m from the WGFD River Access Point; the RAP point is 239 m from the NHD HR flowline. The ramp feature could replace the parking coordinate after an imagery check.",
+   "detail": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/Facilities_FishingGuide_PublicView/FeatureServer/0/query?objectIds=752&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "WY-PRO-004",
+   "type": "data-correction",
+   "sections": [],
+   "endpoint": "BLM overlook (Laramie)",
+   "proposal": "WGFD's coordinate for 'BLM overlook' (Laramie River) duplicates NPU16 Shady Rest on the North Platte. A correct public coordinate is needed before any upper Laramie section can be built.",
+   "detail": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?objectIds=134&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "WY-PRO-005",
+   "type": "imagery-follow-up",
+   "sections": [
+    "gas-wells-to-labarge-whelan-bridge",
+    "labarge-whelan-bridge-to-delaney-canyon"
+   ],
+   "endpoint": "LaBarge Whelan Bridge (Green)",
+   "proposal": "Imagery verdict 'flag': Pin on the access road roughly 50 m from the main channel; launch spot not identifiable on imagery. Published as access-verified (approximate). A closer agency feature or a field photo could make it exact.",
+   "detail": "research/raw/imagery/UGR24.jpg"
+  },
+  {
+   "id": "WY-PRO-006",
+   "type": "imagery-follow-up",
+   "sections": [
+    "confluence-to-astoria",
+    "south-park-von-gontard-landing-to-astoria",
+    "astoria-to-prichard"
+   ],
+   "endpoint": "Astoria (Snake)",
+   "proposal": "Imagery verdict 'flag': Pin in the Astoria parking area roughly 60 m from the water; launch spot not identifiable on imagery. Published as access-verified (approximate). A closer agency feature or a field photo could make it exact.",
+   "detail": "research/raw/imagery/SNM10.jpg"
+  },
+  {
+   "id": "WY-PRO-007",
+   "type": "imagery-follow-up",
+   "sections": [
+    "bobcat-hoolihan-to-twin-creek",
+    "twin-creek-to-castle-rock"
+   ],
+   "endpoint": "Twin Creek (SF Shoshone)",
+   "proposal": "Imagery verdict 'flag': Pin (WGFD River Access Point) in a roadside pullout roughly 80 m from the channel; launch spot not identifiable on imagery. Published as access-verified (approximate). A closer agency feature or a field photo could make it exact.",
+   "detail": "research/raw/imagery/SFS4.jpg"
+  },
+  {
+   "id": "WY-PRO-008",
+   "type": "imagery-follow-up",
+   "sections": [
+    "twin-creek-to-castle-rock",
+    "castle-rock-to-andy-martin-hill"
+   ],
+   "endpoint": "Castle Rock (SF Shoshone)",
+   "proposal": "Imagery verdict 'flag': Pin (WGFD River Access Point) in a roadside pullout roughly 100 m from the channel; launch spot not identifiable on imagery. Published as access-verified (approximate). A closer agency feature or a field photo could make it exact.",
+   "detail": "research/raw/imagery/SFS5.jpg"
+  },
+  {
+   "id": "WY-PRO-009",
+   "type": "imagery-follow-up",
+   "sections": [
+    "foote-to-pick-bridge",
+    "pick-bridge-to-sanger-upstream"
+   ],
+   "endpoint": "Pick Bridge (North Platte)",
+   "proposal": "Imagery verdict 'downgrade': Pin about 120 m from the river in an open field on low-resolution imagery; no ramp visible. Published as access-verified (approximate). A closer agency feature or a field photo could make it exact.",
+   "detail": "research/raw/imagery/NPU9.jpg"
+  },
+  {
+   "id": "WY-PRO-010",
+   "type": "imagery-follow-up",
+   "sections": [
+    "pick-bridge-to-sanger-upstream",
+    "sanger-upstream-to-sanger-downstream"
+   ],
+   "endpoint": "Sanger - upstream (North Platte)",
+   "proposal": "Imagery verdict 'downgrade': Low-resolution imagery; pin is not on an identifiable bank or access feature. Published as access-verified (approximate). A closer agency feature or a field photo could make it exact.",
+   "detail": "research/raw/imagery/NPU10.jpg"
+  },
+  {
+   "id": "WY-PRO-011",
+   "type": "imagery-follow-up",
+   "sections": [
+    "bessemer-bend-to-robertson-road",
+    "robertson-road-to-paradise-valley"
+   ],
+   "endpoint": "Robertson Road (North Platte)",
+   "proposal": "Imagery verdict 'flag': Pin in the Robertson Road parking area roughly 50 m from the river. Published as access-verified (approximate). A closer agency feature or a field photo could make it exact.",
+   "detail": "research/raw/imagery/NPM9.jpg"
+  }
+ ]
+}

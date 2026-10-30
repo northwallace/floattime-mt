@@ -1,0 +1,338 @@
+U.S. Department of the Interior  March 9, 2020 
+Bighorn Reservoir, Montana 
+ 
+ 
+Automated Retrieval 
+Documentation for Missouri 
+Basin HydroMet 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Missouri Basin Regional Office 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Mission Statements 
+The Department of the Interior (DOI) conserves and manages the 
+Nation’s natural resources and cultural heritage for the benefit and 
+enjoyment of the American people, provides scientific and other 
+information about natural resources and natural hazards to address 
+societal challenges and create opportunities for the American people, 
+and honors the Nation’s trust responsibilities or special commitments 
+to American Indians, Alaska Natives, and affiliated island 
+communities to help them prosper. 
+ 
+The mission of the Bureau of Reclamation is to manage, develop, and 
+protect water and related resources in an environmentally and 
+economically sound manner in the interest of the American public. 
+ 
+ 
+ 
+  
+3 
+ 
+ 
+Contents 
+REST URL Data Retrieval from the Hydromet Website ............................................................... 4 
+Dayfile Data Request Format ............................................................................................................ 4 
+Table Format ........................................................................................................................................... 4 
+Comma Separated Value (CSV) Format ........................................................................................ 7 
+Archive Data Request Format ............................................................................................................... 8 
+Table Format ........................................................................................................................................... 8 
+Comma Separated Values (CSV) Format ...................................................................................... 9 
+JSON Format ......................................................................................................................................... 10 
+Data Inventory .......................................................................................................................................... 10 
+Rating Table Data ................................................................................................................................... 11 
+Miscellaneous Other Data ................................................................................................................... 11 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+ 
+REST URL Data Retrieval from the Hydromet Website 
+The following document contains instructions for obtaining data from the Hydromet website via 
+editable URLs. These URLs can be manually edited or parsed for data.   
+Dayfile Data Request Format 
+Dayfile data is near real time or instantaneous data. The time interval that data is collected varies 
+depending on the site, but it is typically in 15, 30, or 60 minute intervals. There are two main formats 
+in which Dayfile data can be obtained from URLs: Table and CSV formats.  
+Table Format 
+This is a sample URL to collect near real time data for stations and parameters: 
+http://www.usbr.gov/gp-
+bin/webdaycsv.pl?parameter=PUER%20FB&syer=2018&smnth=1&sdy=1&eyer=2018&emnth=1
+&edy=24&format=2 
+ 
+Up to 14 station and parameter combinations can be requested at a time.  A space, or "%20", 
+separates a station from a parameter and multiple stations/parameter combinations are separated 
+with a comma. Examples of requesting multiple stations and parameters can be found in the 
+following sections. If other stations, parameters, or time periods are needed, the URL script can be 
+edited based on the following: 
+ 
+• parameter=PUER: PUER is the station name selected in the example. A list of stations 
+by state can be found here: 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html
+ 
+• FB: FB is the name of the parameter selected in the example. Use this URL, 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html, to find a list of 
+parameters at each station by state. 
+• syer: Start Year 
+• smnth: Start Month 
+• sdy: Start Day 
+• eyer: End Year 
+• emnt: End Month 
+• edy: End Day 
+  
+The data can also be requested in a variety of formats by editing the “format=2” in the sample URL. 
+The numbers correspond to the following formats: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+ 
+1- Tab delimited  
+    
+ 
+2- Comma delimited 
+    
+3- HTML table with quality flags 
+    
+4- Reserved 
+  
+ 
+
+6 
+ 
+5- HTML table, no headers, quality data in same cell as data value 
+      
+6- HTML table, no headers, no date 
+            
+7- HTML table, no headers, no quality flags 
+   
+ 
+ 
+ 
+ 
+ 
+
+7 
+ 
+8- Comma separated values where values of 998877 and near 0 is blank and no flags 
+             
+9- HTML table with headers and dates, but no quality flags 
+ 
+10- JSON Data 
+ 
+Example URL for Multiple Parameters at the Same Station: 
+https://www.usbr.gov/gp-
+bin/webdaycsv.pl?parameter=PUER%20FB,PUER%20AF&syer=2018&smnth=1&sdy=1&eyer=2
+018&emnth=1&edy=24&format=2 
+Example URL for Multiple Stations: 
+https://www.usbr.gov/gp-
+bin/webdaycsv.pl?parameter=PUER%20FB,PUER%20AF,PUERWXCO%20BH&syer=2018&sm
+nth=1&sdy=1&eyer=2018&emnth=1&edy=24&format=2 
+Comma Separated Value (CSV) Format 
+http://www.usbr.gov/gp-bin/daycsv.pl?BBR,AF,2016MAY052345,DAT,-1 
+ 
+The editable portion of this URL is in the following format: ?SITE,PAR,DATE,PROCESS,NDAYS 
+ 
+• SITE is based on station codes found in this link: 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html 
+• PAR can be inputted with two objects: 
+
+8 
+ 
+o Parameter codes, such as AF in the example can be inputted. Parameter codes 
+can be found in this link: 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html 
+o Alternatively, + can be entered in place of a parameter code to obtain a list of all 
+parameter codes associated with the site. If this method is used leave remaining 
+arguments blank.  
+• DATE is in the format YYYYMMMDDHHMM 
+• PROCESS: The process completed by the URL can be DAT (output data values), MIN 
+(output minimum value), MAX (output maximum value), AVG (output average value), 
+or SUM (output sum of all values). 
+• NDAYS is the number of 15-minute intervals of data to be returned (DAT) or to be 
+calculated through one of the other processes. NDAYS also adheres to the following 
+commands: 
+o 0 = outputs the full day in which the date falls 
+o -1 = outputs the first non-missing data value found within 96 intervals (1 day) 
+o For DAT, the range of acceptable values includes 1 through 385 
+o For other calculations, the range of acceptable values includes 1 through 3000 
+Archive Data Request Format 
+Archive data consists of daily data values for stations and parameters. Daily data for the previous 
+day is available after 5:25 a.m. on the current day.  
+Table Format 
+The table format URL for archive/daily data is almost the same as the dayfile data URL. The only 
+difference is “webdaycsv” is changed to “webarccsv”. The output data is a daily value as opposed to 
+a near real time value. Here is a sample URL for obtaining daily data for stations: 
+ 
+http://www.usbr.gov/gp-
+bin/webarccsv.pl?parameter=BOZM%20MM&syer=2017&smnth=6&sdy=1&eyer=2017&emnth=
+6&edy=30&format=2 
+ 
+Up to 14 station and parameter combinations can be requested at one time.  A "%20" separates a 
+station from a parameter and multiple stations/parameter combinations are separated with a 
+comma. More information on the different format options and examples of multiple parameter 
+URLs can be found in the Table Format Dayfile Data Request section. If you need other stations, 
+parameters, or time periods, you can edit the URL script based on the following: 
+ 
+• parameter = BOZM: BOZM is the station name selected in the example. A list of 
+stations by state can be found here: 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html 
+• ET: MM is the name of the parameter selected in the example. Use this URL, 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html, to find a list of 
+parameters at each station by state. 
+• syer: Start Year 
+9 
+ 
+• smnth: Start Month 
+• sdy: Start Day 
+• eyer: End Year 
+• emnt: End Month 
+• edy: End Day 
+  
+Format: 
+1- Tab delimited 
+2- Comma delimited 
+3- HTML table 
+4- Reserved 
+5- HTML table, no headers 
+6- HTML table, no headers, no date 
+7- Space delimited data 
+8- Same as 2 
+9- Same as 7 
+10- JSON Format Data 
+ 
+Comma Separated Values (CSV) Format 
+The CSV format for archive/daily data is almost entirely the same as the CSV format for the near 
+real time data. The “arccvs” text and the NDAYS arguments are the only significant changes in the 
+inputs.  
+  
+https://www.usbr.gov/gp-bin/arccsv.pl?BOZM,ET,2017JUN01,DAT,30 
+ 
+The editable portion of this URL is in the following format: 
+?SITE,PAR,DATE,PROCESS,NDAYS 
+• SITE is based on station codes found in this link: 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html 
+• PAR can be inputted with two objects: 
+o Parameter codes, such as AF in the example can be inputted. Parameter codes 
+can be found in this link: 
+https://www.usbr.gov/gp/hydromet/station_list_by_state.html 
+o Alternatively, + can be entered in place of a parameter code to obtain a list of all 
+parameter codes associated with the site. If using this method leave remaining 
+arguments blank.  
+• DATE is in the format YYYYMMMDDHHMM 
+• PROCESS: The process completed by the URL can be DAT (output data values), MIN 
+(output minimum value), MAX (output maximum value), AVG (output average value), 
+or SUM (output sum of all values). 
+• NDAYS is the number of days of data to be returned (DAT) or to be calculated through 
+one of the other processes. NDAYS also adheres to the following commands: 
+o 0 = outputs the full water year in which the date falls 
+o -1 = outputs the first non-missing data value found within 60 days 
+o For DAT, the range of acceptable values includes 1 through 366 
+10 
+ 
+o For other calculations, the range of acceptable values includes 1 through 3000 
+ 
+ 
+ 
+JSON Format 
+This URL can be used to download the data in JSON: 
+ 
+https://www.usbr.gov/gp-
+bin/arcread.pl?st=BOZM&by=2017&bm=6&bd=1&ey=2017&em=6&ed=30&pa=ET&json=1 
+ 
+The URL can be edited with the following inputs: 
+• st: station 
+• by: start year 
+• bm: start month 
+• bd: start day 
+• ey: end year 
+• em: end month 
+• ed: end day 
+• pa: parameter 
+ 
+json=1 for json format. 
+  
+To obtain multiple parameters for a single station, add additional parameters in this format 
+“&pa=MM” after the original parameter. An example is provided here: 
+ 
+https://www.usbr.gov/gp-
+bin/arcread.pl?st=BOZM&by=2017&bm=6&bd=1&ey=2017&em=6&ed=30&pa=TA&pa=PP&p
+a=MM&json=1 
+Data Inventory 
+Data inventory for a site includes the years in which a parameter associated with the site had data 
+collected. Here is a URL to provide a data inventory for a site: 
+ 
+http://www.usbr.gov/gp-bin/inventory.pl?site=gibr 
+ 
+Change the “site=gibr” to “site=site of interest”. 
+11 
+ 
+Rating Table Data 
+The following API has rating table metadata such as a list of all parameter rating tables, when they 
+were created, and when the tables were last edited: 
+https://www.usbr.gov/gp/hydromet/ratingtables.csv 
+There are two APIs that pull in rating tables from Hydromet.  
+One rating table API has only a selection of rating tables, but dumps all the tables into one file: 
+https://www.usbr.gov/gp/hydromet/rtf.html 
+The other rating table API allows a user to select any rating table in Hydromet: 
+https://www.usbr.gov/gp-bin/expandrtf.pl?site=NPOW&pcode=Q&FORM=CSV&INCR=.1 
+The URL can be edited with the following inputs: 
+• site= The site code that the user is interested in 
+• pcode= The parameter code that the user is interested in 
+• FORM= Format the user wants, the formats are described below. 
+• INCR= Increment of the X variable in the rating table in feet. Some tables are imported 
+from USGS at 1/10th of a foot rather than the normal 1/100th of a foot. 
+The available formats are:  
+• CRO 
+• HTMLT Default Format 
+• Text 
+• COL 
+• CSV 
+Miscellaneous Other Data 
+Here is a list of XML files that are generated on an hourly or daily basis to provide data to outside 
+users that can be parsed for certain data. 
+ 
+Provides location and hourly reservoir elevation and content.  
+https://www.usbr.gov/gp/hydromet/res.xml 
+ 
+Provides daily boat ramp data. 
+https://www.usbr.gov/gp/hydromet/boatlim.xml 
+ 
+Provides daily reservoir statistic. 
+https://www.usbr.gov/gp/hydromet/curres.xml 
+ 
+Provides daily location information for all sites. (Type, State, Elevation, Latitude and Longitude) 
+https://www.usbr.gov/gp/hydromet/location.htm 
+12 
+ 
+https://www.usbr.gov/gp/hydromet/location.csv 
+ 

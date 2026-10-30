@@ -1,0 +1,45 @@
+{
+ "id": "shoshone-river-cody-draft-sections",
+ "name": "Shoshone River — Cody (Demaris Hot Springs to Corbett Bridge) — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "permission"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0094",
+   "name": "Demaris Hot Springs (Blanchard's property) (Shoshone)",
+   "grade": "pending",
+   "flags": [
+    "permission"
+   ]
+  },
+  {
+   "id": "WY-ACC-0095",
+   "name": "Belfry Bridge (Shoshone)",
+   "grade": "verified",
+   "flags": []
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "demaris-hot-springs-blanchard-s-property-to-belfry-bridge",
+   "putIn": "Demaris Hot Springs (Blanchard's property) (Shoshone)",
+   "takeOut": "Belfry Bridge (Shoshone)",
+   "miles": 3.8,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  }
+ ]
+}

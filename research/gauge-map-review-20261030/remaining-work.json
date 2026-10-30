@@ -1,0 +1,507 @@
+{
+  "checkedOn": "2026-10-30",
+  "localOnly": true,
+  "gaugeGaps": [
+    {
+      "riverId": "arkansas-river-salida",
+      "station": "USGS 07091200",
+      "status": "seasonal-gap",
+      "nextAction": "Retain the correct Salida station. Check for resumed discharge in its operating season; do not replace it with an upstream dam release solely to fill the card."
+    },
+    {
+      "riverId": "shoshone-river-corbett",
+      "station": "USGS 06283000",
+      "status": "unresolved",
+      "nextAction": "Find a maintained discharge source below Corbett diversion. SRBB is upstream and SRLO at Lovell is much farther downstream; neither was approved as a substitute."
+    },
+    {
+      "riverId": "laramie-river-woods-landing",
+      "station": "USGS 06659000",
+      "status": "candidate-needs-review",
+      "candidate": "Wyoming State Engineer 014AWL, Laramie below Pioneer Canal",
+      "sourceUrl": "https://seoflow.wyo.gov/",
+      "nextAction": "Review station placement relative to Jelm/Woods Landing and Pioneer Canal. Public metadata lists a current series, but the export returned No Access. Obtain an authorized public machine-readable feed before implementing."
+    },
+    {
+      "riverId": "tongue-river-wy",
+      "station": "USGS 06299980",
+      "status": "candidate-needs-review",
+      "candidate": "Wyoming State Engineer 06298000, Tongue near Dayton",
+      "sourceUrl": "https://seoflow.wyo.gov/",
+      "nextAction": "Review how the upstream Dayton station represents Ranchester. Public metadata lists a current series, but the export returned No Access. Obtain an authorized public machine-readable feed before implementing."
+    }
+  ],
+  "heldAccessMaps": [
+    {
+      "id": "beaverhead/dam-high-bridge",
+      "state": "MT",
+      "label": "Clark Canyon Dam → High Bridge FAS",
+      "blocker": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch.",
+      "riverPathIssues": [
+        "access-points-pending"
+      ],
+      "riverPathNextAction": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch."
+    },
+    {
+      "id": "beaverhead/high-bridge-barretts",
+      "state": "MT",
+      "label": "High Bridge FAS → Barretts Station Park (above dam)",
+      "blocker": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam.",
+      "riverPathIssues": [
+        "access-points-pending"
+      ],
+      "riverPathNextAction": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam."
+    },
+    {
+      "id": "bitterroot/florence-buckhouse",
+      "state": "MT",
+      "label": "Florence Bridge → Buckhouse Bridge (Missoula)",
+      "blocker": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch."
+    },
+    {
+      "id": "clark-fork/caras-kelly-island",
+      "state": "MT",
+      "label": "Caras Park → Kelly Island",
+      "blocker": "Do not use this listing to plan a casual float. Missoula identifies Silver Park as the last public exit before the downstream Grass Valley diversion dam, with Kelly Island below the dam. A suitable route and access plan have not been established.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "Do not use this listing to plan a casual float. Missoula identifies Silver Park as the last public exit before the downstream Grass Valley diversion dam, with Kelly Island below the dam. A suitable route and access plan have not been established."
+    },
+    {
+      "id": "clarks-fork-yst/bridger-edgar",
+      "state": "MT",
+      "label": "Bridger → Edgar",
+      "blocker": "An exact legal take-out at Edgar has not been established for this listing. A town or bridge name is not enough to plan an exit.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "An exact legal take-out at Edgar has not been established for this listing. A town or bridge name is not enough to plan an exit."
+    },
+    {
+      "id": "gallatin-canyon/greek-creek-storm-castle",
+      "state": "MT",
+      "label": "Greek Creek → Storm Castle",
+      "blocker": "The 2015 access survey distinguishes Greek Creek Campground from its upstream pull-out, and Upper Storm Castle from Lower Storm Castle. Greek Creek’s bank was rebuilt in 2024–2025; the current designated raft launch must be reconciled with those older points before mapping this trip.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The 2015 access survey distinguishes Greek Creek Campground from its upstream pull-out, and Upper Storm Castle from Lower Storm Castle. Greek Creek’s bank was rebuilt in 2024–2025; the current designated raft launch must be reconciled with those older points before mapping this trip."
+    },
+    {
+      "id": "gallatin-lower/gateway-shedds",
+      "state": "MT",
+      "label": "Gallatin Gateway (Axtell Bridge) → Shedd's Bridge",
+      "blocker": "Shedd's Bridge: The official FWP access guide marks this site closed for public safety due to an unstable river bank, and it is absent from the current managed-access inventory. Do not use it as a take-out without current agency confirmation.",
+      "riverPathIssues": [
+        "access-points-pending"
+      ],
+      "riverPathNextAction": "Shedd's Bridge: The official FWP access guide marks this site closed for public safety due to an unstable river bank, and it is absent from the current managed-access inventory. Do not use it as a take-out without current agency confirmation."
+    },
+    {
+      "id": "jefferson-upper/silver-star-parsons",
+      "state": "MT",
+      "label": "Silver Star FAS → Parsons Bridge (Waterloo)",
+      "blocker": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check."
+    },
+    {
+      "id": "jefferson-upper/parsons-parrott",
+      "state": "MT",
+      "label": "Parsons Bridge (Waterloo) → Parrot Castle FAS",
+      "blocker": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing."
+    },
+    {
+      "id": "rock-creek/dalles",
+      "state": "MT",
+      "label": "Bitterroot Flat / Dalles → Harry's Flat",
+      "blocker": "The launch label combines Bitterroot Flat and Dalles, which are different locations. This section needs a single confirmed put-in and landing before its mileage and timing can be offered.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The launch label combines Bitterroot Flat and Dalles, which are different locations. This section needs a single confirmed put-in and landing before its mileage and timing can be offered."
+    },
+    {
+      "id": "rock-creek/harrys-votm",
+      "state": "MT",
+      "label": "Harry's Flat → Valley of the Moon",
+      "blocker": "The former Valley of the Moon pin was across the road from river access. The actual usable take-out remains unconfirmed; this listing is not ready for trip planning.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The former Valley of the Moon pin was across the road from river access. The actual usable take-out remains unconfirmed; this listing is not ready for trip planning."
+    },
+    {
+      "id": "rock-creek/votm-clinton",
+      "state": "MT",
+      "label": "Valley of the Moon → Clinton / Clark Fork confluence",
+      "blocker": "The Valley of the Moon launch and a legal boat take-out near Clinton / the Clark Fork confluence remain unconfirmed. Do not treat the confluence as a guaranteed exit.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The Valley of the Moon launch and a legal boat take-out near Clinton / the Clark Fork confluence remain unconfirmed. Do not treat the confluence as a guaranteed exit."
+    },
+    {
+      "id": "swan/swan-lake-bigfork",
+      "state": "MT",
+      "label": "Swan Lake outlet → Bigfork (above the Wild Mile)",
+      "blocker": "A usable take-out above the Wild Mile has not been confirmed. The mapped Bigfork boat ramp is a different location and must not be substituted. This section is not ready for trip planning.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "A usable take-out above the Wild Mile has not been confirmed. The mapped Bigfork boat ramp is a different location and must not be substituted. This section is not ready for trip planning."
+    },
+    {
+      "id": "yellowstone-upper/gardiner-corwin",
+      "state": "MT",
+      "label": "Gardiner (Queen of the Waters) → Corwin Springs",
+      "blocker": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing.",
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing."
+    },
+    {
+      "id": "green-river-upper-wy/roaring-fork-to-the-bend",
+      "state": "WY",
+      "label": "Roaring Fork (Green) → The Bend (Green)",
+      "blocker": "The Bend (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 17 ('The Bend (USFS)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Roaring Fork (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 16 ('Roaring Fork (USFS)', listed as a launch and take-out). The Bend (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 17 ('The Bend (USFS)', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/the-bend-to-campfire-ring",
+      "state": "WY",
+      "label": "The Bend (Green) → Campfire Ring (Green)",
+      "blocker": "The Bend (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 17 ('The Bend (USFS)', listed as a launch and take-out). Campfire Ring (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 18 ('Campfire Ring (USFS)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "The Bend (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 17 ('The Bend (USFS)', listed as a launch and take-out). Campfire Ring (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 18 ('Campfire Ring (USFS)', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/campfire-ring-to-warm-springs",
+      "state": "WY",
+      "label": "Campfire Ring (Green) → Warm Springs (Green)",
+      "blocker": "Campfire Ring (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 18 ('Campfire Ring (USFS)', listed as a launch and take-out). Warm Springs (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 19 ('Warm Springs (USFS)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Campfire Ring (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 18 ('Campfire Ring (USFS)', listed as a launch and take-out). Warm Springs (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 19 ('Warm Springs (USFS)', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/warm-springs-to-kendall-bridge",
+      "state": "WY",
+      "label": "Warm Springs (Green) → Kendall Bridge (Green)",
+      "blocker": "Warm Springs (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 19 ('Warm Springs (USFS)', listed as a launch and take-out). Kendall Bridge (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 20 ('Kendall Bridge', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Warm Springs (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 19 ('Warm Springs (USFS)', listed as a launch and take-out). Kendall Bridge (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 20 ('Kendall Bridge', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/kendall-bridge-to-whiskey-campground",
+      "state": "WY",
+      "label": "Kendall Bridge (Green) → Whiskey Campground (Green)",
+      "blocker": "Kendall Bridge (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 20 ('Kendall Bridge', listed as a launch and take-out). Whiskey Campground (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 21 ('Whiskey Campground', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Kendall Bridge (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 20 ('Kendall Bridge', listed as a launch and take-out). Whiskey Campground (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 21 ('Whiskey Campground', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/whiskey-campground-to-usfs-boundary",
+      "state": "WY",
+      "label": "Whiskey Campground (Green) → USFS Boundary (Green)",
+      "blocker": "Whiskey Campground (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 21 ('Whiskey Campground', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Whiskey Campground (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 21 ('Whiskey Campground', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/fears-dry-piney-reardon-draw-to-gas-wells",
+      "state": "WY",
+      "label": "Fears/Dry Piney-Reardon Draw (Green) → Gas Wells (Green)",
+      "blocker": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-upper-wy/gas-wells-to-labarge-whelan-bridge",
+      "state": "WY",
+      "label": "Gas Wells (Green) → LaBarge Whelan Bridge (Green)",
+      "blocker": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Gas Wells (Green): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out)."
+    },
+    {
+      "id": "green-river-fontenelle/james-town-to-expedition-island",
+      "state": "WY",
+      "label": "James Town (Green) → Expedition Island (Green)",
+      "blocker": "WGFD advises taking out at James Town before the diversion hazards at river miles 67–70. This downstream trip is withheld; a safe, authorized route around the hazards has not been established.",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "WGFD advises taking out at James Town before the diversion hazards at river miles 67–70. This downstream trip is withheld; a safe, authorized route around the hazards has not been established."
+    },
+    {
+      "id": "green-river-fontenelle/expedition-island-to-stratton-meyer",
+      "state": "WY",
+      "label": "Expedition Island (Green) → Stratton Meyer (Green)",
+      "blocker": "The launch is documented, but the exact launch/channel relationship to the guide’s river-mile 67–70 hazard reach still needs review. Do not infer a safe through-route from the access marker.",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "The launch is documented, but the exact launch/channel relationship to the guide’s river-mile 67–70 hazard reach still needs review. Do not infer a safe through-route from the access marker."
+    },
+    {
+      "id": "hoback-river/highway-189-bridge-to-granite-creek",
+      "state": "WY",
+      "label": "Highway 189 Bridge (Hoback) → Granite Creek (Hoback)",
+      "blocker": "Highway 189 Bridge (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 56 ('Highway 189 Bridge', listed as a launch and take-out). Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Highway 189 Bridge (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 56 ('Highway 189 Bridge', listed as a launch and take-out). Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/granite-creek-to-stinking-springs",
+      "state": "WY",
+      "label": "Granite Creek (Hoback) → Stinking Springs (Hoback)",
+      "blocker": "Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out). Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Granite Creek (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out). Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/stinking-springs-to-spotted-horse-ranch",
+      "state": "WY",
+      "label": "Stinking Springs (Hoback) → Spotted Horse Ranch (Hoback)",
+      "blocker": "Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out). Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Stinking Springs (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out). Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/spotted-horse-ranch-to-confluence",
+      "state": "WY",
+      "label": "Spotted Horse Ranch (Hoback) → Confluence (Hoback)",
+      "blocker": "Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out). Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Spotted Horse Ranch (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out). Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out)."
+    },
+    {
+      "id": "hoback-river/confluence-to-astoria",
+      "state": "WY",
+      "label": "Confluence (Hoback) → Astoria (Snake)",
+      "blocker": "Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Confluence (Hoback): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out)."
+    },
+    {
+      "id": "laramie-river-woods-landing/jelm-to-woods-landing",
+      "state": "WY",
+      "label": "Jelm (Laramie) → Woods Landing (Laramie)",
+      "blocker": "Jelm (Laramie): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 135 ('Jelm (WGFD)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Jelm (Laramie): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 135 ('Jelm (WGFD)', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/east-fork-confluence-to-gas-wells",
+      "state": "WY",
+      "label": "East Fork Confluence (New Fork) → Gas Wells (New Fork)",
+      "blocker": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/gas-wells-to-remmick",
+      "state": "WY",
+      "label": "Gas Wells (New Fork) → Remmick (New Fork)",
+      "blocker": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Gas Wells (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/usgs-gage-station-to-blm-downstream-of-gage-station",
+      "state": "WY",
+      "label": "USGS Gage Station (New Fork) → BLM downstream of Gage Station (New Fork)",
+      "blocker": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out)."
+    },
+    {
+      "id": "new-fork-river/blm-downstream-of-gage-station-to-fears-ferry-island",
+      "state": "WY",
+      "label": "BLM downstream of Gage Station (New Fork) → Fears/Ferry Island (Green)",
+      "blocker": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "BLM downstream of Gage Station (New Fork): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/sleeping-giant-ski-area-to-eagle-creek-campground",
+      "state": "WY",
+      "label": "Sleeping Giant Ski Area (NF Shoshone) → Eagle Creek Campground (NF Shoshone)",
+      "blocker": "Sleeping Giant Ski Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 71 ('Sleeping Giant Ski Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Sleeping Giant Ski Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 71 ('Sleeping Giant Ski Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/sleeping-giant-picnic-area-to-eagle-creek-campground",
+      "state": "WY",
+      "label": "Sleeping Giant Picnic Area (NF Shoshone) → Eagle Creek Campground (NF Shoshone)",
+      "blocker": "Sleeping Giant Picnic Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 72 ('Sleeping Giant Picnic Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Sleeping Giant Picnic Area (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 72 ('Sleeping Giant Picnic Area', listed as a launch). Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/eagle-creek-campground-to-libby-creek-aka-white-rocks",
+      "state": "WY",
+      "label": "Eagle Creek Campground (NF Shoshone) → Libby Creek (aka White Rocks) (NF Shoshone)",
+      "blocker": "Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out). Libby Creek (aka White Rocks) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 74 ('Libby Creek (aka White Rocks)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Eagle Creek Campground (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out). Libby Creek (aka White Rocks) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 74 ('Libby Creek (aka White Rocks)', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/libby-creek-aka-white-rocks-to-newton-creek",
+      "state": "WY",
+      "label": "Libby Creek (aka White Rocks) (NF Shoshone) → Newton Creek (NF Shoshone)",
+      "blocker": "Libby Creek (aka White Rocks) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 74 ('Libby Creek (aka White Rocks)', listed as a launch and take-out). Newton Creek (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 75 ('Newton Creek', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Libby Creek (aka White Rocks) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 74 ('Libby Creek (aka White Rocks)', listed as a launch and take-out). Newton Creek (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 75 ('Newton Creek', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/newton-creek-to-mummy-cave-aka-old-rex-hale-aka-blackwater",
+      "state": "WY",
+      "label": "Newton Creek (NF Shoshone) → Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone)",
+      "blocker": "Newton Creek (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 75 ('Newton Creek', listed as a launch and take-out). Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 76 ('Mummy Cave (aka Old Rex Hale, aka Blackwater)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Newton Creek (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 75 ('Newton Creek', listed as a launch and take-out). Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 76 ('Mummy Cave (aka Old Rex Hale, aka Blackwater)', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/mummy-cave-aka-old-rex-hale-aka-blackwater-to-elk-fork-cliffs",
+      "state": "WY",
+      "label": "Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone) → Elk Fork Cliffs (NF Shoshone)",
+      "blocker": "Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 76 ('Mummy Cave (aka Old Rex Hale, aka Blackwater)', listed as a launch and take-out). Elk Fork Cliffs (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 77 ('Elk Fork Cliffs', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 76 ('Mummy Cave (aka Old Rex Hale, aka Blackwater)', listed as a launch and take-out). Elk Fork Cliffs (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 77 ('Elk Fork Cliffs', listed as a launch and take-out)."
+    },
+    {
+      "id": "north-fork-shoshone/elk-fork-cliffs-to-forest-boundary-aka-laughing-pig",
+      "state": "WY",
+      "label": "Elk Fork Cliffs (NF Shoshone) → Forest Boundary (aka Laughing Pig) (NF Shoshone)",
+      "blocker": "Elk Fork Cliffs (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 77 ('Elk Fork Cliffs', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Elk Fork Cliffs (NF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 77 ('Elk Fork Cliffs', listed as a launch and take-out)."
+    },
+    {
+      "id": "shoshone-river-corbett/corbett-dam-to-buck-creek",
+      "state": "WY",
+      "label": "Corbett Dam (Shoshone) → Buck Creek (Shoshone)",
+      "blocker": "Buck Creek (Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 98 ('Buck Creek', listed as a take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Buck Creek (Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 98 ('Buck Creek', listed as a take-out)."
+    },
+    {
+      "id": "south-fork-shoshone/hunter-creek-to-mariposa-bridge-aka-ishawooa",
+      "state": "WY",
+      "label": "Hunter Creek (SF Shoshone) → Mariposa Bridge (aka Ishawooa) (SF Shoshone)",
+      "blocker": "Hunter Creek (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 118 ('Hunter Creek', listed as a launch). Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Hunter Creek (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 118 ('Hunter Creek', listed as a launch). Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out)."
+    },
+    {
+      "id": "south-fork-shoshone/mariposa-bridge-aka-ishawooa-to-bobcat-hoolihan",
+      "state": "WY",
+      "label": "Mariposa Bridge (aka Ishawooa) (SF Shoshone) → Bobcat-Hoolihan (SF Shoshone)",
+      "blocker": "Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out). Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Mariposa Bridge (aka Ishawooa) (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out). Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out)."
+    },
+    {
+      "id": "south-fork-shoshone/bobcat-hoolihan-to-twin-creek",
+      "state": "WY",
+      "label": "Bobcat-Hoolihan (SF Shoshone) → Twin Creek (SF Shoshone)",
+      "blocker": "Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Bobcat-Hoolihan (SF Shoshone): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out)."
+    },
+    {
+      "id": "tongue-river-wy/upstream-of-i90-to-downstream-of-i90",
+      "state": "WY",
+      "label": "Upstream of I90 (Tongue) → Downstream of I90 (Tongue)",
+      "blocker": "Upstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 184 ('Upstream of I90', listed as a launch and take-out). Downstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 185 ('Downstream of I90', listed as a launch and take-out).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Upstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 184 ('Upstream of I90', listed as a launch and take-out). Downstream of I90 (Tongue): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 185 ('Downstream of I90', listed as a launch and take-out)."
+    },
+    {
+      "id": "wind-river-dubois/stoney-point-to-painted-hills",
+      "state": "WY",
+      "label": "Stoney Point (Wind) → Painted Hills (Wind)",
+      "blocker": "Stoney Point (Wind): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 124 ('Stoney Point', listed as a launch).",
+      "riverPathIssues": [
+        "access-map-withheld"
+      ],
+      "riverPathNextAction": "Stoney Point (Wind): Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 124 ('Stoney Point', listed as a launch)."
+    }
+  ],
+  "note": "Map availability is separate from dotted-path review and timing calibration. No automatic coordinate or gauge replacement."
+}

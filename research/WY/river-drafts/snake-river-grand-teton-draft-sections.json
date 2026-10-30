@@ -1,0 +1,74 @@
+{
+ "id": "snake-river-grand-teton-draft-sections",
+ "name": "Snake River — Jackson Lake Dam to Wilson (Grand Teton NP) — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "permission"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0107",
+   "name": "R Lazy S (Snake)",
+   "grade": "pending",
+   "flags": [
+    "permission"
+   ]
+  },
+  {
+   "id": "WY-ACC-0108",
+   "name": "Snake River Ranch (upper) (Snake)",
+   "grade": "pending",
+   "flags": [
+    "permission"
+   ]
+  },
+  {
+   "id": "WY-ACC-0109",
+   "name": "Wilson (Snake)",
+   "grade": "verified",
+   "flags": []
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "r-lazy-s-to-snake-river-ranch-upper",
+   "putIn": "R Lazy S (Snake)",
+   "takeOut": "Snake River Ranch (upper) (Snake)",
+   "miles": 1.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-001",
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  },
+  {
+   "id": "snake-river-ranch-upper-to-wilson",
+   "putIn": "Snake River Ranch (upper) (Snake)",
+   "takeOut": "Wilson (Snake)",
+   "miles": 5.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-001",
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  }
+ ]
+}

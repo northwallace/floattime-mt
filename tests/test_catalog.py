@@ -27,6 +27,8 @@ class CatalogTests(unittest.TestCase):
             root=Path(d); (root/'catalog/rivers').mkdir(parents=True)
             (root/'catalog/settings.json').write_text(json.dumps({k:v for k,v in build().items() if k in ('states','craft')}))
             r=json.loads((Path(__file__).resolve().parents[1]/'catalog/rivers/blackfoot.json').read_text());r['id']='test-river';r['name']='A river with {braces} and "quotes"'
+            for section in r['sections']:
+                section.pop('putInAccessId',None);section.pop('takeOutAccessId',None)
             path=root/'catalog/rivers/test-river.json';path.write_text(json.dumps(r))
             self.assertEqual(build(root)['rivers'][0]['name'], r['name'])
             r['refFlowCfs']=0;path.write_text(json.dumps(r))
@@ -59,8 +61,8 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(river['mapAudit'], 'verified' if river['id'] in verified else 'pending')
             for section in river['sections']:
                 approximate_rivers = {'missouri-craig', 'smith', 'big-hole', 'madison-lower', 'dearborn', 'missouri-breaks'}
-                if river['id']=='bitterroot':
-                    eligible = section['id'] in ('bell-crossing-stevi', 'stevi-florence')
+                if river['id'] in ('bitterroot', 'yellowstone-upper', 'clark-fork'):
+                    eligible = section['id'] in ('bell-crossing-stevi', 'stevi-florence', 'corwin-yankee-jim', 'sharon-caras')
                     self.assertEqual(bool(section.get('mapPilot')), eligible)
                     if eligible: self.assertEqual(section['mapPrecision'], 'approximate')
                     else: self.assertNotIn('takeOutCoords', section)
@@ -212,7 +214,7 @@ class CatalogTests(unittest.TestCase):
         self.assertNotIn('class="section-map-link"', pending)
         self.assertNotIn('Put-in directions', pending)
         self.assertEqual(pending.count('<strong>Map unavailable:</strong>'), 3)
-        self.assertIn('Valley of the Moon: The old pin was across the road from river access', pending)
+        self.assertIn('The former Valley of the Moon pin was across the road from river access', pending)
         self.assertEqual(verified.count('class="section-map-link"'), 4)
         self.assertEqual(verified.count('Sources checked 2026-10-23'), 4)
         self.assertEqual(verified.count('Take-out: river right'), 4)
@@ -223,17 +225,21 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(canyon.count('Take-out: river right'), 2)
 
 
-    def test_only_montana_maps_are_released_and_other_guides_remain(self):
+    def test_approved_state_maps_are_released_and_other_guides_remain(self):
         catalog=build()
-        self.assertEqual(catalog['mapRelease'], {'states':['MT'], 'reviewedRoutes':True})
+        self.assertEqual(catalog['mapRelease'], {'states':['MT','WA','UT','AZ','CO','WY','ID','OR','CA','MO','AR'], 'reviewedRoutes':True})
         released=[]
         for river in catalog['rivers']:
             for section in river['sections']:
-                self.assertEqual(section['mapReleased'], bool(river['state']=='MT' and section.get('mapPilot') and not section.get('accessReview')))
+                if section['mapReleased']:
+                    self.assertIn(river['state'], catalog['mapRelease']['states'])
+                    self.assertTrue(section.get('mapPilot'))
+                    self.assertFalse(section.get('accessReview'))
+                    self.assertNotIn('mapReleaseNote', section)
                 if section['mapReleased']: released.append(section)
-            if river['state']!='MT':
+            if river['state'] not in catalog['mapRelease']['states']:
                 self.assertNotIn('section-map-link',seo.river_html(river))
-        self.assertEqual(len(released),38)
+        self.assertGreaterEqual(len(released),424)
         self.assertTrue(any(r['state']=='WA' for r in catalog['rivers']))
 
     def test_access_hold_cannot_publish_timing_or_map_links(self):
@@ -241,7 +247,8 @@ class CatalogTests(unittest.TestCase):
         page=seo.river_html(river)
         self.assertIn('Grass Valley',page)
         self.assertIn('Access and route under review',page)
-        self.assertNotIn('section-map-link',page)
+        self.assertIn('section=sharon-caras',page)
+        self.assertNotIn('section=caras-kelly-island',page)
         self.assertNotIn('in a raft at a reference',page)
         self.assertNotIn('tubes can work',page)
         self.assertIn('Route under review',page)

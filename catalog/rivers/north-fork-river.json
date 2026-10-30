@@ -1,0 +1,49 @@
+{
+  "id": "north-fork-river",
+  "name": "North Fork of the White River (North Fork River) — Hebron Access to Patrick Bridge Access",
+  "gauge": "07057500",
+  "gaugeName": "North Fork River near Tecumseh, MO (USGS 07057500)",
+  "lat": 36.85042,
+  "lon": -92.18621,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "North Fork of the White River (North Fork River) in Missouri: sections between public Missouri Department of Conservation and U.S. Forest Service accesses.",
+  "state": "MO",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "hebron-access-to-north-fork-recreation-area",
+      "putIn": "Hebron Access",
+      "takeOut": "North Fork Recreation Area (USFS)",
+      "miles": 10.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Hebron Access: approximate area only. Take-out North Fork Recreation Area: approximate area only. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-7cb7ca4609f351fa918b",
+      "takeOutAccessId": "acc-e864a21a6f465f2b9d1b"
+    },
+    {
+      "id": "north-fork-recreation-area-to-blair-bridge-access",
+      "putIn": "North Fork Recreation Area (USFS)",
+      "takeOut": "Blair Bridge Access",
+      "miles": 10.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in North Fork Recreation Area: approximate area only. Take-out Blair Bridge Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-e864a21a6f465f2b9d1b",
+      "takeOutAccessId": "acc-f99dc969bd335a7bafc1"
+    },
+    {
+      "id": "blair-bridge-access-to-patrick-bridge-access",
+      "putIn": "Blair Bridge Access",
+      "takeOut": "Patrick Bridge Access",
+      "miles": 2.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Blair Bridge Access: exact agency access pin. Take-out Patrick Bridge Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-f99dc969bd335a7bafc1",
+      "takeOutAccessId": "acc-e755394cb3465334bee2"
+    }
+  ]
+}

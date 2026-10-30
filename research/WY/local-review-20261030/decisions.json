@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "state": "WY",
+  "checkedOn": "2026-10-30",
+  "localOnly": true,
+  "items": [
+    {
+      "id": "acc-7a2a365ba7f450829528-20261030",
+      "subject": "Douglas (North Platte)",
+      "accessId": "acc-7a2a365ba7f450829528",
+      "decision": "approximate-map-only",
+      "sourceUrls": [
+        "https://www.cityofdouglas.org/Facilities/Facility/Details/Riverside-Park-22?mobile=ON",
+        "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?objectIds=179&outFields=*&outSR=4326&f=json"
+      ],
+      "note": "City facility coordinates and WGFD river access OBJECTID 179 identify the same park beside the West Grant Street bridge. Imagery corroborates the park and river frontage. The city point lies inland; retain an approximate area marker.",
+      "snapshot": "research/gauge-map-review-20261030/douglas-park.html",
+      "imagery": "research/gauge-map-review-20261030/NPL3.jpg"
+    },
+    {
+      "id": "acc-81c55327835f50f2b862-20261030",
+      "subject": "Roaring Fork (Green)",
+      "accessId": "acc-81c55327835f50f2b862",
+      "decision": "approximate-map-only",
+      "sourceUrls": [
+        "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?objectIds=16&outFields=*&outSR=4326&f=json",
+        "https://wgfd.wyo.gov/media/27075/download?inline="
+      ],
+      "note": "WGFD identifies Roaring Fork (USFS) as both a launch and egress. The agency Green River map and imagery corroborate the road-side access area. The site marker is retained as approximate; no exact ramp or bank is asserted.",
+      "snapshot": "research/gauge-map-review-20261030/wgfd-access-16-125-179.json",
+      "imagery": "research/gauge-map-review-20261030/UGR2.jpg"
+    },
+    {
+      "id": "acc-c48e7f18d82b5d83b74d-20261030",
+      "subject": "Dubois City Park (Wind)",
+      "accessId": "acc-c48e7f18d82b5d83b74d",
+      "decision": "approximate-map-only",
+      "sourceUrls": [
+        "https://www.townofdubois.org/Facilities/Facility/Details/Dubois-Town-Park-15",
+        "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?objectIds=125&outFields=*&outSR=4326&f=json"
+      ],
+      "note": "The WGFD site name is corroborated by the town, but the original WGFD coordinate is roughly 10 km northwest of the actual park. Replaced with the town’s own facility-area coordinate, corroborated by imagery. Exact landing and revised downstream mileage remain unverified.",
+      "snapshot": "research/gauge-map-review-20261030/dubois-town-park.html",
+      "imagery": "research/gauge-map-review-20261030/dubois-town-park-imagery.jpg"
+    }
+  ]
+}

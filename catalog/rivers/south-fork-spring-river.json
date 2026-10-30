@@ -1,0 +1,46 @@
+{
+  "id": "south-fork-spring-river",
+  "name": "South Fork Spring River — Sunrise Boating Access to Salem Boat Ramp",
+  "gauge": "07069270",
+  "gaugeName": "SOUTH FORK SPRING RIVER NEAR SALEM, ARK. (USGS 07069270)",
+  "lat": 36.45731,
+  "lon": -91.86373,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "South Fork Spring River in Arkansas: sections between public Arkansas Game and Fish Commission accesses.",
+  "state": "AR",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "sunrise-boating-access-to-hwy-395-boat-ramp",
+      "putIn": "Sunrise Boating Access",
+      "takeOut": "Hwy 395 Boat Ramp",
+      "miles": 3.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Sunrise Boating Access: exact agency access pin. Take-out Hwy 395 Boat Ramp: exact agency access pin. Arkansas law: no glass containers in canoes, kayaks or tubes; keep food and drink in sealed containers, carry a closable trash bag affixed to the boat and use floating drink holders; children 12 and under wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-60f06f21c79d50d1aeea",
+      "takeOutAccessId": "acc-1d1094b1c78b5229ab5e"
+    },
+    {
+      "id": "hwy-395-boat-ramp-to-salem-boat-ramp",
+      "putIn": "Hwy 395 Boat Ramp",
+      "takeOut": "Salem Boat Ramp",
+      "miles": 5.8,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Hwy 395 Boat Ramp: exact agency access pin. Take-out Salem Boat Ramp: exact agency access pin. Arkansas law: no glass containers in canoes, kayaks or tubes; keep food and drink in sealed containers, carry a closable trash bag affixed to the boat and use floating drink holders; children 12 and under wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-1d1094b1c78b5229ab5e",
+      "takeOutAccessId": "acc-5ef0a7ba53cc597b9b70"
+    }
+  ],
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "This assigned station did not provide current discharge in the October 30 review. Access and published guide information remain available, but no live timing estimate or substitute gauge has been approved.",
+    "sourceName": "USGS Water Data — station record",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-07069270/",
+    "checkedOn": "2026-10-30"
+  }
+}

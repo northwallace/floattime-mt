@@ -1,0 +1,67 @@
+{
+ "id": "fourche-lafave-river",
+ "name": "Fourche LaFave River",
+ "state": "AR",
+ "status": "draft",
+ "whyDraft": "Agency accesses are 45-52 river miles apart on the upper reaches, with no agency float guide or mileage table. Kept as draft.",
+ "blockers": [
+  "not-selected-for-catalog"
+ ],
+ "accessPoints": [
+  {
+   "id": "AR-ACC-0044",
+   "name": "Fourche LaFave River Access",
+   "grade": "verified",
+   "lat": 34.809501,
+   "lon": -93.831905,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D73&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0045",
+   "name": "Fourche LaFave River Seasonal Boating Access",
+   "grade": "verified",
+   "lat": 34.995763,
+   "lon": -92.763536,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D837&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0109",
+   "name": "Perryville Public Access Fourche LaFave River",
+   "grade": "verified",
+   "lat": 34.996052,
+   "lon": -92.794447,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D468&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0150",
+   "name": "Steel Bridge Access",
+   "grade": "access-verified",
+   "lat": 34.945031,
+   "lon": -93.326182,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D8653&outFields=*&outSR=4326&f=json"
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "fourche-lafave-river-access-to-steel-bridge-access",
+   "putIn": "Fourche LaFave River Access",
+   "takeOut": "Steel Bridge Access",
+   "miles": 44.9,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "steel-bridge-access-to-perryville-public-access-fourche-lafave-river",
+   "putIn": "Steel Bridge Access",
+   "takeOut": "Perryville Public Access Fourche LaFave River",
+   "miles": 52.0,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  },
+  {
+   "id": "perryville-public-access-fourche-lafave-river-to-fourche-lafave-river-seasonal-boating-access",
+   "putIn": "Perryville Public Access Fourche LaFave River",
+   "takeOut": "Fourche LaFave River Seasonal Boating Access",
+   "miles": 2.5,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)"
+  }
+ ]
+}

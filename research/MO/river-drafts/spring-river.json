@@ -1,0 +1,21 @@
+{
+ "id": "spring-river",
+ "name": "Spring River (SW Missouri)",
+ "state": "MO",
+ "status": "draft",
+ "whyDraft": "Only one usable agency access point after merging/exclusions — no section possible.",
+ "blockers": [
+  "single-access"
+ ],
+ "accessPoints": [
+  {
+   "id": "MO-ACC-0094",
+   "name": "La Russell Access",
+   "grade": "verified",
+   "lat": 37.150135,
+   "lon": -94.061767,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D20&outFields=*&outSR=4326&f=json"
+  }
+ ],
+ "candidateSections": []
+}

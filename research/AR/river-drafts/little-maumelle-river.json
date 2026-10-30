@@ -1,0 +1,29 @@
+{
+ "id": "little-maumelle-river",
+ "name": "Little Maumelle River (AGFC water trail)",
+ "state": "AR",
+ "status": "draft",
+ "whyDraft": "Only one on-river agency access after the NLDI check (the Pinnacle Mountain SP Little Maumelle ramp routes to the Maumelle).",
+ "blockers": [
+  "single-access"
+ ],
+ "accessPoints": [
+  {
+   "id": "AR-ACC-0111",
+   "name": "Pinnacle Mountain State Park - Little Maumelle Boat Ramp",
+   "grade": "verified",
+   "lat": 34.847246,
+   "lon": -92.464158,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1274&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "AR-ACC-0112",
+   "name": "Pinnacle Mountain State Park West Summit Boating Access",
+   "grade": "verified",
+   "lat": 34.838658,
+   "lon": -92.491142,
+   "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1704&outFields=*&outSR=4326&f=json"
+  }
+ ],
+ "candidateSections": []
+}

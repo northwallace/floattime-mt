@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "state": "MT",
+  "adapter": "usgs-flow-directed-network",
+  "projectedCrs": "EPSG:32612",
+  "archiveManifest": "research/routes/nhd-archives.json",
+  "streams": [
+    {
+      "riverName": "Yellowstone River",
+      "riverIds": [
+        "yellowstone-paradise",
+        "yellowstone-upper"
+      ]
+    },
+    {
+      "riverName": "Stillwater River",
+      "riverIds": [
+        "stillwater"
+      ]
+    }
+  ]
+}

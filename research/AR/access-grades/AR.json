@@ -1,0 +1,3339 @@
+{
+ "version": "1",
+ "state": "AR",
+ "purpose": "Research-only three-level access grades with an Esri imagery check. NOT read by the app; the catalog registry (catalog/map_points/AR.json) carries the published status.",
+ "levels": {
+  "verified": "managing-agency launch feature (AGFC boating access / NPS river access POI / USFS canoe launch) within the NHD HR named-river limit and imagery pass / pass-ramp-head",
+  "access-verified": "agency-documented public access, but the coordinate is a recreation-area point, exceeds the NHD HR distance limit, or the imagery did not clearly show a launch at the pin (approximate area)",
+  "pending": "no agency coordinate, identity unconfirmed, excluded, or imagery not graded"
+ },
+ "imageryVerdicts": {
+  "pass": "pin at the water's edge / launch",
+  "pass-ramp-head": "pin at the parking/ramp head with a visible route to water within ~40 m",
+  "flag": "location doubtful; published as access-verified",
+  "downgrade": "verified candidate whose pin is not at a usable launch; published as access-verified",
+  "not-graded": "image unusable (cloud/tiles); left pending"
+ },
+ "imageryVerdictCounts": {
+  "pass": 132,
+  "flag": 16,
+  "pass-ramp-head": 17
+ },
+ "imageryCheck": {
+  "tiles": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+  "files": "research/raw/imagery/*.jpg",
+  "review": "research/raw/imagery-review-AR.json"
+ },
+ "nhdHR": {
+  "service": "USGS NHD High Resolution HU4 GeoPackages",
+  "sources": "research/raw/geo_cache/nhd_hr_gpkg_sources.json",
+  "checks": "research/geo-checks-nhd-AR.json"
+ },
+ "limitations": "Esri tiles carry no capture date; Ozark gravel bars and channels move after floods, and NHD HR geometry can lag the current channel. Tailwater ramps are graded at whatever level the imagery was captured.",
+ "closureUncertain": [
+  "Buffalo Point (Buffalo NR)"
+ ],
+ "closed": [],
+ "points": {
+  "Albert Pike (USFS)": {
+   "id": "AR-ACC-0001",
+   "grade": "access-verified",
+   "nhdNamedDistM": 41.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Recreation-area point in woods roughly 40 m from the river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 41.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Amity Landing Boat Ramp": {
+   "id": "AR-ACC-0002",
+   "grade": "verified",
+   "nhdNamedDistM": 69.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a gravel clearing roughly 40-50 m from wide (lake-like) water with a track to the shore."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 69.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Apple Lake Boat Access": {
+   "id": "AR-ACC-0003",
+   "grade": "access-verified",
+   "nhdNamedDistM": 272.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin at a road-end clearing beside a narrow side channel/lake (Apple Lake), not the mapped Bayou DeView channel."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 272.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "NHD HR named-river distance 272.4 m exceeds 150 m",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Baker Ford (Buffalo NR)": {
+   "id": "AR-ACC-0004",
+   "grade": "verified",
+   "nhdNamedDistM": 35.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 35.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bank of Brinkley Boating Access": {
+   "id": "AR-ACC-0005",
+   "grade": "verified",
+   "nhdNamedDistM": 9.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 9.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Barnett Boat Ramp": {
+   "id": "AR-ACC-0006",
+   "grade": "verified",
+   "nhdNamedDistM": 81.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 81.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bayou Bluff (USFS)": {
+   "id": "AR-ACC-0007",
+   "grade": "access-verified",
+   "nhdNamedDistM": 103.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin in woods roughly 60 m from the river (former campground point)."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 103.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Bayou Boat Ramp": {
+   "id": "AR-ACC-0008",
+   "grade": "verified",
+   "nhdNamedDistM": 27.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Beaver Lake Dam Site Boat Ramp": {
+   "id": "AR-ACC-0009",
+   "grade": "verified",
+   "nhdNamedDistM": 1.2,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 1.2,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bertrand Boat Ramp": {
+   "id": "AR-ACC-0010",
+   "grade": "verified",
+   "nhdNamedDistM": 32.9,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 32.9,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Big Eddy Canoe Access": {
+   "id": "AR-ACC-0011",
+   "grade": "verified",
+   "nhdNamedDistM": 23.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Black Rock Boating Access": {
+   "id": "AR-ACC-0012",
+   "grade": "verified",
+   "nhdNamedDistM": 75.5,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 75.5,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bluff Hole Park Boating Access": {
+   "id": "AR-ACC-0013",
+   "grade": "verified",
+   "nhdNamedDistM": 29.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 29.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Boswell Shoals Boating Access": {
+   "id": "AR-ACC-0014",
+   "grade": "verified",
+   "nhdNamedDistM": 74.7,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 74.7,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Boxley (Buffalo NR)": {
+   "id": "AR-ACC-0015",
+   "grade": "verified",
+   "nhdNamedDistM": 12.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 12.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Brookings Boat Ramp": {
+   "id": "AR-ACC-0016",
+   "grade": "verified",
+   "nhdNamedDistM": 26.0,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 26.0,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Buffalo Point (Buffalo NR)": {
+   "id": "AR-ACC-0017",
+   "grade": "verified",
+   "nhdNamedDistM": 45.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 45.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Bull Shoals Boat Ramp": {
+   "id": "AR-ACC-0018",
+   "grade": "verified",
+   "nhdNamedDistM": 48.8,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 48.8,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Calico Rock Boat Ramp": {
+   "id": "AR-ACC-0019",
+   "grade": "verified",
+   "nhdNamedDistM": 76.6,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 76.6,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Calvin Road Boat Ramp": {
+   "id": "AR-ACC-0020",
+   "grade": "verified",
+   "nhdNamedDistM": 65.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 65.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Campbell Cemetery Canoe Access": {
+   "id": "AR-ACC-0021",
+   "grade": "verified",
+   "nhdNamedDistM": 23.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cartney Boat Ramp": {
+   "id": "AR-ACC-0022",
+   "grade": "verified",
+   "nhdNamedDistM": 84.9,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 84.9,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Carver (Buffalo NR)": {
+   "id": "AR-ACC-0023",
+   "grade": "verified",
+   "nhdNamedDistM": 18.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 18.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Chamber Springs Boating Access": {
+   "id": "AR-ACC-0024",
+   "grade": "verified",
+   "nhdNamedDistM": 24.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 24.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cherry Hill Boat Ramp": {
+   "id": "AR-ACC-0025",
+   "grade": "verified",
+   "nhdNamedDistM": 30.2,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.2,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Chesmond Ferry Boat Ramp": {
+   "id": "AR-ACC-0026",
+   "grade": "verified",
+   "nhdNamedDistM": 69.2,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 69.2,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Coffey Access Boat Ramp": {
+   "id": "AR-ACC-0027",
+   "grade": "verified",
+   "nhdNamedDistM": 62.9,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 62.9,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cold Springs Boat Ramp": {
+   "id": "AR-ACC-0028",
+   "grade": "verified",
+   "nhdNamedDistM": 35.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 35.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cotter Boat Ramp": {
+   "id": "AR-ACC-0029",
+   "grade": "verified",
+   "nhdNamedDistM": 31.5,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.5,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Cowford Boat Ramp": {
+   "id": "AR-ACC-0030",
+   "grade": "verified",
+   "nhdNamedDistM": 55.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 55.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Dale Bend Boat Ramp": {
+   "id": "AR-ACC-0031",
+   "grade": "verified",
+   "nhdNamedDistM": 34.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dalton Boat Ramp": {
+   "id": "AR-ACC-0032",
+   "grade": "access-verified",
+   "nhdNamedDistM": 77.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin among buildings roughly 80 m from the river; ramp not identifiable at the pin."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 77.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin among buildings roughly 80 m from the river; ramp not identifiable at the pin",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dam 3 Boat Ramp": {
+   "id": "AR-ACC-0033",
+   "grade": "verified",
+   "nhdNamedDistM": 10.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 10.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dam Quarry Boat Ramp": {
+   "id": "AR-ACC-0034",
+   "grade": "verified",
+   "nhdNamedDistM": 16.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 16.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dark Corner Spur Boating Access": {
+   "id": "AR-ACC-0035",
+   "grade": "access-verified",
+   "nhdNamedDistM": 484.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin on a small unnamed side channel in forest; no launch visible; off the main channel."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 484.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "NHD HR named-river distance 484.4 m exceeds 150 m",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Dillards Ferry (Buffalo NR)": {
+   "id": "AR-ACC-0036",
+   "grade": "verified",
+   "nhdNamedDistM": 32.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 32.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dixie Lee Boat Ramp": {
+   "id": "AR-ACC-0037",
+   "grade": "verified",
+   "nhdNamedDistM": 44.5,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 44.5,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dragover (USFS)": {
+   "id": "AR-ACC-0038",
+   "grade": "verified",
+   "nhdNamedDistM": 42.2,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 42.2,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Dripping Springs Boat Ramp": {
+   "id": "AR-ACC-0039",
+   "grade": "verified",
+   "nhdNamedDistM": 27.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Eleven Point Boat Ramp": {
+   "id": "AR-ACC-0040",
+   "grade": "verified",
+   "nhdNamedDistM": 53.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 53.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Erbie (Buffalo NR)": {
+   "id": "AR-ACC-0041",
+   "grade": "verified",
+   "nhdNamedDistM": 41.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 41.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Fitzhugh Boat Ramp": {
+   "id": "AR-ACC-0042",
+   "grade": "verified",
+   "nhdNamedDistM": 35.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 35.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Forrest & Nina Wood Rivercliff Boat Ramp": {
+   "id": "AR-ACC-0043",
+   "grade": "verified",
+   "nhdNamedDistM": 66.3,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 66.3,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Fourche LaFave River Access": {
+   "id": "AR-ACC-0044",
+   "grade": "verified",
+   "nhdNamedDistM": 34.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Fourche LaFave River Seasonal Boating Access": {
+   "id": "AR-ACC-0045",
+   "grade": "verified",
+   "nhdNamedDistM": 15.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 15.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Fulton Branch (USFS)": {
+   "id": "AR-ACC-0046",
+   "grade": "access-verified",
+   "nhdNamedDistM": 148.6,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin in woods roughly 40 m from a narrow mapped channel; launch not identifiable."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 148.6,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Gaston's Resort Boat Ramp": {
+   "id": "AR-ACC-0047",
+   "grade": "verified",
+   "nhdNamedDistM": 65.7,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 65.7,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Gilbert (Buffalo NR)": {
+   "id": "AR-ACC-0048",
+   "grade": "verified",
+   "nhdNamedDistM": 34.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Glenwood Boat Ramp": {
+   "id": "AR-ACC-0049",
+   "grade": "verified",
+   "nhdNamedDistM": 16.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 16.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Grinders Ferry (Buffalo NR)": {
+   "id": "AR-ACC-0050",
+   "grade": "verified",
+   "nhdNamedDistM": 24.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 24.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Guion Boat Ramp-Izard County": {
+   "id": "AR-ACC-0051",
+   "grade": "verified",
+   "nhdNamedDistM": 80.7,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 80.7,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hardy Beach Access Boat Ramp": {
+   "id": "AR-ACC-0052",
+   "grade": "verified",
+   "nhdNamedDistM": 50.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 50.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hasty (Buffalo NR)": {
+   "id": "AR-ACC-0053",
+   "grade": "verified",
+   "nhdNamedDistM": 27.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hickson Lake Boat Ramp": {
+   "id": "AR-ACC-0054",
+   "grade": "access-verified",
+   "nhdNamedDistM": null,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin in woods roughly 40-60 m from open water at a lake road end; launch not identifiable."
+   },
+   "nhdHR": {
+    "namedRiverDistM": null,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "NHD HR named-river distance None m exceeds 150 m",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "High Bank Access": {
+   "id": "AR-ACC-0055",
+   "grade": "verified",
+   "nhdNamedDistM": 30.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Highway 17 Boating Access": {
+   "id": "AR-ACC-0056",
+   "grade": "verified",
+   "nhdNamedDistM": 93.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 93.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Highway 19 Boating Access Little Missouri River": {
+   "id": "AR-ACC-0057",
+   "grade": "verified",
+   "nhdNamedDistM": 6.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 6.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Highway 270 Boat Ramp": {
+   "id": "AR-ACC-0058",
+   "grade": "verified",
+   "nhdNamedDistM": 28.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 28.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Horseshoe Bend Boat Ramp": {
+   "id": "AR-ACC-0059",
+   "grade": "verified",
+   "nhdNamedDistM": 33.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 33.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Houseman Boat Ramp": {
+   "id": "AR-ACC-0060",
+   "grade": "verified",
+   "nhdNamedDistM": 43.3,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 43.3,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 15/63 Boat Ramp": {
+   "id": "AR-ACC-0061",
+   "grade": "verified",
+   "nhdNamedDistM": 29.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 29.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 167 Boat Ramp": {
+   "id": "AR-ACC-0062",
+   "grade": "access-verified",
+   "nhdNamedDistM": 20.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin at the highway beside a side channel/inlet, not the main Saline channel; ramp not identifiable."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 20.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin at the highway beside a side channel/inlet, not the main Saline channel; ramp not identifiable",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 182 Amity Boat Ramp": {
+   "id": "AR-ACC-0063",
+   "grade": "verified",
+   "nhdNamedDistM": 12.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 12.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 278 Boat Ramp": {
+   "id": "AR-ACC-0064",
+   "grade": "verified",
+   "nhdNamedDistM": 33.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 33.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 285 Boat Ramp": {
+   "id": "AR-ACC-0065",
+   "grade": "verified",
+   "nhdNamedDistM": 22.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 395 Boat Ramp": {
+   "id": "AR-ACC-0066",
+   "grade": "verified",
+   "nhdNamedDistM": 8.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 8.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 45 Boat Ramp": {
+   "id": "AR-ACC-0067",
+   "grade": "verified",
+   "nhdNamedDistM": 39.4,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 39.4,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 64 Boat Ramp": {
+   "id": "AR-ACC-0068",
+   "grade": "verified",
+   "nhdNamedDistM": 41.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 41.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 65 Boat Ramp": {
+   "id": "AR-ACC-0069",
+   "grade": "verified",
+   "nhdNamedDistM": 3.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 3.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy 79 Pool Boat Ramp": {
+   "id": "AR-ACC-0070",
+   "grade": "access-verified",
+   "nhdNamedDistM": 49.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin in woods roughly 50 m from the river; no visible route to the water."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 49.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin in woods roughly 50 m from the river; no visible route to the water",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Hwy. 67 Boat Ramp": {
+   "id": "AR-ACC-0071",
+   "grade": "verified",
+   "nhdNamedDistM": 27.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "I -30 Cherry Gingles Boat Ramp": {
+   "id": "AR-ACC-0072",
+   "grade": "verified",
+   "nhdNamedDistM": 25.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 25.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Imboden Boat Ramp": {
+   "id": "AR-ACC-0073",
+   "grade": "verified",
+   "nhdNamedDistM": 25.9,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 25.9,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Indian Creek Access": {
+   "id": "AR-ACC-0074",
+   "grade": "access-verified",
+   "nhdNamedDistM": 82.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin at a parking loop roughly 60-70 m from the river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 82.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin at a parking loop roughly 60-70 m from the river",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "J.D. Fletcher Kings River Boating Access": {
+   "id": "AR-ACC-0075",
+   "grade": "verified",
+   "nhdNamedDistM": 73.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 73.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "JFK Park Boat Ramp": {
+   "id": "AR-ACC-0076",
+   "grade": "verified",
+   "nhdNamedDistM": 17.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 17.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Jenkins Ferry Boat Ramp": {
+   "id": "AR-ACC-0077",
+   "grade": "verified",
+   "nhdNamedDistM": 15.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 15.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Jim Griffin Boat Ramp": {
+   "id": "AR-ACC-0078",
+   "grade": "verified",
+   "nhdNamedDistM": 54.2,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 54.2,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Johnston's Eddy Boat Ramp": {
+   "id": "AR-ACC-0079",
+   "grade": "verified",
+   "nhdNamedDistM": 62.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 62.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Kelly's Slab Crooked Creek Boat Ramp": {
+   "id": "AR-ACC-0080",
+   "grade": "verified",
+   "nhdNamedDistM": 23.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Kody Riggan Datto Boat Ramp": {
+   "id": "AR-ACC-0081",
+   "grade": "verified",
+   "nhdNamedDistM": 34.2,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.2,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Kyles Landing (Buffalo NR)": {
+   "id": "AR-ACC-0082",
+   "grade": "verified",
+   "nhdNamedDistM": 31.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "LB Access Boat Ramp": {
+   "id": "AR-ACC-0083",
+   "grade": "verified",
+   "nhdNamedDistM": 22.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lee's Ferry Boat Ramp": {
+   "id": "AR-ACC-0084",
+   "grade": "verified",
+   "nhdNamedDistM": 21.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Little Missouri Hwy 27 Boating Access": {
+   "id": "AR-ACC-0085",
+   "grade": "verified",
+   "nhdNamedDistM": 37.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 37.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lobo Landing Boat Ramp": {
+   "id": "AR-ACC-0086",
+   "grade": "verified",
+   "nhdNamedDistM": 21.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Long Pool Recreation Area (USFS)": {
+   "id": "AR-ACC-0087",
+   "grade": "access-verified",
+   "nhdNamedDistM": 98.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area, or beside an off-channel water body; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 98.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Longview Boat Ramp": {
+   "id": "AR-ACC-0088",
+   "grade": "verified",
+   "nhdNamedDistM": 31.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Lower Crooked Creek Boat Ramp": {
+   "id": "AR-ACC-0089",
+   "grade": "verified",
+   "nhdNamedDistM": 29.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 29.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Lyle Park Boat Ramp": {
+   "id": "AR-ACC-0090",
+   "grade": "verified",
+   "nhdNamedDistM": 42.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 42.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Marble Access Kings River Boating Access": {
+   "id": "AR-ACC-0091",
+   "grade": "verified",
+   "nhdNamedDistM": 19.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 19.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mark Oliver Crooked Creek Boat Ramp": {
+   "id": "AR-ACC-0092",
+   "grade": "verified",
+   "nhdNamedDistM": 19.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 19.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "McGuire Boating Access": {
+   "id": "AR-ACC-0093",
+   "grade": "verified",
+   "nhdNamedDistM": 19.7,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 19.7,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mickles Switch Boating Access": {
+   "id": "AR-ACC-0094",
+   "grade": "verified",
+   "nhdNamedDistM": 21.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Monaghan/Womack Hwy. 305 Boat Ramp": {
+   "id": "AR-ACC-0095",
+   "grade": "verified",
+   "nhdNamedDistM": 24.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 24.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mount Olive Boat Ramp": {
+   "id": "AR-ACC-0096",
+   "grade": "verified",
+   "nhdNamedDistM": 70.7,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 70.7,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mt. George Boat Ramp": {
+   "id": "AR-ACC-0097",
+   "grade": "verified",
+   "nhdNamedDistM": 8.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 8.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Mt. Hersey (Buffalo NR)": {
+   "id": "AR-ACC-0098",
+   "grade": "verified",
+   "nhdNamedDistM": 21.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Norfork #1 Boat Ramp": {
+   "id": "AR-ACC-0099",
+   "grade": "verified",
+   "nhdNamedDistM": 41.0,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 41.0,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Norfork #2 Boat Ramp": {
+   "id": "AR-ACC-0100",
+   "grade": "verified",
+   "nhdNamedDistM": 79.0,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 79.0,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Norman Boating Access": {
+   "id": "AR-ACC-0101",
+   "grade": "verified",
+   "nhdNamedDistM": 18.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 18.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "North Maumee (Buffalo NR)": {
+   "id": "AR-ACC-0102",
+   "grade": "verified",
+   "nhdNamedDistM": 21.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Nubin Hill Boat Ramp": {
+   "id": "AR-ACC-0103",
+   "grade": "verified",
+   "nhdNamedDistM": 26.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 26.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Oden Boating Access": {
+   "id": "AR-ACC-0104",
+   "grade": "verified",
+   "nhdNamedDistM": 30.2,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.2,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ozark (Buffalo NR)": {
+   "id": "AR-ACC-0105",
+   "grade": "verified",
+   "nhdNamedDistM": 48.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 48.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ozment Bluff Boat Ramp": {
+   "id": "AR-ACC-0106",
+   "grade": "verified",
+   "nhdNamedDistM": 18.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 18.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Peebles Bluff Access Boat Ramp": {
+   "id": "AR-ACC-0107",
+   "grade": "verified",
+   "nhdNamedDistM": 16.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 16.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Peeler Bend Boat Ramp": {
+   "id": "AR-ACC-0108",
+   "grade": "verified",
+   "nhdNamedDistM": 30.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Perryville Public Access Fourche LaFave River": {
+   "id": "AR-ACC-0109",
+   "grade": "verified",
+   "nhdNamedDistM": 25.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 25.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Petit Jean River Highway 7 Boat Ramp": {
+   "id": "AR-ACC-0110",
+   "grade": "verified",
+   "nhdNamedDistM": 0.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 0.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pinnacle Mountain State Park - Little Maumelle Boat Ramp": {
+   "id": "AR-ACC-0111",
+   "grade": "verified",
+   "nhdNamedDistM": 20.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 20.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Pinnacle Mountain State Park West Summit Boating Access": {
+   "id": "AR-ACC-0112",
+   "grade": "verified",
+   "nhdNamedDistM": 17.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 17.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Pocahontas Boat Ramp": {
+   "id": "AR-ACC-0113",
+   "grade": "verified",
+   "nhdNamedDistM": 60.6,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 60.6,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ponca (Buffalo NR)": {
+   "id": "AR-ACC-0114",
+   "grade": "verified",
+   "nhdNamedDistM": 8.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 8.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pontoon Park Boat Ramp": {
+   "id": "AR-ACC-0115",
+   "grade": "verified",
+   "nhdNamedDistM": 30.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Powhatan Access": {
+   "id": "AR-ACC-0116",
+   "grade": "verified",
+   "nhdNamedDistM": 84.4,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 84.4,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pruitt (Buffalo NR)": {
+   "id": "AR-ACC-0117",
+   "grade": "verified",
+   "nhdNamedDistM": 28.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 28.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Pyatt #1 Crooked Creek Boat Ramp": {
+   "id": "AR-ACC-0118",
+   "grade": "verified",
+   "nhdNamedDistM": 36.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 36.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Pyatt #2 Boat Ramp": {
+   "id": "AR-ACC-0119",
+   "grade": "verified",
+   "nhdNamedDistM": 31.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ramsey Boat Ramp": {
+   "id": "AR-ACC-0120",
+   "grade": "verified",
+   "nhdNamedDistM": 22.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ranchette Boat Ramp #2": {
+   "id": "AR-ACC-0121",
+   "grade": "verified",
+   "nhdNamedDistM": 38.8,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 38.8,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ransom W Smith Access": {
+   "id": "AR-ACC-0122",
+   "grade": "verified",
+   "nhdNamedDistM": 17.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 17.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Ravenden Boat Ramp": {
+   "id": "AR-ACC-0123",
+   "grade": "verified",
+   "nhdNamedDistM": 32.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 32.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Red's Landing Boat Ramp": {
+   "id": "AR-ACC-0124",
+   "grade": "verified",
+   "nhdNamedDistM": 78.7,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 78.7,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Redding Recreation Area Canoe Access": {
+   "id": "AR-ACC-0125",
+   "grade": "verified",
+   "nhdNamedDistM": 24.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 24.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Reed Barringer Boat Ramp": {
+   "id": "AR-ACC-0126",
+   "grade": "verified",
+   "nhdNamedDistM": 27.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Richland Creek Recreation Area (USFS)": {
+   "id": "AR-ACC-0127",
+   "grade": "access-verified",
+   "nhdNamedDistM": 115.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Recreation-area point in woods roughly 80 m from the creek."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 115.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Rim Shoals Boat Ramp": {
+   "id": "AR-ACC-0128",
+   "grade": "verified",
+   "nhdNamedDistM": 119.4,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 119.4,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "River Bluff (USFS)": {
+   "id": "AR-ACC-0129",
+   "grade": "access-verified",
+   "nhdNamedDistM": 76.0,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin roughly 40-150 m from the water in woods, a campground or a parking area, or beside an off-channel water body; launch spot not identifiable at the pin. Coordinate kept only as an area centre."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 76.0,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Riverview School Access Boat Ramp": {
+   "id": "AR-ACC-0130",
+   "grade": "verified",
+   "nhdNamedDistM": 11.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 11.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rock Island RR Boating Access": {
+   "id": "AR-ACC-0131",
+   "grade": "access-verified",
+   "nhdNamedDistM": 112.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin on a linear clearing in forest roughly 100 m from the mapped channel; launch not identifiable."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 112.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin on a linear clearing in forest roughly 100 m from the mapped channel; launch not identifiable",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rockhouse Canoe-Kayak Access": {
+   "id": "AR-ACC-0132",
+   "grade": "verified",
+   "nhdNamedDistM": 35.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 35.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rocky Shoals (USFS)": {
+   "id": "AR-ACC-0133",
+   "grade": "access-verified",
+   "nhdNamedDistM": 36.3,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 36.3,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": "the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Romp Hole Boat Ramp": {
+   "id": "AR-ACC-0134",
+   "grade": "verified",
+   "nhdNamedDistM": 21.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 21.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Round Bottom Boat Ramp": {
+   "id": "AR-ACC-0135",
+   "grade": "verified",
+   "nhdNamedDistM": 87.8,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 87.8,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Rush (Buffalo NR)": {
+   "id": "AR-ACC-0136",
+   "grade": "verified",
+   "nhdNamedDistM": 39.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 39.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Salem Boat Ramp": {
+   "id": "AR-ACC-0137",
+   "grade": "verified",
+   "nhdNamedDistM": 11.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 11.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Schaeffer's Eddy Boat Ramp": {
+   "id": "AR-ACC-0138",
+   "grade": "verified",
+   "nhdNamedDistM": 44.6,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 44.6,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Shaw Bridge Boat Ramp": {
+   "id": "AR-ACC-0139",
+   "grade": "verified",
+   "nhdNamedDistM": 15.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 15.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Shipp's Ferry Boat Ramp": {
+   "id": "AR-ACC-0140",
+   "grade": "verified",
+   "nhdNamedDistM": 66.4,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 66.4,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Shirley Creek (USFS)": {
+   "id": "AR-ACC-0141",
+   "grade": "access-verified",
+   "nhdNamedDistM": 60.6,
+   "limitM": 200,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin in woods roughly 100 m from the river."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 60.6,
+    "limitM": 200
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin in woods roughly 100 m from the river",
+   "catalogStatus": "access-verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Siloam Springs Kayak Park Access": {
+   "id": "AR-ACC-0142",
+   "grade": "verified",
+   "nhdNamedDistM": 37.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 37.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Simstown Canoe Access": {
+   "id": "AR-ACC-0143",
+   "grade": "verified",
+   "nhdNamedDistM": 30.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 30.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Slaty Crossing Boat Ramp": {
+   "id": "AR-ACC-0144",
+   "grade": "verified",
+   "nhdNamedDistM": 34.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Sneed Creek Boat Ramp": {
+   "id": "AR-ACC-0145",
+   "grade": "verified",
+   "nhdNamedDistM": 73.3,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 73.3,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Snow Crooked Creek Boat Ramp": {
+   "id": "AR-ACC-0146",
+   "grade": "verified",
+   "nhdNamedDistM": 22.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 22.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "South Maumee (Buffalo NR)": {
+   "id": "AR-ACC-0147",
+   "grade": "verified",
+   "nhdNamedDistM": 53.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 53.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Spring Creek (Buffalo NR)": {
+   "id": "AR-ACC-0148",
+   "grade": "verified",
+   "nhdNamedDistM": 45.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 45.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "St Francis Boat Ramp": {
+   "id": "AR-ACC-0149",
+   "grade": "verified",
+   "nhdNamedDistM": 20.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 20.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Steel Bridge Access": {
+   "id": "AR-ACC-0150",
+   "grade": "access-verified",
+   "nhdNamedDistM": 26.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "flag",
+    "note": "Pin in flooded/green bottomland roughly 40 m from the mapped flowline; launch not identifiable."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 26.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "flag"
+   },
+   "whyNotLevel1": "imagery verdict 'flag': Pin in flooded/green bottomland roughly 40 m from the mapped flowline; launch not identifiable",
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Steel Creek (Buffalo NR)": {
+   "id": "AR-ACC-0151",
+   "grade": "verified",
+   "nhdNamedDistM": 25.2,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 25.2,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Stoney Point Boating Access": {
+   "id": "AR-ACC-0152",
+   "grade": "verified",
+   "nhdNamedDistM": 49.6,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 49.6,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Sunrise Boating Access": {
+   "id": "AR-ACC-0153",
+   "grade": "verified",
+   "nhdNamedDistM": 27.5,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 27.5,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Swinging Bridge Boat Ramp": {
+   "id": "AR-ACC-0154",
+   "grade": "verified",
+   "nhdNamedDistM": 89.3,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 89.3,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Sylamore Ferry Boating Access": {
+   "id": "AR-ACC-0155",
+   "grade": "verified",
+   "nhdNamedDistM": 63.8,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 63.8,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Terrell Access Boat Ramp": {
+   "id": "AR-ACC-0156",
+   "grade": "verified",
+   "nhdNamedDistM": 31.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Tyler Bend (Buffalo NR)": {
+   "id": "AR-ACC-0157",
+   "grade": "verified",
+   "nhdNamedDistM": 24.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 24.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Upper White River Magness Family Access Boat Ramp": {
+   "id": "AR-ACC-0158",
+   "grade": "verified",
+   "nhdNamedDistM": 23.4,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 23.4,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "WOKA Whitewater Park Canoe-Kayakng Access": {
+   "id": "AR-ACC-0159",
+   "grade": "verified",
+   "nhdNamedDistM": 37.4,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 37.4,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "White Hole Boat Ramp": {
+   "id": "AR-ACC-0160",
+   "grade": "verified",
+   "nhdNamedDistM": 50.0,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 50.0,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Wildcat Shoals Boat Ramp": {
+   "id": "AR-ACC-0161",
+   "grade": "verified",
+   "nhdNamedDistM": 74.8,
+   "limitM": 250,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 74.8,
+    "limitM": 250
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Withrow Springs State Park Boating Access": {
+   "id": "AR-ACC-0162",
+   "grade": "verified",
+   "nhdNamedDistM": 28.0,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 28.0,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Wolf Pen Recreation Area Canoe Access": {
+   "id": "AR-ACC-0163",
+   "grade": "verified",
+   "nhdNamedDistM": 34.8,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass-ramp-head",
+    "note": "Pin at a parking area, path head or ramp head roughly 30-60 m from the water with a visible route to it."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 34.8,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass-ramp-head"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Woolum (Buffalo NR)": {
+   "id": "AR-ACC-0164",
+   "grade": "verified",
+   "nhdNamedDistM": 47.7,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 47.7,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  },
+  "Yellville Crooked Creek Boat Ramp": {
+   "id": "AR-ACC-0165",
+   "grade": "verified",
+   "nhdNamedDistM": 31.1,
+   "limitM": 150,
+   "imagery": {
+    "verdict": "pass",
+    "note": "Pin on the bank at a visible ramp, gravel landing, bridge access or bank access."
+   },
+   "nhdHR": {
+    "namedRiverDistM": 31.1,
+    "limitM": 150
+   },
+   "imageryCheck": {
+    "verdict": "pass"
+   },
+   "whyNotLevel1": null,
+   "catalogStatus": "verified",
+   "checkedOn": "2026-10-30"
+  }
+ }
+}

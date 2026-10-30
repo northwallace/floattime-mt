@@ -1,0 +1,55 @@
+{
+  "checkedOn": "2026-10-28",
+  "localOnly": true,
+  "published": false,
+  "customTripRemoved": true,
+  "correctionsAndAccessSuggestionsRetained": true,
+  "coverage": [
+    {
+      "state": "MT",
+      "rivers": 24,
+      "sections": 54,
+      "localMaps": 39,
+      "held": 15
+    },
+    {
+      "state": "WY",
+      "rivers": 24,
+      "sections": 149,
+      "localMaps": 110,
+      "held": 39
+    }
+  ],
+  "wyomingChecks": {
+    "sourceUrlsFetchedSuccessfully": 151,
+    "mappedAccessPointsComparedWithAgencyGeometry": 131,
+    "endpointRolesComparedWithWGFD": 219,
+    "unresolvedRoleConflicts": 0,
+    "flaggedRoleResolvedWithNPS": 1
+  },
+  "retainedReviewedRiverPaths": 13,
+  "preview": "http://127.0.0.1:8778/?river=north-platte-gray-reef-casper&state=WY&craft=raft&section=gray-reef-to-lusby&map=1#landMapPanel",
+  "reviewQueue": "http://127.0.0.1:8778/review",
+  "limitations": [
+    "Remaining blocked sections have explicit research reasons; no guessed coordinates were promoted.",
+    "Wyoming maps show access facilities, with approximate markers where required; dotted river paths and live trip-time calibration are not yet released.",
+    "Cinnabar\u2013Carbella is an approximate access map; old distance and timing are withheld.",
+    "Optional satellite labels can fail on local port 8778 with the existing 8777-restricted credential. Imagery, markers and existing river paths continue to render."
+  ],
+  "browserChecks": [
+    "Montana Madison Upper planner: no custom-trip controls",
+    "Montana Cinnabar\u2013Carbella: approximate markers and timing withheld",
+    "Wyoming Gray Reef\u2013Lusby: satellite imagery, put-in and take-out markers",
+    "Montana Blackfoot Johnsrud\u2013Weigh Station: retained dotted path and corridor land layer",
+    "Local private review inventory: 336 sections and 940 evidence items"
+  ],
+  "httpChecks": {
+    "pagesAndAssets": 254,
+    "errors": 0
+  },
+  "automatedTests": {
+    "python": 74,
+    "node": 30,
+    "failed": 0
+  }
+}

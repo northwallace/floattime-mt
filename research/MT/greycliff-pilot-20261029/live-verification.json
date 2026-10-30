@@ -1,0 +1,70 @@
+{
+  "commit": "8c49101",
+  "published": "2026-10-29",
+  "scope": "Only opt-in Blacks Ford to Greycliff field pilot; other local changes not published",
+  "tests": {
+    "python": 64,
+    "node": 34,
+    "phoneLayout": "375 CSS pixels, no horizontal overflow, demo hidden",
+    "actualPhoneGPS": "Awaiting user field test"
+  },
+  "http": [
+    {
+      "path": "/api/map-config",
+      "status": 200,
+      "normalRoutes": 13
+    },
+    {
+      "path": "/api/map-config?fieldtest=greycliff",
+      "status": 200,
+      "pilotId": "greycliff"
+    },
+    {
+      "path": "/field-pilots/greycliff.json",
+      "status": 200,
+      "matchesCheckedBuild": true
+    },
+    {
+      "path": "/field-pilot.js",
+      "status": 200,
+      "matchesCheckedBuild": true
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "matchesCheckedBuild": true
+    },
+    {
+      "path": "/catalog.json",
+      "status": 200,
+      "matchesCheckedBuild": true
+    },
+    {
+      "path": "/routes/index.json",
+      "status": 200,
+      "matchesCheckedBuild": true
+    },
+    {
+      "path": "/api/gauge?site=06041000",
+      "status": 200,
+      "flow": 1310.0,
+      "observationAt": 1793293200000.0
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/api/reports",
+      "status": 200
+    },
+    {
+      "path": "/rivers/madison-lower",
+      "status": 200
+    },
+    {
+      "apexStatus": 200,
+      "apexFinalUrl": "https://www.floateta.com/?river=madison-lower&section=blacks-ford-greycliff&map=1&fieldtest=greycliff"
+    }
+  ]
+}

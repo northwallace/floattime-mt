@@ -1,0 +1,139 @@
+{
+  "id": "big-piney-river",
+  "name": "Big Piney River — Simmons Ford Access to Crossroads Access",
+  "gauge": "06930000",
+  "gaugeName": "Big Piney River near Big Piney, MO (USGS 06930000)",
+  "lat": 37.24185,
+  "lon": -92.00972,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Big Piney River in Missouri: sections between public Missouri Department of Conservation and U.S. Forest Service accesses.",
+  "state": "MO",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "simmons-ford-access-to-baptist-camp-access",
+      "putIn": "Simmons Ford Access",
+      "takeOut": "Baptist Camp Access",
+      "miles": 1.8,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Simmons Ford Access: exact agency access pin. Take-out Baptist Camp Access: approximate area only. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-d164433a306c5fc48cc2",
+      "takeOutAccessId": "acc-dfe65c4eb39c581a85f0"
+    },
+    {
+      "id": "baptist-camp-access-to-dogs-bluff-access",
+      "putIn": "Baptist Camp Access",
+      "takeOut": "Dogs Bluff Access",
+      "miles": 8.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Baptist Camp Access: approximate area only. Take-out Dogs Bluff Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-dfe65c4eb39c581a85f0",
+      "takeOutAccessId": "acc-c7284a2a8a855907a017"
+    },
+    {
+      "id": "dogs-bluff-access-to-mineral-springs-access",
+      "putIn": "Dogs Bluff Access",
+      "takeOut": "Mineral Springs Access",
+      "miles": 5.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Dogs Bluff Access: exact agency access pin. Take-out Mineral Springs Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-c7284a2a8a855907a017",
+      "takeOutAccessId": "acc-09a34443c3c551a18dbb"
+    },
+    {
+      "id": "mineral-springs-access-to-boiling-spring-access",
+      "putIn": "Mineral Springs Access",
+      "takeOut": "Boiling Spring Access",
+      "miles": 11.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Mineral Springs Access: exact agency access pin. Take-out Boiling Spring Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-09a34443c3c551a18dbb",
+      "takeOutAccessId": "acc-5666b58805c5506a8dae"
+    },
+    {
+      "id": "boiling-spring-access-to-mason-bridge-access",
+      "putIn": "Boiling Spring Access",
+      "takeOut": "Mason Bridge Access",
+      "miles": 5.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Boiling Spring Access: exact agency access pin. Take-out Mason Bridge Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-5666b58805c5506a8dae",
+      "takeOutAccessId": "acc-e866fbd9d9105dd9ba9c"
+    },
+    {
+      "id": "mason-bridge-access-to-slabtown-recreation-area",
+      "putIn": "Mason Bridge Access",
+      "takeOut": "Slabtown Recreation Area (USFS)",
+      "miles": 8,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Mason Bridge Access: exact agency access pin. Take-out Slabtown Recreation Area: approximate area only. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: USFS Mark Twain NF site description.",
+      "putInAccessId": "acc-e866fbd9d9105dd9ba9c",
+      "takeOutAccessId": "acc-a26d24bcce3157bd8e3b",
+      "accessReview": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map.",
+      "notices": [
+        {
+          "title": "Access status needs confirmation",
+          "text": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map.",
+          "sourceName": "USDA Forest Service recreation inventory",
+          "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D6764&outFields=*&outSR=4326&f=json",
+          "checkedOn": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "slabtown-recreation-area-to-ross-access",
+      "putIn": "Slabtown Recreation Area (USFS)",
+      "takeOut": "Ross Access",
+      "miles": 10,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Slabtown Recreation Area: approximate area only. Take-out Ross Access: exact agency access pin. USFS (Slabtown Recreation Area): \"Between Ross Bridge and East Gate, a 12-mile float, you will be floating through Fort Leonard Wood. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: USFS Mark Twain NF site description.",
+      "putInAccessId": "acc-a26d24bcce3157bd8e3b",
+      "takeOutAccessId": "acc-5f9ef0f2dacc5036b963",
+      "accessReview": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map.",
+      "notices": [
+        {
+          "title": "Access status needs confirmation",
+          "text": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map.",
+          "sourceName": "USDA Forest Service recreation inventory",
+          "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D6764&outFields=*&outSR=4326&f=json",
+          "checkedOn": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "ross-access-to-east-gate-access",
+      "putIn": "Ross Access",
+      "takeOut": "East Gate Access (USFS)",
+      "miles": 12,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Ross Access: exact agency access pin. Take-out East Gate Access: approximate area only. USFS (Slabtown Recreation Area): \"Between Ross Bridge and East Gate, a 12-mile float, you will be floating through Fort Leonard Wood. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: USFS Mark Twain NF site description.",
+      "putInAccessId": "acc-5f9ef0f2dacc5036b963",
+      "takeOutAccessId": "acc-a7d101e964b85d25893c",
+      "accessReview": "This reach passes through Fort Leonard Wood. Confirm installation access requirements, a legal shuttle and the intended East Gate landing before planning this section.",
+      "notices": [
+        {
+          "title": "Military installation access under review",
+          "text": "This reach passes through Fort Leonard Wood. Confirm installation access requirements, a legal shuttle and the intended East Gate landing before planning this section.",
+          "sourceName": "Managing-agency access review",
+          "sourceUrl": "https://www.fs.usda.gov/r09/marktwain/recreation/slabtown-recreation-area",
+          "checkedOn": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "id": "east-gate-access-to-crossroads-access",
+      "putIn": "East Gate Access (USFS)",
+      "takeOut": "Crossroads Access (USFS)",
+      "miles": 3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in East Gate Access: approximate area only. Take-out Crossroads Access: approximate area only. USFS (Slabtown Recreation Area): \"Between Ross Bridge and East Gate, a 12-mile float, you will be floating through Fort Leonard Wood. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: USFS Mark Twain NF site description.",
+      "putInAccessId": "acc-a7d101e964b85d25893c",
+      "takeOutAccessId": "acc-b805b23e11e45166a8b9"
+    }
+  ]
+}

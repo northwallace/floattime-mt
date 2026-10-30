@@ -1,0 +1,846 @@
+{
+  "catalog": {
+    "groups": [
+      "46a4e871d6624e3dbf40b77c8f5a1521"
+    ]
+  },
+  "values": {
+    "title": "Safety Float the Boise River",
+    "defaultHostname": "float-the-boise.hub.arcgis.com",
+    "subdomain": "float-the",
+    "public": false,
+    "faviconUrl": "",
+    "uiVersion": "2.4",
+    "map": {
+      "basemaps": {
+        "primary": {
+          "id": "325fee2e0ae1408694daa8c5ca6a7c08",
+          "title": "Topographic ",
+          "baseMapLayers": [
+            {
+              "id": "World_Hillshade_1081",
+              "layerType": "ArcGISTiledMapServiceLayer",
+              "url": "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+              "visibility": true,
+              "opacity": 1,
+              "title": "World_Hillshade"
+            },
+            {
+              "id": "VectorTile_5394",
+              "type": "VectorTileLayer",
+              "layerType": "VectorTileLayer",
+              "title": "World Topographic Map",
+              "styleUrl": "https://www.arcgis.com/sharing/rest/content/items/7dc6cea0b1764a1f9af2e679f642f0f5/resources/styles/root.json",
+              "itemId": "7dc6cea0b1764a1f9af2e679f642f0f5",
+              "visibility": true,
+              "opacity": 1
+            }
+          ],
+          "operationalLayers": []
+        }
+      }
+    },
+    "defaultExtent": {
+      "xmin": -12947236.01569305,
+      "ymin": 5387468.529286448,
+      "xmax": -12921855.171792183,
+      "ymax": 5422521.35008663,
+      "spatialReference": {
+        "wkid": 102100
+      }
+    },
+    "pages": [
+      {
+        "id": "d8dc1a9be3ef47369a49f2285c809c2e",
+        "title": "Current Conditions",
+        "slug": "current-conditions"
+      },
+      {
+        "id": "cd9a0f97a4e94cef9757bb2968877223",
+        "title": "Safety Checklist",
+        "slug": "safety-checklist"
+      },
+      {
+        "id": "e6e709f170e8410597948698cfb6a099",
+        "title": "Interactive Map",
+        "slug": "interactive-map"
+      },
+      {
+        "id": "81db0ca5a0874a01a852f0b9be3b4ce3",
+        "title": "Guided Tour",
+        "slug": "guided-tour"
+      },
+      {
+        "id": "4ff6d0f8eace44e785bc15bed7af7be8",
+        "title": "Parking and Rental Information",
+        "slug": "parking-rental"
+      },
+      {
+        "id": "3d651814db6b4b9dad8639528f9c3f22",
+        "title": "Floater FAQ",
+        "slug": "floater-faq"
+      },
+      {
+        "id": "94bc62b1ef884f33ab4c5d0d39190218",
+        "title": "Float the Boise News",
+        "slug": "Float the Boise News"
+      }
+    ],
+    "layout": {
+      "sections": [
+        {
+          "containment": "fixed",
+          "isFooter": false,
+          "style": {
+            "background": {
+              "isFile": false,
+              "isUrl": true,
+              "state": "",
+              "display": {},
+              "transparency": 0,
+              "position": {
+                "x": "center",
+                "y": "center"
+              },
+              "color": "#ffcb38"
+            },
+            "color": "#000000",
+            "rowLayout": "box"
+          },
+          "rows": [
+            {
+              "cards": [
+                {
+                  "component": {
+                    "name": "markdown-card",
+                    "settings": {
+                      "cardId": "cif78s8ym",
+                      "schemaVersion": 2.1,
+                      "markdown": "<h5 style=\"text-align: center;\"><b>The 2026 official Float the Boise season has ended. Thank you for a great season!</b></h5>"
+                    }
+                  },
+                  "width": 12
+                }
+              ]
+            }
+          ],
+          "visibility": {
+            "access": "default",
+            "groups": []
+          }
+        },
+        {
+          "containment": "fixed",
+          "isFooter": false,
+          "style": {
+            "background": {
+              "isFile": false,
+              "isUrl": true,
+              "state": "",
+              "display": {},
+              "transparency": 0,
+              "position": {
+                "x": "center",
+                "y": "center"
+              },
+              "color": "#ffffff"
+            },
+            "rowLayout": "box",
+            "color": "#003d5e"
+          },
+          "rows": [
+            {
+              "cards": [
+                {
+                  "component": {
+                    "name": "image-card",
+                    "settings": {
+                      "src": "",
+                      "fileSrc": "Parks-FloattheBoise-Logo-Official_3.png",
+                      "cropSrc": "Parks-FloattheBoise-Logo-Official_3.png",
+                      "alt": "",
+                      "caption": "",
+                      "captionAlign": "center",
+                      "hyperlink": "",
+                      "hyperlinkTabOption": "new",
+                      "isUrl": false,
+                      "isFile": true,
+                      "state": "valid",
+                      "display": {
+                        "position": {
+                          "x": "center",
+                          "y": "center"
+                        },
+                        "reflow": false
+                      },
+                      "cardId": "cos79q0ti"
+                    }
+                  },
+                  "width": 3
+                },
+                {
+                  "component": {
+                    "name": "markdown-card",
+                    "settings": {
+                      "cardId": "ctuu9kik5",
+                      "schemaVersion": 2.1,
+                      "markdown": "<h2 style=\"text-align: center;\"><b>Your safety is your responsibility.</b></h2><h2 style=\"text-align: center;\">Be safe. Have fun. Float the Boise.</h2>"
+                    }
+                  },
+                  "width": 9
+                }
+              ]
+            }
+          ],
+          "visibility": {
+            "access": "default",
+            "groups": []
+          }
+        },
+        {
+          "containment": "fluid",
+          "isFooter": false,
+          "style": {
+            "background": {
+              "isFile": false,
+              "isUrl": true,
+              "state": "",
+              "display": {},
+              "transparency": 0,
+              "position": {
+                "x": "center",
+                "y": "center"
+              },
+              "color": "#003d5e"
+            },
+            "rowLayout": "wide",
+            "color": "#ffffff"
+          },
+          "rows": [
+            {
+              "cards": [
+                {
+                  "component": {
+                    "name": "spacer-card",
+                    "settings": {
+                      "height": 100,
+                      "cardId": "ck7i81a3s",
+                      "hideOnMobile": true
+                    }
+                  },
+                  "settings": {
+                    "height": 100
+                  },
+                  "width": 2
+                },
+                {
+                  "component": {
+                    "name": "markdown-card",
+                    "settings": {
+                      "cardId": "cej7hdb35",
+                      "schemaVersion": 2.1,
+                      "markdown": "<h5 style=\"text-align: center;\"></h5><h6></h6><h4 style=\"text-align: center;\"><span style=\"background-color: initial; color: currentcolor; font-size: 16px;\">The Boise River is a wild, scenic river with natural and structural hazards that can change any time. Always use caution when recreating on or near the river.</span></h4>"
+                    }
+                  },
+                  "width": 8
+                },
+                {
+                  "component": {
+                    "name": "spacer-card",
+                    "settings": {
+                      "height": 100,
+                      "cardId": "ctv6171ui",
+                      "hideOnMobile": true
+                    }
+                  },
+                  "settings": {
+                    "height": 100
+                  },
+                  "width": 2
+                }
+              ]
+            }
+          ],
+          "visibility": {
+            "access": "default",
+            "groups": []
+          }
+        },
+        {
+          "containment": "fixed",
+          "isFooter": false,
+          "style": {
+            "background": {
+              "isFile": false,
+              "isUrl": true,
+              "state": "",
+              "display": {},
+              "transparency": 30,
+              "position": {
+                "x": "center",
+                "y": "center"
+              },
+              "color": "#ffffff",
+              "image": ""
+            },
+            "color": "#ffffff",
+            "rowLayout": "box"
+          },
+          "rows": [
+            {
+              "cards": [
+                {
+                  "component": {
+                    "name": "items/gallery-card",
+                    "isWebComponent": true,
+                    "settings": {
+                      "query": {
+                        "mode": "manual",
+                        "num": 4,
+                        "types": [
+                          "application"
+                        ],
+                        "tags": [],
+                        "categories": [],
+                        "groups": [],
+                        "catalogs": [
+                          "6c7cb438b50c4314a6a2595be26d0c3f"
+                        ],
+                        "ids": [
+                          "e6e709f170e8410597948698cfb6a099",
+                          "81db0ca5a0874a01a852f0b9be3b4ce3",
+                          "d8dc1a9be3ef47369a49f2285c809c2e"
+                        ],
+                        "sort": "numviews",
+                        "access": [],
+                        "orgId": "WHM6qC35aMtyAAlN"
+                      },
+                      "display": {
+                        "imageType": "Thumbnails",
+                        "viewText": "Explore",
+                        "defaultHeaderSize": "h4",
+                        "dropShadow": "heavy",
+                        "cornerStyle": "round",
+                        "buttonType": "primary",
+                        "newTab": false,
+                        "includeButtons": false,
+                        "headerSize": "h4"
+                      },
+                      "version": 7,
+                      "cardId": "c48sqfown"
+                    }
+                  },
+                  "width": 12
+                }
+              ]
+            },
+            {
+              "cards": [
+                {
+                  "component": {
+                    "name": "items/gallery-card",
+                    "isWebComponent": true,
+                    "settings": {
+                      "query": {
+                        "mode": "manual",
+                        "num": 4,
+                        "types": [
+                          "application"
+                        ],
+                        "tags": [],
+                        "categories": [],
+                        "groups": [],
+                        "catalogs": [
+                          "6c7cb438b50c4314a6a2595be26d0c3f"
+                        ],
+                        "ids": [
+                          "cd9a0f97a4e94cef9757bb2968877223",
+                          "4ff6d0f8eace44e785bc15bed7af7be8",
+                          "3d651814db6b4b9dad8639528f9c3f22"
+                        ],
+                        "sort": "numviews",
+                        "access": [],
+                        "orgId": "WHM6qC35aMtyAAlN"
+                      },
+                      "display": {
+                        "imageType": "Thumbnails",
+                        "viewText": "Explore",
+                        "defaultHeaderSize": "h4",
+                        "dropShadow": "heavy",
+                        "cornerStyle": "round",
+                        "buttonType": "primary",
+                        "newTab": false,
+                        "includeButtons": false,
+                        "shareableByValue": false
+                      },
+                      "version": 7,
+                      "cardId": "cg5sdzn6n"
+                    }
+                  },
+                  "width": 12
+                }
+              ]
+            }
+          ],
+          "visibility": {
+            "access": "default",
+            "groups": []
+          }
+        },
+        {
+          "containment": "fixed",
+          "isFooter": false,
+          "style": {
+            "background": {
+              "isFile": false,
+              "isUrl": true,
+              "state": "",
+              "display": {},
+              "transparency": 0,
+              "position": {
+                "x": "center",
+                "y": "center"
+              },
+              "color": "#003d5e"
+            },
+            "rowLayout": "box",
+            "color": "#ffffff"
+          },
+          "rows": [
+            {
+              "cards": [
+                {
+                  "component": {
+                    "name": "spacer-card",
+                    "settings": {
+                      "height": 100,
+                      "cardId": "c8iqqqdp6",
+                      "hideOnMobile": true
+                    }
+                  },
+                  "settings": {
+                    "height": 100
+                  },
+                  "width": 4
+                },
+                {
+                  "component": {
+                    "name": "image-card",
+                    "settings": {
+                      "src": "",
+                      "fileSrc": "003d5e (1).png",
+                      "cropSrc": "003d5e (1).png",
+                      "alt": "",
+                      "caption": "",
+                      "captionAlign": "center",
+                      "hyperlink": "",
+                      "hyperlinkTabOption": "new",
+                      "isUrl": false,
+                      "isFile": true,
+                      "state": "valid",
+                      "display": {
+                        "position": {
+                          "x": "center",
+                          "y": "center"
+                        },
+                        "reflow": false
+                      },
+                      "cardId": "cko5649m7"
+                    }
+                  },
+                  "width": 4
+                },
+                {
+                  "component": {
+                    "name": "spacer-card",
+                    "settings": {
+                      "height": 100,
+                      "cardId": "c1q3t0bdk",
+                      "hideOnMobile": true
+                    }
+                  },
+                  "settings": {
+                    "height": 100
+                  },
+                  "width": 4
+                }
+              ]
+            },
+            {
+              "cards": [
+                {
+                  "component": {
+                    "name": "markdown-card",
+                    "settings": {
+                      "cardId": "cw55iwjwt",
+                      "schemaVersion": 2.1,
+                      "markdown": "<p style=\"text-align: center;\"><i>Float the Boise is a partnership between Ada County Parks &amp; Waterways, Boise Parks and Recreation, and Boise Fire.</i></p>"
+                    }
+                  },
+                  "width": 12
+                }
+              ]
+            }
+          ],
+          "visibility": {
+            "access": "default",
+            "groups": []
+          }
+        }
+      ],
+      "header": {
+        "component": {
+          "name": "site-header",
+          "settings": {
+            "fullWidth": true,
+            "iframeHeight": "150px",
+            "iframeUrl": "",
+            "links": [],
+            "logoUrl": "",
+            "title": "Float the Boise",
+            "markdown": "<nav class=\"navbar navbar-default navbar-static-top first-tier\">\n  <div class=\"container\">\n    <ul class=\"nav nav-pills pull-right\" role=\"navigation\">\n      <li><a href=\"#\">Terms of Use</a></li>\n      <li><a href=\"#\">Twitter</a></li>\n      <li><a href=\"#\">Blog</a></li>\n    </ul>\n    <div class=\"navbar-brand\">\n      <div class=\"site-logo\">\n        <img src=\"https://via.placeholder.com/50\" alt=\"\">\n        <h1>My Organization</h1>\n      </div>\n    </div>\n  </div>\n</nav>\n<nav class=\"navbar navbar-inverse navbar-static-top second-tier\" role=\"navigation\">\n  <div class=\"navbar-header\">\n    <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n      <span class=\"sr-only\">Toggle navigation</span>\n      <span class=\"icon-bar\"></span>\n      <span class=\"icon-bar\"></span>\n      <span class=\"icon-bar\"></span>\n    </button>\n  </div>\n  <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n    <div class=\"container\">\n      <div class=\"navbar\">\n        <ul class=\"nav navbar-nav\">\n          <li class=\"active\"><a href=\"#\">Home</a></li>\n          <li><a href=\"#about\">About</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</nav>\n",
+            "headerType": "default",
+            "schemaVersion": 3,
+            "showLogo": true,
+            "showTitle": true,
+            "logo": {
+              "display": {},
+              "state": "valid",
+              "isFile": true,
+              "isUrl": false,
+              "fileSrc": "Parks-FloattheBoise-Logo-Official_1.png",
+              "cropSrc": "Parks-FloattheBoise-Logo-Official_1.png"
+            },
+            "shortTitle": "",
+            "menuLinks": [
+              {
+                "id": "e6e709f170e8410597948698cfb6a099",
+                "type": "Hub Page",
+                "name": "Interactive Map",
+                "external": false,
+                "title": "Interactive Map",
+                "isDraggingObject": false
+              },
+              {
+                "id": "81db0ca5a0874a01a852f0b9be3b4ce3",
+                "type": "Hub Page",
+                "name": "Guided Tour",
+                "external": false,
+                "title": "Guided Tour",
+                "isDraggingObject": false
+              },
+              {
+                "id": "d8dc1a9be3ef47369a49f2285c809c2e",
+                "type": "Hub Page",
+                "name": "Current Conditions",
+                "external": false,
+                "title": "Current Conditions",
+                "isDraggingObject": false
+              },
+              {
+                "id": "cd9a0f97a4e94cef9757bb2968877223",
+                "type": "Hub Page",
+                "name": "Safety Checklist",
+                "external": false,
+                "title": "Safety Checklist"
+              },
+              {
+                "id": "4ff6d0f8eace44e785bc15bed7af7be8",
+                "type": "Hub Page",
+                "name": "Parking & Rentals",
+                "external": false,
+                "title": "Parking & Rentals"
+              },
+              {
+                "id": "3d651814db6b4b9dad8639528f9c3f22",
+                "type": "Hub Page",
+                "name": "Floater FAQ",
+                "external": false,
+                "title": "Floater FAQ"
+              },
+              {
+                "id": "94bc62b1ef884f33ab4c5d0d39190218",
+                "type": "Hub Page",
+                "name": "Float the Boise News",
+                "external": false,
+                "title": "Float the Boise News"
+              }
+            ],
+            "socialLinks": {
+              "facebook": {
+                "visible": true,
+                "url": "https://www.facebook.com/FloatTheBoiseRiver/"
+              },
+              "instagram": {
+                "visible": true,
+                "url": "https://www.instagram.com/floattheboiseriver/"
+              },
+              "twitter": {},
+              "youtube": {
+                "visible": true,
+                "url": "https://www.youtube.com/playlist?list=PLxk-0CRZMv85BkqBm6wkt1PnP6EKOS1df"
+              }
+            }
+          }
+        },
+        "showEditor": false,
+        "name": "site-header"
+      },
+      "footer": {
+        "component": {
+          "name": "site-footer",
+          "settings": {
+            "footerType": "none",
+            "markdown": "<div class=\"footer-background\">\n  <div class=\"container-fluid\">\n    <div class=\"center\">\n      <a href=\"https://adacounty.id.gov/parksandwaterways/float-the-boise-river/\">\n        <img src=\"https://boise.maps.arcgis.com/sharing/rest/content/items/c0b09af4b99c4966b25d95479cb7225d/data\" alt=\"\" width=\"98\" height=\"101\">\n      </a>\n      <a href=\"https://www.cityofboise.org/news/fire/2022/june/water-safety-reminders-from-boise-fire/\">\n        <img src=\"https://boise.maps.arcgis.com/sharing/rest/content/items/5594373bcc5943e0bb8568d909b39aac/data\" alt=\"\" width=\"98\" height=\"101\">\n      </a>\n    </div>\n    <!--<div class=\"col-xs-6 center-block\">\n      <ul class=\"nav nav-pills\">\n\n        <li><a href=\"https://adacounty.id.gov/parksandwaterways/float-the-boise-river/\">Ada County Parks & Waterways</a></li>\n\n        <li><a href=\"https://www.cityofboise.org/news/fire/2022/june/water-safety-reminders-from-boise-fire/\">Boise Fire Department</a></li>\n\n\n      </ul>\n    </div> -->\n    <!--<div class=\"col-xs-6 center-block\">\n      <ul class=\"nav nav-pills\" style=\"float:right;\">\n        <li><a href=\"#\">Terms of Service</a></li>\n        <li><a href=\"#\">Privacy Policy</a></li>\n      </ul>\n    </div> -->\n    <div class=\"col-xs-12\">\n      <div class=\"text-white\" style=\"padding-top: 3rem; text-align: center;\">\n      \n      </div>\n    </div>\n  </div>\n</div>",
+            "schemaVersion": 2.1
+          }
+        },
+        "showEditor": false
+      }
+    },
+    "theme": {
+      "header": {
+        "background": "#ffffff",
+        "text": "#000000"
+      },
+      "body": {
+        "background": "#ffffff",
+        "text": "#4a4f54",
+        "link": "#45b6e7"
+      },
+      "button": {
+        "background": "#ffffff",
+        "text": "#4a4f54"
+      },
+      "logo": {
+        "small": "https://boise.maps.arcgis.com/sharing/rest/content/items/c0ddb668e58d4a9db125681a84251d2a/data",
+        "link": "https://www.cityofboise.org/"
+      },
+      "fonts": {
+        "base": {
+          "url": "",
+          "family": "Avenir Next"
+        },
+        "heading": {
+          "url": "",
+          "family": "Avenir Next"
+        }
+      },
+      "globalNav": {
+        "background": "#003d5e",
+        "text": "#ffffff"
+      }
+    },
+    "headerSass": ".first-tier {\n  height: 80px;\n  margin-bottom: 0px;\n  background-color: #005e95;\n}\n\n.first-tier .nav > li > a {\n  margin-top: 5px;\n  padding: 3px 6px;\n  color: #fff;\n}\n\n.first-tier .nav > li > a:focus,\n.first-tier .nav>li>a:hover {\n  background-color: #136fbf;\n  color: #fff;\n}\n\n.first-tier .site-logo img {\n  vertical-align: middle;\n}\n\n.first-tier h1 {\n  display: inline;\n  font-size: 25px;\n}\n\n.second-tier {\n  margin-bottom: 0px;\n  background-color: #05466c;\n}\n\n.site-header .navbar-header img {\n  vertical-align: middle;\n  height: 50px;\n  padding: 5px;\n}\n\n@media (max-width: 768px) {\n  .first-tier {\n    height: 100px;\n  }\n}\n\n@media (max-width: 498px) {\n  .navbar-brand {\n    padding: 0px;\n  }\n}\n\n.navbar-inverse .navbar-toggle {\n  border-color: #ffffff;\n}\n\n.navbar-inverse .navbar-toggle:hover {\n  background-color: transparent;\n}\n\n.navbar-inverse .navbar-toggle .icon-bar {\n  background-color: #ffffff;\n}\n\n",
+    "footerSass": ".custom-footer {\n  .footer-background {\n    padding-top: 20px;\n    padding-bottom: 20px;\n    background-color: #fcfcfc;\n  }\n  \n  .center{\n    display: flex;\n    justify-content: center;\n    text-align: center;\n   padding: 0px 50px 50px 0px;\n  }\n\n  }",
+    "updatedAt": "2026-09-08T15:11:33.339Z",
+    "updatedBy": "csallabanks_boise",
+    "capabilities": [
+      "api_explorer",
+      "pages",
+      "my_data",
+      "social_logins",
+      "json_chart_card",
+      "document_iframes",
+      "items_view",
+      "app_page",
+      "hideFollow",
+      "disableHubBranding"
+    ],
+    "clientId": "a7KJ3AHL6Tglj5DA",
+    "telemetry": {
+      "consentNotice": {
+        "isTheme": true,
+        "consentText": "",
+        "policyURL": ""
+      },
+      "customAnalytics": {
+        "ga": {
+          "customerTracker": {
+            "enabled": false
+          }
+        }
+      }
+    },
+    "contentViews": {
+      "sidePanelOpen": {
+        "app": false,
+        "map": false,
+        "dataset": false,
+        "document": false,
+        "feedback": false
+      }
+    },
+    "headContent": "",
+    "internalUrl": "float-the-boise.hub.arcgis.com",
+    "customHostname": "www.floattheboise.org"
+  },
+  "feeds": {},
+  "settings": {
+    "features": {
+      "hub:site:feature:follow": false,
+      "hub:site:feature:discussions": true
+    }
+  },
+  "telemetry": {
+    "consentNotice": {
+      "allowPrivacyConfig": false,
+      "disclaimer": [
+        {
+          "text": "",
+          "default": true
+        }
+      ],
+      "policyURL": ""
+    },
+    "plugins": {
+      "google": {
+        "disabled": false,
+        "measurementId": "G-NF46ZHTFQX"
+      },
+      "adobe": {
+        "disabled": true
+      },
+      "siteImprove": {
+        "disabled": true
+      }
+    }
+  },
+  "catalogV2": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "46a4e871d6624e3dbf40b77c8f5a1521"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "46a4e871d6624e3dbf40b77c8f5a1521"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": null,
+        "key": "site",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "$site"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": true
+        }
+      },
+      {
+        "label": null,
+        "key": "dataset",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "$dataset"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": null,
+        "key": "document",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "$document"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": null,
+        "key": "appAndMap",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "$app",
+                      "$map"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      }
+    ]
+  }
+}

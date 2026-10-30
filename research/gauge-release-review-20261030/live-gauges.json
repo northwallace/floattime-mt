@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-30T20:20:04.570549+00:00",
+  "baseUrl": "http://127.0.0.1:8784",
+  "note": "Point-in-time discharge check. Current data does not verify station suitability, access, safety or timing calibration.",
+  "gauges": [
+    {
+      "gauge": "06041000",
+      "rivers": [
+        "madison-lower"
+      ],
+      "status": "current",
+      "flow": 1170.0,
+      "ageMinutes": 79.7,
+      "meetsFlowFreshnessCheck": true,
+      "staleCache": false
+    },
+    {
+      "gauge": "07055608",
+      "rivers": [
+        "crooked-creek"
+      ],
+      "status": "no-discharge",
+      "flow": null,
+      "ageMinutes": null
+    },
+    {
+      "gauge": "07056000",
+      "rivers": [
+        "buffalo-river"
+      ],
+      "status": "current",
+      "flow": 49.1,
+      "ageMinutes": 34.8,
+      "meetsFlowFreshnessCheck": true,
+      "staleCache": false
+    },
+    {
+      "gauge": "CDWR:ARKSALCO:DISCHRG",
+      "rivers": [
+        "arkansas-river-salida"
+      ],
+      "status": "current",
+      "flow": 258.0,
+      "ageMinutes": 65.0,
+      "meetsFlowFreshnessCheck": true,
+      "staleCache": false
+    },
+    {
+      "gauge": "USBR:GDWY:Q_I",
+      "rivers": [
+        "north-platte-gray-reef-casper"
+      ],
+      "status": "current",
+      "flow": 458.0,
+      "ageMinutes": 20.1,
+      "meetsFlowFreshnessCheck": true,
+      "staleCache": false
+    }
+  ]
+}

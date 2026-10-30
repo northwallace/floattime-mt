@@ -1,0 +1,21 @@
+{
+ "id": "sac-river",
+ "name": "Sac River",
+ "state": "MO",
+ "status": "draft",
+ "whyDraft": "Only one usable agency access point after merging/exclusions — no section possible.",
+ "blockers": [
+  "single-access"
+ ],
+ "accessPoints": [
+  {
+   "id": "MO-ACC-0017",
+   "name": "Blackjack Access",
+   "grade": "verified",
+   "lat": 37.884592,
+   "lon": -93.744406,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D118&outFields=*&outSR=4326&f=json"
+  }
+ ],
+ "candidateSections": []
+}

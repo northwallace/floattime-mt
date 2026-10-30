@@ -1,0 +1,582 @@
+{
+ "state": "WY",
+ "method": "USGS NWIS instantaneous values (parameter 00060, period P7D) and daily values (400 days) per site; site found with USGS NLDI nwissite navigation.",
+ "catalogGauges": [
+  {
+   "river": "bighorn-river-thermopolis",
+   "inCatalog": true,
+   "gauge": "06259500",
+   "usgsName": "BIGHORN RIVER AT THERMOPOLIS, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06259500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A56%2B00%3A00%2F2026-10-27T21%3A01%3A56%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:56+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06259500&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "clarks-fork-wy",
+   "inCatalog": true,
+   "gauge": "06207500",
+   "usgsName": "Clarks Fork Yellowstone River nr Belfry MT",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06207500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A53%2B00%3A00%2F2026-10-27T21%3A01%3A53%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:53+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-27T20:00:00+00:00",
+   "newestDischargeCfs": 95.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days); Nearest gauge with current USGS discharge is in Montana, below the Wyoming reach (Belfry, MT); the on-reach site near Clark has no current discharge."
+  },
+  {
+   "river": "encampment-river",
+   "inCatalog": true,
+   "gauge": "06624500",
+   "usgsName": "ENCAMPMENT RIVER AT ENCAMPMENT, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06624500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A00%2B00%3A00%2F2026-10-27T21%3A02%3A00%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:00+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06624500&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "green-river-fontenelle",
+   "inCatalog": true,
+   "gauge": "09211200",
+   "usgsName": "GREEN RIVER BELOW FONTENELLE RESERVOIR, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09211200&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A44%2B00%3A00%2F2026-10-27T21%3A01%3A44%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:44+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-27T20:00:00+00:00",
+   "newestDischargeCfs": 689.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "green-river-upper-wy",
+   "inCatalog": true,
+   "gauge": "09188500",
+   "usgsName": "GREEN RIVER AT WARREN BRIDGE, NEAR DANIEL, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09188500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A38%2B00%3A00%2F2026-10-27T21%3A01%3A38%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:38+00:00",
+   "dischargeObsWithValue": 667,
+   "newestDischargeTime": "2026-10-27T19:45:00+00:00",
+   "newestDischargeCfs": 297.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "hoback-river",
+   "inCatalog": true,
+   "gauge": "13019500",
+   "usgsName": "HOBACK RIVER NEAR JACKSON, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-13019500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A37%2B00%3A00%2F2026-10-27T21%3A01%3A37%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:37+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-27T20:00:00+00:00",
+   "newestDischargeCfs": 259.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "laramie-river-woods-landing",
+   "inCatalog": true,
+   "gauge": "06659000",
+   "usgsName": "LARAMIE RIVER AT WOODS LANDING, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06659000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A33%2B00%3A00%2F2026-10-27T21%3A02%3A33%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:33+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06659000&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "new-fork-river",
+   "inCatalog": true,
+   "gauge": "09205000",
+   "usgsName": "NEW FORK RIVER NEAR BIG PINEY, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-09205000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A41%2B00%3A00%2F2026-10-27T21%3A01%3A41%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:41+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-27T20:00:00+00:00",
+   "newestDischargeCfs": 423.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "north-fork-shoshone",
+   "inCatalog": true,
+   "gauge": "06279940",
+   "usgsName": "NORTH FORK SHOSHONE RIVER AT WAPITI, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06279940&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A49%2B00%3A00%2F2026-10-27T21%3A01%3A49%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:49+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-27T20:15:00+00:00",
+   "newestDischargeCfs": 216.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "north-platte-douglas",
+   "inCatalog": true,
+   "gauge": "06652000",
+   "usgsName": "NORTH PLATTE RIVER AT ORIN, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06652000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A25%2B00%3A00%2F2026-10-27T21%3A02%3A25%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:25+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-27T20:45:00+00:00",
+   "newestDischargeCfs": 466.0,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06652000&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": "2026-10-26",
+    "oldest": "2025-09-22"
+   },
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "north-platte-glendo",
+   "inCatalog": true,
+   "gauge": "06652800",
+   "usgsName": "NORTH PLATTE RIVER BELOW GLENDO RESERVOIR, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06652800&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A07%2B00%3A00%2F2026-10-27T21%3A02%3A07%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:07+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06652800&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "north-platte-gray-reef-casper",
+   "inCatalog": true,
+   "gauge": "06645000",
+   "usgsName": "NORTH PLATTE RIVER BELOW CASPER, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06645000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A04%2B00%3A00%2F2026-10-27T21%3A02%3A04%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:04+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06645000&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "north-platte-upper-wy",
+   "inCatalog": true,
+   "gauge": "06630000",
+   "usgsName": "N PLATTE RIV AB SEMINOE RESERVOIR, NR SINCLAIR, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06630000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A02%2B00%3A00%2F2026-10-27T21%3A02%3A02%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:02+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-27T20:45:00+00:00",
+   "newestDischargeCfs": 258.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "salt-river-wy",
+   "inCatalog": true,
+   "gauge": "13027500",
+   "usgsName": "SALT RIVER ABOVE RESERVOIR, NEAR ETNA, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-13027500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A47%2B00%3A00%2F2026-10-27T21%3A01%3A47%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:47+00:00",
+   "dischargeObsWithValue": 670,
+   "newestDischargeTime": "2026-10-27T20:30:00+00:00",
+   "newestDischargeCfs": 435.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "shoshone-river-cody",
+   "inCatalog": true,
+   "gauge": "06282500",
+   "usgsName": "SHOSHONE RIVER AT CODY WYO",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06282500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A52%2B00%3A00%2F2026-10-27T21%3A01%3A52%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:52+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06282500&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "shoshone-river-corbett",
+   "inCatalog": true,
+   "gauge": "06283000",
+   "usgsName": "SHOSHONE RIVER AT CORBETT DAM, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06283000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A27%2B00%3A00%2F2026-10-27T21%3A02%3A27%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:27+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06283000&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "shoshone-river-willwood",
+   "inCatalog": true,
+   "gauge": "06284200",
+   "usgsName": "SHOSHONE RIVER AT WILLWOOD, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06284200&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A29%2B00%3A00%2F2026-10-27T21%3A02%3A29%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:29+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06284200&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "snake-river-canyon-wy",
+   "inCatalog": true,
+   "gauge": "13022500",
+   "usgsName": "SNAKE RIVER ABOVE RESERVOIR, NEAR ALPINE, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-13022500&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A36%2B00%3A00%2F2026-10-27T21%3A01%3A36%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:36+00:00",
+   "dischargeObsWithValue": 670,
+   "newestDischargeTime": "2026-10-27T20:30:00+00:00",
+   "newestDischargeCfs": 1860.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "snake-river-grand-teton",
+   "inCatalog": true,
+   "gauge": "13013650",
+   "usgsName": "SNAKE RIVER AT MOOSE, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-13013650&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A32%2B00%3A00%2F2026-10-27T21%3A01%3A32%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:32+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-27T20:00:00+00:00",
+   "newestDischargeCfs": 901.0,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-13013650&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": "2026-10-26",
+    "oldest": "2025-09-22"
+   },
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "snake-river-jackson-hole",
+   "inCatalog": true,
+   "gauge": "13018750",
+   "usgsName": "SNAKE RIVER BELOW FLAT CREEK, NEAR JACKSON, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-13018750&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A35%2B00%3A00%2F2026-10-27T21%3A01%3A35%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:35+00:00",
+   "dischargeObsWithValue": 670,
+   "newestDischargeTime": "2026-10-27T20:30:00+00:00",
+   "newestDischargeCfs": 1480.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "snake-river-southgate-jackson-lake",
+   "inCatalog": true,
+   "gauge": "13010065",
+   "usgsName": "SNAKE RIVER AB JACKSON LAKE AT FLAGG RANCH WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-13010065&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A29%2B00%3A00%2F2026-10-27T21%3A01%3A29%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:29+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-27T20:30:00+00:00",
+   "newestDischargeCfs": 296.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "south-fork-shoshone",
+   "inCatalog": true,
+   "gauge": "06281000",
+   "usgsName": "SOUTH FORK SHOSHONE RIVER AB BUFFALO BILL RES, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06281000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A29%2B00%3A00%2F2026-10-27T21%3A02%3A29%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:29+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-27T20:00:00+00:00",
+   "newestDischargeCfs": 115.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  },
+  {
+   "river": "tongue-river-wy",
+   "inCatalog": true,
+   "gauge": "06299980",
+   "usgsName": "TONGUE RIVER AT MONARCH, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06299980&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A02%3A08%2B00%3A00%2F2026-10-27T21%3A02%3A08%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:02:08+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06299980&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "wind-river-canyon",
+   "inCatalog": false,
+   "gauge": "06259000",
+   "usgsName": "WIND RIVER BELOW BOYSEN RESERVOIR, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06259000&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A57%2B00%3A00%2F2026-10-27T21%3A01%3A57%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:57+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/daily/items?f=json&monitoring_location_id=USGS-06259000&parameter_code=00060&statistic_id=00003&time=2025-09-22%2F2026-10-27&limit=1000&sortby=-time",
+    "newest": null,
+    "oldest": null
+   },
+   "suitability": "no USGS discharge in the 7-day or 400-day checks (seasonal, discontinued or another agency's record); kept as the on-reach site id, live estimates hidden. Access information is unaffected."
+  },
+  {
+   "river": "wind-river-dubois",
+   "inCatalog": true,
+   "gauge": "06220800",
+   "usgsName": "WIND RIVER ABOVE RED CREEK, NEAR DUBOIS, WY",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-06220800&parameter_code=00060%2C00010&datetime=2026-10-20T21%3A01%3A59%2B00%3A00%2F2026-10-27T21%3A01%3A59%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-27T21:01:59+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-27T20:45:00+00:00",
+   "newestDischargeCfs": 358.0,
+   "recentDaily": null,
+   "suitability": "current USGS discharge (last 7 days)"
+  }
+ ],
+ "otherGauges": [
+  {
+   "gauge": "13011000",
+   "usgsName": "SNAKE RIVER NEAR MORAN, WY",
+   "dischargeObsWithValue": 671
+  },
+  {
+   "gauge": "13016100",
+   "usgsName": "SNAKE RIVER NEAR WILSON, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "09191000",
+   "usgsName": "GREEN RIVER NEAR DANIEL, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "09209400",
+   "usgsName": "GREEN RIVER NEAR LA BARGE, WY",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "09217010",
+   "usgsName": "GREEN RIVER BELOW GREEN RIVER, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "09216500",
+   "usgsName": "GREEN RIVER AT GREEN RIVER, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06280000",
+   "usgsName": "NORTH FORK SHOSHONE RIVER NEAR WAPITI, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06280300",
+   "usgsName": "SOUTH FORK SHOSHONE RIVER NEAR VALLEY, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06282000",
+   "usgsName": "SHOSHONE RIVER BELOW BUFFALO BILL RESERVOIR, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06284010",
+   "usgsName": "Shoshone River bl Willwood Dam, nr Ralston, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06207000",
+   "usgsName": "CLARKS FORK YELLOWSTONE RIVER NEAR CLARK WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06218500",
+   "usgsName": "WIND RIVER NEAR DUBOIS, WY",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "06659500",
+   "usgsName": "LARAMIE R AND PIONEER CANAL NR WOODS LANDING, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06627000",
+   "usgsName": "NORTH PLATTE RIVER AT SARATOGA, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06642000",
+   "usgsName": "NORTH PLATTE RIVER AT ALCOVA, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06646800",
+   "usgsName": "NORTH PLATTE RIVER NEAR GLENROCK, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06650000",
+   "usgsName": "NORTH PLATTE RIVER NEAR DOUGLAS, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06623510",
+   "usgsName": "N PLATTE R AB BEAVER C NR ENCAMPMENT",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06625650",
+   "usgsName": "North Platte River at WY Hwy 130, nr Saratoga, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06259600",
+   "usgsName": "BIGHORN R BEL BLACK WILLOW DRAW NR LUCERNE WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06264700",
+   "usgsName": "BIGHORN RIVER AT LUCERNE, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06259050",
+   "usgsName": "WIND RIVER AT WEDDING OF WATERS, NR THERMOPOLIS,WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06643500",
+   "usgsName": "NORTH PLATTE RIVER NEAR GOOSE EGG, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06643510",
+   "usgsName": "N PLATTE R AB POISON SPIDER CR NR GOOSE EGG WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06644085",
+   "usgsName": "NORTH PLATTE RIVER AT MILLS WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06645500",
+   "usgsName": "NORTH PLATTE RIVER AT PARKERTON WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06646610",
+   "usgsName": "NORTH PLATTE R BL DEER CR NR GLENROCK WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06647020",
+   "usgsName": "NORTH PLATTE R NR CAREYHURST WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06649520",
+   "usgsName": "NORTH PLATTE RIVER AT ORPHA WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06654000",
+   "usgsName": "NORTH PLATTE RIVER NEAR CASSA, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06284000",
+   "usgsName": "SHOSHONE RIVER AT WILLWOOD DAM, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06280500",
+   "usgsName": "SOUTH FORK SHOSHONE RIVER NR ISHAWOOA WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06299000",
+   "usgsName": "TONGUE RIVER AT DAYTON, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06300000",
+   "usgsName": "TONGUE RIVER AT CARNEYVILLE, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06624000",
+   "usgsName": "ENCAMPMENT RIVER ABOVE ENCAMPMENT WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "09216300",
+   "usgsName": "GREEN RIVER AT BIG ISLAND, NEAR GREEN RIVER, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06206600",
+   "usgsName": "CLARKS F YELLOWSTONE R AB PAINT C NR CLARK WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06222000",
+   "usgsName": "WIND RIVER NEAR BURRIS, WY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06628550",
+   "usgsName": "N PLATTE R NR SARATOGA WYO",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "06636000",
+   "usgsName": "NORTH PLATTE RIVER ABOVE PATHFINDER RESERVOIR WY",
+   "dischargeObsWithValue": 0
+  }
+ ],
+ "note": "A gauge without current discharge only hides live estimates; it never blocks access information or readiness."
+}

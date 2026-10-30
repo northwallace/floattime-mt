@@ -15,8 +15,47 @@
       "putIn": "Barber Park",
       "takeOut": "Ann Morrison Park",
       "miles": 6,
-      "difficulty": "Class I",
-      "notes": "The classic Boise float. About 2–3 hours in a tube. Glass is banned. Ada County shuttle in season."
+      "difficulty": "Class I–II",
+      "notes": "Six-mile city float with three Class II rapids. Use the designated Ann Morrison river-left takeout and arrange the seasonal shuttle before launching.",
+      "putInAccessId": "acc-04830f605fa05192af6d",
+      "takeOutAccessId": "acc-91de053ecb835c988abe",
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 3,
+          "unit": "hours",
+          "conditions": "Ada County summer float guidance for Barber Park to Ann Morrison. Actual time varies with flow, craft and stops; not a calibrated live-flow model.",
+          "sourceName": "Ada County Parks & Waterways Float the Boise guide (2025)",
+          "sourceUrl": "https://adacounty.id.gov/parksandwaterways/wp-content/uploads/sites/47/Parks-FloattheBoiseGuide-Brochure-TriFold-2025.pdf",
+          "checkedOn": "2026-10-29"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Exit at Ann Morrison",
+          "text": "The city river map identifies a low-head dam downstream of the designated floater takeout. Do not treat the downstream city river as a continuation of the managed summer float.",
+          "sourceName": "Boise Fire Department river map",
+          "sourceUrl": "https://boisefiremapsftp.cityofboise.org/Boise%20River/Boise%20River%20Map.pdf",
+          "checkedOn": "2026-10-29"
+        }
+      ],
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 6,
+        "sourceName": "Ada County Parks & Waterways — Float the Boise guide (2025)",
+        "sourceUrl": "https://adacounty.id.gov/parksandwaterways/wp-content/uploads/sites/47/Parks-FloattheBoiseGuide-Brochure-TriFold-2025.pdf",
+        "checkedOn": "2026-10-29",
+        "streamId": "Boise / Barber Park to Ann Morrison Park",
+        "putIn": {
+          "name": "Barber Park",
+          "sourceLocation": "Route map and typical Boise River float FAQ"
+        },
+        "takeOut": {
+          "name": "Ann Morrison Park",
+          "sourceLocation": "Route map and typical Boise River float FAQ"
+        },
+        "note": "The county publishes this as an approximate six-mile float, taking two to three hours in its seasonal float guide. Guide time is separate from a live estimate."
+      }
     },
     {
       "id": "ann-morrison-eagle",
@@ -24,7 +63,19 @@
       "takeOut": "Eagle Island",
       "miles": 8,
       "difficulty": "Class I",
-      "notes": "Quieter miles west of downtown. Watch for diversion structures and the south channel split."
+      "notes": "A downstream extension beyond the managed summer float has not been reviewed.",
+      "putInAccessId": "acc-91de053ecb835c988abe",
+      "takeOutAccessId": "acc-b0c633de81e05a3389da",
+      "accessReview": "The former Class I Ann Morrison–Eagle listing crosses diversion-dam and whitewater-park hazards. Boise identifies a low-head dam below the designated floater takeout; a suitable through-route and exact Eagle exit have not been established. This listing is withheld from trip planning.",
+      "notices": [
+        {
+          "title": "Exit at Ann Morrison",
+          "text": "The city river map identifies a low-head dam downstream of the designated floater takeout. Do not treat the downstream city river as a continuation of the managed summer float.",
+          "sourceName": "Boise Fire Department river map",
+          "sourceUrl": "https://boisefiremapsftp.cityofboise.org/Boise%20River/Boise%20River%20Map.pdf",
+          "checkedOn": "2026-10-29"
+        }
+      ]
     }
   ],
   "timezone": "America/Boise"

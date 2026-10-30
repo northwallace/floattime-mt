@@ -1,0 +1,1353 @@
+{
+  "version": 1,
+  "state": "CO",
+  "checkedOn": "2026-10-26",
+  "definitions": {
+    "researchDelivered": "Sourced research record exists in this package (catalog record or draft) with evidence and open questions recorded.",
+    "readyForVisitors": "Catalog record that (1) imports and builds (validation PASS), (2) has both endpoints 'verified' (exact map points that passed the v1.1 imagery check), (3) has every known permit/fee/hazard restriction attached, (4) has no unresolved launch permission, and (5) needs no unbuilt app feature. Trip timing is NOT required: rivers without a sourced range show no trip time.",
+    "note": "'Ready for visitors' is a research judgement for the local preview; it is not a deployment and nothing has been published."
+  },
+  "totals": {
+    "catalogSections": 25,
+    "readyForVisitors": 11,
+    "researchDeliveredSections": 78,
+    "catalogRivers": 10,
+    "riversFullyReady": 3,
+    "riversPartlyReady": 5,
+    "riversDraftOnly": 14
+  },
+  "rivers": {
+    "animas-river": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 4,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "arkansas-river": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 9,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "arkansas-river-salida": {
+      "catalogSections": 1,
+      "readySections": 1,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "ready for visitors"
+    },
+    "blue-river": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 1,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "cache-la-poudre": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 3,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "colorado-river-glenwood": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 9,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "colorado-river-gore": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 2,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "colorado-river-pumphouse": {
+      "catalogSections": 3,
+      "readySections": 1,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "partly ready for visitors"
+    },
+    "colorado-river-ruby-horsethief": {
+      "catalogSections": 1,
+      "readySections": 0,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "research delivered — not ready for visitors"
+    },
+    "colorado-river-state-bridge": {
+      "catalogSections": 7,
+      "readySections": 3,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "partly ready for visitors"
+    },
+    "dolores-river": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 7,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "eagle-river": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 3,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "gunnison-river-denca": {
+      "catalogSections": 3,
+      "readySections": 1,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "partly ready for visitors"
+    },
+    "gunnison-river-gorge": {
+      "catalogSections": 1,
+      "readySections": 1,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "ready for visitors"
+    },
+    "gunnison-river-north-fork-to-delta": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 1,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "lake-fork-gunnison": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 3,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "north-platte": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 1,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "rio-grande": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 3,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "roaring-fork-river": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 4,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "san-juan-colorado": {
+      "catalogSections": 0,
+      "readySections": 0,
+      "draftSections": 2,
+      "researchDelivered": true,
+      "status": "research delivered — draft only"
+    },
+    "yampa-river-craig": {
+      "catalogSections": 3,
+      "readySections": 1,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "partly ready for visitors"
+    },
+    "yampa-river-dinosaur": {
+      "catalogSections": 2,
+      "readySections": 1,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "partly ready for visitors"
+    },
+    "yampa-river-hayden": {
+      "catalogSections": 2,
+      "readySections": 0,
+      "draftSections": 0,
+      "researchDelivered": true,
+      "status": "research delivered — not ready for visitors"
+    },
+    "yampa-river-maybell": {
+      "catalogSections": 2,
+      "readySections": 2,
+      "draftSections": 1,
+      "researchDelivered": true,
+      "status": "ready for visitors"
+    }
+  },
+  "sections": {
+    "pumphouse-to-radium": {
+      "river": "colorado-river-pumphouse",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "radium-to-rancho-del-rio": {
+      "river": "colorado-river-pumphouse",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": false,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn verified, takeOut pending)",
+        "launch/take-out permission unresolved"
+      ],
+      "restrictionIds": [
+        "CO-RES-011"
+      ],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "rancho-del-rio-to-state-bridge": {
+      "river": "colorado-river-pumphouse",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": false,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn pending, takeOut verified)",
+        "launch/take-out permission unresolved"
+      ],
+      "restrictionIds": [
+        "CO-RES-011"
+      ],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "state-bridge-to-two-bridges": {
+      "river": "colorado-river-state-bridge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-010"
+      ],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "two-bridges-to-catamount": {
+      "river": "colorado-river-state-bridge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "catamount-to-pinball": {
+      "river": "colorado-river-state-bridge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "pinball-to-horse-creek": {
+      "river": "colorado-river-state-bridge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn verified, takeOut pending)"
+      ],
+      "restrictionIds": [],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "horse-creek-to-cottonwood-island": {
+      "river": "colorado-river-state-bridge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn pending, takeOut verified)"
+      ],
+      "restrictionIds": [],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "cottonwood-island-to-lyons-gulch": {
+      "river": "colorado-river-state-bridge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn verified, takeOut access-verified)"
+      ],
+      "restrictionIds": [],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "Endpoint 'Lyons Gulch Recreation Site' carries an imagery/source flag: Campground pin in trees about 25–40 m from the water; consistent with an area point, not a launch. Stays access-verified."
+    },
+    "lyons-gulch-to-dotsero": {
+      "river": "colorado-river-state-bridge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn access-verified, takeOut verified)"
+      ],
+      "restrictionIds": [],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "Endpoint 'Lyons Gulch Recreation Site' carries an imagery/source flag: Campground pin in trees about 25–40 m from the water; consistent with an area point, not a launch. Stays access-verified."
+    },
+    "loma-to-westwater": {
+      "river": "colorado-river-ruby-horsethief",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": false
+      },
+      "reasons": [
+        "access not verified at both ends (putIn verified, takeOut pending)",
+        "needs the proposed cross-state map-point feature (research/cross-state-references.json)"
+      ],
+      "restrictionIds": [
+        "CO-RES-004"
+      ],
+      "currentAdvisories": [],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "chukar-to-gunnison-forks": {
+      "river": "gunnison-river-gorge",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-005",
+        "CO-RES-006"
+      ],
+      "currentAdvisories": [],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "confluence-park-to-whitewater": {
+      "river": "gunnison-river-denca",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn pending, takeOut verified)"
+      ],
+      "restrictionIds": [
+        "CO-RES-007"
+      ],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "escalante-to-whitewater": {
+      "river": "gunnison-river-denca",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-007"
+      ],
+      "currentAdvisories": [],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "bridgeport-to-whitewater": {
+      "river": "gunnison-river-denca",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn access-verified, takeOut verified)"
+      ],
+      "restrictionIds": [
+        "CO-RES-007",
+        "CO-RES-008"
+      ],
+      "currentAdvisories": [],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "Endpoint 'Bridgeport Trailhead' carries an imagery/source flag: Trailhead parking east of the railroad; consistent with an area point. Stays access-verified."
+    },
+    "red-bridge-to-gateview": {
+      "river": "lake-fork-gunnison",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: endpoint-identity"
+      ]
+    },
+    "pump-station-to-headquarters": {
+      "river": "yampa-river-hayden",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn verified, takeOut access-verified)"
+      ],
+      "restrictionIds": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "currentAdvisories": [
+        "CPW Yampa River State Park notice (still posted 2026-10-26): 'Due to low water conditions in the Yampa River, downstream travel is not recommended... As of 6-23"
+      ],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "A current CPW low-water advisory is posted; the app should show it prominently."
+    },
+    "headquarters-to-state-wildlife-area": {
+      "river": "yampa-river-hayden",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": false,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn access-verified, takeOut pending)",
+        "launch/take-out permission unresolved"
+      ],
+      "restrictionIds": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "currentAdvisories": [
+        "CPW Yampa River State Park notice (still posted 2026-10-26): 'Due to low water conditions in the Yampa River, downstream travel is not recommended... As of 6-23"
+      ],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "A current CPW low-water advisory is posted; the app should show it prominently."
+    },
+    "golf-course-to-loudy-simpson": {
+      "river": "yampa-river-craig",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn verified, takeOut pending)"
+      ],
+      "restrictionIds": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "currentAdvisories": [
+        "CPW Yampa River State Park notice (still posted 2026-10-26): 'Due to low water conditions in the Yampa River, downstream travel is not recommended... As of 6-23"
+      ],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "A current CPW low-water advisory is posted; the app should show it prominently."
+    },
+    "loudy-simpson-to-south-beach": {
+      "river": "yampa-river-craig",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [
+        "access not verified at both ends (putIn pending, takeOut verified)"
+      ],
+      "restrictionIds": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "currentAdvisories": [
+        "CPW Yampa River State Park notice (still posted 2026-10-26): 'Due to low water conditions in the Yampa River, downstream travel is not recommended... As of 6-23"
+      ],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "A current CPW low-water advisory is posted; the app should show it prominently."
+    },
+    "south-beach-to-duffy": {
+      "river": "yampa-river-craig",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "currentAdvisories": [
+        "CPW Yampa River State Park notice (still posted 2026-10-26): 'Due to low water conditions in the Yampa River, downstream travel is not recommended... As of 6-23"
+      ],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "A current CPW low-water advisory is posted; the app should show it prominently."
+    },
+    "duffy-to-juniper": {
+      "river": "yampa-river-maybell",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "currentAdvisories": [
+        "CPW Yampa River State Park notice (still posted 2026-10-26): 'Due to low water conditions in the Yampa River, downstream travel is not recommended... As of 6-23"
+      ],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "A current CPW low-water advisory is posted; the app should show it prominently."
+    },
+    "juniper-to-maybell-bridge": {
+      "river": "yampa-river-maybell",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: route-geometry"
+      ]
+    },
+    "sunbeam-to-east-cross-mountain": {
+      "river": "yampa-river-maybell",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-001",
+        "CO-RES-002",
+        "CO-RES-003"
+      ],
+      "currentAdvisories": [
+        "CPW Yampa River State Park notice (still posted 2026-10-26): 'Due to low water conditions in the Yampa River, downstream travel is not recommended... As of 6-23"
+      ],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "A current CPW low-water advisory is posted; the app should show it prominently."
+    },
+    "west-cross-mountain-to-deerlodge": {
+      "river": "yampa-river-dinosaur",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-013"
+      ],
+      "currentAdvisories": [],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": "Endpoint 'West Cross Mountain Boat Ramp' carries an imagery/source flag: Location passes: pin at the end of the dirt access road at the water's edge (HR polygon offset 28 m). Facility conflict: no built ramp visible; CPW park page says 'Boat Ramp: None' and NPS-managed, CPW GIS says BLM ramp managed by CPW. Published as 'Boat launch' (not ramp)."
+    },
+    "yampa-canyon-deerlodge-to-split-mountain": {
+      "river": "yampa-river-dinosaur",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": false,
+      "checks": {
+        "importable": true,
+        "accessVerified": false,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": false
+      },
+      "reasons": [
+        "access not verified at both ends (putIn verified, takeOut pending)",
+        "needs the proposed cross-state map-point feature (research/cross-state-references.json)"
+      ],
+      "restrictionIds": [
+        "CO-RES-009",
+        "CO-RES-014"
+      ],
+      "currentAdvisories": [],
+      "timing": "agency guide range shown",
+      "liveEstimates": "gauge reporting; no calibrated estimate yet (timing unavailable)",
+      "caveat": null
+    },
+    "stone-bridge-to-rincon": {
+      "river": "arkansas-river-salida",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — catalog record (importable)",
+      "readyForVisitors": true,
+      "checks": {
+        "importable": true,
+        "accessVerified": true,
+        "restrictionsNoted": true,
+        "permissionResolved": true,
+        "noAppSupportNeeded": true
+      },
+      "reasons": [],
+      "restrictionIds": [
+        "CO-RES-015",
+        "CO-RES-016",
+        "CO-RES-017",
+        "CO-RES-018"
+      ],
+      "currentAdvisories": [],
+      "timing": "no trip time shown (unavailable)",
+      "liveEstimates": "hidden: gauge 07091200 returned no discharge values in the 7-day check (SEASONAL); access information is unaffected",
+      "caveat": null
+    },
+    "arkansas-river--aw1000018": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw355": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw356": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw357": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw4347": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw358": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw4349": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw359": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "arkansas-river--aw360": {
+      "river": "arkansas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: live-estimates-hidden",
+        "blocker: route-geometry"
+      ]
+    },
+    "dolores-river--aw384": {
+      "river": "dolores-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: endpoint-identity",
+        "blocker: source-fetch"
+      ]
+    },
+    "dolores-river--aw11058": {
+      "river": "dolores-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: endpoint-identity",
+        "blocker: source-fetch"
+      ]
+    },
+    "dolores-river--aw385": {
+      "river": "dolores-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: endpoint-identity",
+        "blocker: source-fetch"
+      ]
+    },
+    "dolores-river--aw386": {
+      "river": "dolores-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: endpoint-identity",
+        "blocker: source-fetch"
+      ]
+    },
+    "dolores-river--aw387": {
+      "river": "dolores-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: endpoint-identity",
+        "blocker: source-fetch"
+      ]
+    },
+    "dolores-river--aw388": {
+      "river": "dolores-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: endpoint-identity",
+        "blocker: source-fetch"
+      ]
+    },
+    "dolores-river--aw389": {
+      "river": "dolores-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: endpoint-identity",
+        "blocker: source-fetch"
+      ]
+    },
+    "lake-fork-gunnison--aw405": {
+      "river": "lake-fork-gunnison",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: endpoint-identity"
+      ]
+    },
+    "lake-fork-gunnison--aw406": {
+      "river": "lake-fork-gunnison",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: endpoint-identity"
+      ]
+    },
+    "animas-river--aw348": {
+      "river": "animas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: source-fetch"
+      ]
+    },
+    "animas-river--aw349": {
+      "river": "animas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: source-fetch"
+      ]
+    },
+    "animas-river--aw351": {
+      "river": "animas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: source-fetch"
+      ]
+    },
+    "animas-river--aw352": {
+      "river": "animas-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: source-fetch"
+      ]
+    },
+    "cache-la-poudre--aw3370": {
+      "river": "cache-la-poudre",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "cache-la-poudre--aw372": {
+      "river": "cache-la-poudre",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "cache-la-poudre--aw11199": {
+      "river": "cache-la-poudre",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "roaring-fork-river--aw1463": {
+      "river": "roaring-fork-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: exact-location"
+      ]
+    },
+    "roaring-fork-river--aw11319": {
+      "river": "roaring-fork-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: exact-location"
+      ]
+    },
+    "roaring-fork-river--aw418": {
+      "river": "roaring-fork-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: exact-location"
+      ]
+    },
+    "roaring-fork-river--aw11318": {
+      "river": "roaring-fork-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: exact-location"
+      ]
+    },
+    "rio-grande--aw416": {
+      "river": "rio-grande",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "rio-grande--aw11116": {
+      "river": "rio-grande",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "rio-grande--aw11119": {
+      "river": "rio-grande",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw380": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw4260": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw5428": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw10349": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw10348": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw10682": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw4261": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-glenwood--aw10520": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "dotsero-to-bair-ranch": {
+      "river": "colorado-river-glenwood",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status",
+        "blocker: exact-location"
+      ]
+    },
+    "colorado-river-gore--aw377": {
+      "river": "colorado-river-gore",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status"
+      ]
+    },
+    "colorado-river-gore--aw378": {
+      "river": "colorado-river-gore",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: current-status"
+      ]
+    },
+    "gunnison-river-north-fork-to-delta--aw11627": {
+      "river": "gunnison-river-north-fork-to-delta",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location",
+        "blocker: route-geometry"
+      ]
+    },
+    "eagle-river--aw2882": {
+      "river": "eagle-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "eagle-river--aw11135": {
+      "river": "eagle-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "eagle-river--aw11136": {
+      "river": "eagle-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "blue-river--aw363": {
+      "river": "blue-river",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: access-permission",
+        "blocker: exact-location"
+      ]
+    },
+    "north-platte--aw2464": {
+      "river": "north-platte",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "san-juan-colorado--aw3171": {
+      "river": "san-juan-colorado",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    },
+    "san-juan-colorado--aw420": {
+      "river": "san-juan-colorado",
+      "researchDelivered": true,
+      "researchStatus": "research delivered — draft record (not importable yet)",
+      "readyForVisitors": false,
+      "reasons": [
+        "draft: not in catalog/",
+        "blocker: exact-location"
+      ]
+    }
+  }
+}

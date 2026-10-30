@@ -9,8 +9,14 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 import re
 try:
     from tools.route_catalog import build_outputs, write_or_check
+    from tools.map_review import fingerprint
+    from tools.catalog_assets import write_or_check as write_catalog_assets
+    from tools.flow_sources import validate_source, validate_gauge
 except ModuleNotFoundError:
     from route_catalog import build_outputs, write_or_check
+    from map_review import fingerprint
+    from catalog_assets import write_or_check as write_catalog_assets
+    from flow_sources import validate_source, validate_gauge
 
 ROOT = Path(__file__).resolve().parents[1]
 SLUG = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
@@ -34,12 +40,22 @@ def validate_distance_evidence(section, prefix):
     evidence = section.get('distanceEvidence')
     if evidence is None:
         return
-    require(isinstance(evidence, dict) and evidence.get('method') in ('agency-mile-markers', 'published-guide-miles'), prefix + 'Invalid distance evidence method')
+    require(isinstance(evidence, dict) and evidence.get('method') in ('agency-mile-markers', 'published-guide-miles', 'published-trip-length'), prefix + 'Invalid distance evidence method')
     for field in ('sourceName', 'sourceUrl', 'checkedOn', 'streamId', 'note'):
         require(isinstance(evidence.get(field), str) and evidence[field].strip(), prefix + 'Distance evidence ' + field + ' required')
     require(evidence['sourceUrl'].startswith('https://'), prefix + 'Distance source must use HTTPS')
     try: date.fromisoformat(evidence['checkedOn'])
     except ValueError: raise ValueError(prefix + 'Invalid distance evidence date')
+    if evidence['method'] == 'published-trip-length':
+        # Some agencies publish a whole-trip distance, not endpoint mile markers.
+        # Preserve that distinction rather than inventing two river-mile readings.
+        miles = evidence.get('miles')
+        require(type(miles) in (int, float) and math.isfinite(miles) and miles > 0 and abs(section['miles'] - miles) < .00001, prefix + 'Mileage disagrees with published trip length')
+        for end in ('putIn', 'takeOut'):
+            record = evidence.get(end)
+            require(isinstance(record, dict) and record.get('name') == section[end], prefix + 'Distance evidence endpoint name changed')
+            require(isinstance(record.get('sourceLocation'), str) and record['sourceLocation'].strip(), prefix + 'Published trip source location required')
+        return
     if evidence['method'] == 'published-guide-miles':
         # Named access sites in a published guide are distance evidence, not GPS
         # measurements or confirmation of an exact ramp location.
@@ -83,6 +99,21 @@ def build(root=ROOT):
     require(isinstance(release, dict) and set(release) == {'states', 'reviewedRoutes'}, 'Invalid map release configuration')
     require(isinstance(release['states'], list) and all(isinstance(code, str) and code in codes for code in release['states']), 'Unknown map release state')
     require(len(set(release['states'])) == len(release['states']) and type(release['reviewedRoutes']) is bool, 'Invalid map release flags')
+    review_required = settings.get('mapReviewRequiredStates', [])
+    require(isinstance(review_required, list) and all(code in codes for code in review_required), 'Invalid map review states')
+    map_reviews = {}
+    for code in review_required:
+        file = root / f'catalog/map_reviews/{code}.json'
+        if file.exists():
+            review = json.loads(file.read_text())
+            require(review.get('state') == code and review.get('version') == 1 and isinstance(review.get('sections'), dict), 'Invalid map review registry')
+            for key, record in review['sections'].items():
+                require(record.get('status') in ('reviewed', 'hold'), 'Invalid section map review')
+                require(isinstance(record.get('note'), str) and record['note'].strip(), 'Map review note required')
+                if record['status'] == 'reviewed':
+                    require(isinstance(record.get('fingerprint'), str) and re.fullmatch('[a-f0-9]{64}', record['fingerprint']), 'Map review fingerprint required')
+                    require(date.fromisoformat(record['checkedOn']) <= date.today(), 'Invalid map review date')
+            map_reviews[code] = review['sections']
     craft_ids = set()
     for c in settings['craft']:
         require(SLUG.fullmatch(c['id']) and c['id'] not in craft_ids and c['label'], 'Invalid/duplicate craft')
@@ -163,6 +194,30 @@ def build(root=ROOT):
             point.update({field: record[field] for field in bank_fields if field in record})
             points[label] = point
         map_points[path.stem] = points
+    access_by_id = {}
+    for code, points in map_points.items():
+        raw = json.loads((root / f'catalog/map_points/{code}.json').read_text())['points']
+        for name, point in points.items():
+            identity = raw[name].get('id')
+            if identity is None:  # Legacy research package, before ID migration.
+                continue
+            require(isinstance(identity, str) and re.fullmatch(r'acc-[a-z0-9-]+', identity), 'Invalid access ID')
+            require(identity not in access_by_id, 'Duplicate access ID: ' + identity)
+            aliases = raw[name].get('aliases', [])
+            require(isinstance(aliases, list) and all(isinstance(a, str) and a.strip() for a in aliases), 'Invalid access aliases')
+            point.update(id=identity, name=name, state=code, aliases=aliases)
+            access_by_id[identity] = point
+    for code, points in map_points.items():
+        names = {}
+        for name, point in points.items():
+            for alias in [name] + point.get('aliases', []):
+                require(alias not in names or names[alias] == name, 'Ambiguous access alias: ' + alias)
+                names[alias] = name
+    def lookup_reference(code, name):
+        points = map_points.get(code, {})
+        if name in points:
+            return points[name]
+        return next((p for p in points.values() if name in p.get('aliases', [])), None)
     rivers, ids = [], set()
     for path in sorted((root / 'catalog/rivers').glob('*.json')):
         r = json.loads(path.read_text())
@@ -170,9 +225,23 @@ def build(root=ROOT):
         require(SLUG.fullmatch(r['id']) and r['id'] == path.stem and r['id'] not in ids, prefix + 'ID must be unique and match filename')
         ids.add(r['id'])
         require(r['state'] in codes, prefix + 'Unknown state')
-        for field in ('name', 'gaugeName', 'blurb'):
+        for field in ('name', 'blurb'):
             require(isinstance(r[field], str) and r[field].strip(), prefix + field + ' required')
-        require(isinstance(r['gauge'], str) and re.fullmatch(r'\d{8,15}', r['gauge']), prefix + 'Gauge must be an 8–15 digit string')
+        try:
+            validate_gauge(r)
+            validate_source(r)
+        except (ValueError, TypeError) as exc:
+            raise ValueError(prefix + str(exc)) from exc
+        if 'gaugeContext' in r:
+            context = r['gaugeContext']
+            require(isinstance(context, dict) and context.get('status') in ('context-only', 'seasonal-gap', 'unresolved'), prefix + 'Invalid gauge context status')
+            for key in ('note', 'sourceName', 'sourceUrl', 'checkedOn'):
+                require(isinstance(context.get(key), str) and context[key].strip(), prefix + 'Gauge context ' + key + ' required')
+            require(context['sourceUrl'].startswith('https://'), prefix + 'Gauge context source must use HTTPS')
+            try:
+                date.fromisoformat(context['checkedOn'])
+            except ValueError:
+                raise ValueError(prefix + 'Gauge context checkedOn must use YYYY-MM-DD')
         try: ZoneInfo(r['timezone'])
         except (ZoneInfoNotFoundError, ValueError): raise ValueError(prefix + 'Invalid IANA timezone')
         timing = r.get('timing', {'mode': 'model'})
@@ -197,7 +266,7 @@ def build(root=ROOT):
         require(isinstance(r['sections'], list) and len(r['sections']) > 0, prefix + 'Sections required')
         section_ids = set()
         for sec in r['sections']:
-            derived_map_fields = ('mapPilot', 'mapReleased', 'mapPrecision', 'mapPendingReason', 'putInCoords', 'takeOutCoords', 'putInAccess', 'takeOutAccess')
+            derived_map_fields = ('mapPilot', 'mapReleased', 'mapReleaseNote', 'mapPrecision', 'mapPendingReason', 'putInCoords', 'takeOutCoords', 'putInAccess', 'takeOutAccess')
             require(not any(key in sec for key in derived_map_fields), prefix + 'Map fields are generated from catalog/map_points; remove them from section ' + sec.get('id', '?'))
             require(SLUG.fullmatch(sec['id']) and sec['id'] not in section_ids, prefix + 'Invalid/duplicate section ID')
             section_ids.add(sec['id'])
@@ -219,13 +288,22 @@ def build(root=ROOT):
             point_registry = map_points.get(r['state'], {})
             audit = map_audits.get(r['state'], {}).get(r['id'])
             def endpoint_access(end):
+                identity = sec.get(end + 'AccessId')
                 ref = sec.get(end + 'Point')
+                if identity is not None:
+                    require(isinstance(identity, str) and identity in access_by_id, prefix + 'Unknown access ID')
+                    # Validate retained legacy references, but resolve identity by ID.
+                    if ref is not None:
+                        require(isinstance(ref, dict) and set(ref) == {'state', 'name'}, prefix + 'Invalid endpoint reference')
+                        require(lookup_reference(ref['state'], ref['name']) is not None, prefix + 'Unknown endpoint reference')
+                        require(lookup_reference(ref['state'], ref['name']).get('id') == identity, prefix + 'Endpoint reference disagrees with access ID')
+                    return access_by_id[identity]
                 if ref is None:
                     return point_registry.get(sec[end])
                 require(isinstance(ref, dict) and set(ref) == {'state', 'name'}, prefix + 'Invalid endpoint reference')
                 require(isinstance(ref['state'], str) and isinstance(ref['name'], str), prefix + 'Invalid endpoint reference values')
-                require(ref['state'] in map_points and ref['name'] in map_points[ref['state']], prefix + 'Unknown endpoint reference')
-                return map_points[ref['state']][ref['name']]
+                require(lookup_reference(ref['state'], ref['name']) is not None, prefix + 'Unknown endpoint reference')
+                return lookup_reference(ref['state'], ref['name'])
             put_access = endpoint_access('putIn')
             take_access = endpoint_access('takeOut')
             if 'distanceReview' in sec:
@@ -252,17 +330,21 @@ def build(root=ROOT):
                     if not access or access['status'] == 'pending':
                         note = access['note'] if access else 'No sourced access record has been added yet.'
                         pending_reasons.append(label + ': ' + note)
-                sec['mapPendingReason'] = ' '.join(pending_reasons) if pending_reasons else audit['note']
+                sec['mapPendingReason'] = sec.get('accessReview') or (' '.join(pending_reasons) if pending_reasons else audit['note'])
             if mapped:
                 sec['mapPilot'] = True
                 sec['mapPrecision'] = 'exact' if all(p['status'] == 'verified' for p in (put_access, take_access)) else 'approximate'
                 sec['putInCoords'] = {k: (put_access if put_access['status'] == 'verified' else put_access['areaCenter'])[k] for k in ('lat', 'lon')}
                 sec['takeOutCoords'] = {k: (take_access if take_access['status'] == 'verified' else take_access['areaCenter'])[k] for k in ('lat', 'lon')}
-                access_fields = ('status', 'accessType', 'operator', 'sourceName', 'sourceUrl', 'verifiedOn', 'note', 'directions', 'coordinateSourceUrl')
+                access_fields = ('id', 'status', 'accessType', 'operator', 'sourceName', 'sourceUrl', 'verifiedOn', 'note', 'directions', 'coordinateSourceUrl')
                 bank_fields = ('riverBank', 'bankVerifiedOn', 'bankSourceName', 'bankSourceUrl', 'bankNote')
                 sec['putInAccess'] = {k: put_access[k] for k in access_fields + bank_fields if k in put_access}
                 sec['takeOutAccess'] = {k: take_access[k] for k in access_fields + bank_fields if k in take_access}
-            sec['mapReleased'] = bool(mapped and r['state'] in release['states'])
+            approval = map_reviews.get(r['state'], {}).get(r['id'] + '/' + sec['id'], {})
+            reviewed = r['state'] not in review_required or (approval.get('status') == 'reviewed' and approval.get('fingerprint') == fingerprint(r, sec, put_access, take_access))
+            sec['mapReleased'] = bool(mapped and r['state'] in release['states'] and reviewed)
+            if mapped and not reviewed:
+                sec['mapReleaseNote'] = 'This section awaits map review or its evidence has changed.'
             require(isinstance(sec.get('mapPilot', False), bool), prefix + 'Section mapPilot must be true or false')
             coord_keys = ('putInCoords', 'takeOutCoords')
             require(all(key in sec for key in coord_keys) or not any(key in sec for key in coord_keys), prefix + 'Section map coordinates must include both endpoints')
@@ -293,7 +375,7 @@ def build(root=ROOT):
                 for sec in river_by_id[river_id]['sections']:
                     require(sec.get('mapPrecision') == 'exact', state + ': verified river ' + river_id + ' has an unverified endpoint in ' + sec['id'])
     rivers.sort(key=lambda r: (r['state'], r['name'].casefold()))
-    result = {'version': 1, 'states': states, 'craft': settings['craft'], 'mapRelease': release, 'rivers': rivers}
+    result = {'version': 1, 'states': states, 'craft': settings['craft'], 'mapRelease': release, 'rivers': rivers, 'accessPoints': list(access_by_id.values())}
     build_outputs(root, result)  # Route review is independent of calculator mileage.
     return result
 
@@ -308,6 +390,7 @@ def main():
     else:
         temp = target.with_suffix('.tmp'); temp.write_text(payload); temp.replace(target)
     write_or_check(ROOT, json.loads(payload), args.check)
+    write_catalog_assets(ROOT, json.loads(payload), args.check)
     print(f'Catalog valid: {len(json.loads(payload)["rivers"])} rivers')
 
 if __name__ == '__main__': main()

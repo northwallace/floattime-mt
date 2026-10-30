@@ -37,7 +37,7 @@
             <a href="/oregon">Oregon</a>
             <a href="/washington">Washington</a>
             <a href="/utah">Utah</a>
-            <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a>
+            <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a> · <a href="/wyoming">Wyoming</a>
           </div>
         </details>
         <a href="/about.html">About</a>
@@ -59,7 +59,7 @@
     <form id="feedbackForm" class="report-form contact-form">
       <div class="control">
         <label for="feedbackType">What would you like to send?</label>
-        <select id="feedbackType"><option value="float-request">Request a float</option><option value="correction">Suggest a correction</option></select>
+        <select id="feedbackType"><option value="float-request">Request a float</option><option value="correction">Suggest a correction</option><option value="access-suggestion">Suggest an access point</option></select>
       </div>
       <fieldset id="correctionFields" class="feedback-fields" hidden disabled>
         <legend>Which river section?</legend>
@@ -78,6 +78,27 @@
           <div class="control"><label for="requestPutIn">Put-in</label><input id="requestPutIn" required maxlength="160" placeholder="Launch or access name"></div>
           <div class="control"><label for="requestTakeOut">Take-out</label><input id="requestTakeOut" required maxlength="160" placeholder="Landing or access name"></div>
         </div>
+      </fieldset>
+      <fieldset class="feedback-fields" id="locationFields">
+        <legend>Location evidence <span class="optional">(optional for corrections and float requests)</span></legend>
+        <p>Mark the actual landing, parking, or entrance separately. Submitted locations stay private until reviewed.</p>
+        <div class="feedback-two-columns">
+          <div class="control"><label for="locationEndpoint">This point is for</label><select id="locationEndpoint"><option value="putIn">Put-in</option><option value="takeOut">Take-out</option><option value="other">Another access</option></select></div>
+          <div class="control"><label for="locationType">What does the pin mark?</label><select id="locationType"><option value="landing">River landing / launch</option><option value="parking">Parking area</option><option value="entrance">Entrance / road approach</option></select></div>
+        </div>
+        <div class="feedback-two-columns">
+          <div class="control"><label for="locationLat">Latitude</label><input id="locationLat" type="number" min="-85" max="85" step="any" placeholder="e.g. 46.12345"></div>
+          <div class="control"><label for="locationLon">Longitude</label><input id="locationLon" type="number" min="-180" max="180" step="any" placeholder="e.g. -114.12345"></div>
+        </div>
+        <div class="control"><label for="locationLink">Or paste coordinates / a full map link</label><input id="locationLink" maxlength="1000" placeholder="46.12345, -114.12345"><small>Full Google Maps links containing coordinates work. For a short link, open it and copy the coordinates.</small></div>
+        <button type="button" class="map-preview-button" id="locationParse">Use these coordinates</button>
+        <button type="button" class="map-preview-button" id="locationOpen">Choose / preview pin on satellite map</button>
+        <button type="button" class="map-preview-button" id="locationGPS">Use my current location</button>
+        <p class="feedback-private">The location you submit is shared privately with Float ETA for review. Opening the map shares the viewed area with the map provider. Current location is requested only when you tap its button.</p>
+        <div id="locationMap" class="land-map" hidden aria-label="Choose a proposed access location"></div>
+        <p id="locationStatus" role="status"></p>
+        <div class="control"><label for="locationDate">When did you visit? <span class="optional">(optional)</span></label><input id="locationDate" type="date"></div>
+        <label><input id="locationFirsthand" type="checkbox"> I have personally used this access</label>
       </fieldset>
       <div class="control"><label id="feedbackMessageLabel" for="feedbackMessage">What should we know about this float?</label><textarea id="feedbackMessage" required maxlength="2000" rows="5" placeholder="Useful details, local knowledge, or what should change…"></textarea></div>
       <div class="control"><label for="feedbackSource">Supporting link <span class="optional">(optional)</span></label><input id="feedbackSource" type="url" maxlength="1000" placeholder="https://"><small>An agency page, map or trip report can help us check it. You can also describe coordinates in your message.</small></div>
@@ -101,10 +122,12 @@
   <footer class="footer">
     <div class="footer-inner">
       <a class="brand" href="/"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></a>
-      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/washington">Washington</a> · <a href="/utah">Utah</a> · <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a> · <a href="/feedback.html?type=float-request">Request a float</a></p>
+      <p class="footer-links"><a href="/">Home</a> · <a href="/montana">Montana</a> · <a href="/idaho">Idaho</a> · <a href="/oregon">Oregon</a> · <a href="/washington">Washington</a> · <a href="/utah">Utah</a> · <a href="/arizona">Arizona</a> · <a href="/colorado">Colorado</a> · <a href="/wyoming">Wyoming</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a> · <a href="/feedback.html?type=float-request">Request a float</a></p>
       <p class="copyright">© <span id="year"></span> Float ETA · <a href="https://www.floateta.com">floateta.com</a></p>
     </div>
   </footer>
+  <script src="map-base.js"></script>
+  <script src="access-location.js"></script>
   <script src="feedback.js?v=20261026-1"></script>
 </body>
 </html>

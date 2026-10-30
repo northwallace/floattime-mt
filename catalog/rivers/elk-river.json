@@ -1,0 +1,46 @@
+{
+  "id": "elk-river",
+  "name": "Elk River — City of Pineville Elk River Access to Cowskin Access",
+  "gauge": "07189000",
+  "gaugeName": "Elk River near Tiff City, Mo (USGS 07189000)",
+  "lat": 36.58903,
+  "lon": -94.38693,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Elk River in Missouri: sections between public Missouri Department of Conservation accesses.",
+  "state": "MO",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "city-of-pineville-elk-river-access-to-mount-shira-access",
+      "putIn": "City of Pineville Elk River Access",
+      "takeOut": "Mount Shira Access",
+      "miles": 7.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in City of Pineville Elk River Access: exact agency access pin. Take-out Mount Shira Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-82864c8fc8565056a413",
+      "takeOutAccessId": "acc-28fa3e9e783f5532823a"
+    },
+    {
+      "id": "mount-shira-access-to-cowskin-access",
+      "putIn": "Mount Shira Access",
+      "takeOut": "Cowskin Access",
+      "miles": 13.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Mount Shira Access: exact agency access pin. Take-out Cowskin Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-28fa3e9e783f5532823a",
+      "takeOutAccessId": "acc-c1f57303be53590bac2d"
+    }
+  ],
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "This assigned station did not provide current discharge in the October 30 review. Access and published guide information remain available, but no live timing estimate or substitute gauge has been approved.",
+    "sourceName": "USGS Water Data — station record",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-07189000/",
+    "checkedOn": "2026-10-30"
+  }
+}

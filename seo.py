@@ -10,6 +10,7 @@ import os
 import re
 import time
 from urllib.parse import urlencode
+from tools.flow_sources import flow_label, flow_name, flow_url, flow_description, supports_live_timing
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 PUBLIC = os.path.join(ROOT, "public")
@@ -50,19 +51,25 @@ def _state_records():
         },
         "UT": {
             "intro": "Explore Green River floats below Flaming Gorge, Colorado River sections near Moab, and San Juan and Labyrinth Canyon trips with access sources and published planning guidance.",
-            "desc": "Explore Utah Green, Colorado, San Juan and San Rafael river sections with access maps, USGS gauges and available guide times.",
+            "desc": "Explore Utah Green, Colorado, San Juan and San Rafael river sections with access maps, agency gauges and available guide times.",
         },
         "AZ": {
             "intro": "Explore Lower Salt and Verde River floats, Gila Box and Colorado River trips with access sources, restrictions and available published guide times.",
-            "desc": "Explore Arizona Salt, Verde, Gila and Colorado river sections with access sources, USGS gauges and available guide times.",
+            "desc": "Explore Arizona Salt, Verde, Gila and Colorado river sections with access sources, agency gauges and available guide times.",
         },
     }
+    def default_intro(state):
+        names = list(dict.fromkeys(r['name'].split(' — ', 1)[0].split(' (', 1)[0]
+                                  for r in catalog()['rivers'] if r['state'] == state['id']))[:6]
+        examples = ', '.join(names)
+        return f"Explore {examples} in {state['name']}, with access sources, agency gauges and available planning guidance." if examples else f"Find your next stretch in {state['name']}. Check access and local conditions before launching."
+
     return {s["id"]: {
         **s, "code": s["id"], "geo": "US-" + s["id"],
         "dirTitle": f'{s["name"]} Rivers to Float | Live USGS Gauges | Float ETA',
-        "dirDesc": copy.get(s["id"], {}).get("desc", f'Explore {s["name"]} river floats, stretches, and USGS gauges.'),
+        "dirDesc": s.get('description') or copy.get(s["id"], {}).get("desc", default_intro(s)),
         "h1": f'{s["name"]} rivers to float',
-        "intro": copy.get(s["id"], {}).get("intro", f'Find your next stretch in {s["name"]}. Check access and local conditions before launching.')
+        "intro": s.get('intro') or copy.get(s["id"], {}).get("intro", default_intro(s))
     } for s in catalog()["states"]}
 
 
@@ -80,8 +87,35 @@ def esc(text):
     return html.escape(str(text or ""), quote=True)
 
 
+def catalog_slots(text):
+    """Fill explicit static-page slots before delivery, including without JS."""
+    import re
+    data = catalog()
+    links = [f'<a href="/{esc(s["slug"])}">{esc(s["name"])}</a>' for s in data['states']]
+    slots = {
+        'state-navigation': '\n'.join(links),
+        'state-footer': ' · '.join(links),
+        'state-coverage': ' · '.join(esc(s['name']) for s in data['states']),
+        'river-count': str(len(data['rivers'])),
+        'section-count': str(sum(len(r['sections']) for r in data['rivers'])),
+    }
+    return re.sub(r'<!-- catalog:([a-z-]+) -->.*?<!-- /catalog:\1 -->',
+                  lambda m: slots.get(m[1], m[0]), text, flags=re.S)
+
+
 def load_rivers():
     return catalog()["rivers"]
+
+
+def _section_distance_label(sections):
+    """Describe trip options without summing overlapping floats as river coverage."""
+    distances = [s['miles'] for s in sections if not s.get('accessReview') and not s.get('distanceReview')]
+    if not distances:
+        return 'Distances under review'
+    low, high = min(distances), max(distances)
+    span = f'{low:g}' if low == high else f'{low:g}–{high:g}'
+    scope = 'on available stretches' if len(distances) != len(sections) else 'per stretch'
+    return f'{span} mi {scope}'
 
 
 def find_river(slug):
@@ -102,7 +136,7 @@ def _fmt_hours(hours):
 
 
 def _typical_hours(river, miles):
-    if river.get('timing', {}).get('mode') == 'unavailable':
+    if not supports_live_timing(river):
         return None
     speed = max(river["refSpeedMph"], 0.8)
     return miles / speed
@@ -118,6 +152,8 @@ def _notices_html(section):
 
 
 def _guide_html(section):
+    if section.get('accessReview') or section.get('distanceReview'):
+        return ''
     parts = []
     for g in section.get('guideTimes', []):
         span = str(g['min']) if g['min'] == g['max'] else f"{g['min']}–{g['max']}"
@@ -134,9 +170,11 @@ def _distance_html(section):
     e = section.get('distanceEvidence')
     if not e:
         return ''
+    distance = (f'Published trip length: {e["miles"]:g} mi' if e['method'] == 'published-trip-length'
+                else f'River mile {e["putIn"]["riverMile"]:g} to {e["takeOut"]["riverMile"]:g}')
     return (f'<details class="distance-source"><summary>How this distance was checked</summary>'
             f'<p>{esc(e["note"])}</p><a href="{esc(e["sourceUrl"])}" target="_blank" rel="noopener">{esc(e["sourceName"])}</a>'
-            f'<p>River mile {e["putIn"]["riverMile"]:g} to {e["takeOut"]["riverMile"]:g} · checked {esc(e["checkedOn"])}</p></details>')
+            f'<p>{distance} · checked {esc(e["checkedOn"])}</p></details>')
 
 
 def _related(rivers, current, n=4):
@@ -244,7 +282,7 @@ def _footer():
     return f"""  <footer class="footer">
     <div class="footer-inner">
       <a class="brand" href="/"><svg class="brand-wave" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 12c5-5 8 5 13 0s8 5 13 0M3 20c5-5 8 5 13 0s8 5 13 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>Float <span>ETA</span></a>
-      <p>Live USGS streamflow with approximate float-time guidance — daylight, water temp, and community obstruction reports included.</p>
+      <p>Agency streamflow with approximate float-time guidance — daylight, water temp, and community obstruction reports included.</p>
       <p class="footer-links">
         <a href="/">Home</a> ·
         {states} ·
@@ -343,15 +381,15 @@ def state_html(code):
     desc = meta["dirDesc"]
     cards = []
     for river in rivers:
-        miles = sum(s["miles"] for s in river["sections"])
+        distance_label = _section_distance_label(river['sections'])
         diffs = sorted({s["difficulty"] for s in river["sections"]})
         cards.append(f"""
         <article class="river-dir-card">
           <h2><a href="/rivers/{esc(river['id'])}">{esc(river['name'])}</a></h2>
           <p>{esc(river['blurb'])}</p>
           <p class="river-dir-meta">{len(river['sections'])} stretch{'es' if len(river['sections']) != 1 else ''}
-            · {miles:g} river miles · {esc(', '.join(diffs))}</p>
-          <a class="river-dir-link" href="/rivers/{esc(river['id'])}">Float times &amp; live CFS →</a>
+            · {esc(distance_label)} · {esc(', '.join(diffs))}</p>
+          <a class="river-dir-link" href="/rivers/{esc(river['id'])}">River guide &amp; flow details →</a>
         </article>""")
 
     item_list = {
@@ -402,7 +440,7 @@ def state_html(code):
     <div class="hero-content">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {esc(meta['name'])} rivers</nav>
       <h1>{esc(meta['h1'])}</h1>
-      <p class="hero-sub">{len(rivers)} rivers and {sections} stretches with live USGS gauges —
+      <p class="hero-sub">{len(rivers)} rivers and {sections} stretches with agency gauge information —
         {esc(meta['intro'])}</p>
     </div>
     <div class="hero-wave" aria-hidden="true">
@@ -412,8 +450,8 @@ def state_html(code):
   <main id="main" class="section river-dir">
     <div class="section-head">
       <h2>Every Float ETA stretch in {esc(meta['name'])}</h2>
-      <p>Browse put-in to take-out sections, access information, published trip guidance and USGS flow. Live float-time estimates are available where a reference-flow model is established; other listings show their available guide information.
-        Also live: {others}.</p>
+      <p>Browse put-in to take-out sections, access information, published trip guidance and agency flow. Live float-time estimates are available where a reference-flow model is established; other listings show their available guide information.
+        Also explore: {others}.</p>
     </div>
     {permit}
     <div class="river-dir-grid">
@@ -430,14 +468,14 @@ def river_html(river):
     st = _state_meta(river)
     access_holds = sum(bool(s.get('accessReview')) for s in river['sections'])
     all_held = access_holds == len(river['sections'])
-    miles = sum(s["miles"] for s in river["sections"])
+    distance_label = _section_distance_label(river['sections'])
     diffs = sorted({s["difficulty"] for s in river["sections"]})
     path = f"/rivers/{river['id']}"
     title = f"{river['name']} Float Time | {st['name']} | Float ETA"
     desc = (
         f"{river['blurb']} {len(river['sections'])} stretch"
-        f"{'es' if len(river['sections']) != 1 else ''}, {miles:g} miles, "
-        f"{', '.join(diffs)}. USGS {river['gauge']} flow, access information and river-local daylight."
+        f"{'es' if len(river['sections']) != 1 else ''}, {distance_label}, "
+        f"{', '.join(diffs)}. Access information, available gauge context and river-local daylight."
     )
     if len(desc) > 165:
         desc = desc[:162].rsplit(" ", 1)[0] + "…"
@@ -453,10 +491,12 @@ def river_html(river):
             if hours is not None else 'A live float-time estimate is not available for this stretch. Published guide times, where shown, are separate planning guidance and are not adjusted for current flow, craft or stops.'
         )
         label = f"{sec['putIn']} to {sec['takeOut']}"
+        distance_cell = ('Distance under review' if sec.get('distanceReview') else
+                         f"{'≈ ' if sec.get('distanceEvidence') else ''}{sec['miles']:g} mi{' · unverified' if sec.get('accessReview') else ''}")
         rows.append(f"""
         <tr>
           <td>{esc(sec['putIn'])} → {esc(sec['takeOut'])}</td>
-          <td>{'≈ ' if sec.get('distanceEvidence') else ''}{sec['miles']:g} mi{' · unverified' if sec.get('distanceReview') or sec.get('accessReview') else ''}</td>
+          <td>{esc(distance_cell)}</td>
           <td>{'Route under review' if sec.get('accessReview') else esc(sec['difficulty'])}</td>
           <td>{esc(time_cell)}{_guide_html(sec)}</td>
           <td>{esc(sec['notes'])}</td>
@@ -468,7 +508,7 @@ def river_html(river):
             '<span class="access-pending">Exact access directions have not been audited yet.</span>'
         )
         if sec.get('mapPilot') and not sec.get('mapReleased'):
-            access_links = '<span class="access-pending">Access maps for this state are being reviewed for release.</span>'
+            access_links = '<span class="access-pending">This section’s access map is still under review.</span>'
         map_html = ""
         if sec.get("mapReleased") and sec.get("putInCoords") and sec.get("takeOutCoords") and sec.get("putInAccess") and sec.get("takeOutAccess"):
             points = (sec["putInCoords"], sec["takeOutCoords"])
@@ -508,7 +548,8 @@ def river_html(river):
         <article class="access-guide">
           <div><h3>{esc(label)}</h3><p>{esc(sec['notes'])}</p>{_notices_html(sec)}{_distance_html(sec)}
           <p class="access-links">{access_links}</p>
-          <a class="section-correction" href="/feedback.html?{esc(urlencode({'type':'correction','riverId':river['id'],'sectionId':sec['id']}))}">Suggest a correction for this section</a></div>
+          <a class="section-correction" href="/feedback.html?{esc(urlencode({'type':'correction','riverId':river['id'],'sectionId':sec['id']}))}">Suggest a correction for this section</a>
+          <a class="section-correction" href="/feedback.html?{esc(urlencode({'type':'access-suggestion','riverId':river['id'],'sectionId':sec['id']}))}">Suggest an access location</a></div>
           {map_html}
         </article>""")
         faq_entities.append({
@@ -523,14 +564,13 @@ def river_html(river):
     faq_entities.extend([
         {
             "@type": "Question",
-            "name": f"What USGS gauge is used for {river['name']} float times?",
+            "name": f"What flow source is used for {river['name']}?",
             "acceptedAnswer": {
                 "@type": "Answer",
                 "text": (
-                    f"Float ETA uses USGS gauge {river['gauge']} ({river['gaugeName']}) "
-                    f"for live discharge. " + (
+                    flow_description(river) + " " + (river.get('gaugeContext', {}).get('note', '') + ' ' if river.get('gaugeContext') else '') + (
                         f"Speed is scaled from a reference {int(river['refFlowCfs'])} cfs drift of about {river['refSpeedMph']} mph."
-                        if not all_held and river.get('timing', {}).get('mode') != 'unavailable' else 'Flow is shown for context; a calibrated live float-time estimate is not available.'
+                        if not all_held and supports_live_timing(river) else 'A calibrated live float-time estimate is not available.'
                     )
                 ),
             },
@@ -609,23 +649,28 @@ def river_html(river):
         )
     correction_url = "/feedback.html?" + urlencode({"riverId": river["id"], "type": "correction"})
     if all_held:
-        timing_intro = '<p class="model-note">The listed routes need access review before they can be used for trip planning. USGS flow and daylight remain available for context; trip estimates are withheld.</p>'
+        timing_intro = '<p class="model-note">The listed routes need access review before they can be used for trip planning. Daylight and any available agency flow remain visible for context; trip estimates are withheld.</p>'
         timing_table_note = 'All listed routes are under access review.'
-    elif river.get('timing', {}).get('mode') == 'unavailable':
-        timing_intro = '<p>Live USGS flow, daylight and access information are available for this river. A calibrated live float-time estimate is not available yet. Published guide times, where shown, retain their original conditions and are not adjusted for today’s flow, craft, fishing stops or launch time.</p>'
-        if river['timing'].get('note'):
+    elif not supports_live_timing(river):
+        timing_intro = '<p>Live estimate unavailable. Reviewed access information, daylight and published guide times remain available. Guide times retain their original conditions and are not adjusted for today’s flow, craft, fishing stops or launch time.</p>'
+        if river.get('timing', {}).get('note'):
             timing_intro += f'<p class="model-note">{esc(river["timing"]["note"])}</p>'
         timing_table_note = 'The table shows whether a live estimate is available and any published guide times.'
     else:
-        timing_intro = f'<p>Float ETA estimates travel time from live discharge at <strong>USGS {esc(river["gauge"])}</strong> ({esc(river["gaugeName"])}). At a reference <strong>{int(river["refFlowCfs"]):,} cfs</strong>, the model uses a raft speed of <strong>{river["refSpeedMph"]} mph</strong>. Craft and fishing stops change the estimate. Stopping to fish adds 25 minutes per river mile.</p>'
+        timing_intro = f'<p>Float ETA estimates travel time from live discharge at <strong>{esc(flow_label(river))}</strong> ({esc(flow_name(river))}). At a reference <strong>{int(river["refFlowCfs"]):,} cfs</strong>, the model uses a raft speed of <strong>{river["refSpeedMph"]} mph</strong>. Craft and fishing stops change the estimate. Stopping to fish adds 25 minutes per river mile.</p>'
         timing_table_note = 'Times in the table are reference-flow raft estimates.'
         if 'timing' not in river:
             timing_intro += '<p class="model-note">This reference-speed model has not been validated against a published set of trip measurements. Use it as rough planning guidance and allow extra time.</p>'
 
     coverage_intro = (f'This listing has {len(river["sections"])} sections; {access_holds} have unresolved access or route details. Treat their mileages as unverified.'
-                      if access_holds else f'The {esc(river["name"])} listing covers <strong>{miles:g} river miles</strong> across {len(river["sections"])} access-to-access stretches ({esc(", ".join(diffs))}).')
+                      if access_holds else f'The {esc(river["name"])} listing has {len(river["sections"])} access-to-access stretches: <strong>{esc(distance_label)}</strong> ({esc(", ".join(diffs))}).')
     if all_held:
-        desc = f'{river["name"]} access and route review, live USGS flow and daylight. Trip estimates are withheld until the listed access issues are resolved.'
+        desc = f'{river["name"]} access and route review, available agency flow and daylight. Trip estimates are withheld until the listed access issues are resolved.'
+    gauge_link = (f' Gauge page: <a href="{esc(flow_url(river))}" target="_blank" rel="noopener">{esc(flow_label(river))}</a>.' if flow_url(river) else '')
+    gauge_context = river.get('gaugeContext')
+    gauge_note = (f'<p class="model-note">{esc(gauge_context["note"])} '
+                  f'<a href="{esc(gauge_context["sourceUrl"])}" target="_blank" rel="noopener">{esc(gauge_context["sourceName"])}</a> · '
+                  f'Source checked {esc(gauge_context["checkedOn"])}.</p>') if gauge_context else ''
     return (
         _head(title, desc, path, json_ld=[_org_schema(), place, faq, crumbs], geo=st)
         + _nav(st["slug"])
@@ -636,7 +681,7 @@ def river_html(river):
       </nav>
       <h1>{esc(river['name'])} float time</h1>
       <p class="hero-sub">{esc(river['blurb'])}</p>
-      <p class="coming-soon-pill">{esc(st['name'])} · USGS {esc(river['gauge'])} · {len(river['sections'])} stretch{'es' if len(river['sections']) != 1 else ''}</p>
+      <p class="coming-soon-pill">{esc(st['name'])} · {esc(flow_label(river))} · {len(river['sections'])} stretch{'es' if len(river['sections']) != 1 else ''}</p>
     </div>
     <div class="hero-wave" aria-hidden="true">
       <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,35 C960,70 1200,10 1440,45 L1440,90 L0,90 Z" fill="var(--bg)"/></svg>
@@ -676,11 +721,12 @@ def river_html(river):
     <div class="access-guide-list">{''.join(access_cards)}</div>
 
     <h2>Flow and trip planning</h2>
+    <p>{esc(flow_description(river))}</p>
+    {gauge_note}
     <p>Flow readings describe the gauge, and do not by themselves establish a trip duration.
       Always scout, wear a PFD, and check
       <a href="{esc(st['agencyUrl'])}" target="_blank" rel="noopener">{esc(st['agency'])}</a>
-      for closures. Gauge page:
-      <a href="https://waterdata.usgs.gov/monitoring-location/{esc(river['gauge'])}/" target="_blank" rel="noopener">USGS {esc(river['gauge'])}</a>.</p>
+      for closures.{gauge_link}</p>
 
     <h2>Common questions</h2>
     <div class="faq-list">

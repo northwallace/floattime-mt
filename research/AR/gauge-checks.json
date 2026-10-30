@@ -1,0 +1,624 @@
+{
+ "state": "AR",
+ "checkedOn": "2026-10-30",
+ "method": "USGS Water Data OGC API (latest continuous discharge, parameter 00060) per candidate gauge; daily values for catalog gauges. No flow-to-speed calibration was attempted.",
+ "catalogGauges": [
+  {
+   "river": "buffalo-river",
+   "inCatalog": true,
+   "gauge": "07056000",
+   "usgsName": "Buffalo River near St. Joe, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07056000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A26%2B00%3A00%2F2026-10-30T16%3A52%3A26%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:26+00:00",
+   "dischargeObsWithValue": 664,
+   "newestDischargeTime": "2026-10-30T15:45:00+00:00",
+   "newestDischargeCfs": 49.1,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "white-river-upper",
+   "inCatalog": true,
+   "gauge": "07048600",
+   "usgsName": "White River near Fayetteville, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07048600&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A31%2B00%3A00%2F2026-10-30T16%3A52%3A31%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:31+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T16:00:00+00:00",
+   "newestDischargeCfs": 4.96,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "white-river-beaver-tailwater",
+   "inCatalog": true,
+   "gauge": "07049698",
+   "usgsName": "White River near Busch, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07049698&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A45%2B00%3A00%2F2026-10-30T16%3A53%3A45%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:45+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "white-river-bull-shoals",
+   "inCatalog": true,
+   "gauge": "07057370",
+   "usgsName": "White River near Norfork, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07057370&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A36%2B00%3A00%2F2026-10-30T16%3A52%3A36%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:36+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T16:30:00+00:00",
+   "newestDischargeCfs": 4000.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "north-fork-river-ar",
+   "inCatalog": true,
+   "gauge": "07060001",
+   "usgsName": "North Fork River DS of Dry Cr BL Norfork Dam, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07060001&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A39%2B00%3A00%2F2026-10-30T16%3A52%3A39%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:39+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "eleven-point-river-ar",
+   "inCatalog": true,
+   "gauge": "07072000",
+   "usgsName": "Eleven Point River near Ravenden Springs, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07072000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A41%2B00%3A00%2F2026-10-30T16%3A52%3A41%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:41+00:00",
+   "dischargeObsWithValue": 659,
+   "newestDischargeTime": "2026-10-30T15:45:00+00:00",
+   "newestDischargeCfs": 358.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "spring-river-ar",
+   "inCatalog": true,
+   "gauge": "07069305",
+   "usgsName": "Spring River at Spring Street Bridge at Hardy, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07069305&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A43%2B00%3A00%2F2026-10-30T16%3A52%3A43%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:43+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T16:30:00+00:00",
+   "newestDischargeCfs": 306.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "south-fork-spring-river",
+   "inCatalog": true,
+   "gauge": "07069270",
+   "usgsName": "SOUTH FORK SPRING RIVER NEAR SALEM, ARK.",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07069270&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A46%2B00%3A00%2F2026-10-30T16%3A52%3A46%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:46+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "strawberry-river",
+   "inCatalog": true,
+   "gauge": "07074000",
+   "usgsName": "Strawberry River near Poughkeepsie, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07074000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A48%2B00%3A00%2F2026-10-30T16%3A52%3A48%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:48+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "black-river-ar",
+   "inCatalog": true,
+   "gauge": "07069000",
+   "usgsName": "Black River at Pocahontas, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07069000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A51%2B00%3A00%2F2026-10-30T16%3A52%3A51%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:51+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T16:00:00+00:00",
+   "newestDischargeCfs": 1440.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "little-red-river",
+   "inCatalog": true,
+   "gauge": "07076517",
+   "usgsName": "Little Red River near Dewey, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07076517&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A56%2B00%3A00%2F2026-10-30T16%3A52%3A56%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:56+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-30T15:45:00+00:00",
+   "newestDischargeCfs": 1560.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "kings-river",
+   "inCatalog": true,
+   "gauge": "07050500",
+   "usgsName": "Kings River near Berryville, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07050500&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A52%3A59%2B00%3A00%2F2026-10-30T16%3A52%3A59%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:52:59+00:00",
+   "dischargeObsWithValue": 670,
+   "newestDischargeTime": "2026-10-30T16:15:00+00:00",
+   "newestDischargeCfs": 21.3,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "mulberry-river",
+   "inCatalog": true,
+   "gauge": "07252000",
+   "usgsName": "Mulberry River near Mulberry, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07252000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A02%2B00%3A00%2F2026-10-30T16%3A53%3A02%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:02+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T16:30:00+00:00",
+   "newestDischargeCfs": 7.69,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "ouachita-river-upper",
+   "inCatalog": true,
+   "gauge": "07356000",
+   "usgsName": "Ouachita River near Mount Ida, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07356000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A06%2B00%3A00%2F2026-10-30T16%3A53%3A06%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:06+00:00",
+   "dischargeObsWithValue": 671,
+   "newestDischargeTime": "2026-10-30T16:30:00+00:00",
+   "newestDischargeCfs": 12.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "little-missouri-river",
+   "inCatalog": true,
+   "gauge": "07361000",
+   "usgsName": "LITTLE MISSOURI RIVER NEAR MURFREESBORO, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07361000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A09%2B00%3A00%2F2026-10-30T16%3A53%3A09%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:09+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "caddo-river",
+   "inCatalog": true,
+   "gauge": "07359610",
+   "usgsName": "Caddo River near Caddo Gap, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07359610&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A10%2B00%3A00%2F2026-10-30T16%3A53%3A10%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:10+00:00",
+   "dischargeObsWithValue": 655,
+   "newestDischargeTime": "2026-10-30T16:30:00+00:00",
+   "newestDischargeCfs": 24.4,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "saline-river",
+   "inCatalog": true,
+   "gauge": "07363000",
+   "usgsName": "Saline River at Benton, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07363000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A13%2B00%3A00%2F2026-10-30T16%3A53%3A13%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:13+00:00",
+   "dischargeObsWithValue": 538,
+   "newestDischargeTime": "2026-10-29T07:15:00+00:00",
+   "newestDischargeCfs": 2.61,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "cadron-creek",
+   "inCatalog": true,
+   "gauge": "07261000",
+   "usgsName": "Cadron Creek near Guy, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07261000&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A19%2B00%3A00%2F2026-10-30T16%3A53%3A19%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:19+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T16:00:00+00:00",
+   "newestDischargeCfs": 0.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "petit-jean-river",
+   "inCatalog": true,
+   "gauge": "07260500",
+   "usgsName": "Petit Jean River at Danville, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07260500&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A58%2B00%3A00%2F2026-10-30T16%3A53%3A58%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:58+00:00",
+   "dischargeObsWithValue": 668,
+   "newestDischargeTime": "2026-10-30T15:45:00+00:00",
+   "newestDischargeCfs": 0.01,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "crooked-creek",
+   "inCatalog": true,
+   "gauge": "07055608",
+   "usgsName": "Crooked Creek at Yellville",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07055608&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A23%2B00%3A00%2F2026-10-30T16%3A53%3A23%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:23+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  },
+  {
+   "river": "illinois-river-ar",
+   "inCatalog": true,
+   "gauge": "07195400",
+   "usgsName": "Illinois River at Hwy. 16 near Siloam Springs AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07195400&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A26%2B00%3A00%2F2026-10-30T16%3A53%3A26%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:26+00:00",
+   "dischargeObsWithValue": 669,
+   "newestDischargeTime": "2026-10-30T16:00:00+00:00",
+   "newestDischargeCfs": 170.0,
+   "recentDaily": null,
+   "suitability": "live discharge available; used for the flow display only (timing mode 'unavailable')"
+  },
+  {
+   "river": "bayou-deview",
+   "inCatalog": true,
+   "gauge": "07077730",
+   "usgsName": "Bayou Deview near Brinkley, AR",
+   "request": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-07077730&parameter_code=00060%2C00010&datetime=2026-10-23T16%3A53%3A27%2B00%3A00%2F2026-10-30T16%3A53%3A27%2B00%3A00&limit=10000",
+   "checkedAtUtc": "2026-10-30T16:53:27+00:00",
+   "dischargeObsWithValue": 0,
+   "newestDischargeTime": null,
+   "newestDischargeCfs": null,
+   "recentDaily": {
+    "newest": null,
+    "oldest": null,
+    "count": 0
+   },
+   "suitability": "no current discharge — live estimates hidden"
+  }
+ ],
+ "otherGauges": [
+  {
+   "gauge": "07040100",
+   "usgsName": "St. Francis River at St. Francis, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07040450",
+   "usgsName": "St. Francis River at Lake City, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07047800",
+   "usgsName": "St. Francis River at Parkin, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07047900",
+   "usgsName": "St. Francis Bay at Riverfront, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07047942",
+   "usgsName": "LAnguille River near Colt, AR",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "07049691",
+   "usgsName": "White River at Beaver Dam near Eureka Springs",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07049693",
+   "usgsName": "White River @ campground E near Busch, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07054502",
+   "usgsName": "White River below Bull Shoals Dam at Bull Shoals",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07054527",
+   "usgsName": "White River below Bull Shoals Dam near Fairview",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07054535",
+   "usgsName": "WHITE RIVER BELOW BRUCE CREEK NEAR LAKEVIEW, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07055000",
+   "usgsName": "White River near Flippin, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07055600",
+   "usgsName": "CROOKED CREEK AT PYATT, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07055603",
+   "usgsName": "CROOKED CREEK NEAR SNOW",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07055618",
+   "usgsName": "CROOKED CREEK NEAR FLIPPIN",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07055621",
+   "usgsName": "CROOKED CREEK NEAR REA VALLEY",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07055646",
+   "usgsName": "Buffalo River near Boxley, AR",
+   "dischargeObsWithValue": 671
+  },
+  {
+   "gauge": "07055652",
+   "usgsName": "Buffalo River at Boxley",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07055660",
+   "usgsName": "Buffalo River at Ponca, AR",
+   "dischargeObsWithValue": 671
+  },
+  {
+   "gauge": "07055680",
+   "usgsName": "Buffalo River at Pruitt, AR",
+   "dischargeObsWithValue": 670
+  },
+  {
+   "gauge": "07056700",
+   "usgsName": "Buffalo River near Harriet, AR",
+   "dischargeObsWithValue": 658
+  },
+  {
+   "gauge": "07057000",
+   "usgsName": "Buffalo River near Rush, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07060010",
+   "usgsName": "NORTH FORK RIVER AT NORFORK, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07060500",
+   "usgsName": "White River at Calico Rock, AR",
+   "dischargeObsWithValue": 670
+  },
+  {
+   "gauge": "07060660",
+   "usgsName": "WHITE RIVER AT SYLAMORE, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07069220",
+   "usgsName": "Spring River near Mammoth Spring, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07069268",
+   "usgsName": "SOUTH FORK OF SPRING R NR MOKO, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07069370",
+   "usgsName": "SPRING RIVER AT RAVENDEN, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07069500",
+   "usgsName": "Spring River at Imboden, AR",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "07072100",
+   "usgsName": "ELEVEN POINT RIVER NEAR POCAHONTAS, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07072500",
+   "usgsName": "Black River at Black Rock, AR",
+   "dischargeObsWithValue": 335
+  },
+  {
+   "gauge": "07072908",
+   "usgsName": "Strawberry River near Myron",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07073000",
+   "usgsName": "Strawberry River near Evening Shade",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07073800",
+   "usgsName": "STRAWBERRY RIVER NORTH OF POUGHKEEPSIE, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07074100",
+   "usgsName": "Strawberry River near Smithville",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07074325",
+   "usgsName": "Strawberry River near Saffell",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07076000",
+   "usgsName": "Little Red River near Heber Springs",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07076050",
+   "usgsName": "Little Red River below Heber Springs, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07076200",
+   "usgsName": "LITTLE RED RIVER NR WILBURN, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07077700",
+   "usgsName": "Bayou DeView near Morton, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07077750",
+   "usgsName": "BAYOU DEVIEW NEAR BRASFIELD, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07195430",
+   "usgsName": "Illinois River South of Siloam Springs, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07195500",
+   "usgsName": "Illinois River near Watts, OK",
+   "dischargeObsWithValue": 336
+  },
+  {
+   "gauge": "07250965",
+   "usgsName": "Frog Bayou at Winfrey, AR",
+   "dischargeObsWithValue": 669
+  },
+  {
+   "gauge": "07251900",
+   "usgsName": "MULBERRY RIVER NEAR CASS, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07257200",
+   "usgsName": "Little Piney Creek near Lamar, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07260640",
+   "usgsName": "Petit Jean River near Centerville, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07260673",
+   "usgsName": "West Fork Point Remove Creek near Hattieville, AR",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "07260678",
+   "usgsName": "East Fork Point Remove Creek nr Morrilton, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07261248",
+   "usgsName": "CADRON CREEK NR WOOSTER ARK",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07261250",
+   "usgsName": "Cadron Creek West of Conway, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07261500",
+   "usgsName": "Fourche LaFave River Near Gravelly, AR",
+   "dischargeObsWithValue": 668
+  },
+  {
+   "gauge": "07263420",
+   "usgsName": "LITTLE MAUMELLE RIVER AT PINNACLE, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07263450",
+   "usgsName": "Arkansas River at Murray Dam near Little Rock, AR",
+   "dischargeObsWithValue": 240
+  },
+  {
+   "gauge": "07359700",
+   "usgsName": "Caddo River @ Glenwood, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07359725",
+   "usgsName": "Caddo River north of Amity",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07359770",
+   "usgsName": "Caddo River near Amity, AR",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07359800",
+   "usgsName": "CADDO RIVER NEAR ALPINE, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07361035",
+   "usgsName": "LITTLE MISSOURI RIVER BELOW MURFREESBORO, AR.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07361600",
+   "usgsName": "LITTLE MISSOURI RIV NR BOUGHTON, ARK.",
+   "dischargeObsWithValue": 0
+  },
+  {
+   "gauge": "07363200",
+   "usgsName": "Saline River near Sheridan, AR",
+   "dischargeObsWithValue": 670
+  }
+ ],
+ "note": "An unavailable gauge only hides live estimates; it never blocks a section. Seven catalog rivers (Beaver and Norfork tailwaters, South Fork Spring, Strawberry, lower Little Missouri, Crooked Creek, Bayou DeView) are assigned the nearest on-river USGS station even though it returned no current discharge, because the app requires a gauge id; their live estimates stay hidden. On tailwaters, flow follows dam releases (AR-RES-009/010)."
+}

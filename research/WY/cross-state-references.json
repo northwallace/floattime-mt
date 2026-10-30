@@ -1,0 +1,58 @@
+{
+ "version": 1,
+ "state": "WY",
+ "type": "PROPOSED APP FEATURE — not implemented, not read by the app",
+ "checkedOn": "2026-10-27",
+ "problem": "The catalog builder resolves a river's endpoints only in catalog/map_points/<river.state>.json. Two Wyoming reaches run across a state line (Clarks Fork into Montana; North Platte from Colorado), and their natural endpoints are, or would be, in the neighbouring state's registry.",
+ "proposal": "Let a section endpoint resolve to another state's registry entry, e.g. an optional per-section 'crossStateEndpoints': {\"<endpoint name>\": \"MT\"}. No research is repeated; the other state's record stays the single source of truth.",
+ "notDone": "No MT or CO record was copied into catalog/map_points/WY.json. The affected sections are drafts (research/river-drafts). No change was made to the app or the live site.",
+ "references": [
+  {
+   "wyEndpointId": "WY-ACC-0014",
+   "wyEndpointName": "WY/MT State Line (Clarks Fork)",
+   "wyRegistryStatusToday": "not in registry (draft section only)",
+   "otherState": "MT",
+   "otherRegistry": {
+    "file": "catalog/map_points/MT.json (reference catalog /workspace/colorado/ref1026)",
+    "key": "Bridger",
+    "status": "verified",
+    "lat": 45.29623645879013,
+    "lon": -108.90050082345967,
+    "sourceName": "Montana FWP Bridger Fishing Access Site 39754495",
+    "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754495",
+    "verifiedOn": "2026-10-24"
+   },
+   "proposedSection": {
+    "id": "edelweiss-to-bridger-mt",
+    "putIn": "Edelweiss (Clarks Fork)",
+    "putInStatus": "verified",
+    "takeOut": "Bridger (MT registry)",
+    "routedMiles": 38.7,
+    "mileSource": "preliminary NHDPlus V2 routed geometry (NLDI DM from the WY Clarks Fork group)"
+   },
+   "note": "WGFD's 'WY/MT State Line' is an egress marker with no facility. The next public take-out with an agency record is Montana FWP's Bridger FAS, already verified in the MT registry (MT river clarks-fork-yst, Bridger→Edgar). A cross-state endpoint lookup would let a WY section end there without copying the MT record.",
+   "sectionsThatWouldUnlock": [
+    {
+     "id": "edelweiss-to-bridger-mt",
+     "mapReadinessToday": "not in catalog",
+     "mapReadinessWithFeature": "exact"
+    }
+   ]
+  },
+  {
+   "wyEndpointId": "WY-ACC-0137",
+   "wyEndpointName": "Routt, Colorado (North Platte)",
+   "wyRegistryStatusToday": "not in registry (draft section only)",
+   "otherState": "CO",
+   "otherRegistry": null,
+   "note": "WGFD lists 'Routt, Colorado' as the uppermost North Platte launch (coordinate in Colorado, lat 40.95). The Colorado package on this box (floateta-colorado-v1.1) has no North Platte point and ref1026 has no CO registry, so there is nothing to reference yet. Proposal only; a future CO pass could verify a Northgate Canyon/Routt NF access, then a cross-state lookup could link it.",
+   "sectionsThatWouldUnlock": [
+    {
+     "id": "routt-colorado-to-six-mile-gap",
+     "mapReadinessToday": "draft",
+     "mapReadinessWithFeature": "depends on a CO record"
+    }
+   ]
+  }
+ ]
+}

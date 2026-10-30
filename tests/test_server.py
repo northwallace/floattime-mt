@@ -39,8 +39,9 @@ class ServerTests(unittest.TestCase):
             config = json.loads(body)
             self.assertEqual(set(config), {'arcgisApiKey', 'routes'})
             self.assertEqual(config['arcgisApiKey'], 'test-public-map-key')
-            self.assertEqual(len(config['routes']), 13)
-            self.assertTrue(all(e['state'] == 'MT' and not e['features']['remainingTime'] for e in config['routes']))
+            self.assertEqual(len(config['routes']), 59)
+            self.assertEqual({e['state'] for e in config['routes']}, {'MT','WY'})
+            self.assertTrue(all(not e['features']['remainingTime'] and not e['features']['distanceEstimate'] for e in config['routes']))
             self.assertEqual(headers['Cache-Control'], 'no-store')
             self.assertIn('https://ibasemaps-api.arcgis.com', headers['Content-Security-Policy'])
         self.assertEqual(self.request_raw('GET', '/map-config.local.json')[0], 404)
@@ -53,6 +54,23 @@ class ServerTests(unittest.TestCase):
             self.assertEqual(self.request('GET', '/api/map-config')[1], {"arcgisApiKey": "local-test-key"})
             config.write_text('{broken')
             self.assertEqual(self.request('GET', '/api/map-config')[0], 503)
+
+    def test_optional_map_labels_require_explicit_configuration(self):
+        with patch.dict(server.os.environ, {'ARCGIS_BASEMAP_API_KEY':'test-key','ARCGIS_LABELS_ENABLED':'true'}):
+            self.assertTrue(server._map_config()['imageryLabelsEnabled'])
+        with patch.dict(server.os.environ, {'ARCGIS_BASEMAP_API_KEY':'test-key','ARCGIS_LABELS_ENABLED':'false'}):
+            self.assertNotIn('imageryLabelsEnabled',server._map_config())
+
+    def test_homepage_state_links_and_counts_work_before_javascript(self):
+        status, _, body = self.request_raw('GET','/')
+        self.assertEqual(status,200)
+        text = body.decode()
+        for state in server.seo.catalog()['states']:
+            self.assertGreaterEqual(text.count(f'href="/{state["slug"]}"'),2)
+        rivers = server.seo.catalog()['rivers']
+        self.assertIn(f'id="statRivers">{len(rivers)}<',text)
+        self.assertIn(f'id="statSections">{sum(len(r["sections"]) for r in rivers)}<',text)
+        self.assertNotIn('<!-- catalog:',text)
 
     def test_route_pilot_requires_local_opt_in_and_is_off_with_production_key(self):
         root = Path(self.temp.name)
@@ -124,6 +142,8 @@ class ServerTests(unittest.TestCase):
         self.assertEqual(entry['status'],'pending')
         self.assertEqual(before,Path(server.PUBLIC,'catalog.json').read_bytes())
         self.assertEqual(self.request_raw('GET','/api/feedback')[0],404)
+        self.assertEqual(self.request_raw('GET','/api/private-review')[0],404)
+        self.assertEqual(self.request_raw('GET','/review')[0],404)
         self.assertEqual(self.request_raw('GET','/data/feedback.json')[0],404)
 
     def test_requests_accept_new_states_without_requiring_contact_details(self):
@@ -176,6 +196,26 @@ class ServerTests(unittest.TestCase):
             self.assertEqual(self.request('GET','/api/gauge?site=06041000')[1]['flow'],1234)
             self.assertEqual(download.call_count,1)
         self.assertEqual(self.request('GET','/api/gauge?site=00000000')[0],404)
+
+    def test_reclamation_proxy_only_serves_reviewed_catalog_sources(self):
+        reading={'flow':25.2,'at':time.time()*1000,'temp':None,'tempAt':None,'series':[],
+                 'source':'Bureau of Reclamation GP Hydromet','provisional':True}
+        with patch.object(server,'_download_gauge',return_value=reading) as download:
+            self.assertEqual(self.request('GET','/api/gauge?site=USBR%3AGLWY%3AQ')[1]['flow'],25.2)
+            self.assertEqual(self.request('GET','/api/gauge?site=USBR%3AGLWY%3AQ')[1]['source'],reading['source'])
+            download.assert_called_once_with('USBR:GLWY:Q')
+            for key in ('USBR:UNKNOWN:Q','USBR:GLWY:GH','https://example.com/'):
+                self.assertEqual(self.request('GET','/api/gauge?site='+key)[0],404)
+
+    def test_colorado_dwr_proxy_only_serves_reviewed_discharge(self):
+        reading={'flow':258,'at':time.time()*1000,'series':[],
+                 'source':'Colorado Division of Water Resources','provisional':True}
+        with patch.object(server,'_download_gauge',return_value=reading) as download:
+            for _ in range(2):
+                self.assertEqual(self.request('GET','/api/gauge?site=CDWR%3AARKSALCO%3ADISCHRG')[1]['flow'],258)
+            download.assert_called_once_with('CDWR:ARKSALCO:DISCHRG')
+            for key in ('CDWR:OTHER:DISCHRG','CDWR:ARKSALCO:GAGE_HT'):
+                self.assertEqual(self.request('GET','/api/gauge?site='+key)[0],404)
 
     def test_security_server_identity_and_static_cache_headers(self):
         version=hashlib.sha256(Path(server.PUBLIC,'styles.css').read_bytes()).hexdigest()[:20]
@@ -260,3 +300,8 @@ class ServerTests(unittest.TestCase):
                 results=list(pool.map(server._gauge_reading,['12340000']*5))
             self.assertEqual(download.call_count,1)
             self.assertTrue(all(r['flow']==100 for r in results))
+
+    def test_relative_static_paths_cannot_read_private_files(self):
+        self.assertEqual(self.request_raw('GET','../server.py')[0],403)
+        self.assertEqual(self.request_raw('GET','../map-config.local.json')[0],403)
+        self.assertEqual(self.request_raw('GET','../data/feedback.json')[0],403)

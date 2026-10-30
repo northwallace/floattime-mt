@@ -1,0 +1,76 @@
+{
+ "id": "wind-river-canyon",
+ "name": "Wind River Canyon — Boysen Dam to Wedding of the Waters",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "Every candidate section has a flagged endpoint (tribal, private or cross-state).",
+ "blockers": [
+  "tribal"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0129",
+   "name": "Below Boysen Dam (Wind)",
+   "grade": "pending",
+   "flags": [
+    "tribal"
+   ]
+  },
+  {
+   "id": "WY-ACC-0002",
+   "name": "Wedding of the Waters (Bighorn)",
+   "grade": "verified",
+   "flags": []
+  },
+  {
+   "id": "WY-ACC-0130",
+   "name": "Wolf Creek - Wind River Canyon (Wind)",
+   "grade": "pending",
+   "flags": [
+    "tribal"
+   ]
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "below-boysen-dam-to-wolf-creek-wind-river-canyon",
+   "putIn": "Below Boysen Dam (Wind)",
+   "takeOut": "Wolf Creek - Wind River Canyon (Wind)",
+   "miles": 5.4,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004",
+    "WY-RES-007",
+    "WY-RES-008"
+   ]
+  },
+  {
+   "id": "wolf-creek-wind-river-canyon-to-wedding-of-the-waters",
+   "putIn": "Wolf Creek - Wind River Canyon (Wind)",
+   "takeOut": "Wedding of the Waters (Bighorn)",
+   "miles": 8.2,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "put-in-pending",
+    "put-in-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004",
+    "WY-RES-007",
+    "WY-RES-008"
+   ]
+  }
+ ]
+}

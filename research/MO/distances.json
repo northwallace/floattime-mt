@@ -1,0 +1,2435 @@
+{
+ "generatedBy": "tools/mo_build.py (from tools/mo_nldi.py + tools/mo_nhd.py)",
+ "checkedOn": "2026-10-30",
+ "source": "USGS NLDI (NHDPlus V2) downstream-mainstem flowlines for routing; USGS NHD High Resolution HU4 GeoPackages for pin distances",
+ "method": "Points are ordered per river by chainage along the NLDI downstream-mainstem path from the top point; points closer than 1 mile are merged (agency-preferred point kept). Mileage priority: NPS brochure river miles > USFS site-description miles > NLDI chainage.",
+ "farThresholdM": 150,
+ "points": {
+  "Akers (Ozark NSR)": {
+   "river": "current-river-upper",
+   "distM": 31.1,
+   "nhdSide": "river-left",
+   "chainM": 24292.9,
+   "onLine": true
+  },
+  "Allen Bridge Access": {
+   "river": "shoal-creek",
+   "distM": 10.6,
+   "nhdSide": "river-left",
+   "chainM": 4437.1,
+   "onLine": true
+  },
+  "Allenton Access": {
+   "river": "meramec-river",
+   "distM": 47.2,
+   "nhdSide": "river-left",
+   "chainM": 254461.8,
+   "onLine": true
+  },
+  "Alley Spring (Ozark NSR)": {
+   "river": "jacks-fork",
+   "distM": 11.2,
+   "nhdSide": "river-left",
+   "chainM": 39314.6,
+   "onLine": true
+  },
+  "Anna M. Adams Access": {
+   "river": "gasconade-river",
+   "distM": 55.6,
+   "nhdSide": "river-left",
+   "chainM": 60520.3,
+   "onLine": true
+  },
+  "Baptist (Ozark NSR)": {
+   "river": "current-river-upper",
+   "distM": 55.6,
+   "nhdSide": "river-left",
+   "chainM": 1993.9,
+   "onLine": true
+  },
+  "Baptist Camp Access": {
+   "river": "big-piney-river",
+   "distM": 15.9,
+   "nhdSide": "river-right",
+   "chainM": 3175.5,
+   "onLine": true
+  },
+  "Barclay Conservation Area": {
+   "river": "niangua-river",
+   "distM": 51.8,
+   "nhdSide": "river-left",
+   "chainM": 87827.1,
+   "onLine": true
+  },
+  "Bay Creek (Ozark NSR)": {
+   "river": "jacks-fork",
+   "distM": 15.6,
+   "nhdSide": "river-left",
+   "chainM": 30070.1,
+   "onLine": true
+  },
+  "Bay Nothing Gravel Boat Launch (USFS)": {
+   "river": "current-river-lower",
+   "distM": 60.8,
+   "nhdSide": "river-left",
+   "chainM": 78132.7,
+   "onLine": true
+  },
+  "Bell Chute Access": {
+   "river": "gasconade-river",
+   "distM": 25.0,
+   "nhdSide": "river-left",
+   "chainM": 247367.9,
+   "onLine": true
+  },
+  "Bennett Spring Access": {
+   "river": "niangua-river",
+   "distM": 48.7,
+   "nhdSide": "river-left",
+   "chainM": 77573.2,
+   "onLine": true
+  },
+  "Big John Access": {
+   "river": "niangua-river",
+   "distM": 29.3,
+   "nhdSide": "river-right",
+   "chainM": 31224.0,
+   "onLine": true
+  },
+  "Big Spring (Ozark NSR)": {
+   "river": "current-river-lower",
+   "distM": 65.1,
+   "nhdSide": "river-right",
+   "chainM": 50839.5,
+   "onLine": true
+  },
+  "Binder Community Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 6264.6,
+   "nhdSide": "river-right",
+   "chainM": 342814.3,
+   "onLine": false
+  },
+  "Blackjack Access": {
+   "river": "sac-river",
+   "distM": 49.0,
+   "nhdSide": "river-right",
+   "chainM": 600.0,
+   "onLine": true
+  },
+  "Blair Bridge Access": {
+   "river": "north-fork-river",
+   "distM": 23.4,
+   "nhdSide": "river-left",
+   "chainM": 34978.6,
+   "onLine": true
+  },
+  "Blanchette Landing Access": {
+   "river": "missouri-river-mr340",
+   "distM": 184.7,
+   "nhdSide": "river-left",
+   "chainM": 537844.5,
+   "onLine": true
+  },
+  "Blue Spring (Jacks Fork, Ozark NSR)": {
+   "river": "jacks-fork",
+   "distM": 18.9,
+   "nhdSide": "river-right",
+   "chainM": 4446.3,
+   "onLine": true
+  },
+  "Blue Springs Creek Conservation Area": {
+   "river": "meramec-river",
+   "distM": 10.9,
+   "nhdSide": "river-left",
+   "chainM": 123217.1,
+   "onLine": true
+  },
+  "Boiling Spring Access": {
+   "river": "big-piney-river",
+   "distM": 28.5,
+   "nhdSide": "river-right",
+   "chainM": 43682.8,
+   "onLine": true
+  },
+  "Bonnots Mill Access": {
+   "river": "osage-river-lower",
+   "distM": 146.8,
+   "nhdSide": "river-right",
+   "chainM": 92417.7,
+   "onLine": true
+  },
+  "Bootleg Access": {
+   "river": "big-river",
+   "distM": 204.8,
+   "nhdSide": "river-left",
+   "chainM": 743.7,
+   "onLine": true
+  },
+  "Bradley A. Hammer Memorial Conservation Area": {
+   "river": "black-river",
+   "distM": 28.2,
+   "nhdSide": "river-right",
+   "chainM": 1141.7,
+   "onLine": true
+  },
+  "Brown's Ford Access": {
+   "river": "big-river",
+   "distM": 42.1,
+   "nhdSide": "river-left",
+   "chainM": 123227.9,
+   "onLine": true
+  },
+  "Brunswick Access": {
+   "river": "missouri-river-mr340",
+   "distM": 3328.8,
+   "nhdSide": "river-left",
+   "chainM": 178595.9,
+   "onLine": false
+  },
+  "Buzzard Bluff Access": {
+   "river": "gasconade-river",
+   "distM": 73.7,
+   "nhdSide": "river-left",
+   "chainM": 402.9,
+   "onLine": true
+  },
+  "Campbell Bridge Access": {
+   "river": "meramec-river",
+   "distM": 42.3,
+   "nhdSide": "river-left",
+   "chainM": 116094.8,
+   "onLine": true
+  },
+  "Cane Bluff River Access (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 35.3,
+   "nhdSide": "river-right",
+   "chainM": 16272.3,
+   "onLine": true
+  },
+  "Carl R. Noren Access (Jefferson City)": {
+   "river": "missouri-river-mr340",
+   "distM": 135.1,
+   "nhdSide": "river-left",
+   "chainM": 354334.9,
+   "onLine": true
+  },
+  "Cedar Grove (Ozark NSR)": {
+   "river": "current-river-upper",
+   "distM": 11.0,
+   "nhdSide": "river-right",
+   "chainM": 11962.8,
+   "onLine": true
+  },
+  "Chamois Access": {
+   "river": "missouri-river-mr340",
+   "distM": 250.7,
+   "nhdSide": "river-right",
+   "chainM": 395532.3,
+   "onLine": true
+  },
+  "Charity Access": {
+   "river": "niangua-river",
+   "distM": 21.6,
+   "nhdSide": "river-left",
+   "chainM": 46.4,
+   "onLine": true
+  },
+  "Cherry Corner Access": {
+   "river": "shoal-creek",
+   "distM": 10.4,
+   "nhdSide": "river-left",
+   "chainM": 467.7,
+   "onLine": true
+  },
+  "Chouteau Claim Access": {
+   "river": "bourbeuse-river",
+   "distM": 11.4,
+   "nhdSide": "river-right",
+   "chainM": 193335.3,
+   "onLine": true
+  },
+  "City of Pineville Elk River Access": {
+   "river": "elk-river",
+   "distM": 41.6,
+   "nhdSide": "river-right",
+   "chainM": 391.1,
+   "onLine": true
+  },
+  "Columbia Bottom Conservation Area — Missouri River": {
+   "river": "missouri-river-mr340",
+   "distM": 169.8,
+   "nhdSide": "river-right",
+   "chainM": 575194.9,
+   "onLine": true
+  },
+  "Cooley Lake Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 221.3,
+   "nhdSide": "river-left",
+   "chainM": 41461.2,
+   "onLine": true
+  },
+  "Coon Island Conservation Area": {
+   "river": "black-river",
+   "distM": 12.1,
+   "nhdSide": "river-left",
+   "chainM": 88545.7,
+   "onLine": true
+  },
+  "Cowskin Access": {
+   "river": "elk-river",
+   "distM": 40.5,
+   "nhdSide": "river-right",
+   "chainM": 33300.6,
+   "onLine": true
+  },
+  "Cross Timbers Access": {
+   "river": "pomme-de-terre-river",
+   "distM": 45.7,
+   "nhdSide": "river-left",
+   "chainM": 11385.4,
+   "onLine": true
+  },
+  "Crossroads Access (USFS)": {
+   "river": "big-piney-river",
+   "distM": 198.1,
+   "nhdSide": "river-right",
+   "chainM": 114907.9,
+   "onLine": true
+  },
+  "D. C. Rogers Lake (Fayette)": {
+   "river": "missouri-river-mr340",
+   "distM": 12674.5,
+   "nhdSide": "river-left",
+   "chainM": 224690.3,
+   "onLine": false
+  },
+  "Dalton Bottoms Access": {
+   "river": "missouri-river-mr340",
+   "distM": 172.3,
+   "nhdSide": "river-left",
+   "chainM": 202518.2,
+   "onLine": true
+  },
+  "Dan River Access": {
+   "river": "black-river",
+   "distM": 5.7,
+   "nhdSide": "river-left",
+   "chainM": 54979.2,
+   "onLine": true
+  },
+  "Davis Ford Access": {
+   "river": "osage-fork",
+   "distM": 33.1,
+   "nhdSide": "river-left",
+   "chainM": 73767.0,
+   "onLine": true
+  },
+  "Delaware Town Access": {
+   "river": "james-river",
+   "distM": 64.0,
+   "nhdSide": "river-left",
+   "chainM": 32537.9,
+   "onLine": true
+  },
+  "Dogs Bluff Access": {
+   "river": "big-piney-river",
+   "distM": 23.0,
+   "nhdSide": "river-left",
+   "chainM": 16456.2,
+   "onLine": true
+  },
+  "Dr. Henry A. and Amalia Uhlemeyer Access": {
+   "river": "bourbeuse-river",
+   "distM": 47.5,
+   "nhdSide": "river-left",
+   "chainM": 183158.0,
+   "onLine": true
+  },
+  "Drynob Access": {
+   "river": "osage-fork",
+   "distM": 41.0,
+   "nhdSide": "river-left",
+   "chainM": 65152.2,
+   "onLine": true
+  },
+  "Eagle Bluffs Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 1389.4,
+   "nhdSide": "river-left",
+   "chainM": 308138.8,
+   "onLine": false
+  },
+  "East Gate Access (USFS)": {
+   "river": "big-piney-river",
+   "distM": 99.1,
+   "nhdSide": "river-right",
+   "chainM": 111234.1,
+   "onLine": true
+  },
+  "Flo Cook Access": {
+   "river": "bryant-creek",
+   "distM": 70.9,
+   "nhdSide": "river-right",
+   "chainM": 24377.2,
+   "onLine": true
+  },
+  "Float Camp Recreation Area (USFS)": {
+   "river": "current-river-lower",
+   "distM": 125.8,
+   "nhdSide": "river-left",
+   "chainM": 99414.8,
+   "onLine": true
+  },
+  "Fort Osage County Park (Jackson County)": {
+   "river": "missouri-river-mr340",
+   "distM": 149.9,
+   "nhdSide": "river-right",
+   "chainM": 47722.6,
+   "onLine": true
+  },
+  "Franklin Island Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 159.0,
+   "nhdSide": "river-left",
+   "chainM": 272380.5,
+   "onLine": true
+  },
+  "Fredericksburg Ferry Access": {
+   "river": "gasconade-river",
+   "distM": 54.8,
+   "nhdSide": "river-left",
+   "chainM": 374350.4,
+   "onLine": true
+  },
+  "Gasconade Park Access": {
+   "river": "gasconade-river",
+   "distM": 92.2,
+   "nhdSide": "river-left",
+   "chainM": 387844.1,
+   "onLine": true
+  },
+  "Gooseneck (Ozark NSR)": {
+   "river": "current-river-lower",
+   "distM": 76.7,
+   "nhdSide": "river-right",
+   "chainM": 75052.7,
+   "onLine": true
+  },
+  "Grand Pass Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 363.0,
+   "nhdSide": "river-right",
+   "chainM": 159434.9,
+   "onLine": false
+  },
+  "Greer Crossing (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 150.7,
+   "nhdSide": "river-left",
+   "chainM": 27211.9,
+   "onLine": true
+  },
+  "Gruner Ford Access": {
+   "river": "st-francis-river",
+   "distM": 37.9,
+   "nhdSide": "river-right",
+   "chainM": 776.8,
+   "onLine": true
+  },
+  "Hartsburg Access": {
+   "river": "missouri-river-mr340",
+   "distM": 181.1,
+   "nhdSide": "river-left",
+   "chainM": 329161.9,
+   "onLine": true
+  },
+  "Hazel Hill Community Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 36543.3,
+   "nhdSide": "river-right",
+   "chainM": 71618.2,
+   "onLine": false
+  },
+  "Hazelgreen Access": {
+   "river": "gasconade-river",
+   "distM": 48.5,
+   "nhdSide": "river-left",
+   "chainM": 100645.7,
+   "onLine": true
+  },
+  "Hebron Access": {
+   "river": "north-fork-river",
+   "distM": 92.4,
+   "nhdSide": "river-right",
+   "chainM": 904.3,
+   "onLine": true
+  },
+  "Helds Island Access": {
+   "river": "gasconade-river",
+   "distM": 63.5,
+   "nhdSide": "river-right",
+   "chainM": 361363.8,
+   "onLine": true
+  },
+  "Hendrickson Boat Launch (USFS)": {
+   "river": "black-river",
+   "distM": 213.5,
+   "nhdSide": "river-left",
+   "chainM": 14389.6,
+   "onLine": true
+  },
+  "Hermann Riverfront Park": {
+   "river": "missouri-river-mr340",
+   "distM": 171.5,
+   "nhdSide": "river-right",
+   "chainM": 427622.3,
+   "onLine": true
+  },
+  "Hermitage Access": {
+   "river": "pomme-de-terre-river",
+   "distM": 34.0,
+   "nhdSide": "river-left",
+   "chainM": 656.0,
+   "onLine": true
+  },
+  "Hickory Landing (Ozark NSR)": {
+   "river": "current-river-lower",
+   "distM": 58.1,
+   "nhdSide": "river-left",
+   "chainM": 63615.0,
+   "onLine": true
+  },
+  "Higginsville City Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 15876.0,
+   "nhdSide": "river-right",
+   "chainM": 97017.7,
+   "onLine": false
+  },
+  "Highway 142 River Access (The Narrows, USFS)": {
+   "river": "eleven-point-river",
+   "distM": 82.9,
+   "nhdSide": "river-left",
+   "chainM": 74139.4,
+   "onLine": true
+  },
+  "Hilliard Access": {
+   "river": "black-river",
+   "distM": 27.8,
+   "nhdSide": "river-left",
+   "chainM": 28331.4,
+   "onLine": true
+  },
+  "Holden City Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 41067.8,
+   "nhdSide": "river-right",
+   "chainM": 61331.8,
+   "onLine": false
+  },
+  "Hooten Town Access": {
+   "river": "james-river",
+   "distM": 50.8,
+   "nhdSide": "river-right",
+   "chainM": 51423.7,
+   "onLine": true
+  },
+  "Hull Ford Access": {
+   "river": "osage-fork",
+   "distM": 404.8,
+   "nhdSide": "river-left",
+   "chainM": 86017.6,
+   "onLine": true
+  },
+  "Huzzah Conservation Area — Courtois Creek": {
+   "river": "courtois-creek",
+   "distM": 27.1,
+   "nhdSide": "river-right",
+   "chainM": 798.0,
+   "onLine": true
+  },
+  "Huzzah Conservation Area — Huzzah Creek": {
+   "river": "huzzah-creek",
+   "distM": 35.3,
+   "nhdSide": "river-right",
+   "chainM": 36890.4,
+   "onLine": true
+  },
+  "J. N. Turkey Kearn Memorial Wildlife Area": {
+   "river": "missouri-river-mr340",
+   "distM": 64183.9,
+   "nhdSide": "river-right",
+   "chainM": 117339.7,
+   "onLine": false
+  },
+  "Jerktail Landing (Ozark NSR)": {
+   "river": "current-river-upper",
+   "distM": 56.8,
+   "nhdSide": "river-right",
+   "chainM": 73671.8,
+   "onLine": true
+  },
+  "Jerome Access": {
+   "river": "little-piney-creek",
+   "distM": 46.9,
+   "nhdSide": "river-left",
+   "chainM": 30700.7,
+   "onLine": true
+  },
+  "Joe Crighton Access": {
+   "river": "james-river",
+   "distM": 40.6,
+   "nhdSide": "river-right",
+   "chainM": 95.6,
+   "onLine": true
+  },
+  "Joshua T. Chilton Memorial Landing (Eminence)": {
+   "river": "jacks-fork",
+   "distM": 30.8,
+   "nhdSide": "river-right",
+   "chainM": 50041.2,
+   "onLine": true
+  },
+  "Kansas City Riverfront Park Access": {
+   "river": "missouri-river-mr340",
+   "distM": 159.0,
+   "nhdSide": "river-right",
+   "chainM": 6825.2,
+   "onLine": true
+  },
+  "Kings Bluff Access": {
+   "river": "osage-river-lower",
+   "distM": 93.3,
+   "nhdSide": "river-left",
+   "chainM": 416.1,
+   "onLine": true
+  },
+  "La Russell Access": {
+   "river": "spring-river",
+   "distM": 18.6,
+   "nhdSide": "river-left",
+   "chainM": 681.5,
+   "onLine": true
+  },
+  "LaBenite Park (Sugar Creek)": {
+   "river": "missouri-river-mr340",
+   "distM": 131.7,
+   "nhdSide": "river-right",
+   "chainM": 23251.7,
+   "onLine": true
+  },
+  "Lake Jacomo (Jackson County)": {
+   "river": "missouri-river-mr340",
+   "distM": 20221.8,
+   "nhdSide": "river-right",
+   "chainM": 17291.4,
+   "onLine": false
+  },
+  "Lakeview Park Lake (Mexico)": {
+   "river": "missouri-river-mr340",
+   "distM": 51539.3,
+   "nhdSide": "river-left",
+   "chainM": 398701.8,
+   "onLine": false
+  },
+  "Lane Spring Recreation Area (USFS)": {
+   "river": "little-piney-creek",
+   "distM": 97.5,
+   "nhdSide": "river-right",
+   "chainM": 632.5,
+   "onLine": true
+  },
+  "Lead Mine Conservation Area": {
+   "river": "niangua-river",
+   "distM": 35.2,
+   "nhdSide": "river-left",
+   "chainM": 117568.4,
+   "onLine": true
+  },
+  "Leadwood Access": {
+   "river": "big-river",
+   "distM": 31.6,
+   "nhdSide": "river-right",
+   "chainM": 31268.9,
+   "onLine": true
+  },
+  "Lexington Riverfront Park": {
+   "river": "missouri-river-mr340",
+   "distM": 157.0,
+   "nhdSide": "river-right",
+   "chainM": 80474.3,
+   "onLine": true
+  },
+  "Lick Creek Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 24838.9,
+   "nhdSide": "river-left",
+   "chainM": 286537.1,
+   "onLine": false
+  },
+  "Lions Lake (Warrensburg)": {
+   "river": "missouri-river-mr340",
+   "distM": 47251.2,
+   "nhdSide": "river-right",
+   "chainM": 71682.2,
+   "onLine": false
+  },
+  "Log Yard (Ozark NSR)": {
+   "river": "current-river-lower",
+   "distM": 95.4,
+   "nhdSide": "river-left",
+   "chainM": 16128.2,
+   "onLine": true
+  },
+  "Lone Jack Lake Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 28291.3,
+   "nhdSide": "river-right",
+   "chainM": 59177.6,
+   "onLine": false
+  },
+  "Long Ford Access": {
+   "river": "osage-fork",
+   "distM": 27.7,
+   "nhdSide": "river-right",
+   "chainM": 47905.7,
+   "onLine": true
+  },
+  "Mammoth Access": {
+   "river": "big-river",
+   "distM": 22.1,
+   "nhdSide": "river-left",
+   "chainM": 105715.6,
+   "onLine": true
+  },
+  "Maple Leaf Lake Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 22488.2,
+   "nhdSide": "river-right",
+   "chainM": 76307.4,
+   "onLine": false
+  },
+  "Mari-Osa Access": {
+   "river": "osage-river-lower",
+   "distM": 81.2,
+   "nhdSide": "river-left",
+   "chainM": 79904.5,
+   "onLine": true
+  },
+  "Marshall (Amary Lake)": {
+   "river": "missouri-river-mr340",
+   "distM": 18395.6,
+   "nhdSide": "river-right",
+   "chainM": 148231.5,
+   "onLine": false
+  },
+  "Mason Bridge Access": {
+   "river": "big-piney-river",
+   "distM": 44.0,
+   "nhdSide": "river-right",
+   "chainM": 52883.4,
+   "onLine": true
+  },
+  "Meramec Landing (Valley Park)": {
+   "river": "meramec-river",
+   "distM": 37.1,
+   "nhdSide": "river-left",
+   "chainM": 285241.7,
+   "onLine": true
+  },
+  "Merrill Horse Access": {
+   "river": "big-river",
+   "distM": 22.6,
+   "nhdSide": "river-left",
+   "chainM": 115316.0,
+   "onLine": true
+  },
+  "Miami Access": {
+   "river": "missouri-river-mr340",
+   "distM": 159.3,
+   "nhdSide": "river-right",
+   "chainM": 164862.3,
+   "onLine": true
+  },
+  "Mill Rock Access": {
+   "river": "bourbeuse-river",
+   "distM": 8.6,
+   "nhdSide": "river-right",
+   "chainM": 60084.6,
+   "onLine": true
+  },
+  "Millstream Gardens Conservation Area": {
+   "river": "st-francis-river",
+   "distM": 40.8,
+   "nhdSide": "river-left",
+   "chainM": 33956.5,
+   "onLine": true
+  },
+  "Mineral Springs Access": {
+   "river": "big-piney-river",
+   "distM": 14.3,
+   "nhdSide": "river-right",
+   "chainM": 25690.5,
+   "onLine": true
+  },
+  "Mint Spring Access": {
+   "river": "bourbeuse-river",
+   "distM": 89.9,
+   "nhdSide": "river-right",
+   "chainM": 0.0,
+   "onLine": true
+  },
+  "Mitschele Access": {
+   "river": "gasconade-river",
+   "distM": 9.7,
+   "nhdSide": "river-right",
+   "chainM": 129123.1,
+   "onLine": true
+  },
+  "Moon Valley Access": {
+   "river": "niangua-river",
+   "distM": 17.9,
+   "nhdSide": "river-left",
+   "chainM": 64759.5,
+   "onLine": true
+  },
+  "Mount Shira Access": {
+   "river": "elk-river",
+   "distM": 50.6,
+   "nhdSide": "river-right",
+   "chainM": 11818.2,
+   "onLine": true
+  },
+  "Myrtle Access": {
+   "river": "eleven-point-river",
+   "distM": 50.1,
+   "nhdSide": "river-right",
+   "chainM": 81617.2,
+   "onLine": true
+  },
+  "New Haven Access": {
+   "river": "missouri-river-mr340",
+   "distM": 193.0,
+   "nhdSide": "river-right",
+   "chainM": 453824.5,
+   "onLine": true
+  },
+  "North Fork Recreation Area (USFS)": {
+   "river": "north-fork-river",
+   "distM": 125.4,
+   "nhdSide": "river-left",
+   "chainM": 17988.2,
+   "onLine": true
+  },
+  "Odessa City Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 18914.6,
+   "nhdSide": "river-right",
+   "chainM": 70927.8,
+   "onLine": false
+  },
+  "Osage-Tavern Access": {
+   "river": "osage-river-lower",
+   "distM": 82.5,
+   "nhdSide": "river-right",
+   "chainM": 16912.4,
+   "onLine": true
+  },
+  "Pacific Palisades Conservation Area": {
+   "river": "meramec-river",
+   "distM": 48.0,
+   "nhdSide": "river-left",
+   "chainM": 242633.6,
+   "onLine": true
+  },
+  "Patrick Bridge Access": {
+   "river": "north-fork-river",
+   "distM": 1.0,
+   "nhdSide": "river-left",
+   "chainM": 39197.0,
+   "onLine": true
+  },
+  "Paydown Access": {
+   "river": "gasconade-river",
+   "distM": 57.0,
+   "nhdSide": "river-left",
+   "chainM": 280509.8,
+   "onLine": true
+  },
+  "Pelican Island Access": {
+   "river": "missouri-river-mr340",
+   "distM": 196.1,
+   "nhdSide": "river-right",
+   "chainM": 564119.2,
+   "onLine": true
+  },
+  "Peters Lake (Fayette)": {
+   "river": "missouri-river-mr340",
+   "distM": 11836.6,
+   "nhdSide": "river-left",
+   "chainM": 224679.5,
+   "onLine": false
+  },
+  "Pikes Camp Access": {
+   "river": "osage-river-lower",
+   "distM": 72.8,
+   "nhdSide": "river-left",
+   "chainM": 63035.1,
+   "onLine": true
+  },
+  "Pine Ridge Lake (Salisbury)": {
+   "river": "missouri-river-mr340",
+   "distM": 16663.8,
+   "nhdSide": "river-left",
+   "chainM": 203170.3,
+   "onLine": false
+  },
+  "Pointers Creek Access": {
+   "river": "gasconade-river",
+   "distM": 30.8,
+   "nhdSide": "river-left",
+   "chainM": 320010.5,
+   "onLine": true
+  },
+  "Powder Mill (Ozark NSR)": {
+   "river": "current-river-lower",
+   "distM": 102.7,
+   "nhdSide": "river-left",
+   "chainM": 271.5,
+   "onLine": true
+  },
+  "Prairie Slough Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 49838.4,
+   "nhdSide": "river-left",
+   "chainM": 540677.6,
+   "onLine": false
+  },
+  "Prosperine Access": {
+   "river": "niangua-river",
+   "distM": 33.4,
+   "nhdSide": "river-right",
+   "chainM": 95194.6,
+   "onLine": true
+  },
+  "Pulltite (Ozark NSR)": {
+   "river": "current-river-upper",
+   "distM": 23.6,
+   "nhdSide": "river-left",
+   "chainM": 38898.3,
+   "onLine": true
+  },
+  "Rader Access": {
+   "river": "osage-fork",
+   "distM": 181.0,
+   "nhdSide": "river-left",
+   "chainM": 731.0,
+   "onLine": true
+  },
+  "Ralph Cox Memorial Access": {
+   "river": "james-river",
+   "distM": 44.1,
+   "nhdSide": "river-left",
+   "chainM": 85676.7,
+   "onLine": true
+  },
+  "Ray County Community Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 15553.3,
+   "nhdSide": "river-left",
+   "chainM": 81854.1,
+   "onLine": false
+  },
+  "Red Bluff Recreation Area (USFS)": {
+   "river": "huzzah-creek",
+   "distM": 163.2,
+   "nhdSide": "river-left",
+   "chainM": 2484.4,
+   "onLine": true
+  },
+  "Redhorse Access": {
+   "river": "meramec-river",
+   "distM": 44.6,
+   "nhdSide": "river-right",
+   "chainM": 179502.0,
+   "onLine": true
+  },
+  "Reiker Ford Access": {
+   "river": "bourbeuse-river",
+   "distM": 76.3,
+   "nhdSide": "river-left",
+   "chainM": 136487.7,
+   "onLine": true
+  },
+  "Riddle Bridge Access": {
+   "river": "gasconade-river",
+   "distM": 45.8,
+   "nhdSide": "river-right",
+   "chainM": 188986.0,
+   "onLine": true
+  },
+  "River 'Round Conservation Area": {
+   "river": "meramec-river",
+   "distM": 37.8,
+   "nhdSide": "river-left",
+   "chainM": 204294.8,
+   "onLine": true
+  },
+  "Riverton East River Access (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 71.7,
+   "nhdSide": "river-left",
+   "chainM": 60096.4,
+   "onLine": true
+  },
+  "Riverton West River Access (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 265.5,
+   "nhdSide": "river-right",
+   "chainM": 60259.3,
+   "onLine": true
+  },
+  "Riverview Access": {
+   "river": "meramec-river",
+   "distM": 46.6,
+   "nhdSide": "river-left",
+   "chainM": 65490.4,
+   "onLine": true
+  },
+  "Roberts Field (Ozark NSR)": {
+   "river": "current-river-lower",
+   "distM": 60.8,
+   "nhdSide": "river-right",
+   "chainM": 7008.3,
+   "onLine": true
+  },
+  "Rocky Creek Conservation Area": {
+   "river": "current-river-lower",
+   "distM": 36.5,
+   "nhdSide": "river-right",
+   "chainM": 1969.3,
+   "onLine": true
+  },
+  "Rollins Ferry Access": {
+   "river": "gasconade-river",
+   "distM": 40.3,
+   "nhdSide": "river-left",
+   "chainM": 307910.9,
+   "onLine": true
+  },
+  "Roselle Access": {
+   "river": "st-francis-river",
+   "distM": 27.5,
+   "nhdSide": "river-right",
+   "chainM": 29612.5,
+   "onLine": true
+  },
+  "Ross Access": {
+   "river": "big-piney-river",
+   "distM": 23.1,
+   "nhdSide": "river-right",
+   "chainM": 91005.6,
+   "onLine": true
+  },
+  "Rothwell Park Lake (Moberly)": {
+   "river": "missouri-river-mr340",
+   "distM": 39229.7,
+   "nhdSide": "river-left",
+   "chainM": 221050.4,
+   "onLine": false
+  },
+  "Round Spring (Ozark NSR)": {
+   "river": "current-river-upper",
+   "distM": 49.3,
+   "nhdSide": "river-right",
+   "chainM": 53720.4,
+   "onLine": true
+  },
+  "Rudolf Bennitt Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 31555.8,
+   "nhdSide": "river-left",
+   "chainM": 286024.3,
+   "onLine": false
+  },
+  "Rymers (Ozark NSR)": {
+   "river": "jacks-fork",
+   "distM": 49.3,
+   "nhdSide": "river-right",
+   "chainM": 15246.0,
+   "onLine": true
+  },
+  "Sand Ford Access": {
+   "river": "meramec-river",
+   "distM": 24.6,
+   "nhdSide": "river-left",
+   "chainM": 150583.4,
+   "onLine": true
+  },
+  "Sappington Bridge Access": {
+   "river": "meramec-river",
+   "distM": 42.4,
+   "nhdSide": "river-left",
+   "chainM": 131051.8,
+   "onLine": true
+  },
+  "Schlicht Springs Access": {
+   "river": "gasconade-river",
+   "distM": 49.3,
+   "nhdSide": "river-left",
+   "chainM": 150929.3,
+   "onLine": true
+  },
+  "Scotts Ford Access": {
+   "river": "meramec-river",
+   "distM": 13.1,
+   "nhdSide": "river-left",
+   "chainM": 53855.6,
+   "onLine": true
+  },
+  "Shawnee Creek (Ozark NSR)": {
+   "river": "jacks-fork",
+   "distM": 75.6,
+   "nhdSide": "river-right",
+   "chainM": 57328.0,
+   "onLine": true
+  },
+  "Shelvin Rock Access": {
+   "river": "james-river",
+   "distM": 20.3,
+   "nhdSide": "river-left",
+   "chainM": 41859.2,
+   "onLine": true
+  },
+  "Short Bend Access": {
+   "river": "meramec-river",
+   "distM": 161.8,
+   "nhdSide": "river-left",
+   "chainM": 615.4,
+   "onLine": true
+  },
+  "Simmons Ford Access": {
+   "river": "big-piney-river",
+   "distM": 9.4,
+   "nhdSide": "river-left",
+   "chainM": 312.7,
+   "onLine": true
+  },
+  "Slabtown Recreation Area (USFS)": {
+   "river": "big-piney-river",
+   "distM": 90.6,
+   "nhdSide": "river-right",
+   "chainM": 66353.7,
+   "onLine": true
+  },
+  "Spanish Lake (St. Louis County)": {
+   "river": "missouri-river-mr340",
+   "distM": 2731.0,
+   "nhdSide": "river-right",
+   "chainM": 572711.2,
+   "onLine": false
+  },
+  "Sportsman's Park Access (Poplar Bluff)": {
+   "river": "black-river",
+   "distM": 37.8,
+   "nhdSide": "river-left",
+   "chainM": 42130.0,
+   "onLine": true
+  },
+  "St. Thomas Ferry Access": {
+   "river": "osage-river-lower",
+   "distM": 92.1,
+   "nhdSide": "river-left",
+   "chainM": 41787.0,
+   "onLine": true
+  },
+  "Sterling Price Community Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 14195.7,
+   "nhdSide": "river-left",
+   "chainM": 202972.0,
+   "onLine": false
+  },
+  "Stump Island Park Access": {
+   "river": "missouri-river-mr340",
+   "distM": 164.7,
+   "nhdSide": "river-left",
+   "chainM": 222946.2,
+   "onLine": true
+  },
+  "Sunfish Lake (St. Louis County)": {
+   "river": "missouri-river-mr340",
+   "distM": 2023.6,
+   "nhdSide": "river-right",
+   "chainM": 572940.3,
+   "onLine": false
+  },
+  "Sycamore Access": {
+   "river": "bryant-creek",
+   "distM": 10.9,
+   "nhdSide": "river-right",
+   "chainM": 92.6,
+   "onLine": true
+  },
+  "Syenite Access": {
+   "river": "st-francis-river",
+   "distM": 21.2,
+   "nhdSide": "river-right",
+   "chainM": 12496.7,
+   "onLine": true
+  },
+  "T. L. Wright Memorial Access (Doniphan)": {
+   "river": "current-river-lower",
+   "distM": 76.9,
+   "nhdSide": "river-left",
+   "chainM": 107802.9,
+   "onLine": true
+  },
+  "Taylors Landing Access": {
+   "river": "missouri-river-mr340",
+   "distM": 186.7,
+   "nhdSide": "river-right",
+   "chainM": 290133.1,
+   "onLine": true
+  },
+  "Tea Access": {
+   "river": "bourbeuse-river",
+   "distM": 89.8,
+   "nhdSide": "river-left",
+   "chainM": 31492.2,
+   "onLine": true
+  },
+  "Teal Lake (Mexico)": {
+   "river": "missouri-river-mr340",
+   "distM": 50761.1,
+   "nhdSide": "river-left",
+   "chainM": 398717.1,
+   "onLine": false
+  },
+  "Thomasville River Access (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 3.3,
+   "nhdSide": "river-right",
+   "chainM": 676.3,
+   "onLine": true
+  },
+  "Tipton Ford Access": {
+   "river": "shoal-creek",
+   "distM": 25.4,
+   "nhdSide": "river-right",
+   "chainM": 25810.3,
+   "onLine": true
+  },
+  "Tri-City Community Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 38670.4,
+   "nhdSide": "river-left",
+   "chainM": 291164.3,
+   "onLine": false
+  },
+  "Turner Mill North River Access (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 54.3,
+   "nhdSide": "river-left",
+   "chainM": 35353.4,
+   "onLine": true
+  },
+  "Turner Mill South River Access (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 43.8,
+   "nhdSide": "river-right",
+   "chainM": 35448.1,
+   "onLine": true
+  },
+  "Two Rivers (Ozark NSR)": {
+   "river": "current-river-upper",
+   "distM": 44.9,
+   "nhdSide": "river-right",
+   "chainM": 82966.8,
+   "onLine": true
+  },
+  "Unidentified NPS canoe access POI 14342": {
+   "river": "current-river-lower",
+   "distM": 55.4,
+   "nhdSide": "river-right",
+   "chainM": 31597.9,
+   "onLine": true
+  },
+  "Unidentified NPS canoe access POI 15210": {
+   "river": "jacks-fork",
+   "distM": 30.3,
+   "nhdSide": "river-right",
+   "chainM": 94.1,
+   "onLine": true
+  },
+  "Unidentified NPS canoe access POI 15653": {
+   "river": "current-river-lower",
+   "distM": 52.2,
+   "nhdSide": "river-left",
+   "chainM": 22314.5,
+   "onLine": true
+  },
+  "Unidentified NPS canoe access POI 15840": {
+   "river": "jacks-fork",
+   "distM": 12.2,
+   "nhdSide": "river-left",
+   "chainM": 3870.3,
+   "onLine": true
+  },
+  "Unidentified NPS canoe access POI 15997": {
+   "river": "current-river-lower",
+   "distM": 85.1,
+   "nhdSide": "river-left",
+   "chainM": 18056.9,
+   "onLine": true
+  },
+  "Unidentified NPS canoe access POI 16322": {
+   "river": "current-river-upper",
+   "distM": 49.7,
+   "nhdSide": "river-left",
+   "chainM": 112.7,
+   "onLine": true
+  },
+  "Unidentified NPS canoe access POI 16736": {
+   "river": "current-river-upper",
+   "distM": 10.1,
+   "nhdSide": "river-left",
+   "chainM": 20529.7,
+   "onLine": true
+  },
+  "Union Access": {
+   "river": "bourbeuse-river",
+   "distM": 12.0,
+   "nhdSide": "river-right",
+   "chainM": 168244.7,
+   "onLine": true
+  },
+  "Van Buren (Ozark NSR)": {
+   "river": "current-river-lower",
+   "distM": 54.8,
+   "nhdSide": "river-left",
+   "chainM": 42247.8,
+   "onLine": true
+  },
+  "Van Buren Riverfront Park": {
+   "river": "current-river-lower",
+   "distM": 100.8,
+   "nhdSide": "river-left",
+   "chainM": 43563.9,
+   "onLine": true
+  },
+  "Vandalia Community Lake": {
+   "river": "missouri-river-mr340",
+   "distM": 58827.5,
+   "nhdSide": "river-left",
+   "chainM": 424906.8,
+   "onLine": false
+  },
+  "Warren Bridge Access": {
+   "river": "bryant-creek",
+   "distM": 0.1,
+   "nhdSide": "river-left",
+   "chainM": 12036.2,
+   "onLine": true
+  },
+  "Water Works Lake (Moberly)": {
+   "river": "missouri-river-mr340",
+   "distM": 38929.1,
+   "nhdSide": "river-left",
+   "chainM": 221052.9,
+   "onLine": false
+  },
+  "Weldon Spring Conservation Area": {
+   "river": "missouri-river-mr340",
+   "distM": 252.1,
+   "nhdSide": "river-left",
+   "chainM": 505419.4,
+   "onLine": true
+  },
+  "Wenkel Ford Access": {
+   "river": "bourbeuse-river",
+   "distM": 75.6,
+   "nhdSide": "river-right",
+   "chainM": 73452.4,
+   "onLine": true
+  },
+  "Whitten River Access (USFS)": {
+   "river": "eleven-point-river",
+   "distM": 48.0,
+   "nhdSide": "river-right",
+   "chainM": 45310.6,
+   "onLine": true
+  },
+  "Wilbur Allen Memorial Conservation Area": {
+   "river": "gasconade-river",
+   "distM": 51.1,
+   "nhdSide": "river-right",
+   "chainM": 12556.8,
+   "onLine": true
+  },
+  "Wildcat Access": {
+   "river": "shoal-creek",
+   "distM": 43.7,
+   "nhdSide": "river-right",
+   "chainM": 37035.1,
+   "onLine": true
+  },
+  "William G. and Erma Parke White Memorial Wildlife Area": {
+   "river": "missouri-river-mr340",
+   "distM": 57889.5,
+   "nhdSide": "river-left",
+   "chainM": 437131.6,
+   "onLine": false
+  },
+  "Williams Ford Access": {
+   "river": "niangua-river",
+   "distM": 192.5,
+   "nhdSide": "river-left",
+   "chainM": 48694.9,
+   "onLine": true
+  }
+ },
+ "alternates": {
+  "Van Buren Riverfront Park": {
+   "keptInstead": "Van Buren (Ozark NSR)",
+   "river": "current-river-lower",
+   "apartMi": 0.82
+  },
+  "Turner Mill North River Access (USFS)": {
+   "keptInstead": "Turner Mill South River Access (USFS)",
+   "river": "eleven-point-river",
+   "apartMi": 0.06
+  },
+  "Riverton West River Access (USFS)": {
+   "keptInstead": "Riverton East River Access (USFS)",
+   "river": "eleven-point-river",
+   "apartMi": 0.1
+  }
+ },
+ "excludedLakeRamps": {
+  "Hazel Hill Community Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 36543.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Lakeview Park Lake (Mexico)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 51539.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Water Works Lake (Moberly)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 38929.1 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Marshall (Amary Lake)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 18395.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Binder Community Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 6264.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Grand Pass Conservation Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 363.0 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Tri-City Community Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 38670.4 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Vandalia Community Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 58827.5 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Lone Jack Lake Conservation Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 28291.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Odessa City Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 18914.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Prairie Slough Conservation Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 49838.4 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "William G. and Erma Parke White Memorial Wildlife Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 57889.5 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Brunswick Access": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 3328.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Sterling Price Community Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 14195.7 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Ray County Community Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 15553.3 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Peters Lake (Fayette)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 11836.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Lick Creek Conservation Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 24838.9 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Holden City Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 41067.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Spanish Lake (St. Louis County)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 2731.0 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Sunfish Lake (St. Louis County)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 2023.6 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Rudolf Bennitt Conservation Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 31555.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Pine Ridge Lake (Salisbury)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 16663.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "D. C. Rogers Lake (Fayette)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 12674.5 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Eagle Bluffs Conservation Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 1389.4 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Higginsville City Lake": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 15876.0 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Maple Leaf Lake Conservation Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 22488.2 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "J. N. Turkey Kearn Memorial Wildlife Area": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 64183.9 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Teal Lake (Mexico)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 50761.1 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Rothwell Park Lake (Moberly)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 39229.7 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Lions Lake (Warrensburg)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 47251.2 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access.",
+  "Lake Jacomo (Jackson County)": "Assigned to the Missouri River in error: the MDC ramp is on a lake/reservoir, 20221.8 m from the NLDI Missouri River line. Excluded from sections and grading; not a Missouri River access."
+ },
+ "offReach": {},
+ "sections": {
+  "baptist-to-cedar-grove": {
+   "river": "current-river-upper",
+   "miles": 6,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 6.2
+  },
+  "cedar-grove-to-akers": {
+   "river": "current-river-upper",
+   "miles": 7,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 7.7
+  },
+  "akers-to-pulltite": {
+   "river": "current-river-upper",
+   "miles": 9,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 9.1
+  },
+  "pulltite-to-round-spring": {
+   "river": "current-river-upper",
+   "miles": 11,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 9.2
+  },
+  "round-spring-to-jerktail-landing": {
+   "river": "current-river-upper",
+   "miles": 10,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 12.4
+  },
+  "jerktail-landing-to-two-rivers": {
+   "river": "current-river-upper",
+   "miles": 7,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 5.8
+  },
+  "blue-spring-to-rymers": {
+   "river": "jacks-fork",
+   "miles": 5,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 6.7
+  },
+  "rymers-to-bay-creek": {
+   "river": "jacks-fork",
+   "miles": 8,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 9.2
+  },
+  "bay-creek-to-alley-spring": {
+   "river": "jacks-fork",
+   "miles": 5,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 5.7
+  },
+  "alley-spring-to-joshua-t-chilton-memorial-landing": {
+   "river": "jacks-fork",
+   "miles": 6.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.7
+  },
+  "joshua-t-chilton-memorial-landing-to-shawnee-creek": {
+   "river": "jacks-fork",
+   "miles": 4.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.5
+  },
+  "shawnee-creek-to-two-rivers": {
+   "river": "jacks-fork",
+   "miles": 3,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": null
+  },
+  "two-rivers-to-powder-mill": {
+   "river": "current-river-lower",
+   "miles": 7,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": null
+  },
+  "powder-mill-to-rocky-creek-conservation-area": {
+   "river": "current-river-lower",
+   "miles": 1.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 1.1
+  },
+  "rocky-creek-conservation-area-to-roberts-field": {
+   "river": "current-river-lower",
+   "miles": 3.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.1
+  },
+  "roberts-field-to-log-yard": {
+   "river": "current-river-lower",
+   "miles": 6,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 5.7
+  },
+  "log-yard-to-van-buren": {
+   "river": "current-river-lower",
+   "miles": 16,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 16.2
+  },
+  "van-buren-to-big-spring": {
+   "river": "current-river-lower",
+   "miles": 5,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 5.3
+  },
+  "big-spring-to-hickory-landing": {
+   "river": "current-river-lower",
+   "miles": 9,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 7.9
+  },
+  "hickory-landing-to-gooseneck": {
+   "river": "current-river-lower",
+   "miles": 7,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 7.1
+  },
+  "gooseneck-to-bay-nothing-gravel-boat-launch": {
+   "river": "current-river-lower",
+   "miles": 1.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 1.9
+  },
+  "bay-nothing-gravel-boat-launch-to-float-camp-recreation-area": {
+   "river": "current-river-lower",
+   "miles": 13.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.2
+  },
+  "float-camp-recreation-area-to-t-l-wright-memorial-access": {
+   "river": "current-river-lower",
+   "miles": 5.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.2
+  },
+  "thomasville-river-access-to-cane-bluff-river-access": {
+   "river": "eleven-point-river",
+   "miles": 9.3,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 9.7
+  },
+  "cane-bluff-river-access-to-greer-crossing": {
+   "river": "eleven-point-river",
+   "miles": 7.3,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 6.8
+  },
+  "greer-crossing-to-turner-mill-south-river-access": {
+   "river": "eleven-point-river",
+   "miles": 4.9,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 5.1
+  },
+  "turner-mill-south-river-access-to-whitten-river-access": {
+   "river": "eleven-point-river",
+   "miles": 6.1,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 6.1
+  },
+  "whitten-river-access-to-riverton-east-river-access": {
+   "river": "eleven-point-river",
+   "miles": 7.6,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 9.2
+  },
+  "riverton-east-river-access-to-highway-142-river-access": {
+   "river": "eleven-point-river",
+   "miles": 8.7,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 8.7
+  },
+  "highway-142-river-access-to-myrtle-access": {
+   "river": "eleven-point-river",
+   "miles": 4.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.6
+  },
+  "short-bend-access-to-scotts-ford-access": {
+   "river": "meramec-river",
+   "miles": 33.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 33.1
+  },
+  "scotts-ford-access-to-riverview-access": {
+   "river": "meramec-river",
+   "miles": 7.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.2
+  },
+  "riverview-access-to-campbell-bridge-access": {
+   "river": "meramec-river",
+   "miles": 31.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 31.4
+  },
+  "campbell-bridge-access-to-blue-springs-creek-conservation-area": {
+   "river": "meramec-river",
+   "miles": 4.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.4
+  },
+  "blue-springs-creek-conservation-area-to-sappington-bridge-access": {
+   "river": "meramec-river",
+   "miles": 4.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.9
+  },
+  "sappington-bridge-access-to-sand-ford-access": {
+   "river": "meramec-river",
+   "miles": 12.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 12.1
+  },
+  "sand-ford-access-to-redhorse-access": {
+   "river": "meramec-river",
+   "miles": 18.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 18.0
+  },
+  "redhorse-access-to-river-round-conservation-area": {
+   "river": "meramec-river",
+   "miles": 15.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 15.4
+  },
+  "river-round-conservation-area-to-pacific-palisades-conservation-area": {
+   "river": "meramec-river",
+   "miles": 23.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 23.8
+  },
+  "pacific-palisades-conservation-area-to-allenton-access": {
+   "river": "meramec-river",
+   "miles": 7.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.3
+  },
+  "allenton-access-to-meramec-landing": {
+   "river": "meramec-river",
+   "miles": 19.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.1
+  },
+  "red-bluff-recreation-area-to-huzzah-conservation-area-huzzah-creek": {
+   "river": "huzzah-creek",
+   "miles": 21.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 21.4
+  },
+  "simmons-ford-access-to-baptist-camp-access": {
+   "river": "big-piney-river",
+   "miles": 1.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 1.8
+  },
+  "baptist-camp-access-to-dogs-bluff-access": {
+   "river": "big-piney-river",
+   "miles": 8.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.3
+  },
+  "dogs-bluff-access-to-mineral-springs-access": {
+   "river": "big-piney-river",
+   "miles": 5.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.7
+  },
+  "mineral-springs-access-to-boiling-spring-access": {
+   "river": "big-piney-river",
+   "miles": 11.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 11.2
+  },
+  "boiling-spring-access-to-mason-bridge-access": {
+   "river": "big-piney-river",
+   "miles": 5.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.7
+  },
+  "mason-bridge-access-to-slabtown-recreation-area": {
+   "river": "big-piney-river",
+   "miles": 8,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 8.4
+  },
+  "slabtown-recreation-area-to-ross-access": {
+   "river": "big-piney-river",
+   "miles": 10,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 15.3
+  },
+  "ross-access-to-east-gate-access": {
+   "river": "big-piney-river",
+   "miles": 12,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 12.6
+  },
+  "east-gate-access-to-crossroads-access": {
+   "river": "big-piney-river",
+   "miles": 3,
+   "milePriority": 2,
+   "mileSource": "USFS Mark Twain NF recreation-site description",
+   "nhdMiles": 2.3
+  },
+  "lane-spring-recreation-area-to-jerome-access": {
+   "river": "little-piney-creek",
+   "miles": 18.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 18.7
+  },
+  "buzzard-bluff-access-to-wilbur-allen-memorial-conservation-area": {
+   "river": "gasconade-river",
+   "miles": 7.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.6
+  },
+  "wilbur-allen-memorial-conservation-area-to-anna-m-adams-access": {
+   "river": "gasconade-river",
+   "miles": 29.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 29.8
+  },
+  "anna-m-adams-access-to-hazelgreen-access": {
+   "river": "gasconade-river",
+   "miles": 24.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 24.9
+  },
+  "hazelgreen-access-to-mitschele-access": {
+   "river": "gasconade-river",
+   "miles": 17.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 17.7
+  },
+  "mitschele-access-to-schlicht-springs-access": {
+   "river": "gasconade-river",
+   "miles": 13.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.5
+  },
+  "schlicht-springs-access-to-riddle-bridge-access": {
+   "river": "gasconade-river",
+   "miles": 23.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 23.6
+  },
+  "riddle-bridge-access-to-bell-chute-access": {
+   "river": "gasconade-river",
+   "miles": 36.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 36.3
+  },
+  "bell-chute-access-to-paydown-access": {
+   "river": "gasconade-river",
+   "miles": 20.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 20.6
+  },
+  "paydown-access-to-rollins-ferry-access": {
+   "river": "gasconade-river",
+   "miles": 17.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 17.0
+  },
+  "rollins-ferry-access-to-pointers-creek-access": {
+   "river": "gasconade-river",
+   "miles": 7.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.5
+  },
+  "pointers-creek-access-to-helds-island-access": {
+   "river": "gasconade-river",
+   "miles": 25.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 25.7
+  },
+  "helds-island-access-to-fredericksburg-ferry-access": {
+   "river": "gasconade-river",
+   "miles": 8.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.1
+  },
+  "fredericksburg-ferry-access-to-gasconade-park-access": {
+   "river": "gasconade-river",
+   "miles": 8.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.4
+  },
+  "rader-access-to-long-ford-access": {
+   "river": "osage-fork",
+   "miles": 29.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 29.3
+  },
+  "long-ford-access-to-drynob-access": {
+   "river": "osage-fork",
+   "miles": 10.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.7
+  },
+  "drynob-access-to-davis-ford-access": {
+   "river": "osage-fork",
+   "miles": 5.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.4
+  },
+  "davis-ford-access-to-hull-ford-access": {
+   "river": "osage-fork",
+   "miles": 7.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.6
+  },
+  "charity-access-to-big-john-access": {
+   "river": "niangua-river",
+   "miles": 19.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.4
+  },
+  "big-john-access-to-williams-ford-access": {
+   "river": "niangua-river",
+   "miles": 10.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.9
+  },
+  "williams-ford-access-to-moon-valley-access": {
+   "river": "niangua-river",
+   "miles": 10.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.0
+  },
+  "moon-valley-access-to-bennett-spring-access": {
+   "river": "niangua-river",
+   "miles": 8.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.0
+  },
+  "bennett-spring-access-to-barclay-conservation-area": {
+   "river": "niangua-river",
+   "miles": 6.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.4
+  },
+  "barclay-conservation-area-to-prosperine-access": {
+   "river": "niangua-river",
+   "miles": 4.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.6
+  },
+  "prosperine-access-to-lead-mine-conservation-area": {
+   "river": "niangua-river",
+   "miles": 13.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.9
+  },
+  "hebron-access-to-north-fork-recreation-area": {
+   "river": "north-fork-river",
+   "miles": 10.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.6
+  },
+  "north-fork-recreation-area-to-blair-bridge-access": {
+   "river": "north-fork-river",
+   "miles": 10.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.6
+  },
+  "blair-bridge-access-to-patrick-bridge-access": {
+   "river": "north-fork-river",
+   "miles": 2.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.6
+  },
+  "sycamore-access-to-warren-bridge-access": {
+   "river": "bryant-creek",
+   "miles": 7.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.4
+  },
+  "warren-bridge-access-to-flo-cook-access": {
+   "river": "bryant-creek",
+   "miles": 7.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.7
+  },
+  "bradley-a-hammer-memorial-conservation-area-to-hendrickson-boat-launch": {
+   "river": "black-river",
+   "miles": 8.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.2
+  },
+  "hendrickson-boat-launch-to-hilliard-access": {
+   "river": "black-river",
+   "miles": 8.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.7
+  },
+  "hilliard-access-to-sportsman-s-park-access": {
+   "river": "black-river",
+   "miles": 8.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.6
+  },
+  "sportsman-s-park-access-to-dan-river-access": {
+   "river": "black-river",
+   "miles": 8.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.0
+  },
+  "dan-river-access-to-coon-island-conservation-area": {
+   "river": "black-river",
+   "miles": 20.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 20.9
+  },
+  "gruner-ford-access-to-syenite-access": {
+   "river": "st-francis-river",
+   "miles": 7.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.3
+  },
+  "syenite-access-to-roselle-access": {
+   "river": "st-francis-river",
+   "miles": 10.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.6
+  },
+  "roselle-access-to-millstream-gardens-conservation-area": {
+   "river": "st-francis-river",
+   "miles": 2.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.7
+  },
+  "mint-spring-access-to-tea-access": {
+   "river": "bourbeuse-river",
+   "miles": 19.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.6
+  },
+  "tea-access-to-mill-rock-access": {
+   "river": "bourbeuse-river",
+   "miles": 17.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 17.8
+  },
+  "mill-rock-access-to-wenkel-ford-access": {
+   "river": "bourbeuse-river",
+   "miles": 8.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.3
+  },
+  "wenkel-ford-access-to-reiker-ford-access": {
+   "river": "bourbeuse-river",
+   "miles": 39.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 39.2
+  },
+  "reiker-ford-access-to-union-access": {
+   "river": "bourbeuse-river",
+   "miles": 19.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.7
+  },
+  "union-access-to-dr-henry-a-and-amalia-uhlemeyer-access": {
+   "river": "bourbeuse-river",
+   "miles": 9.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 9.3
+  },
+  "dr-henry-a-and-amalia-uhlemeyer-access-to-chouteau-claim-access": {
+   "river": "bourbeuse-river",
+   "miles": 6.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.3
+  },
+  "bootleg-access-to-leadwood-access": {
+   "river": "big-river",
+   "miles": 19.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.0
+  },
+  "leadwood-access-to-mammoth-access": {
+   "river": "big-river",
+   "miles": 46.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 46.3
+  },
+  "mammoth-access-to-merrill-horse-access": {
+   "river": "big-river",
+   "miles": 6.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.0
+  },
+  "merrill-horse-access-to-brown-s-ford-access": {
+   "river": "big-river",
+   "miles": 4.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.9
+  },
+  "joe-crighton-access-to-delaware-town-access": {
+   "river": "james-river",
+   "miles": 20.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 20.2
+  },
+  "delaware-town-access-to-shelvin-rock-access": {
+   "river": "james-river",
+   "miles": 5.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.8
+  },
+  "shelvin-rock-access-to-hooten-town-access": {
+   "river": "james-river",
+   "miles": 5.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.9
+  },
+  "hooten-town-access-to-ralph-cox-memorial-access": {
+   "river": "james-river",
+   "miles": 21.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 21.3
+  },
+  "city-of-pineville-elk-river-access-to-mount-shira-access": {
+   "river": "elk-river",
+   "miles": 7.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.1
+  },
+  "mount-shira-access-to-cowskin-access": {
+   "river": "elk-river",
+   "miles": 13.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.3
+  },
+  "cherry-corner-access-to-allen-bridge-access": {
+   "river": "shoal-creek",
+   "miles": 2.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.5
+  },
+  "allen-bridge-access-to-tipton-ford-access": {
+   "river": "shoal-creek",
+   "miles": 13.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.3
+  },
+  "tipton-ford-access-to-wildcat-access": {
+   "river": "shoal-creek",
+   "miles": 7.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.0
+  },
+  "hermitage-access-to-cross-timbers-access": {
+   "river": "pomme-de-terre-river",
+   "miles": 6.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.7
+  },
+  "kings-bluff-access-to-osage-tavern-access": {
+   "river": "osage-river-lower",
+   "miles": 10.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.3
+  },
+  "osage-tavern-access-to-st-thomas-ferry-access": {
+   "river": "osage-river-lower",
+   "miles": 15.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 15.5
+  },
+  "st-thomas-ferry-access-to-pikes-camp-access": {
+   "river": "osage-river-lower",
+   "miles": 13.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.2
+  },
+  "pikes-camp-access-to-mari-osa-access": {
+   "river": "osage-river-lower",
+   "miles": 10.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.5
+  },
+  "mari-osa-access-to-bonnots-mill-access": {
+   "river": "osage-river-lower",
+   "miles": 7.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.8
+  },
+  "kansas-city-riverfront-park-access-to-labenite-park": {
+   "river": "missouri-river-mr340",
+   "miles": 10.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.2
+  },
+  "labenite-park-to-cooley-lake-conservation-area": {
+   "river": "missouri-river-mr340",
+   "miles": 11.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 11.3
+  },
+  "cooley-lake-conservation-area-to-fort-osage-county-park": {
+   "river": "missouri-river-mr340",
+   "miles": 3.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.9
+  },
+  "fort-osage-county-park-to-lexington-riverfront-park": {
+   "river": "missouri-river-mr340",
+   "miles": 20.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 20.4
+  },
+  "lexington-riverfront-park-to-miami-access": {
+   "river": "missouri-river-mr340",
+   "miles": 52.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 52.4
+  },
+  "miami-access-to-dalton-bottoms-access": {
+   "river": "missouri-river-mr340",
+   "miles": 23.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 23.4
+  },
+  "dalton-bottoms-access-to-stump-island-park-access": {
+   "river": "missouri-river-mr340",
+   "miles": 12.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 12.7
+  },
+  "stump-island-park-access-to-franklin-island-conservation-area": {
+   "river": "missouri-river-mr340",
+   "miles": 30.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 30.7
+  },
+  "franklin-island-conservation-area-to-taylors-landing-access": {
+   "river": "missouri-river-mr340",
+   "miles": 11.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 11.0
+  },
+  "taylors-landing-access-to-hartsburg-access": {
+   "river": "missouri-river-mr340",
+   "miles": 24.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 24.3
+  },
+  "hartsburg-access-to-carl-r-noren-access": {
+   "river": "missouri-river-mr340",
+   "miles": 15.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 15.6
+  },
+  "carl-r-noren-access-to-chamois-access": {
+   "river": "missouri-river-mr340",
+   "miles": 25.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 25.6
+  },
+  "chamois-access-to-hermann-riverfront-park": {
+   "river": "missouri-river-mr340",
+   "miles": 19.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.9
+  },
+  "hermann-riverfront-park-to-new-haven-access": {
+   "river": "missouri-river-mr340",
+   "miles": 16.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 16.3
+  },
+  "new-haven-access-to-weldon-spring-conservation-area": {
+   "river": "missouri-river-mr340",
+   "miles": 32.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 32.1
+  },
+  "weldon-spring-conservation-area-to-blanchette-landing-access": {
+   "river": "missouri-river-mr340",
+   "miles": 20.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 20.1
+  },
+  "blanchette-landing-access-to-pelican-island-access": {
+   "river": "missouri-river-mr340",
+   "miles": 16.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 16.3
+  },
+  "pelican-island-access-to-columbia-bottom-conservation-area-missouri-river": {
+   "river": "missouri-river-mr340",
+   "miles": 6.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.9
+  },
+  "round-spring-to-two-rivers": {
+   "river": "current-river-upper",
+   "miles": 17,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 18.2
+  },
+  "akers-to-two-rivers": {
+   "river": "current-river-upper",
+   "miles": 37,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 36.5
+  },
+  "big-spring-to-gooseneck": {
+   "river": "current-river-lower",
+   "miles": 16,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 15.0
+  },
+  "van-buren-to-gooseneck": {
+   "river": "current-river-lower",
+   "miles": 21,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 20.4
+  },
+  "powder-mill-to-van-buren": {
+   "river": "current-river-lower",
+   "miles": 26,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 26.1
+  },
+  "two-rivers-to-big-spring": {
+   "river": "current-river-lower",
+   "miles": 38,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": null
+  },
+  "alley-spring-to-two-rivers": {
+   "river": "jacks-fork",
+   "miles": 15,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": null
+  },
+  "rymers-to-alley-spring": {
+   "river": "jacks-fork",
+   "miles": 13,
+   "milePriority": 1,
+   "mileSource": "NPS Ozark NSR brochure river miles",
+   "nhdMiles": 15.0
+  }
+ }
+}

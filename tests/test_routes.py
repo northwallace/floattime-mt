@@ -12,10 +12,23 @@ class RouteTests(unittest.TestCase):
     def test_reviewed_only_exports_and_never_changes_timing(self):
         before=copy.deepcopy(self.catalog);outputs=build_outputs(ROOT,self.catalog)
         entries=json.loads(outputs['public/routes/index.json'])['routes']
-        self.assertEqual(len(entries),13)
+        self.assertEqual(sum(e['state']=='MT' for e in entries),13)
+        self.assertEqual(sum(e['state']=='WY' for e in entries),46)
         self.assertTrue(all(not e['features']['remainingTime'] and not e['features']['distanceEstimate'] for e in entries))
         self.assertNotIn('public/routes/madison-lower--blacks-ford-greycliff.json',outputs)
         self.assertEqual(before,self.catalog)
+    def test_wyoming_source_order_and_resolution_evidence_are_enforced(self):
+        base=ROOT/'catalog/routes/WY'
+        directed=json.loads((base/'north-platte-gray-reef-casper--government-bridge-to-whitetail.json').read_text())
+        generalized=json.loads((base/'north-platte-gray-reef-casper--gray-reef-to-lusby.json').read_text())
+        for original in (directed,generalized):
+            validate(original,self.catalog,ROOT)
+            record=copy.deepcopy(original);record['direction']['featureIds']=['missing-feature']
+            with self.assertRaisesRegex(ValueError,'missing'):validate(record,self.catalog,ROOT)
+            record=copy.deepcopy(original);record['direction']['featureIds'].reverse()
+            with self.assertRaisesRegex(ValueError,'disconnected|reversed'):validate(record,self.catalog,ROOT)
+        record=copy.deepcopy(generalized);record['resolutionReview']['sha256']='0'*64
+        with self.assertRaisesRegex(ValueError,'changed'):validate(record,self.catalog,ROOT)
     def test_endpoint_and_mileage_edits_force_review(self):
         for field in ['putInCoords','miles']:
             catalog=copy.deepcopy(self.catalog);section=next(s for r in catalog['rivers'] if r['id']=='blackfoot' for s in r['sections'] if s['id']==self.record['sectionId'])

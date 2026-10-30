@@ -1,0 +1,3544 @@
+{
+  "version": 1,
+  "state": "MT",
+  "generatedOn": "2026-10-30",
+  "sections": [
+    {
+      "id": "beaverhead/dam-high-bridge",
+      "state": "MT",
+      "river": "Beaverhead River",
+      "riverId": "beaverhead",
+      "sectionId": "dam-high-bridge",
+      "label": "Clark Canyon Dam → High Bridge FAS",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Clark Canyon Dam",
+          "accessId": "acc-ffc4a6b11ceb56c68f49",
+          "existing": {
+            "status": "pending",
+            "note": "The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch.",
+            "id": "acc-ffc4a6b11ceb56c68f49",
+            "name": "Clark Canyon Dam",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "High Bridge FAS",
+          "accessId": "acc-78c684688f5555bbb79f",
+          "existing": {
+            "status": "verified",
+            "lat": 45.0178190558662,
+            "lon": -112.83750618412812,
+            "accessType": "Hand launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753552",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753552",
+            "verifiedOn": "2026-10-23",
+            "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped ramp position, and downstream flow direction.",
+            "id": "acc-78c684688f5555bbb79f",
+            "name": "High Bridge FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "access-points-pending"
+      ],
+      "riverPathNextAction": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch."
+    },
+    {
+      "id": "beaverhead/high-bridge-barretts",
+      "state": "MT",
+      "river": "Beaverhead River",
+      "riverId": "beaverhead",
+      "sectionId": "high-bridge-barretts",
+      "label": "High Bridge FAS → Barretts Station Park (above dam)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "High Bridge FAS",
+          "accessId": "acc-78c684688f5555bbb79f",
+          "existing": {
+            "status": "verified",
+            "lat": 45.0178190558662,
+            "lon": -112.83750618412812,
+            "accessType": "Hand launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753552",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753552",
+            "verifiedOn": "2026-10-23",
+            "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped ramp position, and downstream flow direction.",
+            "id": "acc-78c684688f5555bbb79f",
+            "name": "High Bridge FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Barretts Station Park (above dam)",
+          "accessId": "acc-ea38164accc35c83b4c2",
+          "existing": {
+            "status": "pending",
+            "note": "Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam.",
+            "id": "acc-ea38164accc35c83b4c2",
+            "name": "Barretts Station Park (above dam)",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "access-points-pending"
+      ],
+      "riverPathNextAction": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam."
+    },
+    {
+      "id": "big-hole/divide-melrose",
+      "state": "MT",
+      "river": "Big Hole River",
+      "riverId": "big-hole",
+      "sectionId": "divide-melrose",
+      "label": "Divide Bridge → Melrose (Salmon Fly FAS)",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Divide Bridge",
+          "accessId": "acc-22aac53e517b51bbbda8",
+          "existing": {
+            "status": "verified",
+            "lat": 45.753435,
+            "lon": -112.774953,
+            "accessType": "Boat ramp",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Divide Bridge Campground",
+            "sourceUrl": "https://www.blm.gov/visit/divide-bridge-campground",
+            "verifiedOn": "2026-10-23",
+            "note": "Official BLM coordinate for the Divide Bridge recreation complex with boat-ramp access.",
+            "id": "acc-22aac53e517b51bbbda8",
+            "name": "Divide Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Melrose (Salmon Fly FAS)",
+          "accessId": "acc-d6120e349eba5d99baed",
+          "existing": {
+            "status": "verified",
+            "lat": 45.624395702849,
+            "lon": -112.68806152101074,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Salmon Fly Fishing Access Site 39753438",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-d6120e349eba5d99baed",
+            "name": "Melrose (Salmon Fly FAS)",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "big-hole/melrose-glen",
+      "state": "MT",
+      "river": "Big Hole River",
+      "riverId": "big-hole",
+      "sectionId": "melrose-glen",
+      "label": "Melrose (Salmon Fly FAS) → Glen FAS",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Melrose (Salmon Fly FAS)",
+          "accessId": "acc-d6120e349eba5d99baed",
+          "existing": {
+            "status": "verified",
+            "lat": 45.624395702849,
+            "lon": -112.68806152101074,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Salmon Fly Fishing Access Site 39753438",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-d6120e349eba5d99baed",
+            "name": "Melrose (Salmon Fly FAS)",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Glen FAS",
+          "accessId": "acc-fecb78ad7e025540b3e5",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 45.46666639860114,
+              "lon": -112.66907179886113,
+              "feature": "FWP managed fishing access site location"
+            },
+            "directions": "Use the signed Glen FAS and follow the site road to the concrete boat ramp; the FWP site marker is inland from the river.",
+            "sourceName": "Montana FWP Glen Fishing Access Site 39753546",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753546",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "id": "acc-fecb78ad7e025540b3e5",
+            "aliases": [],
+            "name": "Glen FAS",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "big-hole/glen-notch",
+      "state": "MT",
+      "river": "Big Hole River",
+      "riverId": "big-hole",
+      "sectionId": "glen-notch",
+      "label": "Glen FAS → Notch Bottom FAS",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Glen FAS",
+          "accessId": "acc-fecb78ad7e025540b3e5",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 45.46666639860114,
+              "lon": -112.66907179886113,
+              "feature": "FWP managed fishing access site location"
+            },
+            "directions": "Use the signed Glen FAS and follow the site road to the concrete boat ramp; the FWP site marker is inland from the river.",
+            "sourceName": "Montana FWP Glen Fishing Access Site 39753546",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753546",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "id": "acc-fecb78ad7e025540b3e5",
+            "aliases": [],
+            "name": "Glen FAS",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Notch Bottom FAS",
+          "accessId": "acc-4b75a0672a8f5dd88d56",
+          "existing": {
+            "status": "verified",
+            "lat": 45.43651824973338,
+            "lon": -112.56647058393813,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Tony Schoonen Fishing Access Site 39753572",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753572",
+            "verifiedOn": "2026-10-23",
+            "note": "Notch Bottom was renamed Tony Schoonen FAS; the coordinate replaces the former approximate point.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-4b75a0672a8f5dd88d56",
+            "name": "Notch Bottom FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "bitterroot-upper/darby-wally",
+      "state": "MT",
+      "river": "Bitterroot River (Darby / Hamilton)",
+      "riverId": "bitterroot-upper",
+      "sectionId": "darby-wally",
+      "label": "Darby → Wally Crawford FAS",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Darby",
+          "accessId": "acc-76780e2316355a758b3e",
+          "existing": {
+            "status": "verified",
+            "lat": 46.014564037375365,
+            "lon": -114.1639236852125,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Darby Bridge Fishing Access Site 39754519",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754519",
+            "verifiedOn": "2026-10-24",
+            "note": "The catalog label is Darby; the official site name is Darby Bridge. Exact coordinate and ramp type are from the current Montana FWP managed-access layer.",
+            "id": "acc-76780e2316355a758b3e",
+            "name": "Darby",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Wally Crawford FAS",
+          "accessId": "acc-9f4d349dbc335dd689ed",
+          "existing": {
+            "status": "verified",
+            "lat": 46.09178884207888,
+            "lon": -114.17494280586477,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Wally Crawford Fishing Access Site 39754217",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754217",
+            "verifiedOn": "2026-10-24",
+            "note": "The catalog label includes FAS; exact river-side coordinate and ramp type are from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction.",
+            "id": "acc-9f4d349dbc335dd689ed",
+            "name": "Wally Crawford FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "bitterroot-upper/wally-hamilton",
+      "state": "MT",
+      "river": "Bitterroot River (Darby / Hamilton)",
+      "riverId": "bitterroot-upper",
+      "sectionId": "wally-hamilton",
+      "label": "Wally Crawford FAS → Angler's Roost (Hamilton)",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Wally Crawford FAS",
+          "accessId": "acc-9f4d349dbc335dd689ed",
+          "existing": {
+            "status": "verified",
+            "lat": 46.09178884207888,
+            "lon": -114.17494280586477,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Wally Crawford Fishing Access Site 39754217",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754217",
+            "verifiedOn": "2026-10-24",
+            "note": "The catalog label includes FAS; exact river-side coordinate and ramp type are from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction.",
+            "id": "acc-9f4d349dbc335dd689ed",
+            "name": "Wally Crawford FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Angler's Roost (Hamilton)",
+          "accessId": "acc-e15b81033cef56d28dc7",
+          "existing": {
+            "status": "verified",
+            "lat": 46.19893625776134,
+            "lon": -114.16944085381994,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Angler's Roost Fishing Access Site 39753889",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753889",
+            "verifiedOn": "2026-10-24",
+            "note": "The official site name is Angler's Roost; exact river-side coordinate and ramp type are from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction.",
+            "id": "acc-e15b81033cef56d28dc7",
+            "name": "Angler's Roost (Hamilton)",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "mileage-difference-over-5-percent"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "bitterroot/bell-crossing-stevi",
+      "state": "MT",
+      "river": "Bitterroot River (Stevensville)",
+      "riverId": "bitterroot",
+      "sectionId": "bell-crossing-stevi",
+      "label": "Bell Crossing → John & Nancy Owen FAS (Stevensville Bridge)",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Bell Crossing",
+          "accessId": "acc-8159554652a05cec9286",
+          "existing": {
+            "status": "verified",
+            "lat": 46.4443416261623,
+            "lon": -114.12630602302092,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Bell Crossing Fishing Access Site 39754137",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754137",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "id": "acc-8159554652a05cec9286",
+            "name": "Bell Crossing",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "John & Nancy Owen FAS (Stevensville Bridge)",
+          "accessId": "acc-c2be8e5b451c5370ae40",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 46.52119,
+              "lon": -114.10643,
+              "feature": "FWP fishing-access facility location"
+            },
+            "directions": "From US 93, take Stevensville Cutoff Road east about ¼ mile. Enter the signed John & Nancy Owen FAS on the north side of the road; use the designated launch, not the highway bridge.",
+            "sourceName": "Montana FWP — John & Nancy Owen Fishing Access Site",
+            "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+            "coordinateSourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+            "verifiedOn": "2026-10-28",
+            "note": "FWP documents boating access at this facility. The site coordinate and March 2026 boundary map locate the access area, not a surveyed ramp edge. FWP’s June 2026 announcement describes the gravel launch and expanded trailer parking; the GIS boat-facility attribute has not caught up.",
+            "accessType": "Gravel launch; approximate facility location",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "id": "acc-c2be8e5b451c5370ae40",
+            "aliases": [],
+            "name": "John & Nancy Owen FAS (Stevensville Bridge)",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "bitterroot/stevi-florence",
+      "state": "MT",
+      "river": "Bitterroot River (Stevensville)",
+      "riverId": "bitterroot",
+      "sectionId": "stevi-florence",
+      "label": "John & Nancy Owen FAS (Stevensville Bridge) → Florence Bridge",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The existing 9-mile figure conflicts with the FWP centerline (about 10 miles between these facility locations). The map is approximate; float-time estimates await a reviewed landing-to-landing distance.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "John & Nancy Owen FAS (Stevensville Bridge)",
+          "accessId": "acc-c2be8e5b451c5370ae40",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 46.52119,
+              "lon": -114.10643,
+              "feature": "FWP fishing-access facility location"
+            },
+            "directions": "From US 93, take Stevensville Cutoff Road east about ¼ mile. Enter the signed John & Nancy Owen FAS on the north side of the road; use the designated launch, not the highway bridge.",
+            "sourceName": "Montana FWP — John & Nancy Owen Fishing Access Site",
+            "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+            "coordinateSourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=91552932",
+            "verifiedOn": "2026-10-28",
+            "note": "FWP documents boating access at this facility. The site coordinate and March 2026 boundary map locate the access area, not a surveyed ramp edge. FWP’s June 2026 announcement describes the gravel launch and expanded trailer parking; the GIS boat-facility attribute has not caught up.",
+            "accessType": "Gravel launch; approximate facility location",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "id": "acc-c2be8e5b451c5370ae40",
+            "aliases": [],
+            "name": "John & Nancy Owen FAS (Stevensville Bridge)",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Florence Bridge",
+          "accessId": "acc-5fa18958b8e655a8bcb5",
+          "existing": {
+            "status": "verified",
+            "lat": 46.63211733128685,
+            "lon": -114.05155012142006,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Florence Bridge Fishing Access Site 39754145",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754145",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-5fa18958b8e655a8bcb5",
+            "name": "Florence Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "catalog-distance-under-review",
+        "mileage-difference-over-5-percent"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "bitterroot/florence-buckhouse",
+      "state": "MT",
+      "river": "Bitterroot River (Stevensville)",
+      "riverId": "bitterroot",
+      "sectionId": "florence-buckhouse",
+      "label": "Florence Bridge → Buckhouse Bridge (Missoula)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Florence Bridge",
+          "accessId": "acc-5fa18958b8e655a8bcb5",
+          "existing": {
+            "status": "verified",
+            "lat": 46.63211733128685,
+            "lon": -114.05155012142006,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Florence Bridge Fishing Access Site 39754145",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754145",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-5fa18958b8e655a8bcb5",
+            "name": "Florence Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Buckhouse Bridge (Missoula)",
+          "accessId": "acc-0903f68355da586d94dd",
+          "existing": {
+            "status": "pending",
+            "note": "The bridge-area access is locally managed; an exact legal river-side ramp and current agency record have not been confirmed.",
+            "id": "acc-0903f68355da586d94dd",
+            "name": "Buckhouse Bridge (Missoula)",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch."
+    },
+    {
+      "id": "blackfoot/russell-gates-roundup",
+      "state": "MT",
+      "river": "Blackfoot River",
+      "riverId": "blackfoot",
+      "sectionId": "russell-gates-roundup",
+      "label": "Russell Gates FAS → Roundup Bridge",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Russell Gates FAS",
+          "accessId": "acc-8de1438f8b905466ab3d",
+          "existing": {
+            "status": "verified",
+            "lat": 47.02344262685744,
+            "lon": -113.30603653697402,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Russell Gates Memorial Fishing Access Site 39754195",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754195",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "id": "acc-8de1438f8b905466ab3d",
+            "name": "Russell Gates FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Roundup Bridge",
+          "accessId": "acc-c9c0d69766c0540fb063",
+          "existing": {
+            "status": "verified",
+            "lat": 46.9459918608496,
+            "lon": -113.43312040341276,
+            "accessType": "Raft slide launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Roundup Fishing Access Site 39753898",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753898",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-c9c0d69766c0540fb063",
+            "name": "Roundup Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "blackfoot/roundup-johnsrud",
+      "state": "MT",
+      "river": "Blackfoot River",
+      "riverId": "blackfoot",
+      "sectionId": "roundup-johnsrud",
+      "label": "Roundup Bridge → Johnsrud Park",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Roundup Bridge",
+          "accessId": "acc-c9c0d69766c0540fb063",
+          "existing": {
+            "status": "verified",
+            "lat": 46.9459918608496,
+            "lon": -113.43312040341276,
+            "accessType": "Raft slide launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Roundup Fishing Access Site 39753898",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753898",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-c9c0d69766c0540fb063",
+            "name": "Roundup Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Johnsrud Park",
+          "accessId": "acc-be7b06d3f8b054a0a7bd",
+          "existing": {
+            "status": "verified",
+            "lat": 46.91645116775823,
+            "lon": -113.67855354818647,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Johnsrud Park Fishing Access Site 39754243",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754243",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-be7b06d3f8b054a0a7bd",
+            "name": "Johnsrud Park",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "blackfoot/johnsrud-weigh-station",
+      "state": "MT",
+      "river": "Blackfoot River",
+      "riverId": "blackfoot",
+      "sectionId": "johnsrud-weigh-station",
+      "label": "Johnsrud Park → Weigh Station (Bonner)",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Johnsrud Park",
+          "accessId": "acc-be7b06d3f8b054a0a7bd",
+          "existing": {
+            "status": "verified",
+            "lat": 46.91645116775823,
+            "lon": -113.67855354818647,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Johnsrud Park Fishing Access Site 39754243",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754243",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-be7b06d3f8b054a0a7bd",
+            "name": "Johnsrud Park",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Weigh Station (Bonner)",
+          "accessId": "acc-558fbb03fb1051389001",
+          "existing": {
+            "status": "verified",
+            "lat": 46.87970354275769,
+            "lon": -113.85249265590265,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Weigh Station Fishing Access Site 39754561",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754561",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-558fbb03fb1051389001",
+            "name": "Weigh Station (Bonner)",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "clark-fork-gorge/cyr-tarkio",
+      "state": "MT",
+      "river": "Clark Fork (Alberton Gorge)",
+      "riverId": "clark-fork-gorge",
+      "sectionId": "cyr-tarkio",
+      "label": "Cyr Bridge FAS → Tarkio",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Cyr Bridge FAS",
+          "accessId": "acc-6520e687a34e5440ac92",
+          "existing": {
+            "status": "verified",
+            "lat": 47.005287332032054,
+            "lon": -114.5791518727528,
+            "accessType": "Raft slide launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Cyr Bridge Fishing Access Site 39754149",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754149",
+            "verifiedOn": "2026-10-24",
+            "note": "The catalog label includes FAS; exact river-side coordinate and launch type are from the current Montana FWP managed-access layer.",
+            "id": "acc-6520e687a34e5440ac92",
+            "name": "Cyr Bridge FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Tarkio",
+          "accessId": "acc-6fd90bcdcecc53ce9bbc",
+          "existing": {
+            "status": "verified",
+            "lat": 47.013776077060456,
+            "lon": -114.73736449818338,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Tarkio Fishing Access Site 39754209",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754209",
+            "verifiedOn": "2026-10-24",
+            "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction.",
+            "id": "acc-6fd90bcdcecc53ce9bbc",
+            "name": "Tarkio",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "clark-fork/sharon-caras",
+      "state": "MT",
+      "river": "Clark Fork River (Missoula)",
+      "riverId": "clark-fork",
+      "sectionId": "sharon-caras",
+      "label": "Sha-Ron (East Missoula) → Caras Park",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Caras Terrace access is documented, but the legacy 6-mile distance has not been reconciled with the completed walk-in exit. Distance and float-time estimates remain withheld pending a reviewed river measurement.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Sha-Ron (East Missoula)",
+          "accessId": "acc-f2bc24b7c2ce59eb9584",
+          "existing": {
+            "status": "verified",
+            "lat": 46.88136426519026,
+            "lon": -113.93466268232673,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Sha-Ron Fishing Access Site 39754199",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754199",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "id": "acc-f2bc24b7c2ce59eb9584",
+            "name": "Sha-Ron (East Missoula)",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Caras Park",
+          "accessId": "acc-7f9a3354dbc95ce7802a",
+          "existing": {
+            "status": "access-verified",
+            "note": "The city confirms Caras Terrace river access completed in May/June 2025. The permit supplies a project-area coordinate, not an exact waterline exit. Approximate area marker only; no verified bank or vehicle-ramp claim.",
+            "id": "acc-7f9a3354dbc95ce7802a",
+            "aliases": [],
+            "areaCenter": {
+              "lat": 46.8689,
+              "lon": -113.9969,
+              "feature": "City Caras Terrace river-access project area; permit application section B1, not a surveyed landing"
+            },
+            "directions": "Use the signed Caras Terrace river-access stairs and path at Caras Park. Scout the exit before floating; this is walk-in river access, not a trailer boat ramp. Brennan’s Wave is nearby.",
+            "sourceName": "City of Missoula — Caras Terrace completion update and river-access permit",
+            "sourceUrl": "https://www.engagemissoula.com/clark-fork-river-restoration-access-project",
+            "coordinateSourceUrl": "https://www.ci.missoula.mt.us/DocumentCenter/View/73087/Clark-Fork-River-Caras-Park-Joint-Permit-Application",
+            "verifiedOn": "2026-10-29",
+            "accessType": "River access (area)",
+            "operator": "City of Missoula",
+            "name": "Caras Park",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "source-not-configured"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "clark-fork/caras-kelly-island",
+      "state": "MT",
+      "river": "Clark Fork River (Missoula)",
+      "riverId": "clark-fork",
+      "sectionId": "caras-kelly-island",
+      "label": "Caras Park → Kelly Island",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Do not use this listing to plan a casual float. Missoula identifies Silver Park as the last public exit before the downstream Grass Valley diversion dam, with Kelly Island below the dam. A suitable route and access plan have not been established.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Caras Park",
+          "accessId": "acc-7f9a3354dbc95ce7802a",
+          "existing": {
+            "status": "access-verified",
+            "note": "The city confirms Caras Terrace river access completed in May/June 2025. The permit supplies a project-area coordinate, not an exact waterline exit. Approximate area marker only; no verified bank or vehicle-ramp claim.",
+            "id": "acc-7f9a3354dbc95ce7802a",
+            "aliases": [],
+            "areaCenter": {
+              "lat": 46.8689,
+              "lon": -113.9969,
+              "feature": "City Caras Terrace river-access project area; permit application section B1, not a surveyed landing"
+            },
+            "directions": "Use the signed Caras Terrace river-access stairs and path at Caras Park. Scout the exit before floating; this is walk-in river access, not a trailer boat ramp. Brennan’s Wave is nearby.",
+            "sourceName": "City of Missoula — Caras Terrace completion update and river-access permit",
+            "sourceUrl": "https://www.engagemissoula.com/clark-fork-river-restoration-access-project",
+            "coordinateSourceUrl": "https://www.ci.missoula.mt.us/DocumentCenter/View/73087/Clark-Fork-River-Caras-Park-Joint-Permit-Application",
+            "verifiedOn": "2026-10-29",
+            "accessType": "River access (area)",
+            "operator": "City of Missoula",
+            "name": "Caras Park",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Kelly Island",
+          "accessId": "acc-4d73207af27a520385c4",
+          "existing": {
+            "status": "verified",
+            "lat": 46.86687101667108,
+            "lon": -114.10005486359526,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Kelly Island Fishing Access Site 39754163",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754163",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-4d73207af27a520385c4",
+            "name": "Kelly Island",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "Do not use this listing to plan a casual float. Missoula identifies Silver Park as the last public exit before the downstream Grass Valley diversion dam, with Kelly Island below the dam. A suitable route and access plan have not been established."
+    },
+    {
+      "id": "clarks-fork-yst/bridger-edgar",
+      "state": "MT",
+      "river": "Clarks Fork of the Yellowstone",
+      "riverId": "clarks-fork-yst",
+      "sectionId": "bridger-edgar",
+      "label": "Bridger → Edgar",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "An exact legal take-out at Edgar has not been established for this listing. A town or bridge name is not enough to plan an exit.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Bridger",
+          "accessId": "acc-ec3c990a5b345b30a978",
+          "existing": {
+            "status": "verified",
+            "lat": 45.29623645879013,
+            "lon": -108.90050082345967,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Bridger Fishing Access Site 39754495",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754495",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "id": "acc-ec3c990a5b345b30a978",
+            "name": "Bridger",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Edgar",
+          "accessId": "acc-a937f1badc0550039707",
+          "existing": {
+            "status": "pending",
+            "note": "No current managing-agency record has been found for an exact public boat take-out at the catalog label.",
+            "id": "acc-a937f1badc0550039707",
+            "name": "Edgar",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "An exact legal take-out at Edgar has not been established for this listing. A town or bridge name is not enough to plan an exit."
+    },
+    {
+      "id": "dearborn/hwy200-missouri",
+      "state": "MT",
+      "river": "Dearborn River",
+      "riverId": "dearborn",
+      "sectionId": "hwy200-missouri",
+      "label": "Dearborn Highway 287 bridge → Mid Canon FAS (Missouri River)",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "unavailable",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Dearborn Highway 287 bridge",
+          "accessId": "acc-9956484ff9595238915d",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 47.1992,
+              "lon": -112.09597,
+              "feature": "Highway bridge launch location published for the RMS 2024 trip"
+            },
+            "directions": "Use the documented Highway 287 bridge pull-off. This is an undeveloped launch: inspect the muddy approach and large potholes before taking a trailer down.",
+            "sourceName": "River Management Society — 2024 Dearborn day-trip logistics",
+            "sourceUrl": "https://rms.memberclicks.net/assets/Chapters/Northwest/2024/RMS%20DAY%20TRIP%20INFORMATION%20Dearborn%20River.pdf",
+            "coordinateSourceUrl": "https://rms.memberclicks.net/assets/Chapters/Northwest/2024/RMS%20DAY%20TRIP%20INFORMATION%20Dearborn%20River.pdf",
+            "verifiedOn": "2026-10-28",
+            "note": "RMS identifies the launch and publishes these coordinates. Treat them as the bridge access area, not a surveyed water-edge ramp. This is Highway 287, not Highway 200 or Bean Lake.",
+            "accessType": "Undeveloped bridge launch",
+            "id": "acc-9956484ff9595238915d",
+            "aliases": [],
+            "name": "Dearborn Highway 287 bridge",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Mid Canon FAS (Missouri River)",
+          "accessId": "acc-4d4f060b8ed25cceb74f",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 47.12548411608166,
+              "lon": -111.88509596607486,
+              "feature": "FWP Mid Canon facility location"
+            },
+            "directions": "Take out at the signed Mid Canon FAS on the Missouri River, reached from Old US Highway 91. The trip continues about one mile on the Missouri after the Dearborn confluence; the confluence itself is not the take-out.",
+            "sourceName": "Montana FWP — Mid Canon FAS; RMS Dearborn trip plan",
+            "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/visitmaps/fas/39753694.pdf",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1/query?where=1%3D1&outFields=%2A&outSR=4326&returnGeometry=true&f=json",
+            "verifiedOn": "2026-10-28",
+            "note": "FWP’s managed-site inventory documents a gravel ramp and its facility point. The official site map identifies the recreation area; an exact landing-edge coordinate is not claimed.",
+            "accessType": "Gravel ramp; approximate facility location",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "id": "acc-4d4f060b8ed25cceb74f",
+            "aliases": [],
+            "name": "Mid Canon FAS (Missouri River)",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "source-not-configured"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "gallatin-canyon/greek-creek-storm-castle",
+      "state": "MT",
+      "river": "Gallatin River (Canyon)",
+      "riverId": "gallatin-canyon",
+      "sectionId": "greek-creek-storm-castle",
+      "label": "Greek Creek → Storm Castle",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Greek Creek Campground now has a restored rock-terrace river access (completed May 2025), but the project documentation does not identify a designated raft launch. The older survey also distinguishes the campground from an upstream pull-out and Upper from Lower Storm Castle. Confirm the intended launch and take-out before mapping or using the old mileage.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Greek Creek",
+          "accessId": "acc-e560e1249b865791950a",
+          "existing": {
+            "status": "pending",
+            "note": "The Forest Service recreation area is documented, but an exact legal river-side rafting launch coordinate has not been confirmed from a current agency access record.",
+            "id": "acc-e560e1249b865791950a",
+            "name": "Greek Creek",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Storm Castle",
+          "accessId": "acc-0e1736c5d6d95b68b087",
+          "existing": {
+            "status": "pending",
+            "note": "The Forest Service recreation area is documented, but an exact legal river-side rafting take-out and its downstream bank have not been confirmed from a current agency access record.",
+            "id": "acc-0e1736c5d6d95b68b087",
+            "name": "Storm Castle",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The 2015 access survey distinguishes Greek Creek Campground from its upstream pull-out, and Upper Storm Castle from Lower Storm Castle. Greek Creek’s bank was rebuilt in 2024–2025; the current designated raft launch must be reconciled with those older points before mapping this trip."
+    },
+    {
+      "id": "gallatin-lower/gateway-shedds",
+      "state": "MT",
+      "river": "Gallatin River (Valley)",
+      "riverId": "gallatin-lower",
+      "sectionId": "gateway-shedds",
+      "label": "Gallatin Gateway (Axtell Bridge) → Shedd's Bridge",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "unavailable",
+      "blocker": "Shedd's Bridge: The official FWP access guide marks this site closed for public safety due to an unstable river bank, and it is absent from the current managed-access inventory. Do not use it as a take-out without current agency confirmation.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Gallatin Gateway (Axtell Bridge)",
+          "accessId": "acc-fbb80e59102957fc9047",
+          "existing": {
+            "status": "verified",
+            "lat": 45.62339998483584,
+            "lon": -111.20487388402618,
+            "accessType": "Hand launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753492",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753492",
+            "verifiedOn": "2026-10-23",
+            "note": "The official site name is Axtell Bridge; coordinate and launch type are from the current Montana FWP managed-access layer.",
+            "id": "acc-fbb80e59102957fc9047",
+            "name": "Gallatin Gateway (Axtell Bridge)",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Shedd's Bridge",
+          "accessId": "acc-47b98e7c553f52d88431",
+          "existing": {
+            "status": "pending",
+            "note": "The official FWP access guide marks this site closed for public safety due to an unstable river bank, and it is absent from the current managed-access inventory. Do not use it as a take-out without current agency confirmation.",
+            "id": "acc-47b98e7c553f52d88431",
+            "name": "Shedd's Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "access-points-pending"
+      ],
+      "riverPathNextAction": "Shedd's Bridge: The official FWP access guide marks this site closed for public safety due to an unstable river bank, and it is absent from the current managed-access inventory. Do not use it as a take-out without current agency confirmation."
+    },
+    {
+      "id": "jefferson-canyon/cardwell-sappington",
+      "state": "MT",
+      "river": "Jefferson River (Canyon / Three Forks)",
+      "riverId": "jefferson-canyon",
+      "sectionId": "cardwell-sappington",
+      "label": "Cardwell Bridge FAS → Sappington Bridge",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Cardwell Bridge FAS",
+          "accessId": "acc-3b909de5e88d50a5b4ab",
+          "existing": {
+            "status": "verified",
+            "lat": 45.85384185806343,
+            "lon": -111.95093536982858,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753432",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753432",
+            "verifiedOn": "2026-10-23",
+            "note": "The catalog label includes FAS; coordinate and ramp type are from the current Montana FWP managed-access layer.",
+            "id": "acc-3b909de5e88d50a5b4ab",
+            "name": "Cardwell Bridge FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Sappington Bridge",
+          "accessId": "acc-d55c9b0240f852a5b30a",
+          "existing": {
+            "status": "verified",
+            "lat": 45.80401168142719,
+            "lon": -111.75128608252389,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753444",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753444",
+            "verifiedOn": "2026-10-23",
+            "note": "Exact river-side access coordinate and ramp type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped ramp position, and downstream flow direction.",
+            "id": "acc-d55c9b0240f852a5b30a",
+            "name": "Sappington Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "jefferson-canyon/williams-drouillard",
+      "state": "MT",
+      "river": "Jefferson River (Canyon / Three Forks)",
+      "riverId": "jefferson-canyon",
+      "sectionId": "williams-drouillard",
+      "label": "Williams Bridge FAS → Drouillard FAS",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Williams Bridge FAS",
+          "accessId": "acc-0aaf7a2b9b38534d80fe",
+          "existing": {
+            "status": "verified",
+            "lat": 45.80214402428195,
+            "lon": -111.69599021963292,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753458",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753458",
+            "verifiedOn": "2026-10-23",
+            "note": "The official site name is Williams’ Bridge; coordinate and ramp type are from the current Montana FWP managed-access layer.",
+            "id": "acc-0aaf7a2b9b38534d80fe",
+            "name": "Williams Bridge FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Drouillard FAS",
+          "accessId": "acc-13cb7f7f37a15000bc08",
+          "existing": {
+            "status": "verified",
+            "lat": 45.897642523920254,
+            "lon": -111.59402837073192,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753526",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753526",
+            "verifiedOn": "2026-10-23",
+            "note": "Exact river-side access coordinate and ramp type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped ramp position, and downstream flow direction.",
+            "id": "acc-13cb7f7f37a15000bc08",
+            "name": "Drouillard FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "jefferson-canyon/drouillard-headwaters",
+      "state": "MT",
+      "river": "Jefferson River (Canyon / Three Forks)",
+      "riverId": "jefferson-canyon",
+      "sectionId": "drouillard-headwaters",
+      "label": "Drouillard FAS → Missouri Headwaters State Park",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Drouillard FAS",
+          "accessId": "acc-13cb7f7f37a15000bc08",
+          "existing": {
+            "status": "verified",
+            "lat": 45.897642523920254,
+            "lon": -111.59402837073192,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753526",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753526",
+            "verifiedOn": "2026-10-23",
+            "note": "Exact river-side access coordinate and ramp type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped ramp position, and downstream flow direction.",
+            "id": "acc-13cb7f7f37a15000bc08",
+            "name": "Drouillard FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Missouri Headwaters State Park",
+          "accessId": "acc-b69cb041093d503392bc",
+          "existing": {
+            "status": "verified",
+            "lat": 45.926071,
+            "lon": -111.503142,
+            "accessType": "Boat launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Missouri Headwaters State Park map",
+            "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/maps/missouri-headwaters-park-map.pdf",
+            "verifiedOn": "2026-10-23",
+            "note": "Exact launch at the far north end of the park, downstream of the confluence; matched between the official park map and satellite imagery.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "Montana FWP Missouri Headwaters State Park map and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/maps/missouri-headwaters-park-map.pdf",
+            "bankNote": "The official park map places the launch on river right facing downstream; the ramp and road were matched to satellite imagery.",
+            "id": "acc-b69cb041093d503392bc",
+            "name": "Missouri Headwaters State Park",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m",
+        "mileage-difference-over-5-percent"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "jefferson-upper/silver-star-parsons",
+      "state": "MT",
+      "river": "Jefferson River (Twin Bridges)",
+      "riverId": "jefferson-upper",
+      "sectionId": "silver-star-parsons",
+      "label": "Silver Star FAS → Parsons Bridge (Waterloo)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Silver Star FAS",
+          "accessId": "acc-6edb1703300d54e8a98e",
+          "existing": {
+            "status": "verified",
+            "lat": 45.68639748188691,
+            "lon": -112.28245209108755,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753448",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753448",
+            "verifiedOn": "2026-10-23",
+            "note": "Exact river-side access coordinate and ramp type from the current Montana FWP managed-access layer.",
+            "id": "acc-6edb1703300d54e8a98e",
+            "name": "Silver Star FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Parsons Bridge (Waterloo)",
+          "accessId": "acc-318a7938159c5b5f88c4",
+          "existing": {
+            "status": "pending",
+            "note": "Identity resolved: Waterloo Road crossing beside Lost Tomahawk / Parsons diversion dam. The canoe-trail organization documents a right-of-way boat ramp and portage, but the precise landing, dam relationship and current access still need review.",
+            "id": "acc-318a7938159c5b5f88c4",
+            "name": "Parsons Bridge (Waterloo)",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check."
+    },
+    {
+      "id": "jefferson-upper/parsons-parrott",
+      "state": "MT",
+      "river": "Jefferson River (Twin Bridges)",
+      "riverId": "jefferson-upper",
+      "sectionId": "parsons-parrott",
+      "label": "Parsons Bridge (Waterloo) → Parrot Castle FAS",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Parsons Bridge (Waterloo)",
+          "accessId": "acc-318a7938159c5b5f88c4",
+          "existing": {
+            "status": "pending",
+            "note": "Identity resolved: Waterloo Road crossing beside Lost Tomahawk / Parsons diversion dam. The canoe-trail organization documents a right-of-way boat ramp and portage, but the precise landing, dam relationship and current access still need review.",
+            "id": "acc-318a7938159c5b5f88c4",
+            "name": "Parsons Bridge (Waterloo)",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Parrot Castle FAS",
+          "accessId": "acc-a1b23f0e7f16595483a3",
+          "existing": {
+            "status": "pending",
+            "note": "The official Parrot Castle record describes difficult river access and no boat ramp; it is also absent from the current managed-access layer. The section needs a suitable take-out before a map can publish.",
+            "id": "acc-a1b23f0e7f16595483a3",
+            "name": "Parrot Castle FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing."
+    },
+    {
+      "id": "madison-lower/bear-trap",
+      "state": "MT",
+      "river": "Madison River (Lower)",
+      "riverId": "madison-lower",
+      "sectionId": "bear-trap",
+      "label": "Madison Powerhouse (Bear Trap) → Warm Springs",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Madison Powerhouse (Bear Trap)",
+          "accessId": "acc-a0696d7050ea546a9d98",
+          "existing": {
+            "status": "verified",
+            "lat": 45.486578,
+            "lon": -111.633465,
+            "accessType": "Wilderness boat launch",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Lee Metcalf Wilderness",
+            "sourceUrl": "https://www.blm.gov/visit/lee-metcalf-wilderness",
+            "verifiedOn": "2026-10-23",
+            "note": "River-side Wilderness Boat Launch above Bear Trap Canyon; checked against the BLM recreation description and satellite imagery.",
+            "id": "acc-a0696d7050ea546a9d98",
+            "name": "Madison Powerhouse (Bear Trap)",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Warm Springs",
+          "accessId": "acc-f1e91a6b3cce5063b665",
+          "existing": {
+            "status": "verified",
+            "lat": 45.5857,
+            "lon": -111.59267,
+            "accessType": "Paved boat ramp and hand launch",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Warm Springs Day Use Area",
+            "sourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area",
+            "verifiedOn": "2026-10-23",
+            "note": "Official BLM coordinate. This is the Bear Trap Canyon take-out; California Corner is the overflow hand launch downstream.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-f1e91a6b3cce5063b665",
+            "name": "Warm Springs",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "mileage-difference-over-5-percent"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "madison-lower/warm-springs-blacks-ford",
+      "state": "MT",
+      "river": "Madison River (Lower)",
+      "riverId": "madison-lower",
+      "sectionId": "warm-springs-blacks-ford",
+      "label": "Warm Springs → Black's Ford",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Warm Springs",
+          "accessId": "acc-f1e91a6b3cce5063b665",
+          "existing": {
+            "status": "verified",
+            "lat": 45.5857,
+            "lon": -111.59267,
+            "accessType": "Paved boat ramp and hand launch",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Warm Springs Day Use Area",
+            "sourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area",
+            "verifiedOn": "2026-10-23",
+            "note": "Official BLM coordinate. This is the Bear Trap Canyon take-out; California Corner is the overflow hand launch downstream.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-f1e91a6b3cce5063b665",
+            "name": "Warm Springs",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Black's Ford",
+          "accessId": "acc-a22b6bba00395abba22b",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 45.646386736352305,
+              "lon": -111.52248398669596,
+              "feature": "FWP managed fishing access site location"
+            },
+            "directions": "Use the signed Black’s Ford FAS off Highway 84 and follow the internal drive to the concrete boat ramp.",
+            "sourceName": "Montana FWP Fishing Access Site 39753502",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753502",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "id": "acc-a22b6bba00395abba22b",
+            "aliases": [],
+            "name": "Black's Ford",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m",
+        "mileage-difference-over-5-percent"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "madison-lower/blacks-ford-greycliff",
+      "state": "MT",
+      "river": "Madison River (Lower)",
+      "riverId": "madison-lower",
+      "sectionId": "blacks-ford-greycliff",
+      "label": "Black's Ford → Greycliff",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Black's Ford",
+          "accessId": "acc-a22b6bba00395abba22b",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 45.646386736352305,
+              "lon": -111.52248398669596,
+              "feature": "FWP managed fishing access site location"
+            },
+            "directions": "Use the signed Black’s Ford FAS off Highway 84 and follow the internal drive to the concrete boat ramp.",
+            "sourceName": "Montana FWP Fishing Access Site 39753502",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753502",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "id": "acc-a22b6bba00395abba22b",
+            "aliases": [],
+            "name": "Black's Ford",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Greycliff",
+          "accessId": "acc-14f57529ead35fe18cfd",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 45.70191940418235,
+              "lon": -111.5141910418269,
+              "feature": "FWP managed fishing access site location"
+            },
+            "directions": "Use the signed Greycliff FAS off Madison River Road and follow the internal road to the designated gravel boat ramp.",
+            "sourceName": "Montana FWP Fishing Access Site 39753468",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753468",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "id": "acc-14f57529ead35fe18cfd",
+            "aliases": [],
+            "name": "Greycliff",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m",
+        "mileage-difference-over-5-percent"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "madison-upper/lyons-palisades",
+      "state": "MT",
+      "river": "Madison River (Upper)",
+      "riverId": "madison-upper",
+      "sectionId": "lyons-palisades",
+      "label": "Lyons Bridge → Palisades",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Lyons Bridge",
+          "accessId": "acc-e910936dbea8559f9b80",
+          "existing": {
+            "status": "verified",
+            "lat": 44.89910242134843,
+            "lon": -111.5925978530493,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753518",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753518",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "id": "acc-e910936dbea8559f9b80",
+            "name": "Lyons Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Palisades",
+          "accessId": "acc-be14310ba54f55c99a08",
+          "existing": {
+            "status": "verified",
+            "lat": 44.98837,
+            "lon": -111.65743,
+            "accessType": "Paved boat launch",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Palisades Day Use",
+            "sourceUrl": "https://www.blm.gov/visit/palisades-day-use",
+            "verifiedOn": "2026-10-23",
+            "note": "Official BLM coordinate for the separate day-use boat launch near Palisades Campground.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-be14310ba54f55c99a08",
+            "name": "Palisades",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "madison-upper/palisades-mcatee",
+      "state": "MT",
+      "river": "Madison River (Upper)",
+      "riverId": "madison-upper",
+      "sectionId": "palisades-mcatee",
+      "label": "Palisades → McAtee Bridge",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Palisades",
+          "accessId": "acc-be14310ba54f55c99a08",
+          "existing": {
+            "status": "verified",
+            "lat": 44.98837,
+            "lon": -111.65743,
+            "accessType": "Paved boat launch",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Palisades Day Use",
+            "sourceUrl": "https://www.blm.gov/visit/palisades-day-use",
+            "verifiedOn": "2026-10-23",
+            "note": "Official BLM coordinate for the separate day-use boat launch near Palisades Campground.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-be14310ba54f55c99a08",
+            "name": "Palisades",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "McAtee Bridge",
+          "accessId": "acc-e43520cf9eba5a7784a1",
+          "existing": {
+            "status": "verified",
+            "lat": 45.096652567802,
+            "lon": -111.66152014639906,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753516",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753516",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-e43520cf9eba5a7784a1",
+            "name": "McAtee Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "mileage-difference-over-5-percent"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "madison-upper/mcatee-varney",
+      "state": "MT",
+      "river": "Madison River (Upper)",
+      "riverId": "madison-upper",
+      "sectionId": "mcatee-varney",
+      "label": "McAtee Bridge → Varney Bridge",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "McAtee Bridge",
+          "accessId": "acc-e43520cf9eba5a7784a1",
+          "existing": {
+            "status": "verified",
+            "lat": 45.096652567802,
+            "lon": -111.66152014639906,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753516",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753516",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-e43520cf9eba5a7784a1",
+            "name": "McAtee Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Varney Bridge",
+          "accessId": "acc-ba2d2990119d5cb0a254",
+          "existing": {
+            "status": "verified",
+            "lat": 45.22900290251912,
+            "lon": -111.75195779238771,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753404",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753404",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-ba2d2990119d5cb0a254",
+            "name": "Varney Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "madison-upper/varney-ennis",
+      "state": "MT",
+      "river": "Madison River (Upper)",
+      "riverId": "madison-upper",
+      "sectionId": "varney-ennis",
+      "label": "Varney Bridge → Ennis FAS",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Varney Bridge",
+          "accessId": "acc-ba2d2990119d5cb0a254",
+          "existing": {
+            "status": "verified",
+            "lat": 45.22900290251912,
+            "lon": -111.75195779238771,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753404",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753404",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-ba2d2990119d5cb0a254",
+            "name": "Varney Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Ennis FAS",
+          "accessId": "acc-6b8439ac25685855b8fd",
+          "existing": {
+            "status": "verified",
+            "lat": 45.34443015723558,
+            "lon": -111.72309914259415,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Ennis Fishing Access Site 39753534",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753534",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-6b8439ac25685855b8fd",
+            "name": "Ennis FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "missouri-breaks/fort-benton-judith",
+      "state": "MT",
+      "river": "Missouri River (Breaks)",
+      "riverId": "missouri-breaks",
+      "sectionId": "fort-benton-judith",
+      "label": "Fort Benton (Canoe Launch) → Judith Landing",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Fort Benton (Canoe Launch)",
+          "accessId": "acc-b0f5423b0b3e5893b1d3",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 47.8051,
+              "lon": -110.6798,
+              "feature": "Canoe-launch facility in interagency recreation-site inventory"
+            },
+            "directions": "Use the canoe launch at Chouteau County Fairgrounds in Fort Benton (BLM river mile 0). The downstream motorboat launch is a different starting point.",
+            "sourceName": "BLM Upper Missouri river access guide; Lewistown Area Restrictions Plan 2024–2029",
+            "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks/plan",
+            "coordinateSourceUrl": "https://gacc.nifc.gov/nrcc/nrcg/restrictions_closures/areaplans/Lewistown%20Area%20Restrictions%20Plan%202024-2029.pdf",
+            "verifiedOn": "2026-10-28",
+            "note": "The interagency plan lists this named canoe-launch location on printed page 20. It is treated as an approximate facility point. The conflicting canoe-launch UTM easting in the 2017 BLM boater guide was rejected, not silently corrected.",
+            "accessType": "Canoe launch; approximate facility location",
+            "id": "acc-b0f5423b0b3e5893b1d3",
+            "aliases": [],
+            "name": "Fort Benton (Canoe Launch)",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Judith Landing",
+          "accessId": "acc-2371fcfa564855b48530",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 47.74135,
+              "lon": -109.62665,
+              "feature": "BLM recreation-site location"
+            },
+            "directions": "Use Judith Landing Recreation Area on Highway 236. BLM’s boater guide places the boat take-out downstream of the highway bridge; the campground is upstream. Confirm seasonal access before arranging your shuttle.",
+            "sourceName": "Bureau of Land Management recreation site",
+            "sourceUrl": "https://www.blm.gov/visit/judith-landing",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/judith-landing",
+            "verifiedOn": "2026-10-27",
+            "note": "BLM confirms a boat-access facility and publishes this recreation-site coordinate. The exact ramp edge and take-out bank remain unverified; do not substitute the facility marker for the landing.",
+            "id": "acc-2371fcfa564855b48530",
+            "aliases": [],
+            "name": "Judith Landing",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "missouri-breaks/fort-benton-coal-banks",
+      "state": "MT",
+      "river": "Missouri River (Breaks)",
+      "riverId": "missouri-breaks",
+      "sectionId": "fort-benton-coal-banks",
+      "label": "Fort Benton (Canoe Launch) → Coal Banks Landing",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Fort Benton (Canoe Launch)",
+          "accessId": "acc-b0f5423b0b3e5893b1d3",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 47.8051,
+              "lon": -110.6798,
+              "feature": "Canoe-launch facility in interagency recreation-site inventory"
+            },
+            "directions": "Use the canoe launch at Chouteau County Fairgrounds in Fort Benton (BLM river mile 0). The downstream motorboat launch is a different starting point.",
+            "sourceName": "BLM Upper Missouri river access guide; Lewistown Area Restrictions Plan 2024–2029",
+            "sourceUrl": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks/plan",
+            "coordinateSourceUrl": "https://gacc.nifc.gov/nrcc/nrcg/restrictions_closures/areaplans/Lewistown%20Area%20Restrictions%20Plan%202024-2029.pdf",
+            "verifiedOn": "2026-10-28",
+            "note": "The interagency plan lists this named canoe-launch location on printed page 20. It is treated as an approximate facility point. The conflicting canoe-launch UTM easting in the 2017 BLM boater guide was rejected, not silently corrected.",
+            "accessType": "Canoe launch; approximate facility location",
+            "id": "acc-b0f5423b0b3e5893b1d3",
+            "aliases": [],
+            "name": "Fort Benton (Canoe Launch)",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Coal Banks Landing",
+          "accessId": "acc-60a681309c795870a90b",
+          "existing": {
+            "id": "acc-60a681309c795870a90b",
+            "aliases": [],
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 48.03222,
+              "lon": -110.23682,
+              "feature": "BLM-published Coal Banks recreation-site location"
+            },
+            "accessType": "Public concrete boat ramp",
+            "operator": "Bureau of Land Management",
+            "sourceName": "BLM Coal Banks Landing",
+            "sourceUrl": "https://www.blm.gov/visit/coal-banks-landing",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/coal-banks-landing",
+            "verifiedOn": "2026-10-29",
+            "directions": "Use the signed Coal Banks Landing campground and contact-station entrance from Virgelle Ferry Road. BLM places the concrete ramp beside the contact station. Confirm road and seasonal facility conditions before arranging the shuttle.",
+            "note": "BLM explicitly documents a concrete boat ramp and supplies the recreation-site coordinate. The location is approximate; the exact ramp edge and river bank have not been verified.",
+            "name": "Coal Banks Landing",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "missouri-breaks/coal-banks-judith",
+      "state": "MT",
+      "river": "Missouri River (Breaks)",
+      "riverId": "missouri-breaks",
+      "sectionId": "coal-banks-judith",
+      "label": "Coal Banks Landing → Judith Landing",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Coal Banks Landing",
+          "accessId": "acc-60a681309c795870a90b",
+          "existing": {
+            "id": "acc-60a681309c795870a90b",
+            "aliases": [],
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 48.03222,
+              "lon": -110.23682,
+              "feature": "BLM-published Coal Banks recreation-site location"
+            },
+            "accessType": "Public concrete boat ramp",
+            "operator": "Bureau of Land Management",
+            "sourceName": "BLM Coal Banks Landing",
+            "sourceUrl": "https://www.blm.gov/visit/coal-banks-landing",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/coal-banks-landing",
+            "verifiedOn": "2026-10-29",
+            "directions": "Use the signed Coal Banks Landing campground and contact-station entrance from Virgelle Ferry Road. BLM places the concrete ramp beside the contact station. Confirm road and seasonal facility conditions before arranging the shuttle.",
+            "note": "BLM explicitly documents a concrete boat ramp and supplies the recreation-site coordinate. The location is approximate; the exact ramp edge and river bank have not been verified.",
+            "name": "Coal Banks Landing",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Judith Landing",
+          "accessId": "acc-2371fcfa564855b48530",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 47.74135,
+              "lon": -109.62665,
+              "feature": "BLM recreation-site location"
+            },
+            "directions": "Use Judith Landing Recreation Area on Highway 236. BLM’s boater guide places the boat take-out downstream of the highway bridge; the campground is upstream. Confirm seasonal access before arranging your shuttle.",
+            "sourceName": "Bureau of Land Management recreation site",
+            "sourceUrl": "https://www.blm.gov/visit/judith-landing",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/judith-landing",
+            "verifiedOn": "2026-10-27",
+            "note": "BLM confirms a boat-access facility and publishes this recreation-site coordinate. The exact ramp edge and take-out bank remain unverified; do not substitute the facility marker for the landing.",
+            "id": "acc-2371fcfa564855b48530",
+            "aliases": [],
+            "name": "Judith Landing",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "missouri-craig/holter-craig",
+      "state": "MT",
+      "river": "Missouri River (Craig)",
+      "riverId": "missouri-craig",
+      "sectionId": "holter-craig",
+      "label": "Holter Dam → Craig",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Holter Dam",
+          "accessId": "acc-019fa7f7030f54faa6a1",
+          "existing": {
+            "status": "access-verified",
+            "accessType": "Two-lane concrete boat ramp",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Holter Dam Campground",
+            "sourceUrl": "https://www.blm.gov/visit/holter-dam-campground",
+            "verifiedOn": "2026-10-24",
+            "note": "BLM confirms the campground and boat ramp, but its published coordinate is a facility location. Exact landing position has not been independently confirmed.",
+            "areaCenter": {
+              "lat": 46.99552,
+              "lon": -112.01195,
+              "feature": "BLM Holter Dam Campground below the dam"
+            },
+            "coordinateSourceUrl": "https://www.blm.gov/visit/holter-dam-campground",
+            "directions": "Use the signed Holter Dam Campground boat ramp below the dam. This marker identifies the campground; it does not pinpoint the ramp edge.",
+            "id": "acc-019fa7f7030f54faa6a1",
+            "aliases": [],
+            "name": "Holter Dam",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Craig",
+          "accessId": "acc-280796f368a958d78d3c",
+          "existing": {
+            "status": "verified",
+            "lat": 47.07256384164247,
+            "lon": -111.96304900411126,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Craig Fishing Access Site 39753704",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753704",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-280796f368a958d78d3c",
+            "name": "Craig",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "missouri-craig/craig-mtn-palace",
+      "state": "MT",
+      "river": "Missouri River (Craig)",
+      "riverId": "missouri-craig",
+      "sectionId": "craig-mtn-palace",
+      "label": "Craig → Mountain Palace",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Craig",
+          "accessId": "acc-280796f368a958d78d3c",
+          "existing": {
+            "status": "verified",
+            "lat": 47.07256384164247,
+            "lon": -111.96304900411126,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Craig Fishing Access Site 39753704",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753704",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-280796f368a958d78d3c",
+            "name": "Craig",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Mountain Palace",
+          "accessId": "acc-b3ce43206bc65e6ba5ca",
+          "existing": {
+            "status": "verified",
+            "lat": 47.16256018492719,
+            "lon": -111.82310700034365,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Mountain Palace Fishing Access Site 39753712",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753712",
+            "verifiedOn": "2026-10-24",
+            "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide and satellite imagery.",
+            "id": "acc-b3ce43206bc65e6ba5ca",
+            "name": "Mountain Palace",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "flathead-north/polebridge-coal",
+      "state": "MT",
+      "river": "North Fork Flathead",
+      "riverId": "flathead-north",
+      "sectionId": "polebridge-coal",
+      "label": "Polebridge (Downstream) → Coal Creek",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Polebridge (Downstream)",
+          "accessId": "acc-b9128a2312655a3fafe4",
+          "existing": {
+            "status": "verified",
+            "lat": 48.7816,
+            "lon": -114.2814,
+            "accessType": "Packed-dirt ramp",
+            "operator": "US Forest Service / Flathead National Forest",
+            "sourceName": "Flathead Rivers Alliance / DREAM access survey (April 2026)",
+            "sourceUrl": "https://www.flatheadrivers.org/s/Polebridge-Downstream-Apr-26.png",
+            "verifiedOn": "2026-10-27",
+            "note": "Published access survey gives coordinates, landing photographs and river mile 33.8. Coordinate precision is four decimal places, not a surveyed ramp edge. Use the downstream Polebridge access below the ranger-station bridge, reached from the signed road off North Fork Road. The upstream access is a separate facility.",
+            "id": "acc-b9128a2312655a3fafe4",
+            "name": "Polebridge (Downstream)",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Coal Creek",
+          "accessId": "acc-9d1cd488b38f5ff29e4b",
+          "existing": {
+            "status": "verified",
+            "lat": 48.69,
+            "lon": -114.1949,
+            "accessType": "Packed-dirt ramp / cobble bar",
+            "operator": "US Forest Service / Flathead National Forest",
+            "sourceName": "Flathead Rivers Alliance / DREAM access survey (April 2026)",
+            "sourceUrl": "https://www.flatheadrivers.org/s/Coal-Apr-26.png",
+            "verifiedOn": "2026-10-27",
+            "note": "Published access survey gives coordinates, landing photographs and river mile 24.5. Coordinate precision is four decimal places, not a surveyed ramp edge. Access is on a side channel beside an island. Low water may require a different launch spot on the bar; wood can obstruct the channel. Reach the access from the Forest Service road just before Coal Creek bridge.",
+            "id": "acc-9d1cd488b38f5ff29e4b",
+            "name": "Coal Creek",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "flathead-north/coal-big-creek",
+      "state": "MT",
+      "river": "North Fork Flathead",
+      "riverId": "flathead-north",
+      "sectionId": "coal-big-creek",
+      "label": "Coal Creek → Big Creek",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Coal Creek",
+          "accessId": "acc-9d1cd488b38f5ff29e4b",
+          "existing": {
+            "status": "verified",
+            "lat": 48.69,
+            "lon": -114.1949,
+            "accessType": "Packed-dirt ramp / cobble bar",
+            "operator": "US Forest Service / Flathead National Forest",
+            "sourceName": "Flathead Rivers Alliance / DREAM access survey (April 2026)",
+            "sourceUrl": "https://www.flatheadrivers.org/s/Coal-Apr-26.png",
+            "verifiedOn": "2026-10-27",
+            "note": "Published access survey gives coordinates, landing photographs and river mile 24.5. Coordinate precision is four decimal places, not a surveyed ramp edge. Access is on a side channel beside an island. Low water may require a different launch spot on the bar; wood can obstruct the channel. Reach the access from the Forest Service road just before Coal Creek bridge.",
+            "id": "acc-9d1cd488b38f5ff29e4b",
+            "name": "Coal Creek",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Big Creek",
+          "accessId": "acc-0210ce1afae1545da5eb",
+          "existing": {
+            "status": "verified",
+            "lat": 48.6027,
+            "lon": -114.1622,
+            "accessType": "Packed-dirt ramp / cobble bar",
+            "operator": "US Forest Service / Flathead National Forest",
+            "sourceName": "Flathead Rivers Alliance / DREAM access survey (April 2026)",
+            "sourceUrl": "https://www.flatheadrivers.org/s/Big-Apr-26.png",
+            "verifiedOn": "2026-10-27",
+            "note": "Published access survey gives coordinates, landing photographs and river mile 15.3. Coordinate precision is four decimal places, not a surveyed ramp edge. Use the signed river access at Big Creek Campground. A day-use fee applies; check the campground payment instructions.",
+            "id": "acc-0210ce1afae1545da5eb",
+            "name": "Big Creek",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "flathead-north/big-creek-glacier-rim",
+      "state": "MT",
+      "river": "North Fork Flathead",
+      "riverId": "flathead-north",
+      "sectionId": "big-creek-glacier-rim",
+      "label": "Big Creek → Glacier Rim",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Big Creek",
+          "accessId": "acc-0210ce1afae1545da5eb",
+          "existing": {
+            "status": "verified",
+            "lat": 48.6027,
+            "lon": -114.1622,
+            "accessType": "Packed-dirt ramp / cobble bar",
+            "operator": "US Forest Service / Flathead National Forest",
+            "sourceName": "Flathead Rivers Alliance / DREAM access survey (April 2026)",
+            "sourceUrl": "https://www.flatheadrivers.org/s/Big-Apr-26.png",
+            "verifiedOn": "2026-10-27",
+            "note": "Published access survey gives coordinates, landing photographs and river mile 15.3. Coordinate precision is four decimal places, not a surveyed ramp edge. Use the signed river access at Big Creek Campground. A day-use fee applies; check the campground payment instructions.",
+            "id": "acc-0210ce1afae1545da5eb",
+            "name": "Big Creek",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Glacier Rim",
+          "accessId": "acc-4cb13fac844c5be3a224",
+          "existing": {
+            "status": "verified",
+            "lat": 48.4925,
+            "lon": -114.126,
+            "accessType": "Concrete ramp / cobble bar",
+            "operator": "US Forest Service / Flathead National Forest",
+            "sourceName": "Flathead Rivers Alliance / DREAM access survey (April 2026)",
+            "sourceUrl": "https://www.flatheadrivers.org/s/Glacier-Rim-Apr-26.png",
+            "verifiedOn": "2026-10-27",
+            "note": "Published access survey gives coordinates, landing photographs and river mile 3.8. Coordinate precision is four decimal places, not a surveyed ramp edge. Follow the steep access drive downhill from North Fork Road to the river. This is upstream of the North Fork/Middle Fork confluence and is distinct from Blankenship.",
+            "id": "acc-4cb13fac844c5be3a224",
+            "name": "Glacier Rim",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "rock-creek/dalles",
+      "state": "MT",
+      "river": "Rock Creek (Clinton)",
+      "riverId": "rock-creek",
+      "sectionId": "dalles",
+      "label": "Bitterroot Flat / Dalles → Harry's Flat",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The launch label combines Bitterroot Flat and Dalles, which are different locations. This section needs a single confirmed put-in and landing before its mileage and timing can be offered.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Bitterroot Flat / Dalles",
+          "accessId": "acc-6125bc50c765563f83e0",
+          "existing": {
+            "status": "pending",
+            "note": "The label combines two Forest Service locations and does not identify one exact river-side launch.",
+            "id": "acc-6125bc50c765563f83e0",
+            "name": "Bitterroot Flat / Dalles",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Harry's Flat",
+          "accessId": "acc-188a27250a4d54fd9b8d",
+          "existing": {
+            "status": "pending",
+            "note": "The Forest Service campground is documented, but an exact usable boat launch coordinate has not been confirmed.",
+            "id": "acc-188a27250a4d54fd9b8d",
+            "name": "Harry's Flat",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The launch label combines Bitterroot Flat and Dalles, which are different locations. This section needs a single confirmed put-in and landing before its mileage and timing can be offered."
+    },
+    {
+      "id": "rock-creek/harrys-votm",
+      "state": "MT",
+      "river": "Rock Creek (Clinton)",
+      "riverId": "rock-creek",
+      "sectionId": "harrys-votm",
+      "label": "Harry's Flat → Valley of the Moon",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The former Valley of the Moon pin was across the road from river access. The actual usable take-out remains unconfirmed; this listing is not ready for trip planning.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Harry's Flat",
+          "accessId": "acc-188a27250a4d54fd9b8d",
+          "existing": {
+            "status": "pending",
+            "note": "The Forest Service campground is documented, but an exact usable boat launch coordinate has not been confirmed.",
+            "id": "acc-188a27250a4d54fd9b8d",
+            "name": "Harry's Flat",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Valley of the Moon",
+          "accessId": "acc-16a07fd12802541cb298",
+          "existing": {
+            "status": "pending",
+            "note": "The old pin was across the road from river access. The usable landing is still unresolved. Road access is also affected by Lolo Order 26-018-Lolo-D3 (August 22–December 31, 2026 unless rescinded); see the section’s dated notice.",
+            "id": "acc-16a07fd12802541cb298",
+            "name": "Valley of the Moon",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The former Valley of the Moon pin was across the road from river access. The actual usable take-out remains unconfirmed; this listing is not ready for trip planning."
+    },
+    {
+      "id": "rock-creek/votm-clinton",
+      "state": "MT",
+      "river": "Rock Creek (Clinton)",
+      "riverId": "rock-creek",
+      "sectionId": "votm-clinton",
+      "label": "Valley of the Moon → Clinton / Clark Fork confluence",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The Valley of the Moon launch and a legal boat take-out near Clinton / the Clark Fork confluence remain unconfirmed. Do not treat the confluence as a guaranteed exit.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Valley of the Moon",
+          "accessId": "acc-16a07fd12802541cb298",
+          "existing": {
+            "status": "pending",
+            "note": "The old pin was across the road from river access. The usable landing is still unresolved. Road access is also affected by Lolo Order 26-018-Lolo-D3 (August 22–December 31, 2026 unless rescinded); see the section’s dated notice.",
+            "id": "acc-16a07fd12802541cb298",
+            "name": "Valley of the Moon",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Clinton / Clark Fork confluence",
+          "accessId": "acc-6ffcb884e0e5596d826a",
+          "existing": {
+            "status": "pending",
+            "note": "Public conservation land is documented at the confluence, but an exact legal boat take-out has not been confirmed.",
+            "id": "acc-6ffcb884e0e5596d826a",
+            "name": "Clinton / Clark Fork confluence",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "The Valley of the Moon launch and a legal boat take-out near Clinton / the Clark Fork confluence remain unconfirmed. Do not treat the confluence as a guaranteed exit."
+    },
+    {
+      "id": "smith/camp-baker-eden",
+      "state": "MT",
+      "river": "Smith River (Permit)",
+      "riverId": "smith",
+      "sectionId": "camp-baker-eden",
+      "label": "Camp Baker → Eden Bridge",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Camp Baker",
+          "accessId": "acc-3e787516eee25b7185b8",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 46.803485413874405,
+              "lon": -111.1824850051134,
+              "feature": "FWP Smith River / Camp Baker facility location"
+            },
+            "directions": "Use the signed Camp Baker public put-in and follow ranger check-in and launch instructions. The marker locates the facility, not the ramp.",
+            "sourceName": "Montana FWP Smith River Recreation Management Plan (2026), p. 19",
+            "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/smith-river/management/final-smith-river-recreation-management-plan-2026.pdf",
+            "verifiedOn": "2026-10-27",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/4",
+            "note": "The 2026 management plan confirms this public boat access. FWP State Parks GIS geometry supplies a facility location; exact ramp coordinates remain unverified. Saved agency response: research/MT/access-review-20261027/state-parks.json.",
+            "id": "acc-3e787516eee25b7185b8",
+            "aliases": [],
+            "name": "Camp Baker",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Eden Bridge",
+          "accessId": "acc-0c6d5955e0c95e178fab",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 47.23605632141864,
+              "lon": -111.3888484400905,
+              "feature": "FWP Eden Bridge facility location"
+            },
+            "directions": "Use the signed Eden Bridge take-out at the end of the permitted Smith River trip. The marker locates the facility, not the gravel landing.",
+            "sourceName": "Montana FWP Smith River Recreation Management Plan (2026), p. 19",
+            "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/stateparks/smith-river/management/final-smith-river-recreation-management-plan-2026.pdf",
+            "verifiedOn": "2026-10-27",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/4",
+            "note": "The 2026 management plan confirms this public boat access. FWP State Parks GIS geometry supplies a facility location; exact ramp coordinates remain unverified. Saved agency response: research/MT/access-review-20261027/state-parks.json.",
+            "id": "acc-0c6d5955e0c95e178fab",
+            "aliases": [],
+            "name": "Eden Bridge",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "source-not-configured"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "stillwater/cliff-swallow-absarokee",
+      "state": "MT",
+      "river": "Stillwater River",
+      "riverId": "stillwater",
+      "sectionId": "cliff-swallow-absarokee",
+      "label": "Cliff Swallow → Absaroka FAS",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Cliff Swallow",
+          "accessId": "acc-c0ff09f23d3558309a49",
+          "existing": {
+            "status": "verified",
+            "lat": 45.51492399294101,
+            "lon": -109.6320969592275,
+            "accessType": "Hand launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Cliff Swallow Fishing Access Site 39753840",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753840",
+            "verifiedOn": "2026-10-24",
+            "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer.",
+            "id": "acc-c0ff09f23d3558309a49",
+            "name": "Cliff Swallow",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Absaroka FAS",
+          "accessId": "acc-b5dccee9692e56e595f9",
+          "existing": {
+            "status": "verified",
+            "lat": 45.52887096999066,
+            "lon": -109.46839246983271,
+            "accessType": "Hand launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Absaroka Fishing Access Site 39753820",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753820",
+            "verifiedOn": "2026-10-24",
+            "note": "Montana FWP Absaroka Fishing Access Site near Johnson Bridge, west of the town of Absarokee. Coordinate and hand-launch type from the managed-access inventory.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction.",
+            "id": "acc-b5dccee9692e56e595f9",
+            "name": "Absaroka FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "stillwater/absarokee-whitebird",
+      "state": "MT",
+      "river": "Stillwater River",
+      "riverId": "stillwater",
+      "sectionId": "absarokee-whitebird",
+      "label": "Absaroka FAS → Whitebird",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Absaroka FAS",
+          "accessId": "acc-b5dccee9692e56e595f9",
+          "existing": {
+            "status": "verified",
+            "lat": 45.52887096999066,
+            "lon": -109.46839246983271,
+            "accessType": "Hand launch",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Absaroka Fishing Access Site 39753820",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753820",
+            "verifiedOn": "2026-10-24",
+            "note": "Montana FWP Absaroka Fishing Access Site near Johnson Bridge, west of the town of Absarokee. Coordinate and hand-launch type from the managed-access inventory.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction.",
+            "id": "acc-b5dccee9692e56e595f9",
+            "name": "Absaroka FAS",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Whitebird",
+          "accessId": "acc-13aa8f28a83d518a9e38",
+          "existing": {
+            "status": "verified",
+            "lat": 45.57523817264737,
+            "lon": -109.33703441208561,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Whitebird Fishing Access Site 39753880",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753880",
+            "verifiedOn": "2026-10-24",
+            "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-24",
+            "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
+            "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
+            "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped launch position, and downstream flow direction.",
+            "id": "acc-13aa8f28a83d518a9e38",
+            "name": "Whitebird",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "swan/swan-lake-bigfork",
+      "state": "MT",
+      "river": "Swan River",
+      "riverId": "swan",
+      "sectionId": "swan-lake-bigfork",
+      "label": "Swan Lake outlet → Bigfork (above the Wild Mile)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "A usable take-out above the Wild Mile has not been confirmed. The mapped Bigfork boat ramp is a different location and must not be substituted. This section is not ready for trip planning.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Swan Lake outlet",
+          "accessId": "acc-d53c7e6d0fd554b6b5d7",
+          "existing": {
+            "status": "pending",
+            "note": "The catalog label does not match the current FWP Swan River hand-launch site near Ferndale; the intended outlet launch needs exact agency verification.",
+            "id": "acc-d53c7e6d0fd554b6b5d7",
+            "name": "Swan Lake outlet",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Bigfork (above the Wild Mile)",
+          "accessId": "acc-7554c88dd3f55ad19e79",
+          "existing": {
+            "status": "pending",
+            "note": "The current FWP Bigfork ramp is not the same as a take-out above the Wild Mile; an exact upstream take-out needs agency or field verification.",
+            "id": "acc-7554c88dd3f55ad19e79",
+            "name": "Bigfork (above the Wild Mile)",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "A usable take-out above the Wild Mile has not been confirmed. The mapped Bigfork boat ramp is a different location and must not be substituted. This section is not ready for trip planning."
+    },
+    {
+      "id": "yellowstone-upper/gardiner-corwin",
+      "state": "MT",
+      "river": "Yellowstone River (Gardiner)",
+      "riverId": "yellowstone-upper",
+      "sectionId": "gardiner-corwin",
+      "label": "Gardiner (Queen of the Waters) → Corwin Springs",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Gardiner (Queen of the Waters)",
+          "accessId": "acc-4a33b67e96e05bdbabef",
+          "existing": {
+            "status": "pending",
+            "note": "The current FWP Queen of the Waters site lists no boat facilities, so it is not published as a launch.",
+            "id": "acc-4a33b67e96e05bdbabef",
+            "name": "Gardiner (Queen of the Waters)",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Corwin Springs",
+          "accessId": "acc-643af3926d985188bcaa",
+          "existing": {
+            "status": "pending",
+            "note": "The old FWP Corwin Springs PDF uses site ID 39753522, now Brogan’s Landing. Its current FWP page still carries the July 2022 emergency closure. The tourism coordinate also differs; do not promote either as an open exact landing. Find a confirmed current alternative or reopening. FWP’s October 2024 assessment recommends permanent closure because the Brogan’s site cannot be safely rebuilt; its separate Cinnabar launch alternative must have a different access ID and trip review.",
+            "id": "acc-643af3926d985188bcaa",
+            "name": "Corwin Springs",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "catalog-access-under-review"
+      ],
+      "riverPathNextAction": "A suitable launch at Queen of the Waters and the intended Corwin Springs landing have not been confirmed for this listing."
+    },
+    {
+      "id": "yellowstone-upper/corwin-yankee-jim",
+      "state": "MT",
+      "river": "Yellowstone River (Gardiner)",
+      "riverId": "yellowstone-upper",
+      "sectionId": "corwin-yankee-jim",
+      "label": "Cinnabar (USFS) → Carbella (below Yankee Jim Canyon)",
+      "accessMap": "approximate",
+      "released": true,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The launch has been explicitly changed to the separate Cinnabar facility. The old 7-mile listing is shorter than the direct distance between these access areas, so it is withheld. A reviewed Cinnabar–Carbella river measurement is required before restoring distance or time estimates.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Cinnabar (USFS)",
+          "accessId": "acc-1dc7746074b75874a3af",
+          "existing": {
+            "id": "acc-1dc7746074b75874a3af",
+            "aliases": [
+              "Cinnabar Picnic Area"
+            ],
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 45.108677,
+              "lon": -110.790082,
+              "feature": "USFS Cinnabar Picnic Area, recreation area 5587"
+            },
+            "accessType": "River access (area)",
+            "operator": "U.S. Forest Service",
+            "sourceName": "Montana FWP — Brogan’s Landing closure proposal, Cinnabar launch alternative",
+            "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/commission/2024/oct/parks/pi-sheet_brogans-landing-closure-fw-comm-proposal-sheet-10102024.pdf",
+            "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=upper%28recareaname%29+LIKE+%27%25CINNABAR%25%27+OR+upper%28recareaname%29+LIKE+%27%25CORWIN%25%27&outFields=%2A&outSR=4326&f=json",
+            "verifiedOn": "2026-10-28",
+            "directions": "Locate the Cinnabar day-use river access on site before unloading. The marker identifies the Forest Service facility area, not a confirmed ramp or downstream bank. This is a separate site from Brogan’s Landing; check current access conditions and commercial permit requirements.",
+            "note": "FWP’s October 2024 assessment identifies Cinnabar as a USFS launch option 0.5 mile downstream of Brogan’s Landing. USFS recreation data identifies Cinnabar Picnic Area on the Yellowstone with day use only. The agency facility coordinate is approximate; no exact landing, downstream bank, or measured trip length is asserted.",
+            "name": "Cinnabar (USFS)",
+            "state": "MT"
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Carbella (below Yankee Jim Canyon)",
+          "accessId": "acc-279a7a63e846531a9dad",
+          "existing": {
+            "status": "access-verified",
+            "areaCenter": {
+              "lat": 45.212808,
+              "lon": -110.9004276,
+              "feature": "BLM recreation-site location"
+            },
+            "directions": "From US 89 use Tom Miner Road and the signed Carbella recreation-site entrance. Follow the boat-ramp signs inside the site; the marker is BLM’s recreation-site location.",
+            "sourceName": "Bureau of Land Management recreation site",
+            "sourceUrl": "https://www.blm.gov/visit/carbella-rec-site",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/carbella-rec-site",
+            "verifiedOn": "2026-10-27",
+            "note": "BLM confirms a boat-access facility and publishes this recreation-site coordinate. The exact ramp edge and take-out bank remain unverified; do not substitute the facility marker for the landing.",
+            "id": "acc-279a7a63e846531a9dad",
+            "aliases": [],
+            "name": "Carbella (below Yankee Jim Canyon)",
+            "state": "MT"
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "source-not-configured"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "yellowstone-paradise/emigrant-mallards",
+      "state": "MT",
+      "river": "Yellowstone River (Paradise Valley)",
+      "riverId": "yellowstone-paradise",
+      "sectionId": "emigrant-mallards",
+      "label": "Emigrant → Mallard's Rest",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": true,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Emigrant",
+          "accessId": "acc-61e9521867bf5e2198ab",
+          "existing": {
+            "status": "verified",
+            "lat": 45.36704159334363,
+            "lon": -110.72551211260829,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753530",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753530",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "id": "acc-61e9521867bf5e2198ab",
+            "name": "Emigrant",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Mallard's Rest",
+          "accessId": "acc-427772d332d250d5810d",
+          "existing": {
+            "status": "verified",
+            "lat": 45.48483154629184,
+            "lon": -110.62163783131577,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753566",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753566",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-427772d332d250d5810d",
+            "name": "Mallard's Rest",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [],
+      "riverPathNextAction": ""
+    },
+    {
+      "id": "yellowstone-paradise/mallards-carters",
+      "state": "MT",
+      "river": "Yellowstone River (Paradise Valley)",
+      "riverId": "yellowstone-paradise",
+      "sectionId": "mallards-carters",
+      "label": "Mallard's Rest → Carter's Bridge",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Mallard's Rest",
+          "accessId": "acc-427772d332d250d5810d",
+          "existing": {
+            "status": "verified",
+            "lat": 45.48483154629184,
+            "lon": -110.62163783131577,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753566",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753566",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-427772d332d250d5810d",
+            "name": "Mallard's Rest",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Carter's Bridge",
+          "accessId": "acc-3393ddd639255498a469",
+          "existing": {
+            "status": "verified",
+            "lat": 45.59700760048187,
+            "lon": -110.56504212417497,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753508",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753508",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-3393ddd639255498a469",
+            "name": "Carter's Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "yellowstone-paradise/pine-creek-carters",
+      "state": "MT",
+      "river": "Yellowstone River (Paradise Valley)",
+      "riverId": "yellowstone-paradise",
+      "sectionId": "pine-creek-carters",
+      "label": "Pine Creek → Carter's Bridge",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Pine Creek",
+          "accessId": "acc-eb07c58f12bc5194b647",
+          "existing": {
+            "status": "verified",
+            "lat": 45.5118286492125,
+            "lon": -110.583426552503,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753434",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753434",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "id": "acc-eb07c58f12bc5194b647",
+            "name": "Pine Creek",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Carter's Bridge",
+          "accessId": "acc-3393ddd639255498a469",
+          "existing": {
+            "status": "verified",
+            "lat": 45.59700760048187,
+            "lon": -110.56504212417497,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753508",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753508",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-3393ddd639255498a469",
+            "name": "Carter's Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "yellowstone-paradise/carters-mayors",
+      "state": "MT",
+      "river": "Yellowstone River (Paradise Valley)",
+      "riverId": "yellowstone-paradise",
+      "sectionId": "carters-mayors",
+      "label": "Carter's Bridge → Mayor's Landing",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Carter's Bridge",
+          "accessId": "acc-3393ddd639255498a469",
+          "existing": {
+            "status": "verified",
+            "lat": 45.59700760048187,
+            "lon": -110.56504212417497,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753508",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753508",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-3393ddd639255498a469",
+            "name": "Carter's Bridge",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Mayor's Landing",
+          "accessId": "acc-47d48cb43c5e5547a5c8",
+          "existing": {
+            "status": "verified",
+            "lat": 45.66608812486865,
+            "lon": -110.5396293058101,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753600",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753600",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-47d48cb43c5e5547a5c8",
+            "name": "Mayor's Landing",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "yellowstone-paradise/mayors-sheep-mtn",
+      "state": "MT",
+      "river": "Yellowstone River (Paradise Valley)",
+      "riverId": "yellowstone-paradise",
+      "sectionId": "mayors-sheep-mtn",
+      "label": "Mayor's Landing → Sheep Mountain",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Mayor's Landing",
+          "accessId": "acc-47d48cb43c5e5547a5c8",
+          "existing": {
+            "status": "verified",
+            "lat": 45.66608812486865,
+            "lon": -110.5396293058101,
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753600",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753600",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-47d48cb43c5e5547a5c8",
+            "name": "Mayor's Landing",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Sheep Mountain",
+          "accessId": "acc-992629297d315d44a72b",
+          "existing": {
+            "status": "verified",
+            "lat": 45.730570632431615,
+            "lon": -110.40706095327062,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753470",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753470",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-992629297d315d44a72b",
+            "name": "Sheep Mountain",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "yellowstone-paradise/sheep-springdale",
+      "state": "MT",
+      "river": "Yellowstone River (Paradise Valley)",
+      "riverId": "yellowstone-paradise",
+      "sectionId": "sheep-springdale",
+      "label": "Sheep Mountain → Springdale",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Sheep Mountain",
+          "accessId": "acc-992629297d315d44a72b",
+          "existing": {
+            "status": "verified",
+            "lat": 45.730570632431615,
+            "lon": -110.40706095327062,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753470",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753470",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-992629297d315d44a72b",
+            "name": "Sheep Mountain",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Springdale",
+          "accessId": "acc-5881fd8ad39357cfbe95",
+          "existing": {
+            "status": "verified",
+            "lat": 45.74353847894661,
+            "lon": -110.23136329187614,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Springdale Bridge Fishing Access Site 39753416",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753416",
+            "verifiedOn": "2026-10-23",
+            "note": "The catalog label is Springdale; the official site name is Springdale Bridge.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-5881fd8ad39357cfbe95",
+            "name": "Springdale",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "yellowstone-paradise/springdale-grey-bear",
+      "state": "MT",
+      "river": "Yellowstone River (Paradise Valley)",
+      "riverId": "yellowstone-paradise",
+      "sectionId": "springdale-grey-bear",
+      "label": "Springdale → Grey Bear",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Springdale",
+          "accessId": "acc-5881fd8ad39357cfbe95",
+          "existing": {
+            "status": "verified",
+            "lat": 45.74353847894661,
+            "lon": -110.23136329187614,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Springdale Bridge Fishing Access Site 39753416",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753416",
+            "verifiedOn": "2026-10-23",
+            "note": "The catalog label is Springdale; the official site name is Springdale Bridge.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-5881fd8ad39357cfbe95",
+            "name": "Springdale",
+            "state": "MT",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Grey Bear",
+          "accessId": "acc-142bb3e3ee7f5ef5be20",
+          "existing": {
+            "status": "verified",
+            "lat": 45.78641153793275,
+            "lon": -110.06636460863467,
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Fishing Access Site 39753844",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753844",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+            "id": "acc-142bb3e3ee7f5ef5be20",
+            "name": "Grey Bear",
+            "state": "MT",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "endpoint-offset-over-100m"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    }
+  ]
+}

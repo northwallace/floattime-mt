@@ -14,17 +14,68 @@
       "id": "harpham-maupin",
       "putIn": "Harpham Flat",
       "takeOut": "Maupin City Park",
-      "miles": 8,
+      "miles": 4.0,
       "difficulty": "Class III",
-      "notes": "Wapinitia and Boxcar are the big ones. A Deschutes boater pass is required for every person."
+      "notes": "Wapinitia and Boxcar are the big ones. A Deschutes boater pass is required for every person.",
+      "putInAccessId": "acc-28652f0df02b5adfa78e",
+      "takeOutAccessId": "acc-494692cea97b50dea940",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM Lower Deschutes River Boater Guide, maps 4–6",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/prog_rec_permits_deschutes_map4.pdf",
+        "checkedOn": "2026-10-29",
+        "streamId": "Lower Deschutes River",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Harpham Flat",
+          "riverMile": 55.8,
+          "sourceLocation": "Map 4, page 2, named boat access"
+        },
+        "takeOut": {
+          "name": "Maupin City Park",
+          "riverMile": 51.8,
+          "sourceLocation": "Map 5, page 2, named boat access"
+        },
+        "note": "Differences between published boat-access river miles; replaces unsupported eight-mile values. Companion source: https://www.blm.gov/sites/default/files/prog_rec_permits_deschutes_map5.pdf"
+      }
     },
     {
       "id": "maupin-sandy-beach",
       "putIn": "Maupin City Park",
       "takeOut": "Sandy Beach",
-      "miles": 8,
-      "difficulty": "Class II–III",
-      "notes": "Oak Springs is the rapid to scout. Sandy Beach is the LAST take-out — Sherars Falls below is not runnable."
+      "miles": 6.4,
+      "difficulty": "Class II–IV (flow dependent)",
+      "notes": "BLM’s boater guide rates Oak Springs Rapid Class IV; scout it from the road on river right. Take out at Sandy Beach before Sherars Falls. Arrange the road shuttle in advance.",
+      "putInAccessId": "acc-494692cea97b50dea940",
+      "takeOutAccessId": "acc-f2820ad997d05709bd0e",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM Lower Deschutes River Boater Guide, maps 4–6",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/prog_rec_permits_deschutes_map5.pdf",
+        "checkedOn": "2026-10-29",
+        "streamId": "Lower Deschutes River",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Maupin City Park",
+          "riverMile": 51.8,
+          "sourceLocation": "Map 5, page 2, named boat access"
+        },
+        "takeOut": {
+          "name": "Sandy Beach",
+          "riverMile": 45.4,
+          "sourceLocation": "Map 6, page 2, named boat access"
+        },
+        "note": "Differences between published boat-access river miles; replaces unsupported eight-mile values. Companion source: https://www.blm.gov/sites/default/files/prog_rec_permits_deschutes_map6.pdf"
+      },
+      "notices": [
+        {
+          "title": "Mandatory exit before Sherars Falls",
+          "text": "Sandy Beach is the last takeout before Sherars Falls. All boaters must leave the river there or upstream. Continuing into the next river segment requires a vehicle portage.",
+          "sourceName": "BLM Lower Deschutes guide, map 6",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/prog_rec_permits_deschutes_map6.pdf",
+          "checkedOn": "2026-10-29"
+        }
+      ]
     }
   ],
   "timezone": "America/Los_Angeles"

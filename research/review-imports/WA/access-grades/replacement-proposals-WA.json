@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "state": "WA",
+  "checkedOn": "2026-10-25",
+  "purpose": "PROPOSALS ONLY. Not applied. Labels, sections and catalog unchanged; each item needs owner approval.",
+  "proposals": [
+    {
+      "id": "fall-city-to-raging-river",
+      "type": "replace-endpoint",
+      "riverId": "snoqualmie-fall-city",
+      "sectionId": "plum-landing-fall-city",
+      "currentLabel": "Fall City Access",
+      "currentLabelKept": true,
+      "proposedSite": "Raging River water access site (WDFW)",
+      "proposedCoordinate": {
+        "lat": 47.567983,
+        "lon": -121.882314,
+        "source": "WDFW water access site page"
+      },
+      "sourceName": "WDFW: Raging River water access site",
+      "sourceUrl": "https://wdfw.wa.gov/places-to-go/water-access-sites/raging-river-627",
+      "proposedGradeIfApplied": "verified only after imagery confirms the ramp to the water; otherwise access-verified",
+      "centreline": {
+        "from": "Plum Landing (verified)",
+        "miles": 2.91,
+        "direction": "downstream"
+      },
+      "listedMiles": 3.2,
+      "status": "proposal - label change NOT approved; Fall City label stays",
+      "why": "The v1 Fall City (SR 202 bridge) site has no official source; the WDFW site is official and ~500 m away."
+    },
+    {
+      "id": "queets-trailhead-to-campground",
+      "type": "replace-endpoint",
+      "riverId": "queets",
+      "sectionId": "queets-trailhead-streator",
+      "currentLabel": "Queets Trailhead",
+      "currentLabelKept": true,
+      "proposedSite": "Queets Campground boat launch (NPS)",
+      "proposedCoordinate": {
+        "lat": 47.628058,
+        "lon": -124.01752,
+        "source": "NPS Public POIs Queets Campground"
+      },
+      "sourceName": "NPS Olympic NP: Boating / Queets area brochure ('Launch from Hartzell Creek, Streator Crossing, or the Queets Campground')",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/queets-area-brochure.htm",
+      "proposedGradeIfApplied": "access-verified",
+      "centreline": {
+        "to": "Streator Crossing (access-verified centre)",
+        "miles": 6.41,
+        "direction": "downstream"
+      },
+      "listedMiles": 6.8,
+      "status": "proposal - relabel NOT approved",
+      "why": "NPS names Queets Campground (427 m from the trailhead point) as the put-in; the trailhead is not a named launch."
+    },
+    {
+      "id": "pateros-to-city-methow-boat-launch",
+      "type": "identify-endpoint",
+      "riverId": "methow-lower",
+      "sectionId": "averill-pateros",
+      "currentLabel": "Pateros Take-out",
+      "currentLabelKept": true,
+      "proposedSite": "City of Pateros 'Methow Boat Launch', 190 Lakeshore Dr (seasonal; usually closed Oct-Mar)",
+      "proposedCoordinate": null,
+      "sourceName": "City of Pateros: Methow Boat Launch",
+      "sourceUrl": "https://pateros.com/business_detail_T2_R31.php",
+      "proposedGradeIfApplied": "access-verified (seasonal flag) once a coordinate is tied to the official listing",
+      "status": "proposal - needs agency answer (is the AW 'Douglas PUD take-out 0.7 mi up the Methow' the same as the City's Methow Boat Launch, and its coordinate)",
+      "why": "AW and City descriptions may refer to the same facility; not reconciled from public data."
+    },
+    {
+      "id": "meenach-to-downriver-park-access",
+      "type": "replace-endpoint",
+      "riverId": "spokane",
+      "sectionId": "meenach-plese-flats",
+      "currentLabel": "T.J. Meenach Bridge",
+      "currentLabelKept": true,
+      "proposedSite": "Downriver Park non-motorized watercraft access area (City of Spokane), ~0.25 mi below the T.J. Meenach bridge",
+      "proposedCoordinate": null,
+      "sourceName": "City of Spokane: Downriver Park River Access Area Now Open (2024-04-24)",
+      "sourceUrl": "https://my.spokanecity.org/parksrec/news/2024/04/24/downriver-park-river-access-area-now-open/",
+      "proposedGradeIfApplied": "access-verified only after current (2026) open status is confirmed",
+      "status": "proposal - closure-uncertain (closed Nov 2024 after a hillside breach; reported reopened for summer 2025); needs agency answer on current status",
+      "why": "Only official boating wording near the put-in; status unconfirmed."
+    },
+    {
+      "id": "waterfront-to-east-leavenworth-launch",
+      "type": "replace-endpoint",
+      "riverId": "wenatchee-leavenworth",
+      "sectionId": "leavenworth-peshastin",
+      "currentLabel": "Waterfront Park (Leavenworth)",
+      "currentLabelKept": true,
+      "proposedSite": "East Leavenworth Boat Launch (river right; City River Shuttle take-out/pick-up)",
+      "proposedCoordinate": null,
+      "sourceName": "City of Leavenworth: River Shuttle 2026",
+      "sourceUrl": "https://cityofleavenworth.com/community/river-shuttle/",
+      "proposedGradeIfApplied": "access-verified once a coordinate is tied to the City-named launch (section would shorten; re-measure)",
+      "status": "proposal - needs a coordinate; would change the section start and miles",
+      "why": "The City names East Leavenworth Boat Launch as an official boat launch; Waterfront Park is tubing wording only. Note the City says hatchery gate / boat-launch parking typically close near ~200 cfs."
+    },
+    {
+      "id": "husum-safety-note",
+      "type": "annotation",
+      "riverId": "white-salmon",
+      "sectionId": "bz-husum",
+      "currentLabel": "Husum (above the falls)",
+      "currentLabelKept": true,
+      "proposedChange": "Add a safety note to the section/notes: take-out is immediately above Husum Falls (Class V; USFS). No coordinate change.",
+      "sourceName": "USFS Husum Boating Site",
+      "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+      "status": "proposal - text only"
+    }
+  ]
+}

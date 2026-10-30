@@ -1,0 +1,1234 @@
+{
+  "version": 1,
+  "state": "ID",
+  "generatedOn": "2026-10-30",
+  "sections": [
+    {
+      "id": "boise/barber-ann-morrison",
+      "state": "ID",
+      "river": "Boise River (Greenbelt)",
+      "riverId": "boise",
+      "sectionId": "barber-ann-morrison",
+      "label": "Barber Park → Ann Morrison Park",
+      "accessMap": "exact",
+      "released": true,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Barber Park",
+          "accessId": "acc-04830f605fa05192af6d",
+          "existing": {
+            "status": "verified",
+            "lat": 43.56686994623055,
+            "lon": -116.13417630589196,
+            "accessType": "Public river access",
+            "operator": "Ada County Parks and Waterways",
+            "sourceName": "City of Boise Fire Department Float the Boise public access map",
+            "sourceUrl": "https://www.floattheboise.org/",
+            "verifiedOn": "2026-10-29",
+            "note": "The official public-access map identifies this designated landing; satellite review places it at the beach/stair access, not in a parking lot. Launch only during the official float season after the river is opened.",
+            "id": "acc-04830f605fa05192af6d",
+            "name": "Barber Park",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Ann Morrison Park",
+          "accessId": "acc-91de053ecb835c988abe",
+          "existing": {
+            "status": "verified",
+            "lat": 43.61201682861463,
+            "lon": -116.21722084092278,
+            "accessType": "Public river access",
+            "operator": "City of Boise",
+            "sourceName": "City of Boise Fire Department Float the Boise public access map",
+            "sourceUrl": "https://www.floattheboise.org/",
+            "verifiedOn": "2026-10-29",
+            "note": "The official public-access map identifies this designated landing; satellite review places it at the beach/stair access, not in a parking lot. All floaters must exit at Ann Morrison Park; the diversion dam downstream is dangerous.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-29",
+            "bankSourceName": "Ada County Parks & Waterways — Float the Boise guide (2025)",
+            "bankSourceUrl": "https://adacounty.id.gov/parksandwaterways/wp-content/uploads/sites/47/Parks-FloattheBoiseGuide-Brochure-TriFold-2025.pdf",
+            "bankNote": "The agency guide explicitly places the Ann Morrison takeout on river left, facing downstream. This agrees with the reviewed official takeout feature and satellite placement.",
+            "id": "acc-91de053ecb835c988abe",
+            "name": "Ann Morrison Park",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "boise/ann-morrison-eagle",
+      "state": "ID",
+      "river": "Boise River (Greenbelt)",
+      "riverId": "boise",
+      "sectionId": "ann-morrison-eagle",
+      "label": "Ann Morrison Park → Eagle Island",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The former Class I Ann Morrison–Eagle listing crosses diversion-dam and whitewater-park hazards. Boise identifies a low-head dam below the designated floater takeout; a suitable through-route and exact Eagle exit have not been established. This listing is withheld from trip planning.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Ann Morrison Park",
+          "accessId": "acc-91de053ecb835c988abe",
+          "existing": {
+            "status": "verified",
+            "lat": 43.61201682861463,
+            "lon": -116.21722084092278,
+            "accessType": "Public river access",
+            "operator": "City of Boise",
+            "sourceName": "City of Boise Fire Department Float the Boise public access map",
+            "sourceUrl": "https://www.floattheboise.org/",
+            "verifiedOn": "2026-10-29",
+            "note": "The official public-access map identifies this designated landing; satellite review places it at the beach/stair access, not in a parking lot. All floaters must exit at Ann Morrison Park; the diversion dam downstream is dangerous.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-29",
+            "bankSourceName": "Ada County Parks & Waterways — Float the Boise guide (2025)",
+            "bankSourceUrl": "https://adacounty.id.gov/parksandwaterways/wp-content/uploads/sites/47/Parks-FloattheBoiseGuide-Brochure-TriFold-2025.pdf",
+            "bankNote": "The agency guide explicitly places the Ann Morrison takeout on river left, facing downstream. This agrees with the reviewed official takeout feature and satellite placement.",
+            "id": "acc-91de053ecb835c988abe",
+            "name": "Ann Morrison Park",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Eagle Island",
+          "accessId": "acc-b0c633de81e05a3389da",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-b0c633de81e05a3389da",
+            "name": "Eagle Island",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "clearwater/orofino-peck",
+      "state": "ID",
+      "river": "Clearwater River",
+      "riverId": "clearwater",
+      "sectionId": "orofino-peck",
+      "label": "Orofino → Peck",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Orofino",
+          "accessId": "acc-9362ea81884d5ac388f5",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-9362ea81884d5ac388f5",
+            "name": "Orofino",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Peck",
+          "accessId": "acc-dc313147ed8e5a1dbf49",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-dc313147ed8e5a1dbf49",
+            "name": "Peck",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "clearwater/peck-spalding",
+      "state": "ID",
+      "river": "Clearwater River",
+      "riverId": "clearwater",
+      "sectionId": "peck-spalding",
+      "label": "Peck → Spalding (Nez Perce NHP)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Peck",
+          "accessId": "acc-dc313147ed8e5a1dbf49",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-dc313147ed8e5a1dbf49",
+            "name": "Peck",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Spalding (Nez Perce NHP)",
+          "accessId": "acc-ec295a4266e355fa9476",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-ec295a4266e355fa9476",
+            "name": "Spalding (Nez Perce NHP)",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "henrys-fork-ashton/warm-river-ashton",
+      "state": "ID",
+      "river": "Henry's Fork (Ashton)",
+      "riverId": "henrys-fork-ashton",
+      "sectionId": "warm-river-ashton",
+      "label": "Warm River Campground → Ashton (Vernon area)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Warm River Campground",
+          "accessId": "acc-f9ed9598496b51cda6c7",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-f9ed9598496b51cda6c7",
+            "name": "Warm River Campground",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Ashton (Vernon area)",
+          "accessId": "acc-ddc25461e6da5cac90cd",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-ddc25461e6da5cac90cd",
+            "name": "Ashton (Vernon area)",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "henrys-fork-ashton/vernon-st-anthony",
+      "state": "ID",
+      "river": "Henry's Fork (Ashton)",
+      "riverId": "henrys-fork-ashton",
+      "sectionId": "vernon-st-anthony",
+      "label": "Vernon Bridge → St. Anthony",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Vernon Bridge",
+          "accessId": "acc-e24ac2ffffce5da5a4e4",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-e24ac2ffffce5da5a4e4",
+            "name": "Vernon Bridge",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "St. Anthony",
+          "accessId": "acc-8a69f84a01bf5424aaa2",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-8a69f84a01bf5424aaa2",
+            "name": "St. Anthony",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "henrys-fork-box/box-canyon",
+      "state": "ID",
+      "river": "Henry's Fork (Box Canyon)",
+      "riverId": "henrys-fork-box",
+      "sectionId": "box-canyon",
+      "label": "Island Park Dam (Box Canyon) → Last Chance",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Island Park Dam (Box Canyon)",
+          "accessId": "acc-9d25906dfc34516f8cf9",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-9d25906dfc34516f8cf9",
+            "name": "Island Park Dam (Box Canyon)",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Last Chance",
+          "accessId": "acc-b381a7b196dc5f808953",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-b381a7b196dc5f808953",
+            "name": "Last Chance",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "lochsa/knife-fish",
+      "state": "ID",
+      "river": "Lochsa River",
+      "riverId": "lochsa",
+      "sectionId": "knife-fish",
+      "label": "White Pine / Knife Blade → Fish Creek",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "White Pine / Knife Blade",
+          "accessId": "acc-423d5ef93a175085818b",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-423d5ef93a175085818b",
+            "name": "White Pine / Knife Blade",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Fish Creek",
+          "accessId": "acc-799e6614914b5e51b758",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-799e6614914b5e51b758",
+            "name": "Fish Creek",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "lochsa/gateway-lowell",
+      "state": "ID",
+      "river": "Lochsa River",
+      "riverId": "lochsa",
+      "sectionId": "gateway-lowell",
+      "label": "Wilderness Gateway → Lowell",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Wilderness Gateway",
+          "accessId": "acc-bd7695cb10975daf8fcd",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-bd7695cb10975daf8fcd",
+            "name": "Wilderness Gateway",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Lowell",
+          "accessId": "acc-2890f5ffae965d04bfa6",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-2890f5ffae965d04bfa6",
+            "name": "Lowell",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "payette-nf/cabarton-banks",
+      "state": "ID",
+      "river": "North Fork Payette (Cabarton)",
+      "riverId": "payette-nf",
+      "sectionId": "cabarton-banks",
+      "label": "Cabarton Bridge → Smiths Ferry (Cabarton takeout)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "BLM identifies both Cabarton Bridge and Smiths Ferry access as private. Current permission, operating arrangements and exact landing locations still need confirmation. This corrected reach is held for access review.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Cabarton Bridge",
+          "accessId": "acc-a5bdf0b4d2c45db19137",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-a5bdf0b4d2c45db19137",
+            "name": "Cabarton Bridge",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Smiths Ferry (Cabarton takeout)",
+          "accessId": "acc-096bde2079b25ac68c6f",
+          "existing": {
+            "status": "pending",
+            "note": "BLM NF02 identifies the Smiths Ferry takeout as private. Confirm current access arrangements and exact landing before placing a map pin.",
+            "id": "acc-096bde2079b25ac68c6f",
+            "name": "Smiths Ferry (Cabarton takeout)",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "payette-main/banks-beehive",
+      "state": "ID",
+      "river": "Payette River (Banks)",
+      "riverId": "payette-main",
+      "sectionId": "banks-beehive",
+      "label": "Banks → Beehive Bend",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Banks",
+          "accessId": "acc-ae1ce3a1e65c5b14b81e",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-ae1ce3a1e65c5b14b81e",
+            "name": "Banks",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Beehive Bend",
+          "accessId": "acc-eb45f000946b566e97a9",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-eb45f000946b566e97a9",
+            "name": "Beehive Bend",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "payette-main/beehive-hsb",
+      "state": "ID",
+      "river": "Payette River (Banks)",
+      "riverId": "payette-main",
+      "sectionId": "beehive-hsb",
+      "label": "Beehive Bend → Horseshoe Bend boat ramp",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "The legacy takeout label does not establish whether it means the Parnell Recreation Site or the separate Horseshoe Dam Bridge access in BLM guide P03. Confirm the intended landing and route before planning.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Beehive Bend",
+          "accessId": "acc-eb45f000946b566e97a9",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-eb45f000946b566e97a9",
+            "name": "Beehive Bend",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Horseshoe Bend boat ramp",
+          "accessId": "acc-7a878191382551c695ca",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-7a878191382551c695ca",
+            "name": "Horseshoe Bend boat ramp",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "salmon-riggins/riggins-lucile",
+      "state": "ID",
+      "river": "Salmon River (Riggins)",
+      "riverId": "salmon-riggins",
+      "sectionId": "riggins-lucile",
+      "label": "Riggins city → Lucile",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Riggins city",
+          "accessId": "acc-70b697e8b4a65dcfabdf",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-70b697e8b4a65dcfabdf",
+            "name": "Riggins city",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Lucile",
+          "accessId": "acc-75babddc0b7055f0b999",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-75babddc0b7055f0b999",
+            "name": "Lucile",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "salmon-riggins/hammer-heller",
+      "state": "ID",
+      "river": "Salmon River (Riggins)",
+      "riverId": "salmon-riggins",
+      "sectionId": "hammer-heller",
+      "label": "Hammer Creek → Heller Bar (Snake confluence)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Hammer Creek",
+          "accessId": "acc-c1539731d5a1552eaf53",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-c1539731d5a1552eaf53",
+            "name": "Hammer Creek",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Heller Bar (Snake confluence)",
+          "accessId": "acc-3e73957c1637524ca9b1",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-3e73957c1637524ca9b1",
+            "name": "Heller Bar (Snake confluence)",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "salmon-salmon/salmon-north-fork",
+      "state": "ID",
+      "river": "Salmon River (Salmon)",
+      "riverId": "salmon-salmon",
+      "sectionId": "salmon-north-fork",
+      "label": "Salmon (Island Park ramp) → North Fork",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Salmon (Island Park ramp)",
+          "accessId": "acc-4b92537ad645507ea3ba",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-4b92537ad645507ea3ba",
+            "name": "Salmon (Island Park ramp)",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "North Fork",
+          "accessId": "acc-170d9d9a305b5ee3aa3d",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-170d9d9a305b5ee3aa3d",
+            "name": "North Fork",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "selway/paradise-race-creek",
+      "state": "ID",
+      "river": "Selway River (Permit)",
+      "riverId": "selway",
+      "sectionId": "paradise-race-creek",
+      "label": "Paradise Guard Station → Race Creek / Selway Falls",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Paradise Guard Station",
+          "accessId": "acc-6e940b468d6d553aae8b",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-6e940b468d6d553aae8b",
+            "name": "Paradise Guard Station",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Race Creek / Selway Falls",
+          "accessId": "acc-2d79eae710cc5ec99f0b",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-2d79eae710cc5ec99f0b",
+            "name": "Race Creek / Selway Falls",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "payette-sf/lowman-deadwood",
+      "state": "ID",
+      "river": "South Fork Payette",
+      "riverId": "payette-sf",
+      "sectionId": "lowman-deadwood",
+      "label": "Kirkham / Lowman → Deadwood Campground",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "held",
+      "timing": "unavailable",
+      "blocker": "Kirkham and Lowman are different launch locations. The former six-mile listing combined them; a specific legal landing and matching distance must be established before enabling this trip.",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Kirkham / Lowman",
+          "accessId": "acc-3a58f9f8b3685323aa4b",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-3a58f9f8b3685323aa4b",
+            "name": "Kirkham / Lowman",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Deadwood Campground",
+          "accessId": "acc-37d5b8822612559dbcb8",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-37d5b8822612559dbcb8",
+            "name": "Deadwood Campground",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "payette-sf/danskin-confluence",
+      "state": "ID",
+      "river": "South Fork Payette",
+      "riverId": "payette-sf",
+      "sectionId": "danskin-confluence",
+      "label": "Danskin → Confluence (Garden Valley)",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Danskin",
+          "accessId": "acc-2cf366328d855b6e9d1d",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-2cf366328d855b6e9d1d",
+            "name": "Danskin",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Confluence (Garden Valley)",
+          "accessId": "acc-9ae0a95750fa56a6b8b3",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-9ae0a95750fa56a6b8b3",
+            "name": "Confluence (Garden Valley)",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "snake-sf-canyon/conant-byington",
+      "state": "ID",
+      "river": "South Fork Snake (Canyon)",
+      "riverId": "snake-sf-canyon",
+      "sectionId": "conant-byington",
+      "label": "Conant → Byington",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Conant",
+          "accessId": "acc-e0e189c765525569ab75",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-e0e189c765525569ab75",
+            "name": "Conant",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Byington",
+          "accessId": "acc-998b91e623d35a48a9d3",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-998b91e623d35a48a9d3",
+            "name": "Byington",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "snake-sf-canyon/byington-lorenzo",
+      "state": "ID",
+      "river": "South Fork Snake (Canyon)",
+      "riverId": "snake-sf-canyon",
+      "sectionId": "byington-lorenzo",
+      "label": "Byington → Lorenzo",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Byington",
+          "accessId": "acc-998b91e623d35a48a9d3",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-998b91e623d35a48a9d3",
+            "name": "Byington",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Lorenzo",
+          "accessId": "acc-ddd9072240ee59288bc7",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-ddd9072240ee59288bc7",
+            "name": "Lorenzo",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "snake-sf-swan/palisades-spring",
+      "state": "ID",
+      "river": "South Fork Snake (Swan Valley)",
+      "riverId": "snake-sf-swan",
+      "sectionId": "palisades-spring",
+      "label": "Palisades Dam → Spring Creek",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Palisades Dam",
+          "accessId": "acc-cf9caccd26a955af945c",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-cf9caccd26a955af945c",
+            "name": "Palisades Dam",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Spring Creek",
+          "accessId": "acc-09d76b6c03415210a557",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-09d76b6c03415210a557",
+            "name": "Spring Creek",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "snake-sf-swan/spring-conant",
+      "state": "ID",
+      "river": "South Fork Snake (Swan Valley)",
+      "riverId": "snake-sf-swan",
+      "sectionId": "spring-conant",
+      "label": "Spring Creek → Conant",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Spring Creek",
+          "accessId": "acc-09d76b6c03415210a557",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-09d76b6c03415210a557",
+            "name": "Spring Creek",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Conant",
+          "accessId": "acc-e0e189c765525569ab75",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-e0e189c765525569ab75",
+            "name": "Conant",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "st-joe/avery-calder",
+      "state": "ID",
+      "river": "St. Joe River",
+      "riverId": "st-joe",
+      "sectionId": "avery-calder",
+      "label": "Avery → Calder",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Avery",
+          "accessId": "acc-3810fa5a4f58582db64f",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-3810fa5a4f58582db64f",
+            "name": "Avery",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Calder",
+          "accessId": "acc-caa9ed03c8085495bb58",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-caa9ed03c8085495bb58",
+            "name": "Calder",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "st-joe/calder-st-maries",
+      "state": "ID",
+      "river": "St. Joe River",
+      "riverId": "st-joe",
+      "sectionId": "calder-st-maries",
+      "label": "Calder → St. Maries",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Calder",
+          "accessId": "acc-caa9ed03c8085495bb58",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-caa9ed03c8085495bb58",
+            "name": "Calder",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "St. Maries",
+          "accessId": "acc-8f3750de373a5828afb2",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-8f3750de373a5828afb2",
+            "name": "St. Maries",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "teton/bates-rainey",
+      "state": "ID",
+      "river": "Teton River (Driggs)",
+      "riverId": "teton",
+      "sectionId": "bates-rainey",
+      "label": "Bates Bridge → Rainey Bridge",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Bates Bridge",
+          "accessId": "acc-79db0dbd06795027a7c0",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-79db0dbd06795027a7c0",
+            "name": "Bates Bridge",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Rainey Bridge",
+          "accessId": "acc-f82bfffcdd9a5f11a766",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-f82bfffcdd9a5f11a766",
+            "name": "Rainey Bridge",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    },
+    {
+      "id": "teton/rainey-cache",
+      "state": "ID",
+      "river": "Teton River (Driggs)",
+      "riverId": "teton",
+      "sectionId": "rainey-cache",
+      "label": "Rainey Bridge → Cache Bridge",
+      "accessMap": "withheld",
+      "released": false,
+      "riverPath": false,
+      "distance": "catalog",
+      "timing": "existing-model",
+      "blocker": "",
+      "endpoints": [
+        {
+          "endpoint": "putIn",
+          "label": "Rainey Bridge",
+          "accessId": "acc-f82bfffcdd9a5f11a766",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-f82bfffcdd9a5f11a766",
+            "name": "Rainey Bridge",
+            "state": "ID",
+            "aliases": []
+          }
+        },
+        {
+          "endpoint": "takeOut",
+          "label": "Cache Bridge",
+          "accessId": "acc-ef7fbde632905fb3acba",
+          "existing": {
+            "status": "pending",
+            "note": "No sourced access record has been added yet.",
+            "id": "acc-ef7fbde632905fb3acba",
+            "name": "Cache Bridge",
+            "state": "ID",
+            "aliases": []
+          }
+        }
+      ],
+      "riverPathIssues": [
+        "geometry-review-required"
+      ],
+      "riverPathNextAction": "Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path."
+    }
+  ]
+}

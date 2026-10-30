@@ -1,0 +1,90 @@
+{
+ "version": "1",
+ "state": "AR",
+ "type": "PROPOSED APP FEATURE — not implemented, not read by the app",
+ "checkedOn": "2026-10-30",
+ "problem": "Missouri rivers (Eleven Point, Black, Current, St. Francis) continue into Arkansas; a section that starts in one state and ends in another cannot be expressed in one state's catalog.",
+ "proposal": "Allow a section endpoint to reference another state's registry (e.g. {state: 'MO', point: 'Myrtle Access'}). Both registries now exist (MO v1 and this AR v1).",
+ "notDone": "No cross-state sections are in either catalog; no MO points were added to the AR registry.",
+ "references": [
+  {
+   "moEndpointId": "MO-ACC-0122",
+   "moEndpointName": "Myrtle Access",
+   "moRegistryStatusToday": "verified",
+   "moRegistry": "floateta-missouri-v1 catalog/map_points/MO.json",
+   "arEndpointId": "AR-ACC-0032",
+   "arEndpointName": "Dalton Boat Ramp",
+   "arGrade": "access-verified",
+   "arRegistryStatusToday": "access-verified",
+   "proposedSection": "Myrtle Access (MO) → Dalton Boat Ramp (AR)",
+   "river": "eleven-point-river-ar",
+   "milesOrigin": "not measured across the state line in this package (NLDI routing for AR started at the first AR point)",
+   "note": "Myrtle is the last Missouri Eleven Point access (about 1 mile above the line); Dalton is the first AGFC Eleven Point ramp found in Arkansas.",
+   "sectionsThatWouldUnlock": [
+    "eleven-point-river-ar: Myrtle Access → Dalton Boat Ramp"
+   ]
+  },
+  {
+   "moEndpointId": "MO-ACC-0045",
+   "moEndpointName": "Coon Island Conservation Area",
+   "moRegistryStatusToday": "verified",
+   "moRegistry": "floateta-missouri-v1 catalog/map_points/MO.json",
+   "arEndpointId": "AR-ACC-0081",
+   "arEndpointName": "Kody Riggan Datto Boat Ramp",
+   "arGrade": "verified",
+   "arRegistryStatusToday": "verified",
+   "proposedSection": "Coon Island Conservation Area (MO) → Kody Riggan Datto Boat Ramp (AR)",
+   "river": "black-river-ar",
+   "milesOrigin": "not measured across the state line in this package (NLDI routing for AR started at the first AR point)",
+   "note": "Coon Island is the southern-most Missouri Black River ramp; Kody Riggan Datto is the upper-most AGFC Black River ramp found.",
+   "sectionsThatWouldUnlock": [
+    "black-river-ar: Coon Island Conservation Area → Kody Riggan Datto Boat Ramp"
+   ]
+  },
+  {
+   "moEndpointId": "MO-ACC-0180",
+   "moEndpointName": "T. L. Wright Memorial Access (Doniphan)",
+   "moRegistryStatusToday": "verified",
+   "moRegistry": "floateta-missouri-v1 catalog/map_points/MO.json",
+   "arEndpointId": "AR-ACC-0079",
+   "arEndpointName": "Johnston's Eddy Boat Ramp",
+   "arGrade": "verified",
+   "arRegistryStatusToday": null,
+   "proposedSection": "T. L. Wright Memorial Access (Doniphan) (MO) → Johnston's Eddy Boat Ramp (AR)",
+   "river": "current-river-ar",
+   "milesOrigin": "not measured across the state line in this package (NLDI routing for AR started at the first AR point)",
+   "note": "Johnston's Eddy is the only AGFC Current River ramp found in Arkansas; the Arkansas Current reach is draft-only (single access).",
+   "sectionsThatWouldUnlock": [
+    "current-river-ar: T. L. Wright Memorial Access (Doniphan) → Johnston's Eddy Boat Ramp"
+   ]
+  },
+  {
+   "moEndpointId": null,
+   "moEndpointName": "St. Francis River below Wappapello Lake",
+   "moRegistryStatusToday": null,
+   "moRegistry": "floateta-missouri-v1 catalog/map_points/MO.json",
+   "arEndpointId": "AR-ACC-0149",
+   "arEndpointName": "St Francis Boat Ramp",
+   "arGrade": "verified",
+   "arRegistryStatusToday": null,
+   "proposedSection": null,
+   "river": "st-francis-river-ar",
+   "milesOrigin": "not measured across the state line in this package (NLDI routing for AR started at the first AR point)",
+   "note": "Informational only: the St. Francis forms the MO–AR border here; no section proposed.",
+   "sectionsThatWouldUnlock": []
+  },
+  {
+   "moEndpointId": null,
+   "moEndpointName": null,
+   "otherState": "OK",
+   "arEndpointId": "AR-ACC-0159",
+   "arEndpointName": "WOKA Whitewater Park Canoe-Kayakng Access",
+   "arGrade": "verified",
+   "arRegistryStatusToday": "verified",
+   "proposedSection": null,
+   "river": "illinois-river-ar",
+   "note": "WOKA straddles the AR–OK line (AGFC record location 'Watts, OK and Siloam Springs, AR'; owner GRDA). Floating on into Oklahoma needs a GRDA Private Float Permit. No Oklahoma package exists.",
+   "sectionsThatWouldUnlock": []
+  }
+ ]
+}

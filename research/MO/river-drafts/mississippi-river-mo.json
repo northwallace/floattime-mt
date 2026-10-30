@@ -1,0 +1,61 @@
+{
+ "id": "mississippi-river-mo",
+ "name": "Mississippi River (Missouri side)",
+ "state": "MO",
+ "status": "draft",
+ "whyDraft": "Big commercial river: MDC ramps found but no NLDI routing/sections built; barge traffic, wing dams and lock-and-dam portages need app support and separate review.",
+ "blockers": [
+  "no-sections"
+ ],
+ "accessPoints": [
+  {
+   "id": "MO-ACC-0041",
+   "name": "Clarksville Riverfront Park",
+   "grade": "verified",
+   "lat": 39.370125,
+   "lon": -90.902418,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D547&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "MO-ACC-0042",
+   "name": "Columbia Bottom Conservation Area — Mississippi River",
+   "grade": "verified",
+   "lat": 38.795945,
+   "lon": -90.131159,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D571&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "MO-ACC-0069",
+   "name": "Hamburg Ferry Access",
+   "grade": "verified",
+   "lat": 39.22878,
+   "lon": -90.724089,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D343&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "MO-ACC-0145",
+   "name": "Red Star Access",
+   "grade": "verified",
+   "lat": 37.315331,
+   "lon": -89.512811,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D504&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "MO-ACC-0166",
+   "name": "Seventy-Six Conservation Area",
+   "grade": "verified",
+   "lat": 37.720852,
+   "lon": -89.612361,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D594&outFields=*&outSR=4326&f=json"
+  },
+  {
+   "id": "MO-ACC-0187",
+   "name": "Truman Access",
+   "grade": "verified",
+   "lat": 38.136852,
+   "lon": -90.26536,
+   "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D402&outFields=*&outSR=4326&f=json"
+  }
+ ],
+ "candidateSections": []
+}

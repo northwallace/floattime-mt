@@ -1,0 +1,59 @@
+{
+  "id": "north-platte-douglas",
+  "name": "North Platte River — PacifiCorp (Glenrock) to Orin Junction",
+  "gauge": "06652000",
+  "gaugeName": "North Platte River At Orin, WY (USGS 06652000)",
+  "lat": 42.8408,
+  "lon": -105.74009,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "North Platte River: sections between Wyoming Game and Fish Department river access points.",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "pacificorp-to-bixby",
+      "putIn": "PacifiCorp (North Platte)",
+      "takeOut": "Bixby (North Platte)",
+      "miles": 4.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in PacifiCorp (North Platte): exact agency facility pin. Take-out Bixby (North Platte): exact agency facility pin. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (4.7 mi); no agency mileage found.",
+      "putInAccessId": "acc-fa5f78250a2b571f9529",
+      "takeOutAccessId": "acc-e32c021906225fc49bfb"
+    },
+    {
+      "id": "bixby-to-douglas",
+      "putIn": "Bixby (North Platte)",
+      "takeOut": "Douglas (North Platte)",
+      "miles": 25.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Bixby (North Platte): exact agency facility pin. Take-out Douglas (North Platte): approximate agency-documented access area. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (25.3 mi); no agency mileage found.",
+      "putInAccessId": "acc-e32c021906225fc49bfb",
+      "takeOutAccessId": "acc-7a2a365ba7f450829528"
+    },
+    {
+      "id": "douglas-to-south-douglas",
+      "putIn": "Douglas (North Platte)",
+      "takeOut": "South Douglas (North Platte)",
+      "miles": 7.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Douglas (North Platte): approximate agency-documented access area. Take-out South Douglas (North Platte): approximate area only. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (7.1 mi); no agency mileage found.",
+      "putInAccessId": "acc-7a2a365ba7f450829528",
+      "takeOutAccessId": "acc-c749ae44f83d5dd8b2a0"
+    },
+    {
+      "id": "south-douglas-to-orin-junction",
+      "putIn": "South Douglas (North Platte)",
+      "takeOut": "Orin Junction (North Platte)",
+      "miles": 16.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in South Douglas (North Platte): approximate area only. Take-out Orin Junction (North Platte): exact agency facility pin. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (16.9 mi); no agency mileage found.",
+      "putInAccessId": "acc-c749ae44f83d5dd8b2a0",
+      "takeOutAccessId": "acc-189ede883766525a932a"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "state": "WY",
+  "riverId": "green-river-upper-wy",
+  "sectionId": "warren-bridge-blm-2-to-warren-bridge-blm-1",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset \u2014 High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1404_HU4_GPKG.zip",
+    "checkedOn": "2026-10-29",
+    "streamId": "Green River",
+    "evidenceFile": "research/routes/WY/hr-sources/green-river-upper-wy-cebf306e76beb533.json",
+    "sha256": "cebf306e76beb5339b20d870a05ea0caa49823ef709e6de6dd42f27c0bde3161"
+  },
+  "putIn": {
+    "name": "Warren Bridge BLM 2 (Green)",
+    "lat": 43.032953,
+    "lon": -110.101325
+  },
+  "takeOut": {
+    "name": "Warren Bridge BLM 1 (Green)",
+    "lat": 43.02412,
+    "lon": -110.104124
+  },
+  "catalogMiles": 0.8,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -110.10127517154335,
+        43.0328169357256
+      ],
+      [
+        -110.10174300620714,
+        43.03272473320459
+      ],
+      [
+        -110.10253420620586,
+        43.03271019987125
+      ],
+      [
+        -110.10326980620471,
+        43.03263313320475
+      ],
+      [
+        -110.10372480620401,
+        43.03242939987172
+      ],
+      [
+        -110.1038166062039,
+        43.032372933205124
+      ],
+      [
+        -110.1043234062031,
+        43.032060999872265
+      ],
+      [
+        -110.10477987286907,
+        43.03175379987277
+      ],
+      [
+        -110.10501427286869,
+        43.03117533320699
+      ],
+      [
+        -110.1050780728686,
+        43.03067839987443
+      ],
+      [
+        -110.10505660620197,
+        43.03020159987516
+      ],
+      [
+        -110.10472200620245,
+        43.02990879987561
+      ],
+      [
+        -110.10391300620375,
+        43.02919793321007
+      ],
+      [
+        -110.10344040620447,
+        43.02867599987753
+      ],
+      [
+        -110.10313867287158,
+        43.02805193321182
+      ],
+      [
+        -110.1029552062052,
+        43.02707639988
+      ],
+      [
+        -110.10248507287264,
+        43.02638879988109
+      ],
+      [
+        -110.10221187287306,
+        43.025744333215414
+      ],
+      [
+        -110.10222340620635,
+        43.024956799883284
+      ],
+      [
+        -110.10234120620618,
+        43.02462613321716
+      ],
+      [
+        -110.1026852728723,
+        43.024276599884395
+      ],
+      [
+        -110.10325347287142,
+        43.024052999884695
+      ],
+      [
+        -110.10403762139781,
+        43.02389263465227
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "30678397",
+      "30678385"
+    ],
+    "putInOffsetMeters": 1662.3364086608735,
+    "takeOutOffsetMeters": 1130.1218852431625
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate mapped river centerline, not a recommended navigation channel. Channels, hazards and conditions change. Does not enable GPS time remaining or replace planning mileage.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 0.8374,
+      "endpointOffsetsMeters": [
+        15.7,
+        26.2
+      ],
+      "mileageDifferencePercent": 4.68,
+      "maxSegmentMeters": 109.5,
+      "vertices": 23
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-10-29",
+    "reviewer": "Float ETA desktop geometry/source review",
+    "note": "Reviewed endpoint identities, downstream order, continuity, 100 m endpoint limits, 5% mileage agreement and full-section geometry overlays in display-review-1.png through display-review-6.png. Display-only approximate centerline; not field verified and not a navigable-channel recommendation. No GPS ETA, bank claim, land overlay or mileage change."
+  }
+}

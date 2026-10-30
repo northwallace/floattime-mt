@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "AR-usfs-access",
+    "state": "AR",
+    "agency": "USDA Forest Service",
+    "discoveryUrl": "https://data-usfs.hub.arcgis.com/",
+    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
+    "where": "objectid IN (4011,4106,4110,4109,4020)",
+    "fields": [
+      "recareaname",
+      "longitude",
+      "latitude",
+      "recareaurl",
+      "forestname",
+      "recareaid",
+      "markertype",
+      "markeractivity",
+      "recareadescription",
+      "restrictions",
+      "openstatus",
+      "operational_hours",
+      "open_season_start",
+      "open_season_end"
+    ],
+    "stableFeatureField": "recareaid",
+    "note": "Complete declared subset of recreation records referenced by the current state catalog; not a complete statewide boating inventory. A recreation point alone does not establish a launch."
+  },
+  "retrievedAt": "2026-10-30T19:25:10.322175+00:00",
+  "file": "research/agency-sources/AR-usfs-access/189d7e93ff4b7906cabe2e7d4b95c8d56eab5ccd12078adbf050291aa0432ed6.json",
+  "sha256": "189d7e93ff4b7906cabe2e7d4b95c8d56eab5ccd12078adbf050291aa0432ed6",
+  "features": 5,
+  "changes": null,
+  "reviewStatus": "research-only"
+}

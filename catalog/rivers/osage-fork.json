@@ -1,0 +1,66 @@
+{
+  "id": "osage-fork",
+  "name": "Osage Fork of the Gasconade — Rader Access to Hull Ford Access",
+  "gauge": "06927800",
+  "gaugeName": "Osage Fork Gasconade River at Drynob, MO (USGS 06927800)",
+  "lat": 37.45958,
+  "lon": -92.72934,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Osage Fork of the Gasconade in Missouri: sections between public Missouri Department of Conservation accesses.",
+  "state": "MO",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "rader-access-to-long-ford-access",
+      "putIn": "Rader Access",
+      "takeOut": "Long Ford Access",
+      "miles": 29.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Rader Access: approximate area only. Take-out Long Ford Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-5f7fab90e4de579589d5",
+      "takeOutAccessId": "acc-a2ae229ec5c75885b4f9"
+    },
+    {
+      "id": "long-ford-access-to-drynob-access",
+      "putIn": "Long Ford Access",
+      "takeOut": "Drynob Access",
+      "miles": 10.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Long Ford Access: exact agency access pin. Take-out Drynob Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-a2ae229ec5c75885b4f9",
+      "takeOutAccessId": "acc-28da99d25cc859188c0f"
+    },
+    {
+      "id": "drynob-access-to-davis-ford-access",
+      "putIn": "Drynob Access",
+      "takeOut": "Davis Ford Access",
+      "miles": 5.4,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Drynob Access: exact agency access pin. Take-out Davis Ford Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-28da99d25cc859188c0f",
+      "takeOutAccessId": "acc-7d334abb69785dd7bbf8"
+    },
+    {
+      "id": "davis-ford-access-to-hull-ford-access",
+      "putIn": "Davis Ford Access",
+      "takeOut": "Hull Ford Access",
+      "miles": 7.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Davis Ford Access: exact agency access pin. Take-out Hull Ford Access: exact agency access pin. Missouri law: no glass beverage containers on canoes, kayaks or tubes; keep food and drink in a sealed non-glass cooler; carry a closable trash bag affixed to the boat; children under 7 wear life jackets. Banks and gravel bars beside private land may be private — use public accesses. Mileage: preliminary, measured along USGS river geometry (no agency mileage found).",
+      "putInAccessId": "acc-7d334abb69785dd7bbf8",
+      "takeOutAccessId": "acc-aa1b4bfb9d835345b644"
+    }
+  ],
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "This assigned station did not provide current discharge in the October 30 review. Access and published guide information remain available, but no live timing estimate or substitute gauge has been approved.",
+    "sourceName": "USGS Water Data — station record",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-06927800/",
+    "checkedOn": "2026-10-30"
+  }
+}

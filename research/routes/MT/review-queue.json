@@ -217,9 +217,8 @@
       "riverId": "clark-fork",
       "sectionId": "sharon-caras",
       "issues": [
-        "catalog-access-under-review"
-      ],
-      "detail": "The exact Caras Park landing has not been confirmed. The city documents Silver Park as a downtown take-out, but that is a different endpoint and this listing has not yet been revised or remeasured."
+        "source-not-configured"
+      ]
     },
     {
       "riverId": "clark-fork",
@@ -314,7 +313,7 @@
       "issues": [
         "catalog-access-under-review"
       ],
-      "detail": "The Parsons Bridge / Waterloo label needs to be resolved to one confirmed access site. A diversion near Waterloo also requires current local guidance."
+      "detail": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check."
     },
     {
       "riverId": "jefferson-upper",
@@ -322,7 +321,7 @@
       "issues": [
         "catalog-access-under-review"
       ],
-      "detail": "The launch label is ambiguous, and the official Parrot Castle record describes difficult river access with no boat ramp. A suitable take-out for the planned craft has not been confirmed."
+      "detail": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing."
     },
     {
       "riverId": "madison-lower",
@@ -459,6 +458,42 @@
         "mileageDifferencePercent": 1.24,
         "maxSegmentMeters": 902.3,
         "vertices": 676
+      }
+    },
+    {
+      "riverId": "missouri-breaks",
+      "sectionId": "fort-benton-coal-banks",
+      "issues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "metrics": {
+        "routeMiles": 42.2411,
+        "endpointOffsetsMeters": [
+          115.5,
+          192.2
+        ],
+        "mileageDifferencePercent": 1.79,
+        "maxSegmentMeters": 902.3,
+        "vertices": 344
+      }
+    },
+    {
+      "riverId": "missouri-breaks",
+      "sectionId": "coal-banks-judith",
+      "issues": [
+        "approximate-access-points",
+        "endpoint-offset-over-100m"
+      ],
+      "metrics": {
+        "routeMiles": 47.3519,
+        "endpointOffsetsMeters": [
+          192.2,
+          306.6
+        ],
+        "mileageDifferencePercent": 0.75,
+        "maxSegmentMeters": 863.4,
+        "vertices": 334
       }
     },
     {
@@ -622,9 +657,8 @@
       "riverId": "yellowstone-upper",
       "sectionId": "corwin-yankee-jim",
       "issues": [
-        "catalog-access-under-review"
-      ],
-      "detail": "The intended Corwin Springs boat launch has not been confirmed. Carbella is documented, but one confirmed endpoint is not enough to plan this canyon trip."
+        "source-not-configured"
+      ]
     },
     {
       "riverId": "yellowstone-paradise",

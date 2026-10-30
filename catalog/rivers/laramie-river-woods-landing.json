@@ -1,0 +1,45 @@
+{
+  "id": "laramie-river-woods-landing",
+  "name": "Laramie River — Jelm to Woods Landing",
+  "gauge": "06659000",
+  "gaugeName": "Laramie River At Woods Landing, WY (USGS 06659000)",
+  "lat": 41.07959,
+  "lon": -106.01237,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Laramie River: sections between Wyoming Game and Fish Department river access points.",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "jelm-to-woods-landing",
+      "putIn": "Jelm (Laramie)",
+      "takeOut": "Woods Landing (Laramie)",
+      "miles": 2.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Jelm (Laramie): approximate agency-documented access area. Take-out Woods Landing (Laramie): exact agency facility pin. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (2.9 mi); no agency mileage found.",
+      "putInAccessId": "acc-a03f6c5f52715d759923",
+      "takeOutAccessId": "acc-7123291c40315fb58497",
+      "notices": [
+        {
+          "title": "Use the signed public access",
+          "text": "Jelm access is limited to the signed easement, with a primitive launch at the southern parking area. Woods Landing access is restricted to the WYDOT right of way. Roads and parking are not plowed in winter. Scout both sites before committing to the float.",
+          "sourceName": "Wyoming Game and Fish — Jelm and Woods Landing",
+          "sourceUrl": "https://wgfd.wyo.gov/Public-Access/Public-Access-Areas/woods-landing",
+          "checkedOn": "2026-10-30"
+        }
+      ]
+    }
+  ],
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "The Wyoming State Engineer lists current discharge below Pioneer Canal near Woods Landing (014AWL). Automated access is not connected yet. This station is below a diversion, so it must not be substituted for upstream flow without reach review.",
+    "sourceName": "Wyoming State Engineer streamflow portal",
+    "sourceUrl": "https://seoflow.wyo.gov/",
+    "checkedOn": "2026-10-30"
+  }
+}

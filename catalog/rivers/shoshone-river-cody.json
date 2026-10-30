@@ -1,0 +1,48 @@
+{
+  "id": "shoshone-river-cody",
+  "name": "Shoshone River — Cody (Demaris Hot Springs to Corbett Bridge)",
+  "gauge": "06282500",
+  "gaugeName": "Shoshone River At Cody WYo (USGS 06282500)",
+  "lat": 44.53436,
+  "lon": -109.06417,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Shoshone River: sections between Wyoming Game and Fish Department river access points.",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "belfry-bridge-to-corbett-bridge",
+      "putIn": "Belfry Bridge (Shoshone)",
+      "takeOut": "Corbett Bridge (Shoshone)",
+      "miles": 6.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Belfry Bridge (Shoshone): exact agency facility pin. Take-out Corbett Bridge (Shoshone): exact agency facility pin. Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (6.3 mi); no agency mileage found.",
+      "putInAccessId": "acc-194e8311d223549ca544",
+      "takeOutAccessId": "acc-8ffb03043d9052899c6d"
+    }
+  ],
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "This gauge below Buffalo Bill provides upstream flow context for the Cody reaches. It is above Corbett diversion and should not be treated as flow below that diversion.",
+    "sourceName": "Bureau of Reclamation Hydromet",
+    "sourceUrl": "https://www.usbr.gov/gp-bin/hydromet_dayfiles.pl?SRBB",
+    "checkedOn": "2026-10-30"
+  },
+  "flowSource": {
+    "provider": "usbr-gp",
+    "station": "SRBB",
+    "parameter": "Q",
+    "timeZone": "America/Denver",
+    "kind": "streamflow",
+    "name": "Shoshone River below Buffalo Bill",
+    "note": "Replaces historical USGS 06282500 for displayed discharge only. Reclamation observations are provisional; no timing calibration is added.",
+    "sourceUrl": "https://www.usbr.gov/gp-bin/hydromet_dayfiles.pl?SRBB",
+    "checkedOn": "2026-10-30"
+  },
+  "gaugeRelationship": "same-river-reference"
+}

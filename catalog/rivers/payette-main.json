@@ -14,9 +14,30 @@
       "id": "banks-beehive",
       "putIn": "Banks",
       "takeOut": "Beehive Bend",
-      "miles": 5,
-      "difficulty": "Class II–III",
-      "notes": "Upper Main. Payette River Pass parking. Not a tube float. Bennett's Rock is the first real drop."
+      "miles": 7.3,
+      "difficulty": "Class III+",
+      "notes": "BLM’s P02 guide measures this run from Banks River Access to Beehive Bend at 7.3 miles and includes Class III+ rapids. Arrange a road shuttle along Highway 55; confirm the current river-access fee and conditions.",
+      "putInAccessId": "acc-ae1ce3a1e65c5b14b81e",
+      "takeOutAccessId": "acc-eb45f000946b566e97a9",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM Payette River guide, P02",
+        "sourceUrl": "https://www.blm.gov/sites/blm.gov/files/BLM_ID_PayetteRiver.pdf",
+        "checkedOn": "2026-10-29",
+        "streamId": "Main Payette / Banks to Beehive",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Banks",
+          "riverMile": 0,
+          "sourceLocation": "PDF page 15, P02, Banks River Access"
+        },
+        "takeOut": {
+          "name": "Beehive Bend",
+          "riverMile": 7.3,
+          "sourceLocation": "PDF page 15, P02, Beehive Bend"
+        },
+        "note": "Replaces an unsupported five-mile listing with the BLM guide distance."
+      }
     },
     {
       "id": "beehive-hsb",
@@ -24,7 +45,10 @@
       "takeOut": "Horseshoe Bend boat ramp",
       "miles": 6,
       "difficulty": "Class III",
-      "notes": "Mixmaster and the rest of the Lower Main. Rafts and kayaks. Scout or go with a guide if it's new water."
+      "notes": "Mixmaster and the rest of the Lower Main. Rafts and kayaks. Scout or go with a guide if it's new water.",
+      "putInAccessId": "acc-eb45f000946b566e97a9",
+      "takeOutAccessId": "acc-7a878191382551c695ca",
+      "accessReview": "The legacy takeout label does not establish whether it means the Parnell Recreation Site or the separate Horseshoe Dam Bridge access in BLM guide P03. Confirm the intended landing and route before planning."
     }
   ],
   "timezone": "America/Boise"

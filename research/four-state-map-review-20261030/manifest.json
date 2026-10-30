@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "checkedOn": "2026-10-30",
+  "localOnly": true,
+  "scope": "Current Montana and Wyoming holds, Midwest access-map release review, shared marker presentation.",
+  "newAccessMaps": 213,
+  "newMapCounts": {
+    "WY": 4,
+    "MO": 111,
+    "AR": 98
+  },
+  "unchangedMapCounts": {
+    "MT": 42
+  },
+  "method": [
+    "Fresh complete declared-scope snapshots from MDC, AGFC, NPS and USFS; source-feature attributes and coordinates compared with imported records.",
+    "Imported per-point imagery and NHD grading retained as evidence, not instructions. Independent visual samples are listed in MO-visual-samples.json and AR-visual-samples.json; Wyoming NFS1\u20137, SFS1\u20133, UGR23 and NFR6 examined in this review.",
+    "Four WY points promoted only to approximate areas using explicit WGFD launch/egress inventory and imagery; NFS2/NFS3 cloud-obscured candidates and ambiguous legal approaches held.",
+    "Two Rivers and Grinders Ferry changed to approximate areas without moving coordinates.",
+    "Each approved section has a fingerprint of its source record and normalized access endpoints. Changed evidence needs re-review.",
+    "No new centerline routes, river-bank claims, travel-speed calibration, or ordinary GPS remaining-time estimates.",
+    "Montana and three original gauge blockers remain unresolved; historical, stage-only or unrelated diversion feeds are not substitutes."
+  ],
+  "primaryReferences": [
+    {
+      "url": "https://www.nps.gov/buff/planyourvisit/river-accesses-mileage.htm",
+      "use": "Buffalo access/mileage and Buffalo Point road closure"
+    },
+    {
+      "url": "https://www.nps.gov/thingstodo/paddle-the-upper-current-river.htm",
+      "use": "Current River access and published time context"
+    },
+    {
+      "url": "https://www.nps.gov/thingstodo/paddle-jacks-fork-river.htm",
+      "use": "Jacks Fork access and published time context"
+    },
+    {
+      "url": "https://www.agfc.com/things-to-do/water-trails/saline-river-water-trail/",
+      "use": "Cherry Demuth closure, low bridge and spillway concerns"
+    },
+    {
+      "url": "https://www.fs.usda.gov/r09/marktwain/recreation/slabtown-recreation-area",
+      "use": "Boat access description; Fort Leonard Wood reach; compare closed GIS record"
+    },
+    {
+      "url": "https://www.usbr.gov/gp/mtao/clarkcanyon/clark_canyon_recreation_brochure.pdf",
+      "use": "Below-dam river access documented, but no dependable exact launch coordinate established"
+    },
+    {
+      "url": "https://waterdata.usgs.gov/monitoring-location/USGS-06659000/",
+      "use": "Woods Landing is historical, not a current discharge feed"
+    },
+    {
+      "url": "https://waterdata.usgs.gov/monitoring-location/USGS-06283000/",
+      "use": "Corbett historical station does not supply current discharge"
+    },
+    {
+      "url": "https://waterdata.usgs.gov/monitoring-location/USGS-06298000/",
+      "use": "Dayton USGS feed historical; state export and stage-only HADS do not provide an approved replacement"
+    }
+  ],
+  "limitations": [
+    "Desktop source review does not certify physical conditions or legal access on a future trip.",
+    "Some imagery has unknown capture dates and movable gravel bars; source pins are not surveys.",
+    "Thirty Missouri and seventeen Arkansas section maps remain held.",
+    "New-state timing remains unavailable except separately sourced guide times."
+  ],
+  "evidenceFiles": {
+    "AR-agfc-access-bindings.json": "e82b945fe8739f23833038239780c71bfcbf423ee4360764a4be597366a0fde7",
+    "AR-nps-access-bindings.json": "1745d49acf7d0ddd574b67aa872a4a4b413724c9e1ee1e0116977826220b34fe",
+    "AR-point-decisions.json": "104cc03bed2219f898a740b94af5fde0f32606e77b255499397ac31241976702",
+    "AR-source-comparison.json": "28fe9eea55bbadbe60dba62aea96fbb5bb027648432fabeafd3108bf3b82078d",
+    "AR-usfs-access-bindings.json": "01714fc0be3ae2b5962538657c7096c4b3528129d0084dd6ec700b80dbc595c7",
+    "AR-visual-samples.json": "17ecb1cd2a58659d68989d636ce18c49ecab52975846121f452d53ff03c78658",
+    "MO-mdc-ramps-bindings.json": "b36875e1eb74ff076ffe8c0b0242a10beb8d3cffb4d21dab583082835d9b55fe",
+    "MO-nps-access-bindings.json": "9fec4b6879e84f08b831298180be5cf46b915b88e51a3cce7b03ffb9b9f3791d",
+    "MO-point-decisions.json": "e43471ef532f1568205a291f4d132d584bb3c3c7006ca3b081315730e0c3c3e4",
+    "MO-source-comparison.json": "c6667c80eef9afeea7f3964507a4114c0c53432b2ed3a922eee12323ed68ff61",
+    "MO-usfs-access-bindings.json": "08c0da96838dc025abd25f948c3cf2535fa110581cd826ae655935b8ce17fa91",
+    "MO-visual-samples.json": "3cf1ba37f6f6469db2d340e1f36ab5ce4c7d479110e407cc34a4c0c6c33587c7",
+    "WY-agency-bindings.json": "7fc3a3563b74386dfcbcf14995a26fc37c49466edb55ba3c1abb34ceb27fd4fa",
+    "WY-all-agency-bindings.json": "313b4a80507e8e6d8a9cd52e5f539b9ae78acf6a6640285a8d3fe4cfdab49edb",
+    "agfc-access-metadata.json": "9ebf6f4797d2fba8ddf5b3a3c1fdabc0ab73b57262fd881f157ebb7cade845de",
+    "ar-access-metadata.json": "7ae5ad0c24a481193ddb5b0c3ffc433982c19f795e704888a369d1e2fbf7d85c",
+    "binding-checks.json": "9107f17a7ea276e1705ee5410e55b85f2d21ea68ce3fb71cbf5b4aab4327e80c",
+    "http-checks.json": "5b0a42bd2317c93200938948f5a59f398ad77bb09297ca45ff2b566714345d09",
+    "mdc-ramps-metadata.json": "98364ef679ca0414aac44f84fd5263ffd1eeb6fe23de65c643d194f942f8bcfa",
+    "nps-pois-metadata.json": "84c7dec9cb0e79746040cb7dba22c1fce0c580c2cd0cd57ccb289af078a73f6b",
+    "original-gauge-gaps.json": "fa0ed2f53170a3e5a318afaf55100b7452b96dc1791ea53d93b8f39f17d86105",
+    "remaining-work.json": "c55d4fde1985a90064f3713d29c419197f9b5d61ec6cd4c3f021255464b010b9",
+    "section-decisions.json": "cf6c59ec61c3c9294ea10986037b2785840b9cec89154738b021d8e22e39bcf1",
+    "source-urls.json": "38588663155b02313e2d975b0863632fb04511b889f17efd6d7c3508aedefd12",
+    "usfs-comparison.json": "41266fddda1e2b145dde5dc524370858b9d92562d83839ee155f6f7f0bc77795",
+    "usfs-recreation-metadata.json": "61fd73ec2775947305a04edf3325623bc5815b84ccfba62f6c2bcfa6aef692b1",
+    "validation.json": "ef14ec37b7b39ecf8f43c9d7416c9392548779a1d84839e145d537b8b8074d39"
+  }
+}

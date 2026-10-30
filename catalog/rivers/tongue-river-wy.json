@@ -1,0 +1,36 @@
+{
+  "id": "tongue-river-wy",
+  "name": "Tongue River — I-90 (Ranchester area)",
+  "gauge": "06299980",
+  "gaugeName": "Tongue River At Monarch, WY (USGS 06299980)",
+  "lat": 44.87954,
+  "lon": -107.25995,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Tongue River: sections between Wyoming Game and Fish Department river access points.",
+  "state": "WY",
+  "timezone": "America/Denver",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "upstream-of-i90-to-downstream-of-i90",
+      "putIn": "Upstream of I90 (Tongue)",
+      "takeOut": "Downstream of I90 (Tongue)",
+      "miles": 34.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Put-in Upstream of I90 (Tongue): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Take-out Downstream of I90 (Tongue): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (34.2 mi); no agency mileage found.",
+      "putInAccessId": "acc-01ef26634c555ff38092",
+      "takeOutAccessId": "acc-44f042f1e654562c9cb7"
+    }
+  ],
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "The Wyoming State Engineer lists a current Tongue River station near Dayton (06298000), even though the old USGS feed is discontinued. Automated access is not connected yet; Dayton is upstream of the listed Ranchester reaches.",
+    "sourceName": "Wyoming State Engineer streamflow portal",
+    "sourceUrl": "https://seoflow.wyo.gov/",
+    "checkedOn": "2026-10-30"
+  }
+}

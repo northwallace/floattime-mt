@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "id": "MO-nps-access",
+  "state": "MO",
+  "agency": "National Park Service",
+  "discoveryUrl": "https://www.nps.gov/subjects/gisandmapping/tools-and-data.htm",
+  "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0",
+  "where": "UNITCODE = 'OZAR'",
+  "fields": [
+    "POINAME",
+    "POITYPE",
+    "POISTATUS",
+    "PUBLICDISPLAY",
+    "DATAACCESS",
+    "ACCESSNOTES",
+    "UNITCODE",
+    "MAPMETHOD",
+    "MAPSOURCE",
+    "XYACCURACY",
+    "GEOMETRYID",
+    "FEATUREID",
+    "ISEXTANT",
+    "OPENTOPUBLIC",
+    "SEASONAL",
+    "SEASDESC",
+    "NOTES"
+  ],
+  "note": "Agency evidence only. No automatic coordinate promotion or section release; exact landing, permission, restrictions and imagery need separate review.",
+  "stableFeatureField": "GEOMETRYID"
+}

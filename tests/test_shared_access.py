@@ -9,7 +9,7 @@ class SharedAccessTests(unittest.TestCase):
    root=Path(td);shutil.copytree(ROOT/'catalog',root/'catalog');shutil.copytree(Path(__file__).resolve().parents[1]/'research/routes',root/'research/routes')
    def section():return next(r for r in build(root)['rivers'] if r['id']=='colorado-river-ruby-horsethief')['sections'][0]
    self.assertEqual(section()['mapPrecision'],'exact')
-   p=root/'catalog/map_points/UT.json';d=json.loads(p.read_text());d['points']['Westwater Ranger Station Boat Ramp']={'status':'pending','note':'Closed for review'}
+   p=root/'catalog/map_points/UT.json';d=json.loads(p.read_text());d['points']['Westwater Ranger Station Boat Ramp']={'id':d['points']['Westwater Ranger Station Boat Ramp']['id'],'status':'pending','note':'Closed for review'}
    # Its original Utah river must also lose its fully-verified audit.
    for a in d['auditedRivers'].values():a['status']='pending'
    p.write_text(json.dumps(d));self.assertNotIn('mapPilot',section());self.assertIn('Closed for review',section()['mapPendingReason'])

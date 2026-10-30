@@ -4,9 +4,9 @@
   "checkedOn": "2026-10-28",
   "localOnly": true,
   "baselineMaps": 34,
-  "newApproximateMaps": 4,
-  "localMaps": 38,
-  "remainingHeld": 16,
+  "newApproximateMaps": 5,
+  "localMaps": 39,
+  "remainingHeld": 15,
   "reviewedDottedRoutesUnchanged": 13,
   "sections": [
     {
@@ -109,7 +109,7 @@
       "sectionId": "greek-creek-storm-castle",
       "status": "hold",
       "decision": "Survey distinguishes campground/pull-out and Upper/Lower Storm Castle. Greek Creek restoration completed in 2025 changes bank/access. Survey totals 5.2 or 7.3 mi, not 9.",
-      "nextAction": "Use current restoration/as-built access map to establish the designated raft launch; then choose Upper Storm Castle or Lower explicitly and source mileage.",
+      "nextAction": "The 2025 restoration added a low-impact rock terrace, not documented trailer ramp access. USFS GIS point is a campground centroid. Establish the designated raft launch and choose Upper or Lower Storm Castle explicitly; do not use that campground coordinate as an exact landing.",
       "sourceUrls": [
         "https://gallatinrivertaskforce.org/greek-creek/",
         "https://gallatinrivertaskforce.org/wp-content/uploads/2015/12/Gallatin-Access-Sites-061915-small2.pdf"
@@ -202,20 +202,22 @@
       "riverId": "yellowstone-upper",
       "sectionId": "gardiner-corwin",
       "status": "hold",
-      "decision": "Old Corwin Springs FWP map ID resolves to Brogan’s Landing with still-listed 2022 flood closure. Queen of the Waters has no documented boat facility.",
+      "decision": "Brogan’s closure assessment says the site cannot be safely rebuilt and identifies Cinnabar separately. Queen of the Waters still lacks a confirmed suitable launch. Existing Gardiner–Corwin listing remains held.",
       "nextAction": "Confirm an open Gardiner-area public launch and open downstream take-out, not tourism/OSM aliases; then define the actual trip.",
       "sourceUrls": [
-        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522"
+        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522",
+        "https://fwp.mt.gov/binaries/content/assets/fwp/commission/2024/oct/parks/pi-sheet_brogans-landing-closure-fw-comm-proposal-sheet-10102024.pdf"
       ]
     },
     {
       "riverId": "yellowstone-upper",
       "sectionId": "corwin-yankee-jim",
-      "status": "hold",
-      "decision": "Same closed/ambiguous Corwin start. Carbella is already a documented approximate BLM facility.",
-      "nextAction": "Confirm an open suitable upstream launch; changing to Cinnabar or another access requires a new distance and hazard review.",
+      "status": "local-map-approximate-distance-held",
+      "decision": "Replaced ambiguous Corwin/Brogan’s launch with a separate Cinnabar USFS facility ID. FWP documents boating access; USFS supplies the approximate facility location. Carbella remains approximate. Old 7-mile estimate held.",
+      "nextAction": "Review the local Cinnabar–Carbella facility map and source actual landing-to-landing mileage. No route line, bank claim or time estimate is enabled.",
       "sourceUrls": [
-        "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753522",
+        "https://fwp.mt.gov/binaries/content/assets/fwp/commission/2024/oct/parks/pi-sheet_brogans-landing-closure-fw-comm-proposal-sheet-10102024.pdf",
+        "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=upper%28recareaname%29+LIKE+%27%25CINNABAR%25%27+OR+upper%28recareaname%29+LIKE+%27%25CORWIN%25%27&outFields=%2A&outSR=4326&f=json",
         "https://www.blm.gov/visit/carbella-rec-site"
       ]
     }

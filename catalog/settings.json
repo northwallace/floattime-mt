@@ -58,6 +58,40 @@
       "agencyUrl": "https://cpw.state.co.us/",
       "permitNotice": "Some Colorado river trips need a permit or pass: Dinosaur NM (NPS; including a one-day play permit to take out at Deerlodge after floating from upstream), Gunnison Gorge Wilderness and Ruby-Horsethief overnight camping (BLM), self-issued DENCA overnight permits, and CPW State Parks passes (including Arkansas Headwaters fee sites). Some launches charge fees. Check the managing agency before you go.",
       "permitUrl": "https://www.recreation.gov/"
+    },
+    {
+      "id": "WY",
+      "name": "Wyoming",
+      "slug": "wyoming",
+      "agency": "Wyoming Game and Fish Department",
+      "agencyUrl": "https://wgfd.wyo.gov/",
+      "permitNotice": "Some Wyoming float trips need a permit, pass or inspection: every watercraft entering Wyoming from March 1 to November 30 needs an aquatic invasive species inspection. State AIS decals are also required unless the craft is exempt; check the agency rules. Grand Teton National Park requires a park boat permit; the Snake River from the Hoback confluence through the canyon is a Forest Service fee area with group permits; the Wind River Indian Reservation (Wind River Canyon and the river below Dubois) requires tribal permits and Inter-Tribal Council approval for rafting. Wyoming streambeds next to private land are private: float through, but do not anchor, wade or get out without permission. Check the managing agency before you go.",
+      "permitUrl": "https://wgfd.wyo.gov/boating-and-ais/aquatic-invasive-species"
+    },
+    {
+      "id": "CA",
+      "name": "California",
+      "slug": "california",
+      "agency": "California State Parks Division of Boating and Waterways",
+      "agencyUrl": "https://dbw.parks.ca.gov/"
+    },
+    {
+      "id": "MO",
+      "name": "Missouri",
+      "slug": "missouri",
+      "agency": "Missouri Department of Conservation",
+      "agencyUrl": "https://mdc.mo.gov/",
+      "permitNotice": "Most Missouri floats need no permit, but rules apply: state law bans glass beverage containers on canoes, kayaks and tubes, requires food and drink in a sealed non-glass cooler and a closable trash bag affixed to the boat, and requires children under 7 to wear a life jacket. On the Current and Jacks Fork (Ozark National Scenic Riverways) the park closes the rivers during floods and sets motor horsepower limits; the Eleven Point (Mark Twain National Forest) has a 25 hp limit and no glass. There is no general right to cross private land: banks and gravel bars beside private land may be private, so launch and take out only at public accesses. Check the managing agency before you go.",
+      "permitUrl": "https://revisor.mo.gov/main/OneSection.aspx?section=306.325"
+    },
+    {
+      "id": "AR",
+      "name": "Arkansas",
+      "slug": "arkansas",
+      "agency": "Arkansas Game and Fish Commission",
+      "agencyUrl": "https://www.agfc.com/",
+      "permitNotice": "Most Arkansas floats need no permit, but rules apply: state law bans glass containers in canoes, kayaks and tubes, requires food and drink in sealed containers, a closable trash bag affixed to the boat and floating drink holders, and requires children 12 and under to wear a life jacket. On the Buffalo National River the park also bans Styrofoam and flotillas of three or more boats, and limits motors below Erbie Ford. Below Bull Shoals, Norfork, Beaver and Greers Ferry dams the water rises fast during power generation — check the release schedule. The Illinois River in Oklahoma needs a GRDA float permit. Banks and gravel bars beside private land may be private, so launch and take out only at public accesses. Check the managing agency before you go.",
+      "permitUrl": "https://codes.findlaw.com/ar/title-8-environmental-law/ar-code-sect-8-6-418/"
     }
   ],
   "craft": [
@@ -84,8 +118,30 @@
   ],
   "mapRelease": {
     "states": [
-      "MT"
+      "MT",
+      "WA",
+      "UT",
+      "AZ",
+      "CO",
+      "WY",
+      "ID",
+      "OR",
+      "CA",
+      "MO",
+      "AR"
     ],
     "reviewedRoutes": true
-  }
+  },
+  "mapReviewRequiredStates": [
+    "WA",
+    "UT",
+    "AZ",
+    "CO",
+    "WY",
+    "ID",
+    "OR",
+    "CA",
+    "MO",
+    "AR"
+  ]
 }

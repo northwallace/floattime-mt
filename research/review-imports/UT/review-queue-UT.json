@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "state": "UT",
+  "checkedOn": "2026-10-25",
+  "spotCheckVerifiedFirst": [
+    "Gates of Lodore Boat Ramp (point ~35-40 m from the launch beach; in Colorado)",
+    "Hittle Bottom Boat Ramp (open launch area, not a paved ramp)",
+    "Swallow Canyon Boat Ramp (dirt ramp road)",
+    "Cisco Takeout (coordinate from BLM page, not GIS)"
+  ],
+  "verified": [
+    "Spillway Boat Launch (Flaming Gorge)",
+    "Little Hole Boat Launch",
+    "Indian Crossing Boat Ramp",
+    "Swallow Canyon Boat Ramp",
+    "Gates of Lodore Boat Ramp",
+    "Split Mountain Boat Ramp",
+    "Sand Wash Boat Ramp",
+    "Nefertiti Boat Ramp",
+    "Swaseys Boat Ramp",
+    "Westwater Ranger Station Boat Ramp",
+    "Cisco Takeout",
+    "Dewey Bridge Boat Ramp",
+    "Hittle Bottom Boat Ramp",
+    "Takeout Beach Boat Ramp",
+    "Fuller Bottom (San Rafael Put-in)",
+    "Enron Boat Ramp (White River)"
+  ],
+  "pending": [
+    {
+      "label": "Green River State Park Boat Ramp",
+      "inventoryId": "UT-ACC-0011",
+      "grade": "access-verified",
+      "action": "Imagery: the UGRC 2009 point is on the sand ramp beside the dock (looks right), but there is no current agency coordinate. Coordinate comes from the 2009 UGRC boat-ramp layer, not from a Utah State Parks page; State Parks ramp-status page was blocked (403) so current ramp status not confirmed."
+    },
+    {
+      "label": "Mineral Bottom Boat Ramp",
+      "inventoryId": "UT-ACC-0012",
+      "grade": "access-verified",
+      "action": "Imagery: the BLM GIS point is on the access road about 60-70 m south of the launch area, not on the ramp. The NPS POI (38.5249, -109.9933) sits at the launch beside the water: see research/replacement-proposals-UT.json. NHD is 111 m away. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Moab Bridge Boat Ramp",
+      "inventoryId": "UT-ACC-0018",
+      "grade": "pending",
+      "action": "No current managing-agency page found for the Moab (US-191 bridge) ramp; UGRC 2009 attributes list State Sovereign Land. Coordinate is a candidate only."
+    },
+    {
+      "label": "Potash Boat Ramp",
+      "inventoryId": "UT-ACC-0019",
+      "grade": "access-verified",
+      "action": "Imagery: the NPS POI is in the river channel about 20 m off the west bank; the ramp/beach seen on imagery is about 110 m south. No BLM (managing-agency) page was found. Site lies outside Canyonlands NP; NPS POI and NPS flatwater page name it as a launch but no BLM (managing agency) page was found, so not verified."
+    },
+    {
+      "label": "Sand Island Boat Launch",
+      "inventoryId": "UT-ACC-0021",
+      "grade": "access-verified",
+      "action": "Imagery: the BLM point (and BLM page coordinate) is in the staging lot near the ranger station, about 40 m from the nearest bank and about 75 m from the launch beach. Too far from the water to pass the imagery check. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Mexican Hat Boat Launch",
+      "inventoryId": "UT-ACC-0022",
+      "grade": "access-verified",
+      "action": "Imagery: the BLM point is at the entrance of the gravel launch area, about 50-55 m from the water. Too far from the water to pass. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Clay Hills Boat Ramp",
+      "inventoryId": "UT-ACC-0023",
+      "grade": "access-verified",
+      "action": "Imagery: the BLM point is on a dirt track with no river visible; it is 263 m from the NHD centreline. The Clay Hills take-out shifts with Lake Powell sediment. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "San Rafael Swinging Bridge Take-out",
+      "inventoryId": "UT-ACC-0025",
+      "grade": "access-verified",
+      "action": "Imagery: the BLM GIS point is in the campground loop about 50 m south of the river through trees, with no ramp visible. The BLM Swinging Bridge POI is on the road at the north end of the bridge, and the BLM trailhead page coordinate is about 1.6 km away. Exact take-out is unresolved. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+    },
+    {
+      "label": "Bonanza Bridge Boat Launch",
+      "inventoryId": "UT-ACC-0026",
+      "grade": "pending",
+      "action": "BLM's own site record says the launch is on private property and open April 1-October 1 only; access permission/season not confirmable as public. Kept pending."
+    }
+  ]
+}

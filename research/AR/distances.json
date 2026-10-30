@@ -1,0 +1,2022 @@
+{
+ "generatedBy": "tools/ar_build.py (from tools/ar_nldi.py + tools/ar_nhd.py)",
+ "checkedOn": "2026-10-30",
+ "source": "USGS NLDI (NHDPlus V2) downstream-mainstem flowlines for routing; USGS NHD High Resolution HU4 GeoPackages for pin distances; NPS Buffalo NR river-mile chart; AGFC water-trail tables",
+ "method": "Points are ordered per river by chainage along the NLDI downstream-mainstem path from the top point (Buffalo: NPS river miles); points closer than 1 mile are merged (agency-preferred point kept). Buffalo sections follow the NPS trip pages. Mileage priority: NPS river miles > AGFC water-trail table (only where the access identity is clear) > NLDI chainage.",
+ "farThresholdM": 150,
+ "points": {
+  "Amity Landing Boat Ramp": {
+   "river": "caddo-river",
+   "distM": 50.9,
+   "nhdSide": "river-left",
+   "chainM": 55742.9,
+   "onLine": true
+  },
+  "Apple Lake Boat Access": {
+   "river": "bayou-deview",
+   "distM": 277.9,
+   "nhdSide": "river-left",
+   "chainM": 14218.5,
+   "onLine": true
+  },
+  "Baker Ford (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 30.0,
+   "nhdSide": "river-left",
+   "chainM": 109502.2,
+   "onLine": true
+  },
+  "Bank of Brinkley Boating Access": {
+   "river": "bayou-deview",
+   "distM": 10.5,
+   "nhdSide": "river-left",
+   "chainM": 20338.3,
+   "onLine": true
+  },
+  "Barnett Boat Ramp": {
+   "river": "little-red-river",
+   "distM": 92.9,
+   "nhdSide": "river-left",
+   "chainM": 15934.5,
+   "onLine": true
+  },
+  "Bayou Boat Ramp": {
+   "river": "spring-river-ar",
+   "distM": 35.5,
+   "nhdSide": "river-right",
+   "chainM": 6609.2,
+   "onLine": true
+  },
+  "Beaver Lake Dam Site Boat Ramp": {
+   "river": "white-river-beaver-tailwater",
+   "distM": 29.4,
+   "nhdSide": "river-left",
+   "chainM": 495.8,
+   "onLine": true
+  },
+  "Bertrand Boat Ramp": {
+   "river": "white-river-beaver-tailwater",
+   "distM": 32.3,
+   "nhdSide": "river-left",
+   "chainM": 5188.9,
+   "onLine": true
+  },
+  "Big Eddy Canoe Access": {
+   "river": "mulberry-river",
+   "distM": 7.7,
+   "nhdSide": "river-right",
+   "chainM": 29648.1,
+   "onLine": true
+  },
+  "Black Rock Boating Access": {
+   "river": "black-river-ar",
+   "distM": 86.1,
+   "nhdSide": "river-right",
+   "chainM": 86734.9,
+   "onLine": true
+  },
+  "Bluff Hole Park Boating Access": {
+   "river": "mulberry-river",
+   "distM": 15.8,
+   "nhdSide": "river-right",
+   "chainM": 72313.6,
+   "onLine": true
+  },
+  "Boswell Shoals Boating Access": {
+   "river": "white-river-bull-shoals",
+   "distM": 82.8,
+   "nhdSide": "river-right",
+   "chainM": 108716.9,
+   "onLine": true
+  },
+  "Boxley (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 0.2,
+   "nhdSide": "river-left",
+   "chainM": 1386.6,
+   "onLine": true
+  },
+  "Brookings Boat Ramp": {
+   "river": "black-river-ar",
+   "distM": 2060.8,
+   "nhdSide": "river-left",
+   "chainM": 9623.5,
+   "onLine": false
+  },
+  "Buffalo Point (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 46.0,
+   "nhdSide": "river-left",
+   "chainM": 162178.6,
+   "onLine": true
+  },
+  "Bull Shoals Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 21.0,
+   "nhdSide": "river-left",
+   "chainM": 1544.4,
+   "onLine": true
+  },
+  "Calico Rock Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 90.2,
+   "nhdSide": "river-left",
+   "chainM": 95964.8,
+   "onLine": true
+  },
+  "Calvin Road Boat Ramp": {
+   "river": "caddo-river",
+   "distM": 51.0,
+   "nhdSide": "river-right",
+   "chainM": 54655.4,
+   "onLine": true
+  },
+  "Campbell Cemetery Canoe Access": {
+   "river": "mulberry-river",
+   "distM": 42.2,
+   "nhdSide": "river-right",
+   "chainM": 42339.3,
+   "onLine": true
+  },
+  "Cartney Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 76.8,
+   "nhdSide": "river-right",
+   "chainM": 55007.6,
+   "onLine": true
+  },
+  "Carver (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 16.4,
+   "nhdSide": "river-left",
+   "chainM": 66909.0,
+   "onLine": true
+  },
+  "Chamber Springs Boating Access": {
+   "river": "illinois-river-ar",
+   "distM": 25.0,
+   "nhdSide": "river-right",
+   "chainM": 436.8,
+   "onLine": true
+  },
+  "Cherry Hill Boat Ramp": {
+   "river": "ouachita-river-upper",
+   "distM": 16.4,
+   "nhdSide": "river-right",
+   "chainM": 11707.1,
+   "onLine": true
+  },
+  "Chesmond Ferry Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 64.1,
+   "nhdSide": "river-left",
+   "chainM": 90903.9,
+   "onLine": true
+  },
+  "Coffey Access Boat Ramp": {
+   "river": "black-river-ar",
+   "distM": 85.5,
+   "nhdSide": "river-right",
+   "chainM": 121629.8,
+   "onLine": true
+  },
+  "Cold Springs Boat Ramp": {
+   "river": "spring-river-ar",
+   "distM": 32.6,
+   "nhdSide": "river-left",
+   "chainM": 210.0,
+   "onLine": true
+  },
+  "Cotter Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 27.8,
+   "nhdSide": "river-left",
+   "chainM": 26456.1,
+   "onLine": true
+  },
+  "Cowford Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 71.6,
+   "nhdSide": "river-right",
+   "chainM": 83277.2,
+   "onLine": true
+  },
+  "Dale Bend Boat Ramp": {
+   "river": "petit-jean-river",
+   "distM": 55.0,
+   "nhdSide": "river-left",
+   "chainM": 10661.7,
+   "onLine": true
+  },
+  "Dalton Boat Ramp": {
+   "river": "eleven-point-river-ar",
+   "distM": 56.3,
+   "nhdSide": "river-right",
+   "chainM": 84.1,
+   "onLine": true
+  },
+  "Dam 3 Boat Ramp": {
+   "river": "spring-river-ar",
+   "distM": 20.2,
+   "nhdSide": "river-left",
+   "chainM": 2286.0,
+   "onLine": true
+  },
+  "Dam Quarry Boat Ramp": {
+   "river": "north-fork-river-ar",
+   "distM": 11.0,
+   "nhdSide": "river-right",
+   "chainM": 102.2,
+   "onLine": true
+  },
+  "Dark Corner Spur Boating Access": {
+   "river": "bayou-deview",
+   "distM": 489.0,
+   "nhdSide": "river-right",
+   "chainM": 3489.8,
+   "onLine": false
+  },
+  "Dillards Ferry (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 24.9,
+   "nhdSide": "river-right",
+   "chainM": 159756.8,
+   "onLine": true
+  },
+  "Dixie Lee Boat Ramp": {
+   "river": "black-river-ar",
+   "distM": 45.8,
+   "nhdSide": "river-left",
+   "chainM": 117841.1,
+   "onLine": true
+  },
+  "Dragover (USFS)": {
+   "river": "ouachita-river-upper",
+   "distM": 44.1,
+   "nhdSide": "river-left",
+   "chainM": 79955.7,
+   "onLine": true
+  },
+  "Dripping Springs Boat Ramp": {
+   "river": "little-red-river",
+   "distM": 1110.7,
+   "nhdSide": "river-right",
+   "chainM": 32828.8,
+   "onLine": false
+  },
+  "Eleven Point Boat Ramp": {
+   "river": "eleven-point-river-ar",
+   "distM": 53.9,
+   "nhdSide": "river-right",
+   "chainM": 31922.0,
+   "onLine": true
+  },
+  "Erbie (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 50.0,
+   "nhdSide": "river-right",
+   "chainM": 36879.6,
+   "onLine": true
+  },
+  "Fitzhugh Boat Ramp": {
+   "river": "saline-river",
+   "distM": 67.2,
+   "nhdSide": "river-right",
+   "chainM": 50471.7,
+   "onLine": true
+  },
+  "Forrest & Nina Wood Rivercliff Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 92.8,
+   "nhdSide": "river-right",
+   "chainM": 390.7,
+   "onLine": true
+  },
+  "Fourche LaFave River Access": {
+   "river": "fourche-lafave-river",
+   "distM": 21.2,
+   "nhdSide": "river-right",
+   "chainM": 153.5,
+   "onLine": true
+  },
+  "Fourche LaFave River Seasonal Boating Access": {
+   "river": "fourche-lafave-river",
+   "distM": 43.6,
+   "nhdSide": "river-right",
+   "chainM": 160189.1,
+   "onLine": true
+  },
+  "Fulton Branch (USFS)": {
+   "river": "ouachita-river-upper",
+   "distM": 166.3,
+   "nhdSide": "river-right",
+   "chainM": 76074.7,
+   "onLine": true
+  },
+  "Gaston's Resort Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 96.8,
+   "nhdSide": "river-left",
+   "chainM": 6017.1,
+   "onLine": true
+  },
+  "Gilbert (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 30.6,
+   "nhdSide": "river-left",
+   "chainM": 125335.9,
+   "onLine": true
+  },
+  "Glenwood Boat Ramp": {
+   "river": "caddo-river",
+   "distM": 4.5,
+   "nhdSide": "river-right",
+   "chainM": 25683.5,
+   "onLine": true
+  },
+  "Grinders Ferry (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 31.5,
+   "nhdSide": "river-right",
+   "chainM": 118849.5,
+   "onLine": true
+  },
+  "Guion Boat Ramp-Izard County": {
+   "river": "white-river-bull-shoals",
+   "distM": 91.8,
+   "nhdSide": "river-left",
+   "chainM": 144214.0,
+   "onLine": true
+  },
+  "Hardy Beach Access Boat Ramp": {
+   "river": "spring-river-ar",
+   "distM": 52.2,
+   "nhdSide": "river-right",
+   "chainM": 27594.1,
+   "onLine": true
+  },
+  "Hasty (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 25.4,
+   "nhdSide": "river-right",
+   "chainM": 60231.2,
+   "onLine": true
+  },
+  "Hickson Lake Boat Ramp": {
+   "river": "bayou-deview",
+   "distM": 1843.1,
+   "nhdSide": "river-right",
+   "chainM": 10067.2,
+   "onLine": false
+  },
+  "High Bank Access": {
+   "river": "mulberry-river",
+   "distM": 44.6,
+   "nhdSide": "river-right",
+   "chainM": 6984.3,
+   "onLine": true
+  },
+  "Highway 17 Boating Access": {
+   "river": "bayou-deview",
+   "distM": 110.8,
+   "nhdSide": "river-right",
+   "chainM": 289.5,
+   "onLine": true
+  },
+  "Highway 19 Boating Access Little Missouri River": {
+   "river": "little-missouri-river",
+   "distM": 1.8,
+   "nhdSide": "river-right",
+   "chainM": 46395.8,
+   "onLine": true
+  },
+  "Highway 270 Boat Ramp": {
+   "river": "saline-river",
+   "distM": 27.8,
+   "nhdSide": "river-right",
+   "chainM": 59328.3,
+   "onLine": true
+  },
+  "Horseshoe Bend Boat Ramp": {
+   "river": "strawberry-river",
+   "distM": 30.2,
+   "nhdSide": "river-left",
+   "chainM": 2460.2,
+   "onLine": true
+  },
+  "Houseman Boat Ramp": {
+   "river": "white-river-beaver-tailwater",
+   "distM": 33.0,
+   "nhdSide": "river-left",
+   "chainM": 10953.6,
+   "onLine": true
+  },
+  "Hwy 15/63 Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 36.1,
+   "nhdSide": "river-left",
+   "chainM": 92070.0,
+   "onLine": true
+  },
+  "Hwy 167 Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 27.8,
+   "nhdSide": "river-right",
+   "chainM": 42.3,
+   "onLine": true
+  },
+  "Hwy 182 Amity Boat Ramp": {
+   "river": "caddo-river",
+   "distM": 24.9,
+   "nhdSide": "river-right",
+   "chainM": 38487.1,
+   "onLine": true
+  },
+  "Hwy 278 Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 45.8,
+   "nhdSide": "river-right",
+   "chainM": 109855.1,
+   "onLine": true
+  },
+  "Hwy 285 Boat Ramp": {
+   "river": "cadron-creek",
+   "distM": 19.6,
+   "nhdSide": "river-left",
+   "chainM": 18120.9,
+   "onLine": true
+  },
+  "Hwy 395 Boat Ramp": {
+   "river": "south-fork-spring-river",
+   "distM": 22.1,
+   "nhdSide": "river-left",
+   "chainM": 6863.3,
+   "onLine": true
+  },
+  "Hwy 45 Boat Ramp": {
+   "river": "white-river-upper",
+   "distM": 41.9,
+   "nhdSide": "river-left",
+   "chainM": 11560.4,
+   "onLine": true
+  },
+  "Hwy 64 Boat Ramp": {
+   "river": "cadron-creek",
+   "distM": 47.0,
+   "nhdSide": "river-right",
+   "chainM": 55768.8,
+   "onLine": true
+  },
+  "Hwy 65 Boat Ramp": {
+   "river": "cadron-creek",
+   "distM": 19.9,
+   "nhdSide": "river-right",
+   "chainM": 1995.5,
+   "onLine": true
+  },
+  "Hwy 79 Pool Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 72.1,
+   "nhdSide": "river-right",
+   "chainM": 46685.8,
+   "onLine": true
+  },
+  "Hwy. 67 Boat Ramp": {
+   "river": "little-missouri-river",
+   "distM": 47.2,
+   "nhdSide": "river-right",
+   "chainM": 77075.5,
+   "onLine": true
+  },
+  "I -30 Cherry Gingles Boat Ramp": {
+   "river": "saline-river",
+   "distM": 29.5,
+   "nhdSide": "river-left",
+   "chainM": 10672.1,
+   "onLine": true
+  },
+  "Imboden Boat Ramp": {
+   "river": "spring-river-ar",
+   "distM": 19.3,
+   "nhdSide": "river-right",
+   "chainM": 69535.0,
+   "onLine": true
+  },
+  "Indian Creek Access": {
+   "river": "mulberry-river",
+   "distM": 91.3,
+   "nhdSide": "river-right",
+   "chainM": 10046.2,
+   "onLine": true
+  },
+  "J.D. Fletcher Kings River Boating Access": {
+   "river": "kings-river",
+   "distM": 90.0,
+   "nhdSide": "river-left",
+   "chainM": 76298.8,
+   "onLine": true
+  },
+  "JFK Park Boat Ramp": {
+   "river": "little-red-river",
+   "distM": 25.8,
+   "nhdSide": "river-left",
+   "chainM": 1225.3,
+   "onLine": true
+  },
+  "Jenkins Ferry Boat Ramp": {
+   "river": "saline-river",
+   "distM": 12.2,
+   "nhdSide": "river-left",
+   "chainM": 85803.8,
+   "onLine": true
+  },
+  "Jim Griffin Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 40.7,
+   "nhdSide": "river-left",
+   "chainM": 84.6,
+   "onLine": true
+  },
+  "Kelly's Slab Crooked Creek Boat Ramp": {
+   "river": "crooked-creek",
+   "distM": 22.9,
+   "nhdSide": "river-left",
+   "chainM": 33043.8,
+   "onLine": true
+  },
+  "Kody Riggan Datto Boat Ramp": {
+   "river": "black-river-ar",
+   "distM": 37.1,
+   "nhdSide": "river-right",
+   "chainM": 1522.9,
+   "onLine": true
+  },
+  "Kyles Landing (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 30.0,
+   "nhdSide": "river-right",
+   "chainM": 27791.8,
+   "onLine": true
+  },
+  "LB Access Boat Ramp": {
+   "river": "spring-river-ar",
+   "distM": 20.2,
+   "nhdSide": "river-right",
+   "chainM": 37759.6,
+   "onLine": true
+  },
+  "Lee's Ferry Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 23.7,
+   "nhdSide": "river-left",
+   "chainM": 9864.9,
+   "onLine": true
+  },
+  "Little Missouri Hwy 27 Boating Access": {
+   "river": "little-missouri-river",
+   "distM": 28.8,
+   "nhdSide": "river-right",
+   "chainM": 113.4,
+   "onLine": true
+  },
+  "Lobo Landing Boat Ramp": {
+   "river": "little-red-river",
+   "distM": 12.8,
+   "nhdSide": "river-right",
+   "chainM": 25525.8,
+   "onLine": true
+  },
+  "Longview Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 50.7,
+   "nhdSide": "river-left",
+   "chainM": 149360.6,
+   "onLine": true
+  },
+  "Lower Crooked Creek Boat Ramp": {
+   "river": "crooked-creek",
+   "distM": 38.9,
+   "nhdSide": "river-left",
+   "chainM": 66645.4,
+   "onLine": true
+  },
+  "Lyle Park Boat Ramp": {
+   "river": "saline-river",
+   "distM": 51.4,
+   "nhdSide": "river-left",
+   "chainM": 6444.0,
+   "onLine": true
+  },
+  "Marble Access Kings River Boating Access": {
+   "river": "kings-river",
+   "distM": 16.8,
+   "nhdSide": "river-right",
+   "chainM": 919.9,
+   "onLine": true
+  },
+  "Mark Oliver Crooked Creek Boat Ramp": {
+   "river": "crooked-creek",
+   "distM": 8.5,
+   "nhdSide": "river-left",
+   "chainM": 22134.7,
+   "onLine": true
+  },
+  "McGuire Boating Access": {
+   "river": "ouachita-river-upper",
+   "distM": 15.2,
+   "nhdSide": "river-right",
+   "chainM": 1414.2,
+   "onLine": true
+  },
+  "Mickles Switch Boating Access": {
+   "river": "petit-jean-river",
+   "distM": 73.7,
+   "nhdSide": "river-right",
+   "chainM": 1652.3,
+   "onLine": true
+  },
+  "Monaghan/Womack Hwy. 305 Boat Ramp": {
+   "river": "little-red-river",
+   "distM": 16.7,
+   "nhdSide": "river-right",
+   "chainM": 47380.9,
+   "onLine": true
+  },
+  "Mount Olive Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 65.4,
+   "nhdSide": "river-left",
+   "chainM": 116048.5,
+   "onLine": true
+  },
+  "Mt. George Boat Ramp": {
+   "river": "petit-jean-river",
+   "distM": 68.7,
+   "nhdSide": "river-left",
+   "chainM": 8122.6,
+   "onLine": true
+  },
+  "Mt. Hersey (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 15.4,
+   "nhdSide": "river-left",
+   "chainM": 77888.9,
+   "onLine": true
+  },
+  "Norfork #1 Boat Ramp": {
+   "river": "north-fork-river-ar",
+   "distM": 53.6,
+   "nhdSide": "river-left",
+   "chainM": 7349.6,
+   "onLine": true
+  },
+  "Norfork #2 Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 66.3,
+   "nhdSide": "river-right",
+   "chainM": 67852.9,
+   "onLine": true
+  },
+  "Norman Boating Access": {
+   "river": "caddo-river",
+   "distM": 26.5,
+   "nhdSide": "river-left",
+   "chainM": 181.4,
+   "onLine": true
+  },
+  "North Maumee (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 4.2,
+   "nhdSide": "river-left",
+   "chainM": 143820.9,
+   "onLine": true
+  },
+  "Nubin Hill Boat Ramp": {
+   "river": "little-missouri-river",
+   "distM": 33.8,
+   "nhdSide": "river-right",
+   "chainM": 64390.6,
+   "onLine": true
+  },
+  "Oden Boating Access": {
+   "river": "ouachita-river-upper",
+   "distM": 11.1,
+   "nhdSide": "river-right",
+   "chainM": 49157.7,
+   "onLine": true
+  },
+  "Ozark (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 36.6,
+   "nhdSide": "river-right",
+   "chainM": 45786.6,
+   "onLine": true
+  },
+  "Ozment Bluff Boat Ramp": {
+   "river": "saline-river-lower",
+   "distM": 36.6,
+   "nhdSide": "river-left",
+   "chainM": 130212.2,
+   "onLine": true
+  },
+  "Peebles Bluff Access Boat Ramp": {
+   "river": "strawberry-river",
+   "distM": 28.4,
+   "nhdSide": "river-left",
+   "chainM": 83814.9,
+   "onLine": true
+  },
+  "Peeler Bend Boat Ramp": {
+   "river": "saline-river",
+   "distM": 44.6,
+   "nhdSide": "river-right",
+   "chainM": 245.6,
+   "onLine": true
+  },
+  "Perryville Public Access Fourche LaFave River": {
+   "river": "fourche-lafave-river",
+   "distM": 41.1,
+   "nhdSide": "river-right",
+   "chainM": 156131.0,
+   "onLine": true
+  },
+  "Petit Jean River Highway 7 Boat Ramp": {
+   "river": "petit-jean-river",
+   "distM": 13.7,
+   "nhdSide": "river-left",
+   "chainM": 16950.1,
+   "onLine": true
+  },
+  "Pinnacle Mountain State Park - Little Maumelle Boat Ramp": {
+   "river": "little-maumelle-river",
+   "distM": 1693.2,
+   "nhdSide": "river-left",
+   "chainM": 3077.5,
+   "onLine": false
+  },
+  "Pinnacle Mountain State Park West Summit Boating Access": {
+   "river": "little-maumelle-river",
+   "distM": 15.1,
+   "nhdSide": "river-left",
+   "chainM": 968.2,
+   "onLine": true
+  },
+  "Pocahontas Boat Ramp": {
+   "river": "black-river-ar",
+   "distM": 54.6,
+   "nhdSide": "river-right",
+   "chainM": 53475.9,
+   "onLine": true
+  },
+  "Ponca (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 26.1,
+   "nhdSide": "river-left",
+   "chainM": 11013.9,
+   "onLine": true
+  },
+  "Pontoon Park Boat Ramp": {
+   "river": "petit-jean-river",
+   "distM": 20.8,
+   "nhdSide": "river-right",
+   "chainM": 47952.6,
+   "onLine": true
+  },
+  "Powhatan Access": {
+   "river": "black-river-ar",
+   "distM": 88.5,
+   "nhdSide": "river-right",
+   "chainM": 90208.8,
+   "onLine": true
+  },
+  "Pruitt (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 32.7,
+   "nhdSide": "river-left",
+   "chainM": 48885.7,
+   "onLine": true
+  },
+  "Pyatt #1 Crooked Creek Boat Ramp": {
+   "river": "crooked-creek",
+   "distM": 49.5,
+   "nhdSide": "river-right",
+   "chainM": 3110.9,
+   "onLine": true
+  },
+  "Pyatt #2 Boat Ramp": {
+   "river": "crooked-creek",
+   "distM": 29.8,
+   "nhdSide": "river-right",
+   "chainM": 2034.9,
+   "onLine": true
+  },
+  "Ramsey Boat Ramp": {
+   "river": "little-red-river",
+   "distM": 50.3,
+   "nhdSide": "river-right",
+   "chainM": 42166.3,
+   "onLine": true
+  },
+  "Ranchette Boat Ramp #2": {
+   "river": "white-river-bull-shoals",
+   "distM": 86.3,
+   "nhdSide": "river-right",
+   "chainM": 41996.1,
+   "onLine": true
+  },
+  "Ransom W Smith Access": {
+   "river": "strawberry-river",
+   "distM": 11.8,
+   "nhdSide": "river-right",
+   "chainM": 67913.3,
+   "onLine": true
+  },
+  "Ravenden Boat Ramp": {
+   "river": "spring-river-ar",
+   "distM": 44.3,
+   "nhdSide": "river-left",
+   "chainM": 57308.2,
+   "onLine": true
+  },
+  "Red's Landing Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 97.3,
+   "nhdSide": "river-left",
+   "chainM": 80126.8,
+   "onLine": true
+  },
+  "Redding Recreation Area Canoe Access": {
+   "river": "mulberry-river",
+   "distM": 44.8,
+   "nhdSide": "river-right",
+   "chainM": 19950.6,
+   "onLine": true
+  },
+  "Reed Barringer Boat Ramp": {
+   "river": "little-missouri-river",
+   "distM": 7.7,
+   "nhdSide": "river-left",
+   "chainM": 111411.0,
+   "onLine": true
+  },
+  "Rim Shoals Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 91.4,
+   "nhdSide": "river-left",
+   "chainM": 33656.1,
+   "onLine": true
+  },
+  "River Bluff (USFS)": {
+   "river": "ouachita-river-upper",
+   "distM": 88.5,
+   "nhdSide": "river-right",
+   "chainM": 85189.4,
+   "onLine": true
+  },
+  "Riverview School Access Boat Ramp": {
+   "river": "strawberry-river",
+   "distM": 3.3,
+   "nhdSide": "river-left",
+   "chainM": 120557.7,
+   "onLine": true
+  },
+  "Rock Island RR Boating Access": {
+   "river": "bayou-deview",
+   "distM": 183.4,
+   "nhdSide": "river-right",
+   "chainM": 12007.0,
+   "onLine": true
+  },
+  "Rockhouse Canoe-Kayak Access": {
+   "river": "kings-river",
+   "distM": 9.7,
+   "nhdSide": "river-left",
+   "chainM": 43977.4,
+   "onLine": true
+  },
+  "Rocky Shoals (USFS)": {
+   "river": "ouachita-river-upper",
+   "distM": 45.4,
+   "nhdSide": "river-right",
+   "chainM": 64602.8,
+   "onLine": true
+  },
+  "Romp Hole Boat Ramp": {
+   "river": "kings-river",
+   "distM": 10.0,
+   "nhdSide": "river-right",
+   "chainM": 104658.3,
+   "onLine": true
+  },
+  "Round Bottom Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 74.7,
+   "nhdSide": "river-right",
+   "chainM": 130873.0,
+   "onLine": true
+  },
+  "Rush (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 33.7,
+   "nhdSide": "river-left",
+   "chainM": 174168.7,
+   "onLine": true
+  },
+  "Salem Boat Ramp": {
+   "river": "south-fork-spring-river",
+   "distM": 16.7,
+   "nhdSide": "river-left",
+   "chainM": 16192.9,
+   "onLine": true
+  },
+  "Schaeffer's Eddy Boat Ramp": {
+   "river": "black-river-ar",
+   "distM": 38.4,
+   "nhdSide": "river-right",
+   "chainM": 23658.4,
+   "onLine": true
+  },
+  "Shaw Bridge Boat Ramp": {
+   "river": "cadron-creek",
+   "distM": 41.3,
+   "nhdSide": "river-left",
+   "chainM": 39421.6,
+   "onLine": true
+  },
+  "Shipp's Ferry Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 94.4,
+   "nhdSide": "river-left",
+   "chainM": 58166.2,
+   "onLine": true
+  },
+  "Shirley Creek (USFS)": {
+   "river": "ouachita-river-upper",
+   "distM": 64.1,
+   "nhdSide": "river-left",
+   "chainM": 42442.8,
+   "onLine": true
+  },
+  "Siloam Springs Kayak Park Access": {
+   "river": "illinois-river-ar",
+   "distM": 37.3,
+   "nhdSide": "river-right",
+   "chainM": 13334.5,
+   "onLine": true
+  },
+  "Simstown Canoe Access": {
+   "river": "strawberry-river",
+   "distM": 31.4,
+   "nhdSide": "river-left",
+   "chainM": 45906.6,
+   "onLine": true
+  },
+  "Slaty Crossing Boat Ramp": {
+   "river": "petit-jean-river",
+   "distM": 66.6,
+   "nhdSide": "river-left",
+   "chainM": 34610.2,
+   "onLine": true
+  },
+  "Sneed Creek Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 74.8,
+   "nhdSide": "river-right",
+   "chainM": 82667.6,
+   "onLine": true
+  },
+  "Snow Crooked Creek Boat Ramp": {
+   "river": "crooked-creek",
+   "distM": 18.6,
+   "nhdSide": "river-left",
+   "chainM": 13687.8,
+   "onLine": true
+  },
+  "South Maumee (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 57.9,
+   "nhdSide": "river-right",
+   "chainM": 144651.3,
+   "onLine": true
+  },
+  "Spring Creek (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 39.8,
+   "nhdSide": "river-right",
+   "chainM": 152305.8,
+   "onLine": true
+  },
+  "Steel Bridge Access": {
+   "river": "fourche-lafave-river",
+   "distM": 31.1,
+   "nhdSide": "river-left",
+   "chainM": 72440.7,
+   "onLine": true
+  },
+  "Steel Creek (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 19.9,
+   "nhdSide": "river-right",
+   "chainM": 15233.2,
+   "onLine": true
+  },
+  "Stoney Point Boating Access": {
+   "river": "kings-river",
+   "distM": 54.2,
+   "nhdSide": "river-left",
+   "chainM": 96828.8,
+   "onLine": true
+  },
+  "Sunrise Boating Access": {
+   "river": "south-fork-spring-river",
+   "distM": 30.5,
+   "nhdSide": "river-right",
+   "chainM": 1140.0,
+   "onLine": true
+  },
+  "Swinging Bridge Boat Ramp": {
+   "river": "caddo-river",
+   "distM": 87.5,
+   "nhdSide": "river-left",
+   "chainM": 9954.1,
+   "onLine": true
+  },
+  "Sylamore Ferry Boating Access": {
+   "river": "white-river-bull-shoals",
+   "distM": 80.9,
+   "nhdSide": "river-left",
+   "chainM": 123720.5,
+   "onLine": true
+  },
+  "Terrell Access Boat Ramp": {
+   "river": "little-missouri-river",
+   "distM": 17.8,
+   "nhdSide": "river-right",
+   "chainM": 8989.2,
+   "onLine": true
+  },
+  "Tyler Bend (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 31.5,
+   "nhdSide": "river-right",
+   "chainM": 116179.7,
+   "onLine": true
+  },
+  "Upper White River Magness Family Access Boat Ramp": {
+   "river": "white-river-upper",
+   "distM": 27.3,
+   "nhdSide": "river-right",
+   "chainM": 1099.7,
+   "onLine": true
+  },
+  "WOKA Whitewater Park Canoe-Kayakng Access": {
+   "river": "illinois-river-ar",
+   "distM": 110.0,
+   "nhdSide": "river-right",
+   "chainM": 23964.7,
+   "onLine": true
+  },
+  "White Hole Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 68.6,
+   "nhdSide": "river-right",
+   "chainM": 10625.6,
+   "onLine": true
+  },
+  "Wildcat Shoals Boat Ramp": {
+   "river": "white-river-bull-shoals",
+   "distM": 66.4,
+   "nhdSide": "river-left",
+   "chainM": 16617.1,
+   "onLine": true
+  },
+  "Wolf Pen Recreation Area Canoe Access": {
+   "river": "mulberry-river",
+   "distM": 34.1,
+   "nhdSide": "river-right",
+   "chainM": 562.7,
+   "onLine": true
+  },
+  "Woolum (Buffalo NR)": {
+   "river": "buffalo-river",
+   "distM": 21.0,
+   "nhdSide": "river-left",
+   "chainM": 91736.8,
+   "onLine": true
+  },
+  "Yellville Crooked Creek Boat Ramp": {
+   "river": "crooked-creek",
+   "distM": 32.0,
+   "nhdSide": "river-right",
+   "chainM": 38536.9,
+   "onLine": true
+  }
+ },
+ "alternates": {
+  "Forrest & Nina Wood Rivercliff Boat Ramp": {
+   "keptInstead": "Jim Griffin Boat Ramp",
+   "river": "white-river-bull-shoals",
+   "apartMi": 0.19
+  },
+  "Jim Griffin Boat Ramp": {
+   "keptInstead": "Bull Shoals Boat Ramp",
+   "river": "white-river-bull-shoals",
+   "apartMi": 0.91
+  },
+  "Amity Landing Boat Ramp": {
+   "keptInstead": "Calvin Road Boat Ramp",
+   "river": "caddo-river",
+   "apartMi": 0.68
+  },
+  "Pyatt #1 Crooked Creek Boat Ramp": {
+   "keptInstead": "Pyatt #2 Boat Ramp",
+   "river": "crooked-creek",
+   "apartMi": 0.67
+  }
+ },
+ "excludedLakeRamps": {},
+ "offReach": {
+  "Brookings Boat Ramp": "Off the routed reach (NLDI distance 2060.8 m): 2.1 km from the routed NHDPlus V2 Black River line (likely an old channel/slough); research-only.",
+  "Dripping Springs Boat Ramp": "Off the routed reach (NLDI distance 1110.7 m): 1.1 km from the routed NHDPlus V2 Little Red River line; research-only.",
+  "Pinnacle Mountain State Park - Little Maumelle Boat Ramp": "Off the routed reach (NLDI distance 1693.2 m): routes to the Maumelle River, not the Little Maumelle; research-only.",
+  "Dark Corner Spur Boating Access": "Off the routed reach (NLDI distance 489.0 m): off the main Bayou DeView channel (spur); AGFC lists Dark Corner as a water-trail access; research-only.",
+  "Hickson Lake Boat Ramp": "Off the routed reach (NLDI distance 1843.1 m): on Hickson Lake (oxbow) off the routed Bayou DeView line; AGFC lists it as a water-trail access; research-only."
+ },
+ "sections": {
+  "boxley-to-ponca": {
+   "river": "buffalo-river",
+   "miles": 6.0,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 6.0
+  },
+  "ponca-to-steel-creek": {
+   "river": "buffalo-river",
+   "miles": 2.7,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 2.6
+  },
+  "steel-creek-to-kyles-landing": {
+   "river": "buffalo-river",
+   "miles": 8.0,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 7.8
+  },
+  "kyles-landing-to-erbie": {
+   "river": "buffalo-river",
+   "miles": 5.6,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 5.6
+  },
+  "erbie-to-ozark": {
+   "river": "buffalo-river",
+   "miles": 5.5,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 5.5
+  },
+  "ozark-to-pruitt": {
+   "river": "buffalo-river",
+   "miles": 2.1,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 1.9
+  },
+  "pruitt-to-hasty": {
+   "river": "buffalo-river",
+   "miles": 6.8,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 7.0
+  },
+  "hasty-to-carver": {
+   "river": "buffalo-river",
+   "miles": 4.2,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 4.1
+  },
+  "carver-to-mt-hersey": {
+   "river": "buffalo-river",
+   "miles": 6.8,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 6.8
+  },
+  "mt-hersey-to-woolum": {
+   "river": "buffalo-river",
+   "miles": 8.6,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 8.6
+  },
+  "woolum-to-baker-ford": {
+   "river": "buffalo-river",
+   "miles": 10.9,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 11.0
+  },
+  "baker-ford-to-tyler-bend": {
+   "river": "buffalo-river",
+   "miles": 4.3,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 4.1
+  },
+  "tyler-bend-to-grinders-ferry": {
+   "river": "buffalo-river",
+   "miles": 1.1,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 1.7
+  },
+  "grinders-ferry-to-gilbert": {
+   "river": "buffalo-river",
+   "miles": 4.3,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 4.0
+  },
+  "gilbert-to-south-maumee": {
+   "river": "buffalo-river",
+   "miles": 12.1,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 12.0
+  },
+  "north-maumee-to-spring-creek": {
+   "river": "buffalo-river",
+   "miles": 5.2,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 5.3
+  },
+  "spring-creek-to-dillards-ferry": {
+   "river": "buffalo-river",
+   "miles": 4.6,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 4.6
+  },
+  "dillards-ferry-to-buffalo-point": {
+   "river": "buffalo-river",
+   "miles": 1.4,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 1.5
+  },
+  "dillards-ferry-to-rush": {
+   "river": "buffalo-river",
+   "miles": 8.9,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 9.0
+  },
+  "rush-to-shipp-s-ferry-boat-ramp": {
+   "river": "buffalo-river",
+   "miles": 30.2,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart + NPS trip page",
+   "nhdMiles": null
+  },
+  "buffalo-point-to-rush": {
+   "river": "buffalo-river",
+   "miles": 7.5,
+   "milePriority": 1,
+   "mileSource": "NPS Buffalo NR mileage chart river miles",
+   "nhdMiles": 7.5
+  },
+  "upper-white-river-magness-family-access-boat-ramp-to-hwy-45-boat-ramp": {
+   "river": "white-river-upper",
+   "miles": 6.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.5
+  },
+  "beaver-lake-dam-site-boat-ramp-to-bertrand-boat-ramp": {
+   "river": "white-river-beaver-tailwater",
+   "miles": 2.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.9
+  },
+  "bertrand-boat-ramp-to-houseman-boat-ramp": {
+   "river": "white-river-beaver-tailwater",
+   "miles": 3.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.6
+  },
+  "bull-shoals-boat-ramp-to-gaston-s-resort-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 2.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.8
+  },
+  "gaston-s-resort-boat-ramp-to-white-hole-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 2.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.9
+  },
+  "white-hole-boat-ramp-to-wildcat-shoals-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 3.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.7
+  },
+  "wildcat-shoals-boat-ramp-to-cotter-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 6.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.1
+  },
+  "cotter-boat-ramp-to-rim-shoals-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 4.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.5
+  },
+  "rim-shoals-boat-ramp-to-ranchette-boat-ramp-2": {
+   "river": "white-river-bull-shoals",
+   "miles": 5.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.2
+  },
+  "ranchette-boat-ramp-2-to-cartney-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 8.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.1
+  },
+  "cartney-boat-ramp-to-shipp-s-ferry-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 2.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.0
+  },
+  "shipp-s-ferry-boat-ramp-to-norfork-2-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 6.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.0
+  },
+  "norfork-2-boat-ramp-to-red-s-landing-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 7.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.6
+  },
+  "red-s-landing-boat-ramp-to-sneed-creek-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 1.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 1.6
+  },
+  "sneed-creek-boat-ramp-to-chesmond-ferry-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 5.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.1
+  },
+  "chesmond-ferry-boat-ramp-to-calico-rock-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 3.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.1
+  },
+  "calico-rock-boat-ramp-to-boswell-shoals-boating-access": {
+   "river": "white-river-bull-shoals",
+   "miles": 7.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.9
+  },
+  "boswell-shoals-boating-access-to-mount-olive-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 4.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.6
+  },
+  "mount-olive-boat-ramp-to-sylamore-ferry-boating-access": {
+   "river": "white-river-bull-shoals",
+   "miles": 4.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.8
+  },
+  "sylamore-ferry-boating-access-to-round-bottom-boat-ramp": {
+   "river": "white-river-bull-shoals",
+   "miles": 4.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.4
+  },
+  "round-bottom-boat-ramp-to-guion-boat-ramp-izard-county": {
+   "river": "white-river-bull-shoals",
+   "miles": 8.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.3
+  },
+  "dam-quarry-boat-ramp-to-norfork-1-boat-ramp": {
+   "river": "north-fork-river-ar",
+   "miles": 4.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.5
+  },
+  "dalton-boat-ramp-to-eleven-point-boat-ramp": {
+   "river": "eleven-point-river-ar",
+   "miles": 19.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.8
+  },
+  "cold-springs-boat-ramp-to-dam-3-boat-ramp": {
+   "river": "spring-river-ar",
+   "miles": 1.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 1.3
+  },
+  "dam-3-boat-ramp-to-bayou-boat-ramp": {
+   "river": "spring-river-ar",
+   "miles": 2.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.7
+  },
+  "bayou-boat-ramp-to-hardy-beach-access-boat-ramp": {
+   "river": "spring-river-ar",
+   "miles": 13.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.0
+  },
+  "hardy-beach-access-boat-ramp-to-lb-access-boat-ramp": {
+   "river": "spring-river-ar",
+   "miles": 6.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.3
+  },
+  "lb-access-boat-ramp-to-ravenden-boat-ramp": {
+   "river": "spring-river-ar",
+   "miles": 12.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 12.1
+  },
+  "ravenden-boat-ramp-to-imboden-boat-ramp": {
+   "river": "spring-river-ar",
+   "miles": 7.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.6
+  },
+  "sunrise-boating-access-to-hwy-395-boat-ramp": {
+   "river": "south-fork-spring-river",
+   "miles": 3.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.6
+  },
+  "hwy-395-boat-ramp-to-salem-boat-ramp": {
+   "river": "south-fork-spring-river",
+   "miles": 5.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.8
+  },
+  "horseshoe-bend-boat-ramp-to-simstown-canoe-access": {
+   "river": "strawberry-river",
+   "miles": 27.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 27.0
+  },
+  "simstown-canoe-access-to-ransom-w-smith-access": {
+   "river": "strawberry-river",
+   "miles": 13.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.7
+  },
+  "ransom-w-smith-access-to-peebles-bluff-access-boat-ramp": {
+   "river": "strawberry-river",
+   "miles": 9.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 9.9
+  },
+  "peebles-bluff-access-boat-ramp-to-riverview-school-access-boat-ramp": {
+   "river": "strawberry-river",
+   "miles": 22.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 22.8
+  },
+  "kody-riggan-datto-boat-ramp-to-schaeffer-s-eddy-boat-ramp": {
+   "river": "black-river-ar",
+   "miles": 13.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.8
+  },
+  "schaeffer-s-eddy-boat-ramp-to-pocahontas-boat-ramp": {
+   "river": "black-river-ar",
+   "miles": 18.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 18.5
+  },
+  "pocahontas-boat-ramp-to-black-rock-boating-access": {
+   "river": "black-river-ar",
+   "miles": 20.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 20.7
+  },
+  "black-rock-boating-access-to-powhatan-access": {
+   "river": "black-river-ar",
+   "miles": 2.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.2
+  },
+  "powhatan-access-to-dixie-lee-boat-ramp": {
+   "river": "black-river-ar",
+   "miles": 17.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 17.2
+  },
+  "dixie-lee-boat-ramp-to-coffey-access-boat-ramp": {
+   "river": "black-river-ar",
+   "miles": 2.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.4
+  },
+  "jfk-park-boat-ramp-to-barnett-boat-ramp": {
+   "river": "little-red-river",
+   "miles": 9.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 9.1
+  },
+  "barnett-boat-ramp-to-lobo-landing-boat-ramp": {
+   "river": "little-red-river",
+   "miles": 6.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.0
+  },
+  "lobo-landing-boat-ramp-to-ramsey-boat-ramp": {
+   "river": "little-red-river",
+   "miles": 10.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.3
+  },
+  "ramsey-boat-ramp-to-monaghan-womack-hwy-305-boat-ramp": {
+   "river": "little-red-river",
+   "miles": 3.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.2
+  },
+  "marble-access-kings-river-boating-access-to-rockhouse-canoe-kayak-access": {
+   "river": "kings-river",
+   "miles": 26.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 26.8
+  },
+  "rockhouse-canoe-kayak-access-to-j-d-fletcher-kings-river-boating-access": {
+   "river": "kings-river",
+   "miles": 20.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 20.1
+  },
+  "j-d-fletcher-kings-river-boating-access-to-stoney-point-boating-access": {
+   "river": "kings-river",
+   "miles": 12.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 12.8
+  },
+  "stoney-point-boating-access-to-romp-hole-boat-ramp": {
+   "river": "kings-river",
+   "miles": 4.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.9
+  },
+  "wolf-pen-recreation-area-canoe-access-to-high-bank-access": {
+   "river": "mulberry-river",
+   "miles": 4.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.0
+  },
+  "high-bank-access-to-indian-creek-access": {
+   "river": "mulberry-river",
+   "miles": 1.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 1.9
+  },
+  "indian-creek-access-to-redding-recreation-area-canoe-access": {
+   "river": "mulberry-river",
+   "miles": 6.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.2
+  },
+  "redding-recreation-area-canoe-access-to-big-eddy-canoe-access": {
+   "river": "mulberry-river",
+   "miles": 6.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.0
+  },
+  "big-eddy-canoe-access-to-campbell-cemetery-canoe-access": {
+   "river": "mulberry-river",
+   "miles": 7.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.9
+  },
+  "campbell-cemetery-canoe-access-to-bluff-hole-park-boating-access": {
+   "river": "mulberry-river",
+   "miles": 18.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 18.6
+  },
+  "mcguire-boating-access-to-cherry-hill-boat-ramp": {
+   "river": "ouachita-river-upper",
+   "miles": 6.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.4
+  },
+  "cherry-hill-boat-ramp-to-shirley-creek": {
+   "river": "ouachita-river-upper",
+   "miles": 19.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 19.1
+  },
+  "shirley-creek-to-oden-boating-access": {
+   "river": "ouachita-river-upper",
+   "miles": 4.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.2
+  },
+  "oden-boating-access-to-rocky-shoals": {
+   "river": "ouachita-river-upper",
+   "miles": 9.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 9.6
+  },
+  "rocky-shoals-to-fulton-branch": {
+   "river": "ouachita-river-upper",
+   "miles": 7.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.1
+  },
+  "fulton-branch-to-dragover": {
+   "river": "ouachita-river-upper",
+   "miles": 2.4,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.4
+  },
+  "dragover-to-river-bluff": {
+   "river": "ouachita-river-upper",
+   "miles": 3.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.3
+  },
+  "little-missouri-hwy-27-boating-access-to-terrell-access-boat-ramp": {
+   "river": "little-missouri-river",
+   "miles": 5.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.5
+  },
+  "terrell-access-boat-ramp-to-highway-19-boating-access-little-missouri-river": {
+   "river": "little-missouri-river",
+   "miles": 23.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 23.2
+  },
+  "highway-19-boating-access-little-missouri-river-to-nubin-hill-boat-ramp": {
+   "river": "little-missouri-river",
+   "miles": 11.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 11.2
+  },
+  "nubin-hill-boat-ramp-to-hwy-67-boat-ramp": {
+   "river": "little-missouri-river",
+   "miles": 7.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.9
+  },
+  "hwy-67-boat-ramp-to-reed-barringer-boat-ramp": {
+   "river": "little-missouri-river",
+   "miles": 21.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 21.3
+  },
+  "norman-boating-access-to-swinging-bridge-boat-ramp": {
+   "river": "caddo-river",
+   "miles": 6.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.1
+  },
+  "swinging-bridge-boat-ramp-to-glenwood-boat-ramp": {
+   "river": "caddo-river",
+   "miles": 9.8,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 9.8
+  },
+  "glenwood-boat-ramp-to-hwy-182-amity-boat-ramp": {
+   "river": "caddo-river",
+   "miles": 8.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.0
+  },
+  "hwy-182-amity-boat-ramp-to-calvin-road-boat-ramp": {
+   "river": "caddo-river",
+   "miles": 10.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.0
+  },
+  "peeler-bend-boat-ramp-to-lyle-park-boat-ramp": {
+   "river": "saline-river",
+   "miles": 3.8,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 3.9
+  },
+  "lyle-park-boat-ramp-to-i-30-cherry-gingles-boat-ramp": {
+   "river": "saline-river",
+   "miles": 2.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.6
+  },
+  "i-30-cherry-gingles-boat-ramp-to-fitzhugh-boat-ramp": {
+   "river": "saline-river",
+   "miles": 24.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 24.7
+  },
+  "fitzhugh-boat-ramp-to-highway-270-boat-ramp": {
+   "river": "saline-river",
+   "miles": 5.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.5
+  },
+  "highway-270-boat-ramp-to-jenkins-ferry-boat-ramp": {
+   "river": "saline-river",
+   "miles": 16.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 16.5
+  },
+  "hwy-167-boat-ramp-to-lee-s-ferry-boat-ramp": {
+   "river": "saline-river-lower",
+   "miles": 6.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 6.1
+  },
+  "lee-s-ferry-boat-ramp-to-hwy-79-pool-boat-ramp": {
+   "river": "saline-river-lower",
+   "miles": 22.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 22.9
+  },
+  "hwy-79-pool-boat-ramp-to-cowford-boat-ramp": {
+   "river": "saline-river-lower",
+   "miles": 22.7,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 22.7
+  },
+  "cowford-boat-ramp-to-hwy-15-63-boat-ramp": {
+   "river": "saline-river-lower",
+   "miles": 5.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 5.5
+  },
+  "hwy-15-63-boat-ramp-to-hwy-278-boat-ramp": {
+   "river": "saline-river-lower",
+   "miles": 11.1,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 11.1
+  },
+  "hwy-278-boat-ramp-to-ozment-bluff-boat-ramp": {
+   "river": "saline-river-lower",
+   "miles": 12.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 12.6
+  },
+  "ozment-bluff-boat-ramp-to-longview-boat-ramp": {
+   "river": "saline-river-lower",
+   "miles": 11.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 11.9
+  },
+  "fourche-lafave-river-access-to-steel-bridge-access": {
+   "river": "fourche-lafave-river",
+   "miles": 44.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 44.9
+  },
+  "steel-bridge-access-to-perryville-public-access-fourche-lafave-river": {
+   "river": "fourche-lafave-river",
+   "miles": 52.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 52.0
+  },
+  "perryville-public-access-fourche-lafave-river-to-fourche-lafave-river-seasonal-boating-access": {
+   "river": "fourche-lafave-river",
+   "miles": 2.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 2.5
+  },
+  "hwy-65-boat-ramp-to-hwy-285-boat-ramp": {
+   "river": "cadron-creek",
+   "miles": 10.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.0
+  },
+  "hwy-285-boat-ramp-to-shaw-bridge-boat-ramp": {
+   "river": "cadron-creek",
+   "miles": 13.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 13.2
+  },
+  "shaw-bridge-boat-ramp-to-hwy-64-boat-ramp": {
+   "river": "cadron-creek",
+   "miles": 10.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 10.2
+  },
+  "mickles-switch-boating-access-to-mt-george-boat-ramp": {
+   "river": "petit-jean-river",
+   "miles": 4.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 4.0
+  },
+  "mt-george-boat-ramp-to-dale-bend-boat-ramp": {
+   "river": "petit-jean-river",
+   "miles": 1.6,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 1.6
+  },
+  "dale-bend-boat-ramp-to-petit-jean-river-highway-7-boat-ramp": {
+   "river": "petit-jean-river",
+   "miles": 3.9,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 3.9
+  },
+  "petit-jean-river-highway-7-boat-ramp-to-slaty-crossing-boat-ramp": {
+   "river": "petit-jean-river",
+   "miles": 11.0,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 11.0
+  },
+  "slaty-crossing-boat-ramp-to-pontoon-park-boat-ramp": {
+   "river": "petit-jean-river",
+   "miles": 8.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 8.3
+  },
+  "pyatt-2-boat-ramp-to-snow-crooked-creek-boat-ramp": {
+   "river": "crooked-creek",
+   "miles": 7.2,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.2
+  },
+  "snow-crooked-creek-boat-ramp-to-mark-oliver-crooked-creek-boat-ramp": {
+   "river": "crooked-creek",
+   "miles": 5.2,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 5.2
+  },
+  "mark-oliver-crooked-creek-boat-ramp-to-kelly-s-slab-crooked-creek-boat-ramp": {
+   "river": "crooked-creek",
+   "miles": 6.6,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 6.8
+  },
+  "kelly-s-slab-crooked-creek-boat-ramp-to-yellville-crooked-creek-boat-ramp": {
+   "river": "crooked-creek",
+   "miles": 3.5,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 3.4
+  },
+  "yellville-crooked-creek-boat-ramp-to-lower-crooked-creek-boat-ramp": {
+   "river": "crooked-creek",
+   "miles": 17.5,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 17.5
+  },
+  "chamber-springs-boating-access-to-siloam-springs-kayak-park-access": {
+   "river": "illinois-river-ar",
+   "miles": 8.1,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 8.0
+  },
+  "siloam-springs-kayak-park-access-to-woka-whitewater-park-canoe-kayakng-access": {
+   "river": "illinois-river-ar",
+   "miles": 7.4,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 6.6
+  },
+  "highway-17-boating-access-to-rock-island-rr-boating-access": {
+   "river": "bayou-deview",
+   "miles": 7.3,
+   "milePriority": 3,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "nhdMiles": 7.3
+  },
+  "rock-island-rr-boating-access-to-apple-lake-boat-access": {
+   "river": "bayou-deview",
+   "miles": 1.5,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 1.4
+  },
+  "apple-lake-boat-access-to-bank-of-brinkley-boating-access": {
+   "river": "bayou-deview",
+   "miles": 4.3,
+   "milePriority": 2,
+   "mileSource": "AGFC water-trail distance table",
+   "nhdMiles": 3.8
+  }
+ }
+}

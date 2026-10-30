@@ -1,0 +1,45 @@
+{
+ "id": "clarks-fork-wy-draft-sections",
+ "name": "Clarks Fork of the Yellowstone — Morrison Jeep Trail to MT line — draft sections",
+ "state": "WY",
+ "status": "draft",
+ "whyDraft": "River is in the catalog; these extra sections are drafts because an endpoint is flagged.",
+ "blockers": [
+  "no-facility"
+ ],
+ "accessPoints": [
+  {
+   "id": "WY-ACC-0013",
+   "name": "Edelweiss (Clarks Fork)",
+   "grade": "verified",
+   "flags": []
+  },
+  {
+   "id": "WY-ACC-0014",
+   "name": "WY/MT State Line (Clarks Fork)",
+   "grade": "pending",
+   "flags": [
+    "no-facility"
+   ]
+  }
+ ],
+ "candidateSections": [
+  {
+   "id": "edelweiss-to-wy-mt-state-line",
+   "putIn": "Edelweiss (Clarks Fork)",
+   "takeOut": "WY/MT State Line (Clarks Fork)",
+   "miles": 9.6,
+   "mileSource": "preliminary NHDPlus V2 routed geometry (no agency mileage found)",
+   "blockers": [
+    "take-out-pending",
+    "take-out-permission",
+    "draft-only",
+    "calibration-review"
+   ],
+   "restrictions": [
+    "WY-RES-003",
+    "WY-RES-004"
+   ]
+  }
+ ]
+}
