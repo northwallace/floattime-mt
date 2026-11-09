@@ -1,3 +1,5 @@
+from catalog_contracts import assert_registry_identity, assert_river_identity, assert_catalog_identity
+from catalog_fixture import copy_catalog
 import copy
 import json
 from pathlib import Path
@@ -45,53 +47,27 @@ class CatalogTests(unittest.TestCase):
 
     def test_montana_maps_follow_endpoint_precision(self):
         catalog = build()
-        verified = {
-            'madison-upper', 'yellowstone-paradise', 'flathead-north',
-            'jefferson-canyon', 'clark-fork-gorge', 'bitterroot-upper', 'stillwater',
-            'blackfoot',
-        }
-        pending = {
-            'rock-creek', 'beaverhead', 'jefferson-upper', 'gallatin-lower',
-            'gallatin-canyon', 'bitterroot', 'clark-fork', 'clarks-fork-yst',
-            'dearborn', 'missouri-breaks', 'smith', 'swan',
-            'yellowstone-upper', 'big-hole', 'madison-lower',
-        }
+        points = {p['id']: p for p in catalog['accessPoints']}
         for river in (r for r in catalog['rivers'] if r['state'] == 'MT'):
-            self.assertIn(river['id'], verified | pending | {'missouri-craig'})
-            self.assertEqual(river['mapAudit'], 'verified' if river['id'] in verified else 'pending')
             for section in river['sections']:
-                approximate_rivers = {'missouri-craig', 'smith', 'big-hole', 'madison-lower', 'dearborn', 'missouri-breaks'}
-                if river['id'] in ('bitterroot', 'yellowstone-upper', 'clark-fork'):
-                    eligible = section['id'] in ('bell-crossing-stevi', 'stevi-florence', 'corwin-yankee-jim', 'sharon-caras')
-                    self.assertEqual(bool(section.get('mapPilot')), eligible)
-                    if eligible: self.assertEqual(section['mapPrecision'], 'approximate')
-                    else: self.assertNotIn('takeOutCoords', section)
-                    continue
-                self.assertEqual(bool(section.get('mapPilot')), river['id'] in verified or river['id'] in approximate_rivers, river['id'] + '/' + section['id'])
-                if river['id']=='missouri-craig':
-                    self.assertEqual(section['mapPrecision'], 'approximate' if section['id']=='holter-craig' else 'exact')
-                    continue
-                if river['id'] in approximate_rivers:
-                    exact = section['id'] in ('divide-melrose', 'bear-trap')
+                with self.subTest(river=river['id'], section=section['id']):
+                    if not section.get('mapReleased'):
+                        self.assertFalse(section.get('mapPilot'))
+                        continue
+                    self.assertTrue(section['mapPilot'])
+                    endpoints = [points[section[end + 'AccessId']] for end in ('putIn', 'takeOut')]
+                    exact = all(p['status'] == 'verified' for p in endpoints)
                     self.assertEqual(section['mapPrecision'], 'exact' if exact else 'approximate')
-                    continue
-                if river['id'] not in verified:
-                    self.assertNotIn('putInCoords', section)
-                    self.assertNotIn('takeOutCoords', section)
-                    continue
-                self.assertEqual(set(section['putInCoords']), {'lat', 'lon'})
-                self.assertEqual(set(section['takeOutCoords']), {'lat', 'lon'})
-                for key in ('putInAccess', 'takeOutAccess'):
-                    self.assertTrue(section[key]['sourceUrl'].startswith('https://'))
-                    self.assertRegex(section[key]['verifiedOn'], r'^\d{4}-\d{2}-\d{2}$')
-                    self.assertRegex(section[key]['accessType'].lower(), r'ramp|launch')
-                take_out = section['takeOutAccess']
-                if river['id']=='flathead-north':
-                    self.assertNotIn('riverBank', take_out)  # Landing survey is not a bank audit.
-                    continue
-                self.assertIn(take_out['riverBank'], ('river-left', 'river-right'))
-                self.assertRegex(take_out['bankVerifiedOn'], r'^\d{4}-\d{2}-\d{2}$')
-                self.assertTrue(take_out['bankSourceUrl'].startswith('https://'))
+                    for end, point in zip(('putIn', 'takeOut'), endpoints):
+                        self.assertIn(point['status'], ('verified', 'access-verified'))
+                        coords = point if point['status'] == 'verified' else point['areaCenter']
+                        self.assertEqual(section[end+'Coords'], {k: coords[k] for k in ('lat','lon')})
+                        self.assertTrue(point['sourceUrl'].startswith('https://'))
+                        if point.get('riverBank'):
+                            self.assertEqual(point['status'], 'verified')
+                            self.assertIn(point['riverBank'], ('river-left', 'river-right'))
+                            self.assertTrue(point['bankSourceUrl'].startswith('https://'))
+                            self.assertRegex(point['bankVerifiedOn'], r'^\d{4}-\d{2}-\d{2}$')
 
     def test_incomplete_verified_point_is_rejected(self):
         with tempfile.TemporaryDirectory() as d:
@@ -162,7 +138,7 @@ class CatalogTests(unittest.TestCase):
         sanjuan = rivers['san-juan']
         self.assertEqual(sanjuan['sections'][0]['mapPrecision'], 'approximate')
         page = seo.river_html(rivers['smith'])
-        self.assertIn('Approximate facility locations', page)
+        self.assertIn('Some access locations are approximate', page)
         self.assertNotIn('Put-in directions', page)
         for key in ('putInAccess', 'takeOutAccess'):
             self.assertNotIn('riverBank', sanjuan['sections'][0][key])
@@ -182,7 +158,7 @@ class CatalogTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             import shutil
             root = Path(d)
-            shutil.copytree(Path(__file__).resolve().parents[1]/'catalog', root/'catalog');shutil.copytree(Path(__file__).resolve().parents[1]/'research/routes',root/'research/routes')
+            copy_catalog(root)
             path = root/'catalog/map_points/UT.json'
             data = json.loads(path.read_text())
             data['points']['Mexican Hat Boat Launch']['lat'] = 37.1471
@@ -194,7 +170,7 @@ class CatalogTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             import shutil
             root = Path(d)
-            shutil.copytree(Path(__file__).resolve().parents[1]/'catalog', root/'catalog');shutil.copytree(Path(__file__).resolve().parents[1]/'research/routes',root/'research/routes')
+            copy_catalog(root)
             path = root/'catalog/map_points/MT.json'
             data = json.loads(path.read_text())
             point = data['points']['Warm Springs']
@@ -220,14 +196,14 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(verified.count('Take-out: river right'), 4)
 
         canyon = seo.river_html(by_id['jefferson-canyon'])
-        self.assertEqual(canyon.count('class="section-map-link"'), 3)
+        self.assertEqual(canyon.count('class="section-map-link"'), 4)
         self.assertIn('Take-out: river left', canyon)
         self.assertEqual(canyon.count('Take-out: river right'), 2)
 
 
     def test_approved_state_maps_are_released_and_other_guides_remain(self):
         catalog=build()
-        self.assertEqual(catalog['mapRelease'], {'states':['MT','WA','UT','AZ','CO','WY','ID','OR','CA','MO','AR'], 'reviewedRoutes':True})
+        self.assertEqual(catalog['mapRelease'], {'states':['MT','WA','UT','AZ','CO','WY','ID','OR','CA','MO','AR','WI','MN'], 'reviewedRoutes':True})
         released=[]
         for river in catalog['rivers']:
             for section in river['sections']:

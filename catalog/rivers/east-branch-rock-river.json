@@ -1,0 +1,61 @@
+{
+  "id": "east-branch-rock-river",
+  "name": "East Branch Rock River",
+  "gauge": null,
+  "gaugeName": null,
+  "lat": 43.45432,
+  "lon": -88.36734,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "East Branch Rock River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "beaver-dam-rd-launch-6445-to-hwy-d-east-of-rr-launch-w6914-hwy-d",
+      "putIn": "Beaver Dam Rd Launch-6445",
+      "takeOut": "Hwy D East of Rr Launch-W6914 Hwy D",
+      "miles": 3.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-6a5bbea8ce98536bb2b5",
+      "takeOutAccessId": "acc-84228a31b01f54eea3b9"
+    },
+    {
+      "id": "hwy-d-east-of-rr-launch-w6914-hwy-d-to-village-park-boat-ramp",
+      "putIn": "Hwy D East of Rr Launch-W6914 Hwy D",
+      "takeOut": "Village Park Boat Ramp",
+      "miles": 8.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-84228a31b01f54eea3b9",
+      "takeOutAccessId": "acc-2e8aa733e11b593f9fbd",
+      "accessReview": "Dam crossing/portage unresolved: Theresa Marsh. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
+      "routeReview": "This section includes Theresa Marsh and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "village-park-boat-ramp-to-upper-dam-boat-launch",
+      "putIn": "Village Park Boat Ramp",
+      "takeOut": "Upper Dam Boat Launch",
+      "miles": 11.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-2e8aa733e11b593f9fbd",
+      "takeOutAccessId": "acc-dd4e6965bb995b5fb647",
+      "accessReview": "Dam crossing/portage unresolved: Theresa. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float. A dam lies near a section endpoint (Upper Mayville). The landing’s position relative to the barrier still needs confirmation.",
+      "routeReview": "This section includes Theresa, Upper Mayville and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    }
+  ],
+  "gaugeRelationship": "none",
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "No suitable flow gauge is assigned to this river. The research station measures a different stream and is not used for this river’s readings.",
+    "sourceName": "USGS Water Data — monitoring location and Wisconsin gauge review",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05424057/",
+    "checkedOn": "2026-10-30"
+  }
+}

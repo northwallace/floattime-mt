@@ -1,0 +1,70 @@
+{
+  "id": "manitowish-river",
+  "name": "Manitowish River",
+  "gauge": "05357157",
+  "gaugeName": "MANITOWISH RIVER NR CT HWY H NR BOULDER JCT. WI",
+  "lat": 46.11952,
+  "lon": -89.60488,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Manitowish River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "fishtrap-dam-portage-site-to-boulder-lake-small-craft-landing",
+      "putIn": "Fishtrap Dam Portage Site",
+      "takeOut": "Boulder Lake Small Craft Landing",
+      "miles": 6.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-688b41478b2c54c388f8",
+      "takeOutAccessId": "acc-5ee2581f4c0e5c678608",
+      "routeReview": "Use the signed carry to launch below Fishtrap Dam and take out above Highway K. The access-area map is available; no dotted path crosses a dam or portage.",
+      "notices": [
+        {
+          "title": "Start below Fishtrap Dam; finish above Highway K",
+          "text": "DNR’s paddling guide starts this trip below Fishtrap Dam, reached from the end of Dam Road. Carry to the signed downstream launch. Take out above the Highway K rapids. These markers show access areas, not the exact landing or portage trail. Check the guide and current signs before launching.",
+          "sourceName": "Wisconsin DNR — NHAL paddling routes",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/StateForests/nhal/maps",
+          "checkedOn": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "boulder-lake-small-craft-landing-to-benson-lake-access-at-benson-lake-road",
+      "putIn": "Boulder Lake Small Craft Landing",
+      "takeOut": "Benson Lake Access at Benson Lake Road",
+      "miles": 17.8,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-5ee2581f4c0e5c678608",
+      "takeOutAccessId": "acc-f222e9d987ff5cfcb637",
+      "routeReview": "Portages at Highway K and Rest Lake Dam require carrying the boat. The access-area map is available; no continuous dotted river path or live float-time estimate is provided for this itinerary.",
+      "notices": [
+        {
+          "title": "Highway K and Rest Lake portages",
+          "text": "Start below the Highway K rapids using the signed carry from the access area. This trip also requires carrying around Rest Lake Dam at Highway W. Follow DNR’s paddling guide and current portage signs; do not paddle over the dam. The Benson Lake marker identifies an approximate access area.",
+          "sourceName": "Wisconsin DNR — NHAL paddling routes",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/StateForests/nhal/maps",
+          "checkedOn": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "benson-lake-access-at-benson-lake-road-to-manitowish-river-access",
+      "putIn": "Benson Lake Access at Benson Lake Road",
+      "takeOut": "Manitowish River Access",
+      "miles": 3.8,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-f222e9d987ff5cfcb637",
+      "takeOutAccessId": "acc-96267495a72d52b2b064"
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

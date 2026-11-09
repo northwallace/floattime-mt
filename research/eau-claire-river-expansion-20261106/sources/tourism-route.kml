@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>River Prairie to Phoenix Park Kayak Route</name>
+    <description><![CDATA[The Eau Claire river also runs through River Prairie in Altoona, WI. River Prairie has its own canoe/kayak launch that sits under the HWY 53 bridge. The ideal place to get out would be at Phoenix Park at the confluence of the Eau Claire and Chippewa Rivers. However, be aware that the waters tend to move a little faster on this route once you get about halfway down your float and are near Banbury Place. Check water levels before you go. Eau Claire Fire Department suggests the normal elevation range for this section of river is 758-764 feet. Extend your float by almost 2 more river miles by using Hobb's Boat Landing.]]></description>
+    <Style id="icon-1615-880E4F-normal">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1615-880E4F-highlight">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1615-880E4F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1615-880E4F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1615-880E4F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1615-880E4F-nodesc-normal">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1615-880E4F-nodesc-highlight">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1615-880E4F-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1615-880E4F-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1615-880E4F-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1615-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1615-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1615-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1615-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1615-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-01579B-10881-nodesc-normal">
+      <LineStyle>
+        <color>ff9b5701</color>
+        <width>10.881</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-01579B-10881-nodesc-highlight">
+      <LineStyle>
+        <color>ff9b5701</color>
+        <width>16.3215</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-01579B-10881-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-01579B-10881-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-01579B-10881-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Water Trail</name>
+      <Placemark>
+        <name>River Prairie to Phoenix Park Water Trail</name>
+        <styleUrl>#line-01579B-10881-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -91.4538449,44.8229152,0
+            -91.4542526,44.8229647,0
+            -91.4550251,44.8232082,0
+            -91.4555669,44.8234707,0
+            -91.4561892,44.8236381,0
+            -91.4569938,44.8237637,0
+            -91.4575303,44.8236495,0
+            -91.4586675,44.8232691,0
+            -91.4601588,44.8227211,0
+            -91.4617145,44.8219221,0
+            -91.4621651,44.8214579,0
+            -91.4627767,44.820811,0
+            -91.4632916,44.8202783,0
+            -91.4639032,44.8197684,0
+            -91.4648795,44.8190302,0
+            -91.4657378,44.8183529,0
+            -91.4661777,44.8176071,0
+            -91.4666069,44.8172037,0
+            -91.467669,44.8165644,0
+            -91.4685595,44.8159023,0
+            -91.4694822,44.8153163,0
+            -91.4705873,44.8150803,0
+            -91.4716923,44.8151336,0
+            -91.4724541,44.8151032,0
+            -91.4741921,44.8149205,0
+            -91.4756727,44.8146693,0
+            -91.4765096,44.8146389,0
+            -91.4775717,44.8146922,0
+            -91.4784729,44.8147835,0
+            -91.4792454,44.8147835,0
+            -91.4801466,44.8147378,0
+            -91.4817238,44.814578,0
+            -91.4828503,44.8144562,0
+            -91.4847493,44.8141898,0
+            -91.4858973,44.8140148,0
+            -91.487571,44.8138245,0
+            -91.4885259,44.8137789,0
+            -91.4894807,44.8138474,0
+            -91.4905536,44.8139235,0
+            -91.4919162,44.8140224,0
+            -91.4932573,44.8140757,0
+            -91.4949846,44.8140681,0
+            -91.4966691,44.8140452,0
+            -91.497463,44.813756,0
+            -91.4981496,44.8137941,0
+            -91.4990401,44.8136799,0
+            -91.4998662,44.813482,0
+            -91.5009284,44.81317,0
+            -91.5018189,44.8130254,0
+            -91.5025485,44.8125535,0
+            -91.5033424,44.8119674,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Put-In</name>
+      <Placemark>
+        <name>River Prairie Park Carry-In Access</name>
+        <description>Enter River Prairie Park through River Priaire Dr. and make your way towards the flagpole. Park in the lot underneath the Hwy 53 bridge. Ample parking available.</description>
+        <styleUrl>#icon-1615-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -91.4537546,44.8225973,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Take-Out</name>
+      <Placemark>
+        <name>Phoenix Park Carry-In Access</name>
+        <styleUrl>#icon-1615-880E4F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -91.5035878,44.8121151,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hobbs Boat Landing*</name>
+        <description>*Only expert kayakers should continue past this take-out location</description>
+        <styleUrl>#icon-1615-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -91.5193479,44.7994186,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,81 @@
+{
+  "id": "milwaukee-river",
+  "name": "Milwaukee River",
+  "gauge": "04086600",
+  "gaugeName": "MILWAUKEE RIVER NEAR CEDARBURG, WI",
+  "lat": 43.51734,
+  "lon": -88.22337,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Milwaukee River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "milwaukee-river-canoe-launch-to-waubedonia-park-canoe-launch",
+      "putIn": "Milwaukee River Canoe Launch",
+      "takeOut": "Waubedonia Park Canoe Launch",
+      "miles": 32.5,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. This is a long section and may require more than one day; plan daylight, supplies and legal overnight stops. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-e2967c73c94c5c919ab5",
+      "takeOutAccessId": "acc-0094d7ea07d2568ea2b2",
+      "accessReview": "Dam crossing/portage unresolved: Barton, West Bend. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float. A dam lies near a section endpoint (Kewaskum). The landing’s position relative to the barrier still needs confirmation.",
+      "routeReview": "This section includes Barton, West Bend, Kewaskum and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "waubedonia-park-canoe-launch-to-grafton-boat-ramp",
+      "putIn": "Waubedonia Park Canoe Launch",
+      "takeOut": "Grafton Boat Ramp",
+      "miles": 13.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-0094d7ea07d2568ea2b2",
+      "takeOutAccessId": "acc-5b2e23610e8851c7b3e4"
+    },
+    {
+      "id": "grafton-boat-ramp-to-village-grove-park-boat-ramp",
+      "putIn": "Grafton Boat Ramp",
+      "takeOut": "Village Grove Park Boat Ramp",
+      "miles": 10.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-5b2e23610e8851c7b3e4",
+      "takeOutAccessId": "acc-fad3337c791950878d15",
+      "routeReview": "Bridge Street Dam requires a land carry. The access map does not draw a continuous river path through the dam.",
+      "notices": [
+        {
+          "title": "Bridge Street Dam portage",
+          "text": "Use the signed upstream take-out near Veterans Memorial Park and the street portage around Bridge Street Dam. The water-trail guide describes a 1,200-foot carry; check current signs and access.",
+          "sourceName": "Milwaukee Riverkeeper — county-endorsed Urban Water Trail, 2018",
+          "sourceUrl": "https://milwaukeeriverkeeper.org/wp-content/uploads/2025/02/Milwaukee_WaterTrail_2018_Final-1.pdf",
+          "checkedOn": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "id": "village-grove-park-boat-ramp-to-thiensville-boat-ramp",
+      "putIn": "Village Grove Park Boat Ramp",
+      "takeOut": "Thiensville Boat Ramp",
+      "miles": 1.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-fad3337c791950878d15",
+      "takeOutAccessId": "acc-fd27b165b63d5de7b435",
+      "notices": [
+        {
+          "title": "Take out before Thiensville Dam",
+          "text": "This trip ends at the upstream boat ramp in Village Park. Take out before the dam; do not continue through the dam or fishway.",
+          "sourceName": "Village of Thiensville",
+          "sourceUrl": "https://www.village.thiensville.wi.us/144/Boating",
+          "checkedOn": "2026-10-31"
+        }
+      ]
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

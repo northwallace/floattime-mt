@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "state": "ID",
+  "checkedOn": "2026-11-03",
+  "items": [
+    {
+      "subject": "Palisades Dam below-dam boat launch",
+      "accessId": "acc-cf9caccd26a955af945c",
+      "blocker": "conflicting-agency-coordinate",
+      "nextAction": "The public USFS point is far east of the actual dam. Do not use it or confuse the reservoir ramps or Palisades Creek with this launch. Find a dependable below-dam location or review a private community landing pin. The BLM guide documents the facility at river mile zero.",
+      "rejectedCandidate": {
+        "lat": 43.336843,
+        "lon": -111.021913
+      },
+      "sourceFile": "research/snake-south-fork-20261103/sources/fs-snake-sites.json"
+    },
+    {
+      "subject": "Conant visit-page coordinate conflicts with GIS",
+      "accessId": "acc-e0e189c765525569ab75",
+      "blocker": "incorrect-webpage-coordinate-rejected",
+      "nextAction": "Retain the checked BLM staging-area coordinate. The visit-page point is near Spring Creek. IDFG Conant Valley instead points to the restroom/parking loop, so it does not establish a precise landing either. Seek an authoritative ramp location or reviewed community pin.",
+      "sourceFile": "research/snake-south-fork-20261103/sources/blm-conant.html",
+      "rejectedCandidate": {
+        "lat": 43.44972222,
+        "lon": -111.3986111
+      }
+    },
+    {
+      "subject": "Lorenzo exact landing",
+      "accessId": "acc-ddd9072240ee59288bc7",
+      "blocker": "facility-point-not-exact-landing",
+      "nextAction": "Retain BLM parking-area marker. The IDFG point is in the river north of the facility and does not establish the ramp. A reviewed community pin or better agency landing coordinate can refine it.",
+      "sourceFile": "research/snake-south-fork-20261103/sources/idfg-snake-sites.json"
+    },
+    {
+      "subject": "Spring Creek and Fullmer exact landings",
+      "accessIds": [
+        "acc-09d76b6c03415210a557",
+        "acc-747f6331c0495b359e73"
+      ],
+      "blocker": "facility-points-not-exact-landings",
+      "nextAction": "USFS locations identify the access facilities. Keep approximate areas visible and accept private suggestions; do not move points automatically to the nearest water line."
+    },
+    {
+      "subject": "South Fork Snake trip-time calibration",
+      "riverIds": [
+        "snake-sf-swan",
+        "snake-sf-canyon"
+      ],
+      "blocker": "uncalibrated-legacy-speed",
+      "nextAction": "Obtain documented travel observations or a reliable agency time range for the corrected section distances. Gauges remain visible where current; no live duration or remaining-time estimate should use an undocumented legacy speed."
+    },
+    {
+      "subject": "Additional South Fork and Teton access candidates",
+      "blocker": "new-section-research",
+      "nextAction": "IDFG public source has Palisades Creek, Twin Bridges, Fox Creek West, Bates Bridge, Rainey Bridge and Teton Creek. These are leads for the next batch, not approved river landings or sections. Verify identity, reach distances, hazards and imagery. Moody Creek duplicates Conant coordinates in the source and must not be imported by name alone.",
+      "sourceFile": "research/snake-south-fork-20261103/sources/idfg-snake-sites.json"
+    },
+    {
+      "subject": "snake-sf-canyon/conant-byington course",
+      "blocker": "imagery-channel-mismatch",
+      "nextAction": "The high-resolution source includes an older meander across wooded ground upstream of Fullmer (canyon-part-4.png / canyon-part-5.png). Geometry checks alone pass, but visual alignment does not. Keep the access map and published mileage; obtain updated river geometry before drawing this path.",
+      "sourceFile": "research/snake-south-fork-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "snake-sf-canyon/conant-fullmer course",
+      "blocker": "imagery-channel-mismatch",
+      "nextAction": "The source includes the same older meander across wooded ground upstream of Fullmer (canyon-part-4.png). The access map and published river-mile distance remain usable; the candidate line is not approved.",
+      "sourceFile": "research/snake-south-fork-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "snake-sf-canyon/fullmer-byington course",
+      "blocker": "imagery-channel-mismatch",
+      "nextAction": "The source tracks the broad river corridor, but parts of the lower reach cross gravel islands and a vegetated former bend rather than the visible main channel (canyon-part-6.png / canyon-part-7.png). Keep candidate private pending a current channel review; do not infer navigation or timing from this line.",
+      "sourceFile": "research/snake-south-fork-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "snake-sf-canyon/byington-lorenzo course",
+      "blocker": "imagery-channel-mismatch",
+      "nextAction": "The braided reach includes substantial source-line divergence onto gravel and wooded former channels (lorenzo-part-6.png). Review contemporary main-channel geometry and diversion structures before approving a course. The access map remains available.",
+      "sourceFile": "research/snake-south-fork-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "snake-sf-swan/spring-conant course",
+      "blocker": "imagery-channel-mismatch",
+      "nextAction": "The source starts through the older western loop and follows a northern braid across islands instead of consistently following the visible main channel (spring-conant-whole.png). Keep the access map and BLM two-mile planning value, but hold the candidate line for newer geometry.",
+      "sourceFile": "research/snake-south-fork-20261103/visual-route-review.json"
+    }
+  ]
+}

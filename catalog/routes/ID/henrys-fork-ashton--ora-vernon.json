@@ -1,0 +1,240 @@
+{
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -111.51071421121577,
+        44.07018260236452
+      ],
+      [
+        -111.51074607068671,
+        44.070121198260956
+      ],
+      [
+        -111.51079280401996,
+        44.069658398261744
+      ],
+      [
+        -111.51066127068685,
+        44.06905753159601
+      ],
+      [
+        -111.5101116706877,
+        44.067905798264476
+      ],
+      [
+        -111.51004847068783,
+        44.06733679826532
+      ],
+      [
+        -111.51020327068755,
+        44.06673753159956
+      ],
+      [
+        -111.51040480402061,
+        44.0662951982669
+      ],
+      [
+        -111.51126267068595,
+        44.06520219826866
+      ],
+      [
+        -111.51156547068547,
+        44.06496819826903
+      ],
+      [
+        -111.51167847068524,
+        44.06473179826932
+      ],
+      [
+        -111.5120002706848,
+        44.06446619826979
+      ],
+      [
+        -111.51217120401782,
+        44.06420773160349
+      ],
+      [
+        -111.51252387068394,
+        44.063904998270594
+      ],
+      [
+        -111.51303240401649,
+        44.06366099827104
+      ],
+      [
+        -111.51461800401404,
+        44.06209473160684
+      ],
+      [
+        -111.51550087067932,
+        44.06096999827518
+      ],
+      [
+        -111.51609340401177,
+        44.06039359827611
+      ],
+      [
+        -111.51673400401074,
+        44.05954293161074
+      ],
+      [
+        -111.51704827067692,
+        44.059312531611056
+      ],
+      [
+        -111.51738427067642,
+        44.05915779827801
+      ],
+      [
+        -111.51841247067483,
+        44.05888073161178
+      ],
+      [
+        -111.52074907067116,
+        44.05806073161304
+      ],
+      [
+        -111.52357680400013,
+        44.05733653161415
+      ],
+      [
+        -111.52530140399745,
+        44.05711453161446
+      ],
+      [
+        -111.52646307066232,
+        44.056895731614915
+      ],
+      [
+        -111.52776620399362,
+        44.0567471316151
+      ],
+      [
+        -111.52901580399168,
+        44.05670653161512
+      ],
+      [
+        -111.5311364039884,
+        44.05673133161512
+      ],
+      [
+        -111.53183260398731,
+        44.056674198281875
+      ],
+      [
+        -111.53373500398436,
+        44.05636373161573
+      ],
+      [
+        -111.53485887064924,
+        44.056059798282824
+      ],
+      [
+        -111.53516207064882,
+        44.05593433161633
+      ],
+      [
+        -111.53606000398077,
+        44.055311331617304
+      ],
+      [
+        -111.53786847064464,
+        44.05382433161965
+      ],
+      [
+        -111.53931200397568,
+        44.05288359828773
+      ],
+      [
+        -111.54031920397415,
+        44.0524159982885
+      ],
+      [
+        -111.54075251863729,
+        44.05214084040131
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "52357603",
+      "52357679"
+    ],
+    "putInOffsetMeters": 38.17990915444891,
+    "takeOutOffsetMeters": 103.12760099123606,
+    "putInSourceStationMeters": 1203.628759394316,
+    "takeOutSourceStationMeters": 953.3023487843107
+  },
+  "catalogMiles": 2.2,
+  "putIn": {
+    "name": "Ora Bridge",
+    "lat": 44.07006336,
+    "lon": -111.5102659
+  },
+  "takeOut": {
+    "name": "Vernon Bridge",
+    "lat": 44.05144883286597,
+    "lon": -111.53989571599129
+  },
+  "checks": {
+    "metrics": {
+      "routeMiles": 2.1901,
+      "endpointOffsetsMeters": [
+        38.2,
+        103.0
+      ],
+      "mileageDifferencePercent": 0.45,
+      "maxSegmentMeters": 239.9,
+      "vertices": 38
+    },
+    "issues": [
+      "endpoint-offset-over-100m"
+    ]
+  },
+  "version": 1,
+  "state": "ID",
+  "riverId": "henrys-fork-ashton",
+  "sectionId": "ora-vernon",
+  "status": "reviewed",
+  "scope": "river-course-overview",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1704_HU4_GPKG.zip",
+    "checkedOn": "2026-11-04",
+    "streamId": "Henrys Fork",
+    "evidenceFile": "research/routes/ID/hr-sources/henrys-fork-ora-vernon-f5ef8f0513930ded.json",
+    "sha256": "f5ef8f0513930ded51a5104b846ba1f8de600467220c7a84412ac89b0ce167a6"
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "River-course overview with approximate access areas; no exact landing connections or GPS ETA.",
+  "review": {
+    "checkedOn": "2026-11-04",
+    "reviewer": "Float ETA source and satellite imagery review",
+    "note": "Full course checked in four overlapping satellite views. The directed USGS line follows the visible river below Ora Bridge to the Vernon Bridge vicinity. No dam is crossed and no straight connection to a facility marker is added. The published Ora ramp approach replaces the general across-road facility point; original agency coordinates remain in the access evidence."
+  },
+  "overviewReview": {
+    "signature": "108f8ebd0a54535a0005661f5557669b0c4d906eb482960e8a06fcc3a7892b5b",
+    "routeReview": null,
+    "note": "Exact landing connections are not mapped. Channels may differ from this overview. This float ends at Vernon Bridge before Chester Dam.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "The Ora Bridge marker identifies an approximate access area. The river line does not establish its exact landing connection."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "The Vernon Bridge marker identifies an approximate access area. The river line does not establish its exact landing connection."
+      }
+    },
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "The Vernon Bridge facility-area marker is about 103 m from the clipped river centerline. Both identify the same reviewed access vicinity; the marker is not claimed as an exact shoreline landing, and no connector is drawn."
+    }
+  }
+}

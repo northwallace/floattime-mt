@@ -1,0 +1,300 @@
+{
+  "id": "zumbro-river-mn",
+  "name": "Zumbro River (Green Bridge–Kellogg)",
+  "state": "MN",
+  "timezone": "America/Chicago",
+  "lat": 44.27977688739134,
+  "lon": -92.42343276302006,
+  "gauge": null,
+  "gaugeName": null,
+  "gaugeRelationship": "none",
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "The USGS Zumbro Falls station reports water level rather than current discharge. No suitable discharge feed is assigned; an upstream South Fork reading is not presented as the flow for these main-river trips.",
+    "sourceName": "USGS — Zumbro River at Zumbro Falls, station 05374000",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05374000/",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed model or matching numeric agency trip times. Public access maps and sourced planning distances remain useful without a live estimate."
+  },
+  "blurb": "Paddle beneath southeastern Minnesota’s bluffs, from the Green Bridge and Zumbro Falls day-trip corridor to shorter outings around Theilman, Funk Ford, Kruger and Kellogg.",
+  "sections": [
+    {
+      "id": "green-bridge-zumbro-falls",
+      "putIn": "Zumbro Green Bridge Access",
+      "takeOut": "Zumbro Falls Public Access",
+      "putInAccessId": "acc-c9f4567c8617543cbaba",
+      "takeOutAccessId": "acc-eb7b37e0f1e75b53b6de",
+      "miles": 9.7,
+      "difficulty": "Lively current and riffles; snags possible",
+      "notes": "A DNR-recommended paddle through a bluff-lined valley below Lake Zumbro Dam. Start at Green Bridge and finish at the public Zumbro Falls access; carry-in access at the start requires moving your boat from the parking area.",
+      "notices": [
+        {
+          "title": "Fast-rising water and snags",
+          "text": "The Zumbro can rise quickly after heavy rain. Check DNR river conditions before launching and watch for downed trees and changing channels.",
+          "sourceName": "Minnesota DNR — Zumbro River State Water Trail",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, obstacle passages and alternate channels are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Zumbro River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro1.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Zumbro River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Zumbro Green Bridge Access",
+          "riverMile": 55.8,
+          "sourceLocation": "2026 map route description"
+        },
+        "takeOut": {
+          "name": "Zumbro Falls Public Access",
+          "riverMile": 46.1,
+          "sourceLocation": "2026 map route description"
+        },
+        "note": "Planning distance comes from the current DNR map’s river-mile listings. Mileages are approximate and do not establish travel speed or an exact landing-to-landing course."
+      }
+    },
+    {
+      "id": "zumbro-falls-hammond",
+      "putIn": "Zumbro Falls Public Access",
+      "takeOut": "Hammond Carry-In Access (upstream)",
+      "putInAccessId": "acc-eb7b37e0f1e75b53b6de",
+      "takeOutAccessId": "acc-a1012be3b7c85dc798e5",
+      "miles": 7.1,
+      "difficulty": "Lively current and riffles; snags possible",
+      "notes": "Follow the DNR-recommended corridor to the upstream Hammond carry-in, before the main bridge and Hammond Rapids. Do not confuse this exit with the separate city launch farther downstream. Arrange a shuttle.",
+      "notices": [
+        {
+          "title": "Fast-rising water and snags",
+          "text": "The Zumbro can rise quickly after heavy rain. Check DNR river conditions before launching and watch for downed trees and changing channels.",
+          "sourceName": "Minnesota DNR — Zumbro River State Water Trail",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, obstacle passages and alternate channels are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Zumbro River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Zumbro River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Zumbro Falls Public Access",
+          "riverMile": 46.1,
+          "sourceLocation": "2026 map route description"
+        },
+        "takeOut": {
+          "name": "Hammond Carry-In Access (upstream)",
+          "riverMile": 39.0,
+          "sourceLocation": "2026 map route description"
+        },
+        "note": "Planning distance comes from the current DNR map’s river-mile listings. Mileages are approximate and do not establish travel speed or an exact landing-to-landing course. The map groups Hammond carry-in/trailer accesses at mile 39.0. The inventory puts this upstream DNR carry-in at 39.1; the 0.1-mile difference remains source uncertainty. The city launch at 38.2 is a different access and is not substituted."
+      }
+    },
+    {
+      "id": "hammond-theilman",
+      "putIn": "Hammond Carry-In Access (upstream)",
+      "takeOut": "Zumbro Theilman Access",
+      "putInAccessId": "acc-a1012be3b7c85dc798e5",
+      "takeOutAccessId": "acc-059b02fddd4f5fe9b2dc",
+      "miles": 16.0,
+      "difficulty": "Class I Hammond Rapids; snags and rocky shallows possible",
+      "notes": "A longer paddle downstream through Hammond Rapids toward Theilman. The DNR marks Hammond Rapids Class I with no established portage; inspect conditions and choose this trip for your experience and craft.",
+      "notices": [
+        {
+          "title": "Fast-rising water and snags",
+          "text": "The Zumbro can rise quickly after heavy rain. Check DNR river conditions before launching and watch for downed trees and changing channels.",
+          "sourceName": "Minnesota DNR — Zumbro River State Water Trail",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Parts of the published river line differ from the channel visible in imagery. The dotted path is under review; approximate access locations are shown.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Zumbro River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Zumbro River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Hammond Carry-In Access (upstream)",
+          "riverMile": 39.0,
+          "sourceLocation": "2026 map route description"
+        },
+        "takeOut": {
+          "name": "Zumbro Theilman Access",
+          "riverMile": 23.0,
+          "sourceLocation": "2026 map route description"
+        },
+        "note": "Planning distance comes from the current DNR map’s river-mile listings. Mileages are approximate and do not establish travel speed or an exact landing-to-landing course. The map groups Hammond carry-in/trailer accesses at mile 39.0. The inventory puts this upstream DNR carry-in at 39.1; the 0.1-mile difference remains source uncertainty. The city launch at 38.2 is a different access and is not substituted."
+      }
+    },
+    {
+      "id": "theilman-funk-ford",
+      "putIn": "Zumbro Theilman Access",
+      "takeOut": "Zumbro Funk Ford Trail Bridge Access",
+      "putInAccessId": "acc-059b02fddd4f5fe9b2dc",
+      "takeOutAccessId": "acc-0ddc115fc97e529dbc1f",
+      "miles": 6.2,
+      "difficulty": "Current and snags; changing channels possible",
+      "notes": "Paddle from Theilman to the carry-in beside Funk Ford Trail Bridge in Zumbro Bottoms. Both endpoints require carrying boats; arrange a shuttle and locate the signed exit before launching.",
+      "notices": [
+        {
+          "title": "Fast-rising water and snags",
+          "text": "The Zumbro can rise quickly after heavy rain. Check DNR river conditions before launching and watch for downed trees and changing channels.",
+          "sourceName": "Minnesota DNR — Zumbro River State Water Trail",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, obstacle passages and alternate channels are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Zumbro River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Zumbro River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Zumbro Theilman Access",
+          "riverMile": 23.0,
+          "sourceLocation": "2026 map route description"
+        },
+        "takeOut": {
+          "name": "Zumbro Funk Ford Trail Bridge Access",
+          "riverMile": 16.8,
+          "sourceLocation": "2026 map route description"
+        },
+        "note": "Planning distance comes from the current DNR map’s river-mile listings. Mileages are approximate and do not establish travel speed or an exact landing-to-landing course."
+      }
+    },
+    {
+      "id": "funk-ford-kruger",
+      "putIn": "Zumbro Funk Ford Trail Bridge Access",
+      "takeOut": "Zumbro Kruger Access",
+      "putInAccessId": "acc-0ddc115fc97e529dbc1f",
+      "takeOutAccessId": "acc-695bf1770e835eab9621",
+      "miles": 4.6,
+      "difficulty": "Current and snags; changing channels possible",
+      "notes": "A shorter lower-river trip from Funk Ford Trail Bridge to the Kruger carry-in. Use designated public sites for stops; neighboring shoreline may be private. The campground is across the road from the take-out.",
+      "notices": [
+        {
+          "title": "Fast-rising water and snags",
+          "text": "The Zumbro can rise quickly after heavy rain. Check DNR river conditions before launching and watch for downed trees and changing channels.",
+          "sourceName": "Minnesota DNR — Zumbro River State Water Trail",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, obstacle passages and alternate channels are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Zumbro River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Zumbro River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Zumbro Funk Ford Trail Bridge Access",
+          "riverMile": 16.8,
+          "sourceLocation": "2026 map route description"
+        },
+        "takeOut": {
+          "name": "Zumbro Kruger Access",
+          "riverMile": 12.2,
+          "sourceLocation": "2026 map route description"
+        },
+        "note": "Planning distance comes from the current DNR map’s river-mile listings. Mileages are approximate and do not establish travel speed or an exact landing-to-landing course."
+      }
+    },
+    {
+      "id": "theilman-kruger",
+      "putIn": "Zumbro Theilman Access",
+      "takeOut": "Zumbro Kruger Access",
+      "putInAccessId": "acc-059b02fddd4f5fe9b2dc",
+      "takeOutAccessId": "acc-695bf1770e835eab9621",
+      "miles": 10.8,
+      "difficulty": "Current and snags; changing channels possible",
+      "notes": "A longer Zumbro Bottoms paddle that continues past Funk Ford to the Kruger carry-in. Both endpoints require carrying boats. Arrange a shuttle and identify the signed take-out before launching; the Kruger campground is across the road.",
+      "notices": [
+        {
+          "title": "Fast-rising water and snags",
+          "text": "The Zumbro can rise quickly after heavy rain. Check DNR river conditions before launching and watch for downed trees and changing channels.",
+          "sourceName": "Minnesota DNR — Zumbro River State Water Trail",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, obstacle passages and alternate channels are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Zumbro River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Zumbro River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Zumbro Theilman Access",
+          "riverMile": 23.0,
+          "sourceLocation": "2026 map route description"
+        },
+        "takeOut": {
+          "name": "Zumbro Kruger Access",
+          "riverMile": 12.2,
+          "sourceLocation": "2026 map route description"
+        },
+        "note": "Planning distance comes from the current DNR map’s river-mile listings. Mileages are approximate and do not establish travel speed or an exact landing-to-landing course. Theilman at river mile 23.0 to Kruger at 12.2; Funk Ford at 16.8 is an intermediate access, not the take-out for this trip."
+      }
+    },
+    {
+      "id": "kruger-kellogg",
+      "putIn": "Zumbro Kruger Access",
+      "takeOut": "Zumbro Kellogg Access",
+      "putInAccessId": "acc-695bf1770e835eab9621",
+      "takeOutAccessId": "acc-34497c741be15dccb126",
+      "miles": 7.2,
+      "difficulty": "Current and snags; changing channels possible",
+      "notes": "Continue from Kruger to the public Kellogg carry-in just below the railroad bridge. Finish at the signed access; this trip does not continue onto the Mississippi River.",
+      "notices": [
+        {
+          "title": "Fast-rising water and snags",
+          "text": "The Zumbro can rise quickly after heavy rain. Check DNR river conditions before launching and watch for downed trees and changing channels.",
+          "sourceName": "Minnesota DNR — Zumbro River State Water Trail",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, obstacle passages and alternate channels are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Zumbro River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Zumbro River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Zumbro Kruger Access",
+          "riverMile": 12.2,
+          "sourceLocation": "2026 map route description"
+        },
+        "takeOut": {
+          "name": "Zumbro Kellogg Access",
+          "riverMile": 5.0,
+          "sourceLocation": "2026 map route description"
+        },
+        "note": "Planning distance comes from the current DNR map’s river-mile listings. Mileages are approximate and do not establish travel speed or an exact landing-to-landing course. Use the current map’s landing at 5.0, not the adjacent railroad trestle or inventory mile 5.1."
+      }
+    }
+  ]
+}

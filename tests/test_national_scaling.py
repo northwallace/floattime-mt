@@ -1,3 +1,4 @@
+from catalog_fixture import copy_catalog
 import copy, json, shutil, tempfile, unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -70,7 +71,7 @@ class NationalScalingTests(unittest.TestCase):
   self.assertNotIn('lat',source);self.assertNotIn('riverBank',source)
  def temp_root(self):
   temp=tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup);root=Path(temp.name)
-  shutil.copytree(ROOT/'catalog',root/'catalog');shutil.copytree(ROOT/'research/routes',root/'research/routes');return root
+  copy_catalog(root);return root
  def test_every_endpoint_has_stable_known_identity(self):
   catalog=build();points={p['id']:p for p in catalog['accessPoints']}
   self.assertEqual(len(points),len(catalog['accessPoints']))
@@ -104,7 +105,7 @@ class NationalScalingTests(unittest.TestCase):
   self.assertLess(len(before['public/catalog-index.json']),1000*len(index['rivers']))
   for row in index['rivers']:
    self.assertEqual(set(row),{'id','name','state','lat','lon','sections','file'})
-   self.assertTrue(all(set(s)=={'id','putIn','takeOut'} for s in row['sections']))
+   self.assertTrue(all({'id','putIn','takeOut'}<=set(s)<= {'id','putIn','takeOut','putInAliases','takeOutAliases'} for s in row['sections']))
   river=catalog['rivers'][0];old_file=index['rivers'][0]['file'];river['blurb']+=' Updated.'
   after=outputs(catalog);new_file=json.loads(after['public/catalog-index.json'])['rivers'][0]['file']
   self.assertNotEqual(old_file,new_file);self.assertNotIn('public/'+old_file,after)

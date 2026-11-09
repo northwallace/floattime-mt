@@ -9,7 +9,7 @@ import json
 import os
 import re
 import time
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 from tools.flow_sources import flow_label, flow_name, flow_url, flow_description, supports_live_timing
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -92,10 +92,11 @@ def catalog_slots(text):
     import re
     data = catalog()
     links = [f'<a href="/{esc(s["slug"])}">{esc(s["name"])}</a>' for s in data['states']]
+    planner_links = [f'<a href="/?state={esc(s["id"])}#calculator" data-planner-state="{esc(s["id"])}">{esc(s["name"])}</a>' for s in data['states']]
     slots = {
-        'state-navigation': '\n'.join(links),
+        'state-navigation': '\n'.join(planner_links),
         'state-footer': ' · '.join(links),
-        'state-coverage': ' · '.join(esc(s['name']) for s in data['states']),
+        'state-coverage': ' <span aria-hidden="true">·</span> '.join(planner_links),
         'river-count': str(len(data['rivers'])),
         'section-count': str(sum(len(r['sections']) for r in data['rivers'])),
     }
@@ -142,13 +143,75 @@ def _typical_hours(river, miles):
     return miles / speed
 
 
-def _notices_html(section):
-    review = f'<div class="section-notice"><strong>Distance and endpoints under review</strong><p>{esc(section["distanceReview"])}</p></div>' if section.get('distanceReview') else ''
+def _notice_key(notice):
+    return tuple(notice.get(key) for key in ('title', 'text', 'sourceUrl', 'sourceName', 'checkedOn'))
+
+
+def _shared_notices(sections):
+    groups = {}
+    for section in sections:
+        for notice in section.get('notices', []):
+            group = groups.setdefault(_notice_key(notice), {'notice': notice, 'sectionIds': []})
+            if section['id'] not in group['sectionIds']:
+                group['sectionIds'].append(section['id'])
+    shared = [group for group in groups.values() if len(group['sectionIds']) >= 3]
+    return [dict(group, id=f'river-notice-{index + 1}') for index, group in enumerate(shared)]
+
+
+def _notice_html(notice, notice_id=''):
+    attrs = f' id="{esc(notice_id)}" tabindex="-1"' if notice_id else ''
+    return (f'<div class="section-notice"{attrs}><strong>{esc(notice["title"])}</strong><p>{esc(notice["text"])}</p>'
+            f'<a href="{esc(notice["sourceUrl"])}" target="_blank" rel="noopener">{esc(notice["sourceName"])}</a>'
+            f'<small>Source checked {esc(notice["checkedOn"])}</small></div>')
+
+
+def _shared_notices_html(groups, sections):
+    if not groups:
+        return ''
+    cards = []
+    for group in groups:
+        links = ''.join(f'<li><a href="#access-{esc(section["id"])}">{esc(section["putIn"])} → {esc(section["takeOut"])}</a></li>'
+                        for section in sections if section['id'] in group['sectionIds'])
+        cards.append(f'<div>{_notice_html(group["notice"], group["id"])}'
+                     f'<details class="advisory-stretches"><summary>Applies to {len(group["sectionIds"])} stretches</summary><ul>{links}</ul></details></div>')
+    return ('<section class="river-advisories" aria-label="Advisories for this river"><h3>Before you float</h3>'
+            '<div class="river-advisory-grid">' + ''.join(cards) + '</div></section>')
+
+
+def _notices_html(section, shared=None):
+    review = f'<div class="section-notice"><strong>Planning distance under review</strong><p>{esc(section["distanceReview"])}</p></div>' if section.get('distanceReview') else ''
     if section.get('accessReview'):
         review += f'<div class="section-notice"><strong>Access and route under review</strong><p>{esc(section["accessReview"])}</p><p>No trip estimate is offered until the access issue is resolved.</p></div>'
-    return review + ''.join(f'<div class="section-notice"><strong>{esc(n["title"])}</strong><p>{esc(n["text"])}</p>'
-                   f'<a href="{esc(n["sourceUrl"])}" target="_blank" rel="noopener">{esc(n["sourceName"])}</a>'
-                   f'<small>Source checked {esc(n["checkedOn"])}</small></div>' for n in section.get('notices', []))
+    notices = []
+    for notice in section.get('notices', []):
+        notice_id = (shared or {}).get(_notice_key(notice))
+        notices.append(f'<p class="section-advisory-link"><a href="#{esc(notice_id)}">{esc(notice["title"])} <span>— read advisory</span></a></p>'
+                       if notice_id else _notice_html(notice))
+    return review + ''.join(notices)
+
+
+def _guide_time(guide):
+    low, high, unit = guide['min'], guide['max'], guide['unit']
+    if high is None:
+        return _guide_time({**guide, 'max': low}) + ' or more'
+    if unit == 'hours' and (low % 1 or high % 1):
+        low, high = int(low * 60 + .5), int(high * 60 + .5)
+
+        def duration(minutes):
+            if minutes < 60:
+                return f'{minutes} min'
+            hours, rest = divmod(minutes, 60)
+            return f'{hours} hr' + (f' {rest} min' if rest else '')
+
+        if low == high:
+            return duration(low)
+        if high < 60:
+            return f'{low}–{high} min'
+        return f'{duration(low)}–{duration(high)}'
+    span = f'{low:g}' if low == high else f'{low:g}–{high:g}'
+    if low == high == 1:
+        unit = unit.removesuffix('s')
+    return f'{span} {unit}'
 
 
 def _guide_html(section):
@@ -156,8 +219,7 @@ def _guide_html(section):
         return ''
     parts = []
     for g in section.get('guideTimes', []):
-        span = str(g['min']) if g['min'] == g['max'] else f"{g['min']}–{g['max']}"
-        parts.append(f'<p class="guide-time"><strong>Published guide: {esc(span)} {esc(g["unit"])}</strong><br>'
+        parts.append(f'<p class="guide-time"><strong>Published guide: {esc(_guide_time(g))}</strong><br>'
                      f'{esc(g["conditions"])}<br><a href="{esc(g["sourceUrl"])}" target="_blank" rel="noopener">{esc(g["sourceName"])}</a></p>')
     return ''.join(parts)
 
@@ -170,7 +232,8 @@ def _distance_html(section):
     e = section.get('distanceEvidence')
     if not e:
         return ''
-    distance = (f'Published trip length: {e["miles"]:g} mi' if e['method'] == 'published-trip-length'
+    distance = (f'Measured from published map: approximately {section["miles"]:g} mi' if e['method'] == 'mapped-course-length'
+                else f'Published trip length: {e["miles"]:g} mi' if e['method'] == 'published-trip-length'
                 else f'River mile {e["putIn"]["riverMile"]:g} to {e["takeOut"]["riverMile"]:g}')
     return (f'<details class="distance-source"><summary>How this distance was checked</summary>'
             f'<p>{esc(e["note"])}</p><a href="{esc(e["sourceUrl"])}" target="_blank" rel="noopener">{esc(e["sourceName"])}</a>'
@@ -255,7 +318,7 @@ def _nav(active=""):
         cls = ' class="is-active"' if active == key else ""
         return f'<a href="{href}"{cls}>{label}</a>'
 
-    state_links = "\n          ".join(item(f"/{m['slug']}", m["name"], m["slug"]) for m in STATES.values())
+    state_links = "\n          ".join(item(f"/?state={m['code']}#calculator", m["name"], m["slug"]) for m in STATES.values())
     rivers_cls = ' class="is-active"' if active in STATE_BY_SLUG else ""
     return f"""  <a class="skip-link" href="#main">Skip to content</a>
   <header class="hero hero-legal">
@@ -362,11 +425,12 @@ def directory_html():
   </header>
   <main id="main" class="section river-dir">
     <p class="community-actions">Missing a route? <a href="/feedback.html?type=float-request">Request a float</a>.</p>
-    <div class="directory-controls"><div class="control"><label for="directoryState">State</label><select id="directoryState"><option value="">All states</option>{options}</select></div><div class="control"><label for="directorySearch">River or access point</label><input id="directorySearch" type="text" placeholder="Try Madison or Palisades"></div></div>
+    <div class="directory-controls"><div class="control"><label for="directoryState">State</label><select id="directoryState"><option value="">All states</option>{options}</select></div><div class="control"><label for="directorySearch">River, state or access point</label><input id="directorySearch" name="q" type="search" maxlength="180" autocomplete="off" placeholder="Try Blackfoot MT or Palisades" aria-describedby="directoryStatus"></div></div>
     <ul id="directoryResults" class="home-river-grid">{''.join(items)}</ul>
     <div class="directory-meta"><p id="directoryStatus" role="status">Showing all {len(rivers)} rivers</p><button id="directoryMore" class="btn-primary" type="button" hidden>Show more rivers</button></div>
   </main>
-  <script src="/directory.js?v=20261023-1"></script>
+  <script src="/river-search.js"></script>
+  <script src="/directory.js"></script>
 """
         + _footer()
     )
@@ -463,8 +527,25 @@ def state_html(code):
     )
 
 
+def _tube_guidance(river):
+    """Unknown grades and missing timing models must not imply tube suitability."""
+    sections = river['sections']
+    if any(s.get('accessReview') for s in sections):
+        return 'Some listed sections have unresolved access. Do not plan those trips until the specific access issue is resolved.'
+    if any(re.search(r'\b(?:III|IV|V|VI)\b', s['difficulty']) for s in sections):
+        return 'This listing includes Class III or harder water. Choose an appropriate craft and experienced paddlers; it is not a tube-float recommendation.'
+    if any(not re.search(r'\bClass\s+I', s['difficulty']) or
+           re.search(r'unconfirmed|unrated|under review', s['difficulty'], re.I)
+           for s in sections):
+        return 'Tube suitability has not been established for all listed sections. Check the section difficulty and current local conditions before choosing a craft; an access map alone does not establish suitability.'
+    prefix = 'Tubes lag the current (the model uses a 0.72× speed multiplier). ' if supports_live_timing(river) else ''
+    return prefix + 'Check the specific Class I–II section and current local conditions before choosing a tube. Avoid high water and wear a PFD.'
+
+
 def river_html(river):
     rivers = load_rivers()
+    notice_groups = _shared_notices(river['sections'])
+    shared_notices = {_notice_key(group['notice']): group['id'] for group in notice_groups}
     st = _state_meta(river)
     access_holds = sum(bool(s.get('accessReview')) for s in river['sections'])
     all_held = access_holds == len(river['sections'])
@@ -532,21 +613,37 @@ def river_html(river):
                 f'<a href="{esc(sec["takeOutAccess"]["sourceUrl"])}" target="_blank" rel="noopener">take-out</a></span>'
             )
             if sec.get('mapPrecision') == 'approximate':
-                access_links = '<strong>Approximate facility locations; exact landings are not confirmed.</strong><br>'
+                access_links = bank_html + '<strong>Some access locations are approximate; see each source below.</strong><br>'
                 for side, name in (('putInAccess', 'Put-in'), ('takeOutAccess', 'Take-out')):
                     access = sec[side]
                     access_links += f'<a href="{esc(access["sourceUrl"])}" target="_blank" rel="noopener">{name} access source</a>'
                     if access.get('status') == 'access-verified':
-                        access_links += f': {esc(access["directions"])}'
+                        help_url = '/feedback.html?' + urlencode({'type':'access-suggestion','riverId':river['id'],'sectionId':sec['id'],'endpoint':side.removesuffix('Access')})
+                        access_links += f': Approximate area; exact landing unconfirmed. {esc(access["directions"])} <a href="{esc(help_url)}">Help pinpoint the {name.lower()}</a>. Suggestions are reviewed before pins change.'
+                    elif access.get('status') == 'verified':
+                        # A precise landing remains useful when the other end
+                        # is approximate. Keep its own directions and bank.
+                        endpoint_url = put_url if side == 'putInAccess' else take_url
+                        access_links += f' · <a href="{esc(endpoint_url)}" target="_blank" rel="noopener">{name} directions</a>'
+                        if access.get('directions'):
+                            access_links += f': {esc(access["directions"])}'
+                    coordinate_url = access.get('coordinateSourceUrl')
+                    if coordinate_url and coordinate_url != access['sourceUrl']:
+                        coordinate_label = 'Location · © OpenStreetMap contributors' if urlsplit(coordinate_url).hostname == 'www.openstreetmap.org' else 'Location source'
+                        access_links += f' <a href="{esc(coordinate_url)}" target="_blank" rel="noopener">{coordinate_label}</a>'
                     access_links += '<br>'
+            else:
+                for side, name in (('putInAccess', 'Put-in'), ('takeOutAccess', 'Take-out')):
+                    if sec[side].get('directions'):
+                        access_links += f'<br><strong>{name}:</strong> {esc(sec[side]["directions"])}'
             map_url = '/?' + urlencode({'river':river['id'], 'state':river['state'], 'section':sec['id'], 'map':'1'}) + '#calculator'
             map_html = (
                 f'<a class="section-map-link" href="{esc(map_url)}"><span aria-hidden="true">⌖</span>'
                 '<strong>Open this section’s access map</strong><span>Labelled put-in and take-out, satellite imagery and access sources.</span></a>'
             )
         access_cards.append(f"""
-        <article class="access-guide">
-          <div><h3>{esc(label)}</h3><p>{esc(sec['notes'])}</p>{_notices_html(sec)}{_distance_html(sec)}
+        <article class="access-guide" id="access-{esc(sec['id'])}">
+          <div><h3>{esc(label)}</h3><p>{esc(sec['notes'])}</p>{_notices_html(sec, shared_notices)}{_distance_html(sec)}
           <p class="access-links">{access_links}</p>
           <a class="section-correction" href="/feedback.html?{esc(urlencode({'type':'correction','riverId':river['id'],'sectionId':sec['id']}))}">Suggest a correction for this section</a>
           <a class="section-correction" href="/feedback.html?{esc(urlencode({'type':'access-suggestion','riverId':river['id'],'sectionId':sec['id']}))}">Suggest an access location</a></div>
@@ -580,14 +677,7 @@ def river_html(river):
             "name": f"Is the {river['name']} a good tube float?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": (
-                    "Some listed sections have unresolved access. Do not plan those trips until the specific access issue is resolved." if access_holds else "Tubes lag the current (we use a 0.72× speed multiplier). "
-                    + (
-                        "This listing includes Class III or harder water — rafts and experienced paddlers, not tubes."
-                        if any("III" in s["difficulty"] or "IV" in s["difficulty"] for s in river["sections"])
-                        else "On Class I–II stretches tubes can work at moderate flows; skip high water and always wear a PFD."
-                    )
-                ),
+                "text": _tube_guidance(river),
             },
         },
     ])
@@ -718,6 +808,7 @@ def river_html(river):
 
     <h2>Access, maps, and shuttle planning</h2>
     <p>Open the access links before leaving service and confirm that roads, ramps, and parking are open. Map searches are starting points; signs and current agency notices control on the ground.</p>
+    {_shared_notices_html(notice_groups, river['sections'])}
     <div class="access-guide-list">{''.join(access_cards)}</div>
 
     <h2>Flow and trip planning</h2>

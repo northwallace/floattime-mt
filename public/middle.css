@@ -50,6 +50,16 @@ main{max-width:1160px;padding:0 28px}.section{padding:35px 0 23px}.section-kicke
 .compact-rivers .home-river-grid a { font-size:1rem; font-weight:400; }
 .compact-rivers .home-river-grid span { font-size:.73rem; }
 .directory-controls { display:grid; grid-template-columns:1fr 2fr; gap:16px; margin:24px 0; }
+.river-dir { padding-inline:28px; }
+.coming-soon-pill a{display:inline-block;color:inherit;padding:5px 2px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#8aaa94;white-space:nowrap}
+.coming-soon-pill a:hover{color:#fff;text-decoration-color:currentColor}
+.coming-soon-pill a:focus-visible{outline:2px solid #a6d8b8;outline-offset:3px;border-radius:3px}
+.section-cards{align-items:start}
+.float-card.has-open-map{grid-column:1/-1}
+.float-card .land-map-panel{min-width:0;width:auto;margin:12px -8px 0;padding:16px 0 0;border:0;border-top:1px solid var(--border);border-radius:0;background:transparent;box-shadow:none;scroll-margin-top:18px}
+.float-card .land-map-head{gap:10px}
+.float-card .land-map-head h3{font-size:1.2rem}
+.float-card .land-map{height:400px}
 .directory-meta { display:flex; justify-content:space-between; align-items:center; gap:16px; margin:22px 0 40px; font-size:.85rem; }
 @media(max-width:850px){.compact-rivers .home-river-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:600px){.explore-prompt,.popular-heading{align-items:flex-start;flex-direction:column;gap:12px}.compact-rivers .home-river-grid {grid-template-columns:1fr}.directory-controls{grid-template-columns:1fr}}
@@ -111,6 +121,19 @@ main{max-width:1160px;padding:0 28px}.section{padding:35px 0 23px}.section-kicke
 .section-notice p { margin:5px 0; }
 .section-notice a { color:#36543e; text-decoration:underline; overflow-wrap:anywhere; }
 .section-notice small { display:block; margin-top:4px; color:#635c4b; }
+.river-advisories { margin:24px 0; }
+.river-advisories h3 { font-size:1.1rem; margin:0 0 10px; }
+.river-advisory-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr)); gap:14px; }
+.river-advisory-grid .section-notice { margin:0; }
+.river-advisories [id], .float-card, .access-guide { scroll-margin-top:24px; }
+.advisory-stretches { margin:6px 0 0; font-size:.8rem; color:#4b604e; }
+.advisory-stretches summary { cursor:pointer; padding:6px 2px; }
+.advisory-stretches ul { padding-left:20px; margin:8px 0; }
+.advisory-stretches li { margin:7px 0; }
+.advisory-stretches a { color:#36543e; text-decoration:underline; overflow-wrap:anywhere; }
+.section-advisory-link { margin:4px 0; padding:8px 10px; border-left:3px solid #a66c25; background:#f7f0df; border-radius:4px; font-size:.82rem; line-height:1.5; }
+.section-advisory-link a { color:#51411f; text-decoration:underline; overflow-wrap:anywhere; font-weight:600; }
+.section-advisory-link span { font-weight:400; }
 .distance-source { margin:12px 0; font-size:.78rem; line-height:1.6; color:#435a49; }
 .distance-source summary { cursor:pointer; font-weight:600; }
 .distance-source p { margin:6px 0; }
@@ -155,3 +178,28 @@ main{max-width:1160px;padding:0 28px}.section{padding:35px 0 23px}.section-kicke
 .flow-card .gauge-retry, .flow-card #gaugeContext a { color: #edf4e8; }
 .flow-card .gauge-retry:focus-visible { outline-color: #edf4e8; }
 .flow-card .sparkline[data-empty="true"] { display: none; }
+
+/* Catalog search shares the quiet planner palette and stays in document flow. */
+.planner-search{margin:22px 0 0;padding:20px;background:#fffef9;border:1px solid #d0dacb;border-radius:12px;box-shadow:0 3px 15px #183b2208}
+.planner-search label{display:block;font-size:.84rem;font-weight:650;color:#294b38;margin-bottom:9px}
+.search-input-row{position:relative;display:flex;gap:10px;align-items:stretch}
+.search-input-row>svg{position:absolute;left:13px;top:14px;width:21px;height:21px;fill:none;stroke:#53735e;stroke-width:1.8;pointer-events:none}
+.search-input-row input{min-width:0;flex:1;background:#f7f8f1;border:1px solid #b9c9b9;color:#203d2c;color-scheme:light;padding:12px 12px 12px 43px;font-size:.95rem;border-radius:8px}
+.search-input-row input::placeholder{color:#67756a;opacity:1}
+.search-input-row button{padding:11px 22px;border-radius:8px;font-size:.9rem;flex:none}
+.search-hint,.search-status{font-size:.78rem;color:#536958;margin:9px 0 0;line-height:1.5}
+.search-panel{padding-top:4px}.search-panel[hidden]{display:none}
+.search-results{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+.search-results li{padding:12px 0;border-top:1px solid #dfe5db;min-width:0;overflow-wrap:anywhere}
+.search-results li>a:first-child{display:block;color:#24573c;font-size:.98rem;font-weight:650;text-decoration:none;line-height:1.4}
+.search-results li>a:first-child:hover{text-decoration:underline}
+.search-results li>span{display:block;color:#5a6c5e;font-size:.75rem;margin-top:4px}
+.search-results .search-section-link,.home-river-grid .search-section-link{display:block;font-family:var(--font-body);font-size:.76rem;font-weight:450;margin-top:8px;line-height:1.45;color:#315a43;text-decoration:underline;text-underline-offset:3px}
+.search-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid #dfe5db;padding-top:13px;margin-top:3px;font-size:.8rem}
+.planner-search a:focus-visible,.directory-meta button:focus-visible{outline:2px solid #386e4d;outline-offset:4px;border-radius:2px}
+.access-guide[id]{scroll-margin-top:24px}
+@media(max-width:600px){.planner-search{padding:15px}.search-input-row{flex-wrap:wrap;gap:8px}.search-input-row input{flex-basis:100%;font-size:16px}.search-input-row button{width:100%;min-height:44px}.search-results{grid-template-columns:1fr}.search-footer{font-size:.8rem}.river-dir{padding-inline:16px}.directory-controls .control{min-width:0}.directory-controls input,.directory-controls select{font-size:16px;min-height:44px}}
+
+/* Approximate areas invite a precise, reviewed correction. */
+.approximate-access-help{font-size:.86rem;line-height:1.6;color:var(--ink-muted,#45564f);margin:.8rem 0 0}
+.approximate-access-help a{display:inline;margin:0;padding:0;font-weight:600;font-size:inherit}

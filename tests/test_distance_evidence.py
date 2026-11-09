@@ -1,3 +1,4 @@
+from catalog_fixture import copy_catalog
 import json
 import shutil
 import tempfile
@@ -65,7 +66,7 @@ class DistanceEvidenceTests(unittest.TestCase):
     def edit_copy(self, change):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
-            shutil.copytree(ROOT / 'catalog', root / 'catalog');shutil.copytree(Path(__file__).resolve().parents[1]/'research/routes',root/'research/routes')
+            copy_catalog(root)
             path = root / 'catalog/rivers/blackfoot.json'
             record = json.loads(path.read_text())
             change(record)

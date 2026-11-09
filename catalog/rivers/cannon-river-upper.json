@@ -1,0 +1,151 @@
+{
+  "id": "cannon-river-upper",
+  "name": "Cannon River (Faribault–Dundas)",
+  "state": "MN",
+  "timezone": "America/Chicago",
+  "lat": 44.310628865723324,
+  "lon": -93.27087969357953,
+  "gauge": "05354500",
+  "gaugeName": "Cannon River at Co. Hwy. 29 below Faribault, MN",
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "This same-river gauge is within the Faribault–Dundas reach. It provides flow context, not a calibrated travel speed or a guarantee of passage.",
+    "sourceName": "USGS Water Data — station 05354500",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05354500/",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed model or matching numeric trip-time range is assigned."
+  },
+  "sections": [
+    {
+      "id": "two-rivers-dundas",
+      "putIn": "Cannon River Two Rivers Park Access",
+      "takeOut": "Cannon River Dundas City Park Access",
+      "putInAccessId": "acc-0a659e15fe3053208504",
+      "takeOutAccessId": "acc-a22def60f1035bd58dae",
+      "miles": 13.2,
+      "difficulty": "Moderate current; shallow riffles in low water",
+      "notes": "A DNR-recommended longer paddle. Arrange a vehicle shuttle and identify the Dundas exit in advance.",
+      "notices": [
+        {
+          "title": "Launch below the dam",
+          "text": "Two Rivers Park is downstream of Woolen Mill Dam. Use the signed park launch; do not substitute an upstream access.",
+          "sourceName": "Minnesota DNR — Cannon River",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and passage around obstacles are not drawn.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — Cannon River trip guide and map river miles",
+        "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/cannon-river/segments-maps.html",
+        "checkedOn": "2026-11-06",
+        "streamId": "Cannon River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Cannon River Two Rivers Park Access",
+          "riverMile": 58.4,
+          "sourceLocation": "DNR published river mile"
+        },
+        "takeOut": {
+          "name": "Cannon River Dundas City Park Access",
+          "riverMile": 45.2,
+          "sourceLocation": "DNR published river mile"
+        },
+        "note": "58.4 minus 45.2 gives approximately 13.2 river miles. Carries and shuttle travel are separate. The published trip is 13.2 miles; the Two Rivers inventory mile 58.5 is not substituted."
+      }
+    },
+    {
+      "id": "two-rivers-wilderness",
+      "putIn": "Cannon River Two Rivers Park Access",
+      "takeOut": "Cannon River Wilderness Area Access",
+      "putInAccessId": "acc-0a659e15fe3053208504",
+      "takeOutAccessId": "acc-57efcca81c375a48bd28",
+      "miles": 7.8,
+      "difficulty": "Moderate current; shallow riffles in low water",
+      "notes": "A shorter option ending at the county park. Arrange your shuttle before launching.",
+      "notices": [
+        {
+          "title": "Launch below the dam",
+          "text": "Two Rivers Park is downstream of Woolen Mill Dam. Use the signed park launch; do not substitute an upstream access.",
+          "sourceName": "Minnesota DNR — Cannon River",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Bring drinking water",
+          "text": "Rice County lists no running water at the Wilderness Area. Bring your own supply.",
+          "sourceName": "Rice County — Cannon River Wilderness Area",
+          "sourceUrl": "https://www.ricecountymn.gov/Facilities/Facility/Details/Cannon-River-Wilderness-Area-4",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and passage around obstacles are not drawn.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — Cannon River trip guide and map river miles",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Cannon River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Cannon River Two Rivers Park Access",
+          "riverMile": 58.4,
+          "sourceLocation": "DNR published river mile"
+        },
+        "takeOut": {
+          "name": "Cannon River Wilderness Area Access",
+          "riverMile": 50.6,
+          "sourceLocation": "DNR published river mile"
+        },
+        "note": "58.4 minus 50.6 gives approximately 7.8 river miles. Carries and shuttle travel are separate. Derived from map miles, not a separately timed trip. Inventory miles 58.5 and 50.8 are not mixed with the guide."
+      }
+    },
+    {
+      "id": "wilderness-dundas",
+      "putIn": "Cannon River Wilderness Area Access",
+      "takeOut": "Cannon River Dundas City Park Access",
+      "putInAccessId": "acc-57efcca81c375a48bd28",
+      "takeOutAccessId": "acc-a22def60f1035bd58dae",
+      "miles": 5.4,
+      "difficulty": "Moderate current; shallow riffles in low water",
+      "notes": "Launch at the county park and finish at Dundas City Park. Inspect both carry-in approaches during your shuttle.",
+      "notices": [
+        {
+          "title": "Bring drinking water",
+          "text": "Rice County lists no running water at the Wilderness Area. Bring your own supply.",
+          "sourceName": "Rice County — Cannon River Wilderness Area",
+          "sourceUrl": "https://www.ricecountymn.gov/Facilities/Facility/Details/Cannon-River-Wilderness-Area-4",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and passage around obstacles are not drawn.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — Cannon River trip guide and map river miles",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Cannon River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Cannon River Wilderness Area Access",
+          "riverMile": 50.6,
+          "sourceLocation": "DNR published river mile"
+        },
+        "takeOut": {
+          "name": "Cannon River Dundas City Park Access",
+          "riverMile": 45.2,
+          "sourceLocation": "DNR published river mile"
+        },
+        "note": "50.6 minus 45.2 gives approximately 5.4 river miles. Carries and shuttle travel are separate. Derived from map miles. The Wilderness inventory mile 50.8 is not substituted."
+      }
+    }
+  ],
+  "blurb": "Choose the full Two Rivers–Dundas paddle or split it at the Cannon River Wilderness Area. Review carry-in access areas, river miles and current reference flow."
+}

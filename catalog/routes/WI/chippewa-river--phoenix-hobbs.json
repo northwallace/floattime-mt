@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "chippewa-river",
+  "sectionId": "phoenix-hobbs",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-10-30",
+    "streamId": "Chippewa River",
+    "evidenceFile": "research/routes/WI/hr-sources/chippewa-river-e645f64d09178d7c.json",
+    "sha256": "e645f64d09178d7c12226151f3c71154a8f7844df60f04c5bcf1e6ed79bea627"
+  },
+  "putIn": {
+    "name": "Phoenix Park Carry-in",
+    "lat": 44.8119,
+    "lon": -91.5035
+  },
+  "takeOut": {
+    "name": "Hobbs Landing",
+    "lat": 44.79937517901614,
+    "lon": -91.51934073609563
+  },
+  "catalogMiles": 2.0,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -91.50410922650467,
+        44.81153879938399
+      ],
+      [
+        -91.50344558873103,
+        44.81097161901108
+      ],
+      [
+        -91.49958758784646,
+        44.80767428556218
+      ],
+      [
+        -91.4985269862601,
+        44.805077218990824
+      ],
+      [
+        -91.49823591980717,
+        44.80268761794189
+      ],
+      [
+        -91.49888532010488,
+        44.80121028470854
+      ],
+      [
+        -91.50136772067155,
+        44.79970901740284
+      ],
+      [
+        -91.50388952105249,
+        44.79973021798157
+      ],
+      [
+        -91.50470752217159,
+        44.80004468394998
+      ],
+      [
+        -91.50689932244451,
+        44.80088728419614
+      ],
+      [
+        -91.50995232263983,
+        44.800765283902415
+      ],
+      [
+        -91.51656572479529,
+        44.799480883650425
+      ],
+      [
+        -91.51910003001977,
+        44.79886944935265
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "76236312",
+      "76236438",
+      "76236504"
+    ],
+    "putInOffsetMeters": 62.705027322167595,
+    "takeOutOffsetMeters": 59.32622058325731,
+    "putInSourceStationMeters": 3812.1482055715483,
+    "takeOutSourceStationMeters": 1192.8301053997202
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "General river-course overview, not a navigable line through obstacles. Published endpoint-mile distance remains separate; precise landing connections are not drawn.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.8752,
+      "endpointOffsetsMeters": [
+        62.6,
+        59.4
+      ],
+      "mileageDifferencePercent": 6.24,
+      "maxSegmentMeters": 541.0,
+      "vertices": 13
+    },
+    "issues": [
+      "mileage-difference-over-5-percent"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-06",
+    "reviewer": "Float ETA source-network and satellite imagery review",
+    "note": "All three complete courses checked against imagery, including both overlapping Phoenix–Hobbs views. Sparse source vertices stay within the broad visible river corridor but generalize bends and bars. No downstream forks appear in the named-source network; this does not exclude real side channels or obstacles."
+  },
+  "overviewReview": {
+    "signature": "aa219611f85d952c32dcf8d1477373ffe1a90c256f35a0ef249bb2f625339f05",
+    "routeReview": "The dotted line shows the general river course below Dells Dam. Exact shoreline connections and passages around pilings, rocks and bridge hazards are not mapped.",
+    "note": "Approximate river course; banks, bars and obstacles can differ with water level.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Landing precision is reviewed separately. The shore-to-course connection is not mapped."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Landing precision is reviewed separately. The shore-to-course connection is not mapped."
+      }
+    },
+    "acceptedIssues": {
+      "mileage-difference-over-5-percent": "The generalized USGS course is shorter than the rounded endpoint river-mile difference in the published guide. Keep it display-only; do not replace planning miles or enable a timing model."
+    }
+  }
+}

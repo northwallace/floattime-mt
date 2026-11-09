@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "ID-usfs-snake",
+    "state": "ID",
+    "agency": "U.S. Forest Service \u2014 Caribou-Targhee National Forest",
+    "discoveryUrl": "https://catalog.data.gov/dataset/recreation-sites-feature-layer",
+    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0",
+    "where": "managing_org = '041554' AND site_subtype = 'BOATING SITE' AND recarea_enable = 'Y'",
+    "fields": [
+      "site_cn",
+      "globalid",
+      "site_name",
+      "site_subtype",
+      "development_status",
+      "recarea_name",
+      "recarea_enable",
+      "recarea_description",
+      "site_directions",
+      "managing_org",
+      "last_update"
+    ],
+    "stableFeatureField": "site_cn",
+    "note": "Official USFS public recreation layer, bounded to Palisades Ranger District boating sites. Includes reservoir facilities; names alone do not prove a river launch. Source coordinates require independent location review; Fullmer and Spring Creek remain approximate facility areas."
+  },
+  "retrievedAt": "2026-11-03T22:34:02.917235+00:00",
+  "file": "research/agency-sources/ID-usfs-snake/06fe1641194c67e4dab55167553fa821e330cbf25e8e94646e85d4cb685802f0.json",
+  "sha256": "06fe1641194c67e4dab55167553fa821e330cbf25e8e94646e85d4cb685802f0",
+  "features": 7,
+  "changes": null,
+  "reviewStatus": "research-only"
+}

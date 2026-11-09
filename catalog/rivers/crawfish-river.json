@@ -1,0 +1,82 @@
+{
+  "id": "crawfish-river",
+  "name": "Crawfish River",
+  "gauge": "05426000",
+  "gaugeName": "CRAWFISH RIVER AT MILFORD, WI",
+  "lat": 43.34315,
+  "lon": -89.0083,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Crawfish River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "rotary-park-to-astico-county-park-canoe-launch",
+      "putIn": "Rotary Park",
+      "takeOut": "Astico County Park Canoe Launch",
+      "miles": 7.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-ed498c1f842a5c84bb22",
+      "takeOutAccessId": "acc-5fa570f3516f546581df",
+      "accessReview": "Dam crossing/portage unresolved: Udeys. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
+      "routeReview": "This section includes Udeys and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "astico-county-park-canoe-launch-to-county-g-canoe-launch",
+      "putIn": "Astico County Park Canoe Launch",
+      "takeOut": "County G Canoe Launch",
+      "miles": 19.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-5fa570f3516f546581df",
+      "takeOutAccessId": "acc-b1af6b950c2f5930b8e2",
+      "routeReview": "A signed portage is required at Danville Dam. The access-area map is available, but no continuous dotted path is drawn across the dam.",
+      "notices": [
+        {
+          "title": "Danville Dam portage required",
+          "text": "Dodge County describes a marked portage at Danville Dam and notes that it is close to the spillway. Locate the signed take-out before approaching the dam and carry around it. Check current access and conditions with the county before launching.",
+          "sourceName": "Dodge County — waterways",
+          "sourceUrl": "https://www.co.dodge.wi.gov/trails-waterways/waterways",
+          "checkedOn": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "county-g-canoe-launch-to-hubbleton-canoe-launch",
+      "putIn": "County G Canoe Launch",
+      "takeOut": "Hubbleton Canoe Launch",
+      "miles": 4.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-b1af6b950c2f5930b8e2",
+      "takeOutAccessId": "acc-2262b074d9bb5f869696"
+    },
+    {
+      "id": "hubbleton-canoe-launch-to-olson-road-canoe-launch",
+      "putIn": "Hubbleton Canoe Launch",
+      "takeOut": "Olson Road Canoe Launch",
+      "miles": 1.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-2262b074d9bb5f869696",
+      "takeOutAccessId": "acc-dbf3b4b825f856428f4f"
+    },
+    {
+      "id": "olson-road-canoe-launch-to-aztalan-state-park-canoe-launch",
+      "putIn": "Olson Road Canoe Launch",
+      "takeOut": "Aztalan State Park Canoe Launch",
+      "miles": 10.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-dbf3b4b825f856428f4f",
+      "takeOutAccessId": "acc-5cc223bda0d6554eb47d"
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

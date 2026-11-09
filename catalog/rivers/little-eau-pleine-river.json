@@ -1,0 +1,37 @@
+{
+  "id": "little-eau-pleine-river",
+  "name": "Little Eau Pleine River",
+  "gauge": "05400100",
+  "gaugeName": "LITTLE EAU PLEINE RIVER NEAR MARSHFIELD, WI",
+  "lat": 44.71491,
+  "lon": -89.86581,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Little Eau Pleine River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "highway-s-launch-to-highway-o-launch",
+      "putIn": "Highway S Launch",
+      "takeOut": "Highway O Launch",
+      "miles": 5.8,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-2e434170ca695f7aa877",
+      "takeOutAccessId": "acc-afcc6e1986eb532ba201"
+    }
+  ],
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "This station is upstream of the accessed reach. Its readings are reference information, not a measured flow for every section or a float-time estimate.",
+    "sourceName": "USGS Water Data — monitoring location and Wisconsin gauge review",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05400100/",
+    "checkedOn": "2026-10-30"
+  }
+}

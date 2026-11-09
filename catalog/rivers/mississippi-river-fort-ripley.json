@@ -1,0 +1,196 @@
+{
+  "id": "mississippi-river-fort-ripley",
+  "name": "Mississippi River (Fort Ripley–Little Falls)",
+  "state": "MN",
+  "timezone": "America/Chicago",
+  "lat": 46.1794922958068,
+  "lon": -94.36486833176791,
+  "gauge": "05267000",
+  "gaugeName": "Mississippi River near Royalton, MN",
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "Royalton station is farther downstream, below the Little Falls and Blanchard dam reaches. Regulation and tributaries can change flow between the trips and the station; use this only as downstream river context, not local discharge or paddling speed.",
+    "sourceName": "USGS Water Data — Mississippi River near Royalton, MN",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05267000/",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed model. Published Headwaters Board paddling times are shown only for the matching trips and are not adjusted by live flow."
+  },
+  "blurb": "Choose shorter outings or agency-listed day trips between Fort Ripley, Fletcher Creek, Belle Prairie and LeBourget Park. Allow for riffles, wind and changing water levels. The Little Falls finish is upstream of the dam; these trips do not cross it.",
+  "sections": [
+    {
+      "id": "fort-ripley-fletcher",
+      "putIn": "Mississippi Fort Ripley Landing",
+      "takeOut": "Mississippi Fletcher Creek Landing",
+      "putInAccessId": "acc-ab1ce51af10f525d8fcb",
+      "takeOutAccessId": "acc-dc34e24df9c25d179a6b",
+      "miles": 9.6,
+      "difficulty": "Moving water with riffles and rock bars",
+      "notes": "The DNR-recommended day trip from Fort Ripley Landing to Fletcher Creek. Riffles and rock bars occur around Pipe Island and toward the Highway 115 bridge; late-season water can be shallow. Check the landing and arrange a vehicle shuttle.",
+      "routeReview": "Approximate DNR river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped; published planning mileage stays separate. The line generalizes the west-side island channel and rock bars near Camp Ripley; it does not select a passage through riffles.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Mississippi River map 6, route table",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Mississippi River State Water Trail, Brainerd to Little Falls",
+        "putIn": {
+          "name": "Mississippi Fort Ripley Landing",
+          "riverMile": 982.3,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "takeOut": {
+          "name": "Mississippi Fletcher Creek Landing",
+          "riverMile": 972.7,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "note": "Approximate planning distance from the 2026 DNR route table. River miles decrease downstream; source rounding and side channels can affect distance. Exact shoreline connections and trip speed are independent."
+      },
+      "notices": [
+        {
+          "title": "Riffles and restricted shoreline",
+          "text": "Rock-bar riffles occur near Pipe Island and downstream toward the Highway 115 bridge. The DNR states that entry to the Camp Ripley Training Center from the river is prohibited. Use designated public accesses; the map does not establish landing rights along the military shoreline.",
+          "sourceName": "Minnesota DNR — Mississippi map 6",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "fletcher-belle-prairie",
+      "putIn": "Mississippi Fletcher Creek Landing",
+      "takeOut": "Mississippi Belle Prairie County Park Landing",
+      "putInAccessId": "acc-dc34e24df9c25d179a6b",
+      "takeOutAccessId": "acc-8ff4e740da49574e86a2",
+      "miles": 2.5,
+      "difficulty": "Moving water; wind, snags and shallows possible",
+      "notes": "A shorter paddle from Fletcher Creek to Belle Prairie County Park, below the Highway 115 bridge. Finish at the signed park ramp and arrange a vehicle shuttle; wind and river levels affect this open-water outing.",
+      "routeReview": "Approximate DNR river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped; published planning mileage stays separate.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Mississippi River map 6, route table",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Mississippi River State Water Trail, Brainerd to Little Falls",
+        "putIn": {
+          "name": "Mississippi Fletcher Creek Landing",
+          "riverMile": 972.7,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "takeOut": {
+          "name": "Mississippi Belle Prairie County Park Landing",
+          "riverMile": 970.2,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "note": "Approximate planning distance from the 2026 DNR route table. River miles decrease downstream; source rounding and side channels can affect distance. Exact shoreline connections and trip speed are independent."
+      }
+    },
+    {
+      "id": "fort-ripley-belle-prairie",
+      "putIn": "Mississippi Fort Ripley Landing",
+      "takeOut": "Mississippi Belle Prairie County Park Landing",
+      "putInAccessId": "acc-ab1ce51af10f525d8fcb",
+      "takeOutAccessId": "acc-8ff4e740da49574e86a2",
+      "miles": 12.1,
+      "difficulty": "Moving water with riffles and rock bars",
+      "notes": "The Headwaters Board trip from Fort Ripley Landing to Belle Prairie County Park, with Fletcher Creek as an intermediate access. Allow for the riffles and shallow rock bars near Pipe Island and toward Highway 115. Arrange a vehicle shuttle.",
+      "routeReview": "Approximate DNR river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped; published planning mileage stays separate. The line generalizes the west-side island channel and rock bars near Camp Ripley; it does not select a passage through riffles.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Mississippi River map 6, route table",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Mississippi River State Water Trail, Brainerd to Little Falls",
+        "putIn": {
+          "name": "Mississippi Fort Ripley Landing",
+          "riverMile": 982.3,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "takeOut": {
+          "name": "Mississippi Belle Prairie County Park Landing",
+          "riverMile": 970.2,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "note": "Approximate planning distance from the 2026 DNR route table. River miles decrease downstream; source rounding and side channels can affect distance. Exact shoreline connections and trip speed are independent. The Headwaters Board trip map rounds the whole trip to 12 miles; retain the DNR table difference without changing the guide time."
+      },
+      "guideTimes": [
+        {
+          "min": 3.5,
+          "max": 3.5,
+          "unit": "hours",
+          "conditions": "Headwaters Board approximate paddling time for this named trip. Flow, wind, obstacles and stops can change duration; this is not a live estimate.",
+          "sourceName": "Mississippi Headwaters Board — Mississippi Fort Ripley Landing to Mississippi Belle Prairie County Park Landing",
+          "sourceUrl": "https://www.mississippiheadwaters.org/rivermaps/fortripley.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Riffles and restricted shoreline",
+          "text": "Rock-bar riffles occur near Pipe Island and downstream toward the Highway 115 bridge. The DNR states that entry to the Camp Ripley Training Center from the river is prohibited. Use designated public accesses; the map does not establish landing rights along the military shoreline.",
+          "sourceName": "Minnesota DNR — Mississippi map 6",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "belle-prairie-lebourget",
+      "putIn": "Mississippi Belle Prairie County Park Landing",
+      "takeOut": "Mississippi LeBourget Park Landing",
+      "putInAccessId": "acc-8ff4e740da49574e86a2",
+      "takeOutAccessId": "acc-9258f0cc9e9b50f69d69",
+      "miles": 4.6,
+      "difficulty": "Moving water; wind, snags and shallows possible",
+      "notes": "Paddle from Belle Prairie County Park toward Little Falls, past the Little Elk River confluence and Highway 10 bridge. Finish at LeBourget Park on the right bank facing downstream, before Little Falls Dam. Identify the ramp during your shuttle.",
+      "routeReview": "Approximate DNR river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped; published planning mileage stays separate. Finish at LeBourget Park before Little Falls Dam; no dam passage is included.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Mississippi River map 6, route table",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Mississippi River State Water Trail, Brainerd to Little Falls",
+        "putIn": {
+          "name": "Mississippi Belle Prairie County Park Landing",
+          "riverMile": 970.2,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "takeOut": {
+          "name": "Mississippi LeBourget Park Landing",
+          "riverMile": 965.6,
+          "sourceLocation": "Page 1, Map 6 route description"
+        },
+        "note": "Approximate planning distance from the 2026 DNR route table. River miles decrease downstream; source rounding and side channels can affect distance. Exact shoreline connections and trip speed are independent. The Headwaters Board trip map rounds the whole trip to 5 miles; retain the DNR table difference without changing the guide time."
+      },
+      "guideTimes": [
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "unit": "hours",
+          "conditions": "Headwaters Board approximate paddling time for this named trip. Flow, wind, obstacles and stops can change duration; this is not a live estimate.",
+          "sourceName": "Mississippi Headwaters Board — Mississippi Belle Prairie County Park Landing to Mississippi LeBourget Park Landing",
+          "sourceUrl": "https://www.mississippiheadwaters.org/rivermaps/belleprairie_map.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Take out before Little Falls Dam",
+          "text": "LeBourget Park is at river mile 965.6, upstream of Little Falls Dam at 965.2. This trip ends at the park ramp. It does not include a dam passage or portage; locate the take-out before starting.",
+          "sourceName": "Minnesota DNR — Mississippi map 6",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    }
+  ]
+}

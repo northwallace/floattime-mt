@@ -1,0 +1,51 @@
+{
+  "id": "mecan-river",
+  "name": "Mecan River",
+  "gauge": "04073200",
+  "gaugeName": "MECAN RIVER NEAR RICHFORD, WI",
+  "lat": 44.05568,
+  "lon": -89.47037,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Mecan River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "mecan-springs-boat-ramp-to-upper-dike-mecan-river-fish-barrier-bypass-landing",
+      "putIn": "Mecan Springs Boat Ramp",
+      "takeOut": "Upper Dike Mecan River Fish Barrier Bypass Landing",
+      "miles": 19.8,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-ac3c9cef3d235f2b8b8e",
+      "takeOutAccessId": "acc-f8df61af0a125dbea396"
+    },
+    {
+      "id": "upper-dike-mecan-river-fish-barrier-bypass-landing-to-main-dam-downstream-carry-in-landing",
+      "putIn": "Upper Dike Mecan River Fish Barrier Bypass Landing",
+      "takeOut": "Main Dam Downstream Carry-In Landing",
+      "miles": 1.5,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-f8df61af0a125dbea396",
+      "takeOutAccessId": "acc-e246bb1e407f58a8a8a9",
+      "accessReview": "The take-out is downstream of Germania Dam. The carry around the dam and eastern-refuge access must be resolved before enabling this map.",
+      "routeReview": "This section includes Germania (Lower) and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam.",
+      "notices": [
+        {
+          "title": "Germania Dam and refuge restrictions",
+          "text": "This section ends below Germania Dam; a usable portage has not been established. DNR closes the eastern refuge September 1–November 30 except for the specified gun/muzzleloader deer seasons, and prohibits motorboats including electric motors. Check the property map and current rules.",
+          "sourceName": "Wisconsin DNR — Germania Marsh",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/germania",
+          "checkedOn": "2026-11-01"
+        }
+      ]
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

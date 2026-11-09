@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "state": "ID",
+  "riverId": "henrys-fork-ashton",
+  "sectionId": "jump-off-ashton-reservoir",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1704_HU4_GPKG.zip",
+    "checkedOn": "2026-11-04",
+    "streamId": "Henrys Fork",
+    "evidenceFile": "research/routes/ID/hr-sources/henrys-fork-ashton-6c3cdcf7c0bdcddb.json",
+    "sha256": "6c3cdcf7c0bdcddb18b011fbf4e1645e7563540abc0e8fc2403350a8e7342f7a"
+  },
+  "putIn": {
+    "name": "Jump Off Canyon",
+    "lat": 44.108725637079885,
+    "lon": -111.43816624893603
+  },
+  "takeOut": {
+    "name": "Ashton Reservoir Boat Ramp",
+    "lat": 44.11164257098423,
+    "lon": -111.45531484215807
+  },
+  "catalogMiles": 1,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -111.4389938625891,
+        44.10843636416477
+      ],
+      [
+        -111.439704470797,
+        44.10947753153323
+      ],
+      [
+        -111.44006780412974,
+        44.10977359819946
+      ],
+      [
+        -111.44035327079598,
+        44.1099185315326
+      ],
+      [
+        -111.44218047079312,
+        44.110392598198494
+      ],
+      [
+        -111.44276607079223,
+        44.11043999819846
+      ],
+      [
+        -111.44323207079151,
+        44.11061213153147
+      ],
+      [
+        -111.44359867079095,
+        44.110852731531175
+      ],
+      [
+        -111.4440174041236,
+        44.11096179819761
+      ],
+      [
+        -111.44504732703871,
+        44.11078053986453
+      ],
+      [
+        -111.44532807078826,
+        44.11073113153132
+      ],
+      [
+        -111.4455936041212,
+        44.11064899819811
+      ],
+      [
+        -111.44671740411945,
+        44.11082173153111
+      ],
+      [
+        -111.44928207078215,
+        44.11171793152981
+      ],
+      [
+        -111.45000347078098,
+        44.11176873152972
+      ],
+      [
+        -111.45048360411359,
+        44.111961398196065
+      ],
+      [
+        -111.45086287077966,
+        44.112054798195885
+      ],
+      [
+        -111.4511576707792,
+        44.11192619819615
+      ],
+      [
+        -111.45135667077892,
+        44.1117531315297
+      ],
+      [
+        -111.45232607077742,
+        44.11157279819663
+      ],
+      [
+        -111.45347680410896,
+        44.11147053153016
+      ],
+      [
+        -111.45395467077486,
+        44.11127473153044
+      ],
+      [
+        -111.45428907077434,
+        44.111198998197295
+      ],
+      [
+        -111.45516228360756,
+        44.111078137916884
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "52167249",
+      "52167101",
+      "{6728AA9E-2285-4B4A-BA18-0D0623D5C6A4}",
+      "52167083",
+      "52167151"
+    ],
+    "putInOffsetMeters": 73.48894325965317,
+    "takeOutOffsetMeters": 64.09621677429597,
+    "putInSourceStationMeters": 1391.2870498100922,
+    "takeOutSourceStationMeters": 142.87862601647527
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate mapped river centerline, not a recommended navigation channel. Channels, hazards and conditions change. Does not enable GPS time remaining or replace planning mileage.",
+  "scope": "river-course-overview",
+  "checks": {
+    "metrics": {
+      "routeMiles": 0.9146,
+      "endpointOffsetsMeters": [
+        73.5,
+        63.9
+      ],
+      "mileageDifferencePercent": 8.54,
+      "maxSegmentMeters": 227.7,
+      "vertices": 24
+    },
+    "issues": [
+      "mileage-difference-over-5-percent"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-04",
+    "reviewer": "Float ETA source and satellite imagery review",
+    "note": "The full course was checked in eight overlapping satellite views. The line broadly follows the visible river, including the reservoir approach where present. No connection is drawn to an approximate facility point. Source archive and extracted geometry are checksummed; source rounding and channel differences do not replace published mileage."
+  },
+  "overviewReview": {
+    "signature": "6295bb8a650580378bec9d8e8babb6877db12131d9a7324c7595232e20235e1c",
+    "routeReview": null,
+    "note": "Exact landing connections are not mapped. Channels may differ from this overview. Finish at the Ashton Reservoir recreation-area ramp above Ashton Dam.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "The Jump Off Canyon marker identifies an approximate access area. The river line does not establish its exact landing connection."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "The Ashton Reservoir Boat Ramp marker identifies an approximate access area. The river line does not establish its exact landing connection."
+      }
+    },
+    "acceptedIssues": {
+      "mileage-difference-over-5-percent": "HFF publishes a rounded planning reach length independently of USGS geometry. The full mapped course matches the visible river and the named facility areas; landing approaches remain unmapped. Keep the published distance and enable display only."
+    }
+  }
+}

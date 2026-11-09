@@ -4,6 +4,7 @@ import hashlib,json
 
 def outputs(catalog):
     assets={};summaries=[]
+    access_by_id={p['id']:p for p in catalog.get('accessPoints',[])}
     for river in catalog['rivers']:
         text=json.dumps(river,ensure_ascii=False,separators=(',',':'))+'\n'
         digest=hashlib.sha256(text.encode()).hexdigest()[:20]
@@ -11,6 +12,12 @@ def outputs(catalog):
         assets['public/'+file]=text
         summary={k:river[k] for k in ('id','name','state','lat','lon')}
         summary['sections']=[{k:s[k] for k in ('id','putIn','takeOut')} for s in river['sections']]
+        # Search can find former landing names without loading geometry or
+        # evidence. Keep the canonical name and stable ID in the full record.
+        for source,section in zip(river['sections'],summary['sections']):
+            for side in ('putIn','takeOut'):
+                aliases=access_by_id.get(source.get(side+'AccessId'),{}).get('aliases',[])
+                if aliases:section[side+'Aliases']=aliases
         summary['file']=file;summaries.append(summary)
     index={k:catalog[k] for k in ('version','states','craft','mapRelease')};index['rivers']=summaries
     access_index = {p['id']:{'file':f"map_points/{p['state']}.json",'name':p['name'],'aliases':p.get('aliases',[])} for p in catalog['accessPoints']}

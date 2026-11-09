@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "ID-blm-ramps",
+    "state": "ID",
+    "agency": "Bureau of Land Management",
+    "discoveryUrl": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer",
+    "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1",
+    "where": "ADMIN_ST = 'ID' AND WEB_DISPLAY = 'YES'",
+    "fields": [
+      "FET_NAME",
+      "FET_SUBTYPE",
+      "ADM_UNIT_CD",
+      "ADMIN_ST",
+      "GlobalID",
+      "DESCRIPTION",
+      "WEB_LINK",
+      "UNIT_NAME",
+      "WEB_DISPLAY",
+      "SOURCE"
+    ],
+    "stableFeatureField": "GlobalID",
+    "note": "Official BLM public recreation inventory. Geometry may locate the facility or parking rather than a shoreline landing. Compare with agency river maps and imagery; never auto-promote. Conant visit-page coordinate is a known mismatch with the BLM GIS ramp and river-mile map."
+  },
+  "retrievedAt": "2026-11-03T22:34:02.917714+00:00",
+  "file": "research/agency-sources/ID-blm-ramps/79beb53ec90c067876d5e2b80d511d10d3aecd0b6518f813a190f66f3c40f1bf.json",
+  "sha256": "79beb53ec90c067876d5e2b80d511d10d3aecd0b6518f813a190f66f3c40f1bf",
+  "features": 36,
+  "changes": null,
+  "reviewStatus": "research-only"
+}

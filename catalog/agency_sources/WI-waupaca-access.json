@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "id": "WI-waupaca-access",
+  "state": "WI",
+  "agency": "Waupaca County Land Information",
+  "discoveryUrl": "https://public1.co.waupaca.wi.us/arcgis/rest/services/Public/Facilities/MapServer",
+  "url": "https://public1.co.waupaca.wi.us/arcgis/rest/services/Public/Facilities/MapServer/0",
+  "where": "(FacilitySitePoint.featurecode = 'Boat Ramp / Dock' AND (FacilitySitePoint.name LIKE 'Little Wolf River Public Access%' OR FacilitySitePoint.name LIKE 'Waupaca River Public Access%' OR FacilitySitePoint.name LIKE 'Crystal River Public Access%' OR FacilitySitePoint.name = 'Shadow Lake Boat Launch')) OR FacilitySitePoint.name = 'Woods Park Canoe/Kayak Access'",
+  "fields": [
+    "FacilitySitePoint.facilityid",
+    "FacilitySitePoint.name",
+    "FacilitySitePoint.owntype",
+    "FacilitySitePoint.featurecode",
+    "FacilitySitePoint.municipality",
+    "FacilitySitePoint.capturemeth"
+  ],
+  "stableFeatureField": "FacilitySitePoint.facilityid",
+  "note": "County facility records are candidates, not automatic landing verification. Placed-on-map locations may be offset or refer to a different access. County trip guides and imagery must support each selected access; duplicate facility IDs stay in review."
+}

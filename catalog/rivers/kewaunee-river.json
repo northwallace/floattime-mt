@@ -1,0 +1,40 @@
+{
+  "id": "kewaunee-river",
+  "name": "Kewaunee River",
+  "gauge": "04085228",
+  "gaugeName": "KEWAUNEE RIVER ADJ KAY RD AT KEWAUNEE, WI",
+  "lat": 44.46079,
+  "lon": -87.54472,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Kewaunee River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "kewaunee-river-park-lane-to-kewaunee-river-hwy-e",
+      "putIn": "Kewaunee River - Park Lane",
+      "takeOut": "Kewaunee River - Hwy E",
+      "miles": 2.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-f39a23f90bec58f1b6e2",
+      "takeOutAccessId": "acc-2d0da82db2e9565c9ab0"
+    },
+    {
+      "id": "kewaunee-river-hwy-e-to-kewaunee-boat-landing",
+      "putIn": "Kewaunee River - Hwy E",
+      "takeOut": "Kewaunee Boat Landing",
+      "miles": 2.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-2d0da82db2e9565c9ab0",
+      "takeOutAccessId": "acc-cd9dfa4378d350238b81"
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

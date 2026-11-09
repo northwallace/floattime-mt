@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "id": "ID-idfg-access",
+  "state": "ID",
+  "agency": "Idaho Department of Fish and Game",
+  "discoveryUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer",
+  "url": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0",
+  "where": "status = 'Active'",
+  "fields": [
+    "ID",
+    "region",
+    "status",
+    "site_name",
+    "public_info_notes",
+    "county",
+    "camp",
+    "rest",
+    "ramp",
+    "dock",
+    "ada_fish",
+    "fishing_boating"
+  ],
+  "stableFeatureField": "ID",
+  "note": "Public managed/co-managed access inventory. Use the explicit ID as source identity, not mutable OBJECTID. Agency coordinates can identify parking, an older ramp or an incorrect duplicate; verify each facility and retain precision labels. The prior Moody Creek point duplicates Conant Valley and must not be promoted without resolution."
+}

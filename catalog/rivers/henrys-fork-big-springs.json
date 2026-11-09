@@ -1,0 +1,70 @@
+{
+  "id": "henrys-fork-big-springs",
+  "name": "Henry's Fork (Big Springs Water Trail)",
+  "state": "ID",
+  "timezone": "America/Boise",
+  "lat": 44.497077484448816,
+  "lon": -111.27181218557689,
+  "gauge": null,
+  "gaugeName": null,
+  "gaugeRelationship": "none",
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "No suitable current flow gauge is assigned to this water-trail reach. The Big Springs station is discontinued; nearby lake-release and below-reservoir readings do not represent this spring-fed float. Access information and the published planning distance remain available.",
+    "sourceName": "USGS — Big Springs at Big Springs, station 13040500",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-13040500/",
+    "checkedOn": "2026-11-04"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed live-flow travel-speed model or guide time specific to this public takeout is assigned. Historical whole-trail times include other takeouts and are retained as research only."
+  },
+  "blurb": "A popular spring-fed water trail near Island Park, from the hand-carry launch at the old railroad trestle to the public Forest Service takeout above Mack’s Inn. Keep the public takeout distinct from private bridge-side landings.",
+  "sections": [
+    {
+      "id": "big-springs-public-takeout",
+      "putIn": "Big Springs Water Trail Launch",
+      "takeOut": "Big Springs Water Trail Public Takeout",
+      "putInAccessId": "acc-b1e4a548417056c68553",
+      "takeOutAccessId": "acc-1f0e1c46a0ea50a5a104",
+      "miles": 3.9,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "A spring-fed meadow float for hand-carried boats. Launch at the trestle-side water-trail facility and finish at the designated public takeout upstream of Mack’s Inn bridge. Arrange your shuttle and identify the clearing before launching; private resort and cabin landings are different sites.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.9,
+        "sourceName": "TroutHunter — local river access and section guide",
+        "sourceUrl": "https://trouthunt.com/fishing/map-sections/",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Big Springs Water Trail Launch",
+          "sourceLocation": "Big Springs to Mack’s Inn: 3.9-mile reach and public takeout upstream of Highway 20"
+        },
+        "takeOut": {
+          "name": "Big Springs Water Trail Public Takeout",
+          "sourceLocation": "Big Springs to Mack’s Inn: 3.9-mile reach and public takeout upstream of Highway 20"
+        },
+        "note": "The local outfitter guide describes a 3.9-mile float ending at the public takeout upstream of Highway 20. Other guides describe the broader bridge-side destination as 4–4.5 miles. This approximate planning distance is not a surveyed landing-to-landing measurement; source geometry for the spring branch is incomplete."
+      },
+      "notices": [
+        {
+          "title": "Hand-carry launch; public takeout before the bridge",
+          "text": "Use the water-trail dock/stairs and the designated public takeout. Bridge-side businesses and cabin docks are separate access arrangements. This itinerary does not continue into Coffee Pot Rapids.",
+          "sourceName": "Henry’s Fork Foundation / Caribou-Targhee National Forest — water-trail field study",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/big-springs.pdf",
+          "checkedOn": "2026-11-04"
+        },
+        {
+          "title": "Fishing closed on the upper spring reach",
+          "text": "Idaho’s 2025–2027 rules close fishing from the head of Big Springs downstream to Henrys Lake Outlet. Check the current rules before fishing farther downstream.",
+          "sourceName": "Idaho Fish and Game — Big Springs fishing rules",
+          "sourceUrl": "https://idfg.idaho.gov/ifwis/fishingplanner/water/1112820444925",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    }
+  ]
+}

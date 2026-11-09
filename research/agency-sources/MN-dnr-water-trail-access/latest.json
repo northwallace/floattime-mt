@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "MN-dnr-water-trail-access",
+    "state": "MN",
+    "agency": "Minnesota Department of Natural Resources",
+    "discoveryUrl": "https://www.arcgis.com/home/item.html?id=317f05359f1446acad8ab9414fd2bd10",
+    "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0",
+    "where": "state_water_trail_id IS NOT NULL OR unique_swas_id IN ('WAS02986')",
+    "fields": [
+      "unique_swas_id",
+      "stable_prod_guid",
+      "access_name",
+      "administrator",
+      "county_name",
+      "directions",
+      "launch_type",
+      "ramp_surface",
+      "downstream_riverbank_side",
+      "river_mile",
+      "state_water_trail_id",
+      "state_water_trail_name",
+      "shape_collection_method",
+      "alerts"
+    ],
+    "stableFeatureField": "unique_swas_id",
+    "note": "Public water-trail access sites only. Preserve stable SWAS IDs; site coordinates may locate a parking/facility area. Compare agency maps, current notices and imagery before assigning landing precision. Archive is research-only. Rock Dam (WAS02986) is included by stable ID because DNR recommends this Pine River access but its water-trail join fields are blank. Inclusion discovers evidence only; it does not approve a pin. Add further documented exceptions by stable ID after checking agency identity."
+  },
+  "retrievedAt": "2026-11-07T03:25:53.673810+00:00",
+  "file": "research/agency-sources/MN-dnr-water-trail-access/7d1986c672819a662514d6ec28629f0fc3c2fd776b1bceb23ef0b277d8a15097.json",
+  "sha256": "7d1986c672819a662514d6ec28629f0fc3c2fd776b1bceb23ef0b277d8a15097",
+  "features": 644,
+  "changes": {
+    "added": [
+      "814"
+    ],
+    "removed": [],
+    "changed": []
+  },
+  "reviewStatus": "research-only"
+}

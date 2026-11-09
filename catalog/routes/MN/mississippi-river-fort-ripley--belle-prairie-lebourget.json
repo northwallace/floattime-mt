@@ -1,0 +1,356 @@
+{
+  "version": 1,
+  "state": "MN",
+  "riverId": "mississippi-river-fort-ripley",
+  "sectionId": "belle-prairie-lebourget",
+  "status": "reviewed",
+  "scope": "river-course-overview",
+  "catalogMiles": 4.6,
+  "source": {
+    "name": "Minnesota Department of Natural Resources",
+    "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_water_trails_minnesota/FeatureServer/0",
+    "checkedOn": "2026-11-06",
+    "adapterId": "MN-dnr-water-trails",
+    "adapterSha256": "e530a39bf7b8b8f6c0a22700410f591d971de521b3b656f84902e6901d362c90",
+    "evidenceFile": "research/mississippi-brainerd-20261106/sources/dnr-mississippi-course.json",
+    "sha256": "1d0fcc6d79d7df6cc5b126fcf053958b21497c28ed473fbff775ab3f05fd7505",
+    "streamId": "CBR00627"
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate agency river course; bars, banks and side channels can differ. Exact landing connections are not mapped. Published planning mileage remains separate.",
+  "putIn": {
+    "name": "Mississippi Belle Prairie County Park Landing",
+    "lat": 46.035350295693355,
+    "lon": -94.34355231155428
+  },
+  "takeOut": {
+    "name": "Mississippi LeBourget Park Landing",
+    "lat": 45.979868555716486,
+    "lon": -94.36601791115869
+  },
+  "direction": {
+    "method": "agency-published-water-trail",
+    "parts": [
+      {
+        "featureId": "74",
+        "pathIndex": 0,
+        "reverse": true
+      }
+    ],
+    "clip": {
+      "start": {
+        "segment": 555,
+        "fraction": 0.6318429278053961
+      },
+      "end": {
+        "segment": 617,
+        "fraction": 0.8784967778308689
+      }
+    },
+    "tripEvidenceSha256": "66145c29a01c1448ae194bfe22d96e315301a029ee547598018e0d8d776ff3e4"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -94.34437843638406,
+        46.03429262380895
+      ],
+      [
+        -94.34382823260836,
+        46.03408551167487
+      ],
+      [
+        -94.34148917124051,
+        46.032213186353545
+      ],
+      [
+        -94.34047358545976,
+        46.03123202365108
+      ],
+      [
+        -94.34044853725851,
+        46.03019605845764
+      ],
+      [
+        -94.34133633534599,
+        46.02845854189172
+      ],
+      [
+        -94.34407577675843,
+        46.02639701180828
+      ],
+      [
+        -94.34799444264041,
+        46.02440786588975
+      ],
+      [
+        -94.35083348593504,
+        46.023395722079165
+      ],
+      [
+        -94.35175164308465,
+        46.0225829537447
+      ],
+      [
+        -94.35281410498321,
+        46.022030720497845
+      ],
+      [
+        -94.35343993573633,
+        46.02170542391609
+      ],
+      [
+        -94.35535391768853,
+        46.01887189032316
+      ],
+      [
+        -94.35559273681575,
+        46.01754640956426
+      ],
+      [
+        -94.35589584136504,
+        46.015864045264124
+      ],
+      [
+        -94.35594945683778,
+        46.01542206512167
+      ],
+      [
+        -94.35622461188079,
+        46.01315372807259
+      ],
+      [
+        -94.35623729781719,
+        46.01304914214331
+      ],
+      [
+        -94.35630161583475,
+        46.01298165871025
+      ],
+      [
+        -94.3583038809516,
+        46.010880725454456
+      ],
+      [
+        -94.35855231234983,
+        46.01076676731842
+      ],
+      [
+        -94.36093672601865,
+        46.00967295828717
+      ],
+      [
+        -94.36110853467986,
+        46.00952084709429
+      ],
+      [
+        -94.36132444374971,
+        46.00923926579331
+      ],
+      [
+        -94.36157197565684,
+        46.00902930701283
+      ],
+      [
+        -94.36181935283868,
+        46.00874733988859
+      ],
+      [
+        -94.36203599580433,
+        46.008528752282814
+      ],
+      [
+        -94.36234498491505,
+        46.00809304877317
+      ],
+      [
+        -94.3625915470667,
+        46.00781109144359
+      ],
+      [
+        -94.3628390678453,
+        46.00760112909155
+      ],
+      [
+        -94.36305575495332,
+        46.007319536036505
+      ],
+      [
+        -94.363209943944,
+        46.0070566872048
+      ],
+      [
+        -94.36345679696916,
+        46.00681972748684
+      ],
+      [
+        -94.3637045948251,
+        46.006555761885025
+      ],
+      [
+        -94.36392041597188,
+        46.006337171420654
+      ],
+      [
+        -94.36416798944323,
+        46.00606420164496
+      ],
+      [
+        -94.36438461281908,
+        46.005845609706014
+      ],
+      [
+        -94.36463115475699,
+        46.00556364719424
+      ],
+      [
+        -94.36487843669606,
+        46.00534468816022
+      ],
+      [
+        -94.36509511901879,
+        46.00506309117339
+      ],
+      [
+        -94.36534245963063,
+        46.004781117543025
+      ],
+      [
+        -94.36558892960856,
+        46.00456216663933
+      ],
+      [
+        -94.36574412617689,
+        46.00430829723485
+      ],
+      [
+        -94.36595998002335,
+        46.004026699454016
+      ],
+      [
+        -94.36611450906746,
+        46.003745842523614
+      ],
+      [
+        -94.36636103328806,
+        46.00346388627814
+      ],
+      [
+        -94.36651525766757,
+        46.00313802038529
+      ],
+      [
+        -94.36660735429811,
+        46.00281290540729
+      ],
+      [
+        -94.36660639555994,
+        46.00238089634744
+      ],
+      [
+        -94.3665130339746,
+        46.00203099527937
+      ],
+      [
+        -94.36635731617217,
+        46.00177184854362
+      ],
+      [
+        -94.36615449072531,
+        46.00154620817025
+      ],
+      [
+        -94.36613392324782,
+        46.0012114175831
+      ],
+      [
+        -94.36540128992124,
+        45.999219224515095
+      ],
+      [
+        -94.36168931743848,
+        45.995595109248356
+      ],
+      [
+        -94.35914878508343,
+        45.99233807748689
+      ],
+      [
+        -94.35904386715082,
+        45.99120840534196
+      ],
+      [
+        -94.35887034606986,
+        45.989339959607605
+      ],
+      [
+        -94.35976750167025,
+        45.98824093491445
+      ],
+      [
+        -94.36079464287947,
+        45.98698261403587
+      ],
+      [
+        -94.36291088529109,
+        45.98409888436231
+      ],
+      [
+        -94.36450744877588,
+        45.98083277196844
+      ],
+      [
+        -94.36466776888051,
+        45.980504781509204
+      ],
+      [
+        -94.36550820922517,
+        45.97963163865588
+      ]
+    ]
+  },
+  "checks": {
+    "metrics": {
+      "routeMiles": 4.5124,
+      "endpointOffsetsMeters": [
+        133.8,
+        47.4
+      ],
+      "mileageDifferencePercent": 1.9,
+      "maxSegmentMeters": 494.6,
+      "vertices": 64
+    },
+    "issues": [
+      "endpoint-offset-over-100m"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-06",
+    "reviewer": "Float ETA agency, barrier and complete imagery review",
+    "note": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs. The line stops alongside the checked LeBourget ramp, upstream of Little Falls Dam; the ramp-to-centerline connection is intentionally not drawn."
+  },
+  "overviewReview": {
+    "signature": "33278407ae7db5d264f03187393045ced4066e8e0e610d5e86d9871b54f8ffb6",
+    "routeReview": "Approximate DNR river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped; published planning mileage stays separate. Finish at LeBourget Park before Little Falls Dam; no dam passage is included.",
+    "note": "Approximate river course only. Exact landing connections and passages through bars or riffles are not shown.",
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "Belle Prairie source area is 133.8 m from the agency centerline in this broad river reach. The access approach and centerline were inspected separately. No connector is drawn or claimed; preserve the area coordinate and published miles."
+    },
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Source-backed approximate access area. Exact shoreline landing and its river connection are not mapped; use the signed public approach."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "The public ramp pin is checked, but the ramp-to-centerline connection is not mapped."
+      }
+    }
+  }
+}

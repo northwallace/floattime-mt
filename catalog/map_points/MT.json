@@ -24,11 +24,11 @@
     },
     "beaverhead": {
       "status": "pending",
-      "note": "Reviewed 2026-10-28. High Bridge retains its sourced access record. The state tourism coordinate for Barretts overlaps the diversion dam and was rejected. Both sections remain pending access and mileage review."
+      "note": "All listed sections now have documented approximate access areas. Barretts uses the upstream footbridge approach supported by the Reclamation site plan; exact ramp edges and current conditions still need local checks. Course display and timing are reviewed independently."
     },
     "jefferson-upper": {
       "status": "pending",
-      "note": "Reviewed 2026-10-28. Parsons/Waterloo identity resolved through the Jefferson River Canoe Trail; landing and diversion-portage geometry are still unresolved. Parrot Castle lacks confirmed usable boat access. Both maps remain held."
+      "note": "Sourced access areas are available. Silver Star’s agency coordinate is retained but now labelled approximate after imagery review showed that it is set back from the channel. River-course and diversion approaches are reviewed separately."
     },
     "jefferson-canyon": {
       "status": "verified",
@@ -472,28 +472,22 @@
       "aliases": []
     },
     "High Bridge FAS": {
-      "status": "verified",
-      "lat": 45.0178190558662,
-      "lon": -112.83750618412812,
+      "id": "acc-78c684688f5555bbb79f",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 45.0175281,
+        "lon": -112.8387535,
+        "feature": "Approximate launch area; shoreline approach reviewed in imagery"
+      },
       "accessType": "Hand launch",
       "operator": "Montana Fish, Wildlife & Parks",
-      "sourceName": "Montana FWP Fishing Access Site 39753552",
+      "sourceName": "Montana FWP — High Bridge FAS",
       "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753552",
-      "verifiedOn": "2026-10-23",
-      "note": "Exact river-side access coordinate and launch type from the current Montana FWP managed-access layer.",
-      "riverBank": "river-right",
-      "bankVerifiedOn": "2026-10-23",
-      "bankSourceName": "Montana FWP Fishing Access Guide and satellite inspection",
-      "bankSourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/misc/fas-guide---2017---fullversion.pdf",
-      "bankNote": "Bank is stated while facing downstream and checked against the official access guide, mapped ramp position, and downstream flow direction.",
-      "id": "acc-78c684688f5555bbb79f",
-      "aliases": []
-    },
-    "Clark Canyon Dam": {
-      "status": "pending",
-      "note": "The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch.",
-      "id": "acc-ffc4a6b11ceb56c68f49",
-      "aliases": []
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/12112854446",
+      "verifiedOn": "2026-11-06",
+      "directions": "Reach High Bridge from the recreation road south of Dillon. Look for the signed FWP hand launch beneath the I-15 bridge, beside the river and west of the railway. Check the shoreline approach before shuttling.",
+      "note": "FWP documents hand-launch access. Its former general-site marker is inland. The reviewed OpenStreetMap slipway point is closer to the visible landing; it is an approximate access area, not an agency-confirmed water-edge pin."
     },
     "Barretts Dam": {
       "status": "pending",
@@ -502,23 +496,40 @@
       "aliases": []
     },
     "Silver Star FAS": {
-      "status": "verified",
-      "lat": 45.68639748188691,
-      "lon": -112.28245209108755,
+      "status": "access-verified",
       "accessType": "Concrete ramp",
       "operator": "Montana Fish, Wildlife & Parks",
       "sourceName": "Montana FWP Fishing Access Site 39753448",
       "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753448",
-      "verifiedOn": "2026-10-23",
-      "note": "Exact river-side access coordinate and ramp type from the current Montana FWP managed-access layer.",
+      "verifiedOn": "2026-11-02",
+      "note": "FWP documents the fishing-access site and concrete ramp. Satellite comparison shows the agency coordinate set back from the channel, so it is displayed as an access area rather than an exact water-edge landing.",
       "id": "acc-6edb1703300d54e8a98e",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.68639748188691,
+        "lon": -112.28245209108755,
+        "feature": "FWP fishing-access facility coordinate, set back from the visible water edge; not an exact ramp pin"
+      },
+      "directions": "Use the signed Silver Star FWP fishing access beside the Jefferson River crossing. FWP documents a concrete ramp; this agency coordinate locates the facility, so confirm the exact ramp at the site.",
+      "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
     },
     "Parsons Bridge (Waterloo)": {
-      "status": "pending",
-      "note": "Identity resolved: Waterloo Road crossing beside Lost Tomahawk / Parsons diversion dam. The canoe-trail organization documents a right-of-way boat ramp and portage, but the precise landing, dam relationship and current access still need review.",
+      "status": "access-verified",
+      "note": "Public access is documented by the adjoining landowner. Approximate area center uses JEFF-3 in Table 11 (printed page 19) of KF2 Consulting’s 2025 report for Save Wild Trout. The study point is not a surveyed ramp. No bank side or vehicle route is inferred.",
       "id": "acc-318a7938159c5b5f88c4",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.74892,
+        "lon": -112.19095,
+        "feature": "Parsons Bridge river-monitoring location beside the Waterloo Road access area; not a landing pin"
+      },
+      "accessType": "Road-right-of-way access area; exact landing unconfirmed",
+      "operator": "Waterloo Road right-of-way / adjoining Jefferson River Canoe Trail property",
+      "sourceName": "Jefferson River Canoe Trail — Lost Tomahawk",
+      "sourceUrl": "https://www.jeffersonriver.org/Campsites/Lost_Tomahawk.htm",
+      "coordinateSourceUrl": "https://dailymontanan.com/wp-content/uploads/2025/07/Jefferson-River-Basin-Abiotic-Monitoring-2023-2024_courtesy-SaveWildTrout.pdf",
+      "verifiedOn": "2026-11-02",
+      "directions": "Waterloo Road crossing beside Lost Tomahawk. The trail organization documents a ramp in the road right-of-way and a public portage. Scout the exact landing and diversion approach before floating."
     },
     "Cardwell Bridge FAS": {
       "status": "verified",
@@ -632,10 +643,22 @@
       "aliases": []
     },
     "Parrot Castle FAS": {
-      "status": "pending",
-      "note": "The official Parrot Castle record describes difficult river access and no boat ramp; it is also absent from the current managed-access layer. The section needs a suitable take-out before a map can publish.",
+      "status": "access-verified",
+      "note": "FWP documents the public site and facility coordinates, with difficult access and no listed boat facilities. Preserve this as an approximate area, not an exact landing, ramp or bank-side claim.",
       "id": "acc-a1b23f0e7f16595483a3",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.81238,
+        "lon": -112.11847,
+        "feature": "FWP Parrot Castle facility location; exact water-edge landing unconfirmed"
+      },
+      "accessType": "Primitive fishing access; no listed boat facilities",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP — Parrot Castle",
+      "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753428",
+      "coordinateSourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753428",
+      "verifiedOn": "2026-11-02",
+      "directions": "Follow Parrot Castle Road to Daly Road and the parking area described by FWP. Access to the river is difficult and involves a slough. Confirm a suitable landing for your craft."
     },
     "Cyr Bridge FAS": {
       "status": "verified",
@@ -1174,10 +1197,22 @@
       "aliases": []
     },
     "Barretts Station Park (above dam)": {
-      "status": "pending",
-      "note": "Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam.",
+      "status": "access-verified",
+      "note": "The August 2004 Reclamation site drawing labels the boat ramp upstream of the footbridge, consistent with the visible bridges and park approach. Visit Montana still documents a boat take-out. The unchanged OSM north-end footbridge coordinate anchors this approximate area. It is not a ramp survey or proof of current conditions. The rejected tourism coordinate at the diversion dam remains research-only; the campground centroid downstream of the footbridge is also not used.",
       "id": "acc-ea38164accc35c83b4c2",
-      "aliases": []
+      "aliases": [],
+      "accessType": "Public boat take-out",
+      "operator": "Bureau of Reclamation",
+      "sourceName": "Bureau of Reclamation — Barretts site plan, August 2004; Visit Montana access listing",
+      "sourceUrl": "https://www.usbr.gov/gp/mtao/clarkcanyon/ea/eachapters/ea_chapter_1.pdf#page=6",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/12113075801",
+      "verifiedOn": "2026-11-06",
+      "areaCenter": {
+        "lat": 45.1284935,
+        "lon": -112.7416016,
+        "feature": "Footbridge approach beside the documented upstream take-out; exact ramp edge is not surveyed"
+      },
+      "directions": "Enter Barretts Station Park from Old Stage Road and follow the public park road to the footbridge. Locate the public boat ramp immediately upstream of the footbridge on the left bank facing downstream during your shuttle. Finish before the footbridge; the private vehicle bridge and diversion dam are farther downstream. This area marker identifies the bridge approach, not the exact landing."
     },
     "John & Nancy Owen FAS (Stevensville Bridge)": {
       "status": "access-verified",
@@ -1269,6 +1304,142 @@
       "verifiedOn": "2026-10-29",
       "directions": "Use the signed Coal Banks Landing campground and contact-station entrance from Virgelle Ferry Road. BLM places the concrete ramp beside the contact station. Confirm road and seasonal facility conditions before arranging the shuttle.",
       "note": "BLM explicitly documents a concrete boat ramp and supplies the recreation-site coordinate. The location is approximate; the exact ramp edge and river bank have not been verified."
+    },
+    "Hell's Canyon FAS": {
+      "id": "acc-6afea1f3b0b856afb560",
+      "aliases": [
+        "Hell's Canyon"
+      ],
+      "status": "access-verified",
+      "accessType": "Ramp (Gravel)",
+      "operator": "Montana FWP",
+      "areaCenter": {
+        "lat": 45.63262001310214,
+        "lon": -112.31855202625039,
+        "feature": "FWP fishing-access facility coordinate; the precise water-edge landing is not established by this point"
+      },
+      "directions": "About 3 miles south of Silver Star, then 0.5 mile upstream of the bridge on the county road. The launch is behind an island; the canoe-trail guide describes returning upstream to reach the main river and avoiding the diversion downstream of the island.",
+      "sourceName": "Montana FWP — Hell's Canyon",
+      "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753464",
+      "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+      "verifiedOn": "2026-11-02",
+      "note": "Public boating access and ramp type are documented by FWP. This marker locates the access area; it is not a verified water-edge ramp pin."
+    },
+    "Kountz Bridge FAS": {
+      "id": "acc-78085a2b6a8f5a408ea3",
+      "aliases": [
+        "Kountz Bridge"
+      ],
+      "status": "access-verified",
+      "accessType": "Ramp (Concrete)",
+      "operator": "Montana FWP",
+      "areaCenter": {
+        "lat": 45.84355430612852,
+        "lon": -112.06324859468172,
+        "feature": "FWP fishing-access facility coordinate; the precise water-edge landing is not established by this point"
+      },
+      "directions": "From Whitehall, follow Kountz Road about 6 miles southwest to the fishing access site. FWP documents a concrete ramp and vault toilet; confirm the ramp and current channel at the site.",
+      "sourceName": "Montana FWP — Kountz Bridge",
+      "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753562",
+      "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+      "verifiedOn": "2026-11-02",
+      "note": "Public boating access and ramp type are documented by FWP. This marker locates the access area; it is not a verified water-edge ramp pin."
+    },
+    "Mayflower Bridge FAS": {
+      "id": "acc-19a11bf0f65658e09282",
+      "aliases": [
+        "Mayflower Bridge"
+      ],
+      "status": "access-verified",
+      "accessType": "Ramp (Concrete)",
+      "operator": "Montana FWP",
+      "areaCenter": {
+        "lat": 45.8579540474227,
+        "lon": -112.01591890100046,
+        "feature": "FWP fishing-access facility coordinate; the precise water-edge landing is not established by this point"
+      },
+      "directions": "From Whitehall, take Highway 2 about 4 miles east, then Mayflower Road about 3 miles south. FWP documents a concrete ramp; confirm the exact landing at the bridge before arranging the shuttle.",
+      "sourceName": "Montana FWP — Mayflower Bridge",
+      "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753568",
+      "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
+      "verifiedOn": "2026-11-02",
+      "note": "Public boating access and ramp type are documented by FWP. This marker locates the access area; it is not a verified water-edge ramp pin."
+    },
+    "Beaverhead River Access (below Clark Canyon Dam)": {
+      "id": "acc-ffc4a6b11ceb56c68f49",
+      "aliases": [
+        "Clark Canyon Dam"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 45.0026897,
+        "lon": -112.8577004,
+        "feature": "Approximate launch area; shoreline approach reviewed in imagery"
+      },
+      "accessType": "Rough boat ramp",
+      "operator": "U.S. Bureau of Reclamation",
+      "sourceName": "U.S. Bureau of Reclamation — Clark Canyon recreation brochure",
+      "sourceUrl": "https://www.usbr.gov/gp/mtao/clarkcanyon/clark_canyon_recreation_brochure.pdf",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/12112796944",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed Beaverhead River Access below Clark Canyon Dam, reached by the steep gravel road off State Road 324 on the west side of the dam. This is the river launch, separate from the reservoir boat ramps.",
+      "note": "USBR documents a rough river-side boat launch below the dam. The OpenStreetMap slipway point matches the visible shoreline approach in imagery; exact landing coordinates have not been confirmed by the operator."
+    },
+    "Henneberry FAS": {
+      "id": "acc-5832a839e9355c8fb15b",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 45.0548971,
+        "lon": -112.8150617,
+        "feature": "Approximate launch area; shoreline approach reviewed in imagery"
+      },
+      "accessType": "Gravel ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP — Henneberry FAS",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753418",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/12112869326",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the FWP day-use access on the east side of the river at the old bridge. The gravel launch is beside the upstream side of the bridge. The bridge is blocked to vehicles; do not plan to drive across it to reach the ramp.",
+      "note": "FWP documents the gravel ramp and east-bank day-use area. Its general property coordinate is farther north. The OpenStreetMap slipway matches the visible gravel shoreline approach; exact landing placement remains approximate."
+    },
+    "Pipe Organ FAS": {
+      "id": "acc-889cc4ea37d15127a11c",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 45.0657846,
+        "lon": -112.8010315,
+        "feature": "Approximate launch area; shoreline approach reviewed in imagery"
+      },
+      "accessType": "Concrete ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP — Pipe Organ FAS",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754491",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/12112869411",
+      "verifiedOn": "2026-11-06",
+      "directions": "From I-15 south of Dillon, use the Dalys exit and follow the signed FWP access to the river. The concrete ramp is beside the interstate bridge. Check the ramp approach during your shuttle.",
+      "note": "FWP documents a concrete ramp. The OpenStreetMap slipway matches the visible ramp at the river rather than the general agency point in the trees. Operator confirmation of exact coordinates is still pending."
+    },
+    "Grasshopper FAS": {
+      "id": "acc-7fadcb05233056a3b83d",
+      "aliases": [
+        "Grasshopper Fishing Access Site"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 45.100356,
+        "lon": -112.7773031,
+        "feature": "Approximate ramp area; shoreline approach reviewed in imagery"
+      },
+      "accessType": "Concrete ramp",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Montana FWP — Grasshopper Fishing Access Site",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754489",
+      "coordinateSourceUrl": "https://www.openstreetmap.org/node/12112969790",
+      "verifiedOn": "2026-11-06",
+      "directions": "From I-15 about 11 miles south of Dillon, take the Grasshopper exit and follow the boat-ramp signs. The ramp is on the west side of the river beside the interstate bridge. Identify the shoreline approach during your shuttle.",
+      "note": "FWP confirms a public concrete ramp. Its general-site coordinate falls in the parking area. The OpenStreetMap slipway point matches the visible shoreline approach in imagery; exact water-edge coordinates remain approximate pending operator confirmation."
     }
   }
 }

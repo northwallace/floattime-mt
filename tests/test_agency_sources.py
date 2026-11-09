@@ -39,6 +39,31 @@ class AgencySourceTests(unittest.TestCase):
     def test_unknown_field_refuses_changed_schema(self):
         with self.assertRaises(ValueError):download({**CONFIG,'fields':['unknown']},self.service())
 
+    def test_joined_view_preserves_disagreement_and_rejects_ambiguous_identity(self):
+        def service(mode=None):
+            def request(url, params):
+                if not url.endswith('/query'):
+                    return {'geometryType':'esriGeometryPoint','objectIdField':'id','fields':[
+                        {'name':'id','type':'esriFieldTypeOID'}, {'name':'stable','type':'esriFieldTypeInteger'},
+                        {'name':'name','type':'esriFieldTypeString'}]}
+                if params.get('returnIdsOnly'): return {'objectIds':[1,1]}
+                rows = [{'attributes':{'id':1,'stable':40,'name':name,'private':'omit'},
+                         'geometry':{'x':-90,'y':44}} for name in ('Old name','New name')]
+                if mode == 'geometry': rows[1]['geometry']['x'] = -89
+                if mode == 'identity': rows[1]['attributes']['stable'] = 41
+                if mode == 'missing': rows.pop()
+                return {'features':rows}
+            return request
+        config = {**CONFIG, 'fields':['stable','name'], 'stableFeatureField':'stable', 'groupJoinedRecords':True}
+        result = download(config, service())['features']
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]['attributes'], {'id':1,'stable':40})
+        self.assertEqual({v['name'] for v in result[0]['attributeVariants']}, {'Old name','New name'})
+        self.assertTrue(all('private' not in v for v in result[0]['attributeVariants']))
+        for mode in ('geometry','identity','missing'):
+            with self.subTest(mode=mode), self.assertRaises(ValueError): download(config, service(mode))
+        with self.assertRaises(ValueError): download({**config,'groupJoinedRecords':False}, service())
+
     def test_binding_detects_changes_without_promoting(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp); data=download(CONFIG,self.service()); receipt=archive(root,CONFIG,data);f=data['features'][0]

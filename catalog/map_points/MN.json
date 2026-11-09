@@ -1,0 +1,1196 @@
+{
+  "version": 2,
+  "state": "MN",
+  "auditedRivers": {
+    "kettle-river-mn": {
+      "status": "pending",
+      "note": "Both DNR-recommended trips have reviewed approximate access areas. Exact landing positions and river-course geometry are separate reviews."
+    },
+    "root-river-mn": {
+      "status": "pending",
+      "note": "Nine public access identities and approximate areas reviewed. Exact landings remain unresolved; Mound Prairie has conflicting bank evidence. Course geometry and Brightsdale passage are separate reviews."
+    },
+    "cannon-river-upper": {
+      "status": "pending",
+      "note": "Public access identities and approximate areas reviewed. Exact landings remain unresolved; course approval is separate."
+    },
+    "cannon-river-lower": {
+      "status": "pending",
+      "note": "Public access identities and approximate areas reviewed. Exact landings remain unresolved; course approval is separate."
+    },
+    "rum-river-mn": {
+      "status": "pending",
+      "note": "One checked carry-in landing and four source-backed approximate areas. Course review and live timing are separate."
+    },
+    "zumbro-river-mn": {
+      "status": "pending",
+      "note": "Two desktop-checked landings and five source-backed approximate areas. Agency course review and live timing are separate."
+    },
+    "crow-wing-river-mn": {
+      "status": "pending",
+      "note": "Nine documented public boating access areas reviewed against agency maps and imagery; exact water-edge landings remain approximate. Course review and timing are independent."
+    },
+    "straight-river-mn": {
+      "status": "pending",
+      "note": "Four documented public boating access areas reviewed; exact shoreline landings remain approximate. River-course review and timing are independent."
+    },
+    "mississippi-river-brainerd": {
+      "status": "pending",
+      "note": "Public boating access locations reviewed. LeBourget has a desktop-checked landing; other new locations remain approximate areas. Course display and timing require separate evidence."
+    },
+    "mississippi-river-fort-ripley": {
+      "status": "pending",
+      "note": "Public boating access locations reviewed. LeBourget has a desktop-checked landing; other new locations remain approximate areas. Course display and timing require separate evidence."
+    },
+    "pine-river-mn": {
+      "status": "pending",
+      "note": "Harvey Drake landing reviewed precisely; Cross Lake, Staircase and Rock Dam remain documented approximate access areas. Course geometry and timing reviewed separately."
+    }
+  },
+  "points": {
+    "Musclewood Carry-in Access": {
+      "id": "acc-00fcd63818af5da69c4b",
+      "aliases": [
+        "Musclewood Lake Public Water Access Site",
+        "County Road 52 Kettle River Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 46.36121987982411,
+        "lon": -92.84372373687009,
+        "feature": "DNR public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Kettle River map 1 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/kettle1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00898%27&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From Highway 61 south of Sturgeon Lake, follow County Road 52 west to the Kettle River bridge. Use the public carry-in area northwest of the bridge and inspect the path to the water. The marker identifies the access area under trees, not an exact shoreline landing. Arrange your vehicle shuttle before launching.",
+      "note": "The published DNR coordinate is retained unchanged. Imagery places it in the wooded access approach; the precise water-edge landing is not resolved. The GIS name says Musclewood Lake, but its water-trail ID, directions and the DNR river map identify this Kettle River site. The GIS river mile is 46.2; the recommended trip and printed map use 46.3, which governs the published 16.5-mile trip."
+    },
+    "Kettle River Highway 23 Access (#1)": {
+      "id": "acc-4ff91026940952bb9972",
+      "aliases": [
+        "Kettle River, #1 Public Water Access Site",
+        "#1 Trailer Access / Highway 23"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 46.180297166482895,
+        "lon": -92.83211495888368,
+        "feature": "DNR public gravel ramp and turnaround area"
+      },
+      "accessType": "Public gravel boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Kettle River map 1 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/kettle1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00904%27&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public gravel access north of Highway 23, about 2.5 miles west of Askov. DNR places it on the left bank facing downstream, just before the highway bridge. Identify the exit during your shuttle and finish here; Banning State Park’s #2 access is a different site farther downstream.",
+      "note": "The DNR GPS site coordinate is retained unchanged. It falls on the gravel turnaround/ramp area beside the river, rather than a resolved water-edge landing. Keep an approximate area marker and accept reviewed suggestions. DNR’s October 23, 2026 construction notice identifies Highway 23 as an available alternative to the closed access inside Banning State Park."
+    },
+    "Kettle River Highway 48 Access (#5)": {
+      "id": "acc-36efbfcea2405aee8c4d",
+      "aliases": [
+        "Kettle River, #5 Public Water Access Site",
+        "#5 Highway 48 Bridge"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 46.01087262787082,
+        "lon": -92.84008162520918,
+        "feature": "DNR public river-access area"
+      },
+      "accessType": "Public boat access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Kettle River map 2, park map and public access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/kettle2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00910%27&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public access at the Highway 48 bridge over the Kettle River, about four miles east of Hinckley. DNR places it on river right facing downstream. Inspect the signed driveway during your shuttle: the inventory says north of the road, while its coordinate and imagery place the access area immediately south of the bridge. The area marker does not locate the exact ramp edge.",
+      "note": "DNR GPS facility coordinate retained unchanged. Satellite imagery shows a riverbank access clearing just south of the Highway 48 bridge; canopy obscures the precise landing. The inventory lists a concrete trailer launch but its north-of-road directions conflict with the coordinate. Keep an approximate area marker and seek a reviewed shoreline correction."
+    },
+    "Maple Island Access (#6)": {
+      "id": "acc-8f6b1c6a83755384aad0",
+      "aliases": [
+        "Kettle River, #6 Public Water Access Site",
+        "#6 Maple Island"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 45.945182716756264,
+        "lon": -92.7770668180537,
+        "feature": "DNR public river-access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Kettle River map 2, park map and public access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/state_parks/spk00253_summer.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00909%27&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Reach Maple Island through St. Croix State Park using the park road map and posted signs. The park map shows a parking area and carry-in access on the left bank facing downstream. Identify the exit before launching and arrange your shuttle; do not continue into the Lower Kettle rapids to look for another landing. Check seasonal road and park closures.",
+      "note": "DNR GPS facility coordinate retained unchanged; it marks a clearing back from the water. The 2026 water-trail map calls #6 a trailer access, while the current park map and GIS describe carry-in access. Do not promise trailer access. The trip guide uses river mile 7.9, while GIS says 8.0; use the published 7.2-mile recommended trip. Exact shoreline position remains unresolved."
+    },
+    "Root River Parsley Bridge Access": {
+      "id": "acc-2046b7de981e5d23bdd8",
+      "aliases": [
+        "Root River, Parsley Bridge Public Water Access Site",
+        "Parsley Bridge"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.81533938293543,
+        "lon": -92.13885687961535,
+        "feature": "DNR public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 1 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00268%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in at the Highway 52 crossing south of Chatfield. DNR identifies the right bank facing downstream. Inspect the signed approach and shoreline during your shuttle; this marker identifies the general access area.",
+      "note": "Agency coordinate retained unchanged. Imagery places it in the river beside the access area, not at a resolved landing. The published map and recommended trip use mile 78.6; the inventory uses 78.4."
+    },
+    "Root River Moen’s Bridge Access": {
+      "id": "acc-2368e7d769c05001a3ed",
+      "aliases": [
+        "Root River, Moen's Bridge Public Water Access Site",
+        "Moen's Bridge",
+        "Moens Bridge"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.782592453556425,
+        "lon": -92.03203035950678,
+        "feature": "DNR public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 1 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02190%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in at the County Road 21 bridge west of Lanesboro. DNR identifies the right bank facing downstream. Locate the signed access and exit before launching; the wooded water-edge landing is not precisely resolved.",
+      "note": "Agency coordinate retained unchanged near the bridge and riverbank. Canopy and the facility-level coordinate do not resolve an exact landing. Use County Road 21 as labelled on the published map; the inventory calls it Hwy 21."
+    },
+    "Root River Highway 16 Access": {
+      "id": "acc-dc9f6a41bf815368913a",
+      "aliases": [
+        "Root River, Hwy 16 Public Water Access Site",
+        "Root River Hwy 16 Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.73683556318253,
+        "lon": -91.94681615955635,
+        "feature": "DNR public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 1 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02189%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in about 2.7 miles east of Lanesboro on Highway 16. DNR identifies the right bank facing downstream. Locate the signed access during your shuttle and inspect the path to the river.",
+      "note": "Agency coordinate retained unchanged. The wooded bank obscures the exact shoreline approach. DNR map and inventory both identify mile 52.5; this is downstream of the Brightsdale portage area."
+    },
+    "Root River Whalan Access": {
+      "id": "acc-b10b7f4e1d385d699e03",
+      "aliases": [
+        "Root River, Whalan Public Water Access Site",
+        "Whalan Carry-in Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.734539593776354,
+        "lon": -91.91970967909282,
+        "feature": "DNR public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 1 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00060%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in on the east side of Whalan along Deep River Road. DNR identifies the left bank facing downstream. Parking is about 500 feet east of the access. Locate the exit during your shuttle and allow for carrying boats.",
+      "note": "Agency coordinate retained unchanged. Imagery places it in the river beside the access area rather than at an exact landing. The 2026 printed map uses mile 49.4, the recommended trip webpage uses 49.5, and the inventory uses 49.3; preserve those source differences."
+    },
+    "Root River Rushford Access": {
+      "id": "acc-1b34bfa6935154e9bcc1",
+      "aliases": [
+        "Root River, Rushford Public Water Access Site",
+        "Rushford Carry-in Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.803006163099525,
+        "lon": -91.76035528027356,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 2 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00264%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in west of Rushford: DNR directs visitors west on Highway 16, then south on the gravel access road. The published map places this left-bank launch immediately downstream of a submerged dam. Confirm the signed launch before entering the water; do not start above the dam.",
+      "note": "The unchanged DNR coordinate matches the wooded access approach below the visible upstream structure. Canopy obscures the exact water-edge landing. The inventory river mile is 35.1, but the 2026 map and recommended trip use 33.8. The DNR course from this coordinate to Houston measures about 15.1 miles, matching the published trip rather than the inventory mile label."
+    },
+    "Root River Houston Access": {
+      "id": "acc-c191edf9069359e8bb19",
+      "aliases": [
+        "Root River, Houston Public Water Access Site",
+        "Houston Carry-in Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.76900782409476,
+        "lon": -91.57122233007246,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 2 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02188%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in on the north side of Houston at the Highway 76 bridge. DNR places it on the left bank facing downstream. Locate the signed exit and arrange your shuttle before launching. The Root River State Trail trailhead is a separate site across the river.",
+      "note": "Unchanged DNR GPS facility coordinate sits at a wooded bank beside the approach clearing. The precise landing is obscured, so retain an approximate area. Do not substitute the south-bank trailhead parking for the north-bank boating access."
+    },
+    "Root River Mound Prairie Access": {
+      "id": "acc-c4ce3910fa1556628b0d",
+      "aliases": [
+        "Root River, Mound Prairie Public Water Access Site",
+        "Mound Prairie Carry-in Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.7815412039174,
+        "lon": -91.44658494013017,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 2 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00062%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Reach the signed public access at the County Road 25 bridge east of Houston. The agency marker is beside the north-bank clearing west of the bridge. DNR’s river-bank label conflicts with that position; confirm the signed launch and bank during your shuttle. This is an approximate access-area marker.",
+      "note": "Agency GPS coordinate retained unchanged at the visible carry-in clearing. The inventory and printed map label the site river-right, but the coordinate lies north of the mapped downstream course, on its left bank. That source conflict prevents an exact landing or verified-bank claim despite the visible shoreline approach."
+    },
+    "Root River Hokah Access": {
+      "id": "acc-4927724bd6fc53a28141",
+      "aliases": [
+        "Root River, Hokah Public Water Access Site",
+        "Hokah Carry-in Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.76597567389393,
+        "lon": -91.34377746029598,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "City of Hokah",
+      "sourceName": "Minnesota DNR — Root River map 2 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02182%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the city carry-in on the north side of Hokah near County Road 7. DNR identifies the right bank facing downstream. Find the signed approach and identify the exit before launching; the nearby railway is not an access route.",
+      "note": "The DNR coordinate is retained at the wooded river edge near the Thompson Creek confluence. The exact landing and approach under canopy are unresolved. The inventory identifies the City of Hokah as the operator; do not imply DNR operates this city site."
+    },
+    "Root River Highway 26 Access": {
+      "id": "acc-bfac2ad756145928bb83",
+      "aliases": [
+        "Root River, Hwy 26 Public Water Access Site",
+        "Root River Hwy 26 Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.777041793832666,
+        "lon": -91.29835291072571,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Root River map 2 and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/root2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00263%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in at the Highway 26 bridge north of Brownsville. DNR places it on the left bank facing downstream. Identify the signed exit and parking approach during your shuttle. Finish here rather than continuing into the Mississippi River unintentionally.",
+      "note": "The DNR GPS coordinate is retained unchanged at the wooded access approach immediately west of the highway bridge. The marker sits back from the visible water edge, so keep an approximate area rather than an exact landing pin."
+    },
+    "Cannon River Two Rivers Park Access": {
+      "id": "acc-0a659e15fe3053208504",
+      "aliases": [
+        "Cannon River, Two Rivers Access Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.310628865723324,
+        "lon": -93.27087969357953,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "City of Faribault",
+      "sourceName": "Minnesota DNR — Cannon River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02655%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed city carry-in below the Straight River confluence, downstream of the Woolen Mill Dam. Identify the shoreline approach during your shuttle.",
+      "note": "Agency GPS coordinate retained at the wooded bank beside the park. Exact landing under canopy unresolved. Map mile 58.4 differs from inventory 58.5."
+    },
+    "Cannon River Wilderness Area Access": {
+      "id": "acc-57efcca81c375a48bd28",
+      "aliases": [
+        "Cannon River, Wildeness Area Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.36903918029633,
+        "lon": -93.23192201916032,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Rice County",
+      "sourceName": "Rice County — Cannon River Wilderness Area",
+      "sourceUrl": "https://www.ricecountymn.gov/Facilities/Facility/Details/Cannon-River-Wilderness-Area-4",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01381%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the south park entrance at 3471 151st Street East and follow signs for the canoe launch. The north entrance is a different approach. Locate the exit before launching.",
+      "note": "Agency GPS coordinate lies in the river beside the park. Satellite clouds resolved using separate USGS NAIP imagery, but the exact landing remains unresolved. Guide mile 50.6 differs from inventory 50.8. The county says no running water, despite older DNR facility text."
+    },
+    "Cannon River Dundas City Park Access": {
+      "id": "acc-a22def60f1035bd58dae",
+      "aliases": [
+        "Cannon River, Dundas Access Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.42642269993688,
+        "lon": -93.20776955929018,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "City of Dundas",
+      "sourceName": "Minnesota DNR — Cannon River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01380%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Reach the city park from First Street, south of County Road 1. Locate the carry-in on the east bank before launching; this is upstream of the separate Mill Park access.",
+      "note": "Agency GPS coordinate retained beside the park shelter and wooded shoreline. It identifies the access area without resolving an exact water-edge landing."
+    },
+    "Cannon Falls Riverside Park Access": {
+      "id": "acc-803c049d15c65889a094",
+      "aliases": [
+        "Cannon River, Riverside Park Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.51191316068156,
+        "lon": -92.90681548046199,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "City of Cannon Falls",
+      "sourceName": "Minnesota DNR — Cannon River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01692%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use Riverside Park in Cannon Falls at the Highway 20 crossing. Find the signed carry-in beside the bridge. This is not Riverside Park in Northfield.",
+      "note": "Agency GPS coordinate retained near the gravel/wooded bank west of the bridge. Exact landing unresolved; park identity distinguished from the same-name Northfield park."
+    },
+    "Cannon River Sunset Trail Access": {
+      "id": "acc-5a9534df7166591bb2de",
+      "aliases": [
+        "Cannon River, Sunset Trail Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.53485872262192,
+        "lon": -92.81023583560071,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Cannon River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01111%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From Highway 19 east of Cannon Falls, follow Sunset Trail north to the public access. Carry boats from the gravel turnaround to the river; the marker identifies the facility area.",
+      "note": "Digitized agency point is visibly in the gravel turnaround, not on the water edge. Retain it as an approximate area; do not present the parking coordinate as an exact landing."
+    },
+    "Cannon River Highway 61 Access": {
+      "id": "acc-55bec835eec059d9bd75",
+      "aliases": [
+        "Cannon River, Highway 61 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.58111880680886,
+        "lon": -92.65531267597312,
+        "feature": "Public carry-in access area"
+      },
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Cannon River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01112%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Reach the public access west of Highway 61 via Green Spring Road and the access driveway. Find the carry-in path to the river before starting your shuttle.",
+      "note": "Digitized agency point marks the approach/parking clearing north of the river beside Highway 61. Exact shoreline landing is unresolved; retain an approximate area."
+    },
+    "Rum River Walbo Access": {
+      "id": "acc-15a966f2bda75d199b15",
+      "aliases": [
+        "Rum River, Walbo Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Rum River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00274%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Reach the public access from Verdin Street via County Road 1 south of Highway 95, west of Cambridge. Follow the access entrance to the river; the marker near the bridge is an approximate area, not the launch itself.",
+      "note": "Digitized DNR point lies in the river beside the Highway 95 bridge. Public trailer access is documented in the 2026 map and inventory; exact ramp location is not established by this point.",
+      "areaCenter": {
+        "lat": 45.57913030471637,
+        "lon": -93.32286136241865,
+        "feature": "Public boating access area"
+      }
+    },
+    "Rum River Highway 14 Access": {
+      "id": "acc-98bda1aefc0d51ad9fb8",
+      "aliases": [
+        "Rum River, Hwy 14 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Rum River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02193%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public access at the northeast corner of the County Road 14 bridge, north of Cambridge. Locate the signed entrance and shoreline approach during your shuttle; the marker is near the bridge, not an exact landing.",
+      "note": "Digitized DNR point is in the river beside the bridge. The 2026 map and inventory call this trailer access; the webpage also uses carry-in wording. The coordinate remains an approximate area.",
+      "areaCenter": {
+        "lat": 45.60900071337747,
+        "lon": -93.25700426111902,
+        "feature": "Public boating access area"
+      }
+    },
+    "Rum River Cambridge West Park Access": {
+      "id": "acc-60e0761738a85461a1ad",
+      "aliases": [
+        "Rum River, Cambridge Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "City of Cambridge",
+      "sourceName": "Minnesota DNR — 2026 Rum River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00285%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From Highway 95 in Cambridge, follow South Fern Street and 2nd Avenue SW to City Park on the west bank. Find the public carry-in near the highway bridge. This is not the downstream watercraft campsite.",
+      "note": "DNR GPS point is at the wooded bank south of Highway 95 beside the park approach. Exact water-edge landing remains uncertain. The 2026 map places the carry-in at mile 42.6; inventory says 42.4. The separate campsite is mile 41.0.",
+      "areaCenter": {
+        "lat": 45.57235039882982,
+        "lon": -93.23571617223521,
+        "feature": "Public boating access area"
+      }
+    },
+    "Rum River Martins Landing": {
+      "id": "acc-293aee2ec3b2550ab676",
+      "aliases": [
+        "Rum River, Martins Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Rum River map and access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum3.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02197%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "On the west side of Isanti, reach the public launch from County Road 23 and follow the signed access to the east bank. Check the ramp and parking approach before shuttling.",
+      "note": "DNR GPS point lies on a wooded bank beside the launch approach. The concrete-slab trailer ramp is documented, but its exact water-edge location is not resolved in the imagery. Current map and inventory agree on river mile 34.7.",
+      "areaCenter": {
+        "lat": 45.48833220867797,
+        "lon": -93.26675109159972,
+        "feature": "Public boating access area"
+      }
+    },
+    "Rum River North County Park Access": {
+      "id": "acc-c43c66e79d4755cab55b",
+      "aliases": [
+        "Rum River, North Public Water Access Site"
+      ],
+      "status": "verified",
+      "accessType": "Public carry-in access",
+      "operator": "Anoka County",
+      "sourceName": "Anoka County Parks and Minnesota DNR access inventory",
+      "sourceUrl": "https://www.anokacountyparks.com/parks/rum-river-north",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00291%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use Rum River North County Park at 23100 Rum River Boulevard NW, St. Francis. Follow the signed carry-in near Bridge Street; boats must be carried to the river, not launched on trailers.",
+      "note": "Unchanged DNR GPS coordinate matches the visible shoreline end of the park carry-in steps/approach. The 2026 river map and county park page independently document this canoe/kayak access. Desktop landing review, not a field survey; water levels and approach conditions may change.",
+      "lat": 45.388991068416615,
+      "lon": -93.35830913203951,
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-11-06",
+      "bankSourceName": "Minnesota DNR — 2026 Rum River map 3 and access inventory",
+      "bankSourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum3.pdf",
+      "bankNote": "Map 3 lists the park carry-in at RM 23.2 on river left, facing downstream; the DNR access inventory also records L. The unchanged point matches the park shoreline approach in imagery."
+    },
+    "Zumbro Green Bridge Access": {
+      "id": "acc-c9f4567c8617543cbaba",
+      "aliases": [
+        "Zumbro River, Green Bridge Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Zumbro River map and public-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00059%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the DNR carry-in beside County Road 7/Green Bridge, downstream of Lake Zumbro Dam. Follow the public access entrance and carry your boat to the river; do not launch at the bridge or reservoir dam.",
+      "note": "Agency digitized point falls among trees between the access road and river. The current DNR map documents carry-in access at mile 55.8. Retained as an approximate area, not an exact landing.",
+      "areaCenter": {
+        "lat": 44.23340900327576,
+        "lon": -92.48249131516424,
+        "feature": "Public boating access area"
+      }
+    },
+    "Zumbro Falls Public Access": {
+      "id": "acc-eb7b37e0f1e75b53b6de",
+      "aliases": [
+        "Zumbro River, Zumbro Falls Public Water Access Site"
+      ],
+      "status": "verified",
+      "accessType": "Public boat ramp / carry-in",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Zumbro River map and public-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02916%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From Highway 63 just south of Zumbro Falls, turn east on County Road 11 and follow the public access entrance on the right. The landing is beside the downstream side of the highway bridge.",
+      "note": "Unchanged DNR point aligns with the visible shoreline launch approach beside Highway 63. The inventory lists a concrete-slab trailer ramp and the 2026 map lists carry-in access; use the signed public facility. Desktop landing review, not a field survey.",
+      "lat": 44.27977688739134,
+      "lon": -92.42343276302006,
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-11-06",
+      "bankSourceName": "Minnesota DNR — 2026 Zumbro River map 2",
+      "bankSourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "bankNote": "Current DNR map and access inventory identify river left, facing downstream. The unchanged agency coordinate aligns with the shoreline approach in imagery."
+    },
+    "Hammond Carry-In Access (upstream)": {
+      "id": "acc-a1012be3b7c85dc798e5",
+      "aliases": [
+        "Zumbro River, Hammond Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Zumbro River map and public-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00255%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the DNR carry-in on the north side of County Road 68, upstream of the main Hammond bridge. This is separate from the city’s downstream Village Park launch. Scout the signed exit during your shuttle.",
+      "note": "DNR GPS point falls in the river next to the visible approach. The map groups Hammond access near river mile 39.0; inventory gives this upstream carry-in 39.1 and the separate city launch 38.2. Keep the two stable IDs distinct and this marker approximate.",
+      "areaCenter": {
+        "lat": 44.222833061986606,
+        "lon": -92.37216632045019,
+        "feature": "Public boating access area"
+      }
+    },
+    "Zumbro Theilman Access": {
+      "id": "acc-059b02fddd4f5fe9b2dc",
+      "aliases": [
+        "Zumbro River, Theilman Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Zumbro River map and public-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02185%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in on the south side of County Road 4 in Theilman, upstream of its river crossing. Locate the signed shoreline approach before launching or leaving your shuttle vehicle.",
+      "note": "The DNR GPS point is on a vegetated bank near the access area; a precise landing is not clear in the imagery. The 2026 map and inventory agree on mile 23.0. Area marker retained.",
+      "areaCenter": {
+        "lat": 44.286703249501166,
+        "lon": -92.1868525873575,
+        "feature": "Public boating access area"
+      }
+    },
+    "Zumbro Funk Ford Trail Bridge Access": {
+      "id": "acc-0ddc115fc97e529dbc1f",
+      "aliases": [
+        "Zumbro River, Zumbro Bottoms - Funk Ford Trail Bridge Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Zumbro River map and public-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02186%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Follow the signed Zumbro Bottoms access from County Road 86 and 235th Avenue to Funk Ford Trail Bridge. This is carry-in access on the river’s south side, not a drive-on river crossing.",
+      "note": "DNR GPS point falls in vegetation beside the trail bridge. The published carry-in and its river mile are documented, but the exact shoreline approach is obscured. Keep an approximate area marker.",
+      "areaCenter": {
+        "lat": 44.319738589864656,
+        "lon": -92.12653927591843,
+        "feature": "Public boating access area"
+      }
+    },
+    "Zumbro Kruger Access": {
+      "id": "acc-695bf1770e835eab9621",
+      "aliases": [
+        "Zumbro River, Kruger Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Zumbro River map and public-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00256%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in along County Road 81 at the Kruger Management Unit. The river access is across the road from the campground; use the signed approach and arrange your vehicle shuttle.",
+      "note": "The DNR GPS point is at the wooded bank below a visible access clearing. The exact carry-in path is not resolved through the vegetation. Current map and inventory agree on mile 12.2; keep the area approximate.",
+      "areaCenter": {
+        "lat": 44.337168001964535,
+        "lon": -92.07727068102582,
+        "feature": "Public boating access area"
+      }
+    },
+    "Zumbro Kellogg Access": {
+      "id": "acc-34497c741be15dccb126",
+      "aliases": [
+        "Zumbro River, Kellogg Public Water Access Site"
+      ],
+      "status": "verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Zumbro River map and public-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00257%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Reach the public carry-in from 645th Street in Kellogg. Follow the paved approach to the river immediately downstream of the railroad bridge. Finish here before the Mississippi confluence.",
+      "note": "Unchanged DNR GPS point matches the water end of the visible public carry-in path. The current map places this landing at mile 5.0, after the railroad trestle at 5.1; the inventory’s 5.1 is retained only as research. Desktop landing review, not a field survey.",
+      "lat": 44.31437191253918,
+      "lon": -91.99604744116658,
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-11-06",
+      "bankSourceName": "Minnesota DNR — 2026 Zumbro River map 2",
+      "bankSourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf",
+      "bankNote": "Current DNR map and access inventory identify river left, facing downstream. The unchanged agency coordinate aligns with the shoreline approach in imagery."
+    },
+    "Crow Wing Huntersville North Access": {
+      "id": "acc-c2b1223251845e8a81fc",
+      "aliases": [
+        "Crow Wing River, Huntersville (N) Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Wadena County",
+      "sourceName": "Minnesota DNR — 2026 Crow Wing River map",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/crowwing1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01525%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed Huntersville North carry-in beside the upstream side of the County Road 18 bridge. This is separate from Huntersville South and the state forest campground farther downstream. Arrange a vehicle shuttle.",
+      "note": "Agency coordinate falls on the approach clearing above the shoreline, not the exact water edge. Current map says river right while the inventory says left; no bank badge is assigned.",
+      "areaCenter": {
+        "lat": 46.778395394905644,
+        "lon": -94.89298138194548,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Casey’s Landing": {
+      "id": "acc-c0e20f4380ef521ea96d",
+      "aliases": [
+        "Crow Wing River, Casey's Landing, #3 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Crow Wing River map",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/crowwing1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01327%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed Casey’s Landing public trailer access from the local access road east of Menahga. It is upstream of the separate Huntersville State Forest campground carry-in. Check the ramp and parking during your shuttle.",
+      "note": "Agency coordinate is on the wooded bank beside the visible approach. The exact ramp end is not established. Current map mile 78.6 replaces inventory mile 78.7 for planning.",
+      "areaCenter": {
+        "lat": 46.74397460788638,
+        "lon": -94.92302375764268,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Huntersville State Forest Access (#4)": {
+      "id": "acc-279c5b93ff9a512ca0a7",
+      "aliases": [
+        "Crow Wing River, State Forest Campground, #4 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Crow Wing River map",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/crowwing1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01532%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Follow the Huntersville State Forest campground entrance north from County Road 15 to the signed river carry-in. This is access #4, separate from Huntersville North and South. Carry boats from the parking area.",
+      "note": "Agency coordinate falls in the river beside the campground bank. The exact carry-in connection is not confirmed. Current map mile 77.6 differs from inventory 77.7; keep source rounding visible.",
+      "areaCenter": {
+        "lat": 46.73850924404667,
+        "lon": -94.92832283296306,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Mary Brown Access": {
+      "id": "acc-dd97f0b51a9b58caa69c",
+      "aliases": [
+        "Crow Wing River, Mary Brown, #5 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Crow Wing River map",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/crowwing1.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02558%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the Mary Brown Rest Area carry-in beside the County Road 15 bridge. Follow the public approach on the east bank immediately downstream of the bridge, and identify the exit while arranging your shuttle.",
+      "note": "Agency coordinate is at the vegetated bank near the visible carry-in approach. Current map identifies river left; inventory says right. Keep an area marker and omit a bank badge.",
+      "areaCenter": {
+        "lat": 46.71758222409383,
+        "lon": -94.92898508221442,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Anderson’s Crossing Access": {
+      "id": "acc-d99752c6fea957dcbbf9",
+      "aliases": [
+        "Crow Wing River, Anderson's Crossing, #6 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Wadena County",
+      "sourceName": "Wadena County — public river access",
+      "sourceUrl": "https://www.wadenacounty.gov/218/Andersons-Crossing-Campground",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01526%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Follow the signed Anderson’s Crossing county campground approach north of Nimrod. Carry boats along the public path to the river. This access is downstream of Walkin’s Rapids; inspect conditions before committing to that reach.",
+      "note": "County confirms canoe access. Agency coordinate lies in the trees beside the river; landing details remain obscured. Current DNR map mile 70.8 and the source course agree better than inventory mile 71.3.",
+      "areaCenter": {
+        "lat": 46.69942260942251,
+        "lon": -94.88188569131617,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Nimrod Carry-In (Stigman’s Mound)": {
+      "id": "acc-562e17733b855d96b4ee",
+      "aliases": [
+        "Crow Wing River, Stigman's Mound, #7 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Wadena County",
+      "sourceName": "Wadena County — public river access",
+      "sourceUrl": "https://www.wadenacounty.gov/226/Stigmans-Mound-Park",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02557%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public carry-in across the river from Stigman’s Mound picnic park, on the northeast side of the bridge in Nimrod. The county says canoes cannot land at the picnic park itself; reach its facilities by walking across the bridge. Scout the signed launch approach during your shuttle.",
+      "note": "County distinguishes the landing from the picnic park across the river. Agency coordinate matches the northeast approach clearing, set back from the water. Current map mile 65.7 differs from inventory 65.5; bank attributes also conflict. Area only, not an exact landing.",
+      "areaCenter": {
+        "lat": 46.64045859179894,
+        "lon": -94.87970389700178,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Little White Dog Access": {
+      "id": "acc-11af141dfdf1587fa775",
+      "aliases": [
+        "Crow Wing River, Little White Dog, #9 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Wadena County",
+      "sourceName": "Wadena County — public river access",
+      "sourceUrl": "https://www.wadenacounty.gov/223/Little-White-Dog-Campground",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01527%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From County Road 9 west of Oylen, follow County Road 138 north and the signed White Dog Road approach to the county campground. Carry boats using the public shoreline approach; check the exit during your shuttle.",
+      "note": "County documents the landing. Agency point is in bank vegetation; no precise water-edge path is resolved. The 2026 map route table places it at 58.7, while its trip recommendation and GIS inventory retain 59.3.",
+      "areaCenter": {
+        "lat": 46.58476110799204,
+        "lon": -94.81795504621482,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Knob Hill Access": {
+      "id": "acc-24b7c3aada49587b89be",
+      "aliases": [
+        "Crow Wing River, Knob Hill Landing, #10 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Wadena County",
+      "sourceName": "Wadena County — public river access",
+      "sourceUrl": "https://www.wadenacounty.gov/222/Knob-Hill-Campground",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01324%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Follow the signed Knob Hill county campground approach. The county describes a stairway between the upper and lower camping areas and the river; expect to carry boats rather than drive to a ramp.",
+      "note": "County confirms a carry-in and popular tubing start. Agency point is in the clearing above the bank; the actual stairway landing is not resolved. Use current map mile 53.0 rather than inventory 53.2.",
+      "areaCenter": {
+        "lat": 46.533855996511825,
+        "lon": -94.81849257299048,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Crow Wing Cottingham Park Access": {
+      "id": "acc-4d20a037c4c45d6baea5",
+      "aliases": [
+        "Crow Wing River, Cottingham Co. Park, #11 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Wadena County",
+      "sourceName": "Wadena County — public river access",
+      "sourceUrl": "https://www.wadenacounty.gov/220/Cottingham-Park-Campground",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01325%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed Cottingham County Park entrance just south of County Road 7 and carry your boat to the designated river access. Finish at the park downstream of the bridge, not at the bridge itself.",
+      "note": "County confirms a canoe and tube landing. Agency point falls alongside the park road above the vegetated bank, not an exact shoreline landing. Current map mile 49.5 differs from inventory 49.4.",
+      "areaCenter": {
+        "lat": 46.505529851247346,
+        "lon": -94.80738952007682,
+        "feature": "Documented public boating access area; exact shoreline landing not confirmed"
+      }
+    },
+    "Straight River County Road 45 Access": {
+      "id": "acc-b70925e3835a5e2eaad6",
+      "aliases": [
+        "Straight River, Co Rd 45 Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Steele County",
+      "sourceName": "Steele County — Straight River Canoe Landing",
+      "sourceUrl": "https://www.steelecountymn.gov/departments/park_recreation/index.php",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02043%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed county canoe landing at 5218 North County Road 45, south of Medford. Carry boats along the public approach to the river. This access starts below Clinton Falls; identify the approach while arranging your shuttle.",
+      "note": "The unchanged agency coordinate falls in the river beside a wooded bank. County and DNR sources establish the public carry-in, but the exact shoreline connection is obscured. Keep an approximate area.",
+      "areaCenter": {
+        "lat": 44.14845021052579,
+        "lon": -93.2438301785036,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Straight River Medford City Park Access": {
+      "id": "acc-04f07c203591529abeb0",
+      "aliases": [
+        "Straight River, Medford Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "City of Medford",
+      "sourceName": "City of Medford — Straight River Park",
+      "sourceUrl": "https://cityofmedfordmn.gov/departments/parks-and-recreation/",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02042%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public river access in Straight River Park in Medford, off 4th Avenue NW. Follow the signed approach beside the park; check parking and ramp conditions during your shuttle. This is separate from Frank Woodfill Wildlife Refuge farther upstream.",
+      "note": "The city confirms canoe/kayak access and the DNR lists a trailer launch. The agency point is at the wooded shoreline beside the approach, without a clear water-edge ramp end. Current DNR map mile 17.1 differs from inventory 17.2.",
+      "areaCenter": {
+        "lat": 44.17759754875134,
+        "lon": -93.24907111093364,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Straight River Kroghs Landing": {
+      "id": "acc-9d6a8e3f1fed5f9abe93",
+      "aliases": [
+        "Straight River, Kroghs Landing Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Cannon and Straight river map",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00186%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed Kroghs Landing carry-in off County Road 19 south of Faribault. Carry boats from the public turnout to the river. The landing is downstream of the former Walcott Mill Dam rapids; trips arriving from Medford pass those rapids before the take-out.",
+      "note": "The agency point is at the bank beside the public turnout. A worn approach is visible, but the exact landing edge is not distinct enough for a precise pin. Retain the original coordinate as an approximate access area.",
+      "areaCenter": {
+        "lat": 44.242741340905106,
+        "lon": -93.2401517880046,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Straight River Teepee Tonka Park Access": {
+      "id": "acc-71b4981aa17d509c836e",
+      "aliases": [
+        "Straight River, Teepee Tonka Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "City of Faribault",
+      "sourceName": "City of Faribault — park amenities and canoe landings",
+      "sourceUrl": "https://www.ci.faribault.mn.us/DocumentCenter/View/2494/Parks--Amenities",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02041%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the designated carry-in at Teepee Tonka Park in Faribault and follow the public park paths to the river. Check the landing during your shuttle; the general agency point near the pedestrian bridge does not mark a confirmed water-edge exit. This listing ends before the separate Bridge-to-Park access farther downstream.",
+      "note": "City and DNR sources confirm a canoe landing. The agency point is at a wooded bank near the pedestrian bridge, not a resolved landing approach. The 2026 route table uses mile 2.0; inventory says 1.8. Keep the approximate facility and both source values visible.",
+      "areaCenter": {
+        "lat": 44.29014879061291,
+        "lon": -93.26343251846126,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Mississippi Kiwanis Park Carry-in": {
+      "id": "acc-e6c29bec860d508bb800",
+      "aliases": [
+        "Mississippi River, Kiwanis Park Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "City of Brainerd",
+      "sourceName": "City of Brainerd — 2026 Kiwanis Park map",
+      "sourceUrl": "https://www.ci.brainerd.mn.us/DocumentCenter/View/734",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01003%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public canoe launch at Kiwanis Park, 1101 East River Road in Brainerd. The city map places the launch on the Mississippi side of the park, separate from the Boom Lake fishing pier. Check the carry approach during your shuttle.",
+      "note": "The agency point lies beside the wooded shoreline; the exact carry-in edge is not resolved. The city 2026 park map confirms the canoe launch. DNR route-table mile 1001.2 differs from inventory 1001.1.",
+      "areaCenter": {
+        "lat": 46.346546055567686,
+        "lon": -94.20722309254398,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Mississippi Riverview Park Carry-in": {
+      "id": "acc-45cb4ba490b55300bc78",
+      "aliases": [
+        "Mississippi River, Riverview Park Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "City of Baxter",
+      "sourceName": "Minnesota DNR — 2026 Mississippi River map 6",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS03074%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use Riverview Park at the end of Riverwood Road in Baxter, reached from Forestview Drive and Scenic River Drive. The DNR lists 6621 Riverwood Road. Follow the public park carry-in approach; inspect the take-out during your shuttle.",
+      "note": "The agency coordinate is beside a wooded approach at the bank. The exact shoreline landing remains obscured; retain the original coordinate as an approximate access area.",
+      "areaCenter": {
+        "lat": 46.31728499086304,
+        "lon": -94.26059800785526,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Mississippi Crow Wing State Park Carry-in": {
+      "id": "acc-cd44ea882d8c5b68b877",
+      "aliases": [
+        "Mississippi River, Crow Wing SPK Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Mississippi River map 6",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS00990%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Enter Crow Wing State Park from State Park Road and identify the designated Mississippi carry-in near river mile 990.4 before launching. This is the downstream carry-in near the Crow Wing confluence, not the separate trailer ramp upstream by the campground. Follow park signs and confirm the parking and carry approach with park staff.",
+      "note": "DNR documents a carry-in near the group-camp area, and the Headwaters Board trip map ends here. The original agency point is at a wooded bank; the exact landing connection remains unresolved.",
+      "areaCenter": {
+        "lat": 46.26826999422346,
+        "lon": -94.34310794944992,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Mississippi Fort Ripley Landing": {
+      "id": "acc-ab1ce51af10f525d8fcb",
+      "aliases": [
+        "Mississippi River, Ft Ripley Landing Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Mississippi River map 6",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01026%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed Fort Ripley Landing off Highway 371 near the Nokasippi River, south of Brainerd. The DNR lists a concrete trailer ramp. Inspect the signed public approach and river conditions while arranging your shuttle.",
+      "note": "The agency GPS point is beside the riverfront approach under vegetation, rather than a clearly resolved ramp end. Retain a documented access area, not an invented water-edge coordinate.",
+      "areaCenter": {
+        "lat": 46.1794922958068,
+        "lon": -94.36486833176791,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Mississippi Fletcher Creek Landing": {
+      "id": "acc-dc34e24df9c25d179a6b",
+      "aliases": [
+        "Mississippi River, Fletcher Creek Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Mississippi River map 6",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01264%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From County Road 213/Grouse Road south of Camp Ripley, use 210th Street east to the public access entry road. Follow signs to Fletcher Creek landing and check the ramp during your shuttle. This is the DNR-recommended take-out below the Highway 115 bridge.",
+      "note": "DNR lists a concrete trailer ramp. The source point is at a vegetated bank beside the access turnout; the water-edge ramp end is not clear enough for a precise pin.",
+      "areaCenter": {
+        "lat": 46.06508484569761,
+        "lon": -94.33634404155836,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Mississippi Belle Prairie County Park Landing": {
+      "id": "acc-8ff4e740da49574e86a2",
+      "aliases": [
+        "Mississippi River, Belle Prairie Co Park Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Morrison County",
+      "sourceName": "Minnesota DNR — 2026 Mississippi River map 6",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01278%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use Belle Prairie County Park north of Little Falls, reached from Highway 371 and the westbound park entry road. Follow signs to the public river ramp and inspect it during your shuttle.",
+      "note": "The unchanged agency GPS point is on the riverfront approach beside the park clearing. A launch area is visible, but the exact concrete ramp edge is not sufficiently distinct; keep the approximate area.",
+      "areaCenter": {
+        "lat": 46.035350295693355,
+        "lon": -94.34355231155428,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Mississippi LeBourget Park Landing": {
+      "id": "acc-9258f0cc9e9b50f69d69",
+      "aliases": [
+        "Mississippi River, LeBourget Park Public Water Access Site"
+      ],
+      "status": "verified",
+      "accessType": "Public boat ramp",
+      "operator": "City of Little Falls",
+      "sourceName": "Minnesota DNR — LeBourget public water access inventory",
+      "sourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01262%27&outFields=%2A&outSR=4326&f=json",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01262%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public ramp at LeBourget Park, 300 Paul Larson Memorial Drive NW, on the west bank of the Mississippi. This landing is upstream of the Little Falls Dam. Identify it during your shuttle and finish here; do not continue downstream toward the dam.",
+      "note": "The unchanged DNR GPS point matches the visible concrete ramp apron at the water edge beside the dock. City May 2026 material confirms this public water access and address. Desktop agency-and-imagery check, not a field survey; the dock replacement proposal does not establish present dock availability.",
+      "lat": 45.979868555716486,
+      "lon": -94.36601791115869,
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-11-06",
+      "bankSourceName": "Minnesota DNR — LeBourget access inventory",
+      "bankSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01262%27&outFields=%2A&outSR=4326&f=json",
+      "bankNote": "DNR records R, facing downstream; imagery and the Headwaters Board trip map place the landing on the west bank above Little Falls Dam."
+    },
+    "Mississippi Crow Wing State Park Trailer Ramp": {
+      "id": "acc-5d1ca1a404f05dd3bfdb",
+      "aliases": [
+        "Mississippi River, Crow Wing Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public boat ramp",
+      "operator": "Minnesota DNR, Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — Crow Wing State Park map and public water-access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/state_parks/spk00139.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02297%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "areaCenter": {
+        "lat": 46.27921550647394,
+        "lon": -94.33228336146243,
+        "feature": "Public trailer-ramp approach; exact water-edge point remains uncertain"
+      },
+      "directions": "Enter Crow Wing State Park at 3124 State Park Road and follow signs to the trailer access near the campground. The park map shows it north of the historic town-site area, separate from the downstream carry-in near the Crow Wing River confluence. Inspect the signed ramp and parking while arranging your shuttle; follow current park permit and access rules.",
+      "note": "DNR feature WAS02297 documents a concrete trailer ramp at river mile 992.3. Its original digitized coordinate lies on the wooded approach beside the visible ramp, so retain an approximate area. This is distinct from downstream carry-in WAS00990 at mile 990.4. No precise bank badge or water-edge survey is claimed."
+    },
+    "Pine River Cross Lake Below-dam Carry-in": {
+      "id": "acc-13b52b3a84f152e49c1f",
+      "aliases": [
+        "Pine River, Cross Lake Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "U.S. Army Corps of Engineers",
+      "sourceName": "Minnesota DNR — 2026 Pine River water-trail map and public access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01002%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From County Road 3, follow Sand Pointe Drive northwest about 60 yards and the signed approach to the below-dam parking area. Carry to the designated river access below Cross Lake Dam. This is separate from the upstream lake trailer ramp; do not launch above the dam for this trip.",
+      "note": "The original DNR point identifies the below-dam access area. Trees and snow obscure the exact landing; retain an Area marker. The map labels the broader recreation facility left-bank, while the inventory locates this below-dam carry-in on the west/right bank; no verified bank badge assigned.",
+      "areaCenter": {
+        "lat": 46.6685153464567,
+        "lon": -94.1128314553315,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Pine River Staircase Carry-in": {
+      "id": "acc-93e381c3ae185c068ea3",
+      "aliases": [
+        "Pine River, Staircase Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "DNR Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Pine River water-trail map and public access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01032%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the signed Staircase carry-in about one mile south of Crosslake on County Road 37. Follow the public carry path to the river. If taking out here, identify the landing during your shuttle: Gould Rapids begin shortly downstream at mile 18.4.",
+      "note": "DNR confirms a natural carry-in at river mile 18.5. The original point sits by the wooded bank and approach; the precise stairs and water edge are obscured. Retain the source coordinate as an Area marker.",
+      "areaCenter": {
+        "lat": 46.65726265681676,
+        "lon": -94.10156866690454,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Pine River Rock Dam Below-rapids Carry-in": {
+      "id": "acc-cad3086fbb425f19baee",
+      "aliases": [
+        "Pine River, Rock Dam Public Water Access Site"
+      ],
+      "status": "access-verified",
+      "accessType": "Public carry-in access",
+      "operator": "DNR Division of Forestry",
+      "sourceName": "Minnesota DNR — 2026 Pine River water-trail map and public access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS02986%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "From Highway 3 south of Crosslake, follow Big Pine Trail east to the signed public access. Carry to the designated launch below all constructed Rock Dam rapids, as directed by DNR. The Area marker locates the facility beside the structure, not the launch point; locate the downstream carry-in before putting in.",
+      "note": "DNR recommends starting below Rock Dam. Its facility coordinate is beside the upper constructed rapids, not a confirmed downstream landing. Preserve it as an approximate facility area and leave the landing connection unmapped. This site has blank water-trail join fields and is included in the source import by stable ID.",
+      "areaCenter": {
+        "lat": 46.63576197421862,
+        "lon": -94.09207538310142,
+        "feature": "Documented public boating access area; exact shoreline landing remains uncertain"
+      }
+    },
+    "Pine River Harvey Drake Landing": {
+      "id": "acc-f89867df60cf5e179a4f",
+      "aliases": [
+        "Pine River, Harvey Drake Public Water Access Site"
+      ],
+      "status": "verified",
+      "accessType": "Public boat ramp",
+      "operator": "DNR Division of Parks and Trails",
+      "sourceName": "Minnesota DNR — 2026 Pine River water-trail map and public access inventory",
+      "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+      "coordinateSourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01001%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-06",
+      "directions": "Use the public boat landing beside County Road 11, about four miles west of Highway 6 north of Crosby. Approaching downstream, take out on river right just before the road bridge. Lower Pine Rapids begin downstream of this take-out; identify the ramp during your shuttle.",
+      "note": "Unchanged DNR GPS coordinate matches the shoreline end of the visible ramp approach immediately upstream of the County Road 11 bridge. DNR lists a concrete trailer launch, and its 2026 map independently places Harvey Drake on river right at mile 0.9. Desktop agency and imagery review, not a field survey; water level and ramp conditions may change.",
+      "lat": 46.571680285456836,
+      "lon": -94.02805982418597,
+      "riverBank": "river-right",
+      "bankVerifiedOn": "2026-11-06",
+      "bankSourceName": "Minnesota DNR — Pine River route table and public access inventory",
+      "bankSourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+      "bankNote": "The route table places Harvey Drake at mile 0.9 on river right, facing downstream. The access inventory agrees, and imagery places the ramp upstream of the County Road 11 bridge."
+    }
+  }
+}

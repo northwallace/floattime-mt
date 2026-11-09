@@ -3,22 +3,6 @@
   "state": "MT",
   "sections": [
     {
-      "riverId": "beaverhead",
-      "sectionId": "dam-high-bridge",
-      "issues": [
-        "access-map-withheld"
-      ],
-      "detail": "Clark Canyon Dam: The Bureau of Reclamation documents a Beaverhead River launch below the dam, but the catalog label and available agency coordinates identify the dam or recreation area rather than the exact river-side launch."
-    },
-    {
-      "riverId": "beaverhead",
-      "sectionId": "high-bridge-barretts",
-      "issues": [
-        "access-map-withheld"
-      ],
-      "detail": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam."
-    },
-    {
       "riverId": "big-hole",
       "sectionId": "divide-melrose",
       "issues": [
@@ -152,7 +136,7 @@
       "issues": [
         "access-map-withheld"
       ],
-      "detail": "The 2015 access survey distinguishes Greek Creek Campground from its upstream pull-out, and Upper Storm Castle from Lower Storm Castle. Greek Creek\u2019s bank was rebuilt in 2024\u20132025; the current designated raft launch must be reconciled with those older points before mapping this trip."
+      "detail": "The 2015 access survey distinguishes Greek Creek Campground from its upstream pull-out, and Upper Storm Castle from Lower Storm Castle. Greek Creek’s bank was rebuilt in 2024–2025; the current designated raft launch must be reconciled with those older points before mapping this trip."
     },
     {
       "riverId": "gallatin-lower",
@@ -190,17 +174,29 @@
       "riverId": "jefferson-upper",
       "sectionId": "silver-star-parsons",
       "issues": [
-        "access-map-withheld"
+        "landing-approach-not-mapped"
       ],
-      "detail": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check."
+      "detail": "Exact landing connections and the Waterloo diversion approach are unconfirmed. The partial river-course overview stops before that approach; it does not show a safe passage through the diversion.",
+      "reviewFile": "research/jefferson-course-refinement-20261106/decisions.json",
+      "metrics": {
+        "routeMiles": 9.4526,
+        "endpointOffsetsMeters": [
+          94.9,
+          502.0
+        ],
+        "mileageDifferencePercent": 9.98,
+        "maxSegmentMeters": 167.3,
+        "vertices": 286
+      }
     },
     {
       "riverId": "jefferson-upper",
       "sectionId": "parsons-parrott",
       "issues": [
-        "access-map-withheld"
+        "route-review-required"
       ],
-      "detail": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing."
+      "detail": "Access areas remain available. Several source bends cross old channels and vegetated ground beside the visible river, so the dotted course remains under review. The Waterloo and Parrot Castle diversion approaches are not mapped.",
+      "reviewFile": "research/jefferson-course-refinement-20261106/decisions.json"
     },
     {
       "riverId": "madison-lower",
@@ -433,6 +429,93 @@
         "source-needs-review"
       ],
       "detail": "Access is more than 100 m from the directed river network"
+    },
+    {
+      "riverId": "beaverhead",
+      "sectionId": "dam-high-bridge",
+      "issues": [
+        "mileage-difference-over-5-percent",
+        "catalog-distance-under-review"
+      ],
+      "metrics": {
+        "routeMiles": 1.6414,
+        "endpointOffsetsMeters": [
+          12.1,
+          9.5
+        ],
+        "mileageDifferencePercent": 81.76,
+        "maxSegmentMeters": 93.3,
+        "vertices": 132
+      }
+    },
+    {
+      "riverId": "beaverhead",
+      "sectionId": "high-bridge-henneberry",
+      "issues": [
+        "source-needs-review"
+      ],
+      "detail": "River network is disconnected, reversed or has multiple downstream channel paths"
+    },
+    {
+      "riverId": "beaverhead",
+      "sectionId": "henneberry-pipe-organ",
+      "issues": [
+        "source-needs-review"
+      ],
+      "detail": "River network is disconnected, reversed or has multiple downstream channel paths"
+    },
+    {
+      "riverId": "beaverhead",
+      "sectionId": "high-bridge-pipe-organ",
+      "issues": [
+        "source-needs-review"
+      ],
+      "detail": "River network is disconnected, reversed or has multiple downstream channel paths"
+    },
+    {
+      "riverId": "beaverhead",
+      "sectionId": "high-bridge-barretts",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Barretts Station Park (above dam): Boating access at the park is documented, but the Visit Montana coordinate is within about 31 metres of the USBR diversion-dam coordinate. It is not a dependable park/landing marker and was rejected on 2026-10-28. Need a source locating the take-out upstream of the dam."
+    },
+    {
+      "riverId": "jefferson-upper",
+      "sectionId": "hells-canyon-silver-star",
+      "issues": [
+        "landing-approach-not-mapped"
+      ],
+      "detail": "The partial dotted course starts below the launch/diversion area. Exact landing connections and passage around the diversion are not mapped. Banks, bars and side channels can differ from this approximate overview.",
+      "reviewFile": "research/jefferson-course-refinement-20261106/decisions.json",
+      "metrics": {
+        "routeMiles": 4.2903,
+        "endpointOffsetsMeters": [
+          493.6,
+          80.3
+        ],
+        "mileageDifferencePercent": 4.66,
+        "maxSegmentMeters": 267.3,
+        "vertices": 84
+      }
+    },
+    {
+      "riverId": "jefferson-upper",
+      "sectionId": "kountz-mayflower",
+      "issues": [
+        "route-review-required"
+      ],
+      "detail": "Access areas remain available. The source course crosses shifted banks and bars, and its roughly 3.4-mile length differs from the 5-mile published planning distance. Channel choice and exact landing connections remain under review.",
+      "reviewFile": "research/jefferson-course-refinement-20261106/decisions.json"
+    },
+    {
+      "riverId": "jefferson-upper",
+      "sectionId": "mayflower-cardwell",
+      "issues": [
+        "route-review-required"
+      ],
+      "detail": "Access areas remain available. Several source bends follow old channels beside the visible river. The dotted course remains under review; the published 5-mile planning distance is unchanged.",
+      "reviewFile": "research/jefferson-course-refinement-20261106/decisions.json"
     }
   ]
 }

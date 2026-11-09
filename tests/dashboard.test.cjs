@@ -5,8 +5,8 @@ const vm=require('node:vm');
 const P=require('../public/planner.js');
 function harness(fetch){
  const elements=new Map();
- function element(){return {_text:'',_html:'',get textContent(){return this._text;},set textContent(v){this._text=String(v);this._html=String(v).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));},get innerHTML(){return this._html;},set innerHTML(v){this._html=v;},value:'',checked:false,hidden:false,children:[],parentElement:{hidden:false},handlers:{},addEventListener(name,fn){this.handlers[name]=fn;},add(option){this.children.push(option);if(option.selected)this.value=option.value;},replaceChildren(){this.children=[];},appendChild(c){this.children.push(c);},setAttribute(){}};}
- const document={getElementById(id){if(!elements.has(id))elements.set(id,element());return elements.get(id);},createElement:element,createElementNS:element,querySelector(selector){return this.getElementById(selector);},addEventListener(){}};
+ function element(){return {_text:'',_html:'',get textContent(){return this._text;},set textContent(v){this._text=String(v);this._html=String(v).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));},get innerHTML(){return this._html;},set innerHTML(v){this._html=v;},value:'',checked:false,hidden:false,children:[],parentElement:{hidden:false},handlers:{},addEventListener(name,fn){this.handlers[name]=fn;},add(option){this.children.push(option);if(option.selected)this.value=option.value;},classList:{add(){},remove(){}},querySelector(){return null;},replaceChildren(){this.children=[];},appendChild(c){if(c.parentElement?.children)c.parentElement.children=c.parentElement.children.filter(x=>x!==c);this.children.push(c);c.parentElement=this;},setAttribute(){}};}
+ const document={getElementById(id){if(!elements.has(id))elements.set(id,element());return elements.get(id);},createElement:element,createElementNS:element,querySelectorAll(){return [];},querySelector(selector){return this.getElementById(selector);},addEventListener(){}};
  const context=vm.createContext({FloatPlanner:P,FloatRoute:require("../public/river-route.js"),FloatProgress:require("../public/route-progress.js"),FloatFieldPilot:require("../public/field-pilot.js"),setInterval:()=>1,clearInterval:()=>{},fetch,document,AbortSignal,Date,Map,Set,URLSearchParams,URL,console});
  const source=fs.readFileSync(require.resolve('../public/app.js'),'utf8').replace(/init\(\);\s*$/,'');
  vm.runInContext(fs.readFileSync(require.resolve('../public/map-base.js'),'utf8'),context);
@@ -14,6 +14,74 @@ function harness(fetch){
  return {run:s=>vm.runInContext(s,context),elements,context};
 }
 const river={id:'test',name:'Test',state:'MT',gauge:'12345678',timezone:'America/Denver',lat:45,lon:-111,refFlowCfs:1000,refSpeedMph:4,sections:[{id:'a',putIn:'A',takeOut:'B',miles:8,difficulty:'Class I',notes:''}]};
+test('shared advisories keep full evidence once and a warning on exactly the affected cards',()=>{
+ const h=harness();fixture(h);
+ const notice={title:'Bridge closure',text:'Use the signed shuttle detour.',sourceUrl:'https://example.gov/notice',sourceName:'Agency',checkedOn:'2026-11-06'};
+ const unique={...notice,title:'Blocked landing',text:'Wood <blocks> this landing.'};
+ const sections=Array.from({length:5},(_,i)=>({...river.sections[0],id:'s'+i,notices:i<3?[notice]:i===3?[{...notice,text:'Different bridge; different restriction.'}]:[]}));
+ sections[0].notices.push(unique);
+ h.context.advisorySections=sections;h.run('state.river.sections=advisorySections;renderSections(state.river,null,null)');
+ const html=h.elements.get('riverAdvisories').innerHTML;
+ assert.equal(h.elements.get('riverAdvisories').hidden,false);
+ assert.equal(html.split(notice.text).length-1,1);
+ assert.match(html,/id="river-notice-1" tabindex="-1"/);
+ assert.match(html,/Source checked 2026-11-06/);assert.match(html,/Applies to 3 stretches/);
+ for(let i=0;i<5;i++){
+  const card=h.elements.get('sectionCards').children[i].innerHTML;
+  if(i<3){assert.match(card,/href="#river-notice-1">Bridge closure/);assert.ok(!card.includes(notice.text));assert.ok(html.includes('href="#section-s'+i+'"'));}
+  else assert.doesNotMatch(card,/href="#river-notice/);
+ }
+ assert.match(h.elements.get('sectionCards').children[0].innerHTML,/Wood &lt;blocks&gt; this landing/);
+ assert.match(h.elements.get('sectionCards').children[3].innerHTML,/Different bridge; different restriction/);
+ const expanded=html.replace('<details class="advisory-stretches">','<details class="advisory-stretches" open>');
+ h.elements.get('riverAdvisories').innerHTML=expanded;
+ h.run('renderSections(state.river,null,null)');
+ assert.equal(h.elements.get('riverAdvisories').innerHTML,expanded,'refresh must preserve the expanded list and its links');
+ h.run('state.river.sections=[{id:"next",putIn:"C",takeOut:"D",miles:2,difficulty:"Class I",notes:""}];renderSections(state.river,null,null)');
+ assert.equal(h.elements.get('riverAdvisories').hidden,true);assert.equal(h.elements.get('riverAdvisories').innerHTML,'');
+});
+test('notice grouping never combines changed evidence or counts one section twice',()=>{
+ const n={title:'Closure',text:'Body',sourceUrl:'https://example.gov',sourceName:'Agency',checkedOn:'2026-11-06'};
+ for(const key of Object.keys(n)){
+  const sections=[{id:'a',notices:[n,n]},{id:'b',notices:[n]},{id:'c',notices:[{...n,[key]:n[key]+' changed'}]}];
+  const before=JSON.stringify(sections);assert.deepEqual(P.sharedNotices(sections),[],key);assert.equal(JSON.stringify(sections),before);
+ }
+ const groups=P.sharedNotices(['a','b','c'].map(id=>({id,notices:[n]})));
+ assert.deepEqual(groups,[{notice:n,sectionIds:['a','b','c'],id:'river-notice-1'}]);
+});
+test('an open planner recovers when a release replaces a hashed river file',async()=>{
+ for(const status of [404,410]){
+  const requests=[];
+  const h=harness(async(url,options)=>{
+   requests.push(url);
+   if(url==='/catalog/rivers/test.old.json')return {ok:false,status};
+   if(url==='/catalog-index.json'){
+    assert.equal(options.cache,'no-store');
+    return {ok:true,json:async()=>({rivers:[{id:'test',state:'MT',file:'catalog/rivers/test.new.json'}]})};
+   }
+   assert.equal(url,'/catalog/rivers/test.new.json');
+   return {ok:true,json:async()=>river};
+  });
+  h.run('RIVERS=[{id:"test",state:"MT",file:"catalog/rivers/test.old.json"}]');
+  assert.equal((await h.run('riverDetails(RIVERS[0])')).id,'test');
+  assert.equal((await h.run('riverDetails(RIVERS[0])')).id,'test');
+  assert.deepEqual(requests,['/catalog/rivers/test.old.json','/catalog-index.json','/catalog/rivers/test.new.json']);
+ }
+});
+test('river recovery stops when the new index cannot supply that same river and state',async()=>{
+ for(const updated of [{id:'other',state:'MT',file:'new.json'},{id:'test',state:'WI',file:'new.json'},{id:'test',state:'MT',file:'old.json'}]){
+  const requests=[];
+  const h=harness(async url=>{requests.push(url);return url==='/catalog-index.json'?{ok:true,json:async()=>({rivers:[updated]})}:{ok:false,status:404};});
+  await assert.rejects(h.run('riverDetails({id:"test",state:"MT",file:"old.json"})'),/404/);
+  assert.deepEqual(requests,['/old.json','/catalog-index.json']);
+ }
+});
+test('a server failure does not trigger a catalog refresh loop',async()=>{
+ const requests=[];
+ const h=harness(async url=>{requests.push(url);return {ok:false,status:503};});
+ await assert.rejects(h.run('riverDetails({id:"test",state:"MT",file:"old.json"})'),/503/);
+ assert.deepEqual(requests,['/old.json']);
+});
 test('reviewed provider override uses a separate cache key and honest source label',async()=>{
  const requests=[];
  const h=harness(async url=>{requests.push(url);return {ok:true,json:async()=>({flow:25.2,at:Date.now(),series:[]})};});
@@ -95,6 +163,26 @@ test('fresh flow with unavailable calibration shows guides without calculated fi
  assert.doesNotMatch(html,/Take out ≈|Launch by|~[\d.]+ mph/);
  assert.equal(h.run('conditionFor(state.river,1000).label'),'Live flow');
 });
+test('sub-hour published guides display minutes without changing the timing model',()=>{
+ const h=harness();fixture(h);
+ h.run('state.river.timing={mode:"unavailable"};state.river.sections[0].guideTimes=[{min:.75,max:.75,unit:"hours",conditions:"Agency guide",sourceName:"DNR",sourceUrl:"https://example.gov"}];renderSections(state.river,{flow:1000,at:Date.now()},null)');
+ let html=h.elements.get('sectionCards').children[0].innerHTML;
+ assert.match(html,/Published guide: 45 min/);assert.doesNotMatch(html,/Take out ≈|0.75 hours/);
+ h.run('state.river.sections[0].guideTimes[0].min=.5;renderSections(state.river,{flow:1000,at:Date.now()},null)');
+ html=h.elements.get('sectionCards').children[0].innerHTML;
+ assert.match(html,/Published guide: 30–45 min/);
+});
+test('published hours and minutes match the server-rendered guide format',()=>{
+ const h=harness();fixture(h);
+ const cases=JSON.parse(fs.readFileSync(require.resolve('./fixtures/guide-times.json'),'utf8'));
+ for(const guide of cases){
+  h.context.testGuide={...guide,conditions:'Published guide',sourceName:'Agency',sourceUrl:'https://example.gov'};
+  h.run('state.river.timing={mode:"unavailable"};state.river.sections[0].guideTimes=[testGuide];renderSections(state.river,{flow:1000,at:Date.now()},null)');
+  const html=h.elements.get('sectionCards').children[0].innerHTML;
+  assert.ok(html.includes('Published guide: '+guide.expected),guide.expected);
+  assert.doesNotMatch(html,/Take out ≈|Launch by/);
+ }
+});
 test('fishing on long routes keeps total hours and rounds days up',()=>{
  const h=harness();fixture(h);h.run('state.river.sections[0].miles=60;state.fishing=true;renderSections(state.river,{flow:1000,at:Date.now()},null)');
  const html=h.elements.get('sectionCards').children[0].innerHTML;assert.match(html,/40 hr/);assert.match(html,/At least 6 floating days/);assert.doesNotMatch(html,/Take out ≈/);
@@ -112,7 +200,7 @@ test('failed votes are not marked as successful locally',async()=>{
 test('distance conflicts block estimates and show an explicit review notice',()=>{
  const h=harness();fixture(h);h.run('state.river.sections[0].distanceReview="Endpoint mileage conflict";renderSections(state.river,{flow:1000,at:Date.now()},null)');
  const html=h.elements.get('sectionCards').children[0].innerHTML;
- assert.match(html,/Distance and endpoints under review/);assert.doesNotMatch(html,/~4.0 mph|2 hr|8 mi/);assert.match(html,/Distance under review/);
+ assert.match(html,/Planning distance under review/);assert.doesNotMatch(html,/~4.0 mph|2 hr|8 mi/);assert.match(html,/Distance under review/);
  assert.equal(h.run('P.estimate(state.river,state.river.sections[0],1000,1,0)'),null);
 });
 
@@ -151,6 +239,7 @@ test('map route review is independent of GPS and rejects stale endpoint snapshot
  h.context.catalog=require('../public/catalog.json');
  h.run('const river=catalog.rivers.find(r=>r.id===record.riverId); const section=river.sections.find(s=>s.id===record.sectionId);');
  assert.ok(h.run('prepareSectionRoute(record,river,section).length')>16000);
+ assert.throws(()=>h.run('prepareSectionRoute(record,river,{...section,routeReview:"New portage question"})'),/needs review/);
  h.run('const changed=JSON.parse(JSON.stringify(record));changed.putIn.lon+=.001;');
  assert.throws(()=>h.run('prepareSectionRoute(changed,river,section)'),/endpoints/);
  h.run('changed.putIn=record.putIn;changed.status="candidate";');
@@ -218,4 +307,55 @@ test('unresolved access or mileage holds guide times as well as live estimates',
   const html=h.elements.get('sectionCards').children[0].innerHTML;
   assert.match(html,/Unresolved landing/);assert.doesNotMatch(html,/Published guide:|~[\d.]+ mph/);
  }
+});
+
+test('an open map survives card refreshes and is parked when closed or no longer reviewed',()=>{
+ const h=harness();fixture(h);
+ h.context.location={href:'http://localhost/?river=test&section=a&map=1'};h.context.history={replaceState(){}};
+ const panel=h.context.document.getElementById('landMapPanel');
+ let resized=0,removed=0;
+ h.context.liveMap={resize(){resized++;},remove(){removed++;}};
+ h.run('state.river.sections[0].mapReleased=true;state.landMapSection="a";state.landMap=liveMap;renderSections(state.river,null,null)');
+ const first=h.elements.get('sectionCards').children.at(-1);
+ assert.equal(panel.parentElement,first);
+ h.run('state.fishing=true;renderSections(state.river,null,null)');
+ assert.notEqual(panel.parentElement,first);
+ assert.equal(panel.parentElement,h.elements.get('sectionCards').children.at(-1));
+ assert.equal(h.run('state.landMap'),h.context.liveMap);
+ assert.equal(resized,2);assert.equal(removed,0);
+ h.run('state.river.sections[0].mapReleased=false;renderSections(state.river,null,null)');
+ assert.equal(panel.parentElement,h.elements.get('landMapHome'));
+ assert.equal(panel.hidden,true);assert.equal(removed,1);
+ assert.equal(h.run('state.landMapSection'),null);
+});
+
+test('state shortcuts filter the planner, preserve craft and respect modified clicks',async()=>{
+ const h=harness(async()=>({ok:true,json:async()=>({rivers:[{...river,file:'test.json'},{...river,id:'id-river',state:'ID',file:'id.json'}],states:[{id:'MT',name:'Montana',slug:'montana'},{id:'ID',name:'Idaho',slug:'idaho'}],craft:[{id:'raft',label:'Raft',mult:1},{id:'kayak',label:'Kayak',mult:1.25}]})}));
+ const link=h.context.document.createElement('a');link.dataset={plannerState:'ID'};link.closest=()=>null;
+ h.context.document.querySelectorAll=()=>[link];
+ h.context.Option=class {constructor(text,value){this.textContent=text;this.value=value;}};
+ h.context.location={href:'http://localhost/?craft=kayak',search:'?craft=kayak'};
+ let lastUrl,prevented=false,focused=false,scrolled=false;
+ h.context.history={replaceState(a,b,url){lastUrl=url;h.context.location.href=new URL(url,h.context.location.href).href;}};
+ h.context.document.getElementById('riverSelect').focus=()=>{focused=true;};
+ h.context.document.getElementById('calculator').scrollIntoView=()=>{scrolled=true;};
+ h.run('renderReports=()=>{};loadReports=()=>{};');await h.run('init()');
+ link.handlers.click({button:0,ctrlKey:true,preventDefault(){throw Error('Must preserve open-in-new-tab behavior');}});
+ assert.equal(h.elements.get('stateSelect').value,'');
+ link.handlers.click({button:0,preventDefault(){prevented=true;}});
+ assert.ok(prevented&&focused&&scrolled);
+ assert.equal(h.elements.get('stateSelect').value,'ID');
+ assert.deepEqual(h.elements.get('riverSelect').children.map(o=>o.value),['','id-river']);
+ assert.equal(h.run('state.river'),null);
+ assert.match(lastUrl,/craft=kayak/);assert.match(lastUrl,/state=ID/);assert.match(lastUrl,/#calculator$/);
+});
+
+test('approximate access invites an endpoint-specific correction without downgrading a precise landing',()=>{
+ const h=harness();fixture(h);
+ h.run('state.river.sections[0].putInAccess={status:"verified"};state.river.sections[0].takeOutAccess={status:"access-verified"};');
+ let html=h.run('approximateAccessHelp(state.river,state.river.sections[0])');
+ assert.match(html,/endpoint=takeOut/);assert.doesNotMatch(html,/endpoint=putIn/);
+ assert.match(html,/Suggestions are reviewed before pins change/);
+ h.run('state.river.sections[0].takeOutAccess.status="verified"');
+ assert.equal(h.run('approximateAccessHelp(state.river,state.river.sections[0])'),'');
 });

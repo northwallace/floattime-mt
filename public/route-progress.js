@@ -5,6 +5,7 @@
   const {prepare,pointAt,distance,validPoint}=G;
   const R=6371008.8,MI=1609.344,rad=Math.PI/180;
   function locate(route,fix,now=Date.now()){
+    if(route?.displayOnly)return {status:'display-only'};
     if(!fix||!validPoint([fix.longitude,fix.latitude]))return {status:'missing'};
     if(!Number.isFinite(fix.timestamp)||now-fix.timestamp>30000||fix.timestamp-now>5000)return {status:'stale'};
     if(!Number.isFinite(fix.accuracy)||fix.accuracy<0||fix.accuracy>50)return {status:'inaccurate'};

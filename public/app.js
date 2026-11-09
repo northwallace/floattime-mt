@@ -13,6 +13,23 @@ const FISH_MIN_PER_MILE = 25; // extra time if stopping to fish
 const $ = (id) => document.getElementById(id);
 const riverState = (river) => (river && river.state) || "MT";
 
+function accessSuggestionUrl(river, section, endpoint) {
+  const query = {type: "access-suggestion", riverId: river.id, sectionId: section.id};
+  if (["putIn", "takeOut"].includes(endpoint)) query.endpoint = endpoint;
+  return "/feedback.html?" + new URLSearchParams(query);
+}
+
+function coordinateSourceLabel(url) {
+  return new URL(url).hostname === "www.openstreetmap.org"
+    ? "Location · © OpenStreetMap contributors" : "Location source";
+}
+
+function approximateAccessHelp(river, section) {
+  const links = ["putIn", "takeOut"].filter(end => section[end + "Access"]?.status === "access-verified")
+    .map(end => `<a class="section-correction" href="${esc(accessSuggestionUrl(river, section, end))}">Help pinpoint the ${end === "putIn" ? "put-in" : "take-out"}</a>`);
+  return links.length ? `<p class="approximate-access-help">Know the exact landing? ${links.join(" · ")}. Suggestions are reviewed before pins change.</p>` : "";
+}
+
 const state = {
   river: null,          // current river object
   craft: null,          // current craft object
@@ -43,7 +60,11 @@ async function json(url, options = {}) {
     ...options,
     signal: AbortSignal.timeout(15000),
   });
-  if (!response.ok) throw new Error(`Request failed (${response.status})`);
+  if (!response.ok) {
+    const error = new Error(`Request failed (${response.status})`);
+    error.status = response.status;
+    throw error;
+  }
   return response.json();
 }
 function cached(map, key, load, ttl = 300000) {
@@ -57,8 +78,36 @@ function cached(map, key, load, ttl = 300000) {
   return entry.promise;
 }
 
+async function riverDetails(summary) {
+  const load = () => cached(riverDetailCache, summary.file, () => json('/' + summary.file));
+  try {
+    return await load();
+  } catch (error) {
+    // An open tab can outlive a release that replaces hashed river files.
+    if (error.status !== 404 && error.status !== 410) throw error;
+    const latest = await json('/catalog-index.json', {cache: 'no-store'});
+    const updated = latest.rivers?.find(r => r.id === summary.id && r.state === summary.state);
+    if (!updated?.file || updated.file === summary.file) throw error;
+    summary.file = updated.file;
+    return load();
+  }
+}
 
-function closeLandMap() {
+
+function parkLandMap() {
+  const panel = $("landMapPanel");
+  panel.parentElement?.classList?.remove("has-open-map");
+  $("landMapHome").appendChild(panel);
+}
+
+function attachLandMap(card) {
+  card.appendChild($("landMapPanel"));
+  card.classList.add("has-open-map");
+  card.querySelector("[data-map-section]")?.setAttribute("aria-expanded", "true");
+}
+
+function closeLandMap({restoreFocus = false} = {}) {
+  const trigger = state.landMapSection ? $("section-" + state.landMapSection)?.querySelector("[data-map-section]") : null;
   state.mapGeneration = (state.mapGeneration || 0) + 1;
   state.progress?.destroy(); state.progress = null;
   $("landMapRouteEvidence").hidden = true;
@@ -68,12 +117,15 @@ function closeLandMap() {
     history.replaceState(null, "", url.pathname + url.search + url.hash);
   }
   $("landMapPanel").hidden = true;
+  trigger?.setAttribute("aria-expanded", "false");
+  parkLandMap();
   state.landMapSection = null;
   if (state.landMap) {
     state.landMap.remove();
     state.landMap = null;
   }
   $("landMap").replaceChildren();
+  if (restoreFocus) trigger?.focus({preventScroll:true});
 }
 
 function parcelPopup(properties = {}) {
@@ -107,12 +159,15 @@ function riverBankLabel(access) {
 }
 
 function prepareSectionRoute(data, river, section, experiment = false) {
+  const overview = data.scope === "river-course-overview";
+  if (section.routeReview && (!overview || data.overview?.routeReview !== section.routeReview)) throw Error("River path needs review");
+  if ((section.distanceReview || data.overview?.planningDistanceReview) && (!overview || data.overview?.planningDistanceReview !== section.distanceReview)) throw Error("Planning distance needs review");
   if (data.riverId !== river.id || data.sectionId !== section.id || data.catalogMiles !== section.miles) throw new Error("Route does not match section");
   if (!experiment && (data.status !== "reviewed" || data.features?.display !== true)) throw new Error("Route is not reviewed for display");
   for (const [saved, current, name] of [[data.putIn, section.putInCoords, section.putIn], [data.takeOut, section.takeOutCoords, section.takeOut]]) {
     if (saved?.lat !== current.lat || saved?.lon !== current.lon || (!experiment && saved.name !== name)) throw new Error("Route endpoints need review");
   }
-  return FloatRoute.prepare(data);
+  return FloatRoute.prepare(data, {displayOnly:true});
 }
 
 function mountFloatProgress(map, maplibregl, data, route, river, section, fieldTest = false) {
@@ -196,6 +251,8 @@ function mountFloatProgress(map, maplibregl, data, route, river, section, fieldT
 
 async function showLandMap(section) {
   if (!section.mapReleased || section.accessReview) return;
+  const card = $("section-" + section.id);
+  if (!card) return;
   const panel = $("landMapPanel"), status = $("landMapStatus"), locationStatus = $("landMapLocationStatus");
   const isMontana = riverState(state.river) === "MT";
   closeLandMap();
@@ -205,8 +262,9 @@ async function showLandMap(section) {
   mapUrl.searchParams.set("section", section.id); mapUrl.searchParams.set("map", "1");
   history.replaceState(null, "", mapUrl.pathname + mapUrl.search + mapUrl.hash);
   panel.hidden = false;
+  attachLandMap(card);
   const takeOutBank = riverBankLabel(section.takeOutAccess);
-  $("landMapAccuracy").textContent = section.distanceReview ? "Route and distance under review" : section.mapPrecision === "approximate" ? "Approximate access locations" : "Verified access facilities";
+  $("landMapAccuracy").textContent = section.distanceReview ? "Planning distance under review" : section.mapPrecision === "approximate" ? "Approximate access locations" : "Verified access facilities";
   $("landMapRoute").textContent = `${section.putIn} → ${section.takeOut}${takeOutBank ? ` · Take-out: ${takeOutBank.toLowerCase()}` : ""}`;
   $("landMapPanel").querySelector("h3").textContent = isMontana ? "River access and Montana state land" : "River access map";
   $("landMapLandLegend").hidden = !isMontana;
@@ -224,7 +282,7 @@ async function showLandMap(section) {
     let pilot = null, route = null, routeUnavailable = false, fieldTest = false;
     const testEntry = FloatFieldPilot.matches(mapConfig.fieldTest, fieldTestId, river, section) ? mapConfig.fieldTest : null;
     const entry = testEntry || (mapConfig.routes || mapConfig.routePilots)?.find(item => item.riverId === river.id && item.sectionId === section.id);
-    if (entry) {
+    if (entry && (!section.routeReview || entry.scope === "river-course-overview")) {
       try {
         let data;
         if (testEntry) {
@@ -313,6 +371,11 @@ async function showLandMap(section) {
       const popup = document.createElement("div");
       const title = document.createElement("strong"); title.textContent = label; popup.appendChild(title);
       const detail = document.createElement("p"); detail.textContent = `${access.accessType || "Access area"}${access.operator ? ` · ${access.operator}` : ""}`; popup.appendChild(detail);
+      const improve = document.createElement("p");
+      const suggest = document.createElement("a");
+      suggest.href = accessSuggestionUrl(river, section, className === "put-in" ? "putIn" : "takeOut");
+      suggest.textContent = approximate ? "Help pinpoint this landing" : "Suggest a pin correction";
+      improve.appendChild(suggest); popup.appendChild(improve);
       if (reportedTakeout) {
         const reported = document.createElement("p");
         reported.textContent = `User-confirmed takeout · ${takeOutPoint.lat.toFixed(6)}, ${takeOutPoint.lon.toFixed(6)}. Checked against imagery; not an agency-surveyed landing. Confirm the ramp visually.`;
@@ -322,6 +385,10 @@ async function showLandMap(section) {
         const accuracy = document.createElement("p");
         accuracy.textContent = "Approximate facility location. Exact landing is not confirmed. " + access.directions;
         popup.appendChild(accuracy);
+      } else if (!reportedTakeout && access.directions) {
+        const directions = document.createElement("p");
+        directions.textContent = access.directions;
+        popup.appendChild(directions);
       }
       const bank = riverBankLabel(access);
       if (className === "take-out" && bank) {
@@ -331,6 +398,13 @@ async function showLandMap(section) {
         popup.appendChild(bankRow);
       }
       const source = document.createElement("a"); source.href = access.sourceUrl; source.target = "_blank"; source.rel = "noopener"; source.textContent = `Access source · checked ${access.verifiedOn}`; popup.appendChild(source);
+      if (access.coordinateSourceUrl && access.coordinateSourceUrl !== access.sourceUrl) {
+        const locationSource = document.createElement("a");
+        locationSource.className = "popup-bank-source";
+        locationSource.href = access.coordinateSourceUrl; locationSource.target = "_blank"; locationSource.rel = "noopener";
+        locationSource.textContent = coordinateSourceLabel(access.coordinateSourceUrl);
+        popup.appendChild(locationSource);
+      }
       if (className === "take-out" && access.bankSourceUrl) {
         const bankSource = document.createElement("a");
         bankSource.className = "popup-bank-source"; bankSource.href = access.bankSourceUrl; bankSource.target = "_blank"; bankSource.rel = "noopener";
@@ -338,14 +412,15 @@ async function showLandMap(section) {
         popup.appendChild(bankSource);
       }
       const phoneMap = map.getContainer().clientWidth < 640;
-      const accessPopup = new maplibregl.Popup({offset:{top:[0,8], "top-left":[0,8], "top-right":[0,8], bottom:[0,-76], "bottom-left":[0,-76], "bottom-right":[0,-76], left:[24,-30], right:[-24,-30]}, maxWidth:phoneMap ? `${Math.min(240, map.getContainer().clientWidth - 76)}px` : "260px", anchor:"bottom"}).setDOMContent(popup);
+      const accessPopup = new maplibregl.Popup({focusAfterOpen:false, offset:{top:[0,8], "top-left":[0,8], "top-right":[0,8], bottom:[0,-76], "bottom-left":[0,-76], "bottom-right":[0,-76], left:[24,-30], right:[-24,-30]}, maxWidth:phoneMap ? `${Math.min(240, map.getContainer().clientWidth - 76)}px` : "260px", anchor:"bottom"}).setDOMContent(popup);
       accessPopup.on("open", () => {
         // Keep source cards above their pin and clear of controls/credits at every width.
         const container = map.getContainer();
         const creditsHeight = container.querySelector(".maplibregl-ctrl-attrib")?.getBoundingClientRect().height || 0;
         const popupContent = accessPopup.getElement().querySelector(".maplibregl-popup-content");
-        if (popupContent) popupContent.style.maxHeight = `${Math.min(240, Math.max(120, container.clientHeight - creditsHeight - 110))}px`;
         const offsetY = Math.min(110, container.clientHeight / 2 - creditsHeight - 16);
+        // Account for the pin's bottom anchor and popup offset, not just map height.
+        if (popupContent) popupContent.style.maxHeight = `${Math.min(240, Math.max(100, container.clientHeight / 2 + offsetY - 92))}px`;
         map.panTo([point.lon, point.lat], {offset:[0,offsetY], duration:0});
       });
       new maplibregl.Marker({element:marker, anchor:"bottom"}).setLngLat([point.lon, point.lat]).setPopup(accessPopup).addTo(map);
@@ -395,13 +470,20 @@ async function showLandMap(section) {
       if (pilot.land) $("landMapLandNote").textContent = pilot.landNote + " State ownership does not guarantee unrestricted access. Check current DNRC rules and signs.";
       const evidence = $("landMapRouteEvidence"); evidence.hidden = false; evidence.replaceChildren();
       const description = document.createElement("span");
-      description.textContent = `Approximate mapped river path: ${pilot.routeMiles.toFixed(1)} mi. Planning distance remains ${section.miles} mi. Dashed line is an agency centerline, not a recommended navigation channel. ` + (fieldTest ? "The Pilot take-out marks the user-confirmed destination; the Area put-in marks approximate access. " : "");
+      const overview = pilot.scope === "river-course-overview";
+      description.textContent = overview
+        ? `River-course overview: ${pilot.routeMiles.toFixed(1)} mi shown; ${pilot.overview.planningDistanceReview ? "planning distance under review" : `planning distance ${section.miles} mi`}. ${pilot.overview.note} `
+        : `Approximate mapped river path: ${pilot.routeMiles.toFixed(1)} mi. Planning distance remains ${section.miles} mi. Dashed line is an agency centerline, not a recommended navigation channel. ` + (fieldTest ? "The Pilot take-out marks the user-confirmed destination; the Area put-in marks approximate access. " : "");
       evidence.appendChild(description);
       const source = document.createElement("a"); source.href = pilot.sourceUrl; source.target = "_blank"; source.rel = "noopener"; source.textContent = `River-line source · checked ${pilot.checkedOn}`; evidence.appendChild(source);
       // The saved GPS experiment is independently opt-in; ordinary route maps never enable it.
-      if (fieldTest || (!mapConfig.routes && mapConfig.routePilots && pilot.status === "local-pilot")) state.progress = mountFloatProgress(map, maplibregl, pilot, route, river, section, fieldTest);
+      if (!overview && (fieldTest || (!mapConfig.routes && mapConfig.routePilots && pilot.status === "local-pilot"))) state.progress = mountFloatProgress(map, maplibregl, pilot, route, river, section, fieldTest);
     }
     if (routeUnavailable) { $("landMapRouteEvidence").hidden = false; $("landMapRouteEvidence").textContent = "The reviewed river line is unavailable. Access markers remain available."; }
+    if (section.routeReview && !pilot) {
+      $("landMapRouteEvidence").hidden = false;
+      $("landMapRouteEvidence").textContent = `River path under review: ${section.routeReview}`;
+    }
     const verified = fieldTest ? "Pilot takeout: user-confirmed Greycliff ramp, checked against imagery. The Area put-in marks approximate access. " : (section.mapPrecision === "approximate"
       ? "Markers labelled Area show approximate facility locations, not confirmed landings. " : "") +
       `Access sources checked: put-in ${section.putInAccess.verifiedOn}; take-out ${section.takeOutAccess.verifiedOn}. `;
@@ -461,7 +543,7 @@ function conditionFor(river, flowCfs) {
 }
 
 function dressFor(tempC) {
-  if (tempC == null) return "No water temp from this gauge — pack a layer you'd swim in.";
+  if (tempC == null) return "Water temperature unavailable — pack a layer you'd swim in.";
   const f = tempC * 9 / 5 + 32;
   if (f < 50) return `Water is ${Math.round(f)}°F — drysuit or thick wetsuit. This is hypothermia water.`;
   if (f < 60) return `Water is ${Math.round(f)}°F — wetsuit. A dunk will knock the wind out of you.`;
@@ -561,14 +643,39 @@ function reportMatches(r, river) { return r.riverId ? r.riverId === river.id : r
 function distanceEvidenceHtml(section) {
   const e = section.distanceEvidence;
   if (!e) return "";
-  const distance = e.method === "published-trip-length" ? `Published trip length: ${esc(e.miles)} mi` : `River mile ${esc(e.putIn.riverMile)} to ${esc(e.takeOut.riverMile)}`;
+  const distance = e.method === "mapped-course-length" ? `Measured from published map: approximately ${esc(section.miles)} mi` : e.method === "published-trip-length" ? `Published trip length: ${esc(e.miles)} mi` : `River mile ${esc(e.putIn.riverMile)} to ${esc(e.takeOut.riverMile)}`;
   return `<details class="distance-source"><summary>How this distance was checked</summary><p>${esc(e.note)}</p><a href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">${esc(e.sourceName)}</a><p>${distance} · checked ${esc(e.checkedOn)}</p></details>`;
+}
+function noticeHtml(notice, id = "") {
+  return `<div class="section-notice"${id ? ` id="${esc(id)}" tabindex="-1"` : ""}><strong>${esc(notice.title)}</strong><p>${esc(notice.text)}</p><a href="${esc(notice.sourceUrl)}" target="_blank" rel="noopener">${esc(notice.sourceName)}</a><small>Source checked ${esc(notice.checkedOn)}</small></div>`;
+}
+function sharedNoticesHtml(groups, sections) {
+  if (!groups.length) return "";
+  return '<h3>Before you float</h3><div class="river-advisory-grid">' + groups.map(group => {
+    const links = sections.filter(section => group.sectionIds.includes(section.id))
+      .map(section => `<li><a href="#section-${esc(section.id)}">${esc(section.putIn)} → ${esc(section.takeOut)}</a></li>`).join("");
+    return `<div>${noticeHtml(group.notice, group.id)}<details class="advisory-stretches"><summary>Applies to ${group.sectionIds.length} stretches</summary><ul>${links}</ul></details></div>`;
+  }).join("") + '</div>';
 }
 function renderSections(river, gauge, sunset) {
   state.progress?.refresh();
-  if (state.landMapSection && !river.sections.some(sec => sec.id === state.landMapSection)) closeLandMap();
+  if (state.landMapSection && !river.sections.some(sec => sec.id === state.landMapSection && sec.mapReleased && !sec.accessReview)) closeLandMap();
+  // Keep the live map node and its controls when gauges, reports or timing
+  // refresh the cards. It must leave the old card before that card is removed.
+  if (state.landMapSection) parkLandMap();
   const container = $("sectionCards");
   container.replaceChildren();
+  const grouped = P.sharedNotices(river.sections);
+  const shared = new Map(grouped.map(group => [P.noticeKey(group.notice), group.id]));
+  const advisories = $("riverAdvisories");
+  advisories.hidden = !grouped.length;
+  const advisoryHtml = sharedNoticesHtml(grouped, river.sections);
+  // Gauge/report refreshes must not collapse an open list or replace a link
+  // while a visitor is using it. Update only when the advisory content changes.
+  if (state.advisoryHtml !== advisoryHtml) {
+    advisories.innerHTML = advisoryHtml;
+    state.advisoryHtml = advisoryHtml;
+  }
   const launch = parsePutIn($("putInTime").value);
   for (const sec of river.sections) {
     const stops = state.fishing ? sec.miles * FISH_MIN_PER_MILE : 0;
@@ -578,7 +685,7 @@ function renderSections(river, gauge, sunset) {
     if (sec.accessReview) {
       timing = `<div class="section-notice"><strong>Access and route under review</strong><p>${esc(sec.accessReview)}</p><p>No trip estimate is offered for this stretch until the access issue is resolved.</p></div>`;
     } else if (sec.distanceReview) {
-      timing = `<div class="section-notice"><strong>Distance and endpoints under review</strong><p>${esc(sec.distanceReview)}</p></div>`;
+      timing = `<div class="section-notice"><strong>Planning distance under review</strong><p>${esc(sec.distanceReview)}</p></div>`;
     } else if (restricted) {
       timing = '<p class="fc-launch tight">Class III+ whitewater: no tube or recreational paddleboard estimate. Check local guidance and choose an appropriate craft.</p>';
     } else if (!P.supportsLiveTiming(river)) {
@@ -609,17 +716,26 @@ function renderSections(river, gauge, sunset) {
     const hazards = state.reportsStatus !== "ready" ? '<p class="fc-hazard">Community reports are loading or unavailable. Check local conditions.</p>' : reports.length ? `<a class="fc-hazard" href="#reports">${reports.length} community report(s) on this river or stretch ↓</a>` : "";
     const card = document.createElement("article"); card.className = "float-card"; card.id = `section-${sec.id}`;
     const bank = riverBankLabel(sec.takeOutAccess);
-    const mapButton = sec.mapReleased && sec.putInCoords && sec.takeOutCoords ? `<div class="map-card-actions"><button class="map-preview-button" type="button" data-map-section="${esc(sec.id)}"><span aria-hidden="true">⌖</span> ${sec.mapPrecision === "approximate" ? "View access map · approximate locations" : (sec.distanceReview ? "Inspect access map · under review" : "View verified access map")} <small>Sources</small></button>${bank ? `<span class="takeout-bank">Take-out: ${bank.toLowerCase()} <small>facing downstream</small></span>` : ""}</div>` : "";
+    const mapButton = sec.mapReleased && sec.putInCoords && sec.takeOutCoords ? `<div class="map-card-actions"><button class="map-preview-button" type="button" aria-controls="landMapPanel" aria-expanded="${state.landMapSection === sec.id}" data-map-section="${esc(sec.id)}"><span aria-hidden="true">⌖</span> ${sec.mapPrecision === "approximate" ? "View access map · approximate locations" : (sec.distanceReview ? "Inspect access map · under review" : "View verified access map")} <small>Sources</small></button>${bank ? `<span class="takeout-bank">Take-out: ${bank.toLowerCase()} <small>facing downstream</small></span>` : ""}</div>` : "";
     const mapPending = sec.mapPilot && !sec.mapReleased ? '<p class="map-pending-note">This section’s access map is still under review.</p>' : sec.mapPendingReason ? `<div class="map-pending-note"><strong>Map unavailable:</strong> ${esc(sec.mapPendingReason)}</div>` : "";
-    const guides = (sec.accessReview || sec.distanceReview ? [] : sec.guideTimes || []).map(g => `<div class="guide-time"><strong>Published guide: ${esc(g.min === g.max ? g.min : `${g.min}–${g.max}`)} ${esc(g.unit)}</strong><p>${esc(g.conditions)}</p><a href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">${esc(g.sourceName)}</a></div>`).join("");
-    const notices = (sec.notices || []).map(n => `<div class="section-notice"><strong>${esc(n.title)}</strong><p>${esc(n.text)}</p><a href="${esc(n.sourceUrl)}" target="_blank" rel="noopener">${esc(n.sourceName)}</a><small>Source checked ${esc(n.checkedOn)}</small></div>`).join("");
+    const guides = (sec.accessReview || sec.distanceReview ? [] : sec.guideTimes || []).map(g => {
+      return `<div class="guide-time"><strong>Published guide: ${esc(P.guideTime(g))}</strong><p>${esc(g.conditions)}</p><a href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">${esc(g.sourceName)}</a></div>`;
+    }).join("");
+    const notices = (sec.notices || []).map(notice => {
+      const id = shared.get(P.noticeKey(notice));
+      return id ? `<p class="section-advisory-link"><a href="#${esc(id)}">${esc(notice.title)} <span>— read advisory</span></a></p>` : noticeHtml(notice);
+    }).join("");
     const guideNote = guides ? '<p class="fc-notes">Guide times are published planning guidance. They are not adjusted for today’s flow, your craft, fishing stops, or put-in time.</p>' : "";
     const correctionUrl = '/feedback.html?' + new URLSearchParams({type:'correction',riverId:river.id,sectionId:sec.id});
-    const accessUrl = '/feedback.html?' + new URLSearchParams({type:'access-suggestion',riverId:river.id,sectionId:sec.id});
+    const accessUrl = accessSuggestionUrl(river, sec);
     const correction = `<div class="section-community-actions"><a class="section-correction" href="${esc(accessUrl)}">${sec.mapReleased ? "Suggest another access" : "Help locate this access"}</a> <a class="section-correction" href="${esc(correctionUrl)}">Suggest a correction <span class="sr-only">for ${esc(sec.putIn)} to ${esc(sec.takeOut)}</span></a></div>`;
     card.innerHTML = `<div class="fc-route">${esc(sec.putIn)}<span class="arrow">→</span>${esc(sec.takeOut)}</div><div class="fc-meta"><span>${sec.distanceReview ? "Distance under review" : `${sec.distanceEvidence ? "≈ " : ""}${sec.miles} mi${sec.accessReview ? " · unverified" : ""}`}</span><span class="diff">${sec.accessReview ? "Route under review" : esc(sec.difficulty)}</span></div><div class="fc-time"${(sec.accessReview || sec.distanceReview || !P.supportsLiveTiming(river) || restricted) ? ' hidden' : ''}><span class="fc-time-label">${estimate?.multiDay ? "Total estimated time on water" : state.fishing ? "Estimated time (fishing)" : "Estimated float time"}</span>${duration}</div><div class="fc-speed">${detail}</div>${notices}${timing}${guides}${guideNote}${hazards}<div class="fc-notes">${esc(sec.notes)}</div>${distanceEvidenceHtml(sec)}${mapPending}${mapButton}${correction}`;
+    const accessHelp = approximateAccessHelp(river, sec);
+    if (accessHelp) card.innerHTML += accessHelp;
     container.appendChild(card);
+    if (state.landMapSection === sec.id) attachLandMap(card);
   }
+  state.landMap?.resize();
 }
 
 async function renderRiver() {
@@ -833,8 +949,9 @@ async function init() {
     $("locationPromptText").textContent="The river catalog could not load. Reload the page to try again.";
     return;
   }
-  document.querySelector(".coming-soon-pill").textContent=STATES.map(s=>s.name).join(" · ");
-  document.querySelector(".nav-drop-menu").innerHTML='<a href="/directory.html">All rivers</a>'+STATES.map(s=>`<a href="/${esc(s.slug)}">${esc(s.name)}</a>`).join("");
+  const stateLinks = STATES.map(s=>`<a href="/?state=${encodeURIComponent(s.id)}#calculator" data-planner-state="${esc(s.id)}">${esc(s.name)}</a>`);
+  document.querySelector(".coming-soon-pill").innerHTML=stateLinks.join(' <span aria-hidden="true">·</span> ');
+  document.querySelector(".nav-drop-menu").innerHTML='<a href="/directory.html">All rivers</a>'+stateLinks.join("");
   $("year").textContent = new Date().getFullYear();
   $("statRivers").textContent = RIVERS.length;
   $("statSections").textContent = RIVERS.reduce((n, r) => n + r.sections.length, 0);
@@ -846,6 +963,7 @@ async function init() {
   for (const st of STATES) stateSel.add(new Option(st.name, st.id));
   for (const c of CRAFT) craftSel.add(new Option(c.label, c.id));
   state.craft = CRAFT[0];
+  if (typeof FloatSearch !== 'undefined') FloatSearch.mountPlanner({rivers:RIVERS,states:STATES},()=>state.craft.id);
   placeholder(reportRiverSel, "Choose a river");
   for (const st of STATES) {
     const group = document.createElement("optgroup"); group.label = st.name;
@@ -894,7 +1012,7 @@ async function init() {
       $("locationPromptText").textContent = "Loading river details…";
       craftSel.disabled = $("putInTime").disabled = $("fishingToggle").disabled = true;
       try {
-        const river = await cached(riverDetailCache, summary.file, () => json('/' + summary.file));
+        const river = await riverDetails(summary);
         if (generation !== chooseGeneration) return;
         if (river.id !== summary.id || river.state !== summary.state) throw Error('River identity mismatch');
         state.river = river;
@@ -931,6 +1049,20 @@ async function init() {
   const code = start ? riverState(start) : STATES.find(st => st.id === (params.get("state") || "").toUpperCase())?.id || "";
   stateSel.value = code; fillRivers(code, start?.id);
   stateSel.addEventListener("change", () => { fillRivers(stateSel.value); chooseRiver(); });
+  document.querySelectorAll("[data-planner-state]").forEach(link => {
+    link.addEventListener("click", event => {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const code = link.dataset.plannerState;
+      if (!STATES.some(s => s.id === code)) return;
+      event.preventDefault();
+      stateSel.value = code; fillRivers(code); chooseRiver();
+      link.closest("details")?.removeAttribute("open");
+      const url = new URL(location.href); url.hash = "calculator";
+      history.replaceState(null, "", url.pathname + url.search + url.hash);
+      $("calculator").scrollIntoView({behavior:"smooth", block:"start"});
+      riverSel.focus({preventScroll:true});
+    });
+  });
   riverSel.addEventListener("change", chooseRiver);
   craftSel.addEventListener("change", () => { state.craft=CRAFT.find(c=>c.id===craftSel.value); syncUrl(); if(state.river)renderRiver(); });
   $("putInTime").addEventListener("input", () => {syncUrl();if(state.river)renderSections(state.river,state.gauge,renderDaylight(state.river));});
@@ -942,9 +1074,12 @@ async function init() {
     const button = event.target.closest("[data-map-section]");
     if (!button || !state.river) return;
     const section = state.river.sections.find(sec => sec.id === button.dataset.mapSection);
-    if (section) showLandMap(section);
+    if (section) {
+      if (state.landMapSection === section.id) closeLandMap({restoreFocus:true});
+      else showLandMap(section);
+    }
   });
-  $("landMapClose").addEventListener("click", closeLandMap);
+  $("landMapClose").addEventListener("click", () => closeLandMap({restoreFocus:true}));
   // Wire changes before the initial detail request yields. Otherwise a fast
   // state change can leave the selected state and river list out of sync.
   stateSel.disabled = false;

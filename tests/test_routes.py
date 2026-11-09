@@ -1,3 +1,4 @@
+from catalog_contracts import assert_registry_identity, assert_river_identity, assert_catalog_identity
 import copy,json,sys,tempfile,unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -12,8 +13,13 @@ class RouteTests(unittest.TestCase):
     def test_reviewed_only_exports_and_never_changes_timing(self):
         before=copy.deepcopy(self.catalog);outputs=build_outputs(ROOT,self.catalog)
         entries=json.loads(outputs['public/routes/index.json'])['routes']
-        self.assertEqual(sum(e['state']=='MT' for e in entries),13)
-        self.assertEqual(sum(e['state']=='WY' for e in entries),46)
+        expected = set()
+        for manifest in (ROOT/'catalog/routes').glob('??.json'):
+            for path in json.loads(manifest.read_text())['routes']:
+                record = json.loads((ROOT/'catalog/routes'/path).read_text())
+                if record['status'] == 'reviewed' and record['features']['display']:
+                    expected.add((record['riverId'], record['sectionId']))
+        self.assertEqual({(e['riverId'], e['sectionId']) for e in entries}, expected)
         self.assertTrue(all(not e['features']['remainingTime'] and not e['features']['distanceEstimate'] for e in entries))
         self.assertNotIn('public/routes/madison-lower--blacks-ford-greycliff.json',outputs)
         self.assertEqual(before,self.catalog)
@@ -29,6 +35,18 @@ class RouteTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'disconnected|reversed'):validate(record,self.catalog,ROOT)
         record=copy.deepcopy(generalized);record['resolutionReview']['sha256']='0'*64
         with self.assertRaisesRegex(ValueError,'changed'):validate(record,self.catalog,ROOT)
+    def test_single_source_feature_uses_stations_not_perpendicular_offsets(self):
+        record=json.loads((ROOT/'catalog/routes/WI/namekagon-river--north-springbrook-landing-to-springbrook-landing.json').read_text())
+        direction=record['direction']
+        direction['putInSourceStationMeters']=direction['putInOffsetMeters']
+        direction['takeOutSourceStationMeters']=direction['takeOutOffsetMeters']
+        direction['putInOffsetMeters']=direction['takeOutOffsetMeters']=0
+        validate(record,self.catalog,ROOT)
+        direction['putInSourceStationMeters'],direction['takeOutSourceStationMeters']=direction['takeOutSourceStationMeters'],direction['putInSourceStationMeters']
+        with self.assertRaisesRegex(ValueError,'reversed'):validate(record,self.catalog,ROOT)
+        del direction['takeOutSourceStationMeters']
+        with self.assertRaisesRegex(ValueError,'source-line station'):validate(record,self.catalog,ROOT)
+
     def test_endpoint_and_mileage_edits_force_review(self):
         for field in ['putInCoords','miles']:
             catalog=copy.deepcopy(self.catalog);section=next(s for r in catalog['rivers'] if r['id']=='blackfoot' for s in r['sections'] if s['id']==self.record['sectionId'])

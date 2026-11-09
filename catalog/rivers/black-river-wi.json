@@ -1,0 +1,240 @@
+{
+  "id": "black-river-wi",
+  "name": "Black River",
+  "gauge": "05382000",
+  "gaugeName": "BLACK RIVER NEAR GALESVILLE, WI",
+  "lat": 44.3753,
+  "lon": -90.76149,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Black River trips from the Pettibone Pass and Halls Creek accesses through Black River Falls and downstream toward the Mississippi. Above-dam trips finish at Holmgren; the dam separates them from downstream floats.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "brickyard-road-canoe-landing-to-pettibone-pass-canoe-launch",
+      "putIn": "Brickyard Road Canoe Landing",
+      "takeOut": "Pettibone Pass Canoe Launch",
+      "miles": 1.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-f66e1a122d5c525fa725",
+      "takeOutAccessId": "acc-2f115a19a4da55daa045",
+      "distanceReview": "The preliminary 1.6-mile measurement follows a narrow source channel beside a longer visible river bend. Main-course mileage needs review; use this map to locate access areas, not to plan trip duration.",
+      "routeReview": "The USGS candidate follows a narrow eastern side channel. A main-course line has not been approved; no dotted route is shown."
+    },
+    {
+      "id": "pettibone-pass-canoe-launch-to-mark-holmgren-memorial-landing",
+      "putIn": "Pettibone Pass Canoe Launch",
+      "takeOut": "Mark Holmgren Memorial Landing",
+      "miles": 7.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Published guide mile markers support this 7.7-mile trip. Finish above Black River Falls Dam. Access markers distinguish the approximate facility areas from reviewed landings; the dotted line shows the river course and omits the final landing approach.",
+      "putInAccessId": "acc-2f115a19a4da55daa045",
+      "takeOutAccessId": "acc-20621dfeb47d511ca423",
+      "routeReview": "Holmgren is above Black River Falls Dam. Exact landing connections and the final dam-side approach are not mapped; the course overview stops about 200 metres before the access area.",
+      "notices": [
+        {
+          "title": "Finish above Black River Falls Dam",
+          "text": "Use Mark Holmgren Memorial Landing above the dam. Scout the signed takeout before launching and stay clear of the dam and exclusion barriers. Slower flowage water, wind and boat wakes can affect the trip. This map does not include a dam crossing.",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/StateForests/blackriver/recreation/water",
+          "sourceName": "Wisconsin DNR — Black River water recreation",
+          "checkedOn": "2026-11-05"
+        }
+      ],
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Wisconsin Trail Guide — Black River BK1 (2016 guide)",
+        "sourceUrl": "https://wisconsintrailguide.com/2024/paddle/pdf/guide-black1.pdf",
+        "checkedOn": "2026-11-05",
+        "streamId": "Black River",
+        "putIn": {
+          "name": "Pettibone Pass Canoe Launch",
+          "riverMile": 66.3,
+          "sourceLocation": "PDF page 1: Morrison Creek Landing"
+        },
+        "takeOut": {
+          "name": "Mark Holmgren Memorial Landing",
+          "riverMile": 58.6,
+          "sourceLocation": "PDF page 1: Holmgreen Landing at Black River Falls"
+        },
+        "note": "Difference between published river-mile labels, rounded to one decimal. Guide spelling and access aliases are retained in the source record; these are planning miles, not a surveyed route."
+      }
+    },
+    {
+      "id": "pettibone-halls-creek",
+      "putIn": "Pettibone Pass Canoe Launch",
+      "takeOut": "Halls Creek Canoe Landing",
+      "miles": 1.6,
+      "difficulty": "Riffles (published paddling guide)",
+      "notes": "Distance comes from published guide mile markers. The river-course line generalizes bends; access markers state their precision. Check water levels and current access conditions before paddling.",
+      "putInAccessId": "acc-2f115a19a4da55daa045",
+      "takeOutAccessId": "acc-bea85514ca7a5cc69020",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Wisconsin Trail Guide — Black River BK1 (2016 guide)",
+        "sourceUrl": "https://wisconsintrailguide.com/2024/paddle/pdf/guide-black1.pdf",
+        "checkedOn": "2026-11-05",
+        "streamId": "Black River",
+        "putIn": {
+          "name": "Pettibone Pass Canoe Launch",
+          "riverMile": 66.3,
+          "sourceLocation": "PDF page 1: Morrison Creek Landing"
+        },
+        "takeOut": {
+          "name": "Halls Creek Canoe Landing",
+          "riverMile": 64.7,
+          "sourceLocation": "PDF page 1: Hall’s Creek Landing"
+        },
+        "note": "Difference between published river-mile labels, rounded to one decimal. Guide spelling and access aliases are retained in the source record; these are planning miles, not a surveyed route."
+      },
+      "routeReview": "River-course overview only. The Pettibone Pass marker is an approximate access area; the Halls Creek landing is reviewed, but exact shoreline connections are not drawn."
+    },
+    {
+      "id": "halls-creek-holmgren",
+      "putIn": "Halls Creek Canoe Landing",
+      "takeOut": "Mark Holmgren Memorial Landing",
+      "miles": 6.1,
+      "difficulty": "Riffles (published paddling guide)",
+      "notes": "Distance comes from published guide mile markers. The river-course line generalizes bends; access markers state their precision. Check water levels and current access conditions before paddling.",
+      "putInAccessId": "acc-bea85514ca7a5cc69020",
+      "takeOutAccessId": "acc-20621dfeb47d511ca423",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Wisconsin Trail Guide — Black River BK1 (2016 guide)",
+        "sourceUrl": "https://wisconsintrailguide.com/2024/paddle/pdf/guide-black1.pdf",
+        "checkedOn": "2026-11-05",
+        "streamId": "Black River",
+        "putIn": {
+          "name": "Halls Creek Canoe Landing",
+          "riverMile": 64.7,
+          "sourceLocation": "PDF page 1: Hall’s Creek Landing"
+        },
+        "takeOut": {
+          "name": "Mark Holmgren Memorial Landing",
+          "riverMile": 58.6,
+          "sourceLocation": "PDF page 1: Holmgreen Landing at Black River Falls"
+        },
+        "note": "Difference between published river-mile labels, rounded to one decimal. Guide spelling and access aliases are retained in the source record; these are planning miles, not a surveyed route."
+      },
+      "routeReview": "Holmgren is above Black River Falls Dam. Exact landing connections and the final dam-side approach are not mapped; the course overview stops about 200 metres before the access area.",
+      "notices": [
+        {
+          "title": "Finish above Black River Falls Dam",
+          "text": "Use Mark Holmgren Memorial Landing above the dam. Scout the signed takeout before launching and stay clear of the dam and exclusion barriers. Slower flowage water, wind and boat wakes can affect the trip. This map does not include a dam crossing.",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/StateForests/blackriver/recreation/water",
+          "sourceName": "Wisconsin DNR — Black River water recreation",
+          "checkedOn": "2026-11-05"
+        }
+      ],
+      "guideTimes": [
+        {
+          "min": 3,
+          "max": 3,
+          "unit": "hours",
+          "conditions": "Approximate canoe/kayak paddling time published in the 2016 guide. Not a live estimate; stops, wind and flowage conditions can extend the trip.",
+          "sourceName": "Wisconsin Trail Guide — Black River BK1 (2016 guide)",
+          "sourceUrl": "https://wisconsintrailguide.com/2024/paddle/pdf/guide-black1.pdf",
+          "checkedOn": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "mark-holmgren-memorial-landing-to-perry-creek-park-launch",
+      "putIn": "Mark Holmgren Memorial Landing",
+      "takeOut": "Perry Creek Park Launch",
+      "miles": 3.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-20621dfeb47d511ca423",
+      "takeOutAccessId": "acc-950983d4c6d652448d63",
+      "accessReview": "Holmgren is above Black River Falls Dam and Perry Creek is downstream. A current usable portage or separate downstream launch has not been established for this itinerary; do not treat it as a continuous float.",
+      "routeReview": "This section includes Black River Falls and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "perry-creek-park-launch-to-masons-landing",
+      "putIn": "Perry Creek Park Launch",
+      "takeOut": "Masons Landing",
+      "miles": 1.4,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-950983d4c6d652448d63",
+      "takeOutAccessId": "acc-f0b60343a77853029f89"
+    },
+    {
+      "id": "masons-landing-to-canoe-campsite-launch",
+      "putIn": "Masons Landing",
+      "takeOut": "Canoe Campsite Launch",
+      "miles": 1.5,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-f0b60343a77853029f89",
+      "takeOutAccessId": "acc-e418a721fc4852158dbd"
+    },
+    {
+      "id": "canoe-campsite-launch-to-melrose-boat-landing",
+      "putIn": "Canoe Campsite Launch",
+      "takeOut": "Melrose Boat Landing",
+      "miles": 18.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-e418a721fc4852158dbd",
+      "takeOutAccessId": "acc-f9f9e5369b125021821a"
+    },
+    {
+      "id": "melrose-boat-landing-to-north-bend-public-access",
+      "putIn": "Melrose Boat Landing",
+      "takeOut": "North Bend Public Access",
+      "miles": 10.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-f9f9e5369b125021821a",
+      "takeOutAccessId": "acc-86d6530ad08c587a9726"
+    },
+    {
+      "id": "north-bend-public-access-to-canoe-launch-town-of-holland",
+      "putIn": "North Bend Public Access",
+      "takeOut": "Canoe Launch — Town of Holland",
+      "miles": 12.7,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-86d6530ad08c587a9726",
+      "takeOutAccessId": "acc-b329451b7f055f86a6a7"
+    },
+    {
+      "id": "canoe-launch-town-of-holland-to-black-river",
+      "putIn": "Canoe Launch — Town of Holland",
+      "takeOut": "Black River",
+      "miles": 7.4,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-b329451b7f055f86a6a7",
+      "takeOutAccessId": "acc-de6d193042435f4e94a2"
+    },
+    {
+      "id": "black-river-to-lytle-s-landing-canoe-launch",
+      "putIn": "Black River",
+      "takeOut": "Lytle's Landing Canoe Launch",
+      "miles": 3.6,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-de6d193042435f4e94a2",
+      "takeOutAccessId": "acc-920978f85ce75471ad8f"
+    }
+  ],
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "The Galesville gauge is downstream of Black River Falls Dam. Its readings are reference conditions elsewhere on the river, not a measurement of the above-dam Pettibone Pass and Halls Creek reaches.",
+    "sourceName": "Wisconsin Trail Guide — Black River BK1 (2016 guide)",
+    "sourceUrl": "https://wisconsintrailguide.com/2024/paddle/pdf/guide-black1.pdf",
+    "checkedOn": "2026-11-05"
+  }
+}

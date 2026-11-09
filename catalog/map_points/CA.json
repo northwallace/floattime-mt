@@ -4,27 +4,35 @@
   "auditedRivers": {
     "russian-river-forestville": {
       "status": "pending",
-      "note": "Public beach access documented; park-area map only. Exact beach landings and a river centerline remain unverified."
+      "note": "Steelhead Beach landing reviewed from state survey, county map and imagery. Sunset remains an approximate park directions destination; the older CDFW response coordinate is midstream and is not accepted as the public takeout. River course and its disagreement with the rounded county two-mile guide remain under review."
+    },
+    "american-river-lower": {
+      "status": "pending",
+      "note": "Lower Sunrise public access verified as an approximate facility area; River Bend landing and downstream bank reviewed from county/CDFW evidence and imagery. Main-channel line and exact Lower Sunrise connection reviewed separately."
+    },
+    "american-river-south-fork": {
+      "status": "pending",
+      "note": "Henningsen Lotus landing matches state facility coordinate and imagery; Greenwood remains a sourced approximate facility. River-course review is independent."
     }
   },
   "points": {
     "Steelhead Beach Regional Park": {
       "id": "acc-1b8b4d6c2d5e50e483d5",
       "aliases": [],
-      "status": "access-verified",
-      "areaCenter": {
-        "lat": 38.49593389,
-        "lon": -122.8991681,
-        "feature": "County-published park directions destination"
-      },
+      "status": "verified",
+      "lat": 38.5,
+      "lon": -122.89966,
       "accessType": "Public beach / hand-carry access",
       "operator": "Sonoma County Regional Parks",
-      "sourceName": "Sonoma County Regional Parks — park page and tubing guide",
-      "sourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/steelhead-beach-regional-park",
-      "coordinateSourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/steelhead-beach-regional-park",
-      "verifiedOn": "2026-10-29",
-      "directions": "9000 River Road, Forestville. Follow the park’s signed beach access; the marker is the park directions destination, not the river landing.",
-      "note": "Public hand-carry river access is documented by the county. Coordinates come from its Get Directions link and identify the park approach. The exact seasonal beach landing is not verified; no boat-ramp or takeout-bank claim is made."
+      "sourceName": "CDFW Russian River GRP, RUS-220, November 2019; Sonoma County Regional Parks",
+      "sourceUrl": "https://filelib.wildlife.ca.gov/Public/OSPR/WebMapping/GRP/RussianRiverGRP/Final_Russian_River_GRP_11_25_19_Protected.pdf",
+      "verifiedOn": "2026-11-03",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-11-03",
+      "bankSourceName": "CDFW Russian River GRP, RUS-220 landing photographs, printed page 126",
+      "bankSourceUrl": "https://filelib.wildlife.ca.gov/Public/OSPR/WebMapping/GRP/RussianRiverGRP/Final_Russian_River_GRP_11_25_19_Protected.pdf",
+      "bankNote": "The agency’s upstream and downstream photographs label the gravel launch beach RL. The county park map and current imagery identify the same beach on river left while facing downstream.",
+      "note": "Documented Steelhead Beach landing, replacing the county driving-destination point farther south. Coordinates are from the CDFW November 2019 response plan, RUS-220, printed pages 125–127; its 2018 photographs match the county beach/launch map and imagery reviewed 2026-11-03. This pin marks the gravel beach, not a surveyed seasonal water edge. Current county guidance allows hand-carried craft at the beach; vehicle/larger-boat access through the gate has separate seasonal permit rules. Preserve the stable access ID."
     },
     "Sunset Beach River Park": {
       "id": "acc-f66b82bc52fb5cf4ac3a",
@@ -43,6 +51,79 @@
       "verifiedOn": "2026-10-29",
       "directions": "11403 River Road, Forestville. Follow the park’s signed beach access; the marker is the park directions destination, not the river landing.",
       "note": "Public hand-carry river access is documented by the county. Coordinates come from its Get Directions link and identify the park approach. The exact seasonal beach landing is not verified; no boat-ramp or takeout-bank claim is made."
+    },
+    "Lower Sunrise Recreation Area": {
+      "id": "acc-cbcba23c070c5acbb50c",
+      "aliases": [
+        "Lower Sunrise Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 38.63220116,
+        "lon": -121.27050129,
+        "feature": "California DBW facility 1227, near the south end of the Jim Jones pedestrian bridge"
+      },
+      "accessType": "Public raft / hand-carry access",
+      "operator": "Sacramento County Regional Parks",
+      "sourceName": "Sacramento County Regional Parks — Sunrise Recreation Areas",
+      "sourceUrl": "https://regionalparks.saccounty.gov/us/en/parks/american-river-parkway/sunrise-recreation-area--upper-and-lower.html",
+      "coordinateSourceUrl": "https://dbw.parks.ca.gov/BoatingFacilities/f/1227",
+      "verifiedOn": "2026-11-03",
+      "directions": "Enter from Sunrise Boulevard just south of the American River bridge. After the park kiosk, turn left for Lower Sunrise and follow signs to the raft launch. Parking fees apply. This is not the separate Upper Sunrise boat ramp.",
+      "note": "The county documents Lower Sunrise as a summer raft launch. The unchanged state DBW facility coordinate is beside the bridge approach, not a checked water-edge launch. Keep it as an approximate access area; do not snap it to the river. Satellite imagery reviewed on 2026-11-03."
+    },
+    "River Bend Park": {
+      "id": "acc-c630e135bcfe5ea4835b",
+      "aliases": [],
+      "status": "verified",
+      "lat": 38.59667,
+      "lon": -121.331,
+      "accessType": "Public gravel beach / raft take-out",
+      "operator": "Sacramento County Regional Parks",
+      "sourceName": "CDFW Lower American River Geographic Response Plan, April 2025, AME-160; Sacramento County Regional Parks",
+      "sourceUrl": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=231135",
+      "verifiedOn": "2026-11-03",
+      "directions": "Enter River Bend Park from Rod Beaudry Drive off Folsom Boulevard and follow park signs. Parking fees apply. Do not use the response plan’s nearby residential address as an entrance or assume vehicle access through a locked gate.",
+      "riverBank": "river-left",
+      "bankVerifiedOn": "2026-11-03",
+      "bankSourceName": "CDFW Lower American River GRP, AME-160 site photographs, printed page 72",
+      "bankSourceUrl": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=231135",
+      "bankNote": "The 2022 site photographs explicitly label the takeout beach RL while looking upstream and downstream; river left means facing downstream. Current imagery confirms the beach on the same bank.",
+      "note": "County park page confirms a public rafting take-out. CDFW April 2025 plan printed pages 71–73 provides this coordinate, sand/gravel access description and 2022 landing photographs. Satellite review on 2026-11-03 matches the coordinate to the photographed river-left beach and access trail. This is a source-reviewed landing, not a new field survey; the water edge varies with flow. Public road entrance is Rod Beaudry Drive. Response-only vehicle/gate access is not public ramp permission."
+    },
+    "Henningsen Lotus Park": {
+      "id": "acc-28f23600530a5df98633",
+      "aliases": [
+        "Henningsen-Lotus BTAF",
+        "Henningsen Lotus County Park"
+      ],
+      "status": "verified",
+      "lat": 38.803894,
+      "lon": -120.909256,
+      "accessType": "Public beach / boat launch",
+      "operator": "El Dorado County Parks",
+      "sourceName": "California State Parks DBW — Henningsen-Lotus BTAF; El Dorado County",
+      "sourceUrl": "https://www.parks.ca.gov/BoatingFacilities/f/1204",
+      "verifiedOn": "2026-11-03",
+      "note": "State facility coordinate matches the public river beach at the north end of the park boat-loading area in satellite imagery reviewed 2026-11-03. The county documents a boat launch at 950 Lotus Road. This is a checked access location, not a survey of the water edge; changing flow affects the landing. Set a shuttle and check park hours and fees."
+    },
+    "Greenwood Creek River Access": {
+      "id": "acc-d45017d884a45677aaad",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 38.826111,
+        "lon": -120.948161,
+        "feature": "BLM-published Greenwood Creek parking/access facility coordinate"
+      },
+      "accessType": "Public hand-carry river access",
+      "operator": "Bureau of Land Management — Mother Lode Field Office",
+      "sourceName": "BLM — Greenwood Creek River Access",
+      "sourceUrl": "https://www.blm.gov/visit/greenwood-creek-river-access",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/greenwood-creek-river-access",
+      "verifiedOn": "2026-11-03",
+      "directions": "Use the signed Greenwood Creek access on Highway 49, just south of Magnolia Ranch. Carry boats on the access trail; overflow parking at Magnolia is linked by a trail. Check the landing and carry before launching.",
+      "note": "BLM confirms this as the Coloma-to-Greenwood takeout and a lower-run launch. Its published coordinate marks the parking area, not the exact shoreline takeout. Retain the sourced area position and invite a reviewed landing suggestion. Day use only; commercial and organized activities have separate permit requirements."
     }
   }
 }

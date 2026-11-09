@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "chippewa-river",
+  "sectionId": "forest-street-phoenix",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-10-30",
+    "streamId": "Chippewa River",
+    "evidenceFile": "research/routes/WI/hr-sources/chippewa-river-e645f64d09178d7c.json",
+    "sha256": "e645f64d09178d7c12226151f3c71154a8f7844df60f04c5bcf1e6ed79bea627"
+  },
+  "putIn": {
+    "name": "Forest Street Greenway Canoe Launch",
+    "lat": 44.8225,
+    "lon": -91.5074
+  },
+  "takeOut": {
+    "name": "Phoenix Park Carry-in",
+    "lat": 44.8119,
+    "lon": -91.5035
+  },
+  "catalogMiles": 0.8,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -91.5088505287987,
+        44.82215388717649
+      ],
+      [
+        -91.50858499144448,
+        44.82159022062575
+      ],
+      [
+        -91.50715152391759,
+        44.81644148676195
+      ],
+      [
+        -91.50560512413027,
+        44.812817219225714
+      ],
+      [
+        -91.50410922650467,
+        44.81153879938399
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "76236312"
+    ],
+    "putInOffsetMeters": 120.97086554391475,
+    "takeOutOffsetMeters": 62.705027322167595,
+    "putInSourceStationMeters": 2557.256402368431,
+    "takeOutSourceStationMeters": 3812.1482055715483
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "General river-course overview, not a navigable line through obstacles. Published endpoint-mile distance remains separate; precise landing connections are not drawn.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 0.7801,
+      "endpointOffsetsMeters": [
+        120.7,
+        62.6
+      ],
+      "mileageDifferencePercent": 2.49,
+      "maxSegmentMeters": 583.6,
+      "vertices": 5
+    },
+    "issues": [
+      "endpoint-offset-over-100m"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-06",
+    "reviewer": "Float ETA source-network and satellite imagery review",
+    "note": "All three complete courses checked against imagery, including both overlapping Phoenix–Hobbs views. Sparse source vertices stay within the broad visible river corridor but generalize bends and bars. No downstream forks appear in the named-source network; this does not exclude real side channels or obstacles."
+  },
+  "overviewReview": {
+    "signature": "4ad4a586159ddc98f8088b1f61d49be71a7b505e7098e08bea6da11830dcde1b",
+    "routeReview": "The dotted line shows the general river course below Dells Dam. Exact shoreline connections and passages around pilings, rocks and bridge hazards are not mapped.",
+    "note": "Approximate river course; banks, bars and obstacles can differ with water level.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Landing precision is reviewed separately. The shore-to-course connection is not mapped."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Landing precision is reviewed separately. The shore-to-course connection is not mapped."
+      }
+    },
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "The original Forest Street access-area coordinate is about 121 m from the generalized course in this wide reach. No artificial shoreline connector is drawn."
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "kinnickinnic-river-river-falls",
+  "name": "Kinnickinnic River (River Falls)",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "lat": 44.8308333333333,
+  "lon": -92.7330555555556,
+  "gauge": "05342000",
+  "gaugeName": "Kinnickinnic River near River Falls, WI",
+  "gaugeRelationship": "representative",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "USGS 05342000 measures the lower Kinni at County F. The reading provides river conditions; it does not measure travel speed, the dam-side launch, or St. Croix backwater and wind effects near the beach.",
+    "sourceName": "USGS Water Data — station 05342000",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05342000/",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed calibration is assigned. The County F outfitter time is separate planning guidance; no live ETA or GPS time remaining is calculated."
+  },
+  "blurb": "The lower Kinni near River Falls: a popular gorge paddle below Powell Falls Dam to County F, with a longer option to the St. Croix beach. Expect moving water, rapids and hand-carried boats. This is the St. Croix tributary, separate from Milwaukee’s Kinnickinnic River.",
+  "sections": [
+    {
+      "id": "glen-park-county-f",
+      "putIn": "Glen Park Lower Kinni Access",
+      "takeOut": "County F Kinnickinnic Anglers Access",
+      "putInAccessId": "acc-c05e7cb9e51e51c3b3c0",
+      "takeOutAccessId": "acc-f8c42c0447165020be9e",
+      "miles": 7.5,
+      "difficulty": "Class I–II; intermediate paddling",
+      "notes": "A wooded gorge paddle with frequent riffles, rapids, sharp bends and fallen-tree hazards. Carry in below the dam and finish at County F. The local outfitter recommends intermediate to advanced paddlers; expect to maneuver or carry around obstacles. This is not a passive tubing itinerary.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 7.5,
+        "sourceName": "Miles Paddled — River Falls to County Road F, August 11, 2013",
+        "sourceUrl": "https://milespaddled.com/kinnickinnic-river/",
+        "checkedOn": "2026-11-06",
+        "streamId": "Kinnickinnic River — River Falls / St. Croix tributary",
+        "putIn": {
+          "name": "Glen Park Lower Kinni Access",
+          "sourceLocation": "Alternate Trip Report: River Falls to County Road F, August 11, 2013; 7.5 miles"
+        },
+        "takeOut": {
+          "name": "County F Kinnickinnic Anglers Access",
+          "sourceLocation": "Alternate Trip Report: River Falls to County Road F, August 11, 2013; 7.5 miles"
+        },
+        "note": "Approximate published trip distance. The source reports 7.5 miles; an independent USGS centerline measures about 7.4 miles before the dam-side approach is omitted. Another firsthand report has an 8.1-mile summary but calls the trip 7.5 miles in its narrative. Retain 7.5 miles for planning; do not substitute the shorter displayed overview length. Parking carries are excluded."
+      },
+      "notices": [
+        {
+          "title": "Start below Powell Falls Dam",
+          "text": "DNR still lists Powell Falls Dam as present. Carry to the lower-river launch and stay clear of the spillway. Restoration plans do not establish that the dam has been removed; check city updates and posted access signs before your trip.",
+          "sourceName": "Wisconsin DNR — dam inventory",
+          "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=DAM_KEY_SEQ_NO%3D80&outFields=DAM_KEY_SEQ_NO,DAM_OFFICIAL_NAME,PHYSICAL_STATUS&outSR=4326&f=json",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "State park parking admission",
+          "text": "A vehicle admission pass is required at the state park takeouts. Arrange your shuttle before launching; the County F anglers lot and the main park beach parking are different destinations.",
+          "sourceName": "Wisconsin DNR — vehicle admission",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/admission",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "guideTimes": [
+        {
+          "min": 3,
+          "max": 3,
+          "unit": "hours",
+          "conditions": "Local outfitter’s average for the Lower Canyon solo-kayak trip to County F. Its schedule allows an additional hour for leisure stops. This is planning guidance, not a live-flow estimate, and excludes your vehicle shuttle.",
+          "sourceName": "Kinni Creek Lodge and Outfitters — Lower Canyon State Park Bridge",
+          "sourceUrl": "https://kinnicreek.com/kinni-kayak-trips-rentals/",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "The dotted overview begins downstream of the immediate Powell Falls spillway approach. Exact launch and landing connections are not mapped; follow the access directions and current signs."
+    },
+    {
+      "id": "glen-park-state-park-beach",
+      "putIn": "Glen Park Lower Kinni Access",
+      "takeOut": "Kinnickinnic State Park Beach Access",
+      "putInAccessId": "acc-c05e7cb9e51e51c3b3c0",
+      "takeOutAccessId": "acc-da19c1e4af175dd594a8",
+      "miles": 10,
+      "difficulty": "Class I–II; intermediate paddling",
+      "notes": "Continue past County F toward the St. Croix and finish at the state park beach. Current slows on the lower reach, and the final approach may involve wind, wakes and paddling along the St. Croix shore. Plan for the uphill boat carry; the County F three-hour guide does not cover this longer trip.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 10,
+        "sourceName": "Miles Paddled — River Falls to Kinnickinnic State Park, April 29, 2018",
+        "sourceUrl": "https://milespaddled.com/kinnickinnic-river/",
+        "checkedOn": "2026-11-06",
+        "streamId": "Kinnickinnic River — River Falls / St. Croix tributary",
+        "putIn": {
+          "name": "Glen Park Lower Kinni Access",
+          "sourceLocation": "2018 trip summary: Glen Park to St. Croix River beach, 10 miles"
+        },
+        "takeOut": {
+          "name": "Kinnickinnic State Park Beach Access",
+          "sourceLocation": "2018 trip summary: Glen Park to St. Croix River beach, 10 miles"
+        },
+        "note": "Approximate published trip distance, independent of access-area pin precision. It excludes carrying boats between the river and parking."
+      },
+      "notices": [
+        {
+          "title": "Start below Powell Falls Dam",
+          "text": "DNR still lists Powell Falls Dam as present. Carry to the lower-river launch and stay clear of the spillway. Restoration plans do not establish that the dam has been removed; check city updates and posted access signs before your trip.",
+          "sourceName": "Wisconsin DNR — dam inventory",
+          "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=DAM_KEY_SEQ_NO%3D80&outFields=DAM_KEY_SEQ_NO,DAM_OFFICIAL_NAME,PHYSICAL_STATUS&outSR=4326&f=json",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "State park parking admission",
+          "text": "A vehicle admission pass is required at the state park takeouts. Arrange your shuttle before launching; the County F anglers lot and the main park beach parking are different destinations.",
+          "sourceName": "Wisconsin DNR — vehicle admission",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/admission",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Beach exit includes a steep uphill carry",
+          "text": "The takeout is reached from the water; the car park is above the bluff. DNR marks the paved Black Trail to the beach as difficult. Confirm the trail and your ability to carry the boat before choosing this longer trip.",
+          "sourceName": "Wisconsin DNR — Kinnickinnic State Park property map",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic/maps",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "The river line below County F needs refinement where older source geometry cuts visible bends. Access areas and the published 10-mile trip remain available; the St. Croix beach approach is not mapped as a dotted route."
+    }
+  ]
+}

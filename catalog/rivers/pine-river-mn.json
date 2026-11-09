@@ -1,0 +1,240 @@
+{
+  "id": "pine-river-mn",
+  "name": "Pine River (Crosslake–Harvey Drake)",
+  "state": "MN",
+  "timezone": "America/Chicago",
+  "lat": 46.63576197421862,
+  "lon": -94.09207538310142,
+  "gauge": null,
+  "gaugeName": null,
+  "gaugeRelationship": "none",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "USACE publishes Pine River Dam outflow upstream of these trips. Check its current reading alongside local river conditions. Published kayak times below are planning guidance, not live estimates.",
+    "sourceName": "US Army Corps of Engineers — Pine River Dam outflow",
+    "sourceUrl": "https://www.mvp-wc.usace.army.mil/data/MissHW_PineRiver.Data.shtml",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No supported live flow feed or calibrated speed model is assigned. Published section-specific kayak times and access maps remain available."
+  },
+  "blurb": "Explore the Pine River below Cross Lake Dam: a short trip to Staircase, the DNR-recommended full-day paddle below Rock Dam, or longer trips through Class I rapids to Harvey Drake. Compare landing directions and published trip guidance before arranging your shuttle.",
+  "sections": [
+    {
+      "id": "crosslake-staircase",
+      "putIn": "Pine River Cross Lake Below-dam Carry-in",
+      "takeOut": "Pine River Staircase Carry-in",
+      "putInAccessId": "acc-13b52b3a84f152e49c1f",
+      "takeOutAccessId": "acc-93e381c3ae185c068ea3",
+      "miles": 1.3,
+      "difficulty": "Moving water; no named rapids within these endpoints",
+      "notes": "A short paddle below Cross Lake Dam to the Staircase carry-in. Arrange the road shuttle and locate the take-out before launching. Finish before Gould Rapids; this is moving water, with changing levels and possible snags.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Pine River route table and recommended trip",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Pine River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Pine River Cross Lake Below-dam Carry-in",
+          "riverMile": 19.8,
+          "sourceLocation": "Page 1 route table; Rock Dam carry-in also identified on page 2 recommended day trip"
+        },
+        "takeOut": {
+          "name": "Pine River Staircase Carry-in",
+          "riverMile": 18.5,
+          "sourceLocation": "Page 1 route table"
+        },
+        "note": "Planning mileage follows the published downstream river-mile difference. Rock Dam–Harvey Drake is independently listed as 14.4 miles by DNR. Exact landing connections and paddling speed are not established by these approximate miles."
+      },
+      "notices": [
+        {
+          "title": "Start below Cross Lake Dam",
+          "text": "Use the designated below-dam river carry-in, not an upstream lake ramp. These trips do not include the dam or its portage.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Finish before Gould Rapids",
+          "text": "Staircase is listed at mile 18.5; Gould Rapids begin at 18.4. Find the take-out during your shuttle so you can recognize it from the river.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "rock-dam-harvey-drake",
+      "putIn": "Pine River Rock Dam Below-rapids Carry-in",
+      "takeOut": "Pine River Harvey Drake Landing",
+      "putInAccessId": "acc-cad3086fbb425f19baee",
+      "takeOutAccessId": "acc-f89867df60cf5e179a4f",
+      "miles": 14.4,
+      "difficulty": "Moving water; no named rapids within these endpoints",
+      "notes": "DNR recommends this full-day paddle through Crow Wing State Forest. Begin below all Rock Dam rapids and finish at Harvey Drake before Lower Pine Rapids. DNR lists watercraft campsites along the reach. Arrange your shuttle and allow extra time for stops, wind, current and carrying boats.",
+      "routeReview": "Approximate agency river-course overview beginning below the constructed rapids. The first part of the facility-to-river connection is intentionally omitted; follow the designated below-rapids carry-in. Published planning mileage remains 14.4 miles.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Pine River route table and recommended trip",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Pine River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Pine River Rock Dam Below-rapids Carry-in",
+          "riverMile": 15.3,
+          "sourceLocation": "Page 1 route table; Rock Dam carry-in also identified on page 2 recommended day trip"
+        },
+        "takeOut": {
+          "name": "Pine River Harvey Drake Landing",
+          "riverMile": 0.9,
+          "sourceLocation": "Page 1 route table"
+        },
+        "note": "Planning mileage follows the published downstream river-mile difference. Rock Dam–Harvey Drake is independently listed as 14.4 miles by DNR. Exact landing connections and paddling speed are not established by these approximate miles."
+      },
+      "notices": [
+        {
+          "title": "Launch below the constructed rapids",
+          "text": "DNR recommends beginning below Rock Dam. The Area pin marks the general facility beside the rapids, not a confirmed launch. Locate the designated downstream carry-in before launching; the dotted course omits this uncertain connection.",
+          "sourceName": "Minnesota DNR — recommended Pine River day trip",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/pine-river/segments-maps.html",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Exit before Lower Pine Rapids",
+          "text": "Harvey Drake is on river right at mile 0.9, just upstream of the County Road 11 bridge. Lower Pine Rapids are downstream at miles 0.8–0.5. These trips end at the landing.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "guideTimes": [
+        {
+          "min": 6,
+          "max": null,
+          "unit": "hours",
+          "conditions": "Local outfitter kayak guidance: 6+ hours, with no published upper bound. Stops and flow assumptions are not specified. Allow extra time; this published guidance is independent of current flow, craft selection and fishing settings.",
+          "sourceName": "Crow Wing Kayaks — Pine River route 12",
+          "sourceUrl": "https://www.crowwingkayaks.com/pine-river-kayak-routes",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "staircase-harvey-drake",
+      "putIn": "Pine River Staircase Carry-in",
+      "takeOut": "Pine River Harvey Drake Landing",
+      "putInAccessId": "acc-93e381c3ae185c068ea3",
+      "takeOutAccessId": "acc-f89867df60cf5e179a4f",
+      "miles": 17.6,
+      "difficulty": "Class I rapids",
+      "notes": "A long moving-water trip through Gould Rapids, Anton Rapids and the constructed Rock Dam rapids. These are Class I in the DNR guide, with no established portages; assess conditions and your skills. Finish at Harvey Drake before Lower Pine Rapids.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped. The line does not select a passage through Gould, Anton or Rock Dam rapids.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Pine River route table and recommended trip",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Pine River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Pine River Staircase Carry-in",
+          "riverMile": 18.5,
+          "sourceLocation": "Page 1 route table; Rock Dam carry-in also identified on page 2 recommended day trip"
+        },
+        "takeOut": {
+          "name": "Pine River Harvey Drake Landing",
+          "riverMile": 0.9,
+          "sourceLocation": "Page 1 route table"
+        },
+        "note": "Planning mileage follows the published downstream river-mile difference. Rock Dam–Harvey Drake is independently listed as 14.4 miles by DNR. Exact landing connections and paddling speed are not established by these approximate miles."
+      },
+      "notices": [
+        {
+          "title": "Three rapid reaches on this trip",
+          "text": "DNR lists Gould Rapids at miles 18.4–17.6, Anton Rapids at 17.0–16.8 and constructed Rock Rapids at 15.3, all Class I. It directs paddlers to scout Rock Rapids and lists no established portage for these reaches. A dotted line is not a recommended passage.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Exit before Lower Pine Rapids",
+          "text": "Harvey Drake is on river right at mile 0.9, just upstream of the County Road 11 bridge. Lower Pine Rapids are downstream at miles 0.8–0.5. These trips end at the landing.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "crosslake-harvey-drake",
+      "putIn": "Pine River Cross Lake Below-dam Carry-in",
+      "takeOut": "Pine River Harvey Drake Landing",
+      "putInAccessId": "acc-13b52b3a84f152e49c1f",
+      "takeOutAccessId": "acc-f89867df60cf5e179a4f",
+      "miles": 18.9,
+      "difficulty": "Class I rapids",
+      "notes": "A long day from the carry-in below Cross Lake Dam to Harvey Drake. This trip passes Gould Rapids, Anton Rapids and the constructed Rock Dam rapids. Arrange the shuttle, check conditions and allow ample daylight. Exit before the County Road 11 bridge and downstream Lower Pine Rapids.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped. The line does not select a passage through Gould, Anton or Rock Dam rapids.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Pine River route table and recommended trip",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Pine River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Pine River Cross Lake Below-dam Carry-in",
+          "riverMile": 19.8,
+          "sourceLocation": "Page 1 route table; Rock Dam carry-in also identified on page 2 recommended day trip"
+        },
+        "takeOut": {
+          "name": "Pine River Harvey Drake Landing",
+          "riverMile": 0.9,
+          "sourceLocation": "Page 1 route table"
+        },
+        "note": "Planning mileage follows the published downstream river-mile difference. Rock Dam–Harvey Drake is independently listed as 14.4 miles by DNR. Exact landing connections and paddling speed are not established by these approximate miles."
+      },
+      "notices": [
+        {
+          "title": "Start below Cross Lake Dam",
+          "text": "Use the designated below-dam river carry-in, not an upstream lake ramp. These trips do not include the dam or its portage.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Three rapid reaches on this trip",
+          "text": "DNR lists Gould Rapids at miles 18.4–17.6, Anton Rapids at 17.0–16.8 and constructed Rock Rapids at 15.3, all Class I. It directs paddlers to scout Rock Rapids and lists no established portage for these reaches. A dotted line is not a recommended passage.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Exit before Lower Pine Rapids",
+          "text": "Harvey Drake is on river right at mile 0.9, just upstream of the County Road 11 bridge. Lower Pine Rapids are downstream at miles 0.8–0.5. These trips end at the landing.",
+          "sourceName": "Minnesota DNR — Pine River route table",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/pine.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "guideTimes": [
+        {
+          "min": 8,
+          "max": 8,
+          "unit": "hours",
+          "conditions": "Local outfitter kayak guidance: approximately 8 hours, not a guaranteed arrival time. Stops and flow assumptions are not specified. Allow extra time; this published guidance is independent of current flow, craft selection and fishing settings.",
+          "sourceName": "Crow Wing Kayaks — Pine River route 10",
+          "sourceUrl": "https://www.crowwingkayaks.com/pine-river-kayak-routes",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    }
+  ]
+}

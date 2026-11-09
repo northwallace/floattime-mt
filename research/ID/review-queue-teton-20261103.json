@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "state": "ID",
+  "checkedOn": "2026-11-03",
+  "items": [
+    {
+      "subject": "Teton exact shoreline landings",
+      "accessIds": [
+        "acc-79db0dbd06795027a7c0",
+        "acc-f82bfffcdd9a5f11a766",
+        "acc-ef7fbde632905fb3acba",
+        "acc-be5fab107e515ac4a4fb",
+        "acc-19d55e1613d0514f8455",
+        "acc-a5d22b8b9d4b554291f4",
+        "acc-ecdc71e0b1c15fee963a",
+        "acc-6d7e2050ed6b5df2a53a"
+      ],
+      "blocker": "facility-area-not-exact-landing",
+      "nextAction": "Maps remain useful with sourced area markers. Review specific agency ramp coordinates or community landing pins before refining precision. Do not replace them with the nearest point on the river automatically."
+    },
+    {
+      "subject": "Teton live travel-time calibration",
+      "riverId": "teton",
+      "blocker": "uncalibrated-legacy-speed",
+      "nextAction": "Keep the live gauge and published kayak/canoe times separate. Collect sourced trip observations across flows and craft before restoring a flow-to-speed model."
+    },
+    {
+      "subject": "teton/fox-west-south-bates river course",
+      "blocker": "river-geometry-review",
+      "nextAction": "Candidate needs a complete imagery and access-connection review; no display approval from automatic checks.",
+      "sourceFile": "research/teton-idaho-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "teton/fox-east-south-bates river course",
+      "blocker": "river-geometry-review",
+      "nextAction": "Candidate needs a complete imagery and access-connection review; no display approval from automatic checks.",
+      "sourceFile": "research/teton-idaho-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "teton/bates-rainey river course",
+      "blocker": "river-geometry-review",
+      "nextAction": "Part 3 shows the source cutting across dry, vegetated bends and a side-channel junction. Part 1 also shows bank migration. Keep private until improved current geometry is reviewed; the 4.3-mile guide distance and access map remain available.",
+      "sourceFile": "research/teton-idaho-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "teton/rainey-horseshoe river course",
+      "blocker": "river-geometry-review",
+      "nextAction": "Candidate needs a complete imagery and access-connection review; no display approval from automatic checks.",
+      "sourceFile": "research/teton-idaho-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "teton/horseshoe-cache river course",
+      "blocker": "river-geometry-review",
+      "nextAction": "The NHD course reaches Packsaddle Road about 258 m west of the actual river bridge, following a vegetated former channel. The current public access sits by the active channel. Keep these candidates private pending updated main-channel geometry.",
+      "sourceFile": "research/teton-idaho-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "teton/rainey-cache river course",
+      "blocker": "river-geometry-review",
+      "nextAction": "The NHD course reaches Packsaddle Road about 258 m west of the actual river bridge, following a vegetated former channel. The current public access sits by the active channel. Keep these candidates private pending updated main-channel geometry.",
+      "sourceFile": "research/teton-idaho-20261103/visual-route-review.json"
+    },
+    {
+      "subject": "teton/cache-harrops river course",
+      "blocker": "river-geometry-review",
+      "nextAction": "The NHD course reaches Packsaddle Road about 258 m west of the actual river bridge, following a vegetated former channel. The current public access sits by the active channel. Keep these candidates private pending updated main-channel geometry.",
+      "sourceFile": "research/teton-idaho-20261103/visual-route-review.json"
+    }
+  ]
+}

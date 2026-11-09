@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "id": "WI-nps-access",
+  "state": "WI",
+  "agency": "National Park Service",
+  "discoveryUrl": "https://www.nps.gov/subjects/gisandmapping/tools-and-data.htm",
+  "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0",
+  "where": "UNITCODE = 'SACN'",
+  "fields": ["POINAME", "MAPLABEL", "POITYPE", "POISTATUS", "PUBLICDISPLAY", "DATAACCESS", "ACCESSNOTES", "UNITCODE", "MAPMETHOD", "MAPSOURCE", "XYACCURACY", "GEOMETRYID", "FEATUREID", "ISEXTANT", "OPENTOPUBLIC", "SEASONAL", "SEASDESC", "NOTES"],
+  "stableFeatureField": "GEOMETRYID",
+  "note": "St. Croix National Scenic Riverway agency evidence. A general POI or campsite does not establish a launch; pair with the agency's named landing guide before any map approval."
+}

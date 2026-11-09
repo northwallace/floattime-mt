@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "state": "WA",
+  "sections": [
+    {
+      "riverId": "columbia-hanford",
+      "sectionId": "vernita-white-bluffs",
+      "issues": [
+        "source-needs-review"
+      ],
+      "detail": "Access is more than 100 m from the directed river network"
+    },
+    {
+      "riverId": "cowlitz",
+      "sectionId": "salmon-hatchery-trout-hatchery",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Blue Creek (Cowlitz Trout Hatchery): Batch 1 (2026-10-25). Legal access is confirmed: Tacoma Power's Cowlitz Trout Hatchery page says Blue Creek Boat Launch (273 Blue Creek Lane, Toledo) gives free public river access, with 3-day camping in the lot. It gives an address only. No agency coordinate exists: WDFW's Facilities GIS has no ramp here, and its Blue Creek parking feature comment says it 'does not account for Tacoma Power's boat launch and assoc facilities'. The WDFW Blue Creek page is the ADA fishing-platform site. Imagery shows a ramp to the shore south of the lot near 46.4838, -122.7311, and boatlaunchmap/OSM give 46.48381, -122.73049, but neither is an agency source, and OSM maps a second unnamed ramp about 400 m upstream. Bank is river-right on NHDPlus HR (flow ~250), not usable until the point is verified. Imagery pass (2026-10-25, not promoted): Disputed site. Imagery (research/raw/batch4/bc19_g.png, z19): a paved lane from the trailer lot reaches the water (~46.48381,-122.73049, matching OSM), but OSM also maps a second ramp ~400 m upstream and no agency source says which one is Tacoma Power's. Not placed."
+    },
+    {
+      "riverId": "grande-ronde-troy",
+      "sectionId": "troy-boggans",
+      "issues": [],
+      "metrics": {
+        "routeMiles": 19.2542,
+        "endpointOffsetsMeters": [
+          53.9,
+          43.6
+        ],
+        "mileageDifferencePercent": 1.26,
+        "maxSegmentMeters": 306.6,
+        "vertices": 562
+      },
+      "detail": "Reviewed planning centerline enabled locally. GPS ETA and calculator-distance adoption remain disabled."
+    },
+    {
+      "riverId": "grande-ronde-lower",
+      "sectionId": "troy-heller-bar",
+      "issues": [
+        "source-needs-review"
+      ],
+      "detail": "Access is more than 100 m from the directed river network"
+    },
+    {
+      "riverId": "green-flaming-geyser",
+      "sectionId": "flaming-geyser-whitney",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Flaming Geyser State Park: Final run (2026-10-25): State Parks' Boat Launches layer has no Flaming Geyser feature; King County's POI is the park centroid (585 m). No agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/flaming_g.png): the v1 point is in the parking loop; a dirt track reaches the river but there are several possible spots; no State Parks launch statement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "green-gorge",
+      "sectionId": "headworks-kanaskat",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Headworks (Green River): Final run (2026-10-25): No King County, WDFW or State Parks launch feature near the Headworks put-in (Tacoma Water land). Needs Tacoma Water/agency answer on legal access and position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Kanaskat-Palmer State Park: Final run (2026-10-25): State Parks' Boat Launches layer (117 features) has no Kanaskat-Palmer feature; King County layers list only State Parks camping (1.1 km). Legal access per State Parks, but no agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/kanaskat_g.png): canyon and dense tree cover; launch not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "green-gorge",
+      "sectionId": "kanaskat-flaming-geyser",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Kanaskat-Palmer State Park: Final run (2026-10-25): State Parks' Boat Launches layer (117 features) has no Kanaskat-Palmer feature; King County layers list only State Parks camping (1.1 km). Legal access per State Parks, but no agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/kanaskat_g.png): canyon and dense tree cover; launch not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Flaming Geyser State Park: Final run (2026-10-25): State Parks' Boat Launches layer has no Flaming Geyser feature; King County's POI is the park centroid (585 m). No agency launch coordinate. Needs State Parks answer or in-person GPS. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/flaming_g.png): the v1 point is in the parking loop; a dirt track reaches the river but there are several possible spots; no State Parks launch statement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "hoh",
+      "sectionId": "hoh-campground-oxbow",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Hoh Rainforest Campground: Final run (2026-10-25): NPS Public POIs near Hoh Rain Forest have campground, visitor-center and picnic features only; no boat-launch POI. No agency coordinate for a river launch. Needs NPS answer or in-person position. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement."
+    },
+    {
+      "riverId": "klickitat",
+      "sectionId": "leidl-icehouse",
+      "issues": [
+        "route-gap-or-duplicate-vertex"
+      ],
+      "metrics": {
+        "routeMiles": 15.9919,
+        "endpointOffsetsMeters": [
+          27.1,
+          20.4
+        ],
+        "mileageDifferencePercent": 1.21,
+        "maxSegmentMeters": 261.5,
+        "vertices": 415
+      }
+    },
+    {
+      "riverId": "klickitat",
+      "sectionId": "icehouse-turkey-hole",
+      "issues": [],
+      "metrics": {
+        "routeMiles": 10.9853,
+        "endpointOffsetsMeters": [
+          20.4,
+          24.2
+        ],
+        "mileageDifferencePercent": 0.78,
+        "maxSegmentMeters": 217.4,
+        "vertices": 291
+      },
+      "detail": "Reviewed planning centerline enabled locally. GPS ETA and calculator-distance adoption remain disabled."
+    },
+    {
+      "riverId": "methow-lower",
+      "sectionId": "carlton-averill",
+      "issues": [],
+      "metrics": {
+        "routeMiles": 10.6651,
+        "endpointOffsetsMeters": [
+          37.8,
+          49.2
+        ],
+        "mileageDifferencePercent": 0.61,
+        "maxSegmentMeters": 313.8,
+        "vertices": 322
+      },
+      "detail": "Reviewed planning centerline enabled locally. GPS ETA and calculator-distance adoption remain disabled."
+    },
+    {
+      "riverId": "methow-lower",
+      "sectionId": "averill-pateros",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Pateros Take-out: Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none; city/port GIS not found). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pateros_g.png): a gravel lot reaches the Methow, but no agency source confirms public access. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "methow-upper",
+      "sectionId": "red-barn-big-eddy",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Red Barn Access (Winthrop): Final run (2026-10-25): Red Barn is the Town of Winthrop's Mack Lloyd Park (WWRP grant record), but no Town GIS/launch coordinate or access page was found; USFWS features nearby are Winthrop hatchery only. Needs Town of Winthrop answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/rb19_g.png, z19) shows a clear path from the lot behind the Barn to the gravel shore (water end ~48.47608,-120.18798; river-left per NHDPlus 144385429). But access status is not clear enough: the Town's 2024 Park Plan (https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf) says the bank 'has been used informally' for water access, is severely eroding, and the Town 'has funding to install a new water access pathway' for hand launch (RCO-funded, construction anticipated 2024); completion was not confirmed. Construction/legal-status uncertainty, so not placed. Big Eddy (Methow): Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "methow-upper",
+      "sectionId": "big-eddy-twisp",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Big Eddy (Methow): Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Twisp Access: Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/twisp_g.png): no launch visible at the park/pool lot; no agency access source. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "snoqualmie-mf",
+      "sectionId": "bridge-view-concrete-bridge",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Bridge View (Middle Fork Snoqualmie): Final run (2026-10-25): No agency launch feature: King County facility points, DNR recreation sites and USFS INFRA found none near Bridge View. Manager unknown (likely USFS road corridor). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Concrete Bridge (Middle Fork Snoqualmie): King County's Middle Fork Snoqualmie Natural Area page confirms a public hand-boat access 'just below the concrete bridge' on SE Lake Dorothy Rd (shoulder parking) but gives no coordinate; the AW candidate is ~100 m from the river centreline. Final run: DNR Recreation Sites has only Granite Creek trailhead (318 m) and Champion Beach (691 m); no feature at the concrete bridge access. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/concrete_g.png): dense tree cover; no launch visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "snoqualmie-mf",
+      "sectionId": "concrete-bridge-tanner",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Concrete Bridge (Middle Fork Snoqualmie): King County's Middle Fork Snoqualmie Natural Area page confirms a public hand-boat access 'just below the concrete bridge' on SE Lake Dorothy Rd (shoulder parking) but gives no coordinate; the AW candidate is ~100 m from the river centreline. Final run: DNR Recreation Sites has only Granite Creek trailhead (318 m) and Champion Beach (691 m); no feature at the concrete bridge access. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/concrete_g.png): dense tree cover; no launch visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Tanner Road Access: Candidate is American Whitewater only (designated parking on Tanner Road per AW); no city/county agency page or coordinate found. Final run: King County features nearby are Snoqualmie Valley Trail only (~790 m); DNR has Mount Si trailheads (1.4 km). No agency launch. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "queets",
+      "sectionId": "queets-trailhead-streator",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Queets Trailhead: Final run (2026-10-25): The nearest NPS launch POI is 'Queets Campground' Boat Launch (OBJECTID 20692; 47.628058, -124.017520), 427 m from v1's Queets Trailhead point, so it is a different site. Promote only if North/the coding agent agrees to relabel the put-in as Queets Campground (label change not made here). Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Queets relabel not approved."
+    },
+    {
+      "riverId": "queets",
+      "sectionId": "streator-hartzell",
+      "issues": [
+        "approximate-access-points"
+      ],
+      "detail": "A route needs reviewed landings; keep area markers only."
+    },
+    {
+      "riverId": "sauk",
+      "sectionId": "sauk-prairie-lower-sauk",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Sauk Prairie (Darrington): Final run (2026-10-25): No agency launch feature found in USFS INFRA, WDFW, Snohomish County Parks or DNR layers. Manager unknown. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Lower Sauk Boat Launch: USFS Lower Sauk Boat Launch page confirms public access (no fee, day use) and lists lat/lon 48.3448,-121.5499, but on Esri imagery (2026-10-25) that point is the site entrance road ~100 m from the river. Launch position not confirmed. Final run: USFS INFRA has the same point; no ramp feature in WDFW layers. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/ls19_g.png, z19): the lot ends ~25 m from the gravel bar under canopy; no ramp visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "sauk",
+      "sectionId": "lower-sauk-government-bridge",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Lower Sauk Boat Launch: USFS Lower Sauk Boat Launch page confirms public access (no fee, day use) and lists lat/lon 48.3448,-121.5499, but on Esri imagery (2026-10-25) that point is the site entrance road ~100 m from the river. Launch position not confirmed. Final run: USFS INFRA has the same point; no ramp feature in WDFW layers. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/ls19_g.png, z19): the lot ends ~25 m from the gravel bar under canopy; no ramp visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Government Bridge (Sauk): Final run (2026-10-25): No agency source. The nearest agency site is USFS 'White Creek River Access', 711 m away (a different site). Government Bridge appears informal; manager unknown. Needs agency answer or relabel decision. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "skagit-eagle",
+      "sectionId": "copper-marblemount",
+      "issues": [
+        "approximate-access-points"
+      ],
+      "detail": "A route needs reviewed landings; keep area markers only."
+    },
+    {
+      "riverId": "skagit-eagle",
+      "sectionId": "marblemount-howard-miller",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Howard Miller Steelhead Park: Final run (2026-10-25): Skagit County park; no Skagit County GIS layer for park facilities was found publicly. WDFW's nearest site (Barnaby Slough) is 1 km away. Needs Skagit County answer. Imagery pass (2026-10-25, not promoted): Access OK (Skagit County: park open for day use year-round; county 2025 fee schedule lists an annual boat launch permit). Imagery (research/raw/batch4/hm19_g.png, z19) around the AW ramp points (48.48456,-121.59497): the lot edge drops into tree canopy; the concrete ramp and its water end are not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "skagit-upper",
+      "sectionId": "goodell-copper",
+      "issues": [
+        "mileage-difference-over-5-percent"
+      ],
+      "metrics": {
+        "routeMiles": 8.4328,
+        "endpointOffsetsMeters": [
+          63.6,
+          59.1
+        ],
+        "mileageDifferencePercent": 5.25,
+        "maxSegmentMeters": 274.1,
+        "vertices": 227
+      }
+    },
+    {
+      "riverId": "skykomish",
+      "sectionId": "big-eddy-sultan",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Sultan Sportsman Park: Final run (2026-10-25): No agency launch feature: King County/Snohomish County layers found nothing; WDFW's nearest is Jonker (560 m, different site). City of Sultan GIS not found. Needs City of Sultan answer. Imagery pass (2026-10-25, not promoted): Access OK in principle (Snohomish County shoreline access inventory lists 'Sportsman's Park, WDFW, Boat launch'). Imagery (research/raw/batch4/su19_g.png, su19b_g.png, z19) around AW 47.86078,-121.82127: the confluence point is wooded, the lot north of US 2 looks like a gravel/staging yard, and no ramp to the water is visible. Not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "skykomish",
+      "sectionId": "sultan-lewis-street",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Sultan Sportsman Park: Final run (2026-10-25): No agency launch feature: King County/Snohomish County layers found nothing; WDFW's nearest is Jonker (560 m, different site). City of Sultan GIS not found. Needs City of Sultan answer. Imagery pass (2026-10-25, not promoted): Access OK in principle (Snohomish County shoreline access inventory lists 'Sportsman's Park, WDFW, Boat launch'). Imagery (research/raw/batch4/su19_g.png, su19b_g.png, z19) around AW 47.86078,-121.82127: the confluence point is wooded, the lot north of US 2 looks like a gravel/staging yard, and no ramp to the water is visible. Not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "snoqualmie-fall-city",
+      "sectionId": "plum-landing-fall-city",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Fall City Access: Batch 2 (2026-10-25) finding, not promoted: the nearest WDFW access is 'Raging River' (WDFW page https://wdfw.wa.gov/places-to-go/water-access-sites/raging-river-627; 1 concrete ramp, WDFW-managed, no closure). Its WDFW ramp feature (layer 5, 211; 47.567983, -121.882314) is at the south-bank water's edge on imagery (river-left on NHDPlus HR 163859671), but it is a different site from v1's Fall City Access below the SR 202 bridge (47.5696, -121.8882), about 500 m away. Needs a decision on whether to relocate the take-out to Raging River before promotion. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Label kept unchanged as instructed."
+    },
+    {
+      "riverId": "spokane",
+      "sectionId": "meenach-plese-flats",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "T.J. Meenach Bridge: Candidate is a generic American Whitewater 'Put In' point only; no managing-agency source or coordinate for a T.J. Meenach Bridge launch found. Final run: no City of Spokane or Spokane County launch feature found. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Plese Flats: Washington State Parks lists Plese Flats (Riverside State Park) as a non-motorized launch but publishes no coordinate; candidate is an OpenStreetMap slipway. Plese Flats is not on State Parks' 2026-08-28 list of areas still closed after the August 2026 wildfires. Final run: State Parks' Boat Launches layer (117 features) has no Plese Flats/Riverside feature; Spokane County Parks MapServer returned non-JSON. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/pl19_g.png): shore in shadow, no distinct ramp; some residual closure uncertainty. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "wenatchee-upper",
+      "sectionId": "lake-wenatchee-plain",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Plain Access: Final run (2026-10-25): No agency coordinate or manager found (WDFW, State Parks, USFS, DNR: none within 2 km). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "wenatchee-upper",
+      "sectionId": "plain-hwy2",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Plain Access: Final run (2026-10-25): No agency coordinate or manager found (WDFW, State Parks, USFS, DNR: none within 2 km). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Highway 2 Bridge (Tumwater): Final run (2026-10-25): No agency coordinate or manager found for the Hwy 2 (Tumwater) bridge take-out. Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "wenatchee-leavenworth",
+      "sectionId": "leavenworth-peshastin",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Waterfront Park (Leavenworth): Final run (2026-10-25): City of Leavenworth's ArcGIS layers are District_Park and Parking_Zones only (no launch feature); no agency launch coordinate. Needs City of Leavenworth answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/waterfront_g.png): several beaches, no single launch; no City access page found."
+    },
+    {
+      "riverId": "wenatchee-leavenworth",
+      "sectionId": "dryden-cashmere",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Cashmere Riverside Park: Final run (2026-10-25): City of Cashmere park; no city/county GIS launch feature found on ArcGIS Online and city pages could not be read. Spring-2026 flood-rock blockage of the ramp not confirmed cleared. Needs City of Cashmere answer. Imagery pass (2026-10-25, not promoted): Closure uncertainty (flood rock reported); not placed. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "white-salmon",
+      "sectionId": "bz-husum",
+      "issues": [
+        "access-map-withheld"
+      ],
+      "detail": "Husum (above the falls): USFS Husum Boating Site page confirms public access above Husum Falls (no fee) and lists lat/lon 45.799923,-121.486067; on Esri imagery (2026-10-25) that is the SR 141 roadside pull-out ~25-30 m from the water, not a confirmed water's-edge take-out. Final run: USFS INFRA has the same point; no separate take-out coordinate. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/husum_g.png): the USFS point is an SR 141 roadside pullout; the bank is under trees and the water end is not visible. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline."
+    },
+    {
+      "riverId": "yakima-canyon",
+      "sectionId": "big-horn-umtanum",
+      "issues": [
+        "source-unavailable"
+      ],
+      "detail": "No source flowlines"
+    },
+    {
+      "riverId": "yakima-canyon",
+      "sectionId": "umtanum-lmuma",
+      "issues": [
+        "source-unavailable"
+      ],
+      "detail": "No source flowlines"
+    },
+    {
+      "riverId": "yakima-canyon",
+      "sectionId": "lmuma-roza",
+      "issues": [
+        "source-unavailable"
+      ],
+      "detail": "No source flowlines"
+    }
+  ]
+}

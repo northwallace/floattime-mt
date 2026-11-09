@@ -1,0 +1,72 @@
+{
+  "id": "kettle-river-mn",
+  "name": "Kettle River (Minnesota)",
+  "state": "MN",
+  "timezone": "America/Chicago",
+  "lat": 46.36121987982411,
+  "lon": -92.84372373687009,
+  "gauge": "05336700",
+  "gaugeName": "Kettle River below Sandstone, MN",
+  "gaugeRelationship": "representative",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "USGS 05336700 is on the same river below Sandstone, downstream of this trip. It provides regional river-flow context; tributaries and distance separate it from the upper reaches. No local rapid threshold or travel-speed calibration is assigned.",
+    "sourceName": "USGS Water Data — station 05336700",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05336700/",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed model or numeric trip-time range is assigned. DNR describes a full-day paddle; do not calculate hours from its general paddling-speed advice."
+  },
+  "blurb": "A DNR-recommended full-day paddle on Minnesota’s Kettle River, from Musclewood to Highway 23. Forested banks and Class I–II rapids make this an active paddling trip. It ends upstream of the harder Banning whitewater.",
+  "sections": [
+    {
+      "id": "musclewood-highway-23",
+      "putIn": "Musclewood Carry-in Access",
+      "takeOut": "Kettle River Highway 23 Access (#1)",
+      "putInAccessId": "acc-00fcd63818af5da69c4b",
+      "takeOutAccessId": "acc-4ff91026940952bb9972",
+      "miles": 16.5,
+      "difficulty": "Class I–II; moving-water paddling",
+      "notes": "DNR recommends this full-day trip through wooded river country. Expect rapids, changing water levels and active paddling. Arrange a shuttle and locate the Highway 23 exit beforehand. This trip finishes above the more difficult Banning rapids.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — Kettle River map 1, recommended day trip",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/kettle1.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Kettle River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Musclewood Carry-in Access",
+          "riverMile": 46.3,
+          "sourceLocation": "Map 1 route description: Musclewood / County Road 52"
+        },
+        "takeOut": {
+          "name": "Kettle River Highway 23 Access (#1)",
+          "riverMile": 29.8,
+          "sourceLocation": "Map 1 route description: #1 Trailer Access / Highway 23"
+        },
+        "note": "Published approximate river miles: 46.3 minus 29.8 equals 16.5. The DNR trip page independently states 16.5 miles. GIS lists Musclewood as 46.2; retain the published trip distance rather than silently mixing source mileages. Parking carries and shuttle mileage are excluded."
+      },
+      "notices": [
+        {
+          "title": "Rapids before the takeout",
+          "text": "DNR identifies Class I–II rapids between river miles 33.5 and 32. Levels respond to rain; check current river guidance and scout when needed. The gauge below Sandstone does not establish conditions at every rapid.",
+          "sourceName": "Minnesota DNR — Kettle River trip guidance",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/kettle-river/segments-maps.html",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Banning construction: use the Highway 23 exit",
+          "text": "DNR announced that most of Banning State Park, including its interior river access, closes November 9, 2026 for construction. Its notice lists Highway 23 as an available alternative. This trip ends there; do not continue to #2 expecting it to be open. Check current park alerts before leaving home.",
+          "sourceName": "Minnesota DNR — October 23, 2026 closure notice",
+          "sourceUrl": "https://www.dnr.state.mn.us/news/2026/10/23/most-banning-state-park-temporarily-close-construction-beginning-nov-9",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    }
+  ]
+}

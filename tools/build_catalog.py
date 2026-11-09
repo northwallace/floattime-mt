@@ -12,11 +12,15 @@ try:
     from tools.map_review import fingerprint
     from tools.catalog_assets import write_or_check as write_catalog_assets
     from tools.flow_sources import validate_source, validate_gauge
+    from tools.source_links import validate_public_source_urls
+    from tools.mapped_distance import METHOD as MAPPED_DISTANCE, validate as validate_mapped_distance
 except ModuleNotFoundError:
     from route_catalog import build_outputs, write_or_check
     from map_review import fingerprint
     from catalog_assets import write_or_check as write_catalog_assets
     from flow_sources import validate_source, validate_gauge
+    from source_links import validate_public_source_urls
+    from mapped_distance import METHOD as MAPPED_DISTANCE, validate as validate_mapped_distance
 
 ROOT = Path(__file__).resolve().parents[1]
 SLUG = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
@@ -36,16 +40,20 @@ def distance_conflict(section):
     direct = straight_line_miles(section['putInCoords'], section['takeOutCoords'])
     return direct > section['miles'] * 1.05 or direct < .02
 
-def validate_distance_evidence(section, prefix):
+def validate_distance_evidence(section, prefix, root=ROOT):
     evidence = section.get('distanceEvidence')
     if evidence is None:
         return
-    require(isinstance(evidence, dict) and evidence.get('method') in ('agency-mile-markers', 'published-guide-miles', 'published-trip-length'), prefix + 'Invalid distance evidence method')
+    require(isinstance(evidence, dict) and evidence.get('method') in ('agency-mile-markers', 'published-guide-miles', 'published-trip-length', MAPPED_DISTANCE), prefix + 'Invalid distance evidence method')
     for field in ('sourceName', 'sourceUrl', 'checkedOn', 'streamId', 'note'):
         require(isinstance(evidence.get(field), str) and evidence[field].strip(), prefix + 'Distance evidence ' + field + ' required')
     require(evidence['sourceUrl'].startswith('https://'), prefix + 'Distance source must use HTTPS')
     try: date.fromisoformat(evidence['checkedOn'])
     except ValueError: raise ValueError(prefix + 'Invalid distance evidence date')
+    if evidence['method'] == MAPPED_DISTANCE:
+        try: validate_mapped_distance(section, root)
+        except ValueError as e: raise ValueError(prefix + str(e)) from e
+        return
     if evidence['method'] == 'published-trip-length':
         # Some agencies publish a whole-trip distance, not endpoint mile markers.
         # Preserve that distinction rather than inventing two river-mile readings.
@@ -85,6 +93,7 @@ def validate_distance_evidence(section, prefix):
 
 def build(root=ROOT):
     settings = json.loads((root / 'catalog/settings.json').read_text())
+    validate_public_source_urls(settings, 'settings')
     states = settings['states']
     codes, slugs = set(), set()
     for st in states:
@@ -124,6 +133,7 @@ def build(root=ROOT):
     map_audits = {}
     for path in sorted((root / 'catalog/map_points').glob('*.json')):
         payload = json.loads(path.read_text())
+        validate_public_source_urls(payload, path.name)
         prefix = path.name + ': '
         require(path.stem in codes and payload.get('state') == path.stem, prefix + 'State must match filename and settings')
         require(payload.get('version') == 2 and isinstance(payload.get('points'), dict), prefix + 'Invalid point registry')
@@ -191,6 +201,9 @@ def build(root=ROOT):
                 'sourceName': record['sourceName'], 'sourceUrl': record['sourceUrl'],
                 'verifiedOn': record['verifiedOn'], 'note': record['note'],
             }
+            if 'directions' in record:
+                require(isinstance(record['directions'], str) and record['directions'].strip(), prefix + label + ' directions must be non-empty text')
+                point['directions'] = record['directions']
             point.update({field: record[field] for field in bank_fields if field in record})
             points[label] = point
         map_points[path.stem] = points
@@ -221,6 +234,7 @@ def build(root=ROOT):
     rivers, ids = [], set()
     for path in sorted((root / 'catalog/rivers').glob('*.json')):
         r = json.loads(path.read_text())
+        validate_public_source_urls(r, path.name)
         prefix = path.name + ': '
         require(SLUG.fullmatch(r['id']) and r['id'] == path.stem and r['id'] not in ids, prefix + 'ID must be unique and match filename')
         ids.add(r['id'])
@@ -277,7 +291,10 @@ def build(root=ROOT):
             for guide in sec.get('guideTimes', []):
                 require(isinstance(guide, dict) and guide.get('unit') in ('hours', 'days'), prefix + 'Invalid guide time unit')
                 lo, hi = guide.get('min'), guide.get('max')
-                require(type(lo) in (int, float) and type(hi) in (int, float) and math.isfinite(lo) and math.isfinite(hi) and 0 < lo <= hi, prefix + 'Invalid guide time range')
+                # Explicit null preserves a source's “6+ hours” without inventing
+                # an upper bound. An omitted max is still incomplete research.
+                require('max' in guide and type(lo) in (int, float) and math.isfinite(lo) and lo > 0
+                        and (hi is None or type(hi) in (int, float) and math.isfinite(hi) and lo <= hi), prefix + 'Invalid guide time range')
                 for key in ('conditions', 'sourceName', 'sourceUrl', 'checkedOn'):
                     require(isinstance(guide.get(key), str) and guide[key].strip(), prefix + 'Guide ' + key + ' required')
                 require(guide['sourceUrl'].startswith('https://'), prefix + 'Guide URL must use HTTPS')
@@ -310,6 +327,8 @@ def build(root=ROOT):
                 require(isinstance(sec['distanceReview'], str) and sec['distanceReview'].strip(), prefix + 'Distance review requires a note')
             if 'accessReview' in sec:
                 require(isinstance(sec['accessReview'], str) and sec['accessReview'].strip(), prefix + 'Access review requires a note')
+            if 'routeReview' in sec:
+                require(isinstance(sec['routeReview'], str) and sec['routeReview'].strip(), prefix + 'Route review requires a note')
             notices = sec.get('notices', [])
             require(isinstance(notices, list), prefix + 'Notices must be a list')
             for notice in notices:
@@ -357,7 +376,7 @@ def build(root=ROOT):
                 for axis, low, high in [('lat', -90, 90), ('lon', -180, 180)]:
                     value = point[axis]
                     require(type(value) in (int, float) and math.isfinite(value) and low <= value <= high, prefix + 'Invalid section ' + key + ' ' + axis)
-            validate_distance_evidence(sec, prefix + sec['id'] + ': ')
+            validate_distance_evidence(sec, prefix + sec['id'] + ': ', root)
             require(not distance_conflict(sec) or sec.get('distanceReview'), prefix + sec['id'] + ': Impossible mapped mileage; correct it or add distanceReview to block estimates')
         require(isinstance(r.get("multiDay", False), bool), prefix + "multiDay must be true or false")
         r["multiDay"] = r.get("multiDay", False)

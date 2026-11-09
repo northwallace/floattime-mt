@@ -1,0 +1,72 @@
+{
+  "id": "american-river-south-fork",
+  "name": "American River (South Fork / Coloma–Lotus)",
+  "state": "CA",
+  "gauge": "11444500",
+  "gaugeName": "South Fork American River near Placerville",
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "The listed USGS station is upstream near Chili Bar. Dam releases can change conditions downstream; the station is a reference and does not provide a reviewed travel-speed model. Check the river and release information before launching.",
+    "sourceName": "USGS — South Fork American River near Placerville",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-11444500/",
+    "checkedOn": "2026-11-03"
+  },
+  "lat": 38.803894,
+  "lon": -120.909256,
+  "timezone": "America/Los_Angeles",
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed calibration or endpoint-specific published travel time is available. Access and approximate distance remain useful when the gauge has no current reading."
+  },
+  "blurb": "A four-mile South Fork American whitewater option from Lotus to Greenwood, with Class II–II+ rapids and a carry-out before the downstream Gorge. Check dam releases and scout the takeout.",
+  "sections": [
+    {
+      "id": "lotus-greenwood",
+      "putIn": "Henningsen Lotus Park",
+      "takeOut": "Greenwood Creek River Access",
+      "putInAccessId": "acc-28f23600530a5df98633",
+      "takeOutAccessId": "acc-d45017d884a45677aaad",
+      "miles": 4,
+      "difficulty": "Class II–II+; conditions vary",
+      "notes": "Set the shuttle before launching. Henningsen Lotus Park is at 950 Lotus Road; confirm current vehicle and river-use fees and closing hours. Greenwood has a carry to the Highway 49 parking area and limited parking. Identify the takeout before your trip; continuing downstream leads toward the more difficult Gorge.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "El Dorado County — South Fork American Upper Canyon river map",
+        "sourceUrl": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/health-amp-wellbeing/parks/upper_final.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "South Fork American River / county river miles from Chili Bar",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Henningsen Lotus Park",
+          "riverMile": 8.0,
+          "sourceLocation": "Mile-by-mile guide: Henningsen Lotus County Park River Access at mile 8.0"
+        },
+        "takeOut": {
+          "name": "Greenwood Creek River Access",
+          "riverMile": 12.0,
+          "sourceLocation": "Mile-by-mile guide: Greenwood Creek at mile 12.0; BLM documents the adjacent takeout"
+        },
+        "note": "Approximate distance between named river access areas, derived from rounded county river-mile markers. The Greenwood landing and carry are not surveyed; do not use this as exact shoreline-to-shoreline mileage."
+      },
+      "notices": [
+        {
+          "title": "Whitewater and changing releases",
+          "text": "This reach includes Barking Dog, Current Divider and Highway Rapid, with Class II–II+ water. It is not a calm tubing shortcut. Scout unfamiliar features and confirm release conditions.",
+          "sourceName": "El Dorado County — river map",
+          "sourceUrl": "https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/health-amp-wellbeing/parks/upper_final.pdf",
+          "checkedOn": "2026-11-03"
+        },
+        {
+          "title": "Greenwood takeout and carry",
+          "text": "BLM identifies Greenwood as the takeout for the Coloma-to-Greenwood run. The marker locates the parking area; check the shoreline exit and carry trail before launching. The downstream run includes Class III whitewater.",
+          "sourceName": "BLM — Greenwood Creek River Access",
+          "sourceUrl": "https://www.blm.gov/visit/greenwood-creek-river-access",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    }
+  ]
+}

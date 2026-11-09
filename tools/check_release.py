@@ -13,7 +13,15 @@ from tools.route_catalog import write_or_check as check_routes
 from tools.flow_sources import gauge_relationship, supports_live_timing
 
 
+def check_public_preview_files(root=ROOT):
+    previews = sorted(str(path.relative_to(root / 'public'))
+                      for path in (root / 'public').rglob('_local-*'))
+    if previews:
+        raise ValueError('Local research previews must be moved outside public before release: ' + ', '.join(previews))
+
+
 def review(root=ROOT):
+    check_public_preview_files(root)
     catalog = build(root)
     expected = json.dumps(catalog, indent=2, ensure_ascii=False) + '\n'
     if (root/'public/catalog.json').read_text() != expected:

@@ -1,0 +1,197 @@
+{
+  "id": "rum-river-mn",
+  "name": "Rum River (Walbo–St. Francis)",
+  "state": "MN",
+  "timezone": "America/Chicago",
+  "lat": 45.57235039882982,
+  "lon": -93.23571617223521,
+  "gauge": "05286000",
+  "gaugeName": "Rum River near St. Francis, MN",
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "The St. Francis gauge is downstream of these trips. It provides same-river flow context, not conditions at every landing or a calibrated paddling speed.",
+    "sourceName": "USGS Water Data — station 05286000",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05286000/",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed model. A matching DNR paddling-time range is shown only for Martins–North County Park."
+  },
+  "blurb": "Choose shorter paddles around Cambridge or continue from Martins Landing to North County Park. Compare source-backed access locations, river-mile distances and available DNR trip guidance.",
+  "sections": [
+    {
+      "id": "walbo-cambridge",
+      "putIn": "Rum River Walbo Access",
+      "takeOut": "Rum River Cambridge West Park Access",
+      "putInAccessId": "acc-15a966f2bda75d199b15",
+      "takeOutAccessId": "acc-60e0761738a85461a1ad",
+      "miles": 14.2,
+      "difficulty": "Moderate current; downed trees and snags possible",
+      "notes": "The DNR map’s longer Walbo–Cambridge paddle. Finish at the public park carry-in near Highway 95, not the downstream campsite. Arrange a vehicle shuttle.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and obstacle passages are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Rum River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Rum River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Rum River Walbo Access",
+          "riverMile": 56.8,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "takeOut": {
+          "name": "Rum River Cambridge West Park Access",
+          "riverMile": 42.6,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "note": "56.8 minus 42.6 gives approximately 14.2 river miles. The current PDF identifies the carry-in at mile 42.6, separate from the campsite at mile 41.0. The webpage’s 15.8-mile Walbo trip uses the campsite mile; it is not applied to this public take-out. Inventory mile 42.4 is not mixed with map miles."
+      }
+    },
+    {
+      "id": "walbo-highway14",
+      "putIn": "Rum River Walbo Access",
+      "takeOut": "Rum River Highway 14 Access",
+      "putInAccessId": "acc-15a966f2bda75d199b15",
+      "takeOutAccessId": "acc-98bda1aefc0d51ad9fb8",
+      "miles": 7.2,
+      "difficulty": "Moderate current; downed trees and snags possible",
+      "notes": "A shorter option from Walbo to the County Road 14 access. Locate the public exit before launching and arrange your shuttle.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and obstacle passages are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Rum River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Rum River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Rum River Walbo Access",
+          "riverMile": 56.8,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "takeOut": {
+          "name": "Rum River Highway 14 Access",
+          "riverMile": 49.6,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "note": "56.8 minus 49.6 gives approximately 7.2 river miles. The DNR recommends splitting the Walbo–Cambridge trip at Highway 14. This subsection has no separately published numeric trip time."
+      }
+    },
+    {
+      "id": "highway14-cambridge",
+      "putIn": "Rum River Highway 14 Access",
+      "takeOut": "Rum River Cambridge West Park Access",
+      "putInAccessId": "acc-98bda1aefc0d51ad9fb8",
+      "takeOutAccessId": "acc-60e0761738a85461a1ad",
+      "miles": 7.0,
+      "difficulty": "Moderate current; downed trees and snags possible",
+      "notes": "Start at County Road 14 and finish at the Cambridge West Park carry-in near Highway 95. This is upstream of the separate watercraft campsite.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and obstacle passages are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Rum River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Rum River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Rum River Highway 14 Access",
+          "riverMile": 49.6,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "takeOut": {
+          "name": "Rum River Cambridge West Park Access",
+          "riverMile": 42.6,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "note": "49.6 minus 42.6 gives approximately 7.0 river miles. The current PDF identifies the carry-in at mile 42.6, separate from the campsite at mile 41.0. The webpage’s 15.8-mile Walbo trip uses the campsite mile; it is not applied to this public take-out. Inventory mile 42.4 is not mixed with map miles."
+      }
+    },
+    {
+      "id": "cambridge-martins",
+      "putIn": "Rum River Cambridge West Park Access",
+      "takeOut": "Rum River Martins Landing",
+      "putInAccessId": "acc-60e0761738a85461a1ad",
+      "takeOutAccessId": "acc-293aee2ec3b2550ab676",
+      "miles": 7.9,
+      "difficulty": "Moderate current; downed trees and snags possible",
+      "notes": "Continue from Cambridge’s public carry-in to Martins Landing in Isanti. Identify the downstream ramp during your shuttle; private riverside property is not an alternate public exit.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and obstacle passages are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Rum River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Rum River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Rum River Cambridge West Park Access",
+          "riverMile": 42.6,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "takeOut": {
+          "name": "Rum River Martins Landing",
+          "riverMile": 34.7,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "note": "42.6 minus 34.7 gives approximately 7.9 river miles. Derived from the current map’s public-access river miles. This is a separate trip, not the Walbo–Cambridge recommended route or its campsite."
+      }
+    },
+    {
+      "id": "martins-north-park",
+      "putIn": "Rum River Martins Landing",
+      "takeOut": "Rum River North County Park Access",
+      "putInAccessId": "acc-293aee2ec3b2550ab676",
+      "takeOutAccessId": "acc-c43c66e79d4755cab55b",
+      "miles": 11.5,
+      "difficulty": "Moderate current; downed trees and snags possible",
+      "notes": "A DNR-recommended paddle to North County Park in St. Francis. The finish is a carry-in access, so plan to carry your boat out and arrange a shuttle.",
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and obstacle passages are not mapped.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — 2026 Rum River water-trail map",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum3.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Rum River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Rum River Martins Landing",
+          "riverMile": 34.7,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "takeOut": {
+          "name": "Rum River North County Park Access",
+          "riverMile": 23.2,
+          "sourceLocation": "2026 map river-mile listing"
+        },
+        "note": "34.7 minus 23.2 gives approximately 11.5 river miles. The 2026 PDF lists 11.5 miles. The webpage’s 11.6-mile figure starts at 34.8; current map and access inventory both place Martins at 34.7."
+      },
+      "guideTimes": [
+        {
+          "min": 3.5,
+          "max": 5,
+          "unit": "hours",
+          "conditions": "DNR’s approximate time for a paddler on this named trip. Flow, wind, obstacles and stops can change duration; this is not a live estimate.",
+          "sourceName": "Minnesota DNR — 2026 Rum River map 3, recommended Martins–North County Park trip",
+          "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/rum3.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Carry-out at North County Park",
+          "text": "The park finish is a canoe/kayak carry-in access, not a trailer ramp. Check the signed approach during your shuttle.",
+          "sourceName": "Minnesota DNR — Rum River boat access",
+          "sourceUrl": "https://www.dnr.state.mn.us/areas/fisheries/eastmetro/rivers/rum.html",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    }
+  ]
+}

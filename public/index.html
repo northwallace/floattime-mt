@@ -68,7 +68,7 @@
     <div class="hero-content">
       <h1>How long will your river float <em>actually</em> take?</h1>
       <p class="hero-sub">Plan your float with current river flow, daylight, and trip-time guidance. Access maps are available on reviewed river sections.</p>
-      <p class="coming-soon-pill"><!-- catalog:state-coverage -->Explore rivers by state<!-- /catalog:state-coverage --></p>
+      <nav class="coming-soon-pill" aria-label="Choose a state for your float"><!-- catalog:state-coverage -->Explore rivers by state<!-- /catalog:state-coverage --></nav>
       <div class="hero-stats" id="heroStats">
         <div class="hero-stat"><span class="hs-num" id="statRivers"><!-- catalog:river-count -->–<!-- /catalog:river-count --></span><span class="hs-label">rivers tracked</span></div>
         <div class="hero-stat"><span class="hs-num" id="statSections"><!-- catalog:section-count -->–<!-- /catalog:section-count --></span><span class="hs-label">float sections</span></div>
@@ -86,6 +86,23 @@
         <p class="section-kicker">PLAN YOUR DAY ON THE WATER</p><h2>Pick your float</h2>
       <p>Choose a state, river, and craft to see access information, current conditions, and available trip-time guidance.</p>
       <p class="community-actions">Missing your float? <a href="/feedback.html?type=float-request">Request a float</a>.</p>
+      </div>
+
+      <div class="planner-search">
+        <form id="plannerSearchForm" action="/directory.html" method="get" role="search" aria-label="Find a river or access point">
+          <label for="plannerSearch">Find your river</label>
+          <div class="search-input-row">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+            <input id="plannerSearch" name="q" type="search" maxlength="180" placeholder="Try Madison, Wisconsin or Palisades" autocomplete="off" aria-describedby="plannerSearchHint">
+            <button class="btn-primary" type="submit">Search</button>
+          </div>
+          <p id="plannerSearchHint" class="search-hint">Search by river, state, put-in or take-out. Or choose below.</p>
+        </form>
+        <div id="plannerSearchPanel" class="search-panel" hidden>
+          <p id="plannerSearchStatus" class="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          <ul id="plannerSearchResults" class="search-results" aria-label="Matching rivers"></ul>
+          <div class="search-footer"><a id="plannerSearchAll" href="/directory.html">See all results →</a><a href="/feedback.html?type=float-request">Request a float</a></div>
+        </div>
       </div>
 
       <div class="controls">
@@ -160,8 +177,10 @@
           </div>
         </div>
 
+        <section id="riverAdvisories" class="river-advisories" aria-label="Advisories for this river" hidden></section>
         <div class="routes-heading"><h3>Choose your stretch</h3><span>Compare time on the water</span></div><p class="river-blurb" id="riverBlurb"></p>
         <div id="sectionCards" class="section-cards"></div>
+        <div id="landMapHome" hidden>
         <section id="landMapPanel" class="land-map-panel" aria-labelledby="landMapTitle" hidden>
           <div class="land-map-head">
             <div>
@@ -203,6 +222,7 @@
           <p id="landMapStatus" class="land-map-status" role="status">Loading the map and official Montana land data…</p>
           <p id="landMapLandNote" class="land-map-note">Trust-land boundaries and access details are approximate. State ownership does not guarantee unrestricted access. Verify signs, closures, and current license requirements before leaving the river. <a href="https://dnrc.mt.gov/TrustLandMaps" target="_blank" rel="noopener">Check Montana DNRC</a>.</p>
         </section>
+        </div>
         <p class="fine-print">Live estimates are rough planning guidance, not measured trip times. Allow extra time. Published guide times retain their source conditions.
           Mileages are approximate. Conditions change fast — always scout, wear a PFD, and check
           <a id="agencyLink" href="https://fwp.mt.gov/activities/boating" target="_blank" rel="noopener">MT FWP</a> for closures.</p>
@@ -358,6 +378,7 @@
 <script src="route-progress.js"></script>
 <script src="field-pilot.js"></script>
 <script src="planner.js?v=20261027-1"></script>
+<script src="river-search.js"></script>
   <script src="app.js?v=20261027-2"></script>
 </body>
 </html>

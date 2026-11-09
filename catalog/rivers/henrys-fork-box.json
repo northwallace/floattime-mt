@@ -6,8 +6,8 @@
   "gaugeName": "Henrys Fork nr Island Park",
   "lat": 44.417,
   "lon": -111.395,
-  "refFlowCfs": 1400,
-  "refSpeedMph": 3.2,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
   "blurb": "Island Park Dam to Last Chance — a short basalt canyon on some of the most famous trout water in the West.",
   "sections": [
     {
@@ -16,10 +16,40 @@
       "takeOut": "Last Chance",
       "miles": 4,
       "difficulty": "Class II",
-      "notes": "Cold, rocky, and crowded with anglers. Give waders room. Harriman State Park below Last Chance is mostly closed to boats — don't float into the Ranch.",
+      "notes": "Launch at the Box Canyon boat ramp below Island Park Dam and take out at Last Chance. This is rocky moving water; releases and low water change the trip. Give wading anglers room and confirm the takeout before starting. Check current access and fishing rules before extending beyond Last Chance.",
       "putInAccessId": "acc-9d25906dfc34516f8cf9",
-      "takeOutAccessId": "acc-b381a7b196dc5f808953"
+      "takeOutAccessId": "acc-b381a7b196dc5f808953",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 4,
+        "sourceName": "Henry’s Fork Foundation — upper-river access guide",
+        "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Upper-River-Updated.pdf",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Island Park Dam (Box Canyon)",
+          "sourceLocation": "PDF page 45, named site and Float Distance table"
+        },
+        "takeOut": {
+          "name": "Last Chance",
+          "sourceLocation": "PDF page 45, destination in Float Distance table"
+        },
+        "note": "Approximate published reach length from the guide currently linked by HFF. It is independent of the facility coordinates and is not a surveyed landing-to-landing distance. Channel choice and reservoir conditions can change the actual trip."
+      },
+      "notices": [
+        {
+          "title": "Use the below-dam launch",
+          "text": "The Box Canyon boat ramp is a different facility from the Island Park Reservoir ramps and the hike-in campground access. This itinerary ends at Last Chance.",
+          "sourceName": "Henry’s Fork Foundation — upper-river access guide",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Upper-River-Updated.pdf",
+          "checkedOn": "2026-11-04"
+        }
+      ]
     }
   ],
-  "timezone": "America/Boise"
+  "timezone": "America/Boise",
+  "timing": {
+    "mode": "unavailable",
+    "note": "The former reference speed has no documented trip calibration. The live gauge and published four-mile reach remain useful, but they do not establish a reliable live travel-time estimate."
+  }
 }

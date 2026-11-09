@@ -1,0 +1,40 @@
+{
+  "id": "east-branch-eau-claire-river",
+  "name": "East Branch Eau Claire River",
+  "gauge": "05397000",
+  "gaugeName": "EAST BRANCH EAU CLAIRE RIVER NEAR ANTIGO, WI",
+  "lat": 45.2197,
+  "lon": -89.19001,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "East Branch Eau Claire River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "east-branch-eau-claire-river-bluebell-road-launch-to-east-branch-eau-claire-river-launch",
+      "putIn": "East Branch Eau Claire River - Bluebell Road Launch",
+      "takeOut": "East Branch Eau Claire River Launch",
+      "miles": 1.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-63f223fb46e951a0a607",
+      "takeOutAccessId": "acc-7d899e71b3e75191b646"
+    },
+    {
+      "id": "east-branch-eau-claire-river-launch-to-east-branch-eau-claire-river-access",
+      "putIn": "East Branch Eau Claire River Launch",
+      "takeOut": "East Branch Eau Claire River Access",
+      "miles": 1.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-7d899e71b3e75191b646",
+      "takeOutAccessId": "acc-a38db621381e5820b001"
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

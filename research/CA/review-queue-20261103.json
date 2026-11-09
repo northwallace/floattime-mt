@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "state": "CA",
+  "checkedOn": "2026-11-03",
+  "items": [
+    {
+      "subject": "Sunset Beach River Park",
+      "accessId": "acc-f66b82bc52fb5cf4ac3a",
+      "existing": {
+        "id": "acc-f66b82bc52fb5cf4ac3a",
+        "aliases": [],
+        "status": "access-verified",
+        "areaCenter": {
+          "lat": 38.502355,
+          "lon": -122.9351161,
+          "feature": "County-published park directions destination"
+        },
+        "accessType": "Public beach / hand-carry access",
+        "operator": "Sonoma County Regional Parks",
+        "sourceName": "Sonoma County Regional Parks — park page and tubing guide",
+        "sourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/sunset-beach-river-park",
+        "coordinateSourceUrl": "https://parks.sonomacounty.ca.gov/visit/find-a-park/sunset-beach-river-park",
+        "verifiedOn": "2026-10-29",
+        "directions": "11403 River Road, Forestville. Follow the park’s signed beach access; the marker is the park directions destination, not the river landing.",
+        "note": "Public hand-carry river access is documented by the county. Coordinates come from its Get Directions link and identify the park approach. The exact seasonal beach landing is not verified; no boat-ramp or takeout-bank claim is made."
+      },
+      "candidate": {
+        "lat": 38.50366,
+        "lon": -122.93063,
+        "sourceUrl": "https://filelib.wildlife.ca.gov/Public/OSPR/WebMapping/GRP/RussianRiverGRP/Final_Russian_River_GRP_11_25_19_Protected.pdf",
+        "sourceLocation": "RUS-225, printed pages 129–131",
+        "status": "rejected-as-landing"
+      },
+      "blocker": "response-coordinate-is-not-public-landing",
+      "nextAction": "Find the current county beach-access trail terminus and a source tying it to the usable takeout. Keep the county park destination approximate. Do not promote the old midstream response-strategy coordinate. Recheck river length after the landing is established.",
+      "evidenceFiles": [
+        "research/california-american-20261103/russian-grp-access-extract.json",
+        "research/california-american-20261103/sunset-response-coordinate-review.png"
+      ],
+      "note": "Current county park page lists 11403 River Road; the older response plan lists a different address and additional upstream responder access. These cannot be assumed equivalent."
+    },
+    {
+      "subject": "Lower American / Sailor Bar short float",
+      "blocker": "conflicting-published-takeout",
+      "nextAction": "Resolve operator Sunrise vs Sacramento Bar endpoint conflict before adding a new short float. These are distinct banks/access sites.",
+      "sourceUrls": [
+        "https://raftrentals.com/main-access-point-sunrise-launch/",
+        "https://raftrentals.com/faqs/"
+      ]
+    }
+  ]
+}

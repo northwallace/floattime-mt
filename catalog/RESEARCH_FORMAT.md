@@ -54,7 +54,12 @@ Optional `guideTimes` belongs to the specific section, not the river. Example:
 }
 ```
 
-Units are `hours` or `days`. Values must be positive finite numbers, min <= max.
+Units are `hours` or `days`. Numeric values must be positive and finite, min <= max.
+For an explicitly open-ended source such as “6+ hours”, use `min: 6` and
+`max: null`. The site displays “6 hours or more”; never invent an upper bound.
+The `max` field must still be present. Keep the source's uncertainty in
+`conditions`; a general phrase such as “full day” alone does not justify
+assigning a numeric duration.
 Preserve flow-band conditions, craft, source age and whether stops are known.
 The app displays guide guidance separately and never adjusts it using craft,
 fishing, launch time or today's flow. Minimum planning allowances must be
@@ -75,6 +80,9 @@ create a new landing identity merely because a research package renames it.
   pending until reviewed.
 - `verified`: existing exact facility fields: numeric `lat`/`lon`, `accessType`,
   `operator`, `sourceName`, HTTPS `sourceUrl`, ISO `verifiedOn`, and `note`.
+  Include optional `directions` as non-empty, source-backed approach text when
+  available. These directions appear in map popups and river guides and form
+  part of the access review fingerprint; changing them requires map review.
 - `access-verified`: boating access documented but landing uncertain. Use
   `areaCenter: {lat, lon, feature}`, `directions`, `sourceName`, HTTPS `sourceUrl`,
   HTTPS `coordinateSourceUrl`, ISO `verifiedOn`, and `note`. `accessType` and
@@ -241,6 +249,20 @@ only for a documented, checked landing. Preserve pending alternatives in
 Run the binding check before release and inspect the private queue. A stale or
 changed source is a review task; a successful download is not publication approval.
 
+For an access map that has been researched and visually reviewed, obtain its
+current evidence fingerprint with the read-only helper:
+
+```bash
+python3 tools/map_review.py --river american-river-lower --section lower-sunrise-river-bend
+```
+
+`--state CA` lists a whole state. This command uses the same normalized access
+records as the catalog builder; hashing raw `map_points` JSON can give a different
+signature. It prints current status and fingerprints without granting approval or
+changing files. Add the fingerprint to a reviewed map record only after recording
+the source evidence, reviewer, date and decision. Pending locations stay pending
+regardless of whether a fingerprint can be calculated.
+
 
 ## Optional river-route package (independent of access verification)
 
@@ -248,16 +270,179 @@ Continue delivering river records and access points in the existing format. Rive
 
 The working example is `catalog/routes/MT/blackfoot--johnsrud-weigh-station.json`; the authoritative validator is `tools/route_catalog.py`, run by `python3 tools/build_catalog.py --check`. Keep a source URL, agency stream identifier, raw dated source snapshot and SHA-256, the geometry in WGS84 `[longitude, latitude]`, exact copies of the catalog endpoint names/coordinates and mileage, and evidence establishing downstream direction. `review.checkedOn` is the date we assessed the record; do not call it the imagery or survey date.
 
+New flow-directed imports record perpendicular source offsets in
+`direction.putInOffsetMeters` / `takeOutOffsetMeters`, and positions along their
+first/last source features in `putInSourceStationMeters` /
+`takeOutSourceStationMeters`. Earlier imports used the offset-named fields for
+along-line stations; their authoritative perpendicular distances are in
+`checks.metrics.endpointOffsetsMeters`. The validator supports those existing
+records and uses explicit station fields for new single-feature direction checks.
+Sub-millimetre duplicate source-join vertices are discarded; larger source gaps
+and ambiguous branches still require review.
+
 Research deliveries should use `status: candidate` and all four feature flags false: `display`, `landOverlay`, `distanceEstimate`, `remainingTime`. Store candidate geometry and unresolved alternatives under `research/routes/<STATE>/`, outside `public/`. The importer stages candidates there and writes a per-section review queue. A route is not verified simply because a validator passes. Explain endpoint offsets, alternative channels, source discontinuities and mileage disagreements; do not alter a catalog value to make a test pass.
 
 For measured ArcGIS sources, configure a state source record like `catalog/routes/sources/MT.json` (exact layer URL, stream ID field and IDs, CRS and measure direction). Other formats need an explicit adapter with equivalent checks. State registry entries live in `catalog/routes/index.json` → `<STATE>.json` → per-section JSON. New states use the same display format and validator; map JavaScript does not need a new hardcoded river branch.
 
 Only a reviewed record may enable route display. Land shading requires separate sourced polygon data and a corridor tied to the route geometry checksum. Never infer public landing rights from ownership or proximity. Keep `distanceEstimate` and `remainingTime` false: automatically replacing published miles and live GPS ETA are deferred. The original Blackfoot GPS experiment remains archived separately.
 
+### River-course overviews when exact landing connections are uncertain
+
+Precision is the first choice; an approximate area is the fallback. Preserve a
+reviewed exact landing when its evidence still supports it. When public boating
+access is documented but the precise landing is uncertain, show a sourced
+`access-verified` area with directions and a “Help pinpoint” link rather than
+hiding the access. Do not invent a likely landing on an unconfirmed property.
+User coordinates are evidence for review, never an automatic public pin change.
+Assess river-course geometry independently of access-point precision.
+
+The Hell’s Canyon–Silver Star review in
+`research/jefferson-course-refinement-20261106/decisions.json` keeps both
+approximate access areas and the 4.5-mile planning distance, while displaying a
+partial source course that omits the launch/diversion approach. Its six source
+forks were compared with imagery; a generalized line through the active river
+corridor does not establish a navigable passage around bars. Parsons–Parrot,
+Kountz–Mayflower and Mayflower–Cardwell retain access maps while their course
+geometry stays under review. Do not hide a documented access area solely because
+the route is held, or promote its pin because a river line is available.
+
+Agency-published water-trail lines can also support display-only overviews.
+Register the exact layer URL, CRS and field mapping in
+`catalog/routes/agency_sources/<STATE>-<source>.json`; the Minnesota DNR example
+is `MN-dnr-water-trails.json`. Archive the complete WGS84 ArcGIS response and
+bind both the response and registration with SHA-256. With direction method
+`agency-published-water-trail`, list each source feature ID, path index and
+orientation explicitly, then record start/end segment fractions for trimming.
+`tools/agency_courses.py` reconstructs the displayed line from those exact
+vertices; gaps, invented connectors, changed vertices, other trails and
+reversed trims fail validation. Feature IDs identify parts within that immutable
+snapshot, not permanent access identities.
+
+Bind the section's published downstream river-mile evidence separately and
+visually review the entire course against imagery. A mechanically valid source
+line is still a research candidate until reviewed. Kettle's Musclewood–Highway
+23 example keeps its published 16.5-mile planning distance and approximate
+access areas; the DNR line is an overview with unmapped landing connections.
+It does not enable land-access shading, calculator mileage adoption or GPS ETA.
+
+Rum River's `research/rum-river-20261106/decisions.json` demonstrates mixed
+precision and conflicting guide editions. Its North County Park GPS point
+matches the visible carry-in approach and retains a sourced downstream-left
+bank; four other points remain approximate areas. Do not downgrade the checked
+landing merely because the other endpoint or course is approximate. The 2026
+DNR PDF distinguishes the Cambridge carry-in (RM 42.6) from the watercraft
+campsite (RM 41.0), while the webpage's longer trip uses the campsite mile.
+Resolve endpoint identity before choosing mileage; record the discrepancy
+instead of mixing river miles across sources. The matching Martins–North
+County Park trip retains its published 3.5–5 hour paddling range, with a
+reference-only gauge and no flow-to-speed calibration. Do not transfer that
+range to adjacent sections or treat general paddling speeds as trip evidence.
+
+Stage the same candidate format for another trip without changing the catalog:
+
+```sh
+python3 tools/stage_agency_course.py \
+  --river kettle-river-mn --section highway-48-maple-island \
+  --adapter MN-dnr-water-trails \
+  --evidence research/kettle-course-20261106/sources/dnr-kettle-water-trail.json \
+  --parts research/lower-kettle-20261106/source-parts.json \
+  --output research/lower-kettle-20261106/new-review-candidate.json
+```
+
+The parts file is an array, for example
+`[{"featureId":"38","pathIndex":0,"reverse":false}]`. Source part order and
+orientation are explicit research inputs. The tool suggests trims near the
+existing access coordinates or accepts an explicit `--clip` JSON file. It never
+moves access pins, overwrites an existing file, writes into `catalog`/`public`,
+or grants approval. Review any suggested trim at a braid, diversion, bridge or
+riverbank before accepting it. All staged feature flags remain false.
+
+The normal 1,000 m segment check can flag a genuine straight reach in a sparse
+agency source. Do not add interpolated vertices to hide that warning. For a
+source-reconstructed `agency-published-water-trail` overview only, an original
+segment between 1,000 and 2,000 m may receive explicit `sourceSegmentReview`.
+Each entry names the zero-based displayed `segment`, an imagery verdict in
+`note`, and saved `imageryEvidence` entries with research `file` and `sha256`.
+Review the complete segment against imagery; account for every long segment
+exactly once. Bind the review into `overviewReview.signature` and explain the
+accepted geometry issue. Duplicate vertices, disconnected source parts, changed
+source geometry and segments beyond 2,000 m still fail. The renderer receives
+only the validated segment indices; the exception is unavailable for navigation,
+GPS time remaining, land corridors or calculator distance adoption. Hokah to
+Highway 26 on the Root River is the first example. The presence of a straight
+line in an agency file alone is insufficient evidence to approve it.
+
+An agency water-trail map can establish an access area even when a separate
+boat-ramp GIS inventory has no matching feature. Preserve the map's coordinate
+and publication date; record where the agency currently links that map. Check
+the approach separately when needed. For example, Lemanski Road uses the DNR
+water-trail coordinate as `areaCenter` and road record 11567 from the DNR
+motorized-access inventory as supporting approach evidence. An open road does
+not establish an exact launch, a trailer ramp, or a passable side channel.
+Road IDs identify roads, not landing identities: keep them in the source
+evidence and retain a separate stable access ID. The reviewed example and
+source snapshots are in `research/lemanski-access-20261106/`.
+
+Keep the best sourced access position. An agency facility coordinate is not
+automatically a water-edge ramp pin: Silver Star now uses `areaCenter` after
+imagery review showed that its unchanged agency coordinate sits back from the
+channel. Visitors can suggest a more precise landing through the endpoint-specific
+“Help pinpoint” link. Suggestions remain private until reviewed.
+
+A separate `scope: river-course-overview` can show reviewed river geometry while
+leaving landing connections unmapped. The local example is
+`catalog/routes/MT/jefferson-upper--silver-star-parsons.json`. It intentionally
+stops before the Waterloo diversion approach. Its mapped length is not the full
+trip distance. Keep the published section mileage and its distance evidence.
+
+Deliver research candidates with all feature flags false. With a configured
+high-resolution USGS source, `tools/import_nhd_routes.py --state WI
+--overview-candidates` can also stage candidates near approximate access areas.
+Use the same verified regional archives and `--gpkg-dir` as the ordinary importer
+when the online service is unavailable. This option still rejects ambiguous
+branches, gaps and reversed flow; it does not clear a `routeReview` or approve
+any candidate. For approximate facilities only, staging can inspect river lines
+up to 1 km away, matching the overview validator's outer rejection limit.
+Offsets over 100 m remain explicit check issues that need a documented review;
+all staged feature flags stay false. Ordinary routes retain their 100 m limit.
+Do not snap an access marker onto a channel to pass the checks.
+
+An overview review must document both unmapped access connections, any omitted
+approach, the source limitations, and the exact outstanding section `routeReview`.
+The validator binds the decision to geometry, source evidence, endpoint snapshots
+and planning mileage with `overviewReview.signature`. Explicitly explain any
+accepted endpoint-offset or mileage-difference check. Other geometry failures
+remain blockers; offsets over 1 km or length differences over 20% cannot be
+approved by an ordinary overview review. These are outer rejection limits, not accuracy targets.
+Inspect channel alternatives and known barriers before approval. A continuous
+line must never imply safe passage through an unresolved dam or portage.
+
+Overviews enable display only. They cannot enable land shading, calculator
+distance adoption or GPS time remaining. Ordinary route records retain their
+existing exact-access, 100 m endpoint and 5% mileage checks. Regenerate and check
+the catalog with `python3 tools/build_catalog.py --check`; the authoritative
+review rules are in `tools/route_catalog.py`.
+
+When the planning distance itself is disputed, keep a nonempty section
+`distanceReview` and withhold estimates. A separately reviewed orientation line
+may use `distanceDiscrepancyReview`, as in
+the held-distance record in `tests/fixtures/distance-review-overview.json`.
+The Beaverhead distance has since been corrected from FWP mile markers.
+This exception requires an
+ordered high-resolution USGS downstream source chain, reconstruction from its
+original vertices (only endpoint clipping is allowed), saved imagery files with
+SHA-256 hashes, an explanation, and the exact current `planningDistanceReview`
+text. Bind this evidence into `overviewReview.signature`. Endpoint, gap, flow
+direction, source, access and barrier checks still apply. The client labels the
+planning distance as under review and rejects a mismatch with the section.
+Display is the only allowed feature; this does not adopt the mapped length as
+the trip distance or enable timing. Changing the planning-distance hold requires
+a new course review. Do not add this exception merely to make a candidate pass.
+
 
 ## Published river-mile guides and facility coordinates (October 27 follow-up)
 
-A general agency site point is not automatically a ramp coordinate. Check the GIS layer's purpose and compare the point with a ramp-specific plan, published access survey, or landing imagery. Where boat access is documented but the coordinate locates the facility generally, use `access-verified` plus `areaCenter`, directions, and a coordinate source URL. Do not promote an inland facility centroid by snapping it onto the nearest river line. Glen, Black’s Ford and Greycliff are current examples of approximate facility records; Smith River shows how two documented facilities can support a useful approximate map without claiming exact landings.
+A general agency site point is not automatically a ramp coordinate. Check the GIS layer's purpose and compare the point with a ramp-specific plan, published access survey, or landing imagery. Where boat access is documented but the coordinate locates the facility generally, use `access-verified` plus `areaCenter`, directions, and a coordinate source URL. Do not promote an inland facility centroid by snapping it onto the nearest river line. Black’s Ford and Greycliff are current examples of approximate facility records; Smith River shows how two documented facilities can support a useful approximate map without claiming exact landings.
 
 Named river-mile markers in an agency or firsthand access guide can establish approximate trip distance independently of GPS pins. Use `distanceEvidence.method: published-guide-miles`, the source name/URL/check date, stream identity, and an explicit `measureDirection` (`increases-downstream` or `decreases-downstream`). Each `putIn` and `takeOut` contains `name` exactly matching the section, `riverMile`, and `sourceLocation` identifying the printed page/table/heading. The validator requires the downstream difference, rounded to one decimal place, to equal `miles`. Describe source rounding and channel uncertainty in `note`. Do not invent GIS marker IDs, offsets or survey coordinates for a printed guide. Current examples: Lower Madison Black’s Ford–Greycliff; Missouri Breaks; Smith; North Fork Flathead.
 
@@ -538,3 +723,367 @@ The on-demand cache retries missing data after expiry; API failures back off.
 This is not an always-running background audit. `tools/audit_gauges.py` can be
 run periodically by an operator; unassigned and other-river references are
 reported without making meaningless requests. No scheduled job is installed.
+
+## River-course evidence when adding accesses (November 5 review)
+
+The NHD importer now includes both the named river and unnamed flowlines in
+its bounded query, matching the archive workflow. A query using only the river
+name can omit a side channel and falsely suggest there is a single route.
+`queryPolicy` and `queryScope` record the selection method, stream name and
+bounding box. Changing the query or expanding the access envelope refreshes the
+working cache while preserving the previous bytes in a hash-named snapshot.
+Network candidates still require review; neither a matching distance nor a
+single remaining graph path proves the line follows the present river.
+
+For a new access within an already reviewed course, retain its own stable access
+ID and agency binding. Compare its coordinates with the visible landing before
+using `verified`; use `access-verified` and `areaCenter` when only the facility
+area is supported. Do not replace an agency landing coordinate with an offshore
+guide coordinate. Preserve aliases and conflicting source locations as evidence.
+
+Shorter course views may reuse reviewed geometry when their source feature IDs
+and geographic containment have been checked, their new endpoints have been
+reviewed, and all barrier/omitted-approach limits are retained. They still need
+their own section fingerprints and route approvals. Published mile markers and
+exact-pair guide times remain separate evidence; do not extrapolate a guide time
+onto neighboring sections or convert it into a flow-speed calibration.
+
+## County access sources and mixed precision (November 5 expansion)
+
+Prefer a reviewed landing coordinate. When the evidence supports only the access
+facility, retain a source-backed approximate area and explain the uncertainty;
+do not suppress an otherwise useful access map solely for lack of landing
+precision. Use `access-verified` with `areaCenter` for these areas. The public
+map labels them Area and offers Help pinpoint links. User coordinates remain
+private evidence until reviewed; they do not automatically move published pins.
+
+County facility layers can fill gaps in state datasets. Register the query and
+public field allowlist in `catalog/agency_sources/`, save its immutable response,
+and bind each selected feature to a stable access ID. A record captured as
+Placed on Map establishes an agency facility location, not landing precision.
+Check the visible landing and guide endpoint before approving a precise pin.
+Waupaca County's nearby Norrin access is distinct from the Wolf River Road
+bridge access named in its paddling guide; proximity is not a name match.
+
+Keep dotted course evidence independent of access precision. A reviewed main
+river course may be shown as a `river-course-overview` while shoreline
+connections remain unresolved. Document omitted approaches and source geometry
+limitations, preserve published trip mileage separately, and leave distance
+estimation and GPS remaining-time features disabled for these overviews.
+
+Recheck older guide descriptions against later agency updates about barriers
+and facilities. The Little Wolf's Manawa millpond changed after the 2024 breach;
+the county's older route description does not resolve present landing usability
+or passage through the dam site. Approximate placement resolves a precision gap,
+not a known barrier or unresolved access-permission issue.
+
+### County trips missed by statewide access inventories
+
+A river draft with too few statewide boat-access records may still have useful
+county or municipal launches. Crystal River is an example: the county guide and
+facility layer support Rural, Nelson Park and Shadow Lake trips that the original
+statewide-only import omitted. Preserve the original draft as historical
+evidence and record the later source review separately. Extend the existing
+county source query and bindings; do not create duplicate access IDs for the same
+facility in a second source pipeline.
+
+Check dam records by geographic envelope as well as name. Joined agency fields
+may use different casing, so an empty text query alone is not evidence that no
+dam exists. Record physical and legal status separately, and compare dates with
+older plans. Current DNR records mark Little Hope/Crystal Dam removed while
+Rural and Felt Mill remain on the landscape.
+
+A published trip may leave the downstream river for a lake through its outlet.
+Do not flip river-network edges automatically or invent a straight line to the
+lake ramp. Keep the documented access map and exact-pair guide mileage/time,
+save alternative geometry as research, and withhold the dotted route until its
+full course and direction have been reviewed. A known-good access map does not
+require a guessed gauge or an approved dotted line.
+### Permanent evidence links and reach-specific warnings
+
+Use the stable agency document viewer or the agency page that links to the
+document. Do not put a temporary signed download URL in a river, access or state
+record. The catalog builder rejects common expiring download credentials; keep
+the downloaded document, checked date and hash in the research evidence instead.
+For example, use the DNR Flambeau booklet's `widnr.widen.net/view/pdf/...` link,
+not the underlying `previews...widencdn.net` link with `sig.expires` parameters.
+Page fragments can identify the relevant PDF page without adding credentials.
+
+Match warnings to the chosen reach. A warning about a distant rapid must not
+appear as though it sits between every pair of access points. If exact hazard
+locations remain uncertain, explicitly name the broader guide segment and keep
+the detailed river/portage review open. Preserve real dam holds and distinguish
+rapids above the launch, within the trip and beyond the takeout.
+
+Agency narrative distances may be rough or incomplete. Do not turn intermediate
+phrases into a precise trip length when they disagree materially with geometry.
+The Smith Rapids–Cedar Rapids bridge example keeps the access map available while
+withholding disputed distance, time and dotted-path output. New aliases such as
+Smith Rapids retain the existing stable access ID, coordinates and precision.
+
+### Approximate access areas and town-to-town guides
+
+Prefer a reviewed landing coordinate. When the documented access exists but its
+water edge is uncertain, retain a useful `access-verified` area and explain what
+the marker locates. An imagery refinement of an agency facility point must keep
+the original source snapshot, old coordinate and review image; describe the
+refinement rather than calling it an agency-surveyed coordinate. The November 6
+Lower Wisconsin review has examples at Arena and Bridgeport North.
+
+Town names in a canoe-time table can refer to several nearby landings. Match the
+guide extent to a named landing using the detailed agency map, and describe
+rounded town-to-town mileage in `distanceEvidence.note` and the trip notes. Keep
+it separate from measured river geometry and live timing. Do not copy a guide
+time onto every existing section near the town. If the intended launch remains
+ambiguous, defer that trip and use another explicit landing-to-landing source.
+The Lower Wisconsin review defers Sauk City–Arena while adding the board's named
+Mazomanie–Arena trip. Separate east/west landings retain separate stable IDs.
+
+### Separate an access listing from a coordinate anchor
+
+A current agency guide may establish that a public landing exists while a second agency dataset only locates a nearby bridge. Keep those claims separate: use the access guide as `sourceUrl`, the bridge record as `coordinateSourceUrl`, and an `areaCenter` with `status: access-verified`. A monitoring station is not a boat-ramp survey. Describe the landmark, required carry and remaining uncertainty; retain the exact-landing correction link. Never promote the station to a precise landing merely because it sits near the water. See Landing 18 in `research/kickapoo-review-20261106/decisions.json`.
+
+When a later imagery review contradicts an existing river line, preserve its source and geometry in the research/catalog record, disable its public feature flags and remove the generated public route. Retain independently supported access markers and guide times. Record the dated withdrawal explicitly so historical preservation checks do not silently restore the older approval. A current blockage notice is a separate fact from whether a line follows the river; do not turn a lack of later reports into proof that passage has reopened.
+
+### Local names and unresolved candidate landings
+
+Research the names people actually search for, especially when an inventory says
+only “Village Park Access.” Add documented local names to that existing point's
+`aliases` and its `catalog/access-index.json` entry. Preserve the permanent ID,
+coordinates and precision unless separate location evidence supports a change.
+Search uses these aliases automatically and explains alias-only matches; no
+per-state search code is needed. Re-review affected map fingerprints when access
+metadata changes. Soldiers Grove / Beauford T. Anderson Park is an example in
+`research/middle-kickapoo-expansion-20261106/point-changes.json`.
+
+Keep unresolved new locations in
+`research/STATE/local-review-BATCH/decisions.json`, using a top-level `state` and
+`points` object. Each point should have `status: "research-only"`, a specific
+`blocker`, source URLs, `evidenceSummary`, and an actionable `nextAction`. Use
+`candidateCoordinates: null` when no supported candidate has been found. If
+coordinates are supplied, retain their source and explain whether they locate a
+landing, entrance, parking area or other landmark. `tools/build_review_queue.py`
+discovers these records automatically; they do not become public access pins.
+
+A current park page plus an older paddling account is a research lead, not proof
+of a current designated launch. Inspect the current owner map for boundaries
+and the intended water approach. Keep differences between an account's headline
+distance and its overview table in the review queue; do not silently select the
+more convenient number. A PDF's upload directory or search-result publication
+date is not its revision date—read the date printed in the document.
+
+### Shared advisories on longer river listings
+
+Keep notices attached to the affected sections in the catalog. The planner and
+server-rendered guide automatically show a notice once when its title, text,
+source URL, source name and checked date match across at least three sections.
+Every affected section retains a visible title and link to the full advisory;
+the advisory also lists links back to those stretches. Unique notices and access
+or distance holds remain fully visible on the individual section. Do not remove
+section notices, broaden their scope or change evidence dates just to group
+them. No state-specific display configuration is needed.
+
+### Same-name rivers and future access plans
+
+Disambiguate a river by town, watershed and gauge before matching access features.
+Wisconsin has Kinnickinnic rivers near both River Falls and Milwaukee. A name-only
+GIS match must not move a launch, assign a gauge or create a new stable access ID
+on the wrong waterway. Keep this context in the river name and source review.
+
+Concept plans are evidence of proposed facilities, not existing launches or dam
+removal. Compare them with the current agency inventory, municipal access page
+and present-day imagery. Retain a supported approximate access area when the
+facility is established but its exact landing is uncertain; explain carries and
+separate parking from the water edge. Community corrections remain reviewable
+evidence rather than automatic pin changes.
+
+If the live hydrography service is unavailable, use the official downloadable
+archive through `tools/fetch_nhd_archives.py`. Record its upstream URL, size,
+checksum verification and dated receipt in `research/routes/nhd-archives.json`.
+Older source geometry still needs imagery review: passing connectivity checks
+does not prove that a line follows today's bends. Approve a supported shorter
+course independently and hold a discrepant extension. Keep published trip
+mileage and trip-specific guide times independent of any trimmed overview.
+
+When a later agency inventory identifies the actual launch, promote that access
+without changing its stable ID. Use the coordinate from the launch row, not the
+nearby fishing area, trail reference point, bench or parking row. Keep the dated
+table, source image and previous pin in the review ledger. Glen Park's launch
+below Powell Falls is an example in `research/upper-kinni-20261106/decisions.json`.
+If an approved course references that access, recompute its endpoint snapshot,
+source station and offset, then re-review its signature and affected map
+fingerprints. A better pin does not authorize a new connector or remove an
+existing dam-approach omission. Preserve the reviewed geometry and independent
+trip mileage unless separate evidence supports changing them.
+
+
+### Minnesota water-trail source pipeline
+
+Use `catalog/agency_sources/MN-dnr-water-trail-access.json` with `python3 tools/fetch_agency_layer.py --source MN-dnr-water-trail-access`. The source filters to agency water-trail sites and archives a complete, hashed snapshot; it does not promote points. Bind reviewed accesses using `unique_swas_id`, not a mutable object ID or name. Retain Float ETA access IDs across source-name changes. The November 6 snapshot has 643 source candidates.
+
+A GPS collection method does not prove the coordinate marks the water edge. For the Kettle starter trip, both original site coordinates remain approximate areas, with independent published-trip mileage and correction links. Reconcile river-mile discrepancies explicitly and check current park/agency notices: an empty GIS alerts field is not proof a facility is open. Keep suspect operator names in research until resolved.
+
+Minnesota also publishes water-trail and major-river line layers. Use the registered `MN-dnr-water-trails` source with `tools/stage_agency_course.py`; the validator reconstructs each displayed segment and endpoint trim from the saved source and checks the documented downstream trip order. Staged geometry stays in research until the course and access limitations are reviewed. Do not reuse USGS feature IDs or source claims for a DNR line. Kettle review evidence starts under `research/minnesota-kettle-20261106/`; the Root and lower Root examples are under `research/root-river-20261106/` and `research/lower-root-20261106/`.
+
+### Reviewing hydrography forks without automatic channel selection
+
+`tools/inspect_route_branches.py` produces a downstream branch inventory and a
+GeoJSON network in a local research directory. It intersects forward and reverse
+reachability, so it scales without enumerating every possible route. Use a
+projected CRS in metres, the current generated catalog, and a saved USGS source:
+
+```sh
+python tools/inspect_route_branches.py --river beaverhead --section pipe-organ-grasshopper --source research/routes/MT/hr-sources/beaverhead-3d806a325f7cdba7.json --output research/branch-review-example --projected-crs EPSG:32612
+```
+
+After inspecting the alternatives against imagery, supply `--choices` with a
+JSON list of `{node: [longitude, latitude], featureId, reason}` records. Use exact
+junction coordinates and feature IDs from the inventory. Every encountered fork
+needs a decision; duplicate, unrelated and unused decisions are rejected. The
+result remains a candidate with all display/timing flags false. It must still
+pass source, geometry, access, distance and independent imagery review. Neither
+shortest-path selection nor apparent channel width grants approval. Keep wet
+side-channel alternatives documented. An inventory-only rerun archives any old
+candidate, and failed choices leave the previous inspection untouched.
+
+The Beaverhead example and reviewed branch images are in
+`research/beaverhead-branches-20261106`. For its planning mileage, the separately
+saved FWP 0.1-mile markers supersede older rounded guide numbers. A mapped course
+length and nearby agency mile-marker distance can differ; preserve their source
+and purpose, and keep precision labels and source limitations visible.
+
+### Check whether newer national river geometry actually exists
+
+Before retrying a held river course with another USGS service, run a coverage
+audit. A newly refreshed 3DHP service can still contain legacy NHD geometry.
+`featuredate` is a database load date, not a new imagery or river-survey date.
+Find the river's explicit GNIS ID in the USGS flowline attributes; do not guess
+it from a nearby stream or reuse the USGS gauge number.
+
+```sh
+python tools/audit_hydro_coverage.py --river zumbro-river-mn --section hammond-theilman --gnis-id 654509 --course research/zumbro-expansion-20261106/zumbro-river-mn--hammond-theilman-candidate.json --output research/zumbro-coverage-next-check
+```
+
+Use a new research output folder each time. The optional saved course expands
+the search envelope to include its bends; without it, the envelope includes
+only the access points and a margin. The tool checks complete feature inventories
+twice, archives allowlisted attributes and hashes, and records `legacy-only`,
+`edh-data-to-inspect`, `provenance-needs-review`, or `no-matching-flowlines`.
+An EDH workunit intersecting the envelope does not prove that the whole float
+has new geometry. Inspect the actual flowlines and imagery before any course
+approval. Unknown source lineage stays unknown. Never translate this report
+into verified landings, live timing, navigation approval or an automatic route
+release. The tool writes only research files and leaves catalog/public data
+unchanged. See `research/zumbro-course-refinement-20261106/coverage-audit/`.
+
+### Keep the landing distinct from its namesake park
+
+A named picnic park or campground does not establish where boats can land.
+Read the managing agency's approach instructions and retain its stable access
+ID. At Nimrod on the Crow Wing, the county explicitly places the carry-in
+across the river from Stigman's Mound picnic park. The agency point supports an
+approximate access area on the launch side, not an exact water-edge pin or a
+landing at the picnic park. Preserve checked exact pins elsewhere; use Area
+and Help pinpoint only where the evidence remains approximate.
+
+When a current map's route table, recommendation panel and GIS inventory use
+different river miles, record the disagreement and use one consistent set of
+endpoints. Do not silently mix them or label the derived distance exact. The
+Crow Wing review retains approximately 9.2 miles for Little White Dog–Cottingham
+and explains the panel's 9.8-mile figure. Its source course is independently
+reviewed for display; that does not calibrate paddling speed. Recent same-river
+discharge can remain reference information with live timing unavailable.
+See `research/crow-wing-expansion-20261106/decisions.json`.
+
+### Match published trip times to the actual access pair
+
+One park can contain several distinct boating facilities. Crow Wing State
+Park's Mississippi carry-in (`WAS00990`, river mile 990.4) and upstream trailer
+ramp (`WAS02297`) are different access identities. The Headwaters Board's
+Kiwanis excursion ends at the carry-in. Do not attach its duration to the
+trailer ramp, interpolate it onto shorter trips, or use the park's full
+river-mile extent as a landing coordinate.
+
+Store an explicitly published duration in that section's `guideTimes`, with
+the source, conditions and check date. Keep independently sourced planning
+mileage in `distanceEvidence`; explain rounding differences instead of
+changing either value to fit the other. A current same-river gauge can provide
+reference context while `timing.mode` remains `unavailable`. If dams or major
+tributaries separate the gauge from the trip, say so. This does not justify a
+new live speed model.
+
+The Mississippi review adds seven trips across two geographic listings with
+seven stable access identities. LeBourget's agency point matches the visible
+public ramp and remains precise; six less-resolved landings retain original
+agency coordinates as Area markers. Its dotted course stops upstream of Little
+Falls Dam. Each base leg has a complete imagery review; combined trips are
+checked against the geometric union of those legs. Public ramp verification
+does not establish a ramp-to-centerline connector. See
+`research/mississippi-brainerd-20261106/decisions.json` and
+`tests/test_mississippi_brainerd.py`.
+
+### Agency sites with missing water-trail join fields
+
+A documented access can be absent from an otherwise complete water-trail query.
+Check the agency's full access inventory before concluding the site is missing.
+For Pine River's Rock Dam, DNR recommends the launch but its inventory row has
+blank water-trail fields. The MN source adds stable ID `WAS02986` as an explicit
+query exception. Save the complete refreshed snapshot and compare additions,
+removals and changed features; retain existing reviewed bindings. This discovers
+source evidence only. Landing precision, public approach, river-course geometry
+and timing still need separate decisions. See
+`research/pine-river-expansion-20261106/decisions.json`.
+
+### Resolve guide totals against named endpoint labels
+
+Do not use a water trail's headline mileage for an arbitrary pair of accesses.
+Check the printed map's landing labels separately from nearby historical markers.
+For Eau Claire, the Phoenix Park carry-in is at mile 58.1, while its historical
+landmark is 58.2. Forest Street (the guide's Maintenance carry-in) is 58.9 and
+Hobbs is 56.1. Their differences support 0.8-, 2.0- and 2.8-mile planning trips,
+despite inconsistent overall 2.7-/4.2-mile descriptions. Record the discrepancy;
+do not silently select a headline that matches a measured line.
+
+Cross-check older access guides against current operator listings and imagery.
+A current facility-page coordinate can still mark a building: Forest Street
+keeps the guide's bank-side area instead. Hobbs retains its existing DNR
+coordinate and stable ID, with landing precision supported by the visible shore
+approach and managing-city listing. Its precise takeout does not make the other
+endpoint or the dotted river course precise. Keep upstream dam holds when adding
+separate below-dam trips. See `research/eau-claire-water-trail-20261106/decisions.json`.
+
+## Mileage measured from a published route map
+
+When a responsible agency or firsthand trip publisher provides a line but no
+numeric trip length, use `distanceEvidence.method: mapped-course-length`.
+Do not call a computed number a published trip length or invent endpoint river
+miles. The first example is `eau-claire-river-lower / river-prairie-phoenix`.
+
+Keep the usual `sourceName`, public HTTPS `sourceUrl`, `checkedOn`, `streamId`
+and `note`. Each endpoint needs the matching section `name`, reviewed `lat` and
+`lon`, and a `sourceLocation` identifying its map label. Access areas are valid
+endpoints; this does not promote them to precise landings.
+
+The `measurement` object contains `format: kml`,
+`algorithm: haversine-6371008.8m`, a local `research/` `evidenceFile`, its SHA-256
+`sha256`, one unique `featureName`, unrounded `measuredMiles` and a `reviewNote`.
+Archive the original KML, including provenance from the publishing page; do not
+redraw it to fit a desired distance. Inspect the whole course, both endpoints
+and important bends against imagery, and record unresolved hazards separately.
+The current adapter accepts one downstream LineString and checks that its ends
+are within 250 metres of the named access locations. That tolerance is a
+mismatched-endpoint check, not a claim of landing accuracy. Changed evidence or
+endpoint coordinates require re-review. Section `miles` is the measured value
+rounded to one decimal place. Explain shoreline gaps and generalization in the
+note. Another source format needs an explicit adapter and tests; never relabel
+it KML merely to pass validation.
+
+Both planner and river guide label this **Measured from published map**. This
+establishes approximate planning distance only. Course display, precise access
+pins, river-bank claims, land overlays, live estimates and GPS time remaining
+keep their separate review requirements. Validate with:
+
+```
+python3 tools/build_catalog.py --check
+python3 -m unittest discover -s tests -p 'test_mapped_distance.py'
+```

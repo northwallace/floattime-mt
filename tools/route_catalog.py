@@ -4,8 +4,119 @@ Passing geometry checks is necessary, but does not grant review or permissions.
 import hashlib,json,math,re
 from datetime import date
 from pathlib import Path
+try:
+    from tools.agency_courses import METHOD as AGENCY_COURSE, valid_direction as valid_agency_direction, validate_agency_course, nearest_position, trim_chain
+except ModuleNotFoundError:
+    from agency_courses import METHOD as AGENCY_COURSE, valid_direction as valid_agency_direction, validate_agency_course, nearest_position, trim_chain
 SLUG=re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 FEATURES={'display','landOverlay','distanceEstimate','remainingTime'}
+OVERVIEW='river-course-overview'
+OVERVIEW_MAX_OFFSET_METERS=1000
+OVERVIEW_MAX_REVIEWED_SEGMENT_METERS=2000
+
+def review_signature(record):
+    """Bind an overview decision to its geometry, source and access snapshots."""
+    fields=('geometry','direction','source','putIn','takeOut','catalogMiles')
+    if 'sourceSegmentReview' in record:
+        fields += ('sourceSegmentReview',)
+    if 'distanceDiscrepancyReview' in record:
+        fields += ('distanceDiscrepancyReview',)
+    return hashlib.sha256(json.dumps({k:record[k] for k in fields},sort_keys=True,separators=(',',':')).encode()).hexdigest()
+
+def reviewed_distance_discrepancy(record,section,root):
+    """Display a checked source course while disputed planning mileage stays held.
+
+    This is never a distance correction or a navigation/timing approval. Require
+    the original downstream source vertices and saved imagery, not just a
+    re-signed geometry or a larger numerical tolerance.
+    """
+    review=record.get('distanceDiscrepancyReview')
+    if review is None:return False
+    require(record.get('scope')==OVERVIEW and record.get('direction',{}).get('method')=='usgs-flow-directed-network',
+            'Distance discrepancy requires a source-reconstructed downstream overview')
+    require(isinstance(review,dict) and isinstance(section.get('distanceReview'),str) and bool(section['distanceReview'].strip())
+            and review.get('planningDistanceReview')==section['distanceReview'],
+            'Planning distance review changed; re-review course')
+    require(record.get('features')==dict(display=True,landOverlay=False,distanceEstimate=False,remainingTime=False),
+            'Disputed planning distance permits display only')
+    require(isinstance(review.get('note'),str) and review['note'].strip(),'Distance discrepancy needs a review explanation')
+    imagery=review.get('imageryEvidence')
+    require(isinstance(imagery,list) and imagery,'Distance discrepancy needs saved imagery review')
+    for item in imagery:
+        require(isinstance(item,dict),'Invalid distance review imagery')
+        path=safe_file(root,item.get('file'),'research')
+        require(path.suffix.lower() in ('.png','.jpg','.jpeg','.webp'),'Distance review evidence must be imagery')
+        require(hashlib.sha256(path.read_bytes()).hexdigest()==item.get('sha256'),'Distance review imagery changed; re-review required')
+    payload=json.loads(safe_file(root,record['source']['evidenceFile'],'research').read_text())
+    require(not payload.get('error') and not payload.get('exceededTransferLimit'),'Incomplete downstream source evidence')
+    features={str(f['attributes']['permanent_identifier']):f for f in payload['features']}
+    parts=[features[k]['geometry']['paths'][0] for k in record['direction']['featureIds']]
+    chain=[]
+    for part in parts:
+        require(len(part)>=2 and all(len(p)==2 and all(finite(v) for v in p) for p in part),'Invalid downstream source line')
+        if chain:require(chain[-1]==part[0],'Source reconstruction cannot invent connectors')
+        chain.extend(part if not chain else part[1:])
+    coords=record['geometry']['coordinates']
+    clip={side:nearest_position(chain,dict(lon=p[0],lat=p[1])) for side,p in [('start',coords[0]),('end',coords[-1])]}
+    require(clip['start']['segment']<len(parts[0])-1 and clip['end']['segment']>=len(chain)-len(parts[-1]),
+            'Downstream source trim omits a reviewed endpoint feature')
+    expected=trim_chain(chain,clip)['coordinates']
+    require(len(coords)==len(expected) and all(distance(a,b)<.1 for a,b in zip(coords,expected)),
+            'Overview geometry differs from original downstream source vertices')
+    return True
+
+def reviewed_source_segments(record,root):
+    """A long original agency segment can be real straight water, not a gap.
+
+    This exception requires source reconstruction elsewhere in validate(), plus
+    explicit imagery review of every long segment. Never interpolate vertices
+    to evade the ordinary gap check or extend this to navigation routes.
+    """
+    rows=record.get('sourceSegmentReview')
+    if rows is None:return []
+    require(record.get('scope')==OVERVIEW and record.get('direction',{}).get('method')==AGENCY_COURSE,
+            'Long segment review requires a source-reconstructed agency overview')
+    coords=record['geometry']['coordinates']
+    lengths=[distance(a,b) for a,b in zip(coords,coords[1:])]
+    require(all(.001<d<=OVERVIEW_MAX_REVIEWED_SEGMENT_METERS for d in lengths),
+            'Long segment review cannot accept duplicates or segments beyond 2000 metres')
+    expected=[i for i,d in enumerate(lengths) if d>1000]
+    require(isinstance(rows,list) and bool(expected) and len(rows)==len(expected),
+            'Every long source segment needs exactly one review')
+    indices=[]
+    for row in rows:
+        require(isinstance(row,dict) and type(row.get('segment')) is int,'Invalid long source segment index')
+        indices.append(row['segment'])
+        require(isinstance(row.get('note'),str) and row['note'].strip(),'Long source segment needs an imagery verdict')
+        evidence=row.get('imageryEvidence')
+        require(isinstance(evidence,list) and evidence,'Long source segment needs saved imagery evidence')
+        for item in evidence:
+            require(isinstance(item,dict),'Invalid long source segment evidence')
+            path=safe_file(root,item.get('file'),'research')
+            require(path.suffix.lower() in ('.png','.jpg','.jpeg','.webp'),'Long source segment evidence must be imagery')
+            require(hashlib.sha256(path.read_bytes()).hexdigest()==item.get('sha256'),
+                    'Long source segment imagery changed; re-review required')
+    require(sorted(indices)==expected,'Long source segment reviews do not match geometry')
+    return expected
+
+def validate_overview(record,section,metrics,issues,root):
+    review=record.get('overviewReview',{})
+    require(review.get('signature')==review_signature(record),'River-course overview changed; re-review required')
+    accepted=review.get('acceptedIssues',{})
+    allowed={'endpoint-offset-over-100m','mileage-difference-over-5-percent'}
+    if reviewed_source_segments(record,root):allowed.add('route-gap-or-duplicate-vertex')
+    require(set(accepted)==set(issues) and set(issues)<=allowed,'Overview has unresolved geometry checks')
+    require(all(isinstance(v,str) and v.strip() for v in accepted.values()),'Overview exceptions need reasons')
+    discrepancy=reviewed_distance_discrepancy(record,section,root)
+    require(max(metrics['endpointOffsetsMeters'])<=OVERVIEW_MAX_OFFSET_METERS and (metrics['mileageDifferencePercent']<=20 or discrepancy),'Overview extends beyond reviewed access vicinity or mileage bounds')
+    require(not section.get('distanceReview') or discrepancy,'Overview needs an explicit planning distance review')
+    require(review.get('routeReview')==section.get('routeReview'),'Overview barrier review changed')
+    require(isinstance(review.get('note'),str) and review['note'].strip(),'Overview limitations required')
+    connections=review.get('connections',{})
+    require(set(connections)=={'putIn','takeOut'},'Overview must describe both access connections')
+    for connection in connections.values():
+        require(connection.get('status')=='not-mapped' and isinstance(connection.get('note'),str) and connection['note'].strip(),'Overview must not claim an exact landing connection')
+    require(not record['features']['landOverlay'],'Overview cannot imply a reviewed land-access corridor')
 
 def require(ok,message):
     if not ok: raise ValueError(message)
@@ -45,7 +156,7 @@ def geometry_checks(record):
                 and isinstance(d.get('featureIds'),list) and bool(d['featureIds'])
                 and all(isinstance(v,str) and bool(v) for v in d['featureIds'])
                 and all(finite(d.get(k)) and d[k]>=0 for k in ('putInOffsetMeters','takeOutOffsetMeters')))
-    if not (measured or downstream or directed):
+    if not (measured or downstream or directed or valid_agency_direction(d)):
         issues.append('downstream-order-unconfirmed')
     return {'routeMiles':round(miles,4),'endpointOffsetsMeters':[round(v,1) for v in offsets],'mileageDifferencePercent':round(difference*100,2),'maxSegmentMeters':round(max(lengths),1),'vertices':len(c)},issues
 
@@ -57,6 +168,7 @@ def safe_file(root,path,prefix):
 
 def validate(record,catalog,root):
     require(record.get('version')==1,'Invalid route version')
+    require(record.get('scope','landing-to-landing') in ('landing-to-landing',OVERVIEW),'Invalid route scope')
     require(record.get('status') in ('candidate','reviewed','rejected'),'Invalid route status')
     river=next((r for r in catalog['rivers'] if r['id']==record.get('riverId')),None)
     require(river is not None and river['state']==record.get('state'),'Route river/state mismatch')
@@ -69,6 +181,8 @@ def validate(record,catalog,root):
     require(date.fromisoformat(source['checkedOn'])<=date.today(),'Future route source date')
     evidence=safe_file(root,source['evidenceFile'],'research')
     require(hashlib.sha256(evidence.read_bytes()).hexdigest()==source['sha256'],'Source evidence changed; re-review route')
+    if record.get('direction',{}).get('method') == AGENCY_COURSE:
+        validate_agency_course(record,section,json.loads(evidence.read_text()),root)
     if record.get('direction',{}).get('method')=='usgs-downstream-mainstem':
         require(source['url'].startswith('https://api.water.usgs.gov/nldi/linked-data/comid/') and '/navigation/DM/flowlines?' in source['url'],'Downstream route requires USGS mainstem evidence')
         payload=json.loads(evidence.read_text())
@@ -94,7 +208,16 @@ def validate(record,catalog,root):
             line=f['geometry']['paths'][0]
             if previous is not None:require(distance(previous,line[0])<1,'Directed source path is disconnected')
             previous=line[-1]
-        if len(ids)==1:require(record['direction']['putInOffsetMeters']<record['direction']['takeOutOffsetMeters'],'Single-feature route is reversed')
+        direction=record['direction']
+        station_keys=('putInSourceStationMeters','takeOutSourceStationMeters')
+        if any(k in direction for k in station_keys):
+            require(all(finite(direction.get(k)) and direction[k]>=0 for k in station_keys),'Invalid source-line station distances')
+            start_station,end_station=(direction[k] for k in station_keys)
+        else:
+            # Legacy imports named along-line stations OffsetMeters. Preserve their
+            # meaning; new imports record perpendicular offsets separately.
+            start_station,end_station=direction['putInOffsetMeters'],direction['takeOutOffsetMeters']
+        if len(ids)==1:require(start_station<end_station,'Single-feature route is reversed')
     flags=record.get('features',{})
     require(set(flags)==FEATURES and all(type(v) is bool for v in flags.values()),'Invalid route feature flags')
     # These are reserved, separately reviewed future capabilities; never enabled by map review.
@@ -117,8 +240,16 @@ def validate(record,catalog,root):
         require(match.get('geometrySha256')==geometry_hash,'Resolution review belongs to a different route')
         fine=safe_file(root,match.get('highResolutionEvidenceFile'),'research')
         require(hashlib.sha256(fine.read_bytes()).hexdigest()==match.get('highResolutionSha256'),'High-resolution comparison evidence changed')
-    require(not issues and not record['checks']['issues'],'Reviewed route has unresolved checks')
-    require(section.get('mapPilot') and section.get('mapPrecision')=='exact' and not section.get('distanceReview') and not section.get('accessReview'),'Reviewed route needs eligible access points')
+    overview=record.get('scope')==OVERVIEW
+    if overview:
+        require(record['checks']['issues']==issues,'Overview check issues stale')
+        validate_overview(record,section,metrics,issues,root)
+    else:
+        require('distanceDiscrepancyReview' not in record,'Distance discrepancy is for river-course overviews only')
+        require(not issues and not record['checks']['issues'],'Reviewed route has unresolved checks')
+        require(section.get('mapPrecision')=='exact','Reviewed route needs eligible access points')
+        require(not section.get('routeReview'), 'Reviewed route has an unresolved route/portage review')
+    require(section.get('mapPilot') and (not section.get('distanceReview') or overview) and not section.get('accessReview'),'Reviewed route needs eligible access points')
     require(record['catalogMiles']==section['miles'],'Published section mileage changed; re-review route')
     for field in ('putIn','takeOut'):
         p=record[field]
@@ -164,11 +295,18 @@ def build_outputs(root,catalog):
             asset='routes/'+key[0]+'--'+key[1]+'.json'
             public={k:record[k] for k in ('version','state','riverId','sectionId','status','putIn','takeOut','catalogMiles','geometry','features','note')}
             public.update(routeMiles=metrics['routeMiles'],sourceName=record['source']['name'],sourceUrl=record['source']['url'],checkedOn=record['review']['checkedOn'])
+            if record.get('scope')==OVERVIEW:
+                public.update(scope=OVERVIEW,overview={k:record['overviewReview'][k] for k in ('note','connections','routeReview')})
+                if 'sourceSegmentReview' in record:
+                    public['overview']['longSourceSegments']=[r['segment'] for r in record['sourceSegmentReview']]
+                if 'distanceDiscrepancyReview' in record:
+                    public['overview']['planningDistanceReview']=record['distanceDiscrepancyReview']['planningDistanceReview']
             public['land']=None
             if record['features']['landOverlay']:
                 land=record['landEvidence'];public.update(land=json.loads((root/land['file']).read_text()),corridorMeters=land['corridorMeters'],landCheckedOn=land['checkedOn'],landSourceUrl=land['url'],landNote='Only portions of trust-land polygons within 150 metres of the approximate river line are shown. Clipped display edges are not property boundaries or proof of river access.')
             outputs['public/'+asset]=json.dumps(public,separators=(',',':'))+'\n'
             entries.append({'riverId':key[0],'sectionId':key[1],'state':state,'file':asset,'features':record['features']})
+            if record.get('scope')==OVERVIEW:entries[-1]['scope']=OVERVIEW
     outputs['public/routes/index.json']=json.dumps({'version':1,'routes':entries},indent=2)+'\n'
     return outputs
 

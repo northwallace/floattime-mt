@@ -6,30 +6,166 @@
   "gaugeName": "Snake River nr Heise",
   "lat": 43.613,
   "lon": -111.66,
-  "refFlowCfs": 9000,
-  "refSpeedMph": 3.8,
-  "blurb": "The Conant canyon — largest remaining Yellowstone-cutthroat fishery, and no takeout in the middle.",
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "South Fork Snake canyon and downstream valley floats, with public access at Conant, Fullmer, Byington and Lorenzo. Choose the full canyon or a shorter reach through Fullmer.",
   "sections": [
     {
       "id": "conant-byington",
       "putIn": "Conant",
       "takeOut": "Byington",
-      "miles": 26,
+      "miles": 24.8,
       "difficulty": "Class I–II",
-      "notes": "Full-day canyon. No intermediate ramp. Cottonwood gallery, eagles, and a committed float.",
+      "notes": "A long canyon float. Fullmer at river mile 28 provides an intermediate public ramp; arrange your shuttle and allow time for stops. Use designated camps and the required overnight permit if breaking the trip over multiple days.",
       "putInAccessId": "acc-e0e189c765525569ab75",
-      "takeOutAccessId": "acc-998b91e623d35a48a9d3"
+      "takeOutAccessId": "acc-998b91e623d35a48a9d3",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM — Regulations for Floating the South Fork of the Snake River, access table",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "South Fork Snake / agency river miles from Palisades Dam",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Conant",
+          "riverMile": 14.2,
+          "sourceLocation": "Page 1 access table: Conant"
+        },
+        "takeOut": {
+          "name": "Byington",
+          "riverMile": 39,
+          "sourceLocation": "Page 1 access table: Byington"
+        },
+        "note": "Approximate planning distance from published agency river-mile markers; actual channels and launch connections vary. This does not calibrate live travel speed."
+      },
+      "notices": [
+        {
+          "title": "Plan your access and overnight arrangements",
+          "text": "Launch at designated sites and check current facility fees, road conditions and closures. Overnight camping requires the self-issued permit and designated camps; follow the river’s waste and fire rules.",
+          "sourceName": "BLM — South Fork Snake boating regulations",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "conant-fullmer",
+      "putIn": "Conant",
+      "takeOut": "Fullmer",
+      "miles": 13.8,
+      "difficulty": "Class I–II; conditions vary",
+      "notes": "A shorter canyon option ending at the public Fullmer ramp. Confirm the Fullmer road and shuttle beforehand; its map marker is the parking area above the river.",
+      "putInAccessId": "acc-e0e189c765525569ab75",
+      "takeOutAccessId": "acc-747f6331c0495b359e73",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM — Regulations for Floating the South Fork of the Snake River, access table",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "South Fork Snake / agency river miles from Palisades Dam",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Conant",
+          "riverMile": 14.2,
+          "sourceLocation": "Page 1 access table: Conant"
+        },
+        "takeOut": {
+          "name": "Fullmer",
+          "riverMile": 28,
+          "sourceLocation": "Page 1 access table: Fullmer"
+        },
+        "note": "Approximate planning distance from published agency river-mile markers; actual channels and launch connections vary. This does not calibrate live travel speed."
+      },
+      "notices": [
+        {
+          "title": "Plan your access and overnight arrangements",
+          "text": "Launch at designated sites and check current facility fees, road conditions and closures. Overnight camping requires the self-issued permit and designated camps; follow the river’s waste and fire rules.",
+          "sourceName": "BLM — South Fork Snake boating regulations",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "fullmer-byington",
+      "putIn": "Fullmer",
+      "takeOut": "Byington",
+      "miles": 11,
+      "difficulty": "Class I–II; conditions vary",
+      "notes": "Launch at Fullmer for the lower canyon reach to Byington. Confirm road access and your shuttle before launching, and identify the designated Byington ramp or raft exit.",
+      "putInAccessId": "acc-747f6331c0495b359e73",
+      "takeOutAccessId": "acc-998b91e623d35a48a9d3",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM — Regulations for Floating the South Fork of the Snake River, access table",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "South Fork Snake / agency river miles from Palisades Dam",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Fullmer",
+          "riverMile": 28,
+          "sourceLocation": "Page 1 access table: Fullmer"
+        },
+        "takeOut": {
+          "name": "Byington",
+          "riverMile": 39,
+          "sourceLocation": "Page 1 access table: Byington"
+        },
+        "note": "Approximate planning distance from published agency river-mile markers; actual channels and launch connections vary. This does not calibrate live travel speed."
+      },
+      "notices": [
+        {
+          "title": "Plan your access and overnight arrangements",
+          "text": "Launch at designated sites and check current facility fees, road conditions and closures. Overnight camping requires the self-issued permit and designated camps; follow the river’s waste and fire rules.",
+          "sourceName": "BLM — South Fork Snake boating regulations",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ]
     },
     {
       "id": "byington-lorenzo",
       "putIn": "Byington",
       "takeOut": "Lorenzo",
-      "miles": 12,
-      "difficulty": "Class I",
-      "notes": "River opens into the Heise valley. Twin Bridges is an optional pullout. Watch irrigation diversions.",
+      "miles": 14.7,
+      "difficulty": "Class I–II; conditions vary",
+      "notes": "The river widens into multiple channels below Byington. Identify Lorenzo and the current main channel before launching; islands, gravel bars and diversion structures require local scouting.",
       "putInAccessId": "acc-998b91e623d35a48a9d3",
-      "takeOutAccessId": "acc-ddd9072240ee59288bc7"
+      "takeOutAccessId": "acc-ddd9072240ee59288bc7",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM — Regulations for Floating the South Fork of the Snake River, access table",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "South Fork Snake / agency river miles from Palisades Dam",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Byington",
+          "riverMile": 39,
+          "sourceLocation": "Page 1 access table: Byington"
+        },
+        "takeOut": {
+          "name": "Lorenzo",
+          "riverMile": 53.7,
+          "sourceLocation": "Page 1 access table: Lorenzo"
+        },
+        "note": "Approximate planning distance from published agency river-mile markers; actual channels and launch connections vary. This does not calibrate live travel speed."
+      },
+      "notices": [
+        {
+          "title": "Plan your access and overnight arrangements",
+          "text": "Launch at designated sites and check current facility fees, road conditions and closures. Overnight camping requires the self-issued permit and designated camps; follow the river’s waste and fire rules.",
+          "sourceName": "BLM — South Fork Snake boating regulations",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ]
     }
   ],
-  "timezone": "America/Boise"
+  "timezone": "America/Boise",
+  "timing": {
+    "mode": "unavailable",
+    "note": "Published river-mile distances and access information are available. The legacy reference-flow speed has no documented trip calibration for these reviewed sections, so no live duration is shown until calibration is reviewed."
+  }
 }

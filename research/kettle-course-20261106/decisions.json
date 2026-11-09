@@ -1,0 +1,113 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "riverId": "kettle-river-mn",
+  "sectionId": "musclewood-highway-23",
+  "acceptedSource": "MN-dnr-water-trails",
+  "rejectedSource": "NHD candidates retain their held status because of woodland alignment below Musclewood.",
+  "metrics": {
+    "routeMiles": 16.3729,
+    "endpointOffsetsMeters": [
+      72.7,
+      24.2
+    ],
+    "mileageDifferencePercent": 0.77,
+    "maxSegmentMeters": 201.6,
+    "vertices": 506
+  },
+  "sourcePartIds": [
+    "37",
+    "35"
+  ],
+  "sourceClip": {
+    "start": {
+      "segment": 209,
+      "fraction": 0.6512481254187067
+    },
+    "end": {
+      "segment": 713,
+      "fraction": 0.6410236735856639
+    }
+  },
+  "planningDistanceChanged": false,
+  "accessCoordinatesChanged": false,
+  "timingChanged": false,
+  "mapReviewBefore": {
+    "version": 1,
+    "state": "MN",
+    "sections": {
+      "kettle-river-mn/musclewood-highway-23": {
+        "status": "reviewed",
+        "checkedOn": "2026-11-06",
+        "reviewer": "Float ETA agency trip, access, closure and satellite review",
+        "fingerprint": "50c2ab3aa7e80aa8261553a34152678b6b30213de60cf12641f008c2a4724499",
+        "sourceManifest": "research/minnesota-kettle-20261106/decisions.json",
+        "note": "Both public access identities are supported by the DNR map and stable inventory IDs. Coordinates remain approximate facility areas. Published distance and current construction notice reviewed; this does not approve a navigation channel or live timing model."
+      }
+    }
+  },
+  "mapReviewAfter": {
+    "version": 1,
+    "state": "MN",
+    "sections": {
+      "kettle-river-mn/musclewood-highway-23": {
+        "status": "reviewed",
+        "checkedOn": "2026-11-06",
+        "reviewer": "Float ETA agency trip, access, closure and satellite review",
+        "fingerprint": "adf99d42312025fd114bf0e7192a3d2f7ac5d68239838ee3d2f5bc33371e5b8e",
+        "sourceManifest": "research/kettle-course-20261106/decisions.json",
+        "note": "Both public access identities are supported by the DNR map and stable inventory IDs. Coordinates remain approximate facility areas. Published distance and current construction notice reviewed; this does not approve a navigation channel or live timing model. DNR overview limitations added; access positions, trip distance and timing are unchanged."
+      }
+    }
+  },
+  "imageryEvidence": [
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-1.png",
+      "sha256": "c80a720a01407636b51e82fc2bc29a24f5aaee95e0758beb00b2f5e9b4725057"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-2.png",
+      "sha256": "ae57b660ea6f8936ee1a9a4f628ed0eaf02f6488ce89b3dda2bece41971f5f24"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-3.png",
+      "sha256": "12237fa997ff1ce0b6482426c4ee2824c896a3f68d41fbc9a5728de515ba958f"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-4.png",
+      "sha256": "656665e5e3eb7922ef05494d291f07489aacf50efffd3479dffb374233cd23b5"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-5.png",
+      "sha256": "7490efba9690022e4f9e330ebe0ab18f8d76a2c8a1b62f20ba3812036a4b40db"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-6.png",
+      "sha256": "4f8b570e8beb10b46d09099351137619cc46fa4e147e499903f5e17759689cbe"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-7.png",
+      "sha256": "441fdc3e74c1db88fa825db9e938557e6d6a71eba286303ea988adee39fd36c4"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-8.png",
+      "sha256": "afb310a9271ad5e9448b3c2e40973eac47c0a594dd01f9ad29912db753823b23"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-9.png",
+      "sha256": "4aa41dcac23e1d72959e28d2b02f26b4cc45928ca0456bf8ee69e70291a664dc"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-10.png",
+      "sha256": "5b716c3eb574c42158fb6dfad808afe9a7d1207ec9c28d5f667abfe3d7a773cb"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-11.png",
+      "sha256": "5ef7517eb7d621e301920c1f4cce43092ae722894c84053d193832fcaae50796"
+    },
+    {
+      "file": "research/minnesota-kettle-20261106/sources/dnr-trail-12.png",
+      "sha256": "8c494535c7a09d7f0f88ccaad2e5e7d729d9012603ca1ce549d1c9794ec67024"
+    }
+  ]
+}

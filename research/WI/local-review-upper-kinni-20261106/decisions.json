@@ -1,0 +1,59 @@
+{
+  "state": "WI",
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "sourceManifest": "research/upper-kinni-20261106/manifest.json",
+  "points": {
+    "Lake George Boat Launch — River Falls": {
+      "status": "research-only",
+      "blocker": "upstream-trip-and-mileage-review",
+      "sources": [
+        "https://www.rfcity.org/DocumentCenter/View/4324/Recreation-Inventory-Report",
+        "https://www.rfcity.org/DocumentCenter/View/63/Kinni-Trail-System?bidId="
+      ],
+      "evidenceSummary": "The January 2020 city inventory table 1 explicitly identifies a public carry-in boat launch at this coordinate. The city trail map and satellite image show the same launch. It is above Junction Falls Dam, separate from the lower Glen Park launch.",
+      "candidateCoordinates": {
+        "lat": 44.856292,
+        "lon": -92.631471,
+        "pointType": "landing",
+        "sourceUrl": "https://www.rfcity.org/DocumentCenter/View/4324/Recreation-Inventory-Report",
+        "sourceLocation": "Printed page 5, table 1: Lake George Boat Launch"
+      },
+      "nextAction": "Pair this documented takeout with a supported upstream put-in and published trip distance. Keep the trip above Junction Falls; do not create a continuous route through the city dams. Inspect current city access notices before adding the trip."
+    },
+    "Red Cabin Site — North River Road": {
+      "status": "research-only",
+      "blocker": "water-approach-and-trip-mileage-review",
+      "sources": [
+        "https://www.kiaptuwish.org/conserve-protect-restore/habitat-projects/red-cabin-on-the-kinni/",
+        "https://dnr.wisconsin.gov/topic/Lands/FisheriesAreas/kinnickinnic.html",
+        "https://rfsocialclub.wordpress.com/kayaking-and-canoeing/"
+      ],
+      "evidenceSummary": "The DNR habitat-project partner documents public agency ownership and a fishing-access parking lot beside North River Road. Local club accounts describe launching kayaks here in 2025–2026. Exact landing coordinates, the route distance and the intended bank approach remain unresolved; a fishing easement elsewhere is not automatically a boat-access designation.",
+      "candidateCoordinates": null,
+      "nextAction": "Use the DNR property map and facility geometry to identify the owned bank and carry route. Seek a documented landing/area coordinate, retain the distinction between fishing access and boat access, and establish exact-pair trip mileage before adding a section."
+    },
+    "North Main Street / Aldi area — Upper Kinni": {
+      "status": "research-only",
+      "blocker": "takeout-identity-and-coordinate-review",
+      "sources": [
+        "https://rfsocialclub.wordpress.com/kayaking-and-canoeing/",
+        "https://www.rfcity.org/AgendaCenter/ViewFile/Minutes/_10052022-1213"
+      ],
+      "evidenceSummary": "Club trips name the lot across from Aldi on Main Street as a takeout. City committee minutes identify the difficult river crossing in this area, but do not locate or authorize a boat landing. Aldi is an orientation landmark, not the access operator.",
+      "candidateCoordinates": null,
+      "nextAction": "Match the club takeout to an agency-owned parcel and actual bank approach. Record the public lot and landing separately, find a sourced area or landing coordinate, and keep private business parking out of driving directions."
+    },
+    "West Cedar Street — Upper Kinni": {
+      "status": "research-only",
+      "blocker": "public-approach-and-trip-review",
+      "sources": [
+        "https://rfsocialclub.wordpress.com/kayaking-and-canoeing/",
+        "https://www.rfcity.org/DocumentCenter/View/3660/KinniCorridorPlan2019"
+      ],
+      "evidenceSummary": "A September 2025 club trip describes finishing near West Cedar Street and a local business. That account does not establish a current city boat-launch designation, exact coordinate or whole-trip mileage.",
+      "candidateCoordinates": null,
+      "nextAction": "Check current municipal parcel/trail information for the water approach and obtain a source-backed location and trip distance. Do not use the business address or a proposed future launch as the public landing."
+    }
+  }
+}

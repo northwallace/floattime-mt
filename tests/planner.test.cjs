@@ -69,3 +69,11 @@ test("invalid DST local launch is rejected", () =>
 test('access under review never yields an estimate',()=>{
  assert.equal(P.estimate(river,{miles:8,accessReview:"Landing not confirmed"},1100,1,0),null);
 });
+
+test('published open-ended guide times preserve the minimum without enabling an ETA',()=>{
+ for(const [min,unit,text] of [[6,'hours','6 hours or more'],[1,'hours','1 hour or more'],[1.5,'hours','1 hr 30 min or more'],[.5,'hours','30 min or more'],[2,'days','2 days or more']])
+  assert.equal(P.guideTime({min,max:null,unit}),text);
+ const pine=require('../catalog/rivers/pine-river-mn.json');
+ assert.equal(P.guideTime(pine.sections[1].guideTimes[0]),'6 hours or more');
+ for(const s of pine.sections)assert.equal(P.estimate(pine,s,1000,1,0),null);
+});

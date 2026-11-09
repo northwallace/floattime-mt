@@ -1,5 +1,46 @@
 # Float ETA
 
+## November 8 release
+
+This release grows the catalog to **252 rivers, 1,088 sections and 877 access
+maps across 13 states**, including Wisconsin and Minnesota. There are **249
+reviewed dotted river paths**, including 92 river-course overviews. Compared
+with the October 30 production release, this adds 82 rivers, 490 sections,
+439 access maps and 190 paths.
+
+- Search finds rivers, states, put-ins, take-outs and documented access aliases.
+  State shortcuts fill the planner; each opened map sits under its own stretch.
+- Precise landings and approximate access areas remain visibly distinct.
+  Visitors can suggest a location correction; submissions stay private until
+  reviewed and never move a public pin automatically.
+- Agency and published map evidence supports additional Montana, Idaho,
+  California and Midwest sections. Stable access IDs, per-section approval
+  fingerprints and source hashes keep updates reviewable as the catalog grows.
+- Gauge availability, published guide times, access maps and model-based float
+  estimates remain independent. Missing or reference-only gauges do not invent
+  flow readings or enable uncalibrated timing models.
+- **211 access maps remain withheld** where evidence is unresolved. Ordinary
+  location-based remaining-time estimates remain disabled. The existing
+  opt-in Greycliff pilot is unchanged and still needs a phone field test.
+
+Release checks:
+
+```sh
+python3 tools/build_catalog.py --check
+python3 tools/check_release.py --output /tmp/floateta-release-readiness.json
+python3 -m unittest discover -s tests
+node --test tests/*.test.cjs
+```
+
+The production checkout carries the runtime, core regression suite and required
+immutable evidence. The larger local research workspace retains historical
+batch tests and downloaded research material. Render uses the existing plan,
+start/build commands and persistent data disk. Local map credentials and the
+private feedback inbox are excluded from Git.
+
+The dated notes below describe earlier research/release stages; their totals
+and local-only status are historical.
+
 ## Release candidate — optional gauges and honest availability
 
 LOCAL ONLY, October 30. Gauge handling now supports no assigned station and

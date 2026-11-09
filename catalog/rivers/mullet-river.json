@@ -1,0 +1,39 @@
+{
+  "id": "mullet-river",
+  "name": "Mullet River",
+  "gauge": "04085744",
+  "gaugeName": "MULLET RIVER NEAR GREENBUSH, WI",
+  "lat": 43.73963,
+  "lon": -88.2052,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Mullet River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "deerview-drive-bridge-access-to-hwy-g-flowage",
+      "putIn": "Deerview Drive Bridge Access",
+      "takeOut": "Hwy G Flowage",
+      "miles": 2.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-2139a86ab2515dcd85e2",
+      "takeOutAccessId": "acc-f19a40c5a1be55c8a569",
+      "accessReview": "A dam lies near a section endpoint (Mullet Creek). The landing’s position relative to the barrier still needs confirmation.",
+      "routeReview": "This section includes Mullet Creek and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    }
+  ],
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "This station is downstream of the accessed reach. Its readings are reference information, not a measured flow for every section or a float-time estimate.",
+    "sourceName": "USGS Water Data — monitoring location and Wisconsin gauge review",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-04085744/",
+    "checkedOn": "2026-10-30"
+  }
+}

@@ -6,30 +6,90 @@
   "gaugeName": "Snake River nr Irwin",
   "lat": 43.351,
   "lon": -111.219,
-  "refFlowCfs": 9000,
-  "refSpeedMph": 4,
-  "blurb": "Palisades Dam to Conant — big cutthroat water in Swan Valley before the canyon walls close in.",
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Swan Valley reaches of the South Fork Snake below Palisades Dam, with Spring Creek access at the highway bridge and Conant farther downstream.",
   "sections": [
     {
       "id": "palisades-spring",
       "putIn": "Palisades Dam",
       "takeOut": "Spring Creek",
-      "miles": 8,
+      "miles": 12.2,
       "difficulty": "Class I",
-      "notes": "Dam-controlled. Fall Creek falls comes in river-left. Palisades Creek is an optional early takeout.",
+      "notes": "Start only at the public ramp below Palisades Dam, not a reservoir ramp. Spring Creek is at the Swan Valley Highway bridge; river levels depend on dam releases. Confirm the launch, takeout and shuttle before your trip.",
       "putInAccessId": "acc-cf9caccd26a955af945c",
-      "takeOutAccessId": "acc-09d76b6c03415210a557"
+      "takeOutAccessId": "acc-09d76b6c03415210a557",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM — Regulations for Floating the South Fork of the Snake River, access table",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "South Fork Snake / agency river miles from Palisades Dam",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Palisades Dam",
+          "riverMile": 0,
+          "sourceLocation": "Page 1 access table: Palisades Dam"
+        },
+        "takeOut": {
+          "name": "Spring Creek",
+          "riverMile": 12.2,
+          "sourceLocation": "Page 1 access table: Spring Creek"
+        },
+        "note": "Approximate planning distance from published agency river-mile markers; actual channels and launch connections vary. This does not calibrate live travel speed."
+      },
+      "notices": [
+        {
+          "title": "Plan your access and overnight arrangements",
+          "text": "Launch at designated sites and check current facility fees, road conditions and closures. Overnight camping requires the self-issued permit and designated camps; follow the river’s waste and fire rules.",
+          "sourceName": "BLM — South Fork Snake boating regulations",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ]
     },
     {
       "id": "spring-conant",
       "putIn": "Spring Creek",
       "takeOut": "Conant",
-      "miles": 8,
-      "difficulty": "Class I",
-      "notes": "Cottonwood islands and braids. The last easy miles before the Conant-to-Byington canyon.",
+      "miles": 2.0,
+      "difficulty": "Class I–II; conditions vary",
+      "notes": "A short reach from the Spring Creek access at the highway bridge to Conant. BLM notes waves and turbulent water upstream of Conant. Identify the intended concrete or raft takeout before launching; do not assume a slow tubing trip.",
       "putInAccessId": "acc-09d76b6c03415210a557",
-      "takeOutAccessId": "acc-e0e189c765525569ab75"
+      "takeOutAccessId": "acc-e0e189c765525569ab75",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "BLM — Regulations for Floating the South Fork of the Snake River, access table",
+        "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "South Fork Snake / agency river miles from Palisades Dam",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Spring Creek",
+          "riverMile": 12.2,
+          "sourceLocation": "Page 1 access table: Spring Creek"
+        },
+        "takeOut": {
+          "name": "Conant",
+          "riverMile": 14.2,
+          "sourceLocation": "Page 1 access table: Conant"
+        },
+        "note": "Approximate planning distance from published agency river-mile markers; actual channels and launch connections vary. This does not calibrate live travel speed."
+      },
+      "notices": [
+        {
+          "title": "Plan your access and overnight arrangements",
+          "text": "Launch at designated sites and check current facility fees, road conditions and closures. Overnight camping requires the self-issued permit and designated camps; follow the river’s waste and fire rules.",
+          "sourceName": "BLM — South Fork Snake boating regulations",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ]
     }
   ],
-  "timezone": "America/Boise"
+  "timezone": "America/Boise",
+  "timing": {
+    "mode": "unavailable",
+    "note": "Published river-mile distances and access information are available. The legacy reference-flow speed has no documented trip calibration for these reviewed sections, so no live duration is shown until calibration is reviewed."
+  }
 }

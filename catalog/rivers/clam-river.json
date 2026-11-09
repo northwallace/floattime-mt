@@ -1,0 +1,40 @@
+{
+  "id": "clam-river",
+  "name": "Clam River",
+  "gauge": "05335492",
+  "gaugeName": "CLAM RIVER AT HWY 35 NR WEBSTER, WI",
+  "lat": 45.84132,
+  "lon": -92.31141,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Clam River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "clam-dam-park-canoe-launch-to-charles-tollander-memorial-park-canoe-launch",
+      "putIn": "Clam Dam Park Canoe Launch",
+      "takeOut": "Charles Tollander Memorial Park Canoe Launch",
+      "miles": 6.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-3b40e3b07bec55bb8a05",
+      "takeOutAccessId": "acc-f44512917fc55874bfc3",
+      "routeReview": "This section includes Clam Lake and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam.",
+      "notices": [
+        {
+          "title": "Launch below Clam Dam",
+          "text": "Burnett County identifies the canoe landing on the south bank east of Clam Dam. Use that downstream landing, not the upstream flowage. The marker shows the access area; confirm the signed approach and stay clear of the dam.",
+          "sourceName": "Burnett County — Clam Dam Park",
+          "sourceUrl": "https://www.burnettcountywi.gov/677/Clam-Dam-Park",
+          "checkedOn": "2026-11-01"
+        }
+      ]
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "beaver-dam-river",
+  "name": "Beaver Dam River",
+  "gauge": null,
+  "gaugeName": null,
+  "lat": 43.25839,
+  "lon": -88.8234,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Beaver Dam River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "ranch-road-boat-launch-to-garden-road-boat-launch",
+      "putIn": "Ranch Road Boat Launch",
+      "takeOut": "Garden Road Boat Launch",
+      "miles": 4.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-5044db5f519f55259d71",
+      "takeOutAccessId": "acc-9abacaf2ce1b5c40b8e3"
+    }
+  ],
+  "gaugeRelationship": "none",
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "No suitable flow gauge is assigned to this river. The research station measures a different stream and is not used for this river’s readings.",
+    "sourceName": "USGS Water Data — monitoring location and Wisconsin gauge review",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05426000/",
+    "checkedOn": "2026-10-30"
+  }
+}

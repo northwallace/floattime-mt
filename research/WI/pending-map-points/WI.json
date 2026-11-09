@@ -1,0 +1,52 @@
+{
+ "version": "1",
+ "state": "WI",
+ "purpose": "Research-only coordinates/context for points that stay 'pending'. Not read by the app; never copy into the catalog without an agency coordinate.",
+ "candidates": {
+  "Boat Launch #14 - Thunder River": {
+   "id": "WI-ACC-0121",
+   "candidateStatus": "research-only",
+   "lat": 45.269323,
+   "lon": -88.186798,
+   "accessTypeCandidate": "Boat ramp (WDNR boat access 'RAMP'), ramp type Concrete Plank",
+   "operatorCandidate": "Peshtigo River State Forest (ownership 'Wisconsin DNR' in the WDNR record)",
+   "coordinateSourceName": "WDNR Boat Access Sites (PR_Boat_Access_Shore_Fishing MapServer layer 2), OBJECTID 1733",
+   "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=OBJECTID%3D1733&outFields=*&outSR=4326&f=json",
+   "agencyAccessSourceName": "WDNR Boat Access Sites (PR_Boat_Access_Shore_Fishing MapServer layer 2), OBJECTID 1733 (Wisconsin DNR public boat-access site record)",
+   "agencyAccessSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=OBJECTID%3D1733&outFields=*&outSR=4326&f=json",
+   "why": "imagery not graded: Image partly obscured by haze/cloud; launch cannot be seen",
+   "riverMile": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Borgi Canoe Landing": {
+   "id": "WI-ACC-0660",
+   "candidateStatus": "research-only",
+   "lat": 46.077621,
+   "lon": -90.017048,
+   "accessTypeCandidate": "Carry-in canoe/kayak access (WDNR boat access 'CARRY-IN'), ramp type Unimproved",
+   "operatorCandidate": "NHAL Recreation Team Leader (ownership 'Wisconsin DNR' in the WDNR record)",
+   "coordinateSourceName": "WDNR Boat Access Sites (PR_Boat_Access_Shore_Fishing MapServer layer 2), OBJECTID 9835",
+   "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=OBJECTID%3D9835&outFields=*&outSR=4326&f=json",
+   "agencyAccessSourceName": "WDNR Boat Access Sites (PR_Boat_Access_Shore_Fishing MapServer layer 2), OBJECTID 9835 (Wisconsin DNR public boat-access site record)",
+   "agencyAccessSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=OBJECTID%3D9835&outFields=*&outSR=4326&f=json",
+   "why": "imagery not graded: Image obscured by cloud; launch cannot be seen",
+   "riverMile": null,
+   "checkedOn": "2026-10-30"
+  },
+  "Lakeside Road Landing (St. Croix NSR)": {
+   "id": "WI-ACC-0366",
+   "candidateStatus": "research-only",
+   "lat": 45.905447,
+   "lon": -91.816127,
+   "accessTypeCandidate": "Carry-in canoe/kayak access (WDNR boat access 'CARRY-IN'), ramp type Gravel",
+   "operatorCandidate": "National Park Service (ownership 'Federal' in the WDNR record)",
+   "coordinateSourceName": "WDNR Boat Access Sites (PR_Boat_Access_Shore_Fishing MapServer layer 2), OBJECTID 2867",
+   "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=OBJECTID%3D2867&outFields=*&outSR=4326&f=json",
+   "agencyAccessSourceName": "NPS St. Croix NSR — Paddling Guide to the Namekagon River (distance chart)",
+   "agencyAccessSourceUrl": "https://www.nps.gov/sacn/planyourvisit/upload/Namekagon-PG-Final.pdf",
+   "why": "NPS St. Croix NSR maps page: 'Lakeside Road picnic area and parking lot in Trego, WI, are closed permanently as of September 7, 2021.' (nps_sacn_maps)",
+   "riverMile": 37.3,
+   "checkedOn": "2026-10-30"
+  }
+ }
+}

@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "state": "MN",
+  "riverId": "pine-river-mn",
+  "sectionId": "crosslake-staircase",
+  "status": "reviewed",
+  "scope": "river-course-overview",
+  "catalogMiles": 1.3,
+  "source": {
+    "name": "Minnesota Department of Natural Resources",
+    "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_water_trails_minnesota/FeatureServer/0",
+    "checkedOn": "2026-11-06",
+    "adapterId": "MN-dnr-water-trails",
+    "adapterSha256": "e530a39bf7b8b8f6c0a22700410f591d971de521b3b656f84902e6901d362c90",
+    "evidenceFile": "research/pine-river-expansion-20261106/sources/dnr-pine-course.json",
+    "sha256": "599a8ba3db98460bb6237693b365239dcff32ea6056e22f50d6c746003f751bd",
+    "streamId": "CBR00629"
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate agency river course. Banks, bars and side channels may differ. Exact landing connections are not drawn; published planning mileage remains separate.",
+  "putIn": {
+    "name": "Pine River Cross Lake Below-dam Carry-in",
+    "lat": 46.6685153464567,
+    "lon": -94.1128314553315
+  },
+  "takeOut": {
+    "name": "Pine River Staircase Carry-in",
+    "lat": 46.65726265681676,
+    "lon": -94.10156866690454
+  },
+  "direction": {
+    "method": "agency-published-water-trail",
+    "parts": [
+      {
+        "featureId": "97",
+        "pathIndex": 0,
+        "reverse": false
+      }
+    ],
+    "clip": {
+      "start": {
+        "segment": 345,
+        "fraction": 0.21516436894050872
+      },
+      "end": {
+        "segment": 391,
+        "fraction": 0.21533130654104923
+      }
+    },
+    "tripEvidenceSha256": "c53e7989851c538040dbf216ecae5a94bd6344f5e4b72591c0a9f8ba295dd08b"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -94.11252803799208,
+        46.66858417035109
+      ],
+      [
+        -94.1124061287553,
+        46.668331087808276
+      ],
+      [
+        -94.11215563560044,
+        46.66810853846575
+      ],
+      [
+        -94.11184322969311,
+        46.667895585151435
+      ],
+      [
+        -94.1115302847738,
+        46.66765564525614
+      ],
+      [
+        -94.11121755556964,
+        46.66750569806798
+      ],
+      [
+        -94.1109672436293,
+        46.667292139227946
+      ],
+      [
+        -94.11074814207862,
+        46.66700628623138
+      ],
+      [
+        -94.11040472406981,
+        46.66679363904132
+      ],
+      [
+        -94.11018527033711,
+        46.66657078498015
+      ],
+      [
+        -94.10998566132531,
+        46.66634992121156
+      ],
+      [
+        -94.10957393718702,
+        46.66612618009476
+      ],
+      [
+        -94.1092636590694,
+        46.665901219063876
+      ],
+      [
+        -94.10872023267369,
+        46.6654856167446
+      ],
+      [
+        -94.10868681632763,
+        46.665468430464
+      ],
+      [
+        -94.10838556949061,
+        46.66531349735697
+      ],
+      [
+        -94.10820586527632,
+        46.6652450933525
+      ],
+      [
+        -94.10774745027452,
+        46.665249532845436
+      ],
+      [
+        -94.10739806763898,
+        46.665603639374375
+      ],
+      [
+        -94.10719969699828,
+        46.66586860243187
+      ],
+      [
+        -94.10712383451417,
+        46.666024828004474
+      ],
+      [
+        -94.10702858079095,
+        46.66622098245227
+      ],
+      [
+        -94.10654970010637,
+        46.66647112295117
+      ],
+      [
+        -94.10560595331684,
+        46.66641010209666
+      ],
+      [
+        -94.10537245220792,
+        46.666201923867675
+      ],
+      [
+        -94.10523832242112,
+        46.66587003087465
+      ],
+      [
+        -94.10543634525509,
+        46.66558753748119
+      ],
+      [
+        -94.1057102714003,
+        46.66539358771415
+      ],
+      [
+        -94.10571255611802,
+        46.665391970041576
+      ],
+      [
+        -94.10614335784588,
+        46.665282589329955
+      ],
+      [
+        -94.10644610652966,
+        46.66513937125286
+      ],
+      [
+        -94.10671980652572,
+        46.664821072167385
+      ],
+      [
+        -94.10672078070462,
+        46.66465847166616
+      ],
+      [
+        -94.10672559100752,
+        46.66385652453102
+      ],
+      [
+        -94.10660511855482,
+        46.66294580487623
+      ],
+      [
+        -94.10587203785305,
+        46.66197086505986
+      ],
+      [
+        -94.10523941625169,
+        46.66092480327343
+      ],
+      [
+        -94.10499879449483,
+        46.660365968443024
+      ],
+      [
+        -94.10508708054051,
+        46.65969873826321
+      ],
+      [
+        -94.10535540163997,
+        46.65911744978092
+      ],
+      [
+        -94.10539953991045,
+        46.65878383589367
+      ],
+      [
+        -94.10536657151327,
+        46.65841589272357
+      ],
+      [
+        -94.10484835761494,
+        46.6579824926609
+      ],
+      [
+        -94.10425768832721,
+        46.657742687241054
+      ],
+      [
+        -94.1034926973645,
+        46.65769746064529
+      ],
+      [
+        -94.10282849630983,
+        46.65759864781243
+      ],
+      [
+        -94.10200438996665,
+        46.65715064597305
+      ],
+      [
+        -94.10185435213123,
+        46.657053912143056
+      ]
+    ]
+  },
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.2922,
+      "endpointOffsetsMeters": [
+        24.4,
+        31.8
+      ],
+      "mileageDifferencePercent": 0.6,
+      "maxSegmentMeters": 125.9,
+      "vertices": 48
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-06",
+    "reviewer": "Float ETA agency source and complete imagery review",
+    "note": "Complete Cross Lake–Harvey Drake source line reviewed in 12 overlapping views; shorter courses are exact source subsets. Landing ends and Rock Dam trim inspected separately. Original downstream source geometry retained; no navigation passage or live timing approved."
+  },
+  "overviewReview": {
+    "signature": "796b792a3114765e3f8e9d540f9b72c4a604afeace07a91f3aaca25992e24cf2",
+    "routeReview": "Approximate agency river-course overview. Exact landing connections, current obstructions and alternate channels are not mapped.",
+    "note": "Approximate river-course overview only. Carry-in connections and navigation passages remain unmapped.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "River centerline ends near the documented access. The shoreline connection is not drawn; follow the signed public approach."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "River centerline ends near the documented access. The shoreline connection is not drawn; follow the signed public approach."
+      }
+    },
+    "acceptedIssues": {}
+  }
+}

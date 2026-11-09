@@ -57,6 +57,18 @@
       ? `${n} min`
       : `${Math.floor(n / 60)} hr${n % 60 ? " " + (n % 60) + " min" : ""}`;
   }
+  function guideTime(guide) {
+    const {min, max, unit} = guide;
+    if (max === null) return guideTime({...guide, max: min}) + " or more";
+    if (unit === "hours" && (!Number.isInteger(min) || !Number.isInteger(max))) {
+      const low = Math.round(min * 60), high = Math.round(max * 60);
+      if (low === high) return duration(low);
+      if (high < 60) return `${low}–${high} min`;
+      return `${duration(low)}–${duration(high)}`;
+    }
+    const span = min === max ? min : `${min}–${max}`;
+    return `${span} ${min === 1 && max === 1 ? unit.replace(/s$/, "") : unit}`;
+  }
   function sunset(lat, lon, zone, now = new Date()) {
     const p = localParts(now, zone),
       midnight = Date.UTC(+p.year, +p.month - 1, +p.day);
@@ -138,17 +150,38 @@
   function supportsLiveTiming(river) {
     return gaugeRelationship(river) === "representative" && river.timing?.mode !== "unavailable";
   }
+  function noticeKey(notice) {
+    return JSON.stringify([notice.title, notice.text, notice.sourceUrl, notice.sourceName, notice.checkedOn]);
+  }
+  function sharedNotices(sections) {
+    const groups = new Map();
+    for (const section of sections) {
+      for (const notice of section.notices || []) {
+        const key = noticeKey(notice);
+        if (!groups.has(key)) groups.set(key, {notice, sectionIds: []});
+        const group = groups.get(key);
+        if (!group.sectionIds.includes(section.id)) group.sectionIds.push(section.id);
+      }
+    }
+    // Two nearby sections can keep their own notices. Longer listings benefit
+    // from one full advisory, with a link beside every affected trip.
+    return [...groups.values()].filter(group => group.sectionIds.length >= 3)
+      .map((group, index) => ({...group, id: `river-notice-${index + 1}`}));
+  }
   const api = {
     localParts,
     dateKey,
     clock,
     launch,
     duration,
+    guideTime,
     sunset,
     estimate,
     fresh,
     gaugeRelationship,
     supportsLiveTiming,
+    noticeKey,
+    sharedNotices,
   };
   if (typeof module === "object" && module.exports) module.exports = api;
   else root.FloatPlanner = api;

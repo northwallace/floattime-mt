@@ -1,0 +1,92 @@
+{
+  "id": "eau-claire-river-harstad",
+  "name": "Eau Claire River (Harstad–Fall Creek)",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "gauge": null,
+  "gaugeName": null,
+  "gaugeRelationship": "none",
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "No representative discharge gauge has been reviewed for these trips. Black River and Chippewa River gauges mentioned in older guides are not substituted for Eau Claire River flow.",
+    "sourceName": "Float ETA gauge review",
+    "sourceUrl": "https://waterdata.usgs.gov/",
+    "checkedOn": "2026-11-06"
+  },
+  "lat": 44.739556258748486,
+  "lon": -91.16629314471425,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "Access information and published approximate mileage are available. No reviewed local speed/flow model or transferable guide time is assigned."
+  },
+  "blurb": "Two forested Eau Claire River paddles between Harstad County Park and the County K bridge near Fall Creek. Harstad–County D has reported Class I rapids; County D–K includes Little Falls. These trips end upstream of Big Falls and are distinct from the urban Altoona stretch and the Eau Claire River near Wausau.",
+  "sections": [
+    {
+      "id": "harstad-county-d",
+      "putIn": "Harstad County Park Canoe Launch",
+      "takeOut": "Eau Claire River County D Landing",
+      "miles": 8.5,
+      "putInAccessId": "acc-98cf40ad285c5b2d9e2c",
+      "takeOutAccessId": "acc-b6cb2c2fcc8d5e89aa48",
+      "difficulty": "Reported Class I rapids",
+      "notes": "A forested paddle from Harstad County Park to the County D bridge, with sandy bends and reported Class I rapids. Low water can make parts shallow, and fallen trees can change the route. Inspect the steep County D take-out and arrange a vehicle shuttle before launching.",
+      "routeReview": "The access areas are mapped. A candidate river line crosses old bends and wooded bank margins, so the dotted path remains under review. No landing-to-channel connection or passage through current obstructions is verified.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 8.5,
+        "sourceName": "Wisconsin River Trips — Harstad Park trip report (September 2013)",
+        "sourceUrl": "https://www.wisconsinrivertrips.com/segments/eau-claire-river-chippewa-tributary/harstad-park",
+        "checkedOn": "2026-11-06",
+        "streamId": "Eau Claire River, Eau Claire County",
+        "putIn": {
+          "name": "Harstad County Park Canoe Launch",
+          "sourceLocation": "Harstad Park put-in in the trip summary"
+        },
+        "takeOut": {
+          "name": "Eau Claire River County D Landing",
+          "sourceLocation": "Hwy D take-out in the 8.5-mile trip summary"
+        },
+        "note": "The September 2013 firsthand trip report gives 8.5 miles for Harstad–County D. Its archived mapped line measures about 8.50 miles. Treat this dated guide distance as approximate; channel changes and landing choice can change the actual trip. A shorter USGS candidate is held because some bends do not align well with imagery."
+      }
+    },
+    {
+      "id": "county-d-county-k",
+      "putIn": "Eau Claire River County D Landing",
+      "takeOut": "Eau Claire River County K Landing",
+      "miles": 5.7,
+      "putInAccessId": "acc-b6cb2c2fcc8d5e89aa48",
+      "takeOutAccessId": "acc-b4328c50fc0b50118280",
+      "difficulty": "Reported Class II–II+ at Little Falls",
+      "notes": "A shorter forested paddle to the County K beach access. Little Falls is just before the take-out; assess it from shore and confirm a suitable passage or carry before committing. End at County K: Big Falls is farther downstream and is not part of this trip. Arrange a vehicle shuttle and inspect both carries.",
+      "routeReview": "The dotted line shows the general river course, with generalized banks and sandbars. It does not map a safe passage through Little Falls, the bridge, current obstructions or exact shoreline connections.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 5.7,
+        "sourceName": "Wisconsin River Trips — County D to Big Falls trip map, County K leg",
+        "sourceUrl": "https://www.google.com/maps/d/viewer?mid=1KnylD-zgVy6l2Djn7Eu8vRxsdUAHC1PI",
+        "checkedOn": "2026-11-06",
+        "streamId": "Eau Claire River, Eau Claire County",
+        "putIn": {
+          "name": "Eau Claire River County D Landing",
+          "sourceLocation": "Put-in — Hwy D Bridge; start of the 5.7 Miles line"
+        },
+        "takeOut": {
+          "name": "Eau Claire River County K Landing",
+          "sourceLocation": "Alt Access — Hwy K Beach Access; end of the 5.7 Miles line"
+        },
+        "note": "The trip map explicitly labels the County D–K leg 5.7 Miles. Its archived line measures about 5.66 miles; the article overview separately says 5.5. Use the specific mapped leg as an approximate planning distance, not a survey. The displayed USGS overview is generalized and measures about 5.29 miles; it does not replace the published mileage."
+      },
+      "notices": [
+        {
+          "title": "Little Falls before the take-out",
+          "text": "Dated firsthand reports describe Class II to II+ rapids at Little Falls just upstream of County K. Check present conditions and scout before committing. Take out at County K; the more difficult Big Falls downstream is outside this trip.",
+          "sourceName": "Miles Paddled — Harstad to County K, May 2016; Wisconsin River Trips, June 2020",
+          "sourceUrl": "https://milespaddled.com/eau-claire-river-ii-eau-claire-county/",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    }
+  ]
+}

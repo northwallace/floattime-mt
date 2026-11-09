@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "ID-usfs-henrys",
+    "state": "ID",
+    "agency": "U.S. Forest Service \u2014 Caribou-Targhee National Forest",
+    "discoveryUrl": "https://catalog.data.gov/dataset/recreation-sites-feature-layer",
+    "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0",
+    "where": "managing_org = '041552' AND site_subtype = 'BOATING SITE' AND recarea_enable = 'Y'",
+    "fields": [
+      "site_cn",
+      "globalid",
+      "site_name",
+      "site_subtype",
+      "development_status",
+      "recarea_name",
+      "recarea_enable",
+      "recarea_description",
+      "site_directions",
+      "managing_org",
+      "last_update"
+    ],
+    "stableFeatureField": "site_cn",
+    "note": "Official USFS public recreation layer for Ashton-Island Park Ranger District boating sites. Facility centers, including the Big Springs launch and public upstream takeout, need imagery and identity review. Distinguish springs viewing areas, private Mack's Inn bridge landings and dam-separated ramps. Source refresh never promotes a point automatically."
+  },
+  "retrievedAt": "2026-11-04T23:29:46.952903+00:00",
+  "file": "research/agency-sources/ID-usfs-henrys/9642b42df47f39e190a0c7214868a1d9cc246038e5140bd75d17811350b4013f.json",
+  "sha256": "9642b42df47f39e190a0c7214868a1d9cc246038e5140bd75d17811350b4013f",
+  "features": 7,
+  "changes": null,
+  "reviewStatus": "research-only"
+}

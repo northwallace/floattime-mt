@@ -1,0 +1,84 @@
+[
+  {
+    "accessId": "acc-b1e4a548417056c68553",
+    "name": "Big Springs Water Trail Launch",
+    "sourceId": "ID-usfs-henrys",
+    "sourceSnapshot": "research/agency-sources/ID-usfs-henrys/9642b42df47f39e190a0c7214868a1d9cc246038e5140bd75d17811350b4013f.json",
+    "sourceSha256": "9642b42df47f39e190a0c7214868a1d9cc246038e5140bd75d17811350b4013f",
+    "featureField": "site_cn",
+    "featureId": "5040.003281",
+    "objectIdAtReview": 4123165,
+    "featureSha256": "93a4855dc094bbb96cc360114d446daf31a82b0f514bd6737d816782dbd44bca",
+    "feature": {
+      "attributes": {
+        "development_status": "EXISTING",
+        "globalid": "{BF89702C-37B9-4B35-8D8C-F2F3AC7B4574}",
+        "last_update": 1753975087000,
+        "managing_org": "041552",
+        "objectid": 4123165,
+        "recarea_description": "This is a great location for visitors to fish, float, and enjoy the Henry's Fork of the Ske River.",
+        "recarea_enable": "Y",
+        "recarea_name": "Big Springs Boat Ramp",
+        "site_cn": "5040.003281",
+        "site_directions": null,
+        "site_name": "BIG SPRINGS BOAT RAMP",
+        "site_subtype": "BOATING SITE"
+      },
+      "geometry": {
+        "x": -111.27181218557689,
+        "y": 44.497077484448816
+      }
+    },
+    "decision": "access-verified",
+    "reviewedOn": "2026-11-04",
+    "reviewNote": "The Forest Service boating-site point identifies the trestle-side approach. The USFS recreation guide and HFF study identify a hand-carry launch here. The shoreline connection is not surveyed.",
+    "imageryReview": "Compared source location with satellite imagery and named access guidance."
+  },
+  {
+    "accessId": "acc-1f0e1c46a0ea50a5a104",
+    "name": "Big Springs Water Trail Public Takeout",
+    "sourceId": "ID-usfs-henrys",
+    "sourceSnapshot": "research/agency-sources/ID-usfs-henrys/9642b42df47f39e190a0c7214868a1d9cc246038e5140bd75d17811350b4013f.json",
+    "sourceSha256": "9642b42df47f39e190a0c7214868a1d9cc246038e5140bd75d17811350b4013f",
+    "featureField": "site_cn",
+    "featureId": "6386851010602",
+    "objectIdAtReview": 4134821,
+    "featureSha256": "ee347915f187842ee88979ec3992fd2086f9825387a7b30414764badc1ac6519",
+    "feature": {
+      "attributes": {
+        "development_status": "EXISTING",
+        "globalid": "{40157036-51A2-40C9-AA85-A282A6208E19}",
+        "last_update": 1753975087000,
+        "managing_org": "041552",
+        "objectid": 4134821,
+        "recarea_description": "Take out for the Big Springs Water Trail",
+        "recarea_enable": "Y",
+        "recarea_name": "Big Springs Boat Takeout",
+        "site_cn": "6386851010602",
+        "site_directions": null,
+        "site_name": "BIG SPRINGS BOAT TAKEOUT",
+        "site_subtype": "BOATING SITE"
+      },
+      "geometry": {
+        "x": -111.32471719735186,
+        "y": 44.50046448002954
+      }
+    },
+    "decision": "access-verified",
+    "reviewedOn": "2026-11-04",
+    "reviewNote": "The HFF/Caribou-Targhee field study, Figure 3 on page 8, identifies the public clearing. The USFS facility coordinate is about 90 m east near cabins, so this approximate area center was placed in the depicted clearing using satellite imagery. Original agency geometry is preserved in the review binding; this is not an exact landing fix.",
+    "imageryReview": "Compared source location with satellite imagery and named access guidance.",
+    "placementReview": {
+      "method": "agency-collaborative-map-and-imagery",
+      "sourceUrl": "https://henrysfork.org/wp-content/uploads/big-springs.pdf",
+      "figure": "Figure 3, page 8",
+      "areaCenter": {
+        "lat": 44.500782,
+        "lon": -111.3257472,
+        "feature": "Designated public takeout clearing shown in HFF/USFS field-study Figure 3"
+      },
+      "evidenceImage": "research/henrys-headwaters-20261104/public-takeout-placement.png",
+      "note": "Deliberate approximate relocation to the depicted public clearing. Original source geometry remains unchanged in feature."
+    }
+  }
+]

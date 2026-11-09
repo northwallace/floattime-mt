@@ -1,0 +1,54 @@
+{
+  "id": "tomahawk-river",
+  "name": "Tomahawk River",
+  "gauge": "05392301",
+  "gaugeName": "TOMAHAWK R nr McCORD, at OUTLET of WILLOW RES, WI",
+  "lat": 45.85482,
+  "lon": -89.6786,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Tomahawk River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "tomahawk-thoroughfare-access-to-tomahawk-river-access",
+      "putIn": "Tomahawk Thoroughfare Access",
+      "takeOut": "Tomahawk River Access",
+      "miles": 4.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-8933d110f8055821bf2b",
+      "takeOutAccessId": "acc-b3771dcca221599290a5",
+      "accessReview": "A dam lies near a section endpoint (Minocqua). The landing’s position relative to the barrier still needs confirmation.",
+      "routeReview": "This section includes Minocqua and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "tomahawk-river-access-to-willow-dam-road-canoe-landing",
+      "putIn": "Tomahawk River Access",
+      "takeOut": "Willow Dam Road Canoe Landing",
+      "miles": 31.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. This is a long section and may require more than one day; plan daylight, supplies and legal overnight stops. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-b3771dcca221599290a5",
+      "takeOutAccessId": "acc-acc3e2509e555cef9ed0",
+      "accessReview": "Dam crossing/portage unresolved: Willow Reservoir. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float. A dam lies near a section endpoint (Minocqua). The landing’s position relative to the barrier still needs confirmation.",
+      "routeReview": "This section includes Willow Reservoir, Minocqua and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "willow-dam-road-canoe-landing-to-lower-tomahawk-river-pines-sna-canoe-landing",
+      "putIn": "Willow Dam Road Canoe Landing",
+      "takeOut": "Lower Tomahawk River Pines Sna Canoe Landing",
+      "miles": 14.5,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-acc3e2509e555cef9ed0",
+      "takeOutAccessId": "acc-374ba60e8cf158be9b38"
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

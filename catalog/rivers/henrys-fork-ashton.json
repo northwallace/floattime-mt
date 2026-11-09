@@ -6,30 +6,324 @@
   "gaugeName": "Henrys Fork nr Ashton",
   "lat": 44.07,
   "lon": -111.511,
-  "refFlowCfs": 1800,
-  "refSpeedMph": 3,
-  "blurb": "Below Mesa Falls — Warm River and Ashton water, slower than the Box and still packed with rainbows.",
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Choose named floats above Ashton Dam, Ora and Vernon floats ending above Chester Dam, or the separate Chester downstream ramp to Fun Farm float. Dam crossings are not included; older ambiguous itineraries remain under review.",
   "sections": [
+    {
+      "id": "stone-bridge-jump-off",
+      "putIn": "Stone Bridge",
+      "takeOut": "Jump Off Canyon",
+      "putInAccessId": "acc-a1f78e394f4a5145953b",
+      "takeOutAccessId": "acc-963bb286fb03571d8091",
+      "miles": 6,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "Start at Stone Bridge, below the Warm River confluence, and finish at the Jump Off Canyon ramp on Fishermans Drive. Arrange the shuttle and inspect the takeout before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 6,
+        "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+        "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Stone Bridge",
+          "sourceLocation": "PDF page 8, named site and Float Distance table"
+        },
+        "takeOut": {
+          "name": "Jump Off Canyon",
+          "sourceLocation": "PDF page 8, destination in Float Distance table"
+        },
+        "note": "Approximate published reach length from the guide currently linked by HFF. It is independent of the facility coordinates and is not a surveyed landing-to-landing distance. Channel choice and reservoir conditions can change the actual trip."
+      },
+      "notices": [
+        {
+          "title": "Plan your named takeout",
+          "text": "These three floats stay above Ashton Dam. Inspect your selected ramp and set the shuttle before starting; a facility marker does not show an exact landing approach.",
+          "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "jump-off-ashton-reservoir",
+      "putIn": "Jump Off Canyon",
+      "takeOut": "Ashton Reservoir Boat Ramp",
+      "putInAccessId": "acc-963bb286fb03571d8091",
+      "takeOutAccessId": "acc-544878de48b25c968c53",
+      "miles": 1,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "A short connection into the reservoir approach. Take out at the designated Ashton Reservoir recreation-area ramp, well above the dam. Wind and slower reservoir water affect paddling time.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 1,
+        "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+        "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Jump Off Canyon",
+          "sourceLocation": "PDF page 11, named site and Float Distance table"
+        },
+        "takeOut": {
+          "name": "Ashton Reservoir Boat Ramp",
+          "sourceLocation": "PDF page 11, destination in Float Distance table"
+        },
+        "note": "Approximate published reach length from the guide currently linked by HFF. It is independent of the facility coordinates and is not a surveyed landing-to-landing distance. Channel choice and reservoir conditions can change the actual trip."
+      },
+      "notices": [
+        {
+          "title": "Plan your named takeout",
+          "text": "These three floats stay above Ashton Dam. Inspect your selected ramp and set the shuttle before starting; a facility marker does not show an exact landing approach.",
+          "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "stone-bridge-ashton-reservoir",
+      "putIn": "Stone Bridge",
+      "takeOut": "Ashton Reservoir Boat Ramp",
+      "putInAccessId": "acc-a1f78e394f4a5145953b",
+      "takeOutAccessId": "acc-544878de48b25c968c53",
+      "miles": 7,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "The longer Stone Bridge float continues past Jump Off Canyon to the Ashton Reservoir boat ramp. Take out at that named facility above Ashton Dam; do not continue toward the dam.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 7,
+        "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+        "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Stone Bridge",
+          "sourceLocation": "PDF page 8, named site and Float Distance table"
+        },
+        "takeOut": {
+          "name": "Ashton Reservoir Boat Ramp",
+          "sourceLocation": "PDF page 8, destination in Float Distance table"
+        },
+        "note": "Approximate published reach length from the guide currently linked by HFF. It is independent of the facility coordinates and is not a surveyed landing-to-landing distance. Channel choice and reservoir conditions can change the actual trip."
+      },
+      "notices": [
+        {
+          "title": "Plan your named takeout",
+          "text": "These three floats stay above Ashton Dam. Inspect your selected ramp and set the shuttle before starting; a facility marker does not show an exact landing approach.",
+          "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "ora-vernon",
+      "putIn": "Ora Bridge",
+      "takeOut": "Vernon Bridge",
+      "putInAccessId": "acc-048ba16aef6152aea395",
+      "takeOutAccessId": "acc-e24ac2ffffce5da5a4e4",
+      "miles": 2.2,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "A shorter below-Ashton-Dam float from Ora Bridge to Vernon Bridge. This itinerary ends before Chester Dam. Confirm the designated ramps while arranging your shuttle; do not treat the held Vernon–St. Anthony itinerary as a continuous extension.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 2.2,
+        "sourceName": "TroutHunter — local river access and section guide",
+        "sourceUrl": "https://trouthunt.com/fishing/map-sections/",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Ora Bridge",
+          "sourceLocation": "Ora, Vernon & Chester: Ora to Vernon is 2.2 miles"
+        },
+        "takeOut": {
+          "name": "Vernon Bridge",
+          "sourceLocation": "Ora, Vernon & Chester: Ora to Vernon is 2.2 miles"
+        },
+        "note": "Use the local outfitter’s named 2.2-mile reach. The HFF table lists 3.5 miles, inconsistent with its combined Ora-to-Chester distance; an independent USGS river-course trace measures about 2.2 miles using the published Ora ramp approach. Channel and landing connections vary, so this remains approximate."
+      },
+      "notices": [
+        {
+          "title": "Finish at Vernon Bridge",
+          "text": "This short reach is below Ashton Dam and ends at Vernon. Chester Dam is farther downstream and requires a separate itinerary and takeout; it is not part of this float.",
+          "sourceName": "TroutHunter — Ora, Vernon & Chester access guidance",
+          "sourceUrl": "https://trouthunt.com/fishing/map-sections/",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "vernon-chester-upstream",
+      "putIn": "Vernon Bridge",
+      "takeOut": "Chester Dam Upstream Ramp",
+      "putInAccessId": "acc-e24ac2ffffce5da5a4e4",
+      "takeOutAccessId": "acc-9e2302918235532bb127",
+      "miles": 3.3,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "Finish at the designated ramp above Chester Dam. The lower ramp is a separate launch for another float. Slower backwater and wind can affect the final approach; identify the upper takeout before starting.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.3,
+        "sourceName": "TroutHunter — local river access and section guide",
+        "sourceUrl": "https://trouthunt.com/fishing/map-sections/",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Vernon Bridge",
+          "sourceLocation": "Ora, Vernon & Chester: Ora–Vernon 2.2 miles, Vernon–Chester 3.3 miles, Ora–Chester 5.5 miles"
+        },
+        "takeOut": {
+          "name": "Chester Dam Upstream Ramp",
+          "sourceLocation": "Ora, Vernon & Chester: Ora–Vernon 2.2 miles, Vernon–Chester 3.3 miles, Ora–Chester 5.5 miles"
+        },
+        "note": "Approximate named reach distance from the local guide, corroborated by the USGS river course. HFF lists Vernon–Chester as 3.5 miles; its rounded table does not override the more specific 3.3-mile reach. Exact landing connections and channel choice can change traveled distance."
+      },
+      "notices": [
+        {
+          "title": "Take out above Chester Dam",
+          "text": "Use the upstream ramp. This float ends before the dam and does not continue to the downstream ramp or Fun Farm. Check the takeout while arranging your shuttle.",
+          "sourceUrl": "https://trouthunt.com/fishing/map-sections/",
+          "sourceName": "TroutHunter — Ora, Vernon & Chester access guidance",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "ora-chester-upstream",
+      "putIn": "Ora Bridge",
+      "takeOut": "Chester Dam Upstream Ramp",
+      "putInAccessId": "acc-048ba16aef6152aea395",
+      "takeOutAccessId": "acc-9e2302918235532bb127",
+      "miles": 5.5,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "Finish at the designated ramp above Chester Dam. The lower ramp is a separate launch for another float. Slower backwater and wind can affect the final approach; identify the upper takeout before starting.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 5.5,
+        "sourceName": "TroutHunter — local river access and section guide",
+        "sourceUrl": "https://trouthunt.com/fishing/map-sections/",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Ora Bridge",
+          "sourceLocation": "Ora, Vernon & Chester: Ora–Vernon 2.2 miles, Vernon–Chester 3.3 miles, Ora–Chester 5.5 miles"
+        },
+        "takeOut": {
+          "name": "Chester Dam Upstream Ramp",
+          "sourceLocation": "Ora, Vernon & Chester: Ora–Vernon 2.2 miles, Vernon–Chester 3.3 miles, Ora–Chester 5.5 miles"
+        },
+        "note": "Approximate named reach distance from the local guide, corroborated by the USGS river course. HFF lists Vernon–Chester as 3.5 miles; its rounded table does not override the more specific 3.3-mile reach. Exact landing connections and channel choice can change traveled distance."
+      },
+      "notices": [
+        {
+          "title": "Take out above Chester Dam",
+          "text": "Use the upstream ramp. This float ends before the dam and does not continue to the downstream ramp or Fun Farm. Check the takeout while arranging your shuttle.",
+          "sourceUrl": "https://trouthunt.com/fishing/map-sections/",
+          "sourceName": "TroutHunter — Ora, Vernon & Chester access guidance",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "id": "chester-downstream-fun-farm",
+      "putIn": "Chester Dam Downstream Ramp",
+      "takeOut": "Fun Farm Bridge",
+      "putInAccessId": "acc-3fe1c37b06315e06a7c0",
+      "takeOutAccessId": "acc-1329a4202b5d5032aaee",
+      "miles": 3.5,
+      "difficulty": "Moving water; difficulty rating unconfirmed",
+      "notes": "A separate float starting below Chester Dam and ending at the designated Fun Farm takeout upstream of the road bridge. Arrange your shuttle and identify both ramps before launching. Channels and actual landing connections can vary.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.5,
+        "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+        "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+        "checkedOn": "2026-11-04",
+        "streamId": "Henrys Fork / named access reaches",
+        "putIn": {
+          "name": "Chester Dam Downstream Ramp",
+          "sourceLocation": "PDF page 29, Chester Dam Float Distance table: Fun Farm Bridge 3.5 miles"
+        },
+        "takeOut": {
+          "name": "Fun Farm Bridge",
+          "sourceLocation": "PDF page 29, Chester Dam Float Distance table: Fun Farm Bridge 3.5 miles"
+        },
+        "note": "Use the published approximate 3.5-mile reach. The reviewed USGS main-channel overview measures about 3.27 miles and omits exact landing connections; it does not replace the guide distance or establish travel time."
+      },
+      "notices": [
+        {
+          "title": "Launch below Chester Dam",
+          "text": "Use the separate downstream ramp below the powerhouse. No dam crossing or portage from the upper ramp is included.",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+          "sourceName": "Henry’s Fork Foundation — Chester Dam access guide",
+          "checkedOn": "2026-11-04"
+        },
+        {
+          "title": "Finish at Fun Farm; diversion downstream",
+          "text": "Take out at the designated facility upstream of the road bridge. A low-head diversion lies downstream; do not treat this itinerary as a continuation through it. Fremont County Search and Rescue reports a rafting rescue below the dam near Fun Farm.",
+          "sourceUrl": "https://www.fremontsar.org/mission-reports",
+          "sourceName": "Fremont County Search and Rescue — mission reports",
+          "checkedOn": "2026-11-04"
+        }
+      ]
+    },
     {
       "id": "warm-river-ashton",
       "putIn": "Warm River Campground",
       "takeOut": "Ashton (Vernon area)",
       "miles": 8,
-      "difficulty": "Class I",
-      "notes": "Put in below Mesa Falls. Do not launch above the falls. Gentle gradient, watch for diversion dams near Ashton.",
+      "difficulty": "Under review",
+      "notes": "This older itinerary is under review. The named Stone Bridge floats in this guide provide documented boating alternatives above Ashton Dam.",
       "putInAccessId": "acc-f9ed9598496b51cda6c7",
-      "takeOutAccessId": "acc-ddc25461e6da5cac90cd"
+      "takeOutAccessId": "acc-ddc25461e6da5cac90cd",
+      "accessReview": "Legacy endpoints need correction: Warm River Campground is documented as wading access, and “Ashton (Vernon area)” conflates facilities above and below Ashton Dam. Choose one of the named Stone Bridge, Jump Off Canyon and Ashton Reservoir floats instead.",
+      "distanceReview": "The old 8-mile value has no unambiguous pair of landings. It is retained only as legacy data and is not used for a trip estimate.",
+      "notices": [
+        {
+          "title": "Two different access locations",
+          "text": "Warm River Campground is listed as wading access. Stone Bridge is the separately named boat launch. Ashton Reservoir’s boat ramp lies above Ashton Dam; Vernon is below it.",
+          "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+          "checkedOn": "2026-11-04"
+        }
+      ]
     },
     {
       "id": "vernon-st-anthony",
       "putIn": "Vernon Bridge",
       "takeOut": "St. Anthony",
       "miles": 10,
-      "difficulty": "Class I",
-      "notes": "Valley miles toward the Snake confluence. Irrigation can skinny this stretch in late summer.",
+      "difficulty": "Dam crossing — under review",
+      "notes": "This older itinerary is held for review. Do not float through Chester Dam; use separately confirmed reaches and landings.",
       "putInAccessId": "acc-e24ac2ffffce5da5a4e4",
-      "takeOutAccessId": "acc-8a69f84a01bf5424aaa2"
+      "takeOutAccessId": "acc-8a69f84a01bf5424aaa2",
+      "accessReview": "Vernon to St. Anthony crosses Chester Dam, which has separate ramps above and below it. The St. Anthony landing and any portage/relaunch arrangement are unconfirmed. Do not treat this as one continuous float.",
+      "distanceReview": "The legacy 10-mile value is not a reviewed continuous boating itinerary. Chester Dam and a specific St. Anthony endpoint must be accounted for before estimating this trip.",
+      "routeReview": "Chester Dam separates the reaches. A continuous route through the dam is not approved.",
+      "notices": [
+        {
+          "title": "Chester Dam interrupts this itinerary",
+          "text": "The access guide identifies separate ramps above and below Chester Dam. This page does not establish a navigable dam crossing, portage route or a specific St. Anthony takeout.",
+          "sourceName": "Henry’s Fork Foundation — lower-river access guide",
+          "sourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+          "checkedOn": "2026-11-04"
+        }
+      ]
     }
   ],
-  "timezone": "America/Boise"
+  "timezone": "America/Boise",
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed travel-speed calibration is documented for these reaches. Published distances and access maps remain available; the Ashton gauge is below the reservoir and cannot establish travel time above the dam."
+  },
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "The Ashton station is below Ashton Dam. Its discharge is reference information and is not a measurement of current or travel speed through the upstream reservoir reaches.",
+    "sourceName": "USGS — Henrys Fork near Ashton, station 13046000",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-13046000/",
+    "checkedOn": "2026-11-04"
+  }
 }

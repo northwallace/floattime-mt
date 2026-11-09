@@ -5,6 +5,7 @@ python3 tools/fetch_agency_layer.py --source OR-boating-access
 The agency_sources configuration must link to the agency's own discovery page.
 """
 import argparse
+from collections import Counter
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -40,34 +41,56 @@ def download(config, request=get):
     fields = list(dict.fromkeys([oid, *fields]))
     result = request(url+'/query', {'where':config.get('where','1=1'), 'returnIdsOnly':'true'})
     ids = result.get('objectIds')
-    if not isinstance(ids,list) or result.get('exceededTransferLimit') or len(ids)!=len(set(ids)):
+    # Some agency views join several descriptive rows to one physical landing.
+    # Opt in explicitly; retain disagreements instead of silently taking a row.
+    joined = config.get('groupJoinedRecords') is True
+    stable = config.get('stableFeatureField')
+    if joined and stable not in fields:
+        raise ValueError('Joined records require an allowlisted stable feature field')
+    if not isinstance(ids,list) or result.get('exceededTransferLimit') or (not joined and len(ids)!=len(set(ids))):
         raise ValueError('Incomplete or duplicate agency ID inventory')
+    inventory = Counter(ids)
+    unique_ids = sorted(inventory)
     features = {}
-    for offset in range(0,len(ids),200):
-        batch = ids[offset:offset+200]
+    for offset in range(0,len(unique_ids),200):
+        batch = unique_ids[offset:offset+200]
         data = request(url+'/query', {'objectIds':','.join(map(str,batch)), 'outFields':','.join(fields), 'outSR':4326, 'returnGeometry':'true'})
         if data.get('exceededTransferLimit') or not isinstance(data.get('features'),list):
             raise ValueError('Agency feature response is truncated')
-        found = set()
+        found = Counter()
+        rows = {}
         for feature in data['features']:
             identifier = feature.get('attributes',{}).get(oid)
             point = feature.get('geometry') or {}
-            if identifier not in batch or identifier in found or identifier in features:
+            if identifier not in batch or (not joined and identifier in found) or identifier in features:
                 raise ValueError('Unexpected or duplicate agency feature')
             if not all(type(point.get(k)) in (int,float) and math.isfinite(point[k]) and abs(point[k])<=limit for k,limit in [('x',180),('y',90)]):
                 raise ValueError('Missing or invalid point coordinate; review source')
             # Enforce the allowlist locally too: some services ignore outFields.
             clean = {'attributes':{k:v for k,v in feature['attributes'].items() if k in fields}, 'geometry':{'x':point['x'],'y':point['y']}}
-            found.add(identifier); features[identifier] = clean
-        if found != set(batch):
+            found[identifier] += 1
+            rows.setdefault(identifier, []).append(clean)
+        if found != Counter({i:inventory[i] for i in batch}):
             raise ValueError('Agency omitted requested features; refusing partial snapshot')
+        for identifier, variants in rows.items():
+            first = variants[0]
+            if joined and (first['attributes'].get(stable) is None or any(
+                v['geometry'] != first['geometry'] or v['attributes'].get(stable) != first['attributes'][stable]
+                for v in variants
+            )):
+                raise ValueError('Joined agency rows disagree on geometry or stable identity')
+            if len(variants) > 1:
+                common = {k:v for k,v in first['attributes'].items() if all(row['attributes'].get(k) == v for row in variants)}
+                first = {'attributes':common, 'geometry':first['geometry'],
+                         'attributeVariants':sorted([v['attributes'] for v in variants], key=lambda v:json.dumps(v,sort_keys=True))}
+            features[identifier] = first
     # Check the inventory again so edits during pagination cannot silently omit sites.
     final = request(url+'/query', {'where':config.get('where','1=1'), 'returnIdsOnly':'true'})
     if final.get('exceededTransferLimit') or sorted(final.get('objectIds',[])) != sorted(ids):
         raise ValueError('Agency inventory changed during download; retry')
     public_meta = {k:meta[k] for k in ('name','description','geometryType','copyrightText','editingInfo') if k in meta}
     public_meta['fields'] = [f for f in meta.get('fields',[]) if f['name'] in fields]
-    return {'metadata':public_meta, 'objectIdField':oid, 'features':[features[i] for i in sorted(ids)]}
+    return {'metadata':public_meta, 'objectIdField':oid, 'features':[features[i] for i in unique_ids]}
 
 
 def archive(root, config, data):

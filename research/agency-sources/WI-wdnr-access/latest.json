@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "source": {
+    "version": 1,
+    "id": "WI-wdnr-access",
+    "state": "WI",
+    "agency": "Wisconsin Department of Natural Resources",
+    "discoveryUrl": "https://dnr.wisconsin.gov/topic/lands/boataccess",
+    "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2",
+    "where": "1=1",
+    "fields": [
+      "BOATLANDING_SEQ_NO",
+      "LMS_BOAT_LANDING_NAME",
+      "LANDING_TYPE_CODE",
+      "RAMP_TYPE_CODE",
+      "OWNERSHIP_NAME_TEXT",
+      "OWNERSHIP_MANAGER_NAME_TEXT",
+      "LL_LAT_DD_AMT",
+      "LL_LONG_DD_AMT",
+      "WATERBODY_NAME_TEXT",
+      "COUNTY_NAME_TEXT",
+      "MUNICIPALITY_NAME_TEXT",
+      "ABANDON_FLAG"
+    ],
+    "stableFeatureField": "BOATLANDING_SEQ_NO",
+    "groupJoinedRecords": true,
+    "note": "Current agency evidence only. Landing identity, exact versus area precision, permissions and dam crossings require separate review. Changed records invalidate the saved comparison."
+  },
+  "retrievedAt": "2026-11-06T15:51:44.262509+00:00",
+  "file": "research/agency-sources/WI-wdnr-access/c5245c42e1dcf0609da407961ac56a5d7ee95d49d7faa472d8edc912b195d2e6.json",
+  "sha256": "c5245c42e1dcf0609da407961ac56a5d7ee95d49d7faa472d8edc912b195d2e6",
+  "features": 3112,
+  "changes": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "reviewStatus": "research-only"
+}

@@ -5,42 +5,532 @@
   "gaugeName": "Beaverhead at Barretts",
   "lat": 45.12,
   "lon": -112.73,
-  "refFlowCfs": 400,
-  "refSpeedMph": 2.4,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
   "blurb": "Tailwater below Clark Canyon Dam. Tight, weedy, and technical — drift boats more than tubes.",
   "sections": [
     {
       "id": "dam-high-bridge",
-      "putIn": "Clark Canyon Dam",
+      "putIn": "Beaverhead River Access (below Clark Canyon Dam)",
       "takeOut": "High Bridge FAS",
-      "miles": 9,
+      "miles": 1.5,
       "difficulty": "Class I",
-      "notes": "Best floating on the river. Narrow and brushy. Great trout water.",
-      "distanceReview": "The legacy mileage conflicts with the agency river geometry and has not been established between the intended landings. Float-time estimates are withheld until access and distance are resolved.",
+      "notes": "Launch on the Beaverhead below Clark Canyon Dam, not in the reservoir. Finish at the High Bridge hand launch. Narrow channels and brush can complicate access; inspect the exits during your shuttle.",
       "putInAccessId": "acc-ffc4a6b11ceb56c68f49",
-      "takeOutAccessId": "acc-78c684688f5555bbb79f"
+      "takeOutAccessId": "acc-78c684688f5555bbb79f",
+      "notices": [
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Reviewed river-course overview. Exact landing connections and passages through bridges are not mapped.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "Beaverhead River Access (below Clark Canyon Dam)",
+          "lat": 45.0026897,
+          "lon": -112.8577004,
+          "riverMile": 75.3,
+          "markerId": 1277316,
+          "offsetMeters": 108.3
+        },
+        "takeOut": {
+          "name": "High Bridge FAS",
+          "lat": 45.0175281,
+          "lon": -112.8387535,
+          "riverMile": 73.8,
+          "markerId": 1277301,
+          "offsetMeters": 81.7
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. This replaces older rounded guide mileage or an unsupported legacy value. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      }
+    },
+    {
+      "id": "dam-henneberry",
+      "putIn": "Beaverhead River Access (below Clark Canyon Dam)",
+      "takeOut": "Henneberry FAS",
+      "putInAccessId": "acc-ffc4a6b11ceb56c68f49",
+      "takeOutAccessId": "acc-5832a839e9355c8fb15b",
+      "miles": 5.3,
+      "difficulty": "Class I; narrow channels and obstructions possible",
+      "notes": "Launch at the river access below Clark Canyon Dam and continue past High Bridge to Henneberry’s gravel ramp. This longer option avoids ending at the High Bridge hand launch. Identify the Henneberry ramp beside the old bridge during your shuttle; narrow channels and brush can complicate passage.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "Beaverhead River Access (below Clark Canyon Dam)",
+          "lat": 45.0026897,
+          "lon": -112.8577004,
+          "riverMile": 75.3,
+          "markerId": 1277316,
+          "offsetMeters": 108.3
+        },
+        "takeOut": {
+          "name": "Henneberry FAS",
+          "lat": 45.0548971,
+          "lon": -112.8150617,
+          "riverMile": 70,
+          "markerId": 1277263,
+          "offsetMeters": 34.9
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      },
+      "notices": [
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Saturday float-fishing restriction",
+          "text": "Between High Bridge and Henneberry, nonresident float fishing and float outfitting are prohibited on Saturdays from the third Saturday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Reviewed river-course overview. Exact landing connections, safe bridge passages and alternate side channels are not mapped."
+    },
+    {
+      "id": "dam-pipe-organ",
+      "putIn": "Beaverhead River Access (below Clark Canyon Dam)",
+      "takeOut": "Pipe Organ FAS",
+      "putInAccessId": "acc-ffc4a6b11ceb56c68f49",
+      "takeOutAccessId": "acc-889cc4ea37d15127a11c",
+      "miles": 7.2,
+      "difficulty": "Class I; narrow channels and obstructions possible",
+      "notes": "Launch on the Beaverhead below Clark Canyon Dam and continue past High Bridge and Henneberry to Pipe Organ’s concrete ramp. Henneberry is an intermediate take-out. Arrange a shuttle and inspect the shoreline approaches before launching; narrow channels and obstructions are possible.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "Beaverhead River Access (below Clark Canyon Dam)",
+          "lat": 45.0026897,
+          "lon": -112.8577004,
+          "riverMile": 75.3,
+          "markerId": 1277316,
+          "offsetMeters": 108.3
+        },
+        "takeOut": {
+          "name": "Pipe Organ FAS",
+          "lat": 45.0657846,
+          "lon": -112.8010315,
+          "riverMile": 68.1,
+          "markerId": 1277244,
+          "offsetMeters": 50.2
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      },
+      "notices": [
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Saturday float-fishing restriction",
+          "text": "Between High Bridge and Henneberry, nonresident float fishing and float outfitting are prohibited on Saturdays from the third Saturday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Sunday float-fishing restriction",
+          "text": "Between Henneberry and Pipe Organ Bridge, nonresident float fishing and float outfitting are prohibited on Sundays from the third Sunday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Reviewed river-course overview. Exact landing connections, safe bridge passages and alternate side channels are not mapped."
+    },
+    {
+      "id": "high-bridge-henneberry",
+      "putIn": "High Bridge FAS",
+      "takeOut": "Henneberry FAS",
+      "putInAccessId": "acc-78c684688f5555bbb79f",
+      "takeOutAccessId": "acc-5832a839e9355c8fb15b",
+      "miles": 3.8,
+      "difficulty": "Class I; narrow channels and obstructions possible",
+      "notes": "A shorter trip from the High Bridge hand launch to Henneberry’s gravel ramp. Identify the ramp beside the old bridge before launching and arrange your shuttle.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "High Bridge FAS",
+          "lat": 45.0175281,
+          "lon": -112.8387535,
+          "riverMile": 73.8,
+          "markerId": 1277301,
+          "offsetMeters": 81.7
+        },
+        "takeOut": {
+          "name": "Henneberry FAS",
+          "lat": 45.0548971,
+          "lon": -112.8150617,
+          "riverMile": 70,
+          "markerId": 1277263,
+          "offsetMeters": 34.9
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. This replaces older rounded guide mileage or an unsupported legacy value. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      },
+      "notices": [
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Saturday float-fishing restriction",
+          "text": "Between High Bridge and Henneberry, nonresident float fishing and float outfitting are prohibited on Saturdays from the third Saturday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Reviewed river-course overview. Exact landing connections, safe bridge passages and alternate side channels are not mapped."
+    },
+    {
+      "id": "henneberry-pipe-organ",
+      "putIn": "Henneberry FAS",
+      "takeOut": "Pipe Organ FAS",
+      "putInAccessId": "acc-5832a839e9355c8fb15b",
+      "takeOutAccessId": "acc-889cc4ea37d15127a11c",
+      "miles": 1.9,
+      "difficulty": "Class I; narrow channels and obstructions possible",
+      "notes": "Start at Henneberry’s day-use gravel ramp and finish at Pipe Organ’s concrete ramp beside I-15. The old bridge at Henneberry is blocked to vehicles.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "Henneberry FAS",
+          "lat": 45.0548971,
+          "lon": -112.8150617,
+          "riverMile": 70,
+          "markerId": 1277263,
+          "offsetMeters": 34.9
+        },
+        "takeOut": {
+          "name": "Pipe Organ FAS",
+          "lat": 45.0657846,
+          "lon": -112.8010315,
+          "riverMile": 68.1,
+          "markerId": 1277244,
+          "offsetMeters": 50.2
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. This replaces older rounded guide mileage or an unsupported legacy value. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      },
+      "notices": [
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Sunday float-fishing restriction",
+          "text": "Between Henneberry and Pipe Organ Bridge, nonresident float fishing and float outfitting are prohibited on Sundays from the third Sunday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate river-course overview. Exact landing connections and safe passages through bridges or side channels are not mapped."
+    },
+    {
+      "id": "high-bridge-pipe-organ",
+      "putIn": "High Bridge FAS",
+      "takeOut": "Pipe Organ FAS",
+      "putInAccessId": "acc-78c684688f5555bbb79f",
+      "takeOutAccessId": "acc-889cc4ea37d15127a11c",
+      "miles": 5.7,
+      "difficulty": "Class I; narrow channels and obstructions possible",
+      "notes": "Combine the High Bridge–Henneberry and Henneberry–Pipe Organ reaches for a longer trip. Henneberry is an intermediate access. Arrange a shuttle and locate the Pipe Organ ramp before launching.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "High Bridge FAS",
+          "lat": 45.0175281,
+          "lon": -112.8387535,
+          "riverMile": 73.8,
+          "markerId": 1277301,
+          "offsetMeters": 81.7
+        },
+        "takeOut": {
+          "name": "Pipe Organ FAS",
+          "lat": 45.0657846,
+          "lon": -112.8010315,
+          "riverMile": 68.1,
+          "markerId": 1277244,
+          "offsetMeters": 50.2
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. This replaces older rounded guide mileage or an unsupported legacy value. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      },
+      "notices": [
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Saturday float-fishing restriction",
+          "text": "Between High Bridge and Henneberry, nonresident float fishing and float outfitting are prohibited on Saturdays from the third Saturday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Sunday float-fishing restriction",
+          "text": "Between Henneberry and Pipe Organ Bridge, nonresident float fishing and float outfitting are prohibited on Sundays from the third Sunday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Reviewed river-course overview. Exact landing connections, safe bridge passages and alternate side channels are not mapped."
+    },
+    {
+      "id": "pipe-organ-grasshopper",
+      "putIn": "Pipe Organ FAS",
+      "takeOut": "Grasshopper FAS",
+      "putInAccessId": "acc-889cc4ea37d15127a11c",
+      "takeOutAccessId": "acc-7fadcb05233056a3b83d",
+      "miles": 4.2,
+      "difficulty": "Class I; narrow channels and obstructions possible",
+      "notes": "Start at Pipe Organ’s concrete ramp beside I-15 and finish at Grasshopper’s concrete ramp farther downstream. Arrange a shuttle and identify both shoreline approaches before launching.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "Pipe Organ FAS",
+          "lat": 45.0657846,
+          "lon": -112.8010315,
+          "riverMile": 68.1,
+          "markerId": 1277244,
+          "offsetMeters": 50.2
+        },
+        "takeOut": {
+          "name": "Grasshopper FAS",
+          "lat": 45.100356,
+          "lon": -112.7773031,
+          "riverMile": 63.9,
+          "markerId": 1277202,
+          "offsetMeters": 58.0
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. This replaces older rounded guide mileage or an unsupported legacy value. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      },
+      "notices": [],
+      "routeReview": "Reviewed river-course overview. Exact landing connections, safe bridge passages and alternate side channels are not mapped."
+    },
+    {
+      "id": "henneberry-grasshopper",
+      "putIn": "Henneberry FAS",
+      "takeOut": "Grasshopper FAS",
+      "putInAccessId": "acc-5832a839e9355c8fb15b",
+      "takeOutAccessId": "acc-7fadcb05233056a3b83d",
+      "miles": 6.1,
+      "difficulty": "Class I; narrow channels and obstructions possible",
+      "notes": "Continue past Pipe Organ to Grasshopper’s concrete ramp. Pipe Organ provides an intermediate take-out. The upper portion has seasonal fishing and Sunday float-fishing restrictions; check the boundaries before fishing.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "Henneberry FAS",
+          "lat": 45.0548971,
+          "lon": -112.8150617,
+          "riverMile": 70,
+          "markerId": 1277263,
+          "offsetMeters": 34.9
+        },
+        "takeOut": {
+          "name": "Grasshopper FAS",
+          "lat": 45.100356,
+          "lon": -112.7773031,
+          "riverMile": 63.9,
+          "markerId": 1277202,
+          "offsetMeters": 58.0
+        },
+        "note": "Approximate planning distance from the difference between nearby FWP 0.1-mile markers on the same river. This replaces older rounded guide mileage or an unsupported legacy value. Facility placement and changing channels introduce uncertainty; this is not a surveyed landing-to-landing distance or a speed calibration."
+      },
+      "notices": [
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Sunday float-fishing restriction",
+          "text": "Between Henneberry and Pipe Organ Bridge, nonresident float fishing and float outfitting are prohibited on Sundays from the third Sunday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Reviewed river-course overview. Exact landing connections, safe bridge passages and alternate side channels are not mapped."
     },
     {
       "id": "high-bridge-barretts",
       "putIn": "High Bridge FAS",
       "takeOut": "Barretts Station Park (above dam)",
-      "miles": 10,
+      "miles": 13.1,
       "difficulty": "Class I",
-      "notes": "Use Barretts Station Park’s designated take-out upstream of the diversion dam. Locate the landing from shore before launching. The available tourism coordinate overlaps the dam and is not used as a landing marker.",
+      "notes": "Longer upper-Beaverhead float ending at the public Barretts ramp before the footbridge and diversion dam. Henneberry, Pipe Organ and Grasshopper provide shorter exit options. Identify the Barretts landing from shore during your shuttle.",
       "notices": [
         {
-          "title": "Take out before Barretts Diversion Dam",
-          "text": "Montana’s official tourism listing identifies a boat take-out at Barretts Station Park, with the diversion dam about 200 yards downstream. The dam itself is not the take-out.",
-          "sourceName": "Visit Montana — Barretts Station Park Campground",
-          "sourceUrl": "https://visitmt.com/listing/barretts-station-park-campground-1984",
-          "checkedOn": "2026-10-27"
+          "title": "Take out before the footbridge and diversion dam",
+          "text": "The Reclamation site plan places the public boat ramp immediately upstream of the footbridge at Barretts Station Park, on the left bank facing downstream. The private vehicle bridge and diversion dam are downstream. Locate and scout the ramp from shore before launching; the approximate marker is not an on-water landing instruction.",
+          "sourceName": "Bureau of Reclamation — August 2004 Barretts site plan, Figure 1.0-1",
+          "sourceUrl": "https://www.usbr.gov/gp/mtao/clarkcanyon/ea/eachapters/ea_chapter_1.pdf#page=6",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Upper Beaverhead fishing season",
+          "text": "From Clark Canyon Dam to Pipe Organ Bridge, fishing is open from the third Saturday in May through September 30. Additional tackle and harvest rules apply. This is a fishing-season rule, not a blanket boating closure; check the current FWP regulations before fishing.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Saturday float-fishing restriction",
+          "text": "Between High Bridge and Henneberry, nonresident float fishing and float outfitting are prohibited on Saturdays from the third Saturday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Sunday float-fishing restriction",
+          "text": "Between Henneberry and Pipe Organ Bridge, nonresident float fishing and float outfitting are prohibited on Sundays from the third Sunday in May through Labor Day. This restriction does not prohibit all recreational floating.",
+          "sourceName": "Montana FWP — 2026 fishing regulations, pages 51–53",
+          "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
+          "checkedOn": "2026-11-06"
         }
       ],
-      "distanceReview": "The legacy mileage conflicts with the agency river geometry and has not been established between the intended landings. Float-time estimates are withheld until access and distance are resolved.",
       "putInAccessId": "acc-78c684688f5555bbb79f",
-      "takeOutAccessId": "acc-ea38164accc35c83b4c2"
+      "takeOutAccessId": "acc-ea38164accc35c83b4c2",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "High Bridge FAS",
+          "lat": 45.0175281,
+          "lon": -112.8387535,
+          "riverMile": 73.8,
+          "markerId": 1277301,
+          "offsetMeters": 81.7
+        },
+        "takeOut": {
+          "name": "Barretts Station Park (above dam)",
+          "lat": 45.1284935,
+          "lon": -112.7416016,
+          "riverMile": 60.7,
+          "markerId": 1277170,
+          "offsetMeters": 68.5
+        },
+        "note": "Approximate difference between nearby FWP 0.1-mile markers on the same river. Barretts uses the footbridge approach beside the documented upstream ramp. Source rounding, approximate landings and changing channels affect distance; this is not a surveyed trip or a speed calibration."
+      },
+      "routeReview": "Reviewed river-course overview. The dotted line stops upstream of the Barretts footbridge; the final landing approach and exact access connections are not mapped."
+    },
+    {
+      "id": "grasshopper-barretts",
+      "putIn": "Grasshopper FAS",
+      "takeOut": "Barretts Station Park (above dam)",
+      "putInAccessId": "acc-7fadcb05233056a3b83d",
+      "takeOutAccessId": "acc-ea38164accc35c83b4c2",
+      "miles": 3.2,
+      "difficulty": "Class I; narrow channels and a critical take-out",
+      "notes": "A shorter lower-tailwater outing from Grasshopper to Barretts Station Park. Finish at the public ramp before the footbridge. Check the landing from shore while arranging your shuttle; do not continue to the diversion dam.",
+      "distanceEvidence": {
+        "method": "agency-mile-markers",
+        "sourceName": "Montana FWP river-mile markers (0.1-mile layer)",
+        "sourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/refrnc/riverMiles/MapServer/2",
+        "checkedOn": "2026-11-06",
+        "streamId": "1123386455677",
+        "putIn": {
+          "name": "Grasshopper FAS",
+          "lat": 45.100356,
+          "lon": -112.7773031,
+          "riverMile": 63.9,
+          "markerId": 1277202,
+          "offsetMeters": 58.0
+        },
+        "takeOut": {
+          "name": "Barretts Station Park (above dam)",
+          "lat": 45.1284935,
+          "lon": -112.7416016,
+          "riverMile": 60.7,
+          "markerId": 1277170,
+          "offsetMeters": 68.5
+        },
+        "note": "Approximate difference between nearby FWP 0.1-mile markers on the same river. Barretts uses the footbridge approach beside the documented upstream ramp. Source rounding, approximate landings and changing channels affect distance; this is not a surveyed trip or a speed calibration."
+      },
+      "notices": [
+        {
+          "title": "Take out before the footbridge and diversion dam",
+          "text": "The Reclamation site plan places the public boat ramp immediately upstream of the footbridge at Barretts Station Park, on the left bank facing downstream. The private vehicle bridge and diversion dam are downstream. Locate and scout the ramp from shore before launching; the approximate marker is not an on-water landing instruction.",
+          "sourceName": "Bureau of Reclamation — August 2004 Barretts site plan, Figure 1.0-1",
+          "sourceUrl": "https://www.usbr.gov/gp/mtao/clarkcanyon/ea/eachapters/ea_chapter_1.pdf#page=6",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Reviewed river-course overview. The dotted line stops upstream of the Barretts footbridge; the final landing approach and exact access connections are not mapped."
     }
   ],
   "state": "MT",
-  "timezone": "America/Denver"
+  "timezone": "America/Denver",
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "The Barretts station is downstream of these upper trips, upstream of Barretts Diversion Dam. USGS operates it March through October, so a winter reporting gap is expected. Its flow is reference information, not a calibrated speed for these trips.",
+    "sourceName": "USGS — Beaverhead River at Barretts, station 06016000",
+    "sourceUrl": "https://waterdata.usgs.gov/nwis/uv?legacy=1&site_no=06016000",
+    "checkedOn": "2026-11-06"
+  },
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed flow-to-speed model has not been established for these reaches. Maps and sourced planning distances remain available without a live float-time estimate."
+  }
 }

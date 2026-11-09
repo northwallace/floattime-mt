@@ -1,0 +1,64 @@
+{
+  "id": "sugar-river",
+  "name": "Sugar River",
+  "gauge": "05436500",
+  "gaugeName": "SUGAR RIVER NEAR BRODHEAD, WI",
+  "lat": 42.79994,
+  "lon": -89.48626,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Sugar River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "county-x-ramp-to-boat-access-cr-ee",
+      "putIn": "County X Ramp",
+      "takeOut": "Boat Access - Cr-ee",
+      "miles": 9.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-febc16bf99c65649921c",
+      "takeOutAccessId": "acc-e422421755575b14b93c"
+    },
+    {
+      "id": "boat-access-cr-ee-to-albany-park",
+      "putIn": "Boat Access - Cr-ee",
+      "takeOut": "Albany Park",
+      "miles": 2.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-e422421755575b14b93c",
+      "takeOutAccessId": "acc-ac7b7238064d5f7d9dfd",
+      "accessReview": "Dam crossing/portage unresolved: Albany Wildlife. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
+      "routeReview": "This section includes Albany Wildlife and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "albany-park-to-sugar-river-carry-in",
+      "putIn": "Albany Park",
+      "takeOut": "Sugar River Carry-in",
+      "miles": 18.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-ac7b7238064d5f7d9dfd",
+      "takeOutAccessId": "acc-8003d1fa836d50779c3d",
+      "accessReview": "Dam crossing/portage unresolved: Albany, Brodhead. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
+      "routeReview": "This section includes Albany, Brodhead and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "sugar-river-carry-in-to-sugar-river-park-boat-ramp",
+      "putIn": "Sugar River Carry-in",
+      "takeOut": "Sugar River Park Boat Ramp",
+      "miles": 6.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-8003d1fa836d50779c3d",
+      "takeOutAccessId": "acc-6f7d7a6fc9545d569f66"
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

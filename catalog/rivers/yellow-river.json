@@ -1,0 +1,40 @@
+{
+  "id": "yellow-river",
+  "name": "Yellow River",
+  "gauge": "05334270",
+  "gaugeName": "YELLOW RIVER NEAR SPOONER, WI",
+  "lat": 45.80329,
+  "lon": -91.94087,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Yellow River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "yellow-river-access-town-of-bashaw-to-yellow-river-public-boat-access",
+      "putIn": "Yellow River Access — Town of Bashaw",
+      "takeOut": "Yellow River Public Boat Access",
+      "miles": 23.1,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. This is a long section and may require more than one day; plan daylight, supplies and legal overnight stops. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-47846927fd075565bd28",
+      "takeOutAccessId": "acc-173ce6c841a95cafae1a"
+    },
+    {
+      "id": "yellow-river-public-boat-access-to-yellow-river-access-village-of-webster",
+      "putIn": "Yellow River Public Boat Access",
+      "takeOut": "Yellow River Access — Village of Webster",
+      "miles": 19.5,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-173ce6c841a95cafae1a",
+      "takeOutAccessId": "acc-2b84ca7fdb235c18a5f6"
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

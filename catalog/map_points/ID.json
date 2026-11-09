@@ -5,6 +5,34 @@
     "boise": {
       "status": "pending",
       "note": "Agency source and satellite facility review completed 2026-10-29. Only sections with two documented access sites and a separate section approval are shown; approximate markers do not establish an exact landing or river path."
+    },
+    "snake-sf-swan": {
+      "status": "pending",
+      "note": "Named public access and agency river-mile evidence reviewed 2026-11-03. Independently approved sections show maps with precision labels. Palisades Dam coordinate remains unresolved; existing approximate areas do not claim a surveyed landing."
+    },
+    "snake-sf-canyon": {
+      "status": "pending",
+      "note": "Named public access and agency river-mile evidence reviewed 2026-11-03. Independently approved sections show maps with precision labels. Palisades Dam coordinate remains unresolved; existing approximate areas do not claim a surveyed landing."
+    },
+    "teton": {
+      "status": "pending",
+      "note": "Named public facilities, published guide mileage and satellite imagery checked 2026-11-03. Individually reviewed maps show approximate access areas; exact shoreline pins and river-course geometry are reviewed separately."
+    },
+    "henrys-fork-ashton": {
+      "status": "pending",
+      "note": "Named facilities, published guide distances and satellite imagery reviewed. Approved sections show approximate access areas; exact shoreline connections and route geometry are separate reviews."
+    },
+    "henrys-fork-box": {
+      "status": "pending",
+      "note": "Named facilities, published guide distances and satellite imagery reviewed. Approved sections show approximate access areas; exact shoreline connections and route geometry are separate reviews."
+    },
+    "henrys-fork-lower": {
+      "status": "pending",
+      "note": "Named facilities, published guide distances and satellite imagery reviewed. Approved sections show approximate access areas; exact shoreline connections and route geometry are separate reviews."
+    },
+    "henrys-fork-big-springs": {
+      "status": "pending",
+      "note": "Public boating facilities and approximate areas reviewed separately from exact landings and river-course geometry. The spring-fed channel is incomplete in the current USGS route source."
     }
   },
   "points": {
@@ -69,39 +97,81 @@
     },
     "Warm River Campground": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "HFF lower-river access guide, page 6, lists this as wading access without a boat ramp. Stone Bridge is a separate documented boat launch; do not move this campground identity to that launch.",
       "id": "acc-f9ed9598496b51cda6c7",
       "aliases": []
     },
     "Ashton (Vernon area)": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "This legacy name combines distinct locations on opposite sides of Ashton Dam. Use the separately named Ashton Reservoir Boat Ramp or Vernon Bridge; no dependable single landing matches this label.",
       "id": "acc-ddc25461e6da5cac90cd",
       "aliases": []
     },
     "Vernon Bridge": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-e24ac2ffffce5da5a4e4",
-      "aliases": []
+      "aliases": [
+        "Vernon Boat Ramp"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.05144883286597,
+        "lon": -111.53989571599129,
+        "feature": "Vernon boat-access staging area"
+      },
+      "accessType": "Public non-motorized boat ramp",
+      "operator": "Fremont County",
+      "directions": "Use the designated Vernon access and ramp, not an arbitrary point in St. Anthony. Chester Dam is downstream; a trip continuing past it requires separately confirmed takeout, portage and relaunch arrangements.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D243&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D243&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG and HFF lower guide, page 26, identify Vernon as a boating facility. The agency coordinate lies back from the river in the staging area. Access review does not approve the old Vernon-to-St-Anthony itinerary."
     },
     "St. Anthony": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "The city name does not identify a specific landing. HFF lists multiple distinct sites with differing boat access. A precise facility and the Chester Dam crossing must be resolved for the legacy Vernon itinerary.",
       "id": "acc-8a69f84a01bf5424aaa2",
       "aliases": []
     },
     "Island Park Dam (Box Canyon)": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-9d25906dfc34516f8cf9",
-      "aliases": []
+      "aliases": [
+        "Box Canyon Boat Ramp"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.41699353430915,
+        "lon": -111.39468780161316,
+        "feature": "Box Canyon launch parking and staging area"
+      },
+      "accessType": "Public boat ramp below Island Park Dam",
+      "operator": "Caribou-Targhee National Forest",
+      "directions": "Use the Box Canyon boat ramp BELOW Island Park Dam, not a ramp on Island Park Reservoir or the hike-in campground access. Identify the ramp from the parking area before unloading.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D309&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D309&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG point is in the parking loop, set back from the ramp. The HFF upper-river guide, page 45, and USFS boat-ramp inventory independently identify this below-dam boating access."
     },
     "Last Chance": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-b381a7b196dc5f808953",
-      "aliases": []
+      "aliases": [
+        "Last Chance Boat Ramp"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.37091783080092,
+        "lon": -111.40245976115165,
+        "feature": "Last Chance boat-access parking area"
+      },
+      "accessType": "Public non-motorized boat ramp",
+      "operator": "Caribou-Targhee National Forest",
+      "directions": "Use the signed Last Chance boat ramp and designated day-use parking. Confirm this takeout before launching from Box Canyon; the marker identifies the facility rather than the exact shoreline landing.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D260&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D260&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG point lies in parking near the bank, consistent with the HFF upper-river guide, page 52. It does not establish the water-edge ramp position."
     },
     "White Pine / Knife Blade": {
       "status": "pending",
@@ -224,34 +294,79 @@
       "aliases": []
     },
     "Conant": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-e0e189c765525569ab75",
-      "aliases": []
+      "aliases": [],
+      "status": "access-verified",
+      "accessType": "Public concrete boat ramp",
+      "operator": "Bureau of Land Management — Upper Snake Field Office",
+      "directions": "Follow Conant Valley Loop to the signed Conant boat access. Concrete-boat and raft launch areas are separate. Confirm your chosen launch or takeout and use the designated parking.",
+      "sourceName": "BLM — South Fork Snake public access and boating regulations",
+      "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+      "coordinateSourceUrl": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1/query?f=pjson&where=GlobalID%3D%27%7BB5B5C6F1-4C65-48B5-B4E1-7FF801B8A21C%7D%27&outFields=FET_NAME%2CFET_SUBTYPE%2CADM_UNIT_CD%2CADMIN_ST%2CGlobalID%2CDESCRIPTION%2CWEB_LINK%2CUNIT_NAME%2CWEB_DISPLAY%2CSOURCE&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "BLM public GIS identifies the Conant facility at the parking/staging area. Imagery and BLM river-mile map agree on this location. Reject the visit-page coordinate near Spring Creek; do not snap this staging point to a guessed shoreline landing.",
+      "areaCenter": {
+        "lat": 43.46351123902126,
+        "lon": -111.42722177132245,
+        "feature": "Conant boat-access staging and parking area"
+      }
     },
     "Byington": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-998b91e623d35a48a9d3",
-      "aliases": []
+      "aliases": [],
+      "status": "verified",
+      "accessType": "Public concrete boat ramp",
+      "operator": "Bureau of Land Management — Upper Snake Field Office",
+      "directions": "Follow the signed Byington boat-access road from the Swan Valley Highway. Use the designated concrete ramp or separate raft facility and arrange a shuttle before launching.",
+      "sourceName": "BLM — South Fork Snake public access and boating regulations",
+      "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+      "coordinateSourceUrl": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1/query?f=pjson&where=GlobalID%3D%27%7B3102E21D-710B-4FD1-B925-7FBFDCC55E84%7D%27&outFields=FET_NAME%2CFET_SUBTYPE%2CADM_UNIT_CD%2CADMIN_ST%2CGlobalID%2CDESCRIPTION%2CWEB_LINK%2CUNIT_NAME%2CWEB_DISPLAY%2CSOURCE&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "BLM public GIS point lies on the concrete ramp apron in imagery; the agency visit page confirms a concrete ramp and separate raft facilities. This identifies the ramp, not a surveyed seasonal water edge.",
+      "lat": 43.622655703109125,
+      "lon": -111.66539516345016
     },
     "Lorenzo": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-ddd9072240ee59288bc7",
-      "aliases": []
+      "aliases": [],
+      "status": "access-verified",
+      "accessType": "Public concrete boat ramp",
+      "operator": "Bureau of Land Management — Upper Snake Field Office",
+      "directions": "Use the signed Lorenzo boat access from the Menan exit on US 20. The marker locates the riverside parking area; identify the concrete ramp before starting your float.",
+      "sourceName": "BLM — South Fork Snake public access and boating regulations",
+      "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+      "coordinateSourceUrl": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1/query?f=pjson&where=GlobalID%3D%27%7BD4F1EBDA-AB9F-4D90-B336-CF352BDA5600%7D%27&outFields=FET_NAME%2CFET_SUBTYPE%2CADM_UNIT_CD%2CADMIN_ST%2CGlobalID%2CDESCRIPTION%2CWEB_LINK%2CUNIT_NAME%2CWEB_DISPLAY%2CSOURCE&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "BLM public GIS point lies in the riverside parking area near the ramp. Retain as an approximate facility location rather than calling the parking point an exact takeout.",
+      "areaCenter": {
+        "lat": 43.73618115916335,
+        "lon": -111.88031078330037,
+        "feature": "Lorenzo boat-access parking beside the river"
+      }
     },
     "Palisades Dam": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "The public launch below Palisades Dam is documented, but its map location still needs checking. Help us pinpoint the river launch; reservoir ramps and Palisades Creek are different access sites.",
       "id": "acc-cf9caccd26a955af945c",
       "aliases": []
     },
     "Spring Creek": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-09d76b6c03415210a557",
-      "aliases": []
+      "aliases": [],
+      "status": "access-verified",
+      "accessType": "Public concrete boat ramp",
+      "operator": "U.S. Forest Service — Caribou-Targhee National Forest",
+      "directions": "Use the signed Spring Creek boat access at the Swan Valley Highway bridge. The marker is the Forest Service facility point; confirm the concrete ramp and exit before launching.",
+      "sourceName": "BLM — South Fork Snake public access and boating regulations",
+      "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?f=pjson&where=site_cn%3D%275081.003281%27&outFields=site_cn%2Cglobalid%2Csite_name%2Csite_subtype%2Cdevelopment_status%2Crecarea_name%2Crecarea_enable%2Crecarea_description%2Csite_directions%2Cmanaging_org%2Clast_update&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "USFS facility point lies near the river bank, away from the visible ramp. BLM map 4 independently identifies Spring Creek beside the highway bridge. Retain as an approximate area; do not confuse it with Conant two river miles downstream.",
+      "areaCenter": {
+        "lat": 43.44990636697707,
+        "lon": -111.39751203470225,
+        "feature": "Spring Creek boating facility below the Swan Valley highway bridge"
+      }
     },
     "Avery": {
       "status": "pending",
@@ -272,28 +387,445 @@
       "aliases": []
     },
     "Bates Bridge": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-79db0dbd06795027a7c0",
-      "aliases": []
+      "aliases": [
+        "Buxton River Park",
+        "Buxton",
+        "Bates"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.723561586063695,
+        "lon": -111.18721896401694,
+        "feature": "Buxton River Park / Bates Bridge access area"
+      },
+      "accessType": "Public boat ramp at Buxton River Park",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use Buxton River Park on the NORTH side of Bates Road. The old south-side access was decommissioned. Use the park entrance and designated ramp and parking; do not stop on the road at the area marker.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D256&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D256&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "FTR project documentation confirms the modern north-side access and decommissioned south-side landing. Imagery agrees. IDFG point falls near the road at the facility, not on the ramp; retain it only as an approximate area."
     },
     "Rainey Bridge": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-f82bfffcdd9a5f11a766",
-      "aliases": []
+      "aliases": [
+        "Big Eddy",
+        "Rainey",
+        "Rainey Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.75192560216213,
+        "lon": -111.2048986601752,
+        "feature": "Rainey / Big Eddy parking and river access"
+      },
+      "accessType": "Public gravel boat ramp",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use the Rainey access, also called Big Eddy. The marker is the facility parking/staging area near the gravel ramp. Check the access road before setting your shuttle; IDFG warns it can be slick when wet or snowy.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D227&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D227&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "Agency point is in parking south of the visible river entry. The recreation map independently identifies Rainey/Big Eddy. This is not an exact landing or a claim that a bridge is present."
     },
     "Cache Bridge": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
       "id": "acc-ef7fbde632905fb3acba",
-      "aliases": []
+      "aliases": [
+        "Packsaddle Bridge",
+        "Packsaddle",
+        "Cache"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.78124978407156,
+        "lon": -111.20998458245334,
+        "feature": "Cache / Packsaddle Bridge access and parking"
+      },
+      "accessType": "Public boat access",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use the designated access at Packsaddle Bridge on Packsaddle Road, also called Cache Bridge. Identify the ramp and use the marked parking; the area marker sits beside the river rather than at the exact landing.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D255&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D255&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "Agency coordinate falls in the access apron beside Packsaddle Bridge. The recreation map confirms Cache as its alternate name. Preserve approximate precision."
     },
     "Smiths Ferry (Cabarton takeout)": {
       "id": "acc-096bde2079b25ac68c6f",
       "aliases": [],
       "status": "pending",
       "note": "BLM NF02 identifies the Smiths Ferry takeout as private. Confirm current access arrangements and exact landing before placing a map pin."
+    },
+    "Fullmer": {
+      "id": "acc-747f6331c0495b359e73",
+      "aliases": [],
+      "status": "access-verified",
+      "accessType": "Public concrete boat ramp",
+      "operator": "U.S. Forest Service — Caribou-Targhee National Forest",
+      "directions": "Use the signed Fullmer Boat Landing and confirm road conditions and the shuttle before launching. The marker locates the parking area above the concrete river ramp.",
+      "sourceName": "BLM — South Fork Snake public access and boating regulations",
+      "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2024-11/Regulations%20for%20Floating%20the%20South%20Fork%20of%20the%20Snake%20River%20%281%29.pdf",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?f=pjson&where=site_cn%3D%279579.003281%27&outFields=site_cn%2Cglobalid%2Csite_name%2Csite_subtype%2Cdevelopment_status%2Crecarea_name%2Crecarea_enable%2Crecarea_description%2Csite_directions%2Cmanaging_org%2Clast_update&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "USFS point falls at the parking area above the visible ramp, not at the water. BLM lists this public intermediate access at river mile 28. Exact shoreline location remains unconfirmed.",
+      "areaCenter": {
+        "lat": 43.59920637394154,
+        "lon": -111.49411207940084,
+        "feature": "Fullmer boat-access parking and approach"
+      }
+    },
+    "Fox Creek West": {
+      "id": "acc-be5fab107e515ac4a4fb",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.65556372284514,
+        "lon": -111.17844137287688,
+        "feature": "Fox Creek West access and approach"
+      },
+      "accessType": "Public gravel boat ramp",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use the designated Fox Creek West access reached from the west side of the valley. IDFG lists a gravel boat ramp and day use only. Confirm the river approach before launching; the marker identifies the access area.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D229&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D229&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "Agency point is on the access approach, set back from the river. Preserve the sourced area location rather than snapping it to water."
+    },
+    "Fox Creek East": {
+      "id": "acc-19d55e1613d0514f8455",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.65036299234125,
+        "lon": -111.16683798023722,
+        "feature": "Fox Creek East parking and walk-in approach"
+      },
+      "accessType": "Public carry-in river access; no listed boat ramp",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use the designated Fox Creek East access at the end of the access road. Plan to carry your craft to the river; IDFG lists no developed boat ramp. Inspect the carrying route and arrange your shuttle before unloading.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D230&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D230&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "The guide lists this as a float access, but IDFG lists fishing access without a ramp. Imagery shows parking well back from the river and a foot approach. Keep it approximate and do not imply trailer access."
+    },
+    "South Bates Bridge": {
+      "id": "acc-a5d22b8b9d4b554291f4",
+      "aliases": [
+        "Nickerson",
+        "Nickerson Bridge",
+        "Teton Creek"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.69602292785362,
+        "lon": -111.16571696970749,
+        "feature": "South Bates / Nickerson access beside the bridge"
+      },
+      "accessType": "Public boat access; limited parking",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use the signed public access at South Bates Bridge, also called Nickerson and listed by IDFG as Teton Creek. Parking is limited. Identify the river entry and your shuttle arrangement before launching.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D228&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D228&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "Agency Teton Creek point matches the South Bates/Nickerson site on the recreation map. It lies in the access area near the bridge, not at the water edge."
+    },
+    "Horseshoe Bridge": {
+      "id": "acc-ecdc71e0b1c15fee963a",
+      "aliases": [
+        "Old Rightaway Road",
+        "Horseshoe Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.77197691577405,
+        "lon": -111.20325995319894,
+        "feature": "Horseshoe access at the end of Old Rightaway Road"
+      },
+      "accessType": "Public river access; developed ramp unconfirmed",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use the designated Horseshoe access at Old Rightaway Road. Confirm the bank and carrying approach before your trip. IDFG does not list a developed boat ramp here; do not assume trailer access or an intact road bridge.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D319&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D319&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "The recreation guide lists Horseshoe as a float endpoint, while current IDFG inventory lists fishing access with no ramp. The point is at the clearing beside the river. Show the facility area without certifying ramp suitability."
+    },
+    "Harrops Bridge": {
+      "id": "acc-6d7e2050ed6b5df2a53a",
+      "aliases": [
+        "Harrops",
+        "Harrop Bridge"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.82511709940745,
+        "lon": -111.23305110718624,
+        "feature": "Harrops Bridge boat-access staging area"
+      },
+      "accessType": "Public gravel boat ramp",
+      "operator": "Idaho Department of Fish and Game / Teton County public access",
+      "directions": "Use the designated Harrops Bridge gravel-ramp access at Highway 33. Identify the takeout before launching. End meadow-water floats here: the downstream canyon is technical whitewater, not a continuation of this easy reach.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D226&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D226&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-03",
+      "note": "Agency point lies in the small staging area beside the ramp and bridge. The recreation guide identifies Harrops as the end of the upper meadow floats. Keep it an approximate facility point, not an exact shoreline pin."
+    },
+    "Stone Bridge": {
+      "id": "acc-a1f78e394f4a5145953b",
+      "aliases": [
+        "Stonebridge",
+        "Stone Bridge Boat Ramp"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.10956056025564,
+        "lon": -111.3377958677658,
+        "feature": "Stone Bridge launch apron beside the Henrys Fork"
+      },
+      "accessType": "Public non-motorized boat ramp",
+      "operator": "Fremont County",
+      "directions": "Use the designated Stone Bridge launch on the Henrys Fork by the road bridge, below the Warm River confluence. This is a different access from Warm River Campground. Use the launch parking and confirm the ramp before starting.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D321&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D321&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG identifies Stone Bridge and a separate Warm River ADA point at nearly the same apron. HFF lower guide, page 8, identifies the boat launch. Preserve one boating-facility identity rather than duplicating the adjacent ADA feature."
+    },
+    "Jump Off Canyon": {
+      "id": "acc-963bb286fb03571d8091",
+      "aliases": [
+        "Jumpoff Canyon",
+        "Fisherman's Drive",
+        "Fishermans Drive"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.108725637079885,
+        "lon": -111.43816624893603,
+        "feature": "Jump Off Canyon access apron on Fishermans Drive"
+      },
+      "accessType": "Public boat ramp",
+      "operator": "Fremont County",
+      "directions": "Use the designated Jump Off Canyon river access along Fishermans Drive. Identify the ramp beside the parking apron and arrange a shuttle before launching. This is the upstream alternative to the Ashton Reservoir ramp.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D320&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D320&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG coordinate is on the roadside parking apron, not at the ramp. HFF lower guide, page 11, confirms this named boat access and its one-mile connection to Ashton Reservoir."
+    },
+    "Ashton Reservoir Boat Ramp": {
+      "id": "acc-544878de48b25c968c53",
+      "aliases": [
+        "Ashton Reservoir"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.11164257098423,
+        "lon": -111.45531484215807,
+        "feature": "Ashton Reservoir ramp staging area"
+      },
+      "accessType": "Public paved boat ramp",
+      "operator": "Fremont County / PacifiCorp",
+      "directions": "Use the Ashton Reservoir recreation-area boat ramp near the upper end of the reservoir. This takeout is ABOVE Ashton Dam and is not Vernon Bridge below the dam. Set the shuttle here and take out at this facility.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D218&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D218&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG coordinate is above the paved ramp in its staging area. HFF lower guide, page 14, names the facility; PacifiCorp also identifies the reservoir ramp as the takeout for upstream floats. Do not place a takeout at Ashton Dam."
+    },
+    "Red Road Bridge": {
+      "id": "acc-716183cea35e50809bfd",
+      "aliases": [
+        "Salem/Parker Highway",
+        "Parker/Salem Bridge"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.927812301624215,
+        "lon": -111.77876062187912,
+        "feature": "Red Road Bridge access approach near the ramp"
+      },
+      "accessType": "Public boat ramp",
+      "operator": "Bureau of Land Management",
+      "directions": "Use the signed Red Road Bridge boat access off the Salem/Parker Highway. Follow the designated access drive to the ramp and parking instead of stopping on the highway. The marker is near the ramp approach, not an exact landing.",
+      "sourceName": "BLM — public recreation boat-ramp inventory",
+      "sourceUrl": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1/query?f=pjson&where=GlobalID%3D%27%7BAF89B883-F65D-40A3-A2D4-4BA207561663%7D%27&outFields=FET_NAME%2CFET_SUBTYPE%2CADM_UNIT_CD%2CADMIN_ST%2CGlobalID%2CDESCRIPTION%2CWEB_LINK%2CUNIT_NAME%2CWEB_DISPLAY%2CSOURCE&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/1/query?f=pjson&where=GlobalID%3D%27%7BAF89B883-F65D-40A3-A2D4-4BA207561663%7D%27&outFields=FET_NAME%2CFET_SUBTYPE%2CADM_UNIT_CD%2CADMIN_ST%2CGlobalID%2CDESCRIPTION%2CWEB_LINK%2CUNIT_NAME%2CWEB_DISPLAY%2CSOURCE&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "BLM ramp-specific inventory is closer to the ramp than IDFG’s general entrance point. Imagery shows it beside the approach, still set back from the water. BLM’s visit page and HFF lower guide, page 52, independently confirm boating access."
+    },
+    "Warm Slough": {
+      "id": "acc-7f606bc39ba958309b54",
+      "aliases": [
+        "Warm Slough Boat Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.870282845058895,
+        "lon": -111.86469890299615,
+        "feature": "Warm Slough boat-access staging area"
+      },
+      "accessType": "Public paved boat ramp",
+      "operator": "Idaho Department of Fish and Game",
+      "directions": "Use the designated Warm Slough boating access and identify its ramp before launching. This facility is on a river branch; check the actual channel and landing approach when arranging your shuttle.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D219&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D219&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG point lies in the access area beside the ramp. HFF lower guide, page 56, and BLM confirm this facility. Keep the source location approximate; it does not identify which changing channel to navigate."
+    },
+    "Beaver Dick Park": {
+      "id": "acc-6e33b4e7ac7a54c99110",
+      "aliases": [
+        "Beaver Dick",
+        "Beaver Dick Boat Ramp"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.825262325045934,
+        "lon": -111.90517009230193,
+        "feature": "Beaver Dick Park boat-access area"
+      },
+      "accessType": "Public paved boat ramp",
+      "operator": "Madison County",
+      "directions": "Use the designated boat ramp at Beaver Dick Park beside Highway 33. Identify the ramp and park entrance while setting your shuttle; the area marker is near the bank but is not an exact water-edge pin.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D261&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D261&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG point lies beside the ramp apron, consistent with the HFF lower guide, page 59, and BLM facility list. Preserve the approximate facility position rather than claiming surveyed landing precision."
+    },
+    "Big Springs Water Trail Launch": {
+      "id": "acc-b1e4a548417056c68553",
+      "aliases": [
+        "Big Springs Boating Launch",
+        "Big Springs Boat Ramp"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.497077484448816,
+        "lon": -111.27181218557689,
+        "feature": "Agency-listed boating facility approach"
+      },
+      "accessType": "Public hand-carry launch",
+      "operator": "Caribou-Targhee National Forest",
+      "directions": "Use the designated water-trail launch beside the old railroad trestle, downstream of the springs viewing area. Carry light boats to the dock/stairs; there is no trailer ramp. Keep the unloading area clear and use designated parking.",
+      "sourceName": "U.S. Forest Service — public boating-site inventory",
+      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?f=pjson&where=site_cn%3D%275040.003281%27&outFields=site_cn%2Cglobalid%2Csite_name%2Csite_subtype%2Cdevelopment_status%2Crecarea_name%2Crecarea_enable%2Crecarea_description%2Csite_directions%2Cmanaging_org%2Clast_update&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?f=pjson&where=site_cn%3D%275040.003281%27&outFields=site_cn%2Cglobalid%2Csite_name%2Csite_subtype%2Cdevelopment_status%2Crecarea_name%2Crecarea_enable%2Crecarea_description%2Csite_directions%2Cmanaging_org%2Clast_update&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "The Forest Service boating-site point identifies the trestle-side approach. The USFS recreation guide and HFF study identify a hand-carry launch here. The shoreline connection is not surveyed."
+    },
+    "Big Springs Water Trail Public Takeout": {
+      "id": "acc-1f0e1c46a0ea50a5a104",
+      "aliases": [
+        "Big Springs Boat Takeout",
+        "Macks Inn Public Takeout",
+        "Mack’s Inn Public Takeout"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.500782,
+        "lon": -111.3257472,
+        "feature": "Designated public takeout clearing shown in HFF/USFS field-study Figure 3"
+      },
+      "accessType": "Public hand-carry takeout",
+      "operator": "Caribou-Targhee National Forest",
+      "directions": "Use the designated Forest Service clearing on the north side of the river, about half a mile upstream of the Highway 20 bridge. Reach it by the signed access road and confirm parking while setting your shuttle. Nearby cabin docks and the private bridge-side landings are separate facilities.",
+      "sourceName": "Henry’s Fork Foundation / Caribou-Targhee National Forest — water-trail field study, Figure 3",
+      "sourceUrl": "https://henrysfork.org/wp-content/uploads/big-springs.pdf",
+      "coordinateSourceUrl": "https://henrysfork.org/wp-content/uploads/big-springs.pdf",
+      "verifiedOn": "2026-11-04",
+      "note": "The HFF/Caribou-Targhee field study, Figure 3 on page 8, identifies the public clearing. The USFS facility coordinate is about 90 m east near cabins, so this approximate area center was placed in the depicted clearing using satellite imagery. Original agency geometry is preserved in the review binding; this is not an exact landing fix."
+    },
+    "Ora Bridge": {
+      "id": "acc-048ba16aef6152aea395",
+      "aliases": [
+        "Ora Boat Ramp"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.07006336,
+        "lon": -111.5102659,
+        "feature": "Ora Bridge ramp approach from HFF lower-river access guide, page 23"
+      },
+      "accessType": "Public non-motorized boat ramp",
+      "operator": "Fremont County",
+      "directions": "Use the Ora Bridge ramp downstream of the road bridge, reached through the designated access drive and parking on the south side of the road. This is below Ashton Dam. Set your takeout at Vernon Bridge before launching.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D242&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG confirms active non-motorized boating access but its general point lies across the road from the launch. The HFF lower-river guide, page 23, supplies a ramp-area coordinate that matches the visible access apron below the bridge. Use that source-backed approximate area; no surveyed shoreline fix is claimed."
+    },
+    "Chester Dam Upstream Ramp": {
+      "id": "acc-9e2302918235532bb127",
+      "aliases": [
+        "Chester Dam Take-Out",
+        "Chester Above Dam"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.018056695439235,
+        "lon": -111.58236090723634,
+        "feature": "Upper ramp approach beside Chester Dam"
+      },
+      "accessType": "Public boat ramp",
+      "operator": "Fremont-Madison Irrigation District",
+      "directions": "Use the designated ramp above Chester Dam for floats arriving from Ora or Vernon. Identify the upper ramp while setting your shuttle; the separate ramp below the powerhouse is not the takeout for this reach. Do not continue over the dam.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D254&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D254&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG lists the boating facility; the HFF guide identifies separate ramps above and below the dam. This agency point falls in the upper parking/ramp approach. It identifies an approximate access area, not a surveyed shoreline landing."
+    },
+    "Chester Dam Downstream Ramp": {
+      "id": "acc-3fe1c37b06315e06a7c0",
+      "aliases": [
+        "Chester Below Dam",
+        "Chester Dam Put-In"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.0173006,
+        "lon": -111.583938,
+        "feature": "Separate downstream launch apron below the powerhouse"
+      },
+      "accessType": "Public boat ramp",
+      "operator": "Fremont-Madison Irrigation District",
+      "directions": "Use the separate launch apron below the Chester Dam powerhouse. Confirm the downstream ramp and your Fun Farm takeout before launching. This itinerary starts below the dam; it does not include a dam crossing or portage from the upstream ramp.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D254&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG uses one general facility point for Chester. HFF pages 29–32 identify and illustrate distinct upper and lower ramps. Satellite imagery places this approximate area at the lower apron below the powerhouse; the original agency point is preserved in the binding. No exact landing fix is claimed."
+    },
+    "Fun Farm Bridge": {
+      "id": "acc-1329a4202b5d5032aaee",
+      "aliases": [
+        "Fun Farm Boat Ramp",
+        "Fun Farm Takeout"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 43.9828072,
+        "lon": -111.623944,
+        "feature": "Fun Farm takeout apron upstream of the bridge"
+      },
+      "accessType": "Public boat ramp",
+      "operator": "Fremont County",
+      "directions": "Use the designated Fun Farm boating takeout upstream of the road bridge. Check the ramp and current signs while setting your shuttle; do not continue to the diversion dam downstream. The bridge has been replaced, so older photographs may look different.",
+      "sourceName": "IDFG — public fishing and boating access inventory",
+      "sourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?f=pjson&where=ID%3D246&outFields=ID%2Cregion%2Cstatus%2Csite_name%2Cpublic_info_notes%2Ccounty%2Ccamp%2Crest%2Cramp%2Cdock%2Cada_fish%2Cfishing_boating&outSR=4326&returnGeometry=true",
+      "coordinateSourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
+      "verifiedOn": "2026-11-04",
+      "note": "IDFG currently lists a boating ramp. HFF page 36 identifies the county takeout. The general agency point is in the parking area; this approximate center is at the visible ramp approach. Bridge-replacement imagery is not a current ramp-condition inspection, and the exact shoreline connection remains unverified."
     }
   }
 }

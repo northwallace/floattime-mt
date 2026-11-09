@@ -39,8 +39,9 @@ class ServerTests(unittest.TestCase):
             config = json.loads(body)
             self.assertEqual(set(config), {'arcgisApiKey', 'routes'})
             self.assertEqual(config['arcgisApiKey'], 'test-public-map-key')
-            self.assertEqual(len(config['routes']), 59)
-            self.assertEqual({e['state'] for e in config['routes']}, {'MT','WY'})
+            published=json.loads((Path(__file__).resolve().parents[1]/'public/routes/index.json').read_text())['routes']
+            self.assertEqual(config['routes'],published)
+            self.assertTrue({'MT','WY','WI','AR','MO'} <= {e['state'] for e in config['routes']})
             self.assertTrue(all(not e['features']['remainingTime'] and not e['features']['distanceEstimate'] for e in config['routes']))
             self.assertEqual(headers['Cache-Control'], 'no-store')
             self.assertIn('https://ibasemaps-api.arcgis.com', headers['Content-Security-Policy'])
@@ -61,12 +62,26 @@ class ServerTests(unittest.TestCase):
         with patch.dict(server.os.environ, {'ARCGIS_BASEMAP_API_KEY':'test-key','ARCGIS_LABELS_ENABLED':'false'}):
             self.assertNotIn('imageryLabelsEnabled',server._map_config())
 
+    def test_information_page_footers_include_new_catalog_states_without_javascript(self):
+        data = server.seo.catalog()
+        future_state = {'id': 'ZZ', 'name': 'Future State', 'slug': 'future-state'}
+        expanded = {**data, 'states': [*data['states'], future_state]}
+        with patch.object(server.seo, 'catalog', return_value=expanded):
+            for page in ('about.html', 'contact.html', 'privacy.html', 'feedback.html'):
+                status, _, body = self.request_raw('GET', '/' + page)
+                self.assertEqual(status, 200)
+                footer = body.decode().split('<footer', 1)[1]
+                for state in expanded['states']:
+                    self.assertIn(f'href="/{state["slug"]}"', footer, page)
+                self.assertNotIn('<!-- catalog:state-footer -->', footer)
+
     def test_homepage_state_links_and_counts_work_before_javascript(self):
         status, _, body = self.request_raw('GET','/')
         self.assertEqual(status,200)
         text = body.decode()
         for state in server.seo.catalog()['states']:
-            self.assertGreaterEqual(text.count(f'href="/{state["slug"]}"'),2)
+            self.assertIn(f'href="/{state["slug"]}"', text)
+            self.assertGreaterEqual(text.count(f'href="/?state={state["id"]}#calculator"'), 2)
         rivers = server.seo.catalog()['rivers']
         self.assertIn(f'id="statRivers">{len(rivers)}<',text)
         self.assertIn(f'id="statSections">{sum(len(r["sections"]) for r in rivers)}<',text)

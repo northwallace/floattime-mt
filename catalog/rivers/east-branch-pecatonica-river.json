@@ -1,0 +1,49 @@
+{
+  "id": "east-branch-pecatonica-river",
+  "name": "East Branch Pecatonica River",
+  "gauge": "05433000",
+  "gaugeName": "EAST BRANCH PECATONICA RIVER NR BLANCHARDVILLE, WI",
+  "lat": 42.70184,
+  "lon": -89.87066,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "East Branch Pecatonica River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "robert-e-wenger-memorial-boat-landing-to-pecatonica-river-north-boat-landing",
+      "putIn": "Robert E. Wenger Memorial Boat Landing",
+      "takeOut": "Pecatonica River North Boat Landing",
+      "miles": 5.9,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-2709514f762d563685b5",
+      "takeOutAccessId": "acc-d72ce97ad7795abb8b76",
+      "accessReview": "Dam crossing/portage unresolved: Argyle. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
+      "routeReview": "This section includes Argyle and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "pecatonica-river-north-boat-landing-to-pecatonica-river-west-boat-landing",
+      "putIn": "Pecatonica River North Boat Landing",
+      "takeOut": "Pecatonica River West Boat landing",
+      "miles": 1.2,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-d72ce97ad7795abb8b76",
+      "takeOutAccessId": "acc-7b848872c1435a66957f"
+    }
+  ],
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "This station is upstream of the accessed reach. Its readings are reference information, not a measured flow for every section or a float-time estimate.",
+    "sourceName": "USGS Water Data — monitoring location and Wisconsin gauge review",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05433000/",
+    "checkedOn": "2026-10-30"
+  }
+}

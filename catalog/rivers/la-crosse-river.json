@@ -1,0 +1,164 @@
+{
+  "id": "la-crosse-river",
+  "name": "La Crosse River",
+  "gauge": "05382325",
+  "gaugeName": "LA CROSSE RIVER AT SPARTA, WI",
+  "lat": 43.94217,
+  "lon": -90.80272,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "La Crosse River paddles from Ben Bikin’ Park in Sparta through Amundson Park and Brinkman’s Landing to Rockland. Choose a shorter stretch or the combined Amundson–Rockland trip, with source-backed access areas and dotted course overviews. The longer Sparta–Veterans Park itinerary still has unresolved dam and portage questions.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "ben-bikin-amundson",
+      "putIn": "Ben Bikin' Park Canoe Access",
+      "takeOut": "Amundson Park Canoe Access",
+      "putInAccessId": "acc-29b22504ab4c5b8b8b98",
+      "takeOutAccessId": "acc-a4e4f96c2d1d53a8a405",
+      "miles": 3.5,
+      "difficulty": "Not rated; ledges, moving water and woody obstacles",
+      "notes": "Launch in Sparta below Perch Lake dam and paddle toward Amundson Park. Expect ledges, remnants of the old mill dam and changing wood obstacles. Allow time to inspect obstacles and carry your boat at Amundson; this is not a passive tubing itinerary.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.5,
+        "sourceName": "Wisconsin River Trips — La Crosse River, Sparta",
+        "sourceUrl": "https://www.wisconsinrivertrips.com/segments/la-crosse-river/sparta",
+        "checkedOn": "2026-11-06",
+        "streamId": "La Crosse River",
+        "putIn": {
+          "name": "Ben Bikin' Park Canoe Access",
+          "sourceLocation": "Detailed Overview: Ben Bikin’ Park to Amundson Park, 3.5 miles"
+        },
+        "takeOut": {
+          "name": "Amundson Park Canoe Access",
+          "sourceLocation": "Detailed Overview: Ben Bikin’ Park to Amundson Park, 3.5 miles"
+        },
+        "note": "Approximate published planning miles. The shorter USGS course overview is not substituted for this distance. Parking carries and the vehicle shuttle are excluded."
+      },
+      "routeReview": "The dotted overview follows the general river course. Exact landing approaches and a recommended passage through obstacles are not mapped. DNR lists Gilman as removed, but that does not mean all ledges or mill remnants are gone.",
+      "notices": [
+        {
+          "title": "Old mill ledges and wood obstacles",
+          "text": "A firsthand guide describes remaining ledges below South Water Street and reported logjams upstream of Amundson in April 2024. That report is not a current clearance check. Inspect conditions and do not assume a clear channel or an available portage across private land.",
+          "sourceName": "Wisconsin River Trips — Sparta trip and April 2024 update",
+          "sourceUrl": "https://www.wisconsinrivertrips.com/segments/la-crosse-river/sparta",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "amundson-brinkman",
+      "putIn": "Amundson Park Canoe Access",
+      "takeOut": "Brinkman's Landing",
+      "putInAccessId": "acc-a4e4f96c2d1d53a8a405",
+      "takeOutAccessId": "acc-6ffc3141d28154b28be4",
+      "miles": 4.6,
+      "difficulty": "Not rated; moving water and woody obstacles",
+      "notes": "A shorter wooded paddle from Amundson Park to the Icarus Road landing. Expect a carry at the park, moving water, a reported ledge and changing woody obstacles. Inspect the takeout while arranging your shuttle.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 4.6,
+        "sourceName": "Wisconsin River Trips — La Crosse River, Hammer Road",
+        "sourceUrl": "https://www.wisconsinrivertrips.com/segments/la-crosse-river/hammer-road",
+        "checkedOn": "2026-11-06",
+        "streamId": "La Crosse River",
+        "putIn": {
+          "name": "Amundson Park Canoe Access",
+          "sourceLocation": "Other La Crosse River Trips: Amundson Park–Hammer Road (1.5 mi) plus Hammer Road–Icarus Road/Brinkman’s Landing (3.1 mi)."
+        },
+        "takeOut": {
+          "name": "Brinkman's Landing",
+          "sourceLocation": "Other La Crosse River Trips: Amundson Park–Hammer Road (1.5 mi) plus Hammer Road–Icarus Road/Brinkman’s Landing (3.1 mi)."
+        },
+        "note": "Approximate planning distance from the guide’s named legs. The USGS course overview is shorter and does not replace this distance. Carries and the vehicle shuttle are excluded."
+      },
+      "routeReview": "The dotted line is an approximate river-course overview. It generalizes bends and omits precise landing connections; it is not a channel recommendation or a live travel-time measurement."
+    },
+    {
+      "id": "brinkman-rockland",
+      "putIn": "Brinkman's Landing",
+      "takeOut": "Rockland Canoe Landing (County J)",
+      "putInAccessId": "acc-6ffc3141d28154b28be4",
+      "takeOutAccessId": "acc-1d21a4df1809548ba7d8",
+      "miles": 3.2,
+      "difficulty": "Not rated; moving water and woody obstacles",
+      "notes": "A short paddle from Icarus Road to the County J landing. Current can push boats toward fallen trees; leave room to maneuver and inspect obstacles. Arrange the shuttle and identify the exit before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.2,
+        "sourceName": "Wisconsin River Trips — La Crosse River, Hammer Road",
+        "sourceUrl": "https://www.wisconsinrivertrips.com/segments/la-crosse-river/hammer-road",
+        "checkedOn": "2026-11-06",
+        "streamId": "La Crosse River",
+        "putIn": {
+          "name": "Brinkman's Landing",
+          "sourceLocation": "Other La Crosse River Trips: Icarus Road/Brinkman’s Landing–Cty Rd J/Rockland Canoe Landing (3.2 mi)."
+        },
+        "takeOut": {
+          "name": "Rockland Canoe Landing (County J)",
+          "sourceLocation": "Other La Crosse River Trips: Icarus Road/Brinkman’s Landing–Cty Rd J/Rockland Canoe Landing (3.2 mi)."
+        },
+        "note": "Approximate planning distance from the guide’s named legs. The USGS course overview is shorter and does not replace this distance. Carries and the vehicle shuttle are excluded."
+      },
+      "routeReview": "The dotted line is an approximate river-course overview. It generalizes bends and omits precise landing connections; it is not a channel recommendation or a live travel-time measurement."
+    },
+    {
+      "id": "amundson-rockland",
+      "putIn": "Amundson Park Canoe Access",
+      "takeOut": "Rockland Canoe Landing (County J)",
+      "putInAccessId": "acc-a4e4f96c2d1d53a8a405",
+      "takeOutAccessId": "acc-1d21a4df1809548ba7d8",
+      "miles": 7.8,
+      "difficulty": "Not rated; ledges, moving water and woody obstacles",
+      "notes": "A longer option linking the two shorter stretches through Brinkman’s Landing. Carry in at Amundson and finish at the County J landing. Expect moving water and wood obstacles; arrange the shuttle before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 7.8,
+        "sourceName": "Wisconsin River Trips — La Crosse River, Hammer Road",
+        "sourceUrl": "https://www.wisconsinrivertrips.com/segments/la-crosse-river/hammer-road",
+        "checkedOn": "2026-11-06",
+        "streamId": "La Crosse River",
+        "putIn": {
+          "name": "Amundson Park Canoe Access",
+          "sourceLocation": "Detailed Overview: Amundson–Hammer 1.5 mi + Hammer–Brinkman’s 3.1 mi + Brinkman’s–Rockland 3.2 mi"
+        },
+        "takeOut": {
+          "name": "Rockland Canoe Landing (County J)",
+          "sourceLocation": "Detailed Overview: Amundson–Hammer 1.5 mi + Hammer–Brinkman’s 3.1 mi + Brinkman’s–Rockland 3.2 mi"
+        },
+        "note": "Approximate published planning miles. The shorter USGS course overview is not substituted for this distance. Parking carries and the vehicle shuttle are excluded."
+      },
+      "routeReview": "The dotted overview follows the general river course. Exact landing approaches and a recommended passage through obstacles are not mapped.",
+      "guideTimes": [
+        {
+          "min": 3,
+          "max": 3,
+          "unit": "hours",
+          "conditions": "Local outfitter’s approximate average for Amundson Park to Rockland boat landing. Conditions, paddling and stops can change the duration. This is published trip guidance, not a live-flow estimate; allow additional time for the shore carry and vehicle shuttle.",
+          "sourceName": "Ellistone Canoe Rentals — 3 Hr Trip",
+          "sourceUrl": "https://www.ellistonecanoerental.com/",
+          "checkedOn": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "id": "fishermans-park-canoe-kayak-portage-to-veterans-memorial-park-canoe-launch",
+      "putIn": "Fishermans Park Canoe/Kayak Portage",
+      "takeOut": "Veterans Memorial Park Canoe Launch",
+      "miles": 26.5,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. This is a long section and may require more than one day; plan daylight, supplies and legal overnight stops. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-ccb06ced72635f8784d3",
+      "takeOutAccessId": "acc-64909afaa74b591d9126",
+      "accessReview": "Dam crossing/portage unresolved: Neshonoc, Steensen. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float. A dam lies near a section endpoint (Paper Mill). The landing’s position relative to the barrier still needs confirmation.",
+      "routeReview": "This section includes Neshonoc, Steensen, Paper Mill and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    }
+  ],
+  "gaugeRelationship": "representative"
+}

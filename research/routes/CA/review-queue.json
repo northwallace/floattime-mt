@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "state": "CA",
+  "sections": [
+    {
+      "riverId": "american-river-lower",
+      "sectionId": "lower-sunrise-river-bend",
+      "issues": [],
+      "metrics": {
+        "routeMiles": 5.8714,
+        "endpointOffsetsMeters": [
+          61.8,
+          44.5
+        ],
+        "mileageDifferencePercent": 2.14,
+        "maxSegmentMeters": 317.4,
+        "vertices": 66
+      }
+    },
+    {
+      "riverId": "russian-river-forestville",
+      "sectionId": "steelhead-sunset",
+      "issues": [
+        "endpoint-offset-over-100m",
+        "mileage-difference-over-5-percent"
+      ],
+      "metrics": {
+        "routeMiles": 2.8586,
+        "endpointOffsetsMeters": [
+          123.1,
+          186.1
+        ],
+        "mileageDifferencePercent": 42.93,
+        "maxSegmentMeters": 152.4,
+        "vertices": 84
+      },
+      "detail": "Initial park-point course was 2.8586 mi against a published two-mile guide. Alternative 2019 response coordinates produce 2.253 mi but the Sunset point is midstream, not an accepted landing. Steelhead is now corrected; re-evaluate the current takeout before accepting mileage or line geometry."
+    }
+  ]
+}

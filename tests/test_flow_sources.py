@@ -1,3 +1,4 @@
+from catalog_fixture import copy_catalog
 import copy
 from datetime import datetime, timezone
 import json
@@ -157,7 +158,7 @@ class OptionalGaugeTests(unittest.TestCase):
         from tools.flow_sources import validate_gauge,flow_url
         root=Path(__file__).resolve().parents[1]
         with tempfile.TemporaryDirectory() as d:
-            temp=Path(d);shutil.copytree(root/'catalog',temp/'catalog');shutil.copytree(root/'research/routes',temp/'research/routes')
+            temp=Path(d);copy_catalog(temp)
             river=self.river();(temp/'catalog/rivers/buffalo-river.json').write_text(json.dumps(river))
             result=next(r for r in build(temp)['rivers'] if r['id']=='buffalo-river')
             self.assertTrue(any(s.get('mapReleased') for s in result['sections']))

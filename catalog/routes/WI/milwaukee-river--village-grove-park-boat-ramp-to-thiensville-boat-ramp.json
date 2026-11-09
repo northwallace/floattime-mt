@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "milwaukee-river",
+  "sectionId": "village-grove-park-boat-ramp-to-thiensville-boat-ramp",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-10-30",
+    "streamId": "Milwaukee River",
+    "evidenceFile": "research/routes/WI/hr-sources/milwaukee-river-fa53c6e98669f65f.json",
+    "sha256": "fa53c6e98669f65fe6918aa7dc6373253c78fdda60cf3e02847f0213b64394d5"
+  },
+  "putIn": {
+    "name": "Village Grove Park Boat Ramp",
+    "lat": 43.23436433271066,
+    "lon": -87.95717793457852
+  },
+  "takeOut": {
+    "name": "Thiensville Boat Ramp",
+    "lat": 43.23100519302013,
+    "lon": -87.97859036864864
+  },
+  "catalogMiles": 1.2,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -87.95721538147181,
+        43.234085613839156
+      ],
+      [
+        -87.95792856214547,
+        43.23413579562944
+      ],
+      [
+        -87.95859996245038,
+        43.23435846201257
+      ],
+      [
+        -87.95890576286264,
+        43.234603995256656
+      ],
+      [
+        -87.95938696294448,
+        43.23492179553502
+      ],
+      [
+        -87.96004269593121,
+        43.23511079575957
+      ],
+      [
+        -87.96042369676539,
+        43.23508806245536
+      ],
+      [
+        -87.96080469655902,
+        43.23506499558729
+      ],
+      [
+        -87.96139956351819,
+        43.23495206196127
+      ],
+      [
+        -87.96212976335046,
+        43.2343584620126
+      ],
+      [
+        -87.96258569718934,
+        43.233865661824915
+      ],
+      [
+        -87.96331556405079,
+        43.23332779456508
+      ],
+      [
+        -87.96421376431643,
+        43.23293486216884
+      ],
+      [
+        -87.9651594972089,
+        43.23277699452807
+      ],
+      [
+        -87.96602056498357,
+        43.232758861317876
+      ],
+      [
+        -87.96928116520904,
+        43.23217186139562
+      ],
+      [
+        -87.97103249917873,
+        43.23169926113611
+      ],
+      [
+        -87.97311229950957,
+        43.23101919431478
+      ],
+      [
+        -87.97629816755334,
+        43.230823794128625
+      ],
+      [
+        -87.97731856707387,
+        43.23071006039241
+      ],
+      [
+        -87.97859689593258,
+        43.23072570393126
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "139268102",
+      "139268101"
+    ],
+    "putInOffsetMeters": 482.2957714638737,
+    "takeOutOffsetMeters": 1604.8416452374233
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate mapped river centerline, not a recommended navigation channel. Channels, hazards and conditions change. Does not enable GPS time remaining or replace planning mileage.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.1822,
+      "endpointOffsetsMeters": [
+        31.1,
+        31.1
+      ],
+      "mileageDifferencePercent": 1.48,
+      "maxSegmentMeters": 272.1,
+      "vertices": 21
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-10-31",
+    "reviewer": "Float ETA desktop agency, imagery and river-network review",
+    "note": "Agency landing features and imagery reviewed individually; a unique downstream USGS NHD High Resolution chain passes the existing endpoint, continuity and mileage checks. All 4,141 on-landscape WDNR records were screened within 150 m. Any nearby record has an explicit, source-backed decision in this review. This approximate planning centerline is not field-verified navigation and does not enable GPS ETA or change catalog mileage.",
+    "evidenceFile": "research/WI/local-review-20261031/manifest.json"
+  }
+}

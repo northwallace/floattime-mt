@@ -7,47 +7,209 @@
   "lon": -112.33,
   "refFlowCfs": 1500,
   "refSpeedMph": 2.7,
-  "blurb": "Quiet brown-trout water. Slow compared with the Madison — and a lot less crowded.",
+  "blurb": "Upper Jefferson floats around Twin Bridges and Whitehall, with quiet trout water, braided channels and access at FWP fishing sites. Check irrigation diversions and low-water conditions.",
   "sections": [
+    {
+      "id": "hells-canyon-silver-star",
+      "putIn": "Hell's Canyon FAS",
+      "takeOut": "Silver Star FAS",
+      "miles": 4.5,
+      "difficulty": "Class I",
+      "notes": "Short upper-river float. Check the launch-side diversion before starting; the estimate excludes scouting and carrying.",
+      "putInAccessId": "acc-6afea1f3b0b856afb560",
+      "takeOutAccessId": "acc-6edb1703300d54e8a98e",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "KF2 Consulting for Save Wild Trout — Jefferson monitoring report, Table 11",
+        "sourceUrl": "https://dailymontanan.com/wp-content/uploads/2025/07/Jefferson-River-Basin-Abiotic-Monitoring-2023-2024_courtesy-SaveWildTrout.pdf",
+        "checkedOn": "2026-11-02",
+        "streamId": "Jefferson River / NV5 2025 centerline",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Hell's Canyon FAS",
+          "riverMile": 71.1,
+          "sourceLocation": "Table 11, printed page 19; monitoring site at the named access"
+        },
+        "takeOut": {
+          "name": "Silver Star FAS",
+          "riverMile": 66.6,
+          "sourceLocation": "Table 11, printed page 19; monitoring site at the named access"
+        },
+        "note": "Approximate planning distance between named access areas. Channels and actual landing positions vary. Add time for scouting, carrying and any portage."
+      },
+      "notices": [
+        {
+          "title": "Hell’s Canyon launch approach",
+          "text": "The launch sits behind an island with a diversion downstream. The trail guide describes paddling upstream from the launch to reach the main channel. Scout this connection before starting.",
+          "sourceName": "Jefferson River Canoe Trail",
+          "sourceUrl": "https://jeffersonriver.org/Canoe_Trail_Campsites.htm",
+          "checkedOn": "2026-11-02"
+        }
+      ],
+      "routeReview": "The partial dotted course starts below the launch/diversion area. Exact landing connections and passage around the diversion are not mapped. Banks, bars and side channels can differ from this approximate overview."
+    },
     {
       "id": "silver-star-parsons",
       "putIn": "Silver Star FAS",
       "takeOut": "Parsons Bridge (Waterloo)",
-      "miles": 6,
+      "miles": 10.5,
       "difficulty": "Class I",
-      "notes": "Diversion dam just below Waterloo — rope or portage. Don't drift it blind.",
-      "accessReview": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check.",
+      "notes": "Planning estimate for time on the water only. Add time for scouting, carrying and any portage. Confirm the exact landing and local conditions before setting your shuttle.",
       "notices": [
         {
           "title": "Waterloo / Parsons diversion dam",
-          "text": "The Jefferson River Canoe Trail describes a boat ramp in the Waterloo Road right-of-way beside Lost Tomahawk and a public portage around the diversion. Locate the landing and portage before planning this trip; the bridge label alone does not identify a safe exit or launch.",
+          "text": "Waterloo has a diversion beside the road access. The canoe-trail organization documents a ramp and public portage. Scout the exact landing, launch and portage before floating; this area marker does not show a safe passage through the dam.",
           "sourceName": "Jefferson River Canoe Trail — Lost Tomahawk",
           "sourceUrl": "https://www.jeffersonriver.org/Campsites/Lost_Tomahawk.htm",
-          "checkedOn": "2026-10-28"
+          "checkedOn": "2026-11-02"
         }
       ],
       "putInAccessId": "acc-6edb1703300d54e8a98e",
-      "takeOutAccessId": "acc-318a7938159c5b5f88c4"
+      "takeOutAccessId": "acc-318a7938159c5b5f88c4",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "KF2 Consulting for Save Wild Trout — Jefferson monitoring report, Table 11",
+        "sourceUrl": "https://dailymontanan.com/wp-content/uploads/2025/07/Jefferson-River-Basin-Abiotic-Monitoring-2023-2024_courtesy-SaveWildTrout.pdf",
+        "checkedOn": "2026-11-02",
+        "streamId": "Jefferson River / NV5 2025 centerline",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Silver Star FAS",
+          "riverMile": 66.6,
+          "sourceLocation": "Table 11, printed page 19; monitoring site at the named access"
+        },
+        "takeOut": {
+          "name": "Parsons Bridge (Waterloo)",
+          "riverMile": 56.1,
+          "sourceLocation": "Table 11, printed page 19; monitoring site at the named access"
+        },
+        "note": "Approximate distance between published monitoring locations at these access areas, using the report’s 2025 river centerline. Actual landing positions and side channels can change the trip length. Portage, scouting and carrying time are not included."
+      },
+      "routeReview": "Exact landing connections and the Waterloo diversion approach are unconfirmed. The partial river-course overview stops before that approach; it does not show a safe passage through the diversion."
     },
     {
       "id": "parsons-parrott",
       "putIn": "Parsons Bridge (Waterloo)",
       "takeOut": "Parrot Castle FAS",
-      "miles": 10,
+      "miles": 7.7,
       "difficulty": "Class I",
-      "notes": "Parrot Castle has no boat ramp and difficult river access in the official FWP record. Do not rely on it as a take-out until a suitable replacement is confirmed.",
-      "accessReview": "Parsons Bridge is the Waterloo Road crossing beside Lost Tomahawk. A public portage and road-right-of-way ramp are documented by the canoe-trail organization, but the landing and its relationship to the diversion dam still need a dependable mapped location and current access check. Parrot Castle also lacks a confirmed boat landing.",
+      "notes": "Planning estimate for time on the water only. Add time for scouting, carrying and any portage. Confirm the exact landing and local conditions before setting your shuttle.",
       "notices": [
         {
           "title": "Waterloo / Parsons diversion dam",
-          "text": "The Jefferson River Canoe Trail describes a boat ramp in the Waterloo Road right-of-way beside Lost Tomahawk and a public portage around the diversion. Locate the landing and portage before planning this trip; the bridge label alone does not identify a safe exit or launch.",
+          "text": "Waterloo has a diversion beside the road access. The canoe-trail organization documents a ramp and public portage. Scout the exact landing, launch and portage before floating; this area marker does not show a safe passage through the dam.",
           "sourceName": "Jefferson River Canoe Trail — Lost Tomahawk",
           "sourceUrl": "https://www.jeffersonriver.org/Campsites/Lost_Tomahawk.htm",
-          "checkedOn": "2026-10-28"
+          "checkedOn": "2026-11-02"
+        },
+        {
+          "title": "Parrot Castle access and diversion",
+          "text": "FWP lists primitive access with no boat facilities, and the canoe-trail map identifies a nearby diversion. Confirm that the take-out suits your boat and scout the approach before launching. This pin marks the access area, not a landing.",
+          "sourceName": "Montana FWP — Parrot Castle",
+          "sourceUrl": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753428",
+          "checkedOn": "2026-11-02"
         }
       ],
       "putInAccessId": "acc-318a7938159c5b5f88c4",
-      "takeOutAccessId": "acc-a1b23f0e7f16595483a3"
+      "takeOutAccessId": "acc-a1b23f0e7f16595483a3",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "KF2 Consulting for Save Wild Trout — Jefferson monitoring report, Table 11",
+        "sourceUrl": "https://dailymontanan.com/wp-content/uploads/2025/07/Jefferson-River-Basin-Abiotic-Monitoring-2023-2024_courtesy-SaveWildTrout.pdf",
+        "checkedOn": "2026-11-02",
+        "streamId": "Jefferson River / NV5 2025 centerline",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Parsons Bridge (Waterloo)",
+          "riverMile": 56.1,
+          "sourceLocation": "Table 11, printed page 19; monitoring site at the named access"
+        },
+        "takeOut": {
+          "name": "Parrot Castle FAS",
+          "riverMile": 48.4,
+          "sourceLocation": "Table 11, printed page 19; monitoring site at the named access"
+        },
+        "note": "Approximate distance between published monitoring locations at these access areas, using the report’s 2025 river centerline. Actual landing positions and side channels can change the trip length. Portage, scouting and carrying time are not included."
+      },
+      "routeReview": "Access areas remain available. Several source bends cross old channels and vegetated ground beside the visible river, so the dotted course remains under review. The Waterloo and Parrot Castle diversion approaches are not mapped."
+    },
+    {
+      "id": "kountz-mayflower",
+      "putIn": "Kountz Bridge FAS",
+      "takeOut": "Mayflower Bridge FAS",
+      "miles": 5,
+      "difficulty": "Class I",
+      "notes": "Braided valley water between two FWP access sites. The upstream gauge may differ from local flow after irrigation withdrawals.",
+      "putInAccessId": "acc-78085a2b6a8f5a408ea3",
+      "takeOutAccessId": "acc-19a11bf0f65658e09282",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "Jefferson River Canoe Trail — Campsites and Special Places",
+        "sourceUrl": "https://jeffersonriver.org/Canoe_Trail_Campsites.htm",
+        "checkedOn": "2026-11-02",
+        "streamId": "Jefferson River Canoe Trail published river miles",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Kountz Bridge FAS",
+          "riverMile": 49,
+          "sourceLocation": "Named FAS river-mile entry in Campsites and Special Places"
+        },
+        "takeOut": {
+          "name": "Mayflower Bridge FAS",
+          "riverMile": 44,
+          "sourceLocation": "Named FAS river-mile entry in Campsites and Special Places"
+        },
+        "note": "Approximate planning distance between named access areas. Channels and actual landing positions vary. Add time for scouting, carrying and any portage."
+      },
+      "notices": [
+        {
+          "title": "Braided channels and low water",
+          "text": "The canoe-trail guide describes several channels below Kountz Bridge and low-water limitations. Channel depth changes; check conditions before launching.",
+          "sourceName": "Jefferson River Canoe Trail",
+          "sourceUrl": "https://jeffersonriver.org/Canoe_Trail_Campsites.htm",
+          "checkedOn": "2026-11-02"
+        }
+      ],
+      "routeReview": "Access areas remain available. The source course crosses shifted banks and bars, and its roughly 3.4-mile length differs from the 5-mile published planning distance. Channel choice and exact landing connections remain under review."
+    },
+    {
+      "id": "mayflower-cardwell",
+      "putIn": "Mayflower Bridge FAS",
+      "takeOut": "Cardwell Bridge FAS",
+      "miles": 5,
+      "difficulty": "Class I",
+      "notes": "Short valley float ending at Cardwell before the canyon. Use the published guide distance for planning; the upstream gauge does not measure every diversion.",
+      "putInAccessId": "acc-19a11bf0f65658e09282",
+      "takeOutAccessId": "acc-3b909de5e88d50a5b4ab",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "Jefferson River Canoe Trail — Campsites and Special Places",
+        "sourceUrl": "https://jeffersonriver.org/Canoe_Trail_Campsites.htm",
+        "checkedOn": "2026-11-02",
+        "streamId": "Jefferson River Canoe Trail published river miles",
+        "measureDirection": "decreases-downstream",
+        "putIn": {
+          "name": "Mayflower Bridge FAS",
+          "riverMile": 44,
+          "sourceLocation": "Named FAS river-mile entry in Campsites and Special Places"
+        },
+        "takeOut": {
+          "name": "Cardwell Bridge FAS",
+          "riverMile": 39,
+          "sourceLocation": "Named FAS river-mile entry in Campsites and Special Places"
+        },
+        "note": "Approximate planning distance between named access areas. Channels and actual landing positions vary. Add time for scouting, carrying and any portage."
+      },
+      "notices": [
+        {
+          "title": "Changing river channels",
+          "text": "The dotted course, when available, is an overview of mapped river bends. Confirm the ramp, current channels and conditions before floating.",
+          "sourceName": "Jefferson River Canoe Trail",
+          "sourceUrl": "https://jeffersonriver.org/Canoe_Trail_Campsites.htm",
+          "checkedOn": "2026-11-02"
+        }
+      ],
+      "routeReview": "Access areas remain available. Several source bends follow old channels beside the visible river. The dotted course remains under review; the published 5-mile planning distance is unchanged."
     }
   ],
   "state": "MT",

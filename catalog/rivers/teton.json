@@ -6,30 +6,386 @@
   "gaugeName": "Teton River ab South Leigh Creek nr Driggs",
   "lat": 43.782,
   "lon": -111.209,
-  "refFlowCfs": 500,
-  "refSpeedMph": 2.6,
-  "blurb": "Teton Valley meadow water under the Idaho Tetons. Small, technical, and bony by August.",
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Teton Valley meadow floats near Driggs, from Fox Creek through South Bates, Buxton River Park and Big Eddy to Packsaddle and Harrops. Choose a short paddle or link adjoining reaches; the technical canyon begins below Harrops.",
   "sections": [
+    {
+      "id": "fox-west-south-bates",
+      "putIn": "Fox Creek West",
+      "takeOut": "South Bates Bridge",
+      "putInAccessId": "acc-be5fab107e515ac4a4fb",
+      "takeOutAccessId": "acc-a5d22b8b9d4b554291f4",
+      "miles": 3.1,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "Start at the designated Fox Creek West access. The guide groups the east and west Fox Creek launches together; actual launch connections vary. Arrange a shuttle to South Bates (Nickerson) before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.1,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "Fox Creek West",
+          "sourceLocation": "Page 1 Upper Teton River float table: Fox Creek East & West → South Bates"
+        },
+        "takeOut": {
+          "name": "South Bates Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Fox Creek East & West → South Bates"
+        },
+        "note": "Published approximate reach length. The guide groups Fox Creek East and West together; their individual approach lengths can differ. The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 2,
+          "unit": "hours",
+          "conditions": "Local guide estimate for a single paddled kayak or canoe at moderate flows. Flow, weather, paddling and stops change travel time. Not a raft/tube forecast or today’s live ETA.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "fox-east-south-bates",
+      "putIn": "Fox Creek East",
+      "takeOut": "South Bates Bridge",
+      "putInAccessId": "acc-19d55e1613d0514f8455",
+      "takeOutAccessId": "acc-a5d22b8b9d4b554291f4",
+      "miles": 3.1,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "Carry-in alternative from Fox Creek East. IDFG lists no developed boat ramp here. The guide groups both Fox Creek launches into one approximate distance and time; inspect the carrying approach and do not assume trailer access.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.1,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "Fox Creek East",
+          "sourceLocation": "Page 1 Upper Teton River float table: Fox Creek East & West → South Bates"
+        },
+        "takeOut": {
+          "name": "South Bates Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Fox Creek East & West → South Bates"
+        },
+        "note": "Published approximate reach length. The guide groups Fox Creek East and West together; their individual approach lengths can differ. The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 2,
+          "unit": "hours",
+          "conditions": "Local guide estimate for a single paddled kayak or canoe at moderate flows. Flow, weather, paddling and stops change travel time. Not a raft/tube forecast or today’s live ETA.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "south-bates-buxton",
+      "putIn": "South Bates Bridge",
+      "takeOut": "Bates Bridge",
+      "putInAccessId": "acc-a5d22b8b9d4b554291f4",
+      "takeOutAccessId": "acc-79db0dbd06795027a7c0",
+      "miles": 3.5,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "A shorter meadow paddle ending at Buxton River Park (Bates Bridge). The active ramp is north of Bates Road; the old south-side access is closed. Arrange a shuttle and confirm the takeout before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.5,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "South Bates Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: South Bates → Buxton River Park"
+        },
+        "takeOut": {
+          "name": "Bates Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: South Bates → Buxton River Park"
+        },
+        "note": "Published approximate reach length. The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 2,
+          "unit": "hours",
+          "conditions": "Local guide estimate for a single paddled kayak or canoe at moderate flows. Flow, weather, paddling and stops change travel time. Not a raft/tube forecast or today’s live ETA.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
     {
       "id": "bates-rainey",
       "putIn": "Bates Bridge",
       "takeOut": "Rainey Bridge",
-      "miles": 7,
-      "difficulty": "Class I",
-      "notes": "Classic Teton Valley drift. Brushy banks and irrigation — scout new wood every spring.",
       "putInAccessId": "acc-79db0dbd06795027a7c0",
-      "takeOutAccessId": "acc-f82bfffcdd9a5f11a766"
+      "takeOutAccessId": "acc-f82bfffcdd9a5f11a766",
+      "miles": 4.3,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "Launch from Buxton River Park north of Bates Road and take out at Rainey, also called Big Eddy. Watch for wood and changing channels. Scout the takeout and arrange your shuttle before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 4.3,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "Bates Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Buxton River Park → Rainey"
+        },
+        "takeOut": {
+          "name": "Rainey Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Buxton River Park → Rainey"
+        },
+        "note": "Published approximate reach length. The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "guideTimes": [
+        {
+          "min": 2.5,
+          "max": 2.5,
+          "unit": "hours",
+          "conditions": "Local guide estimate for a single paddled kayak or canoe at moderate flows. Flow, weather, paddling and stops change travel time. Not a raft/tube forecast or today’s live ETA.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "rainey-horseshoe",
+      "putIn": "Rainey Bridge",
+      "takeOut": "Horseshoe Bridge",
+      "putInAccessId": "acc-f82bfffcdd9a5f11a766",
+      "takeOutAccessId": "acc-ecdc71e0b1c15fee963a",
+      "miles": 2.3,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "A short paddle from Big Eddy to the Horseshoe access at Old Rightaway Road. Confirm the takeout and carrying approach first; current IDFG inventory does not list a developed ramp at Horseshoe.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 2.3,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "Rainey Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Rainey → Horseshoe Bridge"
+        },
+        "takeOut": {
+          "name": "Horseshoe Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Rainey → Horseshoe Bridge"
+        },
+        "note": "Published approximate reach length. The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "guideTimes": [
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "unit": "hours",
+          "conditions": "Local guide estimate for a single paddled kayak or canoe at moderate flows. Flow, weather, paddling and stops change travel time. Not a raft/tube forecast or today’s live ETA.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "horseshoe-cache",
+      "putIn": "Horseshoe Bridge",
+      "takeOut": "Cache Bridge",
+      "putInAccessId": "acc-ecdc71e0b1c15fee963a",
+      "takeOutAccessId": "acc-ef7fbde632905fb3acba",
+      "miles": 1.4,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "A short reach to Packsaddle (Cache) Bridge. Inspect the Horseshoe entry and bank approach before unloading; do not assume a developed trailer ramp. Set your shuttle at the designated Packsaddle access.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 1.4,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "Horseshoe Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Horseshoe Bridge → Packsaddle Bridge"
+        },
+        "takeOut": {
+          "name": "Cache Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Horseshoe Bridge → Packsaddle Bridge"
+        },
+        "note": "Published approximate reach length. The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "guideTimes": [
+        {
+          "min": 1,
+          "max": 1,
+          "unit": "hours",
+          "conditions": "Local guide estimate for a single paddled kayak or canoe at moderate flows. Flow, weather, paddling and stops change travel time. Not a raft/tube forecast or today’s live ETA.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
     },
     {
       "id": "rainey-cache",
       "putIn": "Rainey Bridge",
       "takeOut": "Cache Bridge",
-      "miles": 6,
-      "difficulty": "Class I",
-      "notes": "Gets skinny late. Drift boats more than tubes. Respect private land at the fences.",
       "putInAccessId": "acc-f82bfffcdd9a5f11a766",
-      "takeOutAccessId": "acc-ef7fbde632905fb3acba"
+      "takeOutAccessId": "acc-ef7fbde632905fb3acba",
+      "miles": 3.7,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "Continue past Horseshoe to Packsaddle (Cache) Bridge. Distance combines the guide’s adjoining 2.3- and 1.4-mile reaches. See the shorter sections for published paddling times and identify your chosen takeout before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.7,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "Rainey Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Rainey → Horseshoe Bridge + Horseshoe Bridge → Packsaddle Bridge"
+        },
+        "takeOut": {
+          "name": "Cache Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Rainey → Horseshoe Bridge + Horseshoe Bridge → Packsaddle Bridge"
+        },
+        "note": "Sum of two adjoining published reaches (2.3 + 1.4 miles). The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "notices": [
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "id": "cache-harrops",
+      "putIn": "Cache Bridge",
+      "takeOut": "Harrops Bridge",
+      "putInAccessId": "acc-ef7fbde632905fb3acba",
+      "takeOutAccessId": "acc-6d7e2050ed6b5df2a53a",
+      "miles": 6.4,
+      "difficulty": "Class I; wood and conditions vary",
+      "notes": "A longer meadow paddle ending at Harrops Bridge. Allow time for the shuttle and take out at Harrops. Do not continue into Teton Canyon on this itinerary; technical whitewater and limited exits lie downstream.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 6.4,
+        "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+        "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+        "checkedOn": "2026-11-03",
+        "streamId": "Teton River / upper valley meadow reaches",
+        "putIn": {
+          "name": "Cache Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Packsaddle Bridge → Harrops Bridge"
+        },
+        "takeOut": {
+          "name": "Harrops Bridge",
+          "sourceLocation": "Page 1 Upper Teton River float table: Packsaddle Bridge → Harrops Bridge"
+        },
+        "note": "Published approximate reach length. The Summer 2020 edition is still linked by Friends of the Teton River at this review. This is planning mileage, not a surveyed landing-to-landing measurement."
+      },
+      "guideTimes": [
+        {
+          "min": 5,
+          "max": 5,
+          "unit": "hours",
+          "conditions": "Local guide estimate for a single paddled kayak or canoe at moderate flows. Flow, weather, paddling and stops change travel time. Not a raft/tube forecast or today’s live ETA.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Take out at Harrops — canyon downstream",
+          "text": "Below Harrops, the guide identifies technical Class IV+ whitewater and limited access. This meadow-water trip ends at Harrops; do not drift past the planned takeout.",
+          "sourceName": "Friends of the Teton River / Teton Regional Land Trust — recreation map (Summer 2020 edition)",
+          "sourceUrl": "https://www.tetonwater.org/wp-content/uploads/2021/06/Teton-River-Map-Summer-2020.pdf",
+          "checkedOn": "2026-11-03"
+        },
+        {
+          "title": "Use designated access",
+          "text": "Most banks and conservation easements remain private. Use designated public launches, check current access and parking rules, and leave space for wildlife. Arrange your shuttle before launching.",
+          "sourceName": "Friends of the Teton River — recreation guidance",
+          "sourceUrl": "https://www.tetonwater.org/get-out/recreation-map/",
+          "checkedOn": "2026-11-03"
+        }
+      ]
     }
   ],
-  "timezone": "America/Boise"
+  "timezone": "America/Boise",
+  "timing": {
+    "mode": "unavailable",
+    "note": "Published paddling times are available for these reaches. The former reference-flow speed has no documented trip calibration; guide times are not live ETAs and do not change with the selected craft, fishing stops or current flow."
+  }
 }

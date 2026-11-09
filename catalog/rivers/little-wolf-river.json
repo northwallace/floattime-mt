@@ -1,0 +1,176 @@
+{
+  "id": "little-wolf-river",
+  "name": "Little Wolf River",
+  "gauge": "04080000",
+  "gaugeName": "LITTLE WOLF RIVER AT ROYALTON, WI",
+  "lat": 44.62002,
+  "lon": -89.01578,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "blurb": "Upper Little Wolf trips from Wolf River Road through County J to the takeout above Big Falls, plus separately reviewed downstream access areas near Manawa and Royalton.",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "timing": {
+    "mode": "unavailable",
+    "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+  },
+  "sections": [
+    {
+      "id": "wolf-road-county-j",
+      "putIn": "Wolf River Road Access",
+      "takeOut": "County J Little Wolf Access",
+      "miles": 3.5,
+      "difficulty": "Class II rapids (county guide)",
+      "notes": "County guide trip with Class II rapids. Suitable for paddlers with moving-water experience. Access-area markers and the dotted river overview do not identify an exact landing approach.",
+      "putInAccessId": "acc-ae01dd3d5a6954b8acec",
+      "takeOutAccessId": "acc-db71525924655e18a0b1",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 3.5,
+        "sourceName": "Visit Waupaca County — paddling guide",
+        "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/Map_1-4_LittleWolf_Overview.pdf",
+        "checkedOn": "2026-11-05",
+        "streamId": "Little Wolf River",
+        "putIn": {
+          "name": "Wolf River Road Access",
+          "sourceLocation": "PDF page 1, Wolf River Rd to County Road J callout"
+        },
+        "takeOut": {
+          "name": "County J Little Wolf Access",
+          "sourceLocation": "PDF page 1, Wolf River Rd to County Road J callout"
+        },
+        "note": "Approximate published trip mileage. It is independent of the generalized map line and does not establish a timing calibration."
+      },
+      "guideTimes": [
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "unit": "hours",
+          "conditions": "Approximate paddling time from the county guide. Flow, obstacles and stops can change the trip duration; this is not a live estimate.",
+          "sourceName": "Visit Waupaca County — paddling guide",
+          "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/Map_1-4_LittleWolf_Overview.pdf",
+          "checkedOn": "2026-11-05"
+        }
+      ],
+      "routeReview": "Approximate river-course overview. The final 250 metres of the approach to County J are not drawn because source alignment near the bridge needs refinement."
+    },
+    {
+      "id": "county-j-big-falls",
+      "putIn": "County J Little Wolf Access",
+      "takeOut": "Big Falls Pond Boat Ramp",
+      "miles": 4.0,
+      "difficulty": "Moving water; Dells caution (county guide)",
+      "notes": "The county guide flags the Dells and finishes this trip at Big Falls above the dam. Check conditions, scout the takeout before launching and do not continue over the dam or falls.",
+      "putInAccessId": "acc-db71525924655e18a0b1",
+      "takeOutAccessId": "acc-db0418ad29425797b484",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 4.0,
+        "sourceName": "Visit Waupaca County — paddling guide",
+        "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/Map_1-4_LittleWolf_Overview.pdf",
+        "checkedOn": "2026-11-05",
+        "streamId": "Little Wolf River",
+        "putIn": {
+          "name": "County J Little Wolf Access",
+          "sourceLocation": "PDF page 1, County Road J to Big Falls callout"
+        },
+        "takeOut": {
+          "name": "Big Falls Pond Boat Ramp",
+          "sourceLocation": "PDF page 1, County Road J to Big Falls callout"
+        },
+        "note": "Approximate published trip mileage. It is independent of the generalized map line and does not establish a timing calibration."
+      },
+      "guideTimes": [
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "unit": "hours",
+          "conditions": "Approximate paddling time from the county guide. Flow, obstacles and stops can change the trip duration; this is not a live estimate.",
+          "sourceName": "Visit Waupaca County — paddling guide",
+          "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/Map_1-4_LittleWolf_Overview.pdf",
+          "checkedOn": "2026-11-05"
+        }
+      ],
+      "routeReview": "Approximate river-course overview. The first 250 metres near County J and the final 200 metres approaching the dam-side takeout are not drawn; use the reviewed access information for those areas.",
+      "notices": [
+        {
+          "title": "Take out above Big Falls Dam",
+          "text": "Finish at the pond-side ramp before the dam. The downstream falls are outside this trip; no portage or continuous passage through them has been reviewed.",
+          "sourceName": "Village of Big Falls — parks; Waupaca County paddling map",
+          "sourceUrl": "https://www.villageofbigfallswi.com/parks-recreation",
+          "checkedOn": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "big-falls-pond-boat-ramp-to-manawa-millpond-access",
+      "putIn": "Big Falls Pond Boat Ramp",
+      "takeOut": "Manawa Millpond Access",
+      "miles": 20.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-db0418ad29425797b484",
+      "takeOutAccessId": "acc-a7ec1e45b0625ce7b969",
+      "accessReview": "Big Falls Pond Boat Ramp is above Big Falls Dam. A legal, usable route past the dam and falls is not established. The former Manawa millpond endpoint also needs a current landing review after the 2024 breach.",
+      "routeReview": "Do not plan this as a continuous float: Big Falls Dam separates the pond-side ramp from the downstream river, and the Manawa millpond was lost in 2024.",
+      "notices": [
+        {
+          "title": "Manawa millpond changed after the 2024 breach",
+          "text": "The City of Manawa’s July 2026 update describes continuing dam and millpond restoration planning. Older pond access and trip descriptions need a fresh review before use.",
+          "sourceName": "City of Manawa — dam restoration updates",
+          "sourceUrl": "https://cityofmanawa.org/2024/07/10/flash-flooding-on-july-5-2024/",
+          "checkedOn": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "manawa-millpond-access-to-little-wolf-river-access-town-of-little-wolf-2732",
+      "putIn": "Manawa Millpond Access",
+      "takeOut": "Little Wolf River Access — Town of Little Wolf #2732",
+      "miles": 3.4,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-a7ec1e45b0625ce7b969",
+      "takeOutAccessId": "acc-48d1f6e462265a3ea81b",
+      "accessReview": "The Manawa levee breach in July 2024 emptied the millpond. The city was still planning restoration in July 2026; present-day landing usability and passage through the dam site remain unresolved.",
+      "routeReview": "Current access and passage through the Manawa dam site need review after the 2024 breach. No continuous float route is approved.",
+      "notices": [
+        {
+          "title": "Manawa millpond changed after the 2024 breach",
+          "text": "The City of Manawa’s July 2026 update describes continuing dam and millpond restoration planning. Older pond access and trip descriptions need a fresh review before use.",
+          "sourceName": "City of Manawa — dam restoration updates",
+          "sourceUrl": "https://cityofmanawa.org/2024/07/10/flash-flooding-on-july-5-2024/",
+          "checkedOn": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "little-wolf-river-access-town-of-little-wolf-2732-to-little-wolf-river-access-town-of-little-wolf-2731",
+      "putIn": "Little Wolf River Access — Town of Little Wolf #2732",
+      "takeOut": "Little Wolf River Access — Town of Little Wolf #2731",
+      "miles": 2.0,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-48d1f6e462265a3ea81b",
+      "takeOutAccessId": "acc-274c3a6d1c29543aaf05"
+    },
+    {
+      "id": "little-wolf-river-access-town-of-little-wolf-2731-to-royalton-park-canoe-access",
+      "putIn": "Little Wolf River Access — Town of Little Wolf #2731",
+      "takeOut": "Royalton Park Canoe Access",
+      "miles": 3.3,
+      "difficulty": "Not rated (no agency rating found)",
+      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "putInAccessId": "acc-274c3a6d1c29543aaf05",
+      "takeOutAccessId": "acc-eb25a9d16e025c32a6ab"
+    }
+  ],
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "The Royalton station is downstream of the upper trips and the Big Falls and Manawa dam sites. Its readings provide conditions elsewhere on the Little Wolf, not a direct flow measurement or live duration for these upstream sections.",
+    "sourceName": "USGS — Little Wolf River at Royalton; Waupaca County paddling guide",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-04080000/",
+    "checkedOn": "2026-11-05"
+  }
+}

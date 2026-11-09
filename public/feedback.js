@@ -7,6 +7,7 @@
   const status = $("feedbackStatus");
   $("year").textContent = new Date().getFullYear();
   if (["correction", "access-suggestion"].includes(params.get("type"))) $("feedbackType").value = params.get("type");
+  if (["putIn", "takeOut"].includes(params.get("endpoint"))) $("locationEndpoint").value = params.get("endpoint");
 
   function selectedRiver() { return rivers.find(r => r.id === $("feedbackRiver").value); }
   function fillSections(sectionId = "") {
@@ -20,7 +21,10 @@
   function showContext() {
     const river = selectedRiver();
     const section = river?.sections.find(s => s.id === $("feedbackSection").value);
-    $("feedbackContext").textContent = river ? `${river.name}${section ? ` · ${section.putIn} → ${section.takeOut}` : " · Whole river"}` : "";
+    const endpoint = $("locationEndpoint").value;
+    const landing = section && $("feedbackType").value === "access-suggestion" && ["putIn", "takeOut"].includes(endpoint)
+      ? ` · Pin suggestion for ${endpoint === "putIn" ? "put-in" : "take-out"}: ${section[endpoint]}` : "";
+    $("feedbackContext").textContent = river ? `${river.name}${section ? ` · ${section.putIn} → ${section.takeOut}` : " · Whole river"}${landing}` : "";
     $("feedbackBack").href = river ? `/?river=${encodeURIComponent(river.id)}#calculator` : "/";
   }
   function updateMode() {
@@ -39,14 +43,13 @@
     history.replaceState(null, "", url.pathname + url.search);
   }
   updateMode();
-  $("feedbackType").addEventListener("change", updateMode);
+  $("feedbackType").addEventListener("change", () => { updateMode(); showContext(); });
+  $("locationEndpoint").addEventListener("change", () => { resetLocation(); showContext(); });
   $("feedbackRiver").addEventListener("change", () => {
     fillSections();
-    $("locationLat").value = $("locationLon").value = $("locationLink").value = "";
-    $("locationStatus").textContent = "";
-    if (locationMap) { locationMap.remove(); locationMap = null; proposedMarker = null; $("locationMap").hidden = true; }
+    resetLocation();
   });
-  $("feedbackSection").addEventListener("change", showContext);
+  $("feedbackSection").addEventListener("change", () => { resetLocation(); showContext(); });
 
   fetch("/catalog-index.json", {signal: AbortSignal.timeout(15000)})
     .then(response => { if (!response.ok) throw new Error(); return response.json(); })
@@ -71,6 +74,15 @@
     });
 
   let locationMap = null, proposedMarker = null, locationMethod = "manual";
+  let locationRevision = 0;
+  function resetLocation() {
+    locationRevision++;
+    $("locationLat").value = $("locationLon").value = $("locationLink").value = "";
+    $("locationStatus").textContent = "";
+    locationMethod = "manual";
+    if (locationMap) locationMap.remove();
+    locationMap = null; proposedMarker = null; $("locationMap").hidden = true;
+  }
   function locationValue(point, method) {
     $("locationLat").value = point.lat.toFixed(6); $("locationLon").value = point.lon.toFixed(6); locationMethod = method;
     $("locationStatus").textContent = `Proposed ${$("locationType").selectedOptions[0].text}: ${point.lat.toFixed(6)}, ${point.lon.toFixed(6)}. Review before sending.`;
@@ -85,25 +97,41 @@
   for (const id of ["locationLat","locationLon"]) $(id).addEventListener("change",()=>{if ($("locationLat").value && $("locationLon").value && AccessLocation.valid(+$("locationLat").value,+$("locationLon").value)) locationValue({lat:+$("locationLat").value,lon:+$("locationLon").value},"manual");});
   $("locationGPS").addEventListener("click",()=>{
     if (!navigator.geolocation) {$("locationStatus").textContent="Location is unavailable in this browser. Paste coordinates or choose a pin instead.";return;}
-    navigator.geolocation.getCurrentPosition(fix=>{const p={lat:fix.coords.latitude,lon:fix.coords.longitude};locationValue(p,"gps");locationMap?.flyTo({center:[p.lon,p.lat],zoom:16});},()=>{$("locationStatus").textContent="Location could not be obtained. You can choose a pin or paste coordinates.";},{enableHighAccuracy:true,timeout:15000,maximumAge:0});
+    const revision = locationRevision;
+    navigator.geolocation.getCurrentPosition(fix=>{if (revision !== locationRevision) return;const p={lat:fix.coords.latitude,lon:fix.coords.longitude};locationValue(p,"gps");locationMap?.flyTo({center:[p.lon,p.lat],zoom:16});},()=>{$("locationStatus").textContent="Location could not be obtained. You can choose a pin or paste coordinates.";},{enableHighAccuracy:true,timeout:15000,maximumAge:0});
   });
   $("locationOpen").addEventListener("click",async()=>{
+    const revision = locationRevision;
     try {
       if (locationMap) {locationMap.resize();return;}
+      $("locationOpen").disabled = true;
       $("locationStatus").textContent="Loading satellite map…";
       const [lib,response]=await Promise.all([loadMapLibrary(),fetch("/api/map-config")]);
       if (!response.ok) throw Error("Satellite map is unavailable. You can still enter coordinates.");
       const config=await response.json(), river=selectedRiver();
       const hasPoint=$("locationLat").value && $("locationLon").value;
-      const point=hasPoint?{lat:+$("locationLat").value,lon:+$("locationLon").value}:{lat:river?.lat||39,lon:river?.lon||-110};
+      let area = null;
+      if (!hasPoint && river?.file) {
+        try {
+          const detailResponse = await fetch("/" + river.file, {signal: AbortSignal.timeout(15000)});
+          if (detailResponse.ok) {
+            const detail = await detailResponse.json();
+            const section = detail.sections.find(s => s.id === $("feedbackSection").value);
+            area = section?.[$("locationEndpoint").value + "Coords"];
+          }
+        } catch (_) { /* A missing detail file must not block a coordinate suggestion. */ }
+      }
+      const point=hasPoint?{lat:+$("locationLat").value,lon:+$("locationLon").value}:area||{lat:river?.lat||39,lon:river?.lon||-110};
+      if (revision !== locationRevision) return;
       $("locationMap").hidden=false;
-      locationMap=new lib.Map({container:"locationMap",style:satelliteMapStyle(config.arcgisApiKey),center:[point.lon,point.lat],zoom:hasPoint?16:river?10:4});
+      locationMap=new lib.Map({container:"locationMap",style:satelliteMapStyle(config.arcgisApiKey),center:[point.lon,point.lat],zoom:hasPoint?16:area?15:river?10:4});
       locationMap.addControl(new lib.NavigationControl({showCompass:false}));
       locationMap.on("click",e=>locationValue({lat:e.lngLat.lat,lon:e.lngLat.lng},"map"));
       locationMap.on("error",()=>{$("locationStatus").textContent="Some imagery could not load. You can still paste coordinates.";});
       if (hasPoint) locationValue(point,locationMethod);
-      $("locationStatus").textContent="Tap the actual landing, parking area, or entrance to propose a pin. You can drag it to adjust.";
-    } catch(e) {$("locationStatus").textContent=e.message;}
+      $("locationStatus").textContent=(area ? "Centered on the current access area; no new pin has been chosen. " : "") + "Tap the actual landing, parking area, or entrance to propose a pin. You can drag it to adjust.";
+    } catch(e) {if (revision === locationRevision) $("locationStatus").textContent=e.message;}
+    finally {$("locationOpen").disabled = false;}
   });
 
   $("feedbackForm").addEventListener("submit", async event => {

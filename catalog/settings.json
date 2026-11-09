@@ -73,7 +73,9 @@
       "name": "California",
       "slug": "california",
       "agency": "California State Parks Division of Boating and Waterways",
-      "agencyUrl": "https://dbw.parks.ca.gov/"
+      "agencyUrl": "https://dbw.parks.ca.gov/",
+      "intro": "Explore the Russian River near Forestville, the Lower American near Sacramento, and the South Fork American around Coloma and Lotus. Compare sourced access maps, available USGS reference readings and published seasonal guidance where available. Exact landings and general access areas are labelled separately.",
+      "description": "Plan Russian River, Lower American and South Fork American floats in California with sourced access maps, reference gauges and available trip-time guidance."
     },
     {
       "id": "MO",
@@ -92,6 +94,28 @@
       "agencyUrl": "https://www.agfc.com/",
       "permitNotice": "Most Arkansas floats need no permit, but rules apply: state law bans glass containers in canoes, kayaks and tubes, requires food and drink in sealed containers, a closable trash bag affixed to the boat and floating drink holders, and requires children 12 and under to wear a life jacket. On the Buffalo National River the park also bans Styrofoam and flotillas of three or more boats, and limits motors below Erbie Ford. Below Bull Shoals, Norfork, Beaver and Greers Ferry dams the water rises fast during power generation — check the release schedule. The Illinois River in Oklahoma needs a GRDA float permit. Banks and gravel bars beside private land may be private, so launch and take out only at public accesses. Check the managing agency before you go.",
       "permitUrl": "https://codes.findlaw.com/ar/title-8-environmental-law/ar-code-sect-8-6-418/"
+    },
+    {
+      "id": "WI",
+      "name": "Wisconsin",
+      "slug": "wisconsin",
+      "agency": "Wisconsin Department of Natural Resources",
+      "agencyUrl": "https://dnr.wisconsin.gov/",
+      "permitNotice": "Use public access sites or obtain permission to cross private land. Wisconsin’s navigable-water rules do not grant general access across private banks. Launch fees and local rules vary. Many rivers have dams; a listed section is not assurance of an open portage. Check the managing agency before you go.",
+      "permitUrl": "https://dnr.wisconsin.gov/topic/Fishing/questions/access.html",
+      "intro": "Explore the Kickapoo, Bois Brule, Namekagon, St. Croix, Flambeau and Wisconsin rivers. Compare sourced access areas, current gauge readings where available, and agency-published trip times. Sections with unresolved access or dam crossings remain under review.",
+      "description": "Explore Wisconsin river access maps on the Kickapoo, Bois Brule, Namekagon, St. Croix and more, with available USGS readings and published guide times."
+    },
+    {
+      "id": "MN",
+      "name": "Minnesota",
+      "slug": "minnesota",
+      "agency": "Minnesota Department of Natural Resources",
+      "agencyUrl": "https://www.dnr.state.mn.us/state-water-trails/index.html",
+      "intro": "Explore Minnesota paddles on the Kettle, Pine, Root, Cannon, Straight, Rum, Zumbro, Crow Wing and Mississippi rivers. Compare shorter outings, full-day trips, public access maps and published guidance. Exact landing pins and approximate access areas are labelled separately.",
+      "description": "Plan Minnesota river trips with public access maps, dotted river-course overviews, published trip guidance and available reference flow.",
+      "permitNotice": "Check Minnesota watercraft registration requirements for your boat. Non-motorized boats 10 feet or shorter are exempt; qualifying visiting boats also have exemptions. Parking and access restrictions vary by site. Check current agency notices before your trip.",
+      "permitUrl": "https://www.dnr.state.mn.us/licenses/watercraft/index.html"
     }
   ],
   "craft": [
@@ -128,7 +152,9 @@
       "OR",
       "CA",
       "MO",
-      "AR"
+      "AR",
+      "WI",
+      "MN"
     ],
     "reviewedRoutes": true
   },
@@ -142,6 +168,8 @@
     "OR",
     "CA",
     "MO",
-    "AR"
+    "AR",
+    "WI",
+    "MN"
   ]
 }

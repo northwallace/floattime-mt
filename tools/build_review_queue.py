@@ -46,8 +46,8 @@ def inventory(root=ROOT):
                 endpoints.append({'endpoint':end,'label':sec[end],'accessId':sec.get(end+'AccessId'),'existing':point})
             sections.append({'id':identity,'state':river['state'],'river':river['name'],'riverId':river['id'],'sectionId':sec['id'],'label':sec['putIn']+' → '+sec['takeOut'],'accessMap':sec.get('mapPrecision','withheld'),'released':sec.get('mapReleased',False),'riverPath':identity in {a+'/'+b for a,b in routes},'distance': 'held' if sec.get('distanceReview') or sec.get('accessReview') else 'catalog','timing': 'unavailable' if river.get('timing',{}).get('mode')=='unavailable' or sec.get('distanceReview') or sec.get('accessReview') else 'existing-model','blocker':sec.get('accessReview') or sec.get('mapPendingReason') or sec.get('distanceReview') or '', 'endpoints':endpoints})
             row=sections[-1];review=path_reviews.get((river['id'],sec['id']),{})
-            row['riverPathIssues']=[] if row['riverPath'] else review.get('issues') or ['geometry-review-required']
-            row['riverPathNextAction']='' if row['riverPath'] else review.get('detail') or 'Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path.'
+            row['riverPathIssues']=[] if row['riverPath'] else (['route-review-required'] if sec.get('routeReview') else review.get('issues') or ['geometry-review-required'])
+            row['riverPathNextAction']='' if row['riverPath'] else sec.get('routeReview') or review.get('detail') or 'Review endpoint precision, downstream continuity, finer river geometry and catalog mileage; passing import checks does not release a path.'
     # Imported state packages are already local. Discover their review evidence
     # without adding another Desktop folder name whenever a state is added.
     local = set()

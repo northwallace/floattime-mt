@@ -1,0 +1,123 @@
+{
+  "id": "crystal-river",
+  "name": "Crystal River",
+  "state": "WI",
+  "timezone": "America/Chicago",
+  "gauge": null,
+  "gaugeName": null,
+  "gaugeRelationship": "none",
+  "gaugeContext": {
+    "status": "unresolved",
+    "note": "No representative gauge has been reviewed for these trips. A nearby Waupaca River reading is not substituted for Crystal River flow. Published county guide times remain available.",
+    "sourceName": "Float ETA Wisconsin gauge review — USGS Water Data",
+    "sourceUrl": "https://waterdata.usgs.gov/",
+    "checkedOn": "2026-11-05"
+  },
+  "lat": 44.31272754090468,
+  "lon": -89.15944041501166,
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed speed/flow calibration or representative gauge is assigned. County-published trip times are planning guidance only."
+  },
+  "blurb": "Two county-published paddling trips near Waupaca: Rural to Nelson Park, then Nelson Park to the public landing on Shadow Lake. Includes moving water, wooded bends and a lake exit.",
+  "sections": [
+    {
+      "id": "rural-nelson",
+      "putIn": "Rural Crystal River Access",
+      "takeOut": "Nelson Park Crystal River Access",
+      "putInAccessId": "acc-78a967849d325a578bfb",
+      "takeOutAccessId": "acc-80dc0a4eacd75b729920",
+      "miles": 4,
+      "difficulty": "Class II rapids marked in county guide",
+      "notes": "A winding paddle through Junction Lake with bridges and rapids. The county map marks Class II rapids near County K. Start below Rural Dam and finish at the public Nelson Park access. Arrange a vehicle shuttle between the two accesses.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 4,
+        "sourceName": "Visit Waupaca County — Crystal River paddling map",
+        "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/fixed_pg_Map10-4_CrystalRiver_Overview20220111.pdf",
+        "checkedOn": "2026-11-05",
+        "streamId": "Crystal River",
+        "putIn": {
+          "name": "Rural Crystal River Access",
+          "sourceLocation": "PDF page 1, named trip endpoints and mileage callout"
+        },
+        "takeOut": {
+          "name": "Nelson Park Crystal River Access",
+          "sourceLocation": "PDF page 1, named trip endpoints and mileage callout"
+        },
+        "note": "Approximate published trip mileage, independent of the unreleased source geometry."
+      },
+      "guideTimes": [
+        {
+          "min": 1.5,
+          "max": 1.5,
+          "unit": "hours",
+          "conditions": "Approximate county-guide paddling time. It varies with conditions and stops; it is not adjusted for today’s flow or your craft.",
+          "sourceName": "Visit Waupaca County — Crystal River paddling map",
+          "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/fixed_pg_Map10-4_CrystalRiver_Overview20220111.pdf",
+          "checkedOn": "2026-11-05"
+        }
+      ],
+      "routeReview": "The dotted river path is still under review near the former Little Hope impoundment. Use the access markers and published county guide for planning.",
+      "notices": [
+        {
+          "title": "Launch below Rural Dam",
+          "text": "The launch area is beside an existing dam. Use the downstream access described in the county guide; no dam crossing or portage is included in this trip.",
+          "sourceName": "Wisconsin DNR dam inventory; Waupaca County paddling map",
+          "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=DAM_KEY_SEQ_NO%3D1574&outFields=DAM_KEY_SEQ_NO,DAM_OFFICIAL_NAME,PHYSICAL_STATUS&outSR=4326&f=json",
+          "checkedOn": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "nelson-shadow-lake",
+      "putIn": "Nelson Park Crystal River Access",
+      "takeOut": "Shadow Lake Boat Launch",
+      "putInAccessId": "acc-80dc0a4eacd75b729920",
+      "takeOutAccessId": "acc-97aa7924154f557db712",
+      "miles": 5,
+      "difficulty": "Moving water and lake paddling (county guide)",
+      "notes": "This trip finishes inside Shadow Lake. After Highway 10, follow the county guide’s signed connection into the lake and paddle to its west-shore public ramp. The lake connection runs against the outlet flow; the main river continues toward Felt Mill Dam. Arrange a shuttle and check the exit before launching.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 5,
+        "sourceName": "Visit Waupaca County — Crystal River paddling map",
+        "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/fixed_pg_Map10-4_CrystalRiver_Overview20220111.pdf",
+        "checkedOn": "2026-11-05",
+        "streamId": "Crystal River",
+        "putIn": {
+          "name": "Nelson Park Crystal River Access",
+          "sourceLocation": "PDF page 1, named trip endpoints and mileage callout"
+        },
+        "takeOut": {
+          "name": "Shadow Lake Boat Launch",
+          "sourceLocation": "PDF page 1, named trip endpoints and mileage callout"
+        },
+        "note": "Approximate published trip mileage, independent of the unreleased source geometry."
+      },
+      "guideTimes": [
+        {
+          "min": 2,
+          "max": 2,
+          "unit": "hours",
+          "conditions": "Approximate county-guide paddling time. It varies with conditions and stops; it is not adjusted for today’s flow or your craft.",
+          "sourceName": "Visit Waupaca County — Crystal River paddling map",
+          "sourceUrl": "https://visitwaupacacounty.com/wp-content/uploads/2023/11/fixed_pg_Map10-4_CrystalRiver_Overview20220111.pdf",
+          "checkedOn": "2026-11-05"
+        }
+      ],
+      "routeReview": "The dotted path through the river bends and Shadow Lake connection is still under review. This map shows the access locations; follow the signed lake exit after Highway 10.",
+      "notices": [
+        {
+          "title": "Turn into Shadow Lake for the takeout",
+          "text": "Look for the Shadow Lake turn after Highway 10. Do not continue down the main Crystal River toward Felt Mill Dam; this listing ends at the lake’s public ramp.",
+          "sourceName": "Visit Waupaca County — Crystal River paddling guide",
+          "sourceUrl": "https://visitwaupacacounty.com/routes/paddling/crystal-river/",
+          "checkedOn": "2026-11-05"
+        }
+      ]
+    }
+  ]
+}

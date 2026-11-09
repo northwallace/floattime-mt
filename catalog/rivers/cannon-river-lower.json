@@ -1,0 +1,112 @@
+{
+  "id": "cannon-river-lower",
+  "name": "Cannon River (Cannon Falls–Red Wing)",
+  "state": "MN",
+  "timezone": "America/Chicago",
+  "lat": 44.51191316068156,
+  "lon": -92.90681548046199,
+  "gauge": "05355200",
+  "gaugeName": "Cannon River at Welch, MN",
+  "gaugeRelationship": "same-river-reference",
+  "gaugeContext": {
+    "status": "context-only",
+    "note": "The Welch gauge provides reference flow for the lower Cannon. Lake Byllesby operations and tributaries can change local conditions. No travel-speed calibration is assigned.",
+    "sourceName": "USGS Water Data — station 05355200",
+    "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-05355200/",
+    "checkedOn": "2026-11-06"
+  },
+  "refFlowCfs": null,
+  "refSpeedMph": null,
+  "timing": {
+    "mode": "unavailable",
+    "note": "No reviewed flow-to-speed model or matching numeric trip-time range is assigned."
+  },
+  "sections": [
+    {
+      "id": "riverside-sunset",
+      "putIn": "Cannon Falls Riverside Park Access",
+      "takeOut": "Cannon River Sunset Trail Access",
+      "putInAccessId": "acc-803c049d15c65889a094",
+      "takeOutAccessId": "acc-5a9534df7166591bb2de",
+      "miles": 6.4,
+      "difficulty": "Moderate current; shallow riffles in low water",
+      "notes": "A shorter Cannon Falls outing ending at Sunset Trail, upstream of the closed Miesville access. Arrange your shuttle.",
+      "notices": [
+        {
+          "title": "Miesville access closed for construction",
+          "text": "The agency inventory says Miesville Ravine has no river-shoreline access during 2026 construction. Do not plan a landing there; confirm reopening with the park.",
+          "sourceName": "Minnesota DNR — Miesville access alert",
+          "sourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01694%27&outFields=%2A&returnGeometry=false&f=json",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and passage around obstacles are not drawn.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — Cannon River trip guide and map river miles",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Cannon River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Cannon Falls Riverside Park Access",
+          "riverMile": 25.5,
+          "sourceLocation": "DNR published river mile"
+        },
+        "takeOut": {
+          "name": "Cannon River Sunset Trail Access",
+          "riverMile": 19.1,
+          "sourceLocation": "DNR published river mile"
+        },
+        "note": "25.5 minus 19.1 gives approximately 6.4 river miles. Carries and shuttle travel are separate. The guide’s 2–3 hour time belongs to Riverside–Miesville and is not transferred to this different trip."
+      }
+    },
+    {
+      "id": "sunset-highway61",
+      "putIn": "Cannon River Sunset Trail Access",
+      "takeOut": "Cannon River Highway 61 Access",
+      "putInAccessId": "acc-5a9534df7166591bb2de",
+      "takeOutAccessId": "acc-55bec835eec059d9bd75",
+      "miles": 12.3,
+      "difficulty": "Moderate current; shallow riffles in low water",
+      "notes": "A longer paddle past Welch, ending at the developed Highway 61 access. Confirm the exit during your shuttle.",
+      "notices": [
+        {
+          "title": "Miesville access closed for construction",
+          "text": "The agency inventory says Miesville Ravine has no river-shoreline access during 2026 construction. Do not plan a landing there; confirm reopening with the park.",
+          "sourceName": "Minnesota DNR — Miesville access alert",
+          "sourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_water_access_sites/FeatureServer/0/query?where=unique_swas_id%3D%27WAS01694%27&outFields=%2A&returnGeometry=false&f=json",
+          "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Arrange your full shuttle",
+          "text": "Welch has no developed public landing. Do not assume an outfitter’s property is a public exit; arrange permission separately.",
+          "sourceName": "Minnesota DNR — Cannon River",
+          "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/cannon-river/segments-maps.html",
+          "checkedOn": "2026-11-06"
+        }
+      ],
+      "routeReview": "Approximate agency river-course overview. Exact landing connections and passage around obstacles are not drawn.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "measureDirection": "decreases-downstream",
+        "sourceName": "Minnesota DNR — Cannon River trip guide and map river miles",
+        "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon2.pdf",
+        "checkedOn": "2026-11-06",
+        "streamId": "Cannon River State Water Trail, Minnesota",
+        "putIn": {
+          "name": "Cannon River Sunset Trail Access",
+          "riverMile": 19.1,
+          "sourceLocation": "DNR published river mile"
+        },
+        "takeOut": {
+          "name": "Cannon River Highway 61 Access",
+          "riverMile": 6.8,
+          "sourceLocation": "DNR published river mile"
+        },
+        "note": "19.1 minus 6.8 gives approximately 12.3 river miles. Carries and shuttle travel are separate. This is derived from map miles, not a separately published trip-time range."
+      }
+    }
+  ],
+  "blurb": "Explore public-access trips from Cannon Falls through Welch toward Red Wing. Miesville’s 2026 shoreline closure is retained; listed trips use other access areas."
+}
