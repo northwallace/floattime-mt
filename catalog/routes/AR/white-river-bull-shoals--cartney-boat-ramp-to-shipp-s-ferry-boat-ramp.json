@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "state": "AR",
+  "riverId": "white-river-bull-shoals",
+  "sectionId": "cartney-boat-ramp-to-shipp-s-ferry-boat-ramp",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1101_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "White River",
+    "evidenceFile": "research/routes/AR/hr-sources/white-river-bull-shoals-ca4d63ef44a47aa8.json",
+    "sha256": "ca4d63ef44a47aa88610ba6d038b098e1c500bd4893fdf3b7c3ba8e5d2e29ea8"
+  },
+  "putIn": {
+    "name": "Cartney Boat Ramp",
+    "lat": 36.192025,
+    "lon": -92.380734
+  },
+  "takeOut": {
+    "name": "Shipp's Ferry Boat Ramp",
+    "lat": 36.21325,
+    "lon": -92.356958
+  },
+  "catalogMiles": 2.0,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -92.38112299411736,
+        36.1927246686251
+      ],
+      [
+        -92.38047310038093,
+        36.19295341048769
+      ],
+      [
+        -92.37895536704991,
+        36.19364647715339
+      ],
+      [
+        -92.37811336705126,
+        36.19405661048605
+      ],
+      [
+        -92.37723676705258,
+        36.19455467715197
+      ],
+      [
+        -92.37600036705453,
+        36.19538107715062
+      ],
+      [
+        -92.37577256705487,
+        36.19568681048352
+      ],
+      [
+        -92.37553236705526,
+        36.19589841048317
+      ],
+      [
+        -92.37485916705629,
+        36.19617441048273
+      ],
+      [
+        -92.37427056705718,
+        36.196613277148714
+      ],
+      [
+        -92.37341070039191,
+        36.197436810480795
+      ],
+      [
+        -92.3720099670607,
+        36.198592277145636
+      ],
+      [
+        -92.37168610039453,
+        36.199097877144794
+      ],
+      [
+        -92.37147350039487,
+        36.199281610477925
+      ],
+      [
+        -92.37111210039546,
+        36.19949001047758
+      ],
+      [
+        -92.36985170039742,
+        36.20074461047563
+      ],
+      [
+        -92.36955410039786,
+        36.20118107714164
+      ],
+      [
+        -92.36914316706515,
+        36.20155901047435
+      ],
+      [
+        -92.36899090039873,
+        36.201606877140954
+      ],
+      [
+        -92.36842830039963,
+        36.20206787714024
+      ],
+      [
+        -92.36835670039973,
+        36.20230667713985
+      ],
+      [
+        -92.3681361004001,
+        36.202616877139384
+      ],
+      [
+        -92.36741190040118,
+        36.20320121047184
+      ],
+      [
+        -92.36672336706893,
+        36.204036677137175
+      ],
+      [
+        -92.36569630040384,
+        36.20493301046911
+      ],
+      [
+        -92.36491316707173,
+        36.20591961046763
+      ],
+      [
+        -92.36441950040586,
+        36.20642767713344
+      ],
+      [
+        -92.36392990040662,
+        36.206845477132845
+      ],
+      [
+        -92.36298016707474,
+        36.2078394771313
+      ],
+      [
+        -92.36220510040926,
+        36.20853321046358
+      ],
+      [
+        -92.3616863004101,
+        36.20907107712936
+      ],
+      [
+        -92.36015476707911,
+        36.21037441046067
+      ],
+      [
+        -92.35945710041354,
+        36.21090261045988
+      ],
+      [
+        -92.35860010041489,
+        36.211408810459126
+      ],
+      [
+        -92.35747450041663,
+        36.212171277124604
+      ],
+      [
+        -92.35649610597038,
+        36.21278116578224
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "74580299",
+      "74580205",
+      "74580115",
+      "74580081",
+      "74579999",
+      "74579981",
+      "74579955"
+    ],
+    "putInOffsetMeters": 85.68630526478412,
+    "takeOutOffsetMeters": 66.71199900991165,
+    "putInSourceStationMeters": 192.62237029021298,
+    "takeOutSourceStationMeters": 110.7405248046427
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate source-derived river course. Channels, shoals and dam releases change; this is not a rapid-navigation line or an exact shoreline landing connection.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.9779,
+      "endpointOffsetsMeters": [
+        85.3,
+        66.6
+      ],
+      "mileageDifferencePercent": 1.11,
+      "maxSegmentMeters": 199.7,
+      "vertices": 36
+    },
+    "issues": []
+  },
+  "scope": "river-course-overview",
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA regional-source and individual satellite review",
+    "note": "Both overlapping panels follow the broad White River between Cartney and Shipps Ferry. The small cloud patch is above the wooded bank, not over the course. Original ramp pins are retained; no ramp-to-centerline connector is added. Reviewed the full named-and-unnamed regional source network; the selected downstream chain is unique. Calculator distances, gauge handling and GPS ETA are unchanged.",
+    "evidenceFile": "research/white-river-courses-20261109/decisions.json"
+  },
+  "overviewReview": {
+    "signature": "026ec0b97574ab0276a2766b9c9717f4adb87f99a5c00f3d61f41bc1a91f1d16",
+    "acceptedIssues": {},
+    "routeReview": null,
+    "note": "Approximate course only; exact landing connections, shoals and current hazards are not mapped.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Retain the existing reviewed access pin. The course ends in the nearby river without drawing an exact ramp connection."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Retain the existing reviewed access pin. The course ends in the nearby river without drawing an exact ramp connection."
+      }
+    }
+  }
+}

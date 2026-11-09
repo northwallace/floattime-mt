@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "state": "AR",
+  "riverId": "white-river-bull-shoals",
+  "sectionId": "mount-olive-boat-ramp-to-sylamore-ferry-boating-access",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1101_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "White River",
+    "evidenceFile": "research/routes/AR/hr-sources/white-river-bull-shoals-ca4d63ef44a47aa8.json",
+    "sha256": "ca4d63ef44a47aa88610ba6d038b098e1c500bd4893fdf3b7c3ba8e5d2e29ea8"
+  },
+  "putIn": {
+    "name": "Mount Olive Boat Ramp",
+    "lat": 35.996819,
+    "lon": -92.092331
+  },
+  "takeOut": {
+    "name": "Sylamore Ferry Boating Access",
+    "lat": 35.941001,
+    "lon": -92.112541
+  },
+  "catalogMiles": 4.8,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -92.09300096137278,
+        35.9964862469753
+      ],
+      [
+        -92.09228870082825,
+        35.995573410794016
+      ],
+      [
+        -92.09081710083052,
+        35.99357981079723
+      ],
+      [
+        -92.08978236749881,
+        35.99228567746582
+      ],
+      [
+        -92.0893911674994,
+        35.99164421080018
+      ],
+      [
+        -92.08801576750153,
+        35.98997341080279
+      ],
+      [
+        -92.08691376750323,
+        35.98837861080527
+      ],
+      [
+        -92.08656196750377,
+        35.98768441080628
+      ],
+      [
+        -92.08631350083749,
+        35.98737841080681
+      ],
+      [
+        -92.08516930083931,
+        35.98563981080948
+      ],
+      [
+        -92.08417656750748,
+        35.98326927747986
+      ],
+      [
+        -92.08375310084148,
+        35.98195507748189
+      ],
+      [
+        -92.08364070084167,
+        35.98142701081609
+      ],
+      [
+        -92.0833111008422,
+        35.979049010819686
+      ],
+      [
+        -92.08306056750922,
+        35.97623587749073
+      ],
+      [
+        -92.08298456750937,
+        35.975130810825796
+      ],
+      [
+        -92.08300430084262,
+        35.97467221082654
+      ],
+      [
+        -92.08300150084268,
+        35.97402987749425
+      ],
+      [
+        -92.08328836750889,
+        35.97211547749721
+      ],
+      [
+        -92.08363410084166,
+        35.97063407749947
+      ],
+      [
+        -92.08419170084079,
+        35.968685010835806
+      ],
+      [
+        -92.08490750083968,
+        35.96688187750526
+      ],
+      [
+        -92.08538576750561,
+        35.965958477506724
+      ],
+      [
+        -92.08598090083802,
+        35.965038477508116
+      ],
+      [
+        -92.08664356750364,
+        35.96427527750936
+      ],
+      [
+        -92.08717910083618,
+        35.963795410843424
+      ],
+      [
+        -92.08936790083278,
+        35.962057277512784
+      ],
+      [
+        -92.09009736749829,
+        35.96153041084697
+      ],
+      [
+        -92.09079730083056,
+        35.96088061084794
+      ],
+      [
+        -92.09161730082928,
+        35.96022981084892
+      ],
+      [
+        -92.09394336749233,
+        35.95866627751806
+      ],
+      [
+        -92.09493876749076,
+        35.95812081085219
+      ],
+      [
+        -92.09696336748766,
+        35.95713601085372
+      ],
+      [
+        -92.09888050081798,
+        35.956364010854955
+      ],
+      [
+        -92.10039430081565,
+        35.95567241085601
+      ],
+      [
+        -92.10196930081321,
+        35.955019477523656
+      ],
+      [
+        -92.10289716747843,
+        35.95476267752415
+      ],
+      [
+        -92.10610110080678,
+        35.95357421085932
+      ],
+      [
+        -92.10706796747195,
+        35.95332587752634
+      ],
+      [
+        -92.1075071674713,
+        35.953150477526556
+      ],
+      [
+        -92.10805736747047,
+        35.952844410860415
+      ],
+      [
+        -92.10905976746886,
+        35.95213307752817
+      ],
+      [
+        -92.10981876746769,
+        35.95138347752936
+      ],
+      [
+        -92.1103461008002,
+        35.95047767753075
+      ],
+      [
+        -92.11168430079812,
+        35.947333677535674
+      ],
+      [
+        -92.11223510079725,
+        35.945640077538265
+      ],
+      [
+        -92.1124803007969,
+        35.944623477539864
+      ],
+      [
+        -92.11275730079649,
+        35.94384727754104
+      ],
+      [
+        -92.11306370079599,
+        35.942549010876455
+      ],
+      [
+        -92.11324557351489,
+        35.94105570771654
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "74584393",
+      "74584729",
+      "74584821",
+      "74585241",
+      "74585387",
+      "74585845",
+      "74586055",
+      "74586143",
+      "74586677"
+    ],
+    "putInOffsetMeters": 70.50745410957316,
+    "takeOutOffsetMeters": 63.29223170786743,
+    "putInSourceStationMeters": 534.3500468397849,
+    "takeOutSourceStationMeters": 1533.5432399760311
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate source-derived river course. Channels, shoals and dam releases change; this is not a rapid-navigation line or an exact shoreline landing connection.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 4.7339,
+      "endpointOffsetsMeters": [
+        70.7,
+        63.7
+      ],
+      "mileageDifferencePercent": 1.38,
+      "maxSegmentMeters": 369.8,
+      "vertices": 50
+    },
+    "issues": []
+  },
+  "scope": "river-course-overview",
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA regional-source and individual satellite review",
+    "note": "Three panels follow the White River from Mount Olive to Sylamore Ferry. Original river bends and ramp-side endpoints match the visible water corridor. Floodplain roads are not used as route geometry. Reviewed the full named-and-unnamed regional source network; the selected downstream chain is unique. Calculator distances, gauge handling and GPS ETA are unchanged.",
+    "evidenceFile": "research/white-river-courses-20261109/decisions.json"
+  },
+  "overviewReview": {
+    "signature": "bfeaa84c2618125e5ad3c4e88d9e0ddfddddd651486af55848452f7c18b4e448",
+    "acceptedIssues": {},
+    "routeReview": null,
+    "note": "Approximate course only; exact landing connections, shoals and current hazards are not mapped.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Retain the existing reviewed access pin. The course ends in the nearby river without drawing an exact ramp connection."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Retain the existing reviewed access pin. The course ends in the nearby river without drawing an exact ramp connection."
+      }
+    }
+  }
+}

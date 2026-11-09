@@ -22,6 +22,23 @@ from tools.route_catalog import geometry_checks, distance, OVERVIEW_MAX_OFFSET_M
 SERVICE='https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6'
 QUERY_POLICY='named-and-unnamed-flowlines-v1'
 
+
+def river_names(stream):
+    """Explicit named tributaries for trips that cross a documented confluence.
+
+    This only broadens source discovery. Branches still require review, and
+    every candidate remains disabled until its geometry is checked.
+    """
+    primary=stream.get('riverName')
+    names=stream.get('riverNames',[primary])
+    if (not isinstance(primary,str) or not primary.strip() or
+            not isinstance(names,list) or not 1<=len(names)<=8 or
+            any(not isinstance(n,str) or not n.strip() or len(n)>160 for n in names) or
+            len(set(names))!=len(names) or primary not in names):
+        raise ValueError('River names must explicitly include the primary river and unique named tributaries')
+    return sorted(names)
+
+
 @lru_cache(maxsize=32)
 def verified_archive(gpkg,expected_zip_hash):
     receipt=json.loads(gpkg.with_suffix('.verified.json').read_text())
@@ -85,6 +102,7 @@ def directed_route(edges,adj,section,project,unproject,*,overview=False):
 
 
 def local_extract(river,stream,folder,gpkg_dir,archive_manifest):
+    names=river_names(stream)
     points=[s[k] for s in river['sections'] for k in ('putInCoords','takeOutCoords') if k in s]
     if not points:raise ValueError('No mapped endpoints')
     west=min(p['lon'] for p in points)-.06;east=max(p['lon'] for p in points)+.06
@@ -96,12 +114,20 @@ def local_extract(river,stream,folder,gpkg_dir,archive_manifest):
         if h not in meta:continue
         receipt=verified_archive(gpkg,meta[h]['zipSha256'])
         conn=sqlite3.connect('file:'+str(gpkg)+'?mode=ro',uri=True)
-        sql="""SELECT t.permanent_identifier,t.gnis_name,t.flowdir,t.ftype,t.reachcode,t.SHAPE
-          FROM NHDFlowline t JOIN rtree_NHDFlowline_SHAPE r ON t.OBJECTID=r.id
+        # USGS snapshots use both SHAPE/OBJECTID and geom/fid. Read the
+        # GeoPackage schema instead of assuming the older field names.
+        geom=conn.execute("SELECT column_name,srs_id FROM gpkg_geometry_columns WHERE table_name='NHDFlowline'").fetchone()
+        primary=[c[1] for c in conn.execute('PRAGMA table_info(NHDFlowline)') if c[5]]
+        if not geom or geom[1] not in (4269,4326) or len(primary)!=1:
+            conn.close();raise ValueError('Unsupported regional flowline geometry or coordinate system')
+        def identifier(name):return '"'+name.replace('"','""')+'"'
+        geometry_column=identifier(geom[0]);index=identifier('rtree_NHDFlowline_'+geom[0]);key=identifier(primary[0])
+        sql=f"""SELECT t.permanent_identifier,t.gnis_name,t.flowdir,t.ftype,t.reachcode,t.{geometry_column}
+          FROM NHDFlowline t JOIN {index} r ON t.{key}=r.id
           WHERE r.minx<=? AND r.maxx>=? AND r.miny<=? AND r.maxy>=?
-          AND (t.gnis_name=? OR t.gnis_name IS NULL OR t.gnis_name='') AND t.ftype IN (460,558)"""
+          AND (t.gnis_name IN ("""+','.join('?' for _ in names)+""") OR t.gnis_name IS NULL OR t.gnis_name='') AND t.ftype IN (460,558)"""
         count=0
-        for row in conn.execute(sql,(east,west,north,south,stream['riverName'])):
+        for row in conn.execute(sql,(east,west,north,south,*names)):
             attrs=dict(zip(('permanent_identifier','gnis_name','flowdir','ftype','reachcode'),row[:5]));blob=row[5]
             offset=8+[0,32,48,48,64][(blob[3]>>1)&7];geom=from_wkb(blob[offset:])
             lines=list(geom.geoms) if geom.geom_type=='MultiLineString' else [geom]
@@ -110,11 +136,14 @@ def local_extract(river,stream,folder,gpkg_dir,archive_manifest):
         conn.close()
         if count:archives.append({**meta[h],**receipt})
     if not features:raise ValueError('No source flowlines in the available regional archives')
-    payload={'checkedOn':date.today().isoformat(),'queryPolicy':QUERY_POLICY,'sourceUrl':archives[0]['url'],'archives':archives,'crs':'NAD83 geographic (EPSG:4269); approximately WGS84 at map scale','features':list(features.values())}
+    scope={'riverName':stream['riverName'],'bounds':f'{west},{south},{east},{north}'}
+    if len(names)>1:scope['riverNames']=names
+    payload={'checkedOn':date.today().isoformat(),'queryPolicy':QUERY_POLICY,'queryScope':scope,'sourceUrl':archives[0]['url'],'archives':archives,'crs':'NAD83 geographic (EPSG:4269); approximately WGS84 at map scale','features':list(features.values())}
     path=folder/(river['id']+'.json');path.write_text(json.dumps(payload,separators=(',',':'))+'\n');return path,payload
 
 
 def download(river,stream,folder,refresh):
+    names=river_names(stream)
     path=folder/(river['id']+'.json')
     points=[s[k] for s in river['sections'] for k in ('putInCoords','takeOutCoords') if k in s]
     if not points:raise ValueError('No mapped endpoints')
@@ -124,6 +153,7 @@ def download(river,stream,folder,refresh):
     margin=.06
     box=f'{lo-margin},{bottom-margin},{hi+margin},{top+margin}'
     scope={'riverName':stream['riverName'],'bounds':box}
+    if len(names)>1:scope['riverNames']=names
     if path.exists():
         raw=path.read_bytes();cached=json.loads(raw)
         if not refresh and cached.get('queryPolicy')==QUERY_POLICY and cached.get('queryScope')==scope:
@@ -133,8 +163,8 @@ def download(river,stream,folder,refresh):
         if snapshot.exists() and snapshot.read_bytes()!=raw:
             raise ValueError('Existing source snapshot does not match its content hash')
         if not snapshot.exists():snapshot.write_bytes(raw)
-    name=stream['riverName'].replace("'","''")
-    params={'f':'json','where':f"(gnis_name='{name}' OR gnis_name IS NULL OR gnis_name='') AND ftype IN (460,558)", 'geometry':box,'geometryType':'esriGeometryEnvelope','inSR':4326,'spatialRel':'esriSpatialRelIntersects','outFields':'permanent_identifier,gnis_name,flowdir,ftype,reachcode','outSR':4326,'returnGeometry':'true','resultRecordCount':1000}
+    named=' OR '.join("gnis_name='"+name.replace("'","''")+"'" for name in names)
+    params={'f':'json','where':f"({named} OR gnis_name IS NULL OR gnis_name='') AND ftype IN (460,558)", 'geometry':box,'geometryType':'esriGeometryEnvelope','inSR':4326,'spatialRel':'esriSpatialRelIntersects','outFields':'permanent_identifier,gnis_name,flowdir,ftype,reachcode','outSR':4326,'returnGeometry':'true','resultRecordCount':1000}
     features=[];urls=[]
     for offset in range(0,20000,1000):
         params['resultOffset']=offset;url=SERVICE+'/query?'+urllib.parse.urlencode(params)

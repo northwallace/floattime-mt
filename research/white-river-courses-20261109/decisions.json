@@ -1,0 +1,360 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "sourceEvidence": {
+    "file": "research/white-river-courses-20261109/sources/agency-context.json",
+    "sha256": "192e8a51991b9d2de1c31693443d40e679290eeecd14c64eb18bdc5db656aa25"
+  },
+  "routes": [
+    {
+      "riverId": "white-river-beaver-tailwater",
+      "sectionId": "beaver-lake-dam-site-boat-ramp-to-bertrand-boat-ramp",
+      "decision": "reviewed-display-only",
+      "note": "The line begins at the downstream dam-site river access and follows the visible tailwater bends to Bertrand. It does not cross Beaver Dam. Shoreline geometry is generalized and dam releases change the water level.",
+      "metrics": {
+        "routeMiles": 2.9847,
+        "endpointOffsetsMeters": [
+          1.3,
+          33.1
+        ],
+        "mileageDifferencePercent": 2.92,
+        "maxSegmentMeters": 347.9,
+        "vertices": 89
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/00-part-1.jpg",
+          "sha256": "e1b3b00dd6a002a7883e15800380772b1bcef689f38000cba07da9c9a2506349"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/00-part-2.jpg",
+          "sha256": "19bd2745c6697e029843d42187ccf25286793d9dd24d4a610ed0eaf272c3de66"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/00-putIn.jpg",
+          "sha256": "bf2b1286d997273cf85beefa5345db5f3b47aa9f6585cf56c3faf41402385936"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/00-takeOut.jpg",
+          "sha256": "95f5f325378d8afe374742f7570cf01171f6821d6ef09bc721ea404cc8278e76"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-beaver-tailwater--beaver-lake-dam-site-boat-ramp-to-bertrand-boat-ramp.json",
+        "sha256": "99873806ff81f09d6f0766b311baa90b4ba58b76476af2747ffb1c7ef1c3dde7"
+      }
+    },
+    {
+      "riverId": "white-river-beaver-tailwater",
+      "sectionId": "bertrand-boat-ramp-to-houseman-boat-ramp",
+      "decision": "needs-course-refinement",
+      "note": "The NHD line follows the broad corridor but cuts across the wooded north bank upstream of the bridge in panel 01-part-1. Do not publish this course until finer source geometry or an evidence-backed refinement follows the water.",
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/01-part-1.jpg",
+          "sha256": "f71739b9f2262e48501e9438f83ea686a60603c75eba59f5e0bb4d7844d468ad"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/01-part-2.jpg",
+          "sha256": "59026ff1293b675d3c59ff02eba907c1bbdf5a1dde4faa1b2b9edbf1906ed7f1"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/01-putIn.jpg",
+          "sha256": "ad7b3d3da4128f03777fac11e8d496e3745725bbf6871214e3c0669e268310de"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/01-takeOut.jpg",
+          "sha256": "464c51010edce9c1776130a99d5aca46298014e4196ec518fba4a32d7cd56b79"
+        }
+      ]
+    },
+    {
+      "riverId": "white-river-bull-shoals",
+      "sectionId": "cartney-boat-ramp-to-shipp-s-ferry-boat-ramp",
+      "decision": "reviewed-display-only",
+      "note": "Both overlapping panels follow the broad White River between Cartney and Shipps Ferry. The small cloud patch is above the wooded bank, not over the course. Original ramp pins are retained; no ramp-to-centerline connector is added.",
+      "metrics": {
+        "routeMiles": 1.9779,
+        "endpointOffsetsMeters": [
+          85.3,
+          66.6
+        ],
+        "mileageDifferencePercent": 1.11,
+        "maxSegmentMeters": 199.7,
+        "vertices": 36
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/02-part-1.jpg",
+          "sha256": "f1464361cae9f4a0ebf02fd446524dda79299ee9b765774ad106615a282817b5"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/02-part-2.jpg",
+          "sha256": "617719ac3bd769fd603c53684b805a6de580d8af0d637cf736430f9659f2071c"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/02-putIn.jpg",
+          "sha256": "6b68ea11dded2abfeeefc6a1153535924efddf74147742b311fd7d07649aa33b"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/02-takeOut.jpg",
+          "sha256": "c5b0466ff21a3403089f8a9f57ee0ecea0df9ff80fdb190930a0024e12011e69"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-bull-shoals--cartney-boat-ramp-to-shipp-s-ferry-boat-ramp.json",
+        "sha256": "97536f140c09ad7d8c0c732046c52a4c203cb3090dad400a02521ad8db993988"
+      }
+    },
+    {
+      "riverId": "white-river-bull-shoals",
+      "sectionId": "shipp-s-ferry-boat-ramp-to-norfork-2-boat-ramp",
+      "decision": "reviewed-display-only",
+      "note": "All four panels follow the White River to Norfork. The original hydrography has an angular confluence junction near the take-out; the vertices remain within the visible water and are retained only as a generalized overview, not a paddling line. Exact exit connection is not drawn.",
+      "metrics": {
+        "routeMiles": 6.1289,
+        "endpointOffsetsMeters": [
+          66.6,
+          78.9
+        ],
+        "mileageDifferencePercent": 2.15,
+        "maxSegmentMeters": 329.3,
+        "vertices": 85
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/03-part-1.jpg",
+          "sha256": "906b12420f5924b5b0c808a5c73d79f287478757a6df8bc620b8df4bbd187ca4"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/03-part-2.jpg",
+          "sha256": "1c3540faaa164a73fe4af1b0cc18e9548daa5b6d5956e92b49aa5c42d460a1f4"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/03-part-3.jpg",
+          "sha256": "c6c944acc988ebc5ef609ea71ec70c49cc155db9833da878215c7d1616616f19"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/03-part-4.jpg",
+          "sha256": "4d7f204dc04b925fb17fbd1f490db885ebda1fe5eb1c8f59e90880ace7ebe924"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/03-putIn.jpg",
+          "sha256": "ec30930a1977670c259ada7fd9f81b4d6ce88a4a5b627c9a75615525c4563447"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/03-takeOut.jpg",
+          "sha256": "b9a2c931685f04796fe88f23174a999a3516b126deb5f6c69911e022cff41c54"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-bull-shoals--shipp-s-ferry-boat-ramp-to-norfork-2-boat-ramp.json",
+        "sha256": "92b932564b980edb66c20dd9a17d496e297673eb09e279d0bcbc0438d461aa9b"
+      }
+    },
+    {
+      "riverId": "white-river-bull-shoals",
+      "sectionId": "red-s-landing-boat-ramp-to-sneed-creek-boat-ramp",
+      "decision": "reviewed-display-only",
+      "note": "The short Red’s Landing–Sneed Creek course follows the visible continuous White River bend; both shoreline ramp locations remain separate from the clipped river line.",
+      "metrics": {
+        "routeMiles": 1.5872,
+        "endpointOffsetsMeters": [
+          79.1,
+          73.4
+        ],
+        "mileageDifferencePercent": 0.8,
+        "maxSegmentMeters": 295.2,
+        "vertices": 25
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/04-part-1.jpg",
+          "sha256": "b0f0cefce358275dd22b559aa292130469e229ae52f5174f2333245c63527b36"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/04-putIn.jpg",
+          "sha256": "ede5aaa4f1f4a40468a0b84379505a59b08a686407e3c157766f80238fce9d6d"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/04-takeOut.jpg",
+          "sha256": "613da45a1ff267c299cc57f159daf44543e0f3f2e906be5d90c7397c0ea98a5c"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-bull-shoals--red-s-landing-boat-ramp-to-sneed-creek-boat-ramp.json",
+        "sha256": "3bba9599305cf44c78a98304783b9822c1975267f4b209e85d04917030219c6b"
+      }
+    },
+    {
+      "riverId": "white-river-bull-shoals",
+      "sectionId": "sneed-creek-boat-ramp-to-chesmond-ferry-boat-ramp",
+      "decision": "reviewed-display-only",
+      "note": "Three panels show the White River bends from Sneed Creek to Chesmond Ferry. No land-crossing shortcut is present, and the line ends beside the existing access rather than extending onto its approach road.",
+      "metrics": {
+        "routeMiles": 5.0716,
+        "endpointOffsetsMeters": [
+          73.4,
+          69.2
+        ],
+        "mileageDifferencePercent": 0.56,
+        "maxSegmentMeters": 393.3,
+        "vertices": 67
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/05-part-1.jpg",
+          "sha256": "2b2ec275607e0d9c3d95e875306d07dd55ee491e949b962788341c3c96dac0db"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/05-part-2.jpg",
+          "sha256": "6d9dacaced186507dceb04efb2a01e54ee8262bfe2ca445e9fd2025bee2d56aa"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/05-part-3.jpg",
+          "sha256": "2458f304f616949ca7015c8fe1a56fd6ba6496f95722cead07bb316fdbb86096"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/05-putIn.jpg",
+          "sha256": "292832343306b1eb676b6aaf8f736a62e8d97bd82d234d752be6c1fc0c06a91f"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/05-takeOut.jpg",
+          "sha256": "1167fc222b4f99888fd49577f34fe751db2c2701b0dff0b46e8b25878ef35cda"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-bull-shoals--sneed-creek-boat-ramp-to-chesmond-ferry-boat-ramp.json",
+        "sha256": "a226b9d29181c25329768e0c4948ed51438c0fe0b2acfe3128c63844892c3181"
+      }
+    },
+    {
+      "riverId": "white-river-bull-shoals",
+      "sectionId": "boswell-shoals-boating-access-to-mount-olive-boat-ramp",
+      "decision": "reviewed-display-only",
+      "note": "Three panels follow the White River around the broad bends between Boswell Shoals and Mount Olive. The source line remains in the visible river; nearby bars and shoals do not imply a recommended navigation channel.",
+      "metrics": {
+        "routeMiles": 4.5461,
+        "endpointOffsetsMeters": [
+          74.8,
+          70.7
+        ],
+        "mileageDifferencePercent": 1.17,
+        "maxSegmentMeters": 388.9,
+        "vertices": 60
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/06-part-1.jpg",
+          "sha256": "878d699cf482ca33457e89131e972b15ae999a9714ca1c24014e394d54cbc445"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/06-part-2.jpg",
+          "sha256": "9aaa42e1f0b3c6588e1d1cbe1e6b846a162c6db343e41cd8ee3c53815bef7f21"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/06-part-3.jpg",
+          "sha256": "fa876c1de7fe9d1f3aa9fccd8e0c4990e24cbf51d6cb30b048ac854b6790f38c"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/06-putIn.jpg",
+          "sha256": "e6bc8439a94027b5784c368c896f937e2d75d22a4cde8b70d0a7b62ba1b09f24"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/06-takeOut.jpg",
+          "sha256": "f48b80bdda95a7b95d416114648e75f9d009bd9751a44f9da22428e40bde40ce"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-bull-shoals--boswell-shoals-boating-access-to-mount-olive-boat-ramp.json",
+        "sha256": "4bf4de4f3e17453ce4d60711a5cd5164997c5a132afda37fa9fa065dc40a1863"
+      }
+    },
+    {
+      "riverId": "white-river-bull-shoals",
+      "sectionId": "mount-olive-boat-ramp-to-sylamore-ferry-boating-access",
+      "decision": "reviewed-display-only",
+      "note": "Three panels follow the White River from Mount Olive to Sylamore Ferry. Original river bends and ramp-side endpoints match the visible water corridor. Floodplain roads are not used as route geometry.",
+      "metrics": {
+        "routeMiles": 4.7339,
+        "endpointOffsetsMeters": [
+          70.7,
+          63.7
+        ],
+        "mileageDifferencePercent": 1.38,
+        "maxSegmentMeters": 369.8,
+        "vertices": 50
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/07-part-1.jpg",
+          "sha256": "c85ee7fcf05c78e4d2c030f04d5f8f6cd389936a57129e0374f9d02312f4fb9b"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/07-part-2.jpg",
+          "sha256": "9b3ca3480106a141a35ecb21d1777489be35fc8f5dc345d89d4f5742be51bbfb"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/07-part-3.jpg",
+          "sha256": "89cae41e0628e51d23c2cb010805e95c75de9fc3055c4cfbed5d565339f0a154"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/07-putIn.jpg",
+          "sha256": "30c1cb3ed026c800c5faeb4715ea507005e85f02cb3579e2564be33482c7023d"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/07-takeOut.jpg",
+          "sha256": "eeb70239651f86bf3dde6dc0eacb8809c47d8809cca1e586489465f45f4393ec"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-bull-shoals--mount-olive-boat-ramp-to-sylamore-ferry-boating-access.json",
+        "sha256": "14f6f6f7122d0c12f27e4cf5877b0fe465e784edf24c36ebccae906ce0368e44"
+      }
+    },
+    {
+      "riverId": "white-river-bull-shoals",
+      "sectionId": "sylamore-ferry-boating-access-to-round-bottom-boat-ramp",
+      "decision": "reviewed-display-only",
+      "note": "Three panels follow the river beneath the Sylamore bridge and around the bends to Round Bottom. The line remains in the river and stops near the retained ramp pin; no land connector is fabricated.",
+      "metrics": {
+        "routeMiles": 4.4217,
+        "endpointOffsetsMeters": [
+          63.7,
+          88.0
+        ],
+        "mileageDifferencePercent": 0.49,
+        "maxSegmentMeters": 352.0,
+        "vertices": 58
+      },
+      "imagery": [
+        {
+          "file": "research/white-river-courses-20261109/imagery/08-part-1.jpg",
+          "sha256": "fc02f950d462193cb4978a7901d3a932cc64922d56b70ed5b4dcb50befdb2682"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/08-part-2.jpg",
+          "sha256": "d8dbc176823901f888b06d479f52255c8ae3faea53aa87830cf58884ff1274ea"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/08-part-3.jpg",
+          "sha256": "5e684db548aa3b8781ffddd4883ce137ea4a53f4737b8288e9c0d67281db39a7"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/08-putIn.jpg",
+          "sha256": "9020b6dd1f4c287bfc5a0a66223a9ee14db580ae465f3bfb26b7c150402ac901"
+        },
+        {
+          "file": "research/white-river-courses-20261109/imagery/08-takeOut.jpg",
+          "sha256": "d66472082280cc55d85f3a16fcfb35b08be0fcf93a97d9f98fa06f0ec69c832a"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/AR/white-river-bull-shoals--sylamore-ferry-boating-access-to-round-bottom-boat-ramp.json",
+        "sha256": "ad68cdd20978cc8e01193fa229707b47354320c8234c64aca1223c87d49c063f"
+      }
+    }
+  ],
+  "approved": 8,
+  "held": 1
+}

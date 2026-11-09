@@ -1,0 +1,131 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "routes": [
+    {
+      "riverId": "deschutes-maupin",
+      "sectionId": "harpham-maupin",
+      "decision": "reviewed-display-only",
+      "visualReview": "Three overlapping course panels and both endpoint details checked. The continuous line stays on the Deschutes through its canyon bends and under the Maupin bridge; Harpham and Maupin remain approximate facility pins. No line is drawn from the parking/facility points to the river.",
+      "metrics": {
+        "routeMiles": 4.2563,
+        "endpointOffsetsMeters": [
+          45.7,
+          83.0
+        ],
+        "mileageDifferencePercent": 6.41,
+        "maxSegmentMeters": 199.5,
+        "vertices": 144
+      },
+      "acceptedIssues": {
+        "mileage-difference-over-5-percent": "The source-derived course is 4.2563 miles versus the existing approximate 4-mile planning distance (6.41%). All three overlapping imagery panels follow the visible Deschutes; no shortcut or access connector is added. Keep the planning distance and timing unchanged and disclose both lengths."
+      },
+      "route": {
+        "file": "catalog/routes/OR/deschutes-maupin--harpham-maupin.json",
+        "sha256": "fa6653c871762b0f8d66e419212a771963dc5be6990354fa711fbcd82b6e3b33"
+      },
+      "imagery": [
+        {
+          "file": "research/oregon-courses-20261109/imagery/harpham-maupin-part-1.jpg",
+          "sha256": "c602cbe470d10aa011cd2151cb6644c19adae7557404caa5fc7d2cd1081b2073"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/harpham-maupin-part-2.jpg",
+          "sha256": "3badd462a28bd90c1c3d6dc0ff8bb1ab2eaff25f0d21ba57d760853ce333f3de"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/harpham-maupin-part-3.jpg",
+          "sha256": "1d4164c541b9ac4c9c66babb4b1363285b57c85d6faa25c2e9180079b5b1c050"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/harpham-maupin-putIn.jpg",
+          "sha256": "6ee49d8fd9a073a1ed8a923dd5ad294a7312134d7e2738f19b2f76409c6ba7d2"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/harpham-maupin-takeOut.jpg",
+          "sha256": "031edab435a2c6023c0b8b9530ca07d05d075d6dceee7bc2da13f5f9d69f4c22"
+        }
+      ],
+      "agencyEvidence": [
+        {
+          "file": "research/oregon-courses-20261109/sources/deschutes-segments.html",
+          "sha256": "7ceb230985a41d270b11c6da071015a04789c4fafabc48c6d42b6cb9ccd30000"
+        },
+        {
+          "file": "research/oregon-courses-20261109/sources/osmb-access-report.html",
+          "sha256": "548199b4a2335c70a12a67f226da7f42ecfbf56a4d85543f72c80ba84e0bf25f"
+        }
+      ]
+    },
+    {
+      "riverId": "deschutes-maupin",
+      "sectionId": "maupin-sandy-beach",
+      "decision": "reviewed-display-only",
+      "visualReview": "Five overlapping course panels and both endpoint details checked. The line follows the Deschutes bends and ends beside Sandy Beach, upstream of Sherars Falls. The White River enters from river left near the lower end; the course continues on the Deschutes and does not turn into that tributary. Rapids are not individually routed.",
+      "metrics": {
+        "routeMiles": 6.3457,
+        "endpointOffsetsMeters": [
+          83.0,
+          23.3
+        ],
+        "mileageDifferencePercent": 0.85,
+        "maxSegmentMeters": 258.5,
+        "vertices": 226
+      },
+      "acceptedIssues": {},
+      "route": {
+        "file": "catalog/routes/OR/deschutes-maupin--maupin-sandy-beach.json",
+        "sha256": "f4509a590405fba334dadf5acf2235481594845d2d94a3c1365d2e60f83ea88a"
+      },
+      "imagery": [
+        {
+          "file": "research/oregon-courses-20261109/imagery/maupin-sandy-beach-part-1.jpg",
+          "sha256": "18aa00c7df6b851ba72f5259df6a873323802c1ba3caaae629a84bdd243ed6d7"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/maupin-sandy-beach-part-2.jpg",
+          "sha256": "6f1fa2255f4b5015dbb16a96cab9290a811d1a6700bc7b12852be0e60bd36dae"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/maupin-sandy-beach-part-3.jpg",
+          "sha256": "ce2d11022cae0687745c4993a8b6fa6b4314484a020421667e7ac9c0947a7bb3"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/maupin-sandy-beach-part-4.jpg",
+          "sha256": "8d1616cc00a6639a443fa42a5825a6c39ec8439359fef6bbc2aea7481ee4c556"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/maupin-sandy-beach-part-5.jpg",
+          "sha256": "e1fa60114615c3a298be55d8fd9527fd37a9458382651a355cbeefc7a03d7d16"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/maupin-sandy-beach-putIn.jpg",
+          "sha256": "b8e8ba364c76ae7961d2002c74089e3029fb46ba97a0e2f23565a74e80b920c4"
+        },
+        {
+          "file": "research/oregon-courses-20261109/imagery/maupin-sandy-beach-takeOut.jpg",
+          "sha256": "9af1802ee00418b6626dbcf0e6bad573eacf078521ecbb73c60220f6d3ec6fa7"
+        }
+      ],
+      "agencyEvidence": [
+        {
+          "file": "research/oregon-courses-20261109/sources/deschutes-segments.html",
+          "sha256": "7ceb230985a41d270b11c6da071015a04789c4fafabc48c6d42b6cb9ccd30000"
+        },
+        {
+          "file": "research/oregon-courses-20261109/sources/osmb-access-report.html",
+          "sha256": "548199b4a2335c70a12a67f226da7f42ecfbf56a4d85543f72c80ba84e0bf25f"
+        }
+      ]
+    }
+  ],
+  "sourceUrls": [
+    "https://www.blm.gov/programs/recreation/permits-and-passes/lotteries-and-permit-systems/oregon-washington/lower-deschutes/camping",
+    "https://www.oregon.gov/osmb/boater-info/pages/opportunities-and-access.aspx"
+  ],
+  "limits": [
+    "Approximate facility locations remain unchanged.",
+    "Display-only courses do not identify safe rapid passages.",
+    "The existing Sandy Beach/Sherars Falls exit notice is retained."
+  ]
+}

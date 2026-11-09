@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "state": "OR",
+  "adapter": "usgs-flow-directed-network",
+  "projectedCrs": "EPSG:5070",
+  "streams": [
+    {
+      "riverName": "Clackamas River",
+      "riverIds": [
+        "clackamas"
+      ]
+    },
+    {
+      "riverName": "Deschutes River",
+      "riverIds": [
+        "deschutes-maupin"
+      ]
+    },
+    {
+      "riverName": "Grande Ronde River",
+      "riverIds": [
+        "grande-ronde"
+      ],
+      "riverNames": [
+        "Grande Ronde River",
+        "Wallowa River"
+      ],
+      "note": "The Minam\u2013Troy trip starts on the Wallowa River before entering the Grande Ronde. Include both explicitly named watercourses and unnamed alternatives; never draw across the confluence gap.",
+      "sourceUrl": "https://www.blm.gov/visit/wallowa-grande-ronde-wild-and-scenic-rivers"
+    },
+    {
+      "riverName": "John Day River",
+      "riverIds": [
+        "john-day"
+      ]
+    },
+    {
+      "riverName": "McKenzie River",
+      "riverIds": [
+        "mckenzie"
+      ]
+    },
+    {
+      "riverName": "Owyhee River",
+      "riverIds": [
+        "owyhee"
+      ]
+    },
+    {
+      "riverName": "Rogue River",
+      "riverIds": [
+        "rogue-grants-pass",
+        "rogue-wild"
+      ]
+    },
+    {
+      "riverName": "Sandy River",
+      "riverIds": [
+        "sandy"
+      ]
+    }
+  ],
+  "archiveManifest": "research/routes/nhd-archives.json"
+}

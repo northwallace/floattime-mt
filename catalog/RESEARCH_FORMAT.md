@@ -905,6 +905,32 @@ does not prove that a line follows today's bends. Approve a supported shorter
 course independently and hold a discrepant extension. Keep published trip
 mileage and trip-specific guide times independent of any trimmed overview.
 
+Regional imports read the GeoPackage geometry and primary-key metadata: both
+the older `SHAPE`/`OBJECTID` and newer `geom`/`fid` layouts are supported. Only
+geographic NAD83 or WGS84 source coordinates are accepted. Include the query
+envelope in saved source evidence so later endpoint expansions can be checked.
+The November 9 regional receipts for HU4 1101, 1706 and 1709 are under
+`research/route-completion-20261109/`; ZIP/GPKG caches are development data and
+must not be added to the deployed site.
+
+For a documented trip crossing a named confluence, a stream entry can declare
+`riverNames`, including its primary `riverName` plus the explicit tributary
+names. For example, Minam–Troy needs both `Wallowa River` and `Grande Ronde River`.
+Both online and regional extraction still include unnamed alternatives.
+Changing the name set invalidates the online source cache. It never chooses a
+branch, moves an access pin, fills a geometry gap or approves a route.
+
+```sh
+python tools/import_nhd_routes.py --state OR --overview-candidates --gpkg-dir /path/to/verified/archives --source-config research/oregon-courses-20261109/archive-source-config.json
+```
+
+Review complete course panels and both endpoint details, not just a small
+whole-trip thumbnail. `research/route-completion-20261109/render_courses.py`
+creates overlapping panels no longer than 3 km, endpoint close-ups and imagery
+receipts from a saved JSON list of candidate routes. It does not approve them.
+The White River Bertrand–Houseman example demonstrates a path that passes
+network checks but remains withheld because part of the source crosses a bank.
+
 When a later agency inventory identifies the actual launch, promote that access
 without changing its stable ID. Use the coordinate from the launch row, not the
 nearby fishing area, trail reference point, bench or parking row. Keep the dated
