@@ -3,16 +3,20 @@
   "state": "AZ",
   "sections": {
     "colorado-river-lower-gorge/diamond-creek-pearce-ferry": {
-      "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Diamond Creek (Grand Canyon): Research-only grade: access-verified (official source names boating access; approximate area only). Access crosses Hualapai tribal land and the Tribe charges its own fees; the managing authority for road and landing is the Hualapai Tribe, not NPS, so this stays in the access-verified tier."
+      "status": "reviewed",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA agency, closure and imagery review",
+      "fingerprint": "8a6c65985fd53fc8acef3478b72ab09fa8e10abd7a5a05115caab9dd432390b5",
+      "sourceManifest": "research/arizona-corridor-review-20261109/decisions.json",
+      "note": "Documented public access with visible permit/carry restrictions. Area markers and river overviews do not approve a shoreline connector, driving route, navigability or live ETA."
     },
     "colorado-river-grand-canyon/lees-ferry-diamond-creek": {
-      "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Diamond Creek (Grand Canyon): Research-only grade: access-verified (official source names boating access; approximate area only). Access crosses Hualapai tribal land and the Tribe charges its own fees; the managing authority for road and landing is the Hualapai Tribe, not NPS, so this stays in the access-verified tier."
+      "status": "reviewed",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA agency, closure and imagery review",
+      "fingerprint": "c1669e7293ba7bb8e7a49b8d3da2fcfc26ffa45cb313adc902b8c9cd43ad139f",
+      "sourceManifest": "research/arizona-corridor-review-20261109/decisions.json",
+      "note": "Documented public access with visible permit/carry restrictions. Area markers and river overviews do not approve a shoreline connector, driving route, navigability or live ETA."
     },
     "colorado-river-grand-canyon/lees-ferry-pearce-ferry": {
       "status": "reviewed",
@@ -29,42 +33,51 @@
       "note": "Dry Canyon Boat Take-Out (Gila Box): Closure-uncertain: a non-agency (American Whitewater) report dated Oct 4, 2026 describes a road washout on the take-out access; no BLM notice was found either way. The BLM page coordinate is more than 400 m from any NHD Gila River flowline (no flowline in the 0.004-degree NHD query)."
     },
     "salt-river-lower/lsr-water-users-blue-point": {
-      "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Blue Point Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the point is in the day-use parking lot about 110 m east of the river channel. v1.3: North's owner-supplied point (33.5539720, -111.5750868) is at the water's edge on the beach just south of the Bush Highway bridge (NHD 49 m, river right), but that beach is on the Pebble Beach side of the highway (175 m from the Pebble Beach page coordinate, 193 m from the Blue Point one), so it was not applied. v1.4: reassessed with North's statement that Sheeps Crossing is the other side (his Sheeps point is river-left, 432 m away) and the USFS INFRA site points (Pebble Beach 95705 serves the south lots; Blue Point 95316 is the lot north of the highway); still not applied (research/replacement-proposals-AZ.json). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+      "status": "reviewed",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency and individual imagery review",
+      "note": "Current USFS access pages, restrictions and individual satellite images reviewed. Documented facility areas remain labelled Area, and existing owner-supplied shoreline pins are unchanged. No exact landing, shore connection, calibration or GPS timing is newly approved.",
+      "fingerprint": "f861adf7d9700ab0cf428768a9077376feba86451166e61b813e3020fe498452",
+      "sourceManifest": "research/western-access-review-20261109/access-decisions.json"
     },
     "salt-river-lower/lsr-water-users-goldfield": {
-      "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Goldfield Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Agency point is 257 m from the NHD centreline (>150 m). Tonto order 03-12-03-24-65 closes a described Goldfield-area eagle zone Dec 1-Jun 30 each year (order text runs to Jun 30, 2026; renewal for 2026-27 not found this pass)."
+      "status": "reviewed",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency and individual imagery review",
+      "note": "Current USFS access pages, restrictions and individual satellite images reviewed. Documented facility areas remain labelled Area, and existing owner-supplied shoreline pins are unchanged. No exact landing, shore connection, calibration or GPS timing is newly approved.",
+      "fingerprint": "d2c67ee7c74a86c226fb54e715d80435d76159aa873216470f6e8da0897d4fe1",
+      "sourceManifest": "research/western-access-review-20261109/access-decisions.json"
     },
     "salt-river-lower/lsr-water-users-phon-d": {
       "status": "reviewed",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Reviewed current agency source snapshots, endpoint identities, existing evidence notes and restrictions. Access map only; existing exact/approximate distinctions retained. No river line, new mileage, or timing calibration approved.",
-      "fingerprint": "4583e17862491aa44db059bc00e33a2a45fd0e3f45ee8f75a9c112ce378be4bb",
-      "sourceManifest": "research/source-check-20261028/manifest.json"
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency and individual imagery review",
+      "note": "Current USFS access pages, restrictions and individual satellite images reviewed. Documented facility areas remain labelled Area, and existing owner-supplied shoreline pins are unchanged. No exact landing, shore connection, calibration or GPS timing is newly approved.",
+      "fingerprint": "5667bb4e9c1dc7dc459894d51997f24fa7584bcd0ebfadf5f496e6b2d0415aaf",
+      "sourceManifest": "research/western-access-review-20261109/access-decisions.json"
     },
     "salt-river-lower/lsr-blue-point-phon-d": {
-      "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Blue Point Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the point is in the day-use parking lot about 110 m east of the river channel. v1.3: North's owner-supplied point (33.5539720, -111.5750868) is at the water's edge on the beach just south of the Bush Highway bridge (NHD 49 m, river right), but that beach is on the Pebble Beach side of the highway (175 m from the Pebble Beach page coordinate, 193 m from the Blue Point one), so it was not applied. v1.4: reassessed with North's statement that Sheeps Crossing is the other side (his Sheeps point is river-left, 432 m away) and the USFS INFRA site points (Pebble Beach 95705 serves the south lots; Blue Point 95316 is the lot north of the highway); still not applied (research/replacement-proposals-AZ.json). Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+      "status": "reviewed",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency and individual imagery review",
+      "note": "Current USFS access pages, restrictions and individual satellite images reviewed. Documented facility areas remain labelled Area, and existing owner-supplied shoreline pins are unchanged. No exact landing, shore connection, calibration or GPS timing is newly approved.",
+      "fingerprint": "512fdfa75fbef22bf71bf83f6186a2f419f338682fc264bea1565505d4679d70",
+      "sourceManifest": "research/western-access-review-20261109/access-decisions.json"
     },
     "salt-river-lower/lsr-goldfield-phon-d": {
-      "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Goldfield Day Use Area (Lower Salt): Research-only grade: access-verified (official source names boating access; approximate area only). Agency point is 257 m from the NHD centreline (>150 m). Tonto order 03-12-03-24-65 closes a described Goldfield-area eagle zone Dec 1-Jun 30 each year (order text runs to Jun 30, 2026; renewal for 2026-27 not found this pass)."
+      "status": "reviewed",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency and individual imagery review",
+      "note": "Current USFS access pages, restrictions and individual satellite images reviewed. Documented facility areas remain labelled Area, and existing owner-supplied shoreline pins are unchanged. No exact landing, shore connection, calibration or GPS timing is newly approved.",
+      "fingerprint": "fba3a382ea629a8bc1d911c324d49d69f462404744e22c4a281f2ad4c800c8a6",
+      "sourceManifest": "research/western-access-review-20261109/access-decisions.json"
     },
     "salt-river-upper/upper-salt-first-camp-hwy-288": {
       "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "First Campground (Upper Salt put-in): No managing-agency coordinate: the launch is on White Mountain Apache land (tribal permit required); the Tonto NF area map PDF is image-only and gives no coordinates. Highway 288 Bridge Take-out (Upper Salt): Tonto NF names the take-out (just downstream of the Highway 288 Bridge, river left) but publishes no coordinate for it."
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current tribal notice and agency map review",
+      "sourceManifest": "research/upper-salt-access-review-20261109/decisions.json",
+      "note": "Tribal access closure needs clarification: WMAT posted a Salt River access-area and Cibecue Falls closure on October 27, 2026. Confirm reopening and whether First Campground launches and through-trips are permitted before planning this stretch. Agency area/detail maps retained for a future approximate-location review; no coordinates or path adopted."
     },
     "verde-river-lower/needle-rock-box-bar": {
       "status": "hold",
@@ -80,35 +93,35 @@
     },
     "verde-river-upper/black-canyon-bignotti": {
       "status": "reviewed",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Reviewed current agency source snapshots, endpoint identities, existing evidence notes and restrictions. Access map only; existing exact/approximate distinctions retained. No river line, new mileage, or timing calibration approved.",
-      "fingerprint": "1d9c0b9129261f89eedfdf1e99f89eaf0ea7ecf2205c322cd18d11e3bcbf4774",
-      "sourceManifest": "research/source-check-20261028/manifest.json"
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA agency, closure and imagery review",
+      "fingerprint": "ca47a3511f3df1299fa9b3d070b4be5c488b50898209c632bd37fccb9b515fc0",
+      "sourceManifest": "research/arizona-corridor-review-20261109/decisions.json",
+      "note": "Documented public access with visible permit/carry restrictions. Area markers and river overviews do not approve a shoreline connector, driving route, navigability or live ETA."
     },
     "verde-river-camp-verde/white-bridge-beasley-flat": {
       "status": "reviewed",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Reviewed current agency source snapshots, endpoint identities, existing evidence notes and restrictions. Access map only; existing exact/approximate distinctions retained. No river line, new mileage, or timing calibration approved.",
-      "fingerprint": "dd6b8b2650a67abb0dc78e17d2d9d2cdd605dfa6e29a41211793a370bc8f6c1a",
-      "sourceManifest": "research/source-check-20261028/manifest.json"
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA agency, closure and imagery review",
+      "fingerprint": "8fab8f9ed2c423ec6a65830f4e998ac4bae7cfa34df5aed3408aa8e41e8e2ad8",
+      "sourceManifest": "research/arizona-corridor-review-20261109/decisions.json",
+      "note": "Documented public access with visible permit/carry restrictions. Area markers and river overviews do not approve a shoreline connector, driving route, navigability or live ETA."
     },
     "verde-river-camp-verde/white-bridge-clear-creek": {
       "status": "reviewed",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Reviewed current agency source snapshots, endpoint identities, existing evidence notes and restrictions. Access map only; existing exact/approximate distinctions retained. No river line, new mileage, or timing calibration approved.",
-      "fingerprint": "1075f22fbdb703bf9bbbb9d77367fa2f7e34d64316b2a8c0d63bb9db6213a2a1",
-      "sourceManifest": "research/source-check-20261028/manifest.json"
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA agency, closure and imagery review",
+      "fingerprint": "30fff27ec6450bf69e0f1a7b1f2f21e5dc5f4286b2448996f2ee2a1511347a5f",
+      "sourceManifest": "research/arizona-corridor-review-20261109/decisions.json",
+      "note": "Documented public access with visible permit/carry restrictions. Area markers and river overviews do not approve a shoreline connector, driving route, navigability or live ETA."
     },
     "verde-river-camp-verde/clear-creek-beasley-flat": {
       "status": "reviewed",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Reviewed current agency source snapshots, endpoint identities, existing evidence notes and restrictions. Access map only; existing exact/approximate distinctions retained. No river line, new mileage, or timing calibration approved.",
-      "fingerprint": "8c67eefdc2e96e3005adeaaf33327cd9c2147f0dccd53a47cd5f11e6676ec186",
-      "sourceManifest": "research/source-check-20261028/manifest.json"
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA agency, closure and imagery review",
+      "fingerprint": "b0bdad298f39d42ee5af2c1c10ddd4c05083efa43f35506bb20cf4f5d3a133c5",
+      "sourceManifest": "research/arizona-corridor-review-20261109/decisions.json",
+      "note": "Documented public access with visible permit/carry restrictions. Area markers and river overviews do not approve a shoreline connector, driving route, navigability or live ETA."
     },
     "verde-river-scenic/beasley-flat-childs": {
       "status": "hold",

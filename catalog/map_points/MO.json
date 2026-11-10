@@ -282,14 +282,14 @@
         "lon": -90.989418,
         "feature": "NPS Public POIs (Ozark National Scenic Riverways), OBJECTID 16436"
       },
-      "directions": "Approximate area only: the NPS Big Spring river access, Ozark National Scenic Riverways (NPS brochure river mile 16). Follow NPS park road signs to the landing; launch only at the designated access.",
-      "sourceName": "NPS Ozark National Scenic Riverways — park brochure (river access list)",
-      "sourceUrl": "https://www.nps.gov/ozar/planyourvisit/park-brochure.htm",
+      "directions": "Use the signed Big Spring (upper) floater landing. The separate lower paved boat ramp is for trailered boats only; NPS does not allow floater access there. This marker shows the approximate access area, not a confirmed water-edge landing. Confirm the approach during your shuttle.",
+      "sourceName": "National Park Service — designated river landings and boat-ramp rules",
+      "sourceUrl": "https://www.nps.gov/ozar/learn/management/ozar-superintendent-s-compendium.htm",
       "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D16436&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
+      "verifiedOn": "2026-11-09",
       "accessType": "River access (area)",
       "operator": "National Park Service — Ozark National Scenic Riverways",
-      "note": "Public river access is documented by NPS Ozark National Scenic Riverways — park brochure (river access list). The coordinate is NPS Public POIs (Ozark National Scenic Riverways), OBJECTID 16436; approximate area, not the exact launch. Why not exact: imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre.",
+      "note": "Public river access is documented by NPS Ozark National Scenic Riverways — park brochure (river access list). The coordinate is NPS Public POIs (Ozark National Scenic Riverways), OBJECTID 16436; approximate area, not the exact launch. Why not exact: imagery verdict 'flag': Pin roughly 40-150 m from the water in woods, a campground or a parking area; launch spot not identifiable at the pin. Coordinate kept only as an area centre. Current NPS compendium distinguishes the floater landing from the separate motorized boat ramp. The existing approximate coordinate is retained; this review does not claim an exact shoreline location.",
       "id": "acc-0473ec6d1cf652e8834e",
       "aliases": []
     },
@@ -1284,17 +1284,22 @@
       "aliases": []
     },
     "Mason Bridge Access": {
-      "status": "verified",
-      "lat": 37.505664,
-      "lon": -91.983214,
-      "accessType": "Boat ramp (MDC)",
+      "status": "access-verified",
+      "accessType": "Public boat-access area",
       "operator": "Missouri Department of Conservation",
       "sourceName": "MDC Discover Nature — Boat Ramp features, OBJECTID 41",
       "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D41&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "MDC Discover Nature — Boat Ramp features, OBJECTID 41 (Boat ramp (MDC)) is the managing agency's own access feature, 36 m from the USGS NHD High Resolution flowline of the Big Piney River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: Missouri Department of Conservation — Mason Bridge Access (area page).",
+      "verifiedOn": "2026-11-09",
+      "note": "The unchanged MDC boat-ramp feature falls at the upper launch approach beside parking and a partly obscured wooded bank, not a surveyed water edge. Fresh MDC records and public area information confirm the facility. Stable ID and numeric coordinates retained; no exact bank-side instruction or shore connector is asserted.",
       "id": "acc-e866fbd9d9105dd9ba9c",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 37.505664,
+        "lon": -91.983214,
+        "feature": "MDC public boating access vicinity; exact landing not confirmed"
+      },
+      "coordinateSourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D41&outFields=*&outSR=4326&f=json",
+      "directions": "From Licking, take Highway 32 west to Mason Road, then follow the signed public access to the Big Piney River. The Area marker identifies the facility vicinity. Scout the usable landing and water edge during your shuttle."
     },
     "Meramec Landing (Valley Park)": {
       "status": "verified",
@@ -1643,14 +1648,14 @@
         "lon": -91.169381,
         "feature": "USFS EDW Recreation Opportunities (Mark Twain National Forest), OBJECTID 6823"
       },
-      "directions": "Railroads created a thriving timber industry till the supply was depleted.",
+      "directions": "From Davisville, use Highway V and Forest Road 2011 for the recreation area. The Forest Service currently marks the site closed and reports flood damage; river access is by foot only. Do not plan a vehicle launch until reopening is confirmed.",
       "sourceName": "USDA Forest Service, Mark Twain NF — EDW Recreation Opportunities record",
       "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=OBJECTID%3D6823&outFields=*&outSR=4326&f=json",
       "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D6823&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
+      "verifiedOn": "2026-11-09",
       "accessType": "River access (area)",
       "operator": "USDA Forest Service — Mark Twain National Forest",
-      "note": "Public river access is documented by USDA Forest Service, Mark Twain NF — EDW Recreation Opportunities record. The coordinate is USFS EDW Recreation Opportunities (Mark Twain National Forest), OBJECTID 6823; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area point, not a boat-launch feature.",
+      "note": "The Forest Service recreation page, updated October 14, 2026, marks Red Bluff Site Closed and says flood damage leaves river access by foot only. Its GIS also reports closed. Keep the approximate facility point as research evidence; the dependent trip remains withheld.",
       "id": "acc-c42f6bc5032b5732bb5a",
       "aliases": []
     },
@@ -1800,17 +1805,22 @@
       "aliases": []
     },
     "Ross Access": {
-      "status": "verified",
-      "lat": 37.669769,
-      "lon": -92.049334,
-      "accessType": "Boat ramp (MDC)",
+      "status": "access-verified",
+      "accessType": "Public boat-access area",
       "operator": "Missouri Department of Conservation",
       "sourceName": "MDC Discover Nature — Boat Ramp features, OBJECTID 217",
       "sourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D217&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "MDC Discover Nature — Boat Ramp features, OBJECTID 217 (Boat ramp (MDC)) is the managing agency's own access feature, 9 m from the USGS NHD High Resolution flowline of the Big Piney River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: Missouri Department of Conservation — Ross Access (area page).",
+      "verifiedOn": "2026-11-09",
+      "note": "The unchanged MDC boat-ramp feature falls on the broad gravel access/bar beside the river; the usable water edge varies with flow. Fresh MDC records and public area information confirm the facility. Stable ID and numeric coordinates retained; no exact bank-side instruction or shore connector is asserted.",
       "id": "acc-5f9ef0f2dacc5036b963",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 37.669769,
+        "lon": -92.049334,
+        "feature": "MDC public boating access vicinity; exact landing not confirmed"
+      },
+      "coordinateSourceUrl": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D217&outFields=*&outSR=4326&f=json",
+      "directions": "From Duke, follow Route K west to Western Road, then Windsor Lane north to the signed public access. The Area marker identifies the facility vicinity. Scout the usable landing and water edge during your shuttle."
     },
     "Round Spring (Ozark NSR)": {
       "status": "access-verified",
@@ -1960,20 +1970,22 @@
     "Slabtown Recreation Area (USFS)": {
       "status": "access-verified",
       "areaCenter": {
-        "lat": 37.561549,
-        "lon": -92.032143,
-        "feature": "USFS EDW Recreation Opportunities (Mark Twain National Forest), OBJECTID 6764"
+        "lat": 37.56111385278535,
+        "lon": -92.03249060872311,
+        "feature": "USFS IVM Slabtown Boating Site; approximate facility and bank vicinity"
       },
-      "directions": "Approximate area only: Slabtown Recreation Area (USFS) as listed by USDA Forest Service — Mark Twain National Forest. Follow agency signs from the public road to the river; launch only at the public access.",
-      "sourceName": "USDA Forest Service, Mark Twain NF — EDW Recreation Opportunities record",
-      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=OBJECTID%3D6764&outFields=*&outSR=4326&f=json",
-      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D6764&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "accessType": "River access (area)",
+      "directions": "From Licking, follow Highway 32 west to Highway N, then Highway AF to the signed Slabtown access. Follow the public entrance downhill to the launch at the road end. The Area marker identifies the boating facility, not a surveyed water edge; scout the landing during your shuttle. Day use: 6 a.m.–10 p.m. Gravel buildup makes the ramp shallow, and current can be swift.",
+      "sourceName": "USDA Forest Service — current Slabtown boating-site inventory",
+      "sourceUrl": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRecreation/MapServer/0/query?where=site_cn%3D%276200427010602%27&outFields=%2A&outSR=4326&f=json",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/fsgisx05/rest/services/wo_nfs_gtac/IVMRecreation/MapServer/0/query?where=site_cn%3D%276200427010602%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "accessType": "Public boating facility area",
       "operator": "USDA Forest Service — Mark Twain National Forest",
-      "note": "Public river access is documented by USDA Forest Service, Mark Twain NF — EDW Recreation Opportunities record. The coordinate is USFS EDW Recreation Opportunities (Mark Twain National Forest), OBJECTID 6764; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area point, not a boat-launch feature.",
+      "note": "The Forest Service IVM record identifies a separate BOATING SITE, site_cn 6200427010602, marked OPEN and updated November 4, 2026. Its coordinate matches the riverbank access below the picnic/camping area in imagery. The older closed EDW record describes dispersed camping at a different point. Current agency boating instructions support the public launch; exact shoreline and current ramp usability remain unconfirmed. Stable access ID retained. The nearby Paddy Creek closure covers FR211, camping and trails, not the Slabtown boating-site approach shown in the order map.",
       "id": "acc-a26d24bcce3157bd8e3b",
-      "aliases": []
+      "aliases": [
+        "Slabtown Boating Site"
+      ]
     },
     "Sportsman's Park Access (Poplar Bluff)": {
       "status": "verified",
@@ -2127,10 +2139,10 @@
       "status": "access-verified",
       "accessType": "Canoe/kayak access (area)",
       "operator": "National Park Service — Ozark National Scenic Riverways",
-      "sourceName": "National Park Service — river access guide",
-      "sourceUrl": "https://www.nps.gov/thingstodo/paddle-jacks-fork-river.htm",
-      "verifiedOn": "2026-10-30",
-      "note": "Independent imagery spot-check on 2026-10-30 shows the agency pin back from the visible water edge. Public access is documented by NPS, but an exact landing is not established; approximate area only.",
+      "sourceName": "National Park Service — designated river landings and boat-ramp rules",
+      "sourceUrl": "https://www.nps.gov/ozar/learn/management/ozar-superintendent-s-compendium.htm",
+      "verifiedOn": "2026-11-09",
+      "note": "Independent imagery spot-check on 2026-10-30 shows the agency pin back from the visible water edge. Public access is documented by NPS, but an exact landing is not established; approximate area only. Current NPS compendium distinguishes the floater landing from the separate motorized boat ramp. The existing approximate coordinate is retained; this review does not claim an exact shoreline location.",
       "id": "acc-4e709155b9585798843e",
       "aliases": [],
       "areaCenter": {
@@ -2139,7 +2151,7 @@
         "feature": "NPS Public POIs (Ozark National Scenic Riverways), OBJECTID 14395"
       },
       "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D14395&outFields=*&outSR=4326&f=json",
-      "directions": "Use the signed NPS river access. The marker locates the access area; the usable landing can move with gravel bars and water level. Check it before launching."
+      "directions": "Use the signed Two Rivers gravel-bar landing for floaters. NPS lists the separate paved boat ramp for motorized vessels. This marker shows the approximate facility area; the usable landing can move with water level and gravel bars. Check the signed approach during your shuttle."
     },
     "Union Access": {
       "status": "verified",

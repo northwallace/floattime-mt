@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "rock-river",
+  "sectionId": "rock-river-road-canoe-launch-to-mechanic-street-boat-ramp",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Rock River",
+    "evidenceFile": "research/rock-river-carries-20261109/sources/rock-river.json",
+    "sha256": "39bb8ecc37a253eb67804ddcc1d3f74de509b238a056092dd20fb4170991ccba"
+  },
+  "putIn": {
+    "name": "Rock River Road Canoe Launch",
+    "lat": 42.92655176373999,
+    "lon": -88.81967839765329
+  },
+  "takeOut": {
+    "name": "Mechanic Street Boat Ramp",
+    "lat": 42.928904845176234,
+    "lon": -88.83870144494234
+  },
+  "catalogMiles": 1.0,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -88.82006707496609,
+        42.926951953777
+      ],
+      [
+        -88.82051758272526,
+        42.92672096140935
+      ],
+      [
+        -88.82191598322086,
+        42.92636122831189
+      ],
+      [
+        -88.8236513834957,
+        42.92612962789481
+      ],
+      [
+        -88.82514811652126,
+        42.925957961132454
+      ],
+      [
+        -88.82586138374617,
+        42.92612742749126
+      ],
+      [
+        -88.82684851739948,
+        42.92667382764597
+      ],
+      [
+        -88.82799491724502,
+        42.92707216064018
+      ],
+      [
+        -88.82932471846547,
+        42.92764696115614
+      ],
+      [
+        -88.83035118533888,
+        42.92810642788652
+      ],
+      [
+        -88.83125851941068,
+        42.92858956134892
+      ],
+      [
+        -88.83198551960135,
+        42.928734161078616
+      ],
+      [
+        -88.83288511938503,
+        42.92873082785193
+      ],
+      [
+        -88.83365138620164,
+        42.92858902726951
+      ],
+      [
+        -88.83453891995478,
+        42.92832376066309
+      ],
+      [
+        -88.83550978694242,
+        42.92813402727784
+      ],
+      [
+        -88.83657952025385,
+        42.92810756081416
+      ],
+      [
+        -88.83715632042376,
+        42.92811962683499
+      ],
+      [
+        -88.83793512151114,
+        42.92821482694838
+      ],
+      [
+        -88.83877738787963,
+        42.92854762657904
+      ],
+      [
+        -88.83889264560605,
+        42.92858387054082
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "143245471",
+      "143245452"
+    ],
+    "putInOffsetMeters": 54.722145296547836,
+    "takeOutOffsetMeters": 39.0747884332174,
+    "putInSourceStationMeters": 1222.8419378905905,
+    "takeOutSourceStationMeters": 1162.4371124641577
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river bends only; exact shoreline connections and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.0302,
+      "endpointOffsetsMeters": [
+        54.6,
+        38.9
+      ],
+      "mileageDifferencePercent": 3.02,
+      "maxSegmentMeters": 143.6,
+      "vertices": 21
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/rock-river-carries-20261109/decisions.json",
+    "note": "All 2 overlapping course panels and both endpoints reviewed. Original USGS vertices retained; no downstream fork choices required. Agency landing evidence and dam inventory reviewed separately."
+  },
+  "overviewReview": {
+    "signature": "40bc74d34056e68aa944c16c74d9a05197c89b9394f62cb2d41960b06ef40a1e",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not mapped. Planning mileage and timing remain separate from this display.",
+    "note": "River-course overview only, not a surveyed route or navigation aid.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Agency facility area retained; exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Agency facility area retained; exact shore connection is not drawn."
+      }
+    }
+  }
+}

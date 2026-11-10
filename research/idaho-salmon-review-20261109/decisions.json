@@ -1,0 +1,335 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/idaho-salmon-review-20261109/before/public/catalog.json",
+    "sha256": "582556e4144603d1621405a6d83635252f302e33f2b14be88d83a10b2d1dc0ab"
+  },
+  "mapsAdded": [
+    "salmon-riggins/riggins-lucile",
+    "salmon-riggins/hammer-heller",
+    "salmon-salmon/salmon-north-fork"
+  ],
+  "mapsWithdrawn": [],
+  "mapsRefreshed": [],
+  "pathsAdded": [
+    "ID/salmon-riggins--riggins-lucile.json"
+  ],
+  "pointsPromoted": [
+    "Riggins city",
+    "Salmon (Island Park ramp)",
+    "North Fork",
+    "Lucile",
+    "Hammer Creek"
+  ],
+  "pointsNoted": [
+    "Heller Bar (Snake confluence)"
+  ],
+  "identityResolutions": [
+    {
+      "section": "salmon-riggins/hammer-heller",
+      "oldAccessId": "acc-3e73957c1637524ca9b1",
+      "accessId": "acc-2aefb784ba22590db8e8",
+      "state": "WA",
+      "name": "Heller Bar",
+      "reason": "Reuse the existing WDFW concrete ramp; remove mistaken Salmon-confluence label. Legacy pending ID retained, not promoted."
+    }
+  ],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/ID/salmon-riggins--riggins-lucile.json",
+        "sha256": "1dae5c591972d981747fb1ad675473465d85f8ff308a36dd1ee5ce930942976a"
+      },
+      "candidate": {
+        "file": "research/idaho-salmon-review-20261109/courses/riggins-lucile/candidate.json",
+        "sha256": "bd3890266be9d33984718e6549295947a5fe4ff8575735af1cda828f7acb2911"
+      },
+      "inventory": {
+        "file": "research/idaho-salmon-review-20261109/courses/riggins-lucile/branch-inventory.json",
+        "sha256": "152f07e66b6f413076353e7d7c7466a616b05bd9fedc76387f6671946af414ec"
+      },
+      "choices": {
+        "file": "research/idaho-salmon-review-20261109/courses/riggins-lucile/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "imagery": [
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-1.jpg",
+          "sha256": "03c67e97bc73e724f200f7eca1fc7597402517a007026d637cb1012bc9a6fa49"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-2.jpg",
+          "sha256": "74ad068ac05ebc38d685f82df7c683ec4f372547f2db7bc7e772690b92abba95"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-3.jpg",
+          "sha256": "2dca3eb0037d7ef66b0f46942752d2c395c2273dd2c0cf273ec9811ff0420ec6"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-4.jpg",
+          "sha256": "217302477845c4dc415a81b815b74213e6384198be6f8879a4b6e190eaa9c9f7"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-5.jpg",
+          "sha256": "3998763fe4c5a217803c8535cb8e3faaaa79eff57b0e5becf33e00922c9f2073"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-6.jpg",
+          "sha256": "649ae8e112f2cdbe722d5a11eb58a6c693738d40d2a29772b389fb4c4f775e7f"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-7.jpg",
+          "sha256": "cf18fc61f8081d84498efd27431b4711dc81e421d8c39071f6807d024357e744"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-8.jpg",
+          "sha256": "5aa064dfac0eb9a90e89a035aa8c738c41e34e5daf6b138d0e8f5cb0ccf12a06"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-9.jpg",
+          "sha256": "3cbc00511e0e2cb9cbcc4217135a9d2d770a1aa34a623fcb016d34b39537a7ec"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-10.jpg",
+          "sha256": "e0ed4c370210855f92468ffecec0a70c8aee136d7a4dd11d032cd100294abefe"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-11.jpg",
+          "sha256": "c06a95bde83a03c0586972d4385e70c9f115e037bca66af00aa8154e739c99ac"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/riggins-lucile-part-12.jpg",
+          "sha256": "549d742b70c7e066993ca990f8f2aaa7851647593ddf962feb4c41a60ad8053c"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 8.6115,
+        "endpointOffsetsMeters": [
+          59.5,
+          70.1
+        ],
+        "mileageDifferencePercent": 7.64,
+        "maxSegmentMeters": 244.9,
+        "vertices": 132
+      }
+    }
+  ],
+  "heldCourses": [
+    {
+      "riverId": "salmon-salmon",
+      "sectionId": "salmon-north-fork",
+      "candidate": {
+        "file": "research/idaho-salmon-review-20261109/courses/salmon-north-fork/candidate.json",
+        "sha256": "968b01603a565c53d44e9e03573bec83ef9922a0108730802310713413803c26"
+      },
+      "inventory": {
+        "file": "research/idaho-salmon-review-20261109/courses/salmon-north-fork/branch-inventory.json",
+        "sha256": "082b4fcaa4493c34bee832958c5b672ca72c2e78b5cd4046b2811ed813cd888e"
+      },
+      "choices": {
+        "file": "research/idaho-salmon-review-20261109/courses/salmon-north-fork/branch-choices.json",
+        "sha256": "24ba8806f50db81c6a83f783262570fa9a3e5fa30b5c9b8013a20d5879f2d636"
+      },
+      "review": {
+        "file": "research/idaho-salmon-review-20261109/courses/salmon-north-fork/branch-review-all.json",
+        "sha256": "be6b2b433c9c83e3ca18750a3b99b444fd2ecafad835d793ac542944b9ef3085"
+      },
+      "imagery": [
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-1.jpg",
+          "sha256": "1117d1263da0571fa47320e6e731e7ad6ed7ef1ae91484dba26f6fb04715aa7d"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-2.jpg",
+          "sha256": "61e0b77fe54675aa6cd1a5ef8804a1154b009d0aa8d81407f4fedc9fb5a36222"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-3.jpg",
+          "sha256": "f81d201a80116a0fe1b64d8d046daaf26851cfc4487472222e87ccb5bf05be85"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-4.jpg",
+          "sha256": "9c2f0827202482d1500b44dcd9b5314d44b17f47b0c500b627f20ae11af220db"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-5.jpg",
+          "sha256": "f0a6d9306486df938e90512727b7ac08ee2f1c02d83a607f34c19c09bf88bcec"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-6.jpg",
+          "sha256": "0cca87caef86a9017a2933b0c1ff47f92d6397b90d6123a24cdef2a1609512e6"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-7.jpg",
+          "sha256": "fca6c8811cb2cdf23b70ff57725c78473ba31596542c20c196b0a8da43cd444f"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-8.jpg",
+          "sha256": "f14280848f6834b8e9138a1391159bb6eee040d37de2e2b9974bb56242c3410a"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-9.jpg",
+          "sha256": "76d883e34f80efcb84ef0aa85e3c68e7b00e4b3c465bb6a2297b4d4690e8d2a8"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-10.jpg",
+          "sha256": "1af2da36abd04fc80d759a05dabbcb7b10c2fc2dc85c92f71f1ef950c5767558"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-11.jpg",
+          "sha256": "0b260e128f1e9712a51afaf501446254590adb2b2a84b553eec37b26cbd18a0e"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-12.jpg",
+          "sha256": "7cd49ae99df108f66561667fcd6b73ede85711039edb825c1332fac51fbf9b18"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-13.jpg",
+          "sha256": "20d6f528b98149eee3f3d1887a16de867a0db64f32344741297f55d02741d138"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-14.jpg",
+          "sha256": "714a2270cd3e93f498cf5052fd52eca069b8be7b8f3d112cb8df2af7f8341bf0"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-15.jpg",
+          "sha256": "f24221574f0459f0a56ff9f5bd98c70de0be26b0c083738e67d551041cf2baab"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-16.jpg",
+          "sha256": "c7b0521131198b11440c1c9ddae75cbb0c9afbac4c60325c7232ca1d556d4458"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-17.jpg",
+          "sha256": "f947e1204fec776ca01213207395d3d2e8c5a9b371b1e5b56a4f613a424e84ab"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-18.jpg",
+          "sha256": "8a61cb027f9c62cb8091f912edab9147cd52806f94f00205efcd03b023b52eec"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-19.jpg",
+          "sha256": "f81c03f915a4e10e665a19fbd4fb705e93cb0ddf3f3b76066e95c396ffa0aba0"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-20.jpg",
+          "sha256": "b68c13eb7f3a684d9cf71f61540bce8cdf3d74b6fe87ee30ff92e45bc9f2604a"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-21.jpg",
+          "sha256": "ad10ee07187308fc414889a4d41520b54f1af795371b0463e3a1b2928858d720"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-22.jpg",
+          "sha256": "c927907e814c86e51963bef83e45aed854533829f6613dfff3fbb47fe2963dac"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-23.jpg",
+          "sha256": "2e37a5e06673aee48e47d86e347939a9a202fee526d753481c6c63d9ec3eadc2"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-24.jpg",
+          "sha256": "79fc3869d25b7d89836865df05e44ed256f8af229dda3ff64c7ee341899d9eb2"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-25.jpg",
+          "sha256": "1354d323e107c78f51481b0876281637c221ac7f7ce3876a92fa582bae8d8eb6"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-26.jpg",
+          "sha256": "27f0a7644957bc1c63cea8c2e7433ab004189dbbcc9ee4251d0ce0f33aaf8d8d"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-27.jpg",
+          "sha256": "8f89ce3849071ff85f901352897f794ede7e1dc8190b084e611c4797c303affd"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-28.jpg",
+          "sha256": "26f0128a125e164be9834e560f743e0f1e8bc8ace36458c204666f8b658bebf8"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-29.jpg",
+          "sha256": "bd0906746b6f43768ad0274ecf40b92f3634ede40854831d58c68d17ccbb5a98"
+        },
+        {
+          "file": "research/idaho-salmon-review-20261109/imagery/salmon-north-fork-part-30.jpg",
+          "sha256": "550d9b4f34b96ddff2a371e50fba5cd4ffc556d1d4be7f10afb5e1296c60b753"
+        }
+      ],
+      "reason": "NHD geometry near Tower Rock uses an older braid and cuts across wooded islands and gravel bars in panels 16–17. Complete named/unnamed network inspected; do not publish this course or use it for timing."
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/idaho-salmon-review-20261109/sources/extra-receipts.json",
+      "sha256": "411d48473ef65fe8e2559deb0fb90dda98e9602b4be0c60ccc4fe0d48e731606"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/sources/north-fork-receipts.json",
+      "sha256": "30f60a9a1495778cfbf362a6ead64723e4ed129c792adcfebf84b0e8c783d42e"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/sources/receipts.json",
+      "sha256": "e250fccba01c44f9a0b65213805458047c1408bb1d19110781b349f67ff02248"
+    }
+  ],
+  "imageryReceipts": [
+    {
+      "file": "research/idaho-salmon-review-20261109/imagery/access-receipts.json",
+      "sha256": "f216e0c40fdce80f9919215695ac2e6aece1bf475e224e1da9034b1e9395d9ca"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/imagery/braid-all-receipts.json",
+      "sha256": "8125af73bf896d9dec7292cbd3296474de46e42551691bd05aeb40ee774024cb"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/imagery/forkextended-receipts.json",
+      "sha256": "3c3bcc0fdcf1175c9e8f41d87aa44a12282d243ccf701a362d8b730286713bde"
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "file": "research/idaho-salmon-review-20261109/sources/reused-artifacts.json",
+      "sha256": "3130437debf323236f90307bc6125320e6056942069eab1ddc245e4f707afcf9"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/sources/geopdf-registration.json",
+      "sha256": "129ca5f2be62e7060b7759c1356f6906c4d0fa03f612da44f9fa463a844918f4"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/sources/geopdf-derived.json",
+      "sha256": "ea17000ba1585589c44b930e6ac53a0fb848a41a6e01e7458bb25c1c90a5eca4"
+    }
+  ],
+  "reviewedImages": [
+    {
+      "file": "research/idaho-salmon-review-20261109/imagery/riggins-2026.png",
+      "sha256": "810444fae23c0a6854eec10f4c180d2e00ab644434b2171cbc2b6efc83f5f6bf"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/imagery/hammer-2026.png",
+      "sha256": "428f50325f6a9ab94dca5754af349e383c836445fa66ffbc5c1d3f3bbe5b3b1d"
+    },
+    {
+      "file": "research/idaho-salmon-review-20261109/imagery/salmon-braid-all-flowlines.jpg",
+      "sha256": "e9a6160695be8f67876d6ee39b25fc50eebc9ddd5dac0125be5a9920b0759857"
+    }
+  ],
+  "findings": [
+    "Three access maps added, including cross-state Hammer Creek–Heller Bar with the existing Washington access ID.",
+    "Five approximate access areas added using agency facility coordinates or georeferenced agency boat symbols.",
+    "Riggins–Lucile dotted overview added after complete network and 12-panel imagery review.",
+    "Salmon–North Fork access map approved independently; dotted course held for mismatched braided-channel geometry.",
+    "Hammer Creek–Heller Bar corrected to Class II–IV and typical four-to-six-day trip; high-water Slide warning added.",
+    "North Fork description corrected: it is not the Middle Fork confluence."
+  ],
+  "limitations": [
+    "Local only; no publication.",
+    "Five new pins are approximate public facility areas, not surveyed shore landings.",
+    "No planning miles, gauge assignments, live timing, calibration or GPS ETA changes.",
+    "River-course line is display-only, not a navigation or rapid-running guide.",
+    "Hammer Creek–Heller Bar has an access map but no reviewed dotted course yet."
+  ]
+}

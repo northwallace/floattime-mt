@@ -1,0 +1,343 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "riverIds": [
+    "cannon-river-upper",
+    "cannon-river-lower"
+  ],
+  "newSectionIds": [
+    "two-rivers-dundas",
+    "two-rivers-wilderness",
+    "wilderness-dundas",
+    "riverside-sunset",
+    "sunset-highway61"
+  ],
+  "coordinatePolicy": "Source-backed areas, unchanged agency coordinates. No exact landings promoted; reviewed community pinpoint suggestions encouraged.",
+  "accessReviews": [
+    {
+      "sourceId": "WAS02655",
+      "name": "Cannon River Two Rivers Park Access",
+      "note": "Agency GPS coordinate retained at the wooded bank beside the park. Exact landing under canopy unresolved. Map mile 58.4 differs from inventory 58.5."
+    },
+    {
+      "sourceId": "WAS01381",
+      "name": "Cannon River Wilderness Area Access",
+      "note": "Agency GPS coordinate lies in the river beside the park. Satellite clouds resolved using separate USGS NAIP imagery, but the exact landing remains unresolved. Guide mile 50.6 differs from inventory 50.8. The county says no running water, despite older DNR facility text."
+    },
+    {
+      "sourceId": "WAS01380",
+      "name": "Cannon River Dundas City Park Access",
+      "note": "Agency GPS coordinate retained beside the park shelter and wooded shoreline. It identifies the access area without resolving an exact water-edge landing."
+    },
+    {
+      "sourceId": "WAS01692",
+      "name": "Cannon Falls Riverside Park Access",
+      "note": "Agency GPS coordinate retained near the gravel/wooded bank west of the bridge. Exact landing unresolved; park identity distinguished from the same-name Northfield park."
+    },
+    {
+      "sourceId": "WAS01111",
+      "name": "Cannon River Sunset Trail Access",
+      "note": "Digitized agency point is visibly in the gravel turnaround, not on the water edge. Retain it as an approximate area; do not present the parking coordinate as an exact landing."
+    },
+    {
+      "sourceId": "WAS01112",
+      "name": "Cannon River Highway 61 Access",
+      "note": "Digitized agency point marks the approach/parking clearing north of the river beside Highway 61. Exact shoreline landing is unresolved; retain an approximate area."
+    }
+  ],
+  "heldAccesses": [
+    {
+      "sourceId": "WAS01694",
+      "name": "Miesville Ravine",
+      "reason": "Closed for park construction project all of 2026. There is no access to the river shoreline from the park during construction. Updates can be found at www.dakotacountymn.us, search Miesville site improvement. "
+    },
+    {
+      "name": "Welch outfitter/County Road 7",
+      "reason": "No developed public access; permission/parking unresolved. Not added as a public landing."
+    }
+  ],
+  "timingEnabled": false,
+  "guideTimeDecision": "Riverside–Miesville 2–3 hour guide range is not transferred to Sunset Trail or Highway 61 trips. Generic paddle speed is not treated as a trip calibration.",
+  "reviewedCourses": [
+    {
+      "riverId": "cannon-river-lower",
+      "sectionId": "riverside-sunset",
+      "file": "catalog/routes/MN/cannon-river-lower--riverside-sunset.json",
+      "metrics": {
+        "routeMiles": 6.2187,
+        "endpointOffsetsMeters": [
+          32.8,
+          44.5
+        ],
+        "mileageDifferencePercent": 2.83,
+        "maxSegmentMeters": 338.3,
+        "vertices": 164
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive views of this course reviewed. The agency line follows the river corridor but cuts across some gravel bars and inside bends; no navigable channel is implied. The line does not grant access at the closed Miesville site or the private Welch outfitter. Geometry is reconstructed from the unchanged agency source. No timing model, landing connector or land-access corridor is approved."
+    },
+    {
+      "riverId": "cannon-river-lower",
+      "sectionId": "sunset-highway61",
+      "file": "catalog/routes/MN/cannon-river-lower--sunset-highway61.json",
+      "metrics": {
+        "routeMiles": 12.4064,
+        "endpointOffsetsMeters": [
+          44.5,
+          53.1
+        ],
+        "mileageDifferencePercent": 0.86,
+        "maxSegmentMeters": 219.6,
+        "vertices": 445
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive views of this course reviewed. The agency line follows the river corridor but cuts across some gravel bars and inside bends; no navigable channel is implied. The line does not grant access at the closed Miesville site or the private Welch outfitter. Geometry is reconstructed from the unchanged agency source. No timing model, landing connector or land-access corridor is approved."
+    },
+    {
+      "riverId": "cannon-river-upper",
+      "sectionId": "two-rivers-dundas",
+      "file": "catalog/routes/MN/cannon-river-upper--two-rivers-dundas.json",
+      "metrics": {
+        "routeMiles": 13.3605,
+        "endpointOffsetsMeters": [
+          18.6,
+          24.2
+        ],
+        "mileageDifferencePercent": 1.22,
+        "maxSegmentMeters": 163.8,
+        "vertices": 585
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive views of Two Rivers–Dundas cover this course. Clouds in parts 5–7 were resolved with saved USGS NAIP exports. The two Wilderness Area subtrips use exact trims within that same reviewed source feature. Geometry is reconstructed from the unchanged agency source. No timing model, landing connector or land-access corridor is approved."
+    },
+    {
+      "riverId": "cannon-river-upper",
+      "sectionId": "two-rivers-wilderness",
+      "file": "catalog/routes/MN/cannon-river-upper--two-rivers-wilderness.json",
+      "metrics": {
+        "routeMiles": 7.7562,
+        "endpointOffsetsMeters": [
+          18.6,
+          5.6
+        ],
+        "mileageDifferencePercent": 0.56,
+        "maxSegmentMeters": 163.8,
+        "vertices": 367
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive views of Two Rivers–Dundas cover this course. Clouds in parts 5–7 were resolved with saved USGS NAIP exports. The two Wilderness Area subtrips use exact trims within that same reviewed source feature. Geometry is reconstructed from the unchanged agency source. No timing model, landing connector or land-access corridor is approved."
+    },
+    {
+      "riverId": "cannon-river-upper",
+      "sectionId": "wilderness-dundas",
+      "file": "catalog/routes/MN/cannon-river-upper--wilderness-dundas.json",
+      "metrics": {
+        "routeMiles": 5.6043,
+        "endpointOffsetsMeters": [
+          5.6,
+          24.2
+        ],
+        "mileageDifferencePercent": 3.78,
+        "maxSegmentMeters": 130.9,
+        "vertices": 220
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive views of Two Rivers–Dundas cover this course. Clouds in parts 5–7 were resolved with saved USGS NAIP exports. The two Wilderness Area subtrips use exact trims within that same reviewed source feature. Geometry is reconstructed from the unchanged agency source. No timing model, landing connector or land-access corridor is approved."
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/cannon-river-20261106/sources/access-dundas.png",
+      "sha256": "48d5b74cfbae47c66041ee0c1980065fb3d40244e31996cd21f2f601ddc6db77"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/access-highway61.png",
+      "sha256": "f68ca2567cf22b8fd414818f9741928500a6bf6b3b74f73acfd511c6851434b5"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/access-riverside.png",
+      "sha256": "e2fe0d7767787c829be8b24362fd5eaae8056202e74eb2add3b1006d8620dcf6"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/access-sunset.png",
+      "sha256": "b4b64970122f6eb31676d082e6263f53bda6fd177670a23f7c22694bfeda1767"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/access-two-rivers.png",
+      "sha256": "a44fca306ecf1c151a3a866b2d7a1d955032514b96ed15b571356bbd0b4ced7e"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/access-wilderness.png",
+      "sha256": "0799a55b2cbef0a918bd7f861c1e920b4ce6b4105c1b881c2488d97c4eb276ba"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/cannon1-map.png",
+      "sha256": "875d80eebf9bde6aebf526d72d2ccea6051fe187f1b447ef864e285ec8598fb5"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/cannon2-map.png",
+      "sha256": "98d8f86497629744e380da87c7bd63310e8f74dc045b6c8de0f0ad2d2919586f"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-1.png",
+      "sha256": "63116b9336cf1bdd44cccb64ae029220cafaf88adb8484e01edacc8564fed623"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-2.png",
+      "sha256": "75f3d1cf1ad3e345b58b48abf24a3b528da3a029d00e49c072a93f668232367d"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-3.png",
+      "sha256": "343ddba8c597b3f3adf567bd04852e3d35d09128a0dd9f459c1c2ce944f5d1e8"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-4.png",
+      "sha256": "26d2c07f1de192283c71239f8d898692ebcfa679cbc936419cb1ae26297843bf"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-5.png",
+      "sha256": "45738cef66b4afdf160fcf7016d3c123d6ca843b731b66c0c8bb82d1a15a6413"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-6.png",
+      "sha256": "bd43980504b94139d08940a86e0baabce00103b8ccda86e0e3961765ac17b2b9"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-7.png",
+      "sha256": "30b6f5d2ac49af6fc9dbed59d9f5d027c6a6beb5f35770598db29bfefc5948ab"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/riverside-course-8.png",
+      "sha256": "50de0df705f3c4dd9bed5f10c75efa14329392fc9f71d18f02fc8c97c81782d4"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-1.png",
+      "sha256": "609aa5fdc814de1b7f12a36ce2edbe72ac87691c55321edd52b983e437f414a9"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-2.png",
+      "sha256": "c6eb2d7e0dd4ef5df8387c7403e30f0eef6be1d375c4587ee455736f6622030b"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-3.png",
+      "sha256": "6e1ec3e71576bda2b3e3030cfbabf0568ddb9cc4407d1992e1b33ee2907d94be"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-4.png",
+      "sha256": "3bbdf449cda7bb3704dad652a2f17567200086685766e40a492c09a30576f4fc"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-5.png",
+      "sha256": "08939f01e776b42ef946c9f915c1ed0a0d7e8aa69fd4ab2c67844336ba2dc31c"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-6.png",
+      "sha256": "9f852a7c44d8e1c89765c4938a24246c449ed1bde15fa45b7a9a0114489fdfc0"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-7.png",
+      "sha256": "763ee9d33daf52b826ca8f9f4f6aade01f0996a995b9f3b29577c94e2a46ac43"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/sunset-course-8.png",
+      "sha256": "07c3d020d89653dc897b7cbcf34b18bbf83b81407e244b119d866eee9c6ed552"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-1.png",
+      "sha256": "22c8257f12d90c9d89fc0f0af786f9deab9501a86f75954cda13ad3d9f8eafad"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-2.png",
+      "sha256": "1b43683788154ab974d120e866c3e72993f8236d02283e8e07fdb449c2e17043"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-3.png",
+      "sha256": "1a2a7da69feb33bdaddb0c1c570215ded4a342a34068f9fb9fad816e76df46dd"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-4.png",
+      "sha256": "f566413efd8126b37d305abdf6057541bc25ac59b7a8837d7da4625d4b503ade"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-5-naip.png",
+      "sha256": "28d4e12bcfcc347339abc275646b21bc486585cd3385645b92ab932d5474a47c"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-5.png",
+      "sha256": "c4536ae99a2023476c43ac849fa2344ecbd5d085f6797bd315910e747ea56755"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-6-naip.png",
+      "sha256": "dfefb4aaf79fbf34f36135f61b75fa41f76fcd88552d7dc2127a0a869b179468"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-6.png",
+      "sha256": "ef1e3dc235cb00a3389f9a4f120b20ed994e762ae853eb7e23c14029d4f6d07c"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-7-naip.png",
+      "sha256": "fa621d121891d81d8cf6bd60c4ef2d549cf9e6699f0621159f7218b169045a7a"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-7.png",
+      "sha256": "61afd1852cb95cadd5068d1f9b31cc2662a3ddee73a4a1906b2122e99365edcb"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-course-8.png",
+      "sha256": "21112421298933afd750acfbd2599b8d4dd26e979ef6aad441c4d7907c4bb226"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-part5-naip.jpg",
+      "sha256": "280b635d8136d0772195489661314704e587624e4ad2a98810ff993910696892"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-part6-naip.jpg",
+      "sha256": "d67309cab734139f0cc9eeb55cdf80f38e78c573f1921f9c3d31ba2ef5daf828"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/upper-part7-naip.jpg",
+      "sha256": "42307751b68059debea4c966aa06fb27f659e1d38be243a561ad26b2dfe557d9"
+    },
+    {
+      "file": "research/cannon-river-20261106/sources/wilderness-naip.jpg",
+      "sha256": "6de5f15bdf4f56bc6d646fe7fc681205995d967606c277f1567d3399af1c4740"
+    }
+  ],
+  "sourceCourseParts": {
+    "upper": {
+      "featureId": "9",
+      "pathIndex": 0,
+      "reverse": false
+    },
+    "lower": {
+      "featureId": "10",
+      "pathIndex": 0,
+      "reverse": false
+    }
+  }
+}

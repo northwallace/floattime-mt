@@ -1,0 +1,538 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "coordinatePolicy": "Precision first. One agency ramp coordinate matches the visible landing; six documented facilities remain approximate areas. User pin suggestions remain private until reviewed. No existing access record is changed.",
+  "accesses": [
+    {
+      "featureId": "WAS01003",
+      "name": "Mississippi Kiwanis Park Carry-in",
+      "accessId": "acc-e6c29bec860d508bb800",
+      "status": "access-verified",
+      "note": "The agency point lies beside the wooded shoreline; the exact carry-in edge is not resolved. The city 2026 park map confirms the canoe launch. DNR route-table mile 1001.2 differs from inventory 1001.1."
+    },
+    {
+      "featureId": "WAS03074",
+      "name": "Mississippi Riverview Park Carry-in",
+      "accessId": "acc-45cb4ba490b55300bc78",
+      "status": "access-verified",
+      "note": "The agency coordinate is beside a wooded approach at the bank. The exact shoreline landing remains obscured; retain the original coordinate as an approximate access area."
+    },
+    {
+      "featureId": "WAS00990",
+      "name": "Mississippi Crow Wing State Park Carry-in",
+      "accessId": "acc-cd44ea882d8c5b68b877",
+      "status": "access-verified",
+      "note": "DNR documents a carry-in near the group-camp area, and the Headwaters Board trip map ends here. The original agency point is at a wooded bank; the exact landing connection remains unresolved."
+    },
+    {
+      "featureId": "WAS01026",
+      "name": "Mississippi Fort Ripley Landing",
+      "accessId": "acc-ab1ce51af10f525d8fcb",
+      "status": "access-verified",
+      "note": "The agency GPS point is beside the riverfront approach under vegetation, rather than a clearly resolved ramp end. Retain a documented access area, not an invented water-edge coordinate."
+    },
+    {
+      "featureId": "WAS01264",
+      "name": "Mississippi Fletcher Creek Landing",
+      "accessId": "acc-dc34e24df9c25d179a6b",
+      "status": "access-verified",
+      "note": "DNR lists a concrete trailer ramp. The source point is at a vegetated bank beside the access turnout; the water-edge ramp end is not clear enough for a precise pin."
+    },
+    {
+      "featureId": "WAS01278",
+      "name": "Mississippi Belle Prairie County Park Landing",
+      "accessId": "acc-8ff4e740da49574e86a2",
+      "status": "access-verified",
+      "note": "The unchanged agency GPS point is on the riverfront approach beside the park clearing. A launch area is visible, but the exact concrete ramp edge is not sufficiently distinct; keep the approximate area."
+    },
+    {
+      "featureId": "WAS01262",
+      "name": "Mississippi LeBourget Park Landing",
+      "accessId": "acc-9258f0cc9e9b50f69d69",
+      "status": "verified",
+      "note": "The unchanged DNR GPS point matches the visible concrete ramp apron at the water edge beside the dock. City May 2026 material confirms this public water access and address. Desktop agency-and-imagery check, not a field survey; the dock replacement proposal does not establish present dock availability."
+    }
+  ],
+  "courses": "Seven display-only river-course overviews reviewed locally",
+  "reviewedCourses": [
+    {
+      "riverId": "mississippi-river-brainerd",
+      "sectionId": "kiwanis-riverview",
+      "file": "catalog/routes/MN/mississippi-river-brainerd--kiwanis-riverview.json",
+      "imageryParents": [
+        "kiwanis-riverview"
+      ],
+      "metrics": {
+        "routeMiles": 3.6282,
+        "endpointOffsetsMeters": [
+          21.8,
+          51.9
+        ],
+        "mileageDifferencePercent": 6.97,
+        "maxSegmentMeters": 195.7,
+        "vertices": 76
+      },
+      "acceptedIssues": {
+        "mileage-difference-over-5-percent": "DNR printed river miles 1001.2 to 997.3 give 3.9 planning miles; the complete clipped agency centerline measures 3.6282 miles (6.97% shorter). The six imagery views follow the river continuously. Retain both source values and keep timing-distance adoption disabled."
+      },
+      "observation": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs."
+    },
+    {
+      "riverId": "mississippi-river-brainerd",
+      "sectionId": "riverview-crow-wing",
+      "file": "catalog/routes/MN/mississippi-river-brainerd--riverview-crow-wing.json",
+      "imageryParents": [
+        "riverview-crow-wing"
+      ],
+      "metrics": {
+        "routeMiles": 7.0544,
+        "endpointOffsetsMeters": [
+          51.9,
+          44.5
+        ],
+        "mileageDifferencePercent": 2.24,
+        "maxSegmentMeters": 268.5,
+        "vertices": 230
+      },
+      "acceptedIssues": {},
+      "observation": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs."
+    },
+    {
+      "riverId": "mississippi-river-brainerd",
+      "sectionId": "kiwanis-crow-wing",
+      "file": "catalog/routes/MN/mississippi-river-brainerd--kiwanis-crow-wing.json",
+      "imageryParents": [
+        "kiwanis-riverview",
+        "riverview-crow-wing"
+      ],
+      "metrics": {
+        "routeMiles": 10.6826,
+        "endpointOffsetsMeters": [
+          21.8,
+          44.5
+        ],
+        "mileageDifferencePercent": 1.09,
+        "maxSegmentMeters": 268.5,
+        "vertices": 304
+      },
+      "acceptedIssues": {},
+      "observation": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs."
+    },
+    {
+      "riverId": "mississippi-river-fort-ripley",
+      "sectionId": "fort-ripley-fletcher",
+      "file": "catalog/routes/MN/mississippi-river-fort-ripley--fort-ripley-fletcher.json",
+      "imageryParents": [
+        "fort-ripley-fletcher"
+      ],
+      "metrics": {
+        "routeMiles": 9.5577,
+        "endpointOffsetsMeters": [
+          63.9,
+          84.6
+        ],
+        "mileageDifferencePercent": 0.44,
+        "maxSegmentMeters": 339.4,
+        "vertices": 254
+      },
+      "acceptedIssues": {},
+      "observation": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs. Two closer views inspect the west-side island channel: the line follows that river corridor but generalizes bar margins and does not establish a navigable passage or shoreline access rights."
+    },
+    {
+      "riverId": "mississippi-river-fort-ripley",
+      "sectionId": "fletcher-belle-prairie",
+      "file": "catalog/routes/MN/mississippi-river-fort-ripley--fletcher-belle-prairie.json",
+      "imageryParents": [
+        "fletcher-belle-prairie"
+      ],
+      "metrics": {
+        "routeMiles": 2.5811,
+        "endpointOffsetsMeters": [
+          84.6,
+          133.8
+        ],
+        "mileageDifferencePercent": 3.25,
+        "maxSegmentMeters": 344.2,
+        "vertices": 56
+      },
+      "acceptedIssues": {
+        "endpoint-offset-over-100m": "Belle Prairie source area is 133.8 m from the agency centerline in this broad river reach. The access approach and centerline were inspected separately. No connector is drawn or claimed; preserve the area coordinate and published miles."
+      },
+      "observation": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs."
+    },
+    {
+      "riverId": "mississippi-river-fort-ripley",
+      "sectionId": "fort-ripley-belle-prairie",
+      "file": "catalog/routes/MN/mississippi-river-fort-ripley--fort-ripley-belle-prairie.json",
+      "imageryParents": [
+        "fort-ripley-fletcher",
+        "fletcher-belle-prairie"
+      ],
+      "metrics": {
+        "routeMiles": 12.1389,
+        "endpointOffsetsMeters": [
+          63.9,
+          133.8
+        ],
+        "mileageDifferencePercent": 0.32,
+        "maxSegmentMeters": 344.2,
+        "vertices": 308
+      },
+      "acceptedIssues": {
+        "endpoint-offset-over-100m": "Belle Prairie source area is 133.8 m from the agency centerline in this broad river reach. The access approach and centerline were inspected separately. No connector is drawn or claimed; preserve the area coordinate and published miles."
+      },
+      "observation": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs. Two closer views inspect the west-side island channel: the line follows that river corridor but generalizes bar margins and does not establish a navigable passage or shoreline access rights."
+    },
+    {
+      "riverId": "mississippi-river-fort-ripley",
+      "sectionId": "belle-prairie-lebourget",
+      "file": "catalog/routes/MN/mississippi-river-fort-ripley--belle-prairie-lebourget.json",
+      "imageryParents": [
+        "belle-prairie-lebourget"
+      ],
+      "metrics": {
+        "routeMiles": 4.5124,
+        "endpointOffsetsMeters": [
+          133.8,
+          47.4
+        ],
+        "mileageDifferencePercent": 1.9,
+        "maxSegmentMeters": 494.6,
+        "vertices": 64
+      },
+      "acceptedIssues": {
+        "endpoint-offset-over-100m": "Belle Prairie source area is 133.8 m from the agency centerline in this broad river reach. The access approach and centerline were inspected separately. No connector is drawn or claimed; preserve the area coordinate and published miles."
+      },
+      "observation": "Complete course checked in six overlapping imagery views per constituent leg. Original agency vertices retained, with feature 74 reversed into downstream order. Combined trips reproduce exactly the union of their reviewed legs. The line stops alongside the checked LeBourget ramp, upstream of Little Falls Dam; the ramp-to-centerline connection is intentionally not drawn."
+    }
+  ],
+  "sources": [
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/dnr-map6.pdf",
+      "url": "https://files.dnr.state.mn.us/maps/canoe_routes/mississippi6.pdf",
+      "sha256": "a910bc8361bac4f7f8793692abb224fcf1246dda09612ab14b4a439b7703bd7d",
+      "bytes": 7384868,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/dnr-segments.html",
+      "url": "https://www.dnr.state.mn.us/state-water-trails/mississippi-river/segments-maps.html",
+      "sha256": "31f212b6b03c7dcdeaf79cc96eea4cecfe0c8df3eebce1f088eecf1b6930101b",
+      "bytes": 108541,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/mhb-excursions.html",
+      "url": "https://www.mississippiheadwaters.org/scenicRecreation.asp",
+      "sha256": "a27e4415e3b2876d48bf0bcf4eeebe2b23a132fa0221edb0c1982266bbc21298",
+      "bytes": 29644,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/dnr-mississippi-course.json",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_water_trails_minnesota/FeatureServer/0/query?where=prgm_prj%3D%27CBR00627%27&outFields=%2A&outSR=4326&returnGeometry=true&f=json",
+      "sha256": "1d0fcc6d79d7df6cc5b126fcf053958b21497c28ed473fbff775ab3f05fd7505",
+      "bytes": 618557,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/mhb-kiwanis.pdf",
+      "url": "https://www.mississippiheadwaters.org/rivermaps/kiwanis.pdf",
+      "sha256": "c8b1621570996f8c30bf209b02b627fdac7bbe0c1aeded5ab99cabd41cb76a06",
+      "bytes": 365010,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/mhb-belle-prairie.pdf",
+      "url": "https://www.mississippiheadwaters.org/rivermaps/belleprairie_map.pdf",
+      "sha256": "bbfb26029ddca74d66c1d0bd1e68de2c16bc324d5b025505366d20821706c018",
+      "bytes": 3373861,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/mhb-fort-ripley.pdf",
+      "url": "https://www.mississippiheadwaters.org/rivermaps/fortripley.pdf",
+      "sha256": "e93d0a434bf23890a140faea9483bb4ff5e2b935a629905b7c4b704542266ef2",
+      "bytes": 1285182,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/usgs-05242300.json",
+      "url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-05242300&parameter_code=00060%2C00010&datetime=2026-10-31T01%3A43%3A28.356673%2B00%3A00%2F2026-11-07T01%3A43%3A28.356673%2B00%3A00&limit=10000",
+      "sha256": "372f30dd55776882e8bf8a3ecfc15d615d4f589dc26f5991a3a3aba5268c154c",
+      "bytes": 423819,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/usgs-05267000.json",
+      "url": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/continuous/items?f=json&monitoring_location_id=USGS-05267000&parameter_code=00060%2C00010&datetime=2026-10-31T01%3A43%3A28.356673%2B00%3A00%2F2026-11-07T01%3A43%3A28.356673%2B00%3A00&limit=10000",
+      "sha256": "8f707670967fc8e92122d4c979b855a148a7d828229fac38d73808432c07c426",
+      "bytes": 471545,
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/crow-wing-park.pdf",
+      "url": "https://files.dnr.state.mn.us/maps/state_parks/spk00139.pdf",
+      "sha256": "326727a129689a77dcc95f0fb45bb995bd018971f2d4e7a23ac0f46dff421a0e",
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-city.pdf",
+      "url": "https://www.ci.brainerd.mn.us/DocumentCenter/View/734",
+      "sha256": "8cd82f961af8fc960db88abfeef4630abe8c32b892f2e0888339262fa9f2cfcb",
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/little-falls-agenda.pdf",
+      "url": "https://www.cityoflittlefalls.com/AgendaCenter/ViewFile/Agenda/_05042026-181",
+      "sha256": "f1e4ba6f9871325813b98ecc913a78269bdabb79e44b2d01acc98b829493bb02",
+      "checkedOn": "2026-11-06"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/dnr-course-ids.json",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_water_trails_minnesota/FeatureServer/0/query?where=prgm_prj%3D%27CBR00627%27&returnIdsOnly=true&f=json",
+      "sha256": "112cf7b801d02adb7aabaf142c5898d5f422f646ccb95e278898998c1b34ecae",
+      "checkedOn": "2026-11-06"
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/access-belle-prairie.png",
+      "sha256": "54c948562ad774661381e1b21673a375c8a8fad5a68760fad4919589ea757a90"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/access-crow-wing-carry.png",
+      "sha256": "1ee8fc57e495ef7f15bc2b85cb6e34b27c2db5465f28c165a8e59f689e0c59fa"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/access-fletcher.png",
+      "sha256": "c0de5dda33fc8a53e9520f79ca88183855e88b89ebf04265025e98f370afd9a1"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/access-fort-ripley.png",
+      "sha256": "a3a28fa11172b11a5ddca9869a8bbc25fb829deb7742d0fab7a94e599f881c7e"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/access-kiwanis.png",
+      "sha256": "7e5cee907e005abfabc0753b3b587ab3391901e1b78c2eeac6262965ecb0b47e"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/access-lebourget.png",
+      "sha256": "45ed8dd95604d459d4987b9b946d0a47d4429bbf5f3e7310183fe66d2920c90d"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/access-riverview.png",
+      "sha256": "12836720e4070436663fec15ba0e6ee0882f9a071d19d77870fee60f2b9893eb"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/belle-prairie-lebourget-course-1.png",
+      "sha256": "04b55fd7ded7a8bfcd4dfeb17a36a06c866191d1c6ee903042e50a8864dc8b6a"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/belle-prairie-lebourget-course-2.png",
+      "sha256": "32eef0339912a10e3f8e9e567963757f713a7c154d44d0c893a3cadc5f7cb6eb"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/belle-prairie-lebourget-course-3.png",
+      "sha256": "6b21826681e1f455c09effd50e342ff5fb280d323dfdeb18440c02a1833e1207"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/belle-prairie-lebourget-course-4.png",
+      "sha256": "3600162438d6b1e0f28d3af92f11c6b343628442db8741a310124aaa6ac54fb5"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/belle-prairie-lebourget-course-5.png",
+      "sha256": "6ed4dd4fd9f98ff8ea25c5791ad9ba449cc0fc413b0bf921c387c631ab513773"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/belle-prairie-lebourget-course-6.png",
+      "sha256": "78871e7f8a3d4bde27441f3290bb44d1431c9bc2e050e91c312e2f45567080fe"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/crow-wing-carry-context.png",
+      "sha256": "c2c7e5c8bebc1d1163aa31a616cd2b179137a7ef717fccdc8062f84269bcacdf"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/crow-wing-park.png",
+      "sha256": "29a12a146346580da20716d91e1dd09c657a8e79964a4eeece357771dffb819c"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/dnr-map6.png",
+      "sha256": "572c1b783dce80906bd3da31caeef841e7343e0aeb24147941599782005b0566"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fletcher-belle-prairie-course-1.png",
+      "sha256": "055ae8f78c3f51b03f5cad2da03f4e8f8a15dfc68fb1b5fcf1bc6c32012cbbbb"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fletcher-belle-prairie-course-2.png",
+      "sha256": "79ff1da0f05f6506d762878f0f3fc5bcbc835ae32375d5db3d30248daa82b506"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fletcher-belle-prairie-course-3.png",
+      "sha256": "5898263927274821b2358466a2d33d657e99299257b174e78ebb046b88db46e0"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fletcher-belle-prairie-course-4.png",
+      "sha256": "e9ad419d468fb867a06f696674f9f277b3f60691c5f7dc301ec5c95d02c446b9"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fletcher-belle-prairie-course-5.png",
+      "sha256": "95b9b8870bf12a10f0ba5e044fb96ee54a5ff3c5ca3544d0755a6e74ee83021c"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fletcher-belle-prairie-course-6.png",
+      "sha256": "625869839e6ff3cafba221b842e3b9fb539fa2b7af33762eaa7f85e60314396d"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-fletcher-course-1.png",
+      "sha256": "d236680088e88d33478d527d3fce9c20c0b243e06479997d4a5d00716def1edc"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-fletcher-course-2.png",
+      "sha256": "c2cf5e7c25d4b154560c00af38549f0010cf95fc72e78c08b3344a96fe2a0d57"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-fletcher-course-3.png",
+      "sha256": "993dd816a2f80ade574fc5395b1a1a702486f1d2129c77fa9762d58a702b036b"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-fletcher-course-4.png",
+      "sha256": "730cf242da4863e5c04cf6ed8f10ac22e85d62f83e16e8e15c320cf6ed3cd995"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-fletcher-course-5.png",
+      "sha256": "235f881feb04bddbf833fec70ae92b243524d75b11ec7125d6f2ccd1563bebe6"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-fletcher-course-6.png",
+      "sha256": "4180270f4eabd1f6bd33d6f151c906fa4291d186fb2fd60e5cedb52818452b87"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-island-detail-close.png",
+      "sha256": "eeac44419e37a74215f87bc129302f484381cf2480f3ae90b80b55b86ee10c94"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/fort-ripley-island-detail.png",
+      "sha256": "09c4c81a7beb0dfc4d125154d7e4cbfae9e764122be7260a46c19c23fc228009"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-city.png",
+      "sha256": "bfbfafee71893131190e9585be82a6295a4aa5534c2276264168562878dcb165"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-riverview-course-1.png",
+      "sha256": "982f34f41e20876083378b74cd200b54fb2d9a6aa7b9e8b721a3ee625ae9373e"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-riverview-course-2.png",
+      "sha256": "154ebdfa264ddea1d0d0e7cb4fbaa9fd21306ff0ad08be08602642d2650b384f"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-riverview-course-3.png",
+      "sha256": "5ca567eb1fcb8cfa7c1d7e034fef5d94068b9dbdc2e17ac4ceeed18c92419523"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-riverview-course-4.png",
+      "sha256": "54cab6e87746746eecc1c1895d8eaa1e96b0a74facca4c9f17ae46d9c2ebc923"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-riverview-course-5.png",
+      "sha256": "6ea621cbf97f1a0550b8188f041d57224a1dba3ae44de5fe2e34bba541ca7891"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/kiwanis-riverview-course-6.png",
+      "sha256": "7782287a28394dc2058036a3a7b1550f990850c2541c3652bf0e29e2773a4405"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/lebourget-context.png",
+      "sha256": "f0373f4a83b98d1d8dacba2e8718f17a43ca9e3621087464f2533cc5db34cda3"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/little-falls-agenda-p45.png",
+      "sha256": "3cef8b3fbd2fd98cb35c62938047ce1f7f98b2a5bf43f4fb4d86cbb542f4b78b"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/mhb-belle-prairie.png",
+      "sha256": "de69fb6f7f7ec9a2ae26b2aeb7860148e6bd7ba9888c488c97ec86dd63890e3e"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/mhb-fort-ripley.png",
+      "sha256": "3e93d14cc09c1b624890ba57c92c5c807808ecfb689a786b2787da3936a15ade"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/mhb-kiwanis.png",
+      "sha256": "a7b6847459db39c6ed73aeee45ab52623634a1bf7c60801e85cf02eb6635d1b1"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/riverview-crow-wing-course-1.png",
+      "sha256": "dc98a6030bba64092f1e5b9ffede6adbb479625ab6cf92c2a087f93ba8714dba"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/riverview-crow-wing-course-2.png",
+      "sha256": "e4a95b4c1af6bc6ea9425aa3d8910bccc687dc18284dbfcaacfdd6cafbd720e3"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/riverview-crow-wing-course-3.png",
+      "sha256": "7dcb122b8878ba807025425dc4e29decbbdc11b36c378410bcfef72158561ffc"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/riverview-crow-wing-course-4.png",
+      "sha256": "ba2ebdde8ffbd0e20fe20a20944b1157a97e8f16b119b778a09e9fa919d1f211"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/riverview-crow-wing-course-5.png",
+      "sha256": "45ed5a7eb1123cb2401e81a9dfe1ead71ebe6267d4d972a72da7731feeb00c8c"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/riverview-crow-wing-course-6.png",
+      "sha256": "6c3bb44ef3e46575018b7fca0371b8efcb15034dc306499dbcaf1bc963ceec80"
+    }
+  ],
+  "distanceDecision": "Use 2026 DNR map 6 route-table miles consistently. Kiwanis inventory 1001.1 differs from printed 1001.2. Headwaters trip maps round the full trips to 10.7, 12 and 5 miles, versus 10.8, 12.1 and 4.6 in the DNR table. Do not change these independent values to match geometry.",
+  "guideTimeDecision": "Only exact named Headwaters Board trips receive published paddling times: Kiwanis–Crow Wing carry-in 3–3.5 hours, Fort Ripley–Belle Prairie 3.5 hours, Belle Prairie–LeBourget 1.5 hours. No interpolation, flow adjustment or fishing adjustment.",
+  "gaugeDecisions": [
+    {
+      "station": "05242300",
+      "relationship": "same-river-reference",
+      "note": "Brainerd upstream reference context; not a local speed calibration."
+    },
+    {
+      "station": "05267000",
+      "relationship": "same-river-reference",
+      "note": "Royalton farther downstream beyond dam reaches; reference context only, not trip-local discharge."
+    }
+  ],
+  "barrierDecisions": [
+    "Brainerd trips start below Potlatch Dam at 1004.1.",
+    "No new trip crosses Little Falls Dam at 965.2; LeBourget take-out is 965.6.",
+    "Fort Ripley trips include Pipe Island/Highway 115 riffles and the Camp Ripley shoreline restriction. No land-access overlay approved."
+  ],
+  "precisionDecision": "LeBourget DNR ramp coordinate matches visible concrete apron and city public-access documentation. Preserve it as a precise pin. Other six original agency coordinates remain Area markers with specific directions and Help pinpoint links. Existing exact and approximate access records are unchanged.",
+  "courseInventory": {
+    "source": "sources/dnr-course-ids.json",
+    "completeFeatureCount": 20,
+    "selectedFeatureIds": [
+      62,
+      63,
+      74
+    ],
+    "downstreamReversedFeatureIds": [
+      74
+    ]
+  },
+  "deferredLeads": [
+    {
+      "name": "Crow Wing State Park upstream trailer ramp",
+      "featureId": "WAS02297",
+      "reason": "Distinct from downstream carry-in WAS00990. Retain as a research lead; do not reuse the carry-in guide duration or the general park river-mile extent as a ramp mileage."
+    },
+    {
+      "name": "Lum Park to Kiwanis",
+      "reason": "Agency excursion exists but crosses the Brainerd/Potlatch dam reach; requires a separate portage review before addition."
+    }
+  ],
+  "timingDistanceAdopted": false,
+  "remainingTimeEnabled": false,
+  "published": false
+}

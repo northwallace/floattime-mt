@@ -1,0 +1,332 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/ozark-access-review-20261109/before/public/catalog.json",
+    "sha256": "e778420912bbd0783dc41cb255144bd21bedd70573117c196fedf0a16e16e241"
+  },
+  "mapsAdded": [
+    "buffalo-river/baker-ford-to-tyler-bend",
+    "buffalo-river/tyler-bend-to-grinders-ferry",
+    "buffalo-river/dillards-ferry-to-buffalo-point",
+    "buffalo-river/buffalo-point-to-rush",
+    "spring-river-ar/dam-3-boat-ramp-to-bayou-boat-ramp"
+  ],
+  "mapsWithdrawn": [],
+  "mapsRefreshed": [
+    "buffalo-river/baker-ford-to-tyler-bend",
+    "buffalo-river/tyler-bend-to-grinders-ferry",
+    "buffalo-river/dillards-ferry-to-buffalo-point",
+    "buffalo-river/buffalo-point-to-rush",
+    "spring-river-ar/dam-3-boat-ramp-to-bayou-boat-ramp",
+    "spring-river-ar/bayou-boat-ramp-to-hardy-beach-access-boat-ramp"
+  ],
+  "pathsAdded": [
+    "AR/buffalo-river--tyler-bend-to-grinders-ferry.json",
+    "AR/buffalo-river--dillards-ferry-to-buffalo-point.json",
+    "AR/buffalo-river--buffalo-point-to-rush.json"
+  ],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/AR/buffalo-river--tyler-bend-to-grinders-ferry.json",
+        "sha256": "4408409f7616b3ac4121ab0da452d739d5d61cccee5f0d2f9b3f1580dd321eb0"
+      },
+      "candidate": {
+        "file": "research/ozark-access-review-20261109/courses/tyler-bend-to-grinders-ferry/candidate.json",
+        "sha256": "b1d394ad80f043b1fdc795d9f3aa9f0c88b6b00545b1c916e438e4318b321c4a"
+      },
+      "inventory": {
+        "file": "research/ozark-access-review-20261109/courses/tyler-bend-to-grinders-ferry/branch-inventory.json",
+        "sha256": "603e4af4a14b79a970594c66c0d20ff5c26e583d0c2fb59a9c635e7649253139"
+      },
+      "imagery": [
+        {
+          "file": "research/ozark-access-review-20261109/imagery/tyler-bend-to-grinders-ferry-part-1.jpg",
+          "sha256": "5311c95c76861d7f7a929d6e3b06f5a6f48e47dd3db62b5f4c4cea57b19e3bbc"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/tyler-bend-to-grinders-ferry-part-2.jpg",
+          "sha256": "8e8e44e95421a9275cb342a9d3e0c705cb218ccdb6b1eedc50ee751a8be2280f"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/tyler-bend-to-grinders-ferry-part-3.jpg",
+          "sha256": "3216139ad7b571d15ff7b78b473c759b68aeb30e412887255dfae15542c6a057"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 1.6747,
+        "endpointOffsetsMeters": [
+          24.1,
+          24.2
+        ],
+        "mileageDifferencePercent": 52.24,
+        "maxSegmentMeters": 40.8,
+        "vertices": 369
+      },
+      "choices": {
+        "file": "research/ozark-access-review-20261109/courses/tyler-bend-to-grinders-ferry/branch-choices.json",
+        "sha256": "dac6c14837419749c330709a9614beff5824e60d0f2d90e1d409f267188a3e32"
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/AR/buffalo-river--dillards-ferry-to-buffalo-point.json",
+        "sha256": "c3600ea9d712a92a38bf09d0e221116935384da0628e8d188f93e4b19ed13d2a"
+      },
+      "candidate": {
+        "file": "research/ozark-access-review-20261109/courses/dillards-ferry-to-buffalo-point/candidate.json",
+        "sha256": "14792f9e298dada89799c2ae52cfc291f2019b3692a1b162a288ed94c0fa352d"
+      },
+      "inventory": {
+        "file": "research/ozark-access-review-20261109/courses/dillards-ferry-to-buffalo-point/branch-inventory.json",
+        "sha256": "3470f0f7b76f37d850fa88cce525f79805ab3f8be5888420c607658e0b564a8e"
+      },
+      "imagery": [
+        {
+          "file": "research/ozark-access-review-20261109/imagery/dillards-ferry-to-buffalo-point-part-1.jpg",
+          "sha256": "c9a688fc166fff5ad558af45047c7043dbe4e1c3a742b7c38b8756ef4c6afc42"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/dillards-ferry-to-buffalo-point-part-2.jpg",
+          "sha256": "ddd235b68b2e37a2ab306f01b954f07faa64f6e0f75d56160108f96a87d17486"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 1.4875,
+        "endpointOffsetsMeters": [
+          32.4,
+          45.2
+        ],
+        "mileageDifferencePercent": 6.25,
+        "maxSegmentMeters": 50.5,
+        "vertices": 332
+      },
+      "choices": {
+        "file": "research/ozark-access-review-20261109/courses/dillards-ferry-to-buffalo-point/branch-choices.json",
+        "sha256": "4fa4a2ae8188c841a315a357cd4c6e42e86e9d35280b13c0db10d2c341dd17f2"
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/AR/buffalo-river--buffalo-point-to-rush.json",
+        "sha256": "afbfc703be7f99dfcb30cf3b94b1a5887891df4e7938c504eeb410c174fe8903"
+      },
+      "candidate": {
+        "file": "research/ozark-access-review-20261109/courses/buffalo-point-to-rush/candidate.json",
+        "sha256": "46ee5a72baa22f630798c2bc9d35efe09feeccb267069c59c836261edf095045"
+      },
+      "inventory": {
+        "file": "research/ozark-access-review-20261109/courses/buffalo-point-to-rush/branch-inventory.json",
+        "sha256": "9a05085ed0e715cfe0d54a2c3d0699222a03b68ee10eae4fb56b3e4b93932430"
+      },
+      "imagery": [
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-1.jpg",
+          "sha256": "d506e316268ccfcdab25d4dc8acaca33280450b88edfb80bf19ecd662130d1f4"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-2.jpg",
+          "sha256": "c9df58c3f1120d7a971e14d664093833b9590215de41e13b83be615e7e5dad29"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-3.jpg",
+          "sha256": "3fcc4d383bcfbeffb285f21e2be4e6d64fa94351954d0c0f7ef356692c2d2efd"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-4.jpg",
+          "sha256": "925bc51403c1cecf8f28e2d33b82b99de75765d893ec660919289115a5c02a56"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-5.jpg",
+          "sha256": "23b8ee2988234926a5271e60d3d578f97df2d326f8796d2631a5e6a75d6851a9"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-6.jpg",
+          "sha256": "827fc1c4533f0c2b83bfccfd3780f009183a8621a4c1a4e0d72033cfab40ea6f"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-7.jpg",
+          "sha256": "8163eb5d45c8e03ea221670f707f6ff2bfb2b0d9c8dbb9b64b74a5f348cb8ecb"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-8.jpg",
+          "sha256": "08b6edeff2f2cb775f9553470bdf1651c677e37cb5b28388c91af5a646b220bc"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-9.jpg",
+          "sha256": "90b59aac5042cebfb967f3cd9200231f7a5cbadf4b54bed0601e740422541a6f"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-10.jpg",
+          "sha256": "3c831ca49521e23dc8eeb96cebc5fb3733734ad1876b5490aebb25d2450a7f45"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/buffalo-point-to-rush-part-11.jpg",
+          "sha256": "d049e5157ffc66c2a46d0426008769d87153c9c31ea5c790b5f43d6a53807dc5"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 7.5409,
+        "endpointOffsetsMeters": [
+          45.2,
+          39.6
+        ],
+        "mileageDifferencePercent": 0.55,
+        "maxSegmentMeters": 32.2,
+        "vertices": 1837
+      }
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/ozark-access-review-20261109/sources/extra-receipts.json",
+      "sha256": "73f8565c93b9445d818f70aa48d5ca2baa51f054b66707e411a89a584d3a0195"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/sources/nps-extra-receipts.json",
+      "sha256": "8be5e07008e1f0040499065a70c38801c190dd50266a2459aa726ae13343ff76"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/sources/pdf-receipts.json",
+      "sha256": "8457afa563473edb2b3128fcb5250e56fb5f0ef4aba144a160af5954784fceeb"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/sources/receipts.json",
+      "sha256": "fb95f84e2df6613c26ef602b1fe1b9c6658c841d979cba217781e6eda2934b9d"
+    }
+  ],
+  "reviewedImages": [
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-9d07943069705fe685c0.jpg",
+      "sha256": "45afb1d23376f9a8fbe62b2acba0925dce9064762ad6d4b1b5775233f0455abd"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-e1ff7f8bb48f55f283c0.jpg",
+      "sha256": "830d950798c62f9ab2ca2b999bb400f6a853ff41787f2fa64b9f5789ef8ac2a0"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-e2353909bfe45e118a79.jpg",
+      "sha256": "3d5e7b308772a35880ebc0453f4b4ac9c7e08d1280b01b11c631d4cd98f95fc6"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-7387b6f230755da4b1b8.jpg",
+      "sha256": "48a6ed08ff180b6f23153c3e3122af6c244ed4ec37ba07b10e86bbe770a7cfde"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-c63077656f9851689b57.jpg",
+      "sha256": "6f27b1b7fe89a2584aae567c5379d4badb2b08dd4b999349ee13fb8d88159c30"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-4e5f34b72f0e502b8d76.jpg",
+      "sha256": "53325cf96abcf27682c6de8a37650598a28186f38894ec7fa55c3a752534c35e"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-6742467893665ad89383.jpg",
+      "sha256": "3ba4f63ea6945cb8f868bdd3f26e7761a24c7e2498e6d468e54f9f30cd4e3f8c"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-8b500fbd69445c208a64.jpg",
+      "sha256": "a284b411d4d2bd43b8addaeac019e880d80149ba635f69e7c1e75120497da51b"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/acc-64f179d0cea95e36bbe1.jpg",
+      "sha256": "3828e2351144fa6189ab64019ee563eb7ef8aea49b52775a517e7eef20bc5112"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/baker-ford-to-tyler-bend-branch-1.jpg",
+      "sha256": "7b29ea9131441312e3b85814413bee0b0883aab9eb5da4721bc647f16a01069e"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/dam-3-boat-ramp-to-bayou-boat-ramp-branch-1.jpg",
+      "sha256": "61a0a70a0c418b073c98d4e62cf3642b13aa6a85efa8298e92eaf8c538e94c7a"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/dam-3-boat-ramp-to-bayou-boat-ramp-branch-2.jpg",
+      "sha256": "be8f637382001956fa229a641ccac793581040fc670ec711a191de3f7f7ee82d"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/dam-3-boat-ramp-to-bayou-boat-ramp-branch-3.jpg",
+      "sha256": "8bde844f35b8382f72c1fe0f56b6caeb0b811128ff51e5838dbcaf43291d57e8"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/dillards-ferry-to-buffalo-point-branch-1.jpg",
+      "sha256": "54658af725924ded431eb9cc1b40b0bbe835e2340f2608c6f7ba33deed83ea21"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/dillards-ferry-to-buffalo-point-branch-2.jpg",
+      "sha256": "5fde21093e983a57062aac293a74f3104140d5b13f2b12fbad5191425512742f"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/tyler-bend-to-grinders-ferry-branch-1.jpg",
+      "sha256": "362e44e0fbfbd747f6ad11948e0cee67badbb0385bc9d03fc949e345177a4991"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/tyler-map.png",
+      "sha256": "099e95c3643215d8467dfb56336d1e09731b4b7d47050479e7e4afb07302c7c9"
+    },
+    {
+      "file": "research/ozark-access-review-20261109/imagery/nps-operating-page19.png",
+      "sha256": "6371a67d5ba80a414246a0152475f21fb43cb4d23a713b4ded8398907ac0b92a"
+    }
+  ],
+  "pointsDowngraded": [
+    "acc-c63077656f9851689b57",
+    "acc-6742467893665ad89383",
+    "acc-e1ff7f8bb48f55f283c0"
+  ],
+  "pointCoordinatesChanged": [],
+  "heldCourses": [
+    {
+      "riverId": "buffalo-river",
+      "sectionId": "baker-ford-to-tyler-bend",
+      "reason": "The fork approach in panel 3 crosses wooded ground before joining the present channel. All six panels inspected; map restored, course withheld pending better source geometry.",
+      "imagery": [
+        {
+          "file": "research/ozark-access-review-20261109/imagery/baker-ford-to-tyler-bend-part-1.jpg",
+          "sha256": "622c6244b63941ff7ba3dc99a4c41e034827f00fc62cfe25ea2905d1338fbfad"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/baker-ford-to-tyler-bend-part-2.jpg",
+          "sha256": "78ebe996ee6d189aef437d9681a1cc85f0ca02bc8c4faa6613bb828b77adbd3f"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/baker-ford-to-tyler-bend-part-3.jpg",
+          "sha256": "24dba4e399e2cc55917e9de3fa376a494ca22c379971d805c0b31bce3293b44f"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/baker-ford-to-tyler-bend-part-4.jpg",
+          "sha256": "2e795755e624a6e1143aff90e70bdf2738e1019f124f3b39238948da8c3566ae"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/baker-ford-to-tyler-bend-part-5.jpg",
+          "sha256": "8b7445ae254e4439c6fe76b6d15f7ad259bc5b56fa0b59770f612e52fc2005af"
+        },
+        {
+          "file": "research/ozark-access-review-20261109/imagery/baker-ford-to-tyler-bend-part-6.jpg",
+          "sha256": "5b7d94c2b5eacae028a78cd73adafc5c84c312156aef5db1d684984846d67590"
+        }
+      ]
+    },
+    {
+      "riverId": "spring-river-ar",
+      "sectionId": "dam-3-boat-ramp-to-bayou-boat-ramp",
+      "reason": "Source start feature 140842198 follows a former channel through dry hatchery grounds. Both downstream forks are inventoried but not approved; do not render this path."
+    }
+  ],
+  "findings": [
+    "Four Buffalo access maps restored with upper-launch and hand-carry limits; one Spring River downstream access-area map restored.",
+    "Three Buffalo dotted overviews added. All mileage, guide durations, gauges and timing models remain unchanged.",
+    "Tyler Bend, Buffalo Point and Dam 3 inventory pins are now honestly labeled approximate areas; no coordinate was moved.",
+    "Bayou directions now show the agency slide-in-only restriction.",
+    "Red Bluff remains held for a documented closure and flood damage; Slabtown remains held for conflicting agency status.",
+    "Cold Springs–Dam 3 remains held: downstream public access does not validate passage through dam/hatchery structures. A 2025 third-party Cold Springs repair-closure report also needs primary reopening confirmation."
+  ],
+  "limitations": [
+    "Local-only: no production change.",
+    "No surveyed shoreline pin, vehicle access, carry geometry or navigability guarantee.",
+    "Tyler Bend mileage-to-launch mismatch remains unresolved and trip-time estimates stay withheld.",
+    "Baker–Tyler and Dam 3 source courses require correction before display."
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "published": false,
+  "baselineCatalog": {
+    "file": "research/washington-public-access-20261109/before/public/catalog.json",
+    "sha256": "5f0ab4abdb65150f7bc6cb04f50f6a1559140731bb2b1aa7477d31e9896cde98"
+  },
+  "mapsAdded": [
+    "wenatchee-upper/lake-wenatchee-plain",
+    "green-gorge/headworks-kanaskat"
+  ],
+  "changedSections": [
+    "wenatchee-upper/lake-wenatchee-plain",
+    "wenatchee-upper/plain-hwy2",
+    "green-gorge/headworks-kanaskat"
+  ],
+  "pointsChanged": [
+    "Plain Access",
+    "Headworks (Green River)",
+    "Lake Wenatchee State Park"
+  ],
+  "courses": [
+    {
+      "riverId": "wenatchee-upper",
+      "sectionId": "lake-wenatchee-plain",
+      "route": {
+        "file": "catalog/routes/WA/wenatchee-upper--lake-wenatchee-plain.json",
+        "sha256": "c4de0d1f40afb7daa0232c465c250dfc3fd66e7870c36635124f78198cf01a70"
+      },
+      "candidate": {
+        "file": "research/washington-public-access-20261109/courses/lake-wenatchee-plain/candidate.json",
+        "sha256": "b7432739a07d1dd4703314f27a77f3956dd341458af15b5e0c33e79a06f398df"
+      },
+      "inventory": {
+        "file": "research/washington-public-access-20261109/courses/lake-wenatchee-plain/branch-inventory.json",
+        "sha256": "b444901c88a31bc9255ebe81bd5b853f5c7562fc26a4f433a8c6466f7fc6a6da"
+      },
+      "choices": {
+        "file": "research/washington-public-access-20261109/courses/lake-wenatchee-plain/branch-choices.json",
+        "sha256": "aff3e3813705501ac00f9394b58785560d386d836f9bc7b668bcdac14603856d"
+      },
+      "anchors": {
+        "file": "research/washington-public-access-20261109/courses/lake-wenatchee-plain/anchors.json",
+        "sha256": "3ba5c1cbd5b339894571856f7de58cc878794c3d177651356af6942433cfc7ee"
+      },
+      "review": {
+        "file": "research/washington-public-access-20261109/courses/lake-wenatchee-plain/full-course-review.json",
+        "sha256": "5a042c81d86a567632baeaba1d5664ffb5012cbca07778b2f5449c27e116fff7"
+      },
+      "imageryReceipt": {
+        "file": "research/washington-public-access-20261109/courses/lake-wenatchee-plain/imagery-receipts.json",
+        "sha256": "fe40b89338e9e34865f32eb11e5496518b7be7345285b033b1980e58988df9bc"
+      },
+      "imagery": [
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-1.jpg",
+          "sha256": "f504ce658880c3dd100117687996affb19a0fff07bca8ba1daa6e0ca49a4ed6c"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-2.jpg",
+          "sha256": "3001f8497cbaebdebcd5dc4718ace45b6847299e1a9400ca3ef7ae095aff91e5"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-3.jpg",
+          "sha256": "5bb66cfdb9d2b79079990630bf0eddb2a8e7ec37f8329a805eaa38f3ddf37e98"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-4.jpg",
+          "sha256": "0af31a47b4dbc36f274dc309f0a33d929d109a4c36b5db80a9a45af06a9cf5f9"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-5.jpg",
+          "sha256": "579db52b44dcd0042f9387f3280f38edd0671a8af17d84015ea54a74b284eb4c"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-6.jpg",
+          "sha256": "f03dfcd6efe3eb6236090acdc102269b259038b60a9660972b627b0375159b32"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-7.jpg",
+          "sha256": "da7b8641087a1dc17277f25ef1b6f4498454188091552c49e7db663e4bbe474d"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-8.jpg",
+          "sha256": "4cd2a64d37cab58105c1f9896c735400acaaec15d352b8aa0a6ab67987cd5c10"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-9.jpg",
+          "sha256": "f9ec3649924acec5e4e9ffefc2afd1af356b2530bb99c8a11d46444a89730dad"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-10.jpg",
+          "sha256": "54fc838933d427e277b196a33c7c8221e45400963a3928fec9e705f0ad474de6"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-main-part-11.jpg",
+          "sha256": "9b176cfb12b9bf3e1f4ce678ff4c5a81be4feda1edb69193abad8a5a169b9783"
+        }
+      ]
+    },
+    {
+      "riverId": "green-gorge",
+      "sectionId": "headworks-kanaskat",
+      "route": {
+        "file": "catalog/routes/WA/green-gorge--headworks-kanaskat.json",
+        "sha256": "7325ba76ef6ab5174f217c802c49c815857a67b3078f0501040ed32b983be118"
+      },
+      "candidate": {
+        "file": "research/washington-public-access-20261109/courses/headworks-kanaskat/candidate.json",
+        "sha256": "b301f48b32c3136c8155f2afae63e3de592adc13aca8e2e9e386c09b06013beb"
+      },
+      "inventory": {
+        "file": "research/washington-public-access-20261109/courses/headworks-kanaskat/branch-inventory.json",
+        "sha256": "2fdfc3660cd07fb32b74376f123565f4fa0aa842a7392e07a440c5c9703e70d8"
+      },
+      "choices": {
+        "file": "research/washington-public-access-20261109/courses/headworks-kanaskat/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "anchors": {
+        "file": "research/washington-public-access-20261109/courses/headworks-kanaskat/anchors.json",
+        "sha256": "e7dc4a3d248561233b6ee36ef7f9dc3bb122034a11e72c70ba299d14d19f808c"
+      },
+      "review": {
+        "file": "research/washington-public-access-20261109/courses/headworks-kanaskat/full-course-review.json",
+        "sha256": "1ad66f6d509140813f802a1db05f1a4b359969ed81248e80562ef9b07a87bd8b"
+      },
+      "imageryReceipt": {
+        "file": "research/washington-public-access-20261109/courses/headworks-kanaskat/imagery-receipts.json",
+        "sha256": "8b0671d7a9e85bf5739810da45fdce849770a7ec9fddb137de7c285673b42861"
+      },
+      "imagery": [
+        {
+          "file": "research/washington-public-access-20261109/imagery/headworks-kanaskat-main-part-1.jpg",
+          "sha256": "f0fd44ba5bc89a823230a3d94c9668a13e232a1021f4140e10f5f5db47c9a7f0"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/headworks-kanaskat-main-part-2.jpg",
+          "sha256": "fa8fb0ecfc46ee1200e9ab854c91b11ca9a1a8d9aaaa23572b3c36aee5a1f07b"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/headworks-kanaskat-main-part-3.jpg",
+          "sha256": "fa62fb90e5b7346d91246aec1332db45beddc5d78c4e6a5702fcf00a8a4b80d3"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/headworks-kanaskat-main-part-4.jpg",
+          "sha256": "87cca72bb4148b68dd50d571b773270cc6507c56285f8c7d6ab7123d14f110f0"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/headworks-kanaskat-main-part-5.jpg",
+          "sha256": "65d11c88ddf663fe8d98362bc6022f42670745edd2ea24b2c196804703dcf725"
+        },
+        {
+          "file": "research/washington-public-access-20261109/imagery/headworks-kanaskat-main-part-6.jpg",
+          "sha256": "4f9fdbeb93c3ad41a3ba3e572d6ae9de86cbdedae0128dfc042fe4854eb0d5b1"
+        }
+      ]
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "file": "research/washington-public-access-20261109/sources/plain-sepa-5570.pdf",
+      "sha256": "7becb18957b0988b6e05dad3494908b0b4e647645e599b4dbc1e11210dc70f74"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/plain-sepa-5571.pdf",
+      "sha256": "9a3fec76f7aaa333fcb869d3b24f9fdbf8480e9715fe61b414639337aa718882"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/tacoma-plan.pdf",
+      "sha256": "22b5bce2f1014d7097c3967d0866350326dd299af4743a332b6baf2b320d0d52"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/tacoma-watershed.html",
+      "sha256": "129e55ad7cd4ab84b530f76a979073d9f6ec082dbfc2121514223a80580d8db1"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/headworks-access-map.pdf",
+      "sha256": "b981c24b947b7e8c11277713e2e3bfdf625122874cf2fbefb57ca02e9056b464"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/web-observations.json",
+      "sha256": "c9251090494d4be36891f0350fdfc0626f9e6300298eea9532eb84acc3f44dac"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/lake-wenatchee.html",
+      "sha256": "9bc7cb77b521d686d31a371deb725a7f8d5bea3342fbd92e72fd6e203a7f414a"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/lake-wenatchee-point.json",
+      "sha256": "a79e088cddb77222cd9f6ea314bb9c1aef924344b9b4cf5214caa3c597fd9589"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/kanaskat.html",
+      "sha256": "595aab861c657900c11ea45fdccb7999b3d56499e08872d97fce4586a6ce1070"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/kanaskat-map.pdf",
+      "sha256": "64906c4af8496eca5a410ddd4cfc66bdb6f8de38e9311bcfaaabdbb142eb5c69"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/wenatchee-upper.json",
+      "sha256": "82ea50adeade56e794942e84784a556e60a141c6d24b391da5aaa63f1f301f1c"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/green-gorge.json",
+      "sha256": "592e2fde44df0de66f363d5263f7ff7e26a21095e8af949bc752699a6b3250b3"
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/washington-public-access-20261109/sources/headworks-map-receipt.json",
+      "sha256": "d91bf82e6e220408567f910b78874f23dda0dd1d3a7220bff0e2a2af7227549a"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/park-receipts.json",
+      "sha256": "ef3ef655c0e1d8fe0c3e0e298ff4445c90181dac488ba763ab969c345b1571e6"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/receipts.json",
+      "sha256": "e62d00f33882e528f87eda5e29691d77e8e6d259b1c2a37ac1637db17691baf4"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/second-receipts.json",
+      "sha256": "edcfc4315e96142c035138b48f7d66fbadbb91e62ac99f965aa0703ea5db42a9"
+    }
+  ],
+  "imageryReceipts": [
+    {
+      "file": "research/washington-public-access-20261109/imagery/access-receipts.json",
+      "sha256": "922e9d5e537a3cab9fcb8edb2408db9aad69921f57ec403a02344b58d102b1ef"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/endpoint-context-receipts.json",
+      "sha256": "1bc2f89240f09326156a7308e1de4e49d460f381daed085dddf6b37a2f681f53"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/forkextended-receipts.json",
+      "sha256": "5a96f909a7b3b2c5305b445fe3a07fafe4fe2f322c1763c45f3c2b97e0aa058a"
+    }
+  ],
+  "reviewedImages": [
+    {
+      "file": "research/washington-public-access-20261109/imagery/plain-access.jpg",
+      "sha256": "8a79bb7061e388cadaf29913f8dd4c6cb72b10a2fb044a6a9a5267876266b100"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/headworks-green-river.jpg",
+      "sha256": "6e32d53104194ccd58312b01398e71ddb0fe468d1038c1661c4e21f16561d385"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-state-park.jpg",
+      "sha256": "f23c94f41e915378773ac5a4111e5e2a82c75ed41e3378bb8886e57befb1c034"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/kanaskat-palmer-state-park.jpg",
+      "sha256": "b092ef0b3d62a9d55d3fd1176cb1e734bfcd693519bedad0e6f810b065766ec5"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-endpoint-context.jpg",
+      "sha256": "cec25f0a7312ef22528f440b62f618ba7ade60b566e6c16da4ec82147873b502"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/headworks-kanaskat-endpoint-context.jpg",
+      "sha256": "f839fe64ca3c47c413467c2eb784f8ba4a03e887413542e998e75fa49d7fbf13"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-forkextended-1.jpg",
+      "sha256": "e5cdeaec88d2f474212d7a587599b831ebb3d96ac22911d9efd74d9c7683b784"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-forkextended-2.jpg",
+      "sha256": "f1db4c7d940c685e14d2ab975319a3d54ecd8b61f291771bb26ee95c05acec74"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-forkextended-3.jpg",
+      "sha256": "f09753d2b19d747af5596d7049ca15cb330310c2bc1985e0898c4f020741d29e"
+    },
+    {
+      "file": "research/washington-public-access-20261109/imagery/lake-wenatchee-plain-forkextended-4.jpg",
+      "sha256": "dc30fcf4e574be85110ea0783aaa485089ebda7c258455e9207843c67e13e92f"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/rendered/plain-40.png",
+      "sha256": "294baed56d24b3b7d4231ccf99f62bd778e140914633ee65ab01c27f922fe6a9"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/rendered/plain-43.png",
+      "sha256": "f811b994a0033fd4c095ac192a524262267b287d707280b701208e142e222794"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/rendered/plain-45.png",
+      "sha256": "bbad9e74a15d51ed3391476c5d83d1d3257546d20c24643d9b9bf063ac88ed15"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/rendered/headworks-1.png",
+      "sha256": "cfa602dedaf7ff14eeed3668b76d47421a9212a34e23ef8bca9914aa1898204d"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/rendered/tacoma-036.png",
+      "sha256": "4a4099b0a4596870c2943e9d3bff8be94a509be51c0faad49843a8f67767761a"
+    },
+    {
+      "file": "research/washington-public-access-20261109/sources/rendered/kanaskat-1.png",
+      "sha256": "9d80d59c0ff8938d89357df2f541f4108c5536ca265403f65512e2157acc99d1"
+    }
+  ],
+  "findings": [
+    "Two held maps now have agency-supported access areas: Lake Wenatchee–Plain and Headworks–Kanaskat.",
+    "Both dotted courses use explicit main-river endpoint features instead of nearer drainage lines. Wenatchee’s four source forks and all 17 overlapping course panels reviewed.",
+    "Lake Wenatchee’s existing agency coordinate is inland of the waterline; it retains its numeric position and stable ID but now displays Area precision.",
+    "Headworks gate, permitted-use and upper Kanaskat take-out conditions are visible.",
+    "Plain–Highway 2 remains held pending a separate bridge take-out review."
+  ],
+  "limitations": [
+    "All new locations are approximate access areas, not field-verified landing pins.",
+    "No planning mileage, gauge, speed calibration, GPS timing or landing connector changed.",
+    "Nothing pushed, deployed or published."
+  ]
+}

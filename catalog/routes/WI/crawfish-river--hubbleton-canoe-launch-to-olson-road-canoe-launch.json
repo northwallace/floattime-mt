@@ -7,10 +7,10 @@
   "source": {
     "name": "USGS National Hydrography Dataset — High Resolution",
     "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
-    "checkedOn": "2026-10-30",
+    "checkedOn": "2026-11-09",
     "streamId": "Crawfish River",
-    "evidenceFile": "research/routes/WI/hr-sources/crawfish-river-da38753ab4c494d7.json",
-    "sha256": "da38753ab4c494d793150eac6c338a8ea0f1ab6d9f2f35fe879d92097768f73b"
+    "evidenceFile": "research/wisconsin-carry-access-20261109/sources/crawfish-river.json",
+    "sha256": "35974e4e2f82621bf3514fdb51fc9dcc0fd23bee23d8a79aedebdc0bb2cec5c8"
   },
   "putIn": {
     "name": "Hubbleton Canoe Launch",
@@ -373,16 +373,19 @@
       "137059322",
       "137059323"
     ],
-    "putInOffsetMeters": 386.4272364974306,
-    "takeOutOffsetMeters": 108.72584907979748
+    "putInOffsetMeters": 62.12564707637131,
+    "takeOutOffsetMeters": 65.40471283835525,
+    "putInSourceStationMeters": 386.4272364974306,
+    "takeOutSourceStationMeters": 108.72584907979748
   },
+  "scope": "river-course-overview",
   "features": {
     "display": true,
     "landOverlay": false,
     "distanceEstimate": false,
     "remainingTime": false
   },
-  "note": "Approximate mapped river centerline, not a recommended navigation channel. Channels, hazards and conditions change. Does not enable GPS time remaining or replace planning mileage.",
+  "note": "Approximate river bends only. Confirm signed landings and current conditions; exact shore connections are not mapped.",
   "checks": {
     "metrics": {
       "routeMiles": 1.2507,
@@ -397,9 +400,25 @@
     "issues": []
   },
   "review": {
-    "checkedOn": "2026-10-30",
-    "reviewer": "Float ETA desktop agency and river-network review",
-    "note": "Individually reviewed agency landing pins and imagery; unique downstream USGS NHD High Resolution chain; endpoint offsets within 100 m and catalog mileage within 5%. Screened against all 4,141 on-landscape WDNR dam records; none within 150 m of these paths. Existing agency hazard and access notices remain. This is a planning centerline, not a navigation recommendation.",
-    "evidenceFile": "research/WI/local-review-20261030-pass2/manifest.json"
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source network and full-course imagery review",
+    "evidenceFile": "research/wisconsin-carry-access-20261109/decisions.json",
+    "note": "Reviewed all three overlapping course panels and both endpoints. Original USGS source vertices retained. No downstream forks or dam inventory records in this corridor. Agency guide supports these two access facilities."
+  },
+  "overviewReview": {
+    "signature": "959ce09f14ca30313d827f65ecf467ab12425a50a4741418593c801e3b4e8c56",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line shows the river course between reviewed access points. Connections from the river line to the shoreline are not mapped. Keep the 1.3-mile preliminary planning distance separate from the source line; no live timing or navigation is enabled.",
+    "note": "Display-only overview, not a surveyed route, legal shore connector or navigation aid.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Connection from the source centerline to the reviewed landing is not mapped."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Connection from the source centerline to the reviewed landing is not mapped."
+      }
+    }
   }
 }

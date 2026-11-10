@@ -79,14 +79,23 @@ class RouteTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'Stale public'):write_or_check(root,{},True)
                 write_or_check(root,{});self.assertFalse(dest.exists())
     def test_all_montana_sections_have_actionable_queue_entries(self):
-        queue=json.loads((ROOT/'research/routes/MT/review-queue.json').read_text())['sections']
-        expected={(r['id'],s['id']) for r in self.catalog['rivers'] if r['state']=='MT' for s in r['sections']}
-        self.assertEqual({(r['riverId'],r['sectionId']) for r in queue},expected)
+        from tools.build_review_queue import inventory
+        # Generate from the current catalog, not the historical October queue.
+        # Minimal source context keeps this contract independent of archived research.
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);(root/'public/routes').mkdir(parents=True)
+            (root/'public/routes/index.json').write_bytes((ROOT/'public/routes/index.json').read_bytes())
+            with patch('tools.build_review_queue.build',return_value=self.catalog):
+                queue=[r for r in inventory(root)['sections'] if r['state']=='MT']
         sections={(r['id'],s['id']):s for r in self.catalog['rivers'] if r['state']=='MT' for s in r['sections']}
-        for issue, expected_keys in [
-            ('catalog-access-under-review', {key for key,s in sections.items() if s.get('accessReview')}),
-            ('access-points-pending', {key for key,s in sections.items() if not s.get('accessReview') and not s.get('mapPilot')}),
-        ]:
-            self.assertEqual({(r['riverId'],r['sectionId']) for r in queue if issue in r['issues']}, expected_keys)
+        self.assertEqual({(r['riverId'],r['sectionId']) for r in queue},set(sections))
+        for row in queue:
+            section=sections[row['riverId'],row['sectionId']]
+            self.assertEqual(row['released'],section['mapReleased'])
+            if section.get('accessReview'):
+                self.assertEqual(row['blocker'],section['accessReview'])
+                self.assertEqual(row['distance'],'held');self.assertEqual(row['timing'],'unavailable')
+            if not row['riverPath']:
+                self.assertTrue(row['riverPathIssues']);self.assertTrue(row['riverPathNextAction'])
 
 if __name__=='__main__':unittest.main()

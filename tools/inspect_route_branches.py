@@ -4,15 +4,16 @@
 Outputs local research only. Optional --choices is a JSON list of explicit
 {node: [lon, lat], featureId: str, reason: str} decisions from imagery review.
 Even with choices, the resulting route is a candidate with all features false.
+Optional --anchors selects reviewed river source features near an access area;
+it never moves an access pin, supplies a shore connector or hides downstream forks.
 Requires the same optional GIS dependencies as import_nhd_routes.py.
 """
 import argparse,hashlib,json,math,sys
 from collections import defaultdict
 from pathlib import Path
 from pyproj import CRS,Transformer
-from shapely.geometry import Point
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
-from tools.import_nhd_routes import network,directed_route
+from tools.import_nhd_routes import network,directed_route,source_endpoints
 from tools.route_catalog import geometry_checks,OVERVIEW_MAX_OFFSET_METERS
 
 
@@ -32,13 +33,8 @@ def check_source_coverage(payload,section):
             raise ValueError(f'{side} is outside the saved source query; expand coverage before selecting a river course')
 
 
-def downstream_inventory(edges,adj,section,project):
-    selected=[]
-    for side in ('putIn','takeOut'):
-        p=section[side+'Coords'];pt=Point(project(p['lon'],p['lat']))
-        offset,key=min((edge['line'].distance(pt),key) for key,edge in edges.items())
-        if offset>OVERVIEW_MAX_OFFSET_METERS:raise ValueError('Access is outside the overview vicinity')
-        selected.append(dict(featureId=key,offsetMeters=offset,sourceStationMeters=edges[key]['line'].project(pt)))
+def downstream_inventory(edges,adj,section,project,anchors=None):
+    selected=source_endpoints(edges,section,project,OVERVIEW_MAX_OFFSET_METERS,anchors)
     start,finish=(p['featureId'] for p in selected)
     if start==finish and selected[0]['sourceStationMeters']>=selected[1]['sourceStationMeters']:
         raise ValueError('Endpoint order is reversed on the source line')
@@ -89,7 +85,7 @@ def choose_downstream_path(edges,adj,inventory,choices):
     return ids
 
 
-def run(river_id,section_id,source_path,output,projected_crs,choices_path=None):
+def run(river_id,section_id,source_path,output,projected_crs,choices_path=None,anchors_path=None):
     source_path=source_path.resolve();output=output.resolve()
     research=(ROOT/'research').resolve()
     if not source_path.is_relative_to(research) or not output.is_relative_to(research):
@@ -107,7 +103,11 @@ def run(river_id,section_id,source_path,output,projected_crs,choices_path=None):
     unproject=Transformer.from_crs(projected_crs,4326,always_xy=True).transform
     edges,adj=network(payload,project)
     if not edges:raise ValueError('Source contains no directed river edges')
-    inventory=downstream_inventory(edges,adj,section,project)
+    anchors=json.loads(anchors_path.read_text()) if anchors_path is not None else None
+    if anchors is not None and payload.get('queryPolicy')!='named-and-unnamed-flowlines-v1':
+        raise ValueError('Course anchors require complete named and unnamed source coverage')
+    inventory=downstream_inventory(edges,adj,section,project,anchors)
+    if anchors is not None:inventory['courseAnchors']=anchors
     source=dict(name='USGS National Hydrography Dataset — High Resolution',url=payload['sourceUrl'],checkedOn=payload['checkedOn'],streamId=payload.get('queryScope',{}).get('riverName',river['name']),evidenceFile=str(source_path.relative_to(ROOT.resolve())),sha256=hashlib.sha256(raw).hexdigest())
     outputs={}
     def save(name,value):outputs[name]=json.dumps(value,ensure_ascii=False,indent=2)+'\n'
@@ -119,13 +119,14 @@ def run(river_id,section_id,source_path,output,projected_crs,choices_path=None):
         choices=json.loads(choices_path.read_text());ids=choose_downstream_path(edges,adj,inventory,choices)
         restricted={key:edges[key] for key in ids};selected_adj=defaultdict(list)
         for key,edge in restricted.items():selected_adj[edge['start']].append(key)
-        geometry,direction=directed_route(restricted,selected_adj,section,project,unproject,overview=True)
+        geometry,direction=directed_route(restricted,selected_adj,section,project,unproject,overview=True,anchors=anchors)
         if direction['featureIds']!=ids:raise ValueError('Clipped source path does not match the reviewed branch choices')
         record=dict(version=1,state=river['state'],riverId=river_id,sectionId=section_id,status='candidate',source=source,
             putIn=dict(name=section['putIn'],**section['putInCoords']),takeOut=dict(name=section['takeOut'],**section['takeOutCoords']),
             catalogMiles=section['miles'],geometry=geometry,direction=direction,scope='river-course-overview',
             features=dict(display=False,landOverlay=False,distanceEstimate=False,remainingTime=False),
             note='Research candidate only. Branch choices require source and imagery review before display; landing connections are not mapped.')
+        if anchors is not None:record['courseAnchors']=anchors
         metrics,issues=geometry_checks(record)
         if section.get('distanceReview'):issues.append('catalog-distance-under-review')
         if section.get('routeReview'):issues.append('route-review-required')
@@ -148,4 +149,5 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--river',required=True);p.add_argument('--section',required=True)
     p.add_argument('--source',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
     p.add_argument('--projected-crs',required=True);p.add_argument('--choices',type=Path)
-    a=p.parse_args();run(a.river,a.section,a.source,a.output,a.projected_crs,a.choices)
+    p.add_argument('--anchors',type=Path,help='Explicit source feature IDs and review reasons for river endpoints; access pins remain unchanged')
+    a=p.parse_args();run(a.river,a.section,a.source,a.output,a.projected_crs,a.choices,a.anchors)

@@ -1,0 +1,71 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "status": "local-review-ready",
+  "completed": [
+    "Two existing access areas now identify reviewed visible ramps, retaining their IDs and agency coordinates.",
+    "Headwaters gauge is labeled as a below-Rainbow reference reading.",
+    "Koshkonong lake-crossing difficulty and route source conflict are described explicitly.",
+    "Three dam records refreshed by stable agency key; all three holds remain.",
+    "County EE alternate agency coordinates retained as research only; no automatic promotion.",
+    "Added a Woodman–Millville dotted river-course overview after fourteen imagery views; published distance retained and all timing features disabled.",
+    "Fixed source-to-catalog-to-popup/guide directions for precise access records. Twelve existing direction records now survive normalization; sixteen approval fingerprints were migrated with coordinates, precision, status and other review metadata unchanged."
+  ],
+  "sourceIndex": "research/wisconsin-barrier-review-20261106/sources/index.json",
+  "decisions": "research/wisconsin-barrier-review-20261106/wi-decisions.json",
+  "preview": "http://127.0.0.1:8791/?river=wisconsin-river-headwaters&state=WI&craft=kayak&section=wisconsin-river-hwy-o-access-to-wisconsin-river-hwy-d-access&map=1#landMapPanel",
+  "coursePreview": "http://127.0.0.1:8791/?state=WI&river=wisconsin-river-lower&craft=kayak&section=woodman-millville&map=1#landMapPanel",
+  "deferred": [
+    "All 60 Wisconsin map holds remain. Lake Mcdonald, Koshkonong Wetland and Albany Wildlife inventory conflicts require clarification; no inference of dam removal from imagery or guide omission.",
+    "County EE alternate agency coordinates remain research-only because trees obscure the landing.",
+    "Woodman–Millville is an approximate river-course overview with sandbar conflicts and unmapped landing approaches. No navigation route, mileage replacement, land shading or GPS time remaining is enabled.",
+    "Two other Lower Wisconsin course candidates remain in research/lower-wisconsin-landings-20261106/course-candidates.json: eagles-port-andrews and port-andrews-boscobel-west."
+  ],
+  "counts": {
+    "WI": {
+      "rivers": 64,
+      "sections": 387,
+      "stableAccessIds": 446,
+      "maps": 327,
+      "heldMaps": 60,
+      "dottedPathsBefore": 44,
+      "dottedPathsNow": 45,
+      "verifiedPointsBefore": 104,
+      "verifiedPointsNow": 106,
+      "approximateAreasBefore": 342,
+      "approximateAreasNow": 340
+    },
+    "site": {
+      "states": 12,
+      "rivers": 238,
+      "sections": 1009,
+      "maps": 796,
+      "dottedPathsBefore": 178,
+      "dottedPathsNow": 179,
+      "riverCourseOverviews": 20
+    }
+  },
+  "validation": {
+    "javascript": "63 passed",
+    "focusedPython": "29 passed",
+    "fullPython": "245 passed",
+    "catalog": "passed",
+    "reviewInventory": "passed: 1009 sections, 3898 research items",
+    "release": "passed; nothing published",
+    "http": "research/wisconsin-barrier-review-20261106/http-check.json",
+    "browser": [
+      "County O precise landing popup displays existing reviewed approach directions and pin-correction link.",
+      "Jefferson approximate takeout retains Area label and Help pinpoint link.",
+      "Correction form selects Parrot Castle takeout; latitude and longitude are blank on arrival. No suggestion submitted.",
+      "Woodman–Millville course overview displayed with separate approximate access markers.",
+      "Jefferson preview reported zero browser console errors during this check."
+    ],
+    "screenshots": [
+      "research/wisconsin-barrier-review-20261106/county-o-directions-preview.png",
+      "research/wisconsin-barrier-review-20261106/jefferson-approximate-access-preview.png",
+      "research/wisconsin-barrier-review-20261106/woodman-millville-preview.png"
+    ],
+    "diffCheck": "passed"
+  },
+  "directionsMigration": "research/wisconsin-barrier-review-20261106/directions-rendering-migration.json"
+}

@@ -1,0 +1,181 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "riverId": "zumbro-river-mn",
+  "coordinatePolicy": "Precision first. Preserve reviewed exact landings; retain source-backed approximate areas when water-edge locations are uncertain. User suggestions remain private until reviewed. Course geometry is reviewed independently.",
+  "combinedTrip": {
+    "localOnly": true,
+    "sectionId": "theilman-kruger",
+    "route": "catalog/routes/MN/zumbro-river-mn--theilman-kruger.json",
+    "componentSections": [
+      "theilman-funk-ford",
+      "funk-ford-kruger"
+    ],
+    "adjacentSourceTrims": true,
+    "evidence": [
+      {
+        "file": "catalog/routes/MN/zumbro-river-mn--theilman-funk-ford.json",
+        "sha256": "5c8e5528bab15d95e1f968cf4348549c077b166495b12dc35ebd119d307d3b9c"
+      },
+      {
+        "file": "catalog/routes/MN/zumbro-river-mn--funk-ford-kruger.json",
+        "sha256": "b810c113e9e00c60df1d5a5acf4efdf493ed183789f008212b3be0cbbec683dc"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-1.png",
+        "sha256": "e4f6b489f0386c963682ce1f69169201f3d89b24ec1881c5bf1d33582e60035a"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-2.png",
+        "sha256": "e731626832e7d150f8e3c8a2163fab57cf304be0878bbdff4c15b81c8fa4d9b8"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-3.png",
+        "sha256": "57fbda71d104e2d9ccba203fc74b3cdf6596eb153a9cbc85c59fee53c8624583"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-4.png",
+        "sha256": "90584ed02eaf3fd14e589fb9a5b02c59d137582af6c446e3f81977ceac445174"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-5.png",
+        "sha256": "82b390f34dfa8ef34d1692cb6a004fc3f72d89a8b5eb66b59737faa744e6b97a"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-6.png",
+        "sha256": "408d146c6ac3de025f397950317f9e328e55df7be1804c71deba95861154bda9"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-1.png",
+        "sha256": "011e91c27f014fc8adf92003279c2996f15a3fcfc240c95a7a99be3c5aaf7198"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-2.png",
+        "sha256": "b145d409c5d2f9b8679686af3abe8de8cb96b4549309f897c2a30417f1f284fd"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-3.png",
+        "sha256": "288e5e6d5b0262060502a44d3bacdbb6a8eff641099ff12eaac7fe79a212a1d7"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-4.png",
+        "sha256": "56c61796675b99ac0437f2d838b783eb163390191fe90b4bd2d5fc318fc95c44"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-5.png",
+        "sha256": "d1751b4db916f1600f480ab7334ef1479225421267deb0ccd7794cde3f817dc3"
+      },
+      {
+        "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-6.png",
+        "sha256": "83e7b49adc58bf1dfcbeb24fbc8282a6ade5ac7676005da00a9c6c7d2e66fa03"
+      }
+    ],
+    "metrics": {
+      "routeMiles": 10.764,
+      "endpointOffsetsMeters": [
+        29.2,
+        20.1
+      ],
+      "mileageDifferencePercent": 0.33,
+      "maxSegmentMeters": 183.3,
+      "vertices": 396
+    },
+    "sourcePlanningMiles": 10.8,
+    "accessPrecision": "approximate",
+    "timingEnabled": false
+  },
+  "coverageAudit": "research/zumbro-course-refinement-20261106/coverage-audit/report.json",
+  "heldCourses": [
+    {
+      "sectionId": "hammond-theilman",
+      "reason": "Alternative agency sources do not resolve the imagery mismatch. Keep the access map and approximate areas; do not publish this dotted course.",
+      "investigations": [
+        {
+          "source": "Minnesota DNR major river centerlines",
+          "sourceUrl": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/water_major_river_centerlines/FeatureServer/0",
+          "finding": "9372-vertex Zumbro feature has 2014 content/publication timestamps. The trimmed course largely reproduces the prior line; greater vertex density is not a current-channel correction."
+        },
+        {
+          "source": "USGS legacy NHD",
+          "finding": "Saved 1021-feature bounded source and one branch inventory. Neither fork resolves the mismatch visible in saved imagery. No branch selected or approved."
+        },
+        {
+          "source": "USGS 3DHP",
+          "finding": "Complete, twice-checked query returned 44 matching Zumbro flowlines, all marked NHD. No intersecting elevation-derived workunit; database load dates are not survey dates."
+        },
+        {
+          "source": "Minnesota DNR lidar hydrography",
+          "finding": "Metadata limits coverage to northeast Lake Superior coastal watersheds, outside this reach."
+        }
+      ]
+    }
+  ],
+  "heldAccesses": [
+    {
+      "name": "Millville / former Reads Park",
+      "reason": "Historic mapping is insufficient to establish current public access. Current DNR map and saved access inventory do not list this landing; a 2023 firsthand trip report describes private campground access. Need current managing-owner permission/access evidence before listing as public.",
+      "researchLead": "https://milespaddled.com/zumbro-river-iii/",
+      "officialCurrentMap": "https://files.dnr.state.mn.us/maps/canoe_routes/zumbro2.pdf"
+    }
+  ],
+  "sources": [
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/3dhp-layer-50.json",
+      "sha256": "f3db952e3b6b1cb6a607172109cd524a1fdfecba0e4059a1c5e8426f73bf09af"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/3dhp-layer-90.json",
+      "sha256": "473bb3c961d7a2beb444d2cc89b5821c7b4aa781fce584bf4b93de1c7c4ca142"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/3dhp-service.json",
+      "sha256": "ce2f20a0f11ecc9e73fe3656380cfcfa5555da35dc11712ae6691aea51313bd6"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/3dhp-zumbro-50-receipt.json",
+      "sha256": "f0516cb8f13f68765d0279ade3fa8d9ab2a81bf6e4fb7064cea5ce1c998d361a"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/3dhp-zumbro-50.json",
+      "sha256": "998a8a4d9950bcefc0c05dcc96fe192034b836e3db2a8fb5c8b73763ddf1e7e8"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/3dhp-zumbro-90-receipt.json",
+      "sha256": "3155c2c1a4b5a09bf37bd75026e32c5596ea3097a8fc81cc22eaf9ce8884dc31"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/3dhp-zumbro-90.json",
+      "sha256": "e7fff91cfcfcd253f07a2196fbe476443964ce97534b4849daa542ce65a30a53"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/dnr-lidar-layer.json",
+      "sha256": "0c08418ddf718ce745f1d565aca71dec9b50e2f930fe5447b2bbff560c67cbfd"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/dnr-major-centerlines-receipt.json",
+      "sha256": "33f3efec4b38fa6a664ecf6878c712063666ddebfd123ee2ff00e95a60ff30e2"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/dnr-major-centerlines-zumbro.json",
+      "sha256": "5a57be4b49e5ca8f2d822299facd1cecf651d6b1d826cb2f9167318640630eed"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/nhd-fork-context.png",
+      "sha256": "89898e380c64f4443413c3d907efca74fb42242bce66b3229b5727bdaf22803b"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/usgs-services.json",
+      "sha256": "f745adc385763ef7771b5272843f43d8fe202c5783e85485b54ab5f4f2e1a3d7"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/zumbro-hammond-7978b03ed9e0b3e3.json",
+      "sha256": "7978b03ed9e0b3e3e77436703adb124964e9047d7c6cffe9e1a3657999a6a40b"
+    },
+    {
+      "file": "research/zumbro-course-refinement-20261106/sources/zumbro-hammond-theilman.json",
+      "sha256": "7978b03ed9e0b3e3e77436703adb124964e9047d7c6cffe9e1a3657999a6a40b"
+    }
+  ],
+  "sourceDocumentation": "https://www.usgs.gov/3d-hydrography-program/access-3dhp-data-products",
+  "timingEnabled": false
+}

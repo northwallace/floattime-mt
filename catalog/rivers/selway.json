@@ -8,18 +8,42 @@
   "lon": -115.514,
   "refFlowCfs": 3000,
   "refSpeedMph": 4,
-  "blurb": "Idaho's other permit-lottery classic. 47 canyon miles, one launch a day, no cell service.",
+  "blurb": "A remote, roughly 47-mile wilderness whitewater trip from Paradise Boat Launch to the takeout above Selway Falls. Launch permits apply during the controlled season.",
   "multiDay": true,
   "sections": [
     {
       "id": "paradise-race-creek",
-      "putIn": "Paradise Guard Station",
-      "takeOut": "Race Creek / Selway Falls",
+      "putIn": "Paradise Boat Launch",
+      "takeOut": "Race Track takeout (above Selway Falls)",
       "miles": 47,
       "difficulty": "Class III–IV",
-      "notes": "Forest Service permit required. Typically 4–5 days in May–July. Moose Creek is midway. Portage or scout Selway Falls at the end.",
+      "notes": "A multi-day wilderness whitewater trip for skilled, self-sufficient boaters. Use Paradise Boat Launch and finish at the Race Track takeout above Selway Falls. Arrange the long road shuttle and identify the takeout before launching. The falls are not part of this trip.",
       "putInAccessId": "acc-6e940b468d6d553aae8b",
-      "takeOutAccessId": "acc-2d79eae710cc5ec99f0b"
+      "takeOutAccessId": "acc-2d79eae710cc5ec99f0b",
+      "routeReview": "Approximate river-course overview only. The line follows the general Selway corridor and does not show safe rapid lines or shore connections. Identify the Race Track takeout before launching and finish above Selway Falls.",
+      "notices": [
+        {
+          "title": "Finish above Selway Falls",
+          "text": "The Forest Service identifies Race Track as the wilderness-trip takeout just upstream of Selway Falls. This map ends there; it does not provide a route through the falls or a portage.",
+          "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%276974.000961%27&outFields=%2A&outSR=4326&f=json",
+          "sourceName": "USFS — Race Track boating site",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Seasonal launch permit",
+          "text": "A permit is required May 15–July 31, with one party of up to 16 launching each day. Outside that season, permits are not required and groups are limited to 20. Check the official rules, including the Mountain Time season-boundary deadlines.",
+          "sourceUrl": "https://www.recreation.gov/permits/234624",
+          "sourceName": "Recreation.gov — Selway River permits",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Paradise parking and access",
+          "text": "Overnight parking is not allowed at Paradise Boat Launch; use the designated overnight parking east of Paradise Campground. Check road access, river conditions and permit pickup arrangements before traveling.",
+          "sourceUrl": "https://www.fs.usda.gov/r01/bitterroot/recreation/paradise-boating-site",
+          "sourceName": "USFS — Paradise Boating Site",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     }
   ],
   "timezone": "America/Los_Angeles"

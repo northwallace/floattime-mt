@@ -1,0 +1,506 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "riverId": "crow-wing-river-mn",
+  "coordinatePolicy": "Precision first. All nine agency points locate documented public boating facilities but do not establish exact shoreline landings. Keep unchanged source coordinates as approximate Area markers. Suggestions remain private until reviewed.",
+  "reviewedAccesses": [
+    {
+      "featureId": "WAS01525",
+      "accessId": "acc-c2b1223251845e8a81fc",
+      "name": "Crow Wing Huntersville North Access",
+      "status": "access-verified",
+      "note": "Agency coordinate falls on the approach clearing above the shoreline, not the exact water edge. Current map says river right while the inventory says left; no bank badge is assigned."
+    },
+    {
+      "featureId": "WAS01327",
+      "accessId": "acc-c0e20f4380ef521ea96d",
+      "name": "Crow Wing Casey’s Landing",
+      "status": "access-verified",
+      "note": "Agency coordinate is on the wooded bank beside the visible approach. The exact ramp end is not established. Current map mile 78.6 replaces inventory mile 78.7 for planning."
+    },
+    {
+      "featureId": "WAS01532",
+      "accessId": "acc-279c5b93ff9a512ca0a7",
+      "name": "Crow Wing Huntersville State Forest Access (#4)",
+      "status": "access-verified",
+      "note": "Agency coordinate falls in the river beside the campground bank. The exact carry-in connection is not confirmed. Current map mile 77.6 differs from inventory 77.7; keep source rounding visible."
+    },
+    {
+      "featureId": "WAS02558",
+      "accessId": "acc-dd97f0b51a9b58caa69c",
+      "name": "Crow Wing Mary Brown Access",
+      "status": "access-verified",
+      "note": "Agency coordinate is at the vegetated bank near the visible carry-in approach. Current map identifies river left; inventory says right. Keep an area marker and omit a bank badge."
+    },
+    {
+      "featureId": "WAS01526",
+      "accessId": "acc-d99752c6fea957dcbbf9",
+      "name": "Crow Wing Anderson’s Crossing Access",
+      "status": "access-verified",
+      "note": "County confirms canoe access. Agency coordinate lies in the trees beside the river; landing details remain obscured. Current DNR map mile 70.8 and the source course agree better than inventory mile 71.3."
+    },
+    {
+      "featureId": "WAS02557",
+      "accessId": "acc-562e17733b855d96b4ee",
+      "name": "Crow Wing Nimrod Carry-In (Stigman’s Mound)",
+      "status": "access-verified",
+      "note": "County distinguishes the landing from the picnic park across the river. Agency coordinate matches the northeast approach clearing, set back from the water. Current map mile 65.7 differs from inventory 65.5; bank attributes also conflict. Area only, not an exact landing."
+    },
+    {
+      "featureId": "WAS01527",
+      "accessId": "acc-11af141dfdf1587fa775",
+      "name": "Crow Wing Little White Dog Access",
+      "status": "access-verified",
+      "note": "County documents the landing. Agency point is in bank vegetation; no precise water-edge path is resolved. The 2026 map route table places it at 58.7, while its trip recommendation and GIS inventory retain 59.3."
+    },
+    {
+      "featureId": "WAS01324",
+      "accessId": "acc-24b7c3aada49587b89be",
+      "name": "Crow Wing Knob Hill Access",
+      "status": "access-verified",
+      "note": "County confirms a carry-in and popular tubing start. Agency point is in the clearing above the bank; the actual stairway landing is not resolved. Use current map mile 53.0 rather than inventory 53.2."
+    },
+    {
+      "featureId": "WAS01325",
+      "accessId": "acc-4d20a037c4c45d6baea5",
+      "name": "Crow Wing Cottingham Park Access",
+      "status": "access-verified",
+      "note": "County confirms a canoe and tube landing. Agency point falls alongside the park road above the vegetated bank, not an exact shoreline landing. Current map mile 49.5 differs from inventory 49.4."
+    }
+  ],
+  "accessDecisions": [
+    "Nimrod carry-in is across the river from Stigman’s Mound picnic park, at the northeast bridge approach. County says canoes cannot land at the picnic park itself. Keep these facilities distinct.",
+    "Conflicting river-bank attributes at Huntersville North, Mary Brown and Nimrod do not justify bank badges. No bank badge assigned to any new approximate point.",
+    "Knob Hill has a documented stairway approach. Cottingham is the park landing downstream of the County Road 7 bridge, not a bridge-center take-out.",
+    "Do not snap agency facility points onto the river line or promote a parking coordinate to an exact landing."
+  ],
+  "distanceDecisions": [
+    "Use the 2026 printed route-description table consistently. Several GIS inventory mileages differ; source differences remain recorded per section.",
+    "Little White Dog is 58.7 in the route table but 59.3 in the recommendation panel and inventory. Cottingham is 49.5 in the table. Retain approximately 9.2 miles; the separately reconstructed course is 9.1373 miles. Explain the recommendation panel’s 9.8-mile figure.",
+    "State Forest–Mary Brown has 2.3 published planning miles and approximately 2.47 source-course miles. Accept the 7.27% difference for display only, with public explanation; do not change the calculator distance or enable GPS timing."
+  ],
+  "barrierReview": {
+    "sourceUrls": [
+      "https://files.dnr.state.mn.us/maps/canoe_routes/crowwing1.pdf",
+      "https://files.dnr.state.mn.us/maps/canoe_routes/crowwing2.pdf"
+    ],
+    "observations": [
+      "Walkin’s Rapids at mile 71.0 is on Mary Brown–Anderson; Class I, Class II at high water.",
+      "Burrows at 68.3 and Westra at 67.3–66.5 are on Anderson–Nimrod; preserve the DNR Class I and I–II descriptions.",
+      "Headwater dams and mile 89.7 rock rapids are above the selected start (82.6). Pillager and Sylvan dams are below the selected end (49.5).",
+      "No claim that every access is currently open. Users must check current agency notices and signed approaches."
+    ]
+  },
+  "gaugeDecision": {
+    "station": "05244000",
+    "relationship": "same-river-reference",
+    "savedFeatures": 670,
+    "note": "Recent discharge is available at Nimrod. Retain same-river reference context; do not treat this station as a calibrated flow-to-speed model for all reaches."
+  },
+  "timingEnabled": false,
+  "guideTimeDecision": "No matching numeric agency trip durations found; generic paddling-speed advice is not a trip-specific published time.",
+  "reviewedCourses": [
+    {
+      "sectionId": "anderson-nimrod",
+      "file": "catalog/routes/MN/crow-wing-river-mn--anderson-nimrod.json",
+      "imageryParent": "anderson-nimrod",
+      "observation": "Six overlapping views follow the river through its principal bends, braided bars and island channels. Some local banks differ; this is not a recommended route through Burrows or Westra Rapids.",
+      "metrics": {
+        "routeMiles": 5.1618,
+        "endpointOffsetsMeters": [
+          29.5,
+          30.5
+        ],
+        "mileageDifferencePercent": 1.21,
+        "maxSegmentMeters": 142.1,
+        "vertices": 154
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "caseys-mary-brown",
+      "file": "catalog/routes/MN/crow-wing-river-mn--caseys-mary-brown.json",
+      "imageryParent": "huntersville-mary-brown",
+      "observation": "Source-exact subtrip wholly contained in reviewed huntersville-mary-brown. Six overlapping views follow the visible main river bends. Some bank and bar crossings are generalized; the exact landing connections remain unmapped.",
+      "metrics": {
+        "routeMiles": 3.3825,
+        "endpointOffsetsMeters": [
+          27.2,
+          15.7
+        ],
+        "mileageDifferencePercent": 2.5,
+        "maxSegmentMeters": 114.5,
+        "vertices": 136
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "huntersville-caseys",
+      "file": "catalog/routes/MN/crow-wing-river-mn--huntersville-caseys.json",
+      "imageryParent": "huntersville-mary-brown",
+      "observation": "Source-exact subtrip wholly contained in reviewed huntersville-mary-brown. Six overlapping views follow the visible main river bends. Some bank and bar crossings are generalized; the exact landing connections remain unmapped.",
+      "metrics": {
+        "routeMiles": 3.9057,
+        "endpointOffsetsMeters": [
+          25.0,
+          27.2
+        ],
+        "mileageDifferencePercent": 2.36,
+        "maxSegmentMeters": 122.3,
+        "vertices": 174
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "huntersville-mary-brown",
+      "file": "catalog/routes/MN/crow-wing-river-mn--huntersville-mary-brown.json",
+      "imageryParent": "huntersville-mary-brown",
+      "observation": "Six overlapping views follow the visible main river bends. Some bank and bar crossings are generalized; the exact landing connections remain unmapped.",
+      "metrics": {
+        "routeMiles": 7.2882,
+        "endpointOffsetsMeters": [
+          25.0,
+          15.7
+        ],
+        "mileageDifferencePercent": 0.16,
+        "maxSegmentMeters": 122.3,
+        "vertices": 308
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "knob-hill-cottingham",
+      "file": "catalog/routes/MN/crow-wing-river-mn--knob-hill-cottingham.json",
+      "imageryParent": "white-dog-cottingham",
+      "observation": "Source-exact subtrip wholly contained in reviewed white-dog-cottingham. Six overlapping views follow the connected main bends to the park below the County Road 7 bridge. Views 2 and 4 cross local bars or island-channel detail; preserve the line only as an approximate river-course overview.",
+      "metrics": {
+        "routeMiles": 3.5337,
+        "endpointOffsetsMeters": [
+          30.1,
+          34.9
+        ],
+        "mileageDifferencePercent": 0.96,
+        "maxSegmentMeters": 198.5,
+        "vertices": 117
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "mary-brown-anderson",
+      "file": "catalog/routes/MN/crow-wing-river-mn--mary-brown-anderson.json",
+      "imageryParent": "mary-brown-anderson",
+      "observation": "Six overlapping views follow the river corridor through Walkin’s Rapids to Anderson’s Crossing. The overview does not identify a passage through the rapids or current obstacles.",
+      "metrics": {
+        "routeMiles": 4.5333,
+        "endpointOffsetsMeters": [
+          15.7,
+          29.5
+        ],
+        "mileageDifferencePercent": 0.74,
+        "maxSegmentMeters": 173.7,
+        "vertices": 137
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "nimrod-white-dog",
+      "file": "catalog/routes/MN/crow-wing-river-mn--nimrod-white-dog.json",
+      "imageryParent": "nimrod-white-dog",
+      "observation": "Six overlapping views follow the connected main bends toward Little White Dog. Parallel channels, exposed bars and local bank positions differ from the generalized source.",
+      "metrics": {
+        "routeMiles": 7.0237,
+        "endpointOffsetsMeters": [
+          30.5,
+          37.0
+        ],
+        "mileageDifferencePercent": 0.34,
+        "maxSegmentMeters": 209.9,
+        "vertices": 170
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "state-forest-mary-brown",
+      "file": "catalog/routes/MN/crow-wing-river-mn--state-forest-mary-brown.json",
+      "imageryParent": "huntersville-mary-brown",
+      "observation": "Source-exact subtrip wholly contained in reviewed huntersville-mary-brown. Six overlapping views follow the visible main river bends. Some bank and bar crossings are generalized; the exact landing connections remain unmapped.",
+      "metrics": {
+        "routeMiles": 2.4673,
+        "endpointOffsetsMeters": [
+          15.2,
+          15.7
+        ],
+        "mileageDifferencePercent": 7.27,
+        "maxSegmentMeters": 103.4,
+        "vertices": 100
+      },
+      "acceptedIssues": {
+        "mileage-difference-over-5-percent": "The original DNR river course measures 2.4673 miles against 2.3 miles from the current printed route table (7.27%). Both are approximate and have different endpoint resolution. The public distance evidence describes the difference. Display only: retain published planning mileage, with no calculator-distance or GPS time-remaining adoption."
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "white-dog-cottingham",
+      "file": "catalog/routes/MN/crow-wing-river-mn--white-dog-cottingham.json",
+      "imageryParent": "white-dog-cottingham",
+      "observation": "Six overlapping views follow the connected main bends to the park below the County Road 7 bridge. Views 2 and 4 cross local bars or island-channel detail; preserve the line only as an approximate river-course overview.",
+      "metrics": {
+        "routeMiles": 9.1373,
+        "endpointOffsetsMeters": [
+          37.0,
+          34.9
+        ],
+        "mileageDifferencePercent": 0.68,
+        "maxSegmentMeters": 198.5,
+        "vertices": 285
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "white-dog-knob-hill",
+      "file": "catalog/routes/MN/crow-wing-river-mn--white-dog-knob-hill.json",
+      "imageryParent": "white-dog-cottingham",
+      "observation": "Source-exact subtrip wholly contained in reviewed white-dog-cottingham. Six overlapping views follow the connected main bends to the park below the County Road 7 bridge. Views 2 and 4 cross local bars or island-channel detail; preserve the line only as an approximate river-course overview.",
+      "metrics": {
+        "routeMiles": 5.6036,
+        "endpointOffsetsMeters": [
+          37.0,
+          30.1
+        ],
+        "mileageDifferencePercent": 1.69,
+        "maxSegmentMeters": 174.5,
+        "vertices": 170
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-anderson.png",
+      "sha256": "73aea900edda887179eb653ee13e996cb23399fb39ce1d224471c921f0f85680"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-caseys.png",
+      "sha256": "15257a1780c664deaa1a7ff6d7337f18a527a724b4fe0f3f0423b64119c60b6e"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-cottingham.png",
+      "sha256": "395c6a07638353454f2ce915d61aa659fd42daa0a69da459c3cc74b667ce7551"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-huntersville-n.png",
+      "sha256": "03c4fbc360d95561e2520de322aadcffdcd42809bf889505e7089cb0ae6421be"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-knob-hill.png",
+      "sha256": "3314158e4215b1124227f5ef247826f4c0223cc75ab54ed6449c7c009956afd0"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-mary-brown.png",
+      "sha256": "4806ca9344f54f886354ac1bcc8ef07f355e13139a06cd5621803132af6de738"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-state-forest.png",
+      "sha256": "08ef934364312c484aeb487fa9bf36373054e9e2437dcd3b028a6768dd5039f0"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-stigman-context.png",
+      "sha256": "51637900141837ff9e4e8645da07d8f3d03cc8aef6ec3e35ef88baf8b1b16589"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-stigman.png",
+      "sha256": "09a345a0c37344bb279e6b388915886d51d5ddf8dba8002074d3c63b03a3386e"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/access-white-dog.png",
+      "sha256": "db4aab59459f75cb56aea1feed90fec9748cc19e54acee3c705e29a59525d637"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/anderson-nimrod-course-1.png",
+      "sha256": "0c74f6b03bda8c8fc20c3cb8a23466b3c70e8b0d62728567c519fe3785008f43"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/anderson-nimrod-course-2.png",
+      "sha256": "5cd932159b53e719c0fefbc81852b54160fe52c323f6b7dbd0d2812932710dcf"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/anderson-nimrod-course-3.png",
+      "sha256": "1df9e189a78ac014485e4ec901aa6f66f6388c6b3b4d721fe689485ea5d8ec66"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/anderson-nimrod-course-4.png",
+      "sha256": "eebf785a8a9baa4ceea810e94186d956f178fc7f0d0e831b8adcf26a1b9c9528"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/anderson-nimrod-course-5.png",
+      "sha256": "669dd13b819bedefb52e562e06d44e87f7f69d07fdee78184161a2e667601367"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/anderson-nimrod-course-6.png",
+      "sha256": "3988966aa3696e0e232d3665addab5d2eb173d088ac4678ee58eeaf2abb05a06"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/crowwing1-page1.png",
+      "sha256": "d4a7ffab9433585faed42cfbdbfd2f0e94a9df5421186def216c2cd1b304bb6d"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/crowwing2-page1.png",
+      "sha256": "de316d616fa2042609ce6d290795bb4b19545b338827e3daa0a2cb2e3972ea83"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/huntersville-mary-brown-course-1.png",
+      "sha256": "b8832c0c18ca3f7c5e4c5b43b2bcd16b099443a9e2f7878acb138158b34490a9"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/huntersville-mary-brown-course-2.png",
+      "sha256": "c152761072e08c648f981674306f618eac7ff3bdfde5098de7838ef1cc926a20"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/huntersville-mary-brown-course-3.png",
+      "sha256": "10b3ae2fe37f63091598c5e6b84dd6806b90f3f5b896ad602ef120aa2498a269"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/huntersville-mary-brown-course-4.png",
+      "sha256": "62259c512ecf57bb10109a87d1c9d5322067611fd7ef6408fd22c3267762affe"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/huntersville-mary-brown-course-5.png",
+      "sha256": "ef16d0623514291e7e49ff0adf51ba5a772e1c7d16e8d9872d123595554cbdec"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/huntersville-mary-brown-course-6.png",
+      "sha256": "88112c8c0395e246dd0a3e84584841511baa7479f7af1f6e3d99304e82cb84ce"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/mary-brown-anderson-course-1.png",
+      "sha256": "9299ebc68374847a5e77591ab210c2b6da2aa17c6690efd128e996d42486ff89"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/mary-brown-anderson-course-2.png",
+      "sha256": "07d38e67bfec1ac0b822d8a816ee0a360f3cb2998e51aaaf86fda296b1c91475"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/mary-brown-anderson-course-3.png",
+      "sha256": "9e3d7a3e919d02cba92bc7b8f7c807c361d4437299ed4637b8a79fae3af807f6"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/mary-brown-anderson-course-4.png",
+      "sha256": "2ebb5a5307f07a63a10ceba1d9f1e76b70efda6bcc6a6bc9cd16764191406e0b"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/mary-brown-anderson-course-5.png",
+      "sha256": "f0e6eda81309d186a75a5788e4494d63a68c84aa9775c2a1ab21115739935490"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/mary-brown-anderson-course-6.png",
+      "sha256": "a2d76bc7d74c96b9af5a95b2e9bec869be40f93b29b779d2acc75ce4cabea891"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/nimrod-white-dog-course-1.png",
+      "sha256": "76933b995266ee0bc4ec70f14efd700f01d1a01bc48de8f6ba260173b626c176"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/nimrod-white-dog-course-2.png",
+      "sha256": "64c9701adff7738d46493c6ce70a4d7f3d31dcf7af337722d8a98ecbd32cf353"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/nimrod-white-dog-course-3.png",
+      "sha256": "b6d06634f7aadbb4b5571362be8ac1e66bae4c48392033a86bc3d44a812ddc05"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/nimrod-white-dog-course-4.png",
+      "sha256": "d70cec7f668fd1100d1b4b1060125fca41c4e4a11444f1958aaeacce2f59c4b5"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/nimrod-white-dog-course-5.png",
+      "sha256": "d4f92e71184e377cab67fa60117e1d0d155f6eb9cdee81198ccb343a33b5b468"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/nimrod-white-dog-course-6.png",
+      "sha256": "9483ca81d11aec6ae1ecfc76f973bc7bc498e58d7ddf1798102ded888475ad1d"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/white-dog-cottingham-course-1.png",
+      "sha256": "f25041a471345e3d614d9907f499d6b25053294f83b2c1f79db297bc9d2405de"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/white-dog-cottingham-course-2.png",
+      "sha256": "fe24c607db784f8cb069e238c08dd5d73e456727896fb3d5e0efd00847ffaf96"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/white-dog-cottingham-course-3.png",
+      "sha256": "ebadb0337051a75765599dbd53d4b321bdefb75e12f66332dd6d398f17be28de"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/white-dog-cottingham-course-4.png",
+      "sha256": "fe43e361366fd0c3c9c798de47f03c0b043180cbedfe356202b938023bb08f8d"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/white-dog-cottingham-course-5.png",
+      "sha256": "8c39232a85681b47264712bf3604cab64284b526c9722fe7b254b68cee80d3d4"
+    },
+    {
+      "file": "research/crow-wing-expansion-20261106/sources/white-dog-cottingham-course-6.png",
+      "sha256": "ad8bf3d14d6c9990aa846e0033b967c26a1121b1c4c75239fc91516500e23e91"
+    }
+  ]
+}

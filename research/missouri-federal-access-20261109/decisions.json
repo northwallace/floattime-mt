@@ -1,0 +1,392 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "mapsAdded": 9,
+  "accessPoints": [
+    {
+      "id": "acc-5e5b03db050a54e5a826",
+      "name": "Baptist (Ozark NSR)",
+      "status": "access-verified",
+      "note": "NPS parking-area center lies in the signed road-end lot beside the Current River. The brochure names the river access. Retain an Area marker, not a shoreline pin.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_ParkingLots_Geographic/MapServer/0/query?where=OBJECTID%3D2870&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-5e5b03db050a54e5a826.json",
+          "sha256": "d1150e07c382518c51e63de0cf50914c10a17ec974d570453f41afb7be5491ba",
+          "bytes": 19527
+        },
+        {
+          "url": "https://www.nps.gov/ozar/planyourvisit/park-brochure.htm",
+          "file": "research/missouri-federal-access-20261109/sources/acc-5e5b03db050a54e5a826.html",
+          "sha256": "b91c7b6239e11598f69a87fccda85058a211b45d87fb5e4a2182718a957908ef",
+          "bytes": 112557
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-5e5b03db050a54e5a826.jpg",
+        "sha256": "061cbaab3bd96f93b1e06203f6604c7ca825cf7552668db00beacc13abc2dd1c"
+      }
+    },
+    {
+      "id": "acc-1e95821d6d2d51af8484",
+      "name": "Cedar Grove (Ozark NSR)",
+      "status": "verified",
+      "note": "Existing NPS canoe/kayak feature is at the bank beside the road crossing and matches the brochure access.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D16233&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-1e95821d6d2d51af8484.json",
+          "sha256": "6da2d4ab31beee1422ff539de487b62a9ef2b84fa4311e20dfcf2e2b84fc8464",
+          "bytes": 5170
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-1e95821d6d2d51af8484.jpg",
+        "sha256": "405d2e39d31bc71ea8e0a01162cf6f32a9b5b86257eeb09af9d8127d64d73d26"
+      }
+    },
+    {
+      "id": "acc-7cb7ca4609f351fa918b",
+      "name": "Hebron Access",
+      "status": "access-verified",
+      "note": "MDC explicitly documents public floating access. The agency centroid is in woods inside the access-road loop; keep Area precision, not a launch pin.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/4/query?where=OBJECTID%3D132&outFields=%2A&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-7cb7ca4609f351fa918b.json",
+          "sha256": "6e8cc98504cd1d0c4a3534ba85f9af931aeb1e6120b672c4ad95fa6f73b261a8",
+          "bytes": 1870
+        },
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/hebron-access",
+          "file": "research/missouri-federal-access-20261109/sources/acc-7cb7ca4609f351fa918b.html",
+          "sha256": "73cdefcb666e58ff79898e4539e50a755eb9114d90beff5715fdefe4201c9d71",
+          "bytes": 84354
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-7cb7ca4609f351fa918b.jpg",
+        "sha256": "3288d6a1008113107500e128ce11e52ce9a7462a1d2e6d62a355d3365c03b2c4"
+      }
+    },
+    {
+      "id": "acc-842bb99112d05a2cb162",
+      "name": "Jerktail Landing (Ozark NSR)",
+      "status": "access-verified",
+      "note": "NPS point lies beside the approach to a broad gravel bank, matching the named brochure access. Exact carry/shore position is not established; retain Area precision.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D16614&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-842bb99112d05a2cb162.json",
+          "sha256": "d06dfc3eea2ce10409024f9c31c09875c7b7dbadc4856f70d8515002dde27ce6",
+          "bytes": 5166
+        },
+        {
+          "url": "https://www.nps.gov/ozar/planyourvisit/park-brochure.htm",
+          "file": "research/missouri-federal-access-20261109/sources/acc-842bb99112d05a2cb162.html",
+          "sha256": "b91c7b6239e11598f69a87fccda85058a211b45d87fb5e4a2182718a957908ef",
+          "bytes": 112557
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-842bb99112d05a2cb162.jpg",
+        "sha256": "abb2acb44a718e9cc51f2453b96733d532b32d05b659d0aa2891eacfee4c1d2d"
+      }
+    },
+    {
+      "id": "acc-e864a21a6f465f2b9d1b",
+      "name": "North Fork Recreation Area (USFS)",
+      "status": "access-verified",
+      "note": "Current USFS page says day use is open year-round and directs boaters to the first right after entering. The agency area point is on the inland road approach; keep Area precision.",
+      "sources": [
+        {
+          "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D6718&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-e864a21a6f465f2b9d1b.json",
+          "sha256": "535159c33e98aeff7759c67b15a198ccde152ab8dd8a57b9bfa2382e0afee0ae",
+          "bytes": 7661
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-e864a21a6f465f2b9d1b.jpg",
+        "sha256": "2bbda8b16a2b81eddc33890eab948c497f2bb472b8c8bd9828cd3675a21801c2"
+      }
+    },
+    {
+      "id": "acc-afb0c23112e557089429",
+      "name": "Powder Mill (Ozark NSR)",
+      "status": "access-verified",
+      "note": "NPS parking polygon is explicitly named Powder Mill Boat Landing Restroom Parking, inland beside the river access road. Brochure documents river access; retain Area precision.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_ParkingLots_Geographic/MapServer/0/query?where=OBJECTID%3D2778&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-afb0c23112e557089429.json",
+          "sha256": "5fe310924bf4af91820edb4a3e7b95b2694b0e1db6d8f8499dd852cd2ae8faed",
+          "bytes": 5820
+        },
+        {
+          "url": "https://www.nps.gov/ozar/planyourvisit/park-brochure.htm",
+          "file": "research/missouri-federal-access-20261109/sources/acc-afb0c23112e557089429.html",
+          "sha256": "b91c7b6239e11598f69a87fccda85058a211b45d87fb5e4a2182718a957908ef",
+          "bytes": 112557
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-afb0c23112e557089429.jpg",
+        "sha256": "7eb79885e6eedad96242735e0ce63a4804bdce74d36a0fcb729f96eda1cfc0d3"
+      }
+    },
+    {
+      "id": "acc-464f4a2aa7cd5b5998f2",
+      "name": "Pulltite (Ozark NSR)",
+      "status": "verified",
+      "note": "Existing NPS landing feature matches the visible developed bank access beside the campground road.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D15043&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-464f4a2aa7cd5b5998f2.json",
+          "sha256": "be2eceaf10c8e435a1c19b9a1b3d930256a9e43df38ae6b8011951d910408200",
+          "bytes": 5170
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-464f4a2aa7cd5b5998f2.jpg",
+        "sha256": "0aa7de5194355f16b6309f9ea221cd67af7a64c01072f4b05cc23034c176546e"
+      }
+    },
+    {
+      "id": "acc-714d760f2242549098de",
+      "name": "Rocky Creek Conservation Area",
+      "status": "access-verified",
+      "note": "MDC ramp feature lies back from the river in a wooded bank approach. The area page confirms public access; retain Area precision instead of promoting the existing flagged pin.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D557&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-714d760f2242549098de.json",
+          "sha256": "f3e659d43974a34edeb0f4079014dd2cea502a1a75f828a7e7d3dadf7eace82b",
+          "bytes": 612
+        },
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/rocky-creek-conservation-area",
+          "file": "research/missouri-federal-access-20261109/sources/acc-714d760f2242549098de.html",
+          "sha256": "dc098d8d581840d715408ea98dac6209cd93c4e1779d54c34636de5a0c4fbc21",
+          "bytes": 96108
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-714d760f2242549098de.jpg",
+        "sha256": "a1825583ea2c62834a73bd5000081c01426be11a1ca26fb971f89bbaa372f5c2"
+      }
+    },
+    {
+      "id": "acc-b698caef86b25af1b1f7",
+      "name": "Round Spring (Ozark NSR)",
+      "status": "access-verified",
+      "note": "NPS landing feature is back from the water beside the road loop. The brochure documents the boat access; preserve its approximate Area marker.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D15762&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-b698caef86b25af1b1f7.json",
+          "sha256": "3fe13e07f785ff12ed9a0118a54a77043c4b23cab50d857ac44d05bb4da0fa19",
+          "bytes": 5170
+        },
+        {
+          "url": "https://www.nps.gov/ozar/planyourvisit/park-brochure.htm",
+          "file": "research/missouri-federal-access-20261109/sources/acc-b698caef86b25af1b1f7.html",
+          "sha256": "b91c7b6239e11598f69a87fccda85058a211b45d87fb5e4a2182718a957908ef",
+          "bytes": 112557
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-b698caef86b25af1b1f7.jpg",
+        "sha256": "dbb9bbb416e75b110e8fe4eaa820342b397407b20aca081c72947aad29afe837"
+      }
+    },
+    {
+      "id": "acc-9b46bbe4f847584990d8",
+      "name": "Scotts Ford Access",
+      "status": "verified",
+      "note": "MDC ramp feature matches the bank approach beside the bridge; no coordinate change.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D213&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-9b46bbe4f847584990d8.json",
+          "sha256": "1491677968977d69f74906260efe58780f3deeee6e8830ffe7dc680143c8ccd5",
+          "bytes": 601
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-9b46bbe4f847584990d8.jpg",
+        "sha256": "77d59baa092b3722955279a6da9db0dcae3b46f853081b9483590c903630877e"
+      }
+    },
+    {
+      "id": "acc-c80080ee620b5b299eac",
+      "name": "Short Bend Access",
+      "status": "access-verified",
+      "note": "MDC documents public Meramec access. The centroid is in the wooded tract near its Highway 19 road entrance, not at the water; keep Area precision and agency directions.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/4/query?where=OBJECTID%3D639&outFields=%2A&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-c80080ee620b5b299eac.json",
+          "sha256": "41d10718b46a037345c41cc4f9a305fc96b800ad41ee47ea95e16bbf05e64eb2",
+          "bytes": 1875
+        },
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/short-bend-access",
+          "file": "research/missouri-federal-access-20261109/sources/acc-c80080ee620b5b299eac.html",
+          "sha256": "9d7d871e6376a26e5f496adf8a63c3f23af7433001a77e86feb0261a93ebcaf8",
+          "bytes": 90101
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-c80080ee620b5b299eac.jpg",
+        "sha256": "409a72f39b6ad4634642704af37c139ddc6efa51f8139e7efef41594283823bf"
+      }
+    },
+    {
+      "id": "acc-4e709155b9585798843e",
+      "name": "Two Rivers (Ozark NSR)",
+      "status": "access-verified",
+      "note": "NPS access is at the campground/confluence road loop and broad gravel bank. Keep the existing approximate marker and do not invent a landing connection.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D14395&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-4e709155b9585798843e.json",
+          "sha256": "50f33e9802802f647dd0395a57e5e6215c35cedcc4cf719fc83b013b9b01f409",
+          "bytes": 5168
+        },
+        {
+          "url": "https://www.nps.gov/thingstodo/paddle-jacks-fork-river.htm",
+          "file": "research/missouri-federal-access-20261109/sources/acc-4e709155b9585798843e.html",
+          "sha256": "cc6e241cece6b6e1e69c00aad9247659eec449a4e376c230403dd24b4ac055cb",
+          "bytes": 33575
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-4e709155b9585798843e.jpg",
+        "sha256": "bb0b22166cca6424420b426e9e2087c18365bcb8e65afa115619d892fcc67c4c"
+      }
+    },
+    {
+      "id": "acc-0e12d599582a503b8bfc",
+      "name": "Van Buren (Ozark NSR)",
+      "status": "verified",
+      "note": "Existing NPS canoe/kayak feature is at the visible riverbank by the developed road loop; no coordinate change.",
+      "sources": [
+        {
+          "url": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D16564&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-federal-access-20261109/sources/acc-0e12d599582a503b8bfc.json",
+          "sha256": "39d8ff232e2986ef9614fd75be211172a400d9f0cf547cff8974ea3d3b3abefb",
+          "bytes": 5170
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-federal-access-20261109/imagery/access-acc-0e12d599582a503b8bfc.jpg",
+        "sha256": "6ebfeb61ad320baeeebe9244521bacee97a98b3cbaa7bf21658a0aa0e06cdbd6"
+      }
+    }
+  ],
+  "maps": [
+    {
+      "riverId": "current-river-lower",
+      "sectionId": "two-rivers-to-powder-mill",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "current-river-lower",
+      "sectionId": "powder-mill-to-rocky-creek-conservation-area",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "current-river-lower",
+      "sectionId": "powder-mill-to-van-buren",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "current-river-upper",
+      "sectionId": "baptist-to-cedar-grove",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "current-river-upper",
+      "sectionId": "pulltite-to-round-spring",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "current-river-upper",
+      "sectionId": "round-spring-to-jerktail-landing",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "current-river-upper",
+      "sectionId": "round-spring-to-two-rivers",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "meramec-river",
+      "sectionId": "short-bend-access-to-scotts-ford-access",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    },
+    {
+      "riverId": "north-fork-river",
+      "sectionId": "hebron-access-to-north-fork-recreation-area",
+      "newlyAvailable": true,
+      "note": "Current agency location, access description and individual satellite image reviewed. Precise landing features remain precise; parking, recreation-area and uncertain shoreline points remain clearly labeled Areas. Current access restrictions are checked separately. No new route, planning distance or timing model is approved by this access review."
+    }
+  ],
+  "held": [
+    {
+      "riverId": "big-piney-river",
+      "sectionId": "mason-bridge-access-to-slabtown-recreation-area",
+      "reason": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "riverId": "big-piney-river",
+      "sectionId": "slabtown-recreation-area-to-ross-access",
+      "reason": "Slabtown Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "riverId": "big-piney-river",
+      "sectionId": "ross-access-to-east-gate-access",
+      "reason": "This reach passes through Fort Leonard Wood. Confirm installation access requirements, a legal shuttle and the intended East Gate landing before planning this section."
+    },
+    {
+      "riverId": "current-river-lower",
+      "sectionId": "bay-nothing-gravel-boat-launch-to-float-camp-recreation-area",
+      "reason": "The current USFS page lists Float Camp Recreation Area closed and gives an April 1–October 1, 2026 season. Confirm that the intended river landing and shuttle access are available before using this section; the campground-area coordinate does not establish an open boat landing."
+    },
+    {
+      "riverId": "current-river-lower",
+      "sectionId": "float-camp-recreation-area-to-t-l-wright-memorial-access",
+      "reason": "The current USFS page lists Float Camp Recreation Area closed and gives an April 1–October 1, 2026 season. Confirm that the intended river landing and shuttle access are available before using this section; the campground-area coordinate does not establish an open boat landing."
+    },
+    {
+      "riverId": "elk-river",
+      "sectionId": "mount-shira-access-to-cowskin-access",
+      "reason": "Noel Dam lies between Mount Shira and Cowskin. A legal, usable portage needs verification before enabling this section map."
+    },
+    {
+      "riverId": "huzzah-creek",
+      "sectionId": "red-bluff-recreation-area-to-huzzah-conservation-area-huzzah-creek",
+      "reason": "Red Bluff Recreation Area (USFS): Forest Service GIS marks the recreation site closed. Reconcile current landing status with the agency before releasing an access map."
+    },
+    {
+      "riverId": "little-piney-creek",
+      "sectionId": "lane-spring-recreation-area-to-jerome-access",
+      "reason": "The current USFS page lists Lane Spring closed for winter after October 31, 2026, with limited off-season day-use parking outside the gate. A usable boat-carry route from that parking to the intended launch is not established. Confirm that route and current access before using this section."
+    }
+  ],
+  "agencyPages": {
+    "file": "research/missouri-federal-access-20261109/sources/current-pages.json",
+    "sha256": "5a36211093451005a888d480c9304be4d8906772cfdbb6b01e17ef3cf5a6e610"
+  },
+  "limitations": "No coordinates, precision statuses, IDs, mileage, guide times, calibration or GPS remaining-time changed. Closure conflicts and Fort Leonard Wood/Noel Dam access questions remain held."
+}

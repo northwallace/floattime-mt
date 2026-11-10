@@ -133,7 +133,28 @@ class AgencyCourseTests(unittest.TestCase):
         by_id = {identity: row for identity, row in zip(identities, now)}
         for row in old:
             identity = (row['riverId'], row['sectionId'])
-            self.assertEqual(by_id.get(identity), row, identity)
+            refinements = {
+                ('salt-river-lower', 'lsr-water-users-phon-d'): ('research/western-access-review-20261109/course-decisions.json', 'routes'),
+                ('big-piney-river', 'boiling-spring-access-to-mason-bridge-access'): ('research/big-piney-courses-20261109/decisions.json', 'courses'),
+                ('crawfish-river', 'hubbleton-canoe-launch-to-olson-road-canoe-launch'): ('research/wisconsin-carry-access-20261109/decisions.json', 'course'),
+            }
+            if identity in refinements:
+                # These later reviews explicitly reduced precision to course
+                # overviews. Require the exact recorded approval and no new
+                # navigation/timing capability, rather than ignoring changes.
+                self.assertEqual(by_id.get(identity), dict(row, scope='river-course-overview'))
+                manifest, collection = refinements[identity]
+                decisions = read(ROOT / manifest)[collection]
+                if isinstance(decisions, dict): decisions = [decisions]
+                relative = 'catalog/routes/' + row['state'] + '/' + row['file'].split('/')[-1]
+                decision = next(r for r in decisions if r.get('route', {}).get('file') == relative)
+                source = ROOT / relative
+                self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), decision['route']['sha256'])
+                route = read(source)
+                self.assertEqual(route['features'], dict(display=True, landOverlay=False, distanceEstimate=False, remainingTime=False))
+                validate(route, self.catalog, ROOT)
+            else:
+                self.assertEqual(by_id.get(identity), row, identity)
         before = read(B / 'before/catalog/rivers/kettle-river-mn.json')
         current = read(ROOT / 'catalog/rivers/kettle-river-mn.json')
         del current['sections'][0]['routeReview']

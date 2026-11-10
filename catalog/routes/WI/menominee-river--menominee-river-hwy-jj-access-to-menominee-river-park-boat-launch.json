@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "menominee-river",
+  "sectionId": "menominee-river-hwy-jj-access-to-menominee-river-park-boat-launch",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Menominee River",
+    "evidenceFile": "research/menominee-lower-courses-20261109/sources/menominee-river.json",
+    "sha256": "b4d79fb7281f8e0468abab29a6cf1826ec6935ecf37c72a533d3c35512e648d3"
+  },
+  "putIn": {
+    "name": "Menominee River-Hwy Jj Access",
+    "lat": 45.32593922163172,
+    "lon": -87.66328478295989
+  },
+  "takeOut": {
+    "name": "Menominee River Park Boat Launch",
+    "lat": 45.28007166149379,
+    "lon": -87.69964740064037
+  },
+  "catalogMiles": 3.9,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -87.66227714954381,
+        45.32599728324923
+      ],
+      [
+        -87.6622504517337,
+        45.325767143803446
+      ],
+      [
+        -87.66191071847201,
+        45.324071543661454
+      ],
+      [
+        -87.66154271806776,
+        45.323064210781595
+      ],
+      [
+        -87.66151631764292,
+        45.322174943532175
+      ],
+      [
+        -87.66158525092945,
+        45.32126534345983
+      ],
+      [
+        -87.66209465051918,
+        45.32036480993841
+      ],
+      [
+        -87.66259405161914,
+        45.31970854352144
+      ],
+      [
+        -87.66470225124034,
+        45.31745200986508
+      ],
+      [
+        -87.66588191799363,
+        45.317098409438195
+      ],
+      [
+        -87.66729285171947,
+        45.31648294246373
+      ],
+      [
+        -87.66789565170869,
+        45.315606542112754
+      ],
+      [
+        -87.66866845203734,
+        45.314422541843854
+      ],
+      [
+        -87.6693683182268,
+        45.31348134187414
+      ],
+      [
+        -87.67099605238306,
+        45.31218140807908
+      ],
+      [
+        -87.67156451995787,
+        45.31137100812145
+      ],
+      [
+        -87.67435605376673,
+        45.30932820769291
+      ],
+      [
+        -87.67706345313005,
+        45.30702814067217
+      ],
+      [
+        -87.67874185400107,
+        45.30601800705581
+      ],
+      [
+        -87.67939012115744,
+        45.305564606867655
+      ],
+      [
+        -87.67989545434088,
+        45.30475280669077
+      ],
+      [
+        -87.68043345508457,
+        45.30314173905595
+      ],
+      [
+        -87.68118905434812,
+        45.302368339366275
+      ],
+      [
+        -87.68584705511617,
+        45.30008540561939
+      ],
+      [
+        -87.68764985597117,
+        45.2983604054271
+      ],
+      [
+        -87.68859845553442,
+        45.297452738215064
+      ],
+      [
+        -87.69212165632827,
+        45.293635737337205
+      ],
+      [
+        -87.69293905705938,
+        45.2918153370438
+      ],
+      [
+        -87.69347705676252,
+        45.28970820311684
+      ],
+      [
+        -87.69380785600053,
+        45.28775960304037
+      ],
+      [
+        -87.69384145691963,
+        45.2876634031621
+      ],
+      [
+        -87.69437752331088,
+        45.28612700218077
+      ],
+      [
+        -87.69793012334816,
+        45.282332602149445
+      ],
+      [
+        -87.69861832411262,
+        45.2808801350771
+      ],
+      [
+        -87.69879000677022,
+        45.27998948475167
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "75471927",
+      "75471951"
+    ],
+    "putInOffsetMeters": 79.22328930024565,
+    "takeOutOffsetMeters": 67.85107273185568,
+    "putInSourceStationMeters": 1091.888198764887,
+    "takeOutSourceStationMeters": 1419.1236064756567
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river course only; shoreline connections, usable passages and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 3.815,
+      "endpointOffsetsMeters": [
+        79.0,
+        67.7
+      ],
+      "mileageDifferencePercent": 2.18,
+      "maxSegmentMeters": 506.1,
+      "vertices": 35
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/menominee-lower-courses-20261109/decisions.json",
+    "note": "All 7 overlapping course panels and both endpoint panels checked. Full source connectivity, agency access evidence and nearby dam inventory reviewed separately."
+  },
+  "overviewReview": {
+    "signature": "79bdfd94973865396b544bac697258e2e80ab6dbe80a7b49c6ebc0e4310680ee",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. This stretch is upstream of Park Mill Dam.",
+    "note": "River-course overview only; not a surveyed route or navigation aid.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing facility area retained; exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing facility area retained; exact shore connection is not drawn."
+      }
+    }
+  }
+}

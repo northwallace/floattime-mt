@@ -331,10 +331,25 @@
       "aliases": []
     },
     "Moab Bridge Boat Ramp": {
-      "status": "pending",
-      "note": "No current managing-agency page found for the Moab (US-191 bridge) ramp; UGRC 2009 attributes list State Sovereign Land. Coordinate is a candidate only.",
+      "status": "access-verified",
+      "note": "Grand County’s 2022 action plan identifies the existing public Town Ramp and its river access. The signed 2025 Utah river plan and June 2026 Moab council packet also identify it as an existing access. The older UGRC feature 26 matches that facility and the ramp vicinity in imagery. It remains an approximate Area marker, not a surveyed landing. Proposed Lions Park access and proposed reconstruction are not represented as completed facilities.",
       "id": "acc-e6d8c0728ee9578180a2",
-      "aliases": []
+      "aliases": [
+        "Moab Town Boat Ramp",
+        "Town Ramp"
+      ],
+      "areaCenter": {
+        "lat": 38.604868,
+        "lon": -109.575014,
+        "feature": "UGRC boat-ramp feature 26, matched to the county Town Ramp site plan; approximate facility area"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "Grand County",
+      "sourceName": "Grand County — Moab Bridge Boat Ramp",
+      "sourceUrl": "https://www.grandcountyutah.net/AgendaCenter/ViewFile/Item/325?fileID=39615",
+      "coordinateSourceUrl": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/BoatRamps/FeatureServer/0/query?objectIds=26&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use Moab Town Boat Ramp on the north bank of the Colorado River near US 191, just west of the pedestrian bridge. Follow the signed vehicle access to the ramp and keep the shared access road clear. Confirm current ramp and parking conditions during your shuttle."
     },
     "Potash Boat Ramp": {
       "status": "access-verified",
@@ -347,9 +362,9 @@
       "sourceName": "NPS Canyonlands: Flatwater Trips",
       "sourceUrl": "https://www.nps.gov/cany/planyourvisit/flatwater.htm",
       "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/FeatureServer/0/query?objectIds=3023&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-25",
+      "verifiedOn": "2026-11-09",
       "directions": "Potash boat ramp at the end of Potash Road (SR-279) by the potash plant evaporation ponds; outside Canyonlands NP.",
-      "note": "Imagery: the NPS POI is in the river channel about 20 m off the west bank; the ramp/beach seen on imagery is about 110 m south. No BLM (managing-agency) page was found. Site lies outside Canyonlands NP; NPS POI and NPS flatwater page name it as a launch but no BLM (managing agency) page was found, so not verified. Restrictions: permit-required-downstream",
+      "note": "NPS identifies Potash Boat Ramp in its Canyonlands flatwater guidance and boating guide. NPS POI 3023 is explicitly an arbitrary point with unknown coordinate accuracy. Imagery shows it near the launch facility but offset from the visible ramp. Retain the agency coordinate as an approximate Area marker; follow the signed ramp at the end of Potash Road, not the marker as an exact water entry.",
       "id": "acc-78016af00c7a5b1aa1cc",
       "aliases": []
     },
@@ -388,10 +403,22 @@
       "aliases": []
     },
     "Clay Hills Boat Ramp": {
-      "status": "pending",
-      "note": "Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the BLM point is on a dirt track with no river visible; it is 263 m from the NHD centreline. The Clay Hills take-out shifts with Lake Powell sediment. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery.",
+      "status": "access-verified",
+      "note": "BLM identifies Clay Hills as the San Juan take-out and publishes recreation feature 70434. Imagery matches the road-end facility, but the agency point is inland from the river in a shifting sediment delta. This establishes the approximate access area only. BLM warns of a dangerous waterfall downstream: do not miss the take-out. The Mexican Hat launch is currently closed, so that trip remains withheld despite resolving this facility area.",
       "id": "acc-d3ef9a590d1d5057a2fe",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 37.2945,
+        "lon": -110.397533,
+        "feature": "BLM recreation feature 70434 at the Clay Hills road-end facility, inland from the changing river edge"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "BLM and National Park Service",
+      "sourceName": "BLM and National Park Service — Clay Hills Boat Ramp",
+      "sourceUrl": "https://www.blm.gov/visit/san-juan-river",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70434&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Reach Clay Hills via Utah 276 and San Juan County Road 278, an 11-mile dirt road. BLM recommends moderate ground clearance; wet conditions can make the road impassable for 2WD vehicles. Identify the current take-out during your shuttle. The Area marker is the road-end facility, not the waterline."
     },
     "Fuller Bottom (San Rafael Put-in)": {
       "status": "verified",
@@ -429,10 +456,22 @@
       "aliases": []
     },
     "Bonanza Bridge Boat Launch": {
-      "status": "pending",
-      "note": "BLM's own site record says the launch is on private property and open April 1-October 1 only; access permission/season not confirmable as public. Kept pending.",
+      "status": "access-verified",
+      "note": "BLM’s White River page explicitly names Bonanza Bridge as the put-in and Enron as the take-out. Recreation feature 70641 matches a riverside access track in imagery. Its description specifies private property and an April 1–October 1 season. The facility location is supported, but this is not year-round public access or an exact shoreline pin. The current local trip remains withheld outside that published season until access is rechecked.",
       "id": "acc-bc92f1f4d92c5ad28ebb",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 39.97689,
+        "lon": -109.179303,
+        "feature": "BLM recreation feature 70641 at the primitive Bonanza launch vicinity"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "BLM visitor guidance; private access property",
+      "sourceName": "BLM visitor guidance; private access property — Bonanza Bridge Boat Launch",
+      "sourceUrl": "https://www.blm.gov/visit/white-river-recreation-area",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70641&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Bonanza launch access near Utah Highway 45. BLM lists this primitive launch on private property with an April 1–October 1 season. Confirm current landowner permission and access conditions with BLM Vernal before planning a trip; do not enter outside the published season without authorization."
     },
     "Enron Boat Ramp (White River)": {
       "status": "verified",

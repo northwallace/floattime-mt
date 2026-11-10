@@ -33,6 +33,30 @@
     "henrys-fork-big-springs": {
       "status": "pending",
       "note": "Public boating facilities and approximate areas reviewed separately from exact landings and river-course geometry. The spring-fed channel is incomplete in the current USGS route source."
+    },
+    "payette-main": {
+      "status": "pending",
+      "note": "Public Payette boating facilities, guide distances and imagery reviewed. Individually approved sections show approximate access maps; ambiguous legacy endpoints remain pending."
+    },
+    "payette-sf": {
+      "status": "pending",
+      "note": "Public Payette boating facilities, guide distances and imagery reviewed. Individually approved sections show approximate access maps; ambiguous legacy endpoints remain pending."
+    },
+    "salmon-riggins": {
+      "status": "pending",
+      "note": "Official public boating access, named facility identities and approximate areas checked separately from river-course geometry. Approved sections have individual reviews; dotted lines require independent full-course checks."
+    },
+    "salmon-salmon": {
+      "status": "pending",
+      "note": "Official public boating access, named facility identities and approximate areas checked separately from river-course geometry. Approved sections have individual reviews; dotted lines require independent full-course checks."
+    },
+    "selway": {
+      "status": "pending",
+      "note": "Agency facility identities reviewed separately from exact shoreline pins and river geometry. Only individually approved sections show maps; unresolved trip definitions remain held."
+    },
+    "lochsa": {
+      "status": "pending",
+      "note": "White Pine, Fish Creek and Knife Edge are documented public access areas. The Lowell entry remains held; Wild Goose is a separate seasonally closed facility, not a substitute Lowell pin. Only individually reviewed sections display maps."
     }
   },
   "points": {
@@ -79,19 +103,19 @@
     },
     "Orofino": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "The BLM Clearwater guide lists Orofino City Park as foot access without a boat-ramp or canoe-launch designation. A named public boating landing for this Orofino endpoint remains unconfirmed; a town or park coordinate alone is insufficient.",
       "id": "acc-9362ea81884d5ac388f5",
       "aliases": []
     },
     "Peck": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "The BLM Clearwater guide lists Peck Sports Access as foot access without a boat-ramp or canoe-launch designation. Confirm a public boating landing and lawful approach before using this endpoint; do not substitute nearby Harpers Bend without reviewing the trip.",
       "id": "acc-dc313147ed8e5a1dbf49",
       "aliases": []
     },
     "Spalding (Nez Perce NHP)": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "The BLM guide lists the Spalding pulloff as foot access. A public boat takeout and carrying route through the park remain unconfirmed. The NPS compendium limits pedestrian travel to designated paths and mown areas; a park coordinate does not establish a boat landing.",
       "id": "acc-ec295a4266e355fa9476",
       "aliases": []
     },
@@ -175,39 +199,87 @@
     },
     "White Pine / Knife Blade": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "Retired ambiguous identity retained for historical reports. It combined White Pine upstream of Fish Creek with Knife Edge downstream. The corrected White Pine–Fish Creek section uses the separate White Pine River Access ID; Knife Edge has its own ID and section. Do not assign a coordinate to this combined label.",
       "id": "acc-423d5ef93a175085818b",
       "aliases": []
     },
     "Fish Creek": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "USFS boating-site record 5217.000411 identifies this facility, distinct from Fish Creek Trailhead and unrelated Fish Creek campgrounds. Approximate access area only; no exact landing or bank-side instruction.",
       "id": "acc-799e6614914b5e51b758",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 46.33479226386277,
+        "lon": -115.34487236528052,
+        "feature": "USFS public boating facility vicinity; approximate area, not a surveyed landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "US Forest Service",
+      "sourceName": "US Forest Service recreation site inventory",
+      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%275217.000411%27&outFields=%2A&outSR=4326&f=json",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%275217.000411%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Fish Creek River Access on Highway 12 beside the Lochsa River. USFS documents stairs and a raft slide; confirm the usable water entry and parking on arrival."
     },
     "Wilderness Gateway": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "USFS and Recreation.gov document direct Lochsa River access and rafting here. The inventory coordinate is within the campground. It is not the separate North Wilderness Gateway staging area in the emergency-response plan, and no driving or shore connector is mapped.",
       "id": "acc-bd7695cb10975daf8fcd",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 46.34218826799842,
+        "lon": -115.30929135987088,
+        "feature": "USFS public boating facility vicinity; approximate area, not a surveyed landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "US Forest Service",
+      "sourceName": "US Forest Service recreation site inventory",
+      "sourceUrl": "https://www.recreation.gov/camping/poi/232326",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%275224.000411%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the designated river access at Wilderness Gateway Campground on Highway 12. Confirm the usable launch and parking at the facility before your shuttle; the marker identifies the campground access area, not an exact shore entry."
     },
     "Lowell": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "A town/confluence label is not yet a documented public takeout. The Three Rivers Lodge response-plan coordinate is a water intake, not a boat launch; it must not become an access pin. Check a named public boating facility before promoting this identity.",
       "id": "acc-2890f5ffae965d04bfa6",
       "aliases": []
     },
     "Banks": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "USFS and the BLM boating guide identify this public launch. The pin is the agency facility area beside the parking loop, not an exact water-entry point. USFS lists a late-May through late-September operating season, subject to snow; confirm current access and fees before arranging a shuttle.",
       "id": "acc-ae1ce3a1e65c5b14b81e",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.08492000344818,
+        "lon": -116.11568607888694,
+        "feature": "USFS boating-facility inventory; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Boise National Forest facility page and Payette River boating guide",
+      "sourceUrl": "https://www.fs.usda.gov/r04/boise/recreation/banks-river-access",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%275472.002731%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Banks River Access at the Highway 55/Banks-Lowman Road junction. The marker identifies the public boating facility, not Banks Beach farther downstream or the nearby store. Use the signed ramp and keep the loading area clear."
     },
     "Beehive Bend": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "BLM identifies Beehive Bend as the Main Payette takeout. Approximate facility area only; no shoreline or driving connector is mapped. Day use only. The current BLM page lists $5 daily parking or the $30 Boise National Forest Annual Day Use Pass; confirm posted fees when visiting.",
       "id": "acc-eb45f000946b566e97a9",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.00471291059556,
+        "lon": -116.18039618870714,
+        "feature": "BLM boating-facility inventory; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "Bureau of Land Management facility page and Payette River boating guide",
+      "sourceUrl": "https://www.blm.gov/visit/payette-river-beehive-bend",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?where=GlobalID%3D%27%7B09eb81f9-f52a-47d1-9d49-720abb7b53ec%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Beehive Bend takeout on Highway 55, about six miles north of Horseshoe Bend. The pin marks the facility entrance/parking vicinity. Follow the signed path to the river and confirm the usable landing before launching upstream."
     },
     "Horseshoe Bend boat ramp": {
       "status": "pending",
@@ -234,64 +306,172 @@
       "aliases": []
     },
     "Danskin": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "USFS site 5531.002731 and BLM guide SF04 identify the South Fork Payette launch. The marker is an approximate facility area inland of the river, not an exact landing. Day use only; USFS lists late May through late September, subject to snow. The separate South Fork Boise site is not part of this trip.",
       "id": "acc-2cf366328d855b6e9d1d",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.06075602926092,
+        "lon": -115.814593017954,
+        "feature": "USFS boating-facility inventory; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Boise National Forest facility page and Payette River boating guide",
+      "sourceUrl": "https://www.fs.usda.gov/r04/boise/recreation/danskin-rest-area-boating-site",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%275531.002731%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use Danskin Rest Area Boating Site beside the South Fork Payette on Banks-Lowman Road. This is not Danskin Floatboat Access on the South Fork Boise River. Use the signed public facility and check seasonal access before setting a shuttle."
     },
     "Confluence (Garden Valley)": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "BLM documents a gravel ramp and parking at this takeout. The marker uses its approximate facility-area coordinate; no exact landing or shore connector is claimed. Day use only. The current BLM page lists $5 daily parking or the $30 Boise National Forest Annual Day Use Pass; check posted fees and conditions.",
       "id": "acc-9ae0a95750fa56a6b8b3",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.10248041114002,
+        "lon": -116.00586876441879,
+        "feature": "BLM boating-facility inventory; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "Bureau of Land Management facility page and Payette River boating guide",
+      "sourceUrl": "https://www.blm.gov/visit/payette-river-confluence",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?where=GlobalID%3D%27%7B7a7aace2-1c16-430f-8cc6-02cce046c7c4%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the BLM Confluence boating site on Banks-Lowman Road just downstream of the Middle Fork/South Fork Payette junction. This is the Garden Valley takeout, not the North Fork confluence at Banks. Finish here; continuing downstream enters the harder Staircase run."
     },
     "Riggins city": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "Approximate launch area derived from the boat-launch symbol on BLM’s April 2026 georeferenced river map and checked against imagery. The symbol spans roughly 100 metres at map scale; this is not an exact shoreline or bank-side instruction.",
       "id": "acc-70b697e8b4a65dcfabdf",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.42536,
+        "lon": -116.3118,
+        "feature": "BLM 2026 boat-launch map symbol; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "City of Riggins",
+      "sourceName": "BLM Lower Salmon boating map and guide",
+      "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2026-05/Vinegar%20to%20Pine%20Bar%20-%20Lower%20Salmon%20River_04242026.pdf",
+      "coordinateSourceUrl": "https://www.blm.gov/sites/default/files/docs/2026-05/Vinegar%20to%20Pine%20Bar%20-%20Lower%20Salmon%20River_04242026.pdf",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed City of Riggins boat launch beside the city park. This is not Shorts Bar or Island Bar upstream. Confirm the usable ramp and parking when setting your shuttle."
     },
     "Lucile": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "BLM identifies this as a Riggins-trip takeout. Its facility GIS point and current river-map symbol agree on this site; the general web-page coordinate points farther downstream and was not adopted. The marker is an approximate facility area. Day use only; no camping.",
       "id": "acc-75babddc0b7055f0b999",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.52529146442901,
+        "lon": -116.30465296337175,
+        "feature": "Agency boating-facility inventory; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "BLM Lucile boating facility and GIS inventory",
+      "sourceUrl": "https://www.blm.gov/visit/lucile-recreation-site",
+      "coordinateSourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?where=GlobalID%3D%27%7B9acb338b-cfd4-4265-8037-3f43a57589ff%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use Lucile Recreation Site off Highway 95 near milepost 203.8. This is the developed parking and launch site downstream of Old Lucile; the two launches are separate."
     },
     "Hammer Creek": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "BLM documents public boating access here. The approximate area comes from the launch symbol on BLM’s April 2026 georeferenced map, checked against imagery. It is about 160 metres south of the recreation-inventory center; the latter was not used as a launch pin. No exact landing or shore connector is claimed. Camping fees and current Lower Salmon permit/equipment rules apply.",
       "id": "acc-c1539731d5a1552eaf53",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.7649,
+        "lon": -116.32428,
+        "feature": "BLM 2026 boat-launch map symbol; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "BLM Lower Salmon boating map and guide",
+      "sourceUrl": "https://www.blm.gov/visit/hammer-creek-recreation-site",
+      "coordinateSourceUrl": "https://www.blm.gov/sites/default/files/docs/2026-05/Vinegar%20to%20Pine%20Bar%20-%20Lower%20Salmon%20River_04242026.pdf",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Hammer Creek Recreation Site boat launch west of White Bird. Follow the facility signs from the road to the ramp; the marker identifies the approximate launch area."
     },
     "Heller Bar (Snake confluence)": {
       "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "note": "Legacy duplicate label, retained for identity history only. The actual Heller Bar concrete ramp is the existing Washington record acc-2aefb784ba22590db8e8, downstream of the Grande Ronde confluence on the Snake. It is not at the Salmon/Snake confluence. Do not independently promote or create a second landing here.",
       "id": "acc-3e73957c1637524ca9b1",
       "aliases": []
     },
     "Salmon (Island Park ramp)": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "IDFG site 264 identifies this City of Salmon facility with two boat ramps. The agency coordinate marks the park/ramp vicinity, not a specific shoreline entry. The park is open 6 a.m.–10 p.m.; IDFG lists running-water restrooms March 1–November 30. No camping.",
       "id": "acc-4b92537ad645507ea3ba",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.17685510733067,
+        "lon": -113.89906687475633,
+        "feature": "Agency boating-facility inventory; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "City of Salmon",
+      "sourceName": "Idaho Fish and Game public boating access inventory",
+      "sourceUrl": "https://idfg.idaho.gov/visit/location-idfg-fishing-and-boating-access-sites/22441-fishing-and-boating-access-site-island",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?where=ID%3D264&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use City of Salmon Island Park and its designated boat ramps. This is Island Park in Lemhi County, not Island Park Reservoir in Fremont County. Confirm the suitable ramp and parking at the park."
     },
     "North Fork": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "IDFG site 295 lists an active boat ramp and a public-access lease at North Fork. Approximate facility area only. Daylight use only; adjacent campsites and picnic sites are private. This is North Fork on the upper Salmon, not the remote Middle Fork confluence.",
       "id": "acc-170d9d9a305b5ee3aa3d",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.405387033901214,
+        "lon": -113.99519192643768,
+        "feature": "Agency boating-facility inventory; approximate access area, not a surveyed shoreline landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "Idaho Fish and Game / private access lease",
+      "sourceName": "Idaho Fish and Game public boating access inventory",
+      "sourceUrl": "https://idfg.idaho.gov/visit/location-idfg-fishing-and-boating-access-sites/22471-fishing-and-boating-access-site-north",
+      "coordinateSourceUrl": "https://gisportal-idfg.idaho.gov/hosting/rest/services/Access/IDFG_Fishing_and_Boating_Access_Sites_Public/MapServer/0/query?where=ID%3D295&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the designated North Fork boat access behind the North Fork Store and Campground off US Highway 93. This public access is provided through an Idaho Fish and Game/private land lease. Stay within the signed access area."
     },
     "Paradise Guard Station": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "USFS identifies this developed boat launch separately from Paradise Campground, about half a mile away. The marker is an approximate launch area. No overnight parking at the launch; the Forest Service directs overnight parking east of Paradise Campground. No drinking water.",
       "id": "acc-6e940b468d6d553aae8b",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.86083961438562,
+        "lon": -114.7427909506722,
+        "feature": "USFS public boating facility vicinity; approximate area, not a surveyed landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "US Forest Service",
+      "sourceName": "US Forest Service recreation site inventory",
+      "sourceUrl": "https://www.fs.usda.gov/r01/bitterroot/recreation/paradise-boating-site",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%275098.000271%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use Paradise Boating Site at the end of Forest Road 6223, reached from Magruder Crossing. Follow the launch signs rather than stopping at the campground. Check mountain-road conditions before arranging the long shuttle."
     },
     "Race Creek / Selway Falls": {
-      "status": "pending",
-      "note": "No sourced access record has been added yet.",
+      "status": "access-verified",
+      "note": "USFS boating-site record 6974.000961 identifies Race Track as the wilderness-trip takeout above Selway Falls. This is an approximate cobble-bar access area, distinct from Race Creek Campground farther upstream. No amenities or mapped shore connection. The falls are outside this trip.",
       "id": "acc-2d79eae710cc5ec99f0b",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 46.04685724540732,
+        "lon": -115.29676729674291,
+        "feature": "USFS public boating facility vicinity; approximate area, not a surveyed landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "US Forest Service",
+      "sourceName": "US Forest Service recreation site inventory",
+      "sourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%276974.000961%27&outFields=%2A&outSR=4326&f=json",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%276974.000961%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the Race Track wilderness takeout on Selway River Road 223, approximately 20 road miles upstream from Lowell. It is above Selway Falls. Identify the cobble-bar takeout while setting your shuttle and take out before the falls."
     },
     "Conant": {
       "id": "acc-e0e189c765525569ab75",
@@ -345,10 +525,22 @@
       }
     },
     "Palisades Dam": {
-      "status": "pending",
-      "note": "The public launch below Palisades Dam is documented, but its map location still needs checking. Help us pinpoint the river launch; reservoir ramps and Palisades Creek are different access sites.",
+      "status": "access-verified",
+      "note": "BLM map 1 locates the named boat access beside the paved loop below the dam; satellite imagery corroborates the ramp and road layout. The marker represents that approximate access area, not a surveyed landing. The Forest Service web/GIS coordinate points far east of the dam and is not used. Help refine the marker through the correction link if you know the landing.",
       "id": "acc-cf9caccd26a955af945c",
-      "aliases": []
+      "aliases": [],
+      "accessType": "Public boat ramp (approximate access area)",
+      "operator": "U.S. Forest Service — Caribou-Targhee National Forest",
+      "sourceName": "USFS — Palisades Dam Boat Landing; BLM — South Fork Snake boating map 1",
+      "sourceUrl": "https://www.fs.usda.gov/r04/caribou-targhee/recreation/palisades-dam-boat-landing",
+      "coordinateSourceUrl": "https://www.blm.gov/sites/blm.gov/files/documents/files/idaho_southfork_boatingmapsALL.pdf",
+      "verifiedOn": "2026-11-09",
+      "areaCenter": {
+        "lat": 43.3371,
+        "lon": -111.2038,
+        "feature": "Approximate below-dam boat-access area interpreted from BLM map 1 and checked against imagery; not an agency GPS fix"
+      },
+      "directions": "Follow the signed Palisades Dam boat access below the dam via Riverside Parkway. Confirm the usable ramp and takeout while setting your shuttle. This is the river launch, not Calamity on the reservoir or Palisades Creek."
     },
     "Spring Creek": {
       "id": "acc-09d76b6c03415210a557",
@@ -826,6 +1018,44 @@
       "coordinateSourceUrl": "https://henrysfork.org/wp-content/uploads/Henrys-Fork-Angler-Access-Lower-River-Updated.pdf",
       "verifiedOn": "2026-11-04",
       "note": "IDFG currently lists a boating ramp. HFF page 36 identifies the county takeout. The general agency point is in the parking area; this approximate center is at the visible ramp approach. Bridge-replacement imagery is not a current ramp-condition inspection, and the exact shoreline connection remains unverified."
+    },
+    "White Pine River Access": {
+      "id": "acc-1a849da2fd1d54aa8728",
+      "aliases": [
+        "Indian Grave Creek River Access"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 46.445603348131435,
+        "lon": -115.09023681847474,
+        "feature": "USFS public river-access facility vicinity; approximate, not a surveyed landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "US Forest Service",
+      "sourceName": "US Forest Service",
+      "sourceUrl": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/white-pine-river-access",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%273492421010602%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed White Pine River Access, also called Indian Grave Creek, near Highway 12 milepost 138. A primitive gravel drive leads to the loading area; unload one group at a time and use the small parking area above it.",
+      "note": "The current Forest Service page documents public kayak and canoe access, limited parking and no camping. The USFS inventory coordinate is represented as an approximate facility area, not an exact ramp or bank-side instruction. White Pine and Knife Edge are separate sites."
+    },
+    "Knife Edge River Access": {
+      "id": "acc-9bdcfd0bef815a09bc0e",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 46.22742824243649,
+        "lon": -115.47387936817738,
+        "feature": "USFS public river-access facility vicinity; approximate, not a surveyed landing"
+      },
+      "accessType": "River access (area)",
+      "operator": "US Forest Service",
+      "sourceName": "US Forest Service",
+      "sourceUrl": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/knife-edge-campground-and-river-access",
+      "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?where=site_cn%3D%275226.000411%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use Knife Edge Campground and River Access on Highway 12, about 11.6 road miles east of Lowell. Identify the usable landing and parking before setting the shuttle. Snow can restrict access.",
+      "note": "USFS identifies this public river/boat access separately from White Pine. The inventory coordinate is an approximate facility area, not a surveyed landing. A 2026 order reserved some campsites for boating-season parking through June 30; it did not close the river access. Check current notices before visiting."
     }
   }
 }

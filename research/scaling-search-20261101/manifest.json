@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "status": "local-review-complete",
+  "checkedOn": "2026-11-01",
+  "localOnly": true,
+  "published": false,
+  "decisionFile": "research/scaling-search-20261101/wi-decisions.json",
+  "preview": "http://127.0.0.1:8786/#calculator",
+  "counts": {
+    "rivers": 62,
+    "sections": 369,
+    "stableAccessIds": 431,
+    "accessMapsBefore": 302,
+    "accessMapsNow": 304,
+    "mapsReopened": 2,
+    "mapsHeldBefore": 67,
+    "mapsHeldNow": 65,
+    "dottedPathsBefore": 37,
+    "dottedPathsAdded": 0,
+    "dottedPathsNow": 37,
+    "accessPrecision": {
+      "access-verified": 332,
+      "verified": 98,
+      "pending": 1
+    },
+    "availableMapsWithoutDottedPath": 267,
+    "newLiveTimingModels": 0,
+    "newGpsRemainingTimeEnabled": 0
+  },
+  "siteCounts": {
+    "rivers": 232,
+    "states": 12,
+    "sections": 967,
+    "accessMapsBefore": 739,
+    "accessMapsNow": 741,
+    "dottedPathsBefore": 159,
+    "dottedPathsAdded": 0,
+    "dottedPathsNow": 159
+  },
+  "search": {
+    "features": [
+      "Homepage search by river, state, put-in, take-out, or former agency name",
+      "Section links land on the matching server-rendered access guide",
+      "State-aware search and incremental results in the directory",
+      "New catalog states and rivers require no search-specific configuration",
+      "Shared compact index, no external search service and no route-geometry fetch for search",
+      "Server-rendered river links remain available if search fails to load"
+    ],
+    "compactCatalogBytes": 174235,
+    "benchmarkFile": "research/scaling-search-20261101/search-benchmark.json"
+  },
+  "verification": {
+    "python": {
+      "passed": 149,
+      "failed": 0,
+      "skipped": 0,
+      "log": "research/scaling-search-20261101/python-tests.log"
+    },
+    "javascript": {
+      "passed": 52,
+      "failed": 0,
+      "skipped": 0,
+      "log": "research/scaling-search-20261101/javascript-tests.log"
+    },
+    "localHttp": {
+      "passed": 412,
+      "log": "research/scaling-search-20261101/http-checks.json"
+    },
+    "catalogCheck": "passed",
+    "reviewQueueCheck": "passed",
+    "releaseCheck": "research/scaling-search-20261101/release-check.json",
+    "gitDiffCheck": "passed",
+    "existingLandingCoordinatesPathsMilesAndGauges": "unchanged; regression checked against this pass baseline",
+    "browser": "research/scaling-search-20261101/browser-checks.json"
+  },
+  "limits": [
+    "The two reopened maps show approximate facility areas, not newly verified water-edge landings.",
+    "Portages are described using agency/operator sources. No continuous dotted path is drawn across either dam.",
+    "65 Wisconsin maps still need source-backed resolution; all stay held.",
+    "No new flow-to-speed calibration or GPS remaining-time feature is enabled."
+  ],
+  "nextWork": [
+    "Use remaining-wisconsin-maps.json and the private review inventory to resolve holds by managing agency and shared barrier, preserving stable access IDs.",
+    "Keep Lake Mcdonald held: its WDNR on-landscape dam record is not negated by its low recorded hydraulic height or omission from another map.",
+    "Review the local search and map notices before making a separate publishing decision."
+  ],
+  "screenshots": [
+    "search-desktop.png",
+    "search-mobile.png",
+    "rhinelander-map.png",
+    "cornell-map.png"
+  ]
+}

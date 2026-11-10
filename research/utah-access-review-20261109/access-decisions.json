@@ -1,0 +1,100 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "accessPoints": [
+    {
+      "id": "acc-e6d8c0728ee9578180a2",
+      "name": "Moab Bridge Boat Ramp",
+      "status": "access-verified",
+      "note": "Grand County’s 2022 action plan identifies the existing public Town Ramp and its river access. The signed 2025 Utah river plan and June 2026 Moab council packet also identify it as an existing access. The older UGRC feature 26 matches that facility and the ramp vicinity in imagery. It remains an approximate Area marker, not a surveyed landing. Proposed Lions Park access and proposed reconstruction are not represented as completed facilities.",
+      "imagery": {
+        "file": "research/utah-access-review-20261109/imagery/moab.jpg",
+        "sha256": "bfa4d79c434cdb7b066d7e153b9f8d18319d3c1ff315889ecde0560533d7e98a"
+      }
+    },
+    {
+      "id": "acc-d3ef9a590d1d5057a2fe",
+      "name": "Clay Hills Boat Ramp",
+      "status": "access-verified",
+      "note": "BLM identifies Clay Hills as the San Juan take-out and publishes recreation feature 70434. Imagery matches the road-end facility, but the agency point is inland from the river in a shifting sediment delta. This establishes the approximate access area only. BLM warns of a dangerous waterfall downstream: do not miss the take-out. The Mexican Hat launch is currently closed, so that trip remains withheld despite resolving this facility area.",
+      "imagery": {
+        "file": "research/utah-access-review-20261109/imagery/clay-hills.jpg",
+        "sha256": "d780dcf9ac134c1a65b6e0fb7695b888828256e3e8a8ac14ae92ee0dbc754ebf"
+      }
+    },
+    {
+      "id": "acc-bc92f1f4d92c5ad28ebb",
+      "name": "Bonanza Bridge Boat Launch",
+      "status": "access-verified",
+      "note": "BLM’s White River page explicitly names Bonanza Bridge as the put-in and Enron as the take-out. Recreation feature 70641 matches a riverside access track in imagery. Its description specifies private property and an April 1–October 1 season. The facility location is supported, but this is not year-round public access or an exact shoreline pin. The current local trip remains withheld outside that published season until access is rechecked.",
+      "imagery": {
+        "file": "research/utah-access-review-20261109/imagery/bonanza.jpg",
+        "sha256": "2d6dcc105440af7923e500b1f7b45e07d2bf5bedc7e7b3028da0b1c86ae9ef6d"
+      }
+    }
+  ],
+  "mapsAdded": [
+    "colorado-river-meander/moab-potash"
+  ],
+  "mapsWithdrawn": [
+    "san-juan/sand-island-mexican-hat"
+  ],
+  "holds": [
+    {
+      "riverId": "san-juan",
+      "sectionId": "sand-island-mexican-hat",
+      "reason": "This trip uses a boat ramp that BLM temporarily closed after flooding on October 26, 2026. Map and trip-time guidance remain withheld until BLM confirms reopening and access is rechecked.",
+      "sourceUrl": "https://www.blm.gov/visit/san-juan-river"
+    },
+    {
+      "riverId": "san-juan",
+      "sectionId": "mexican-hat-clay-hills",
+      "reason": "This trip uses a boat ramp that BLM temporarily closed after flooding on October 26, 2026. Map and trip-time guidance remain withheld until BLM confirms reopening and access is rechecked.",
+      "sourceUrl": "https://www.blm.gov/visit/san-juan-river"
+    },
+    {
+      "riverId": "white-river",
+      "sectionId": "bonanza-enron",
+      "reason": "Bonanza is on private property and BLM lists an April 1–October 1 access season. November 9 is outside that season. Map and timing remain withheld until current permission and access conditions are rechecked; an approximate location does not authorize entry.",
+      "sourceUrl": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_National_Recreation_Site_Points/FeatureServer/2/query?objectIds=70641&outFields=*&outSR=4326&f=json"
+    },
+    {
+      "riverId": "sandy",
+      "sectionId": "dodge-oxbow",
+      "reason": "This trip depends on the closed Oxbow boat launch. Map and timing remain withheld until the park reopens and access is rechecked.",
+      "sourceUrl": "https://www.oregonmetro.gov/places/oxbow-regional-park"
+    },
+    {
+      "riverId": "sandy",
+      "sectionId": "oxbow-dabney",
+      "reason": "This trip depends on the closed Oxbow boat launch. Map and timing remain withheld until the park reopens and access is rechecked.",
+      "sourceUrl": "https://www.oregonmetro.gov/places/oxbow-regional-park"
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/utah-access-review-20261109/sources/receipts.json",
+      "sha256": "a1343f594ffa5069a5f43e0e09c41b72ecc09ebf5fa358ed4fd1edcf3a32f607"
+    },
+    {
+      "file": "research/utah-access-review-20261109/sources/additional-receipts.json",
+      "sha256": "cd3da124ff8e010ed3df95b7480727e7754530c52e45d8eb5c7e1540fae64063"
+    }
+  ],
+  "pdfPagesReviewed": [
+    "Moab Town Ramp 2022: PDF pages 4 and 6",
+    "Moab June 2026 council: PDF page 10",
+    "Utah 2025 signed river plan: PDF page 66",
+    "BLM White River guide: PDF page 3"
+  ],
+  "limitations": [
+    "Facility location is independent of current permission and opening status.",
+    "All three promoted points remain approximate areas.",
+    "No mileage, gauge calibration or GPS timing changes.",
+    "San Juan and Oxbow reopening requires agency confirmation; Bonanza permission and season require a new review, not an automatic reopening."
+  ],
+  "baselineCatalog": {
+    "file": "research/utah-access-review-20261109/before/public/catalog.json",
+    "sha256": "ca4a453995e2c68ce4da850e1f0487cd123895468dd4e1be113f9dca96803311"
+  }
+}

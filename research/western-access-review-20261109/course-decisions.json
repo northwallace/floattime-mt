@@ -1,0 +1,563 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "pathsAdded": 4,
+  "pathsRefined": 1,
+  "pathsHeld": 1,
+  "routes": [
+    {
+      "riverId": "salt-river-lower",
+      "sectionId": "lsr-blue-point-phon-d",
+      "decision": "reviewed-display-only",
+      "newPath": true,
+      "previousRoute": null,
+      "route": {
+        "file": "catalog/routes/AZ/salt-river-lower--lsr-blue-point-phon-d.json",
+        "sha256": "f147b620c8edd8c8fdbb08be6bb2fa26094e76132fc0f7c7a042bcc7dfd4c73d"
+      },
+      "metrics": {
+        "routeMiles": 6.4589,
+        "endpointOffsetsMeters": [
+          109.6,
+          16.3
+        ],
+        "mileageDifferencePercent": 0.92,
+        "maxSegmentMeters": 225.6,
+        "vertices": 340
+      },
+      "branchChoices": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-blue-point-phon-d/branch-choices.json",
+        "sha256": "300cba2d42774d89b2fd63071c134c6f8f74b2bb5bf203f527b3f0d80e4048ac"
+      },
+      "branchInventory": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-blue-point-phon-d/branch-inventory.json",
+        "sha256": "6b8f4ac9004c16bb1f2ae64cec030efd49269ec4ccea0c8e14b7d0e31b6140ef"
+      },
+      "imagery": [
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-1.jpg",
+          "sha256": "19d76ff990e1fd1036efc4923f8a139c979a7a9b4c599aeb2fce38a105c099a7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-2.jpg",
+          "sha256": "67762e88eb9be6cc4af046daff9963eaef748dadd61f541ce650b88b283407ed"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-3.jpg",
+          "sha256": "c4e32742dac351e17e83c279332ca512c70a502bb3be0e7c64135dcea572e010"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-4.jpg",
+          "sha256": "768185a1a6410f2a49920c6f24448ea6dfb4e171059b84cfed7b721903ba4715"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-5.jpg",
+          "sha256": "28053f78d01159933b3c26da5b443c9db0195869e5127da35d9e105219b78ebb"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-6.jpg",
+          "sha256": "c61794f3dd4268d4f886916927d59d8d7fa0839453ff4494e66c32fe8b13e9b2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-7.jpg",
+          "sha256": "adb9a4676d8325a29cfe5d00d2e38793074271176ed1e8476ffe36e2469549b7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-8.jpg",
+          "sha256": "055487e3e86b069572e3ff529c18187a67c90b6c03e51d3908737841821ad280"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-9.jpg",
+          "sha256": "33ac91448aa8b45e9cd6af081efa8d833ea110a3874e401ec96ec664ca7d35ad"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-10.jpg",
+          "sha256": "9ce2a4b63894ee971f092fd83f05d08d7f5c665186806e0bf2eeade376e3a1c2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-11.jpg",
+          "sha256": "a13775093de2fdf33acc136e73b70897895fd84bc94702d64169523da368f323"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-12.jpg",
+          "sha256": "a5ecb43677bd707bd2e2cc5699193fd3f8ddd6713c36fafed2a638789a517353"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-water-users.jpg",
+          "sha256": "feaf0e08cbb606f274639cc98267c1bca5ede9a9e188baeaf57eedf20f12992b"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-blue-point.jpg",
+          "sha256": "f72052ebe9b67d380f0867709403f24cede0f67805360a74c776666989e5baf3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-goldfield.jpg",
+          "sha256": "14f1b5d6c6b2a3e8a36620a967cb4acbaf8301c6b03ca12e318a86896d9babc4"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-phon-d.jpg",
+          "sha256": "62a65f0d68ede389a46460636f02e5309e909052472a2ec27da7bec9dea92477"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-1-alternatives.jpg",
+          "sha256": "4a3903c08fbce20327aaeef6db5d7f11bdadee589f257c5f0c3132a9b138dce3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-2-alternatives.jpg",
+          "sha256": "207c9f1cb7aa1ab25b80fc9fb54d8907c9cdf5774fb8759eb14bde00227af815"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-3-alternatives.jpg",
+          "sha256": "9b4c5356e57eddf195d7d5704c013477ba97adbce70ef37195d84404a2dac63e"
+        }
+      ]
+    },
+    {
+      "riverId": "salt-river-lower",
+      "sectionId": "lsr-goldfield-phon-d",
+      "decision": "reviewed-display-only",
+      "newPath": true,
+      "previousRoute": null,
+      "route": {
+        "file": "catalog/routes/AZ/salt-river-lower--lsr-goldfield-phon-d.json",
+        "sha256": "95971efbf858129dbee196896476f7e9d1e2bac57addc220ccde4f06337dcf35"
+      },
+      "metrics": {
+        "routeMiles": 2.5374,
+        "endpointOffsetsMeters": [
+          255.7,
+          16.3
+        ],
+        "mileageDifferencePercent": 1.5,
+        "maxSegmentMeters": 225.6,
+        "vertices": 143
+      },
+      "branchChoices": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-goldfield-phon-d/branch-choices.json",
+        "sha256": "66f104d6f3a84c1919971b58fb1d3f4a5d1362f4c2d75aaed1ae99dcfe702f81"
+      },
+      "branchInventory": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-goldfield-phon-d/branch-inventory.json",
+        "sha256": "4a491258b25bd659904b89648119796f394eb17f9e05aa56dffb4ca0b047cfd5"
+      },
+      "imagery": [
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-1.jpg",
+          "sha256": "19d76ff990e1fd1036efc4923f8a139c979a7a9b4c599aeb2fce38a105c099a7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-2.jpg",
+          "sha256": "67762e88eb9be6cc4af046daff9963eaef748dadd61f541ce650b88b283407ed"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-3.jpg",
+          "sha256": "c4e32742dac351e17e83c279332ca512c70a502bb3be0e7c64135dcea572e010"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-4.jpg",
+          "sha256": "768185a1a6410f2a49920c6f24448ea6dfb4e171059b84cfed7b721903ba4715"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-5.jpg",
+          "sha256": "28053f78d01159933b3c26da5b443c9db0195869e5127da35d9e105219b78ebb"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-6.jpg",
+          "sha256": "c61794f3dd4268d4f886916927d59d8d7fa0839453ff4494e66c32fe8b13e9b2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-7.jpg",
+          "sha256": "adb9a4676d8325a29cfe5d00d2e38793074271176ed1e8476ffe36e2469549b7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-8.jpg",
+          "sha256": "055487e3e86b069572e3ff529c18187a67c90b6c03e51d3908737841821ad280"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-9.jpg",
+          "sha256": "33ac91448aa8b45e9cd6af081efa8d833ea110a3874e401ec96ec664ca7d35ad"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-10.jpg",
+          "sha256": "9ce2a4b63894ee971f092fd83f05d08d7f5c665186806e0bf2eeade376e3a1c2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-11.jpg",
+          "sha256": "a13775093de2fdf33acc136e73b70897895fd84bc94702d64169523da368f323"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-12.jpg",
+          "sha256": "a5ecb43677bd707bd2e2cc5699193fd3f8ddd6713c36fafed2a638789a517353"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-water-users.jpg",
+          "sha256": "feaf0e08cbb606f274639cc98267c1bca5ede9a9e188baeaf57eedf20f12992b"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-blue-point.jpg",
+          "sha256": "f72052ebe9b67d380f0867709403f24cede0f67805360a74c776666989e5baf3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-goldfield.jpg",
+          "sha256": "14f1b5d6c6b2a3e8a36620a967cb4acbaf8301c6b03ca12e318a86896d9babc4"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-phon-d.jpg",
+          "sha256": "62a65f0d68ede389a46460636f02e5309e909052472a2ec27da7bec9dea92477"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-1-alternatives.jpg",
+          "sha256": "4a3903c08fbce20327aaeef6db5d7f11bdadee589f257c5f0c3132a9b138dce3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-2-alternatives.jpg",
+          "sha256": "207c9f1cb7aa1ab25b80fc9fb54d8907c9cdf5774fb8759eb14bde00227af815"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-3-alternatives.jpg",
+          "sha256": "9b4c5356e57eddf195d7d5704c013477ba97adbce70ef37195d84404a2dac63e"
+        }
+      ]
+    },
+    {
+      "riverId": "salt-river-lower",
+      "sectionId": "lsr-water-users-blue-point",
+      "decision": "reviewed-display-only",
+      "newPath": true,
+      "previousRoute": null,
+      "route": {
+        "file": "catalog/routes/AZ/salt-river-lower--lsr-water-users-blue-point.json",
+        "sha256": "8267265fdebf2ad9ee1aa5afb16da3adb6749f32e5b3f24a65f84017c4b63adb"
+      },
+      "metrics": {
+        "routeMiles": 2.4871,
+        "endpointOffsetsMeters": [
+          38.6,
+          109.6
+        ],
+        "mileageDifferencePercent": 3.63,
+        "maxSegmentMeters": 166.4,
+        "vertices": 129
+      },
+      "branchChoices": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-water-users-blue-point/branch-choices.json",
+        "sha256": "8e5a41d631d9924992825202007a8ecf34dcc57f2991c0a7076dcd402af3f608"
+      },
+      "branchInventory": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-water-users-blue-point/branch-inventory.json",
+        "sha256": "7ba3c951d52d6902161fd3d6625479580012b4fe5b53cca7c734cd9c188a97a4"
+      },
+      "imagery": [
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-1.jpg",
+          "sha256": "19d76ff990e1fd1036efc4923f8a139c979a7a9b4c599aeb2fce38a105c099a7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-2.jpg",
+          "sha256": "67762e88eb9be6cc4af046daff9963eaef748dadd61f541ce650b88b283407ed"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-3.jpg",
+          "sha256": "c4e32742dac351e17e83c279332ca512c70a502bb3be0e7c64135dcea572e010"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-4.jpg",
+          "sha256": "768185a1a6410f2a49920c6f24448ea6dfb4e171059b84cfed7b721903ba4715"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-5.jpg",
+          "sha256": "28053f78d01159933b3c26da5b443c9db0195869e5127da35d9e105219b78ebb"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-6.jpg",
+          "sha256": "c61794f3dd4268d4f886916927d59d8d7fa0839453ff4494e66c32fe8b13e9b2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-7.jpg",
+          "sha256": "adb9a4676d8325a29cfe5d00d2e38793074271176ed1e8476ffe36e2469549b7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-8.jpg",
+          "sha256": "055487e3e86b069572e3ff529c18187a67c90b6c03e51d3908737841821ad280"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-9.jpg",
+          "sha256": "33ac91448aa8b45e9cd6af081efa8d833ea110a3874e401ec96ec664ca7d35ad"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-10.jpg",
+          "sha256": "9ce2a4b63894ee971f092fd83f05d08d7f5c665186806e0bf2eeade376e3a1c2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-11.jpg",
+          "sha256": "a13775093de2fdf33acc136e73b70897895fd84bc94702d64169523da368f323"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-12.jpg",
+          "sha256": "a5ecb43677bd707bd2e2cc5699193fd3f8ddd6713c36fafed2a638789a517353"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-water-users.jpg",
+          "sha256": "feaf0e08cbb606f274639cc98267c1bca5ede9a9e188baeaf57eedf20f12992b"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-blue-point.jpg",
+          "sha256": "f72052ebe9b67d380f0867709403f24cede0f67805360a74c776666989e5baf3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-goldfield.jpg",
+          "sha256": "14f1b5d6c6b2a3e8a36620a967cb4acbaf8301c6b03ca12e318a86896d9babc4"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-phon-d.jpg",
+          "sha256": "62a65f0d68ede389a46460636f02e5309e909052472a2ec27da7bec9dea92477"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-1-alternatives.jpg",
+          "sha256": "4a3903c08fbce20327aaeef6db5d7f11bdadee589f257c5f0c3132a9b138dce3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-2-alternatives.jpg",
+          "sha256": "207c9f1cb7aa1ab25b80fc9fb54d8907c9cdf5774fb8759eb14bde00227af815"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-3-alternatives.jpg",
+          "sha256": "9b4c5356e57eddf195d7d5704c013477ba97adbce70ef37195d84404a2dac63e"
+        }
+      ]
+    },
+    {
+      "riverId": "salt-river-lower",
+      "sectionId": "lsr-water-users-goldfield",
+      "decision": "reviewed-display-only",
+      "newPath": true,
+      "previousRoute": null,
+      "route": {
+        "file": "catalog/routes/AZ/salt-river-lower--lsr-water-users-goldfield.json",
+        "sha256": "c8fbad1fbf80383b99b9fdf51ce8c76716e4c12589f261cd5b67288ec47d5375"
+      },
+      "metrics": {
+        "routeMiles": 6.4086,
+        "endpointOffsetsMeters": [
+          38.6,
+          255.7
+        ],
+        "mileageDifferencePercent": 1.72,
+        "maxSegmentMeters": 197.3,
+        "vertices": 326
+      },
+      "branchChoices": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-water-users-goldfield/branch-choices.json",
+        "sha256": "346f2d54c74952add7ebf08d505b8ab6c2c5618d00347521c62e250c0ec0929c"
+      },
+      "branchInventory": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-water-users-goldfield/branch-inventory.json",
+        "sha256": "8b70fc0c0a0125119d772b9263fa3b2c2f2d57a9980b5ae0b225154c57b68a81"
+      },
+      "imagery": [
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-1.jpg",
+          "sha256": "19d76ff990e1fd1036efc4923f8a139c979a7a9b4c599aeb2fce38a105c099a7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-2.jpg",
+          "sha256": "67762e88eb9be6cc4af046daff9963eaef748dadd61f541ce650b88b283407ed"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-3.jpg",
+          "sha256": "c4e32742dac351e17e83c279332ca512c70a502bb3be0e7c64135dcea572e010"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-4.jpg",
+          "sha256": "768185a1a6410f2a49920c6f24448ea6dfb4e171059b84cfed7b721903ba4715"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-5.jpg",
+          "sha256": "28053f78d01159933b3c26da5b443c9db0195869e5127da35d9e105219b78ebb"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-6.jpg",
+          "sha256": "c61794f3dd4268d4f886916927d59d8d7fa0839453ff4494e66c32fe8b13e9b2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-7.jpg",
+          "sha256": "adb9a4676d8325a29cfe5d00d2e38793074271176ed1e8476ffe36e2469549b7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-8.jpg",
+          "sha256": "055487e3e86b069572e3ff529c18187a67c90b6c03e51d3908737841821ad280"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-9.jpg",
+          "sha256": "33ac91448aa8b45e9cd6af081efa8d833ea110a3874e401ec96ec664ca7d35ad"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-10.jpg",
+          "sha256": "9ce2a4b63894ee971f092fd83f05d08d7f5c665186806e0bf2eeade376e3a1c2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-11.jpg",
+          "sha256": "a13775093de2fdf33acc136e73b70897895fd84bc94702d64169523da368f323"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-12.jpg",
+          "sha256": "a5ecb43677bd707bd2e2cc5699193fd3f8ddd6713c36fafed2a638789a517353"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-water-users.jpg",
+          "sha256": "feaf0e08cbb606f274639cc98267c1bca5ede9a9e188baeaf57eedf20f12992b"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-blue-point.jpg",
+          "sha256": "f72052ebe9b67d380f0867709403f24cede0f67805360a74c776666989e5baf3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-goldfield.jpg",
+          "sha256": "14f1b5d6c6b2a3e8a36620a967cb4acbaf8301c6b03ca12e318a86896d9babc4"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-phon-d.jpg",
+          "sha256": "62a65f0d68ede389a46460636f02e5309e909052472a2ec27da7bec9dea92477"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-1-alternatives.jpg",
+          "sha256": "4a3903c08fbce20327aaeef6db5d7f11bdadee589f257c5f0c3132a9b138dce3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-2-alternatives.jpg",
+          "sha256": "207c9f1cb7aa1ab25b80fc9fb54d8907c9cdf5774fb8759eb14bde00227af815"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-3-alternatives.jpg",
+          "sha256": "9b4c5356e57eddf195d7d5704c013477ba97adbce70ef37195d84404a2dac63e"
+        }
+      ]
+    },
+    {
+      "riverId": "salt-river-lower",
+      "sectionId": "lsr-water-users-phon-d",
+      "decision": "reviewed-display-only",
+      "newPath": false,
+      "previousRoute": {
+        "file": "catalog/routes/AZ/salt-river-lower--lsr-water-users-phon-d.json",
+        "sha256": "5e65273f0e19fcd1fb448ac8437879686d08f4cf596e8ea3723f48cdf50252f0"
+      },
+      "route": {
+        "file": "catalog/routes/AZ/salt-river-lower--lsr-water-users-phon-d.json",
+        "sha256": "888650167327a4517cb9c303c8c236ad64661d5ac7d1b1806b434e2855fadf56"
+      },
+      "metrics": {
+        "routeMiles": 8.946,
+        "endpointOffsetsMeters": [
+          38.6,
+          16.3
+        ],
+        "mileageDifferencePercent": 1.66,
+        "maxSegmentMeters": 225.6,
+        "vertices": 467
+      },
+      "branchChoices": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-water-users-phon-d/branch-choices.json",
+        "sha256": "65d0ca514881aa85cae0f671d99b3df69ced0f6c645f3d4d1b0d8dec4bf83f25"
+      },
+      "branchInventory": {
+        "file": "research/western-access-review-20261109/salt-sections/lsr-water-users-phon-d/branch-inventory.json",
+        "sha256": "78930f359989cbe926f23bdd59f443605502ebf4767cf1093258d434fe2988c9"
+      },
+      "imagery": [
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-1.jpg",
+          "sha256": "19d76ff990e1fd1036efc4923f8a139c979a7a9b4c599aeb2fce38a105c099a7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-2.jpg",
+          "sha256": "67762e88eb9be6cc4af046daff9963eaef748dadd61f541ce650b88b283407ed"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-3.jpg",
+          "sha256": "c4e32742dac351e17e83c279332ca512c70a502bb3be0e7c64135dcea572e010"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-4.jpg",
+          "sha256": "768185a1a6410f2a49920c6f24448ea6dfb4e171059b84cfed7b721903ba4715"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-5.jpg",
+          "sha256": "28053f78d01159933b3c26da5b443c9db0195869e5127da35d9e105219b78ebb"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-6.jpg",
+          "sha256": "c61794f3dd4268d4f886916927d59d8d7fa0839453ff4494e66c32fe8b13e9b2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-7.jpg",
+          "sha256": "adb9a4676d8325a29cfe5d00d2e38793074271176ed1e8476ffe36e2469549b7"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-8.jpg",
+          "sha256": "055487e3e86b069572e3ff529c18187a67c90b6c03e51d3908737841821ad280"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-9.jpg",
+          "sha256": "33ac91448aa8b45e9cd6af081efa8d833ea110a3874e401ec96ec664ca7d35ad"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-10.jpg",
+          "sha256": "9ce2a4b63894ee971f092fd83f05d08d7f5c665186806e0bf2eeade376e3a1c2"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-11.jpg",
+          "sha256": "a13775093de2fdf33acc136e73b70897895fd84bc94702d64169523da368f323"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-part-12.jpg",
+          "sha256": "a5ecb43677bd707bd2e2cc5699193fd3f8ddd6713c36fafed2a638789a517353"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-water-users.jpg",
+          "sha256": "feaf0e08cbb606f274639cc98267c1bca5ede9a9e188baeaf57eedf20f12992b"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-blue-point.jpg",
+          "sha256": "f72052ebe9b67d380f0867709403f24cede0f67805360a74c776666989e5baf3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-goldfield.jpg",
+          "sha256": "14f1b5d6c6b2a3e8a36620a967cb4acbaf8301c6b03ca12e318a86896d9babc4"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-endpoint-phon-d.jpg",
+          "sha256": "62a65f0d68ede389a46460636f02e5309e909052472a2ec27da7bec9dea92477"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-1-alternatives.jpg",
+          "sha256": "4a3903c08fbce20327aaeef6db5d7f11bdadee589f257c5f0c3132a9b138dce3"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-2-alternatives.jpg",
+          "sha256": "207c9f1cb7aa1ab25b80fc9fb54d8907c9cdf5774fb8759eb14bde00227af815"
+        },
+        {
+          "file": "research/western-access-review-20261109/imagery/salt-fork-3-alternatives.jpg",
+          "sha256": "9b4c5356e57eddf195d7d5704c013477ba97adbce70ef37195d84404a2dac63e"
+        }
+      ]
+    },
+    {
+      "riverId": "white-salmon",
+      "sectionId": "bz-husum",
+      "decision": "needs-main-river-anchor",
+      "note": "Endpoint detail shows the candidate beginning along a roadside watercourse through BZ Corner, west of the visible White Salmon gorge. Nearest-edge snapping selected an unnamed tributary. Geometry checks alone passed, but this is the wrong start. Keep the access-area map; hold the dotted course until the true main-river start and downstream course are reviewed.",
+      "candidate": {
+        "file": "research/western-access-review-20261109/white-salmon-candidate.json",
+        "sha256": "9e5298c2bf481ffe870ef4decbd62e449769fa106ff0ca0ec340b72a9484eb75"
+      },
+      "imagery": [
+        {
+          "file": "research/western-access-review-20261109/imagery/white-salmon-putIn.jpg",
+          "sha256": "7f029c18598566de75c1ff3d1574028fd07f9abb0f9761975b8ffdbd9d6605ba"
+        }
+      ]
+    }
+  ]
+}

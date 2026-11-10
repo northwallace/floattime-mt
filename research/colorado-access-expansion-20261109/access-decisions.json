@@ -1,0 +1,136 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "mapsAdded": 8,
+  "accessPoints": [
+    {
+      "id": "acc-f416c3d8d48e5ea991e4",
+      "name": "Rancho del Rio",
+      "status": "access-verified",
+      "note": "The operator explicitly offers river access for rafters and anglers. The BLM recreation guide identifies this private fee site and its launching area. The BLM StoryMap action a-mV1n40 centers on this facility, matching buildings, parking and river frontage in imagery. This is an approximate facility coordinate, not an agency-surveyed ramp. Owner terms and fees apply.",
+      "imagery": {
+        "file": "research/colorado-access-expansion-20261109/imagery/rancho.jpg",
+        "sha256": "c38937fc62ce834b36c40063844aaabd95feab81dc55dd996fa9e13cac11ed89"
+      }
+    },
+    {
+      "id": "acc-eb793f35682759f0b978",
+      "name": "Horse Creek River Access",
+      "status": "access-verified",
+      "note": "The BLM recreation guide confirms a public boat launch and toilets on the Eagle County conservation easement. Its action a-s1rpYd centers on the visible ramp parking loop beside the Colorado River. The map area is supported by both the 2015 guide and the current BLM StoryMap. The exact shore entry is not surveyed; surrounding ranch land is not opened by this marker.",
+      "imagery": {
+        "file": "research/colorado-access-expansion-20261109/imagery/horse-creek.jpg",
+        "sha256": "9c6515245fdbd10c74a0f443577da42cf5bd82d5eb390661e3248c2a5f1b70c8"
+      }
+    },
+    {
+      "id": "acc-4992e161d02d5b2a94df",
+      "name": "Confluence Park Boat Launch (Delta)",
+      "status": "access-verified",
+      "note": "The city lists separate river and lake ramps, and the BLM Gunnison guide confirms the river put-in at this address. The city facility record publishes this park coordinate. Imagery confirms the park parking area south of the Gunnison. A closer image candidate fell inside the Fort Uncompahgre grounds and was rejected. Retain the documented park-area coordinate rather than invent an exact river ramp.",
+      "imagery": {
+        "file": "research/colorado-access-expansion-20261109/imagery/delta-park.jpg",
+        "sha256": "b26d64bbad6cbc6285e9fdec1c3df4e6177ef8b1bb9ed1516399674f826dd344"
+      }
+    },
+    {
+      "id": "acc-331586d187645034a0a5",
+      "name": "Loudy Simpson Park",
+      "status": "access-verified",
+      "note": "CPW explicitly lists a developed launch. The City of Craig trail map places the boat ramp northwest of the ball fields, and imagery shows the corresponding access road, turnaround and ramp. The coordinate is an imagery placement matched to that city map, not an agency GPS fix. Craig reports ramp completion in spring 2024 and the river-park project in October 2025; imagery may predate that construction. Use the current signed ramp, not the old park-center directions pin.",
+      "imagery": {
+        "file": "research/colorado-access-expansion-20261109/imagery/loudy-park-landing-area.jpg",
+        "sha256": "7afa0e8007bb73a19c46d72aeba77913f729d8c16de3cbf65e97a3c1279e475c"
+      }
+    },
+    {
+      "id": "acc-2d1950367d5b56508fbd",
+      "name": "Yampa River State Wildlife Area Boat Ramp",
+      "status": "access-verified",
+      "note": "CPW identifies a developed ramp and its facility GIS point 2501 matches the access road at the river in imagery. Current Chapter W-9, effective September 1, 2026, section 901(286), allows vessel launching/taking out only for active fishing, hunting or wildlife viewing. Section 900(C)(1) requires a license or SWA pass from age 16, correcting the park page’s older age-18 wording. This is restricted access, not permission for a general recreation-only float. Retain approximate shoreline precision.",
+      "imagery": {
+        "file": "research/colorado-access-expansion-20261109/imagery/yampa-swa.jpg",
+        "sha256": "c97ef7d42c359f5498cfe1a3f1dd9e871dd738c5bc452899256bba1a4ed367e2"
+      }
+    }
+  ],
+  "maps": [
+    {
+      "riverId": "colorado-river-pumphouse",
+      "sectionId": "radium-to-rancho-del-rio",
+      "newlyAvailable": true
+    },
+    {
+      "riverId": "colorado-river-pumphouse",
+      "sectionId": "rancho-del-rio-to-state-bridge",
+      "newlyAvailable": true
+    },
+    {
+      "riverId": "colorado-river-state-bridge",
+      "sectionId": "pinball-to-horse-creek",
+      "newlyAvailable": true
+    },
+    {
+      "riverId": "colorado-river-state-bridge",
+      "sectionId": "horse-creek-to-cottonwood-island",
+      "newlyAvailable": true
+    },
+    {
+      "riverId": "gunnison-river-denca",
+      "sectionId": "confluence-park-to-whitewater",
+      "newlyAvailable": true
+    },
+    {
+      "riverId": "yampa-river-craig",
+      "sectionId": "golf-course-to-loudy-simpson",
+      "newlyAvailable": true
+    },
+    {
+      "riverId": "yampa-river-craig",
+      "sectionId": "loudy-simpson-to-south-beach",
+      "newlyAvailable": true
+    },
+    {
+      "riverId": "yampa-river-hayden",
+      "sectionId": "headquarters-to-state-wildlife-area",
+      "newlyAvailable": true
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/colorado-access-expansion-20261109/sources/extra-receipts.json",
+      "sha256": "047d5b7e99ea884e12d45c366a89926804e39d60cf5586e009c5e9f74557d9c6"
+    },
+    {
+      "file": "research/colorado-access-expansion-20261109/sources/gis-receipts.json",
+      "sha256": "9e54cbcf5ec4d6c4f0559409f222e90a78e7c69df3fa6cbdbfc578d7b07e2a14"
+    },
+    {
+      "file": "research/colorado-access-expansion-20261109/sources/map-receipts.json",
+      "sha256": "0aae8be82530a22005418c4cf6a51ba6977773a1e8aa1e5a0a06775174caf9f3"
+    },
+    {
+      "file": "research/colorado-access-expansion-20261109/sources/partner-item-receipt.json",
+      "sha256": "57f50822a7b66811e254e544ddc26331ccc1a05f5748782ae523eb28ff45e844"
+    },
+    {
+      "file": "research/colorado-access-expansion-20261109/sources/receipts.json",
+      "sha256": "19313c8d1c9366b8c25dcd1fc888ea5a1980eadcd63d56f68f6ee7255c13f60a"
+    },
+    {
+      "file": "research/colorado-access-expansion-20261109/sources/rules-receipts.json",
+      "sha256": "1ea06bb117f52502a0a38d691510f09c88607f0e96f2e357e3259cb70cd9c935"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "id": "delta-park-landing-area",
+      "reason": "Candidate lies inside Fort Uncompahgre, not a river ramp. Kept the documented city park coordinate instead."
+    }
+  ],
+  "limitations": [
+    "All five points remain approximate access areas.",
+    "Yampa SWA permission is conditional on active fishing, hunting or wildlife viewing, not unrestricted recreational floating.",
+    "Craig and Pinball difficulty descriptions corrected from current primary sources; no gauge, mileage or calibration changes."
+  ]
+}

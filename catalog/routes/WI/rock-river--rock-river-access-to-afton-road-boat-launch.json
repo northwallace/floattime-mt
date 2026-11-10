@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "rock-river",
+  "sectionId": "rock-river-access-to-afton-road-boat-launch",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Rock River",
+    "evidenceFile": "research/janesville-courses-20261109/sources/rock-river.json",
+    "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+  },
+  "putIn": {
+    "name": "Rock River Access",
+    "lat": 42.672414403872125,
+    "lon": -89.01545543006155
+  },
+  "takeOut": {
+    "name": "Afton Road Boat Launch",
+    "lat": 42.667406747591805,
+    "lon": -89.04597092084735
+  },
+  "catalogMiles": 1.8,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -89.01476673866739,
+        42.6723353300854
+      ],
+      [
+        -89.01487761144385,
+        42.67182217472169
+      ],
+      [
+        -89.01487994536129,
+        42.67181170806544
+      ],
+      [
+        -89.01511641084095,
+        42.67149937461446
+      ],
+      [
+        -89.01539561104586,
+        42.67113090877312
+      ],
+      [
+        -89.0162953450584,
+        42.67061537471197
+      ],
+      [
+        -89.01869614591998,
+        42.67050097439078
+      ],
+      [
+        -89.02061594544169,
+        42.669987773932974
+      ],
+      [
+        -89.02169741285336,
+        42.66929377383813
+      ],
+      [
+        -89.02319974707261,
+        42.66876837403131
+      ],
+      [
+        -89.02451101430411,
+        42.66841497350312
+      ],
+      [
+        -89.02596061322728,
+        42.66825370711896
+      ],
+      [
+        -89.0277397481804,
+        42.66845110727628
+      ],
+      [
+        -89.02983694831826,
+        42.669007107055855
+      ],
+      [
+        -89.0304921485517,
+        42.66923837349128
+      ],
+      [
+        -89.03185921545143,
+        42.66945830747408
+      ],
+      [
+        -89.03353121599876,
+        42.66936817338656
+      ],
+      [
+        -89.03550835101669,
+        42.668942106921435
+      ],
+      [
+        -89.03778775071287,
+        42.66836230681564
+      ],
+      [
+        -89.03932381799902,
+        42.66792370650029
+      ],
+      [
+        -89.04029895221598,
+        42.667627973061286
+      ],
+      [
+        -89.04114981859678,
+        42.66737470539385
+      ],
+      [
+        -89.04173815204388,
+        42.66737097244554
+      ],
+      [
+        -89.04308881908963,
+        42.66751250604315
+      ],
+      [
+        -89.04480401948082,
+        42.66728370524518
+      ],
+      [
+        -89.04572648147915,
+        42.66699361998009
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "143246675",
+      "143246676",
+      "143246673",
+      "143246672"
+    ],
+    "putInOffsetMeters": 56.80294094221388,
+    "takeOutOffsetMeters": 50.286091337549195,
+    "putInSourceStationMeters": 6067.737513472883,
+    "takeOutSourceStationMeters": 2530.730257056882
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river course only; shoreline connections, usable passages and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.725,
+      "endpointOffsetsMeters": [
+        57.0,
+        50.1
+      ],
+      "mileageDifferencePercent": 4.16,
+      "maxSegmentMeters": 197.2,
+      "vertices": 26
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-10",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/janesville-courses-20261109/decisions.json",
+    "note": "All 4 overlapping course panels and both endpoints reviewed. Nearby dams and current agency access records checked separately."
+  },
+  "overviewReview": {
+    "signature": "d404d80a8182327d6706b8bba830bfd17246ba72fc4922559c4751dbeb5bb7b1",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line shows the approximate Rock River course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage.",
+    "note": "Display-only river-course overview; no surveyed landings or navigation.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing facility-area marker retained; exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing facility-area marker retained; exact shore connection is not drawn."
+      }
+    }
+  }
+}

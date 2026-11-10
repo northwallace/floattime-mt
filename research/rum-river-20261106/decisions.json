@@ -1,0 +1,313 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "riverId": "rum-river-mn",
+  "coordinatePolicy": "Precision first: unchanged agency GPS landing where imagery confirms the carry-in; otherwise explicit source-backed approximate areas.",
+  "accessReviews": [
+    {
+      "sourceId": "WAS00274",
+      "name": "Rum River Walbo Access",
+      "status": "access-verified",
+      "note": "Digitized DNR point lies in the river beside the Highway 95 bridge. Public trailer access is documented in the 2026 map and inventory; exact ramp location is not established by this point."
+    },
+    {
+      "sourceId": "WAS02193",
+      "name": "Rum River Highway 14 Access",
+      "status": "access-verified",
+      "note": "Digitized DNR point is in the river beside the bridge. The 2026 map and inventory call this trailer access; the webpage also uses carry-in wording. The coordinate remains an approximate area."
+    },
+    {
+      "sourceId": "WAS00285",
+      "name": "Rum River Cambridge West Park Access",
+      "status": "access-verified",
+      "note": "DNR GPS point is at the wooded bank south of Highway 95 beside the park approach. Exact water-edge landing remains uncertain. The 2026 map places the carry-in at mile 42.6; inventory says 42.4. The separate campsite is mile 41.0."
+    },
+    {
+      "sourceId": "WAS02197",
+      "name": "Rum River Martins Landing",
+      "status": "access-verified",
+      "note": "DNR GPS point lies on a wooded bank beside the launch approach. The concrete-slab trailer ramp is documented, but its exact water-edge location is not resolved in the imagery. Current map and inventory agree on river mile 34.7."
+    },
+    {
+      "sourceId": "WAS00291",
+      "name": "Rum River North County Park Access",
+      "status": "verified",
+      "note": "Unchanged DNR GPS coordinate matches the visible shoreline end of the park carry-in steps/approach. The 2026 river map and county park page independently document this canoe/kayak access. Desktop landing review, not a field survey; water levels and approach conditions may change."
+    }
+  ],
+  "distanceDecisions": [
+    "The current PDF identifies the carry-in at mile 42.6, separate from the campsite at mile 41.0. The webpage’s 15.8-mile Walbo trip uses the campsite mile; it is not applied to this public take-out. Inventory mile 42.4 is not mixed with map miles.",
+    "34.7 minus 23.2 gives approximately 11.5 river miles. The 2026 PDF lists 11.5 miles. The webpage’s 11.6-mile figure starts at 34.8; current map and access inventory both place Martins at 34.7."
+  ],
+  "advisoryReview": {
+    "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/rum-river/index.html",
+    "dated": "2026-06-26",
+    "checkedOn": "2026-11-06",
+    "alert": "River-wide tree blockage at RM 101–98, south of County Road 12.",
+    "disposition": "Upstream of all five added sections (RM 56.8–23.2). Retained in research for upper-river expansion; not falsely attached to these lower trips."
+  },
+  "heldAccesses": [
+    {
+      "name": "Becklin Homestead",
+      "reason": "Special-hunt access closure schedule and exact carry-in should be reviewed before adding this intermediate endpoint."
+    },
+    {
+      "name": "Cambridge West watercraft campsite",
+      "reason": "Distinct from the road-accessible carry-in; not substituted as a take-out."
+    }
+  ],
+  "timingEnabled": false,
+  "guideTimeDecision": "Only the matching Martins–North County Park trip gets the DNR 3.5–5 hour paddling range. No generic speed model or transferred duration.",
+  "reviewedCourses": [
+    {
+      "sectionId": "cambridge-martins",
+      "file": "catalog/routes/MN/rum-river-mn--cambridge-martins.json",
+      "metrics": {
+        "routeMiles": 7.672,
+        "endpointOffsetsMeters": [
+          12.0,
+          20.1
+        ],
+        "mileageDifferencePercent": 2.89,
+        "maxSegmentMeters": 184.2,
+        "vertices": 206
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive imagery views cover Cambridge–Martins. The agency course follows the river rather than the neighboring oxbows and roads; local bend detail remains generalized."
+    },
+    {
+      "sectionId": "highway14-cambridge",
+      "file": "catalog/routes/MN/rum-river-mn--highway14-cambridge.json",
+      "metrics": {
+        "routeMiles": 7.136,
+        "endpointOffsetsMeters": [
+          11.9,
+          12.0
+        ],
+        "mileageDifferencePercent": 1.94,
+        "maxSegmentMeters": 147.8,
+        "vertices": 229
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive Walbo–Cambridge imagery views cover the course. The two Highway 14 subtrips are exact trims inside the same reviewed source. The line follows the river corridor while simplifying some corners and banks."
+    },
+    {
+      "sectionId": "martins-north-park",
+      "file": "catalog/routes/MN/rum-river-mn--martins-north-park.json",
+      "metrics": {
+        "routeMiles": 11.5149,
+        "endpointOffsetsMeters": [
+          20.1,
+          26.7
+        ],
+        "mileageDifferencePercent": 0.13,
+        "maxSegmentMeters": 209.0,
+        "vertices": 303
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive imagery views cover Martins–North County Park. Clouds in view 3 were resolved with the saved, georeferenced USGS NAIP image. The line follows the river corridor with generalized bend detail."
+    },
+    {
+      "sectionId": "walbo-cambridge",
+      "file": "catalog/routes/MN/rum-river-mn--walbo-cambridge.json",
+      "metrics": {
+        "routeMiles": 14.3577,
+        "endpointOffsetsMeters": [
+          19.3,
+          12.0
+        ],
+        "mileageDifferencePercent": 1.11,
+        "maxSegmentMeters": 147.8,
+        "vertices": 482
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive Walbo–Cambridge imagery views cover the course. The two Highway 14 subtrips are exact trims inside the same reviewed source. The line follows the river corridor while simplifying some corners and banks."
+    },
+    {
+      "sectionId": "walbo-highway14",
+      "file": "catalog/routes/MN/rum-river-mn--walbo-highway14.json",
+      "metrics": {
+        "routeMiles": 7.2217,
+        "endpointOffsetsMeters": [
+          19.3,
+          11.9
+        ],
+        "mileageDifferencePercent": 0.3,
+        "maxSegmentMeters": 130.8,
+        "vertices": 255
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "review": "Eight consecutive Walbo–Cambridge imagery views cover the course. The two Highway 14 subtrips are exact trims inside the same reviewed source. The line follows the river corridor while simplifying some corners and banks."
+    }
+  ],
+  "sourceCourseParts": [
+    {
+      "featureId": "122",
+      "pathIndex": 0,
+      "reverse": true
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/rum-river-20261106/sources/access-cambridge.png",
+      "sha256": "5610e7137b6e3757b55309023ee1cf893f960d1af2cf2dcdea916ef1171a8462"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/access-highway14.png",
+      "sha256": "88646b57b128c6eb6e470210937ff5d89ade69a3accd07e22ad59fdc7f0e783b"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/access-martins.png",
+      "sha256": "3c20f0bef9ee10b65d4ff2bd943da4583068ac80c25eda416e744084ff484bad"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/access-north-park.png",
+      "sha256": "4ec9b21cf43e11eae08602ffe5f774b4c495c22efff136420f4c2896b834ad0a"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/access-walbo-context.png",
+      "sha256": "e6e091fbdb5db8ddfedf39b34797b74dddc1171054df68cc796b787e95d6aac9"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/access-walbo.png",
+      "sha256": "1984ae54ec48eb87bd68d2d4096fef5c14595bc2a8cb3f8c484ce05ca7df4c6a"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-1.png",
+      "sha256": "1ae667e61fb1fd439d5277bc6e38f5980cefd055cfa4c1450ea0075919d8fa8a"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-2.png",
+      "sha256": "6058f2888dd3e05bae08fbf0af1edc594fc4402fc4e354c58edbb15c40bb0372"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-3.png",
+      "sha256": "db93f46cda40d78bab1a0a1b17c26d5a1c236591d07a03bb42eee33ace36569d"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-4.png",
+      "sha256": "d7a8d793614aa465b32716f80dca6ca096f1e96b8e2339a069dca797d402a41a"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-5.png",
+      "sha256": "dd10476555bb5cfedfd1c330c591ab61511d6b503f46f0fda5f5c01108accc71"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-6.png",
+      "sha256": "f499a105c45417bc92c0b33db978036c9937d46e3fef0307534948eebafb7756"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-7.png",
+      "sha256": "5947b8c2939e7d2511051070e2a70f6f5013ececd8fc4dde2b22da20f51c943d"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/cambridge-course-8.png",
+      "sha256": "1d88fd15926a963c2852becdcd58c1ff53e8fdd68e2a4ab6a5010b38f6b4393c"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-1.png",
+      "sha256": "54c0bc08a02070a278666ad38dfe18ee291b3d1a1859c510cddc21600b1f1b1b"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-2.png",
+      "sha256": "27d39feca60f6f44ea5058fbf5aa78bdd4864cae3353f09d7c88067b3fcc0ce5"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-3-naip.png",
+      "sha256": "0cbbb55757c678652d501f1d589a2fe3a6b1cede115c265acde01d679849b933"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-3.png",
+      "sha256": "6b2c7829d9b1dc59c486f97dc0e68bea21e5aae001e333e2ac5995eef99e76a3"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-4.png",
+      "sha256": "c507fe67524dcf3fa6424b89dcc07356ba1ae6179157a03b4d758eb9449bdd30"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-5.png",
+      "sha256": "c42b99060a9812964fee03f73ca20d5cef69dcc665f009092a6a86a7a128c1fa"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-6.png",
+      "sha256": "6585c8b86bba783e8907a079ba596851adc70854f6ffe3789afbac04864e7f7d"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-7.png",
+      "sha256": "a94d2d35c3663678b7b0e3bf4e121c3e14c6401f0c1bb4032a727e69f7f4e23b"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-course-8.png",
+      "sha256": "9f8787b1d56f8a11c90c837e81c0384be86da5754a92c7900946169c8c7f8fc7"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/martins-part3-naip.jpg",
+      "sha256": "0278fcd4cf838d41a28ea3a7e35d274c32eac84c456c78c72b3d16b2c9857662"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/rum2-map.png",
+      "sha256": "c8b3e7bba79fd0c8f0deaa8e3459ce0a52c0772a697c0b522804021907a1d431"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/rum3-map.png",
+      "sha256": "69c5ab8b7f0abde0f2c4ec47617a76df0980f69a35f468ca4e7dafb0e5a4a1fd"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-1.png",
+      "sha256": "34e3fd0e4b69a9788b802b215352cadb1ef66f8cfb784c26de879159d6dd9952"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-2.png",
+      "sha256": "72286d3d951f28b9769325c9438f7fd38ce2cd11ba10d8be478d2535d9d4fc13"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-3.png",
+      "sha256": "aa227afa35a431fc39f2ede344901568eac487bf33a2fefb345a290b12d602d6"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-4.png",
+      "sha256": "bda2417f1a2626af82ec87631e6b21b565a37fb62988f5d30411199b8e54b2d1"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-5.png",
+      "sha256": "4ec767d5c8a7d57a6da5a36ce39e7ddeac6404408738be97e410073f7b0d3746"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-6.png",
+      "sha256": "19dce26986d7ca28b2600dab9c967b31be015b50511bc275ee096fa52b49f893"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-7.png",
+      "sha256": "4130cde6d0649cbf05e9ec1b56abc266c21d54cc294dca6bb8e76932883f3a44"
+    },
+    {
+      "file": "research/rum-river-20261106/sources/walbo-course-8.png",
+      "sha256": "4e5c67053fbc107db4dd4727b64072684e2238c4c209deed9f2a8e13d4ec654a"
+    }
+  ]
+}

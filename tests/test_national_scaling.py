@@ -22,19 +22,25 @@ class NationalScalingTests(unittest.TestCase):
     for section in river['sections']:
      if section['mapReleased']:
       self.assertFalse(section.get('accessReview'))
-      self.assertFalse(section.get('distanceReview'))
+      if section.get('distanceReview'):
+       # A reviewed inspection map may show access while distance and ETA stay held.
+       self.assertTrue(section.get('routeReview'))
+       self.assertEqual(river['timing']['mode'], 'unavailable')
       self.assertIn(section['putInAccess']['status'],('verified','access-verified'))
       self.assertIn(section['takeOutAccess']['status'],('verified','access-verified'))
   buffalo=next(r for r in catalog['rivers'] if r['id']=='buffalo-river')
   held=[s for s in buffalo['sections'] if 'tyler-bend' in s['id']]
   self.assertEqual(len(held),2)
-  self.assertTrue(all(s.get('distanceReview') and not s['mapReleased'] for s in held))
+  self.assertTrue(all(s.get('distanceReview') and s['mapReleased'] for s in held))
+  self.assertTrue(all(s['mapPrecision']=='approximate' for s in held))
   for river in catalog['rivers']:
    if river['id']=='saline-river':
     self.assertTrue(all(not s['mapReleased'] for s in river['sections'][:3]))
     self.assertTrue(all(s['mapPendingReason']==s['accessReview'] for s in river['sections'][:3]))
    if river['id']=='buffalo-river':
-    self.assertTrue(all(not s['mapReleased'] for s in river['sections'] if 'buffalo-point' in s['id']))
+    carried=[s for s in river['sections'] if 'buffalo-point' in s['id']]
+    self.assertEqual(2,len(carried))
+    self.assertTrue(all(s['mapReleased'] and 'hand carry' in s['routeReview'].lower() and 'steep' in s['routeReview'].lower() for s in carried))
 
  def test_midwest_missing_or_changed_approval_withdraws_map(self):
   root=self.temp_root()

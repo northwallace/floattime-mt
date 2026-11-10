@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "checkedOn": "2026-11-06",
+  "scope": "Local only; no publishing",
+  "riverId": "pine-river-mn",
+  "accessDecisions": [
+    {
+      "featureId": "WAS01002",
+      "name": "Pine River Cross Lake Below-dam Carry-in",
+      "status": "access-verified",
+      "note": "The original DNR point identifies the below-dam access area. Trees and snow obscure the exact landing; retain an Area marker. The map labels the broader recreation facility left-bank, while the inventory locates this below-dam carry-in on the west/right bank; no verified bank badge assigned."
+    },
+    {
+      "featureId": "WAS01032",
+      "name": "Pine River Staircase Carry-in",
+      "status": "access-verified",
+      "note": "DNR confirms a natural carry-in at river mile 18.5. The original point sits by the wooded bank and approach; the precise stairs and water edge are obscured. Retain the source coordinate as an Area marker."
+    },
+    {
+      "featureId": "WAS02986",
+      "name": "Pine River Rock Dam Below-rapids Carry-in",
+      "status": "access-verified",
+      "note": "DNR recommends starting below Rock Dam. Its facility coordinate is beside the upper constructed rapids, not a confirmed downstream landing. Preserve it as an approximate facility area and leave the landing connection unmapped. This site has blank water-trail join fields and is included in the source import by stable ID."
+    },
+    {
+      "featureId": "WAS01001",
+      "name": "Pine River Harvey Drake Landing",
+      "status": "verified",
+      "note": "Unchanged DNR GPS coordinate matches the shoreline end of the visible ramp approach immediately upstream of the County Road 11 bridge. DNR lists a concrete trailer launch, and its 2026 map independently places Harvey Drake on river right at mile 0.9. Desktop agency and imagery review, not a field survey; water level and ramp conditions may change."
+    }
+  ],
+  "courseObservations": [
+    "Parts 1–2: Cross Lake below-dam start, Staircase bend and Gould/Anton reaches follow the connected visible river; minor bank generalization retained.",
+    "Parts 3–4: source crosses the widened impoundment and depicts the western channel through the Rock Dam structure. No navigation passage through that structure is approved; rapid notices remain on crossing trips.",
+    "Parts 5–8: continuous main river bends match the visible channel; no shortcuts across forest or disconnected oxbows.",
+    "Parts 9–10: line stays on the Pine River at the Little Pine confluence rather than following the tributary.",
+    "Parts 11–12: lower bends remain connected; course ends beside Harvey Drake upstream of the County Road 11 bridge.",
+    "Rock Dam below-rapids trip begins at original source vertex 521, 141.5 m from the general facility point and below the visible structure. Exact carry-in connection is omitted.",
+    "All source vertices are preserved within each explicitly trimmed reach. Imagery checks establish an approximate planning overview, not present-day navigability or a field-surveyed channel."
+  ],
+  "reviewedCourses": [
+    {
+      "sectionId": "crosslake-staircase",
+      "file": "catalog/routes/MN/pine-river-mn--crosslake-staircase.json",
+      "metrics": {
+        "routeMiles": 1.2922,
+        "endpointOffsetsMeters": [
+          24.4,
+          31.8
+        ],
+        "mileageDifferencePercent": 0.6,
+        "maxSegmentMeters": 125.9,
+        "vertices": 48
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "rock-dam-harvey-drake",
+      "file": "catalog/routes/MN/pine-river-mn--rock-dam-harvey-drake.json",
+      "metrics": {
+        "routeMiles": 14.2661,
+        "endpointOffsetsMeters": [
+          141.5,
+          14.8
+        ],
+        "mileageDifferencePercent": 0.93,
+        "maxSegmentMeters": 160.2,
+        "vertices": 486
+      },
+      "acceptedIssues": {
+        "endpoint-offset-over-100m": "Intentional downstream trim below Rock Dam rapids; the original agency facility coordinate remains an Area marker. No invented landing connector."
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "staircase-harvey-drake",
+      "file": "catalog/routes/MN/pine-river-mn--staircase-harvey-drake.json",
+      "metrics": {
+        "routeMiles": 17.5742,
+        "endpointOffsetsMeters": [
+          31.8,
+          14.8
+        ],
+        "mileageDifferencePercent": 0.15,
+        "maxSegmentMeters": 160.2,
+        "vertices": 616
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    },
+    {
+      "sectionId": "crosslake-harvey-drake",
+      "file": "catalog/routes/MN/pine-river-mn--crosslake-harvey-drake.json",
+      "metrics": {
+        "routeMiles": 18.8664,
+        "endpointOffsetsMeters": [
+          24.4,
+          14.8
+        ],
+        "mileageDifferencePercent": 0.18,
+        "maxSegmentMeters": 160.2,
+        "vertices": 662
+      },
+      "acceptedIssues": {},
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      }
+    }
+  ],
+  "rockDamTrim": {
+    "before": {
+      "start": {
+        "segment": 518,
+        "fraction": 0.2519278401562927
+      },
+      "end": {
+        "segment": 1005,
+        "fraction": 0.8445830160101245
+      }
+    },
+    "after": {
+      "start": {
+        "segment": 521,
+        "fraction": 0
+      },
+      "end": {
+        "segment": 1005,
+        "fraction": 0.8445830160101245
+      }
+    },
+    "sourceCoordinate": [
+      -94.09179410883995,
+      46.634503988726564
+    ],
+    "reason": "Begin the displayed below-rapids course at existing source vertex 521, downstream of the constructed weirs and split channels. The facility coordinate remains unchanged; the carry-in connection is not mapped.",
+    "metrics": {
+      "routeMiles": 14.2661,
+      "endpointOffsetsMeters": [
+        141.5,
+        14.8
+      ],
+      "mileageDifferencePercent": 0.93,
+      "maxSegmentMeters": 160.2,
+      "vertices": 486
+    }
+  },
+  "distanceDecision": "DNR river miles decrease downstream: Cross Lake carry-in 19.8, Staircase 18.5, Rock Dam 15.3, Harvey Drake 0.9. Published planning miles stay separate from source-line length and the omitted Rock Dam approach.",
+  "gaugeDecision": {
+    "stationChecked": "05231000",
+    "savedRecentObservations": 0,
+    "assignedGauge": null,
+    "externalOutflowUrl": "https://www.mvp-wc.usace.army.mil/data/MissHW_PineRiver.Data.shtml",
+    "note": "USACE outflow exists outside the app supported adapters. No stand-in upstream gauge, flow-speed calibration or GPS remaining-time feature enabled."
+  },
+  "guideTimeDecision": "Crow Wing Kayaks route 12 matches Rock Dam–Harvey Drake and publishes 6+ hours; represent max explicitly as null. Route 10 matches Cross Lake–Harvey Drake and gives approximately 8 hours. Do not transfer durations from different endpoints or convert DNR full-day wording into a numeric estimate.",
+  "sourceImportDecision": "DNR Rock Dam site WAS02986 has blank water-trail ID/name fields. Add that stable ID as a documented query exception; complete refresh adds one feature, removes none and changes none. Discovery does not automatically verify coordinates.",
+  "heldAccessLeads": [
+    {
+      "name": "Pine River Snowmobile Trail take-out",
+      "reason": "Crow Wing Kayaks identifies a popular 4.5-mile Rock Dam trip ending here, but the consulted DNR water-trail access inventory does not establish a distinct landing and public approach.",
+      "nextAction": "Find managing-agency or county evidence of the exact site identity, public boating access, approach and coordinates. Preserve the outfitter trip as a research lead; do not invent a ramp from the trail crossing.",
+      "sourceUrl": "https://www.crowwingkayaks.com/pine-river-kayak-routes"
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/pine-river-expansion-20261106/sources/access-crosslake.png",
+      "sha256": "297e6b2e45b7f3ead5428f9c79397300367fe6b5bcfe481eae0b72ba57f704e8"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/access-harvey-drake.png",
+      "sha256": "fd4f9a0cf241c66c0e4b5a4f3f5ee59e8bdbc6f3a05aab7a9bf976f5cd71df38"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/access-rock-dam.png",
+      "sha256": "2175ca4ad991d4a993d76d2137a30ed80b4d77e8b5fa4fdafb771ed28b5d3cd5"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/access-staircase.png",
+      "sha256": "8a19d96d53c2f8fc5f7401497fc05b0f217134064274c66982979e372f1dcd41"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/crosslake-course-start.png",
+      "sha256": "6dd330489f8bdcdb7b2e53e02816532d2b955eec901de38d4dbd737b8e7b6293"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/dnr-pine-page-1.png",
+      "sha256": "7cbcd5fea552dbd574b196f5afef23dfa84952c6331291511a87debdf844e3d3"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/dnr-pine-page-2.png",
+      "sha256": "ef875a44d711bf1db501bdb4c396ccd48b3b84b551aded871cf4765a7b734543"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-1.png",
+      "sha256": "b94b0fd8acb5b85a2a808a71bd3428690496fdfb56befbdf2ade179c1e705c97"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-10.png",
+      "sha256": "89d8e71ea74653bbdf12ea1ef83f9a22fb5e4a6172d014e82cd3b6c1427e2c9c"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-11.png",
+      "sha256": "a45b02e383ffdeb969c8e2f4768f61c8dfab86ad81515728194f5eb778e86769"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-12.png",
+      "sha256": "a353d5058ae7c852a2e37a17459e4da9bb9cdf06a53817e56fca26243dacc7e7"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-2.png",
+      "sha256": "a4e9d79e7d6efe749c43f36aeb611e2baeee9172c3ecc3c25c980330c6a4268f"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-3.png",
+      "sha256": "375f1389e2a268e4a4e1f40145d94acb7d10e3a891ba5b3300cea44f37ca0aa5"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-4.png",
+      "sha256": "cd10eff20430ab83fc666c8efe7e90aa3ab5c694505c6a75ac8c606629c7de88"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-5.png",
+      "sha256": "d980ec145153b86a581d4babfbd29e44a4e8603c6b306f0eb51d9464a56e0b04"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-6.png",
+      "sha256": "831deb23705c306f04fbef4d7548fa564e2ee733b65a088d82125f7777af119f"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-7.png",
+      "sha256": "c8f932775234feb9de9d37893577641f02352777295be66733cc69e4e97fee4a"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-8.png",
+      "sha256": "1386c2e2f357294c25ee9e1790d0715e3a4fc95b75a5fea651ce04773d16e43d"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/full-course-9.png",
+      "sha256": "032f9c4bb18222e39018e5a9db341109a0787654dc1788a79dc20dd95a4afc77"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/harvey-drake-course-end.png",
+      "sha256": "18e216d3841854062d9449c70a09698e0b3f5fd8d859b17707ad759c03641100"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/rock-dam-course-after-trim.png",
+      "sha256": "f5cf5043596962b26c15fcc27b14cc0eb42f1f3cb3a9f178e7d91c937c27d957"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/rock-dam-course-before-trim.png",
+      "sha256": "0f321d6a56ef47008a8c2fa9f36717caf3bfec74df733cca2ca007fcda05a2d5"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/rock-dam-trim-context.png",
+      "sha256": "be5fa047c3bfbf999afa043e3192b0f42a10c82d0e1982f90da04b23317929a0"
+    },
+    {
+      "file": "research/pine-river-expansion-20261106/sources/staircase-course-end.png",
+      "sha256": "d5cb0dbc0b8a0f58d6f04d87a1a40c0cd2345799e96bf230b18cc2feadf1a9e0"
+    }
+  ],
+  "timingEnabled": false
+}

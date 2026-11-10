@@ -1,0 +1,91 @@
+{
+  "status": "local-review-ready",
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "decisions": "research/kickapoo-review-20261106/decisions.json",
+  "sourceIndex": "research/kickapoo-review-20261106/sources/index.json",
+  "completed": [
+    "Added Wildcat Mountain State Park Canoe Launch as an agency-coordinate landing reviewed against imagery.",
+    "Added Landing 18 as an approximate access area, with access authority separate from the agency bridge-monitoring coordinate.",
+    "Added three agency-published shorter trips, their published distances and guide times, reviewed access maps and correction context.",
+    "Preserved Andrew\u2019s stable ID and coordinates; added Landing 20 aliases after reviewing the agency map.",
+    "Added dated shuttle/parking notices and the reported Bridge 19\u2013Landing 20 blockage to the affected existing trip.",
+    "Withdrew two previously displayed dotted paths after imagery showed channel mismatch; preserved access maps and all existing timing and distance values."
+  ],
+  "addedAccessIds": {
+    "Wildcat Mountain State Park Canoe Launch": "acc-70197eb3eab359198986",
+    "Kickapoo River Landing 18": "acc-dad73a04cc9f5597a3e7"
+  },
+  "addedSections": [
+    "landing4-wildcat",
+    "wildcat-landing5",
+    "landing14-landing18"
+  ],
+  "preview": "http://127.0.0.1:8791/?state=WI&river=kickapoo-river&craft=kayak&section=landing14-landing18&map=1#landMapPanel",
+  "screenshot": "research/kickapoo-review-20261106/local-map-preview.png",
+  "counts": {
+    "rivers": 64,
+    "sections": 392,
+    "stableAccessIds": 449,
+    "accessMapsBefore": 329,
+    "accessMapsNow": 332,
+    "mapsAdded": 3,
+    "heldMapsBefore": 60,
+    "heldMapsNow": 60,
+    "dottedPathsBefore": 45,
+    "dottedPathsAdded": 0,
+    "dottedPathsWithdrawn": 2,
+    "dottedPathsNow": 43,
+    "accessPrecision": {
+      "access-verified": 342,
+      "verified": 107
+    },
+    "newLiveTimingModels": 0,
+    "newGpsRemainingTimeEnabled": 0
+  },
+  "siteCounts": {
+    "rivers": 238,
+    "states": 12,
+    "sections": 1014,
+    "accessMapsBefore": 798,
+    "accessMapsNow": 801,
+    "dottedPathsBefore": 179,
+    "dottedPathsAdded": 0,
+    "dottedPathsWithdrawn": 2,
+    "dottedPathsNow": 177,
+    "riverCourseOverviews": 20
+  },
+  "validation": {
+    "status": "passed",
+    "focusedPython": 22,
+    "previousFocusedPython": 38,
+    "javascript": 63,
+    "releaseCheck": "passed; 238 rivers and 801 access maps",
+    "browser": [
+      "All three new maps render with guide times and correct precision labels.",
+      "Landing 18 correction link preserves river, section and take-out context, leaving coordinates blank. No submission made.",
+      "Existing Landing 14 to Andrew\u2019s displays the dated blockage notice and withheld-path explanation.",
+      "No browser console errors observed."
+    ],
+    "httpReport": "research/kickapoo-review-20261106/http-smoke.json",
+    "python": 254,
+    "totalAutomatedTests": 317,
+    "pythonSeconds": 194.11,
+    "diffCheck": "passed",
+    "publicPreviewHelpers": "none",
+    "commands": [
+      "PYTHONPATH=tests:/private/tmp/floateta-gis-deps-20261106 /private/tmp/floateta-review-20261101/bin/python -m unittest discover -s tests -p test_*.py",
+      "/Users/home/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node --test tests/*.test.cjs",
+      "python3 tools/build_catalog.py --check",
+      "python3 tools/build_review_queue.py --check",
+      "python3 tools/check_release.py --output research/kickapoo-review-20261106/release-check.json"
+    ]
+  },
+  "limitations": [
+    "Landing 18 remains an approximate bridge-area marker; exact water-edge landing is not confirmed.",
+    "Three new route candidates are held for channel mismatch or distance discrepancy. No new live timing or GPS remaining-time feature is enabled.",
+    "The November 3 blockage and construction notices need a current agency recheck before any publication. No inference that a date ending has cleared an obstruction.",
+    "Desktop source and imagery review is not a field survey."
+  ],
+  "nextResearch": "research/kickapoo-review-20261106/next-actions.json"
+}

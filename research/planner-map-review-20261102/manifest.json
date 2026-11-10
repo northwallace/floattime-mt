@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "status": "local-review-complete",
+  "checkedOn": "2026-11-02",
+  "localOnly": true,
+  "published": false,
+  "decisionFile": "research/planner-map-review-20261102/wi-decisions.json",
+  "preview": "http://127.0.0.1:8787/?craft=raft&state=MT&river=madison-upper&section=mcatee-varney&map=1#calculator",
+  "newMapPreview": "http://127.0.0.1:8787/?craft=raft&state=WI&river=manitowish-river&section=fishtrap-dam-portage-site-to-boulder-lake-small-craft-landing&map=1#calculator",
+  "counts": {
+    "rivers": 62,
+    "sections": 369,
+    "stableAccessIds": 431,
+    "accessMapsBefore": 304,
+    "accessMapsNow": 306,
+    "mapsReopened": 2,
+    "mapsHeldBefore": 65,
+    "mapsHeldNow": 63,
+    "dottedPathsBefore": 37,
+    "dottedPathsAdded": 0,
+    "dottedPathsNow": 37,
+    "accessPrecision": {
+      "access-verified": 332,
+      "verified": 98,
+      "pending": 1
+    },
+    "availableMapsWithoutDottedPath": 269,
+    "newLiveTimingModels": 0,
+    "newGpsRemainingTimeEnabled": 0
+  },
+  "siteCounts": {
+    "rivers": 232,
+    "states": 12,
+    "sections": 967,
+    "accessMapsBefore": 741,
+    "accessMapsNow": 743,
+    "dottedPathsBefore": 159,
+    "dottedPathsAdded": 0,
+    "dottedPathsNow": 159
+  },
+  "changes": [
+    "Catalog-generated state shortcuts preset the planner, preserve optional choices and focus river selection. State guide links remain in the footer.",
+    "The shared map moves inside the selected stretch and survives asynchronous card refreshes. Expanded cards use full desktop width.",
+    "An old open tab retries once with a refreshed catalog if a hashed river detail file was replaced.",
+    "Two Manitowish access-area maps reopened with DNR portage guidance. Existing coordinates, distances, gauges, calibration and route geometry unchanged."
+  ],
+  "verification": {
+    "python": {
+      "passed": 152,
+      "failed": 0,
+      "log": "research/planner-map-review-20261102/python-tests.log"
+    },
+    "javascript": {
+      "passed": 57,
+      "failed": 0,
+      "log": "research/planner-map-review-20261102/javascript-tests.log"
+    },
+    "localHttp": {
+      "requests": 413,
+      "failed": 0,
+      "log": "research/planner-map-review-20261102/http-checks.json"
+    },
+    "catalogAndQueue": "Build and freshness checks passed",
+    "releaseCheck": "research/planner-map-review-20261102/release-check.json",
+    "browser": "research/planner-map-review-20261102/browser-checks.json",
+    "diffCheck": "passed"
+  },
+  "limits": [
+    "63 Wisconsin maps remain held. Exact landings and portages still require source review.",
+    "New Manitowish maps use agency-listed approximate access areas, not newly verified water-edge pins. Required carries are described; no continuous dotted path or GPS ETA added.",
+    "No field testing or production changes.",
+    "Some Rock County source downloads returned HTTP 403; no approval was inferred from search excerpts."
+  ],
+  "nextWork": [
+    "Review remaining Wisconsin access holds by shared dam/landing, preserving separate above/below-dam points.",
+    "Review additional river centerlines only where endpoints and barriers support a continuous paddling section.",
+    "Review this local build before any publication."
+  ],
+  "evidence": [
+    {
+      "file": "research/planner-map-review-20261102/wi-decisions.json",
+      "sha256": "31e1d8a4740d5fea161b19630bc9c8c0449ca28d311b3c53eafec866eb1d3bfd"
+    },
+    {
+      "file": "research/planner-map-review-20261102/sources/index.json",
+      "sha256": "3462649da85651785e13dbd2d4ebf6083140d69b2fcba5d94bda6bdcd02b218b"
+    },
+    {
+      "file": "research/planner-map-review-20261102/browser-checks.json",
+      "sha256": "71965e7068d100907a9b37c611ceb07bd6b3d1484620a41a2d146cc8a0dc21b2"
+    },
+    {
+      "file": "research/planner-map-review-20261102/remaining-wisconsin-maps.json",
+      "sha256": "6de6458cf5091af30ca5fcabd2040933281499b16b9ffc4ffb1e756067e27210"
+    }
+  ]
+}

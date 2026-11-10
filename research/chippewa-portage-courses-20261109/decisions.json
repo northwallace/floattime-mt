@@ -1,0 +1,403 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/chippewa-portage-courses-20261109/before/public/catalog.json",
+    "sha256": "8e64159200e662138a7e7e0ef79ff21d5bb6552d3632f23c62e6c4ef543b8857"
+  },
+  "mapsAdded": [
+    "chippewa-river/chippewa-river-access-town-of-anson-to-chippewa-river-access-city-of-chippewa-falls",
+    "chippewa-river/mount-simon-park-boat-ramp-to-hobbs-landing"
+  ],
+  "mapsWithdrawn": [],
+  "pathsAdded": [
+    "WI/chippewa-river--riverview-park-boat-ramp-to-mount-simon-park-boat-ramp.json",
+    "WI/chippewa-river--730th-street-boat-launch-to-tyrone-canoe-landing.json"
+  ],
+  "changedSections": [
+    "chippewa-river/chippewa-river-access-town-of-anson-to-chippewa-river-access-city-of-chippewa-falls",
+    "chippewa-river/mount-simon-park-boat-ramp-to-hobbs-landing",
+    "chippewa-river/spring-brook-landing-to-730th-street-boat-launch",
+    "chippewa-river/riverview-park-boat-ramp-to-mount-simon-park-boat-ramp",
+    "chippewa-river/730th-street-boat-launch-to-tyrone-canoe-landing"
+  ],
+  "pointCoordinatesChanged": [],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/WI/chippewa-river--riverview-park-boat-ramp-to-mount-simon-park-boat-ramp.json",
+        "sha256": "e57fbc34952b096c5286442c0a32e7537578764438d596dc7f31992f96f14622"
+      },
+      "destination": "catalog/routes/WI/chippewa-river--riverview-park-boat-ramp-to-mount-simon-park-boat-ramp.json",
+      "candidate": {
+        "file": "research/chippewa-portage-courses-20261109/courses/riverview-mount-simon/candidate.json",
+        "sha256": "f19afc404b8d59cd652dcf176a7e7e6b0a3f8dbda19a7b57ad99ccdad5f31bd4"
+      },
+      "inventory": {
+        "file": "research/chippewa-portage-courses-20261109/courses/riverview-mount-simon/branch-inventory.json",
+        "sha256": "059381ecfe385f95d58881d9404c7b6a9661f5029ec85bcad8ce52f854ed1bae"
+      },
+      "choices": {
+        "file": "research/chippewa-portage-courses-20261109/courses/riverview-mount-simon/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/chippewa-portage-courses-20261109/sources/chippewa-river.json",
+        "sha256": "128cb8dc9cc9c86a2035b1b56d8d51dcabda803c3c09e780d5904bde3b585c7c"
+      },
+      "damScreen": {
+        "file": "research/chippewa-portage-courses-20261109/courses/riverview-mount-simon/dam-screen.json",
+        "sha256": "f4170ad5597e2c1a30c3851f3719187cffd95844f6c2efb891360e6cfc9fa803"
+      },
+      "review": {
+        "file": "research/chippewa-portage-courses-20261109/courses/riverview-mount-simon/full-course-review.json",
+        "sha256": "e0d8335464c1adbc8f1db882e95685fa49710d5ac9052b5ac893946cc9c796ac"
+      },
+      "imagery": [
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/riverview-mount-simon-part-1.jpg",
+          "sha256": "65c91c56eda9492b5ac3ced7a50f9588804465993df07e3a7110e97ae1e23ab0"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/riverview-mount-simon-part-2.jpg",
+          "sha256": "14404d6fe904d58d16c4d10ec8ffbb5fdd9d175152d5a8a2c472a0d8c2346c46"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/riverview-mount-simon-part-3.jpg",
+          "sha256": "357e6f42c26010b737e4aab9da76fda3eb5c3a4c4b50da4aa5bde33a49b24848"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/riverview-mount-simon-putIn.jpg",
+          "sha256": "f266cc3aad3c9175f89f6c50c2d901f9f136e328c08813b7aacfca8efbb97ff9"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/riverview-mount-simon-takeOut.jpg",
+          "sha256": "5ce991302f259899fa73d49d2d621c5852c8eadd3b126f7ebc91e5a564c6c59c"
+        }
+      ],
+      "forkImagery": [],
+      "metrics": {
+        "routeMiles": 1.4905,
+        "endpointOffsetsMeters": [
+          240.4,
+          155.3
+        ],
+        "mileageDifferencePercent": 14.66,
+        "maxSegmentMeters": 328.5,
+        "vertices": 14
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/chippewa-river--730th-street-boat-launch-to-tyrone-canoe-landing.json",
+        "sha256": "e9564a2c4c0e0534595379b0c2a7360be9f1fdaa486b654649baae591a248a8f"
+      },
+      "destination": "catalog/routes/WI/chippewa-river--730th-street-boat-launch-to-tyrone-canoe-landing.json",
+      "candidate": {
+        "file": "research/chippewa-portage-courses-20261109/courses/730-tyrone/candidate.json",
+        "sha256": "047a48161d8c95be6b44d1f490c085cadeeda6bb904ead19304b8ba1a08078c0"
+      },
+      "inventory": {
+        "file": "research/chippewa-portage-courses-20261109/courses/730-tyrone/branch-inventory.json",
+        "sha256": "b3361c4aeee761fdfbb4b450c669e335faa0f64f28aa59dcb33da3f3c5de79b5"
+      },
+      "choices": {
+        "file": "research/chippewa-portage-courses-20261109/courses/730-tyrone/branch-choices.json",
+        "sha256": "fcfdb84c1362bc9e60823d7cceebfd7fad65e5ac12e088dca8845db275fd2e24"
+      },
+      "source": {
+        "file": "research/chippewa-portage-courses-20261109/sources/chippewa-river.json",
+        "sha256": "128cb8dc9cc9c86a2035b1b56d8d51dcabda803c3c09e780d5904bde3b585c7c"
+      },
+      "damScreen": {
+        "file": "research/chippewa-portage-courses-20261109/courses/730-tyrone/dam-screen.json",
+        "sha256": "fba696821c7966920a16d2e1becee6ac33ddcb52af11f28bb9cdce120c1f76e2"
+      },
+      "review": {
+        "file": "research/chippewa-portage-courses-20261109/courses/730-tyrone/full-course-review.json",
+        "sha256": "59a7b170e3a38aa6f145732f85602f07ba31d6a827db3c90c7766da0f894afa2"
+      },
+      "imagery": [
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-1.jpg",
+          "sha256": "556a92b5183d1d959fe2efd75371439744712a1e39285bef3b375c41d0625544"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-2.jpg",
+          "sha256": "80f5aeb1564bab9e70d7abee959d7a0e566142761a676adb564f3144aebbfbfe"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-3.jpg",
+          "sha256": "89c888b84e926165a57cb2500f22fac0cc9caf3ab02755c9b9f00b224e957131"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-4.jpg",
+          "sha256": "4da044dca5389d17fee71fce57d456cbb1cc4d061d0a21f61c930f74fb612b35"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-5.jpg",
+          "sha256": "37a4967dcd6bf2ba28c0972f9606eb802caeae322ed48e630e340667bbfaf42b"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-6.jpg",
+          "sha256": "43f1bda6b73f1fce583721095df0d018d88df074d22cee41e7c4217f1603f28d"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-7.jpg",
+          "sha256": "8015fb17f5ef9d921030ed3f69d613b8c7638de63f79ce8af4d420319e2ba726"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-8.jpg",
+          "sha256": "fc5906ab980abdc671c6465f63d62debf83e0e76e24797e05dbf5950f0ef20b8"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-9.jpg",
+          "sha256": "c33a8283294c83acd4af302b0dcbbe637bd4927cbb629fcc3541e54437e7c31b"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-part-10.jpg",
+          "sha256": "6b8c0f36e04e5d6747e08767429844003dad86a66a30bc85b342ee95afa9f4ca"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-putIn.jpg",
+          "sha256": "732632d987a9f2f7d8da289a103ab848d414ed159935bf3817c0a94d7c76909a"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-takeOut.jpg",
+          "sha256": "62b06eb44c419c0770fa4355a741fdd7ca93354164074658020326d362b28c87"
+        }
+      ],
+      "forkImagery": [
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-forkextended-1.jpg",
+          "sha256": "4ebdffb6642fda0185fc581b09c86807686f3c7ecbcd243a954abd6598914b4c"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-forkextended-2.jpg",
+          "sha256": "27aa74848250b42bdefdb683131760b221916c02b02fcd54d03d5284d4adacf8"
+        },
+        {
+          "file": "research/chippewa-portage-courses-20261109/imagery/730-tyrone-forkextended-3.jpg",
+          "sha256": "d38c866fa991d6991034a16f312c17db726535a3c9718d6bc09294351c57ea45"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 5.5434,
+        "endpointOffsetsMeters": [
+          104.8,
+          129.0
+        ],
+        "mileageDifferencePercent": 1.01,
+        "maxSegmentMeters": 774.5,
+        "vertices": 35
+      }
+    }
+  ],
+  "rejectedCourse": {
+    "file": "research/chippewa-portage-courses-20261109/rejected-course.json",
+    "sha256": "042a355e0fade1fdf8277b7ef7ca645ce4f8c3f1e2d5fd928765db7555bac579"
+  },
+  "sourceReceipts": [
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/chippewa-county-appendix.pdf",
+      "url": "https://www.chippewacountywi.gov/DocumentCenter/View/564/Chapter-1000---Appendix-PDF",
+      "finalUrl": "https://www.chippewacountywi.gov/DocumentCenter/View/564/Chapter-1000---Appendix-PDF",
+      "sha256": "673a00a6d8a66aa7e930aef8597108f8f569821fdbfc19864ee231fe0fd11d8b",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/eau-claire-watertrail.pdf",
+      "url": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/eauclaire/original_chippewarivertrailmap_folder_edt3_2016_2_5288f4d0-3c08-445d-a4ae-e6ede623ed79.pdf",
+      "finalUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/eauclaire/original_chippewarivertrailmap_folder_edt3_2016_2_5288f4d0-3c08-445d-a4ae-e6ede623ed79.pdf",
+      "sha256": "6756c971e5f335937f7f0bc9ee2238c6a07562561c7bee9ba23d664ca8046940",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/we-wilderness.html",
+      "url": "https://www.we-energies.com/environment/wilderness-shores",
+      "finalUrl": "https://www.we-energies.com/environment/wilderness-shores",
+      "sha256": "fdd199c7e25355de69080c4d590d8f3b6fc8e045e7249da853a62c914a39daf9",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/we-wilderness-map.pdf",
+      "url": "https://www.we-energies.com/environment/pdf/wilderness_shores-complete-area-map.pdf",
+      "finalUrl": "https://www.we-energies.com/environment/pdf/wilderness_shores-complete-area-map.pdf",
+      "sha256": "46171f2028ad721d044b69ef45a4280a773288e9c9dfbe499a29f34ca868c70d",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/jim-falls-whitewater.pdf",
+      "url": "https://www.xcelenergy.com/staticfiles/xe/PDF/News/Jim%20Falls%20Whitewater%20Brochure.pdf",
+      "finalUrl": "https://www.xcelenergy.com/staticfiles/xe/PDF/News/Jim%20Falls%20Whitewater%20Brochure.pdf",
+      "sha256": "91e5ed553c942852822c50ddb6efe00b3cdcab62b598a4bbf2a76787a9263b96",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/eau-claire-watertrail.html",
+      "url": "https://www.visiteauclaire.com/chippewariverwatertrail/",
+      "finalUrl": "https://www.visiteauclaire.com/chippewariverwatertrail/",
+      "sha256": "1ed319ea5a23bd29c3f6d5c1a102c033b4155854defe2d8ca42785d44ee97d78",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/riverview-conservancy.pdf",
+      "url": "https://www.chippewacountywi.gov/DocumentCenter/View/693/Riverview-Conservancy-Area-PDF?bidId=",
+      "finalUrl": "https://www.chippewacountywi.gov/DocumentCenter/View/693/Riverview-Conservancy-Area-PDF?bidId=",
+      "sha256": "1412d95c360ca9b4cc33b96b8db452236099c88e92570a174b811d1d4bb0a500",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-e7218160b08c5a459654.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D1108&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D1108&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "26c00d3ae5c18aef00774af40620c0a81a0431ca9c14d53ba8581ecb44e46166",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-58ec078fbe85595a88eb.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D1044&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D1044&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "ea7d1723d19a63f67192cf5ff01b65056c8a0a287d700f4bbca9656254834525",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-67a595a22a8153aabe3b.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D994&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D994&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "c44d0ba7f4297abb26b7a99ed03538f596141ff84ef071699c9289ce4a205467",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-579502d4c3495dbeb9e7.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D986&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D986&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "fe76b1b323f3a7d9d7d109cba7c92572711a7a8232dd33933d324141d7e7d3c7",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-0bddaaf5b3885a4a99d3.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D975&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D975&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "318346fba2b4df2e1e509ebffc79f0266d4fcf429dedf6573a1ac0c01a86ac1c",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-82ba2abe5e905485af48.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D973&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D973&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "0081f3cda65e22aaefc082e3bd98e8c091653892b3b4670c86e9df6d7f674b87",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-762e87d51896557aa8b2.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D971&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D971&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "688a6d98b352fff5b028fbfd0827f383aec93c39c88a557c416e5781eb6e7e78",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/acc-3747830f80665092ad04.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D5087&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D5087&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "d38a3e54a47a6b7b9c5d52ac6a2d35e20b26633f878f90a4e9e64914a871c60f",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/carry-dams.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=1%3D1&geometry=-91.54%2C44.78%2C-91.27%2C45.04&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&f=json",
+      "sha256": "f95650c2a0b2b4af63c7fec5a49baacd1f8e849628fc38ced264f497018d959d",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/sources/xcel-2026-dam-safety.html",
+      "url": "https://newsroom.xcelenergy.com/news/xcel-energy-urges-safety-near-dams-before-start-of-wisconsins-2026-fishing-season",
+      "sha256": "383886ec256d87dbfb90603591f4707d6b2b7efc61d2851cdfb3f04e9535a7e3",
+      "checkedOn": "2026-11-09"
+    }
+  ],
+  "imageryReceipt": {
+    "file": "research/chippewa-portage-courses-20261109/imagery/receipts.json",
+    "sha256": "10bd37347ff879afedacd45147adfa20e181cd430700a1c4203135e9e6a15e58"
+  },
+  "forkReceipt": {
+    "file": "research/chippewa-portage-courses-20261109/imagery/forkextended-receipts.json",
+    "sha256": "ebc9e5ab3e06d9cb30d00128dd2ebf4b2371ce55923dbfc0c2c5849bf40e9e4e"
+  },
+  "carryImages": [
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/acc-67a595a22a8153aabe3b.jpg",
+      "sha256": "530bf8ea0c2577946ce39c9d44e454b285eb76bd9e61cdd786e67010d672aa9f"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/acc-58ec078fbe85595a88eb.jpg",
+      "sha256": "d30c27e6a090ef9146c2f0a8cf26e060c2564139f8737af584d8744ea1f05d19"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/acc-0bddaaf5b3885a4a99d3.jpg",
+      "sha256": "5e08282bba656bb4b7872343b16b7eaececa055c99ee1f1e4a9f80b9e154feaf"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/acc-579502d4c3495dbeb9e7.jpg",
+      "sha256": "718e9f699092556a56987c727cd65968fc7d83d3ff7a39080f105a9b65e72ad8"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/dells-carry-context.jpg",
+      "sha256": "0471e740420f747c4341fe433a8ad45dfd334c92ff315a0be2dd52d3a3701e9f"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/wissota-carry-context.jpg",
+      "sha256": "da04bad43dc86b136b74fa71f0a1d4a6e934c88adf06dd97c4b44964da0d22e8"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/wissota-full-context.jpg",
+      "sha256": "90ca452b4766498503820703639f3b981f6b9033d40027e11d218469351c8107"
+    }
+  ],
+  "guideImages": [
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/chippewa-county-appendix-80.png",
+      "sha256": "3ae5fa227ffb1fecfc040e088090e0306916afc251ef5d4701be8b8640c4f5ee"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/eau-claire-watertrail-1.png",
+      "sha256": "4d20613a56ee76a7cf218485f1c80f5cae17370d9fed3ea5d522204b7ab453cc"
+    },
+    {
+      "file": "research/chippewa-portage-courses-20261109/imagery/riverview-conservancy.png",
+      "sha256": "fdf29a31bd5845045740c78c79c8d48fe580575dceddc1808e943b25ad83dcc0"
+    }
+  ],
+  "stillHeld": [
+    {
+      "section": "chippewa-river/winter-dam-access-to-chippewa-river-access-moon-s-landing",
+      "reason": "Dam crossing/portage unresolved: Wells, W.F.. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float. A dam lies near a section endpoint (Chippewa Reservoir). The landing’s position relative to the barrier still needs confirmation."
+    },
+    {
+      "section": "chippewa-river/holcombe-flowage-access-town-of-lake-holcombe-783-to-canoe-kayak-launch",
+      "reason": "Dam crossing/portage unresolved: Holcombe. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float."
+    },
+    {
+      "section": "chippewa-river/chippewa-river-access-town-of-eagle-point-558-to-chippewa-river-access-town-of-anson",
+      "reason": "Dam crossing/portage unresolved: Jim Falls. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float."
+    },
+    {
+      "section": "chippewa-river/chippewa-river-access-city-of-chippewa-falls-to-chippewa-river-access-town-of-hallie",
+      "reason": "Dam crossing/portage unresolved: Chippewa Falls. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float."
+    }
+  ],
+  "findings": [
+    "Restored two access maps with explicit required carries around Wissota and Dells dams. No exact carry line or continuous dotted path through either dam is mapped.",
+    "Added Riverview–Mount Simon and 730th Street–Tyrone river-course overviews after checking all 13 overlapping panels, four endpoints and the three downstream fork panels.",
+    "Rejected Spring Brook–730th Street source course after full imagery exposed a wooded former channel; access map retained and preliminary distance flagged for review.",
+    "Holtes–Spring Brook has no downstream connection with automatic nearest-source endpoint selection. Leave its existing access map without a dotted path until source anchors and all alternatives are reviewed.",
+    "We Energies’ regional map does not document the specific held Menominee dams. Jim Falls whitewater brochure describes the spillway reach, not a complete carry across that section. Those holds remain."
+  ],
+  "limitations": [
+    "Published maps are desktop evidence, not a current field inspection; confirm carry conditions and posted restrictions.",
+    "No point coordinates, stable IDs, numeric planning miles, gauges or timing modes changed.",
+    "New dotted courses are display-only, with no GPS remaining time, distance adoption or land overlay.",
+    "No deployment, push or production changes."
+  ]
+}

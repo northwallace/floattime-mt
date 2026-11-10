@@ -66,17 +66,36 @@ def network(payload,project):
     return edges,adj
 
 
-def directed_route(edges,adj,section,project,unproject,*,overview=False):
-    selected=[];offsets=[]
+def source_endpoints(edges,section,project,max_offset,anchors=None):
+    """Select source edges without changing access coordinates or inventing links."""
+    if anchors is not None:
+        if not isinstance(anchors,dict) or not anchors or not set(anchors)<={'putIn','takeOut'}:
+            raise ValueError('Course anchors must name putIn and/or takeOut')
+        for row in anchors.values():
+            if not isinstance(row,dict) or row.get('featureId') not in edges:
+                raise ValueError('Unknown course anchor feature')
+            if not isinstance(row.get('reason'),str) or not row['reason'].strip():
+                raise ValueError('Course anchor requires a review reason')
+    selected=[]
+    for side in ('putIn','takeOut'):
+        p=section[side+'Coords'];pt=Point(project(p['lon'],p['lat']))
+        keys=[anchors[side]['featureId']] if anchors and side in anchors else edges
+        choices=sorted((edges[key]['line'].distance(pt),key) for key in keys)
+        if not choices or choices[0][0]>max_offset:
+            raise ValueError(f'Access is outside the source vicinity ({max_offset} m)')
+        offset,key=choices[0]
+        selected.append(dict(featureId=key,offsetMeters=offset,sourceStationMeters=edges[key]['line'].project(pt)))
+    return selected
+
+
+def directed_route(edges,adj,section,project,unproject,*,overview=False,anchors=None):
     # An overview stages river geometry near a facility, not a landing connection.
     # Keep the original access snapshots; review must explain offsets over 100 m.
     max_offset=OVERVIEW_MAX_OFFSET_METERS if overview else 100
-    for end in ('putIn','takeOut'):
-        p=section[end+'Coords'];pt=Point(project(p['lon'],p['lat']))
-        distances=sorted((e['line'].distance(pt),key) for key,e in edges.items())
-        if not distances or distances[0][0]>max_offset:raise ValueError(f'Access is more than {max_offset} m from the directed river network')
-        # A nearby second branch is not grounds for moving a reviewed landing.
-        key=distances[0][1];selected.append((key,edges[key]['line'].project(pt)));offsets.append(distances[0][0])
+    if anchors is not None and not overview:raise ValueError('Course anchors are limited to display-only overviews')
+    endpoints=source_endpoints(edges,section,project,max_offset,anchors)
+    selected=[(p['featureId'],p['sourceStationMeters']) for p in endpoints]
+    offsets=[p['offsetMeters'] for p in endpoints]
     (start,a),(finish,b)=selected;paths=[];stack=[(start,[start],0)]
     max_m=section['miles']*1609.344*1.5+2000
     while stack and len(paths)<2:

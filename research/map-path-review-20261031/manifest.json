@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "status": "local-batch-complete",
+  "localOnly": true,
+  "checkedOn": "2026-10-31",
+  "workspace": "/Users/home/Documents/Codex/FloatETA-wisconsin-local-20261030",
+  "preview": "http://127.0.0.1:8785/?state=WI&river=namekagon-river&section=namekagon-dam-landing-to-county-road-m-landing&craft=raft&map=1#landMapPanel",
+  "decisionFile": "research/map-path-review-20261031/wi-decisions.json",
+  "wisconsin": {
+    "rivers": 62,
+    "sections": 369,
+    "stableAccessIds": 431,
+    "accessMapsBefore": 288,
+    "accessMapsNow": 299,
+    "mapsReopened": 11,
+    "mapsHeldBefore": 81,
+    "mapsHeldNow": 70,
+    "dottedPathsBefore": 27,
+    "dottedPathsAdded": 6,
+    "dottedPathsNow": 33,
+    "pathsByRiver": {
+      "baraboo-river": 1,
+      "black-river-wi": 1,
+      "bois-brule-river": 3,
+      "brule-river": 3,
+      "crawfish-river": 2,
+      "flambeau-river": 5,
+      "kickapoo-river": 6,
+      "milwaukee-river": 1,
+      "namekagon-river": 6,
+      "oconto-river": 2,
+      "red-cedar-river": 3
+    },
+    "accessPrecision": {
+      "access-verified": 355,
+      "verified": 75,
+      "pending": 1
+    },
+    "waterEdgePinsReviewedThisPass": 16,
+    "additionalPinsRetainedAsFacilityAreas": 12,
+    "liveTimingModelsEnabled": 0,
+    "gpsRemainingTimeEnabled": 0,
+    "availableMapsWithoutDottedPath": 266
+  },
+  "site": {
+    "rivers": 232,
+    "sections": 967,
+    "accessMapsBefore": 726,
+    "accessMapsNow": 737,
+    "dottedPathsBefore": 86,
+    "dottedPathsAdded": 40,
+    "dottedPathsNow": 126,
+    "pathsAddedByState": {
+      "AR": 14,
+      "AZ": 1,
+      "CO": 7,
+      "ID": 1,
+      "MO": 3,
+      "UT": 5,
+      "WA": 3,
+      "WI": 6
+    }
+  },
+  "reviewNotes": [
+    "Eleven Wisconsin access-map holds resolved: nine required portage/lock notices and two below-dam launches. Access-map availability does not imply a continuous paddling route.",
+    "Sixteen landing records reviewed from agency evidence and imagery; twelve additional inspected records remain approximate facility areas. These are desktop reviews, not field surveys.",
+    "County Road M and Gordon Dam moved to NPS canoe-access geometry; stable Float ETA access IDs retained. Agency bindings now comprise 417 WDNR and 13 NPS records, all unchanged when checked.",
+    "Forty new dotted paths are agency centerlines for display only. No new time-remaining, land-overlay filtering or calculator-distance features enabled.",
+    "All existing paths and catalog mileages remain unchanged. Salida Stone Bridge–Rincon, Eleven Point Thomasville–Cane Bluff and Moab Dewey Bridge–Hittle Bottom retain maps but no dotted line while passage/distance questions remain.",
+    "Dinosaur/Lodore difficulty wording corrected to Class II–IV depending on flow, with NPS experience guidance.",
+    "Additional network-derived candidates remain research evidence, not approved paths. Seventy Wisconsin maps still need evidence; 266 available Wisconsin maps do not have dotted paths."
+  ],
+  "validation": {
+    "python": {
+      "discovered": 138,
+      "passedDefaultRuntime": 131,
+      "gisSkippedDefaultRuntime": 7,
+      "gisPassedDedicatedRuntime": 7
+    },
+    "javascriptPassed": 46,
+    "httpRequestsPassed": 363,
+    "agencyBindingsUnchanged": 430,
+    "catalogCheck": "passed",
+    "reviewQueueCheck": "passed",
+    "gitDiffWhitespaceCheck": "passed",
+    "browserCheckFile": "research/map-path-review-20261031/browser-checks.json"
+  },
+  "notPerformed": [
+    "No publish, push, production configuration changes or deployment.",
+    "No GPS field test or current navigability certification."
+  ],
+  "evidence": [
+    {
+      "file": "research/map-path-review-20261031/wi-decisions.json",
+      "sha256": "db41204e8d59f90741adf1f8a75d56a139ec9097c0c3015d0a894c5ef054ec43"
+    },
+    {
+      "file": "research/map-path-review-20261031/approved-paths.json",
+      "sha256": "75903afcb9a4e4c77356a21067d2a6ff0e118581c2bc8513563d40e19eb352de"
+    },
+    {
+      "file": "research/map-path-review-20261031/withheld-paths.json",
+      "sha256": "b73679cfbf08023914407b76240a0551cf6eaa8c207fc949d07f8acf5a78e00d"
+    },
+    {
+      "file": "research/map-path-review-20261031/section-path-reviews.json",
+      "sha256": "bccf9cab77690c07e142dee92a98a03bff84bf21a93e2eb69772ad1043cecb41"
+    },
+    {
+      "file": "research/map-path-review-20261031/sources/index.json",
+      "sha256": "e97ce67494e5c3b46525ca6d3501dfdb5c145326c5f505d7c443f578a5f68741"
+    },
+    {
+      "file": "research/map-path-review-20261031/release-readiness.json",
+      "sha256": "9bd9aed71d1bc0573e6c88def02c5c547c3e22a377ab635ff7413c49538d5ba5"
+    },
+    {
+      "file": "research/map-path-review-20261031/remaining-wisconsin-maps.json",
+      "sha256": "16c06201ac2481350234d66ee7d39375744f890b45640955df7c2d5b535d3fc6"
+    },
+    {
+      "file": "research/map-path-review-20261031/unchanged-check.json",
+      "sha256": "57f69cd4d298ea7e408f3b57d88eb75df94b4d0569efb050555dbc0f3994ec18"
+    },
+    {
+      "file": "research/map-path-review-20261031/http-checks.json",
+      "sha256": "9ba07f1d4b4c51e7efc3371fa02f5c9f24a678baedfc451aeccfc878e06bb272"
+    },
+    {
+      "file": "research/map-path-review-20261031/browser-checks.json",
+      "sha256": "88ea2e15c19a7f8e341840c9b4f0187317d3e31efb4c350b2bd2ee0ad02db801"
+    },
+    {
+      "file": "research/map-path-review-20261031/python-tests.log",
+      "sha256": "ee1d6086c78baee2d54573a8923e079487084db6fdf52804e48dbc99113140be"
+    },
+    {
+      "file": "research/map-path-review-20261031/gis-tests.log",
+      "sha256": "55ddc3c61253855fe1c1a532e4ea864ab8874eeed20531c265f0eba8cc6aa3ba"
+    },
+    {
+      "file": "research/map-path-review-20261031/javascript-tests.log",
+      "sha256": "ee7d9aebc0f084cc57d72bedad71fb96df1985b7eb062d81c73452a12f4d5af0"
+    },
+    {
+      "file": "research/map-path-review-20261031/namekagon-desktop.png",
+      "sha256": "369be879f131350ae56cb6a69a938b669869cdfaccab86dc5b5d5b9d885e7b85"
+    },
+    {
+      "file": "research/map-path-review-20261031/buffalo-mobile.png",
+      "sha256": "84a58dceff478c3cbde99c80d1c7cb1a032ca616fa3434975cf563530c3c99c2"
+    },
+    {
+      "file": "research/map-path-review-20261031/yahara-portage-mobile.png",
+      "sha256": "0edcf5b81037ef1be2a38e30cf4f908cc782d72c4624f450b7f0af45a41faf20"
+    },
+    {
+      "file": "research/map-path-review-20261031/WI-wdnr-access-bindings.json",
+      "sha256": "67bd2acf43cc44d09afa3e027f18be25a15387630fce65f73b71d4e92d86696c"
+    },
+    {
+      "file": "research/map-path-review-20261031/WI-nps-access-bindings.json",
+      "sha256": "109f1eeb76e974abf0c95f25325d0a0174495ba0599f5da8b3ebc783a8a702be"
+    },
+    {
+      "file": "research/map-path-review-20261031/wdnr-bindings-check.log",
+      "sha256": "8a93a1a76bb03101f1f45c64db01257a907ec502e246edc1df4203382e347493"
+    },
+    {
+      "file": "research/map-path-review-20261031/nps-bindings-check.log",
+      "sha256": "71b787410e039618e6a12a1fa0212fce17866ebd51e96d629e5143cb6b06fcf6"
+    }
+  ]
+}

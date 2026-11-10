@@ -94,10 +94,22 @@
       "aliases": []
     },
     "Confluence Park Boat Launch (Delta)": {
-      "status": "pending",
-      "note": "No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: City park boat launch at 440 North Palmer Street, Delta (BLM DENCA float guide).",
+      "status": "access-verified",
+      "note": "The city lists separate river and lake ramps, and the BLM Gunnison guide confirms the river put-in at this address. The city facility record publishes this park coordinate. Imagery confirms the park parking area south of the Gunnison. A closer image candidate fell inside the Fort Uncompahgre grounds and was rejected. Retain the documented park-area coordinate rather than invent an exact river ramp.",
       "id": "acc-4992e161d02d5b2a94df",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 38.749507535,
+        "lon": -108.07409366,
+        "feature": "City-published Confluence Park location near the recreation parking; not the river ramp or lake ramp"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "City of Delta",
+      "sourceName": "City of Delta — Confluence Park Boat Launch (Delta)",
+      "sourceUrl": "https://cityofdelta.net/Facilities/Facility/Details/Confluene-Park-3",
+      "coordinateSourceUrl": "https://cityofdelta.net/Facilities/Facility/Details/Confluene-Park-3",
+      "verifiedOn": "2026-11-09",
+      "directions": "Enter Confluence Park at 440 North Palmer Street, Delta, and follow signs for the Gunnison River boat launch. The city marker is inland near the recreation parking. The park also has a separate lake ramp; identify the river launch during your shuttle."
     },
     "Cottonwood Island Boat Ramp": {
       "status": "verified",
@@ -214,10 +226,22 @@
       "aliases": []
     },
     "Horse Creek River Access": {
-      "status": "pending",
-      "note": "No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: Free site on a conservation easement managed by Eagle County (guide RM 57.7).",
+      "status": "access-verified",
+      "note": "The BLM recreation guide confirms a public boat launch and toilets on the Eagle County conservation easement. Its action a-s1rpYd centers on the visible ramp parking loop beside the Colorado River. The map area is supported by both the 2015 guide and the current BLM StoryMap. The exact shore entry is not surveyed; surrounding ranch land is not opened by this marker.",
       "id": "acc-eb793f35682759f0b978",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 39.759632906,
+        "lon": -107.010984049,
+        "feature": "BLM StoryMap Horse Creek view center at the launch parking loop; not a surveyed waterline"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "Eagle County Open Space",
+      "sourceName": "Eagle County Open Space — Horse Creek River Access",
+      "sourceUrl": "https://storymaps.arcgis.com/stories/7861a5cfb3df44bbbf077483ab48b613",
+      "coordinateSourceUrl": "https://storymaps.arcgis.com/stories/7861a5cfb3df44bbbf077483ab48b613",
+      "verifiedOn": "2026-11-09",
+      "directions": "Follow Colorado River Road (County Road 301) to the signed Horse Creek River Access on the Colorado River Ranch easement. Use the public launch parking and ramp; stay within the access easement. No camping."
     },
     "Juniper Canyon Boat Ramp": {
       "status": "verified",
@@ -246,10 +270,22 @@
       "aliases": []
     },
     "Loudy Simpson Park": {
-      "status": "pending",
-      "note": "No official coordinate was found in BLM, CPW, USFS or NPS layers. Official text: Moffat County park with launch/parking area (CPW).",
+      "status": "access-verified",
+      "note": "CPW explicitly lists a developed launch. The City of Craig trail map places the boat ramp northwest of the ball fields, and imagery shows the corresponding access road, turnaround and ramp. The coordinate is an imagery placement matched to that city map, not an agency GPS fix. Craig reports ramp completion in spring 2024 and the river-park project in October 2025; imagery may predate that construction. Use the current signed ramp, not the old park-center directions pin.",
       "id": "acc-331586d187645034a0a5",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 40.498057028877035,
+        "lon": -107.56149027845193,
+        "feature": "Approximate launch parking northwest of the playing fields, matched to the city trail map and imagery"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "Moffat County",
+      "sourceName": "Moffat County — Loudy Simpson Park",
+      "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-yampa-valley-golf-course-loudy-simpson",
+      "coordinateSourceUrl": "https://cms3.revize.com/revize/craigco/Document%20Center/Department/Public%20work/City%20Trail%20Maps/Update/Craig_Trails_LoudySimpson.pdf",
+      "verifiedOn": "2026-11-09",
+      "directions": "Enter Loudy Simpson Park from Highway 394 south of Craig. Follow the park road northwest of the ball fields to the signed river launch parking. The marker is the launch vicinity, not an exact water entry. Check local signs and river-park conditions before launching."
     },
     "Lyons Gulch Recreation Site": {
       "status": "access-verified",
@@ -324,10 +360,22 @@
       "aliases": []
     },
     "Rancho del Rio": {
-      "status": "pending",
-      "note": "Private fee site (Rancho del Rio); terms set by the owner and not verified from an official source. Official text: Private recreation fee site (guide RM 21.5); permission is the owner's, terms not verified.",
+      "status": "access-verified",
+      "note": "The operator explicitly offers river access for rafters and anglers. The BLM recreation guide identifies this private fee site and its launching area. The BLM StoryMap action a-mV1n40 centers on this facility, matching buildings, parking and river frontage in imagery. This is an approximate facility coordinate, not an agency-surveyed ramp. Owner terms and fees apply.",
       "id": "acc-f416c3d8d48e5ea991e4",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 39.894818614,
+        "lon": -106.607761113,
+        "feature": "BLM StoryMap Rancho del Rio view center inside the operator facility; not an exact river landing"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "Rancho del Rio (private operator)",
+      "sourceName": "Rancho del Rio (private operator) — Rancho del Rio",
+      "sourceUrl": "https://ranchodelrio.com/services/",
+      "coordinateSourceUrl": "https://storymaps.arcgis.com/stories/7861a5cfb3df44bbbf077483ab48b613",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use Rancho del Rio at 4199 Trough Road, about four road miles east of State Bridge. Check with the operator for current launch, parking and shuttle fees and availability. Follow staff directions to the river; the Area marker is inside the facility."
     },
     "Rincon Boat Ramp": {
       "status": "verified",
@@ -474,10 +522,22 @@
       "aliases": []
     },
     "Yampa River State Wildlife Area Boat Ramp": {
-      "status": "pending",
-      "note": "CPW State Wildlife Area: CPW text addresses licensed hunters/anglers only; access terms for non-angling boaters not confirmed.",
+      "status": "access-verified",
+      "note": "CPW identifies a developed ramp and its facility GIS point 2501 matches the access road at the river in imagery. Current Chapter W-9, effective September 1, 2026, section 901(286), allows vessel launching/taking out only for active fishing, hunting or wildlife viewing. Section 900(C)(1) requires a license or SWA pass from age 16, correcting the park page’s older age-18 wording. This is restricted access, not permission for a general recreation-only float. Retain approximate shoreline precision.",
       "id": "acc-2d1950367d5b56508fbd",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 40.51793,
+        "lon": -107.39873,
+        "feature": "CPW facility 2501 at the Dorsey ramp vicinity; the changing shore entry remains approximate"
+      },
+      "accessType": "River access facility (approximate area)",
+      "operator": "Colorado Parks and Wildlife",
+      "sourceName": "Colorado Parks and Wildlife — Yampa River State Wildlife Area Boat Ramp",
+      "sourceUrl": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-hayden-pump-station-yampa-river-state",
+      "coordinateSourceUrl": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/0/query?where=FID%3D2501&outFields=%2A&outSR=4326&f=pjson",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Dorsey access south of US 40 between Hayden and Craig. Launch or take out only while actively fishing, hunting or wildlife viewing. Visitors 16 or older need a valid hunting/fishing license or SWA pass. Parking is small; check posted restrictions before setting your shuttle."
     },
     "Yampa Valley Golf Course Boat Ramp": {
       "status": "verified",

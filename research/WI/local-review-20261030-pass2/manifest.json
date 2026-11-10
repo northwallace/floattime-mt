@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "state": "WI",
+  "checkedOn": "2026-10-30",
+  "scope": "Local review only; nothing pushed or deployed. No Git remote is configured.",
+  "workspace": "/Users/home/Documents/Codex/FloatETA-wisconsin-local-20261030",
+  "branch": "codex/wisconsin-local",
+  "baseCommit": "6c2f0e201d0c32646ee1d644a35083050e57cf4b",
+  "counts": {
+    "rivers": 62,
+    "sections": 369,
+    "accessMapsBefore": 247,
+    "accessMapsNow": 272,
+    "mapsReopened": 25,
+    "mapsHeldBefore": 122,
+    "mapsHeldNow": 97,
+    "dottedPathsBefore": 0,
+    "dottedPathsNow": 15,
+    "pathsByRiver": {
+      "bois-brule-river": 3,
+      "brule-river": 3,
+      "crawfish-river": 2,
+      "flambeau-river": 3,
+      "kickapoo-river": 4
+    },
+    "accessPrecision": {
+      "access-verified": 405,
+      "verified": 25,
+      "pending": 1
+    },
+    "agencyGuideTimesAdded": 6,
+    "liveTimingModelsEnabled": 0,
+    "gpsRemainingTimeEnabled": 0,
+    "otherStateRiversUnchanged": 170,
+    "existingPublishedPathsUnchanged": 59
+  },
+  "changes": [
+    "Reviewed all 122 map holds and retained specific reasons for each unresolved dam or access identity.",
+    "Removed ownership-only holds: the DNR layer explicitly includes non-DNR public boat access. Restored sites are facility areas, not exact landing claims.",
+    "Reviewed 25 individual landing coordinates against the current agency feature and satellite imagery; no inferred coordinate shifts or bank labels.",
+    "Added 15 high-resolution, unique downstream river paths; retained mileage and endpoint checks.",
+    "Added independent routeReview guard in import, build and browser, so a portage question can withhold the river line while the access map remains useful.",
+    "Replaced cryptic restriction IDs with dam names in held-section explanations.",
+    "Added current Thornapple operator work/access notice.",
+    "Replaced six Kickapoo preliminary distances with 2026 agency guide distances and retained published paddling guidance separately from live estimates.",
+    "Flagged conflicting Stone Chimney to Stones Bridge mileage instead of treating it as settled."
+  ],
+  "limits": [
+    "97 section maps remain held: 71 have unresolved interior dam/portage questions; 32 have endpoint dam questions (categories overlap); two involve the conflicting Pettibone/Mission Road identity.",
+    "257 available maps still have no approved dotted river path.",
+    "Desktop evidence does not establish current river conditions or replace field judgment. No Wisconsin GPS time remaining, flow-to-speed model or public-land overlay was enabled."
+  ],
+  "reviewFiles": {
+    "decisions": "research/WI/local-review-20261030-pass2/decisions.json",
+    "remainingMaps": "research/WI/local-review-20261030-pass2/remaining-map-review.json",
+    "allSectionGeometry": "research/WI/local-review-20261030-pass2/geometry-preflight.json",
+    "routeQueue": "research/routes/WI/review-queue.json",
+    "sourceChangeBindings": "research/WI/local-review-20261030-pass2/WI-wdnr-access-bindings.json",
+    "damScreen": "research/WI/local-review-20261030-pass2/path-dam-screen.json",
+    "approvedPaths": "research/WI/local-review-20261030-pass2/approved-paths.json"
+  },
+  "verification": {
+    "catalogCheck": "passed",
+    "reviewInventoryCheck": "passed",
+    "releaseCheck": "passed; not a deployment",
+    "httpChecks": {
+      "requests": 79,
+      "failed": 0,
+      "file": "research/WI/local-review-20261030-pass2/http-check.json"
+    },
+    "python": "131 tests covered: full run exposed one obsolete 59-route fixture, corrected to 74 and passed targeted rerun; all seven optional GIS tests passed in the GIS environment. Final Wisconsin/route regression run: 17 passed.",
+    "javascript": "46 passed, including rejection of a cached path when a new route review is present.",
+    "browser": [
+      "Desktop and phone map render, dashed line, source popup, no horizontal overflow",
+      "Portage map remains available with path withheld and nearby explanation",
+      "Conflicting landing keeps map withheld"
+    ],
+    "testLogs": {
+      "python-full": "research/WI/local-review-20261030-pass2/python-full.log",
+      "python-fixture-retest": "research/WI/local-review-20261030-pass2/python-fixture-retest.log",
+      "python-wisconsin-routes": "research/WI/local-review-20261030-pass2/python-wisconsin-routes.log",
+      "python-gis": "research/WI/local-review-20261030-pass2/python-gis.log",
+      "javascript": "research/WI/local-review-20261030-pass2/javascript.log"
+    }
+  },
+  "evidence": [
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/index.json",
+      "sha256": "b4a6be0d7acebbac656fb7e56d26804513764717dfb8b574ed74a4b90ad47d79"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/kickapoo-river-guide-2026.pdf",
+      "sha256": "ec529a180412e3588e9389c566299f6a0ace89a9a051f53375f669578efdf00a"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/nps-namekagon-map1.pdf",
+      "sha256": "c8935e056a12e05f575c2539ab72534d513f5f9f51db9bb23f97ecb5c5e29774"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/nps-stcroix-map4.pdf",
+      "sha256": "d7b788953fa51e6045016e796bebad929b0722039385150e44ab35395521c9e1"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/wdnr-access-layer.json",
+      "sha256": "81fd41add49b85c8fadc43ee806b8bba898a8ff8b7dbb867b5135a7cc6bdc376"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/wdnr-brule-paddling.html",
+      "sha256": "20cf5bb7254371c44381f3976748834dc56a4b53980e7f9a0ac71f657e3af8b1"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/wdnr-dams.json",
+      "sha256": "a431dee8d382bcc83aff3a23f1e2602ab30fab4cb36d5f5228e056db26bf869b"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/wdnr-sixmile.html",
+      "sha256": "f07d1eca3e42729b0bc1e81fc0b8c35ff336013e5750a005c56ff5d4836ac87c"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/we-energies-recreation.html",
+      "sha256": "e2ba30f28cfd4c9f0303d42f6a474f5b02a6572eb6b5ca5ff722d21f893d631a"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/we-energies-recreation.pdf",
+      "sha256": "46171f2028ad721d044b69ef45a4280a773288e9c9dfbe499a29f34ca868c70d"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/wvic-map1.html",
+      "sha256": "d8fd72e8916fea8f1f1e1c3d42b1d0ab1d9495d49583290ac86523959e1748ef"
+    },
+    {
+      "file": "research/WI/local-review-20261030-pass2/sources/xcel-thornapple.html",
+      "sha256": "d9f1b68e14151eb2145ac97648c7957008d28d8f46014fded8bff84cf97ef437"
+    }
+  ],
+  "preview": "http://127.0.0.1:8785/?state=WI&river=kickapoo-river&craft=kayak&section=kickapoo-river-landing-12-to-kickapoo-river-landing-14&map=1#landMapPanel"
+}

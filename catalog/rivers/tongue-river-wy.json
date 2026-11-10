@@ -1,13 +1,13 @@
 {
   "id": "tongue-river-wy",
-  "name": "Tongue River — I-90 (Ranchester area)",
+  "name": "Tongue River — Dayton area to Welch Ranch",
   "gauge": "06299980",
   "gaugeName": "Tongue River At Monarch, WY (USGS 06299980)",
   "lat": 44.87954,
   "lon": -107.25995,
   "refFlowCfs": null,
   "refSpeedMph": null,
-  "blurb": "Tongue River: sections between Wyoming Game and Fish Department river access points.",
+  "blurb": "Tongue River access research from the Dayton area to Welch Ranch. The long preliminary stretch remains under review; consult the local water-trail guide for documented segments and hazards.",
   "state": "WY",
   "timezone": "America/Denver",
   "timing": {
@@ -18,12 +18,29 @@
     {
       "id": "upstream-of-i90-to-downstream-of-i90",
       "putIn": "Upstream of I90 (Tongue)",
-      "takeOut": "Downstream of I90 (Tongue)",
+      "takeOut": "Welch Ranch (Tongue)",
       "miles": 34.2,
       "difficulty": "Not rated (no agency rating found)",
-      "notes": "Put-in Upstream of I90 (Tongue): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Take-out Downstream of I90 (Tongue): not mapped (WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers). Wyoming: next to private land the streambed is private — no anchoring, wading or getting out without landowner permission; floating through is legal. Watercraft entering Wyoming Mar 1–Nov 30 need an AIS inspection. Mileage: preliminary NHDPlus V2 routed geometry (34.2 mi); no agency mileage found.",
+      "notes": "The takeout is Welch Ranch near the WY 338 bridge. The Dayton-area put-in and this long float still need review. A diversion above Welch requires a portage, and other hazards may be present upstream. The local water-trail guide describes shorter trips; their distances and times do not apply to this full stretch.",
       "putInAccessId": "acc-01ef26634c555ff38092",
-      "takeOutAccessId": "acc-44f042f1e654562c9cb7"
+      "takeOutAccessId": "acc-44f042f1e654562c9cb7",
+      "accessReview": "The Dayton-area put-in and the full long-distance float still need review. Welch Ranch is identified, but the downstream diversion requires a portage; this is not a continuous runnable route.",
+      "notices": [
+        {
+          "title": "Mandatory portage before Welch Ranch",
+          "text": "The local float guide identifies a diversion dam roughly one mile before Welch Ranch that must be portaged on the signed river-right route. It also warns of abandoned structures, debris, strainers and occasional agricultural fences. Check current trail conditions and the full guide before planning a trip; no portage line is mapped here.",
+          "sourceUrl": "https://sheridanclt.org/projects/kleenburn-to-welch-recreation-area/",
+          "sourceName": "Sheridan Community Land Trust — Tongue River Water Trail",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Welch Ranch access",
+          "text": "BLM confirms non-motorized river trips and bridge-side parking at Welch Ranch. Use the designated parking areas; the recreation area is closed to motorized use. The map point is an approximate access area.",
+          "sourceUrl": "https://www.blm.gov/visit/welch-ranch",
+          "sourceName": "Bureau of Land Management",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     }
   ],
   "gaugeContext": {

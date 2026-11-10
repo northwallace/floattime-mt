@@ -136,12 +136,18 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(methow['sections'][0]['mapPrecision'], 'exact')
         self.assertFalse(methow['sections'][1].get('mapPilot', False))
         sanjuan = rivers['san-juan']
-        self.assertEqual(sanjuan['sections'][0]['mapPrecision'], 'approximate')
+        # Mexican Hat's October 2026 flood closure keeps both trips withheld.
+        for section in sanjuan['sections']:
+            self.assertFalse(section['mapReleased'])
+            self.assertIn('closed', section['accessReview'])
+            self.assertNotIn('mapPrecision', section)
+        approximate = rivers['smith']['sections'][0]
+        self.assertEqual(approximate['mapPrecision'], 'approximate')
         page = seo.river_html(rivers['smith'])
         self.assertIn('Some access locations are approximate', page)
         self.assertNotIn('Put-in directions', page)
         for key in ('putInAccess', 'takeOutAccess'):
-            self.assertNotIn('riverBank', sanjuan['sections'][0][key])
+            self.assertNotIn('riverBank', approximate[key])
 
     def test_unavailable_timing_rejects_placeholder_calibration(self):
         with tempfile.TemporaryDirectory() as d:

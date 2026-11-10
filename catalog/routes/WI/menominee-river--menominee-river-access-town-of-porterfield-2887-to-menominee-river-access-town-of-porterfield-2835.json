@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "menominee-river",
+  "sectionId": "menominee-river-access-town-of-porterfield-2887-to-menominee-river-access-town-of-porterfield-2835",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Menominee River",
+    "evidenceFile": "research/menominee-lower-courses-20261109/sources/menominee-river.json",
+    "sha256": "b4d79fb7281f8e0468abab29a6cf1826ec6935ecf37c72a533d3c35512e648d3"
+  },
+  "putIn": {
+    "name": "Menominee River Access — Town of Porterfield #2887",
+    "lat": 45.19542050440613,
+    "lon": -87.74223112236294
+  },
+  "takeOut": {
+    "name": "Menominee River Access — Town of Porterfield #2835",
+    "lat": 45.17891740286113,
+    "lon": -87.73655645957373
+  },
+  "catalogMiles": 1.2,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -87.74142955122885,
+        45.19553842575512
+      ],
+      [
+        -87.74133512615822,
+        45.195218586088345
+      ],
+      [
+        -87.74019745847275,
+        45.19403971895329
+      ],
+      [
+        -87.73971232517295,
+        45.19347178553041
+      ],
+      [
+        -87.73953992536246,
+        45.19322698611966
+      ],
+      [
+        -87.73928512567633,
+        45.192865118597226
+      ],
+      [
+        -87.73930285845421,
+        45.19241818533154
+      ],
+      [
+        -87.73931192566619,
+        45.19218771880206
+      ],
+      [
+        -87.73952832549108,
+        45.19099571833495
+      ],
+      [
+        -87.73934232486262,
+        45.18999511809452
+      ],
+      [
+        -87.73908745858235,
+        45.18931211813876
+      ],
+      [
+        -87.73850072443578,
+        45.18846298498879
+      ],
+      [
+        -87.73791872367771,
+        45.187494517731785
+      ],
+      [
+        -87.73765912400893,
+        45.18693098444836
+      ],
+      [
+        -87.73757325707452,
+        45.18625138504328
+      ],
+      [
+        -87.7376722576272,
+        45.18517671812597
+      ],
+      [
+        -87.73769432422857,
+        45.18461878482822
+      ],
+      [
+        -87.7376053232062,
+        45.184018918238415
+      ],
+      [
+        -87.73735985710871,
+        45.18309678433205
+      ],
+      [
+        -87.73710505638208,
+        45.182413784478996
+      ],
+      [
+        -87.73583272813501,
+        45.17905402374433
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "75472173",
+      "75472251"
+    ],
+    "putInOffsetMeters": 64.28701321944011,
+    "takeOutOffsetMeters": 58.83371356070155,
+    "putInSourceStationMeters": 241.55923601547954,
+    "takeOutSourceStationMeters": 1532.7367726513214
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river course only; shoreline connections, usable passages and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.1966,
+      "endpointOffsetsMeters": [
+        64.2,
+        58.7
+      ],
+      "mileageDifferencePercent": 0.28,
+      "maxSegmentMeters": 386.7,
+      "vertices": 21
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/menominee-lower-courses-20261109/decisions.json",
+    "note": "All 3 overlapping course panels and both endpoint panels checked. Full source connectivity, agency access evidence and nearby dam inventory reviewed separately."
+  },
+  "overviewReview": {
+    "signature": "921442bbe12c3c4caf08532cb7f87ef566b3c9a77aa4a383601aa6bdf6fad6fb",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. This stretch is upstream of Park Mill Dam.",
+    "note": "River-course overview only; not a surveyed route or navigation aid.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing facility area retained; exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing facility area retained; exact shore connection is not drawn."
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/wisconsin-endpoint-barriers-20261109/before/public/catalog.json",
+    "sha256": "05b8aa62c81b8c5a4dfa2e434e1c21e19fcac8217d3e98067687816e31f0aa4e"
+  },
+  "mapsAdded": [
+    "totagatic-river/totagatic-river-access-town-of-lenroot-to-totagatic-river-access-town-of-frog-creek",
+    "tomahawk-river/tomahawk-thoroughfare-access-to-tomahawk-river-access"
+  ],
+  "mapsWithdrawn": [],
+  "pathsAdded": [
+    "WI/totagatic-river--totogatic-river-carry-in-to-totogatic-river-carry-in.json"
+  ],
+  "changedAccessAreas": [
+    {
+      "id": "acc-4d39844bb385559d9937",
+      "before": {
+        "lat": 46.13011569934194,
+        "lon": -91.55765336874529,
+        "feature": "Totagatic River Access — agency access facility"
+      },
+      "after": {
+        "lat": 46.129711391012066,
+        "lon": -91.55791503957705,
+        "feature": "Duck Pond Road flowage-side ramp vicinity, upstream of Totogatic Dam; approximate facility area"
+      },
+      "precision": "approximate",
+      "evidence": {
+        "file": "research/wisconsin-endpoint-barriers-20261109/proposed-totogatic-area.json",
+        "sha256": "1e3dcfb1e44e350b5d87eee1c87f14c2447cb55983454dc960f4897adbe3ab06"
+      }
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/sources/receipts.json",
+      "sha256": "2e7727ab53e823eabedd29ca0d8d901afd4fcbd97b52ed93848ed12e70230821"
+    },
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/sources/additional-receipts.json",
+      "sha256": "c28321029702705ed531860ba54cbfe1872f1db2bb9c911e6bb15eb00f32fd6a"
+    }
+  ],
+  "reviewedPdfPages": [
+    "Totogatic property map: page 1, revision 2024-10-23",
+    "Minocqua North recreation map 2021: page 1",
+    "WVIC detailed recreation inventory: page 3, site 9"
+  ],
+  "accessImages": [
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/imagery/totagatic-putIn-review.jpg",
+      "sha256": "c0634998c858d67ded214f4bd5e40c2bd7b4b53428b8496e40f9c5cc37b85bdb"
+    },
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/imagery/totagatic-takeOut-review.jpg",
+      "sha256": "ca58dbd00a08d67cf1dffeb73769a5a69c75156d38082cea9c764dc727d8849c"
+    },
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/imagery/totogatic-property.png",
+      "sha256": "d4c323d9783d4098526608b3bebcd1767e1aed0ebfa4e4cc43c1820b3959b4c7"
+    },
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/imagery/tomahawk-river-takeOut.jpg",
+      "sha256": "f251830bf0c6d729cf5bd1cadbaf694bc11d127abbc0fae9213170c0973b19c7"
+    },
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/imagery/minocqua-north-2021.png",
+      "sha256": "c23380f0e04cbdd691d415a3a1591549b18bb02119acae1cc1f88340f6461414"
+    },
+    {
+      "file": "research/wisconsin-endpoint-barriers-20261109/imagery/minocqua-recreation-p3.png",
+      "sha256": "8dbfb5d9b3b33afd0ce18d959283de753c0fab34dfdd66f20082f3d25105a152"
+    }
+  ],
+  "course": {
+    "route": {
+      "file": "catalog/routes/WI/totagatic-river--totogatic-river-carry-in-to-totogatic-river-carry-in.json",
+      "sha256": "b0154441e5e31a68d5992a117c4f055295bf76ed35502dcf77ef74e2deafec3c"
+    },
+    "candidate": {
+      "file": "research/wisconsin-endpoint-barriers-20261109/lower-course/candidate.json",
+      "sha256": "42c49868f3f0ef535736da1fe66acfef57658ad8269a967de5724f0a7681c633"
+    },
+    "inventory": {
+      "file": "research/wisconsin-endpoint-barriers-20261109/lower-course/branch-inventory.json",
+      "sha256": "9d89735d82b4289f03974eef7a047c9ab503eaad64fbcd15a398b90668406389"
+    },
+    "damScreen": {
+      "file": "research/wisconsin-endpoint-barriers-20261109/lower-course/dam-screen.json",
+      "sha256": "346d14e1bbcb674b6f1dcf4150929e43da1a2ff23a017da37cbfff2b916b8164"
+    },
+    "imagery": [
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-1.jpg",
+        "sha256": "0e4812b32fd7f2a1ba54203d79ce71cdb379864ccaba3d7cd56313cb336e9b9d"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-2.jpg",
+        "sha256": "b378a9955e93b2cecc51c5c9f92f8b840c51ba764f7203220ba9c7090a8965b5"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-3.jpg",
+        "sha256": "55ebb9464d6d7eb1831314146291107306f0a2bedafffaec11ab92a3270f3341"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-4.jpg",
+        "sha256": "77c30fc169eab837ac0a1ea1961271f08a231528acb7187defb6754700a418a8"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-5.jpg",
+        "sha256": "469637e2f0dbacc2bdc99a952e94cbb39df8b6b6b3b539f27912487e60cdd5d2"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-6.jpg",
+        "sha256": "792e37940b06a27dff028c6fcb897c5da8a6e0b563eec7383a41c9f4d4a3a11e"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-7.jpg",
+        "sha256": "c8436c4220ba6bc0422e7552a81615c3b5a8c6ab2ace251aeb06f6c40811fac0"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-8.jpg",
+        "sha256": "055a79b6995ced500893e9bebb81f471c4adfc8fed9397a4d8f190b80caf5fc8"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-9.jpg",
+        "sha256": "46f89256c272cd89cfdad2c5fea545a9b5bcfefab076251590ed54c51f3c779a"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-10.jpg",
+        "sha256": "805e618138e64ea593e1d49d161289a10db9dd0fff603f1d87b2beffa1e1e865"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-11.jpg",
+        "sha256": "83e9e2656ea9f1b6cecd980cbf19667458a949b174d38bea28ee36f1e57dd95e"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-12.jpg",
+        "sha256": "ab737a5b6a9cf0dae1e7d59294f4a9b8b1bcef5fe496ac28fb45dc9879cf6d4a"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-13.jpg",
+        "sha256": "9fbc399ca73e9d94ca0f2ec7ea5d964c8d2a30a9463e049e00b7f51505582153"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-part-14.jpg",
+        "sha256": "8d2b79153bca2a93dc2526eb5ea1a67147bb2e42797d6d034bea60a21e2361b4"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-putIn.jpg",
+        "sha256": "a15f471858c87271f4be611da12bb249eefdec96bb6024ab21d82431b8a91010"
+      },
+      {
+        "file": "research/wisconsin-endpoint-barriers-20261109/imagery/lower-totagatic-takeOut.jpg",
+        "sha256": "e96e230edbd5f31e20009e82f5b35b84e2b32d1abf94f6d20b924d410de3176e"
+      }
+    ],
+    "metrics": {
+      "routeMiles": 12.2534,
+      "endpointOffsetsMeters": [
+        8.1,
+        28.0
+      ],
+      "mileageDifferencePercent": 2.11,
+      "maxSegmentMeters": 160.4,
+      "vertices": 517
+    }
+  },
+  "held": [
+    {
+      "riverId": "totagatic-river",
+      "sectionId": "totagatic-river-access-town-of-lenroot-to-totagatic-river-access-town-of-frog-creek",
+      "decision": "needs-current-channel-geometry",
+      "note": "The historic flowage centerline cuts across marshes and misses visible bends in panels 1 and 2. Do not publish this candidate even though the access map is now supported.",
+      "images": [
+        {
+          "file": "research/wisconsin-endpoint-barriers-20261109/imagery/totagatic-part-1.jpg",
+          "sha256": "5d5c97ced702502b8a6a8668bc020d1ae23f02a08bf3af5d713fa128f02047c5"
+        },
+        {
+          "file": "research/wisconsin-endpoint-barriers-20261109/imagery/totagatic-part-2.jpg",
+          "sha256": "9e40235112ce931079a23c44334791a28cdaa5d9da486b78a452fa28d94126c6"
+        }
+      ]
+    },
+    {
+      "riverId": "bridge-creek",
+      "decision": "hold-retained",
+      "note": "The pond-side location does not establish a legal carry around Dells Lake Dam. Keep the existing access hold."
+    },
+    {
+      "riverId": "manitowoc-river",
+      "decision": "hold-retained",
+      "note": "Imagery places Clarks Mills Pond Ramp above the dam. No managing-agency carry around the dam has been established; keep the hold."
+    },
+    {
+      "riverId": "east-fork-chippewa-river",
+      "decision": "hold-retained",
+      "note": "The endpoint is at Winter Dam. A clearer take-out and a complete check of upstream hydro/diversion structures are still needed."
+    },
+    {
+      "riverId": "mullet-river",
+      "decision": "hold-retained",
+      "note": "DNR describes two water-control dams in this wildlife area. Nearby public carry-in records do not establish a legal through-portage between the listed endpoints."
+    },
+    {
+      "riverId": "tomahawk-river",
+      "sectionId": "tomahawk-river-access-to-willow-dam-road-canoe-landing",
+      "decision": "hold-narrowed",
+      "note": "Willow Reservoir Dam crossing/portage remains unresolved. The Minocqua launch area is documented downstream of Minocqua Dam, but a legal, usable carry at Willow Dam has not been established for this itinerary. Do not plan it as a continuous float."
+    }
+  ],
+  "limitations": [
+    "No exact shore pins or field verification claimed.",
+    "No planning-mileage, speed model, gauge, land overlay or GPS timing changes.",
+    "Upper flowage and Minocqua maps do not include a continuous dotted path through their dams."
+  ]
+}

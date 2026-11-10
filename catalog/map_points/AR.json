@@ -16,7 +16,7 @@
     },
     "white-river-bull-shoals": {
       "status": "pending",
-      "note": "Section-level review completed where evidence supports access maps. Some endpoints remain approximate or held. See each section and source for its approval and limitations."
+      "note": "Public boating facilities remain mapped. Selected agency facility coordinates now use approximate Area precision after imagery review; exact shoreline landing positions are not asserted."
     },
     "north-fork-river-ar": {
       "status": "pending",
@@ -157,10 +157,11 @@
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 723",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D723&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 723 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 27 m from the USGS NHD High Resolution flowline of the Spring River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 723 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 723 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 27 m from the USGS NHD High Resolution flowline of the Spring River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 723 (Arkansas Game and Fish Commission public-use facility record). Current agency record checked 2026-11-09: comments specify slide-in only; that limitation is now shown in directions.",
       "id": "acc-e2353909bfe45e118a79",
-      "aliases": []
+      "aliases": [],
+      "directions": "AGFC describes Bayou as slide-in only. Inspect the signed river access before launching; do not assume a usable trailer ramp."
     },
     "Beaver Lake Dam Site Boat Ramp": {
       "status": "verified",
@@ -228,17 +229,22 @@
       "aliases": []
     },
     "Boswell Shoals Boating Access": {
-      "status": "verified",
-      "lat": 36.03596,
-      "lon": -92.058863,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Dirt",
+      "status": "access-verified",
+      "accessType": "Public dirt-access facility area",
       "operator": "USDA Forest Service — Ozark-St. Francis National Forests",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 2008",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D2008&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 2008 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Dirt) is the managing agency's own access feature, 75 m from the USGS NHD High Resolution flowline of the White River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 2008 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "The agency point identifies the public dirt-access vicinity, but imagery shows a changing debris-lined bank rather than a clearly defined ramp at that exact point. The current AGFC public-use record confirms boating access. Numeric coordinates, managing agency and stable access ID are unchanged; no precise bank-side instruction or shoreline connector is asserted.",
       "id": "acc-ca55d1d5eee451fdab7c",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.03596,
+        "lon": -92.058863,
+        "feature": "Agency-documented public boating facility area; exact shoreline landing not surveyed"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D2008&outFields=*&outSR=4326&f=json",
+      "directions": "Use the signed Boswell Shoals Boating Access public access. The Area marker identifies the facility vicinity; scout the usable landing and current water edge during your shuttle. Follow posted access conditions and keep the approach clear."
     },
     "Boxley (Buffalo NR)": {
       "status": "verified",
@@ -254,17 +260,22 @@
       "aliases": []
     },
     "Buffalo Point (Buffalo NR)": {
-      "status": "verified",
-      "lat": 36.069617,
-      "lon": -92.554759,
-      "accessType": "Boat launch (NPS)",
+      "status": "access-verified",
+      "accessType": "Carry-in access (area; steep gravel bar)",
       "operator": "National Park Service — Buffalo National River",
-      "sourceName": "NPS Public POIs (Buffalo National River), OBJECTID 16072",
-      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D16072&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "NPS Public POIs (Buffalo National River), OBJECTID 16072 (Boat launch (NPS)) is the managing agency's own access feature, 45 m from the USGS NHD High Resolution flowline of the Buffalo River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: NPS Buffalo National River — River Accesses & Mileage.",
+      "sourceName": "National Park Service — River Accesses & Mileage",
+      "sourceUrl": "https://www.nps.gov/buff/planyourvisit/put-ins.htm",
+      "verifiedOn": "2026-11-09",
+      "note": "NPS documents public hand-carry access, with the road down to the launch closed. The existing agency point lies on a broad gravel bar rather than a fixed ramp. Retain its location as an approximate access area; changing water levels affect the shoreline and carry.",
       "id": "acc-6742467893665ad89383",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.069617,
+        "lon": -92.554759,
+        "feature": "NPS Public POIs (Buffalo National River), OBJECTID 16072"
+      },
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D16072&outFields=*&outSR=4326&f=json",
+      "directions": "Hand carry only: leave vehicles in the signed access parking lot. NPS says the road to the launch is closed; carry your boat and gear over the large, steep gravel bar. Check the carry before committing. Dillards Ferry is an alternative upstream."
     },
     "Bull Shoals Boat Ramp": {
       "status": "verified",
@@ -319,17 +330,22 @@
       "aliases": []
     },
     "Cartney Boat Ramp": {
-      "status": "verified",
-      "lat": 36.192025,
-      "lon": -92.380734,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
+      "status": "access-verified",
+      "accessType": "Public boat access area",
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 209",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D209&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 209 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 85 m from the USGS NHD High Resolution flowline of the White River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 209 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "Current AGFC public-use facility record confirms boating access. Individual imagery does not establish the unchanged agency coordinate as the precise water-entry point: it falls in the facility/parking vicinity or, at Cartney, near a partly obscured wooded riverbank. Use approximate Area precision; the numeric coordinate and stable access ID are preserved.",
       "id": "acc-17838827732e5495a488",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.192025,
+        "lon": -92.380734,
+        "feature": "AGFC public boat-access facility area; not a surveyed shoreline landing"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D209&outFields=*&outSR=4326&f=json",
+      "directions": "Use the signed Cartney Boat Ramp public access. The Area marker identifies the facility vicinity; locate the concrete ramp and current water edge during your shuttle. It is not a precise landing pin."
     },
     "Carver (Buffalo NR)": {
       "status": "verified",
@@ -410,17 +426,22 @@
       "aliases": []
     },
     "Cotter Boat Ramp": {
-      "status": "verified",
-      "lat": 36.26636,
-      "lon": -92.544092,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
+      "status": "access-verified",
+      "accessType": "Public boat access area",
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1883",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1883&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1883 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 32 m from the USGS NHD High Resolution flowline of the White River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1883 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "Current AGFC public-use facility record confirms boating access. Individual imagery does not establish the unchanged agency coordinate as the precise water-entry point: it falls in the facility/parking vicinity or, at Cartney, near a partly obscured wooded riverbank. Use approximate Area precision; the numeric coordinate and stable access ID are preserved.",
       "id": "acc-90ee39bd3fe35a64a0ac",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.26636,
+        "lon": -92.544092,
+        "feature": "AGFC public boat-access facility area; not a surveyed shoreline landing"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1883&outFields=*&outSR=4326&f=json",
+      "directions": "Use the signed Cotter Boat Ramp public access. The Area marker identifies the facility vicinity; locate the concrete ramp and current water edge during your shuttle. It is not a precise landing pin."
     },
     "Dale Bend Boat Ramp": {
       "status": "verified",
@@ -454,17 +475,22 @@
       "aliases": []
     },
     "Dam 3 Boat Ramp": {
-      "status": "verified",
-      "lat": 36.466203,
-      "lon": -91.527953,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
+      "status": "access-verified",
+      "accessType": "Public boating access (area)",
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 710",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D710&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 710 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 10 m from the USGS NHD High Resolution flowline of the Spring River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 710 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "AGFC documents the public Dam 3 facility, but its inventory coordinate is inland by the hatchery in the reviewed imagery. Retain the original coordinate as an approximate facility area, not a verified ramp edge. The historical river line through the hatchery grounds is rejected. No dam passage, shore connector or navigation route is approved.",
       "id": "acc-e1ff7f8bb48f55f283c0",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.466203,
+        "lon": -91.527953,
+        "feature": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 710"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D710&outFields=*&outSR=4326&f=json",
+      "directions": "Follow signs for the public Dam 3 access near Jim Hinkle Hatchery. This marker locates the facility area, not the ramp edge. Confirm the public launch on site; do not use hatchery service roads or infer a route through the dam structures."
     },
     "Dam Quarry Boat Ramp": {
       "status": "verified",
@@ -565,13 +591,13 @@
         "feature": "USFS EDW Recreation Opportunities, OBJECTID 4106"
       },
       "directions": "Approximate area only: Fulton Branch, USDA Forest Service — Ouachita National Forest. Follow Forest Service signs to the day-use area; the exact river launch spot is not mapped by the agency.",
-      "sourceName": "USDA Forest Service — Ouachita National Forest — recreation-area page",
-      "sourceUrl": "https://www.fs.usda.gov/recarea/ouachita/recarea/?recid=10721",
+      "sourceName": "USDA Forest Service — Ouachita river-access inventory and day-use order",
+      "sourceUrl": "https://www.fs.usda.gov/r08/ouachita/alerts/forest-order-day-use-areas-and-rifle-ranges",
       "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D4106&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
+      "verifiedOn": "2026-11-09",
       "accessType": "River access (area)",
       "operator": "USDA Forest Service — Ouachita National Forest",
-      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4106; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch.",
+      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4106; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch. Rechecked against the current agency feature and satellite imagery on 2026-11-09; retain the approximate recreation-area center. Order OA-ONF-02-2026 limits these day-use areas to daylight hours and prohibits camping.",
       "id": "acc-4b4aec4b35fc5038af7d",
       "aliases": []
     },
@@ -737,17 +763,22 @@
       "aliases": []
     },
     "Houseman Boat Ramp": {
-      "status": "verified",
-      "lat": 36.462934,
-      "lon": -93.814377,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
+      "status": "access-verified",
+      "accessType": "Public boat access area",
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 792",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D792&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 792 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 43 m from the USGS NHD High Resolution flowline of the White River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 792 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "Current AGFC public-use facility 792 confirms this public boat access. Individual imagery places the unchanged agency coordinate in the water beside the visible ramp, so the marker now uses approximate Area precision. The stable access ID and numeric position are preserved. No surveyed landing point or bank-side claim is made.",
       "id": "acc-5cf3450904245d91bacf",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.462934,
+        "lon": -93.814377,
+        "feature": "AGFC Houseman facility point near the ramp; imagery places it in the water beside the shore, not at the ramp edge"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D792&outFields=*&outSR=4326&f=json",
+      "directions": "Use the signed AGFC Houseman access and its concrete boat ramp. The Area marker locates the facility vicinity; identify the ramp and check current river level during your shuttle. It is not a precise water-entry or exit point."
     },
     "Hwy 182 Amity Boat Ramp": {
       "status": "verified",
@@ -806,11 +837,11 @@
       "lat": 35.11499,
       "lon": -92.524338,
       "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
-      "operator": "Owner listed as 'Other' in the AGFC facility record (AHTD Right of Way, Project needs sign designating area from HWY 64.)",
+      "operator": "Highway right-of-way (AGFC public-use facility inventory)",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 634",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D634&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 634 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 42 m from the USGS NHD High Resolution flowline of the Cadron Creek. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 634 (Arkansas Game and Fish Commission public-use facility record). Ownership note: AGFC facility record owner is 'Other' — AHTD Right of Way, Project needs sign designating area from HWY 64.; public-use status comes from the AGFC Public Use Facilities layer only.",
+      "verifiedOn": "2026-11-09",
+      "note": "AGFC lists this concrete boat ramp in its Public Use Facilities inventory and identifies the location as AHTD highway right-of-way. The generic owner category Other is not a private-access finding. The agency coordinate is unchanged and matches the visible bank access beside the bridge. Use the designated access and obey posted signs; this does not authorize access to neighboring private banks. The agency record flags missing highway access signage; identify the ramp during your shuttle.",
       "id": "acc-1bf0f1a2f16752528ab7",
       "aliases": []
     },
@@ -1431,17 +1462,22 @@
       "aliases": []
     },
     "Rim Shoals Boat Ramp": {
-      "status": "verified",
-      "lat": 36.258018,
-      "lon": -92.474562,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
+      "status": "access-verified",
+      "accessType": "Public boat access area",
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1159",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1159&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1159 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 119 m from the USGS NHD High Resolution flowline of the White River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1159 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "Current AGFC public-use facility record confirms boating access. Individual imagery does not establish the unchanged agency coordinate as the precise water-entry point: it falls in the facility/parking vicinity or, at Cartney, near a partly obscured wooded riverbank. Use approximate Area precision; the numeric coordinate and stable access ID are preserved.",
       "id": "acc-06d8631e649d5de6824f",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.258018,
+        "lon": -92.474562,
+        "feature": "AGFC public boat-access facility area; not a surveyed shoreline landing"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1159&outFields=*&outSR=4326&f=json",
+      "directions": "Use the signed Rim Shoals Boat Ramp public access. The Area marker identifies the facility vicinity; locate the concrete ramp and current water edge during your shuttle. It is not a precise landing pin."
     },
     "River Bluff (USFS)": {
       "status": "access-verified",
@@ -1451,13 +1487,13 @@
         "feature": "USFS EDW Recreation Opportunities, OBJECTID 4110"
       },
       "directions": "Approximate area only: River Bluff, USDA Forest Service — Ouachita National Forest. Follow Forest Service signs to the day-use area; the exact river launch spot is not mapped by the agency.",
-      "sourceName": "USDA Forest Service — Ouachita National Forest — recreation-area page",
-      "sourceUrl": "https://www.fs.usda.gov/recarea/ouachita/recarea/?recid=10725",
+      "sourceName": "USDA Forest Service — Ouachita river-access inventory and day-use order",
+      "sourceUrl": "https://www.fs.usda.gov/r08/ouachita/alerts/forest-order-day-use-areas-and-rifle-ranges",
       "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D4110&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
+      "verifiedOn": "2026-11-09",
       "accessType": "River access (area)",
       "operator": "USDA Forest Service — Ouachita National Forest",
-      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4110; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch.",
+      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4110; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch. Rechecked against the current agency feature and satellite imagery on 2026-11-09; retain the approximate recreation-area center. Order OA-ONF-02-2026 limits these day-use areas to daylight hours and prohibits camping.",
       "id": "acc-f3f2ae509e545fc0b8f4",
       "aliases": []
     },
@@ -1513,13 +1549,13 @@
         "feature": "USFS EDW Recreation Opportunities, OBJECTID 4109"
       },
       "directions": "Approximate area only: Rocky Shoals, USDA Forest Service — Ouachita National Forest. Follow Forest Service signs to the day-use area; the exact river launch spot is not mapped by the agency.",
-      "sourceName": "USDA Forest Service — Ouachita National Forest — recreation-area page",
-      "sourceUrl": "https://www.fs.usda.gov/recarea/ouachita/recarea/?recid=10724",
+      "sourceName": "USDA Forest Service — Ouachita river-access inventory and day-use order",
+      "sourceUrl": "https://www.fs.usda.gov/r08/ouachita/alerts/forest-order-day-use-areas-and-rifle-ranges",
       "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D4109&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
+      "verifiedOn": "2026-11-09",
       "accessType": "River access (area)",
       "operator": "USDA Forest Service — Ouachita National Forest",
-      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4109; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch.",
+      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4109; approximate area, not the exact launch. Why not exact: the USFS record is a recreation-area / day-use point whose description does not document a boat or canoe launch. Rechecked against the current agency feature and satellite imagery on 2026-11-09; retain the approximate recreation-area center. Order OA-ONF-02-2026 limits these day-use areas to daylight hours and prohibits camping.",
       "id": "acc-7a60e77c9cbd5469b6a9",
       "aliases": []
     },
@@ -1537,17 +1573,22 @@
       "aliases": []
     },
     "Round Bottom Boat Ramp": {
-      "status": "verified",
-      "lat": 35.940929,
-      "lon": -92.049323,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
+      "status": "access-verified",
+      "accessType": "Public concrete-access facility area",
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1137",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1137&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1137 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 88 m from the USGS NHD High Resolution flowline of the White River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1137 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "The agency point is on a partly obscured wooded bank beside the public approach and parking area; imagery does not establish the exact concrete ramp edge. The current AGFC public-use record confirms boating access. Numeric coordinates, managing agency and stable access ID are unchanged; no precise bank-side instruction or shoreline connector is asserted.",
       "id": "acc-f13e426d33dd507c91dd",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 35.940929,
+        "lon": -92.049323,
+        "feature": "Agency-documented public boating facility area; exact shoreline landing not surveyed"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1137&outFields=*&outSR=4326&f=json",
+      "directions": "Use the signed Round Bottom Boat Ramp public access. The Area marker identifies the facility vicinity; scout the usable landing and current water edge during your shuttle. Follow posted access conditions and keep the approach clear."
     },
     "Rush (Buffalo NR)": {
       "status": "verified",
@@ -1593,11 +1634,11 @@
       "lat": 35.195577,
       "lon": -92.5288,
       "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
-      "operator": "Owner listed as 'Other' in the AGFC facility record (AHTD Right of Way)",
+      "operator": "Highway right-of-way (AGFC public-use facility inventory)",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 2340",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D2340&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 2340 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 16 m from the USGS NHD High Resolution flowline of the Cadron Creek. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 2340 (Arkansas Game and Fish Commission public-use facility record). Ownership note: AGFC facility record owner is 'Other' — AHTD Right of Way; public-use status comes from the AGFC Public Use Facilities layer only.",
+      "verifiedOn": "2026-11-09",
+      "note": "AGFC lists this concrete boat ramp in its Public Use Facilities inventory and identifies the location as AHTD highway right-of-way. The generic owner category Other is not a private-access finding. The agency coordinate is unchanged and matches the visible bank access beside the bridge. Use the designated access and obey posted signs; this does not authorize access to neighboring private banks.",
       "id": "acc-32c303e6f76f50159eaf",
       "aliases": []
     },
@@ -1622,13 +1663,13 @@
         "feature": "USFS EDW Recreation Opportunities, OBJECTID 4020"
       },
       "directions": "Approximate area only: Shirley Creek, USDA Forest Service — Ouachita National Forest. Follow Forest Service signs to the day-use area; the exact river launch spot is not mapped by the agency.",
-      "sourceName": "USDA Forest Service — Ouachita National Forest — recreation-area page",
-      "sourceUrl": "https://www.fs.usda.gov/recarea/ouachita/recarea/?recid=10790",
+      "sourceName": "USDA Forest Service — Ouachita river-access inventory and day-use order",
+      "sourceUrl": "https://www.fs.usda.gov/r08/ouachita/alerts/forest-order-day-use-areas-and-rifle-ranges",
       "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=objectid%3D4020&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
+      "verifiedOn": "2026-11-09",
       "accessType": "River access (area)",
       "operator": "USDA Forest Service — Ouachita National Forest",
-      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4020; approximate area, not the exact launch. Why not exact: imagery verdict 'flag': Pin in woods roughly 100 m from the river.",
+      "note": "Public river access is documented by USDA Forest Service — Ouachita National Forest — recreation-area page. The coordinate is USFS EDW Recreation Opportunities, OBJECTID 4020; approximate area, not the exact launch. Why not exact: imagery verdict 'flag': Pin in woods roughly 100 m from the river. Rechecked against the current agency feature and satellite imagery on 2026-11-09; retain the approximate recreation-area center. Order OA-ONF-02-2026 limits these day-use areas to daylight hours and prohibits camping.",
       "id": "acc-b101d44b5948592786c3",
       "aliases": []
     },
@@ -1802,17 +1843,22 @@
       "aliases": []
     },
     "Tyler Bend (Buffalo NR)": {
-      "status": "verified",
-      "lat": 35.989725,
-      "lon": -92.766906,
-      "accessType": "Boat launch (NPS)",
+      "status": "access-verified",
+      "accessType": "Canoe/kayak access (upper area)",
       "operator": "National Park Service — Buffalo National River",
-      "sourceName": "NPS Public POIs (Buffalo National River), OBJECTID 14466",
-      "sourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D14466&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "NPS Public POIs (Buffalo National River), OBJECTID 14466 (Boat launch (NPS)) is the managing agency's own access feature, 24 m from the USGS NHD High Resolution flowline of the Buffalo River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: NPS Buffalo National River — River Accesses & Mileage.",
+      "sourceName": "National Park Service — Tyler Bend paddling guide and campground map",
+      "sourceUrl": "https://www.nps.gov/thingstodo/paddling-tyler-bend-to-grinder-s-ferry.htm",
+      "verifiedOn": "2026-11-09",
+      "note": "The NPS boat-launch feature corresponds to the upper gravel-road access beside the picnic/group-camp area. NPS labels its GIS position arbitrary with unknown accuracy, and imagery shows a movable gravel shoreline. Keep the original coordinate as an approximate upper-access area. The lower launch is not mapped here; published mileage and commercial-use restrictions remain separate.",
       "id": "acc-c63077656f9851689b57",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 35.989725,
+        "lon": -92.766906,
+        "feature": "NPS Public POIs (Buffalo National River), OBJECTID 14466"
+      },
+      "coordinateSourceUrl": "https://mapservices.nps.gov/arcgis/rest/services/NationalDatasets/NPS_Public_POIs_Geographic/MapServer/0/query?where=OBJECTID%3D14466&outFields=*&outSR=4326&f=json",
+      "directions": "This marker shows the upper Tyler Bend access area. Use the signed gravel road opposite the group-campsite entrance, and check posted concession-use hours. Inspect the gravel landing during your shuttle. Do not use this marker to locate the separate lower paved-road launch."
     },
     "Upper White River Magness Family Access Boat Ramp": {
       "status": "verified",
@@ -1832,11 +1878,11 @@
       "lat": 36.130578,
       "lon": -94.562524,
       "accessType": "Canoe/kayak access (AGFC Public Use Facilities 'Canoe-Kayak Access'), surface Stationary Access",
-      "operator": "Owner listed as 'Other - See Comments' in the AGFC facility record (Ownership belongs to GRDA (Grand River Dam Authority))",
+      "operator": "Grand River Dam Authority (GRDA)",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 25308",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D25308&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 25308 (Canoe/kayak access (AGFC Public Use Facilities 'Canoe-Kayak Access'), surface Stationary Access) is the managing agency's own access feature, 37 m from the USGS NHD High Resolution flowline of the Illinois River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC — Upper Illinois River Water Trail. Ownership note: AGFC facility record owner is 'Other - See Comments' — Ownership belongs to GRDA (Grand River Dam Authority); public-use status comes from the AGFC Public Use Facilities layer only.",
+      "verifiedOn": "2026-11-09",
+      "note": "AGFC public-use feature 25308 explicitly identifies GRDA as the owner, and its Upper Illinois River Water Trail lists WOKA as a public trail access. The unchanged agency pin is at the park waterfront. The park includes Class II+ whitewater; this pin does not identify a safe approach, a dam crossing or an exact carry-around route. Check park instructions before launching.",
       "id": "acc-bc91ead7649c5d8585f1",
       "aliases": []
     },
@@ -1854,17 +1900,22 @@
       "aliases": []
     },
     "Wildcat Shoals Boat Ramp": {
-      "status": "verified",
-      "lat": 36.308078,
-      "lon": -92.574475,
-      "accessType": "Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete",
+      "status": "access-verified",
+      "accessType": "Public boat access area",
       "operator": "Arkansas Game and Fish Commission",
       "sourceName": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1494",
       "sourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1494&outFields=*&outSR=4326&f=json",
-      "verifiedOn": "2026-10-30",
-      "note": "AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1494 (Boat ramp (AGFC Public Use Facilities 'Boating Access'), surface Concrete) is the managing agency's own access feature, 75 m from the USGS NHD High Resolution flowline of the White River. Imagery check 2026-10-30: Pin on the bank at a visible ramp, gravel landing, bridge access or bank access. Public access: AGFC Public Use Facilities (AGFC_DATA FeatureServer layer 1), OBJECTID 1494 (Arkansas Game and Fish Commission public-use facility record).",
+      "verifiedOn": "2026-11-09",
+      "note": "Current AGFC public-use facility record confirms boating access. Individual imagery does not establish the unchanged agency coordinate as the precise water-entry point: it falls in the facility/parking vicinity or, at Cartney, near a partly obscured wooded riverbank. Use approximate Area precision; the numeric coordinate and stable access ID are preserved.",
       "id": "acc-10f2d1b0b3295a6c95bf",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 36.308078,
+        "lon": -92.574475,
+        "feature": "AGFC public boat-access facility area; not a surveyed shoreline landing"
+      },
+      "coordinateSourceUrl": "https://gisec2.agfc.com/arcgis/rest/services/GIS/AGFC_DATA/FeatureServer/1/query?where=objectid%3D1494&outFields=*&outSR=4326&f=json",
+      "directions": "Use the signed Wildcat Shoals Boat Ramp public access. The Area marker identifies the facility vicinity; locate the concrete ramp and current water edge during your shuttle. It is not a precise landing pin."
     },
     "Wolf Pen Recreation Area Canoe Access": {
       "status": "verified",

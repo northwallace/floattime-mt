@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "rock-river",
+  "sectionId": "preservation-park-boat-launch-to-wooton-park-boat-ramp",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Rock River",
+    "evidenceFile": "research/janesville-courses-20261109/sources/rock-river.json",
+    "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+  },
+  "putIn": {
+    "name": "Preservation Park Boat Launch",
+    "lat": 42.56600999298303,
+    "lon": -89.04199394353432
+  },
+  "takeOut": {
+    "name": "Wooton Park Boat Ramp",
+    "lat": 42.51885465129881,
+    "lon": -89.03704023684492
+  },
+  "catalogMiles": 3.4,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -89.04303413910748,
+        42.566299925719115
+      ],
+      [
+        -89.04360300825668,
+        42.56521228945648
+      ],
+      [
+        -89.04376734184875,
+        42.56390888894535
+      ],
+      [
+        -89.0436080080218,
+        42.56278075506462
+      ],
+      [
+        -89.04324054141142,
+        42.56215495511429
+      ],
+      [
+        -89.04309840760904,
+        42.56095575527041
+      ],
+      [
+        -89.04349094067987,
+        42.55941708796136
+      ],
+      [
+        -89.04346700736082,
+        42.55835535439255
+      ],
+      [
+        -89.043159607648,
+        42.55747508764972
+      ],
+      [
+        -89.04174080644572,
+        42.55478255460804
+      ],
+      [
+        -89.04130513908463,
+        42.55337335381725
+      ],
+      [
+        -89.04099153987116,
+        42.551852487595504
+      ],
+      [
+        -89.04113400560387,
+        42.54935688662273
+      ],
+      [
+        -89.041221739256,
+        42.5478155530997
+      ],
+      [
+        -89.04134433807586,
+        42.54556895319081
+      ],
+      [
+        -89.04133073829843,
+        42.54435895264697
+      ],
+      [
+        -89.04122600544477,
+        42.543343951963784
+      ],
+      [
+        -89.04099760514299,
+        42.5425473516043
+      ],
+      [
+        -89.04040753712596,
+        42.54127328523392
+      ],
+      [
+        -89.0400761374999,
+        42.5403986854867
+      ],
+      [
+        -89.03994653692776,
+        42.539436751993755
+      ],
+      [
+        -89.04001380431957,
+        42.53713628465339
+      ],
+      [
+        -89.03985833711644,
+        42.53419928449848
+      ],
+      [
+        -89.03923380349669,
+        42.530475550127846
+      ],
+      [
+        -89.03811420260047,
+        42.52661715001182
+      ],
+      [
+        -89.03759040202223,
+        42.522609549019286
+      ],
+      [
+        -89.03722233502383,
+        42.52099928234254
+      ],
+      [
+        -89.0367171339882,
+        42.520484948934666
+      ],
+      [
+        -89.03583440125821,
+        42.519493082490364
+      ],
+      [
+        -89.03573540825478,
+        42.518992269185304
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "143246664",
+      "143246662",
+      "143246663"
+    ],
+    "putInOffsetMeters": 90.85687650287255,
+    "takeOutOffsetMeters": 107.65151267570327,
+    "putInSourceStationMeters": 4297.982491846811,
+    "takeOutSourceStationMeters": 2902.772460236914
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river course only; shoreline connections, usable passages and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 3.3427,
+      "endpointOffsetsMeters": [
+        91.1,
+        108.0
+      ],
+      "mileageDifferencePercent": 1.69,
+      "maxSegmentMeters": 447.7,
+      "vertices": 30
+    },
+    "issues": [
+      "endpoint-offset-over-100m"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-10",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/janesville-courses-20261109/decisions.json",
+    "note": "All 7 overlapping course panels and both endpoints reviewed. Nearby dams and current agency access records checked separately."
+  },
+  "overviewReview": {
+    "signature": "206129f0b465d2c3f6fd9c6e3ba09c59189cf2db3bb9db76220e277084ae34f1",
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "The existing agency facility area is approximately 106–108 m from the river centerline. Satellite review places the facility beside the river. The overview stops on the source river course and makes no landing or shore connection claim."
+    },
+    "routeReview": "The dotted line shows the approximate Rock River course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. Finish at Wooton Park, upstream of Beloit Blackhawk Dam.",
+    "note": "Display-only river-course overview; no surveyed landings or navigation.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing facility-area marker retained; exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing facility-area marker retained; exact shore connection is not drawn."
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "chippewa-river",
+  "sectionId": "riverview-park-boat-ramp-to-mount-simon-park-boat-ramp",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Chippewa River",
+    "evidenceFile": "research/chippewa-portage-courses-20261109/sources/chippewa-river.json",
+    "sha256": "128cb8dc9cc9c86a2035b1b56d8d51dcabda803c3c09e780d5904bde3b585c7c"
+  },
+  "putIn": {
+    "name": "Riverview Park Boat Ramp",
+    "lat": 44.84602670038695,
+    "lon": -91.50022888653918
+  },
+  "takeOut": {
+    "name": "Mount Simon Park Boat Ramp",
+    "lat": 44.832618362061034,
+    "lon": -91.5024362920111
+  },
+  "catalogMiles": 1.3,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -91.50236242572069,
+        44.84448242655055
+      ],
+      [
+        -91.50021039313953,
+        44.84298782382944
+      ],
+      [
+        -91.49812952522096,
+        44.840428823775675
+      ],
+      [
+        -91.49573659079529,
+        44.83802169023239
+      ],
+      [
+        -91.49495699057793,
+        44.83723748998863
+      ],
+      [
+        -91.49405958944227,
+        44.835331023790225
+      ],
+      [
+        -91.49444719038266,
+        44.83450688993201
+      ],
+      [
+        -91.49514332313667,
+        44.833312422945255
+      ],
+      [
+        -91.49520478955229,
+        44.831005423005024
+      ],
+      [
+        -91.49667118997556,
+        44.8303180895509
+      ],
+      [
+        -91.49847932356654,
+        44.83113488921486
+      ],
+      [
+        -91.49874932441169,
+        44.831438222024445
+      ],
+      [
+        -91.50041359171144,
+        44.8333078892509
+      ],
+      [
+        -91.50128825594358,
+        44.83375292882139
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "76236038",
+      "76236096",
+      "76236312"
+    ],
+    "putInOffsetMeters": 240.63685134679702,
+    "takeOutOffsetMeters": 155.45011503198162,
+    "putInSourceStationMeters": 2717.4993114177637,
+    "takeOutSourceStationMeters": 331.10852835699177
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river course only; shoreline connections, usable passages and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.4905,
+      "endpointOffsetsMeters": [
+        240.4,
+        155.3
+      ],
+      "mileageDifferencePercent": 14.66,
+      "maxSegmentMeters": 328.5,
+      "vertices": 14
+    },
+    "issues": [
+      "endpoint-offset-over-100m",
+      "mileage-difference-over-5-percent"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/chippewa-portage-courses-20261109/decisions.json",
+    "note": "All 3 overlapping course panels and both endpoints checked. Source geometry, all available forks, agency access evidence and dam inventory reviewed separately."
+  },
+  "overviewReview": {
+    "signature": "3d47b84819a963e89f1400b571ddd9030bd3f32e90696f47fe39f8a84368d22d",
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "Agency access-area coordinates remain unchanged. Both endpoint imagery panels support the facilities beside this broad river/pond; centerline offsets are stated in the section note. No shore connectors, distance adoption or GPS remaining time are enabled.",
+      "mileage-difference-over-5-percent": "The full source centerline measures about 1.49 miles versus the retained preliminary 1.3-mile value. All three panels remain in open water. This display does not replace planning miles or enable an estimate."
+    },
+    "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. Planning mileage and timing remain separate from this display. Riverview and Mount Simon access markers are about 240 and 155 metres from the river centerline in Dells Pond.",
+    "note": "River-course overview only; not a surveyed route or navigation aid.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing facility location retained; its exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing facility location retained; its exact shore connection is not drawn."
+      }
+    }
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "state": "WY",
+  "riverId": "green-river-upper-wy",
+  "sectionId": "warm-springs-to-kendall-bridge",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1404_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "Green River",
+    "evidenceFile": "research/white-river-middle-courses-20261109/sources/green-river-upper-wy.json",
+    "sha256": "c7d2edff64b4332127131ce436d9699363d082fdff8c4f67e5fe45163c9d92a1"
+  },
+  "putIn": {
+    "name": "Warm Springs (Green)",
+    "lat": 43.28834841398248,
+    "lon": -110.01971457205164
+  },
+  "takeOut": {
+    "name": "Kendall Bridge (Green)",
+    "lat": 43.261574015722125,
+    "lon": -110.01822221730296
+  },
+  "catalogMiles": 2.0,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -110.02002847650176,
+        43.288478873824445
+      ],
+      [
+        -110.02005560633387,
+        43.28844473280762
+      ],
+      [
+        -110.02040780633337,
+        43.28825159947464
+      ],
+      [
+        -110.02096367299913,
+        43.287903332808504
+      ],
+      [
+        -110.02137540633186,
+        43.2873729328093
+      ],
+      [
+        -110.0218410063311,
+        43.28677333281027
+      ],
+      [
+        -110.02222327299722,
+        43.285531199478854
+      ],
+      [
+        -110.02269340632978,
+        43.28467219948013
+      ],
+      [
+        -110.02330947299549,
+        43.28391259948138
+      ],
+      [
+        -110.02340780632869,
+        43.283803332814905
+      ],
+      [
+        -110.0239656063278,
+        43.283182732815824
+      ],
+      [
+        -110.02410720632759,
+        43.282723132816535
+      ],
+      [
+        -110.02410087299427,
+        43.28227193281724
+      ],
+      [
+        -110.02374620632816,
+        43.280945132819234
+      ],
+      [
+        -110.02363180632835,
+        43.28071253281968
+      ],
+      [
+        -110.02347467299523,
+        43.28039333282021
+      ],
+      [
+        -110.02346040632864,
+        43.28036399948679
+      ],
+      [
+        -110.0235212063285,
+        43.27991353282087
+      ],
+      [
+        -110.02383820632804,
+        43.27939653282173
+      ],
+      [
+        -110.02416340632755,
+        43.278840599489236
+      ],
+      [
+        -110.02416940632753,
+        43.278830599489254
+      ],
+      [
+        -110.02430027299397,
+        43.278194332823546
+      ],
+      [
+        -110.02433847299392,
+        43.27748853282467
+      ],
+      [
+        -110.02428960632733,
+        43.277184132825134
+      ],
+      [
+        -110.02402627299438,
+        43.276686399492576
+      ],
+      [
+        -110.02395087299453,
+        43.27654379949274
+      ],
+      [
+        -110.02347940632859,
+        43.27581419949392
+      ],
+      [
+        -110.02296920632939,
+        43.274986132828516
+      ],
+      [
+        -110.02247487299678,
+        43.27455739949586
+      ],
+      [
+        -110.0223868063303,
+        43.27448099949605
+      ],
+      [
+        -110.02217747299727,
+        43.27414579949648
+      ],
+      [
+        -110.02179300633122,
+        43.27301479949825
+      ],
+      [
+        -110.02165787299805,
+        43.27222913283282
+      ],
+      [
+        -110.02136720633189,
+        43.27110873283451
+      ],
+      [
+        -110.0211648063322,
+        43.270332332835736
+      ],
+      [
+        -110.02096960633247,
+        43.269957999503006
+      ],
+      [
+        -110.02080980633275,
+        43.26904473283773
+      ],
+      [
+        -110.0206856729996,
+        43.268415999505436
+      ],
+      [
+        -110.02051860633316,
+        43.26819393283911
+      ],
+      [
+        -110.02051480633321,
+        43.26818899950576
+      ],
+      [
+        -110.01967667300113,
+        43.267740532839866
+      ],
+      [
+        -110.01917427300191,
+        43.267265532840554
+      ],
+      [
+        -110.017856073004,
+        43.26495959951073
+      ],
+      [
+        -110.01755760633779,
+        43.264447532844905
+      ],
+      [
+        -110.01742507300462,
+        43.26422039951192
+      ],
+      [
+        -110.01713860633845,
+        43.263678599512765
+      ],
+      [
+        -110.01712960633843,
+        43.26341373284655
+      ],
+      [
+        -110.01732187300479,
+        43.263130999513656
+      ],
+      [
+        -110.01764580633761,
+        43.26218253284841
+      ],
+      [
+        -110.01782840633734,
+        43.26167433284922
+      ],
+      [
+        -110.01797615202264,
+        43.26147739923369
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "30645921",
+      "30645931",
+      "30645937",
+      "30645943",
+      "30645949",
+      "30645953",
+      "30645957",
+      "30645961",
+      "30645965",
+      "30645969"
+    ],
+    "putInOffsetMeters": 29.235662353985727,
+    "takeOutOffsetMeters": 22.616807053875945,
+    "putInSourceStationMeters": 115.41428676904019,
+    "takeOutSourceStationMeters": 349.821268506812
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate original-source river-course overview; bank margins and landing connections are not precise.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 2.0315,
+      "endpointOffsetsMeters": [
+        29.3,
+        22.6
+      ],
+      "mileageDifferencePercent": 1.57,
+      "maxSegmentMeters": 277.7,
+      "vertices": 51
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA full-source course and imagery review",
+    "evidenceFile": "research/white-river-middle-courses-20261109/decisions.json",
+    "note": "Every overlapping course panel and access image reviewed. Main-river source anchors avoid small adjacent drainages. Original vertices retained."
+  },
+  "overviewReview": {
+    "signature": "f2b94699e77f4b84f18304fedc496e8d5681e34c3cfd029f73ae5f9ea5a115ce",
+    "acceptedIssues": {},
+    "routeReview": "Approximate river-course overview. Historical source lines generalize river bends and bank margins; the usable channel varies with water level. Exact landing connections, rapid lines and GPS remaining time are not mapped.",
+    "note": "River overview only; no safe navigation line, precise landing connector or timing calibration.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Inspect the actual landing during your shuttle; no exact shoreline connection is mapped."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Inspect the actual landing during your shuttle; no exact shoreline connection is mapped."
+      }
+    }
+  }
+}

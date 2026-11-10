@@ -21,11 +21,19 @@
       "takeOut": "Tomahawk River Access",
       "miles": 4.9,
       "difficulty": "Not rated (no agency rating found)",
-      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "notes": "A lake-chain paddle from Tomahawk Thoroughfare to WVIC’s Minocqua Dam Recreation Area. The existing take-out area marker is below the dam: land at the signed upstream access and use the portage rather than paddling toward it. WVIC lists a 75-foot carry; inspect current access and the carry during your shuttle. Lake winds and boat traffic matter; this is not a free-drifting river-time estimate.",
       "putInAccessId": "acc-8933d110f8055821bf2b",
       "takeOutAccessId": "acc-b3771dcca221599290a5",
-      "accessReview": "A dam lies near a section endpoint (Minocqua). The landing’s position relative to the barrier still needs confirmation.",
-      "routeReview": "This section includes Minocqua and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+      "routeReview": "Minocqua Dam requires a land carry to reach the downstream access area. WVIC lists a canoe portage. Access markers are available, but no continuous dotted paddling line crosses the dam.",
+      "notices": [
+        {
+          "title": "Minocqua Dam: portage required",
+          "text": "The marked access area is downstream of the dam. WVIC documents a canoe carry around it; do not paddle through the dam. Check the signed landing, carry and parking before launching. Exact portage geometry is not shown.",
+          "sourceName": "Wisconsin Valley Improvement Company",
+          "sourceUrl": "https://www.wvic.com/Content/Wisconsin-River-Reservoir-System-Recreation.cfm",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     },
     {
       "id": "tomahawk-river-access-to-willow-dam-road-canoe-landing",
@@ -33,21 +41,46 @@
       "takeOut": "Willow Dam Road Canoe Landing",
       "miles": 31.9,
       "difficulty": "Not rated (no agency rating found)",
-      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. This is a long section and may require more than one day; plan daylight, supplies and legal overnight stops. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "notes": "A long river-and-flowage trip from the downstream Minocqua access through Cedar Falls and Willow Flowage. Carry around Cedar Falls and Willow Dam. The listed take-out area is farther downstream on Willow Dam Road. Both markers are approximate; inspect signed access and both carries before launching. The 31.9-mile planning value is preliminary. Allow for lake winds, carries and possible overnight stops.",
       "putInAccessId": "acc-b3771dcca221599290a5",
       "takeOutAccessId": "acc-acc3e2509e555cef9ed0",
-      "accessReview": "Dam crossing/portage unresolved: Willow Reservoir. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float. A dam lies near a section endpoint (Minocqua). The landing’s position relative to the barrier still needs confirmation.",
-      "routeReview": "This section includes Willow Reservoir, Minocqua and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+      "routeReview": "Cedar Falls and Willow Dam require land carries. WVIC lists canoe portages at Cedar Falls Campground and Willow Dam Recreation Area. No exact portage geometry or continuous dotted line through these barriers is approved.",
+      "notices": [
+        {
+          "title": "Cedar Falls and Willow Dam: portages required",
+          "text": "DNR advises all paddlers to carry around Cedar Falls. WVIC lists canoe portages at Cedar Falls Campground and Willow Dam Recreation Area. Use signed carries; do not paddle through the falls or dam. Confirm current access and any campground fees before launching.",
+          "sourceUrl": "https://www.wvic.com/Content/Wisconsin-River-Reservoir-System-Recreation.cfm",
+          "sourceName": "Wisconsin Valley Improvement Company — Willow recreation map, sites 1 and 3",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Willow Flowage: check low-water access",
+          "text": "DNR reports seasonal low water affecting some landings and campsites. Check its conditions page before choosing access or overnight stops. The Willow Dam Road marker is an approximate access area; inspect the signed landing during your shuttle.",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/willowflowage/conditions",
+          "sourceName": "Wisconsin DNR — Willow Flowage conditions",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     },
     {
       "id": "willow-dam-road-canoe-landing-to-lower-tomahawk-river-pines-sna-canoe-landing",
       "putIn": "Willow Dam Road Canoe Landing",
       "takeOut": "Lower Tomahawk River Pines Sna Canoe Landing",
       "miles": 14.5,
-      "difficulty": "Not rated (no agency rating found)",
-      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "difficulty": "Class II at Echo Falls (DNR recommends portaging)",
+      "notes": "From the Willow Dam Road canoe access to the Lower Tomahawk River Pines access area. Echo Falls lies on this reach; DNR strongly recommends carrying around its Class II rapids. The take-out is above Prairie Rapids, which is a separate downstream hazard. Both markers are approximate facility areas. The 14.5-mile planning distance is preliminary; inspect the signed landings and carry before launching.",
       "putInAccessId": "acc-acc3e2509e555cef9ed0",
-      "takeOutAccessId": "acc-374ba60e8cf158be9b38"
+      "takeOutAccessId": "acc-374ba60e8cf158be9b38",
+      "routeReview": "Echo Falls requires a separate carry review before any continuous course is drawn. Exact landings and the carry are not mapped; DNR recommends portaging its Class II rapids.",
+      "notices": [
+        {
+          "title": "Echo Falls: portage recommended",
+          "text": "DNR strongly recommends a carry around Echo Falls, a Class II rapid downstream of Highway Y. The listed take-out is upstream of Prairie Rapids; do not continue into that separate Class II reach without a new trip plan. Exact carry and shoreline connections are not shown.",
+          "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/willowflowage/recreation/water",
+          "sourceName": "Wisconsin DNR — Tomahawk River paddling guidance",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     }
   ],
   "gaugeRelationship": "representative"

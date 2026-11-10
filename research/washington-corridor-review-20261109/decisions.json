@@ -1,0 +1,270 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/washington-corridor-review-20261109/before/public/catalog.json",
+    "sha256": "a6a4674687eaa36c793b3dbc54461de955de5b04350d1621b455e5872731c218"
+  },
+  "mapsAdded": [
+    "queets/queets-trailhead-streator",
+    "spokane/meenach-plese-flats"
+  ],
+  "mapsWithdrawn": [],
+  "mapsRefreshed": [
+    "queets/streator-hartzell"
+  ],
+  "pathsAdded": [
+    "WA/spokane--meenach-plese-flats.json"
+  ],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/WA/spokane--meenach-plese-flats.json",
+        "sha256": "98ddf1a70d9d35bf6428b64520ce889e917550bded521dc746ea8c2f6e7d8a01"
+      },
+      "candidate": {
+        "file": "research/washington-corridor-review-20261109/courses/meenach-plese-flats/candidate.json",
+        "sha256": "82d4bcc9bd7e09662b6aadc5c382bd689999ef9ba4e2d69a45a7437d1caec405"
+      },
+      "inventory": {
+        "file": "research/washington-corridor-review-20261109/courses/meenach-plese-flats/branch-inventory.json",
+        "sha256": "c5b865d8cf7d43aff7ba12c505ef5f7c19bb61cd743463e008fda73f489e2277"
+      },
+      "imagery": [
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-1.jpg",
+          "sha256": "f46ae21d07f54fcdd53dc36dc4381f62cd03f13fc1aec17a1318586686fb1167"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-2.jpg",
+          "sha256": "7d20e6aac990bbaea77d3ee79d77656663d69168afd17fafb2cc639c74a3c0f2"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-3.jpg",
+          "sha256": "eedc93ba403f887f1a152fb732666beb0413192da68ca3b603da48c1ea7a3a46"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-4.jpg",
+          "sha256": "89df04b4a85500547a725e63d64dc950578b8579e7394876c571744e69369f5a"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-5.jpg",
+          "sha256": "c69b5959fc7465df083cdb907bce699544cfa854fb9f6d2b04363e9a195b982b"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-6.jpg",
+          "sha256": "a0d60fbda13873f274f4abbb7a5529012ae34d320d7d85e6b26c0efba27aeb6a"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-7.jpg",
+          "sha256": "a48bdb7af749f7d2c17c8cfa8327f4d8f503e7203aa03e4a580672dbe3a33701"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-8.jpg",
+          "sha256": "c8f0ad0eee76abd8df248bd3a624f98e141cffca2263c1f949b1002ff2a890b3"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-9.jpg",
+          "sha256": "315c558010cbabfd560b6c6b4f374a0e1a78e68ec0704f749fcad58800061a8e"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/meenach-plese-flats-part-10.jpg",
+          "sha256": "23ad95631bde7f7ab0e02167e9d61b2ac51db84dac30ddcbe2524c3c599284cd"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 6.7609,
+        "endpointOffsetsMeters": [
+          69.3,
+          78.4
+        ],
+        "mileageDifferencePercent": 4.01,
+        "maxSegmentMeters": 316.0,
+        "vertices": 111
+      }
+    }
+  ],
+  "pointsPromoted": [
+    "Lower Sauk Boat Launch",
+    "T.J. Meenach Bridge",
+    "Plese Flats"
+  ],
+  "newPoint": {
+    "name": "Queets Campground Boat Launch",
+    "id": "acc-8e51eb6e99a15bacbad8"
+  },
+  "endpointCorrection": {
+    "riverId": "queets",
+    "sectionId": "queets-trailhead-streator",
+    "oldId": "acc-5d1fa62604015fc88c24",
+    "newId": "acc-8e51eb6e99a15bacbad8",
+    "reason": "Documented campground launch is a distinct facility from the old trailhead candidate; no alias or silent identity merge."
+  },
+  "sourceReceipts": [
+    {
+      "file": "research/washington-corridor-review-20261109/sources/additional-receipts.json",
+      "sha256": "93e316a66a2b60cc168fc11c54e7099ca213ccf7bebfbf9691d42aa05bbac5e0"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/sources/coordinate-receipts.json",
+      "sha256": "7dc293bc3a5455824d597afd1bbfc57cfe5e8d5241e719f1ee46d6836dc0d1dd"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/sources/receipts.json",
+      "sha256": "8794cb2ef78641cddb0878114b3755bfe0864c788df14ecfc30980c505640f82"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/sources/spokane-update-receipts.json",
+      "sha256": "aff95869f11e993751aad930e37aee5e5afdaa151a634d084904beaf6bd13370"
+    }
+  ],
+  "supplementarySources": [
+    {
+      "file": "research/washington-corridor-review-20261109/sources/avista-storymap.html",
+      "sha256": "a715693cd3d26dbc4eadb37343b74bbc42b8ae2a4b7ed64e3f34192e3924dfbe",
+      "url": "https://www.myavista.com/storymap/spokaneriver/index.html",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/sources/avista-storymap-data.json",
+      "sha256": "d8da416db9bbab8067875a4bb97f7758ae2cc9e0b236607aee8dcc842d003ddf",
+      "url": "https://www.arcgis.com/sharing/rest/content/items/4274f49bfa3f415f972bc5a5203239e5/data?f=json",
+      "checkedOn": "2026-11-09"
+    }
+  ],
+  "reviewedImages": [
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/queets-campground.jpg",
+      "sha256": "f49991daaaf7d3b742ca700d39b91d862a2ed987070a1490ca430569ae89641d"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/streator.jpg",
+      "sha256": "46640967a8498a0dc9c6d080f1d70e1330d60c9c4ee00b10d835a0eb47509a00"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/hartzell.jpg",
+      "sha256": "3e479d3d089b427f80717c283c98b9ed0a65936246541140abfbaba8282e3f8a"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/tj-meenach.jpg",
+      "sha256": "4e076b3bfa9478f9106ba0dc579ef8898b142634b39cb1724edbd2676f78af97"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/plese-flats.jpg",
+      "sha256": "8a0e71250508942e9ba6002439a9773fabfb183bbe525464aad02f9b02ef26ec"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/lower-sauk.jpg",
+      "sha256": "de9c263a6de80c1b3afd56cd92fb6dd4f1e111667b6866e95823a35fa5afccab"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/plese-context.jpg",
+      "sha256": "1e5cc68af2541c55f9a02ab01638721d836e6a51537f58e70f0f5a4746194b78"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/plese-candidate-close.jpg",
+      "sha256": "ae01df135cfea07aec1d6257a511c41f7ede7a5d1a83c990c2884d20f94846f6"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/avista-plese.png",
+      "sha256": "e8456aa3dbc08eef0dc575fbff4e597c69a26ba86606b58bec2b343347e3dc2b"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/avista-meenach.png",
+      "sha256": "f0587d926b4ca0489fb79be182d7f37a5b876878cd0b3ebc2e29cb57dfd26532"
+    },
+    {
+      "file": "research/washington-corridor-review-20261109/imagery/riverside-fire-map.png",
+      "sha256": "822d12c597377c0dd61b4b8178dba825ed51f057c072493cc3257d8fcda25229"
+    }
+  ],
+  "heldCourses": [
+    {
+      "riverId": "queets",
+      "sectionId": "queets-trailhead-streator",
+      "reason": "All nine panels inspected. Old source line follows vegetated former channels in panels 2–3 and 7–8 instead of the visible main water channel; no dotted course approved.",
+      "candidate": {
+        "file": "research/washington-corridor-review-20261109/courses/queets-trailhead-streator/candidate.json",
+        "sha256": "a13ec057abedfd7606fd9b58e4dc73be231810935d80a04a2c2931e27b4f8b22"
+      },
+      "imagery": [
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-1.jpg",
+          "sha256": "198b83a96feaaf73d0abe6b5fc6dfdd0c86cec7aca90a753e8abdf985fad1a8c"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-2.jpg",
+          "sha256": "eee69e4e81196ab47058de77a15c10e6346d5c89274acda384d2caf46518d672"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-3.jpg",
+          "sha256": "50eaef8172613a174504b4a3a846f8146b0b0bbd2d428e11f7c7fde6aa5981c6"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-4.jpg",
+          "sha256": "7cb69215d7cf929bedb5356f6b380496d8f6bad953646b80523b215824e2b3f3"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-5.jpg",
+          "sha256": "fd69c92c2c6fd53c7a95ae94cc869f93983add996338e654149653cb6c076513"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-6.jpg",
+          "sha256": "892243de13f0919e7cc465f45e495ab2da1ad07ff5cda5e5a77fc5983297cd14"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-7.jpg",
+          "sha256": "f4dabb27aa169cd99999bca5c93cf4a228042ebb5caca02d1c6cfc543229f3e4"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-8.jpg",
+          "sha256": "598648c994ffd8f08f6ddf277104f8a463d26f10600b4f48de7ea68686379776"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/queets-trailhead-streator-part-9.jpg",
+          "sha256": "9cffc94b1f130db1eb17847e09bba3dd587aea675a81a9953520278ee2ccb929"
+        }
+      ]
+    },
+    {
+      "riverId": "queets",
+      "sectionId": "streator-hartzell",
+      "reason": "Three full-network forks inspected. At the eastern junction the source paths start in vegetated former channel and cut across the present gravel braid. No branch selection or full course approval.",
+      "inventory": {
+        "file": "research/washington-corridor-review-20261109/courses/streator-hartzell/branch-inventory.json",
+        "sha256": "80ffdce4f302b7a12953371313d53cd8e1e393f6f3f47b84e89fd6628bd332c9"
+      },
+      "imagery": [
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/streator-hartzell-branch-1.jpg",
+          "sha256": "196a7602e9cc6a94d882bf27a694efedeec344be44aa50dc4eead7dea8ef8c07"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/streator-hartzell-branch-2.jpg",
+          "sha256": "d48be9b3e7978097917c68fa93614e1dd03c7955aafc650fdee79229bff8c6a3"
+        },
+        {
+          "file": "research/washington-corridor-review-20261109/imagery/streator-hartzell-branch-3.jpg",
+          "sha256": "30a8b71d0cb0c74c434cd29d521f9db584694ac97806f6ecbc91661ad4e5e4b3"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    "Two additional access maps: Queets Campground–Streator and T.J. Meenach–Plese Flats.",
+    "One Spokane dotted overview added; no timing, gauge or planning-mileage changes.",
+    "Queets campground launch has its own permanent ID; the old hiking trailhead candidate remains pending.",
+    "Lower Sauk public access area documented; its two sections still await their other endpoints.",
+    "Upper Hoh Road closure made explicit; the Hoh trip remains held.",
+    "Plese approximate marker uses transparent community-coordinate evidence corroborated by agency facility documentation and imagery; no exact pin is claimed.",
+    "Queets dotted paths withheld because historical geometry does not follow visible channels consistently."
+  ],
+  "limitations": [
+    "Everything remains local.",
+    "No surveyed shoreline, verified bank, road/carry connector, runnable-rapid line or GPS ETA.",
+    "Spokane seasonal gates must be checked; Plese ends its season at the first snow, and adjacent fire closures remain.",
+    "Queets planning mileage is under review after the documented put-in correction.",
+    "Satellite imagery cannot establish current water level, obstructions or gate status."
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/snoqualmie-access-review-20261109/before/public/catalog.json",
+    "sha256": "0002e1145c02ff6a67716e3fc16753447a808490ef5d916e90957521dff0b0ab"
+  },
+  "mapsAdded": [
+    "snoqualmie-mf/bridge-view-concrete-bridge",
+    "snoqualmie-mf/concrete-bridge-tanner"
+  ],
+  "mapsWithdrawn": [],
+  "pathsAdded": [
+    "WA/snoqualmie-mf--concrete-bridge-tanner.json"
+  ],
+  "pointsPromoted": [
+    "Bridge View (Middle Fork Snoqualmie)",
+    "Concrete Bridge (Middle Fork Snoqualmie)",
+    "Tanner Road Access"
+  ],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/WA/snoqualmie-mf--concrete-bridge-tanner.json",
+        "sha256": "7698e7d98b56bf74c50df7d5bb0e1c38ea7d1ca352cd533f2405f9eb74221e0e"
+      },
+      "candidate": {
+        "file": "research/snoqualmie-access-review-20261109/courses/concrete-bridge-tanner/candidate.json",
+        "sha256": "c27198b352701dac3e7cd7cbe59a8525669742e89e37a0b883240045c65b2ca1"
+      },
+      "inventory": {
+        "file": "research/snoqualmie-access-review-20261109/courses/concrete-bridge-tanner/branch-inventory.json",
+        "sha256": "2bed7836a7b4767b6fdf3585176b25412973c37e6b381bab5c4e1e85d138a89b"
+      },
+      "choices": {
+        "file": "research/snoqualmie-access-review-20261109/courses/concrete-bridge-tanner/branch-choices.json",
+        "sha256": "268ddc1a64eaee78450e95c29016bdec63e64c9efc01c90bd00cf058a86890ab"
+      },
+      "review": {
+        "file": "research/snoqualmie-access-review-20261109/courses/concrete-bridge-tanner/full-course-review.json",
+        "sha256": "1e122974c9edffdaa2900cd54b32f2694723364177ccb553ae277f7b3a9a5e40"
+      },
+      "imagery": [
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-1.jpg",
+          "sha256": "a21333691dc58cc3e4d5a6a81aeb8c649baa4c8d264d95326a56e25d7f1f49b3"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-2.jpg",
+          "sha256": "dc656b08bdd22283e3edb9aa23b230ecbc1f98d624de28e884a084f30df40f01"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-3.jpg",
+          "sha256": "267c1c7f8a420199e7d03fcbd60dc27a952e41a9be5a9e0a08c55489d5eb273e"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-4.jpg",
+          "sha256": "a3e384d5c85953dde3a75fd6b052b41f6b4cf1c0447385528ae0830488d17f30"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-5.jpg",
+          "sha256": "48dbabd30eedfd56870e51ec317d9ccae0220aaf0b3d2e17b3c8e1a94e539050"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-6.jpg",
+          "sha256": "a4e8d83bc7d2084aa9bc0eec5b145fbdec10bce1ff7ca770ebeab8800a98e678"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-7.jpg",
+          "sha256": "29f6b2ba3ccdd82e0777cba24d54ed21e0a63873d0f47ce2f917d5d06e0f8205"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-8.jpg",
+          "sha256": "e61258ecf2226ef8b9e38bb61691be342f2f5e965104fd48d66a4c481c10a7f4"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-9.jpg",
+          "sha256": "bc30bdcd96fe3418dd06aef0872f8369e72eca47dc0fd619a5ac5159b0f68eee"
+        },
+        {
+          "file": "research/snoqualmie-access-review-20261109/imagery/concrete-bridge-tanner-part-10.jpg",
+          "sha256": "12cd25d17cf014c6aa577a00bb03b56b2cb8b0d830948ef9e47b22d84ab6f132"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 7.0564,
+        "endpointOffsetsMeters": [
+          28.4,
+          8.1
+        ],
+        "mileageDifferencePercent": 0.81,
+        "maxSegmentMeters": 193.8,
+        "vertices": 189
+      }
+    }
+  ],
+  "pathsHeld": [
+    "snoqualmie-mf/bridge-view-concrete-bridge"
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/snoqualmie-access-review-20261109/sources/receipts.json",
+      "sha256": "f169b21ce9f58317a5fb6b7568cf8834b2b8056a93632f8125c7430683105c23"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/sources/road-alert-receipts.json",
+      "sha256": "0a99dd81333a5a9c0fb6cac88a7c4060d79b0d6c17629ca5de2f3ed47f20c1b3"
+    }
+  ],
+  "imageryReceipts": [
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/access-receipts.json",
+      "sha256": "26f8fbfe8207c7fc2e5b47d6667ea6e19d9aefc0216e306e0d7661541b94c8bd"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/forkextended-receipts.json",
+      "sha256": "e25a9974919d19b7a28b8040e863e39daa117fc4cbc0c09e33776616047da91c"
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "file": "research/snoqualmie-access-review-20261109/sources/snoqualmie-mf.json",
+      "sha256": "e583148a781439684088cb0060dff81659424e72bd28a11db39d221299a98c5f"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/staged-points.json",
+      "sha256": "c80f2ca22113078dd8066f0074dee07c279b7418f0de1ba60090e2f2245f9f6c"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/research-findings.json",
+      "sha256": "e6e524bfdfe489364563e16126f26ca4e8bffb0c9f15735f5969a386eae0ea93"
+    }
+  ],
+  "reviewedImages": [
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/county-coordinates.png",
+      "sha256": "10abb4da58f523e37da1bf103a577b1694229201ab84454ae16c7e41c9bef08d"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/county-bridgeview.png",
+      "sha256": "59f5edc45a3586fec34c452c99df3d5110c1ac6e6d2dfcd97f3fc8b007f31709"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/county-tanner.png",
+      "sha256": "002d65f11916a561b45f39177ddef7a9c854dd6687e1314d31698b9fdbcf1112"
+    }
+  ],
+  "heldCourseReview": {
+    "file": "research/snoqualmie-access-review-20261109/courses/bridge-view-concrete-bridge/full-course-review.json",
+    "sha256": "53fcfed6a05b79af42fadd5b0ce35f5c4f6647909496f1904b610ec304d1add4"
+  },
+  "heldCourseImagery": [
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-1.jpg",
+      "sha256": "41b459f631b9c5bb2eb7245ed036a32d72a7f585cc9218bee54d61529f0f2e55"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-2.jpg",
+      "sha256": "d31887bb23379ce955ddd21415c7dbd165766f0a3eaadd609589079553335fdd"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-3.jpg",
+      "sha256": "5a4cfd8123c2bb39163f18b8e0bea9090b2ea26c591579f4be06701576842caa"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-4.jpg",
+      "sha256": "7d7cd1c1409bf7b5846c4fb080a0b2c034d7c49dfc76dd59981101e6613a1d8a"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-5.jpg",
+      "sha256": "9a21bb0d6a590f8adb63b4ccedf73adbc1eb596bce784c8668e61a8da11d57ec"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-6.jpg",
+      "sha256": "7906520447c64d92900fabfe24bdd9c6b0702b69865546d5b7129635033cbed0"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-7.jpg",
+      "sha256": "9e83fdc95cb39d203459a98a42a2e53609316ccbaf78ef19d042a1ff06f1f0c4"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-8.jpg",
+      "sha256": "e83235d33c9699bf93bc40a4ddfca3d877148f02deda7e6db844150c370205b1"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-9.jpg",
+      "sha256": "aafdf4125ccd6d17502992b68ff71c9bac43be6dd5c98912e3bd5d3e8191a913"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-10.jpg",
+      "sha256": "7ca15e808877ceb13fedca29e506ccba4f0bbcf8b047b708064786ec73cb7899"
+    },
+    {
+      "file": "research/snoqualmie-access-review-20261109/imagery/bridge-view-concrete-bridge-part-11.jpg",
+      "sha256": "13ffda7b061348ee31df2417b0d6415590b60e1467296a638094b102f0d8cfb3"
+    }
+  ],
+  "findings": [
+    "Added both Middle Fork Snoqualmie access maps using three County-documented facility areas and stable access IDs.",
+    "Added the checked Concrete Bridge–Tanner dotted course; retained the upper course in research because it cuts across a vegetated bar.",
+    "Corrected the upper difficulty to the County-described Class II–III; preserved all planning mileage, gauge assignments and unavailable timing calibration."
+  ],
+  "limitations": [
+    "Local only; not published.",
+    "Approximate facility areas, not exact shoreline landings.",
+    "No GPS ETA, land overlay, safe rapid line or shoreline connector.",
+    "Live trip estimates remain unavailable until a speed/flow model is reviewed."
+  ]
+}

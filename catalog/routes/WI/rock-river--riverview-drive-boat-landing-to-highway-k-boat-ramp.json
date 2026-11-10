@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "rock-river",
+  "sectionId": "riverview-drive-boat-landing-to-highway-k-boat-ramp",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Rock River",
+    "evidenceFile": "research/rock-river-carries-20261109/sources/rock-river.json",
+    "sha256": "39bb8ecc37a253eb67804ddcc1d3f74de509b238a056092dd20fb4170991ccba"
+  },
+  "putIn": {
+    "name": "Riverview Drive Boat Landing",
+    "lat": 42.995333831727606,
+    "lon": -88.80497558364134
+  },
+  "takeOut": {
+    "name": "Highway K Boat Ramp",
+    "lat": 42.94420129026839,
+    "lon": -88.8268708625414
+  },
+  "catalogMiles": 4.1,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -88.80465898115187,
+        42.99572878278814
+      ],
+      [
+        -88.80366238485088,
+        42.99530777319158
+      ],
+      [
+        -88.79999231686618,
+        42.993297772872815
+      ],
+      [
+        -88.79830618274754,
+        42.99230990653576
+      ],
+      [
+        -88.79819658331708,
+        42.992112773864086
+      ],
+      [
+        -88.79795611594422,
+        42.99168030696044
+      ],
+      [
+        -88.79792078253627,
+        42.991304372752616
+      ],
+      [
+        -88.79810038284097,
+        42.990836906535
+      ],
+      [
+        -88.79846338243955,
+        42.98971397329166
+      ],
+      [
+        -88.79979591610189,
+        42.987249306102825
+      ],
+      [
+        -88.7998565157528,
+        42.98713717247077
+      ],
+      [
+        -88.80001111619126,
+        42.986851105952724
+      ],
+      [
+        -88.80237458269826,
+        42.983683705057665
+      ],
+      [
+        -88.80355858327503,
+        42.98197477132005
+      ],
+      [
+        -88.8038275831266,
+        42.98019370416361
+      ],
+      [
+        -88.80422431683259,
+        42.9773187040035
+      ],
+      [
+        -88.80469691690217,
+        42.97540510393801
+      ],
+      [
+        -88.80482558307493,
+        42.97488390391116
+      ],
+      [
+        -88.80516258285417,
+        42.972884502686036
+      ],
+      [
+        -88.80626938310299,
+        42.971702102251044
+      ],
+      [
+        -88.80649791659309,
+        42.97145796922252
+      ],
+      [
+        -88.80655518341409,
+        42.97139676945852
+      ],
+      [
+        -88.8078983835889,
+        42.970252768890575
+      ],
+      [
+        -88.80905778386439,
+        42.968700102724554
+      ],
+      [
+        -88.80985491707715,
+        42.96714356901936
+      ],
+      [
+        -88.81108038396839,
+        42.965466368674804
+      ],
+      [
+        -88.8135209842092,
+        42.96264376753199
+      ],
+      [
+        -88.81483818456474,
+        42.96062316689717
+      ],
+      [
+        -88.81594851742595,
+        42.95716076636398
+      ],
+      [
+        -88.81724498410395,
+        42.9539820994339
+      ],
+      [
+        -88.81882938418747,
+        42.95133829894828
+      ],
+      [
+        -88.82134831893816,
+        42.94882923118029
+      ],
+      [
+        -88.82326118538283,
+        42.946814631177794
+      ],
+      [
+        -88.82548578536375,
+        42.94408343041763
+      ],
+      [
+        -88.82569476936337,
+        42.94377743933917
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "166420671",
+      "143245597",
+      "143245598",
+      "143245579",
+      "143245580",
+      "143245581"
+    ],
+    "putInOffsetMeters": 51.04728498822258,
+    "takeOutOffsetMeters": 106.54746416032488,
+    "putInSourceStationMeters": 801.3241946841125,
+    "takeOutSourceStationMeters": 3495.9775516824734
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river bends only; exact shoreline connections and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 4.0985,
+      "endpointOffsetsMeters": [
+        50.9,
+        106.7
+      ],
+      "mileageDifferencePercent": 0.04,
+      "maxSegmentMeters": 401.3,
+      "vertices": 35
+    },
+    "issues": [
+      "endpoint-offset-over-100m"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/rock-river-carries-20261109/decisions.json",
+    "note": "All 8 overlapping course panels and both endpoints reviewed. Original USGS vertices retained; no downstream fork choices required. Agency landing evidence and dam inventory reviewed separately."
+  },
+  "overviewReview": {
+    "signature": "e30941eb00acb978410119c39a84cb5fed5e59cb7fdc3894a588602a9d2017b8",
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "The Highway K facility is about 107 metres from the source centerline of this broad river. Both endpoint imagery panels retain the agency facility marker. Its shore connection is intentionally omitted; timing and mileage adoption remain disabled."
+    },
+    "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not mapped. Planning mileage and timing remain separate from this display. The Highway K access marker is about 107 metres from the source centerline; the line does not draw that landing connection.",
+    "note": "River-course overview only, not a surveyed route or navigation aid.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Agency facility area retained; exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Agency facility area retained; exact shore connection is not drawn."
+      }
+    }
+  }
+}

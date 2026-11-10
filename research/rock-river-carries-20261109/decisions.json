@@ -1,0 +1,734 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/rock-river-carries-20261109/before/public/catalog.json",
+    "sha256": "d14a7d144ca6fda274c046f721a8a61711cf81aca77de32605309937a36e9918"
+  },
+  "mapsAdded": [
+    "rock-river/legion-auxillary-park-boat-ramp-to-river-bend-park-boat-ramp",
+    "rock-river/river-bend-park-boat-ramp-to-harnischfeger-park-canoe-launch",
+    "rock-river/candise-street-boat-launch-to-riverview-drive-boat-landing"
+  ],
+  "mapsWithdrawn": [],
+  "pathsAdded": [
+    "WI/rock-river--highway-k-boat-ramp-to-rock-river-road-canoe-launch.json",
+    "WI/rock-river--mechanic-street-boat-ramp-to-groeler-road-boat-launch.json",
+    "WI/rock-river--riverview-drive-boat-landing-to-highway-k-boat-ramp.json",
+    "WI/rock-river--rock-river-road-canoe-launch-to-mechanic-street-boat-ramp.json"
+  ],
+  "changedSections": [
+    "rock-river/legion-auxillary-park-boat-ramp-to-river-bend-park-boat-ramp",
+    "rock-river/river-bend-park-boat-ramp-to-harnischfeger-park-canoe-launch",
+    "rock-river/candise-street-boat-launch-to-riverview-drive-boat-landing",
+    "rock-river/willow-drive-boat-ramp-to-fannie-p-lewis-park-boat-ramp",
+    "rock-river/fannie-p-lewis-park-boat-ramp-to-rock-river-public-access-cappie-s-landing",
+    "rock-river/highway-k-boat-ramp-to-rock-river-road-canoe-launch",
+    "rock-river/mechanic-street-boat-ramp-to-groeler-road-boat-launch",
+    "rock-river/riverview-drive-boat-landing-to-highway-k-boat-ramp",
+    "rock-river/rock-river-road-canoe-launch-to-mechanic-street-boat-ramp"
+  ],
+  "pointCoordinatesChanged": [],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--highway-k-boat-ramp-to-rock-river-road-canoe-launch.json",
+        "sha256": "a36924d6af83d0b4c722748353581917135e6d64c9a5b55ec104a14d161c3058"
+      },
+      "destination": "catalog/routes/WI/rock-river--highway-k-boat-ramp-to-rock-river-road-canoe-launch.json",
+      "candidate": {
+        "file": "research/rock-river-carries-20261109/courses/k-rock-road/candidate.json",
+        "sha256": "a47b703982d45fac2f1fa2911f9735bdfe6e903c3101f36305094e544411d5d5"
+      },
+      "inventory": {
+        "file": "research/rock-river-carries-20261109/courses/k-rock-road/branch-inventory.json",
+        "sha256": "6d04cfb795d290333c414e01a45d9bc062d9c6201c1843a24ec591364ac15de3"
+      },
+      "choices": {
+        "file": "research/rock-river-carries-20261109/courses/k-rock-road/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/rock-river-carries-20261109/sources/rock-river.json",
+        "sha256": "39bb8ecc37a253eb67804ddcc1d3f74de509b238a056092dd20fb4170991ccba"
+      },
+      "damScreen": {
+        "file": "research/rock-river-carries-20261109/courses/k-rock-road/dam-screen.json",
+        "sha256": "19a2312a010cc1b6ac6609ddd256c0093959315badac96ba784c9ca3063d4cca"
+      },
+      "review": {
+        "file": "research/rock-river-carries-20261109/courses/k-rock-road/full-course-review.json",
+        "sha256": "280d2652fa64d9514ef5bf893b29e380a65173c0bc66046303df7fabaa92404f"
+      },
+      "imagery": [
+        {
+          "file": "research/rock-river-carries-20261109/imagery/k-rock-road-part-1.jpg",
+          "sha256": "e9775a365445767f5f983779041d475e5b257e324c91cb0b5931e090d36f965f"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/k-rock-road-part-2.jpg",
+          "sha256": "87f87c352ae7f58dc08d13346708915ac243816c35a8b5d111e19e00184159e5"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/k-rock-road-part-3.jpg",
+          "sha256": "a2d607d15f467dc0d0c43bbc27d295c00028ad88b8e1585dcd5bb9f2a1e380aa"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/k-rock-road-part-4.jpg",
+          "sha256": "64df4d8e68d5575a12943322e0f24f0d0a0b87f7427d68376a00d1184bb699a6"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/k-rock-road-putIn.jpg",
+          "sha256": "7ba6768b840d5389cbcada67627811d6beca06f8d20c57b39913b500d8405fce"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/k-rock-road-takeOut.jpg",
+          "sha256": "9b77d159b6fb008cec2eafbd6ec76a725ae212bff0674d965cec6f84310c667e"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 1.6833,
+        "endpointOffsetsMeters": [
+          106.7,
+          54.6
+        ],
+        "mileageDifferencePercent": 0.98,
+        "maxSegmentMeters": 243.5,
+        "vertices": 22
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--mechanic-street-boat-ramp-to-groeler-road-boat-launch.json",
+        "sha256": "0f2cbfc30455001c57cd853524e27a1a1687f5916dd93581d199e249a711fc48"
+      },
+      "destination": "catalog/routes/WI/rock-river--mechanic-street-boat-ramp-to-groeler-road-boat-launch.json",
+      "candidate": {
+        "file": "research/rock-river-carries-20261109/courses/mechanic-groeler/candidate.json",
+        "sha256": "e0dff8013ec0f4157973ea21e5a6ea06f7895b852a5eee066ec92914fabe54d3"
+      },
+      "inventory": {
+        "file": "research/rock-river-carries-20261109/courses/mechanic-groeler/branch-inventory.json",
+        "sha256": "3384b341be8c8c2515a92fb5b62409de0af4cb6fca7e6ac00402de9c64678ec2"
+      },
+      "choices": {
+        "file": "research/rock-river-carries-20261109/courses/mechanic-groeler/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/rock-river-carries-20261109/sources/rock-river.json",
+        "sha256": "39bb8ecc37a253eb67804ddcc1d3f74de509b238a056092dd20fb4170991ccba"
+      },
+      "damScreen": {
+        "file": "research/rock-river-carries-20261109/courses/mechanic-groeler/dam-screen.json",
+        "sha256": "e7742ab4037ee0974a8e69238f67f216616355af1bb8838925d25ed07a3020fb"
+      },
+      "review": {
+        "file": "research/rock-river-carries-20261109/courses/mechanic-groeler/full-course-review.json",
+        "sha256": "f5c537fbff8436cc5675bfc4a6315d64bcc7b809ce7be44fb9aaa7392c33b014"
+      },
+      "imagery": [
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-part-1.jpg",
+          "sha256": "5b4ccd4d18b46421abf6fa7f5e070d6648ef4449e7bf31d577f4b5274b6a925c"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-part-2.jpg",
+          "sha256": "65533859f139507a39628782e2f887d8967a430384f1bac6b5a91878bf5c32cd"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-part-3.jpg",
+          "sha256": "c8988974aced9eb1e5653c70076cb910d16fe7df831a10e9913d49ba116d1fef"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-part-4.jpg",
+          "sha256": "a0eded3d889975a204d98919f8c98e2ec70ca5617f287ae0c4c64b6d3f609e0f"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-part-5.jpg",
+          "sha256": "c20dd1a311acb0cb6a94c6882c9d17bc6068eca60bd27dcffc17b133357af805"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-part-6.jpg",
+          "sha256": "ebcc7e3234c2827275008d5e5ea640f7ad8c40d4194a0ef96feb9c14dccf13ad"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-part-7.jpg",
+          "sha256": "e252a2e2895968ed6bc66ae83281e97094e89970db6313c9b52e3de2922641cc"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-putIn.jpg",
+          "sha256": "7e6fa7e26c59da3e3512fcb06a6632af806a5bc36e52ad29deb54eab9835ef14"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/mechanic-groeler-takeOut.jpg",
+          "sha256": "cfd8973609590a66e206f27a2ae9bd9ae1d0bb79c8a71ce872134a972da0d948"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 3.5129,
+        "endpointOffsetsMeters": [
+          38.9,
+          81.4
+        ],
+        "mileageDifferencePercent": 0.37,
+        "maxSegmentMeters": 224.4,
+        "vertices": 55
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--riverview-drive-boat-landing-to-highway-k-boat-ramp.json",
+        "sha256": "cb1d01976c4a67693701c3251fc4dcf0f0037fbc3be9979a345dd7977ec71493"
+      },
+      "destination": "catalog/routes/WI/rock-river--riverview-drive-boat-landing-to-highway-k-boat-ramp.json",
+      "candidate": {
+        "file": "research/rock-river-carries-20261109/courses/riverview-k/candidate.json",
+        "sha256": "36d0202aeda9c066d9ebca7d00501b66a4464a2336e88c26bc800169b871c730"
+      },
+      "inventory": {
+        "file": "research/rock-river-carries-20261109/courses/riverview-k/branch-inventory.json",
+        "sha256": "428058142b7aabbfa4ce2301a38b7516e55a1b09eb69e5c8c3f11bcc52483065"
+      },
+      "choices": {
+        "file": "research/rock-river-carries-20261109/courses/riverview-k/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/rock-river-carries-20261109/sources/rock-river.json",
+        "sha256": "39bb8ecc37a253eb67804ddcc1d3f74de509b238a056092dd20fb4170991ccba"
+      },
+      "damScreen": {
+        "file": "research/rock-river-carries-20261109/courses/riverview-k/dam-screen.json",
+        "sha256": "e52692bff76a29ba2787fe280deac9911fa74e24605c943e2a508fe4f822ba59"
+      },
+      "review": {
+        "file": "research/rock-river-carries-20261109/courses/riverview-k/full-course-review.json",
+        "sha256": "da462fded4ab401dc10c89d5192a0ead103468ce4946e6577931bdb31d2bc748"
+      },
+      "imagery": [
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-1.jpg",
+          "sha256": "68ea2c69adf4f50d54b27ffd19f223faafc233019d13bf9c00652d18c48d7bb2"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-2.jpg",
+          "sha256": "c92fcd3afdb67a4f98a4731499d8e2eb7cdfd09a9c14bc467fad7cb54ef2dc46"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-3.jpg",
+          "sha256": "c6f798c8dd4470ad755a71e0c2a7838b887b48dd2d768008ad4420c43ed1f141"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-4.jpg",
+          "sha256": "5ecf6d65243fdd241058d9c3d6840af4b0de158b80ff408aa94071414b6fdb7c"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-5.jpg",
+          "sha256": "06c7dee737c5dd947743b6fb81ff471b98621dd21b0811774eb7d5368f2346de"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-6.jpg",
+          "sha256": "d5a5c377b3cbe1ccfb5047a7718a10ef5454f115f2681aa043418d900449a94a"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-7.jpg",
+          "sha256": "f041e0478ee70a651b0babf9e43012c1e76319a90ce5e47eca86df3ed57bb1b3"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-part-8.jpg",
+          "sha256": "12f4555628e26c9c29327ebf36091fc1cc6b76bf4d437d03daedba7ecac41ab4"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-putIn.jpg",
+          "sha256": "eb3b73638fa8748063e09eec562d938c461c91a2358df34b298bc2cfd3aeb25c"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/riverview-k-takeOut.jpg",
+          "sha256": "53c106ab6cb577305f9e9b8bb675a7b7af33d6c663eb49ee6017bc88fddca0a6"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 4.0985,
+        "endpointOffsetsMeters": [
+          50.9,
+          106.7
+        ],
+        "mileageDifferencePercent": 0.04,
+        "maxSegmentMeters": 401.3,
+        "vertices": 35
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--rock-river-road-canoe-launch-to-mechanic-street-boat-ramp.json",
+        "sha256": "b7763a8009e66095adb901a21352577a8b4d90478a992ecfede1d0b05688fbe0"
+      },
+      "destination": "catalog/routes/WI/rock-river--rock-river-road-canoe-launch-to-mechanic-street-boat-ramp.json",
+      "candidate": {
+        "file": "research/rock-river-carries-20261109/courses/rock-road-mechanic/candidate.json",
+        "sha256": "18bd0080f542efbc1a405aab8d363ab76c48d4de2425f13ef4c38908eefb9fb3"
+      },
+      "inventory": {
+        "file": "research/rock-river-carries-20261109/courses/rock-road-mechanic/branch-inventory.json",
+        "sha256": "4cf8f6e5cbaf8fb7fe461ac5b4d08f3fb5cf5c7cb4ebddea2292f83501b4be55"
+      },
+      "choices": {
+        "file": "research/rock-river-carries-20261109/courses/rock-road-mechanic/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/rock-river-carries-20261109/sources/rock-river.json",
+        "sha256": "39bb8ecc37a253eb67804ddcc1d3f74de509b238a056092dd20fb4170991ccba"
+      },
+      "damScreen": {
+        "file": "research/rock-river-carries-20261109/courses/rock-road-mechanic/dam-screen.json",
+        "sha256": "293f7f544951b981f95b431f3907655bb40b05358c800bbaa5838027ddb0c073"
+      },
+      "review": {
+        "file": "research/rock-river-carries-20261109/courses/rock-road-mechanic/full-course-review.json",
+        "sha256": "2f1ad291917882eeebaac4a53d79ebd35f1a2ff1fdc5b27b442e21024cdc4bb3"
+      },
+      "imagery": [
+        {
+          "file": "research/rock-river-carries-20261109/imagery/rock-road-mechanic-part-1.jpg",
+          "sha256": "0c11ed012fb8345681ab23c97ae4c12a434a4e992106cfd3bc9b744f07bd5113"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/rock-road-mechanic-part-2.jpg",
+          "sha256": "fbfe2da3b8380e6a5c88f058b38ec4bca020faece49dc640ea7c7c208e24cd7e"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/rock-road-mechanic-putIn.jpg",
+          "sha256": "8c1779527d588d215b7c8b025ff22e98e06af1af121034f6295805ae562ed6e5"
+        },
+        {
+          "file": "research/rock-river-carries-20261109/imagery/rock-road-mechanic-takeOut.jpg",
+          "sha256": "7a55540ca74630c61672af2ecbf920a9fde19649472a29304401355bd724c1a7"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 1.0302,
+        "endpointOffsetsMeters": [
+          54.6,
+          38.9
+        ],
+        "mileageDifferencePercent": 3.02,
+        "maxSegmentMeters": 143.6,
+        "vertices": 21
+      }
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/rock-river-carries-20261109/sources/trail-d.pdf",
+      "url": "https://rockrivertrail.com/wp-content/uploads/2014/07/RRWT_Description_D.pdf",
+      "finalUrl": "https://rockrivertrail.com/wp-content/uploads/2014/07/RRWT_Description_D.pdf",
+      "checkedOn": "2026-11-09",
+      "sha256": "dae74db327d9ac8563993e975f57c578b73ff8cd6d365639e1c71ab182b6f8cf"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/dodge-trail.html",
+      "url": "https://dodgecountywi.com/lake-river/rock-river-water-trail-horicon-to-hustisford-to-watertown/",
+      "finalUrl": "https://dodgecountywi.com/lake-river/rock-river-water-trail-horicon-to-hustisford-to-watertown/",
+      "checkedOn": "2026-11-09",
+      "sha256": "1300096fd6c69a2bde29b993eed3ab22cb4de5990a46fc71ca64e6eb1da4f040"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/dodge-waterways.html",
+      "url": "https://www.co.dodge.wi.gov/trails-waterways/waterways",
+      "finalUrl": "https://www.co.dodge.wi.gov/trails-waterways/waterways",
+      "checkedOn": "2026-11-09",
+      "sha256": "45a4e932f7f19051c359ba5eaaad42167833a98df677d97ab8caa84429830a54"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/dodge-brochure.pdf",
+      "url": "https://www.co.dodge.wi.gov/fs/resource-manager/view/997d6c45-be21-4eda-8a56-0a595942f48d",
+      "finalUrl": "https://resources.finalsite.net/images/v1751402333/cododgewigov/zkprb9k3izvrfwmc7tnm/CanoeandKayakBrochureAsticoandHarnischfeger.pdf",
+      "checkedOn": "2026-11-09",
+      "sha256": "c5bf0317e89d0982cbd8496daa00f29e1bce59609d9d5f1b0868a9a1d06fd0b3"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/rock-seg-1.pdf",
+      "url": "https://parks.jeffersoncountywi.gov/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_01.pdf",
+      "finalUrl": "https://cms4files.revize.com/jeffersonwi/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_01.pdf",
+      "sha256": "4dc92ca26d6323a2d53f96516f71b599f13251bd6d61c32be37981bcca4c91d4",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/rock-seg-2.pdf",
+      "url": "https://parks.jeffersoncountywi.gov/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_02.pdf",
+      "finalUrl": "https://cms4files.revize.com/jeffersonwi/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_02.pdf",
+      "sha256": "6a2ac1407fac236e5fa51b73f19d28315e401d066777176bfbca740973f10ea8",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/rock-seg-3.pdf",
+      "url": "https://parks.jeffersoncountywi.gov/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_03.pdf",
+      "finalUrl": "https://cms4files.revize.com/jeffersonwi/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_03.pdf",
+      "sha256": "561246aaa03442a077ac1eecd70b18035719332263c5b84c5b467f9a91d12ce0",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/rock-seg-4.pdf",
+      "url": "https://parks.jeffersoncountywi.gov/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_04.pdf",
+      "finalUrl": "https://cms4files.revize.com/jeffersonwi/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_04.pdf",
+      "sha256": "3457c58516945e7d17f7d19f3d7f4fdffc4790379da9d3bff5dbc45249157eb3",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/rock-seg-5.pdf",
+      "url": "https://parks.jeffersoncountywi.gov/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_05.pdf",
+      "finalUrl": "https://cms4files.revize.com/jeffersonwi/Document%20Center/Recreation/Trails/Water%20Trails/Rock_Seg_05.pdf",
+      "sha256": "d902bc7fb7f70e1ebac340d3bd11a7aca56bb85d84a94a5732bf74f387e2b226",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "id": "acc-f23fc23c93e250f3beba",
+      "file": "research/rock-river-carries-20261109/sources/acc-f23fc23c93e250f3beba.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D825&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "6fb0d338e991fa15c8a7a2a3b7fe56705975eb20591df4977ec6aae96d351b08",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 825,
+        "LMS_BOAT_LANDING_NAME": "Candise Street Boat Launch",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete Panels",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Recreation Dept.",
+        "LL_LAT_DD_AMT": 43.00742551,
+        "LL_LONG_DD_AMT": -88.81131672,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "CITY OF JEFFERSON",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-c51d46eca3915f53910d",
+      "file": "research/rock-river-carries-20261109/sources/acc-c51d46eca3915f53910d.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D389&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "e5296e231da201852c6429158df49ffb2edd9892fad4d859d09c223f0ae82cef",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 389,
+        "LMS_BOAT_LANDING_NAME": "Fannie P. Lewis Park Boat Ramp",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete Plank",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Parks, Recreation & Forestry Dept.",
+        "LL_LAT_DD_AMT": 43.20025932,
+        "LL_LONG_DD_AMT": -88.72569979,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Dodge",
+        "MUNICIPALITY_NAME_TEXT": "CITY OF WATERTOWN",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-c807b862e2925d20896e",
+      "file": "research/rock-river-carries-20261109/sources/acc-c807b862e2925d20896e.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D5363&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "e885e2584827bc2c80a167dcaf4ad5bca009df957490c65dc4e0bba4bda59a51",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 5363,
+        "LMS_BOAT_LANDING_NAME": "Groeler Road Boat Launch",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete Panels",
+        "OWNERSHIP_NAME_TEXT": "STATE(DOT)",
+        "OWNERSHIP_MANAGER_NAME_TEXT": null,
+        "LL_LAT_DD_AMT": null,
+        "LL_LONG_DD_AMT": null,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "Select One...",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-da15fed7abbd5dfb9d1d",
+      "file": "research/rock-river-carries-20261109/sources/acc-da15fed7abbd5dfb9d1d.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3719&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "4d1a8ddfb152a9e2e95eb8803f0ccd9bdaad4fae1830b485b8e001a5ec2761e9",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 3719,
+        "LMS_BOAT_LANDING_NAME": "Harnischfeger Park Canoe Launch",
+        "LANDING_TYPE_CODE": "CARRY-IN",
+        "RAMP_TYPE_CODE": "Concrete",
+        "OWNERSHIP_NAME_TEXT": "COUNTY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Dodge County Land Resources & Parks",
+        "LL_LAT_DD_AMT": 43.21022386,
+        "LL_LONG_DD_AMT": -88.54269061,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Dodge",
+        "MUNICIPALITY_NAME_TEXT": "TOWN OF LEBANON",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-82da3f03e0e45a369efe",
+      "file": "research/rock-river-carries-20261109/sources/acc-82da3f03e0e45a369efe.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D824&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "9ee45b367aa768680387d89e5b81c4fb051e8108b4794f624fee0b40180c2437",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 824,
+        "LMS_BOAT_LANDING_NAME": "Highway K Boat Ramp",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Parks & Recreation Department",
+        "LL_LAT_DD_AMT": 42.94420129,
+        "LL_LONG_DD_AMT": -88.82687086,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "TOWN OF KOSHKONONG",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-9dbc7412abbe5a539e03",
+      "file": "research/rock-river-carries-20261109/sources/acc-9dbc7412abbe5a539e03.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3136&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "ca994a415f739075da025817dfd45d3c39308098719c4248d36c27e21d35e50f",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 3136,
+        "LMS_BOAT_LANDING_NAME": "Legion Auxillary Park Boat Ramp",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Gravel",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Parks & Recreation Dept.",
+        "LL_LAT_DD_AMT": 43.44920251,
+        "LL_LONG_DD_AMT": -88.63109306,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Dodge",
+        "MUNICIPALITY_NAME_TEXT": "CITY OF HORICON",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-cb34e8c23e175d87b367",
+      "file": "research/rock-river-carries-20261109/sources/acc-cb34e8c23e175d87b367.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3739&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "c7b07c100eeda368e0cb664a9962c2a85c2fdf5cc55c48ff93f604d12de23ff1",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 3739,
+        "LMS_BOAT_LANDING_NAME": "Mechanic Street Boat Ramp",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Parks & Recreation Department",
+        "LL_LAT_DD_AMT": 42.92890485,
+        "LL_LONG_DD_AMT": -88.83870144,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "CITY OF FORT ATKINSON",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-36c712927f3959cd9928",
+      "file": "research/rock-river-carries-20261109/sources/acc-36c712927f3959cd9928.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D384&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "720d212796c8c70a7f67738995a9dc771980bb2400c5677151717ab0bd5c47a7",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 384,
+        "LMS_BOAT_LANDING_NAME": "River Bend Park Boat Ramp",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Parks & Recreation Dept.",
+        "LL_LAT_DD_AMT": 43.43391196,
+        "LL_LONG_DD_AMT": -88.63433528,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Dodge",
+        "MUNICIPALITY_NAME_TEXT": "CITY OF HORICON",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-1f1eb27e8b785eb681cc",
+      "file": "research/rock-river-carries-20261109/sources/acc-1f1eb27e8b785eb681cc.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D5170&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "17bcbb42b712ff9557ea72485288fecd171758c23d351edf6b4630f6098f9a3f",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 5170,
+        "LMS_BOAT_LANDING_NAME": "Riverview Drive Boat Landing",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Recreation Department",
+        "LL_LAT_DD_AMT": null,
+        "LL_LONG_DD_AMT": null,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "CITY OF JEFFERSON",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-7296003260c95fe1acdc",
+      "file": "research/rock-river-carries-20261109/sources/acc-7296003260c95fe1acdc.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D5134&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "e2915d9b38e0684c40f3f660bbc83cf21d40f5bba862baacfe1b8319ce308946",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 5134,
+        "LMS_BOAT_LANDING_NAME": "Rock River Public Access-Cappie's Landing",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Concrete",
+        "OWNERSHIP_NAME_TEXT": "STATE(DNR)",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Manager",
+        "LL_LAT_DD_AMT": null,
+        "LL_LONG_DD_AMT": null,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "TOWN OF WATERTOWN",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-6732013cdef657098c2f",
+      "file": "research/rock-river-carries-20261109/sources/acc-6732013cdef657098c2f.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D821&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "7f3c6a4d98689790d9a83951c38aed3907a3fbaf03565afc68c49858d8654cf4",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 821,
+        "LMS_BOAT_LANDING_NAME": "Rock River Road Canoe Launch",
+        "LANDING_TYPE_CODE": "CARRY-IN",
+        "RAMP_TYPE_CODE": "Gravel",
+        "OWNERSHIP_NAME_TEXT": "COUNTY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Jefferson County Parks Department",
+        "LL_LAT_DD_AMT": 42.92655177,
+        "LL_LONG_DD_AMT": -88.8196784,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "TOWN OF KOSHKONONG",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "id": "acc-99e6f3fb770455258f5c",
+      "file": "research/rock-river-carries-20261109/sources/acc-99e6f3fb770455258f5c.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3738&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "307aed3f8800924451d31447fcc22426f651a395fb39989306761cfe06c30275",
+      "checkedOn": "2026-11-09",
+      "attributes": {
+        "BOATLANDING_SEQ_NO": 3738,
+        "LMS_BOAT_LANDING_NAME": "Willow Drive Boat Ramp",
+        "LANDING_TYPE_CODE": "RAMP",
+        "RAMP_TYPE_CODE": "Gravel",
+        "OWNERSHIP_NAME_TEXT": "CITY",
+        "OWNERSHIP_MANAGER_NAME_TEXT": "Parks, Recreation & Forestry Dept.",
+        "LL_LAT_DD_AMT": 43.18410238,
+        "LL_LONG_DD_AMT": -88.7035708,
+        "WATERBODY_NAME_TEXT": "Rock River",
+        "COUNTY_NAME_TEXT": "Jefferson",
+        "MUNICIPALITY_NAME_TEXT": "CITY OF WATERTOWN",
+        "ABANDON_FLAG": "No"
+      }
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/horicon-launches.html",
+      "url": "https://horiconwi.gov/282/Horicon-Boat-Launches",
+      "sha256": "b0d86758947f5579ef03eb1f27ebca4575972f98058b23a2107e541057b95c3f",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/horicon-kiwanis.html",
+      "url": "https://www.horiconwi.gov/Facilities/Facility/Details/Kiwanis-Park-4",
+      "sha256": "fedd428e31f1f54d9452e34cb5cc98a6d575991610a832a13297308a13a7a97f",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/sources/horicon-dnr.html",
+      "url": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/horicon/canoeing.html",
+      "sha256": "2e11940e038befe670427248a64096f8f88d946b8cc243d1297436ab14e905ad",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=DAM_OFFICIAL_NAME+LIKE+%27%25Horicon%25%27+OR+DAM_OFFICIAL_NAME+LIKE+%27%25Hustisford%25%27+OR+DAM_OFFICIAL_NAME+LIKE+%27%25Watertown%25%27&outFields=%2A&outSR=4326&f=json",
+      "file": "research/rock-river-carries-20261109/sources/carry-dams.json",
+      "sha256": "f554fea95f2f6b37c6886095da30dcf16eaca19285fcc553cc5e6ed191e6dbaa",
+      "checkedOn": "2026-11-09"
+    }
+  ],
+  "priorGuideEvidence": [
+    {
+      "file": "research/wisconsin-carry-access-20261109/sources/jefferson-current-guide.pdf",
+      "sha256": "a61dad337499f51f7acb7af9ca179b25a38110ae7a8f45ae548eb175a21086ca"
+    },
+    {
+      "file": "research/wisconsin-carry-access-20261109/sources/jefferson-current-guide.txt",
+      "sha256": "889c8723aa4450426c29a33cb8af5b845c4dd38591beb1859766c0b097d900fa"
+    },
+    {
+      "file": "research/wisconsin-carry-access-20261109/sources/guide-receipts.json",
+      "sha256": "c70774e3476ecbe917f20058a32f6049bf3fb0811f4be56e91559da9da2ee3af"
+    }
+  ],
+  "imageryReceipt": {
+    "file": "research/rock-river-carries-20261109/imagery/receipts.json",
+    "sha256": "27528a56a60a05f75676494b242e3236cd932d83bb2168bb30ff0a6af605e928"
+  },
+  "damImageReceipt": {
+    "file": "research/rock-river-carries-20261109/imagery/dam-receipt.json",
+    "sha256": "feac8e627cbcfea055e06258b7d2826ea156ee4c293905f87b2eccc643fc868d"
+  },
+  "damImage": {
+    "file": "research/rock-river-carries-20261109/imagery/anhalt-knox-tributary.jpg",
+    "sha256": "c67bcabfe928d0bace54de135be884646715988bae9a2c10eb5793c14056258a"
+  },
+  "guideImages": [
+    {
+      "file": "research/rock-river-carries-20261109/imagery/rock-seg-3.png",
+      "sha256": "58c1f1d564c84ed587d8cf5992a063a4fa4fd0e40a9120a0a7f5a3e017b652c2"
+    },
+    {
+      "file": "research/rock-river-carries-20261109/imagery/rock-seg-5.png",
+      "sha256": "45c30724a1bead2de93765812385b3034e56aebaaaaab892b353461fb6a4b7cf"
+    }
+  ],
+  "stillHeld": [
+    {
+      "section": "rock-river/willow-drive-boat-ramp-to-fannie-p-lewis-park-boat-ramp",
+      "reason": "Willow Street / Willow Drive is identified as take-out-only in the county water-trail guide near Upper Watertown Dam. A suitable downstream starting point and the carry arrangement for this exact section still need review. Do not plan this as a continuous float."
+    },
+    {
+      "section": "rock-river/fannie-p-lewis-park-boat-ramp-to-rock-river-public-access-cappie-s-landing",
+      "reason": "Fanny Lewis Park is identified as take-out-only in the county water-trail guide near Lower Watertown Dam. A suitable downstream starting point and the carry arrangement for this exact section still need review. Do not plan this as a continuous float."
+    },
+    {
+      "section": "rock-river/groeler-road-boat-launch-to-newville-public-access",
+      "reason": "Route check pending: the Koshkonong Wetland dam record conflicts with the published Rock River water trail through this reach. Its relationship to the paddling channel needs confirmation before this map is released."
+    },
+    {
+      "section": "rock-river/newville-public-access-to-rock-river-ramp",
+      "reason": "Indianford Dam still needs a confirmed legal portage for this section. Do not plan it as a continuous float."
+    },
+    {
+      "section": "rock-river/traxler-park-boat-ramp-to-rock-river-access",
+      "reason": "Dam crossing/portage unresolved: Janesville Central. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float."
+    }
+  ],
+  "findings": [
+    "Restored three access maps with explicit required land carries at Horicon, Hustisford and Jefferson. No exact carry or continuous dotted line through those dams is mapped.",
+    "Watertown guide specifies the current two starts as take-out-only; preserve both holds and clarify the mismatch.",
+    "Added four complete-source river-course overviews around Jefferson and Fort Atkinson. All 21 overlapping course panels and eight endpoint panels checked.",
+    "Anhalt & Knox is a nearby tributary-pond structure, not a dam crossing on the reviewed Rock River source course. The Koshkonong Wetland hold downstream remains unchanged."
+  ],
+  "limitations": [
+    "Facility points remain approximate; no surveyed landing or field inspection claimed.",
+    "No source vertices, planning miles, gauges, timing modes, guide times or stable IDs changed.",
+    "The new courses are display-only; GPS remaining time, mileage adoption and land overlays remain disabled.",
+    "No deployment, push or production changes."
+  ]
+}

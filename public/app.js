@@ -367,7 +367,7 @@ async function showLandMap(section) {
         const precision = document.createElement("span"); precision.className = "access-marker-precision";
         precision.textContent = reportedTakeout ? "Pilot" : "Area"; marker.appendChild(precision);
       }
-      marker.setAttribute("aria-label", `${markerName}: ${label}${reportedTakeout ? " — user-confirmed pilot" : approximate ? " — approximate access area" : " — agency access point"}`);
+      marker.setAttribute("aria-label", `${markerName}: ${label}${reportedTakeout ? " — user-confirmed pilot" : approximate ? " — approximate access area" : " — reviewed access point"}`);
       const popup = document.createElement("div");
       const title = document.createElement("strong"); title.textContent = label; popup.appendChild(title);
       const detail = document.createElement("p"); detail.textContent = `${access.accessType || "Access area"}${access.operator ? ` · ${access.operator}` : ""}`; popup.appendChild(detail);

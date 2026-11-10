@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "state": "WY",
+  "riverId": "green-river-upper-wy",
+  "sectionId": "warren-bridge-blm-6-to-warren-bridge-blm-4",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1404_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "Green River",
+    "evidenceFile": "research/wyoming-access-review-20261109/sources/green-river-upper-wy-additional.json",
+    "sha256": "012948da33a3c6a4b87e4f837a8d4d1ab7e7809b798070d1f93eab3c17d92699"
+  },
+  "putIn": {
+    "name": "Warren Bridge BLM 6 (Green)",
+    "lat": 43.073423,
+    "lon": -110.074581
+  },
+  "takeOut": {
+    "name": "Warren Bridge BLM 4 (Green)",
+    "lat": 43.065549,
+    "lon": -110.081637
+  },
+  "catalogMiles": 1.2,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -110.07616252719139,
+        43.07301178482468
+      ],
+      [
+        -110.07690560624566,
+        43.07451473313969
+      ],
+      [
+        -110.0773548729116,
+        43.07472559980609
+      ],
+      [
+        -110.07783467291085,
+        43.07477093313929
+      ],
+      [
+        -110.07789047291078,
+        43.07475099980604
+      ],
+      [
+        -110.07828940624354,
+        43.074608733139556
+      ],
+      [
+        -110.07863740624299,
+        43.074031333140475
+      ],
+      [
+        -110.07845127290994,
+        43.07324233314169
+      ],
+      [
+        -110.07806607291053,
+        43.07253453314277
+      ],
+      [
+        -110.07784047291085,
+        43.07235959980968
+      ],
+      [
+        -110.0772558062451,
+        43.07190619981044
+      ],
+      [
+        -110.07672647291258,
+        43.071383933144595
+      ],
+      [
+        -110.07659320624612,
+        43.07084399981205
+      ],
+      [
+        -110.07668960624596,
+        43.070077999813265
+      ],
+      [
+        -110.07733347291168,
+        43.068611733148906
+      ],
+      [
+        -110.07811580624379,
+        43.067333133150846
+      ],
+      [
+        -110.07870247290953,
+        43.06590779981974
+      ],
+      [
+        -110.07907740624228,
+        43.06541353315384
+      ],
+      [
+        -110.07964727290806,
+        43.06510719982101
+      ],
+      [
+        -110.08032860624036,
+        43.0649053998213
+      ],
+      [
+        -110.08092240623944,
+        43.06488953315463
+      ],
+      [
+        -110.08184348274276,
+        43.06531243049937
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "30678421",
+      "30678413",
+      "30678415"
+    ],
+    "putInOffsetMeters": 136.0950384517957,
+    "takeOutOffsetMeters": 31.2742816076486,
+    "putInSourceStationMeters": 1731.061651886291,
+    "takeOutSourceStationMeters": 1099.7608916790048
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate Green River course overview. Generalized bends and shoreline offsets are not navigation guidance or mapped landing connections.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.0372,
+      "endpointOffsetsMeters": [
+        136.4,
+        31.2
+      ],
+      "mileageDifferencePercent": 13.56,
+      "maxSegmentMeters": 177.7,
+      "vertices": 22
+    },
+    "issues": [
+      "endpoint-offset-over-100m",
+      "mileage-difference-over-5-percent"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete downstream source and overlapping imagery review",
+    "evidenceFile": "research/wyoming-access-review-20261109/decisions.json",
+    "note": "Complete named and unnamed network and all overlapping course panels reviewed. Original source vertices retained. Display only; planning distance, gauges and timing unchanged."
+  },
+  "overviewReview": {
+    "signature": "70fc6cb754dd27a82a574bdc8339f6949d6e359e2d6fa1743e9fc62f67515dbc",
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "The existing put-in is an approximate inland WGFD public-access/parking area, about 136 m from the source course. Preserve that access marker and omit its shoreline connection; this offset is not a verified boat-carry route.",
+      "mileage-difference-over-5-percent": "The source overview is 1.0372 miles versus the existing 1.2-mile planning figure. The overview is clipped near an approximate access area; it does not establish the trip distance from usable landings. Retain 1.2 miles and disable distance/timing adoption."
+    },
+    "routeReview": "Approximate Green River course overview only. Generalized river bends do not identify current wet channels, runnable rapids or exact landing connections.",
+    "note": "General river-course overview, not a current wet-channel line, safe boating route or measured trip distance. Confirm launch and takeout connections on site.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "No shoreline, boat-carry or driving connector is mapped. Identify the usable landing at the documented access site."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "No shoreline, boat-carry or driving connector is mapped. Identify the usable landing at the documented access site."
+      }
+    }
+  }
+}

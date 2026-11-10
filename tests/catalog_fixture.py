@@ -28,6 +28,9 @@ def copy_catalog(destination):
         for route_file in state['routes']:
             route = json.loads((ROOT / 'catalog/routes' / route_file).read_text())
             evidence = [route['source']['evidenceFile']]
+            # River-course anchors carry independently reviewed imagery too.
+            for anchor in route.get('courseAnchors', {}).values():
+                evidence.extend(item['file'] for item in anchor.get('imageryEvidence', []))
             for review in route.get('sourceSegmentReview', []):
                 evidence.extend(item['file'] for item in review['imageryEvidence'])
             evidence.extend(item['file'] for item in route.get('distanceDiscrepancyReview', {}).get('imageryEvidence', []))

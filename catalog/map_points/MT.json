@@ -72,7 +72,7 @@
     },
     "clarks-fork-yst": {
       "status": "pending",
-      "note": "Audited 2026-10-24. Bridger is a current FWP gravel ramp, but an exact agency-managed boat take-out at Edgar could not be confirmed. The map stays hidden until the downstream endpoint is verified or replaced."
+      "note": "Bridger and Edgar public access areas are supported by agency records and mapped approximately. Exact shoreline landings, trip distance and the full river-course line remain under review. Edgar is the county-designated FWP site, not an assumed town or bridge exit."
     },
     "dearborn": {
       "status": "pending",
@@ -979,23 +979,44 @@
       "operator": "City of Missoula"
     },
     "Bridger": {
-      "status": "verified",
-      "lat": 45.29623645879013,
-      "lon": -108.90050082345967,
-      "accessType": "Gravel ramp",
+      "status": "access-verified",
+      "accessType": "Public gravel-ramp facility area",
       "operator": "Montana Fish, Wildlife & Parks",
       "sourceName": "Montana FWP Bridger Fishing Access Site 39754495",
       "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754495",
-      "verifiedOn": "2026-10-24",
-      "note": "Coordinate and boat-access type from the current Montana FWP managed-access layer.",
+      "verifiedOn": "2026-11-09",
+      "note": "Current FWP site information confirms the public gravel-ramp facility. The unchanged agency coordinate falls within the campground/parking area, about 110 metres from the mapped river centerline. It is not a surveyed shoreline landing. Stable access ID and numeric coordinate preserved.",
       "id": "acc-ec3c990a5b345b30a978",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.29623645879013,
+        "lon": -108.90050082345967,
+        "feature": "FWP Bridger access facility and parking vicinity; not the precise water edge"
+      },
+      "coordinateSourceUrl": "https://myfwp.mt.gov/fishMT/fas/39754495",
+      "directions": "Use Bridger Fishing Access Site off East Broadway, about half a mile east of Bridger. FWP lists a gravel boat ramp. The Area marker identifies the facility vicinity; locate the ramp and current water edge during your shuttle."
     },
     "Edgar": {
-      "status": "pending",
-      "note": "No current managing-agency record has been found for an exact public boat take-out at the catalog label.",
+      "status": "access-verified",
+      "note": "FWP approved the Carbon County donation for public fishing and float access in December 2017. Carbon County designated the existing Wild Cat site as Edgar Bridge Fishing Access in April 2023. The 2026 Montana State Library cadastral record places FWP parcel 10062423404240000 beside the bridge. Its centroid provides approximate facility placement only; it does not establish a precise ramp, current shoreline connection or trailer suitability. The unrelated Edgar lagoon parcel is excluded.",
       "id": "acc-a937f1badc0550039707",
-      "aliases": []
+      "aliases": [
+        "Edgar Bridge Fishing Access",
+        "Wild Cat Fishing Access",
+        "Wildcat Fishing Access"
+      ],
+      "verifiedOn": "2026-11-09",
+      "areaCenter": {
+        "lat": 45.46470412198506,
+        "lon": -108.84318038506338,
+        "feature": "Approximate center of FWP parcel 10062423404240000 beside East Pryor Road; not a ramp or shoreline pin"
+      },
+      "accessType": "Public fishing-access area; exact boat landing unconfirmed",
+      "operator": "Montana Fish, Wildlife & Parks",
+      "sourceName": "Carbon County — Edgar Bridge Fishing Access designation, with FWP acquisition approval",
+      "sourceUrl": "https://carbonmt.gov/april-25-2023-2/",
+      "coordinateSourceUrl": "https://gisservice.mt.gov/arcgis/rest/services/msdi_cadastral_map_v1/MapServer/1/query?geometry=-108.852%2C45.458%2C-108.83%2C45.475&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&f=json&outFields=OBJECTID%2CPARCELID%2COwnerName%2CGISAcres%2CLegalDescriptionShort%2CTaxYear&where=UPPER%28OwnerName%29+LIKE+%27%25FISH%25%27+OR+UPPER%28OwnerName%29+LIKE+%27%25MONTANA%25%27+OR+UPPER%28OwnerName%29+LIKE+%27%25COUNTY%25%27",
+      "directions": "Edgar Bridge Fishing Access is beside the west end of the East Pryor Road bridge. The Area marker identifies the FWP parcel on the north side of the road. Confirm the public entrance and a usable landing during your shuttle before launching upstream; a completed ramp and exact carry are not confirmed. Do not park on the bridge or block the road."
     },
     "Highway 200 / Bean Lake area": {
       "status": "pending",

@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "status": "local-batch-complete",
+  "localOnly": true,
+  "checkedOn": "2026-11-01",
+  "workspace": "/Users/home/Documents/Codex/FloatETA-wisconsin-local-20261030",
+  "preview": "http://127.0.0.1:8785/?state=WI&river=kewaunee-river&section=kewaunee-river-hwy-e-to-kewaunee-boat-landing&craft=raft&map=1#landMapPanel",
+  "decisionFile": "research/map-path-review-20261101/wi-decisions.json",
+  "wisconsin": {
+    "rivers": 62,
+    "sections": 369,
+    "stableAccessIds": 431,
+    "accessMapsBefore": 299,
+    "accessMapsNow": 302,
+    "mapsReopened": 3,
+    "mapsHeldBefore": 70,
+    "mapsHeldNow": 67,
+    "dottedPathsBefore": 33,
+    "dottedPathsAdded": 4,
+    "dottedPathsNow": 37,
+    "pathsByRiver": {
+      "baraboo-river": 1,
+      "black-river-wi": 1,
+      "bois-brule-river": 3,
+      "brule-river": 3,
+      "crawfish-river": 2,
+      "flambeau-river": 5,
+      "kewaunee-river": 1,
+      "kickapoo-river": 6,
+      "milwaukee-river": 1,
+      "namekagon-river": 6,
+      "oconto-river": 2,
+      "red-cedar-river": 3,
+      "st-croix-river-upper": 1,
+      "west-twin-river": 1,
+      "yellow-river": 1
+    },
+    "accessPrecision": {
+      "access-verified": 332,
+      "verified": 98,
+      "pending": 1
+    },
+    "waterEdgePinsReviewedThisPass": 23,
+    "additionalPinsRetainedAsFacilityAreas": 21,
+    "availableMapsWithoutDottedPath": 265,
+    "newLiveTimingModels": 0,
+    "newGpsRemainingTimeEnabled": 0
+  },
+  "site": {
+    "rivers": 232,
+    "sections": 967,
+    "accessMapsBefore": 737,
+    "accessMapsNow": 739,
+    "newlyHeldMaps": 1,
+    "dottedPathsBefore": 126,
+    "dottedPathsAdded": 33,
+    "dottedPathsNow": 159,
+    "pathsAddedByState": {
+      "AR": 12,
+      "MO": 17,
+      "WI": 4
+    }
+  },
+  "reviewNotes": [
+    "Three Wisconsin access maps reopened: Clam below-dam launch, Gays Mills downstream departure, and Astico–County G with mandatory Danville portage. These are approximate access-area maps, not precise landing or portage tracks.",
+    "Gays Mills upstream arrival remains hidden: it needs a distinct above-dam take-out, not the shared park pin below the dam. Grand River Marsh, Germania Marsh and Amnicon holds now explain additional access/waterfall constraints.",
+    "Twenty-three existing agency landing coordinates corroborated in desktop imagery review. No coordinates or stable IDs moved. Twenty-one additional inspected points remain approximate areas; this work is not a field survey.",
+    "Thirty-three display-only dotted paths added: four WI, twelve AR, seventeen MO. Geometry, flow direction, endpoints and mileage checks pass; WI candidates screened against 4,141 on-landscape dam records. The lines do not establish current navigability.",
+    "The Elk River Mount Shira–Cowskin map is newly held because its proposed line crosses Noel Dam without a verified portage. Pineville–Mount Shira ends upstream and has a reviewed dotted path.",
+    "All 146 prior path source records and 126 public route assets, all catalog mileages, and all gauge/timing models are unchanged. No new GPS ETA, calculator-distance adoption or land-overlay filtering is enabled.",
+    "Four lower Wisconsin and three upper St. Croix sections have reviewed endpoints but the current named-river geometry remains over 100 m from a landing. Review missing side-channel connections instead of moving pins or relaxing endpoint tolerances.",
+    "Sixty-seven Wisconsin maps remain held; 265 available Wisconsin maps still lack a dotted path. The remaining-work file records the evidence needed for each held map."
+  ],
+  "validation": {
+    "pythonFullSuite": {
+      "discovered": 144,
+      "passedDefaultRuntime": 137,
+      "gisSkippedDefaultRuntime": 7,
+      "gisPassedDedicatedRuntime": 7
+    },
+    "finalDataRegressionRun": {
+      "wisconsin": 13,
+      "november": 7,
+      "newRegressionTestsAdded": 7
+    },
+    "distinctPythonTestsCovered": 145,
+    "javascriptPassed": 46,
+    "httpRequestsPassed": 396,
+    "agencyBindingsUnchangedAgainstCachedSnapshots": 430,
+    "catalogCheck": "passed",
+    "reviewQueueCheck": "passed",
+    "gitDiffWhitespaceCheck": "passed"
+  },
+  "notPerformed": [
+    "No push, publish, production configuration change or deployment.",
+    "No GPS field test or current-navigability certification."
+  ],
+  "evidence": [
+    {
+      "file": "research/map-path-review-20261101/wi-decisions.json",
+      "sha256": "a0d0f5a585350808d6e67bcfeee5c018819cbf2808de629684042e881032b4e8"
+    },
+    {
+      "file": "research/map-path-review-20261101/approved-paths.json",
+      "sha256": "d36fd427bb39ea8987e05c56a53af63692fab8c70a974e9425d1e6f2db052629"
+    },
+    {
+      "file": "research/map-path-review-20261101/withheld-paths.json",
+      "sha256": "25790e966b25a14619929aeb7b609db7e964eaf6de06cd4af3ca417d288bcc08"
+    },
+    {
+      "file": "research/map-path-review-20261101/section-path-reviews.json",
+      "sha256": "3c0e4bbca3f57d9da6c4c33b3503732464fe42cf736d833c47549fc46f492dd0"
+    },
+    {
+      "file": "research/map-path-review-20261101/sources/index.json",
+      "sha256": "dd7af24ed4f854a4df2cfe0c4dc9714a547c8ff98d66d98940b550f9e155bf05"
+    },
+    {
+      "file": "research/map-path-review-20261101/barrier-imagery-review.json",
+      "sha256": "ed596fad6ecb0c4e08a515658c23fd4374649760addb4c279034b9d57d552c74"
+    },
+    {
+      "file": "research/map-path-review-20261101/path-dam-screen.json",
+      "sha256": "33dc8b3dbdb46ea211bd0711f8c14eae2bc2bca207c24f338c80325165da0609"
+    },
+    {
+      "file": "research/map-path-review-20261101/release-readiness.json",
+      "sha256": "2ae440e7f4de30d308b0e61d778741641d84bb68a6594769970ceafda6dc448c"
+    },
+    {
+      "file": "research/map-path-review-20261101/remaining-wisconsin-maps.json",
+      "sha256": "13d3973095c7f22446f6a4db6446c8fab9505dda4161394dffe6a71432f0bce3"
+    },
+    {
+      "file": "research/map-path-review-20261101/unchanged-check.json",
+      "sha256": "ceb70b57fa97c21e18889a922897381561c7b227582e964169794aa470567e5c"
+    },
+    {
+      "file": "research/map-path-review-20261101/http-checks.json",
+      "sha256": "1c96a7ecf86b65deec37f63b68017ca2f100a57987203977e2cf65d7fb23bc08"
+    },
+    {
+      "file": "research/map-path-review-20261101/browser-checks.json",
+      "sha256": "4bee8284e52dd92db859562caa5b894701717239a710e9cc785c5fe50dbfc0f4"
+    },
+    {
+      "file": "research/map-path-review-20261101/python-tests.log",
+      "sha256": "9e3c6d1f7e18b88b33f43ad627072f87ed666acdecdfbe62ec9f5087cbd896e2"
+    },
+    {
+      "file": "research/map-path-review-20261101/final-data-tests.log",
+      "sha256": "74f20e017cc699e53e563861dc61718586cc51d81b236cc933ef2c68af3486cf"
+    },
+    {
+      "file": "research/map-path-review-20261101/gis-tests.log",
+      "sha256": "e7b514e96580a82cb164012704266fc5519f3e9bdb0eebf469674c9250bd3653"
+    },
+    {
+      "file": "research/map-path-review-20261101/javascript-tests.log",
+      "sha256": "3a0347ef04fe6b1258278bf6887d4db831ca83af9d72dff98847d556a5534e83"
+    },
+    {
+      "file": "research/map-path-review-20261101/kewaunee-desktop.png",
+      "sha256": "45518e24719b8cef56a65731599b717ecab5b159591d6f9910660b618be15ca6"
+    },
+    {
+      "file": "research/map-path-review-20261101/caddo-mobile.png",
+      "sha256": "68f0fce226692a0d2ec25b5e5c6a33ebee72164146758716c2b1499eeb84e898"
+    },
+    {
+      "file": "research/map-path-review-20261101/danville-portage-mobile.png",
+      "sha256": "c0d83c86ee4cdb6867cb1df3f2ada2a0f985d7c0add890f3108177f63e00856d"
+    },
+    {
+      "file": "research/map-path-review-20261101/noel-held-desktop.png",
+      "sha256": "277c8cd8587e0cb940c3adf2ae328d9f4e2ba4486b2a453a546344236adcaf30"
+    },
+    {
+      "file": "research/map-path-review-20261101/WI-wdnr-access-bindings.json",
+      "sha256": "46720c05a14642fc9bd25e2a4701245f32ea0ef520c00f79871286ad20e4c3d2"
+    },
+    {
+      "file": "research/map-path-review-20261101/WI-nps-access-bindings.json",
+      "sha256": "109f1eeb76e974abf0c95f25325d0a0174495ba0599f5da8b3ebc783a8a702be"
+    },
+    {
+      "file": "research/map-path-review-20261101/wdnr-bindings-check.log",
+      "sha256": "8a93a1a76bb03101f1f45c64db01257a907ec502e246edc1df4203382e347493"
+    },
+    {
+      "file": "research/map-path-review-20261101/nps-bindings-check.log",
+      "sha256": "71b787410e039618e6a12a1fa0212fce17866ebd51e96d629e5143cb6b06fcf6"
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "riverId": "root-river-mn",
+  "newSectionIds": [
+    "rushford-houston",
+    "houston-mound-prairie",
+    "mound-prairie-hokah",
+    "hokah-highway26"
+  ],
+  "sourceConflicts": [
+    {
+      "sourceId": "WAS00264",
+      "note": "The unchanged DNR coordinate matches the wooded access approach below the visible upstream structure. Canopy obscures the exact water-edge landing. The inventory river mile is 35.1, but the 2026 map and recommended trip use 33.8. The DNR course from this coordinate to Houston measures about 15.1 miles, matching the published trip rather than the inventory mile label."
+    },
+    {
+      "sourceId": "WAS02188",
+      "note": "Unchanged DNR GPS facility coordinate sits at a wooded bank beside the approach clearing. The precise landing is obscured, so retain an approximate area. Do not substitute the south-bank trailhead parking for the north-bank boating access."
+    },
+    {
+      "sourceId": "WAS00062",
+      "note": "Agency GPS coordinate retained unchanged at the visible carry-in clearing. The inventory and printed map label the site river-right, but the coordinate lies north of the mapped downstream course, on its left bank. That source conflict prevents an exact landing or verified-bank claim despite the visible shoreline approach."
+    },
+    {
+      "sourceId": "WAS02182",
+      "note": "The DNR coordinate is retained at the wooded river edge near the Thompson Creek confluence. The exact landing and approach under canopy are unresolved. The inventory identifies the City of Hokah as the operator; do not imply DNR operates this city site."
+    },
+    {
+      "sourceId": "WAS00263",
+      "note": "The DNR GPS coordinate is retained unchanged at the wooded access approach immediately west of the highway bridge. The marker sits back from the visible water edge, so keep an approximate area rather than an exact landing pin."
+    }
+  ],
+  "coordinatePolicy": "Unchanged source coordinates as approximate public access areas. No exact landings or verified banks promoted. User suggestions remain private until reviewed.",
+  "timingEnabled": false,
+  "existingBrightsdaleHoldPreserved": true,
+  "reviewedCourses": [
+    {
+      "sectionId": "rushford-houston",
+      "file": "catalog/routes/MN/root-river-mn--rushford-houston.json",
+      "metrics": {
+        "routeMiles": 15.1048,
+        "endpointOffsetsMeters": [
+          23.9,
+          23.3
+        ],
+        "mileageDifferencePercent": 0.03,
+        "maxSegmentMeters": 292.3,
+        "vertices": 468
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "note": "Eight consecutive views reviewed. Generalized bends sometimes cross gravel bars. The launch is downstream of the mapped submerged dam; bridge-debris and dredging cautions remain on the section. Geometry is reconstructed exactly from the registered agency source with endpoint trims. Landing connections, current obstacle passage and timing are not approved."
+    },
+    {
+      "sectionId": "houston-mound-prairie",
+      "file": "catalog/routes/MN/root-river-mn--houston-mound-prairie.json",
+      "metrics": {
+        "routeMiles": 6.7309,
+        "endpointOffsetsMeters": [
+          23.3,
+          15.2
+        ],
+        "mileageDifferencePercent": 0.46,
+        "maxSegmentMeters": 284.4,
+        "vertices": 131
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "note": "Eight consecutive views reviewed. The course follows the visible river, but the Mound Prairie access bank label remains unresolved. Geometry is reconstructed exactly from the registered agency source with endpoint trims. Landing connections, current obstacle passage and timing are not approved."
+    },
+    {
+      "sectionId": "mound-prairie-hokah",
+      "file": "catalog/routes/MN/root-river-mn--mound-prairie-hokah.json",
+      "metrics": {
+        "routeMiles": 6.0993,
+        "endpointOffsetsMeters": [
+          15.2,
+          28.5
+        ],
+        "mileageDifferencePercent": 1.62,
+        "maxSegmentMeters": 420.5,
+        "vertices": 138
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "note": "Eight consecutive views reviewed. Clouds cover the first bend in satellite imagery. A separate USGS NAIP export resolves that bend; the mapped course follows the visible main river. Mound Prairie access bank remains unresolved. Geometry is reconstructed exactly from the registered agency source with endpoint trims. Landing connections, current obstacle passage and timing are not approved."
+    },
+    {
+      "sectionId": "hokah-highway26",
+      "file": "catalog/routes/MN/root-river-mn--hokah-highway26.json",
+      "metrics": {
+        "routeMiles": 2.5704,
+        "endpointOffsetsMeters": [
+          28.5,
+          26.3
+        ],
+        "mileageDifferencePercent": 1.14,
+        "maxSegmentMeters": 1583.5,
+        "vertices": 41
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "note": "Eight consecutive views reviewed. The source contains a 1583.5 m straight segment. The whole course and Part 8 imagery show that this is a genuinely straight river reach, not a missing bend or invented connector. The abandoned railway-bridge caution is retained. Geometry is reconstructed exactly from the registered agency source with endpoint trims. Landing connections, current obstacle passage and timing are not approved."
+    }
+  ],
+  "initialCourseCheck": {
+    "sectionId": "hokah-highway26",
+    "reason": "Agency source has a 1583.5-metre segment; no missing bends invented and no validator bypass.",
+    "resolution": "The 1583.5 m source segment is a real straight river reach in the saved imagery. Reviewed for display only using the bounded, source-reconstructed exception; no vertices invented."
+  },
+  "imageryEvidence": [
+    {
+      "file": "research/lower-root-20261106/sources/access-hokah.png",
+      "sha256": "9a407238d766f7cb0169a67ab705c44a7005e800dbcc5877d3816390c7b5d4b2"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/access-houston.png",
+      "sha256": "fb4224d461e84df1796d3c8f143e7ed7de7cc8db91b2aa98c94ae635321e8c27"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/access-hwy-26.png",
+      "sha256": "90a97969dbc10c80b55c7f61406defaea8dc1a9a040fbd7bb3f75e7f11fd9c6e"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/access-mound-prairie-context.png",
+      "sha256": "43b5d7040f2f2538d573112e6dfc28e0d063f15dcb484c2cbc8207c3a5834ccf"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/access-mound-prairie.png",
+      "sha256": "c8d99119a507cfa6ec2b184404c0247b8ad5e779ce81bce2e4510d36f029e1ed"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/access-rushford-context.png",
+      "sha256": "8646cb6c202ed79870ac962ad60ad5373b6e492bf63a666a309ec451718c1c3c"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/access-rushford.png",
+      "sha256": "a5bba68160a3af140f563172b6218c44f6a85a6d6df757c29c2a6aa38c27c7e6"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-candidate-overview.png",
+      "sha256": "35fa1773b1999a3a096cde7615eabdba6e963be06b1d8a6786dd7ec18ec0b708"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-1.png",
+      "sha256": "0e33a2a4a6602050ca44644325f0a9eb157fcd7343e9d745051db4938d327ecb"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-2.png",
+      "sha256": "60a009741ecb6d3cfb32a2c3675c23e3b522a624677d5babf249df7f7122832e"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-3.png",
+      "sha256": "9afbe2cedb17f922eb0b51918f0343d85468fe5a584eb720f9921afa4bb543d4"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-4.png",
+      "sha256": "a37ef2c02ec4b4698cedc2b3c9e93b61bbadabcf965952b45a8ff89371a48772"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-5.png",
+      "sha256": "4aafb5f8689e62e5d2aae3be150795b25cd5218718b3b6184df15bcd6b1f86d6"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-6.png",
+      "sha256": "545938733bcfa0a22357bf8d7768a6a5bf5fcf30bfd6f51555139fb28d2b9fc0"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-7.png",
+      "sha256": "323bb7d166b725fa3ed4eb2d87c3f60b6c01c34e886382600c36d461fc5186f0"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/hokah-course-8.png",
+      "sha256": "8344a558987e242e60b3d3d3f35f835d7725cc269b1950b664cfe7f8f82c3b38"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-1.png",
+      "sha256": "3c6db9b5ca722402076a62166ac10eb97e012d44ff9390cd690c125bca98be8f"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-2.png",
+      "sha256": "28f568fa833640bf8ce5e33b23d91bfa15b6481801d078ecf5a94cfd1281c310"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-3.png",
+      "sha256": "f04b0c3fe19c79e8b777920b94a273e290ee14460f71bc6775272ef5a908d320"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-4.png",
+      "sha256": "561ef6d6dd75cecd9b7402f125deba08db44988c380352344b31731f233949bb"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-5.png",
+      "sha256": "deb5557bb075db16dbae85fe82e2ac24f1777e15390c693a0c06dc3775523b72"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-6.png",
+      "sha256": "60ce0842d3a71b55bce9601d906a63b192ad0536044047f4defc7859215c9dec"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-7.png",
+      "sha256": "87ea378ba4536e0deef03873c597c89a653caf75ca90645f3aa475768d23d992"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/houston-course-8.png",
+      "sha256": "38c1859d535900f49b88a9d520d9016183c56a35f62e95b1491068462d8f50d2"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-1-naip.png",
+      "sha256": "6c5deb38689a07089c34e7b850f8c490f3489374b5cc4886e6d100e924726284"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-1.png",
+      "sha256": "2ba4a91df994c950ae09dda3a080d1de8cbfa3f21872e2dc8f87873fe5c8f51a"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-2-naip.png",
+      "sha256": "e094a2de1758f5e27e90045902d276a7f2e043d15177267b6c90be79a6534a1f"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-2.png",
+      "sha256": "f766b4c6241c09eef9c6fbee4dde7cd57063b5433ce0691af9ea0e8d1c4019ae"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-3.png",
+      "sha256": "6d24cf2de4dcf6f8a162d3521b85363bbeda4d696332eb46fbdf6776cd8e8a6d"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-4.png",
+      "sha256": "f94a27fe1f560b9eddc018f769eeb4f650a2c37cb4b398386a3c98b0588dc78f"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-5.png",
+      "sha256": "24ad70ab6b08454bcedf1b80d80bcef6a1a6da0efd67423cb63c88dab7a3cd37"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-6.png",
+      "sha256": "369b083d48e68b31ec4b0813395d755ec41aa2db824c3059844b5ce5b52030e9"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-7.png",
+      "sha256": "b2113b579c8b014986d6d417f4d528e5011123b6aff04366b6fce9ead2864c5e"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/mound-course-8.png",
+      "sha256": "a22004d66cab980ef4f320b08fe0c79a0f752f84f9ab87342b8ff67d07004f4e"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/naip-mound-cloud-area.jpg",
+      "sha256": "7782c34c59db201358e8b35fdee50cec247aa029703079ec0977e70b19b8b0a6"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/root2-map.png",
+      "sha256": "25cfdf31f003465c0bab1adcc1ae5b6a8d11ca6feb5e46ec4428190c9480b428"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-1.png",
+      "sha256": "5d677c95c395180ba99172895174076b164f5c74b31937f9ae2e057b7a3516ee"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-2.png",
+      "sha256": "b99e26b385988fd4da81a3afdcf86acb1e8e4b9985b1dd1d0677c08fbeac4bf3"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-3.png",
+      "sha256": "a665ee20d5f66d71c9963f6a8cc456ac69762f768ef81c9dbac1f71ceecfbd47"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-4.png",
+      "sha256": "3e353731ad4ca356a9286b4fffd022631507e66cf9e7f5da7faeaaed38494460"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-5.png",
+      "sha256": "255ce54ffbf31f2d8c4509f70db2e458fa3d92bf8964732a37be57d367cfe87e"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-6.png",
+      "sha256": "a28ff36da27ffba01217abea9ef62ce86706eee8b1f1d144f2beb361ad7adbb2"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-7.png",
+      "sha256": "0a6b650428b91c32f306e3fecfc22cabe9cfd1fe3cb6afe0071571a8cf085237"
+    },
+    {
+      "file": "research/lower-root-20261106/sources/rushford-course-8.png",
+      "sha256": "af9bd6adbc38a6abcd6c119ce85d2f802d649439a7580c801b76cc3dcc813c06"
+    }
+  ]
+}

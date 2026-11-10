@@ -1,0 +1,106 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "riverId": "kettle-river-mn",
+  "sectionId": "highway-48-maple-island",
+  "agencyInventory": "research/agency-sources/MN-dnr-water-trail-access/3247670b26687cf28b523cf747353ab46e6ff0bfc8052b30f5bd0e3a5e957d68.json",
+  "stableSourceIds": [
+    "WAS00910",
+    "WAS00909"
+  ],
+  "publishedMiles": 7.2,
+  "coordinatePolicy": "Preserve agency facility coordinates as approximate areas; do not invent exact water-edge pins.",
+  "accessConflicts": [
+    "DNR GPS facility coordinate retained unchanged. Satellite imagery shows a riverbank access clearing just south of the Highway 48 bridge; canopy obscures the precise landing. The inventory lists a concrete trailer launch but its north-of-road directions conflict with the coordinate. Keep an approximate area marker and seek a reviewed shoreline correction.",
+    "DNR GPS facility coordinate retained unchanged; it marks a clearing back from the water. The 2026 water-trail map calls #6 a trailer access, while the current park map and GIS describe carry-in access. Do not promise trailer access. The trip guide uses river mile 7.9, while GIS says 8.0; use the published 7.2-mile recommended trip. Exact shoreline position remains unresolved."
+  ],
+  "currentAlerts": "https://www.dnr.state.mn.us/state-parks/park.html?id=spk00253#alerts",
+  "routeDecision": "Reviewed display-only DNR river-course overview",
+  "timingEnabled": false,
+  "routeFile": "catalog/routes/MN/kettle-river-mn--highway-48-maple-island.json",
+  "routeMetrics": {
+    "routeMiles": 7.1204,
+    "endpointOffsetsMeters": [
+      32.0,
+      33.1
+    ],
+    "mileageDifferencePercent": 1.11,
+    "maxSegmentMeters": 183.8,
+    "vertices": 149
+  },
+  "sourceClip": {
+    "start": {
+      "segment": 333,
+      "fraction": 0.4251890558356307
+    },
+    "end": {
+      "segment": 480,
+      "fraction": 0.17554310460208028
+    }
+  },
+  "sourcePartIds": [
+    "38"
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/lower-kettle-20261106/sources/access5-imagery.png",
+      "sha256": "417fc556f02b5a7e3c7dee70b4dcdb16dcdb9d526231feceda823bee01226251"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/access6-imagery.png",
+      "sha256": "218e54e93dc5882f9d8afa4cc9afdcfa56fb882bab6f40799511f3c4237b302c"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-1.png",
+      "sha256": "34f5e76b874a6e3c6c57edd8e0697ca9c81db180b49efdb1ada9509cbecac91f"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-2.png",
+      "sha256": "532e496052aa4ddcb60f97611c278993da90d3acffdc623408e8590bb0322186"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-3.png",
+      "sha256": "d9467001271402f77b91555f035e4a21d4d1cd0dc262066f82c9eda9f513a3a2"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-4.png",
+      "sha256": "a47e3d2d3039e8686c4e55e6faf3433367f00e03323cb53bfcf98edb86d7445a"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-5-naip.png",
+      "sha256": "9fb20550437084cb66b8e076b9837d1cb61491041d2c0698331f94f3f38f5909"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-5.png",
+      "sha256": "125dfc4ae3af8f7ba009829ab7502fc49b32653ad0e80e92544af54e4f103c93"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-6-naip.png",
+      "sha256": "f495337951460ad46f7b790bdabeabbc4cb9d4b33fee89e0616e6dd6e364cdb8"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-6.png",
+      "sha256": "d57a16eb36a1bf4a8e79a545cb2a9f58177f8afad95c96f48a16e3d5fdb12a25"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-7.png",
+      "sha256": "cbb00e93d72b8a9842cf88b322a99fc34a6d1a9a54a8cc06751f8c58688c5fec"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/course-8.png",
+      "sha256": "f82914d139f6326fed2ab2dee75ec029f902728ad70d16befdc747e84bf6b822"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/kettle2-map.png",
+      "sha256": "534068a06118074500f7c776008967c875c71b327f5656315940fe243b98d60d"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/park-summer.png",
+      "sha256": "a9039ba62caee79566499b7db5eea7de43358791d17d741650203cd13c884932"
+    },
+    {
+      "file": "research/lower-kettle-20261106/sources/naip-cloud-area.jpg",
+      "sha256": "1f81655b07fddcb8ddc103ab7155107894b09ad1db86629fe9d7a1e9e72fbdaa"
+    }
+  ]
+}

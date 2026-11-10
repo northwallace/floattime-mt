@@ -1113,3 +1113,20 @@ keep their separate review requirements. Validate with:
 python3 tools/build_catalog.py --check
 python3 -m unittest discover -s tests -p 'test_mapped_distance.py'
 ```
+
+### A takeout confirmation does not authorize a launch
+
+Check each endpoint's role against the current managing-agency restrictions,
+including when an older GIS inventory has both launch and egress flags. On the
+Hoback, WGFD's Granite Creek record and USFS ownership data support an approximate
+takeout area, but Forest Order 04-03-315 requires designated ramps for launches
+from Kozy Campground downstream. The upstream Highway 189–Granite Creek map can
+be reviewed independently; a section launching at Granite Creek keeps its
+`accessReview` until designation is established. See the evidence and regression
+checks in `research/wyoming-public-access-review-20261109/`.
+
+When a vague agency name resolves to a documented facility, preserve the access
+ID and original coordinate precision. Keep the former name as an alias. The
+Tongue's “Downstream of I90” record is now Welch Ranch; this identity match does
+not approve the entire long float, remove a mandatory portage, or transfer a
+shorter guide's miles/time to different endpoints.

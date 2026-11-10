@@ -1,5 +1,22 @@
 # Float ETA
 
+## November 10 release
+
+This release contains **252 rivers, 1,089 sections, 979 access maps and 352
+reviewed dotted paths across 13 states**. Compared with the November 9 release,
+there are 102 more access maps and 93 more dotted paths. **110 access maps remain
+withheld**. Exact landings and approximate facility areas retain their labels.
+
+New river-course overviews remain display-only. They do not change planning
+mileage, enable GPS time remaining or claim navigable channels. Dam crossings
+with documented carries retain explicit portage and condition notices; closures
+and unresolved access remain withheld. The unfinished November 10 Red Cedar
+research is excluded. The existing Greycliff field pilot is unchanged.
+
+The release retains the existing Render plan, commands and persistent data disk.
+The source catalog, reviewed geometry and immutable runtime evidence ship with
+it. Larger historical research remains in the local research workspace.
+
 ## November 8 release
 
 This release grows the catalog to **252 rivers, 1,088 sections and 877 access

@@ -1,5 +1,5 @@
 """Evidence-backed White River paths must preserve the existing trip contract."""
-import json
+import hashlib,json
 from pathlib import Path
 import unittest
 from tools.build_catalog import build
@@ -35,11 +35,20 @@ class WhiteRiverCourseTests(unittest.TestCase):
             self.assertTrue(source['archives'])
             self.assertTrue(any(f['attributes']['gnis_name'] in (None,'') for f in source['features']))
 
-    def test_bank_mismatch_is_not_released_as_a_dotted_path(self):
+    def test_former_bank_mismatch_requires_the_later_recorded_course_review(self):
         held=[r for r in self.decisions if r['decision']=='needs-course-refinement']
         self.assertEqual([r['sectionId'] for r in held],['bertrand-boat-ramp-to-houseman-boat-ramp'])
         index=json.loads((ROOT/'public/routes/index.json').read_text())['routes']
-        self.assertFalse(any(r['riverId']=='white-river-beaver-tailwater' and r['sectionId']==held[0]['sectionId'] for r in index))
+        row=next(r for r in index if r['riverId']=='white-river-beaver-tailwater' and r['sectionId']==held[0]['sectionId'])
+        path=ROOT/'catalog/routes/AR'/Path(row['file']).name
+        later=json.loads((ROOT/'research/arkansas-tailwater-courses-20261109/decisions.json').read_text())
+        review=next(x for x in later['courses'] if x['route']['file']==str(path.relative_to(ROOT)))
+        self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),review['route']['sha256'])
+        route=json.loads(path.read_text());validate(route,self.catalog,ROOT)
+        self.assertEqual(route['scope'],'river-course-overview')
+        self.assertEqual(route['features'],dict(display=True,landOverlay=False,distanceEstimate=False,remainingTime=False))
+        self.assertEqual(route['review']['evidenceFile'],'research/arkansas-tailwater-courses-20261109/decisions.json')
+        self.assertTrue(all(x['status']=='not-mapped' for x in route['overviewReview']['connections'].values()))
 
     def test_courses_match_original_unique_downstream_chains(self):
         try:

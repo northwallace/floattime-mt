@@ -1,0 +1,133 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "precisionPolicy": "Precise landings first; documented approximate areas remain useful. Community submissions stay private until reviewed.",
+  "barretts": {
+    "stableAccessId": "acc-ea38164accc35c83b4c2",
+    "decision": "Documented ramp area beside upstream footbridge; exact water-edge pin remains uncertain.",
+    "primaryPlan": "https://www.usbr.gov/gp/mtao/clarkcanyon/ea/eachapters/ea_chapter_1.pdf#page=6",
+    "planDate": "August 2004",
+    "primaryCurrentAccess": "https://data.visitmt.com/data/site/1984",
+    "rejected": [
+      "Tourism dam coordinate",
+      "Campground centroid downstream of footbridge",
+      "Using the private vehicle bridge as a landing"
+    ],
+    "distance": {
+      "highBridgeMiles": 13.1,
+      "replacesUnsupportedMiles": 10,
+      "grasshopperMiles": 3.2,
+      "takeOutRiverMile": 60.7,
+      "markerId": 1277170,
+      "markerOffsetMeters": 68.5
+    },
+    "limits": "Area anchors the footbridge approach, not a precise ramp or present-day opening guarantee. Dotted course remains under review; no GPS timing enabled."
+  },
+  "crowWing": {
+    "stableAccessId": "acc-5d1ca1a404f05dd3bfdb",
+    "featureId": "WAS02297",
+    "downstreamCarryInFeatureId": "WAS00990",
+    "newSections": [
+      "kiwanis-crow-wing-ramp",
+      "riverview-crow-wing-ramp"
+    ],
+    "sourceFile": "research/agency-sources/MN-dnr-water-trail-access/3247670b26687cf28b523cf747353ab46e6ff0bfc8052b30f5bd0e3a5e957d68.json",
+    "decision": "Keep the upstream public trailer ramp distinct from the downstream carry-in, using original agency coordinates as an approximate area.",
+    "guideTimes": "No matching source duration; do not transplant the 3–3.5 hour Kiwanis–downstream carry-in guide."
+  },
+  "courses": "Two reviewed display-only source subsets",
+  "published": false,
+  "remainingTimeEnabled": false,
+  "timingDistanceAdopted": false,
+  "reviewedCourses": [
+    {
+      "file": "catalog/routes/MN/mississippi-river-brainerd--kiwanis-crow-wing-ramp.json",
+      "parent": {
+        "file": "catalog/routes/MN/mississippi-river-brainerd--kiwanis-crow-wing.json",
+        "sha256": "7e2807106b8b4d3d4df83b4152f09f4ef7745b39223223d6f7f40ffcdf6bd923"
+      },
+      "metrics": {
+        "routeMiles": 8.7713,
+        "endpointOffsetsMeters": [
+          21.8,
+          56.5
+        ],
+        "mileageDifferencePercent": 0.33,
+        "maxSegmentMeters": 268.5,
+        "vertices": 221
+      },
+      "imagery": {
+        "file": "research/crow-wing-ramp-20261106/sources/course-takeout-context.png",
+        "sha256": "8ceaa0068a00febe17b6804a6178b1d5caf8d8d1b98c39945738596d8cca3cad"
+      }
+    },
+    {
+      "file": "catalog/routes/MN/mississippi-river-brainerd--riverview-crow-wing-ramp.json",
+      "parent": {
+        "file": "catalog/routes/MN/mississippi-river-brainerd--riverview-crow-wing.json",
+        "sha256": "d788161fe0cd58d13765b76bba815f238e7c6b55458cdc697901ad0365246238"
+      },
+      "metrics": {
+        "routeMiles": 5.143,
+        "endpointOffsetsMeters": [
+          51.9,
+          56.5
+        ],
+        "mileageDifferencePercent": 2.86,
+        "maxSegmentMeters": 268.5,
+        "vertices": 147
+      },
+      "imagery": {
+        "file": "research/crow-wing-ramp-20261106/sources/course-takeout-context.png",
+        "sha256": "8ceaa0068a00febe17b6804a6178b1d5caf8d8d1b98c39945738596d8cca3cad"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "file": "research/barretts-followup-20261106/sources/draft-rmp-chapter1.pdf",
+      "sha256": "f8139a2a13e07339bfb6a43e649cc8f42776bd132ad17c7d7d879d6562b4228a"
+    },
+    {
+      "file": "research/barretts-followup-20261106/sources/draft-rmp-map.png",
+      "sha256": "acb72dc1f481e7381da20b824b3af1525e4f316ccaa768e71d960b79d3f89abe"
+    },
+    {
+      "file": "research/barretts-followup-20261106/sources/visit-montana.html",
+      "sha256": "35bd7b853e0c95601f961d10ca06bc717209f65d9bec07eb6f7804a38d8bb2ee"
+    },
+    {
+      "file": "research/barretts-followup-20261106/sources/fwp-barretts-miles.json",
+      "sha256": "563ab731f6ad8ff05df98d86a200cdc4f0f7330a3ac988edbdd545b86a6b911c"
+    },
+    {
+      "file": "research/barretts-followup-20261106/sources/footbridge-area.png",
+      "sha256": "9fd41285b00222c60b602b47afe6f03b5666fc5b5baa2ffc84cfa2340cdc7fd9"
+    },
+    {
+      "file": "research/beaverhead-precision-20261106/sources/barretts.osm",
+      "sha256": "8595f9db2a854d61a3c3bc3550463371e48454a4afcd78745f60aeee60b40f15"
+    },
+    {
+      "file": "research/beaverhead-branches-20261106/fwp-mile-markers.json",
+      "sha256": "1facb75885d4dd4a547f75dd25b34fd50eb1b5383297c2a90088972bde78573d"
+    },
+    {
+      "file": "research/mississippi-brainerd-20261106/sources/crow-wing-park.pdf",
+      "sha256": "326727a129689a77dcc95f0fb45bb995bd018971f2d4e7a23ac0f46dff421a0e"
+    },
+    {
+      "file": "research/crow-wing-ramp-20261106/sources/access-ramp.png",
+      "sha256": "95677e9fddbe8f1b2c265b025c9cb8cecff915d4f8a533883ad0f3d61b5a1f97"
+    },
+    {
+      "file": "research/agency-sources/MN-dnr-water-trail-access/3247670b26687cf28b523cf747353ab46e6ff0bfc8052b30f5bd0e3a5e957d68.json",
+      "sha256": "3247670b26687cf28b523cf747353ab46e6ff0bfc8052b30f5bd0e3a5e957d68"
+    }
+  ],
+  "remaining": [
+    "Barretts exact ramp-edge refinement and downstream course review",
+    "More source-backed access and river additions",
+    "Remaining Wisconsin and other state map/path research"
+  ]
+}

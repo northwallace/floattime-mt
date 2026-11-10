@@ -1,0 +1,587 @@
+{
+  "version": 1,
+  "state": "WI",
+  "checkedOn": "2026-10-31",
+  "status": "local-review-complete",
+  "localOnly": true,
+  "scope": "Nothing pushed or deployed. No Git remote configured. This is a checked local batch; unresolved maps remain held.",
+  "workspace": "/Users/home/Documents/Codex/FloatETA-wisconsin-local-20261030",
+  "branch": "codex/wisconsin-local",
+  "baseCommit": "6c2f0e201d0c32646ee1d644a35083050e57cf4b",
+  "preview": "http://127.0.0.1:8785/?state=WI&river=namekagon-river&section=county-road-k-landing-to-whispering-pines-landing&craft=raft&map=1#landMapPanel",
+  "counts": {
+    "rivers": 62,
+    "sections": 369,
+    "stableAccessIds": 431,
+    "accessMapsBefore": 272,
+    "accessMapsNow": 288,
+    "mapsReopened": 16,
+    "mapsHeldBefore": 97,
+    "mapsHeldNow": 81,
+    "dottedPathsBefore": 15,
+    "dottedPathsAdded": 12,
+    "dottedPathsNow": 27,
+    "pathsByRiver": {
+      "black-river-wi": 1,
+      "bois-brule-river": 3,
+      "brule-river": 3,
+      "crawfish-river": 2,
+      "flambeau-river": 4,
+      "kickapoo-river": 4,
+      "milwaukee-river": 1,
+      "namekagon-river": 4,
+      "oconto-river": 2,
+      "red-cedar-river": 3
+    },
+    "accessPrecision": {
+      "access-verified": 371,
+      "verified": 59,
+      "pending": 1
+    },
+    "waterEdgePinsReviewedThisPass": 34,
+    "liveTimingModelsEnabled": 0,
+    "gpsRemainingTimeEnabled": 0,
+    "availableMapsWithoutDottedPath": 261
+  },
+  "changes": [
+    "Resolved 16 map holds with individual agency, dam-record and imagery evidence.",
+    "Reviewed 34 additional agency water-edge landing pins; retained stable access IDs.",
+    "Bound four NPS sites to explicit canoe-access features instead of generic park POIs.",
+    "Separated Howell Landing from West Howell across the river; preserved the old combined label as an alias.",
+    "Recorded 11 section-scoped decisions for dam records that do not cross the mapped river; no blanket exclusion of small or private dams.",
+    "Added seven source-backed portage or dam-side access explanations, with continuous river lines withheld.",
+    "Added 12 reviewed downstream NHD paths; preserved the 15 prior Wisconsin paths and all 59 previous-state published paths.",
+    "Flagged the Red Cedar Johnson-to-County-OO mileage conflict instead of silently choosing a distance."
+  ],
+  "limits": [
+    "81 maps remain held for unresolved landing, dam/portage or access-identity evidence.",
+    "261 available maps still have no reviewed dotted river line. Approximate facility areas are not exact landing pins.",
+    "Dotted lines show an approximate agency centerline, not the recommended navigation channel or a field survey.",
+    "No Wisconsin live timing calibration, GPS time remaining, public-land layer, or catalog-mileage replacement was enabled.",
+    "Four candidate paths remain withheld for mileage/endpoint issues; source-backed portage maps do not imply a continuous paddling route."
+  ],
+  "reviewFiles": {
+    "decisions": "research/WI/local-review-20261031/decisions.json",
+    "remainingMaps": "research/WI/local-review-20261031/remaining-map-review.json",
+    "approvedPaths": "research/WI/local-review-20261031/approved-paths.json",
+    "withheldPaths": "research/WI/local-review-20261031/withheld-paths.json",
+    "damScreen": "research/WI/local-review-20261031/path-dam-screen.json",
+    "sourceIndex": "research/WI/local-review-20261031/sources/index.json",
+    "agencyBindings": "research/WI/local-review-20261031/binding-check.json",
+    "unchangedCheck": "research/WI/local-review-20261031/unchanged-check.json"
+  },
+  "verification": {
+    "catalogCheck": "passed",
+    "reviewInventoryCheck": "passed",
+    "releaseCheck": "passed; not a deployment",
+    "python": "133 tests: 126 passed, 7 GIS tests skipped in default Python and all 7 passed separately in the GIS environment.",
+    "javascript": "46 passed",
+    "agencyBindings": {
+      "checked": 430,
+      "changed": 0
+    },
+    "http": {
+      "requests": 76,
+      "failed": 0
+    },
+    "browser": [
+      "Desktop Namekagon line and exact access pins render on satellite imagery.",
+      "Thiensville route ends at the upstream take-out before the dam.",
+      "Trego access map preserves mandatory portage warning and withholds continuous river line.",
+      "Phone layout has no horizontal overflow; map and its source notes fit."
+    ],
+    "logs": {
+      "python": "research/WI/local-review-20261031/python-tests.log",
+      "gis": "research/WI/local-review-20261031/gis-tests.log",
+      "javascript": "research/WI/local-review-20261031/javascript-tests.log",
+      "http": "research/WI/local-review-20261031/http-check.json",
+      "release": "research/WI/local-review-20261031/release-check.json"
+    }
+  },
+  "evidence": [
+    {
+      "file": "research/WI/local-review-20261031/WI-nps-access-bindings.json",
+      "sha256": "0cd89d4ec8a4323f5718373301f3fbaf28e8257e7e9a087b6baee8be1dd2bb19"
+    },
+    {
+      "file": "research/WI/local-review-20261031/WI-wdnr-access-bindings.json",
+      "sha256": "f574cfc93abddd032f8a07d556de2ba4a57a30278f74f5e2d76a05e12745a574"
+    },
+    {
+      "file": "research/WI/local-review-20261031/approved-paths.json",
+      "sha256": "730f83d82a6bfe789e9cd81a39030d5fc8ad3dc4f165d73925d2f412fce63ecd"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/132-marked.jpg",
+      "sha256": "f314026a3db55e1ddb7e8cf7a0ccde04ff3c50b1a1046dff23716c2ebab50390"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/132.jpg",
+      "sha256": "6b98413fa3cb03a3ef1142ad0e03c38a155e579951a8e0b3ac050aaed58e5c28"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/1718-marked.jpg",
+      "sha256": "cd2b13ac6d1f5e9d7b592c8752db9f0808fcde11d89604f53f640479a439f5f0"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/1718.jpg",
+      "sha256": "49c2d3e00db47d362141c622e0211771ce03e1dbd7615c4fb4aebdbe7b58e299"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/21-marked.jpg",
+      "sha256": "1d4dae98442afaa8380fce1149519ee38c83eafac3b4ba24a967b042ef5373c8"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/21.jpg",
+      "sha256": "6cbe8c4800de91d6ca2fd27569ceddcfa23c3dcafe72a10457bec3830048970d"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2454-marked.jpg",
+      "sha256": "2e34c6d5965d2a64cbc791e091e36441340d0c9752031a4f2136da3c6fe39a48"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2454.jpg",
+      "sha256": "d5491c29261605d1279f87af298106831b2f69f59e3cd0470ba68bac90a83f9c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2567.jpg",
+      "sha256": "9bbf4e4a5beb7ff569d942fcd8124f78575ad00834096647a92bd05ced854975"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2579-marked.jpg",
+      "sha256": "efd50044b8121f291f0c62eae050adca7b4fca366ac987c892db103bac9c3de3"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2579.jpg",
+      "sha256": "b72df24318d5bd1c25e4f5f0bfd06b34af227ea62e474477dbab456750255d2e"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2792-marked.jpg",
+      "sha256": "455c729089f180d5c307391cf30863c01fb9429fe40b332b9e58aed6239dcf55"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2792.jpg",
+      "sha256": "154b55af3e19c289282ab60029f3373eb43df7eab1050309fb223a0ea47b0e76"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2844-marked.jpg",
+      "sha256": "bf35d154edb5f1c47f410c551ea3afa26a738d93fae11d6d940a24b411422e83"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/2844.jpg",
+      "sha256": "501218725c0a6295a8eb978d2a5e4e0e236fb1c9a106bc2043643ee728b088c4"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4311-marked.jpg",
+      "sha256": "5e10a7bb51920d9c4593aa400b1e7b37271bcf1ebfeee97afeef770e0d7b308b"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4311.jpg",
+      "sha256": "bb743af03696faed9536b986060c0b1279f70099a36c19c579e555fd175cfe16"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4312-marked.jpg",
+      "sha256": "49edd4076f9ec3faae299bec649d67f19c2ad1a05cea3ba1722341f4e386e133"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4312.jpg",
+      "sha256": "84d144a1cc5b4e52cfdbe89edfb526a7a44871bf774cf7200771f0b8f32ee00c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4609.jpg",
+      "sha256": "cd24dbf37082995904c80cda2eef499e2498b388036d283f363c023d566ab68c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4646-marked.jpg",
+      "sha256": "b998942f9a227cc63c18e08a9eb1164b839461c4c8008c2d9d3ee5e7a3ef51d5"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4646.jpg",
+      "sha256": "b0d302e65b3377d5e54a51236a6e5415ff8f7125d9f2f05548e6f08eae0d002c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4765-marked.jpg",
+      "sha256": "8e48cc0cf45d4344b45d208500531dc552ad435bc2ba24b1dcf79900669578b5"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4765.jpg",
+      "sha256": "329314bfe86d80b150dc65a829d0a92c3d8ff8517ae28c1bf0a590675dca83ff"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4770-marked.jpg",
+      "sha256": "5a4af57d7afa5c841b3a290396368a5a2211bc10a6072aa782b0578e6668be03"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/4770.jpg",
+      "sha256": "a4697662835b2d45446b214c5ef984199710014a5a63d5562abb00cde8b12775"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/5003-marked.jpg",
+      "sha256": "6c7a0625d1a81502437010a9b2e198a9e976e5b498b17cb23207f6d208313298"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/5003.jpg",
+      "sha256": "6a675fcf262ddca8240706697643de320a3bc2f7557f5883e4611614973d6170"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/index.json",
+      "sha256": "48fe7451dedd19d20863d3c832213e9666b82bf212b10b49ea2503e82bf64370"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/sheet-0.jpg",
+      "sha256": "bf6ac15df386af46d4634bd1c96e36ba0c4b13ad1e3c47effb736461f7f105b3"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/sheet-1.jpg",
+      "sha256": "3c67d6667d637353b6ef69968cb1977c85192897d1e8b4f24b684cd80df7392f"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/sheet-2.jpg",
+      "sha256": "5b1a42b38ad46c62fc51719f7030bafd07419958395bf1b2866fe3f12002b27b"
+    },
+    {
+      "file": "research/WI/local-review-20261031/barrier-images/sheet-3.jpg",
+      "sha256": "530ed0e6e6b51a0bda60dd982e7f6c6310aca45f3528609082f4b112cb88163c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/binding-check.json",
+      "sha256": "4afcb185744ea408c70ca4aa816d4c288d24933c358cb948e6e9a384a0fcaafa"
+    },
+    {
+      "file": "research/WI/local-review-20261031/candidate-landing-images.json",
+      "sha256": "544254ce84eed91b0fd33d7503fb17681daef342dd4a418d0d334741e82d415c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/dam-images-0.jpg",
+      "sha256": "91b5ec4db49d1f796fcb1bcdd87098b954f3682193dc9787f437a0fa16cd6378"
+    },
+    {
+      "file": "research/WI/local-review-20261031/dam-images-1.jpg",
+      "sha256": "f98bb78f0df19d6e0ae4d9f7fd41ab1e03e452b8019b2d1ffa2e64e2afb1b068"
+    },
+    {
+      "file": "research/WI/local-review-20261031/decisions.json",
+      "sha256": "28cfdf79da421d13d0630194b190e21d7aad59456db5415bb51991c06947ac2f"
+    },
+    {
+      "file": "research/WI/local-review-20261031/endpoint-dam-screen.json",
+      "sha256": "b5e6366dadd926e1a289d8bb7844a67f717e35b476d90aafb1102dbee560a6dd"
+    },
+    {
+      "file": "research/WI/local-review-20261031/extra-landing-images.json",
+      "sha256": "597ecc138b8367b43b3cdd364d30c3effe2bd1764fa0062f3683ca02f864566d"
+    },
+    {
+      "file": "research/WI/local-review-20261031/extra-sheet-0.jpg",
+      "sha256": "42374da088b11a2afb81ed7243c5242fb02d24d05223abc50945efe15fd96b4d"
+    },
+    {
+      "file": "research/WI/local-review-20261031/extra-sheet-1.jpg",
+      "sha256": "74cd900254b4aecc4896aaf5ec66451b69e63dfe7a3bd08f5df423185b4122c3"
+    },
+    {
+      "file": "research/WI/local-review-20261031/http-check.json",
+      "sha256": "13295c171ed17d71e61775fe4ce819a22b20024003745a69650944b15c1a958c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/interior-dam-screen.json",
+      "sha256": "45a2857c696c8a198d0137238312f7379de8cd86c334ebf6115ace652f9ae5c7"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/big-cedar-river-launch.jpg",
+      "sha256": "b34bad56906ed454c10ad0f6b755ef3a717a86f95fa6857cb98165f20aecc471"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/black-river.jpg",
+      "sha256": "e457f635df113beebb198c9019c1efb4d7c00a890edcfe5ea3801f89e3e2a9ee"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/camp-41-canoe-landing.jpg",
+      "sha256": "76f42d6f24f9badec05ec01bceb05e37ef6618ba2be30197cf82145e75f8ea7e"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/canoe-launch-town-of-holland.jpg",
+      "sha256": "ef36bc80b67862abbceaf27cb8b7456f7ac4658a840e877adbe127bf9d603005"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/county-road-k-landing-st-croix-nsr.jpg",
+      "sha256": "51ca84e4b41d730e364e36febb292273389f934abd37d6e13519326fa3d45c6c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/downsville-public-boat-access.jpg",
+      "sha256": "93a9115f781d528d879f35d7bb294c42095bcf6e576f7bba9151f9b70a613280"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/earl-park-landing-st-croix-nsr.jpg",
+      "sha256": "7ed064d971c3dc9e11211175de8b7376baf7d886a2b8efee542ce3c2292ed910"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/howell-west-howell-landing-st-croix-nsr.jpg",
+      "sha256": "d10c11447e9578f6091399425e28af0d6c60aff5b0739592705f59ecd2866db7"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/iron-bridge-public-boat-access.jpg",
+      "sha256": "4d74369f970575801a32ee0ebe6f3bb92f00f0f2f25f018ad96116ac7d6639f3"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/lafollette-county-park-canoe-launch.jpg",
+      "sha256": "07ca9a5584188a444337ac717d5f341f80a216a3e9a160b4a5b4394b81e4a565"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/mcdowell-bridge-landing-st-croix-nsr.jpg",
+      "sha256": "2c468f3c87cfa9b761ddedea540ec3741323f015c8e0aec40fac2fa86fa2a1ee"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/mikana-dam-carry-in-access.jpg",
+      "sha256": "37e77c747f331567514bd0d1442a97ec32b860c66564019f75ad1179f0c6f305"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/nemakagon-river-access.jpg",
+      "sha256": "77c950dfe18d0b8983a8f144cbd565139f1a1746fd44a6f253e8651f029a501d"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/north-springbrook-landing-st-croix-nsr.jpg",
+      "sha256": "d0db5b7927b9e622562e35f9e33db1dcd45f6eb9e0f1fd37ee8a5bd48b0a2acc"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/oconto-city-docks.jpg",
+      "sha256": "9b5f900b545724e35de70caec9dcddcd0c120fef7f5191318d59c9dd2c67cb0b"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/oconto-river-access-city-of-oconto.jpg",
+      "sha256": "93e7ac4c8c13897cfd624c30193b1aeee960861003339e8e30eddaef4b7b8bae"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/oconto-river-canoe-launch.jpg",
+      "sha256": "33575c277e56ca475cb888a2982d332da3d5a4754f8a793d78c7be36247c5897"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/patzer-park-boat-ramp.jpg",
+      "sha256": "a5a82baed7fd4eb31e0600bf24d0c589178f64a09cc53d575c1c8f168b895eda"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/perry-creek-park-launch.jpg",
+      "sha256": "9fd28635fd2174fca5156783dc2222059639227e4107a88f6c8707fa52a6e96d"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/phipps-landing-st-croix-nsr.jpg",
+      "sha256": "e39027f39f6060fa2b5a6e5aa9df2a88960d95598d9752cda47e651305f0080a"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/red-cedar-river-access-at-hwy-29.jpg",
+      "sha256": "e1e3aaac1ce02027e56196d1c801b2abcb7e39d2dbc4f26670889358fc3c3ab9"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/red-cedar-river-access-town-of-rice-lake.jpg",
+      "sha256": "43a88e47b32ff30957f448d46c236156dbc79f0daf4fc8cb163ee9ac561bc2e6"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/red-cedar-river-access-town-of-sand-creek-752.jpg",
+      "sha256": "193ac414977a9ead29d5beed20fceb2cedb97e0838169086f6c7df401f518d30"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/red-cedar-river-county-hwy-d-access.jpg",
+      "sha256": "a3403d79f11b46d9a0e5951dd0772f717b90f9d380b4568a27379467b17d2305"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/red-cedar-river-county-hwy-oo-access.jpg",
+      "sha256": "aff353e21dd1d8511c2580a6c35ed8212cd3abf1e953f75a83f61e953707787c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/red-cedar-river-johnson-landing.jpg",
+      "sha256": "a4658e91324822bbc645c9dd13044385a629a84b3f1b6e763be4320e50d96971"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/russian-slough-access.jpg",
+      "sha256": "75af87bb018255602a07e7e82c19d71159bbe32669ed878597a302e104496360"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/springbrook-landing-st-croix-nsr.jpg",
+      "sha256": "9dd8d16a6dc247129974a90865d6d5f83f415e405f2562ef515c0bedd0611673"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/squaw-bend-bridge-access.jpg",
+      "sha256": "b02e7c8fdb992d7bad78a7f1acdfe74539c9fa20efc373bf1f3f2058d80564fb"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/stinnett-landing-st-croix-nsr.jpg",
+      "sha256": "d802e8b258e7091c1d602819af60cd27887d6de54cc30ff59cde9c7068349f3d"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/thiensville-boat-ramp.jpg",
+      "sha256": "4d88256a33091dd379e746ce7d586ba3a0ed3d41c7d5e19d7ed8a17b0585aa6f"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/viking-park-canoe-launch.jpg",
+      "sha256": "ef4a83cd4b15a7f4ed2766b0af717a74230494c50403f3a20be7efb074c3b6fb"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/village-grove-park-boat-ramp.jpg",
+      "sha256": "10edcb30d3d22fdec39d660dc8a4662df690c0be03b339605b50f45af18afe5a"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-images/whispering-pines-landing-st-croix-nsr.jpg",
+      "sha256": "062b6a2882aceed8d1d02acf47c3297c15ec79c1559a63f66c5485c9dbce9562"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-0.jpg",
+      "sha256": "e2c535e54ee3dffefe1ab3c953704b66462f6e96fed82d3b07a35cb65ddd3742"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-1.jpg",
+      "sha256": "b38f6b9df3ff87dc70aa3c3ba1573e46d22f8dcfd60630092c423a819fd96bc6"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-10.jpg",
+      "sha256": "812b0af7a15599dc384fe37c95a5f14a50e385c47282d742e3931ed8f15c81eb"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-11.jpg",
+      "sha256": "f8db0b9574938b9cf20e48b9b6c61eb874a50dc12c7b5efe437083a09a533309"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-2.jpg",
+      "sha256": "b5d05c1341640a7cd974a6a2fc67bd9f49554a9204105a791e19833f75742d66"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-3.jpg",
+      "sha256": "85b00cfb870ce4607fc9e6e5d15981059bca66c38fecd91c8c6d8e4d1d02a24c"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-4.jpg",
+      "sha256": "d110daeba48ba8e18e555ff243e96c2fa8ced74fa215245e37da325ed7db75ce"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-5.jpg",
+      "sha256": "b61312371fdb96e67267619315460eb36d5277aba32a53a663cf284fe561928a"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-6.jpg",
+      "sha256": "965d047e7c567337b470fd782195e2a402c775183df78b0f8481b42978944d97"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-7.jpg",
+      "sha256": "2e8338fefc25986f5756aa027a7940c31040f0ae1fc5535fa660c68278b0005a"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-8.jpg",
+      "sha256": "fdd472fd64fda110811a26d1ec18a97a147ca7b971755524dbd7fca645fa9777"
+    },
+    {
+      "file": "research/WI/local-review-20261031/landing-sheet-9.jpg",
+      "sha256": "422ad22775f0c221074d7d0a1df465d3b9f43c0fe9fa4a242bf84596acc9951d"
+    },
+    {
+      "file": "research/WI/local-review-20261031/path-dam-screen.json",
+      "sha256": "14c8db1eb7b1d433e93e28f970fca5320dc0eed750c9334daed7796bbe17fbe4"
+    },
+    {
+      "file": "research/WI/local-review-20261031/preview-desktop.png",
+      "sha256": "9ded5699d01abad464cc83067353f134d2a0912d47e45cdd7a18e6bd294386b3"
+    },
+    {
+      "file": "research/WI/local-review-20261031/preview-mobile.png",
+      "sha256": "7ac2d8375c8bd83f9c4abe2cc1437d941265ac3a1ee3ee56efd39711825ab98b"
+    },
+    {
+      "file": "research/WI/local-review-20261031/preview-portage.png",
+      "sha256": "81ec05c8ce524272bb1605c1650e211d70627345e41c54f73d579a30110c9dc7"
+    },
+    {
+      "file": "research/WI/local-review-20261031/preview-thiensville.png",
+      "sha256": "fd21c9caf37031a7c54d81a43048f126ab4bbafbee4a89cd36913996aa751378"
+    },
+    {
+      "file": "research/WI/local-review-20261031/release-check.json",
+      "sha256": "10eba263dff2126fac5b219f4881ab700c928d1cd19d46106bcac5bfef7b12e7"
+    },
+    {
+      "file": "research/WI/local-review-20261031/remaining-map-review.json",
+      "sha256": "02b81f272de21aecd943f19d564f779387b6c6a3920c3c989f0a4f1490de62dd"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/baraboo-dnr.html",
+      "sha256": "8f743a0476a375bc3f29409fe0afa6ea8b2bdd13dfeb880aa7775a93c3c07bc3"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/barron-paddling.pdf",
+      "sha256": "6b714415e12985486d98a7bfaa5a861a631e559984bcace4cd7cbf514bea16e2"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/black-river-dnr.html",
+      "sha256": "98aa0775ef4edb7bb3433d76d14005dca4c18f0e937f32a29dd75d07a6350fbd"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/dam-record-details.json",
+      "sha256": "a1d0fabfba826da22ed3defe63b02eb9db2a9b6a3c4482330d5d6932d889a9aa"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/flambeau-dnr.html",
+      "sha256": "5f04b48105270902adfb8d05be7a11f50aec7983f74fbd8ebc138c5cd176a225"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/flambeau-tourism.html",
+      "sha256": "e66647e48e04e4f6cde2c7f36e32734c4dd7e80044e2bb3f10bb1bf069db0f0e"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/index.json",
+      "sha256": "6bd33515a34d058212a08af608183a27d68cd510f966c81f7182a1326cf35d6b"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/interior-dam-full-records.json",
+      "sha256": "c3ac4f4a59843f80d1880e2a03cf2e23bd3beb09116148a38c2a3edd5296e200"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/lafollette.html",
+      "sha256": "302c0588285c0926e4c24ada74c034beb1d01201db7c709f63b583f8fc68d312"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/lafollette.pdf",
+      "sha256": "4f7346a46b5ef8c69711bd81a5131819af2c018ff69110f5d80bbb07882e20e1"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/lower-wisconsin-dnr.html",
+      "sha256": "38f36b21f6914054e68c31e3a28a2c30b6ba7df26711a8dbcb7be279cb5d05b1"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/milwaukee-water-trail.pdf",
+      "sha256": "dc3e1c61e413c2a9f704632ba3d16c23388b64fb74fbf66c3395414dc72c3516"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/nps-map3.pdf",
+      "sha256": "de4ea08be184f3efc2da68a4f05bc95e198a308f5aea886533e0b8766eccb125"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/otter-rapids-portage.jpg",
+      "sha256": "5b55d922629c4a5bbfd1bf74b030c28d0e34d7a5dbf88def536d5aac7b8c8fc8"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/ozaukee-trails.html",
+      "sha256": "c04054006ae1a19132aadfeb5224e50ebd69e67c881c276ed3f4b3246ba2c27a"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/path-extra-dams.json",
+      "sha256": "b329dd3c1a486fc3aff96b66d5be656ce0917dbc0987ccfab9bcc854edce53c3"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/rainbow-portage.jpg",
+      "sha256": "97931820440e389803ef2d65af32dab7100890bed63751fd392ba3a3c06aa0e5"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/thiensville.html",
+      "sha256": "446552929c74a9d41b830b9371c1fb7ec95502fef6c3700aba86b8b37127ce56"
+    },
+    {
+      "file": "research/WI/local-review-20261031/sources/wvic-map2.html",
+      "sha256": "bc431ae65ffe93fb9212b8f576b96530f3b18a9052cd7ff52a82bda3ae445960"
+    },
+    {
+      "file": "research/WI/local-review-20261031/unchanged-check.json",
+      "sha256": "9eb083e6af73a56f2d84d7258b19dd282317db5f92be08e77fa5f1fef474eb38"
+    },
+    {
+      "file": "research/WI/local-review-20261031/withheld-paths.json",
+      "sha256": "ce765cfdfc44ff9e7e5e3bce5675226455c3e256823d96c4f3632f58e1b25ffe"
+    }
+  ]
+}

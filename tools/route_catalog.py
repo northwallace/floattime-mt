@@ -21,6 +21,8 @@ def review_signature(record):
         fields += ('sourceSegmentReview',)
     if 'distanceDiscrepancyReview' in record:
         fields += ('distanceDiscrepancyReview',)
+    if 'courseAnchors' in record:
+        fields += ('courseAnchors',)
     return hashlib.sha256(json.dumps({k:record[k] for k in fields},sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
 def reviewed_distance_discrepancy(record,section,root):
@@ -47,6 +49,11 @@ def reviewed_distance_discrepancy(record,section,root):
         path=safe_file(root,item.get('file'),'research')
         require(path.suffix.lower() in ('.png','.jpg','.jpeg','.webp'),'Distance review evidence must be imagery')
         require(hashlib.sha256(path.read_bytes()).hexdigest()==item.get('sha256'),'Distance review imagery changed; re-review required')
+    reconstruct_directed_source(record,root)
+    return True
+
+def reconstruct_directed_source(record,root):
+    """Require original source vertices, including trimmed endpoint features."""
     payload=json.loads(safe_file(root,record['source']['evidenceFile'],'research').read_text())
     require(not payload.get('error') and not payload.get('exceededTransferLimit'),'Incomplete downstream source evidence')
     features={str(f['attributes']['permanent_identifier']):f for f in payload['features']}
@@ -60,10 +67,37 @@ def reviewed_distance_discrepancy(record,section,root):
     clip={side:nearest_position(chain,dict(lon=p[0],lat=p[1])) for side,p in [('start',coords[0]),('end',coords[-1])]}
     require(clip['start']['segment']<len(parts[0])-1 and clip['end']['segment']>=len(chain)-len(parts[-1]),
             'Downstream source trim omits a reviewed endpoint feature')
-    expected=trim_chain(chain,clip)['coordinates']
+    expected=[]
+    # A projected trim can land within sub-millimetre rounding of an existing
+    # source vertex. Match the importer's duplicate removal, not a new connector.
+    for point in trim_chain(chain,clip)['coordinates']:
+        if not expected or distance(expected[-1],point)>.001:expected.append(point)
     require(len(coords)==len(expected) and all(distance(a,b)<.1 for a,b in zip(coords,expected)),
             'Overview geometry differs from original downstream source vertices')
-    return True
+
+def validate_course_anchors(record,root):
+    anchors=record.get('courseAnchors')
+    if anchors is None:return
+    require(record.get('scope')==OVERVIEW and record.get('direction',{}).get('method')=='usgs-flow-directed-network',
+            'Course anchors are limited to downstream river overviews')
+    require(isinstance(anchors,dict) and anchors and set(anchors)<={'putIn','takeOut'},'Invalid course anchors')
+    payload=json.loads(safe_file(root,record['source']['evidenceFile'],'research').read_text())
+    require(payload.get('queryPolicy')=='named-and-unnamed-flowlines-v1','Course anchors require complete named and unnamed source coverage')
+    ids=record['direction']['featureIds']
+    for side,row in anchors.items():
+        require(isinstance(row,dict) and row.get('featureId')==ids[0 if side=='putIn' else -1],
+                'Course anchor differs from its endpoint source feature')
+        require(isinstance(row.get('reason'),str) and row['reason'].strip(),'Course anchor needs a review reason')
+        imagery=row.get('imageryEvidence')
+        require(isinstance(imagery,list) and imagery,'Course anchor needs saved imagery review')
+        for item in imagery:
+            require(isinstance(item,dict),'Invalid course anchor evidence')
+            path=safe_file(root,item.get('file'),'research')
+            require(path.suffix.lower() in ('.png','.jpg','.jpeg','.webp'),'Course anchor evidence must be imagery')
+            require(hashlib.sha256(path.read_bytes()).hexdigest()==item.get('sha256'),'Course anchor imagery changed; re-review required')
+    require(not any(record.get('features',{}).get(k) for k in ('landOverlay','distanceEstimate','remainingTime')),
+            'Course anchors permit river display only')
+    reconstruct_directed_source(record,root)
 
 def reviewed_source_segments(record,root):
     """A long original agency segment can be real straight water, not a gap.
@@ -224,6 +258,7 @@ def validate(record,catalog,root):
     require(not flags['remainingTime'] and not flags['distanceEstimate'],'GPS ETA and calculator distance adoption are deferred')
     require(not flags['landOverlay'] or flags['display'],'Land corridor requires route display')
     metrics,issues=geometry_checks(record)
+    validate_course_anchors(record,root)
     require(record.get('checks',{}).get('metrics')==metrics,'Route metrics stale; rebuild candidate')
     require(isinstance(record['checks'].get('issues'),list),'Route check issues required')
     if record['status']!='reviewed':

@@ -1,0 +1,79 @@
+{
+  "status": "local-review-ready",
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "purpose": "Improve discovery of a documented existing landing under its local names, while keeping unresolved access candidates private for review.",
+  "precisionPolicy": "Precision first. Source-backed approximate areas remain useful where exact water-edge landings are uncertain. Community suggestions are reviewed before public pins change. River-course geometry and access precision are reviewed independently.",
+  "completed": [
+    "Added documented Soldiers Grove and Beauford T. Anderson Park aliases to the existing Village Park Access stable ID; retained its agency area center and approximate status.",
+    "Clarified approach guidance and rechecked both affected access-map records.",
+    "Search results now explain which documented access alias matched, retaining the original section links.",
+    "Added five unresolved access leads to the private research inventory with source evidence, blockers and concrete next steps.",
+    "Verified the Jefferson approximate markers and endpoint-specific Help pinpoint links still follow the precision-first approach."
+  ],
+  "changes": {
+    "existingAccessRecordsImproved": 1,
+    "mapReviewsRefreshed": 2,
+    "privateResearchCandidatesAdded": 5,
+    "newPublicPoints": 0,
+    "newSections": 0,
+    "newMaps": 0,
+    "newDottedPaths": 0,
+    "coordinateChanges": 0,
+    "newLiveTimingModels": 0,
+    "newGpsRemainingTimeEnabled": 0
+  },
+  "counts": {
+    "rivers": 238,
+    "states": 12,
+    "sections": 1014,
+    "accessMaps": 801,
+    "dottedPaths": 177,
+    "riverCourseOverviews": 20
+  },
+  "wisconsin": {
+    "rivers": 64,
+    "sections": 392,
+    "stableAccessIds": 449,
+    "accessMaps": 332,
+    "heldMaps": 60,
+    "dottedPaths": 43,
+    "preciseAccessPoints": 107,
+    "approximateAccessAreas": 342
+  },
+  "researchInventoryItems": 3903,
+  "validation": {
+    "python": {
+      "passed": 257,
+      "log": "research/middle-kickapoo-expansion-20261106/python-tests.log"
+    },
+    "javascript": {
+      "passed": 65,
+      "log": "research/middle-kickapoo-expansion-20261106/javascript-tests.log"
+    },
+    "catalogCheck": "passed",
+    "reviewInventoryCheck": "passed",
+    "releaseCheck": "research/middle-kickapoo-expansion-20261106/release-check.json",
+    "diffCheck": "passed",
+    "httpSmoke": "research/middle-kickapoo-expansion-20261106/http-smoke.json",
+    "browser": [
+      "Homepage search finds Soldiers Grove and opens the matching directory result.",
+      "Matched access hint identifies the documented local landing name.",
+      "Matching section link opens the correct access guide; its map remains approximate.",
+      "Put-in popup includes revised approach guidance and Help pinpoint link.",
+      "Jefferson popup and section retain Area labels, precise-landing uncertainty and endpoint-specific correction links.",
+      "No browser errors observed in the search/map checks."
+    ],
+    "limits": "Automated checks validate the application and data constraints; they are not a field survey or a certification of current river conditions."
+  },
+  "preview": "http://127.0.0.1:8791/directory.html?q=Soldiers+Grove",
+  "precisionPreview": "http://127.0.0.1:8791/?craft=raft&state=MT&river=jefferson-upper&section=parsons-parrott&map=1#landMapPanel",
+  "screenshots": [
+    "research/middle-kickapoo-expansion-20261106/local-search-preview.png",
+    "research/middle-kickapoo-expansion-20261106/local-map-preview.png",
+    "research/middle-kickapoo-expansion-20261106/jefferson-precision-preview.png"
+  ],
+  "sourceIndex": "research/middle-kickapoo-expansion-20261106/sources/index.json",
+  "decisions": "research/middle-kickapoo-expansion-20261106/decisions.json",
+  "nextActions": "research/middle-kickapoo-expansion-20261106/next-actions.json"
+}

@@ -1,0 +1,71 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "status": "local-review-ready",
+  "completed": [
+    "Added a source-backed approximate Lemanski Road access area and two published shorter canoe trips.",
+    "Matched the published access coordinate to an open DNR-owned approach road without turning the area into an exact ramp pin.",
+    "Kept all prior access IDs, coordinates, section mileage, gauge settings and map approvals unchanged.",
+    "Updated historical preservation tests to check their existing records without rejecting unrelated future additions.",
+    "Verified both local maps, guide-time rendering and the endpoint-specific correction flow."
+  ],
+  "addedAccessId": "acc-ce26d5baf69058b3bc66",
+  "addedSections": [
+    "buena-vista-lemanski",
+    "lemanski-orion"
+  ],
+  "sourceIndex": "research/lemanski-access-20261106/sources/index.json",
+  "decisions": "research/lemanski-access-20261106/decisions.json",
+  "validation": {
+    "focusedPython": "25 passed",
+    "javascript": "63 passed",
+    "release": "Passed: 238 rivers and 798 maps; nothing published",
+    "http": "research/lemanski-access-20261106/http-smoke.json",
+    "browser": [
+      "Both new maps loaded with Lemanski Area marker and precise counterpart.",
+      "55 min and 38 min published guide times rendered.",
+      "Help pinpoint preserves the selected endpoint and leaves proposed coordinates blank.",
+      "No browser console errors observed."
+    ],
+    "screenshot": "research/lemanski-access-20261106/local-map-preview.png",
+    "pythonFull": "249 passed"
+  },
+  "preview": "http://127.0.0.1:8791/?state=WI&river=wisconsin-river-lower&craft=kayak&section=lemanski-orion&map=1#landMapPanel",
+  "limitations": [
+    "Exact Lemanski water-edge launch and side-channel connection remain unconfirmed.",
+    "Published guide times are not live-flow estimates.",
+    "No new dotted paths or GPS time remaining enabled.",
+    "Agency road inventory does not override current signs or conditions."
+  ],
+  "counts": {
+    "rivers": 64,
+    "sections": 389,
+    "stableAccessIds": 447,
+    "accessMapsBefore": 327,
+    "accessMapsNow": 329,
+    "mapsAdded": 2,
+    "heldMapsBefore": 60,
+    "heldMapsNow": 60,
+    "dottedPathsBefore": 45,
+    "dottedPathsAdded": 0,
+    "dottedPathsNow": 45,
+    "accessPrecision": {
+      "verified": 106,
+      "access-verified": 341
+    },
+    "newLiveTimingModels": 0,
+    "newGpsRemainingTimeEnabled": 0
+  },
+  "siteCounts": {
+    "rivers": 238,
+    "states": 12,
+    "sections": 1011,
+    "accessMapsBefore": 796,
+    "accessMapsNow": 798,
+    "dottedPathsBefore": 179,
+    "dottedPathsAdded": 0,
+    "dottedPathsNow": 179,
+    "riverCourseOverviews": 20
+  },
+  "nextResearch": "research/kickapoo-review-20261106/next-actions.json"
+}

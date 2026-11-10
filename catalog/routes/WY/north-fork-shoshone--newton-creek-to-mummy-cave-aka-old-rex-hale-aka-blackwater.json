@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "state": "WY",
+  "riverId": "north-fork-shoshone",
+  "sectionId": "newton-creek-to-mummy-cave-aka-old-rex-hale-aka-blackwater",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1008_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "North Fork Shoshone River",
+    "evidenceFile": "research/wyoming-corridor-review-20261109/sources/north-fork-shoshone.json",
+    "sha256": "61c8267fc3d3061cdbdb2137f2b8de2aa8cca700ef767d89e55ea64087a176d1"
+  },
+  "putIn": {
+    "name": "Newton Creek (NF Shoshone)",
+    "lat": 44.45436830041362,
+    "lon": -109.76423063149772
+  },
+  "takeOut": {
+    "name": "Mummy Cave (aka Old Rex Hale, aka Blackwater) (NF Shoshone)",
+    "lat": 44.461349189360895,
+    "lon": -109.73989222735949
+  },
+  "catalogMiles": 1.8,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -109.76448511718895,
+        44.45425495169494
+      ],
+      [
+        -109.76444198277234,
+        44.454205788289826
+      ],
+      [
+        -109.76424107339761,
+        44.45397679766523
+      ],
+      [
+        -109.76326967339912,
+        44.45316873099976
+      ],
+      [
+        -109.76217607340084,
+        44.45281633100031
+      ],
+      [
+        -109.76150407340191,
+        44.4526475976672
+      ],
+      [
+        -109.76074360673641,
+        44.452522931000786
+      ],
+      [
+        -109.75937367340521,
+        44.45222119766785
+      ],
+      [
+        -109.75853020673986,
+        44.451880531001805
+      ],
+      [
+        -109.75839600674004,
+        44.45171773100204
+      ],
+      [
+        -109.75774940674103,
+        44.45123573100281
+      ],
+      [
+        -109.75745340674149,
+        44.451035397669706
+      ],
+      [
+        -109.75686687340908,
+        44.450957197669865
+      ],
+      [
+        -109.75646580674305,
+        44.45099773100311
+      ],
+      [
+        -109.7546034734126,
+        44.45149713100235
+      ],
+      [
+        -109.75305047341499,
+        44.4520661310014
+      ],
+      [
+        -109.75256060674911,
+        44.45224559766786
+      ],
+      [
+        -109.75179287341695,
+        44.4526055310006
+      ],
+      [
+        -109.75073040675193,
+        44.45310353099988
+      ],
+      [
+        -109.74973180675352,
+        44.453388797666086
+      ],
+      [
+        -109.74845060675545,
+        44.453754797665525
+      ],
+      [
+        -109.74713260675753,
+        44.45485013099717
+      ],
+      [
+        -109.74561580675987,
+        44.45630793099492
+      ],
+      [
+        -109.74549240676009,
+        44.45711219766031
+      ],
+      [
+        -109.74554660676,
+        44.457553597659626
+      ],
+      [
+        -109.74630100675881,
+        44.458002730992256
+      ],
+      [
+        -109.74661407342501,
+        44.458249397658584
+      ],
+      [
+        -109.74665167342494,
+        44.45847773099157
+      ],
+      [
+        -109.7465170067585,
+        44.45882593099103
+      ],
+      [
+        -109.74642680675862,
+        44.45906819765732
+      ],
+      [
+        -109.74648427342521,
+        44.45935759765685
+      ],
+      [
+        -109.74651627342513,
+        44.45984439765609
+      ],
+      [
+        -109.74644327342526,
+        44.46028439765545
+      ],
+      [
+        -109.74615987342571,
+        44.4606309309882
+      ],
+      [
+        -109.74581607342623,
+        44.46082479765453
+      ],
+      [
+        -109.74526280676042,
+        44.46089473098778
+      ],
+      [
+        -109.74447307342831,
+        44.46109879765419
+      ],
+      [
+        -109.74378780676273,
+        44.46138013098702
+      ],
+      [
+        -109.74283087343088,
+        44.46146079765359
+      ],
+      [
+        -109.74276252030597,
+        44.461462764320224
+      ],
+      [
+        -109.74206627343204,
+        44.46148279765346
+      ],
+      [
+        -109.74126447343332,
+        44.46126113098727
+      ],
+      [
+        -109.74086267343392,
+        44.461195930987294
+      ],
+      [
+        -109.73988750743533,
+        44.461213101340206
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "59674013",
+      "{48FFF201-5373-422C-A2F4-7CC4C07E738F}",
+      "59674017",
+      "59674021",
+      "59674025",
+      "59687481",
+      "158864338",
+      "158864421",
+      "158864366",
+      "158864369",
+      "158864429",
+      "{50092E42-5709-4D78-AFD8-99C03B7A8FF2}"
+    ],
+    "putInOffsetMeters": 23.824177338119167,
+    "takeOutOffsetMeters": 15.166489579780025,
+    "putInSourceStationMeters": 845.1378453422626,
+    "takeOutSourceStationMeters": 233.7114412184604
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate North Fork Shoshone river overview with generalized bends and gravel bars. Not a navigation line, current-condition report or verified launch connection.",
+  "courseAnchors": {
+    "putIn": {
+      "featureId": "59674013",
+      "reason": "Use the named North Fork Shoshone beside the access area; the closer unnamed stub approaches from a tributary. Keep the access point unchanged and omit shore connections.",
+      "imageryEvidence": [
+        {
+          "file": "research/wyoming-corridor-review-20261109/imagery/newton-creek-to-mummy-cave-aka-old-rex-hale-aka-blackwater-part-1.jpg",
+          "sha256": "3d793bc26a708abc68288f5ad34594a0c80ed7109d3beeba0daf951228c23d34"
+        }
+      ]
+    }
+  },
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.7961,
+      "endpointOffsetsMeters": [
+        23.8,
+        15.1
+      ],
+      "mileageDifferencePercent": 0.22,
+      "maxSegmentMeters": 201.9,
+      "vertices": 44
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA full directed-network, branch and overlapping imagery review",
+    "evidenceFile": "research/wyoming-corridor-review-20261109/decisions.json",
+    "note": "All 3 overlapping course panels and the explicit branch alternatives reviewed. Main-stem anchors avoid nearby tributary stubs without moving access pins. Original source vertices retained. No planning mileage or timing changes."
+  },
+  "overviewReview": {
+    "signature": "3fe09d4f4f3f6412e59159bc87afb3843f34e5409c24f27e44b82da97676c9a6",
+    "acceptedIssues": {},
+    "routeReview": "Approximate river-course overview only. Source bends and gravel-bar detail are generalized; the line does not identify runnable rapids, current obstructions, bank access or exact landing connections.",
+    "note": "A planning overview of the river course. Bends and gravel bars are generalized; changing water, wood and local access require a current check. The line does not authorize bank stops or establish navigability.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Confirm the usable bank at the signed access area; no launch, carry or driving connector is mapped."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Confirm the usable bank at the signed access area; no launch, carry or driving connector is mapped."
+      }
+    }
+  }
+}

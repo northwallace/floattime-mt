@@ -167,7 +167,8 @@
       "difficulty": "Not rated (no agency rating found)",
       "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
       "putInAccessId": "acc-ebcd87987d765088bce7",
-      "takeOutAccessId": "acc-504fd66cd21f5f4f91c6"
+      "takeOutAccessId": "acc-504fd66cd21f5f4f91c6",
+      "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. This stretch is upstream of Park Mill Dam."
     },
     {
       "id": "menominee-river-park-boat-launch-to-twin-island-park-carry-in-access",
@@ -177,7 +178,8 @@
       "difficulty": "Not rated (no agency rating found)",
       "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
       "putInAccessId": "acc-504fd66cd21f5f4f91c6",
-      "takeOutAccessId": "acc-9712f6125ac85c6884f1"
+      "takeOutAccessId": "acc-9712f6125ac85c6884f1",
+      "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. This stretch is upstream of Park Mill Dam."
     },
     {
       "id": "twin-island-park-carry-in-access-to-menominee-river-access-town-of-porterfield-2887",
@@ -187,7 +189,8 @@
       "difficulty": "Not rated (no agency rating found)",
       "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
       "putInAccessId": "acc-9712f6125ac85c6884f1",
-      "takeOutAccessId": "acc-81f941282abc5b16b605"
+      "takeOutAccessId": "acc-81f941282abc5b16b605",
+      "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. This stretch is upstream of Park Mill Dam."
     },
     {
       "id": "menominee-river-access-town-of-porterfield-2887-to-menominee-river-access-town-of-porterfield-2835",
@@ -197,7 +200,8 @@
       "difficulty": "Not rated (no agency rating found)",
       "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
       "putInAccessId": "acc-81f941282abc5b16b605",
-      "takeOutAccessId": "acc-ea16ee34185c5c209755"
+      "takeOutAccessId": "acc-ea16ee34185c5c209755",
+      "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. This stretch is upstream of Park Mill Dam."
     },
     {
       "id": "menominee-river-access-town-of-porterfield-2835-to-stephenson-island-boat-landing",
@@ -205,11 +209,26 @@
       "takeOut": "Stephenson Island Boat Landing",
       "miles": 8.6,
       "difficulty": "Not rated (no agency rating found)",
-      "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+      "notes": "This river-and-reservoir trip requires two land portages: Park Mill (Third Marinette) and Menominee (First/Lower Marinette) dams. The 2017 FERC assessment documents both canoe carries, and the 2018 license requires their continued maintenance. Access markers show approximate facilities. The preliminary 8.6-mile river distance does not include walking or carry time.",
       "putInAccessId": "acc-ea16ee34185c5c209755",
       "takeOutAccessId": "acc-39552fae13c556548050",
-      "accessReview": "Dam crossing/portage unresolved: Third Marinette, First (Lower) Marinette. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
-      "routeReview": "This section includes Third Marinette, First (Lower) Marinette and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+      "routeReview": "Two dam portages are required. Check the signed take-outs, trails and downstream re-entry points during your shuttle, including whether your boat can be carried. Exact carry routes and shoreline connections are not drawn. Do not paddle through either dam; this access map is not a continuous floating route.",
+      "notices": [
+        {
+          "title": "Park Mill and Menominee dams: portage required",
+          "text": "FERC describes the Park Mill canoe carry on the north side of that dam, and the Menominee canoe carry on the Wisconsin side in Marinette. Both have steps. Inspect the signed exits, trails and re-entry points before launching, and stay outside restricted dam areas. The map does not mark the exact carry entrances or walking routes.",
+          "sourceUrl": "https://www.ferc.gov/sites/default/files/2020-06/P-2744-EA.pdf#page=87",
+          "sourceName": "FERC — 2017 Menominee and Park Mill assessment, page 71",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Confirm portage conditions before your trip",
+          "text": "Article 409 of the 2018 project license requires maintenance of both canoe portages. This documents the facilities, not their condition today. Check with the operator and follow posted closures and signs; allow extra time for carrying your boat and gear.",
+          "sourceUrl": "https://apps.dnr.wi.gov/water/wsSWIMSDocument.ashx?documentSeqNo=180019390#page=43",
+          "sourceName": "FERC — 2018 project 2744 license, Article 409",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     }
   ],
   "gaugeRelationship": "representative"

@@ -15,21 +15,51 @@
       "putIn": "Riggins city",
       "takeOut": "Lucile",
       "miles": 8,
-      "difficulty": "Class II–III",
-      "notes": "Town-to-town. Warm water in summer, jet boats possible. Time Zone Rapid is the named drop.",
+      "difficulty": "Class II–IV",
+      "notes": "Whitewater below Riggins includes Time Zone Rapid, rated Class III–IV in the BLM guide, plus other rapids whose difficulty changes with flow. Plan for experienced whitewater skills and current local guidance; jet boats may be present.",
       "putInAccessId": "acc-70b697e8b4a65dcfabdf",
-      "takeOutAccessId": "acc-75babddc0b7055f0b999"
+      "takeOutAccessId": "acc-75babddc0b7055f0b999",
+      "notices": [
+        {
+          "title": "Time Zone Rapid: Class IV potential",
+          "text": "BLM’s Lower Salmon guide rates Time Zone Rapid Class III–IV. This reach should not be planned as only Class II–III water. Check current flows, obstructions and local guidance before a trip.",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2022-08/Media_Center_Public_Room_BLM_ID_Lower_Salmon_River_Boater_Guide_2022.pdf",
+          "sourceName": "BLM Lower Salmon River Boater Guide — map 11",
+          "checkedOn": "2026-11-09"
+        }
+      ],
+      "routeReview": "Approximate river-course overview, not a rapid-running line. The mapped course is about 8.6 miles; the existing 8-mile planning estimate is retained. Confirm the actual launch, takeout and current whitewater conditions."
     },
     {
       "id": "hammer-heller",
       "putIn": "Hammer Creek",
-      "takeOut": "Heller Bar (Snake confluence)",
+      "takeOut": "Heller Bar",
       "miles": 73,
       "multiDay": true,
-      "difficulty": "Class III",
-      "notes": "The Lower Salmon. Typically 3–4 days. Snowhole is the big rapid. BLM camps, rattlesnakes, and a serious shuttle.",
+      "difficulty": "Class II–IV",
+      "notes": "A multi-day Lower Salmon and Snake River trip. BLM describes a typical four to six days from Hammer Creek to Heller Bar. Continue roughly 20 miles down the Snake after the Salmon confluence to the WDFW Heller Bar ramp below the Grande Ronde confluence. Plan the long shuttle and check permits, required equipment and current conditions.",
       "putInAccessId": "acc-c1539731d5a1552eaf53",
-      "takeOutAccessId": "acc-3e73957c1637524ca9b1"
+      "takeOutAccessId": "acc-2aefb784ba22590db8e8",
+      "takeOutPoint": {
+        "state": "WA",
+        "name": "Heller Bar"
+      },
+      "notices": [
+        {
+          "title": "Slide Rapid becomes much harder at high water",
+          "text": "BLM rates the Lower Salmon Class II–IV and warns that Slide Rapid reaches Class V–VI at 20,000 cfs and higher; BLM does not recommend boating at those flows. A map of the endpoints is not a rapid-running guide.",
+          "sourceUrl": "https://www.blm.gov/sites/default/files/docs/2022-08/Media_Center_Public_Room_BLM_ID_Lower_Salmon_River_Boater_Guide_2022.pdf",
+          "sourceName": "BLM Lower Salmon River Boater Guide — difficulty rating",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Heller Bar is in Washington",
+          "text": "The takeout is the WDFW concrete ramp on the Snake below the Grande Ronde confluence, roughly 20 river miles beyond the Salmon/Snake junction. Check the required Washington vehicle access pass and arrange the shuttle before launching.",
+          "sourceUrl": "https://wdfw.wa.gov/places-to-go/water-access-sites/heller-bar-395",
+          "sourceName": "WDFW — Heller Bar",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     }
   ],
   "timezone": "America/Boise"

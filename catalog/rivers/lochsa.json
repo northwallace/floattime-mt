@@ -12,13 +12,77 @@
   "sections": [
     {
       "id": "knife-fish",
-      "putIn": "White Pine / Knife Blade",
+      "putIn": "White Pine River Access",
       "takeOut": "Fish Creek",
       "miles": 11,
       "difficulty": "Class III–IV",
-      "notes": "Peak is May–June. Not a tube float. USGS stage at this gauge is not the Lowell Bridge staff — check Lochsa.info for the boater gauge.",
-      "putInAccessId": "acc-423d5ef93a175085818b",
-      "takeOutAccessId": "acc-799e6614914b5e51b758"
+      "notes": "Technical whitewater from White Pine River Access (Indian Grave Creek) downstream to Fish Creek River Access. White Pine is not Knife Edge. Confirm current conditions and identify both landings before launching; the dotted line is an overview, not a route through the rapids.",
+      "putInAccessId": "acc-1a849da2fd1d54aa8728",
+      "takeOutAccessId": "acc-799e6614914b5e51b758",
+      "notices": [
+        {
+          "title": "White Pine is the put-in",
+          "text": "This entry now refers specifically to White Pine River Access, also called Indian Grave Creek. Knife Edge is a different site downstream of Fish Creek. The former combined launch label has been retired.",
+          "sourceUrl": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/white-pine-river-access",
+          "sourceName": "USFS — White Pine River Access",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Limited launch space",
+          "text": "White Pine has room to unload one group at a time and parking for about four vehicles above the access. Camping is not permitted.",
+          "sourceUrl": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/white-pine-river-access",
+          "sourceName": "USFS — White Pine River Access",
+          "checkedOn": "2026-11-09"
+        }
+      ],
+      "distanceReview": "The former 11-mile figure is not reliable for White Pine to Fish Creek. The reviewed river-course line is roughly 19 miles; a supported planning distance is still being checked. No float estimate is offered for this section yet.",
+      "routeReview": "Approximate Lochsa river-course overview only. It does not show runnable rapid lines, current hazards or connections to the shore."
+    },
+    {
+      "id": "fish-knife-edge",
+      "putIn": "Fish Creek",
+      "takeOut": "Knife Edge River Access",
+      "putInAccessId": "acc-799e6614914b5e51b758",
+      "takeOutAccessId": "acc-9bdcfd0bef815a09bc0e",
+      "miles": 11.8,
+      "difficulty": "Class III–IV",
+      "notes": "A technical Lochsa whitewater stretch from Fish Creek River Access to Knife Edge. Arrange the Highway 12 shuttle and identify the takeout before launching. Scouting, river level and group ability can substantially change the time needed. The dotted line shows the general river course, not safe rapid lines.",
+      "routeReview": "Approximate Lochsa river-course overview only; no rapid-running instructions or mapped shore connections.",
+      "distanceEvidence": {
+        "method": "published-guide-miles",
+        "sourceName": "GoRafting — Lochsa River guide",
+        "sourceUrl": "https://gorafting.com/united-states/idaho/lochsa/",
+        "checkedOn": "2026-11-09",
+        "streamId": "Lochsa River",
+        "measureDirection": "increases-downstream",
+        "putIn": {
+          "name": "Fish Creek",
+          "riverMile": 9.8,
+          "sourceLocation": "Mile 9.8 — Fish Creek Put in"
+        },
+        "takeOut": {
+          "name": "Knife Edge River Access",
+          "riverMile": 21.6,
+          "sourceLocation": "Mile 21.6 — Knife Edge Take-Out"
+        },
+        "note": "11.8 miles is the difference between the guide’s named river-mile entries, not Highway 12 mileposts or an adoption of the dotted-line geometry."
+      },
+      "notices": [
+        {
+          "title": "Prepare for technical whitewater",
+          "text": "This stretch includes sustained Class III–IV whitewater. Conditions change with flow; use current river information and an experienced group or licensed outfitter. The map does not identify safe lines through rapids.",
+          "sourceUrl": "https://gorafting.com/united-states/idaho/lochsa/",
+          "sourceName": "GoRafting — Lochsa River guide",
+          "checkedOn": "2026-11-09"
+        },
+        {
+          "title": "Knife Edge access",
+          "text": "Use the designated Knife Edge river-access facility. It is generally available year-round as snow allows; check the Forest Service page for current restrictions and parking arrangements.",
+          "sourceUrl": "https://www.fs.usda.gov/r01/nezperce-clearwater/recreation/knife-edge-campground-and-river-access",
+          "sourceName": "USFS — Knife Edge River Access",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     },
     {
       "id": "gateway-lowell",
@@ -26,9 +90,20 @@
       "takeOut": "Lowell",
       "miles": 13,
       "difficulty": "Class III–IV",
-      "notes": "Packed rapids to the Selway confluence. Miss the takeout and you are on the Clearwater.",
+      "notes": "This is a longer downstream whitewater trip than the old 13-mile listing suggests. Confirm the exact public takeout and river distance before planning the shuttle. The Lochsa joins the Selway at Lowell to form the Middle Fork Clearwater.",
       "putInAccessId": "acc-bd7695cb10975daf8fcd",
-      "takeOutAccessId": "acc-2890f5ffae965d04bfa6"
+      "takeOutAccessId": "acc-2890f5ffae965d04bfa6",
+      "distanceReview": "The old 13-mile distance is too short for Wilderness Gateway to Lowell: even the straight-line separation is about 19 miles. The river distance and a named public takeout are being checked; no float estimate is offered until they are resolved.",
+      "accessReview": "Wilderness Gateway has documented public river access. The Lowell endpoint still needs a specific public landing; nearby lodge and water-intake locations are not verified public takeouts.",
+      "notices": [
+        {
+          "title": "Distance and takeout being corrected",
+          "text": "The agency-mapped Wilderness Gateway and Lowell areas are farther apart than the previous trip distance allowed. No estimate is shown until the downstream distance and public landing are confirmed.",
+          "sourceUrl": "https://nrt.org/sites/175/files/Clearwater_Lochsa_GRP_2019.pdf",
+          "sourceName": "Regional Response Team — Clearwater/Lochsa geographic response plan",
+          "checkedOn": "2026-11-09"
+        }
+      ]
     }
   ],
   "timezone": "America/Los_Angeles"

@@ -1,0 +1,360 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-09",
+  "baselineCatalog": {
+    "file": "research/wyoming-public-access-review-20261109/before/public/catalog.json",
+    "sha256": "bfcce6434b7f072b97f230f2860c040ba7dec766018a663851cf38dffb4de00f"
+  },
+  "mapsAdded": [
+    "hoback-river/highway-189-bridge-to-granite-creek"
+  ],
+  "mapsWithdrawn": [],
+  "mapsRefreshed": [
+    "snake-river-canyon-wy/astoria-to-prichard",
+    "snake-river-canyon-wy/elbow-to-east-table",
+    "snake-river-canyon-wy/east-table-to-west-table"
+  ],
+  "changedSections": [
+    "hoback-river/highway-189-bridge-to-granite-creek",
+    "hoback-river/granite-creek-to-stinking-springs",
+    "tongue-river-wy/upstream-of-i90-to-downstream-of-i90",
+    "snake-river-canyon-wy/astoria-to-prichard",
+    "snake-river-canyon-wy/elbow-to-east-table",
+    "snake-river-canyon-wy/east-table-to-west-table"
+  ],
+  "changedRiverMetadata": [
+    "tongue-river-wy"
+  ],
+  "derivedPendingSections": [
+    "shoshone-river-corbett/corbett-dam-to-buck-creek"
+  ],
+  "pathsAdded": [
+    "WY/snake-river-canyon-wy--astoria-to-prichard.json",
+    "WY/snake-river-canyon-wy--elbow-to-east-table.json",
+    "WY/snake-river-canyon-wy--east-table-to-west-table.json"
+  ],
+  "pointsPromoted": [
+    "Highway 189 Bridge (Hoback)",
+    "Granite Creek (Hoback)",
+    "Downstream of I90 (Tongue)"
+  ],
+  "pointRename": {
+    "Downstream of I90 (Tongue)": "Welch Ranch (Tongue)"
+  },
+  "pointsNoted": [
+    "Buck Creek (Shoshone)"
+  ],
+  "courses": [
+    {
+      "sectionId": "astoria-to-prichard",
+      "review": {
+        "file": "research/wyoming-public-access-review-20261109/courses/astoria-to-prichard/full-course-review.json",
+        "sha256": "cbee95eae6d5606a78c644afc9169f85bc05b086a0a963f38540f37c23c2bc3b"
+      },
+      "candidate": {
+        "file": "research/wyoming-public-access-review-20261109/courses/astoria-to-prichard/candidate.json",
+        "sha256": "24fbfd22299053a5ab46f1d8586d983707d4a5a3400e7df104c69f172cc922f9"
+      },
+      "inventory": {
+        "file": "research/wyoming-public-access-review-20261109/courses/astoria-to-prichard/branch-inventory.json",
+        "sha256": "6593be901f859aa376e7ee1774999e0109f0d69f8d563eb06e35f5b2a6b6c2c1"
+      },
+      "choices": {
+        "file": "research/wyoming-public-access-review-20261109/courses/astoria-to-prichard/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "imagery": [
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/astoria-to-prichard-part-1.jpg",
+          "sha256": "fd5fb4d2466472e6ad1dc46a74830ba3d2a0c9231a107e362ee839c3867da675"
+        },
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/astoria-to-prichard-part-2.jpg",
+          "sha256": "e24b23a62db1e360ca05eef3f31830f0095ca808ecc32f08cd99de4d20ad473c"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/WY/snake-river-canyon-wy--astoria-to-prichard.json",
+        "sha256": "2c847007e60361aada54785f7e11c4990b4b5956738e2a8664461a357fe20290"
+      }
+    },
+    {
+      "sectionId": "elbow-to-east-table",
+      "review": {
+        "file": "research/wyoming-public-access-review-20261109/courses/elbow-to-east-table/full-course-review.json",
+        "sha256": "67e8e5e6ff26220ce64b69683f1f4a2e2ba0038c8af196fac2d68449b7d15ac9"
+      },
+      "candidate": {
+        "file": "research/wyoming-public-access-review-20261109/courses/elbow-to-east-table/candidate.json",
+        "sha256": "d8abb09c5609fe48a226314688e7093ef0c1054071fa632ac10d082cf60cc603"
+      },
+      "inventory": {
+        "file": "research/wyoming-public-access-review-20261109/courses/elbow-to-east-table/branch-inventory.json",
+        "sha256": "0fb7482ce83b92e1b615296c582b26101f3109c403a3536e7c0d9b56aeb2a103"
+      },
+      "choices": {
+        "file": "research/wyoming-public-access-review-20261109/courses/elbow-to-east-table/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "imagery": [
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/elbow-to-east-table-part-1.jpg",
+          "sha256": "1849265a51e82e50abb0de7f0f0ebfa4468eebc50b5fcb08bc4a1caecd6f74d4"
+        },
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/elbow-to-east-table-part-2.jpg",
+          "sha256": "24fee0eabcd558c7244b59ae0a91d4c998a02e37806f4d15b1de3f3cd293cb01"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/WY/snake-river-canyon-wy--elbow-to-east-table.json",
+        "sha256": "a9e82b7d68731e21d0ceb273559657e2dc3497ef550c0bf7e1ddea81218529a5"
+      }
+    },
+    {
+      "sectionId": "east-table-to-west-table",
+      "review": {
+        "file": "research/wyoming-public-access-review-20261109/courses/east-table-to-west-table/full-course-review.json",
+        "sha256": "52fbc52bd8ea8000ea6d715993731611024a074bb8eafbda2d4365f87d01cc16"
+      },
+      "candidate": {
+        "file": "research/wyoming-public-access-review-20261109/courses/east-table-to-west-table/candidate.json",
+        "sha256": "c7519773fac7613a3a26c4fd8cd06c4d2c31388d3ac3c16184482986910ebce7"
+      },
+      "inventory": {
+        "file": "research/wyoming-public-access-review-20261109/courses/east-table-to-west-table/branch-inventory.json",
+        "sha256": "5a6f0893d8f74650ab6c69b544fafc92fd577599f736404129527cdde6b659ff"
+      },
+      "choices": {
+        "file": "research/wyoming-public-access-review-20261109/courses/east-table-to-west-table/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "imagery": [
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/east-table-to-west-table-part-1.jpg",
+          "sha256": "55de964ffe9fc98da7919df57fe1ae61d27b8cddfd6f57ad7f8b6a6ed83b5326"
+        }
+      ],
+      "route": {
+        "file": "catalog/routes/WY/snake-river-canyon-wy--east-table-to-west-table.json",
+        "sha256": "3dc3691caef7890bc7d9310bf0e585057490c7e228dd6527869be53ce73a72aa"
+      }
+    }
+  ],
+  "heldCourses": [
+    {
+      "sectionId": "highway-189-bridge-to-granite-creek",
+      "review": {
+        "file": "research/wyoming-public-access-review-20261109/courses/highway-189-bridge-to-granite-creek/full-course-review.json",
+        "sha256": "ec65b2934c12891d51852a45bb5d3d6a03d12e8d0ca4f3c199224725f1be335e"
+      },
+      "candidate": {
+        "file": "research/wyoming-public-access-review-20261109/courses/highway-189-bridge-to-granite-creek/candidate.json",
+        "sha256": "fbcf3e7f73df9fcc980c104592d1c561797a07d4da54d7aadb1fa1b5314cbbe4"
+      },
+      "inventory": {
+        "file": "research/wyoming-public-access-review-20261109/courses/highway-189-bridge-to-granite-creek/branch-inventory.json",
+        "sha256": "f9e5d88a3359fdc35706bc541087065a5f3ce67adb7bfa049926e9654323f07d"
+      },
+      "choices": {
+        "file": "research/wyoming-public-access-review-20261109/courses/highway-189-bridge-to-granite-creek/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "imagery": [
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/highway-189-bridge-to-granite-creek-part-1.jpg",
+          "sha256": "382e092a21adeee222469fd6c6243f16bf7493dbad2301f966c9c2017deaa8ae"
+        },
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/highway-189-bridge-to-granite-creek-part-2.jpg",
+          "sha256": "34db58df3b56a516299ba315a6a0564caf9feaa37cdf109f96b1b32f1734d45d"
+        },
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/highway-189-bridge-to-granite-creek-part-3.jpg",
+          "sha256": "82377608cf06348a1709fd9bb78f1b3a033ea359b5d9c40f53d323331779e930"
+        },
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/highway-189-bridge-to-granite-creek-part-4.jpg",
+          "sha256": "25a55f26914f4f7df4084482f11ea3603fda37f21e9ed1b5bafb0b1608c126c2"
+        },
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/highway-189-bridge-to-granite-creek-part-5.jpg",
+          "sha256": "df209883afa0566426dd51411aa6f5e5ca1a3f4f615bbbf4cf0daebf4b595ae8"
+        },
+        {
+          "file": "research/wyoming-public-access-review-20261109/imagery/highway-189-bridge-to-granite-creek-part-6.jpg",
+          "sha256": "7df806cfec384ff4c224b3084e44c194a1f67339a33ca51a55416e0a14e24082"
+        }
+      ]
+    },
+    {
+      "sectionId": "prichard-to-elbow",
+      "review": {
+        "file": "research/wyoming-public-access-review-20261109/courses/prichard-to-elbow/full-course-review.json",
+        "sha256": "d9f904a11d10bcf732893bc5fb9cca2d5f36d2ecf61b5c51f29ed2eee7987b46"
+      },
+      "inventory": {
+        "file": "research/wyoming-public-access-review-20261109/courses/prichard-to-elbow/branch-inventory.json",
+        "sha256": "33b5407e06dbf20bee3ebf87f08e2059542c64782cd09215b442f520e579ae23"
+      },
+      "imagery": []
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/additional-receipts.json",
+      "sha256": "89ac1d261bf85894105a833c153e61add5d4af93f91d8f3d629fc129d54e25a6"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/guide-receipts.json",
+      "sha256": "2dae22bd88184cacfbad761da58aad6cdf3b97895144cd125601166e329e0068"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/kozy-receipts.json",
+      "sha256": "303045ee97d928e01f2cf081a3604c1212d5082e348dc9087d6b3e2abbe0843f"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/receipts.json",
+      "sha256": "54e047b4ab80c6f16ab08a33c390cf6b2c8393d7dedd9063a1a1a8373a23376e"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/welch-receipts.json",
+      "sha256": "e90fe6b0387b0a9d341daef8f7ebaacf0b3d3ac9bd8091b3a16c752fcc66479b"
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/snake-river-canyon-wy.json",
+      "sha256": "634ea7fd83db1ffa34c5fd0b9c1d8f2d8b9407687f314e81187be906063a34bc"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/ownership-56.json",
+      "sha256": "34cd6c59537a9c04de43dcb537284d3a6da72cd1fb8c8a0bf576354e34c2c293"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/acme-map.pdf",
+      "sha256": "95eb1eb853ce3d9ca1c36a562189f14abd820e59b730a054e5d17e541d6c9607"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/hoback-streamgage.html",
+      "sha256": "a27f881730229f5279308638cf614714e8642ff9c3f3b8c71461fdd19fbf8322"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/ownership-57.json",
+      "sha256": "34cd6c59537a9c04de43dcb537284d3a6da72cd1fb8c8a0bf576354e34c2c293"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/kleenburn-welch-guide.html",
+      "sha256": "e66fe51282774289f555ae7a944d501fa45be2af4e6db1ae80a5128449acc965"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/teton-blog.html",
+      "sha256": "77469a45e0a5281cc49c1ab6afdb15d943d1728ef6b6583fd3ff7f2454b1eb1c"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/kozy-page.html",
+      "sha256": "2fcc34eb06be1d6232b670b46241d063d760fd726a1b92a8e6cf8f5801c74b13"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/wgfd-fishing-guide.pdf",
+      "sha256": "f88b8c34b9603f6da62653ed212f75f7b5f9d67b08be89c995c2b859a2b1cea9"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/usfs-ownership-layer.json",
+      "sha256": "4b5f021b345bfef0b081f486ceeb8fda1b68a29bf028620173aae7b381442ddf"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/hoback-river.json",
+      "sha256": "35c7ab260e3bedc30e0ea9be7890f72b6c22dabaa7a2ea290f4914548e597ad3"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/sheridan-flatwater.html",
+      "sha256": "a85ac29f347239d45c6cf93b88c9a868c5f8488ab26c3c3f5448c00272b6f8bb"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/blm-welch.html",
+      "sha256": "d14da45b08fc8ec0b54fe2d665bec60cd57d5e217648c76dbf7102742c80bbaf"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/wgfd-acme.html",
+      "sha256": "b10a1ba05719cb40ed761e7ded066eae897a0ca9d208ee2f46c037488a4e23d4"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/tongue-float-guide.html",
+      "sha256": "a27e5ba854802aa8dcd9d5b88f57ccf74cfe06826a5616d74864ed75471e5a02"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/tongue-trail-map.pdf",
+      "sha256": "c3ca3422cde493c241b07d9830b5576325f8af809f90188d482329a9aeab86ac"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/sources/usfs-kozy.json",
+      "sha256": "a0df5dcd3ac75e9ebe40c92fa608010f550756758a6b0a5e315752b2aadc9ec7"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/sources/wgfd-access.json",
+      "sha256": "becf392675ba0353e58e34f8e20ec98b88510f4eac7279808228d404a4a8646e"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/sources/usfs-hoback-launch-order.pdf",
+      "sha256": "a79585d02fc50a8810111fdcc8ea969b96e91e9c103a5d9c5ce17b40e7fa0c24"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/imagery/wgfd-56.jpg",
+      "sha256": "5fb9c35dbfafc622fbbf4a9a813f4b564af34c76f7fe17e3f532c66884a4143a"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/imagery/wgfd-57.jpg",
+      "sha256": "079090a5312e8a6cb17dcdf517bee5515d0c6508481be0f33e2ae7a3f612275f"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/imagery/wgfd-98.jpg",
+      "sha256": "ad1497cd87dd67038c7f2f75f06a4caa45217ea38deeb810d010e52d9c2f3b97"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/imagery/wgfd-185.jpg",
+      "sha256": "04438fddf9170763ad35aaf3cf91a8e406dafff9e44b0f0178f733426adb29f5"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/imagery/hoback-order-1.png",
+      "sha256": "c163221b344ebd6e6ecf7f5cf62500707cad0056f0f44111354b0be1bf0e6d89"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/imagery/hoback-order-2.png",
+      "sha256": "f128c2a2343e649206bb10a9c0d453074610b96d6679527e8f7aa2ac56fdb144"
+    },
+    {
+      "file": "research/wyoming-access-review-20261109/imagery/hoback-order-3.png",
+      "sha256": "e9f24867a93fcbd2718b07c7570b63976b5297e9dfbef7b8198cea7469dece1d"
+    }
+  ],
+  "imageryReceipts": [
+    {
+      "file": "research/wyoming-public-access-review-20261109/imagery/forkextended-receipts.json",
+      "sha256": "e779d2ab97eede71547c5faeac486e1f610d5b670fe2493880a13f4155fafbbb"
+    }
+  ],
+  "reviewedImages": [
+    {
+      "file": "research/wyoming-public-access-review-20261109/imagery/acme-map-p1.png",
+      "sha256": "05b4364b0f64d994812b2c10b155bf13320ae0587b3f277c0a367d062802bd3b"
+    },
+    {
+      "file": "research/wyoming-public-access-review-20261109/imagery/tongue-trail-map-p1.png",
+      "sha256": "ffb84d16dff4d624604b657178a80cc9305b2017314a4e5c1c4e34925dc2121e"
+    }
+  ],
+  "findings": [
+    "Upper Hoback Highway189–Granite Creek now has an approximate public access map. Granite Creek is a takeout here, not a confirmed designated launch; all sections launching there remain held.",
+    "Generic Tongue downstream-of-I90 identity resolved to Welch Ranch without changing the stable ID or source coordinate. Long Dayton-area float remains held; mandatory downstream diversion portage is now explicit.",
+    "Three Snake course overviews reviewed completely and added for display only.",
+    "Hoback trial course cuts a wooded bend and Prichard–Elbow source forks follow old island channels; both remain research only.",
+    "Buck Creek public road approach remains unconfirmed; failed historical report download is not treated as present-day access authority."
+  ],
+  "limitations": [
+    "Local only; no publication.",
+    "No existing verified coordinates, stable IDs, planning miles, gauge assignments, speed calibrations or GPS features changed.",
+    "No new precise landing, bank side, boat-carry connector or portage geometry adopted."
+  ]
+}

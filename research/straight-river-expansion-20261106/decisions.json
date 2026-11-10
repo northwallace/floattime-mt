@@ -1,0 +1,407 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "riverId": "straight-river-mn",
+  "coordinatePolicy": "Precision first. Retain existing exact landing pins. These four new agency coordinates establish public boating areas but not exact shoreline landings; retain source coordinates as Area markers. Help pinpoint suggestions stay private until reviewed.",
+  "reviewedAccesses": [
+    {
+      "featureId": "WAS02043",
+      "accessId": "acc-b70925e3835a5e2eaad6",
+      "name": "Straight River County Road 45 Access",
+      "status": "access-verified",
+      "note": "The unchanged agency coordinate falls in the river beside a wooded bank. County and DNR sources establish the public carry-in, but the exact shoreline connection is obscured. Keep an approximate area."
+    },
+    {
+      "featureId": "WAS02042",
+      "accessId": "acc-04f07c203591529abeb0",
+      "name": "Straight River Medford City Park Access",
+      "status": "access-verified",
+      "note": "The city confirms canoe/kayak access and the DNR lists a trailer launch. The agency point is at the wooded shoreline beside the approach, without a clear water-edge ramp end. Current DNR map mile 17.1 differs from inventory 17.2."
+    },
+    {
+      "featureId": "WAS00186",
+      "accessId": "acc-9d6a8e3f1fed5f9abe93",
+      "name": "Straight River Kroghs Landing",
+      "status": "access-verified",
+      "note": "The agency point is at the bank beside the public turnout. A worn approach is visible, but the exact landing edge is not distinct enough for a precise pin. Retain the original coordinate as an approximate access area."
+    },
+    {
+      "featureId": "WAS02041",
+      "accessId": "acc-71b4981aa17d509c836e",
+      "name": "Straight River Teepee Tonka Park Access",
+      "status": "access-verified",
+      "note": "City and DNR sources confirm a canoe landing. The agency point is at a wooded bank near the pedestrian bridge, not a resolved landing approach. The 2026 route table uses mile 2.0; inventory says 1.8. Keep the approximate facility and both source values visible."
+    }
+  ],
+  "accessDecisions": [
+    "County Road 45 is the Steele County carry-in at 5218 North County Road 45 below Clinton Falls; it is distinct from Frank Woodfill Wildlife Refuge.",
+    "Medford City Park is the Straight River Park landing off 4th Avenue NW. City confirms boating access, but the agency shoreline point is not a resolved ramp edge.",
+    "Kroghs Landing is downstream of the former Walcott Mill Dam rapids. Do not call it downstream of the County Road 19 bridge; imagery places the facility south/upstream of that bridge.",
+    "Teepee Tonka is a city-confirmed canoe landing near the pedestrian bridge. Keep it distinct from the Bridge-to-Park carry-in farther downstream.",
+    "Do not snap facility points onto the river or assign unconfirmed river-bank badges."
+  ],
+  "distanceDecisions": [
+    "Use the 2026 DNR Straight River route table consistently: County Road 45 at 20.8, Medford at 17.1, Kroghs at 10.1, Teepee Tonka at 2.0; river miles decrease downstream.",
+    "Retain GIS differences: Medford inventory says 17.2 and Teepee Tonka says 1.8. These do not justify changing the source coordinates or hiding an approximate access map.",
+    "Published planning miles remain independent of measured course length; no timing distance adoption."
+  ],
+  "barrierReview": {
+    "sourceUrl": "https://files.dnr.state.mn.us/maps/canoe_routes/cannon1_straight.pdf",
+    "observations": [
+      "Selected trips start below Owatonna Dam at 26.9 and Clinton Falls at 21.8.",
+      "Former Walcott Mill Dam Class I–II rapids at 10.2 precede Kroghs Landing at 10.1. Notice applies to medford-kroghs, county45-kroghs and medford-teepee-tonka.",
+      "Kroghs–Teepee Tonka starts below the rapids. Lower trips include a documented large midstream boulder at 6.9.",
+      "Woolen Mill Dam at 58.8 is on the Cannon mile axis, not this Straight River trip.",
+      "No assertion of current navigability, obstacle passage or access opening."
+    ]
+  },
+  "gaugeDecision": {
+    "station": "05353800",
+    "relationship": "same-river-reference",
+    "savedFeatures": 670,
+    "note": "Faribault station reports recent same-river discharge. No calibrated flow-to-speed model or matching numeric agency trip durations were found."
+  },
+  "timingEnabled": false,
+  "reviewedCourses": [
+    {
+      "sectionId": "county45-medford",
+      "file": "catalog/routes/MN/straight-river-mn--county45-medford.json",
+      "imageryParents": [
+        "county45-medford"
+      ],
+      "metrics": {
+        "routeMiles": 3.7014,
+        "endpointOffsetsMeters": [
+          2.6,
+          16.1
+        ],
+        "mileageDifferencePercent": 0.04,
+        "maxSegmentMeters": 213.7,
+        "vertices": 173
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The complete connected main course was checked in six overlapping views for each constituent leg. Local bank and bar positions are generalized. Supplemental USGS NAIP imagery resolves clouds on the Medford–Kroghs reach. The combined County Road 45–Kroghs line is exactly the union of the two reviewed clipped legs."
+    },
+    {
+      "sectionId": "medford-kroghs",
+      "file": "catalog/routes/MN/straight-river-mn--medford-kroghs.json",
+      "imageryParents": [
+        "medford-kroghs"
+      ],
+      "metrics": {
+        "routeMiles": 7.0206,
+        "endpointOffsetsMeters": [
+          16.1,
+          8.5
+        ],
+        "mileageDifferencePercent": 0.29,
+        "maxSegmentMeters": 102.0,
+        "vertices": 377
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The complete connected main course was checked in six overlapping views for each constituent leg. Local bank and bar positions are generalized. Supplemental USGS NAIP imagery resolves clouds on the Medford–Kroghs reach. The combined County Road 45–Kroghs line is exactly the union of the two reviewed clipped legs."
+    },
+    {
+      "sectionId": "county45-kroghs",
+      "file": "catalog/routes/MN/straight-river-mn--county45-kroghs.json",
+      "imageryParents": [
+        "county45-medford",
+        "medford-kroghs"
+      ],
+      "metrics": {
+        "routeMiles": 10.722,
+        "endpointOffsetsMeters": [
+          2.6,
+          8.5
+        ],
+        "mileageDifferencePercent": 0.21,
+        "maxSegmentMeters": 213.7,
+        "vertices": 548
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The complete connected main course was checked in six overlapping views for each constituent leg. Local bank and bar positions are generalized. Supplemental USGS NAIP imagery resolves clouds on the Medford–Kroghs reach. The combined County Road 45–Kroghs line is exactly the union of the two reviewed clipped legs."
+    }
+  ],
+  "heldCourses": [
+    {
+      "sectionId": "kroghs-teepee-tonka",
+      "candidate": "research/straight-river-expansion-20261106/straight-river-mn--kroghs-teepee-tonka-candidate.json",
+      "reason": "DNR course loops north of the visible wet channel near the lower railway crossing. A separate USGS NAIP image and legacy NHD line comparison do not resolve the mismatch.",
+      "nextAction": "Find a more recent authoritative channel survey or review a documented imagery-derived correction with source provenance. Preserve access maps; do not publish a known mismatched dotted line."
+    },
+    {
+      "sectionId": "medford-teepee-tonka",
+      "candidate": "research/straight-river-expansion-20261106/straight-river-mn--medford-teepee-tonka-candidate.json",
+      "reason": "DNR course loops north of the visible wet channel near the lower railway crossing. A separate USGS NAIP image and legacy NHD line comparison do not resolve the mismatch.",
+      "nextAction": "Find a more recent authoritative channel survey or review a documented imagery-derived correction with source provenance. Preserve access maps; do not publish a known mismatched dotted line."
+    }
+  ],
+  "hydrographyDecision": {
+    "gnisId": 652708,
+    "status": "legacy-only",
+    "flowlines": 21,
+    "intersectingEdhWorkunits": [],
+    "note": "Twice-checked bounded 3DHP inventory returns only NHD workunit features. The separate legacy NHD line repeats the suspect loop; it is not an improved course."
+  },
+  "heldAccessLeads": [
+    {
+      "name": "Morehouse Park",
+      "featureId": "WAS00187",
+      "reason": "Public landing exists, but downstream trips pass Owatonna Dam and Clinton Falls portages; no continuous floating course approved."
+    },
+    {
+      "name": "Frank Woodfill Wildlife Refuge",
+      "reason": "City confirms a canoe/kayak landing. Obtain a distinct authoritative coordinate and matching river-mile evidence; do not merge with the county carry-in."
+    },
+    {
+      "name": "Bridge-to-Park carry-in",
+      "reason": "DNR lists mile 1.7, distinct from Teepee Tonka at 2.0. Obtain its own agency location and approach evidence."
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/straight-river-expansion-20261106/sources/access-county-road-45.png",
+      "sha256": "304599086cf384a802d0f516a82632d7b5ca48d489705ac9da5e936f76eaa6ac"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/access-kroghs-context.png",
+      "sha256": "c346f5171a1fd1684ec123530b09312f42b8b25456261925fc5411660f9ae385"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/access-kroghs.png",
+      "sha256": "a224fd84106874b34b9f43c39505e5f8da95e9ba3a0e591ae4edfffb9cd8ece1"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/access-medford.png",
+      "sha256": "4be0ff35a3ed89e49ab113668dceb521890cf26eec24bb3f97085bd7fc36499a"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/access-morehouse.png",
+      "sha256": "5f256a0137ad3985973be812a850b0ead986ac4ed01160d27eca153c1560d385"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/access-teepee-tonka-context.png",
+      "sha256": "7c18e2f082046b757795640ddb4768e5e8571895e8b4b7b8957b0c15a38fde1c"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/access-teepee-tonka.png",
+      "sha256": "dbd38c62ed3291328241191725859067e8cbec364403056643344004be9414e1"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/county45-medford-course-1.png",
+      "sha256": "f7a71c8947ee5cd77a6f40ce50a6417f1002b2655ce283bb4ded73840091484a"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/county45-medford-course-2.png",
+      "sha256": "ca571fd2a894402d193bf49b8b1d9bf93926335524b6828d1243eb7c721fe5d9"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/county45-medford-course-3.png",
+      "sha256": "6327fae965e6a92aceb605937258e30e9bcc8a57e895cde4e203725292dac9f7"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/county45-medford-course-4.png",
+      "sha256": "c8c9229c7e277fbfb1c79ff7ae679282ea209fda94e51a3c1b5a4941c0189b11"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/county45-medford-course-5.png",
+      "sha256": "0d8018689a0e662ad47fe4d005be978b7d5fa60f22e60d806d8095cc8cca8b01"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/county45-medford-course-6.png",
+      "sha256": "8cfba5a8c5614739ac84927c6c95e66248f81881e8a7ff790c067ca31e74c74f"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/faribault-parks-page1.png",
+      "sha256": "6edca3ef39cd6ba39ce8fd8c0004c3513cf88a40aab5c2727e2839be31fe32b2"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-course-1.png",
+      "sha256": "75e3a3d3d0d035acb22cc24581dd7efd6e1fe79a9db3165a2904e75220ccf4af"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-course-2.png",
+      "sha256": "0d2cdcc952494ff67641368d7df55067b8beaaee78eddb1796aec0628dea0787"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-course-3.png",
+      "sha256": "b109d27a51340f8c6751deb0a6c161ce046d132b13d545e38454d77d581472e1"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-course-4.png",
+      "sha256": "ed66ea7bc390f63f8ce16a69714b33bbad9f7d402e80c88989deec06520b6adc"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-course-5-naip.png",
+      "sha256": "19c13a460b229c2c028a3e1e1e44200d3694c2f4136a1d57843b86a169152a49"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-course-5.png",
+      "sha256": "d6d4dec023d2e1d3afda52cf013062b433a09d3bec68bca35bfec4374f2ccd68"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-course-6.png",
+      "sha256": "d460d198f1186ce02a6b55633456f4b3952b7cc4139ca2f69610143b94234275"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-nhd-comparison.png",
+      "sha256": "6abb875cb38a3c0b3f747e74eba27210aa79a360cc31ad8bad8d6d77ff6f72e1"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-1.png",
+      "sha256": "8b950939df83945b270adcfa9906b39e600eb0d7a475bcb6de48c71efd6e5795"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-2.png",
+      "sha256": "6238b0af7e8c169ac29050560de0c7ec46bbc77fb1879abdb4197c322bda7d78"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-3.png",
+      "sha256": "bb34e8a190d091c0c5f8861209e61f9fa7e4253f480aee17cde6d05f9ea34c40"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-4-naip.png",
+      "sha256": "307ea4ee148180e42c6f23ffde3e99abaa0dc60b3e2293d0fe2151cfe0bb3005"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-4.png",
+      "sha256": "d7b7b0801310f18293e92876f5134b9b8d10e8ed773142b9409f42c512289c29"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-5-naip.png",
+      "sha256": "6afbca7cee8d730dc42908d4ef5fd94693315e9c5274bc9a43d423dad00b7074"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-5.png",
+      "sha256": "248c4095e13e38c5bec4537eff834ba7d18641df6db3b6b42592e54211fc8260"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-6-naip.png",
+      "sha256": "9eaf7273c3d13c265f60eb5cf2b5433e56300762c048158cb877ddcd13387bef"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-course-6.png",
+      "sha256": "ff61526473a448ee4ebdcf5596c940371314321a1a612d72952a25dcf019ed01"
+    }
+  ],
+  "supplementalImagery": [
+    {
+      "part": 4,
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-part4-naip.jpg",
+      "url": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-93.23447978365442%2C44.21164190100384%2C-93.22788355430247%2C44.22416246550608&bboxSR=4326&imageSR=4326&size=1800%2C1800&format=jpg&f=json",
+      "sha256": "3c5a979105b2ecda2690ac6fcd3665e69decbcd4ba84f2ca36de5fcc0ab9ad36",
+      "publicUrl": "/_local-straight-naip-4.jpg",
+      "extent": {
+        "xmin": -93.23744195122957,
+        "ymin": 44.21164190100384,
+        "xmax": -93.22492138672732,
+        "ymax": 44.22416246550608,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "receipt": "research/straight-river-expansion-20261106/sources/medford-kroghs-part4-naip.json"
+    },
+    {
+      "part": 5,
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-part5-naip.jpg",
+      "url": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-93.23928123904533%2C44.21971609000815%2C-93.23009173915531%2C44.23302266547618&bboxSR=4326&imageSR=4326&size=1800%2C1800&format=jpg&f=json",
+      "sha256": "39c49f3085dccb470ea454c073d1a8564d9e8571f0fb1d8fb601f6b0e42a5245",
+      "publicUrl": "/_local-straight-naip-5.jpg",
+      "extent": {
+        "xmin": -93.24133977683432,
+        "ymin": 44.21971609000814,
+        "xmax": -93.22803320136629,
+        "ymax": 44.23302266547617,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "receipt": "research/straight-river-expansion-20261106/sources/medford-kroghs-part5-naip.json"
+    },
+    {
+      "part": 6,
+      "file": "research/straight-river-expansion-20261106/sources/medford-kroghs-part6-naip.jpg",
+      "url": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-93.24258139996518%2C44.228248446884244%2C-93.2351843430025%2C44.24371525845464&bboxSR=4326&imageSR=4326&size=1800%2C1800&format=jpg&f=json",
+      "sha256": "21df0d29537a21c7f700466ca03e33f80fcceec56111f79cf00469487098636e",
+      "publicUrl": "/_local-straight-naip-6.jpg",
+      "extent": {
+        "xmin": -93.24661627726904,
+        "ymin": 44.228248446884244,
+        "xmax": -93.23114946569865,
+        "ymax": 44.24371525845464,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "receipt": "research/straight-river-expansion-20261106/sources/medford-kroghs-part6-naip.json"
+    },
+    {
+      "part": 5,
+      "sectionId": "kroghs-teepee-tonka",
+      "file": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-part5-naip.jpg",
+      "url": "https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPPlus/ImageServer/exportImage?bbox=-93.26723840790554%2C44.26974457569947%2C-93.23832653205282%2C44.28010279732836&bboxSR=4326&imageSR=4326&size=2400%2C1600&format=jpg&f=json",
+      "sha256": "c42da4f68d64465e915a2e77bde758fc466fdc68cc1d175e25743af87e65a0fc",
+      "publicUrl": "/_local-straight-naip-lower5.jpg",
+      "extent": {
+        "xmin": -93.26723840790554,
+        "ymin": 44.265286394563006,
+        "xmax": -93.23832653205282,
+        "ymax": 44.28456097846482,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      },
+      "receipt": "research/straight-river-expansion-20261106/sources/kroghs-teepee-tonka-part5-naip.json"
+    }
+  ],
+  "hydrographyEvidence": [
+    {
+      "file": "research/straight-river-expansion-20261106/sources/straight-gnis-discovery-request.json",
+      "sha256": "452ee3b248054c4807930689786c8830f50ecd3f2ced1ee119cc5027d5bcf300"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/straight-gnis-discovery.json",
+      "sha256": "89d6fb2ecad5e6cb35f59fb3d2d4b2d0225be2d694cadd7c924553ac2cad4b93"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/straight-lower-bend-nhd-request.json",
+      "sha256": "f0d8014863d48b6bd9a0bdfc4adcfdde042144e0a3c7dce1a72ab309cebd5481"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/sources/straight-lower-bend-nhd.json",
+      "sha256": "0136b2a0b0fd499578aa711144e820063726e38957c6a27b30fe3e648e79e5e6"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/coverage-audit/flowlines.json",
+      "sha256": "94410660cad3930800abd8db4d4ff3411b60f0acbf6a410e7babcc26aac230c6"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/coverage-audit/report.json",
+      "sha256": "9740782bd7125e6466b8c0cff4eeecf8fdd0c8c3912ae644a1be9bcfc9ecde4f"
+    },
+    {
+      "file": "research/straight-river-expansion-20261106/coverage-audit/workunits.json",
+      "sha256": "caf4bf6126bf00f1a7bf078fb74d6add19c1e82d4e710ef0603dc81f9849270b"
+    }
+  ]
+}

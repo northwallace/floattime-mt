@@ -1,0 +1,685 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-10",
+  "baselineCatalog": {
+    "file": "research/janesville-courses-20261109/before/public/catalog.json",
+    "sha256": "bab712ed8eba2dfc923529178ff13aa17e1a596a7d6db68847336bdab29fe458"
+  },
+  "mapsAdded": [
+    "rock-river/traxler-park-boat-ramp-to-rock-river-access"
+  ],
+  "mapsWithdrawn": [],
+  "pathsAdded": [
+    "WI/rock-river--rock-river-ramp-to-riverside-park-boat-launch-city-of-janesville.json",
+    "WI/rock-river--riverside-park-boat-launch-city-of-janesville-to-traxler-park-boat-ramp.json",
+    "WI/rock-river--rock-river-access-to-afton-road-boat-launch.json",
+    "WI/rock-river--afton-road-boat-launch-to-happy-hollow-county-park-boat-ramp.json",
+    "WI/rock-river--happy-hollow-county-park-boat-ramp-to-preservation-park-boat-launch.json",
+    "WI/rock-river--preservation-park-boat-launch-to-wooton-park-boat-ramp.json"
+  ],
+  "changedSections": [
+    "rock-river/traxler-park-boat-ramp-to-rock-river-access",
+    "rock-river/rock-river-ramp-to-riverside-park-boat-launch-city-of-janesville",
+    "rock-river/riverside-park-boat-launch-city-of-janesville-to-traxler-park-boat-ramp",
+    "rock-river/rock-river-access-to-afton-road-boat-launch",
+    "rock-river/afton-road-boat-launch-to-happy-hollow-county-park-boat-ramp",
+    "rock-river/happy-hollow-county-park-boat-ramp-to-preservation-park-boat-launch",
+    "rock-river/preservation-park-boat-launch-to-wooton-park-boat-ramp"
+  ],
+  "pointCoordinatesChanged": [],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--rock-river-ramp-to-riverside-park-boat-launch-city-of-janesville.json",
+        "sha256": "387f54923c254cd1499cd37c5adfed3d5f5c7c399ddd5ea17d21ab5ee40edccb"
+      },
+      "destination": "catalog/routes/WI/rock-river--rock-river-ramp-to-riverside-park-boat-launch-city-of-janesville.json",
+      "candidate": {
+        "file": "research/janesville-courses-20261109/courses/ramp-riverside/candidate.json",
+        "sha256": "e700c00478589c9d2c5f848abbcb19c3f292ee532baf5986a82a3a2fe2be40fa"
+      },
+      "inventory": {
+        "file": "research/janesville-courses-20261109/courses/ramp-riverside/branch-inventory.json",
+        "sha256": "9dfc3aea09438059fea36638d0c025e824fbfaaa56adaba39a542b6e7bed25fb"
+      },
+      "choices": {
+        "file": "research/janesville-courses-20261109/courses/ramp-riverside/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/janesville-courses-20261109/sources/rock-river.json",
+        "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+      },
+      "damScreen": {
+        "file": "research/janesville-courses-20261109/courses/ramp-riverside/dam-screen.json",
+        "sha256": "00a28d5d753b318402301c968b69fbe82ff1b14f8b7d73844742b923de3d35b4"
+      },
+      "review": {
+        "file": "research/janesville-courses-20261109/courses/ramp-riverside/full-course-review.json",
+        "sha256": "39c93468ace9464448db876754239fe414e98fd1e8eacfe03145ab0e4c541da1"
+      },
+      "imagery": [
+        {
+          "file": "research/janesville-courses-20261109/imagery/ramp-riverside-part-1.jpg",
+          "sha256": "6a658f8869ac3b9e0e759a8cd35b4f8d6455fa1a1718ab5e44576a4f42a68711"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/ramp-riverside-part-2.jpg",
+          "sha256": "2c8e875de0306428a93a815f745b24c68ff541ab5f482c72f0753c2a04f9d1bc"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/ramp-riverside-part-3.jpg",
+          "sha256": "51ac954fbe865137982aeb84d653dbc3579baf03327cd472cd47058d5dcfb1c5"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/ramp-riverside-part-4.jpg",
+          "sha256": "2ea50e7973ec39f4a6093be78742ae321ecb94f120cdfadf0e5e91ef8d071b7a"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/ramp-riverside-part-5.jpg",
+          "sha256": "f6128b734483425eb64d3fbef76d06b4a303877efc2cd97a1e73ff33a0c32ddb"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/ramp-riverside-putIn.jpg",
+          "sha256": "e92fe76c314ff53b218aac5c35a657856f13fb39e57c03fe96b916a021f8d875"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/ramp-riverside-takeOut.jpg",
+          "sha256": "66cd07ff06c2d48a0569b05388c86681a86937962b60731990b78bee5b9f96a9"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 2.3728,
+        "endpointOffsetsMeters": [
+          68.4,
+          106.2
+        ],
+        "mileageDifferencePercent": 1.13,
+        "maxSegmentMeters": 174.3,
+        "vertices": 48
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--riverside-park-boat-launch-city-of-janesville-to-traxler-park-boat-ramp.json",
+        "sha256": "9651a4aa9fc12441a4fd822560df48eb509735bb60faf76f6e224f1be10ea9d1"
+      },
+      "destination": "catalog/routes/WI/rock-river--riverside-park-boat-launch-city-of-janesville-to-traxler-park-boat-ramp.json",
+      "candidate": {
+        "file": "research/janesville-courses-20261109/courses/riverside-traxler/candidate.json",
+        "sha256": "83d5b943d183d918ecdd7a800f37e86638f7ed0cc7ea204860b41f65635f1460"
+      },
+      "inventory": {
+        "file": "research/janesville-courses-20261109/courses/riverside-traxler/branch-inventory.json",
+        "sha256": "c52753ddf9c227acdfb55b91f283278a6ee1753676ac2e88b85ec56de6396495"
+      },
+      "choices": {
+        "file": "research/janesville-courses-20261109/courses/riverside-traxler/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/janesville-courses-20261109/sources/rock-river.json",
+        "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+      },
+      "damScreen": {
+        "file": "research/janesville-courses-20261109/courses/riverside-traxler/dam-screen.json",
+        "sha256": "05fc27ed010e0fe460da754c330f9c39297b46f9ae4d7098fafef4ca124fef82"
+      },
+      "review": {
+        "file": "research/janesville-courses-20261109/courses/riverside-traxler/full-course-review.json",
+        "sha256": "404da0bd3bd5359fbd27b8958a07226e993c227fb27beb1cbee334cbf7f9f0c3"
+      },
+      "imagery": [
+        {
+          "file": "research/janesville-courses-20261109/imagery/riverside-traxler-part-1.jpg",
+          "sha256": "1a74290c78309ef95221ac359cac0993e6ecf9bc55306a66d8b07b4cce85d381"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/riverside-traxler-part-2.jpg",
+          "sha256": "c4bc3577ddbd9b9451ccd0e2d0ba937d561b0c655e0d042537e37b067511b23d"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/riverside-traxler-part-3.jpg",
+          "sha256": "6683dd3835d63064abdc4b00d92cbc59e84fd2c842ae0eb29ebd88a9498c58b3"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/riverside-traxler-putIn.jpg",
+          "sha256": "292a7eda774da7db6f10c6a700d41b34c08c2a12454b792350315f46f56f7025"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/riverside-traxler-takeOut.jpg",
+          "sha256": "b317ed5f0e14d4af7967c553fcba1eca007b7f4558a082eb0e1ab5f942c0ddb3"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 1.3254,
+        "endpointOffsetsMeters": [
+          106.2,
+          91.5
+        ],
+        "mileageDifferencePercent": 1.95,
+        "maxSegmentMeters": 354.3,
+        "vertices": 19
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--rock-river-access-to-afton-road-boat-launch.json",
+        "sha256": "f66bfe8dbb60a60861ab8383e5df660543b3e76a6b572b88d56a7074d19f1637"
+      },
+      "destination": "catalog/routes/WI/rock-river--rock-river-access-to-afton-road-boat-launch.json",
+      "candidate": {
+        "file": "research/janesville-courses-20261109/courses/access-afton/candidate.json",
+        "sha256": "eda504e72f5a3d0149b91059014f5b5b54aaca72891f9803471d45b793b6a8b2"
+      },
+      "inventory": {
+        "file": "research/janesville-courses-20261109/courses/access-afton/branch-inventory.json",
+        "sha256": "41dbe74dc79f7b67266d1e9d4d4734cfb29c18d357bdcb1e8653aa45a2d568fc"
+      },
+      "choices": {
+        "file": "research/janesville-courses-20261109/courses/access-afton/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/janesville-courses-20261109/sources/rock-river.json",
+        "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+      },
+      "damScreen": {
+        "file": "research/janesville-courses-20261109/courses/access-afton/dam-screen.json",
+        "sha256": "10e234ad7f0348ca691233d99584afdc88227f9f25ccab1588a423d36a68b659"
+      },
+      "review": {
+        "file": "research/janesville-courses-20261109/courses/access-afton/full-course-review.json",
+        "sha256": "56ee6d449b3c3803a04486f286d759b645759b7690d6eaf20dd8f1c09e7ed5d7"
+      },
+      "imagery": [
+        {
+          "file": "research/janesville-courses-20261109/imagery/access-afton-part-1.jpg",
+          "sha256": "6b790c2e3d8af686eae1898915ec145cb789f024a1a1e8cb7b3b4defcf13e625"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/access-afton-part-2.jpg",
+          "sha256": "e00da9f82fbb76517a854ade4781a4891d4212a4390e84d50d6478587ef5a6a1"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/access-afton-part-3.jpg",
+          "sha256": "789211df3f8c44a705059edf0968844dc6ebeea9df7cfeaca139e8b67eb16959"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/access-afton-part-4.jpg",
+          "sha256": "6221eadc4886ae86980e034c007191c63ee31521d54f57b9cf7df87a876ab5d6"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/access-afton-putIn.jpg",
+          "sha256": "60d62e19a388786a91ed491a2a5df53a451916fca532bd2d5798991ff54e279f"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/access-afton-takeOut.jpg",
+          "sha256": "637dff2b1845e3c0d9bf0819fff21697181ce799dfd6e3e0e559217a632e96ae"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 1.725,
+        "endpointOffsetsMeters": [
+          57.0,
+          50.1
+        ],
+        "mileageDifferencePercent": 4.16,
+        "maxSegmentMeters": 197.2,
+        "vertices": 26
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--afton-road-boat-launch-to-happy-hollow-county-park-boat-ramp.json",
+        "sha256": "491e5c6f8bba6a9f3a1a9287a7c0965ed4f4b1d030cce218a7112f921dd1c9bd"
+      },
+      "destination": "catalog/routes/WI/rock-river--afton-road-boat-launch-to-happy-hollow-county-park-boat-ramp.json",
+      "candidate": {
+        "file": "research/janesville-courses-20261109/courses/afton-happy/candidate.json",
+        "sha256": "7ab9906f3d71e7595a7434543ada6127b1995662b63c78f61d619e536ea18ab0"
+      },
+      "inventory": {
+        "file": "research/janesville-courses-20261109/courses/afton-happy/branch-inventory.json",
+        "sha256": "09f9f82e3550b136442c507f06376fa176ef45458a782635616553a6698e2455"
+      },
+      "choices": {
+        "file": "research/janesville-courses-20261109/courses/afton-happy/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/janesville-courses-20261109/sources/rock-river.json",
+        "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+      },
+      "damScreen": {
+        "file": "research/janesville-courses-20261109/courses/afton-happy/dam-screen.json",
+        "sha256": "7bc75279ec6d57d9b5fe73b0cebaf65e4a94d5107551d74f7ba6d4494457657a"
+      },
+      "review": {
+        "file": "research/janesville-courses-20261109/courses/afton-happy/full-course-review.json",
+        "sha256": "abfe3b98d4749f0543a93c6794d56d0bacda9fda1b0069c74f05f0da4315df44"
+      },
+      "imagery": [
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-1.jpg",
+          "sha256": "b03b477396bcd8be35c48e7f44d268aab2137bd8e65948b4608d78d8d8bf13a3"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-2.jpg",
+          "sha256": "f54d06f37a5016768ce1826578f2d808514685f6d3fc0f0cba0ce112702eb665"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-3.jpg",
+          "sha256": "cd7a75c9be2379878518e2255703a4274cd39244281d1a69d8644cbdbb806810"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-4.jpg",
+          "sha256": "5561f9ede5872e87568b9daf5c4a7a2ed1626d4daa4c2805d36356bc68eda73d"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-5.jpg",
+          "sha256": "0177bd6fc38bfe6e270faa60d421fe6bdf66799b34363c2d8f241ccc04da1ed7"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-6.jpg",
+          "sha256": "af45abf241b295399919cfc2d1309c4c5211bb62decd7ae5f870b179bccd4c30"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-7.jpg",
+          "sha256": "a8304a72ec63eba6d4012e8c027750d91cedc7c91806ebda93b4d6d8f4674115"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-8.jpg",
+          "sha256": "e9f12ca121f2074b75556d0bdcc72fde40ce8d7368bb6cdbab6895bc68b14f5d"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-9.jpg",
+          "sha256": "4664f1bd9436412cb020ac585009f1271c9958fd33d2a5b2a1c048c2b56a6b05"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-10.jpg",
+          "sha256": "789490022a4b128600b7cbea1053ffdef5ac68ce6b845976fee71fc6ccada12b"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-11.jpg",
+          "sha256": "821a621e35bcc4ac5efedec0db900ce99f58d22b9853f818f8fd2a63c32856e3"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-part-12.jpg",
+          "sha256": "6e2991ce7a56c9bdcdfa7c0d9c3327deb1bfcd0b8f35ea7d18bf091477cc98a7"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-putIn.jpg",
+          "sha256": "1155b60fb8c83fe281119ae25f4b9916794182b99bc3cd914148322aa390cda7"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/afton-happy-takeOut.jpg",
+          "sha256": "36a26cd7c0ee620ed00b9eb91276a5310d2b543b906642f7ce1e861822b719b9"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 6.5994,
+        "endpointOffsetsMeters": [
+          50.1,
+          93.6
+        ],
+        "mileageDifferencePercent": 0.01,
+        "maxSegmentMeters": 302.7,
+        "vertices": 94
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--happy-hollow-county-park-boat-ramp-to-preservation-park-boat-launch.json",
+        "sha256": "28b1bbccc7438e156d6f2c904f8ebc6cbdf0e338c41aedb555ce102523284ed3"
+      },
+      "destination": "catalog/routes/WI/rock-river--happy-hollow-county-park-boat-ramp-to-preservation-park-boat-launch.json",
+      "candidate": {
+        "file": "research/janesville-courses-20261109/courses/happy-preservation/candidate.json",
+        "sha256": "973ab8f7e477d460fa4c0f9d95b54df02392675ec1cd386a1f87f3170e064121"
+      },
+      "inventory": {
+        "file": "research/janesville-courses-20261109/courses/happy-preservation/branch-inventory.json",
+        "sha256": "7b760e56674b0f6dd8fad67726094d6b7ed1ccbe1a867c8f0a399be541838473"
+      },
+      "choices": {
+        "file": "research/janesville-courses-20261109/courses/happy-preservation/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/janesville-courses-20261109/sources/rock-river.json",
+        "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+      },
+      "damScreen": {
+        "file": "research/janesville-courses-20261109/courses/happy-preservation/dam-screen.json",
+        "sha256": "0125567fd25022302f81512036e4ba16c2240797800a94391503d4b5f6bb3029"
+      },
+      "review": {
+        "file": "research/janesville-courses-20261109/courses/happy-preservation/full-course-review.json",
+        "sha256": "7a43e2e6289714dc51afa82ff98de8f40399953a67464174e3d7a417754bffd3"
+      },
+      "imagery": [
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-part-1.jpg",
+          "sha256": "ad374df6d60f0b8d4d20447f9ee4c0b42a8c8625b536db7f20d512a8d1e335f7"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-part-2.jpg",
+          "sha256": "df4bcf39b4b6e66818747e80152acf26fa3eb5e6718792264969bb8b104faf63"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-part-3.jpg",
+          "sha256": "35b7ebedd06ee64e6e9ec46c74804d8af77fab05aa952dc53ec543cf63e6fc02"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-part-4.jpg",
+          "sha256": "09080e9daeb7d491e833d1f82310ac7dd079407e70e06a5ca246164a1538f4f2"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-part-5.jpg",
+          "sha256": "d37fcc985f9d8fa8969fe547d9639c512a1cf7365830249d426b91b7be34f442"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-part-6.jpg",
+          "sha256": "d2cc9b5cddc41e0750b86d76954ef3307b093f0500580ebdb6c84303f1ae0d9c"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-putIn.jpg",
+          "sha256": "68c40c1139ed066c63309b446cafe8d849fee0a2b8365c2dc546f7252b6053d8"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/happy-preservation-takeOut.jpg",
+          "sha256": "0230b0c1c9aff1cf0b1510c3b7502f2f49d769e83e614126928e9c86107a3bef"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 3.1309,
+        "endpointOffsetsMeters": [
+          93.6,
+          91.1
+        ],
+        "mileageDifferencePercent": 2.16,
+        "maxSegmentMeters": 446.9,
+        "vertices": 41
+      }
+    },
+    {
+      "route": {
+        "file": "catalog/routes/WI/rock-river--preservation-park-boat-launch-to-wooton-park-boat-ramp.json",
+        "sha256": "c2fed277e2aa3442f92eaed50edb5581f3c553b8b07818d84179c9d4a80293ca"
+      },
+      "destination": "catalog/routes/WI/rock-river--preservation-park-boat-launch-to-wooton-park-boat-ramp.json",
+      "candidate": {
+        "file": "research/janesville-courses-20261109/courses/preservation-wooton/candidate.json",
+        "sha256": "45dfea9d7878873c6a0cc063de04bc24ffae000f8cbbfe7f552fcbf0b13191ce"
+      },
+      "inventory": {
+        "file": "research/janesville-courses-20261109/courses/preservation-wooton/branch-inventory.json",
+        "sha256": "5b4844cd089686e9eba3914c1513b0357433ab7d021d48272e15a88dca608089"
+      },
+      "choices": {
+        "file": "research/janesville-courses-20261109/courses/preservation-wooton/branch-choices.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      "source": {
+        "file": "research/janesville-courses-20261109/sources/rock-river.json",
+        "sha256": "d65a1b98333adb8d1ad76052c4553496819b284fa593731b34c0fa1c7ba7be31"
+      },
+      "damScreen": {
+        "file": "research/janesville-courses-20261109/courses/preservation-wooton/dam-screen.json",
+        "sha256": "e024dbd3cc86e146b464fd0c20b4c728d3ba058ceaf1032843ca7174eff473d3"
+      },
+      "review": {
+        "file": "research/janesville-courses-20261109/courses/preservation-wooton/full-course-review.json",
+        "sha256": "0c8f9a2256599fd9599de1546a9a81122b2cb106017699b79481ca38565f5a2a"
+      },
+      "imagery": [
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-part-1.jpg",
+          "sha256": "04c2465235ae78cf0e47ad600713ff84119861cb5001cbb142e23f010eb5d7a1"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-part-2.jpg",
+          "sha256": "6a418f07ffc7a7bb05a0034154ece665b6e6b776331086c254a2f25446546533"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-part-3.jpg",
+          "sha256": "bf813acedec98775401591dc7dc2c7fd1fc2e85bae5af4dbae3fe43720998f4c"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-part-4.jpg",
+          "sha256": "7454a6a09173c97af0d6c39862ca64bb603931e426f880b9ea900a61f7d10939"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-part-5.jpg",
+          "sha256": "6c89468feadf3101fb44e5e3c80fb60b64684be567896c5a406136dbe783fc64"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-part-6.jpg",
+          "sha256": "dd6a0db6016a12678434cbe20a654238f8180bd752b31e625f3ce34af28f7436"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-part-7.jpg",
+          "sha256": "dbc048008bf06fa7b97279189567578452550b73f2d15f1da28257af93c041bd"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-putIn.jpg",
+          "sha256": "ff37e8a740918a6ff08de7b7dcbecf19b7a1d994efc9bef6de3936131c98315a"
+        },
+        {
+          "file": "research/janesville-courses-20261109/imagery/preservation-wooton-takeOut.jpg",
+          "sha256": "bad3d821d547c3e943d1d0f1173d641ad29f45e50a7b15d8bd0cc2c8ef9d0dd8"
+        }
+      ],
+      "metrics": {
+        "routeMiles": 3.3427,
+        "endpointOffsetsMeters": [
+          91.1,
+          108.0
+        ],
+        "mileageDifferencePercent": 1.69,
+        "maxSegmentMeters": 447.7,
+        "vertices": 30
+      }
+    }
+  ],
+  "sourceReceipts": [
+    {
+      "file": "research/janesville-courses-20261109/sources/janesville-beloit-fla-1.pdf",
+      "url": "https://www.eaglecreekre.com/sites/default/files/inline-files/Janesville%20and%20Beloit%20%28WI%29%20FLA%20Volume%201%20of%204.pdf",
+      "finalUrl": "https://www.eaglecreekre.com/sites/default/files/inline-files/Janesville%20and%20Beloit%20%28WI%29%20FLA%20Volume%201%20of%204.pdf",
+      "sha256": "d8bb3a15bcb15e4d0bb2b9d150a6ead6d634d68f83d1b2d4e0b60ac966da3f2c",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/janesville-beloit-fla-2.pdf",
+      "url": "https://www.eaglecreekre.com/sites/default/files/inline-files/Janesville%20and%20Beloit%20%28WI%29%20FLA%20Volume%202%20of%204.pdf",
+      "finalUrl": "https://www.eaglecreekre.com/sites/default/files/inline-files/Janesville%20and%20Beloit%20%28WI%29%20FLA%20Volume%202%20of%204.pdf",
+      "sha256": "578588ce237d38f81fbbaad88e2b20554640f98d89107a2f5271499d99e32c01",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/operator-relicensing.html",
+      "url": "https://www.eaglecreekre.com/facilities/operating-facilities/rock-river-hydro-facilities/rock-river-relicensing-information",
+      "finalUrl": "https://www.eaglecreekre.com/facilities/operating-facilities/rock-river-hydro-facilities/rock-river-relicensing-information",
+      "sha256": "5e7998f50f44725dcb3ee19393e597876f7143891313c7a6708dd03ca52f3162",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/operator-recreation.html",
+      "url": "https://www.eaglecreekre.com/community/recreation",
+      "finalUrl": "https://www.eaglecreekre.com/community/recreation",
+      "sha256": "34942ddf8169668f8c2a201be2790de03e69a97aafd0c5cc3b7f20df92a0db23",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-1b36a5c2cce35f7390f9.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D320&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D320&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "0b97f1a2a12785abe8ffa87f308d973a2290b1815427d9090bc8462f0caa68bf",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-1c67dd221f575b67acb6.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D321&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D321&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "d745b008ee6c67535f8493b8a32a5a1e08065be03d37608d42a305d2e55e2db3",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-ae42ab0dd90658c885c0.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D324&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D324&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "91934dcd3bd586640d881b18226e783a6e0b9fcfacc12d69e0e0a618e77bdb95",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-e0b55d373c7e509a83aa.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D325&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D325&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "7bd7df353b19beac40d02fb44bbb015961f8e9b9fd35b6f07feed11d4d09346a",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-ac78b94697da547f999b.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D326&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D326&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "ae5cfc06d19af687cad671624f0ffa9ae97111bb4799cba32394bdf98bd77366",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-e256625fd9a85fe1aae9.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D327&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D327&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "ddbe2423b434218ea42cf65e1d3a97944251621d959ace97997ccabc268cfda2",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-61082247f8b75b51920a.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D330&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D330&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "7b8838815ec17f8933c103d3786f2bd52b408dbc17ef5941fb982a4b95fba22c",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/acc-ce467f62081a5ecf8425.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D333&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "finalUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D333&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "sha256": "214f887b3218ed3e81fada9dc05951688cc9e79391efe50feb7cc4eb46739f4b",
+      "checkedOn": "2026-11-09"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/janesville-beloit-ea-2026.pdf",
+      "url": "https://elibrary.ferc.gov/eLibrary/filedownload?fileid=ACE8C247-6A2E-CEB4-9B8F-9BA314C00000",
+      "method": "Public eLibrary browser download",
+      "accession": "20260109-3003",
+      "sha256": "c8f44e70a2bdab44fcc6d422168bd97a64a5be6f0678cf8d66e20f90ac213a4d",
+      "checkedOn": "2026-11-10"
+    },
+    {
+      "file": "research/janesville-courses-20261109/sources/city-launches-ax.txt",
+      "sha256": "2333e5578c3dcc245b210ff3fd90238742159b5387f0b65dc30e13272147701d",
+      "url": "https://www.janesvillewi.gov/departments-services/public-works/parks-division/boat-launches",
+      "method": "Public city page browser accessibility text",
+      "checkedOn": "2026-11-09"
+    }
+  ],
+  "imageryReceipt": {
+    "file": "research/janesville-courses-20261109/imagery/receipts.json",
+    "sha256": "79ea1972f445d90dfb606d4a4ab743ac118801a1e7576028b17e780a80c18f1b"
+  },
+  "damContextReceipt": {
+    "file": "research/janesville-courses-20261109/imagery/dam-context-receipt.json",
+    "sha256": "612cfb5bdbf0d3a92020541212bdb9097e16997bbb51975f371937278be26f48"
+  },
+  "damContext": {
+    "file": "research/janesville-courses-20261109/imagery/crystal-springs-context.jpg",
+    "sha256": "68b44a91cacee2867bf3637af5a94bf60444ef5d7006daca9ef23f0c1bd74592"
+  },
+  "anchorReceipt": {
+    "file": "research/janesville-courses-20261109/imagery/happy-source-receipts.json",
+    "sha256": "30c799797ebf970e1c309d51dd261c184027f01a7dd5b860921e73a511bd5274"
+  },
+  "anchorImages": [
+    {
+      "file": "research/janesville-courses-20261109/imagery/happy-source-143246716.jpg",
+      "sha256": "b0a616851b20852ff70a78c640e5fdce89c732cfa2c84696298d5128e5a12baf"
+    },
+    {
+      "file": "research/janesville-courses-20261109/imagery/happy-source-143246665.jpg",
+      "sha256": "8b389172e9786a53e7fc7504e6494103b8aeb92fdaaf3f2d288545b8930f7c01"
+    },
+    {
+      "file": "research/janesville-courses-20261109/imagery/happy-source-143246666.jpg",
+      "sha256": "d583064156a5ea53f1c1529518799c13b8b3ac63c9572902c7d01e70379b7dec"
+    }
+  ],
+  "anchorResolution": {
+    "file": "research/janesville-courses-20261109/disconnected-course.json",
+    "sha256": "acd2d705ec80eee4863f746ed28741652261fda8736947cdd07a428db0c5c925"
+  },
+  "carryImages": [
+    {
+      "file": "research/janesville-courses-20261109/imagery/acc-ae42ab0dd90658c885c0.jpg",
+      "sha256": "120a6e9bd0f62d7787570d0ecaa694c1cdea5787d763c2693e0537a7e55014e0"
+    },
+    {
+      "file": "research/janesville-courses-20261109/imagery/acc-e0b55d373c7e509a83aa.jpg",
+      "sha256": "106e112474e09a4681c6a704aec9710dd76b9dbfc6a2c4e2992501b81f8cb930"
+    }
+  ],
+  "guideImages": [
+    {
+      "file": "research/janesville-courses-20261109/imagery/janesville-beloit-fla-1-147.png",
+      "sha256": "d1cf529480938a1949e51f73d662cc9c9ec53670edaafb87674da0d6d44f780a"
+    },
+    {
+      "file": "research/janesville-courses-20261109/imagery/janesville-beloit-fla-2-12.png",
+      "sha256": "9582ec0397ac77cefac8ed7fc776633e3b3a4848c3cf4d85013e2399a165c741"
+    },
+    {
+      "file": "research/janesville-courses-20261109/imagery/janesville-ea-2026-37.png",
+      "sha256": "5b6a6507f79e2f37a14a494dcc257878533715a234e13d68b8f1557c10985b9b"
+    },
+    {
+      "file": "research/janesville-courses-20261109/imagery/janesville-ea-2026-39.png",
+      "sha256": "7eec37b37c7ded9c2cd9b0a2eaf94b19db7aefd69631bf971358191b6799308c"
+    },
+    {
+      "file": "research/janesville-courses-20261109/imagery/janesville-ea-2026-40.png",
+      "sha256": "b3c25ab1f57621d19402e3dffd00102456ed792db842fe2a373d0f6cc472f22c"
+    }
+  ],
+  "stillHeld": [
+    {
+      "section": "rock-river/willow-drive-boat-ramp-to-fannie-p-lewis-park-boat-ramp",
+      "reason": "Willow Street / Willow Drive is identified as take-out-only in the county water-trail guide near Upper Watertown Dam. A suitable downstream starting point and the carry arrangement for this exact section still need review. Do not plan this as a continuous float."
+    },
+    {
+      "section": "rock-river/fannie-p-lewis-park-boat-ramp-to-rock-river-public-access-cappie-s-landing",
+      "reason": "Fanny Lewis Park is identified as take-out-only in the county water-trail guide near Lower Watertown Dam. A suitable downstream starting point and the carry arrangement for this exact section still need review. Do not plan this as a continuous float."
+    },
+    {
+      "section": "rock-river/groeler-road-boat-launch-to-newville-public-access",
+      "reason": "Route check pending: the Koshkonong Wetland dam record conflicts with the published Rock River water trail through this reach. Its relationship to the paddling channel needs confirmation before this map is released."
+    },
+    {
+      "section": "rock-river/newville-public-access-to-rock-river-ramp",
+      "reason": "Indianford Dam still needs a confirmed legal portage for this section. Do not plan it as a continuous float."
+    }
+  ],
+  "findings": [
+    "Restored Janesville access map with required 500-foot land portage and explicit ramp-condition check. FERC 2026 confirms the facilities but proposes repairs; no completion claim or continuous through-dam dotted route.",
+    "Six courses use all 222 named-and-unnamed source features for connectivity review. All 37 course panels and 12 course endpoint panels reviewed. The two Happy Hollow courses use the documented main-river anchor instead of the nearest tributary.",
+    "Eight current DNR access records report ABANDON_FLAG No. Existing IDs, coordinates and approximate facility precision retained.",
+    "Crystal Springs is a separate pond/unnamed-stream dam; Monterey and Afton records are Removed. Janesville and Beloit dams remain outside the six displayed courses. These distinctions do not establish current river safety.",
+    "Riverside seasonal gate notice added from the city launch page. Four other Rock River access holds remain unresolved."
+  ],
+  "limitations": [
+    "Desktop evidence and imagery, not a current field inspection. Confirm portage usability and current closures.",
+    "No planning miles, gauge assignments, timing modes or access coordinates changed.",
+    "New courses are display-only; distance adoption, GPS remaining time and land-overlay eligibility remain off.",
+    "No deployment, push or production change."
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "localOnly": true,
+  "checkedOn": "2026-11-06",
+  "riverId": "zumbro-river-mn",
+  "coordinatePolicy": "Precision first: two unchanged agency landing coordinates match visible shoreline approaches; five source-backed approximate areas remain explicitly labelled. No parking or bridge center is promoted to a landing.",
+  "accessImagery": [
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-funk-ford.png",
+      "sha256": "68e54e64a53e7c65dcc4ccdfb1b524b6742fc828195d185610cb0acff7d3ab90"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-green-bridge.png",
+      "sha256": "c1a06e330e8c63874c1c8c95045c3dec7add868eb3475aa0d3aa643e03c8272c"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-hammond-carry.png",
+      "sha256": "4cae5085ad5bcb66750776543a63462626c2cab6c78afc8bb4a827b15f0c864b"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-hammond-context.png",
+      "sha256": "c34028494553584ccc24ccee451955cddb78879c77f78db78bdb67068c87f270"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-hammond-village.png",
+      "sha256": "ab022e76cf4fcb1e549d4f40497fc1933347e2a7e94094ebb61d72d4f3a6e983"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-kellogg.png",
+      "sha256": "925c6d5083a88f531f0077ef8d2d2b7f716a86b7dfe04243e475a7bba3d66fca"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-kruger.png",
+      "sha256": "f4091aebfcc8960e05c5bd8fab4e26dba673f7a73460e5264615a647a276359f"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-theilman.png",
+      "sha256": "6d9bb95874616f7f32661265864d5a815b440abee0d9a8640e9606ef7a3fe5d4"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-zumbro-falls.png",
+      "sha256": "cfc5981ede1a18e14cb9e46172510fc6ed327862d3da4cbeaf781b99c4747cda"
+    }
+  ],
+  "heldAccesses": [
+    {
+      "featureId": "WAS00253",
+      "name": "Hammond Village Park downstream city launch",
+      "reason": "Distinct from upstream DNR carry-in. Inventory mile 38.2 and current map’s grouped 39.0 listing need a separate distance reconciliation; do not substitute it as the 7.1-mile recommended trip’s exact endpoint."
+    }
+  ],
+  "distanceDecisions": [
+    "Current map uses Zumbro Falls 46.1, grouped Hammond 39.0, Theilman 23.0, Funk Ford 16.8, Kruger 12.2 and Kellogg landing 5.0.",
+    "Hammond upstream DNR carry-in is 39.1 in inventory. Retain the map’s approximate 39.0 with an explicit 0.1-mile uncertainty; keep city launch at 38.2 distinct.",
+    "Kellogg inventory 5.1 corresponds to the map’s railroad trestle mile. Use the current PDF’s 5.0 landing for planning."
+  ],
+  "timingEnabled": false,
+  "guideTimeDecision": "No trip-specific numeric duration in these agency maps. Do not turn generic 2–3 mph paddling advice into a published trip time.",
+  "gaugeDecision": "No recent 00060/00010 readings from the Zumbro Falls station. Its primary USGS page identifies stage/water-level data, not current discharge. Keep gauge null; do not borrow South Fork flow upstream of tributaries and the lake.",
+  "advisoryReview": {
+    "sourceUrl": "https://www.dnr.state.mn.us/state-water-trails/zumbro-river/index.html",
+    "checkedOn": "2026-11-06",
+    "observations": [
+      "Current search result dated October 29 describes Silver Lake drawdown in Rochester until approximately spring 2027.",
+      "A June 26 bridge construction notice concerns the Middle Fork south of Pine Island.",
+      "Both locations are upstream of Lake Zumbro/Green Bridge, outside the added main-river sections. They remain follow-up requirements before adding upper branches."
+    ],
+    "accessLimitation": "Direct HTML download returned HTTP 403. Official indexed page and PDFs were read; no claim of a fresh live closure check for every site."
+  },
+  "montanaFollowUp": {
+    "corrals": {
+      "disposition": "Research only; not added as a boat endpoint.",
+      "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753520",
+      "reason": "Managing agency describes walk-in access and no facilities; tourism/local descriptions mention boats. Need confirmation of the permitted boat approach before presenting a ramp."
+    },
+    "barretts": "Still held: no dependable source coordinate for the upstream take-out; prior tourism point overlaps the dam."
+  },
+  "reviewedCourses": [
+    {
+      "sectionId": "funk-ford-kruger",
+      "file": "catalog/routes/MN/zumbro-river-mn--funk-ford-kruger.json",
+      "metrics": {
+        "routeMiles": 4.583,
+        "endpointOffsetsMeters": [
+          28.7,
+          20.1
+        ],
+        "mileageDifferencePercent": 0.37,
+        "maxSegmentMeters": 183.3,
+        "vertices": 165
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The line follows the connected river bends to Kruger rather than neighboring oxbows. Local bars and channel positions differ from the generalized source."
+    },
+    {
+      "sectionId": "green-bridge-zumbro-falls",
+      "file": "catalog/routes/MN/zumbro-river-mn--green-bridge-zumbro-falls.json",
+      "metrics": {
+        "routeMiles": 9.634,
+        "endpointOffsetsMeters": [
+          51.4,
+          35.2
+        ],
+        "mileageDifferencePercent": 0.68,
+        "maxSegmentMeters": 181.0,
+        "vertices": 343
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The line follows the main river corridor. View 3 crosses a gravel bar/former bend; local bank and bend detail is generalized."
+    },
+    {
+      "sectionId": "kruger-kellogg",
+      "file": "catalog/routes/MN/zumbro-river-mn--kruger-kellogg.json",
+      "metrics": {
+        "routeMiles": 7.1752,
+        "endpointOffsetsMeters": [
+          20.1,
+          28.7
+        ],
+        "mileageDifferencePercent": 0.34,
+        "maxSegmentMeters": 161.4,
+        "vertices": 292
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The line follows the main corridor to Kellogg, beyond the road and railway bridges. Some bend detail and exposed bars are generalized; it stops before the Mississippi."
+    },
+    {
+      "sectionId": "theilman-funk-ford",
+      "file": "catalog/routes/MN/zumbro-river-mn--theilman-funk-ford.json",
+      "metrics": {
+        "routeMiles": 6.1811,
+        "endpointOffsetsMeters": [
+          29.2,
+          28.7
+        ],
+        "mileageDifferencePercent": 0.31,
+        "maxSegmentMeters": 168.7,
+        "vertices": 233
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The line follows the river corridor to Funk Ford. Some curves cross exposed bars or hug banks; this is not a wet-channel navigation track."
+    },
+    {
+      "sectionId": "zumbro-falls-hammond",
+      "file": "catalog/routes/MN/zumbro-river-mn--zumbro-falls-hammond.json",
+      "metrics": {
+        "routeMiles": 7.1568,
+        "endpointOffsetsMeters": [
+          35.2,
+          22.2
+        ],
+        "mileageDifferencePercent": 0.8,
+        "maxSegmentMeters": 253.7,
+        "vertices": 188
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "observation": "The line follows the visible river corridor through its main bends and ends at the upstream Hammond access area, before the main bridge."
+    }
+  ],
+  "heldCourses": [
+    {
+      "sectionId": "hammond-theilman",
+      "reason": "Parts of the published river line differ from the channel visible in imagery. The dotted path is under review; approximate access locations are shown.",
+      "evidence": [
+        "sources/hammond-theilman-course-3.png",
+        "sources/hammond-theilman-course-4.png",
+        "sources/hammond-theilman-course-5.png",
+        "sources/hammond-theilman-course-6.png"
+      ],
+      "nextAction": "Find a more current agency geometry or separately documented river-course trace; retain published planning mileage until reconciled."
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-funk-ford.png",
+      "sha256": "68e54e64a53e7c65dcc4ccdfb1b524b6742fc828195d185610cb0acff7d3ab90"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-green-bridge.png",
+      "sha256": "c1a06e330e8c63874c1c8c95045c3dec7add868eb3475aa0d3aa643e03c8272c"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-hammond-carry.png",
+      "sha256": "4cae5085ad5bcb66750776543a63462626c2cab6c78afc8bb4a827b15f0c864b"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-hammond-context.png",
+      "sha256": "c34028494553584ccc24ccee451955cddb78879c77f78db78bdb67068c87f270"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-hammond-village.png",
+      "sha256": "ab022e76cf4fcb1e549d4f40497fc1933347e2a7e94094ebb61d72d4f3a6e983"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-kellogg.png",
+      "sha256": "925c6d5083a88f531f0077ef8d2d2b7f716a86b7dfe04243e475a7bba3d66fca"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-kruger.png",
+      "sha256": "f4091aebfcc8960e05c5bd8fab4e26dba673f7a73460e5264615a647a276359f"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-theilman.png",
+      "sha256": "6d9bb95874616f7f32661265864d5a815b440abee0d9a8640e9606ef7a3fe5d4"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/access-zumbro-falls.png",
+      "sha256": "cfc5981ede1a18e14cb9e46172510fc6ed327862d3da4cbeaf781b99c4747cda"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/falls-hammond-course-1.png",
+      "sha256": "9eee934b3b91e6cc9a70ecdac6ec40a651798bf3051e70dd17cff8dad28530b4"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/falls-hammond-course-2.png",
+      "sha256": "d5624844f8506cb9f1beb237505fe4ff06baff1be26f5b5b7943fe083bc25a6f"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/falls-hammond-course-3.png",
+      "sha256": "2cbbb5c93f742ddb1755c7ce79d727df0cc993ec351b47222aeac7376a3e4439"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/falls-hammond-course-4.png",
+      "sha256": "1e77ce20b01e204f092b62f6bc312a0fa06d185281da58e511e6cb3c76c9505b"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/falls-hammond-course-5.png",
+      "sha256": "f733cb3f4de0a7fd8a924aaa706068e76b312f3df039fc43450f2f2064524c74"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/falls-hammond-course-6.png",
+      "sha256": "e3bb26830a5c1539028a3b488a13a2e1b3ef9378a498c4103f125dfa63adda37"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-1.png",
+      "sha256": "011e91c27f014fc8adf92003279c2996f15a3fcfc240c95a7a99be3c5aaf7198"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-2.png",
+      "sha256": "b145d409c5d2f9b8679686af3abe8de8cb96b4549309f897c2a30417f1f284fd"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-3.png",
+      "sha256": "288e5e6d5b0262060502a44d3bacdbb6a8eff641099ff12eaac7fe79a212a1d7"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-4.png",
+      "sha256": "56c61796675b99ac0437f2d838b783eb163390191fe90b4bd2d5fc318fc95c44"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-5.png",
+      "sha256": "d1751b4db916f1600f480ab7334ef1479225421267deb0ccd7794cde3f817dc3"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/funk-kruger-course-6.png",
+      "sha256": "83e7b49adc58bf1dfcbeb24fbc8282a6ade5ac7676005da00a9c6c7d2e66fa03"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/green-falls-course-1.png",
+      "sha256": "5efd6163df26cdede5fc6b9a717cba2d333ad30fb0385f279b3163c8b1696997"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/green-falls-course-2.png",
+      "sha256": "53f63595bc1083f981bc3e34826d388e04f4354818179e3efbf58d1555c49cd5"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/green-falls-course-3.png",
+      "sha256": "898cc308722253d21eb9bdcf3d20647e3fc6805eb4f106232df16ee98a5eb71e"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/green-falls-course-4.png",
+      "sha256": "362ace2ebcc782f63eccc170dae383ea3c0d5a4382e3e40843e5ec611c437bc9"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/green-falls-course-5.png",
+      "sha256": "865dda76e81725326892eeec3dd1010b20df3d439776e051b73e5177efbf6562"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/green-falls-course-6.png",
+      "sha256": "f0a2188cef671c2a826732260b163feb1535e865b559b8023ae5d1a8b39d489a"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/hammond-theilman-course-1.png",
+      "sha256": "88b886e21c03a00b0ba8fc51393c608e9af18450ddfbbe1d99f5cc67b0fb4f44"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/hammond-theilman-course-2.png",
+      "sha256": "c8a8a7485a3ffe9eb938844d32e6d95bf5e5975ed88503c1d95ab775e3e6c45c"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/hammond-theilman-course-3.png",
+      "sha256": "830d948f110036116998c5ecc57508ff5bfd97181d26a019c04cbaaceeac3bdb"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/hammond-theilman-course-4.png",
+      "sha256": "a60b68f2aaeb6a575c62f30338dfb2e05cc1ce422da7edeffc138fc80f9c3d0b"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/hammond-theilman-course-5.png",
+      "sha256": "2ab234e7846b3af09229aa7040d839347f3f8b11d5093a10b07c86a5ab04e4e5"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/hammond-theilman-course-6.png",
+      "sha256": "11fd7f2a4a24e7e7cf5f6975ef9d0c484dd59a8c71bcdeb1720211511ba5f659"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/kruger-kellogg-course-1.png",
+      "sha256": "4d59ee3e9f53b22068e74660dfdb97322bae41af613f42fd97091968d24515b0"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/kruger-kellogg-course-2.png",
+      "sha256": "caa0953afedb44db55cd0e314e9825ab5ed50d4296995878c7e73c0c7bb90432"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/kruger-kellogg-course-3.png",
+      "sha256": "204f82eb9feb1f1280a4436fcffefaf64154986986d901fee37223eb4cba514c"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/kruger-kellogg-course-4.png",
+      "sha256": "337887a9cf569ec8d558f28f62e8524edb2315048cac13b6b11e03005789d824"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/kruger-kellogg-course-5.png",
+      "sha256": "db837f7060b2bbcbb6505c3665da0a85f1c82f43ceb13a3727f84f0df3c21be3"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/kruger-kellogg-course-6.png",
+      "sha256": "fe7da304277b643d1f95e1f77b3c9672c64d8fb214fad3ef57bf013688c92e8c"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-1.png",
+      "sha256": "e4f6b489f0386c963682ce1f69169201f3d89b24ec1881c5bf1d33582e60035a"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-2.png",
+      "sha256": "e731626832e7d150f8e3c8a2163fab57cf304be0878bbdff4c15b81c8fa4d9b8"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-3.png",
+      "sha256": "57fbda71d104e2d9ccba203fc74b3cdf6596eb153a9cbc85c59fee53c8624583"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-4.png",
+      "sha256": "90584ed02eaf3fd14e589fb9a5b02c59d137582af6c446e3f81977ceac445174"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-5.png",
+      "sha256": "82b390f34dfa8ef34d1692cb6a004fc3f72d89a8b5eb66b59737faa744e6b97a"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/theilman-funk-course-6.png",
+      "sha256": "408d146c6ac3de025f397950317f9e328e55df7be1804c71deba95861154bda9"
+    },
+    {
+      "file": "research/zumbro-expansion-20261106/sources/zumbro2-page1.png",
+      "sha256": "b5303ff4bac681ba33f872eecc1433bcdbac90ef776dfdf566ece4b5ab6d64dd"
+    }
+  ]
+}

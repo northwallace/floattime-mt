@@ -1,0 +1,173 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "riverId": "root-river-mn",
+  "stableSourceIds": [
+    "WAS00268",
+    "WAS02190",
+    "WAS02189",
+    "WAS00060"
+  ],
+  "coordinatePolicy": "Precision first: sourced approximate facility areas when the exact landing cannot be resolved. Keep community proposals private until reviewed.",
+  "sourceConflicts": [
+    "Agency coordinate retained unchanged. Imagery places it in the river beside the access area, not at a resolved landing. The published map and recommended trip use mile 78.6; the inventory uses 78.4.",
+    "Agency coordinate retained unchanged near the bridge and riverbank. Canopy and the facility-level coordinate do not resolve an exact landing. Use County Road 21 as labelled on the published map; the inventory calls it Hwy 21.",
+    "Agency coordinate retained unchanged. The wooded bank obscures the exact shoreline approach. DNR map and inventory both identify mile 52.5; this is downstream of the Brightsdale portage area.",
+    "Agency coordinate retained unchanged. Imagery places it in the river beside the access area rather than at an exact landing. The 2026 printed map uses mile 49.4, the recommended trip webpage uses 49.5, and the inventory uses 49.3; preserve those source differences."
+  ],
+  "currentAlerts": "https://www.dnr.state.mn.us/state-water-trails/root-river/index.html",
+  "heldCourse": {
+    "sectionId": "moens-whalan",
+    "reason": "Brightsdale portage advice: do not display a continuous paddling line through the work area."
+  },
+  "gaugeDecision": {
+    "selected": "05383950",
+    "rejected": "05384000",
+    "reason": "Pilot Mound has current discharge; historical near-Lanesboro station has no continuous discharge. No timing calibration is assigned."
+  },
+  "timingEnabled": false,
+  "reviewedCourses": [
+    {
+      "sectionId": "parsley-moens",
+      "file": "catalog/routes/MN/root-river-mn--parsley-moens.json",
+      "metrics": {
+        "routeMiles": 13.107,
+        "endpointOffsetsMeters": [
+          1.9,
+          19.3
+        ],
+        "mileageDifferencePercent": 1.45,
+        "maxSegmentMeters": 210.9,
+        "vertices": 345
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "imageryNote": "Eight consecutive satellite views reviewed. The DNR source follows the main river corridor with generalized bends and local bank offsets. Downstream order matches published river miles. Geometry is reconstructed exactly from source with endpoint trims, without invented landing connectors. This does not assess current passage or establish travel speed."
+    },
+    {
+      "sectionId": "highway16-whalan",
+      "file": "catalog/routes/MN/root-river-mn--highway16-whalan.json",
+      "metrics": {
+        "routeMiles": 3.1036,
+        "endpointOffsetsMeters": [
+          24.4,
+          20.5
+        ],
+        "mileageDifferencePercent": 0.12,
+        "maxSegmentMeters": 104.5,
+        "vertices": 116
+      },
+      "features": {
+        "display": true,
+        "landOverlay": false,
+        "distanceEstimate": false,
+        "remainingTime": false
+      },
+      "imageryNote": "Eight consecutive satellite views reviewed. The DNR source follows the main river corridor with generalized bends and local bank offsets. Near Whalan it crosses a gravel bar/island, so it must remain a course overview rather than a recommended channel. Downstream order matches published river miles. Geometry is reconstructed exactly from source with endpoint trims, without invented landing connectors. This does not assess current passage or establish travel speed."
+    }
+  ],
+  "imageryEvidence": [
+    {
+      "file": "research/root-river-20261106/sources/access-highway16.png",
+      "sha256": "6bfac5f48d2fc6bbc5e7b65539f1a151c1c93b1038c9b70904f7eb528b95ac36"
+    },
+    {
+      "file": "research/root-river-20261106/sources/access-moens.png",
+      "sha256": "b3348e30e3ccdce464ae1d6b50bef14b831d5f95f3bb3457bb6779eebfbfc20f"
+    },
+    {
+      "file": "research/root-river-20261106/sources/access-parsley.png",
+      "sha256": "c4db3fb996a20f73a50af4a3a412e04dbda7dd46394eaa218e646d2fcbbcfc98"
+    },
+    {
+      "file": "research/root-river-20261106/sources/access-whalan.png",
+      "sha256": "9cf824c66cf0a33cd7546c09dc4a8fb7cc34288c1b4b8fe60b125d8d8ac1060d"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-1.png",
+      "sha256": "cd4ea9c678179d63382b0980a705b18f8da24737d3235db3bdbec2c36a32f4d7"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-2.png",
+      "sha256": "93a60467d522f993a7d8a3fc469ebe24876d9cc20a10c4ff52669054fe70b5a9"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-3.png",
+      "sha256": "c7b9b9b61a67580b6de9b5651399092332a62c803b6c6175f753875b5f01517d"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-4.png",
+      "sha256": "aaac52b3267e81f06064fcfcab055c4f5ed0b4d2bae90fda05d640c8479ad9d3"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-5.png",
+      "sha256": "4263ae9d276d9f68c02e75de2bda434eb65fb2555837ef9999387f83cfdb6c09"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-6.png",
+      "sha256": "6e76d14480489d39a6eec792ffed52ae55e68672497960c4bf92747570a9dc09"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-7.png",
+      "sha256": "ae1047f292d368e8071ccd5a6df457039a9218630e462a586e181f1f7ddc36e9"
+    },
+    {
+      "file": "research/root-river-20261106/sources/highway16-course-8.png",
+      "sha256": "53aa506b103ae9075cb18db6a6426307f06a2eb746b9eb6ec677a7f496780a97"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-1.png",
+      "sha256": "af8e17341c9e0844813a15759ae5743b3cdee68c38b64fa996a1f621a2532d55"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-2.png",
+      "sha256": "4927853b3bdbed8a5c1799de2af00cfb286e827d7ecef2c4bd2919fb36567170"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-3.png",
+      "sha256": "df3490a9275169aa2e45a1a041a4058fd93d2b8efa2714ae4bb702e1ad5e7605"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-4.png",
+      "sha256": "03e8a9e8f72adde57a7a604695701959783f1114b2f4af356160c79671ebb791"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-5.png",
+      "sha256": "f9722822fd8e3c6d9683e01ad1f734df22d0393cb53fa9b93793389ea41f4295"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-6.png",
+      "sha256": "f8e0a72906265071d0f692019b16a53e246d0c1e4cba20442a388eea015ce9d1"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-7.png",
+      "sha256": "2c930169a79f341bb9e126c980a80bb6a2106e545fae83e2f9c16a88a0cda422"
+    },
+    {
+      "file": "research/root-river-20261106/sources/parsley-course-8.png",
+      "sha256": "535946dbeb55bee258d1cbeef888780b31d07abfc19e75f62527d0b5c4ce44fe"
+    },
+    {
+      "file": "research/root-river-20261106/sources/root1-map.png",
+      "sha256": "cb1c1e610cce47e3718c37b950ba8b89e5a27b053334ec8a7d15091cef1b6cb9"
+    }
+  ],
+  "webEvidence": [
+    {
+      "url": "https://www.dnr.state.mn.us/state-water-trails/root-river/index.html",
+      "checkedOn": "2026-11-06",
+      "method": "web tool page review",
+      "note": "Alert updated October 8, 2026; Brightsdale portage and Peterson access closure. Direct HTML archival request returned 403; no HTML snapshot claimed."
+    },
+    {
+      "url": "https://www.dnr.state.mn.us/state-water-trails/root-river/segments-maps.html",
+      "checkedOn": "2026-11-06",
+      "method": "web tool page review",
+      "note": "Recommended trips and mile markers reviewed; source has older alert, so the newer main page governs."
+    }
+  ]
+}

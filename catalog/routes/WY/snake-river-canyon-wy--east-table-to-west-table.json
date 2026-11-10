@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "state": "WY",
+  "riverId": "snake-river-canyon-wy",
+  "sectionId": "east-table-to-west-table",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1704_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "Snake River",
+    "evidenceFile": "research/wyoming-public-access-review-20261109/sources/snake-river-canyon-wy.json",
+    "sha256": "634ea7fd83db1ffa34c5fd0b9c1d8f2d8b9407687f314e81187be906063a34bc"
+  },
+  "putIn": {
+    "name": "East Table (Snake)",
+    "lat": 43.211913,
+    "lon": -110.81186
+  },
+  "takeOut": {
+    "name": "West Table (Snake)",
+    "lat": 43.204544,
+    "lon": -110.821229
+  },
+  "catalogMiles": 0.7,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -110.81194589330619,
+        43.210454096226854
+      ],
+      [
+        -110.8134534051024,
+        43.210500599595356
+      ],
+      [
+        -110.81357680510217,
+        43.21041079959541
+      ],
+      [
+        -110.81406927176812,
+        43.21036659959552
+      ],
+      [
+        -110.81487067176687,
+        43.21000773292938
+      ],
+      [
+        -110.81511700509981,
+        43.210008132929396
+      ],
+      [
+        -110.81561020509906,
+        43.209738599596506
+      ],
+      [
+        -110.81702900509686,
+        43.208705399598145
+      ],
+      [
+        -110.81789287176218,
+        43.20798639959921
+      ],
+      [
+        -110.81795500509537,
+        43.20780639959947
+      ],
+      [
+        -110.8182016717617,
+        43.20762673293306
+      ],
+      [
+        -110.81826380509494,
+        43.20744673293333
+      ],
+      [
+        -110.81851047176121,
+        43.207266999600336
+      ],
+      [
+        -110.81857287176109,
+        43.20699693293408
+      ],
+      [
+        -110.818629871761,
+        43.206934599600885
+      ],
+      [
+        -110.81869640509427,
+        43.20686213293427
+      ],
+      [
+        -110.81869660509427,
+        43.20677199960112
+      ],
+      [
+        -110.81894347176053,
+        43.20654733293479
+      ],
+      [
+        -110.81900580509375,
+        43.206322332935116
+      ],
+      [
+        -110.81919087176016,
+        43.20618739960201
+      ],
+      [
+        -110.81931467175997,
+        43.205962532935764
+      ],
+      [
+        -110.81943840509308,
+        43.20573753293602
+      ],
+      [
+        -110.81943887175976,
+        43.205557399602995
+      ],
+      [
+        -110.81974747175929,
+        43.20528779960343
+      ],
+      [
+        -110.8198712050924,
+        43.2050629329371
+      ],
+      [
+        -110.82090434653315,
+        43.20431039087594
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "28073653",
+      "28073787",
+      "28073669"
+    ],
+    "putInOffsetMeters": 163.06845002773173,
+    "takeOutOffsetMeters": 37.00752589802048,
+    "putInSourceStationMeters": 118.21363850854449,
+    "takeOutSourceStationMeters": 231.7833690474821
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate Snake River course overview. Generalized bends and access-area offsets are not rapid lines or mapped landing connections.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 0.6742,
+      "endpointOffsetsMeters": [
+        162.4,
+        37.0
+      ],
+      "mileageDifferencePercent": 3.69,
+      "maxSegmentMeters": 162.5,
+      "vertices": 26
+    },
+    "issues": [
+      "endpoint-offset-over-100m"
+    ]
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source and overlapping imagery review",
+    "evidenceFile": "research/wyoming-public-access-review-20261109/decisions.json",
+    "note": "All overlapping course panels and complete named/unnamed network reviewed; original source vertices retained. Display only; timing and planning distance unchanged."
+  },
+  "overviewReview": {
+    "signature": "5309d825d439811c98f024eae5d3429da5837b842d9d0fd4f02e20d209a39eb7",
+    "acceptedIssues": {
+      "endpoint-offset-over-100m": "East Table uses an approximate inland agency access area 162.4 m from the source course. No landing connector or exact ramp position is inferred; display-only course and original source vertices retained."
+    },
+    "routeReview": "Approximate Snake River course overview only. Dotted bends do not identify current wet channels, runnable rapids or exact landing connections.",
+    "note": "General river course only. Check current channels and identify both landings before floating.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "No shoreline or road connector is mapped; identify the usable landing at the access site."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "No shoreline or road connector is mapped; identify the usable landing at the access site."
+      }
+    }
+  }
+}

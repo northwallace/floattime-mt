@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "menominee-river",
+  "sectionId": "menominee-river-park-boat-launch-to-twin-island-park-carry-in-access",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-09",
+    "streamId": "Menominee River",
+    "evidenceFile": "research/menominee-lower-courses-20261109/sources/menominee-river.json",
+    "sha256": "b4d79fb7281f8e0468abab29a6cf1826ec6935ecf37c72a533d3c35512e648d3"
+  },
+  "putIn": {
+    "name": "Menominee River Park Boat Launch",
+    "lat": 45.28007166149379,
+    "lon": -87.69964740064037
+  },
+  "takeOut": {
+    "name": "Twin Island Park Carry-in Access",
+    "lat": 45.259991085057116,
+    "lon": -87.71248883903174
+  },
+  "catalogMiles": 1.6,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -87.69879000677022,
+        45.27998948475167
+      ],
+      [
+        -87.69885725669805,
+        45.279640601541914
+      ],
+      [
+        -87.69897392343445,
+        45.27830993437197
+      ],
+      [
+        -87.69901952378991,
+        45.27821273440918
+      ],
+      [
+        -87.69918065669987,
+        45.277869734426
+      ],
+      [
+        -87.70012225763244,
+        45.27705653462482
+      ],
+      [
+        -87.70126745774245,
+        45.27606760139169
+      ],
+      [
+        -87.70239205736328,
+        45.27471260109644
+      ],
+      [
+        -87.70387932465238,
+        45.27216519982797
+      ],
+      [
+        -87.7053214577452,
+        45.26917253310566
+      ],
+      [
+        -87.70735292423812,
+        45.26716913195675
+      ],
+      [
+        -87.70731685829435,
+        45.266501931757084
+      ],
+      [
+        -87.70754305786704,
+        45.26557319837462
+      ],
+      [
+        -87.70841392434897,
+        45.26425759862604
+      ],
+      [
+        -87.71021012509776,
+        45.263404931464
+      ],
+      [
+        -87.71142252600545,
+        45.26298479820135
+      ],
+      [
+        -87.7118229255122,
+        45.262415131951016
+      ],
+      [
+        -87.71222692526607,
+        45.261756731318805
+      ],
+      [
+        -87.71194112599548,
+        45.26103999771024
+      ],
+      [
+        -87.71165816470673,
+        45.26011789964453
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "75471951",
+      "75471957",
+      "75471981"
+    ],
+    "putInOffsetMeters": 67.85107273185568,
+    "takeOutOffsetMeters": 66.66584114700913,
+    "putInSourceStationMeters": 1419.1236064756567,
+    "takeOutSourceStationMeters": 2202.8190038228395
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river course only; shoreline connections, usable passages and navigation are not mapped.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.5889,
+      "endpointOffsetsMeters": [
+        67.7,
+        66.5
+      ],
+      "mileageDifferencePercent": 0.7,
+      "maxSegmentMeters": 351.4,
+      "vertices": 20
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-09",
+    "reviewer": "Float ETA complete source-network and full-course imagery review",
+    "evidenceFile": "research/menominee-lower-courses-20261109/decisions.json",
+    "note": "All 3 overlapping course panels and both endpoint panels checked. Full source connectivity, agency access evidence and nearby dam inventory reviewed separately."
+  },
+  "overviewReview": {
+    "signature": "ae7e8e87ed3b5f7bab4bdbefa01051388fe6f09cee04c647a4c44834daaae914",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line shows the approximate river course between agency-listed access areas. Exact shoreline connections are not drawn. It does not identify a navigable passage or replace the preliminary planning mileage. This stretch is upstream of Park Mill Dam.",
+    "note": "River-course overview only; not a surveyed route or navigation aid.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing facility area retained; exact shore connection is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing facility area retained; exact shore connection is not drawn."
+      }
+    }
+  }
+}

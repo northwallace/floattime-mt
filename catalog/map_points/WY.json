@@ -12,7 +12,7 @@
     },
     "green-river-upper-wy": {
       "status": "pending",
-      "note": "Local review 2026-10-30: selected agency-documented access areas are mapped approximately. Remaining pending locations stay withheld; no exact bank or landing claim is added."
+      "note": "Agency-documented public access areas are mapped with exact or approximate precision as supported. Kendall and Whiskey road/coordinate questions reconciled using the current 2026 Forest Service motor-vehicle map and campground records. Individual shoreline landings remain approximate where labelled Area."
     },
     "green-river-fontenelle": {
       "status": "pending",
@@ -172,7 +172,7 @@
     },
     "BLM downstream of Gage Station (New Fork)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 70 ('BLM downstream of Gage Station', listed as a launch and take-out).",
+      "note": "The agency-listed location is above a steep riverbank. A practical public boat carry and usable landing still need confirmation before this access can be mapped.",
       "id": "acc-63c722703cce5dab9c62",
       "aliases": []
     },
@@ -312,10 +312,22 @@
       "aliases": []
     },
     "Bobcat-Hoolihan (SF Shoshone)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 120 ('Bobcat-Hoolihan', listed as a launch and take-out).",
+      "status": "access-verified",
+      "note": "WGFD lists Bobcat-Hoolihan as launch and egress; its public-access map and the BLM recreation map confirm the public parcel, parking and river access. The WGFD boating point lies farther downstream near the parcel boundary and is not adopted as an exact landing. The marker instead uses BLM’s published trailhead coordinate. No surveyed landing, river bank side or walking/driving connection is claimed. BLM’s March 2026 announcement confirms new South Fork launches but does not name all three, so it is not used to identify this site as a new ramp.",
       "id": "acc-b70df4f07b145600bf67",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.292854,
+        "lon": -109.486533,
+        "feature": "BLM Bobcat-Houlihan Trail published trailhead/facility coordinate; approximate access area inland of the river"
+      },
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "BLM Bobcat-Houlihan recreation area; Wyoming Game and Fish public access area and boating inventory",
+      "sourceUrl": "https://www.blm.gov/visit/bobcat-houlihan-trail",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/bobcat-houlihan-trail",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the BLM-signed Bobcat-Houlihan recreation area via Park County Road 6EH off South Fork Highway. The pin is the public facility area inland of the river. Follow posted public access signs and confirm a practical carry on site; do not use nearby private driveways or assume trailer-to-water access."
     },
     "Boulder Bridge (New Fork)": {
       "status": "verified",
@@ -345,7 +357,7 @@
     },
     "Buck Creek (Shoshone)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 98 ('Buck Creek', listed as a take-out).",
+      "note": "WGFD lists a takeout here, but a permitted public road approach and usable river landing remain unconfirmed. Do not assume a canal road or adjacent private land provides public access.",
       "id": "acc-7842292187e25f318f7e",
       "aliases": []
     },
@@ -418,7 +430,7 @@
     },
     "Confluence (Hoback)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 60 ('Confluence', listed as a launch and take-out).",
+      "note": "The permitted public approach, designated launch and usable landing remain unconfirmed. Lower Hoback launching on National Forest System land is restricted to designated ramps. Astoria is a separate downstream facility.",
       "id": "acc-a9a2eb5ba5d458618b59",
       "aliases": []
     },
@@ -544,12 +556,6 @@
       "directions": "Use Riverside Park at 400 W Grant Street. The city documents river access here; the marker shows the park area, not a surveyed boat ramp. Confirm the usable landing and vehicle access on site.",
       "note": "City facility coordinates and WGFD river access OBJECTID 179 identify the same park beside the West Grant Street bridge. Imagery corroborates the park and river frontage. The city point lies inland; retain an approximate area marker."
     },
-    "Downstream of I90 (Tongue)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 185 ('Downstream of I90', listed as a launch and take-out).",
-      "id": "acc-44f042f1e654562c9cb7",
-      "aliases": []
-    },
     "Dubois City Park (Wind)": {
       "id": "acc-c48e7f18d82b5d83b74d",
       "aliases": [],
@@ -582,10 +588,22 @@
       "aliases": []
     },
     "Eagle Creek Campground (NF Shoshone)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 73 ('Eagle Creek Campground', listed as a launch and take-out).",
+      "status": "access-verified",
+      "note": "WGFD lists launch and egress. USFS documents this campground beside the Shoshone; cloud-free USGS NAIP imagery confirms that the WGFD river point and the USFS center about 400 metres upstream refer to different parts of the same campground. Keep the agency river-access area point, rather than moving it to the campground center. The current USFS page says closed for the 2026 season and warns that the footbridge is unsafe after flooding. This map identifies the facility for planning, not current opening or a safe carry.",
       "id": "acc-9bb75b77b9e65660bbcc",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.470370465616405,
+        "lon": -109.88457805415904,
+        "feature": "WGFD river access inventory NFS3; approximate riverside facility area, corroborated by USFS and cloud-free USGS imagery"
+      },
+      "accessType": "River access (area)",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Wyoming Game and Fish river access inventory; Shoshone National Forest facility guidance",
+      "sourceUrl": "https://www.fs.usda.gov/r02/shoshone/recreation/eagle-creek-campground",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B614842de-1739-4182-ab41-876e3e819da4%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Eagle Creek Campground entrance off US 14/16/20, about 45 miles west of Cody. The marker shows the WGFD-listed riverside access vicinity beside the downstream campground loop, not the USFS campground-center point or an exact ramp. Confirm seasonal access before setting a shuttle; do not use the closed footbridge."
     },
     "Eagles Nest (North Platte)": {
       "status": "access-verified",
@@ -883,16 +901,40 @@
       "aliases": []
     },
     "Gas Wells (Green)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 37 ('Gas Wells (BLM)', listed as a launch and take-out).",
+      "status": "access-verified",
+      "note": "WGFD river access inventory OBJECTID 37 explicitly identifies Gas Wells (BLM) on the Green as both launch and take-out. Imagery places its coordinate beside a road-connected riverside access area. Adopt the agency coordinate only as an approximate access area; it does not verify a precise ramp, bank side, road condition or permission to stop elsewhere. The other Gas Wells on the New Fork retains its separate identity.",
       "id": "acc-d0455a74a1ce5823b02b",
-      "aliases": []
+      "aliases": [],
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "Wyoming Game and Fish Department — river access inventory",
+      "sourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B8204a199-a264-4423-a068-f39275f64a13%7D%27&outFields=%2A&outSR=4326&f=json",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B8204a199-a264-4423-a068-f39275f64a13%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "areaCenter": {
+        "lat": 42.295711008927704,
+        "lon": -110.1867728219189,
+        "feature": "WGFD river access inventory UGR23; approximate access vicinity, not a surveyed landing"
+      },
+      "directions": "Use the WGFD-listed Gas Wells (BLM) access on the Green River north of LaBarge. This is a separate site from Gas Wells on the New Fork. Confirm the signed public approach and usable landing before setting a shuttle; no shoreline or driving connector is mapped."
     },
     "Gas Wells (New Fork)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 66 ('Gas Wells', listed as a launch and take-out).",
+      "status": "access-verified",
+      "note": "WGFD OBJECTID 66 lists launch and egress on the New Fork. The WGFD 2023 habitat report (printed page 98 / PDF page 102) confirms the ramp and parking were completed in May 2021 on the BLM-managed reach; the USBR-hosted phase-II application also confirms that completion. The 2026 project-partner volunteer event references the Gas Wells ramp but is supporting context, not the authority for verification. The original inventory coordinate is retained as an approximate area after channel/restoration work, not an exact rebuilt ramp or bank-side instruction.",
       "id": "acc-8b23d24035bc564cb0a8",
-      "aliases": []
+      "aliases": [],
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "Wyoming Game and Fish Department — Gas Wells restoration completion report and river access inventory",
+      "sourceUrl": "https://wgfd.wyo.gov/media/30993/download?inline=",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B8b34c41a-c157-4126-afdd-9907449765b2%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "areaCenter": {
+        "lat": 42.667262440127374,
+        "lon": -109.78902259213262,
+        "feature": "WGFD river access inventory NFR6; approximate access vicinity, not a surveyed landing"
+      },
+      "directions": "Use the New Fork Gas Wells public access off Boulder South Road. WGFD reports that its boat ramp and parking were rebuilt in 2021. The marker shows the agency-listed access vicinity; identify the current usable ramp before launching. This is separate from the Green River Gas Wells site near LaBarge."
     },
     "Gibbs Bridge (NF Shoshone)": {
       "status": "verified",
@@ -934,10 +976,22 @@
       "aliases": []
     },
     "Granite Creek (Hoback)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 57 ('Granite Creek', listed as a launch and take-out).",
+      "status": "access-verified",
+      "note": "WGFD HOR2 identifies river access; USFS ownership data corroborates public land at the coordinate. Adopt only an approximate takeout area. Granite Creek is downstream of Kozy Campground, within Forest Order 04-03-315: launching on National Forest System land requires a designated ramp. The inventory launch flag does not establish that designation. Sections using Granite Creek as a put-in remain held.",
       "id": "acc-ce7c85fe5a755bd291ba",
-      "aliases": []
+      "aliases": [],
+      "accessType": "River access (area)",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Wyoming Game and Fish Department — river access inventory",
+      "sourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7Bd3be09c5-9c49-4247-9202-c8c6a182a1f3%7D%27&outFields=%2A&outSR=4326&f=json",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7Bd3be09c5-9c49-4247-9202-c8c6a182a1f3%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "areaCenter": {
+        "lat": 43.2813634513689,
+        "lon": -110.53253184069506,
+        "feature": "WGFD HOR2 approximate public access area; not an exact landing"
+      },
+      "directions": "For the Highway 189 Bridge stretch, use the WGFD-listed Granite Creek area as the takeout and confirm the usable landing before launching upstream. This is on the Hoback near the Granite Creek mouth, not Granite Creek Campground. Do not assume launching here is permitted: designated launch status under the lower Hoback order is unconfirmed."
     },
     "Gray Reef (North Platte)": {
       "status": "verified",
@@ -1002,10 +1056,22 @@
       "aliases": []
     },
     "Highway 189 Bridge (Hoback)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 56 ('Highway 189 Bridge', listed as a launch and take-out).",
+      "status": "access-verified",
+      "note": "WGFD HOR1 lists launch and egress. The current USFS Basic Ownership layer places the agency point on Bridger-Teton National Forest land. Imagery shows the roadside river approach at the bridge. This is upstream of the Kozy-to-Snake launch-restriction corridor; the coordinate remains an approximate access area, not a surveyed ramp or bank-side instruction.",
       "id": "acc-b983164a24b35cb798d8",
-      "aliases": []
+      "aliases": [],
+      "accessType": "River access (area)",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Wyoming Game and Fish Department — river access inventory",
+      "sourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B877962da-5d9a-48dd-a72f-4ba007574abd%7D%27&outFields=%2A&outSR=4326&f=json",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B877962da-5d9a-48dd-a72f-4ba007574abd%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "areaCenter": {
+        "lat": 43.244160435664625,
+        "lon": -110.47972079730411,
+        "feature": "WGFD HOR1 approximate public access area; not an exact landing"
+      },
+      "directions": "Use the WGFD-listed Highway 189 Bridge access on the Hoback upstream of Kozy Campground. Identify the usable bank access and lawful roadside parking before setting the shuttle. The marker shows the agency-listed access vicinity, not a ramp or road connector."
     },
     "Highway 237 Bridge (Auburn) (Salt)": {
       "status": "verified",
@@ -1074,7 +1140,7 @@
     },
     "Hunter Creek (SF Shoshone)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 118 ('Hunter Creek', listed as a launch).",
+      "note": "WGFD lists a launch at the Hunter Creek bridge. The usable shoreline and permitted approach through adjacent private holdings remain unconfirmed.",
       "id": "acc-b59c0a92c5eb5d359662",
       "aliases": []
     },
@@ -1175,10 +1241,22 @@
       "aliases": []
     },
     "Kendall Bridge (Green)": {
-      "status": "pending",
-      "note": "WGFD lists this as river access, but its Green River guide marks a closed approach road near Kendall Bridge. The current legal vehicle approach and usable landing need to be reconciled before publishing a marker. Do not route visitors onto a road shown as closed.",
+      "status": "access-verified",
+      "note": "WGFD feature 20 explicitly lists launch and take-out access. The 2026 USFS motor-vehicle map places the bridge on designated Road 600, resolving the old float-guide closed-road ambiguity for this approach. Imagery places the agency point beside the bridge and existing access area. No exact ramp edge or bank-side claim.",
       "id": "acc-237f28f508485cc7b378",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 43.261574015722125,
+        "lon": -110.01822221730296,
+        "feature": "WGFD named public river-access area; exact landing not surveyed"
+      },
+      "accessType": "Public river access area",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Wyoming Game and Fish river-access record, corroborated by current Forest Service site and motor-vehicle maps",
+      "sourceUrl": "https://usfs-public.box.com/shared/static/atr9m57kcysrgm0wzg1y7jimy25u3hck.pdf",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?objectIds=20&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the Kendall Bridge access area on Forest Road 600. The 2026 Pinedale motor-vehicle map designates the main approach for motor vehicles April 15–December 15. Check current conditions and signs; use the existing public access by the bridge, not an unmarked closed spur. The marker is an approximate area."
     },
     "Kirby Ditch (Bighorn)": {
       "status": "verified",
@@ -1270,7 +1348,7 @@
     },
     "Mariposa Bridge (aka Ishawooa) (SF Shoshone)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 119 ('Mariposa Bridge (aka Ishawooa)', listed as a launch and take-out).",
+      "note": "WGFD lists launch and take-out access at Mariposa/Ishawooa Bridge. The public boat-carry corridor and usable landing beside the bridge remain unconfirmed.",
       "id": "acc-25876d8430475a1abc05",
       "aliases": []
     },
@@ -1814,14 +1892,26 @@
       "aliases": []
     },
     "Sleeping Giant Picnic Area (NF Shoshone)": {
-      "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 72 ('Sleeping Giant Picnic Area', listed as a launch).",
+      "status": "access-verified",
+      "note": "WGFD explicitly lists this site as a launch. The current USFS page independently locates the picnic facility; USGS NAIP imagery places the WGFD point beside its riverside loop. Approximate access area, not a surveyed launch or bank-side instruction. USFS lists services closed and allows walk-in picnicking; that does not establish vehicle or boat access while the gate is closed. Day use only; no overnight use.",
       "id": "acc-b86214620efc5e7ab050",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.491188181067,
+        "lon": -109.93124707822496,
+        "feature": "WGFD river access inventory NFS2; approximate riverside facility area, corroborated by USFS and cloud-free USGS imagery"
+      },
+      "accessType": "River access (area)",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Wyoming Game and Fish river access inventory; Shoshone National Forest facility guidance",
+      "sourceUrl": "https://www.fs.usda.gov/r02/shoshone/recreation/sleeping-giant-picnic-site",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B19d272c9-cc32-42db-8dc1-d1d25dc1de5d%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Use the signed Sleeping Giant Picnic Site on the south side of US 14/16/20, about 48 miles west of Cody. This is the picnic site, not the separate ski-area bridge. Check the gate and boat-carry access before arranging a shuttle; no shoreline connector is mapped."
     },
     "Sleeping Giant Ski Area (NF Shoshone)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 71 ('Sleeping Giant Ski Area', listed as a launch).",
+      "note": "WGFD lists a launch by the ski-area bridge. This is separate from the public Sleeping Giant Picnic Site. Permission and seasonal use of the ski-facility approach remain unconfirmed.",
       "id": "acc-4c89ee0c646b56c78054",
       "aliases": []
     },
@@ -1897,19 +1987,19 @@
     },
     "Spotted Horse Ranch (Hoback)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 59 ('Spotted Horse Ranch', listed as a launch and take-out).",
+      "note": "Public access permission at the ranch bridge remains unconfirmed. A river-access listing does not grant permission to cross ranch land. Confirm the permitted approach and launch before going.",
       "id": "acc-91f9a211276a5b21a116",
       "aliases": []
     },
     "Stinking Springs (Hoback)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 58 ('Stinking Springs', listed as a launch and take-out).",
+      "note": "Wyoming Game and Fish lists this access, but the usable public landing and designated launch status remain unconfirmed. Forest Order 04-03-315 restricts launching on National Forest System land in the lower Hoback corridor to designated ramps. Confirm access before going.",
       "id": "acc-5f61a9ccbeec5db19ec9",
       "aliases": []
     },
     "Stoney Point (Wind)": {
       "status": "pending",
-      "note": "Not mapped: WGFD lists the site but no agency facility coordinate was found within 300 m in WGFD, BLM, USFS or NPS layers. Source list: WGFD River Access Points OBJECTID 124 ('Stoney Point', listed as a launch).",
+      "note": "The agency point labelled Stoney Point falls beside Dubois Town Park, which already has a separate access map. The intended Stoney Point location still needs confirmation.",
       "id": "acc-33ee1649b6ea5533ba8a",
       "aliases": []
     },
@@ -2249,10 +2339,22 @@
       "aliases": []
     },
     "Whiskey Campground (Green)": {
-      "status": "pending",
-      "note": "WGFD and Forest Service recreation coordinates disagree by about 500 metres. The Green River guide labels Whiskey Grove near Kendall Bridge; the current campground landing and the direction/order of these nearby sites need to be reconciled before mapping.",
+      "status": "access-verified",
+      "note": "WGFD feature 21 lists launch and take-out access. The current USFS site page lists Site Open, Recreation.gov lists canoeing/water access, and the official campground layout matches the river bend and campground loop in imagery. The USFS coordinate identifies the entrance-road junction about 500 metres from the WGFD campground access area, not a competing shoreline landing. The current 2026 motor-vehicle map shows the campground spur; older EDW openstatus=closed is superseded here by the current site page and updated IVM record.",
       "id": "acc-3543210518ce5cc8b30b",
-      "aliases": []
+      "aliases": [],
+      "areaCenter": {
+        "lat": 43.25687724475478,
+        "lon": -110.0249628148706,
+        "feature": "WGFD named public river-access area; exact landing not surveyed"
+      },
+      "accessType": "Public river access area",
+      "operator": "U.S. Forest Service",
+      "sourceName": "Wyoming Game and Fish river-access record, corroborated by current Forest Service site and motor-vehicle maps",
+      "sourceUrl": "https://www.fs.usda.gov/r04/bridger-teton/recreation/whiskey-grove-campground",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?objectIds=21&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "directions": "Follow the signed Whiskey Grove Campground turnoff from Forest Road 600 into the campground. The Area marker is near the river within the campground; the Forest Service website coordinate is at the entrance-road junction. Scout a usable public carry and landing without blocking campsites. The main approach has an April 15–December 15 motor-vehicle season; check current conditions and signs."
     },
     "Whitetail (North Platte)": {
       "status": "verified",
@@ -2318,6 +2420,26 @@
       "note": "WGFD Public Access Area facilities (PAA_Facilities/FeatureServer/3), OBJECTID 24288 'Woods Landing: Woods landing' (Boat Ramp) is the managing agency's own boating-facility point, 16 m from the USGS NHD High Resolution flowline of the Laramie River, 12 m from WGFD River Access Points OBJECTID 136 ('Woods Landing', listed as a take-out). Imagery check 2026-10-27: Pin on the bank at a visible access area, ramp, landing or bridge access.",
       "id": "acc-7123291c40315fb58497",
       "aliases": []
+    },
+    "Welch Ranch (Tongue)": {
+      "status": "access-verified",
+      "note": "WGFD TRV2, formerly labelled Downstream of I90, matches the BLM Welch Ranch access area. BLM confirms non-motorized river trips and two bridge-side parking areas; the local water-trail guide identifies the landing just upstream of the bridge. Preserve WGFD coordinates as an approximate area, not an exact landing. This identity match does not approve the entire Dayton-to-Welch float or its mandatory diversion portage.",
+      "id": "acc-44f042f1e654562c9cb7",
+      "aliases": [
+        "Downstream of I90 (Tongue)"
+      ],
+      "accessType": "River access (area)",
+      "operator": "Bureau of Land Management",
+      "sourceName": "Bureau of Land Management — Welch Ranch; Sheridan Community Land Trust float guide",
+      "sourceUrl": "https://www.blm.gov/visit/welch-ranch",
+      "coordinateSourceUrl": "https://services6.arcgis.com/cWzdqIyxbijuhPLw/arcgis/rest/services/All_River_Access_Points/FeatureServer/0/query?where=GlobalID%3D%27%7B5c9cd316-ccbb-443c-9b75-d9c6d875e579%7D%27&outFields=%2A&outSR=4326&f=json",
+      "verifiedOn": "2026-11-09",
+      "areaCenter": {
+        "lat": 44.94473993589225,
+        "lon": -106.94215835800215,
+        "feature": "WGFD TRV2 approximate public access area; not an exact landing"
+      },
+      "directions": "Use the Welch Ranch landing described in the local Tongue River float guide near the WY 338 bridge. The agency marker represents the access area; check the signed landing before setting the shuttle. Vehicle access ends at the designated parking areas; the recreation area is closed to motorized use."
     }
   }
 }

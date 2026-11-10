@@ -3,10 +3,12 @@
   "state": "UT",
   "sections": {
     "colorado-river-meander/moab-potash": {
-      "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Moab Bridge Boat Ramp: No current managing-agency page found for the Moab (US-191 bridge) ramp; UGRC 2009 attributes list State Sovereign Land. Coordinate is a candidate only."
+      "status": "reviewed",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA agency facility and imagery review",
+      "fingerprint": "63247e90868f4d5f149e5d437ccfa75ce8f691bd335c176fb7a7f73700750f11",
+      "sourceManifest": "research/utah-access-review-20261109/access-decisions.json",
+      "note": "County, state and NPS records support both access facilities. Current imagery checked against agency maps and GIS. Both remain approximate Area markers; no precise landing, new mileage or timing calibration approved."
     },
     "colorado-river-moab/cisco-dewey-bridge": {
       "status": "reviewed",
@@ -18,11 +20,11 @@
     },
     "colorado-river-moab/dewey-bridge-hittle-bottom": {
       "status": "reviewed",
-      "checkedOn": "2026-10-31",
+      "checkedOn": "2026-11-09",
       "reviewer": "Float ETA desktop source and path review",
-      "note": "Keep both agency distance statements visible instead of changing mileage to pass checks.",
-      "sourceManifest": "research/map-path-review-20261031/manifest.json",
-      "fingerprint": "ea700d888eb201c3f91d28b24ddb16b66017b18923646a9029aba6e4e18f5cc3"
+      "note": "Existing reviewed access points retained. Current agency mileage statements and full river imagery checked. Dotted overview only; the planning-distance hold still blocks trip-time estimates.",
+      "sourceManifest": "research/utah-access-review-20261109/course-decisions.json",
+      "fingerprint": "10d937caf2b3890566e571e75c04692a0dedb61a256f50afdb43e3ce3b27e90e"
     },
     "colorado-river-moab/moab-daily": {
       "status": "reviewed",
@@ -97,18 +99,18 @@
       "sourceManifest": "research/source-check-20261028/manifest.json"
     },
     "san-juan/sand-island-mexican-hat": {
-      "status": "reviewed",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Reviewed current agency source snapshots, endpoint identities, existing evidence notes and restrictions. Access map only; existing exact/approximate distinctions retained. No river line, new mileage, or timing calibration approved.",
-      "fingerprint": "53e77348a8cfc8a33fed871601603fa88918a87117549cc2f32ad2635cbfee0e",
-      "sourceManifest": "research/source-check-20261028/manifest.json"
+      "status": "hold",
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency closure and access review",
+      "note": "This trip uses a boat ramp that BLM temporarily closed after flooding on October 26, 2026. Map and trip-time guidance remain withheld until BLM confirms reopening and access is rechecked.",
+      "sourceManifest": "research/utah-access-review-20261109/access-decisions.json"
     },
     "san-juan/mexican-hat-clay-hills": {
       "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Clay Hills Boat Ramp: Research-only grade: access-verified (official source names boating access; approximate area only). Imagery: the BLM point is on a dirt track with no river visible; it is 263 m from the NHD centreline. The Clay Hills take-out shifts with Lake Powell sediment. Official source names boating access, but the exact water-entry point is not pinned by an agency coordinate confirmed on imagery."
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency closure and access review",
+      "note": "This trip uses a boat ramp that BLM temporarily closed after flooding on October 26, 2026. Map and trip-time guidance remain withheld until BLM confirms reopening and access is rechecked.",
+      "sourceManifest": "research/utah-access-review-20261109/access-decisions.json"
     },
     "san-rafael/fuller-bottom-swinging-bridge": {
       "status": "reviewed",
@@ -120,9 +122,10 @@
     },
     "white-river/bonanza-enron": {
       "status": "hold",
-      "checkedOn": "2026-10-28",
-      "reviewer": "Float ETA desktop source review",
-      "note": "Bonanza Bridge Boat Launch: BLM's own site record says the launch is on private property and open April 1-October 1 only; access permission/season not confirmable as public. Kept pending."
+      "checkedOn": "2026-11-09",
+      "reviewer": "Float ETA current agency closure and access review",
+      "note": "Bonanza is on private property and BLM lists an April 1–October 1 access season. November 9 is outside that season. Map and timing remain withheld until current permission and access conditions are rechecked; an approximate location does not authorize entry.",
+      "sourceManifest": "research/utah-access-review-20261109/access-decisions.json"
     }
   }
 }

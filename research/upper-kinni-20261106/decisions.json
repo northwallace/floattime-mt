@@ -1,0 +1,140 @@
+{
+  "checkedOn": "2026-11-06",
+  "localOnly": true,
+  "pointChange": {
+    "name": "Glen Park Lower Kinni Access",
+    "before": {
+      "id": "acc-c05e7cb9e51e51c3b3c0",
+      "aliases": [
+        "Glen Park (Lower Kinni)",
+        "Glen Park below Powell Falls Dam"
+      ],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.85075,
+        "lon": -92.63882,
+        "feature": "Carry-in launch area below Powell Falls Dam"
+      },
+      "accessType": "Carry-in launch area below Powell Falls Dam",
+      "operator": "City of River Falls",
+      "sourceName": "Kinni Creek Lodge and Outfitters — Lower Canyon trip; City of River Falls — Glen Park",
+      "sourceUrl": "https://kinnicreek.com/kinni-kayak-trips-rentals/",
+      "coordinateSourceUrl": "https://milespaddled.com/kinnickinnic-river/",
+      "verifiedOn": "2026-11-06",
+      "directions": "Park by the Glen Park pickleball courts on West Park Street. Carry your boat down the path and stairs to the lower river, then identify a suitable landing downstream of Powell Falls Dam and away from its spillway. The marker locates the general access area, not the exact launch or a driving destination.",
+      "note": "The outfitter describes the Glen Park carry-in and County F trip; the city identifies the public park. The unchanged Miles Paddled guide coordinate sits beside the dam outflow in satellite imagery. It does not resolve the exact present launch, so retain an approximate area and invite a reviewed landing correction. Proposed future launches in the 2025 Greenway Plan are not treated as existing facilities."
+    },
+    "after": {
+      "id": "acc-c05e7cb9e51e51c3b3c0",
+      "aliases": [
+        "Glen Park (Lower Kinni)",
+        "Glen Park below Powell Falls Dam",
+        "Recreation Area Below Powell Falls"
+      ],
+      "status": "verified",
+      "accessType": "Informal carry-in boat launch below Powell Falls Dam",
+      "operator": "City of River Falls",
+      "sourceName": "City of River Falls — Recreation Facilities Inventory, January 2020, table 2",
+      "sourceUrl": "https://www.rfcity.org/DocumentCenter/View/4324/Recreation-Inventory-Report",
+      "verifiedOn": "2026-11-06",
+      "directions": "From the Glen Park parking area near the pickleball courts on West Park Street, carry your boat down the steep trail to the city’s informal launch below Powell Falls Dam. The pin marks the documented boat launch on the south bank, not parking. Stay clear of the spillway and check posted access signs.",
+      "note": "The city inventory identifies this coordinate specifically as the informal carry-in boat launch (printed page 15, table 2), separate from the fishing area, bench and trails. The coordinate is unchanged from that inventory and was checked against the city trail map and satellite imagery. It replaces the older guide-area pin about 26 metres upstream. This is a desktop source review, not a current inspection of landing conditions. Future restoration plans do not establish that the dam has been removed.",
+      "lat": 44.850583,
+      "lon": -92.639049
+    },
+    "evidence": "The inventory distinguishes a boat-launch point from a fishing area, trail, bench and parking. The published launch coordinate matches the visible water-edge access."
+  },
+  "routeChange": {
+    "file": "catalog/routes/WI/kinnickinnic-river-river-falls--glen-park-county-f.json",
+    "geometryChanged": false,
+    "sourceFeatureSequenceChanged": false,
+    "planningDistanceChanged": false,
+    "timingFeaturesEnabled": false,
+    "oldMetrics": {
+      "routeMiles": 7.3119,
+      "endpointOffsetsMeters": [
+        156.3,
+        7.8
+      ],
+      "mileageDifferencePercent": 2.51,
+      "maxSegmentMeters": 144.9,
+      "vertices": 284
+    },
+    "metrics": {
+      "routeMiles": 7.3119,
+      "endpointOffsetsMeters": [
+        131.1,
+        7.8
+      ],
+      "mileageDifferencePercent": 2.51,
+      "maxSegmentMeters": 144.9,
+      "vertices": 284
+    }
+  },
+  "mapReviewChanges": [
+    {
+      "key": "kinnickinnic-river-river-falls/glen-park-county-f",
+      "before": {
+        "status": "reviewed",
+        "checkedOn": "2026-11-06",
+        "reviewer": "Float ETA published-trip, current facility, dam-status and satellite context review",
+        "note": "Both access-area identities are supported. Approximate markers preserve the published guide coordinates and distinguish the County F lot from the beach. This review does not establish exact landings, a recommended channel or travel speed.",
+        "fingerprint": "127df82d5f926a843fa8bc4b28ebb408c02bc45a011eb2e6248a4f8da3b67010",
+        "sourceManifest": "research/kinnickinnic-expansion-20261106/sources/index.json"
+      },
+      "after": {
+        "status": "reviewed",
+        "checkedOn": "2026-11-06",
+        "reviewer": "Float ETA published-trip, current facility, dam-status and satellite context review",
+        "note": "Glen Park now uses the city’s launch-specific coordinate, checked against the inventory, city trail map and imagery. The takeout remains an approximate access area. Trip distance, guide time and barrier warnings are unchanged.",
+        "fingerprint": "8dc547ca1964d8bf31459f777bfe6b2c7d8daf9591e2cd252441a259c7e47b54",
+        "sourceManifest": "research/upper-kinni-20261106/decisions.json"
+      }
+    },
+    {
+      "key": "kinnickinnic-river-river-falls/glen-park-state-park-beach",
+      "before": {
+        "status": "reviewed",
+        "checkedOn": "2026-11-06",
+        "reviewer": "Float ETA published-trip, current facility, dam-status and satellite context review",
+        "note": "Both access-area identities are supported. Approximate markers preserve the published guide coordinates and distinguish the County F lot from the beach. This review does not establish exact landings, a recommended channel or travel speed.",
+        "fingerprint": "92c47d676e52c48ed38a715ddda8a65e884eace505429938bbf53eeba947d28d",
+        "sourceManifest": "research/kinnickinnic-expansion-20261106/sources/index.json"
+      },
+      "after": {
+        "status": "reviewed",
+        "checkedOn": "2026-11-06",
+        "reviewer": "Float ETA published-trip, current facility, dam-status and satellite context review",
+        "note": "Glen Park now uses the city’s launch-specific coordinate, checked against the inventory, city trail map and imagery. The takeout remains an approximate access area. Trip distance, guide time and barrier warnings are unchanged.",
+        "fingerprint": "485a7cd759b81441b11eabdcef836d9c4fefb64d1a47f6d6f808301b4f51b0e5",
+        "sourceManifest": "research/upper-kinni-20261106/decisions.json"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "file": "research/upper-kinni-20261106/sources/city-recreation-inventory.pdf",
+      "sha256": "c205389aae01f19243287c7e6e4328368d0f6b84b3ed71dab62e486a3958206d"
+    },
+    {
+      "file": "research/upper-kinni-20261106/sources/city-trail-map.pdf",
+      "sha256": "33a91afa6ead22970efa2f96f2a6f238f70786e1379b1297a8791c2b1a10fffc"
+    },
+    {
+      "file": "research/upper-kinni-20261106/sources/inventory-page19.png",
+      "sha256": "7e7540d54e45d1f6aa48b520501b844d03b8bde80996176f6a901977acc2af8b"
+    },
+    {
+      "file": "research/upper-kinni-20261106/sources/inventory-page23.png",
+      "sha256": "8d3d6138b732cc034d498708eef79846a5605649fb8af0a121967aa8f6720755"
+    },
+    {
+      "file": "research/upper-kinni-20261106/sources/glen-inventory-compare.png",
+      "sha256": "ffe5d0d07a3399141bc35bff337dd5ddc8f5b8d6deae2e1db8643b3eabee7743"
+    },
+    {
+      "file": "research/upper-kinni-20261106/sources/lake-george-inventory-compare.png",
+      "sha256": "b31ea9305bc0e4a7f44f12fcff40f3586553b8724b00e379d3577a82208b5ee0"
+    }
+  ]
+}

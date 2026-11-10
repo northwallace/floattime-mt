@@ -1,0 +1,562 @@
+{
+  "checkedOn": "2026-11-09",
+  "localOnly": true,
+  "mapsAdded": 14,
+  "accessPoints": [
+    {
+      "id": "acc-dfe65c4eb39c581a85f0",
+      "name": "Baptist Camp Access",
+      "status": "access-verified",
+      "note": "Area marker is in the designated river bend below the Route RA bridge. MDC map shows picnic/parking along the north bank. Preserve area precision; no separate agency launch feature exists in the current ramp layer.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/baptist-camp-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-dfe65c4eb39c581a85f0.html",
+          "sha256": "3c9d68182226114a3e462fd0b42dc6cf9875527a264d8b5ee04d9263e9f41ceb",
+          "bytes": 81209
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-dfe65c4eb39c581a85f0.jpg",
+        "sha256": "fcc8058bb824a7f9415f0ad38fdd23f727fff45a1f1900567574c7377a9febee"
+      },
+      "areaMap": {
+        "file": "research/missouri-access-expansion-20261109/sources/acc-dfe65c4eb39c581a85f0-current-map.pdf",
+        "sha256": "3d8512fa3c3036db04851b74bcd5eedb222a483b81104ed5f1b928c71f874ff1"
+      }
+    },
+    {
+      "id": "acc-9dd3d5a9e68258c58b25",
+      "name": "Big John Access",
+      "status": "verified",
+      "note": "Ramp pin is on the bank beside the visible road crossing; current agency ramp matches. MDC identifies the access as flash-flood-prone.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D130&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-9dd3d5a9e68258c58b25.json",
+          "sha256": "a25f11886972a2ce9a876c32c3bb57b714207cf632a9745cd09f659a84ef0b2a",
+          "bytes": 597
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a7010",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-9dd3d5a9e68258c58b25.html",
+          "sha256": "ebd3aabd3173eaad1595f23e1036c53067d7841fb5928c6986d8f484c7a0e500",
+          "bytes": 78589
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-9dd3d5a9e68258c58b25.jpg",
+        "sha256": "5f280cf256b878d568eb900f781cce595ed81e8a9b7c13106c8e716079655282"
+      }
+    },
+    {
+      "id": "acc-f62b0f9251af5a9ab11e",
+      "name": "Bootleg Access",
+      "status": "access-verified",
+      "note": "The 303-acre agency centroid is inland, not a landing. MDC map identifies Highway 21 access and designated parking on the west side of the public tract. Keep an Area marker and road directions; do not imply a direct drive to the centroid.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/bootleg-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-f62b0f9251af5a9ab11e.html",
+          "sha256": "225799b86ffdd68d4f9392703a2d13525169429ef65d92c2df2a1b016ae8fd0f",
+          "bytes": 96573
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-f62b0f9251af5a9ab11e.jpg",
+        "sha256": "b87693820e091aa8129dcc3574dab5cc81f5d742cfe9693ecb80b19c0ada06c6"
+      },
+      "areaMap": {
+        "file": "research/missouri-access-expansion-20261109/sources/acc-f62b0f9251af5a9ab11e-current-map.pdf",
+        "sha256": "9f2a6cbc07bc0f580e2841fa66648de6007bb9d6bf54b5511a6977d0240bd81d"
+      }
+    },
+    {
+      "id": "acc-c7284a2a8a855907a017",
+      "name": "Dogs Bluff Access",
+      "status": "verified",
+      "note": "Agency ramp pin matches the visible bank access beside Highway 17; unchanged.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D40&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-c7284a2a8a855907a017.json",
+          "sha256": "5bed443a429f90825f4658935afd8d698e8a2cee855ab293fe51b56b647cbd6b",
+          "bytes": 599
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a6111",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-c7284a2a8a855907a017.html",
+          "sha256": "7ef9b6e21a83286bc54332be7dddac2e79d9ff42d7dbbcf11cf35437517e2a11",
+          "bytes": 84930
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-c7284a2a8a855907a017.jpg",
+        "sha256": "e641db4823b3b6efcd90885018106a2db944affe51c05969059c884084fe5cb4"
+      }
+    },
+    {
+      "id": "acc-86b3046617655c53a59c",
+      "name": "Flo Cook Access",
+      "status": "access-verified",
+      "note": "Small agency access area is at the gravel bank and road end on Bryant Creek. Retain Area precision rather than infer an exact launch from the gravel bar.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/flo-cook-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-86b3046617655c53a59c.html",
+          "sha256": "17a1d02136600b5cf50bb9d313e3935bad0160fa135d94b983fe6ef7957dc11d",
+          "bytes": 79634
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-86b3046617655c53a59c.jpg",
+        "sha256": "a224d1f6b07f94bed31028083fc0f2260fc1480a5bcf50f1f8efad068651128a"
+      }
+    },
+    {
+      "id": "acc-2b9fad5ea375506eb561",
+      "name": "Gruner Ford Access",
+      "status": "access-verified",
+      "note": "Agency area lies at the wooded riverbank beside the Route H crossing; no exact launch feature is supplied. Retain Area precision.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/gruner-ford-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-2b9fad5ea375506eb561.html",
+          "sha256": "6ff0322257b0c2861b52be5fcc211e03414b472dc2d411266feba0697ef51047",
+          "bytes": 82240
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-2b9fad5ea375506eb561.jpg",
+        "sha256": "06479ee69c6b77fe91a72dc0531c250ac8e25c13d43d37965dc994d4c3f3b9a7"
+      }
+    },
+    {
+      "id": "acc-e078317e4f8152f7ae0f",
+      "name": "Leadwood Access",
+      "status": "access-verified",
+      "note": "Agency area and PDF match the wooded bank/parking loop off Highway 8 at Hunt Street. Keep the centroid approximate and display the current MDC water-contact advisory.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/leadwood-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-e078317e4f8152f7ae0f.html",
+          "sha256": "63659759206838df955d6e3bf13672c6b2df1bd56f14d52957912883d484ae34",
+          "bytes": 80892
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-e078317e4f8152f7ae0f.jpg",
+        "sha256": "8a43bde1cdf1d8aa02ea5e1ccac26393dfba1417c3c8f1e465709c3923c5fdc6"
+      },
+      "areaMap": {
+        "file": "research/missouri-access-expansion-20261109/sources/acc-e078317e4f8152f7ae0f-current-map.pdf",
+        "sha256": "4197db87ca643e6757e3ea9403b134b4e53ff0b8449efcebbb3abe168b2233cf"
+      }
+    },
+    {
+      "id": "acc-a2ae229ec5c75885b4f9",
+      "name": "Long Ford Access",
+      "status": "verified",
+      "note": "Agency ramp pin is on the downstream bank beside the Route B bridge and visible gravel approach, matching MDC directions.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D558&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-a2ae229ec5c75885b4f9.json",
+          "sha256": "1e76a4daee517363b5f57f62ea36bb9997341187f305b0e0e433067d687e5ff9",
+          "bytes": 601
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a200405",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-a2ae229ec5c75885b4f9.html",
+          "sha256": "9f5913a28d727c3fc967eb5252dca1f485ddf938ee3bea43d935c1f8abdfc935",
+          "bytes": 81019
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-a2ae229ec5c75885b4f9.jpg",
+        "sha256": "eeeef57ef9a93cff0d4579785c6fcf098e5ee47dcd54b55af4e6a39cfbec1f74"
+      }
+    },
+    {
+      "id": "acc-f561f81bd68e5d60b2e9",
+      "name": "Mammoth Access",
+      "status": "verified",
+      "note": "Agency ramp pin matches the visible bank access beside the crossing; unchanged.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D399&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-f561f81bd68e5d60b2e9.json",
+          "sha256": "71965736d6ffde922715717be35d7db5aa091a539c6e5f8ff9e668f2c12c3a9a",
+          "bytes": 597
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a6815",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-f561f81bd68e5d60b2e9.html",
+          "sha256": "01991e11468d69bf71c5f772aa1e1a96fa4d6b36d7e88b421d52ab584e8793cb",
+          "bytes": 78049
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-f561f81bd68e5d60b2e9.jpg",
+        "sha256": "0e80ad2f8c8aeb008fd686efdc66d4b35a0e6aa312d1089431530178f54d1e4d"
+      }
+    },
+    {
+      "id": "acc-21d43ec32bf65a5c8fb8",
+      "name": "Mill Rock Access",
+      "status": "verified",
+      "note": "Agency ramp pin matches the gravel road end on the Bourbeuse bank; unchanged.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D549&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-21d43ec32bf65a5c8fb8.json",
+          "sha256": "07392410b927dfcc2a2586511dc00e2a4773d3218c1085f283dd9497fab1c18b",
+          "bytes": 599
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a7604",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-21d43ec32bf65a5c8fb8.html",
+          "sha256": "52c403e2ca09ff8d6f51bf63ff09d59c2d08c9afd7b662e4b0607ae3fd65fd9f",
+          "bytes": 79632
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-21d43ec32bf65a5c8fb8.jpg",
+        "sha256": "bcd3e48f8710220b6f68f44f74b870ada8b389e5463d0137f179b4c1b5d7158c"
+      }
+    },
+    {
+      "id": "acc-8e90570b55ad525fb05a",
+      "name": "Mint Spring Access",
+      "status": "verified",
+      "note": "Agency ramp pin is at the ramp approach beside the bridge and bank. Keep the agency feature position; do not extend it through the gravel bar.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D156&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-8e90570b55ad525fb05a.json",
+          "sha256": "bd6eb717a60f30adcba283f8434a3d874723184dcbdd34b0fd444cd7b5659fb4",
+          "bytes": 601
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a8409",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-8e90570b55ad525fb05a.html",
+          "sha256": "d495fc862e371027a9526fed6c375ad95effb44672fa13e666c58fdb85b785f7",
+          "bytes": 88060
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-8e90570b55ad525fb05a.jpg",
+        "sha256": "8e7a1a0e4eb26f4274091db227245656f6fa9fa173e6dfa7b9a73d96a9da6eb6"
+      }
+    },
+    {
+      "id": "acc-38462aeec329555298e8",
+      "name": "Moon Valley Access",
+      "status": "verified",
+      "note": "Agency ramp pin matches the bank access by the low-water bridge. The bridge is on the agency driving approach, not a mapped safe river crossing.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D134&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-38462aeec329555298e8.json",
+          "sha256": "4beb78755e99541c4395070adb8fa56daafdd81ebff3daf728ced72f43a0f2f6",
+          "bytes": 601
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a7006",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-38462aeec329555298e8.html",
+          "sha256": "34c7cddd084131442813cd98cd18af5295ca8d0b0572dba1bd9692e27af1a0d1",
+          "bytes": 78430
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-38462aeec329555298e8.jpg",
+        "sha256": "5669ad2c403b387789fa3c3627b8fc40e5e4f244f861e2bed992d4095512b124"
+      }
+    },
+    {
+      "id": "acc-5f7fab90e4de579589d5",
+      "name": "Rader Access",
+      "status": "access-verified",
+      "note": "MDC explicitly describes walk-in access. PDF shows parking north of the river and public frontage; centroid is wooded/inland. Keep Area precision and explain carrying rather than imply a trailer ramp.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/rader-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-5f7fab90e4de579589d5.html",
+          "sha256": "e56f4fb2cb9aaed62459df8d70737b285db36769d9483ff00bf8bee152df39ae",
+          "bytes": 89247
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-5f7fab90e4de579589d5.jpg",
+        "sha256": "1c55f6cc6f972b3df16cd8cac9529a6eab929b437f0ceeaa47c6dac4909360bf"
+      },
+      "areaMap": {
+        "file": "research/missouri-access-expansion-20261109/sources/acc-5f7fab90e4de579589d5-current-map.pdf",
+        "sha256": "9221e2f1b3d86ac4deff6781393ecf9a55654072ab2e511eb319b2b9553b2a9c"
+      }
+    },
+    {
+      "id": "acc-10a0a934922050a4a7f7",
+      "name": "Reiker Ford Access",
+      "status": "access-verified",
+      "note": "Small agency area is beside the gravel approach and Bourbeuse bank. Preserve Area precision; the centroid does not identify the exact shoreline landing.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/reiker-ford-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-10a0a934922050a4a7f7.html",
+          "sha256": "c9d6d6c046471e4a0cd8cc3ab82458fcd46c261613f7b28c9cc9830a688c319e",
+          "bytes": 80590
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-10a0a934922050a4a7f7.jpg",
+        "sha256": "2f58a2b3afc14e3798d336e20b9feff12ac6af192ea35a339d9571881ebcd0b4"
+      }
+    },
+    {
+      "id": "acc-d164433a306c5fc48cc2",
+      "name": "Simmons Ford Access",
+      "status": "verified",
+      "note": "Agency ramp pin matches the bank access beside the road crossing; unchanged.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D43&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-d164433a306c5fc48cc2.json",
+          "sha256": "93a65a5a461633f1bba896aa400c89c9ca0645908d5c4552cd09e25c88ed442f",
+          "bytes": 601
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a7826",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-d164433a306c5fc48cc2.html",
+          "sha256": "ebd0ff7e022a91f8c8e198b0dae4c334d31e35f580bba5f2ff6d09eb29ed486d",
+          "bytes": 75420
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-d164433a306c5fc48cc2.jpg",
+        "sha256": "da70b7ab041e7aee2ec2e57aa312e4c3743cd972c21f410943112479a9ff6ac2"
+      }
+    },
+    {
+      "id": "acc-d25372d2f5555bf0aa2e",
+      "name": "Syenite Access",
+      "status": "verified",
+      "note": "Agency ramp pin is at the visible ramp approach on the Saint Francis bank; unchanged.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D95&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-d25372d2f5555bf0aa2e.json",
+          "sha256": "01ddbf46bff5b6e73cd811c1103aea9386c6fd52fbb0cc083744b2d3fd76ebdd",
+          "bytes": 596
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a9422",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-d25372d2f5555bf0aa2e.html",
+          "sha256": "b691fb24cba1eaec5461a1b66b2707cd1bdbf1ba12c42d2445a5374267cb5cfc",
+          "bytes": 82785
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-d25372d2f5555bf0aa2e.jpg",
+        "sha256": "92f06dbf85c87dd0c407fd77d09953af580dbbdda3a2733c71f30e9ca55d2a69"
+      }
+    },
+    {
+      "id": "acc-fe0d3908646356449cb9",
+      "name": "Tea Access",
+      "status": "access-verified",
+      "note": "Agency area is on the north bank parking/approach below the bridge; MDC page depicts a boat ramp but has no current ramp coordinate. Keep Area precision.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/tea-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-fe0d3908646356449cb9.html",
+          "sha256": "490f5b2ea5f151ae00c9bb29501a0ecfb498cf920b1d836c7e28697016bad129",
+          "bytes": 85991
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-fe0d3908646356449cb9.jpg",
+        "sha256": "0bba99fdd1087923bfdc08dcea3613cd4017a1e4474e7cd5979d03f3658069d6"
+      }
+    },
+    {
+      "id": "acc-2ac5c8b42bfe58d38b86",
+      "name": "Union Access",
+      "status": "verified",
+      "note": "Agency ramp pin matches the road-end access at the riverbank below the highway crossing; unchanged.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D169&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-2ac5c8b42bfe58d38b86.json",
+          "sha256": "d98594ad7182b0a6b268af3e675ddb8b65bcd8cdec4f1c17c333ca7cdef1461a",
+          "bytes": 595
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a6508",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-2ac5c8b42bfe58d38b86.html",
+          "sha256": "c173d650c4294615fa690bcfa2276aa2f565981682d15997ea0c475909bd536c",
+          "bytes": 85153
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-2ac5c8b42bfe58d38b86.jpg",
+        "sha256": "feb246548ae8cc1b54879ac332a87eb09e75568bdaa077d837598c9f5a54de92"
+      }
+    },
+    {
+      "id": "acc-c69f8137ea525c6887ec",
+      "name": "Warren Bridge Access",
+      "status": "verified",
+      "note": "Agency ramp pin matches the east-bank access beside the bridge; unchanged.",
+      "sources": [
+        {
+          "url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/Area_Feature_Layers/FeatureServer/17/query?where=OBJECTID%3D556&outFields=*&outSR=4326&f=json",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-c69f8137ea525c6887ec.json",
+          "sha256": "6f317a5cb18f103cff56ba6b6e846d9a78d2dc4c1b977e5978fc8b9ed8755727",
+          "bytes": 603
+        },
+        {
+          "url": "https://mdc.mo.gov/conservation-area/a8242",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-c69f8137ea525c6887ec.html",
+          "sha256": "af3fe41d09c296f8e260ce06fbebf6a354362d101c3f9d397b6c019acf57d850",
+          "bytes": 80915
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-c69f8137ea525c6887ec.jpg",
+        "sha256": "282e9027b1ca59f2034fbf1d739e4499a8e09f6f0292925d35928e2b3301d3c9"
+      }
+    },
+    {
+      "id": "acc-959a3d3bcc335f35bab5",
+      "name": "Wenkel Ford Access",
+      "status": "access-verified",
+      "note": "Small agency area is beside the road-end gravel bank. Keep the access-area centroid; do not infer an exact ramp from imagery.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/wenkel-ford-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-959a3d3bcc335f35bab5.html",
+          "sha256": "eb2f8063fa12c1b4f7859abd4af21c920478616512bfee6593c835610c4b4e16",
+          "bytes": 79892
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-959a3d3bcc335f35bab5.jpg",
+        "sha256": "fcd81f08df09f182dbfce84391e6436aa6df38b0a837282fb148a3ba2eb0d25d"
+      }
+    },
+    {
+      "id": "acc-15cde01c55085837aa10",
+      "name": "Williams Ford Access",
+      "status": "access-verified",
+      "note": "Agency centroid is inland on the wooded approach north of the Niangua. Retain Area precision and the signed road directions. MDC identifies flash-flood risk.",
+      "sources": [
+        {
+          "url": "https://mdc.mo.gov/discover-nature/places/williams-ford-access",
+          "file": "research/missouri-access-expansion-20261109/sources/acc-15cde01c55085837aa10.html",
+          "sha256": "af23fc3396056537994573bd1a0d70754156fef68dfa5b29304bf2fe20062e58",
+          "bytes": 86204
+        }
+      ],
+      "imagery": {
+        "file": "research/missouri-access-expansion-20261109/imagery/access-acc-15cde01c55085837aa10.jpg",
+        "sha256": "beb0189ffe658104f91a0f2738280ba4ac39b3db2ab51ba0c8eddc5b3a4d52b6"
+      }
+    }
+  ],
+  "maps": [
+    {
+      "riverId": "big-piney-river",
+      "sectionId": "simmons-ford-access-to-baptist-camp-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "big-piney-river",
+      "sectionId": "baptist-camp-access-to-dogs-bluff-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "big-river",
+      "sectionId": "bootleg-access-to-leadwood-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "big-river",
+      "sectionId": "leadwood-access-to-mammoth-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "bourbeuse-river",
+      "sectionId": "mint-spring-access-to-tea-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "bourbeuse-river",
+      "sectionId": "tea-access-to-mill-rock-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "bourbeuse-river",
+      "sectionId": "mill-rock-access-to-wenkel-ford-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "bourbeuse-river",
+      "sectionId": "wenkel-ford-access-to-reiker-ford-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "bourbeuse-river",
+      "sectionId": "reiker-ford-access-to-union-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "bryant-creek",
+      "sectionId": "warren-bridge-access-to-flo-cook-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "niangua-river",
+      "sectionId": "big-john-access-to-williams-ford-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "niangua-river",
+      "sectionId": "williams-ford-access-to-moon-valley-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "osage-fork",
+      "sectionId": "rader-access-to-long-ford-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    },
+    {
+      "riverId": "st-francis-river",
+      "sectionId": "gruner-ford-access-to-syenite-access",
+      "newlyAvailable": true,
+      "note": "Current MDC access page, agency feature and individual satellite panel reviewed for each endpoint. Keep precise agency ramps and clearly labeled approximate access areas distinct. Preserve source road directions. Section-specific health, flood, bridge and carry-in information is included where applicable. This approves an access-only map, not navigability, current water safety, exact landing connections or trip-time calibration."
+    }
+  ],
+  "sourceInventory": {
+    "file": "research/missouri-access-expansion-20261109/sources/receipts.json",
+    "sha256": "6505cf2960e8cf16f84cac70aa0e66e88860466a532552615b09b9baddaebe07"
+  },
+  "rampInventory": {
+    "file": "research/missouri-access-expansion-20261109/sources/ramps-for-target-areas.json",
+    "sha256": "4d54a3fc23303e5849acaa42516ac53053e9a5cef9baa1818545564e10017f9f"
+  },
+  "note": "No access point, stable ID, mileage, gauge, timing model or GPS ETA changed."
+}
