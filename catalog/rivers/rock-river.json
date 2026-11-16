@@ -238,7 +238,7 @@
       "putInAccessId": "acc-c807b862e2925d20896e",
       "takeOutAccessId": "acc-553b8f44b3535e95bff9",
       "accessReview": "Route check pending: the Koshkonong Wetland dam record conflicts with the published Rock River water trail through this reach. Its relationship to the paddling channel needs confirmation before this map is released.",
-      "routeReview": "The Koshkonong Wetland barrier record remains unresolved. This trip also crosses Lake Koshkonong; no reviewed dotted path or live float time is provided.",
+      "routeReview": "The current DNR inventory still places Koshkonong Wetland dam 3090 (NID WI12289) on the Rock River in this reach. The aerial image shows broad open water at the listed point, but cannot establish whether a submerged barrier exists or whether the record location is accurate. The published trail description does not resolve that conflict. This trip also crosses Lake Koshkonong; no reviewed dotted course or live float time is provided.",
       "notices": [
         {
           "title": "Lake crossing, not a simple river drift",
@@ -246,6 +246,13 @@
           "sourceName": "Rock River Trail Initiative — Section E guide",
           "sourceUrl": "https://rockrivertrail.com/wp-content/uploads/2014/07/RRWT_Description_E.pdf",
           "checkedOn": "2026-11-06"
+        },
+        {
+          "title": "Barrier record still needs clarification",
+          "text": "The DNR dam inventory continues to list Koshkonong Wetland on this Rock River reach. Aerial imagery and the published water-trail description do not establish whether this record represents a present obstruction or a location error. Confirm the barrier and any required authorized carry before planning the trip.",
+          "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=DAM_KEY_SEQ_NO%3D3090&outFields=%2A&outSR=4326&f=json",
+          "sourceName": "Wisconsin DNR — Koshkonong Wetland dam inventory record",
+          "checkedOn": "2026-11-16"
         }
       ]
     },

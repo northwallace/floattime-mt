@@ -35,7 +35,16 @@
       "putInAccessId": "acc-e422421755575b14b93c",
       "takeOutAccessId": "acc-ac7b7238064d5f7d9dfd",
       "accessReview": "Dam crossing/portage unresolved: Albany Wildlife. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
-      "routeReview": "This section includes Albany Wildlife and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+      "routeReview": "Two different dam records must be distinguished here. Albany Wildlife (DNR 3087) is near the wildlife-area river channel north of town and remains unresolved. The separate village Albany Dam (DNR 256) is downstream of the agency-listed Albany Park take-out. Ending at the park does not establish passage past the upstream wildlife record; no dotted course or trip estimate is offered until that question is resolved.",
+      "notices": [
+        {
+          "title": "Albany Park is above the village dam",
+          "text": "The agency-listed Albany Park take-out is upstream of Albany’s village dam. Do not continue through the dam. This does not resolve the separate Albany Wildlife barrier record farther upstream, which keeps this section under review.",
+          "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=DAM_OFFICIAL_NAME+LIKE+%27%25Albany%25%27&outFields=%2A&outSR=4326&f=json",
+          "sourceName": "Wisconsin DNR — separate Albany Wildlife and Albany dam records",
+          "checkedOn": "2026-11-16"
+        }
+      ]
     },
     {
       "id": "albany-park-to-sugar-river-carry-in",

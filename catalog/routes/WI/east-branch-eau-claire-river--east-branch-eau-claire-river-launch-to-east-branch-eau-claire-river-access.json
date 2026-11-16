@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "east-branch-eau-claire-river",
+  "sectionId": "east-branch-eau-claire-river-launch-to-east-branch-eau-claire-river-access",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://hydro.nationalmap.gov/arcgis/rest/services/nhd/MapServer/6",
+    "checkedOn": "2026-11-16",
+    "streamId": "East Branch Eau Claire River",
+    "evidenceFile": "research/east-branch-eau-claire-courses-20261116/sources/east-branch-eau-claire-river.json",
+    "sha256": "351df8f4b053c06af16d6405f6d65bf25cec641eefc7f8545fee9cf7c27610b8"
+  },
+  "putIn": {
+    "name": "East Branch Eau Claire River Launch",
+    "lat": 45.20380244201072,
+    "lon": -89.21603708858706
+  },
+  "takeOut": {
+    "name": "East Branch Eau Claire River Access",
+    "lat": 45.19403110485734,
+    "lon": -89.22119136285053
+  },
+  "catalogMiles": 1.0,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -89.216128074457,
+        45.20389299920839
+      ],
+      [
+        -89.21617196897074,
+        45.20387102791643
+      ],
+      [
+        -89.21621910307309,
+        45.20386182766827
+      ],
+      [
+        -89.21685816982912,
+        45.20374762760354
+      ],
+      [
+        -89.21780636982737,
+        45.20359762763642
+      ],
+      [
+        -89.21906517022052,
+        45.20331209455995
+      ],
+      [
+        -89.21972470323688,
+        45.20317422789152
+      ],
+      [
+        -89.22083010396764,
+        45.20282129412031
+      ],
+      [
+        -89.22145710365263,
+        45.20260262744546
+      ],
+      [
+        -89.22215057055891,
+        45.20243649337958
+      ],
+      [
+        -89.22227130370159,
+        45.20234862723033
+      ],
+      [
+        -89.22255717060686,
+        45.20214042691473
+      ],
+      [
+        -89.2231681710434,
+        45.20162269346041
+      ],
+      [
+        -89.22350410427542,
+        45.20109842631287
+      ],
+      [
+        -89.22358650415104,
+        45.20046802668829
+      ],
+      [
+        -89.2234511036432,
+        45.1995704934827
+      ],
+      [
+        -89.22300057121554,
+        45.19865182665209
+      ],
+      [
+        -89.22246277025435,
+        45.19823542679842
+      ],
+      [
+        -89.22238670306776,
+        45.197907625865476
+      ],
+      [
+        -89.22235317082388,
+        45.19741402626161
+      ],
+      [
+        -89.22205410370617,
+        45.19720322617949
+      ],
+      [
+        -89.22145437017019,
+        45.196900226868756
+      ],
+      [
+        -89.22086697008196,
+        45.19667329290273
+      ],
+      [
+        -89.22046330225838,
+        45.196267292833525
+      ],
+      [
+        -89.2200681022993,
+        45.19572369331187
+      ],
+      [
+        -89.21977410258143,
+        45.19514302606699
+      ],
+      [
+        -89.21971510223105,
+        45.194554292838596
+      ],
+      [
+        -89.22007010220536,
+        45.19410602581826
+      ],
+      [
+        -89.22044836955709,
+        45.19391889237404
+      ],
+      [
+        -89.22093876899872,
+        45.19387002623332
+      ],
+      [
+        -89.22119825892483,
+        45.193875766934276
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "152369020",
+      "152369019"
+    ],
+    "putInOffsetMeters": 12.347761630184216,
+    "takeOutOffsetMeters": 17.286176437505414,
+    "putInSourceStationMeters": 1964.0870562973003,
+    "takeOutSourceStationMeters": 1158.3885059894947
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate stream-course overview only. Tree cover obscures parts of the channel; this line does not establish navigability or usable landings.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.0388,
+      "endpointOffsetsMeters": [
+        12.3,
+        17.3
+      ],
+      "mileageDifferencePercent": 3.88,
+      "maxSegmentMeters": 108.1,
+      "vertices": 31
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-16",
+    "reviewer": "Float ETA directed-source and full-course imagery review",
+    "evidenceFile": "research/east-branch-eau-claire-courses-20261116/decisions.json",
+    "note": "All overlapping course and endpoint panels reviewed, including canopy limitations; nearby dam inventory checked separately."
+  },
+  "overviewReview": {
+    "signature": "b62cd2c24241cf2aa5fe41f3e96f6701ae929c14261e42127d9a88e871adb8e8",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line shows the approximate East Branch Eau Claire River course between the listed access areas. Parts of this narrow stream are obscured by trees in aerial imagery. Shoreline connections, usable depth and passage through wood or road crossings are not mapped. Confirm current conditions and the suitability of your boat locally.",
+    "note": "General stream course; current passage and landings unconfirmed.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing access marker retained; exact bank approach is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing access marker retained; exact bank approach is not drawn."
+      }
+    }
+  }
+}

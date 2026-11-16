@@ -1,0 +1,102 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-16",
+  "mapsAdded": [],
+  "pathsAdded": [
+    "WI/kewaunee-river--kewaunee-river-park-lane-to-kewaunee-river-hwy-e.json"
+  ],
+  "pointCoordinatesChanged": [],
+  "courses": [
+    {
+      "route": {
+        "file": "catalog/routes/WI/kewaunee-river--kewaunee-river-park-lane-to-kewaunee-river-hwy-e.json",
+        "sha256": "3044e2dc64abdf42926b4c099d14ae02790b22246fdd90f264ec85c83502de79"
+      },
+      "destination": "catalog/routes/WI/kewaunee-river--kewaunee-river-park-lane-to-kewaunee-river-hwy-e.json",
+      "candidate": {
+        "file": "research/kewaunee-course-20261116/courses/1/candidate.json",
+        "sha256": "2e5d1ca115f6b64af7b75b4af48030ab0d8fe6ac431ae3fa8f4d86a6aad4fa6e"
+      },
+      "inventory": {
+        "file": "research/kewaunee-course-20261116/courses/1/branch-inventory.json",
+        "sha256": "739773b8019e3ccd6f006c18dce81b80f45bf9502797e6254934319484b5e77d"
+      },
+      "source": {
+        "file": "research/kewaunee-course-20261116/sources/kewaunee-river.json",
+        "sha256": "a9f4da383a62a8d15164e3fa886ea7e97a7d86bada5f8099aa139cc07c7fb2e4"
+      },
+      "review": {
+        "file": "research/kewaunee-course-20261116/courses/1/full-course-review.json",
+        "sha256": "4754ab67c399f282b3e5b89bec13f8d537243f0edef54cc34a15325910608b5d"
+      },
+      "imagery": [
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-part-1.jpg",
+          "sha256": "eab80a5e8ea5c5c6e39f382509a067685c892f9d9be7eaed810a3a5fd575f1ed"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-part-2.jpg",
+          "sha256": "3c5c389e46015366b9228c3add7394af27014d13e9768a5581228f926790a563"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-part-3.jpg",
+          "sha256": "1ac1c9f411d369f949712e80d96c5c014307e02ef3f2fd4aedb5f833f9bae660"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-part-4.jpg",
+          "sha256": "adc99a90f3ad51d8599cab5119486ebd8113e442e2bb2d254df9f096c77b8f4d"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-part-5.jpg",
+          "sha256": "e8df12352d9d7fe041ef1a607059829957f3d220b9a35bae0b35978ea0a458fd"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-putIn.jpg",
+          "sha256": "0f2b270556b95504547e4a0d22013aa422ebc6d32817e1bc174600d324f0b398"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-takeOut.jpg",
+          "sha256": "8b2718eb1387775e24c49fd12f785f8cd2f2c05d86e8c64d542733f94c79a883"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-part-1-naip.jpg",
+          "sha256": "348d54edde46634b4effe281ac146c1041f74ef6d2d29bb43e48661354fc7ad1"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-part-2-naip.jpg",
+          "sha256": "509e51f30422d8d0f65abf98e2761f241ecc22c966a012823ad6d87ab5def991"
+        },
+        {
+          "file": "research/kewaunee-course-20261116/imagery/1-putIn-naip.jpg",
+          "sha256": "5ef35d6571e16fc1fed1aa0dc41bdb8bdcf9677793390428017816d86d45e6f3"
+        }
+      ]
+    }
+  ],
+  "damEvidence": {
+    "file": "research/kewaunee-course-20261116/sources/dam-screen.json",
+    "sha256": "dd68a167455a57e8c7ebe3b3705d9747f3d2fe4e0a6ceed460d3817981431347"
+  },
+  "damDistances": {
+    "file": "research/kewaunee-course-20261116/dam-distances.json",
+    "sha256": "b0b0a21471790c577c19172c48a45b0650ba60df96a258b95821f3f82678f838"
+  },
+  "damQuery": {
+    "file": "research/kewaunee-course-20261116/sources/dam-query-url.txt",
+    "sha256": "88e6521b927bc9f513e5cb66938a8690bade08a13747754d1bc599c6af157618"
+  },
+  "imageryReceipt": {
+    "file": "research/kewaunee-course-20261116/imagery/receipts.json",
+    "sha256": "5165849a921bcc1985af9a6664baa6ba09737cf8608994ac0a1f7c0798b114c0"
+  },
+  "naipReceipt": {
+    "file": "research/kewaunee-course-20261116/imagery/naip-receipts.json",
+    "sha256": "4b3203c54cb0cdb3e4606d42cb0b0686b8c00131858efd1fe1b55ae79c66e178"
+  },
+  "limitations": [
+    "Desktop source geometry and imagery review; no field inspection or declaration of current navigability.",
+    "Cloudy source images were cross-checked against USGS NAIP imagery. The overview remains approximate and does not map bank connections or passage around hazards.",
+    "No planning mileage, access coordinate, gauge, timing model, or GPS remaining-time change."
+  ]
+}
