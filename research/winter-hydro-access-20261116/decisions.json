@@ -1,0 +1,208 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-16",
+  "mapsAdded": [],
+  "pathsAdded": [
+    "WI/east-fork-chippewa-river--chippewa-river-access-town-of-chippewa-to-east-fork-chippewa-river-access.json"
+  ],
+  "sectionReviewed": "east-fork-chippewa-river-access-to-east-fork-chippewa-river",
+  "findings": [
+    "Fresh public-access records5121 and2753 are listed with ABANDON_FLAG No; no exact landing or current-condition claim follows from that.",
+    "Current DNR Winter record741 / FERC2064 point is beside the powerhouse. The 2006 project map distinguishes the reservoir diversion upstream, long power canal, powerhouse and tailrace. The nearby point alone did not reveal the full hazard.",
+    "The 2005 license recreation condition8 specifies landings near the canal downstream end and tailrace upstream end and a connecting carry. This is stronger than a generic public-launch entry, but exact usable approach and current condition remain unconfirmed.",
+    "The 2018 land-and-wildlife report mentions a canoe-portage trail in a June2016 wildlife survey. That observation does not establish 2026 condition. The 2020 water-quality report is not a current access inspection.",
+    "Fishtrap Lake DNR299 is a distinct upstream record. Its location and image were retained separately; shared geographic vicinity does not make it Winter741.",
+    "2006 reference pointRP1 is historical survey context only; no access marker or dam coordinate was moved to it.",
+    "Retain the second section hold and disabled timing. No continuous line is drawn across the diversion or through the canal/intake."
+  ],
+  "sources": [
+    {
+      "file": "research/winter-hydro-access-20261116/sources/project-boundary.pdf",
+      "url": "https://apps.dnr.wi.gov/water/wsSWIMSDocument.ashx?documentSeqNo=143910475",
+      "bytes": 454782,
+      "sha256": "f4822143937a0067e597b189a1fdd974da4af946d83a0bc3df9c2d3cd1918200"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/certification-2008.pdf",
+      "url": "https://apps.dnr.wi.gov/water/wsSWIMSDocument.ashx?documentSeqNo=139819533",
+      "bytes": 315677,
+      "sha256": "3f45d68dd998d1ff0b0fac9740f0751656c2fa120fd53b7f492840e22f4cc08f"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/dam-screen.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=1%3D1&geometry=-90.99%2C45.91%2C-90.94%2C45.96&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&f=json",
+      "bytes": 7662,
+      "sha256": "7e4cceed73fb37a6a028b90d55580c0843461a4fcd248547c648460df1aaf50b"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/takeout-access.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D5121&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "bytes": 2173,
+      "sha256": "70bdad78be8deab3afb3828fbb557f6dc6264ae9a723c1c11621c8cf7004ae93"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/putin-access.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D2753&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "bytes": 2206,
+      "sha256": "7a2525c2da9d6424cd5c3d7f3fdb3931d30fd85323a91da84d63265118f07c7f"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/watershed.html",
+      "url": "https://apps.dnr.wi.gov/water/watershedDetail.aspx?key=924744",
+      "bytes": 94094,
+      "sha256": "a96a2dc251dc539a278969fe3b7f774ac553d5ddf91223996eac3d019223d686"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/license-2005.pdf",
+      "url": "https://apps.dnr.wi.gov/water/wsSWIMSDocument.ashx?documentSeqNo=139819493",
+      "bytes": 492794,
+      "sha256": "3ef7672867efadc3ec55205084e7af2e55b34c3f0b8e7047a1e296edc084da19"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/land-wildlife-2018.pdf",
+      "url": "https://apps.dnr.wi.gov/water/wsSWIMSDocument.ashx?documentSeqNo=191055996",
+      "bytes": 2899123,
+      "sha256": "b76f0202bf2b9991646e04125f29b0105fb8529ce931d6988b760189e78b3334"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/sources/water-quality-2020.pdf",
+      "url": "https://apps.dnr.wi.gov/water/wsSWIMSDocument.ashx?documentSeqNo=308019929",
+      "bytes": 2455860,
+      "sha256": "e50a00de86b48ab878a0ad1f64b57072ab3d602ff1243b4714c5ef33f7a3e837"
+    }
+  ],
+  "imagery": [
+    {
+      "file": "research/winter-hydro-access-20261116/imagery/hydro-context.jpg",
+      "sha256": "98d62c6da2fc75f1ed38e2e0eb3678a4e6f2ee9721c148bf1611d6eb3d97e941"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/imagery/takeout-context.jpg",
+      "sha256": "4476cbef015068976bc0820b949216c39da05a0bfb8233ef9a2b40105d771ea9"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/imagery/diversion-context.jpg",
+      "sha256": "eb94ac17efd590575176f5af6b81920d997be37e875d8f88c45b6e051d154d51"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/imagery/fishtrap-context.jpg",
+      "sha256": "28cf95b9761cf4388e19699d4646fb1699a43dcc9ad6e42c6bedd0f90eb020a7"
+    }
+  ],
+  "reviewedPdfPages": [
+    "project-boundary.pdf page1",
+    "license-2005.pdf page42",
+    "land-wildlife-2018.pdf page3"
+  ],
+  "reviewedPdfImages": [
+    {
+      "file": "research/winter-hydro-access-20261116/pdf-review/land-wildlife-p3.png",
+      "sha256": "16bd8e43c85b59835dd8962ff9a52107176a119a2858fc2566bccb3c3a5ca1a1"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/pdf-review/license-p42.png",
+      "sha256": "b7c8657a6ac5f1e524b8f5e747c39efa6f10f2f1469c473c0e644e08e217a7d1"
+    },
+    {
+      "file": "research/winter-hydro-access-20261116/pdf-review/project-boundary.png",
+      "sha256": "e0c9a7ecbd38ba374cc326de56f827df2687180c21a6fecce0b365903c9f843d"
+    }
+  ],
+  "nextEvidence": [
+    "Current manager or Forest Service description of designated upstream landing, tailrace landing and usable carry.",
+    "Current landing photographs or authoritative recreation map; no message sent."
+  ],
+  "course": {
+    "route": {
+      "file": "catalog/routes/WI/east-fork-chippewa-river--chippewa-river-access-town-of-chippewa-to-east-fork-chippewa-river-access.json",
+      "sha256": "38d2ed4b902c594c859054b2f5d91db8001271c3dd5fb1d7b7918bfb0eb2fe65"
+    },
+    "candidate": {
+      "file": "research/winter-hydro-access-20261116/courses/1/candidate.json",
+      "sha256": "80da839b35cb82d67280e46032b25f002fbf331bc18ec961b0f3d5a3514ab2db"
+    },
+    "inventory": {
+      "file": "research/winter-hydro-access-20261116/courses/1/branch-inventory.json",
+      "sha256": "f70f2e432eb3c96fbb600f72557dd68c925fc60553cfaf92dadd711ef93bf4a2"
+    },
+    "source": {
+      "file": "research/winter-hydro-access-20261116/sources/east-fork-chippewa-river.json",
+      "sha256": "c29736f5a289a88639673786865f6db4bd0afe069237af56c70ace5812d8d83f"
+    },
+    "review": {
+      "file": "research/winter-hydro-access-20261116/courses/1/full-course-review.json",
+      "sha256": "9696f2aaf89ff47b324c47a221019ad7f2abde805c98eb824642ea832078712c"
+    },
+    "imagery": [
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-1.jpg",
+        "sha256": "f9b416c2bb63d402285039795b2e59bdf945f97c38987d60636c7acba2f6db94"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-2.jpg",
+        "sha256": "1797e8e851cf1627dcb855e60c48e63b9439d06cca4691dc82e1b6995fb5270a"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-3.jpg",
+        "sha256": "2d9003d34a9abef0bedb5bbb59d8123e006d3d9d6a2b0e7c63ba4ca9d75b5227"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-4.jpg",
+        "sha256": "0eea518e05ac6bac37adf9f7559befee0399a9f34617872a96b38a4d2b28eeb2"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-5.jpg",
+        "sha256": "b75bdbd782e4ed37a37781bac5c79055ad3bf4cd6ead60d6fb7e5f7a06d73439"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-6.jpg",
+        "sha256": "1de237df87aa32217095e1a49aed1e0fbe100a705e4d4ff75d061bbb22343d6a"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-7.jpg",
+        "sha256": "47594a896e468b369e9455b03d73e6d2e5fe7a6972e8408cb12d6f16b6b0f93d"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-8.jpg",
+        "sha256": "8e7ce646e1a6e27f5a254eeff39df3dfa92eff81bcca7b155a1521668063bf69"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-9.jpg",
+        "sha256": "614df0efac2f766be185214cefd744a8c2a62b5a6efdff1195c201a0d753b9c8"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-part-10.jpg",
+        "sha256": "8bebda2eda25eae57699588a30f026820fb8a78663c44f2eb602f7ccba3ad691"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-putIn.jpg",
+        "sha256": "dcccabaa8ecff607189581c13e892f5c66a1c3f596fa90ca91fb4b7df853c202"
+      },
+      {
+        "file": "research/winter-hydro-access-20261116/imagery/1-takeOut.jpg",
+        "sha256": "ded9edd51e27a310776cc0a98a46084aacb9a2f64aded5439649d75e23298bd1"
+      }
+    ],
+    "damScreen": {
+      "file": "research/winter-hydro-access-20261116/sources/upper-dam-screen.json",
+      "sha256": "311cfa5b79c9cf5ed7bbfc39a13fc1a0d75ee92cfb21fd5a4b1b6d594554579f"
+    },
+    "damDistances": {
+      "file": "research/winter-hydro-access-20261116/upper-dam-distances.json",
+      "sha256": "787cdd426b4a83d70ed35e85643c0c945eab4a468108c33d3b6ca080478bbae1"
+    },
+    "damQuery": {
+      "file": "research/winter-hydro-access-20261116/sources/upper-dam-query-url.txt",
+      "sha256": "31d36320e35e1ab90ebb0b8f36bee16ec29918fb25aeda78bcd5e334fc30e8e4"
+    },
+    "archiveManifest": {
+      "file": "research/winter-hydro-access-20261116/sources/archive-manifest.json",
+      "sha256": "0e3d6e28fa773fc8e4f59ed77f34e9d7d4d0a907be151ee5611afc9a65801291"
+    },
+    "archiveVerification": {
+      "file": "research/winter-hydro-access-20261116/sources/archive-verification.json",
+      "sha256": "bc45347173ff2b3c36291eda521aae3df989297b4ac96565295dd8e50a410c28"
+    }
+  }
+}

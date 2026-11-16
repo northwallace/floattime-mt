@@ -1,0 +1,98 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-16",
+  "mapsAdded": [],
+  "pathsAdded": [],
+  "sectionsReviewed": [
+    "robert-e-wenger-memorial-boat-landing-to-pecatonica-river-north-boat-landing",
+    "pecatonica-river-north-boat-landing-to-pecatonica-river-west-boat-landing"
+  ],
+  "retainedHolds": [
+    "robert-e-wenger-memorial-boat-landing-to-pecatonica-river-north-boat-landing"
+  ],
+  "findings": [
+    "Fresh DNR public-access records 552 and3116 retain ABANDON_FLAG No. This is inventory evidence, not current landing inspection.",
+    "Imagery places Wenger facility upstream of the bridge and mapped dam1283; a visible river-spanning drop remains at the site. The planned trip toward Blackhawk Memorial Park would encounter the dam site.",
+    "Village river page describes separate landings above and below the dam. Village parks page identifies Wenger off Highway81, Lancaster off MillStreet and a fishing site by the old dam remnants. No exact carry route or current passage assurance is provided.",
+    "DNR1283 remains On Landscape. Village old-remnant wording does not independently prove dam removal or safe passage; keep the hold.",
+    "Village uses Robert B. Wenger while the DNR inventory/current catalog uses Robert E. Wenger. Preserve stable access IDacc-2709514f762d563685b5, name and coordinates pending naming clarification.",
+    "The complete named-and-unnamed regional extraction creates a 1.3114-mile North–West candidate versus1.2planningmi, with no source forks. Its central wooded loop in panels1–2 cannot be confidently checked against a visible channel. Keep it disabled and unregistered; retain the existing access map and planning distance.",
+    "The held first section has its public coordinates withheld by catalog building. Its candidate staging fails with missing putInCoords, which is an intentional release gate rather than evidence that the landing does not exist. The separate area-context review uses the stored agency point without exposing it as an approved trip."
+  ],
+  "sources": [
+    {
+      "file": "research/argyle-access-20261116/sources/village-parks.html",
+      "url": "https://www.argylewi.gov/residents/parks-and-recreation/",
+      "bytes": 236842,
+      "sha256": "b99043017bc376c8f137019f5acccafc2c942c4415b6316795f09c58803976de"
+    },
+    {
+      "file": "research/argyle-access-20261116/sources/village-river.html",
+      "url": "https://www.argylewi.gov/directory/area-attractions/pecatonica-river/",
+      "bytes": 240536,
+      "sha256": "04581fad0c30f3572cbf6ce9213ebf1c34f30aaee05c87815269a0d9dc9a7a37"
+    },
+    {
+      "file": "research/argyle-access-20261116/sources/dams.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/WT_DAM/WT_Dam_WTM_Ext/MapServer/0/query?where=1%3D1&geometry=-89.89%2C42.65%2C-89.85%2C42.72&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&f=json",
+      "bytes": 8905,
+      "sha256": "9d67fc6f0a36086f5b0427f0b673179fcca8b6f0112b10839d84ad5dc520af7c"
+    },
+    {
+      "file": "research/argyle-access-20261116/sources/wenger-access.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D552&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "bytes": 2218,
+      "sha256": "485cff51d5e553448500442269b9ddca1246b86e976225e526bcb6a3f63e3189"
+    },
+    {
+      "file": "research/argyle-access-20261116/sources/north-access.json",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3116&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+      "bytes": 2221,
+      "sha256": "320c332f28b9d764820267495ee82d2d4d6a635691ceef91e7322ce4080b7b9e"
+    }
+  ],
+  "imagery": [
+    {
+      "file": "research/argyle-access-20261116/imagery/wenger-dam-context.jpg",
+      "sha256": "0ff5bfa43c71b571654bbd8b899f90048abfe3c6a5b47f02956250c3ba994a47"
+    },
+    {
+      "file": "research/argyle-access-20261116/imagery/2-part-1.jpg",
+      "sha256": "24ef5844405d23328fbea246aaad005a822ac7ad4389c836690f56a1058dd43e"
+    },
+    {
+      "file": "research/argyle-access-20261116/imagery/2-part-2.jpg",
+      "sha256": "21302910b8d239288d8ac40e6bbf8c77667d6a7c7b5758121e06a3f24b71bfbf"
+    },
+    {
+      "file": "research/argyle-access-20261116/imagery/2-part-3.jpg",
+      "sha256": "f738c991006baab4f7d59ab300b8866067288779dbe2c001a7d9cd9f20f8479b"
+    },
+    {
+      "file": "research/argyle-access-20261116/imagery/2-putIn.jpg",
+      "sha256": "c3e6e6c0277eb4e7f08a63da9f5d4c6bf0e65f9ea66595a2f507197815445a73"
+    },
+    {
+      "file": "research/argyle-access-20261116/imagery/2-takeOut.jpg",
+      "sha256": "a828ff42e7faf65d2646e3e1685e245f652520c90503766de9c171957ab73078"
+    }
+  ],
+  "candidate": {
+    "file": "research/argyle-access-20261116/courses/2/candidate.json",
+    "sha256": "66f8006f464482206069c8bdfa86642b84a7013743c3808ffe7c9cf7f64ae3db"
+  },
+  "inventory": {
+    "file": "research/argyle-access-20261116/courses/2/branch-inventory.json",
+    "sha256": "e33ba3ad87f48cc7244ff4d89dbb79349430528affc9fc603008c92cfc25dcf8"
+  },
+  "regionalSource": {
+    "file": "research/argyle-access-20261116/sources/east-branch-pecatonica-river.json",
+    "sha256": "06c04375f1a7e35c619834b99cf7a8120184b88e40a9d3768a059dd87a54c97f"
+  },
+  "nextEvidence": [
+    "Managing-village confirmation of passage or an authorized carry at Argyle; no message sent.",
+    "Independent clearer imagery or a current agency centerline for the North–West wooded corridor.",
+    "Clarify Wenger middle initial without creating a duplicate access identity."
+  ]
+}
