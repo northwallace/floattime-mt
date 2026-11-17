@@ -24443,6 +24443,15 @@
           "accessReview": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch.",
           "putInAccessId": "acc-5fa18958b8e655a8bcb5",
           "takeOutAccessId": "acc-0903f68355da586d94dd",
+          "notices": [
+            {
+              "title": "Buckhouse public-access proposal",
+              "text": "The June 2025 MDT US 93 study describes proposed public access near Buckhouse Bridge and concerns about highway-side parking. A proposal does not confirm a completed public take-out or legal parking and approach. Confirm a documented exit before planning this listing.",
+              "sourceName": "Montana MDT — US 93 Missoula to Florence final study, printed page 47",
+              "sourceUrl": "https://mdt.mt.gov/pubinvolve/us93missoulaflorence/docs/FINAL-2025-06-19.pdf",
+              "checkedOn": "2026-11-17"
+            }
+          ],
           "mapPendingReason": "The intended Buckhouse Bridge take-out and legal river-side landing have not been confirmed. Choose another documented exit before planning this stretch.",
           "mapReleased": false
         }
@@ -25729,7 +25738,7 @@
           "putInAccessId": "acc-a0696d7050ea546a9d98",
           "takeOutAccessId": "acc-f1e91a6b3cce5063b665",
           "mapPilot": true,
-          "mapPrecision": "exact",
+          "mapPrecision": "approximate",
           "putInCoords": {
             "lat": 45.486578,
             "lon": -111.633465
@@ -25750,18 +25759,15 @@
           },
           "takeOutAccess": {
             "id": "acc-f1e91a6b3cce5063b665",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Paved boat ramp and hand launch",
             "operator": "U.S. Bureau of Land Management",
             "sourceName": "BLM Warm Springs Day Use Area",
             "sourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area",
-            "verifiedOn": "2026-10-23",
-            "note": "Official BLM coordinate. This is the Bear Trap Canyon take-out; California Corner is the overflow hand launch downstream.",
-            "riverBank": "river-left",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Enter the signed Warm Springs day-use area off Montana Highway 84, about 20 miles northeast of Ennis. Use marked parking spaces; do not park along the entrance road or highway. California Corner is a separate overflow parking and hand-launch area about half a mile downstream.",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area"
           },
           "mapReleased": true
         },
@@ -25774,6 +25780,7 @@
           "notes": "The beer-can hatch. Watch for shallow gravel bars in late summer.",
           "putInAccessId": "acc-f1e91a6b3cce5063b665",
           "takeOutAccessId": "acc-a22b6bba00395abba22b",
+          "routeReview": "General Madison River course only. Shore connections, present bridge passages and the navigable channel are not mapped. Retain the documented access-area markers and existing planning distance; inspect the actual landing and current conditions.",
           "mapPilot": true,
           "mapPrecision": "approximate",
           "putInCoords": {
@@ -25786,18 +25793,15 @@
           },
           "putInAccess": {
             "id": "acc-f1e91a6b3cce5063b665",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Paved boat ramp and hand launch",
             "operator": "U.S. Bureau of Land Management",
             "sourceName": "BLM Warm Springs Day Use Area",
             "sourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area",
-            "verifiedOn": "2026-10-23",
-            "note": "Official BLM coordinate. This is the Bear Trap Canyon take-out; California Corner is the overflow hand launch downstream.",
-            "riverBank": "river-left",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Enter the signed Warm Springs day-use area off Montana Highway 84, about 20 miles northeast of Ennis. Use marked parking spaces; do not park along the entrance road or highway. California Corner is a separate overflow parking and hand-launch area about half a mile downstream.",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area"
           },
           "takeOutAccess": {
             "id": "acc-a22b6bba00395abba22b",
@@ -25876,7 +25880,7 @@
       "timezone": "America/Denver",
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Rechecked 2026-10-27. Maps remain available, but FWP general site markers at Glen, Black’s Ford or Greycliff are now correctly identified as approximate facility locations. Exact ramp coordinates are still needed for route review."
+      "mapAuditNote": "Reviewed 2026-11-17. Documented boating facilities remain usable as approximate map areas. Published agency coordinates at Warm Springs, Palisades, McAtee, Lyons and Varney identify facility or parking/bridge areas; exact ramp-edge and bank claims are removed without moving coordinates."
     },
     {
       "id": "madison-upper",
@@ -25898,8 +25902,9 @@
           "notes": "Float fishing starts at Lyons. Steady riffle, big views, beginner-friendly half day.",
           "putInAccessId": "acc-e910936dbea8559f9b80",
           "takeOutAccessId": "acc-be14310ba54f55c99a08",
+          "routeReview": "General Madison River course only. Shore connections, present bridge passages and the navigable channel are not mapped. Retain the documented access-area markers and existing planning distance; inspect the actual landing and current conditions.",
           "mapPilot": true,
-          "mapPrecision": "exact",
+          "mapPrecision": "approximate",
           "putInCoords": {
             "lat": 44.89910242134843,
             "lon": -111.5925978530493
@@ -25910,28 +25915,27 @@
           },
           "putInAccess": {
             "id": "acc-e910936dbea8559f9b80",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Concrete ramp",
             "operator": "Montana Fish, Wildlife & Parks",
             "sourceName": "Montana FWP Fishing Access Site 39753518",
             "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753518",
-            "verifiedOn": "2026-10-23",
-            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Use the signed Lyons Bridge Fishing Access Site and its concrete ramp. The agency marker locates the access facility; follow the internal approach rather than treating the marker as the water edge.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
           },
           "takeOutAccess": {
             "id": "acc-be14310ba54f55c99a08",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Paved boat launch",
             "operator": "U.S. Bureau of Land Management",
             "sourceName": "BLM Palisades Day Use",
             "sourceUrl": "https://www.blm.gov/visit/palisades-day-use",
-            "verifiedOn": "2026-10-23",
-            "note": "Official BLM coordinate for the separate day-use boat launch near Palisades Campground.",
-            "riverBank": "river-right",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Use the separate Palisades day-use boat-access site near the campground, on the west side of US Highway 287 about 25 miles south of Ennis. Follow the facility approach to the paved launch; the published coordinate is a facility marker.",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/palisades-day-use"
           },
           "mapReleased": true
         },
@@ -25944,8 +25948,9 @@
           "notes": "Ruby Creek campground is an optional midway takeout. Classic upper-Maddy water.",
           "putInAccessId": "acc-be14310ba54f55c99a08",
           "takeOutAccessId": "acc-e43520cf9eba5a7784a1",
+          "routeReview": "General Madison River course only. Shore connections, present bridge passages and the navigable channel are not mapped. Retain the documented access-area markers and existing planning distance; inspect the actual landing and current conditions.",
           "mapPilot": true,
-          "mapPrecision": "exact",
+          "mapPrecision": "approximate",
           "putInCoords": {
             "lat": 44.98837,
             "lon": -111.65743
@@ -25956,33 +25961,27 @@
           },
           "putInAccess": {
             "id": "acc-be14310ba54f55c99a08",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Paved boat launch",
             "operator": "U.S. Bureau of Land Management",
             "sourceName": "BLM Palisades Day Use",
             "sourceUrl": "https://www.blm.gov/visit/palisades-day-use",
-            "verifiedOn": "2026-10-23",
-            "note": "Official BLM coordinate for the separate day-use boat launch near Palisades Campground.",
-            "riverBank": "river-right",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Use the separate Palisades day-use boat-access site near the campground, on the west side of US Highway 287 about 25 miles south of Ennis. Follow the facility approach to the paved launch; the published coordinate is a facility marker.",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/palisades-day-use"
           },
           "takeOutAccess": {
             "id": "acc-e43520cf9eba5a7784a1",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Gravel ramp",
             "operator": "Montana Fish, Wildlife & Parks",
             "sourceName": "Montana FWP Fishing Access Site 39753516",
             "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753516",
-            "verifiedOn": "2026-10-23",
-            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
-            "riverBank": "river-right",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Find the signed McAtee Bridge Fishing Access Site and follow the facility approach to its gravel ramp. This agency marker locates the bridge/access area, not the precise riverbank landing.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
           },
           "mapReleased": true
         },
@@ -25995,8 +25994,9 @@
           "notes": "Full-day riffle. Gradient eases a little; still few eddies. Wind can howl.",
           "putInAccessId": "acc-e43520cf9eba5a7784a1",
           "takeOutAccessId": "acc-ba2d2990119d5cb0a254",
+          "routeReview": "General Madison River course only. Shore connections, present bridge passages and the navigable channel are not mapped. Retain the documented access-area markers and existing planning distance; inspect the actual landing and current conditions.",
           "mapPilot": true,
-          "mapPrecision": "exact",
+          "mapPrecision": "approximate",
           "putInCoords": {
             "lat": 45.096652567802,
             "lon": -111.66152014639906
@@ -26007,33 +26007,27 @@
           },
           "putInAccess": {
             "id": "acc-e43520cf9eba5a7784a1",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Gravel ramp",
             "operator": "Montana Fish, Wildlife & Parks",
             "sourceName": "Montana FWP Fishing Access Site 39753516",
             "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753516",
-            "verifiedOn": "2026-10-23",
-            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
-            "riverBank": "river-right",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Find the signed McAtee Bridge Fishing Access Site and follow the facility approach to its gravel ramp. This agency marker locates the bridge/access area, not the precise riverbank landing.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
           },
           "takeOutAccess": {
             "id": "acc-ba2d2990119d5cb0a254",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Concrete ramp",
             "operator": "Montana Fish, Wildlife & Parks",
             "sourceName": "Montana FWP Fishing Access Site 39753404",
             "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753404",
-            "verifiedOn": "2026-10-23",
-            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
-            "riverBank": "river-right",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Use the signed Varney Bridge Fishing Access Site and its concrete ramp. The agency marker locates the access facility; follow the internal approach rather than treating the marker as the water edge.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
           },
           "mapReleased": true
         },
@@ -26047,7 +26041,7 @@
           "putInAccessId": "acc-ba2d2990119d5cb0a254",
           "takeOutAccessId": "acc-6b8439ac25685855b8fd",
           "mapPilot": true,
-          "mapPrecision": "exact",
+          "mapPrecision": "approximate",
           "putInCoords": {
             "lat": 45.22900290251912,
             "lon": -111.75195779238771
@@ -26058,18 +26052,15 @@
           },
           "putInAccess": {
             "id": "acc-ba2d2990119d5cb0a254",
-            "status": "verified",
+            "status": "access-verified",
             "accessType": "Concrete ramp",
             "operator": "Montana Fish, Wildlife & Parks",
             "sourceName": "Montana FWP Fishing Access Site 39753404",
             "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753404",
-            "verifiedOn": "2026-10-23",
-            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
-            "riverBank": "river-right",
-            "bankVerifiedOn": "2026-10-23",
-            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+            "verifiedOn": "2026-11-17",
+            "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
+            "directions": "Use the signed Varney Bridge Fishing Access Site and its concrete ramp. The agency marker locates the access facility; follow the internal approach rather than treating the marker as the water edge.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
           },
           "takeOutAccess": {
             "id": "acc-6b8439ac25685855b8fd",
@@ -26092,8 +26083,8 @@
       "state": "MT",
       "timezone": "America/Denver",
       "multiDay": false,
-      "mapAudit": "verified",
-      "mapAuditNote": "All section endpoints checked against BLM or Montana FWP access records on 2026-10-23. Takeout banks were checked using the downstream hydrography line and satellite imagery."
+      "mapAudit": "pending",
+      "mapAuditNote": "Reviewed 2026-11-17. Documented boating facilities remain usable as approximate map areas. Published agency coordinates at Warm Springs, Palisades, McAtee, Lyons and Varney identify facility or parking/bridge areas; exact ramp-edge and bank claims are removed without moving coordinates."
     },
     {
       "id": "missouri-breaks",
@@ -26717,6 +26708,13 @@
               "sourceName": "Montana FWP — 2026 Fishing Regulations, page 40",
               "sourceUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/fish/regulations/2026-fishing-regulations-final-for-web.pdf",
               "checkedOn": "2026-10-27"
+            },
+            {
+              "title": "Harry's Flat seasonal closure",
+              "text": "The Forest Service site page, checked November 17, 2026, marks Harry's Flat Campground closed. Its listed 2026 operating season ended September 28. The documented ramp and trailer parking do not establish current access while the site is closed; check the Missoula Ranger Station before arranging a shuttle.",
+              "sourceName": "Lolo National Forest — Harry's Flat Campground",
+              "sourceUrl": "https://www.fs.usda.gov/r01/lolo/recreation/harrys-flat-campground",
+              "checkedOn": "2026-11-17"
             }
           ],
           "putInAccessId": "acc-6125bc50c765563f83e0",
@@ -26745,7 +26743,14 @@
               "text": "Lolo National Forest Order 26-018-Lolo-D3 prohibits public motor-vehicle use of Gilbert Creek Road (Forest Road 34), mile 0–1.86, August 22–December 31, 2026 unless rescinded. Do not plan a vehicle shuttle across the Valley of the Moon bridge without checking the current order. This is a road closure, not a closure of the entire river.",
               "sourceName": "US Forest Service — Gilbert Creek Road closure",
               "sourceUrl": "https://www.fs.usda.gov/r01/lolo/alerts/gilbert-creek-road-closure-forest-service-road-34",
-              "checkedOn": "2026-10-28"
+              "checkedOn": "2026-11-17"
+            },
+            {
+              "title": "Harry's Flat seasonal closure",
+              "text": "The Forest Service site page, checked November 17, 2026, marks Harry's Flat Campground closed. Its listed 2026 operating season ended September 28. The documented ramp and trailer parking do not establish current access while the site is closed; check the Missoula Ranger Station before arranging a shuttle.",
+              "sourceName": "Lolo National Forest — Harry's Flat Campground",
+              "sourceUrl": "https://www.fs.usda.gov/r01/lolo/recreation/harrys-flat-campground",
+              "checkedOn": "2026-11-17"
             }
           ],
           "putInAccessId": "acc-188a27250a4d54fd9b8d",
@@ -26774,7 +26779,7 @@
               "text": "Lolo National Forest Order 26-018-Lolo-D3 prohibits public motor-vehicle use of Gilbert Creek Road (Forest Road 34), mile 0–1.86, August 22–December 31, 2026 unless rescinded. Do not plan a vehicle shuttle across the Valley of the Moon bridge without checking the current order. This is a road closure, not a closure of the entire river.",
               "sourceName": "US Forest Service — Gilbert Creek Road closure",
               "sourceUrl": "https://www.fs.usda.gov/r01/lolo/alerts/gilbert-creek-road-closure-forest-service-road-34",
-              "checkedOn": "2026-10-28"
+              "checkedOn": "2026-11-17"
             }
           ],
           "putInAccessId": "acc-16a07fd12802541cb298",
@@ -26787,7 +26792,7 @@
       "timezone": "America/Denver",
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-23. Existing points identify campgrounds or general recreation areas, not consistently the river-side launch or take-out. Maps stay hidden until field or agency ramp verification is complete."
+      "mapAuditNote": "Reviewed 2026-11-17. Harry's Flat has manager-documented boating access and an approximate campground-area marker, with a current seasonal-closure notice. The combined Bitterroot Flat / Dalles launch, Valley of the Moon landing and Clinton take-out remain unresolved; section maps are still withheld. Exact GPS is not required when a documented boating facility can be represented honestly as an approximate area."
     },
     {
       "id": "smith",
@@ -68411,12 +68416,24 @@
       "aliases": []
     },
     {
-      "status": "pending",
-      "note": "The Forest Service campground is documented, but an exact usable boat launch coordinate has not been confirmed.",
+      "status": "access-verified",
+      "note": "The Forest Service documents a hardened river access ramp and boat-trailer parking. Its published coordinate locates the campground generally, not the ramp edge. The site page marks the campground closed, with the 2026 operating season ending September 28. This location review does not establish current ramp availability or an exact bank connection.",
       "id": "acc-188a27250a4d54fd9b8d",
+      "aliases": [],
+      "areaCenter": {
+        "lat": 46.537175,
+        "lon": -113.750792,
+        "feature": "US Forest Service campground location; not a ramp coordinate"
+      },
+      "directions": "From Interstate 90 Rock Creek exit 126, drive about 17 miles south on Rock Creek Road 102 to Harry's Flat Campground. Use the designated day-use/boat-trailer area when available. Confirm current access with the Missoula Ranger Station; the agency currently marks the campground seasonally closed.",
+      "accessType": "Hardened river access ramp and day-use boat-trailer parking",
+      "operator": "U.S. Forest Service, Lolo National Forest",
+      "sourceName": "Lolo National Forest — Harry's Flat Campground",
+      "sourceUrl": "https://www.fs.usda.gov/r01/lolo/recreation/harrys-flat-campground",
+      "coordinateSourceUrl": "https://www.fs.usda.gov/r01/lolo/recreation/harrys-flat-campground",
+      "verifiedOn": "2026-11-17",
       "name": "Harry's Flat",
-      "state": "MT",
-      "aliases": []
+      "state": "MT"
     },
     {
       "status": "pending",
@@ -68450,24 +68467,24 @@
       "aliases": []
     },
     {
-      "status": "verified",
-      "lat": 45.5857,
-      "lon": -111.59267,
+      "status": "access-verified",
       "accessType": "Paved boat ramp and hand launch",
       "operator": "U.S. Bureau of Land Management",
       "sourceName": "BLM Warm Springs Day Use Area",
       "sourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area",
-      "verifiedOn": "2026-10-23",
-      "note": "Official BLM coordinate. This is the Bear Trap Canyon take-out; California Corner is the overflow hand launch downstream.",
-      "riverBank": "river-left",
-      "bankVerifiedOn": "2026-10-23",
-      "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-      "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+      "verifiedOn": "2026-11-17",
+      "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
       "id": "acc-f1e91a6b3cce5063b665",
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.5857,
+        "lon": -111.59267,
+        "feature": "Published BLM recreation-facility location"
+      },
+      "directions": "Enter the signed Warm Springs day-use area off Montana Highway 84, about 20 miles northeast of Ennis. Use marked parking spaces; do not park along the entrance road or highway. California Corner is a separate overflow parking and hand-launch area about half a mile downstream.",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/warm-spgs-day-use-area",
       "name": "Warm Springs",
-      "state": "MT",
-      "aliases": []
+      "state": "MT"
     },
     {
       "status": "access-verified",
@@ -68506,79 +68523,84 @@
       "state": "MT"
     },
     {
-      "status": "verified",
-      "lat": 44.89910242134843,
-      "lon": -111.5925978530493,
+      "status": "access-verified",
       "accessType": "Concrete ramp",
       "operator": "Montana Fish, Wildlife & Parks",
       "sourceName": "Montana FWP Fishing Access Site 39753518",
       "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753518",
-      "verifiedOn": "2026-10-23",
-      "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+      "verifiedOn": "2026-11-17",
+      "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
       "id": "acc-e910936dbea8559f9b80",
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.89910242134843,
+        "lon": -111.5925978530493,
+        "feature": "FWP managed fishing-access facility location"
+      },
+      "directions": "Use the signed Lyons Bridge Fishing Access Site and its concrete ramp. The agency marker locates the access facility; follow the internal approach rather than treating the marker as the water edge.",
+      "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
       "name": "Lyons Bridge",
-      "state": "MT",
-      "aliases": []
+      "state": "MT"
     },
     {
-      "status": "verified",
-      "lat": 44.98837,
-      "lon": -111.65743,
+      "status": "access-verified",
       "accessType": "Paved boat launch",
       "operator": "U.S. Bureau of Land Management",
       "sourceName": "BLM Palisades Day Use",
       "sourceUrl": "https://www.blm.gov/visit/palisades-day-use",
-      "verifiedOn": "2026-10-23",
-      "note": "Official BLM coordinate for the separate day-use boat launch near Palisades Campground.",
-      "riverBank": "river-right",
-      "bankVerifiedOn": "2026-10-23",
-      "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-      "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+      "verifiedOn": "2026-11-17",
+      "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
       "id": "acc-be14310ba54f55c99a08",
+      "aliases": [],
+      "areaCenter": {
+        "lat": 44.98837,
+        "lon": -111.65743,
+        "feature": "Published BLM recreation-facility location"
+      },
+      "directions": "Use the separate Palisades day-use boat-access site near the campground, on the west side of US Highway 287 about 25 miles south of Ennis. Follow the facility approach to the paved launch; the published coordinate is a facility marker.",
+      "coordinateSourceUrl": "https://www.blm.gov/visit/palisades-day-use",
       "name": "Palisades",
-      "state": "MT",
-      "aliases": []
+      "state": "MT"
     },
     {
-      "status": "verified",
-      "lat": 45.096652567802,
-      "lon": -111.66152014639906,
+      "status": "access-verified",
       "accessType": "Gravel ramp",
       "operator": "Montana Fish, Wildlife & Parks",
       "sourceName": "Montana FWP Fishing Access Site 39753516",
       "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753516",
-      "verifiedOn": "2026-10-23",
-      "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
-      "riverBank": "river-right",
-      "bankVerifiedOn": "2026-10-23",
-      "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-      "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+      "verifiedOn": "2026-11-17",
+      "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
       "id": "acc-e43520cf9eba5a7784a1",
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.096652567802,
+        "lon": -111.66152014639906,
+        "feature": "FWP managed fishing-access facility location"
+      },
+      "directions": "Find the signed McAtee Bridge Fishing Access Site and follow the facility approach to its gravel ramp. This agency marker locates the bridge/access area, not the precise riverbank landing.",
+      "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
       "name": "McAtee Bridge",
-      "state": "MT",
-      "aliases": []
+      "state": "MT"
     },
     {
-      "status": "verified",
-      "lat": 45.22900290251912,
-      "lon": -111.75195779238771,
+      "status": "access-verified",
       "accessType": "Concrete ramp",
       "operator": "Montana Fish, Wildlife & Parks",
       "sourceName": "Montana FWP Fishing Access Site 39753404",
       "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753404",
-      "verifiedOn": "2026-10-23",
-      "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
-      "riverBank": "river-right",
-      "bankVerifiedOn": "2026-10-23",
-      "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
-      "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
-      "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction.",
+      "verifiedOn": "2026-11-17",
+      "note": "Boating access is documented by the managing agency. The unchanged agency coordinate identifies the facility/parking or bridge-access area, not a surveyed ramp edge. Kept as an approximate area marker; exact shore connections and the downstream bank are not verified.",
       "id": "acc-ba2d2990119d5cb0a254",
+      "aliases": [],
+      "areaCenter": {
+        "lat": 45.22900290251912,
+        "lon": -111.75195779238771,
+        "feature": "FWP managed fishing-access facility location"
+      },
+      "directions": "Use the signed Varney Bridge Fishing Access Site and its concrete ramp. The agency marker locates the access facility; follow the internal approach rather than treating the marker as the water edge.",
+      "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1",
       "name": "Varney Bridge",
-      "state": "MT",
-      "aliases": []
+      "state": "MT"
     },
     {
       "status": "verified",
@@ -69337,7 +69359,7 @@
     },
     {
       "status": "pending",
-      "note": "The bridge-area access is locally managed; an exact legal river-side ramp and current agency record have not been confirmed.",
+      "note": "The June 2025 MDT US 93 study describes proposed public river access northwest of Buckhouse Bridge. It does not establish a completed public boating site or current legal take-out approach. Current landing, parking and permission remain unconfirmed; no coordinate is approved.",
       "id": "acc-0903f68355da586d94dd",
       "name": "Buckhouse Bridge (Missoula)",
       "state": "MT",

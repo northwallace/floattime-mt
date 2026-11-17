@@ -10,7 +10,7 @@
     "checkedOn": "2026-10-27",
     "streamId": "1115074459269",
     "objectId": 67243,
-    "evidenceFile": "research/routes/MT/sources/fwp-1115074459269-0c376f9210933c16.json",
+    "evidenceFile": "research/montana-access-courses-20261117/sources/madison-madison-upper-0c376f9210933c16.json",
     "sha256": "0c376f9210933c1635b52e4281dace719bcf13a71ac6fa82f4ff0ce65e9bf793"
   },
   "putIn": {
@@ -412,11 +412,11 @@
   },
   "features": {
     "display": true,
-    "landOverlay": true,
+    "landOverlay": false,
     "distanceEstimate": false,
     "remainingTime": false
   },
-  "note": "Approximate agency centerline. Not a surveyed landing-to-landing or recommended navigable channel. Side channels and current conditions may differ.",
+  "note": "Approximate Madison River overview; channels and conditions may differ. No exact shore connection, mapped land-access corridor, navigation approval or new timing capability.",
   "checks": {
     "metrics": {
       "routeMiles": 11.4196,
@@ -431,9 +431,10 @@
     "issues": []
   },
   "review": {
-    "checkedOn": "2026-10-27",
-    "reviewer": "Float ETA desktop source review",
-    "note": "Agency stream identity and downstream measures checked against named river, published access snapshots and section mileage. Continuous non-self-intersecting line with endpoints within 100 m and mileage within 5%. Approved for approximate map display only; no field/channel survey or timing validation. Calculator mileage and GPS ETA remain disabled for this route asset."
+    "checkedOn": "2026-11-17",
+    "reviewer": "Float ETA complete-course imagery, manager access sources and bounded obstacle review",
+    "evidenceFile": "research/montana-access-courses-20261117/decisions.json",
+    "note": "All23 overlapping course panels and both access contexts reviewed; source-derived geometry retained or replaced only by original source vertices."
   },
   "landEvidence": {
     "file": "research/routes/MT/land/madison-upper--mcatee-varney/252147c203e3a35c/corridor-2f50cf89b65d0c02.json",
@@ -467,5 +468,22 @@
         "inputFile": "research/routes/MT/land/madison-upper--mcatee-varney/252147c203e3a35c/layer-1-7deb9f7a8d96edc5.json"
       }
     ]
+  },
+  "scope": "river-course-overview",
+  "overviewReview": {
+    "signature": "acb0a7f67480674a571e4f5a2eadd580bb18e8b20189b4681b04de7fd4d7b675",
+    "acceptedIssues": {},
+    "routeReview": "General Madison River course only. Shore connections, present bridge passages and the navigable channel are not mapped. Retain the documented access-area markers and existing planning distance; inspect the actual landing and current conditions.",
+    "note": "Approximate river course with facility-area endpoints. Exact shoreline connections, bridge passages and present navigation conditions are unconfirmed.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Unchanged agency facility-area marker; exact ramp or bank connection is not mapped."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Unchanged agency facility-area marker; exact ramp or bank connection is not mapped."
+      }
+    }
   }
 }
