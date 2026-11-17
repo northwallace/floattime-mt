@@ -134,6 +134,8 @@ class AgencyCourseTests(unittest.TestCase):
         for row in old:
             identity = (row['riverId'], row['sectionId'])
             refinements = {
+                ('madison-upper', 'lyons-palisades'): ('research/montana-access-courses-20261117/decisions.json', 'allReviewedCourses'),
+                ('madison-upper', 'mcatee-varney'): ('research/montana-access-courses-20261117/decisions.json', 'allReviewedCourses'),
                 ('salt-river-lower', 'lsr-water-users-phon-d'): ('research/western-access-review-20261109/course-decisions.json', 'routes'),
                 ('big-piney-river', 'boiling-spring-access-to-mason-bridge-access'): ('research/big-piney-courses-20261109/decisions.json', 'courses'),
                 ('crawfish-river', 'hubbleton-canoe-launch-to-olson-road-canoe-launch'): ('research/wisconsin-carry-access-20261109/decisions.json', 'course'),
@@ -142,7 +144,8 @@ class AgencyCourseTests(unittest.TestCase):
                 # These later reviews explicitly reduced precision to course
                 # overviews. Require the exact recorded approval and no new
                 # navigation/timing capability, rather than ignoring changes.
-                self.assertEqual(by_id.get(identity), dict(row, scope='river-course-overview'))
+                self.assertEqual(by_id.get(identity), dict(row, scope='river-course-overview',
+                    features=dict(display=True, landOverlay=False, distanceEstimate=False, remainingTime=False)))
                 manifest, collection = refinements[identity]
                 decisions = read(ROOT / manifest)[collection]
                 if isinstance(decisions, dict): decisions = [decisions]

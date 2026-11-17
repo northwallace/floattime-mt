@@ -102,7 +102,7 @@ class CatalogTests(unittest.TestCase):
             river.pop('mapAudit', None)
             (root/'catalog/rivers/madison-lower.json').write_text(json.dumps(river))
             source = json.loads((Path(__file__).resolve().parents[1]/'catalog/map_points/MT.json').read_text())
-            source['points']['Warm Springs'].pop('bankSourceUrl')
+            source['points']['Ennis FAS'].pop('bankSourceUrl')
             (root/'catalog/map_points/MT.json').write_text(json.dumps(source))
             with self.assertRaisesRegex(ValueError, 'bank metadata must be complete'):
                 build(root)
@@ -179,12 +179,13 @@ class CatalogTests(unittest.TestCase):
             copy_catalog(root)
             path = root/'catalog/map_points/MT.json'
             data = json.loads(path.read_text())
-            point = data['points']['Warm Springs']
+            point = data['points']['Ennis FAS']
+            self.assertEqual(point['status'], 'verified')
             for key in ('riverBank','bankVerifiedOn','bankSourceName','bankSourceUrl','bankNote'):
                 point.pop(key, None)
             path.write_text(json.dumps(data))
-            river = next(r for r in build(root)['rivers'] if r['id']=='madison-lower')
-            section = next(s for s in river['sections'] if s['takeOut']=='Warm Springs')
+            river = next(r for r in build(root)['rivers'] if r['id']=='madison-upper')
+            section = next(s for s in river['sections'] if s['takeOut']=='Ennis FAS')
             self.assertTrue(section['mapPilot'])
             self.assertNotIn('riverBank', section['takeOutAccess'])
 
@@ -198,8 +199,10 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(pending.count('<strong>Map unavailable:</strong>'), 3)
         self.assertIn('The former Valley of the Moon pin was across the road from river access', pending)
         self.assertEqual(verified.count('class="section-map-link"'), 4)
-        self.assertEqual(verified.count('Sources checked 2026-10-23'), 4)
-        self.assertEqual(verified.count('Take-out: river right'), 4)
+        self.assertEqual(verified.count('Some access locations are approximate; see each source below.'), 4)
+        self.assertEqual(verified.count('Help pinpoint the '), 7)
+        self.assertEqual(verified.count('Take-out: river right'), 1)
+        self.assertNotIn('Sources checked 2026-10-23', verified)
 
         canyon = seo.river_html(by_id['jefferson-canyon'])
         self.assertEqual(canyon.count('class="section-map-link"'), 4)
