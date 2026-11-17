@@ -7,7 +7,7 @@
   "lon": -89.485,
   "refFlowCfs": null,
   "refSpeedMph": null,
-  "blurb": "Plover River in Wisconsin between Wisconsin DNR-listed public accesses.",
+  "blurb": "Plover River paddling near Stevens Point. The documented lower trip starts below Jordan Dam and finishes at Iverson Park beach; the longer Wayside–Lehner listing still needs dam and carry review.",
   "state": "WI",
   "timezone": "America/Chicago",
   "timing": {
@@ -26,6 +26,67 @@
       "takeOutAccessId": "acc-cd2a2a345fd252708b4e",
       "accessReview": "Dam crossing/portage unresolved: Van Order, Jordan, McDill. A legal, usable route around the barrier has not been established. Do not plan this as a continuous float.",
       "routeReview": "This section includes Van Order, Jordan, McDill and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+    },
+    {
+      "id": "jordan-below-dam-to-iverson-park",
+      "putIn": "Jordan Park Below-Dam Canoe Launch",
+      "takeOut": "Iverson Park Beach Access",
+      "miles": 7.75,
+      "putInAccessId": "acc-cdff47bff3d659aa9c3c",
+      "takeOutAccessId": "acc-621078538b48523291b7",
+      "difficulty": "Intermediate paddling; moving water and wood (local guide)",
+      "notes": "Start below Jordan Dam and finish at Iverson Park beach, before McDill Pond and its dam. The published local guide gives 7.75 miles and about 3 hours of paddling, with frequent tree obstructions and a need for maneuvering experience. Check levels and current wood with local operators before travel; allow extra time for obstructions and stops.",
+      "routeReview": "Access markers only. The older river centerline differs from the channel visible in county imagery, so its dotted path is withheld. Exact riverbank connections are not mapped.",
+      "guideTimes": [
+        {
+          "min": 3,
+          "max": 3,
+          "unit": "hours",
+          "conditions": "The local guide gives a 3-hour canoe/kayak reference for Jordan Park below the dam to Iverson Park beach. No flow level, paddling pace or stop allowance is specified; this is not a live estimate or a raft/tube travel-time prediction. Wood, water level and stops can change the duration.",
+          "sourceName": "Stevens Point Area Pedal, Paddle & Hike Guide (2022), printed pages56–57",
+          "sourceUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/spacvb/SPACVB_PPH_2022_Final_Web_Version_8271dd22-9755-49b4-b3e1-b804e348a684.pdf",
+          "checkedOn": "2026-11-16"
+        }
+      ],
+      "notices": [
+        {
+          "title": "Launch below Jordan Dam",
+          "text": "This trip uses the separate below-dam canoe access south of Highway 66. Jordan Pond launches are above the dam and are not the put-in for this section. Inspect the intended launch and take-out during your shuttle.",
+          "sourceName": "Portage County — Jordan Park map",
+          "sourceUrl": "https://www.co.portage.wi.gov/DocumentCenter/View/1222/Jordan-Park-PDF",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "title": "Wood and changing water levels",
+          "text": "The local guide rates this trip for intermediate paddlers because of frequent downed trees and maneuvering in moving water. Confirm present conditions with local operators and allow time for obstructions; the published duration is a reference, not a guarantee.",
+          "sourceName": "Stevens Point Area — Lower Plover paddling guide",
+          "sourceUrl": "https://www.stevenspointarea.com/blog/stories/post/lower-plover-river/",
+          "checkedOn": "2026-11-16"
+        }
+      ],
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 7.75,
+        "sourceName": "Stevens Point Area Pedal, Paddle & Hike Guide (2022)",
+        "sourceUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/v1/clients/spacvb/SPACVB_PPH_2022_Final_Web_Version_8271dd22-9755-49b4-b3e1-b804e348a684.pdf",
+        "checkedOn": "2026-11-16",
+        "streamId": "Plover River / Lower Plover",
+        "putIn": {
+          "name": "Jordan Park Below-Dam Canoe Launch",
+          "sourceLocation": "PDF page31 / printed56–57, Lower Plover River: Jordan Park below the dam to Iverson Park beach; 7.75 miles. Text specifies the canoe ramp south of Highway66 and the beach take-out."
+        },
+        "takeOut": {
+          "name": "Iverson Park Beach Access",
+          "sourceLocation": "PDF page31 / printed56–57, Lower Plover River: Jordan Park below the dam to Iverson Park beach; 7.75 miles. Text specifies the canoe ramp south of Highway66 and the beach take-out."
+        },
+        "downstreamOrder": {
+          "kind": "explicit-downstream-site-sequence",
+          "putIn": "Jordan Park Below-Dam Canoe Launch",
+          "takeOut": "Iverson Park Beach Access",
+          "sourceLocation": "PDF page31 / printed56–57, Lower Plover River: Jordan Park below the dam to Iverson Park beach; 7.75 miles. Text specifies the canoe ramp south of Highway66 and the beach take-out."
+        },
+        "note": "Published whole-trip distance, not fabricated endpoint mile markers or newly adopted centerline mileage. The source course candidate is held separately after imagery review."
+      }
     }
   ],
   "gaugeRelationship": "representative"

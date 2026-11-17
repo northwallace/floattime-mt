@@ -108,8 +108,21 @@ def reviewed_source_segments(record,root):
     """
     rows=record.get('sourceSegmentReview')
     if rows is None:return []
-    require(record.get('scope')==OVERVIEW and record.get('direction',{}).get('method')==AGENCY_COURSE,
+    method=record.get('direction',{}).get('method')
+    require(record.get('scope')==OVERVIEW and method in (AGENCY_COURSE,'usgs-flow-directed-network'),
             'Long segment review requires a source-reconstructed agency overview')
+    if method=='usgs-flow-directed-network':
+        # A sparse NHD lake centerline can contain a real long segment. Require
+        # complete source coverage and exact reconstruction before accepting its
+        # imagery review; never turn this into a generic geometry-gap waiver.
+        source=record['source'];raw=safe_file(root,source.get('evidenceFile'),'research').read_bytes()
+        require(hashlib.sha256(raw).hexdigest()==source.get('sha256'),'Long NHD source evidence changed')
+        payload=json.loads(raw)
+        require(payload.get('queryPolicy')=='named-and-unnamed-flowlines-v1',
+                'Long NHD segments require complete named and unnamed source coverage')
+        require(record.get('features')==dict(display=True,landOverlay=False,distanceEstimate=False,remainingTime=False),
+                'Long NHD source segments permit display only')
+        reconstruct_directed_source(record,root)
     coords=record['geometry']['coordinates']
     lengths=[distance(a,b) for a,b in zip(coords,coords[1:])]
     require(all(.001<d<=OVERVIEW_MAX_REVIEWED_SEGMENT_METERS for d in lengths),

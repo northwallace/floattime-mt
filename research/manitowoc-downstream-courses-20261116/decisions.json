@@ -1,0 +1,96 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-16",
+  "mapsAdded": [
+    "manitowoc-river/lower-cato-falls-to-county-highway-h",
+    "manitowoc-river/county-highway-h-to-north-union-road"
+  ],
+  "pathsAdded": [
+    "WI/manitowoc-river--lower-cato-falls-to-county-highway-h.json",
+    "WI/manitowoc-river--county-highway-h-to-north-union-road.json"
+  ],
+  "pointsAdded": [
+    {
+      "name": "Manitowoc River County Highway H Carry-in",
+      "id": "acc-980b0195e9885b359a4e"
+    },
+    {
+      "name": "Manitowoc River North Union Road Carry-in",
+      "id": "acc-9583d1408aca5291ad16"
+    }
+  ],
+  "existingSectionsAndHoldsRetained": true,
+  "originalPondRampHoldRetained": true,
+  "sources": [
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/city-points.json",
+      "sha256": "2950a10698609320d65d3809ff03fbf9412217f612a772e079b72d06c7f5d428"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/rpc-points.json",
+      "sha256": "a3bd05bc84374481984b3006844fedfd11bce75b1ccda3814acb130a4be327b2"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/water-trail-centerline.json",
+      "sha256": "8e618b3875ca2ba2136764f9ef62de75d27c609b6fd619b1f361903e7e214a45"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/hazards.json",
+      "sha256": "c67f2431fbf3626e2d497eded98aec50df2e29f8dc118b63a461063e4a2c94c8"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/dam-screen.json",
+      "sha256": "15f4acb4ce5dc2d5837de9c456fc5c485616dd1c188260a8c74c4027690e5de7"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/dam-query-url.txt",
+      "sha256": "48b58b61072f1dc51282b5643c1d38ffd61b2d6bc977b3baab0433d3466da232"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/plan-receipt.json",
+      "sha256": "2af78a2bc41acc124eada4c00239dded5ef4cd794ab09185a128175ef3ce3ce1"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/sources/receipts.json",
+      "sha256": "c5801e3e865317726eb9eb0f21c90b841512c8985d3e9995d5c7cdc838dd3583"
+    }
+  ],
+  "planSource": {
+    "file": "research/clarks-mills-access-20261116/sources/water-trail-plan.pdf",
+    "sha256": "8b15602ba56411cfe977759e1259b25c3f3c27efbdeb00784fd00598e64ad0fe"
+  },
+  "publishedPlanPanels": [
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/imagery/plan-16.jpg",
+      "sha256": "5e776feab90fb65646f6771dc965cdf58ae13ea3d5acedc0c54849c0579b6dc1"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/imagery/plan-17.jpg",
+      "sha256": "a72c8896239f5d4bcac9fff59e4ca12645fdf200a524a12078a3e9be2997aecf"
+    }
+  ],
+  "obstacleReview": {
+    "file": "research/manitowoc-downstream-courses-20261116/obstacle-distances.json",
+    "sha256": "604258a472c0d0f6cca0322780947208f2c3fa6e0048b6c7364af67358c3b202"
+  },
+  "courseReviews": [
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/courses/1/full-course-review.json",
+      "sha256": "b811e844f46bcf4b987fd0e8aa6bfe11695a33c902a8ad54e1f6d7e8dfc0c144"
+    },
+    {
+      "file": "research/manitowoc-downstream-courses-20261116/courses/2/full-course-review.json",
+      "sha256": "a1cf93b6e2470750d8493bef7f1d96627154fa28b9ae4e17b09cc8d06eb40524"
+    }
+  ],
+  "imageryReceipts": {
+    "file": "research/manitowoc-downstream-courses-20261116/imagery/receipts.json",
+    "sha256": "c23fb5a48f2bfcf6508687154a9248ca4bde6f7f7374f36768e70788f43f3285"
+  },
+  "limitations": [
+    "Approximate facility areas; no exact bank connectors or field verification.",
+    "No live timing, measured travel speed or GPS remaining-time model added.",
+    "Removed dam inventory status is not clearance of current hazards."
+  ]
+}

@@ -47,7 +47,7 @@ def review(root=ROOT):
                 if section.get('distanceReview'):
                     inspection.append({**row,'reason':section['distanceReview']})
             else:
-                held.append({**row,'reason':section.get('mapPendingReason') or section.get('mapReleaseNote') or 'No reviewed map yet'})
+                held.append({**row,'reason':section.get('mapPendingReason') or section.get('mapReleaseNote') or section.get('accessReview') or 'No reviewed map yet'})
     return {'checkedAt':datetime.now(timezone.utc).isoformat(), 'localOnly':True,
         'catalogRivers':len(catalog['rivers']), 'states':states,
         'gaugeRelationships':dict(Counter(gauge_relationship(r) for r in catalog['rivers'])),

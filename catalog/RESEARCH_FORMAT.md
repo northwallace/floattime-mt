@@ -359,8 +359,13 @@ riverbank before accepting it. All staged feature flags remain false.
 
 The normal 1,000 m segment check can flag a genuine straight reach in a sparse
 agency source. Do not add interpolated vertices to hide that warning. For a
-source-reconstructed `agency-published-water-trail` overview only, an original
-segment between 1,000 and 2,000 m may receive explicit `sourceSegmentReview`.
+source-reconstructed `agency-published-water-trail` or `usgs-flow-directed-network`
+overview only, an original segment between 1,000 and 2,000 m may receive explicit
+`sourceSegmentReview`. NHD requires a hash-bound complete named-and-unnamed
+snapshot, reconstruction of the original downstream source vertices and trims,
+and display-only feature flags. A renamed source or a re-signed edited line
+cannot qualify. The Lake Monona course is an NHD example; its straight lake
+centerline is an approximate overview, not a recommended open-water heading.
 Each entry names the zero-based displayed `segment`, an imagery verdict in
 `note`, and saved `imageryEvidence` entries with research `file` and `sha256`.
 Review the complete segment against imagery; account for every long segment
@@ -1153,3 +1158,13 @@ whitewater, steep carry and seasonal county-park access notes apply. Source
 feature IDs are scoped to the archived response, never used as permanent access
 IDs. All agency courses remain display-only with distance adoption and GPS
 remaining-time disabled.
+
+### County GIS, park polygons, and leaf-off imagery
+
+Follow an agency's own GIS link and preserve the chain from its public application to the web map and service. Save the layer schema, selected features, exact query, retrieval receipt and source hashes. A public park polygon establishes a facility area; its centroid does not identify a boating landing. Confirm the boating use and the intended part of the park in a manager's document or locally published access guide before adding an approximate access record.
+
+When only a park polygon is available for a documented beach take-out, a manually reviewed approximate area marker may use `status: access-verified` and `areaCenter`. Record that the placement is manual, the original image and hash, image bounding box, selected pixel, derived coordinate, and containment in the named public park polygon. Keep the boating-access evidence separate from the coordinate evidence. Say explicitly that it is not an agency landing coordinate or field GPS fix; do not add exact-bank or carry-route claims. Do not snap a whole-park centroid to the nearest source river line.
+
+For wooded courses, inspect independent leaf-off county imagery or NAIP when foliage hides the channel. A connected NHD graph and small mileage difference do not overcome visible alignment errors. Keep such a candidate disabled and outside the route index, even when the access map and a source-published trip duration can be offered separately. Conversely, a broad-river overview may retain an explicitly reviewed offshore gap and shifting sandbar corridor without inventing a bank connector or recommending a present navigation channel.
+
+The local Plover review (`research/plover-access-courses-20261116`) includes a county GIS canoe put-in, a municipal park polygon, manual approximate beach-area placement, and independent county 2025 imagery. Its old NHD course remains disabled after full imagery review. This example does not establish a general permission to place a launch anywhere in public parkland. The county imagery service's year and the retrieval date must be recorded separately; neither is a field access inspection.

@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "yahara-river",
+  "sectionId": "yahara-river-to-lottes-park-boat-launch",
+  "status": "reviewed",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_0709_HU4_GPKG.zip",
+    "checkedOn": "2026-11-16",
+    "streamId": "Yahara River",
+    "evidenceFile": "research/south-wisconsin-courses-20261116/sources/yahara-river.json",
+    "sha256": "d7e592af5f700a4f224484bc287e6271681f2be3af4979f643eb8680ce1b5707"
+  },
+  "putIn": {
+    "name": "Yahara River",
+    "lat": 43.09203401059648,
+    "lon": -89.36485980403431
+  },
+  "takeOut": {
+    "name": "Lottes Park Boat Launch",
+    "lat": 43.045998284843236,
+    "lon": -89.32929703709108
+  },
+  "catalogMiles": 5.1,
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -89.36503546627462,
+        43.0918316757922
+      ],
+      [
+        -89.3646693717285,
+        43.09166459977975
+      ],
+      [
+        -89.36325517173071,
+        43.09088539978091
+      ],
+      [
+        -89.36228090506557,
+        43.09021293311534
+      ],
+      [
+        -89.36000437173578,
+        43.08893893311732
+      ],
+      [
+        -89.35898650507067,
+        43.08834953311818
+      ],
+      [
+        -89.35828537173842,
+        43.088079799785284
+      ],
+      [
+        -89.3576915050727,
+        43.087753333119196
+      ],
+      [
+        -89.35687170507396,
+        43.087269199786626
+      ],
+      [
+        -89.355981571742,
+        43.08671179978746
+      ],
+      [
+        -89.35530417174307,
+        43.08620759978827
+      ],
+      [
+        -89.35411270507825,
+        43.085235399789724
+      ],
+      [
+        -89.3538377717453,
+        43.085011133123444
+      ],
+      [
+        -89.35227970508107,
+        43.08307393312645
+      ],
+      [
+        -89.35163577174876,
+        43.079401199798816
+      ],
+      [
+        -89.351688305082,
+        43.07922233313242
+      ],
+      [
+        -89.35375957174546,
+        43.072158399810064
+      ],
+      [
+        -89.35804670507213,
+        43.06344593315688
+      ],
+      [
+        -89.35811737173867,
+        43.0633021331571
+      ],
+      [
+        -89.35831577173838,
+        43.05924153316339
+      ],
+      [
+        -89.35840657173821,
+        43.05738319983298
+      ],
+      [
+        -89.35571590507573,
+        43.05369899983867
+      ],
+      [
+        -89.35550110507609,
+        43.05363953317217
+      ],
+      [
+        -89.35140750508242,
+        43.05250719984051
+      ],
+      [
+        -89.34560790509141,
+        43.052557533173804
+      ],
+      [
+        -89.34321397176183,
+        43.05312759983955
+      ],
+      [
+        -89.34162510509765,
+        43.053043333173065
+      ],
+      [
+        -89.3396969051006,
+        43.052737533173506
+      ],
+      [
+        -89.33813397176971,
+        43.052215133174315
+      ],
+      [
+        -89.33790257177009,
+        43.05203319984127
+      ],
+      [
+        -89.3378965717701,
+        43.05202079984129
+      ],
+      [
+        -89.33719237177115,
+        43.05057453317688
+      ],
+      [
+        -89.3364845051056,
+        43.04890679984613
+      ],
+      [
+        -89.33626650510593,
+        43.04801659984753
+      ],
+      [
+        -89.33621750510599,
+        43.04781679984779
+      ],
+      [
+        -89.33599037177305,
+        43.047336333181846
+      ],
+      [
+        -89.3358119717733,
+        43.04695879984916
+      ],
+      [
+        -89.33519710510762,
+        43.04628979985023
+      ],
+      [
+        -89.33443577177547,
+        43.04597173318405
+      ],
+      [
+        -89.33349850511024,
+        43.045742799851034
+      ],
+      [
+        -89.33233330511206,
+        43.04562193318449
+      ],
+      [
+        -89.33078177178112,
+        43.04527059985176
+      ],
+      [
+        -89.33066318398491,
+        43.045167917849085
+      ]
+    ]
+  },
+  "direction": {
+    "method": "usgs-flow-directed-network",
+    "featureIds": [
+      "143246133",
+      "143246142",
+      "143246143",
+      "143246148",
+      "143246149",
+      "143246147",
+      "143246206"
+    ],
+    "putInOffsetMeters": 26.704127191278715,
+    "takeOutOffsetMeters": 144.42824110632733,
+    "putInSourceStationMeters": 106.94686342898757,
+    "takeOutSourceStationMeters": 1074.4458136156638
+  },
+  "scope": "river-course-overview",
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate river-course overview only. Source geometry and imagery do not establish navigability, usable bank approaches, current passage or travel time.",
+  "checks": {
+    "metrics": {
+      "routeMiles": 4.6135,
+      "endpointOffsetsMeters": [
+        26.6,
+        144.4
+      ],
+      "mileageDifferencePercent": 9.54,
+      "maxSegmentMeters": 1029.5,
+      "vertices": 43
+    },
+    "issues": [
+      "route-gap-or-duplicate-vertex",
+      "endpoint-offset-over-100m",
+      "mileage-difference-over-5-percent"
+    ]
+  },
+  "sourceSegmentReview": [
+    {
+      "segment": 16,
+      "note": "Full original1029.5m NHD source segment lies over open Lake Monona in the saved image. It is a generalized lake course, not a navigation heading; vertices are preserved and reconstructed from the complete source.",
+      "imageryEvidence": [
+        {
+          "file": "research/south-wisconsin-courses-20261116/imagery/yahara2-long-source-16.jpg",
+          "sha256": "ad40d281458ea582e753365c89783cea7efe8e619f785399d07dc3f1d1d947c4"
+        }
+      ]
+    }
+  ],
+  "review": {
+    "checkedOn": "2026-11-16",
+    "reviewer": "Float ETA complete directed-source, obstacle and full-course imagery review",
+    "evidenceFile": "research/south-wisconsin-courses-20261116/decisions.json",
+    "note": "All 10 course panels and both endpoint contexts inspected; nearby dam records screened. Exact access connections and current passage not established."
+  },
+  "overviewReview": {
+    "signature": "4efb64a0eb7f1d453dee5667ffb286046ba8f23ee00f13c2361209ef6ed06412",
+    "acceptedIssues": {
+      "route-gap-or-duplicate-vertex": "The sole flagged segment is the original1029.5m NHD Lake Monona chord, reviewed over its complete length and bound to saved imagery; all source vertices are reconstructed. No vertex insertion, connector or actual duplicate accepted.",
+      "endpoint-offset-over-100m": "Lottes marker remains unchanged; the source line ends144.4m offshore with its exact shore connection explicitly not mapped.",
+      "mileage-difference-over-5-percent": "The4.6135mi source course is a generalized lake/river overview. Preserve5.1mi preliminary planning and do not use this line for distance or timing."
+    },
+    "routeReview": "The dotted line is a generalized USGS river and Lake Monona course, not a recommended open-water heading. It begins downstream of Tenney lock and dam and ends offshore of Lottes Park; the 144-metre gap to the existing launch marker is not mapped as a landing connection. Source course about 4.6 miles; preliminary planning distance remains 5.1 miles. Choose your actual lake crossing for the conditions and your craft.",
+    "note": "General river course only; open-water headings, bank connections and current passage are unconfirmed.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Existing access marker retained; no exact shoreline connection is drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Existing access marker retained; no exact shoreline connection is drawn."
+      }
+    }
+  }
+}
