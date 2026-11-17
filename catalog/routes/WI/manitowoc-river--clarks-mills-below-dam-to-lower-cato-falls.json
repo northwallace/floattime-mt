@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "state": "WI",
+  "riverId": "manitowoc-river",
+  "sectionId": "clarks-mills-below-dam-to-lower-cato-falls",
+  "status": "reviewed",
+  "scope": "river-course-overview",
+  "catalogMiles": 1.2,
+  "source": {
+    "name": "Bay-Lake Regional Planning Commission",
+    "url": "https://services6.arcgis.com/LERb7fGqsOTCtM9z/arcgis/rest/services/MRW_WaterTrail_AccessPoints/FeatureServer/3",
+    "checkedOn": "2026-11-16",
+    "adapterId": "WI-manitowoc-water-trail",
+    "adapterSha256": "f31996dd647a2cd02e5a394d31e7b96dc628ddab76d81000417333fa3d5324ca",
+    "evidenceFile": "research/clarks-mills-access-20261116/sources/water-trail-centerline.json",
+    "sha256": "8e618b3875ca2ba2136764f9ef62de75d27c609b6fd619b1f361903e7e214a45",
+    "streamId": "Manitowoc River"
+  },
+  "features": {
+    "display": true,
+    "landOverlay": false,
+    "distanceEstimate": false,
+    "remainingTime": false
+  },
+  "note": "Approximate agency water-trail overview only; whitewater, seasonal access and steep carry apply. Not a navigation line or guarantee of present passage.",
+  "putIn": {
+    "name": "Clarks Mills Below-Dam Carry-in",
+    "lat": 44.0933523654329,
+    "lon": -87.86239839793275
+  },
+  "takeOut": {
+    "name": "Lower Cato Falls County Park Carry-in",
+    "lat": 44.09180137322675,
+    "lon": -87.84387367845967
+  },
+  "direction": {
+    "method": "agency-published-water-trail",
+    "parts": [
+      {
+        "featureId": "23",
+        "pathIndex": 0,
+        "reverse": true
+      }
+    ],
+    "clip": {
+      "start": {
+        "segment": 1,
+        "fraction": 0.2195135687199061
+      },
+      "end": {
+        "segment": 73,
+        "fraction": 1.0
+      }
+    },
+    "tripEvidenceSha256": "2a97c5355f586c108e7b0a52f6a01719bebb4120aa20614d96a87d4808e7b237"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -87.86243946524729,
+        44.09313266460441
+      ],
+      [
+        -87.8619543408562,
+        44.0930858892561
+      ],
+      [
+        -87.8614821626764,
+        44.093028751546
+      ],
+      [
+        -87.8611523462452,
+        44.0930262904216
+      ],
+      [
+        -87.8608942464178,
+        44.0930363158295
+      ],
+      [
+        -87.8606818401159,
+        44.0930657728642
+      ],
+      [
+        -87.8603962428416,
+        44.0931235785459
+      ],
+      [
+        -87.86020865362,
+        44.0931795052769
+      ],
+      [
+        -87.8600095558148,
+        44.0932686510516
+      ],
+      [
+        -87.8597413476183,
+        44.0934159427842
+      ],
+      [
+        -87.8595052524335,
+        44.0935303998883
+      ],
+      [
+        -87.8592126251761,
+        44.0936400820502
+      ],
+      [
+        -87.8589203976654,
+        44.093738625049
+      ],
+      [
+        -87.8587740167409,
+        44.09379532201
+      ],
+      [
+        -87.8585273459922,
+        44.0939170090887
+      ],
+      [
+        -87.8582417439422,
+        44.093974809272
+      ],
+      [
+        -87.8580823199702,
+        44.0939643889026
+      ],
+      [
+        -87.8578671704286,
+        44.0939269183148
+      ],
+      [
+        -87.8577450129876,
+        44.0938837606046
+      ],
+      [
+        -87.8576248671016,
+        44.0937849145835
+      ],
+      [
+        -87.8575811866402,
+        44.0937097938997
+      ],
+      [
+        -87.8575739679624,
+        44.093624211345
+      ],
+      [
+        -87.8576140500603,
+        44.0935135114635
+      ],
+      [
+        -87.8576322641809,
+        44.0932946641822
+      ],
+      [
+        -87.8575710638712,
+        44.0931337676798
+      ],
+      [
+        -87.857438817489,
+        44.0929418179008
+      ],
+      [
+        -87.8572859690425,
+        44.0927494814073
+      ],
+      [
+        -87.857149378408,
+        44.0925351588611
+      ],
+      [
+        -87.8570287797641,
+        44.0923062765345
+      ],
+      [
+        -87.8569450439559,
+        44.0920557949377
+      ],
+      [
+        -87.8569017141644,
+        44.091828362469
+      ],
+      [
+        -87.8568823966382,
+        44.0916496762378
+      ],
+      [
+        -87.8568226204535,
+        44.0913067676052
+      ],
+      [
+        -87.8568221095,
+        44.0910355577287
+      ],
+      [
+        -87.8567106100919,
+        44.0908402817104
+      ],
+      [
+        -87.8565378352622,
+        44.090628994867
+      ],
+      [
+        -87.8562129970644,
+        44.0904891545129
+      ],
+      [
+        -87.8558921045156,
+        44.0903828232401
+      ],
+      [
+        -87.8555085956122,
+        44.0902976052499
+      ],
+      [
+        -87.8550879567318,
+        44.0902414098137
+      ],
+      [
+        -87.8545369326897,
+        44.0902273433713
+      ],
+      [
+        -87.8542060598423,
+        44.0902545626607
+      ],
+      [
+        -87.8538735737565,
+        44.0903263316063
+      ],
+      [
+        -87.8532857326701,
+        44.0904750303327
+      ],
+      [
+        -87.8529723708437,
+        44.0905880223737
+      ],
+      [
+        -87.8526220096753,
+        44.0907263225403
+      ],
+      [
+        -87.8521682227686,
+        44.0908738214567
+      ],
+      [
+        -87.8517624070137,
+        44.0909776400534
+      ],
+      [
+        -87.8513934543558,
+        44.0910598607647
+      ],
+      [
+        -87.8510795732677,
+        44.0911396557883
+      ],
+      [
+        -87.8510396846713,
+        44.0911497962963
+      ],
+      [
+        -87.8504716251736,
+        44.0913211436413
+      ],
+      [
+        -87.8502578739636,
+        44.0913877065818
+      ],
+      [
+        -87.8500045659122,
+        44.0915501165427
+      ],
+      [
+        -87.8496870205133,
+        44.0917781873145
+      ],
+      [
+        -87.8494307121534,
+        44.0918810979675
+      ],
+      [
+        -87.8492275295365,
+        44.0919404276913
+      ],
+      [
+        -87.8489150949941,
+        44.092027419497
+      ],
+      [
+        -87.8485722918001,
+        44.0920989786144
+      ],
+      [
+        -87.8481316156159,
+        44.092168691589
+      ],
+      [
+        -87.8477539635341,
+        44.0922061556581
+      ],
+      [
+        -87.8475122636152,
+        44.0921904551679
+      ],
+      [
+        -87.8471729611486,
+        44.0921654839282
+      ],
+      [
+        -87.8468800184891,
+        44.0921413857706
+      ],
+      [
+        -87.846536238645,
+        44.0920977529138
+      ],
+      [
+        -87.8461672441721,
+        44.0920387828576
+      ],
+      [
+        -87.8455073307907,
+        44.0919000221842
+      ],
+      [
+        -87.8452002870505,
+        44.0918385030661
+      ],
+      [
+        -87.844960341657,
+        44.0917745337607
+      ],
+      [
+        -87.8446363610544,
+        44.0917535597208
+      ],
+      [
+        -87.84449701145,
+        44.0917583589599
+      ],
+      [
+        -87.8442850062831,
+        44.0917766480357
+      ],
+      [
+        -87.844061619118,
+        44.0918244421467
+      ],
+      [
+        -87.8439497587836,
+        44.0918783560037
+      ]
+    ]
+  },
+  "checks": {
+    "metrics": {
+      "routeMiles": 1.1572,
+      "endpointOffsetsMeters": [
+        24.6,
+        10.5
+      ],
+      "mileageDifferencePercent": 3.57,
+      "maxSegmentMeters": 54.9,
+      "vertices": 74
+    },
+    "issues": []
+  },
+  "review": {
+    "checkedOn": "2026-11-16",
+    "reviewer": "Float ETA agency-plan, source-line and imagery review",
+    "evidenceFile": "research/clarks-mills-access-20261116/decisions.json",
+    "note": "Three course panels and two endpoint close-ups reviewed; dam and agency whitewater hazards screened. Start is separately sourced below-dam access, not the pond ramp."
+  },
+  "overviewReview": {
+    "signature": "39f02519aa30ba09cc7e44ee22c01c1a72f7b034a7ec8c74a4418785ad6bb537",
+    "acceptedIssues": {},
+    "routeReview": "The dotted line is an approximate agency water-trail overview starting below Clarks Mills Dam and ending below Lower Cato Falls. It passes through a whitewater reach. Exact landing approaches, usable depth and any carry around rapids are not drawn. Scout conditions and confirm the steep county-park take-out; park season is April 1–October 31.",
+    "note": "Agency river-course overview; current passage and exact landing connections unconfirmed.",
+    "connections": {
+      "putIn": {
+        "status": "not-mapped",
+        "note": "Agency facility-area marker retained; exact bank approach is not drawn."
+      },
+      "takeOut": {
+        "status": "not-mapped",
+        "note": "Agency facility-area marker retained; exact bank approach is not drawn."
+      }
+    }
+  }
+}

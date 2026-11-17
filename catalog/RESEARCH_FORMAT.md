@@ -1130,3 +1130,26 @@ ID and original coordinate precision. Keep the former name as an alias. The
 Tongue's “Downstream of I90” record is now Welch Ranch; this identity match does
 not approve the entire long float, remove a mandatory portage, or transfer a
 shorter guide's miles/time to different endpoints.
+
+### Agency courses with published trip lengths
+
+The agency-course adapter also accepts `distanceEvidence.method:
+"published-trip-length"` when the source publishes a distance between two named
+sites rather than river-mile readings. Keep the published numeric `miles` and
+source locations for both endpoints. Do not manufacture two `riverMile` values.
+
+This case additionally requires `distanceEvidence.downstreamOrder` with
+`kind: "explicit-downstream-site-sequence"`, `putIn` and `takeOut` equal to the
+section's endpoint names, and a nonempty `sourceLocation` identifying the
+published downstream sequence. The entire evidence object is bound by the
+course's `direction.tripEvidenceSha256`. A distance alone, reversed site order,
+changed trip evidence or edited source geometry cannot approve a course.
+
+The Manitowoc example uses the city-hosted water-trail plan, PDF page 16
+(printed page 14), for the Clarks Mills below-dam carry-in to Lower Cato Falls
+segment. The pond ramp above the dam retains its separate permanent access ID
+and held itinerary. Agency GIS points remain approximate facility areas;
+whitewater, steep carry and seasonal county-park access notes apply. Source
+feature IDs are scoped to the archived response, never used as permanent access
+IDs. All agency courses remain display-only with distance adoption and GPS
+remaining-time disabled.

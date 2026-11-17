@@ -28,7 +28,7 @@
     },
     "hoh": {
       "status": "pending",
-      "note": "Audited 2026-10-25 (final run). Both endpoints still pending: no NPS launch POI at Hoh Rain Forest; DNR confirms Oxbow's hand boat launch but its coordinate is the campground."
+      "note": "Agency-listed campground access areas reviewed after reopening. Exact water-edge landings remain pending; this is not an exact river-access audit."
     },
     "klickitat": {
       "status": "verified",
@@ -447,20 +447,33 @@
         "feature": "WA DNR Recreation Sites 'Hoh Oxbow Campground' point (OBJECTID 588; campground, not launch)"
       },
       "accessType": "Access facility (approximate location)",
-      "sourceName": "Washington DNR Recreation Sites: Olympic Peninsula - Hoh Oxbow Campground",
-      "sourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
+      "sourceName": "Washington DNR — Olympic Peninsula recreation and campsite status",
+      "sourceUrl": "https://dnr.wa.gov/recreation/find-your-campsite",
       "coordinateSourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
-      "verifiedOn": "2026-10-25",
-      "directions": "DNR Hoh Oxbow Campground off US 101 at the Hoh River bridge; hand-carry the 0.25-mile trail from the campground to the river.",
-      "note": "DNR coordinate is the campground; trail and water end under dense forest (research/raw/batch4/hohoxbow_g.png). Restrictions: hand-carry-0.25mi; Discover Pass may be required on DNR land",
+      "verifiedOn": "2026-11-16",
+      "directions": "Use the signed DNR Hoh Oxbow Campground approach near the US 101 Hoh River bridge. Identify the designated boat-access approach before starting the float. The marker identifies the campground area, not the exact landing; confirm current signs, road status and parking/pass requirements.",
+      "note": "DNR explicitly lists Hoh Oxbow Open when checked November 16, 2026. Historical bridge-work alerts with October end dates remain on two DNR pages; those expired date ranges alone are not the basis for reopening. The original agency campground-area coordinate is retained. River-side trees, side channels and changing banks prevent an exact landing claim.",
       "id": "acc-6bcf44d1483f5f3182ac",
-      "aliases": []
+      "aliases": [],
+      "operator": "Washington Department of Natural Resources"
     },
     "Hoh Rainforest Campground": {
-      "status": "pending",
-      "note": "NPS boating guidance explicitly identifies Hoh Campground as a popular put-in, correcting the earlier absence of an agency access source. However, the current NPS roads page lists Upper Hoh Road CLOSED as of November 9, 2026. The trip stays held; reopening, a usable shuttle and the launch vicinity still need confirmation.",
       "id": "acc-902ff3f31a87549ba371",
-      "aliases": []
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 47.8583525,
+        "lon": -123.9355401,
+        "feature": "Recreation.gov Hoh Rainforest Campground facility area; not an exact boat landing"
+      },
+      "accessType": "Public hand-carry access area",
+      "operator": "National Park Service — Olympic National Park",
+      "sourceName": "National Park Service — Olympic boating guidance and current conditions",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/boating.htm",
+      "coordinateSourceUrl": "https://www.recreation.gov/camping/campgrounds/247592",
+      "verifiedOn": "2026-11-16",
+      "directions": "Follow Upper Hoh Road from US 101 to the signed Hoh Campground inside Olympic National Park. NPS lists this campground as a popular river put-in. Identify the permitted water-edge approach on foot and check current river conditions before launching; this marker identifies the campground area, not a surveyed landing.",
+      "note": "NPS lists Upper Hoh Road open with a November 13, 2026 status date, and Hoh Campground open when checked November 16. Recreation.gov supplies the campground-area coordinate. Satellite context shows the campsite complex beside the river but cannot establish an exact current landing or navigable channel. NPS identifies log-jam hazards. The separate entrance-station put-in is not this facility."
     },
     "Howard Miller Steelhead Park": {
       "status": "access-verified",

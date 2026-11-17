@@ -30038,21 +30038,61 @@
           "takeOut": "Hoh Oxbow Campground",
           "miles": 20.0,
           "difficulty": "Class II",
-          "notes": "Long run with log jams (NPS rates it Class II–III with log jams). Morgan's Crossing (~mile 12.7) is an intermediate access. Put-in is inside Olympic National Park: entrance pass required ($30 per private vehicle, 7 days; cashless). Oxbow take-out manager and pass not confirmed.",
+          "notes": "A long glacial-river outing with wood and changing channels. NPS identifies Hoh Campground as a popular Class II put-in and warns of log jams; scout and check current local conditions. The separate entrance-station put-in is not substituted here. The retained 20-mile planning distance is preliminary, and no reviewed live float-time model is assigned. The park launch and DNR take-out have separate entrance and parking/pass requirements.",
           "putInAccessId": "acc-902ff3f31a87549ba371",
           "takeOutAccessId": "acc-6bcf44d1483f5f3182ac",
-          "accessReview": "NPS lists Upper Hoh Road closed as of November 9, 2026. Do not plan the campground put-in or its vehicle shuttle until the agency confirms reopening and usable launch access.",
           "notices": [
             {
-              "title": "Upper Hoh Road closed",
-              "text": "NPS lists Upper Hoh Road closed as of November 9, 2026. Do not plan the campground put-in or its vehicle shuttle until the agency confirms reopening and usable launch access.",
-              "sourceUrl": "https://www.nps.gov/olym/planyourvisit/current-road-conditions.htm",
+              "title": "Hoh access reopened — check before travel",
+              "text": "NPS lists Upper Hoh Road open with a November 13, 2026 status date and Hoh Campground open when checked November 16. DNR lists Hoh Oxbow Campground open. Storms can change access; recheck the agency pages and your shuttle before departure.",
               "sourceName": "National Park Service — current road conditions",
-              "checkedOn": "2026-11-09"
+              "sourceUrl": "https://home.nps.gov/olym/planyourvisit/current-road-conditions.htm",
+              "checkedOn": "2026-11-16"
+            },
+            {
+              "title": "Log jams and changing channels",
+              "text": "NPS warns of log jams on the Hoh. A campground being open does not establish a clear river route or usable water-edge landing. Scout and obtain current local river information.",
+              "sourceName": "National Park Service — boating",
+              "sourceUrl": "https://www.nps.gov/olym/planyourvisit/boating.htm",
+              "checkedOn": "2026-11-16"
             }
           ],
-          "mapPendingReason": "NPS lists Upper Hoh Road closed as of November 9, 2026. Do not plan the campground put-in or its vehicle shuttle until the agency confirms reopening and usable launch access.",
-          "mapReleased": false
+          "routeReview": "Access-area map only. The markers identify the NPS and DNR campground facilities, not exact water-edge landings. A continuous river course, shore connectors and current passage through log jams have not been approved.",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 47.8583525,
+            "lon": -123.9355401
+          },
+          "takeOutCoords": {
+            "lat": 47.811365,
+            "lon": -124.249436
+          },
+          "putInAccess": {
+            "id": "acc-902ff3f31a87549ba371",
+            "status": "access-verified",
+            "accessType": "Public hand-carry access area",
+            "operator": "National Park Service — Olympic National Park",
+            "sourceName": "National Park Service — Olympic boating guidance and current conditions",
+            "sourceUrl": "https://www.nps.gov/olym/planyourvisit/boating.htm",
+            "verifiedOn": "2026-11-16",
+            "note": "NPS lists Upper Hoh Road open with a November 13, 2026 status date, and Hoh Campground open when checked November 16. Recreation.gov supplies the campground-area coordinate. Satellite context shows the campsite complex beside the river but cannot establish an exact current landing or navigable channel. NPS identifies log-jam hazards. The separate entrance-station put-in is not this facility.",
+            "directions": "Follow Upper Hoh Road from US 101 to the signed Hoh Campground inside Olympic National Park. NPS lists this campground as a popular river put-in. Identify the permitted water-edge approach on foot and check current river conditions before launching; this marker identifies the campground area, not a surveyed landing.",
+            "coordinateSourceUrl": "https://www.recreation.gov/camping/campgrounds/247592"
+          },
+          "takeOutAccess": {
+            "id": "acc-6bcf44d1483f5f3182ac",
+            "status": "access-verified",
+            "accessType": "Access facility (approximate location)",
+            "operator": "Washington Department of Natural Resources",
+            "sourceName": "Washington DNR — Olympic Peninsula recreation and campsite status",
+            "sourceUrl": "https://dnr.wa.gov/recreation/find-your-campsite",
+            "verifiedOn": "2026-11-16",
+            "note": "DNR explicitly lists Hoh Oxbow Open when checked November 16, 2026. Historical bridge-work alerts with October end dates remain on two DNR pages; those expired date ranges alone are not the basis for reopening. The original agency campground-area coordinate is retained. River-side trees, side channels and changing banks prevent an exact landing claim.",
+            "directions": "Use the signed DNR Hoh Oxbow Campground approach near the US 101 Hoh River bridge. Identify the designated boat-access approach before starting the float. The marker identifies the campground area, not the exact landing; confirm current signs, road status and parking/pass requirements.",
+            "coordinateSourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh"
+          },
+          "mapReleased": true
         }
       ],
       "state": "WA",
@@ -30063,7 +30103,7 @@
       },
       "multiDay": false,
       "mapAudit": "pending",
-      "mapAuditNote": "Audited 2026-10-25 (final run). Both endpoints still pending: no NPS launch POI at Hoh Rain Forest; DNR confirms Oxbow's hand boat launch but its coordinate is the campground."
+      "mapAuditNote": "Agency-listed campground access areas reviewed after reopening. Exact water-edge landings remain pending; this is not an exact river-access audit."
     },
     {
       "id": "klickitat",
@@ -41844,10 +41884,95 @@
           "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
           "putInAccessId": "acc-42b5e4a62e2b5aaf8e53",
           "takeOutAccessId": "acc-45db859ada5a5d8db516",
-          "accessReview": "A dam lies near a section endpoint (Clarks Mill). The landing’s position relative to the barrier still needs confirmation.",
-          "routeReview": "This section includes Clarks Mill and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam.",
-          "mapPendingReason": "A dam lies near a section endpoint (Clarks Mill). The landing’s position relative to the barrier still needs confirmation.",
+          "accessReview": "This trip starts at the pond-ramp area above Clarks Mills Dam. A usable authorized carry from that ramp to the downstream river has not been established. Use the separately listed below-dam carry-in section instead; do not paddle over the dam.",
+          "routeReview": "The pond ramp and the below-dam carry-in are different access areas. This original itinerary remains withheld because its dam crossing or carry is unresolved.",
+          "mapPendingReason": "This trip starts at the pond-ramp area above Clarks Mills Dam. A usable authorized carry from that ramp to the downstream river has not been established. Use the separately listed below-dam carry-in section instead; do not paddle over the dam.",
           "mapReleased": false
+        },
+        {
+          "id": "clarks-mills-below-dam-to-lower-cato-falls",
+          "putIn": "Clarks Mills Below-Dam Carry-in",
+          "takeOut": "Lower Cato Falls County Park Carry-in",
+          "putInAccessId": "acc-5cc84fab98ad54ddafda",
+          "takeOutAccessId": "acc-e572c54c423d5f0aa94d",
+          "miles": 1.2,
+          "difficulty": "Whitewater; Class II–III at Cato Falls in agency hazard map (flow dependent)",
+          "notes": "A short whitewater reach from the separate below-dam carry-in to the county park landing below Lower Cato Falls. Scout the falls and confirm landing access before launching. The take-out requires a difficult steep carry; it is not a drive-up ramp. The agency water-trail plan publishes 1.2 miles for this reach. No calibrated live float-time model or trip duration is assigned.",
+          "distanceEvidence": {
+            "method": "published-trip-length",
+            "miles": 1.2,
+            "sourceName": "Bay-Lake Regional Planning Commission — Manitowoc River Watershed Water Trail Plan",
+            "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+            "checkedOn": "2026-11-16",
+            "streamId": "Manitowoc River Watershed Water Trail",
+            "putIn": {
+              "name": "Clarks Mills Below-Dam Carry-in",
+              "sourceLocation": "PDF page16, printed page14, site1 Clarks Mills Dam: downstream to the next site"
+            },
+            "takeOut": {
+              "name": "Lower Cato Falls County Park Carry-in",
+              "sourceLocation": "PDF page16, printed page14, adjacent site2 Lower Cato Falls County Park"
+            },
+            "downstreamOrder": {
+              "putIn": "Clarks Mills Below-Dam Carry-in",
+              "takeOut": "Lower Cato Falls County Park Carry-in",
+              "sourceLocation": "PDF page16: site1 publishes 1.2 miles to the next site; site2 is the adjacent inventory entry and mapped downstream.",
+              "kind": "explicit-downstream-site-sequence"
+            },
+            "note": "Published segment distance, not invented endpoint river-mile readings. Access-area coordinates come from separate agency GIS records."
+          },
+          "notices": [
+            {
+              "title": "Seasonal park access",
+              "text": "Manitowoc County lists Lower Cato Falls park season as April 1–October 31, dawn to dusk. Confirm any off-season access with the county before planning this take-out.",
+              "sourceName": "Manitowoc County — Lower Cato Falls",
+              "sourceUrl": "https://manitowoccountywi.gov/departments/parks/county-parks/lower-cato-falls/",
+              "checkedOn": "2026-11-16"
+            },
+            {
+              "title": "Whitewater and steep carry",
+              "text": "The regional agency hazard layer identifies Class 2–3 rapids at Lower Cato Falls, dependent on flow, and fast water with a possible strainer below Clarks Mills. These 2021 inventory observations are not a current hazard report. Scout and obtain current local guidance.",
+              "sourceName": "Bay-Lake Regional Planning Commission — water-trail hazards",
+              "sourceUrl": "https://services6.arcgis.com/LERb7fGqsOTCtM9z/arcgis/rest/services/Hazards/FeatureServer/0",
+              "checkedOn": "2026-11-16"
+            }
+          ],
+          "routeReview": "The dotted line is an approximate agency water-trail overview starting below Clarks Mills Dam and ending below Lower Cato Falls. It passes through a whitewater reach. Exact landing approaches, usable depth and any carry around rapids are not drawn. Scout conditions and confirm the steep county-park take-out; park season is April 1–October 31.",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 44.0933523654329,
+            "lon": -87.86239839793275
+          },
+          "takeOutCoords": {
+            "lat": 44.09180137322675,
+            "lon": -87.84387367845967
+          },
+          "putInAccess": {
+            "id": "acc-5cc84fab98ad54ddafda",
+            "status": "access-verified",
+            "accessType": "Public carry-in access area",
+            "operator": "Managing operator not identified in the water-trail inventory",
+            "sourceName": "City of Manitowoc GIS — Water Trail Access",
+            "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+            "verifiedOn": "2026-11-16",
+            "note": "Agency GIS lists this site as Existing. The2021 water-trail plan describes its public carry-in use; separate city and regional GIS records agree at the facility scale. This is an approximate access area, not a field-verified landing or assurance of present passage. Trees and steep banks limit image precision.",
+            "directions": "Use the agency-listed carry-in on the north shore below Clarks Mills Dam, reached from County Highway J beside the bridge. This is distinct from the pond ramp above the dam. Identify the signed downstream bank approach on foot; do not launch into or paddle over the dam.",
+            "coordinateSourceUrl": "https://citygis.manitowoc.org/arcgis/rest/services/Parks/Parks_WaterTrailAccess/FeatureServer/0/query?where=OBJECTID%3D21&outFields=*&outSR=4326&f=json"
+          },
+          "takeOutAccess": {
+            "id": "acc-e572c54c423d5f0aa94d",
+            "status": "access-verified",
+            "accessType": "Public carry-in access area",
+            "operator": "Manitowoc County Parks",
+            "sourceName": "City of Manitowoc GIS — Water Trail Access",
+            "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+            "verifiedOn": "2026-11-16",
+            "note": "Agency GIS lists this site as Existing. The2021 water-trail plan describes its public carry-in use; separate city and regional GIS records agree at the facility scale. This is an approximate access area, not a field-verified landing or assurance of present passage. Trees and steep banks limit image precision.",
+            "directions": "Use the county park approach from County Highway JJ and confirm the designated river landing below Lower Cato Falls on foot. The water-trail plan describes steep slopes and a difficult carry; the county identifies stairways to the river. Park season is April 1–October 31, dawn to dusk; confirm current signs and conditions.",
+            "coordinateSourceUrl": "https://citygis.manitowoc.org/arcgis/rest/services/Parks/Parks_WaterTrailAccess/FeatureServer/0/query?where=OBJECTID%3D19&outFields=*&outSR=4326&f=json"
+          },
+          "mapReleased": true
         }
       ],
       "gaugeRelationship": "representative",
@@ -44164,6 +44289,7 @@
           "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
           "putInAccessId": "acc-ad6748e255fe5f069ef2",
           "takeOutAccessId": "acc-cd207c08285450208590",
+          "routeReview": "The dotted line shows the approximate main Pecatonica River course between the listed access areas. Tight bends, tree cover and changing channels limit precision. Exact bank connections, usable depth and current passage through wood or road crossings are not mapped. Confirm conditions and the suitability of your boat locally. DNR lists the former Darlington dam as removed; this overview does not establish the condition of that riverbed or any remnants.",
           "mapPilot": true,
           "mapPrecision": "approximate",
           "putInCoords": {
@@ -44209,6 +44335,7 @@
           "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
           "putInAccessId": "acc-cd207c08285450208590",
           "takeOutAccessId": "acc-91aaa6334e185639be99",
+          "routeReview": "The dotted line shows the approximate main Pecatonica River course between the listed access areas. Tight bends, tree cover and changing channels limit precision. Exact bank connections, usable depth and current passage through wood or road crossings are not mapped. Confirm conditions and the suitability of your boat locally.",
           "mapPilot": true,
           "mapPrecision": "approximate",
           "putInCoords": {
@@ -44254,6 +44381,7 @@
           "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
           "putInAccessId": "acc-91aaa6334e185639be99",
           "takeOutAccessId": "acc-61e8261919375f238a0a",
+          "routeReview": "The dotted line shows the approximate main Pecatonica River course between the listed access areas. Tight bends, tree cover and changing channels limit precision. Exact bank connections, usable depth and current passage through wood or road crossings are not mapped. Confirm conditions and the suitability of your boat locally.",
           "mapPilot": true,
           "mapPrecision": "approximate",
           "putInCoords": {
@@ -44299,6 +44427,7 @@
           "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
           "putInAccessId": "acc-61e8261919375f238a0a",
           "takeOutAccessId": "acc-4f0383af71625d2a8983",
+          "routeReview": "The dotted line shows the approximate main Pecatonica River course between the listed access areas. Tight bends, tree cover and changing channels limit precision. Exact bank connections, usable depth and current passage through wood or road crossings are not mapped. Confirm conditions and the suitability of your boat locally.",
           "mapPilot": true,
           "mapPrecision": "approximate",
           "putInCoords": {
@@ -44344,6 +44473,7 @@
           "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
           "putInAccessId": "acc-4f0383af71625d2a8983",
           "takeOutAccessId": "acc-abb7347197605a9c871a",
+          "routeReview": "The dotted line shows the approximate main Pecatonica River course between the listed access areas. Tight bends, tree cover and changing channels limit precision. Exact bank connections, usable depth and current passage through wood or road crossings are not mapped. Confirm conditions and the suitability of your boat locally.",
           "mapPilot": true,
           "mapPrecision": "approximate",
           "putInCoords": {
@@ -70542,24 +70672,37 @@
         "feature": "WA DNR Recreation Sites 'Hoh Oxbow Campground' point (OBJECTID 588; campground, not launch)"
       },
       "accessType": "Access facility (approximate location)",
-      "sourceName": "Washington DNR Recreation Sites: Olympic Peninsula - Hoh Oxbow Campground",
-      "sourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
+      "sourceName": "Washington DNR — Olympic Peninsula recreation and campsite status",
+      "sourceUrl": "https://dnr.wa.gov/recreation/find-your-campsite",
       "coordinateSourceUrl": "https://www.dnr.wa.gov/OlympicPeninsula#hoh",
-      "verifiedOn": "2026-10-25",
-      "directions": "DNR Hoh Oxbow Campground off US 101 at the Hoh River bridge; hand-carry the 0.25-mile trail from the campground to the river.",
-      "note": "DNR coordinate is the campground; trail and water end under dense forest (research/raw/batch4/hohoxbow_g.png). Restrictions: hand-carry-0.25mi; Discover Pass may be required on DNR land",
+      "verifiedOn": "2026-11-16",
+      "directions": "Use the signed DNR Hoh Oxbow Campground approach near the US 101 Hoh River bridge. Identify the designated boat-access approach before starting the float. The marker identifies the campground area, not the exact landing; confirm current signs, road status and parking/pass requirements.",
+      "note": "DNR explicitly lists Hoh Oxbow Open when checked November 16, 2026. Historical bridge-work alerts with October end dates remain on two DNR pages; those expired date ranges alone are not the basis for reopening. The original agency campground-area coordinate is retained. River-side trees, side channels and changing banks prevent an exact landing claim.",
       "id": "acc-6bcf44d1483f5f3182ac",
       "aliases": [],
+      "operator": "Washington Department of Natural Resources",
       "name": "Hoh Oxbow Campground",
       "state": "WA"
     },
     {
-      "status": "pending",
-      "note": "NPS boating guidance explicitly identifies Hoh Campground as a popular put-in, correcting the earlier absence of an agency access source. However, the current NPS roads page lists Upper Hoh Road CLOSED as of November 9, 2026. The trip stays held; reopening, a usable shuttle and the launch vicinity still need confirmation.",
       "id": "acc-902ff3f31a87549ba371",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 47.8583525,
+        "lon": -123.9355401,
+        "feature": "Recreation.gov Hoh Rainforest Campground facility area; not an exact boat landing"
+      },
+      "accessType": "Public hand-carry access area",
+      "operator": "National Park Service — Olympic National Park",
+      "sourceName": "National Park Service — Olympic boating guidance and current conditions",
+      "sourceUrl": "https://www.nps.gov/olym/planyourvisit/boating.htm",
+      "coordinateSourceUrl": "https://www.recreation.gov/camping/campgrounds/247592",
+      "verifiedOn": "2026-11-16",
+      "directions": "Follow Upper Hoh Road from US 101 to the signed Hoh Campground inside Olympic National Park. NPS lists this campground as a popular river put-in. Identify the permitted water-edge approach on foot and check current river conditions before launching; this marker identifies the campground area, not a surveyed landing.",
+      "note": "NPS lists Upper Hoh Road open with a November 13, 2026 status date, and Hoh Campground open when checked November 16. Recreation.gov supplies the campground-area coordinate. Satellite context shows the campsite complex beside the river but cannot establish an exact current landing or navigable channel. NPS identifies log-jam hazards. The separate entrance-station put-in is not this facility.",
       "name": "Hoh Rainforest Campground",
-      "state": "WA",
-      "aliases": []
+      "state": "WA"
     },
     {
       "status": "access-verified",
@@ -72387,14 +72530,14 @@
         "lon": -87.8629169822582,
         "feature": "Clarks Mills Pond Ramp — agency access facility"
       },
-      "directions": "Use the signed public approach to Clarks Mills Pond Ramp. The map shows the access area; find the designated landing on arrival and check current site conditions.",
+      "directions": "This DNR facility is the pond-ramp area upstream of Clarks Mills Dam. It is distinct from the north-shore carry-in below the dam. Use the signed pond access only; do not treat this marker as a downstream launch or paddle over the dam.",
       "sourceName": "Wisconsin DNR — public boat access inventory",
       "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3416&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
       "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3416&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
       "verifiedOn": "2026-10-30",
       "accessType": "Public boat access area",
       "operator": "Town of Cato (ownership 'Town' in the WDNR record)",
-      "note": "Agency-listed access area; the marker does not identify the exact water-edge landing. Confirm the signed approach and current access conditions with the site manager. DNR notes that non-DNR sites in this inventory are not actively maintained.",
+      "note": "Agency-listed access area; the marker does not identify the exact water-edge landing. Confirm the signed approach and current access conditions with the site manager. DNR notes that non-DNR sites in this inventory are not actively maintained. Agency water-trail plan and separate city/regional GIS access records identify a different below-dam carry-in; imagery confirms the pond-ramp area lies upstream. This original facility ID and coordinate are retained.",
       "name": "Clarks Mills Pond Ramp",
       "state": "WI"
     },
@@ -79967,6 +80110,46 @@
       "directions": "Use the public access on the northwest side of the County Road K bridge over the Eau Claire River. The landing is below Little Falls and upstream of Big Falls. Check the carry from the beach to the parking area before launching. The Area marker shows the documented approach, not an exact water-edge landing; follow current signs.",
       "note": "The county plan identifies this bridge landing and its northwest approach. Its approximate coordinate is preserved from the linked firsthand trip map, corroborated by a separate dated trip report and satellite imagery. No field inspection, exact shoreline coordinate, parking entitlement beyond signed public access, or verified river bank is claimed.",
       "name": "Eau Claire River County K Landing",
+      "state": "WI"
+    },
+    {
+      "id": "acc-5cc84fab98ad54ddafda",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.0933523654329,
+        "lon": -87.86239839793275,
+        "feature": "Clarks Mills Below-Dam Carry-in — agency-listed access area"
+      },
+      "directions": "Use the agency-listed carry-in on the north shore below Clarks Mills Dam, reached from County Highway J beside the bridge. This is distinct from the pond ramp above the dam. Identify the signed downstream bank approach on foot; do not launch into or paddle over the dam.",
+      "sourceName": "City of Manitowoc GIS — Water Trail Access",
+      "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+      "coordinateSourceUrl": "https://citygis.manitowoc.org/arcgis/rest/services/Parks/Parks_WaterTrailAccess/FeatureServer/0/query?where=OBJECTID%3D21&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-16",
+      "accessType": "Public carry-in access area",
+      "operator": "Managing operator not identified in the water-trail inventory",
+      "note": "Agency GIS lists this site as Existing. The2021 water-trail plan describes its public carry-in use; separate city and regional GIS records agree at the facility scale. This is an approximate access area, not a field-verified landing or assurance of present passage. Trees and steep banks limit image precision.",
+      "name": "Clarks Mills Below-Dam Carry-in",
+      "state": "WI"
+    },
+    {
+      "id": "acc-e572c54c423d5f0aa94d",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.09180137322675,
+        "lon": -87.84387367845967,
+        "feature": "Lower Cato Falls County Park Carry-in — agency-listed access area"
+      },
+      "directions": "Use the county park approach from County Highway JJ and confirm the designated river landing below Lower Cato Falls on foot. The water-trail plan describes steep slopes and a difficult carry; the county identifies stairways to the river. Park season is April 1–October 31, dawn to dusk; confirm current signs and conditions.",
+      "sourceName": "City of Manitowoc GIS — Water Trail Access",
+      "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+      "coordinateSourceUrl": "https://citygis.manitowoc.org/arcgis/rest/services/Parks/Parks_WaterTrailAccess/FeatureServer/0/query?where=OBJECTID%3D19&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-16",
+      "accessType": "Public carry-in access area",
+      "operator": "Manitowoc County Parks",
+      "note": "Agency GIS lists this site as Existing. The2021 water-trail plan describes its public carry-in use; separate city and regional GIS records agree at the facility scale. This is an approximate access area, not a field-verified landing or assurance of present passage. Trees and steep banks limit image precision.",
+      "name": "Lower Cato Falls County Park Carry-in",
       "state": "WI"
     },
     {

@@ -142,8 +142,26 @@ def validate_agency_course(record, section, payload, root):
     expected = trim_chain(chain, direction.get('clip'))
     require(record.get('geometry') == expected, 'Displayed agency course differs from its source segments or trim')
     evidence = section.get('distanceEvidence', {})
-    require(evidence.get('method') == 'published-guide-miles', 'Agency course needs published downstream river-mile evidence')
+    method = evidence.get('method')
+    require(method in ('published-guide-miles', 'published-trip-length'), 'Agency course needs published downstream trip evidence')
     require(direction.get('tripEvidenceSha256') == signature(evidence), 'Agency course trip evidence changed; re-review required')
+    if method == 'published-trip-length':
+        # A published distance between consecutive sites is useful evidence;
+        # it does not supply two river-mile readings. Require the separately
+        # documented downstream site order instead of manufacturing markers.
+        miles = evidence.get('miles')
+        require(finite(miles) and miles > 0 and miles == section['miles'], 'Agency course trip length changed')
+        order = evidence.get('downstreamOrder', {})
+        require(isinstance(order, dict) and order.get('kind') == 'explicit-downstream-site-sequence', 'Agency course needs explicit published downstream site order')
+        require(isinstance(order.get('sourceLocation'), str) and bool(order['sourceLocation'].strip()), 'Agency course downstream order source location required')
+        for side in ('putIn', 'takeOut'):
+            name = section.get(side)
+            endpoint = evidence.get(side)
+            require(isinstance(endpoint, dict), 'Agency course downstream endpoint evidence required')
+            require(isinstance(name, str) and bool(name) and endpoint.get('name') == name
+                    and record.get(side, {}).get('name') == name and order.get(side) == name,
+                    'Agency course downstream site order or endpoint changed')
+        return
     endpoints = []
     for side in ('putIn', 'takeOut'):
         item = evidence.get(side, {})

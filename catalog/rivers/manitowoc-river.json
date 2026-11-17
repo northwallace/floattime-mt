@@ -24,8 +24,58 @@
       "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
       "putInAccessId": "acc-42b5e4a62e2b5aaf8e53",
       "takeOutAccessId": "acc-45db859ada5a5d8db516",
-      "accessReview": "A dam lies near a section endpoint (Clarks Mill). The landing’s position relative to the barrier still needs confirmation.",
-      "routeReview": "This section includes Clarks Mill and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam."
+      "accessReview": "This trip starts at the pond-ramp area above Clarks Mills Dam. A usable authorized carry from that ramp to the downstream river has not been established. Use the separately listed below-dam carry-in section instead; do not paddle over the dam.",
+      "routeReview": "The pond ramp and the below-dam carry-in are different access areas. This original itinerary remains withheld because its dam crossing or carry is unresolved."
+    },
+    {
+      "id": "clarks-mills-below-dam-to-lower-cato-falls",
+      "putIn": "Clarks Mills Below-Dam Carry-in",
+      "takeOut": "Lower Cato Falls County Park Carry-in",
+      "putInAccessId": "acc-5cc84fab98ad54ddafda",
+      "takeOutAccessId": "acc-e572c54c423d5f0aa94d",
+      "miles": 1.2,
+      "difficulty": "Whitewater; Class II–III at Cato Falls in agency hazard map (flow dependent)",
+      "notes": "A short whitewater reach from the separate below-dam carry-in to the county park landing below Lower Cato Falls. Scout the falls and confirm landing access before launching. The take-out requires a difficult steep carry; it is not a drive-up ramp. The agency water-trail plan publishes 1.2 miles for this reach. No calibrated live float-time model or trip duration is assigned.",
+      "distanceEvidence": {
+        "method": "published-trip-length",
+        "miles": 1.2,
+        "sourceName": "Bay-Lake Regional Planning Commission — Manitowoc River Watershed Water Trail Plan",
+        "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+        "checkedOn": "2026-11-16",
+        "streamId": "Manitowoc River Watershed Water Trail",
+        "putIn": {
+          "name": "Clarks Mills Below-Dam Carry-in",
+          "sourceLocation": "PDF page16, printed page14, site1 Clarks Mills Dam: downstream to the next site"
+        },
+        "takeOut": {
+          "name": "Lower Cato Falls County Park Carry-in",
+          "sourceLocation": "PDF page16, printed page14, adjacent site2 Lower Cato Falls County Park"
+        },
+        "downstreamOrder": {
+          "putIn": "Clarks Mills Below-Dam Carry-in",
+          "takeOut": "Lower Cato Falls County Park Carry-in",
+          "sourceLocation": "PDF page16: site1 publishes 1.2 miles to the next site; site2 is the adjacent inventory entry and mapped downstream.",
+          "kind": "explicit-downstream-site-sequence"
+        },
+        "note": "Published segment distance, not invented endpoint river-mile readings. Access-area coordinates come from separate agency GIS records."
+      },
+      "notices": [
+        {
+          "title": "Seasonal park access",
+          "text": "Manitowoc County lists Lower Cato Falls park season as April 1–October 31, dawn to dusk. Confirm any off-season access with the county before planning this take-out.",
+          "sourceName": "Manitowoc County — Lower Cato Falls",
+          "sourceUrl": "https://manitowoccountywi.gov/departments/parks/county-parks/lower-cato-falls/",
+          "checkedOn": "2026-11-16"
+        },
+        {
+          "title": "Whitewater and steep carry",
+          "text": "The regional agency hazard layer identifies Class 2–3 rapids at Lower Cato Falls, dependent on flow, and fast water with a possible strainer below Clarks Mills. These 2021 inventory observations are not a current hazard report. Scout and obtain current local guidance.",
+          "sourceName": "Bay-Lake Regional Planning Commission — water-trail hazards",
+          "sourceUrl": "https://services6.arcgis.com/LERb7fGqsOTCtM9z/arcgis/rest/services/Hazards/FeatureServer/0",
+          "checkedOn": "2026-11-16"
+        }
+      ],
+      "routeReview": "The dotted line is an approximate agency water-trail overview starting below Clarks Mills Dam and ending below Lower Cato Falls. It passes through a whitewater reach. Exact landing approaches, usable depth and any carry around rapids are not drawn. Scout conditions and confirm the steep county-park take-out; park season is April 1–October 31."
     }
   ],
   "gaugeRelationship": "representative"

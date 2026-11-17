@@ -1,0 +1,99 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-16",
+  "mapsAdded": [
+    "manitowoc-river/clarks-mills-below-dam-to-lower-cato-falls"
+  ],
+  "pathsAdded": [
+    "WI/manitowoc-river--clarks-mills-below-dam-to-lower-cato-falls.json"
+  ],
+  "pointsAdded": [
+    {
+      "name": "Clarks Mills Below-Dam Carry-in",
+      "id": "acc-5cc84fab98ad54ddafda"
+    },
+    {
+      "name": "Lower Cato Falls County Park Carry-in",
+      "id": "acc-e572c54c423d5f0aa94d"
+    }
+  ],
+  "originalPondPointRetained": true,
+  "originalItineraryHoldRetained": true,
+  "findings": [
+    "The pond ramp lies above the dam; distinct public carry-in is listed below it on the north shore.",
+    "Both agency GIS layers mark the downstream start and Lower Cato Falls carry-in as Existing. Satellite context supports facility-area placement, not exact bank connectors.",
+    "Plan PDFpage16/printed14 supplies the1.2mi downstream segment; Lower Cato is below falls and involves steep stairs/carry.",
+    "County park seasonApril1\u2013October31 and whitewater/historical-hazard notes preserved. No current flow-speed model, live estimate or navigation claim added."
+  ],
+  "sourceReceipts": {
+    "file": "research/clarks-mills-access-20261116/sources/receipts.json",
+    "sha256": "c5801e3e865317726eb9eb0f21c90b841512c8985d3e9995d5c7cdc838dd3583"
+  },
+  "planReceipt": {
+    "file": "research/clarks-mills-access-20261116/sources/plan-receipt.json",
+    "sha256": "2af78a2bc41acc124eada4c00239dded5ef4cd794ab09185a128175ef3ce3ce1"
+  },
+  "imagery": {
+    "file": "research/clarks-mills-access-20261116/imagery/access-receipts.json",
+    "sha256": "0df381a51f1c9d6ae97d1e8de6b40dbcc64682f6e06daf11bd34f333fc05900c"
+  },
+  "next": "Continue other unresolved maps. Original pond-ramp itinerary still needs an authorized carry; do not conflate it with the separately reviewed below-dam reach.",
+  "course": {
+    "route": {
+      "file": "catalog/routes/WI/manitowoc-river--clarks-mills-below-dam-to-lower-cato-falls.json",
+      "sha256": "f40f23e2f4656a57ed00fb208255d427ed02a10aa134caaccae1d5ef03a4a5ad"
+    },
+    "candidate": {
+      "file": "research/clarks-mills-access-20261116/course/candidate.json",
+      "sha256": "2f83eec84547a67a85d782c9b56a84e49f314278cf35048679b1df02a3186bb1"
+    },
+    "source": {
+      "file": "research/clarks-mills-access-20261116/sources/water-trail-centerline.json",
+      "sha256": "8e618b3875ca2ba2136764f9ef62de75d27c609b6fd619b1f361903e7e214a45"
+    },
+    "sourceQuery": {
+      "file": "research/clarks-mills-access-20261116/sources/centerline-url.txt",
+      "sha256": "b26916beb8da0809f28dd01039db9139882fa91b290e1cfc913f65b27bb42b7c"
+    },
+    "adapter": {
+      "file": "catalog/routes/agency_sources/WI-manitowoc-water-trail.json",
+      "sha256": "f31996dd647a2cd02e5a394d31e7b96dc628ddab76d81000417333fa3d5324ca"
+    },
+    "review": {
+      "file": "research/clarks-mills-access-20261116/course/full-course-review.json",
+      "sha256": "e9c870a64d065b51311fe35292b3d6f4e65289ee2822398d4cca7d5ca831f3bc"
+    },
+    "imageryReceipt": {
+      "file": "research/clarks-mills-access-20261116/imagery/course-receipts.json",
+      "sha256": "9cf671873e430a2c82a5d4499375274d80e6548383dc5a02ae1f4d8d2e12843f"
+    },
+    "damScreen": {
+      "file": "research/clarks-mills-access-20261116/sources/dam-screen.json",
+      "sha256": "3850a40d522c02053a7c5e81e199435e8f3b6cd6ce02ab7544c4ae08a49c851e"
+    },
+    "damDistances": {
+      "file": "research/clarks-mills-access-20261116/dam-distances.json",
+      "sha256": "6eb9f398ff955c396d02b55a884699df5de80b6999ae5612182d64c92ac7f996"
+    },
+    "damQuery": {
+      "file": "research/clarks-mills-access-20261116/sources/dam-query-url.txt",
+      "sha256": "9e4fddbf1d65220ce964950b3d6dc1f0ce3acd30c91282d980f125e05880bc38"
+    }
+  },
+  "countyEvidence": {
+    "file": "research/clarks-mills-access-20261116/sources/county-review.json",
+    "sha256": "30948410882262ae33d0a744a9f741b11bf976f4b217af61e2b11a60d1c5ed1f"
+  },
+  "pipelineChanges": {
+    "file": "tools/agency_courses.py",
+    "supports": "published-trip-length plus explicit downstream site sequence",
+    "gates": [
+      "Bound source snapshot and registration",
+      "Exact source-part reconstruction and trim",
+      "Published site order bound to trip evidence hash",
+      "No invented endpoint river-mile readings",
+      "Display-only overview; no navigation, land corridor, timing or GPS capability"
+    ]
+  }
+}

@@ -1389,14 +1389,14 @@
         "lon": -87.8629169822582,
         "feature": "Clarks Mills Pond Ramp — agency access facility"
       },
-      "directions": "Use the signed public approach to Clarks Mills Pond Ramp. The map shows the access area; find the designated landing on arrival and check current site conditions.",
+      "directions": "This DNR facility is the pond-ramp area upstream of Clarks Mills Dam. It is distinct from the north-shore carry-in below the dam. Use the signed pond access only; do not treat this marker as a downstream launch or paddle over the dam.",
       "sourceName": "Wisconsin DNR — public boat access inventory",
       "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3416&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
       "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3416&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
       "verifiedOn": "2026-10-30",
       "accessType": "Public boat access area",
       "operator": "Town of Cato (ownership 'Town' in the WDNR record)",
-      "note": "Agency-listed access area; the marker does not identify the exact water-edge landing. Confirm the signed approach and current access conditions with the site manager. DNR notes that non-DNR sites in this inventory are not actively maintained."
+      "note": "Agency-listed access area; the marker does not identify the exact water-edge landing. Confirm the signed approach and current access conditions with the site manager. DNR notes that non-DNR sites in this inventory are not actively maintained. Agency water-trail plan and separate city/regional GIS access records identify a different below-dam carry-in; imagery confirms the pond-ramp area lies upstream. This original facility ID and coordinate are retained."
     },
     "Clear Lake Road Access": {
       "id": "acc-7aff0bb493bc5b2db259",
@@ -8186,6 +8186,42 @@
       "verifiedOn": "2026-11-06",
       "directions": "Use the public access on the northwest side of the County Road K bridge over the Eau Claire River. The landing is below Little Falls and upstream of Big Falls. Check the carry from the beach to the parking area before launching. The Area marker shows the documented approach, not an exact water-edge landing; follow current signs.",
       "note": "The county plan identifies this bridge landing and its northwest approach. Its approximate coordinate is preserved from the linked firsthand trip map, corroborated by a separate dated trip report and satellite imagery. No field inspection, exact shoreline coordinate, parking entitlement beyond signed public access, or verified river bank is claimed."
+    },
+    "Clarks Mills Below-Dam Carry-in": {
+      "id": "acc-5cc84fab98ad54ddafda",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.0933523654329,
+        "lon": -87.86239839793275,
+        "feature": "Clarks Mills Below-Dam Carry-in — agency-listed access area"
+      },
+      "directions": "Use the agency-listed carry-in on the north shore below Clarks Mills Dam, reached from County Highway J beside the bridge. This is distinct from the pond ramp above the dam. Identify the signed downstream bank approach on foot; do not launch into or paddle over the dam.",
+      "sourceName": "City of Manitowoc GIS — Water Trail Access",
+      "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+      "coordinateSourceUrl": "https://citygis.manitowoc.org/arcgis/rest/services/Parks/Parks_WaterTrailAccess/FeatureServer/0/query?where=OBJECTID%3D21&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-16",
+      "accessType": "Public carry-in access area",
+      "operator": "Managing operator not identified in the water-trail inventory",
+      "note": "Agency GIS lists this site as Existing. The2021 water-trail plan describes its public carry-in use; separate city and regional GIS records agree at the facility scale. This is an approximate access area, not a field-verified landing or assurance of present passage. Trees and steep banks limit image precision."
+    },
+    "Lower Cato Falls County Park Carry-in": {
+      "id": "acc-e572c54c423d5f0aa94d",
+      "aliases": [],
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 44.09180137322675,
+        "lon": -87.84387367845967,
+        "feature": "Lower Cato Falls County Park Carry-in — agency-listed access area"
+      },
+      "directions": "Use the county park approach from County Highway JJ and confirm the designated river landing below Lower Cato Falls on foot. The water-trail plan describes steep slopes and a difficult carry; the county identifies stairways to the river. Park season is April 1–October 31, dawn to dusk; confirm current signs and conditions.",
+      "sourceName": "City of Manitowoc GIS — Water Trail Access",
+      "sourceUrl": "https://www.manitowoc.org/DocumentCenter/View/31544/Manitowoc-River-Watershed---Water-Trail-Plan",
+      "coordinateSourceUrl": "https://citygis.manitowoc.org/arcgis/rest/services/Parks/Parks_WaterTrailAccess/FeatureServer/0/query?where=OBJECTID%3D19&outFields=*&outSR=4326&f=json",
+      "verifiedOn": "2026-11-16",
+      "accessType": "Public carry-in access area",
+      "operator": "Manitowoc County Parks",
+      "note": "Agency GIS lists this site as Existing. The2021 water-trail plan describes its public carry-in use; separate city and regional GIS records agree at the facility scale. This is an approximate access area, not a field-verified landing or assurance of present passage. Trees and steep banks limit image precision."
     }
   }
 }
