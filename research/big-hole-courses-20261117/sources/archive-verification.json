@@ -1,0 +1,43 @@
+{
+  "archiveUrl": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1002_HU4_GPKG.zip",
+  "archiveSha256": "16b9eafd11018b21ca3bce2fcd6578a879b2deac7778a84561990d0c71c1ff2d",
+  "gpkgSha256": "ed42571e8ddd3b5349fb3bd496c7edb9b893e8bcac9c198610810d96e34726a1",
+  "cache": "/private/tmp/floateta-nhd-1002-20261117",
+  "tables": [
+    "ExternalCrosswalk",
+    "NHDArea",
+    "NHDAreaEventFC",
+    "NHDFCode",
+    "NHDFeatureToMetadata",
+    "NHDFlow",
+    "NHDFlowline",
+    "NHDFlowlineVAA",
+    "NHDLine",
+    "NHDLineEventFC",
+    "NHDMetadata",
+    "NHDPoint",
+    "NHDPointEventFC",
+    "NHDProcessingParameters",
+    "NHDReachCodeMaintenance",
+    "NHDReachCrossReference",
+    "NHDSourceCitation",
+    "NHDStatus",
+    "NHDVerticalRelationship",
+    "NHDWaterbody",
+    "WBDHU10",
+    "WBDHU12",
+    "WBDHU14",
+    "WBDHU16",
+    "WBDHU2",
+    "WBDHU4",
+    "WBDHU6",
+    "WBDHU8",
+    "WBDLine"
+  ],
+  "validation": [
+    "HEAD Content-Length matches",
+    "Multipart ETag recomputed using 8 MiB parts matches independently retrieved HEAD",
+    "ZIP CRC test passes",
+    "GeoPackage SQLite quick_check passes"
+  ]
+}

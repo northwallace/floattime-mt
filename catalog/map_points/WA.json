@@ -40,7 +40,7 @@
     },
     "methow-upper": {
       "status": "pending",
-      "note": "Audited 2026-10-25. Pending: Big Eddy (Methow), Red Barn Access (Winthrop), Twisp Access not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+      "note": "Rechecked November 17, 2026. Mack Lloyd/Red Barn and Twisp Park have Town/RCO facility support. Big Eddy corresponds to the Rising Eagle highway turnout documented in the Yakama Nation-commissioned river-use assessment and AW guide. All markers are approximate facility/roadside areas, not precise shore landings. Big Eddy requires a steep unimproved carry; current signs and bank/river conditions must be checked. No live calibration or GPS timing is approved."
     },
     "queets": {
       "status": "pending",
@@ -145,10 +145,26 @@
       "aliases": []
     },
     "Big Eddy (Methow)": {
-      "status": "pending",
-      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
       "id": "acc-fa243bd7163b5feba671",
-      "aliases": []
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 48.428151,
+        "lon": -120.162662,
+        "feature": "Big Eddy / Rising Eagle Road highway turnout beside SR 20 mile 196.7; roadside area, not shoreline landing"
+      },
+      "accessType": "Unimproved hand access",
+      "operator": "Washington State Department of Transportation roadside turnout (per Yakama Nation-commissioned assessment)",
+      "sourceName": "Yakama Nation-commissioned Middle Methow recreational-use assessment — Rising Eagle Road turnout; American Whitewater Methow access guide",
+      "sourceUrl": "https://yakamafish-nsn.gov/sites/default/files/projects/WaveTrekRescue_M2_River_Use_Assessment_Dec2011%281%29.pdf",
+      "coordinateSourceUrl": "https://www.americanwhitewater.org/content/River/detail/id/3532",
+      "verifiedOn": "2026-11-17",
+      "directions": "Use only permitted parking at the large SR 20 turnout near mile 196.7 and Rising Eagle Road. This is unimproved roadside access with a steep carry between the road and river, not a boat ramp. Scout the bank, usable landing, carry and posted restrictions before launching; it can be difficult for larger boats. Do not use private driveways or assume adjoining shoreline is public.",
+      "note": "The Yakama Nation-commissioned assessment (printed page 8 and Figure 3 on page 9) identifies the WSDOT Rising Eagle turnout as an intermediate boating put-in/take-out about four river miles below Winthrop. American Whitewater independently identifies Big Eddy at SR 20 mile 196.7, describes its steep carry and supplies this coordinate. The coordinate, Rising Eagle Road/SR 20 road identity and turnout are consistent on the saved road context and individual imagery. The historical public-access assessment and current guide establish an approximate access facility, not a surveyed landing or an assurance of present conditions. No bank, safe exit, larger-boat ramp or public ownership beyond the documented access is claimed.",
+      "aliases": [
+        "Rising Eagle Road turnout",
+        "Rising Eagle turnout",
+        "Big Eddy Access (Methow)"
+      ]
     },
     "Big Eddy (Skykomish)": {
       "status": "verified",
@@ -739,10 +755,26 @@
       "aliases": []
     },
     "Red Barn Access (Winthrop)": {
-      "status": "pending",
-      "note": "Final run (2026-10-25): Red Barn is the Town of Winthrop's Mack Lloyd Park (WWRP grant record), but no Town GIS/launch coordinate or access page was found; USFWS features nearby are Winthrop hatchery only. Needs Town of Winthrop answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/rb19_g.png, z19) shows a clear path from the lot behind the Barn to the gravel shore (water end ~48.47608,-120.18798; river-left per NHDPlus 144385429). But access status is not clear enough: the Town's 2024 Park Plan (https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf) says the bank 'has been used informally' for water access, is severely eroding, and the Town 'has funding to install a new water access pathway' for hand launch (RCO-funded, construction anticipated 2024); completion was not confirmed. Construction/legal-status uncertainty, so not placed.",
       "id": "acc-0656ea1d40c052f6888a",
-      "aliases": []
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 48.47617069,
+        "lon": -120.18702753,
+        "feature": "RCO project worksite at Mack Lloyd Park behind the Winthrop Barn; facility area, not surveyed ramp"
+      },
+      "accessType": "Hand launch",
+      "operator": "Town of Winthrop",
+      "sourceName": "Town of Winthrop — Mack Lloyd Park water-access progress report, accepted by Washington RCO December 18, 2024",
+      "sourceUrl": "https://secure.rco.wa.gov/prism/projectsearch/api/project-search/snapshot/attachment/652199",
+      "coordinateSourceUrl": "https://secure.rco.wa.gov/PRISM/projectsearch/project/18-1854",
+      "verifiedOn": "2026-11-17",
+      "directions": "Use the public Mack Lloyd Park access area behind the Winthrop Barn at 51 N Highway 20. Follow the designated river-access path. This marker identifies the project/facility area, not the precise shoreline ramp; check posted conditions and Town notices before a trip.",
+      "note": "The accepted December 2024 project report documents the water-access ramp, bank stabilization and parking as complete, with restroom work and signage still planned. Its dated project photographs show the concrete-plank access ramp. The current RCO project remains administratively active; that status and the unfinished restroom work are not evidence that the ramp was never built. The July 2026 attachment labelled As Built contains October 2023 bid drawings and is not used as completion evidence. The RCO worksite coordinate is retained only as an approximate facility location. No exact landing, verified bank, seasonal availability or navigation-safe channel is claimed.",
+      "aliases": [
+        "Mack Lloyd Park",
+        "Winthrop Barn",
+        "Mack Lloyd Park Water Access"
+      ]
     },
     "Roza Recreation Site": {
       "status": "verified",
@@ -876,10 +908,26 @@
       "aliases": []
     },
     "Twisp Access": {
-      "status": "pending",
-      "note": "Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/twisp_g.png): no launch visible at the park/pool lot; no agency access source. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
       "id": "acc-041fdb0bf8ee57ffb898",
-      "aliases": []
+      "status": "access-verified",
+      "areaCenter": {
+        "lat": 48.36793838,
+        "lon": -120.12006451,
+        "feature": "RCO Twisp Park worksite beside the playground/pool and Lincoln Street; public park area, not an exact landing"
+      },
+      "accessType": "Hand access",
+      "operator": "Town of Twisp",
+      "sourceName": "Town of Twisp 2022 Parks and Recreation Plan — park inventory and river access points; Yakama Nation-commissioned Middle Methow recreational-use assessment",
+      "sourceUrl": "https://cms5.revize.com/revize/twispwa/services/public%20works/Development%20Standards/Town%20of%20Twisp_2022%20P%26R%20Plan%20FINAL.pdf",
+      "coordinateSourceUrl": "https://secure.rco.wa.gov/PRISM/projectsearch/project/02-1329",
+      "verifiedOn": "2026-11-17",
+      "directions": "Use Twisp Park at the north end of Lincoln Street beside the Wagner Pool and Twisp/Methow confluence. This is an approximate public park/access area, not a shoreline landing or improved raft ramp. The Town plan identifies existing river access but no larger-watercraft put-in; confirm the landing, carry and suitability for your craft before floating.",
+      "note": "The Town park plan documents the park, riparian/beach land and existing official river access. The Yakama Nation-commissioned 2011 assessment explicitly identifies Twisp Park as a public-lands access and take-out (printed page 8). RCO project 02-1329 identifies Town ownership and the park worksite coordinate, which falls within the playground/pool area in imagery. The old recreation-grant coordinate is not a ramp survey, and the grant was for park amenities, not a river landing. No bank, exact shoreline connection, new boat ramp, navigation safety or current seasonal availability is inferred.",
+      "aliases": [
+        "Twisp Park",
+        "Wagner Pool",
+        "Twisp Park river access"
+      ]
     },
     "Umtanum Recreation Site": {
       "status": "verified",

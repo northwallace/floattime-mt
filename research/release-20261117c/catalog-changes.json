@@ -1,0 +1,847 @@
+[
+  {
+    "id": "big-hole",
+    "before": {
+      "id": "big-hole",
+      "name": "Big Hole River",
+      "gauge": "06025500",
+      "gaugeName": "Big Hole near Melrose",
+      "lat": 45.54,
+      "lon": -112.69,
+      "refFlowCfs": 900,
+      "refSpeedMph": 3.5,
+      "blurb": "Southwest Montana's salmonfly river. Canyon scenery from Divide to Melrose, then open ranchland.",
+      "sections": [
+        {
+          "id": "divide-melrose",
+          "putIn": "Divide Bridge",
+          "takeOut": "Melrose (Salmon Fly FAS)",
+          "miles": 14,
+          "difficulty": "Class I\u2013II",
+          "notes": "The canyon section. Maiden Rock is a midway takeout (~6 mi). Sunday nonresident float closures in summer \u2014 check FWP.",
+          "putInAccessId": "acc-22aac53e517b51bbbda8",
+          "takeOutAccessId": "acc-d6120e349eba5d99baed",
+          "mapPilot": true,
+          "mapPrecision": "exact",
+          "putInCoords": {
+            "lat": 45.753435,
+            "lon": -112.774953
+          },
+          "takeOutCoords": {
+            "lat": 45.624395702849,
+            "lon": -112.68806152101074
+          },
+          "putInAccess": {
+            "id": "acc-22aac53e517b51bbbda8",
+            "status": "verified",
+            "accessType": "Boat ramp",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Divide Bridge Campground",
+            "sourceUrl": "https://www.blm.gov/visit/divide-bridge-campground",
+            "verifiedOn": "2026-10-23",
+            "note": "Official BLM coordinate for the Divide Bridge recreation complex with boat-ramp access."
+          },
+          "takeOutAccess": {
+            "id": "acc-d6120e349eba5d99baed",
+            "status": "verified",
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Salmon Fly Fishing Access Site 39753438",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+          },
+          "mapReleased": true
+        },
+        {
+          "id": "melrose-glen",
+          "putIn": "Melrose (Salmon Fly FAS)",
+          "takeOut": "Glen FAS",
+          "miles": 14,
+          "difficulty": "Class I",
+          "notes": "Lower river, more braids. Browne's Bridge is roughly halfway.",
+          "putInAccessId": "acc-d6120e349eba5d99baed",
+          "takeOutAccessId": "acc-fecb78ad7e025540b3e5",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.624395702849,
+            "lon": -112.68806152101074
+          },
+          "takeOutCoords": {
+            "lat": 45.46666639860114,
+            "lon": -112.66907179886113
+          },
+          "putInAccess": {
+            "id": "acc-d6120e349eba5d99baed",
+            "status": "verified",
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Salmon Fly Fishing Access Site 39753438",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438",
+            "verifiedOn": "2026-10-23",
+            "note": "Coordinate and ramp type from the official Montana FWP managed-access layer.",
+            "riverBank": "river-right",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+          },
+          "takeOutAccess": {
+            "id": "acc-fecb78ad7e025540b3e5",
+            "status": "access-verified",
+            "sourceName": "Montana FWP Glen Fishing Access Site 39753546",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753546",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "directions": "Use the signed Glen FAS and follow the site road to the concrete boat ramp; the FWP site marker is inland from the river.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
+          },
+          "mapReleased": true
+        },
+        {
+          "id": "glen-notch",
+          "putIn": "Glen FAS",
+          "takeOut": "Notch Bottom FAS",
+          "miles": 7,
+          "difficulty": "Class I",
+          "notes": "Away from the road. Friday outfitter closure in summer. Watch for rattlesnakes at the takeout.",
+          "putInAccessId": "acc-fecb78ad7e025540b3e5",
+          "takeOutAccessId": "acc-4b75a0672a8f5dd88d56",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.46666639860114,
+            "lon": -112.66907179886113
+          },
+          "takeOutCoords": {
+            "lat": 45.43651824973338,
+            "lon": -112.56647058393813
+          },
+          "putInAccess": {
+            "id": "acc-fecb78ad7e025540b3e5",
+            "status": "access-verified",
+            "sourceName": "Montana FWP Glen Fishing Access Site 39753546",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753546",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "directions": "Use the signed Glen FAS and follow the site road to the concrete boat ramp; the FWP site marker is inland from the river.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
+          },
+          "takeOutAccess": {
+            "id": "acc-4b75a0672a8f5dd88d56",
+            "status": "verified",
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Tony Schoonen Fishing Access Site 39753572",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753572",
+            "verifiedOn": "2026-10-23",
+            "note": "Notch Bottom was renamed Tony Schoonen FAS; the coordinate replaces the former approximate point.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+          },
+          "mapReleased": true
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Rechecked 2026-10-27. Maps remain available, but FWP general site markers at Glen, Black\u2019s Ford or Greycliff are now correctly identified as approximate facility locations. Exact ramp coordinates are still needed for route review."
+    },
+    "after": {
+      "id": "big-hole",
+      "name": "Big Hole River",
+      "gauge": "06025500",
+      "gaugeName": "Big Hole near Melrose",
+      "lat": 45.54,
+      "lon": -112.69,
+      "refFlowCfs": 900,
+      "refSpeedMph": 3.5,
+      "blurb": "Southwest Montana's salmonfly river. Canyon scenery from Divide to Melrose, then open ranchland.",
+      "sections": [
+        {
+          "id": "divide-melrose",
+          "putIn": "Divide Bridge",
+          "takeOut": "Melrose (Salmon Fly FAS)",
+          "miles": 14,
+          "difficulty": "Class I\u2013II",
+          "notes": "The canyon section. Maiden Rock is a midway takeout (~6 mi). Sunday nonresident float closures in summer \u2014 check FWP.",
+          "putInAccessId": "acc-22aac53e517b51bbbda8",
+          "takeOutAccessId": "acc-d6120e349eba5d99baed",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.753435,
+            "lon": -112.774953
+          },
+          "takeOutCoords": {
+            "lat": 45.624395702849,
+            "lon": -112.68806152101074
+          },
+          "putInAccess": {
+            "id": "acc-22aac53e517b51bbbda8",
+            "status": "access-verified",
+            "accessType": "Boat ramp",
+            "operator": "U.S. Bureau of Land Management",
+            "sourceName": "BLM Divide Bridge Campground",
+            "sourceUrl": "https://www.blm.gov/visit/divide-bridge-campground",
+            "verifiedOn": "2026-11-17",
+            "note": "Official public boating facility and original agency coordinates retained. November 17 imagery review places this marker within the facility/parking complex rather than on a surveyed river landing. It is now shown as an approximate access area; no shoreline connector or take-out bank is inferred.",
+            "directions": "Use the signed BLM Divide Bridge recreation area and designated boat ramp. The agency marker identifies the recreation complex, not the exact shoreline launch; confirm the ramp approach and posted conditions on arrival.",
+            "coordinateSourceUrl": "https://www.blm.gov/visit/divide-bridge-campground"
+          },
+          "takeOutAccess": {
+            "id": "acc-d6120e349eba5d99baed",
+            "status": "access-verified",
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Salmon Fly Fishing Access Site 39753438",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438",
+            "verifiedOn": "2026-11-17",
+            "note": "Official public boating facility and original agency coordinates retained. November 17 imagery review places this marker within the facility/parking complex rather than on a surveyed river landing. It is now shown as an approximate access area; no shoreline connector or take-out bank is inferred.",
+            "directions": "Use the signed Montana FWP Salmon Fly Fishing Access Site near Melrose. Follow the designated access to the concrete ramp. The agency coordinate identifies the facility/parking area, not the precise river-edge landing; check signs and the river approach on arrival.",
+            "coordinateSourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438"
+          },
+          "mapReleased": true
+        },
+        {
+          "id": "melrose-glen",
+          "putIn": "Melrose (Salmon Fly FAS)",
+          "takeOut": "Glen FAS",
+          "miles": 14,
+          "difficulty": "Class I",
+          "notes": "Lower river, more braids. Browne's Bridge is roughly halfway.",
+          "putInAccessId": "acc-d6120e349eba5d99baed",
+          "takeOutAccessId": "acc-fecb78ad7e025540b3e5",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.624395702849,
+            "lon": -112.68806152101074
+          },
+          "takeOutCoords": {
+            "lat": 45.46666639860114,
+            "lon": -112.66907179886113
+          },
+          "putInAccess": {
+            "id": "acc-d6120e349eba5d99baed",
+            "status": "access-verified",
+            "accessType": "Concrete ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Salmon Fly Fishing Access Site 39753438",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438",
+            "verifiedOn": "2026-11-17",
+            "note": "Official public boating facility and original agency coordinates retained. November 17 imagery review places this marker within the facility/parking complex rather than on a surveyed river landing. It is now shown as an approximate access area; no shoreline connector or take-out bank is inferred.",
+            "directions": "Use the signed Montana FWP Salmon Fly Fishing Access Site near Melrose. Follow the designated access to the concrete ramp. The agency coordinate identifies the facility/parking area, not the precise river-edge landing; check signs and the river approach on arrival.",
+            "coordinateSourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753438"
+          },
+          "takeOutAccess": {
+            "id": "acc-fecb78ad7e025540b3e5",
+            "status": "access-verified",
+            "sourceName": "Montana FWP Glen Fishing Access Site 39753546",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753546",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "directions": "Use the signed Glen FAS and follow the site road to the concrete boat ramp; the FWP site marker is inland from the river.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
+          },
+          "mapReleased": true
+        },
+        {
+          "id": "glen-notch",
+          "putIn": "Glen FAS",
+          "takeOut": "Notch Bottom FAS",
+          "miles": 7,
+          "difficulty": "Class I",
+          "notes": "Away from the road. Friday outfitter closure in summer. Watch for rattlesnakes at the takeout.",
+          "putInAccessId": "acc-fecb78ad7e025540b3e5",
+          "takeOutAccessId": "acc-4b75a0672a8f5dd88d56",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.46666639860114,
+            "lon": -112.66907179886113
+          },
+          "takeOutCoords": {
+            "lat": 45.43651824973338,
+            "lon": -112.56647058393813
+          },
+          "putInAccess": {
+            "id": "acc-fecb78ad7e025540b3e5",
+            "status": "access-verified",
+            "sourceName": "Montana FWP Glen Fishing Access Site 39753546",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753546",
+            "verifiedOn": "2026-10-27",
+            "note": "Boat facility confirmed by current FWP inventory. This agency feature locates the access site, not the ramp edge; it is offset from the river in the agency hydrography. Kept as an approximate facility marker, with no exact take-out bank claim, until ramp-specific coordinates are established.",
+            "directions": "Use the signed Glen FAS and follow the site road to the concrete boat ramp; the FWP site marker is inland from the river.",
+            "coordinateSourceUrl": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer/1"
+          },
+          "takeOutAccess": {
+            "id": "acc-4b75a0672a8f5dd88d56",
+            "status": "verified",
+            "accessType": "Gravel ramp",
+            "operator": "Montana Fish, Wildlife & Parks",
+            "sourceName": "Montana FWP Tony Schoonen Fishing Access Site 39753572",
+            "sourceUrl": "https://myfwp.mt.gov/fishMT/fas/39753572",
+            "verifiedOn": "2026-10-23",
+            "note": "Notch Bottom was renamed Tony Schoonen FAS; the coordinate replaces the former approximate point.",
+            "riverBank": "river-left",
+            "bankVerifiedOn": "2026-10-23",
+            "bankSourceName": "USGS NHDPlus HR flow direction and satellite inspection",
+            "bankSourceUrl": "https://hydro.nationalmap.gov/arcgis/rest/services/NHDPlus_HR/MapServer/3",
+            "bankNote": "Bank is stated while facing downstream and checked against the mapped launch position and downstream flow direction."
+          },
+          "mapReleased": true
+        }
+      ],
+      "state": "MT",
+      "timezone": "America/Denver",
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Rechecked November 17, 2026. Divide Bridge, Salmon Fly, Glen and Tony Schoonen/Notch Bottom are documented boating facilities; general facility markers are not precise shoreline landings. River-course geometry is reviewed independently. Older source channels and island crossings remain research questions and do not establish navigable connectors."
+    }
+  },
+  {
+    "id": "methow-upper",
+    "before": {
+      "id": "methow-upper",
+      "name": "Methow River (Winthrop \u2013 Twisp)",
+      "gauge": "12448500",
+      "gaugeName": "Methow River at Winthrop",
+      "lat": 48.452,
+      "lon": -120.176,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Western-town float from Winthrop's Red Barn \u2014 tubers in late summer, quick spring water.",
+      "sections": [
+        {
+          "id": "red-barn-big-eddy",
+          "putIn": "Red Barn Access (Winthrop)",
+          "takeOut": "Big Eddy (Methow)",
+          "miles": 4.5,
+          "difficulty": "Class II",
+          "notes": "Popular late-summer tube float. Big Eddy is a steep climb up to the highway. AW rates the whole 50-mi reach II(III).",
+          "putInAccessId": "acc-0656ea1d40c052f6888a",
+          "takeOutAccessId": "acc-fa243bd7163b5feba671",
+          "mapPendingReason": "Red Barn Access (Winthrop): Final run (2026-10-25): Red Barn is the Town of Winthrop's Mack Lloyd Park (WWRP grant record), but no Town GIS/launch coordinate or access page was found; USFWS features nearby are Winthrop hatchery only. Needs Town of Winthrop answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/rb19_g.png, z19) shows a clear path from the lot behind the Barn to the gravel shore (water end ~48.47608,-120.18798; river-left per NHDPlus 144385429). But access status is not clear enough: the Town's 2024 Park Plan (https://townofwinthrop.com/DRAFT%20Park%20Plan%202024.pdf) says the bank 'has been used informally' for water access, is severely eroding, and the Town 'has funding to install a new water access pathway' for hand launch (RCO-funded, construction anticipated 2024); completion was not confirmed. Construction/legal-status uncertainty, so not placed. Big Eddy (Methow): Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+          "mapReleased": false
+        },
+        {
+          "id": "big-eddy-twisp",
+          "putIn": "Big Eddy (Methow)",
+          "takeOut": "Twisp Access",
+          "miles": 6.1,
+          "difficulty": "Class II",
+          "notes": "Tricky landing at Twisp: cross the incoming Twisp River current and catch a small eddy river right; steep carry.",
+          "putInAccessId": "acc-fa243bd7163b5feba671",
+          "takeOutAccessId": "acc-041fdb0bf8ee57ffb898",
+          "mapPendingReason": "Big Eddy (Methow): Final run (2026-10-25): No agency coordinate or manager found (WDFW Facilities/WaterAccessSites within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): No managing-agency source confirming access was found, so it was not eligible for imagery placement. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline. Twisp Access: Final run (2026-10-25): No agency coordinate or manager found (WDFW within 2 km: none). Needs agency answer. Imagery pass (2026-10-25, not promoted): Imagery (research/raw/batch4/twisp_g.png): no launch visible at the park/pool lot; no agency access source. Take-out bank not yet checked against an agency source or the NHDPlus HR flowline.",
+          "mapReleased": false
+        }
+      ],
+      "state": "WA",
+      "timezone": "America/Los_Angeles",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Audited 2026-10-25. Pending: Big Eddy (Methow), Red Barn Access (Winthrop), Twisp Access not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "after": {
+      "id": "methow-upper",
+      "name": "Methow River (Winthrop \u2013 Twisp)",
+      "gauge": "12448500",
+      "gaugeName": "Methow River at Winthrop",
+      "lat": 48.452,
+      "lon": -120.176,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Western-town float from Winthrop's Red Barn \u2014 tubers in late summer, quick spring water.",
+      "sections": [
+        {
+          "id": "red-barn-big-eddy",
+          "putIn": "Red Barn Access (Winthrop)",
+          "takeOut": "Big Eddy (Methow)",
+          "miles": 4.5,
+          "difficulty": "Class II",
+          "notes": "Late-summer float from Mack Lloyd Park/Red Barn to the Big Eddy/Rising Eagle roadside turnout. Big Eddy has a steep unimproved carry, no boat ramp, and can be difficult for larger boats; scout the actual landing and carry before setting a shuttle. Respect posted parking restrictions and private land. AW rates the full 50-mile guide reach II(III); that is not a certification of current conditions on this shorter float.",
+          "putInAccessId": "acc-0656ea1d40c052f6888a",
+          "takeOutAccessId": "acc-fa243bd7163b5feba671",
+          "routeReview": "Approximate river-course overview only. The generalized historical line can cross exposed gravel bars; it does not map safe bridge passages or shoreline carries. Identify the usable landing and current hazards before launching.",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 48.47617069,
+            "lon": -120.18702753
+          },
+          "takeOutCoords": {
+            "lat": 48.428151,
+            "lon": -120.162662
+          },
+          "putInAccess": {
+            "id": "acc-0656ea1d40c052f6888a",
+            "status": "access-verified",
+            "accessType": "Hand launch",
+            "operator": "Town of Winthrop",
+            "sourceName": "Town of Winthrop \u2014 Mack Lloyd Park water-access progress report, accepted by Washington RCO December 18, 2024",
+            "sourceUrl": "https://secure.rco.wa.gov/prism/projectsearch/api/project-search/snapshot/attachment/652199",
+            "verifiedOn": "2026-11-17",
+            "note": "The accepted December 2024 project report documents the water-access ramp, bank stabilization and parking as complete, with restroom work and signage still planned. Its dated project photographs show the concrete-plank access ramp. The current RCO project remains administratively active; that status and the unfinished restroom work are not evidence that the ramp was never built. The July 2026 attachment labelled As Built contains October 2023 bid drawings and is not used as completion evidence. The RCO worksite coordinate is retained only as an approximate facility location. No exact landing, verified bank, seasonal availability or navigation-safe channel is claimed.",
+            "directions": "Use the public Mack Lloyd Park access area behind the Winthrop Barn at 51 N Highway 20. Follow the designated river-access path. This marker identifies the project/facility area, not the precise shoreline ramp; check posted conditions and Town notices before a trip.",
+            "coordinateSourceUrl": "https://secure.rco.wa.gov/PRISM/projectsearch/project/18-1854"
+          },
+          "takeOutAccess": {
+            "id": "acc-fa243bd7163b5feba671",
+            "status": "access-verified",
+            "accessType": "Unimproved hand access",
+            "operator": "Washington State Department of Transportation roadside turnout (per Yakama Nation-commissioned assessment)",
+            "sourceName": "Yakama Nation-commissioned Middle Methow recreational-use assessment \u2014 Rising Eagle Road turnout; American Whitewater Methow access guide",
+            "sourceUrl": "https://yakamafish-nsn.gov/sites/default/files/projects/WaveTrekRescue_M2_River_Use_Assessment_Dec2011%281%29.pdf",
+            "verifiedOn": "2026-11-17",
+            "note": "The Yakama Nation-commissioned assessment (printed page 8 and Figure 3 on page 9) identifies the WSDOT Rising Eagle turnout as an intermediate boating put-in/take-out about four river miles below Winthrop. American Whitewater independently identifies Big Eddy at SR 20 mile 196.7, describes its steep carry and supplies this coordinate. The coordinate, Rising Eagle Road/SR 20 road identity and turnout are consistent on the saved road context and individual imagery. The historical public-access assessment and current guide establish an approximate access facility, not a surveyed landing or an assurance of present conditions. No bank, safe exit, larger-boat ramp or public ownership beyond the documented access is claimed.",
+            "directions": "Use only permitted parking at the large SR 20 turnout near mile 196.7 and Rising Eagle Road. This is unimproved roadside access with a steep carry between the road and river, not a boat ramp. Scout the bank, usable landing, carry and posted restrictions before launching; it can be difficult for larger boats. Do not use private driveways or assume adjoining shoreline is public.",
+            "coordinateSourceUrl": "https://www.americanwhitewater.org/content/River/detail/id/3532"
+          },
+          "mapReleased": true
+        },
+        {
+          "id": "big-eddy-twisp",
+          "putIn": "Big Eddy (Methow)",
+          "takeOut": "Twisp Access",
+          "miles": 6.1,
+          "difficulty": "Class II",
+          "notes": "Big Eddy/Rising Eagle is unimproved roadside access with a steep carry, not a boat ramp. Twisp Park has public river access but no established larger-watercraft put-in ramp in the Town plan. The confluence landing and steep carry can be difficult, especially at high water; scout the exit and suitability for your craft before launching. Area markers do not identify exact bank connections.",
+          "putInAccessId": "acc-fa243bd7163b5feba671",
+          "takeOutAccessId": "acc-041fdb0bf8ee57ffb898",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 48.428151,
+            "lon": -120.162662
+          },
+          "takeOutCoords": {
+            "lat": 48.36793838,
+            "lon": -120.12006451
+          },
+          "putInAccess": {
+            "id": "acc-fa243bd7163b5feba671",
+            "status": "access-verified",
+            "accessType": "Unimproved hand access",
+            "operator": "Washington State Department of Transportation roadside turnout (per Yakama Nation-commissioned assessment)",
+            "sourceName": "Yakama Nation-commissioned Middle Methow recreational-use assessment \u2014 Rising Eagle Road turnout; American Whitewater Methow access guide",
+            "sourceUrl": "https://yakamafish-nsn.gov/sites/default/files/projects/WaveTrekRescue_M2_River_Use_Assessment_Dec2011%281%29.pdf",
+            "verifiedOn": "2026-11-17",
+            "note": "The Yakama Nation-commissioned assessment (printed page 8 and Figure 3 on page 9) identifies the WSDOT Rising Eagle turnout as an intermediate boating put-in/take-out about four river miles below Winthrop. American Whitewater independently identifies Big Eddy at SR 20 mile 196.7, describes its steep carry and supplies this coordinate. The coordinate, Rising Eagle Road/SR 20 road identity and turnout are consistent on the saved road context and individual imagery. The historical public-access assessment and current guide establish an approximate access facility, not a surveyed landing or an assurance of present conditions. No bank, safe exit, larger-boat ramp or public ownership beyond the documented access is claimed.",
+            "directions": "Use only permitted parking at the large SR 20 turnout near mile 196.7 and Rising Eagle Road. This is unimproved roadside access with a steep carry between the road and river, not a boat ramp. Scout the bank, usable landing, carry and posted restrictions before launching; it can be difficult for larger boats. Do not use private driveways or assume adjoining shoreline is public.",
+            "coordinateSourceUrl": "https://www.americanwhitewater.org/content/River/detail/id/3532"
+          },
+          "takeOutAccess": {
+            "id": "acc-041fdb0bf8ee57ffb898",
+            "status": "access-verified",
+            "accessType": "Hand access",
+            "operator": "Town of Twisp",
+            "sourceName": "Town of Twisp 2022 Parks and Recreation Plan \u2014 park inventory and river access points; Yakama Nation-commissioned Middle Methow recreational-use assessment",
+            "sourceUrl": "https://cms5.revize.com/revize/twispwa/services/public%20works/Development%20Standards/Town%20of%20Twisp_2022%20P%26R%20Plan%20FINAL.pdf",
+            "verifiedOn": "2026-11-17",
+            "note": "The Town park plan documents the park, riparian/beach land and existing official river access. The Yakama Nation-commissioned 2011 assessment explicitly identifies Twisp Park as a public-lands access and take-out (printed page 8). RCO project 02-1329 identifies Town ownership and the park worksite coordinate, which falls within the playground/pool area in imagery. The old recreation-grant coordinate is not a ramp survey, and the grant was for park amenities, not a river landing. No bank, exact shoreline connection, new boat ramp, navigation safety or current seasonal availability is inferred.",
+            "directions": "Use Twisp Park at the north end of Lincoln Street beside the Wagner Pool and Twisp/Methow confluence. This is an approximate public park/access area, not a shoreline landing or improved raft ramp. The Town plan identifies existing river access but no larger-watercraft put-in; confirm the landing, carry and suitability for your craft before floating.",
+            "coordinateSourceUrl": "https://secure.rco.wa.gov/PRISM/projectsearch/project/02-1329"
+          },
+          "mapReleased": true
+        }
+      ],
+      "state": "WA",
+      "timezone": "America/Los_Angeles",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Rechecked November 17, 2026. Mack Lloyd/Red Barn and Twisp Park have Town/RCO facility support. Big Eddy corresponds to the Rising Eagle highway turnout documented in the Yakama Nation-commissioned river-use assessment and AW guide. All markers are approximate facility/roadside areas, not precise shore landings. Big Eddy requires a steep unimproved carry; current signs and bank/river conditions must be checked. No live calibration or GPS timing is approved."
+    }
+  },
+  {
+    "id": "white-salmon",
+    "before": {
+      "id": "white-salmon",
+      "name": "White Salmon River",
+      "gauge": "14123500",
+      "gaugeName": "White Salmon River near Underwood",
+      "lat": 45.826,
+      "lon": -121.498,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Spring-fed, ice-cold Wild and Scenic river in a mossy basalt slot \u2014 the Gorge's summer rafting run.",
+      "sections": [
+        {
+          "id": "bz-husum",
+          "putIn": "BZ Corner",
+          "takeOut": "Husum (above the falls)",
+          "miles": 4.4,
+          "difficulty": "Class III+",
+          "notes": "Continuous Class III\u2013III+ in a narrow basalt gorge. TAKE OUT ABOVE HUSUM FALLS (Class V) at the river-right USFS access. Commercial rafting run. USFS: no fees at BZ Corner or the Husum Boating Site for private boaters; commercial outfitters need a USFS special-use permit.",
+          "putInAccessId": "acc-614954b70d50574288b6",
+          "takeOutAccessId": "acc-815155758939551a879b",
+          "notices": [
+            {
+              "title": "Scout the take-out above Husum Falls",
+              "text": "This is a technical whitewater trip. Before launching, identify the exit above Class V Husum Falls and plan your take-out. The Area marker shows the roadside boating facility, not the exact eddy or a navigation target. Do not use the map to decide when to make the exit.",
+              "sourceName": "USDA Forest Service",
+              "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+              "checkedOn": "2026-11-09"
+            }
+          ],
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.851342,
+            "lon": -121.509918
+          },
+          "takeOutCoords": {
+            "lat": 45.799923,
+            "lon": -121.486067
+          },
+          "putInAccess": {
+            "id": "acc-614954b70d50574288b6",
+            "status": "access-verified",
+            "accessType": "Access facility (approximate location)",
+            "sourceName": "USDA Forest Service, Columbia River Gorge NSA: BZ Launch Site & Trail (#4413)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+            "verifiedOn": "2026-11-09",
+            "note": "USFS confirms the launch, take-outs and trail open; toilets are seasonally closed. INFRA site 76009 matches this existing approximate agency coordinate. The imagery does not establish an exact parking loop or shoreline entry at the pin. The river is east of the marker; retain Area precision and agency directions.",
+            "directions": "Follow USFS directions to the signed parking east of SR 141 near milepost 12.5, then the 0.1-mile carry trail with boat-slide rails. The agency Area marker is approximate; use the signed entrance, not the marker, to locate parking and the launch.",
+            "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?geometry=-121.515%2C45.846%2C-121.505%2C45.856&geometryType=esriGeometryEnvelope&inSR=4326&outFields=site_name%2Csite_id%2Clatitude%2Clongitude%2Cpublic_site_name%2Crecarea_status%2Ccurrent_conditions%2Cusda_portal_url&outSR=4326&f=json"
+          },
+          "takeOutAccess": {
+            "id": "acc-815155758939551a879b",
+            "status": "access-verified",
+            "accessType": "River access facility (approximate area)",
+            "operator": "USDA Forest Service",
+            "sourceName": "USDA Forest Service \u2014 Husum (above the falls)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+            "verifiedOn": "2026-11-09",
+            "note": "Current USFS page identifies this boating/portage facility and publishes the unchanged candidate coordinate. Individual imagery places it at the roadside pull-out upstream of the visible falls. Preserve Area precision: the water-entry path and take-out eddy are under tree cover. Missing the upstream exit can lead into Class V Husum Falls.",
+            "directions": "USFS Husum Boating Site is beside SR 141 at approximately milepost 8.8. Before launching, scout and identify the take-out above Husum Falls; the roadside-area marker is not the exact take-out eddy.",
+            "coordinateSourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site"
+          },
+          "mapReleased": true
+        }
+      ],
+      "state": "WA",
+      "timezone": "America/Los_Angeles",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Audited 2026-10-25. Pending: BZ Corner, Husum (above the falls) not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "after": {
+      "id": "white-salmon",
+      "name": "White Salmon River",
+      "gauge": "14123500",
+      "gaugeName": "White Salmon River near Underwood",
+      "lat": 45.826,
+      "lon": -121.498,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Spring-fed, ice-cold Wild and Scenic river in a mossy basalt slot \u2014 the Gorge's summer rafting run.",
+      "sections": [
+        {
+          "id": "bz-husum",
+          "putIn": "BZ Corner",
+          "takeOut": "Husum (above the falls)",
+          "miles": 4.4,
+          "difficulty": "Class III+",
+          "notes": "Continuous Class III\u2013III+ in a narrow basalt gorge. TAKE OUT ABOVE HUSUM FALLS (Class V) at the river-right USFS access. Commercial rafting run. USFS: no fees at BZ Corner or the Husum Boating Site for private boaters; commercial outfitters need a USFS special-use permit.",
+          "putInAccessId": "acc-614954b70d50574288b6",
+          "takeOutAccessId": "acc-815155758939551a879b",
+          "notices": [
+            {
+              "title": "Scout the take-out above Husum Falls",
+              "text": "This is a technical whitewater trip. Before launching, identify the exit above Class V Husum Falls and plan your take-out. The Area marker shows the roadside boating facility, not the exact eddy or a navigation target. Do not use the map to decide when to make the exit.",
+              "sourceName": "USDA Forest Service",
+              "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+              "checkedOn": "2026-11-09"
+            }
+          ],
+          "routeReview": "Approximate main-river overview only. Tree cover and gorge shadows obscure the exact channel. Identify and scout the take-out ABOVE Class V Husum Falls before launching; the dotted line and Area marker do not locate the exit eddy or provide navigation guidance.",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.851342,
+            "lon": -121.509918
+          },
+          "takeOutCoords": {
+            "lat": 45.799923,
+            "lon": -121.486067
+          },
+          "putInAccess": {
+            "id": "acc-614954b70d50574288b6",
+            "status": "access-verified",
+            "accessType": "Access facility (approximate location)",
+            "sourceName": "USDA Forest Service, Columbia River Gorge NSA: BZ Launch Site & Trail (#4413)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+            "verifiedOn": "2026-11-09",
+            "note": "USFS confirms the launch, take-outs and trail open; toilets are seasonally closed. INFRA site 76009 matches this existing approximate agency coordinate. The imagery does not establish an exact parking loop or shoreline entry at the pin. The river is east of the marker; retain Area precision and agency directions.",
+            "directions": "Follow USFS directions to the signed parking east of SR 141 near milepost 12.5, then the 0.1-mile carry trail with boat-slide rails. The agency Area marker is approximate; use the signed entrance, not the marker, to locate parking and the launch.",
+            "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?geometry=-121.515%2C45.846%2C-121.505%2C45.856&geometryType=esriGeometryEnvelope&inSR=4326&outFields=site_name%2Csite_id%2Clatitude%2Clongitude%2Cpublic_site_name%2Crecarea_status%2Ccurrent_conditions%2Cusda_portal_url&outSR=4326&f=json"
+          },
+          "takeOutAccess": {
+            "id": "acc-815155758939551a879b",
+            "status": "access-verified",
+            "accessType": "River access facility (approximate area)",
+            "operator": "USDA Forest Service",
+            "sourceName": "USDA Forest Service \u2014 Husum (above the falls)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+            "verifiedOn": "2026-11-09",
+            "note": "Current USFS page identifies this boating/portage facility and publishes the unchanged candidate coordinate. Individual imagery places it at the roadside pull-out upstream of the visible falls. Preserve Area precision: the water-entry path and take-out eddy are under tree cover. Missing the upstream exit can lead into Class V Husum Falls.",
+            "directions": "USFS Husum Boating Site is beside SR 141 at approximately milepost 8.8. Before launching, scout and identify the take-out above Husum Falls; the roadside-area marker is not the exact take-out eddy.",
+            "coordinateSourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site"
+          },
+          "mapReleased": true
+        }
+      ],
+      "state": "WA",
+      "timezone": "America/Los_Angeles",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Audited 2026-10-25. Pending: BZ Corner, Husum (above the falls) not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    }
+  },
+  {
+    "id": "bridge-creek",
+    "before": {
+      "id": "bridge-creek",
+      "name": "Bridge Creek",
+      "gauge": "05366334",
+      "gaugeName": "BRIDGE CREEK @ COUNTY TRUNK HIGHWY V NR AUGUSTA,WI",
+      "lat": 44.72418,
+      "lon": -91.14907,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Bridge Creek in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "dells-mill-pond-to-harstad-county-park-canoe-launch",
+          "putIn": "Dells Mill Pond",
+          "takeOut": "Harstad County Park Canoe Launch",
+          "miles": 2.2,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+          "putInAccessId": "acc-0c78875e4151578fa7b1",
+          "takeOutAccessId": "acc-98cf40ad285c5b2d9e2c",
+          "accessReview": "A dam lies near a section endpoint (Dells Lake). The landing\u2019s position relative to the barrier still needs confirmation.",
+          "routeReview": "This section includes Dells Lake and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam.",
+          "mapPendingReason": "A dam lies near a section endpoint (Dells Lake). The landing\u2019s position relative to the barrier still needs confirmation.",
+          "mapReleased": false
+        }
+      ],
+      "gaugeRelationship": "representative",
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    },
+    "after": {
+      "id": "bridge-creek",
+      "name": "Bridge Creek",
+      "gauge": "05366334",
+      "gaugeName": "BRIDGE CREEK @ COUNTY TRUNK HIGHWY V NR AUGUSTA,WI",
+      "lat": 44.72418,
+      "lon": -91.14907,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Bridge Creek in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "dells-mill-pond-to-harstad-county-park-canoe-launch",
+          "putIn": "Dells Mill Pond",
+          "takeOut": "Harstad County Park Canoe Launch",
+          "miles": 2.2,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+          "putInAccessId": "acc-0c78875e4151578fa7b1",
+          "takeOutAccessId": "acc-98cf40ad285c5b2d9e2c",
+          "accessReview": "The DNR-listed Dells Mill Pond carry-in is on the impoundment above Dells Mill Dam. A usable authorized carry to downstream Bridge Creek has not been established. The separate Highway V bridge launch described by paddlers is not this pond landing and must not be substituted without permission and a new access review.",
+          "routeReview": "This pond-to-Harstad itinerary encounters the Dells Mill dam site. A downstream bridge approach is a different access with steep banks and unresolved permission; no continuous float, safe passage or legal portage is approved.",
+          "notices": [
+            {
+              "title": "Pond landing is above the dam",
+              "text": "The DNR lake survey maps Dells Millpond and its dam separately from downstream Bridge Creek. The public pond carry-in does not establish a downstream bridge launch or an authorized carry around the mill. This itinerary remains withheld.",
+              "sourceName": "Wisconsin DNR \u2014 Dells Millpond lake survey and public carry-in record 5083",
+              "sourceUrl": "https://apps.dnr.wi.gov/doclink/lakes_maps/2131000a.pdf",
+              "checkedOn": "2026-11-17"
+            }
+          ],
+          "mapPendingReason": "The DNR-listed Dells Mill Pond carry-in is on the impoundment above Dells Mill Dam. A usable authorized carry to downstream Bridge Creek has not been established. The separate Highway V bridge launch described by paddlers is not this pond landing and must not be substituted without permission and a new access review.",
+          "mapReleased": false
+        }
+      ],
+      "gaugeRelationship": "representative",
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    }
+  },
+  {
+    "id": "mullet-river",
+    "before": {
+      "id": "mullet-river",
+      "name": "Mullet River",
+      "gauge": "04085744",
+      "gaugeName": "MULLET RIVER NEAR GREENBUSH, WI",
+      "lat": 43.73963,
+      "lon": -88.2052,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Mullet River in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "deerview-drive-bridge-access-to-hwy-g-flowage",
+          "putIn": "Deerview Drive Bridge Access",
+          "takeOut": "Hwy G Flowage",
+          "miles": 2.0,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+          "putInAccessId": "acc-2139a86ab2515dcd85e2",
+          "takeOutAccessId": "acc-f19a40c5a1be55c8a569",
+          "accessReview": "A dam lies near a section endpoint (Mullet Creek). The landing\u2019s position relative to the barrier still needs confirmation.",
+          "routeReview": "This section includes Mullet Creek and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam.",
+          "mapPendingReason": "A dam lies near a section endpoint (Mullet Creek). The landing\u2019s position relative to the barrier still needs confirmation.",
+          "mapReleased": false
+        }
+      ],
+      "gaugeRelationship": "same-river-reference",
+      "gaugeContext": {
+        "status": "context-only",
+        "note": "This station is downstream of the accessed reach. Its readings are reference information, not a measured flow for every section or a float-time estimate.",
+        "sourceName": "USGS Water Data \u2014 monitoring location and Wisconsin gauge review",
+        "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-04085744/",
+        "checkedOn": "2026-10-30"
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    },
+    "after": {
+      "id": "mullet-river",
+      "name": "Mullet River",
+      "gauge": "04085744",
+      "gaugeName": "MULLET RIVER NEAR GREENBUSH, WI",
+      "lat": 43.73963,
+      "lon": -88.2052,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Mullet River in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "deerview-drive-bridge-access-to-hwy-g-flowage",
+          "putIn": "Deerview Drive Bridge Access",
+          "takeOut": "Hwy G Flowage",
+          "miles": 2.0,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "A shallow-marsh paddle between two DNR-listed unimproved carry-ins. The Highway G facility area is on the impounded side of Mullet Creek Dam. Take out at the designated marsh-side carry-in and stay well clear of the water-control outlet; this trip does not include passage over the dam, a portage or a downstream relaunch. Water levels, drawdowns and vegetation may prevent a practical through paddle. Check current conditions and property postings with DNR before launching. Area markers identify facilities, not surveyed landings.",
+          "putInAccessId": "acc-2139a86ab2515dcd85e2",
+          "takeOutAccessId": "acc-f19a40c5a1be55c8a569",
+          "distanceReview": "The 2.0-mile planning value is a preliminary hydrography measurement through shallow Mullet Marsh, not a reviewed navigable course between usable landings. The access map is available for facility orientation; trip-time estimates remain unavailable.",
+          "notices": [
+            {
+              "title": "Marsh take-out beside a control structure",
+              "text": "DNR lists both Deerview Drive and Highway G as unimproved carry-ins and allows canoeing in Mullet Creek Wildlife Area. The Highway G area marker is on the marsh side of Mullet Creek Dam. Use the designated carry-in and keep clear of the outlet; no through-dam route or portage is offered. Managed drawdowns and dense vegetation can limit paddling.",
+              "sourceName": "Wisconsin DNR \u2014 Mullet Creek Wildlife Area and public access inventory",
+              "sourceUrl": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/mullet",
+              "checkedOn": "2026-11-17"
+            }
+          ],
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 43.739626793306705,
+            "lon": -88.20519586805936
+          },
+          "takeOutCoords": {
+            "lat": 43.758295746366834,
+            "lon": -88.17582419010365
+          },
+          "putInAccess": {
+            "id": "acc-2139a86ab2515dcd85e2",
+            "status": "access-verified",
+            "accessType": "Unimproved carry-in access area",
+            "operator": "Wisconsin DNR",
+            "sourceName": "Wisconsin DNR \u2014 public boat access inventory",
+            "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3862&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+            "verifiedOn": "2026-11-17",
+            "note": "Fresh DNR public-access record identifies a state-owned unimproved carry-in and is not marked abandoned. The DNR property map also identifies boat access in Mullet Creek Wildlife Area, where canoeing is an allowed recreational activity. The original agency facility coordinate is retained as an Area marker; exact landing, water depth, vegetation clearance and present-day usability are not field-verified. No surveyed shoreline connector or bank side is claimed.",
+            "directions": "Use the DNR-listed Deerview Drive carry-in at the Mullet Marsh road crossing. Follow the designated public approach and posted parking instructions; the marker is the original bridge/access-area coordinate, not an exact shoreline entry. Expect shallow marsh water, emergent vegetation and possible drawdowns; confirm a usable launch before setting a shuttle.",
+            "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3862&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json"
+          },
+          "takeOutAccess": {
+            "id": "acc-f19a40c5a1be55c8a569",
+            "status": "access-verified",
+            "accessType": "Unimproved carry-in access area",
+            "operator": "Wisconsin DNR",
+            "sourceName": "Wisconsin DNR \u2014 public boat access inventory",
+            "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3863&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+            "verifiedOn": "2026-11-17",
+            "note": "Fresh DNR public-access record identifies a state-owned unimproved carry-in and is not marked abandoned. The DNR property map also identifies boat access in Mullet Creek Wildlife Area, where canoeing is an allowed recreational activity. The original agency facility coordinate is retained as an Area marker; exact landing, water depth, vegetation clearance and present-day usability are not field-verified. No surveyed shoreline connector or bank side is claimed. DNR dam record 861 is approximately 17 metres from the facility marker. Imagery places the marker on the impounded marsh side, not a confirmed landing edge. This identifies a take-out area above the control structure, not a route through it.",
+            "directions": "Use the signed DNR carry-in approach from County Highway G to the Mullet Marsh access area. The agency marker identifies the marsh side of the dike, close to Mullet Creek Dam; take out at the designated carry-in and stay clear of the water-control outlet. Do not continue through the control structure or assume a portage or downstream relaunch. Follow property postings and check drawdown and vegetation conditions with DNR.",
+            "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3863&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json"
+          },
+          "mapReleased": true
+        }
+      ],
+      "gaugeRelationship": "same-river-reference",
+      "gaugeContext": {
+        "status": "context-only",
+        "note": "This station is downstream of the accessed reach. Its readings are reference information, not a measured flow for every section or a float-time estimate.",
+        "sourceName": "USGS Water Data \u2014 monitoring location and Wisconsin gauge review",
+        "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-04085744/",
+        "checkedOn": "2026-10-30"
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    }
+  }
+]

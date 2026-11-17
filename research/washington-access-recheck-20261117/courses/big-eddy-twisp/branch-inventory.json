@@ -1,0 +1,53 @@
+{
+  "putIn": {
+    "featureId": "165034847",
+    "offsetMeters": 58.4931434020398,
+    "sourceStationMeters": 3914.187350115696
+  },
+  "takeOut": {
+    "featureId": "165040498",
+    "offsetMeters": 95.07468528237833,
+    "sourceStationMeters": 124.75228138039407
+  },
+  "viableEdges": [
+    "144385520",
+    "144385525",
+    "165034845",
+    "165034846",
+    "165034847",
+    "165034848",
+    "165034849",
+    "165037156",
+    "165037206",
+    "165037207",
+    "165037229",
+    "165037480",
+    "165037739",
+    "165037740",
+    "165040498"
+  ],
+  "branches": [
+    {
+      "node": [
+        -120.1426865,
+        48.4193841
+      ],
+      "choices": [
+        "165034845",
+        "165034848"
+      ]
+    }
+  ],
+  "riverId": "methow-upper",
+  "sectionId": "big-eddy-twisp",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1702_HU4_GPKG.zip",
+    "checkedOn": "2026-11-17",
+    "streamId": "Methow River",
+    "evidenceFile": "research/washington-access-recheck-20261117/sources/nhd/methow-upper-caf5213eb81ecb00.json",
+    "sha256": "caf5213eb81ecb0060b7afccec14410d35a9bc8bd47bcbaaf1519d09f1e538a1"
+  },
+  "projectedCrs": 5070,
+  "note": "Forward/reverse reachability identifies possible source paths. It does not select a navigable or principal channel."
+}

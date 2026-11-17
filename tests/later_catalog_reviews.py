@@ -353,3 +353,23 @@ def assert_kickapoo_path_withdrawn(case, path, old):
         case.assertEqual(old[field], now[field])
     case.assertFalse((root / 'public/routes' / filename).exists())
     return True
+
+
+def before_nov17_endpoint_course_review(record):
+    """Reverse only exact later Mullet/Bridge Creek/White Salmon review records."""
+    import json
+    from pathlib import Path
+    path = Path(__file__).resolve().parents[1] / 'research/white-salmon-course-20261117/normalized-later-changes.json'
+    if not path.exists():return record
+    row = next((x for x in json.loads(path.read_text()) if x['id'] == record.get('id')), None)
+    return row['before'] if row and record == row['after'] else record
+
+
+def before_nov17_local_release(record):
+    """Normalize only complete, exact reviewed records to the prior live baseline."""
+    import json
+    from pathlib import Path
+    path=Path(__file__).resolve().parents[1]/'research/release-20261117c/catalog-changes.json'
+    if not path.exists():return record
+    row=next((r for r in json.loads(path.read_text()) if r['id']==record.get('id')),None)
+    return row['before'] if row and record==row['after'] else record

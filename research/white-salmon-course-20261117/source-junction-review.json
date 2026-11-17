@@ -1,0 +1,51 @@
+{
+  "source": {
+    "name": "USGS National Hydrography Dataset \u2014 High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1707_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "White Salmon River",
+    "evidenceFile": "research/routes/WA/hr-sources/white-salmon-9eb55041b0b4513c.json",
+    "sha256": "9eb55041b0b4513c48e61aa342cbd03b39f828770c22fbf8a552e33db2a8e608"
+  },
+  "junctions": [
+    {
+      "upstream": "{3379971D-659C-4640-ABA8-C52EDA8B644B}",
+      "downstream": "{94B2804F-BCE4-4645-AA5C-BEA52F0FA233}",
+      "offsetMeters": 1.3471759019539142e-08,
+      "maxAxisDifferenceDegrees": 1.1368683772161603e-13
+    },
+    {
+      "upstream": "{94159565-FEF9-4BC2-BE61-9ECF97035CE6}",
+      "downstream": "150813595",
+      "offsetMeters": 1.4904721549604227e-08,
+      "maxAxisDifferenceDegrees": 1.1368683772161603e-13
+    },
+    {
+      "upstream": "150813596",
+      "downstream": "{5B0CB791-4747-443D-A5D0-A55B72C81082}",
+      "offsetMeters": 1.5481257487560017e-08,
+      "maxAxisDifferenceDegrees": 1.1368683772161603e-13
+    },
+    {
+      "upstream": "{5B0CB791-4747-443D-A5D0-A55B72C81082}",
+      "downstream": "{F47B5486-10A2-41C0-87A1-EE55DBC497CD}",
+      "offsetMeters": 1.3471903461252475e-08,
+      "maxAxisDifferenceDegrees": 1.1368683772161603e-13
+    },
+    {
+      "upstream": "{FD34E378-8F58-4519-A9F6-24E84679659F}",
+      "downstream": "{CF2FB773-8318-45E1-8C5E-33CA6034C3E1}",
+      "offsetMeters": 1.490620310609439e-08,
+      "maxAxisDifferenceDegrees": 1.1368683772161603e-13
+    },
+    {
+      "upstream": "{275378B6-CD92-4221-8F4C-36614A75F852}",
+      "downstream": "{62B9429F-588C-4247-80F5-BD66E4DDF301}",
+      "offsetMeters": 1.347239809718075e-08,
+      "maxAxisDifferenceDegrees": 1.1368683772161603e-13
+    }
+  ],
+  "limitDegrees": 1e-12,
+  "originalSourceUnchanged": true,
+  "spatialGapPermission": false
+}

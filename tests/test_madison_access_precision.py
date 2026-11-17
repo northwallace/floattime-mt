@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 from tools.build_catalog import build
+from tests.later_catalog_reviews import before_nov17_local_release
 from tools.route_catalog import reconstruct_directed_source, validate
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,7 +65,7 @@ class MadisonAccessPrecisionTests(unittest.TestCase):
             current = self.rivers[old['id']]
             for key in ['timing', 'refFlowCfs', 'refSpeedMph', 'flowSource', 'usgsSite']:
                 self.assertEqual(current.get(key), old.get(key), (old['id'], key))
-            sections = {s['id']: s for s in current['sections']}
+            sections = {s['id']: s for s in before_nov17_local_release(current)['sections']}
             for old_s in old['sections']:
                 s = sections[old_s['id']]
                 for key in ['miles', 'putInAccessId', 'takeOutAccessId', 'mapReleased']:

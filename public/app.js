@@ -476,6 +476,10 @@ async function showLandMap(section) {
         : `Approximate mapped river path: ${pilot.routeMiles.toFixed(1)} mi. Planning distance remains ${section.miles} mi. Dashed line is an agency centerline, not a recommended navigation channel. ` + (fieldTest ? "The Pilot take-out marks the user-confirmed destination; the Area put-in marks approximate access. " : "");
       evidence.appendChild(description);
       const source = document.createElement("a"); source.href = pilot.sourceUrl; source.target = "_blank"; source.rel = "noopener"; source.textContent = `River-line source · checked ${pilot.checkedOn}`; evidence.appendChild(source);
+      if (pilot.license?.name === "ODbL 1.0" && pilot.license.attributionUrl === "https://www.openstreetmap.org/copyright") {
+        evidence.appendChild(document.createTextNode(" · "));
+        const credit = document.createElement("a"); credit.href = "https://www.openstreetmap.org/copyright"; credit.target = "_blank"; credit.rel = "noopener"; credit.textContent = "© OpenStreetMap contributors · ODbL 1.0"; evidence.appendChild(credit);
+      }
       // The saved GPS experiment is independently opt-in; ordinary route maps never enable it.
       if (!overview && (fieldTest || (!mapConfig.routes && mapConfig.routePilots && pilot.status === "local-pilot"))) state.progress = mountFloatProgress(map, maplibregl, pilot, route, river, section, fieldTest);
     }

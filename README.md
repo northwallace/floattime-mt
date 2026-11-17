@@ -1,5 +1,12 @@
 # Float ETA
 
+## November 17 access and course update
+
+This update has **252 rivers, 1,097 sections, 991 access maps and 386 dotted river paths** across 13 states. It adds two Methow access-area maps and one Mullet facility-orientation map, with reviewed courses on the Methow, White Salmon and Klickitat. The downstream Klickitat course has a refreshed source review. There are 106 access maps still withheld.
+
+New courses are display-only overviews. Existing planning miles, gauges and timing models are unchanged. Documented facility-area pins retain approximate labels; missing precise landing evidence does not become an exact shoreline claim. The first original OpenStreetMap river-way pilot includes source-bound geometry, saved imagery review and ODbL attribution. See `catalog/RESEARCH_FORMAT.md` for staging rules.
+
+
 ## November 10 release
 
 This release contains **252 rivers, 1,089 sections, 979 access maps and 352

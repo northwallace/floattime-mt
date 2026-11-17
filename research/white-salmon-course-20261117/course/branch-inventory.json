@@ -1,0 +1,53 @@
+{
+  "putIn": {
+    "featureId": "{7D1BFB42-7D72-4B66-BCF5-8A478FC61A96}",
+    "offsetMeters": 95.10071643704661,
+    "sourceStationMeters": 253.47677254222387
+  },
+  "takeOut": {
+    "featureId": "150813605",
+    "offsetMeters": 39.6846439800743,
+    "sourceStationMeters": 494.128233224846
+  },
+  "viableEdges": [
+    "150813595",
+    "150813596",
+    "150813602",
+    "150813605",
+    "{051F0D95-306B-4F60-A721-321E5733CD1F}",
+    "{1D650CAE-E0F4-4515-9E21-23EF165CF632}",
+    "{24F0CDD5-FA76-445D-99F1-7F6CC100EBA7}",
+    "{275378B6-CD92-4221-8F4C-36614A75F852}",
+    "{3379971D-659C-4640-ABA8-C52EDA8B644B}",
+    "{5B0CB791-4747-443D-A5D0-A55B72C81082}",
+    "{62B9429F-588C-4247-80F5-BD66E4DDF301}",
+    "{7D1BFB42-7D72-4B66-BCF5-8A478FC61A96}",
+    "{94159565-FEF9-4BC2-BE61-9ECF97035CE6}",
+    "{94B2804F-BCE4-4645-AA5C-BEA52F0FA233}",
+    "{BA17D50F-A80A-4FAF-B47F-8B8BDBDD6E2B}",
+    "{CF2FB773-8318-45E1-8C5E-33CA6034C3E1}",
+    "{D7A83742-1206-48CF-9A0C-45CA821EA98C}",
+    "{EA61A863-C098-4574-BA24-8072D565B9FF}",
+    "{F47B5486-10A2-41C0-87A1-EE55DBC497CD}",
+    "{FD34E378-8F58-4519-A9F6-24E84679659F}"
+  ],
+  "branches": [],
+  "courseAnchors": {
+    "putIn": {
+      "featureId": "{7D1BFB42-7D72-4B66-BCF5-8A478FC61A96}",
+      "reason": "The individually inspected BZ Corner source comparison shows this original named White Salmon edge in the gorge east of the unchanged USFS facility area. The nearest unnamed source edge follows a roadside tributary through town. Use the original main-river edge for display-only overview; the shoreline connection remains unmapped."
+    }
+  },
+  "riverId": "white-salmon",
+  "sectionId": "bz-husum",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1707_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "White Salmon River",
+    "evidenceFile": "research/routes/WA/hr-sources/white-salmon-9eb55041b0b4513c.json",
+    "sha256": "9eb55041b0b4513c48e61aa342cbd03b39f828770c22fbf8a552e33db2a8e608"
+  },
+  "projectedCrs": 5070,
+  "note": "Forward/reverse reachability identifies possible source paths. It does not select a navigable or principal channel."
+}

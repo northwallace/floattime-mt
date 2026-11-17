@@ -1,0 +1,269 @@
+{
+  "localOnly": true,
+  "status": "held",
+  "sourceGeometryEdited": false,
+  "sourceSha256": "0910f6703a3341fb49893b299548055cd9a35b00579c3999c2c9c25721a49d20",
+  "finding": "At upstream fork 2, cyan crosses exposed gravel and a long vegetated island margin/former channel; orange runs through the wooded former eastern channel. Neither is supported as the present main river.",
+  "graphCheck": {
+    "excludedFeatureIds": [
+      "147210175",
+      "147210347"
+    ],
+    "takeOutReachableWithoutRejectedEdges": false,
+    "meaning": "Source graph only, not a physical gap in the river."
+  },
+  "imagery": [
+    {
+      "id": "leidl-continued-fork-1",
+      "title": "leidl-continued-fork-1 cyan 147210171 / orange 147210286 - source continuations",
+      "line": [
+        [
+          -121.09957312246969,
+          45.905733128744956
+        ],
+        [
+          -121.09964932246957,
+          45.905695195411745
+        ],
+        [
+          -121.09988238913587,
+          45.905540595411914
+        ],
+        [
+          -121.10034652246848,
+          45.90504739541273
+        ],
+        [
+          -121.10121152246718,
+          45.903846528747934
+        ],
+        [
+          -121.1019787891326,
+          45.90298359541593
+        ],
+        [
+          -121.10229058913218,
+          45.90258852874987
+        ],
+        [
+          -121.10251252246515,
+          45.902305995416945
+        ],
+        [
+          -121.10259712246501,
+          45.90196799541752
+        ],
+        [
+          -121.10316378913082,
+          45.90126119541859
+        ],
+        [
+          -121.1033623891305,
+          45.90101312875233
+        ],
+        [
+          -121.10338792246377,
+          45.90064479541955
+        ],
+        [
+          -121.10334058913053,
+          45.90036899541993
+        ],
+        [
+          -121.1034253891304,
+          45.90003112875383
+        ],
+        [
+          -121.10387498912968,
+          45.899660595421125
+        ],
+        [
+          -121.10466158912845,
+          45.89922712875504
+        ],
+        [
+          -121.10529113506281,
+          45.899044916667606
+        ]
+      ],
+      "pins": [
+        {
+          "lon": -121.0995731,
+          "lat": 45.9057331,
+          "label": "source junction"
+        }
+      ],
+      "minMeters": 1900,
+      "file": "research/klickitat-course-20261117/imagery/leidl-continued-fork-1.jpg",
+      "imageUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-13482011.077150576%2C5764008.282802533%2C-13480111.077150576%2C5765433.282802533&bboxSR=3857&imageSR=3857&size=1024%2C768&format=jpg&f=image",
+      "bbox3857": [
+        -13482011.077150576,
+        5764008.282802533,
+        -13480111.077150576,
+        5765433.282802533
+      ],
+      "imageSha256": "3794925bc0722b9b27454dff20006da11e434560f5928b70cb5ff8dc449bd69d",
+      "baseSha256": "3b0a77c72619460eb8276488ca2a5b44614b5421679368e18b5e8a94903f6ff2",
+      "section": "leidl-icehouse",
+      "branch": 1,
+      "choices": [
+        "147210171",
+        "147210286"
+      ],
+      "contextFeatureIds": [
+        [
+          "147210171",
+          "147210172",
+          "147210170"
+        ],
+        [
+          "147210286",
+          "147201728",
+          "147201729",
+          "147210287",
+          "147210170"
+        ]
+      ],
+      "note": "Context follows only unique downstream edges up to 900m or the next fork. No channel choice approved."
+    },
+    {
+      "id": "leidl-continued-fork-2",
+      "title": "leidl-continued-fork-2 cyan 147210175 / orange 147210347 - source continuations",
+      "line": [
+        [
+          -121.08850912248688,
+          45.92152872872049
+        ],
+        [
+          -121.08855492248682,
+          45.92139692872075
+        ],
+        [
+          -121.08881378915306,
+          45.920996728721285
+        ],
+        [
+          -121.08903112248608,
+          45.92065819538854
+        ],
+        [
+          -121.0893357224856,
+          45.92038072872219
+        ],
+        [
+          -121.08959772248517,
+          45.920256395389075
+        ],
+        [
+          -121.09005212248447,
+          45.920223528722524
+        ],
+        [
+          -121.09125218914926,
+          45.92018659538921
+        ],
+        [
+          -121.09138372248243,
+          45.92009379538938
+        ],
+        [
+          -121.09133612248243,
+          45.91975672872317
+        ],
+        [
+          -121.09119872248272,
+          45.919327928723845
+        ],
+        [
+          -121.09106652248289,
+          45.91917539539073
+        ],
+        [
+          -121.09087132248321,
+          45.91883899539128
+        ],
+        [
+          -121.09062598915021,
+          45.91785872872616
+        ],
+        [
+          -121.0907123891501,
+          45.917674128726425
+        ],
+        [
+          -121.0906657224835,
+          45.91742892872688
+        ],
+        [
+          -121.0900845224844,
+          45.91645052872837
+        ],
+        [
+          -121.0899491891513,
+          45.91628012872859
+        ],
+        [
+          -121.08981658915151,
+          45.91611452872886
+        ],
+        [
+          -121.0895779224852,
+          45.915747795396086
+        ],
+        [
+          -121.08948978915201,
+          45.9155947953964
+        ],
+        [
+          -121.089484589152,
+          45.915103995397104
+        ],
+        [
+          -121.08949261784778,
+          45.915065004650245
+        ]
+      ],
+      "pins": [
+        {
+          "lon": -121.0885091,
+          "lat": 45.9215287,
+          "label": "source junction"
+        }
+      ],
+      "minMeters": 1900,
+      "file": "research/klickitat-course-20261117/imagery/leidl-continued-fork-2.jpg",
+      "imageUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-13480621.174684156%2C5766553.403904665%2C-13478721.174684156%2C5767978.403904665&bboxSR=3857&imageSR=3857&size=1024%2C768&format=jpg&f=image",
+      "bbox3857": [
+        -13480621.174684156,
+        5766553.403904665,
+        -13478721.174684156,
+        5767978.403904665
+      ],
+      "imageSha256": "867b0ab1e71a2ced0b53389e59cda40d96b7f8aea4ae579f20cdbac3780093f6",
+      "baseSha256": "f3e5b3a8ad2b3461068c354c46087f40f8a0c3b64f76aaa23838b92458371a24",
+      "section": "leidl-icehouse",
+      "branch": 2,
+      "choices": [
+        "147210175",
+        "147210347"
+      ],
+      "contextFeatureIds": [
+        [
+          "147210175",
+          "147210176"
+        ],
+        [
+          "147210347",
+          "147203961",
+          "147203967",
+          "147203984",
+          "147203993",
+          "147210350",
+          "147210177"
+        ]
+      ],
+      "note": "Context follows only unique downstream edges up to 900m or the next fork. No channel choice approved."
+    }
+  ],
+  "nextAction": "Use independently sourced replacement geometry for the obsolete section. Do not change source vertices or approve the old named-only trace simply because its total miles match."
+}

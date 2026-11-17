@@ -1,0 +1,60 @@
+{
+  "localOnly": true,
+  "published": false,
+  "states": 13,
+  "rivers": 252,
+  "sections": 1097,
+  "accessMaps": 991,
+  "heldMaps": 106,
+  "dottedPaths": 385,
+  "riverCourseOverviews": 233,
+  "mapsAddedThisTurn": 1,
+  "pathsAddedThisTurn": 1,
+  "priorRouteRegistryEntriesPreserved": 384,
+  "priorReleaseRouteBytesPreserved": 383,
+  "priorMethowSourceRecordHashPreserved": true,
+  "planningDistancesGaugesTimingCoordinatesAndIdsPreserved": true,
+  "runtimeFilesCompared": [
+    "public/app.js",
+    "public/styles.css",
+    "server.py",
+    "render.yaml"
+  ],
+  "localHttp": [
+    {
+      "path": "/rivers/white-salmon",
+      "status": 200
+    },
+    {
+      "path": "/rivers/mullet-river",
+      "status": 200
+    },
+    {
+      "path": "/rivers/bridge-creek",
+      "status": 200
+    },
+    {
+      "path": "/catalog.json",
+      "status": 200
+    },
+    {
+      "path": "/catalog-index.json",
+      "status": 200
+    },
+    {
+      "path": "/routes/index.json",
+      "status": 200
+    },
+    {
+      "path": "/routes/white-salmon--bz-husum.json",
+      "status": 200
+    },
+    {
+      "path": "/feedback.html?type=access-suggestion&riverId=white-salmon&sectionId=bz-husum&endpoint=takeOut",
+      "status": 200
+    }
+  ],
+  "validatorChange": "Shared source junctions allow only <=1e-12-degree arithmetic round-off; original coordinates retained, genuine gaps rejected.",
+  "productionBaseline": "0c1a3b6c3833f996fa32f4bee5a64e2501cf7625",
+  "deploymentAttempted": false
+}

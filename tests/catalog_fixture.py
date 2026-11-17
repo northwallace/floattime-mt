@@ -34,6 +34,14 @@ def copy_catalog(destination):
             for review in route.get('sourceSegmentReview', []):
                 evidence.extend(item['file'] for item in review['imageryEvidence'])
             evidence.extend(item['file'] for item in route.get('distanceDiscrepancyReview', {}).get('imageryEvidence', []))
+            osm = route.get('osmReview', {})
+            if osm:
+                full_file = osm['fullCourse']['file']
+                evidence.append(full_file)
+                full = json.loads((ROOT / full_file).read_text())
+                evidence.extend(item['file'] for item in full['imagery'])
+                for part in osm['parts']:
+                    evidence.extend(item['file'] for item in part['imageryEvidence'])
             for file in evidence:
                 relative = Path(file)
                 source = (ROOT / relative).resolve()

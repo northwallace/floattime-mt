@@ -1,0 +1,34 @@
+{
+  "checkedOn": "2026-11-17",
+  "localOnly": true,
+  "items": [
+    {
+      "riverId": "big-hole",
+      "sectionId": "divide-melrose",
+      "status": "source-geometry-repair-needed",
+      "evidence": "research/big-hole-courses-20261117/courses/divide-melrose-main-river/full-course-review.json",
+      "nextAction": "Review alternate branches 5 and 7, and inspect a source replacement for the Melrose bend; do not waive the known bank/island crossings."
+    },
+    {
+      "riverId": "big-hole",
+      "sectionId": "melrose-glen",
+      "status": "branch-review-pending",
+      "renderedForks": 25,
+      "reviewedForks": 25,
+      "nextAction": "Review upstream alternatives that bypass rejected junction 6; source connectivity alone does not approve the alternate course. Keep all candidate features disabled.",
+      "evidence": "research/big-hole-courses-20261117/courses/melrose-glen/rejected-branch-reachability.json",
+      "provisionalWalk": {
+        "result": "stopped",
+        "rejectedJunction": 6,
+        "candidateWritten": false
+      }
+    },
+    {
+      "riverId": "big-hole",
+      "sectionId": "glen-notch",
+      "status": "source-geometry-repair-needed",
+      "evidence": "research/big-hole-courses-20261117/courses/glen-notch/fork-review.json",
+      "nextAction": "Replace the obsolete portions of source geometry; both alternatives at the unavoidable fork are unsuitable. New source geometry must carry independent provenance and attribution."
+    }
+  ]
+}

@@ -8,6 +8,10 @@ try:
     from tools.agency_courses import METHOD as AGENCY_COURSE, valid_direction as valid_agency_direction, validate_agency_course, nearest_position, trim_chain
 except ModuleNotFoundError:
     from agency_courses import METHOD as AGENCY_COURSE, valid_direction as valid_agency_direction, validate_agency_course, nearest_position, trim_chain
+try:
+    from tools.osm_courses import METHOD as OSM_COURSE, valid_direction as valid_osm_direction, validate_osm_course
+except ModuleNotFoundError:
+    from osm_courses import METHOD as OSM_COURSE, valid_direction as valid_osm_direction, validate_osm_course
 SLUG=re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 FEATURES={'display','landOverlay','distanceEstimate','remainingTime'}
 OVERVIEW='river-course-overview'
@@ -17,6 +21,10 @@ OVERVIEW_MAX_REVIEWED_SEGMENT_METERS=2000
 def review_signature(record):
     """Bind an overview decision to its geometry, source and access snapshots."""
     fields=('geometry','direction','source','putIn','takeOut','catalogMiles')
+    if 'license' in record:
+        fields += ('license',)
+    if 'osmReview' in record:
+        fields += ('osmReview',)
     if 'sourceSegmentReview' in record:
         fields += ('sourceSegmentReview',)
     if 'distanceDiscrepancyReview' in record:
@@ -61,7 +69,12 @@ def reconstruct_directed_source(record,root):
     chain=[]
     for part in parts:
         require(len(part)>=2 and all(len(p)==2 and all(finite(v) for v in p) for p in part),'Invalid downstream source line')
-        if chain:require(chain[-1]==part[0],'Source reconstruction cannot invent connectors')
+        # Independently transformed NHD edges can differ by a few float ULPs
+        # at the same source junction. Allow only arithmetic round-off
+        # (1e-12 degrees is under 0.2 micrometres), never a spatial gap.
+        # Keep the original preceding vertex; do not move or add coordinates.
+        if chain:require(all(abs(a-b)<=1e-12 for a,b in zip(chain[-1],part[0])),
+                         'Source reconstruction cannot invent connectors')
         chain.extend(part if not chain else part[1:])
     coords=record['geometry']['coordinates']
     clip={side:nearest_position(chain,dict(lon=p[0],lat=p[1])) for side,p in [('start',coords[0]),('end',coords[-1])]}
@@ -203,7 +216,7 @@ def geometry_checks(record):
                 and isinstance(d.get('featureIds'),list) and bool(d['featureIds'])
                 and all(isinstance(v,str) and bool(v) for v in d['featureIds'])
                 and all(finite(d.get(k)) and d[k]>=0 for k in ('putInOffsetMeters','takeOutOffsetMeters')))
-    if not (measured or downstream or directed or valid_agency_direction(d)):
+    if not (measured or downstream or directed or valid_agency_direction(d) or valid_osm_direction(d)):
         issues.append('downstream-order-unconfirmed')
     return {'routeMiles':round(miles,4),'endpointOffsetsMeters':[round(v,1) for v in offsets],'mileageDifferencePercent':round(difference*100,2),'maxSegmentMeters':round(max(lengths),1),'vertices':len(c)},issues
 
@@ -228,6 +241,8 @@ def validate(record,catalog,root):
     require(date.fromisoformat(source['checkedOn'])<=date.today(),'Future route source date')
     evidence=safe_file(root,source['evidenceFile'],'research')
     require(hashlib.sha256(evidence.read_bytes()).hexdigest()==source['sha256'],'Source evidence changed; re-review route')
+    if record.get('direction',{}).get('method') == OSM_COURSE:
+        validate_osm_course(record,evidence.read_bytes(),root)
     if record.get('direction',{}).get('method') == AGENCY_COURSE:
         validate_agency_course(record,section,json.loads(evidence.read_text()),root)
     if record.get('direction',{}).get('method')=='usgs-downstream-mainstem':
@@ -343,6 +358,8 @@ def build_outputs(root,catalog):
             asset='routes/'+key[0]+'--'+key[1]+'.json'
             public={k:record[k] for k in ('version','state','riverId','sectionId','status','putIn','takeOut','catalogMiles','geometry','features','note')}
             public.update(routeMiles=metrics['routeMiles'],sourceName=record['source']['name'],sourceUrl=record['source']['url'],checkedOn=record['review']['checkedOn'])
+            if record.get('direction',{}).get('method') == OSM_COURSE:
+                public['license']=record['license']
             if record.get('scope')==OVERVIEW:
                 public.update(scope=OVERVIEW,overview={k:record['overviewReview'][k] for k in ('note','connections','routeReview')})
                 if 'sourceSegmentReview' in record:

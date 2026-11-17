@@ -1,0 +1,127 @@
+{
+  "localOnly": true,
+  "published": false,
+  "states": 13,
+  "rivers": 252,
+  "sections": 1097,
+  "accessMaps": 990,
+  "heldMaps": 107,
+  "dottedPaths": 384,
+  "riverCourseOverviews": 232,
+  "mapsAdded": 2,
+  "pathsAdded": 1,
+  "pointsResolved": 3,
+  "facilityPrecisionCorrections": 2,
+  "changedRivers": [
+    "big-hole",
+    "methow-upper"
+  ],
+  "priorRoutesPreserved": 383,
+  "planningDistancesModelsGaugesAndStableIdsPreserved": true,
+  "runtimeAndHostingUnchanged": true,
+  "localHttpChecks": 11,
+  "localHttp": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/rivers/methow-upper",
+      "status": 200
+    },
+    {
+      "path": "/rivers/big-hole",
+      "status": 200
+    },
+    {
+      "path": "/directory.html?q=Mack+Lloyd+Park",
+      "status": 200
+    },
+    {
+      "path": "/feedback.html?type=access-suggestion&riverId=methow-upper&sectionId=red-barn-big-eddy&endpoint=takeOut",
+      "status": 200
+    },
+    {
+      "path": "/catalog.json",
+      "status": 200
+    },
+    {
+      "path": "/catalog-index.json",
+      "status": 200
+    },
+    {
+      "path": "/routes/index.json",
+      "status": 200
+    },
+    {
+      "path": "/routes/methow-upper--red-barn-big-eddy.json",
+      "status": 200
+    },
+    {
+      "path": "/catalog/rivers/big-hole.ee9fbb9c5051636c923c.json",
+      "status": 200
+    },
+    {
+      "path": "/catalog/rivers/methow-upper.12d5eacaeed29a284d8d.json",
+      "status": 200
+    }
+  ],
+  "productionUnchanged": true,
+  "productionCommit": "0c1a3b6c3833f996fa32f4bee5a64e2501cf7625",
+  "status": "local-review-ready",
+  "preview": "http://127.0.0.1:8795/?state=WA&river=methow-upper&craft=kayak&section=red-barn-big-eddy&map=1#landMapPanel",
+  "changes": [
+    "Resolved approximate public facility areas at Red Barn/Mack Lloyd Park, Big Eddy/Rising Eagle turnout, and Twisp Park using saved primary authority evidence and corroborating guide/imagery context.",
+    "Restored Red Barn\u2013Big Eddy and Big Eddy\u2013Twisp access maps with explicit Area markers, access limitations and correction links.",
+    "Added the reviewed 4.4-mile Red Barn\u2013Big Eddy river-course overview; retained the existing 4.5-mile planning value.",
+    "Corrected Divide Bridge and Salmon Fly precision to facility areas without moving their supported source coordinates."
+  ],
+  "validation": {
+    "catalogBuild": "passed",
+    "releaseCheck": "passed",
+    "focusedRegressionTestsPassed": 6,
+    "fingerprintTestsPassed": 3,
+    "localHttpChecksPassed": 11,
+    "browser": {
+      "checkedOn": "2026-11-17",
+      "localOnly": true,
+      "firstSection": {
+        "section": "red-barn-big-eddy",
+        "satelliteAndDottedCourseRendered": true,
+        "mapInsideSelectedSection": true,
+        "approximateAreaLabels": true,
+        "desktopOverflow": false,
+        "mobileWidth": 390,
+        "mobileOverflow": false
+      },
+      "secondSection": {
+        "section": "big-eddy-twisp",
+        "mapInsideSelectedSection": true,
+        "approximateAreaLabels": true,
+        "unreviewedDottedCourseAbsent": true,
+        "desktopOverflow": false
+      },
+      "fieldGpsTested": false,
+      "screenshots": [
+        "local-methow-desktop.jpg",
+        "local-methow-mobile.jpg",
+        "local-methow-big-eddy-twisp.jpg"
+      ]
+    }
+  },
+  "heldResearch": {
+    "methowBigEddyTwisp": "All 15 frames inspected; old source crosses wooded islands/former channels in panels 10 and 11. Access map available, river line withheld.",
+    "bigHoleDivideMelrose": "All 30 frames inspected; bank/island shortcuts remain. Independent imagery and alternative source comparisons retained.",
+    "bigHoleMelroseGlen": "25 fork contexts inspected. Graph can bypass all six rejected junctions, but provisional imagery choices encountered rejected junction 6. No full course or branch choices approved.",
+    "bigHoleGlenNotch": "Both alternatives at an unavoidable source fork cross obsolete channels. No dotted line approved."
+  },
+  "preserved": [
+    "All 383 prior route exports",
+    "Stable access IDs",
+    "Planning distances",
+    "Gauge assignments",
+    "Timing models and GPS remaining-time eligibility",
+    "Runtime and hosting configuration"
+  ],
+  "publication": "No new upload, push, or deployment. Production remains at the previously published commit in scope-check.json."
+}

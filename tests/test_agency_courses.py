@@ -134,6 +134,7 @@ class AgencyCourseTests(unittest.TestCase):
         for row in old:
             identity = (row['riverId'], row['sectionId'])
             refinements = {
+                ('klickitat', 'icehouse-turkey-hole'): ('research/klickitat-course-20261117/decisions.json', 'routes'),
                 ('madison-upper', 'lyons-palisades'): ('research/montana-access-courses-20261117/decisions.json', 'allReviewedCourses'),
                 ('madison-upper', 'mcatee-varney'): ('research/montana-access-courses-20261117/decisions.json', 'allReviewedCourses'),
                 ('salt-river-lower', 'lsr-water-users-phon-d'): ('research/western-access-review-20261109/course-decisions.json', 'routes'),

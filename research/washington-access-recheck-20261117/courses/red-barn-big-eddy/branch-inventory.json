@@ -1,0 +1,32 @@
+{
+  "putIn": {
+    "featureId": "144385429",
+    "offsetMeters": 12.767271975725624,
+    "sourceStationMeters": 1036.0825341133796
+  },
+  "takeOut": {
+    "featureId": "165034847",
+    "offsetMeters": 58.4931434020398,
+    "sourceStationMeters": 3914.187350115696
+  },
+  "viableEdges": [
+    "144385425",
+    "144385427",
+    "144385429",
+    "165034494",
+    "165034847"
+  ],
+  "branches": [],
+  "riverId": "methow-upper",
+  "sectionId": "red-barn-big-eddy",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1702_HU4_GPKG.zip",
+    "checkedOn": "2026-11-17",
+    "streamId": "Methow River",
+    "evidenceFile": "research/washington-access-recheck-20261117/sources/nhd/methow-upper-caf5213eb81ecb00.json",
+    "sha256": "caf5213eb81ecb0060b7afccec14410d35a9bc8bd47bcbaaf1519d09f1e538a1"
+  },
+  "projectedCrs": 5070,
+  "note": "Forward/reverse reachability identifies possible source paths. It does not select a navigable or principal channel."
+}

@@ -1168,3 +1168,10 @@ When only a park polygon is available for a documented beach take-out, a manuall
 For wooded courses, inspect independent leaf-off county imagery or NAIP when foliage hides the channel. A connected NHD graph and small mileage difference do not overcome visible alignment errors. Keep such a candidate disabled and outside the route index, even when the access map and a source-published trip duration can be offered separately. Conversely, a broad-river overview may retain an explicitly reviewed offshore gap and shifting sandbar corridor without inventing a bank connector or recommending a present navigation channel.
 
 The local Plover review (`research/plover-access-courses-20261116`) includes a county GIS canoe put-in, a municipal park polygon, manual approximate beach-area placement, and independent county 2025 imagery. Its old NHD course remains disabled after full imagery review. This example does not establish a general permission to place a launch anywhere in public parkland. The county imagery service's year and the retrieval date must be recorded separately; neither is a field access inspection.
+
+
+### Original OpenStreetMap river-way overview pilot
+
+Use `tools/stage_osm_course.py --help` for the source-independent staging command. Save the native OpenStreetMap API 0.6 XML snapshot under `research/`, with the exact bounded map-query URL. Supply an explicit JSON list of `wayId`, `wayVersion`, `fromNodeIndex` and `toNodeIndex` parts. Original river-way order and shared node IDs are required; the adapter does not infer branches or invent connectors. Review the entire course against imagery before approving it.
+
+OSM geometry is a river-course source, not proof of public landings. These records must remain `river-course-overview`, retain ODbL attribution and link, and cannot enable land overlays, calculator distance or GPS remaining time. Approval binds each source part and every saved imagery frame to hashes. Changed source geometry, access snapshots, review evidence or license withdraws that approval. Leidl–Icehouse is the first reviewed pilot; its local bank-point simplifications are disclosed on the map.

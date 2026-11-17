@@ -1,0 +1,120 @@
+{
+  "localOnly": true,
+  "published": false,
+  "states": 13,
+  "rivers": 252,
+  "sections": 1097,
+  "accessMaps": 991,
+  "heldMaps": 106,
+  "dottedPaths": 385,
+  "riverCourseOverviews": 233,
+  "mapsAddedThisTurn": 1,
+  "pathsAddedThisTurn": 1,
+  "priorRouteRegistryEntriesPreserved": 384,
+  "priorReleaseRouteBytesPreserved": 383,
+  "priorMethowSourceRecordHashPreserved": true,
+  "planningDistancesGaugesTimingCoordinatesAndIdsPreserved": true,
+  "runtimeFilesCompared": [
+    "public/app.js",
+    "public/styles.css",
+    "server.py",
+    "render.yaml"
+  ],
+  "localHttp": [
+    {
+      "path": "/rivers/white-salmon",
+      "status": 200
+    },
+    {
+      "path": "/rivers/mullet-river",
+      "status": 200
+    },
+    {
+      "path": "/rivers/bridge-creek",
+      "status": 200
+    },
+    {
+      "path": "/catalog.json",
+      "status": 200
+    },
+    {
+      "path": "/catalog-index.json",
+      "status": 200
+    },
+    {
+      "path": "/routes/index.json",
+      "status": 200
+    },
+    {
+      "path": "/routes/white-salmon--bz-husum.json",
+      "status": 200
+    },
+    {
+      "path": "/feedback.html?type=access-suggestion&riverId=white-salmon&sectionId=bz-husum&endpoint=takeOut",
+      "status": 200
+    }
+  ],
+  "validatorChange": "Shared source junctions allow only <=1e-12-degree arithmetic round-off; original coordinates retained, genuine gaps rejected.",
+  "productionBaseline": "0c1a3b6c3833f996fa32f4bee5a64e2501cf7625",
+  "deploymentAttempted": false,
+  "status": "local-review-ready",
+  "preview": "http://127.0.0.1:8795/?state=WA&river=white-salmon&craft=kayak&section=bz-husum&map=1#landMapPanel",
+  "previousGoalTurn": "progress: two Methow access maps, one dotted overview and Big Hole geometry evidence completed locally.",
+  "changes": [
+    "Restored Mullet River Deerview–Highway G access-area map; original DNR carry-in coordinates retained. No dam passage or portage approved.",
+    "Corrected White Salmon BZ–Husum source start from an unnamed roadside tributary to the original main-stem edge; added a display-only 4.415-mile overview.",
+    "Clarified why Bridge Creek Dells Millpond–Harstad remains held; no private bridge launch substituted.",
+    "Fixed strict source-junction equality to accept only <=1e-12-degree numeric round-off while retaining original vertices and rejecting spatial gaps. Added explicit rejection and source-fidelity tests."
+  ],
+  "validation": {
+    "catalogBuild": "passed",
+    "releaseCheck": "passed",
+    "regressionTestsPassed": 25,
+    "localHttpChecksPassed": 8,
+    "sourceReconstruction": "passed",
+    "browser": {
+      "localOnly": true,
+      "whiteSalmon": {
+        "mapInsideSection": "section-bz-husum",
+        "satelliteAndDottedOverviewRendered": true,
+        "mainStemDisclosureVisible": true,
+        "aboveFallsWarningRetained": true,
+        "areaMarkers": true,
+        "desktopOverflow": false,
+        "mobileWidth": 390,
+        "mobileOverflow": false,
+        "screenshots": [
+          "local-white-salmon-desktop.jpg",
+          "local-white-salmon-mobile.jpg"
+        ]
+      },
+      "mullet": {
+        "mapInsideSection": "section-deerview-drive-bridge-access-to-hwy-g-flowage",
+        "satelliteRendered": true,
+        "areaMarkers": true,
+        "distanceUnderReview": true,
+        "noUnreviewedRiverLine": true,
+        "outletWarningVisible": true,
+        "desktopOverflow": false,
+        "mobileChecked": false,
+        "screenshot": "local-mullet-desktop.jpg"
+      },
+      "fieldGpsTested": false,
+      "submissionsSent": false
+    },
+    "validatorDiff": "/Users/home/Documents/Codex/FloatETA-wisconsin-local-20261030/research/white-salmon-course-20261117/validator-diff.patch"
+  },
+  "limits": [
+    "No exact shoreline connectors or take-out eddy mapped.",
+    "White Salmon tree cover obscures parts of the gorge; overview is not navigation guidance. Scout exit above Husum Falls.",
+    "Mullet drawdowns and vegetation can prevent a practical paddle; preliminary distance and time estimates remain withheld.",
+    "106 access maps remain unresolved.",
+    "No push, deployment, Render upload or hosting changes."
+  ],
+  "nextResearch": [
+    "Continue the remaining documented public-access and carry questions across all states.",
+    "Use actual recreation/portage plans rather than dam-failure inundation maps for Chippewa holds.",
+    "Review Big Hole Melrose–Glen alternatives without selecting branches from connectivity alone.",
+    "Resolve Methow Big Eddy–Twisp legacy wooded-island crossings with independently supported geometry."
+  ]
+}

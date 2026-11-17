@@ -1,0 +1,105 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-17",
+  "sectionId": "melrose-glen",
+  "sourceSha256": "cb35dfd5613e225a6a3b0ada57312d0a1a1e6123e4d67b2d72029cc7f976fd44",
+  "originalSourceVerticesUnchanged": true,
+  "allRejectedForkEdgesExcluded": [
+    "49940298",
+    "49940300",
+    "49940302",
+    "49956056",
+    "49956064",
+    "49956516",
+    "49962252",
+    "49962288",
+    "49962294",
+    "49962302",
+    "49962308",
+    "49977482"
+  ],
+  "takeOutReachableWithoutAllRejectedEdges": true,
+  "edgesVisited": 66,
+  "individualChecks": [
+    {
+      "branch": 2,
+      "excludedFeatureIds": [
+        "49962302",
+        "49962308"
+      ],
+      "takeOutReachableWithoutTheseEdges": true,
+      "edgesVisited": 65,
+      "evidence": {
+        "file": "research/big-hole-courses-20261117/imagery/melrose-fork-2.jpg",
+        "sha256": "d3374d0df3655e740d8a9562f8c98c76e63b3170f8572c7d508971167ff1db66"
+      }
+    },
+    {
+      "branch": 4,
+      "excludedFeatureIds": [
+        "49940298",
+        "49962294"
+      ],
+      "takeOutReachableWithoutTheseEdges": true,
+      "edgesVisited": 65,
+      "evidence": {
+        "file": "research/big-hole-courses-20261117/imagery/melrose-fork-4.jpg",
+        "sha256": "e2ff44cc1ecb17c9cedd82c742a6891a083592dcf30da8106eb35cda3add3aff"
+      }
+    },
+    {
+      "branch": 5,
+      "excludedFeatureIds": [
+        "49940300",
+        "49956516"
+      ],
+      "takeOutReachableWithoutTheseEdges": true,
+      "edgesVisited": 65,
+      "evidence": {
+        "file": "research/big-hole-courses-20261117/imagery/melrose-fork-5.jpg",
+        "sha256": "4ceb02622ace3eb2d257180cfd2500fce393d1489b2adad03d4a9326acfe074c"
+      }
+    },
+    {
+      "branch": 6,
+      "excludedFeatureIds": [
+        "49940302",
+        "49962288"
+      ],
+      "takeOutReachableWithoutTheseEdges": true,
+      "edgesVisited": 66,
+      "evidence": {
+        "file": "research/big-hole-courses-20261117/imagery/melrose-fork-6.jpg",
+        "sha256": "86f66c91100d2d95442439eb5b25ba7e832cf97cd2f737e97bf6c5caa00c12c5"
+      }
+    },
+    {
+      "branch": 21,
+      "excludedFeatureIds": [
+        "49956056",
+        "49962252"
+      ],
+      "takeOutReachableWithoutTheseEdges": true,
+      "edgesVisited": 65,
+      "evidence": {
+        "file": "research/big-hole-courses-20261117/imagery/melrose-fork-21.jpg",
+        "sha256": "9e7dfe13e8cbf55228e1d7cc3db49a12eb1686be6766a5e3a428d2038cdd10da"
+      }
+    },
+    {
+      "branch": 22,
+      "excludedFeatureIds": [
+        "49956064",
+        "49977482"
+      ],
+      "takeOutReachableWithoutTheseEdges": true,
+      "edgesVisited": 65,
+      "evidence": {
+        "file": "research/big-hole-courses-20261117/imagery/melrose-fork-22.jpg",
+        "sha256": "a23b2178e2911cf035401c9312592e173c598ba7918fa09cbcb664994eda0954"
+      }
+    }
+  ],
+  "interpretation": "Source-network reachability only. Rejected alternatives were identified in saved imagery; no assertion of a physical gap in the river. No river course approved or public output changed."
+}

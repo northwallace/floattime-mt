@@ -1,0 +1,80 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-17",
+  "newDottedCourses": [
+    {
+      "file": "catalog/routes/WA/klickitat--leidl-icehouse.json",
+      "sha256": "8fc3c2cbaf94806d3fd57e2c9bdb53df0d7435756e23f58aa14b61ff173e320b"
+    }
+  ],
+  "refreshedDottedCourses": [
+    {
+      "file": "catalog/routes/WA/klickitat--icehouse-turkey-hole.json",
+      "sha256": "c27eae77895812fa10a0f5043a69336e6e3a94edcfb16cdc8fd6bec809aac052"
+    }
+  ],
+  "pathsAdded": 1,
+  "mapsAdded": 0,
+  "riverId": "klickitat",
+  "routes": [
+    {
+      "sectionId": "leidl-icehouse",
+      "route": {
+        "file": "catalog/routes/WA/klickitat--leidl-icehouse.json",
+        "sha256": "8fc3c2cbaf94806d3fd57e2c9bdb53df0d7435756e23f58aa14b61ff173e320b"
+      },
+      "metrics": {
+        "routeMiles": 15.8514,
+        "endpointOffsetsMeters": [
+          33.1,
+          24.8
+        ],
+        "mileageDifferencePercent": 0.33,
+        "maxSegmentMeters": 232.7,
+        "vertices": 385
+      },
+      "review": {
+        "file": "research/klickitat-course-20261117/osm-full-source-course/full-course-review.json",
+        "sha256": "8799b60840486ce616095b327486156746525f661b7b29428bba9e9f6bccc119"
+      }
+    },
+    {
+      "sectionId": "icehouse-turkey-hole",
+      "route": {
+        "file": "catalog/routes/WA/klickitat--icehouse-turkey-hole.json",
+        "sha256": "c27eae77895812fa10a0f5043a69336e6e3a94edcfb16cdc8fd6bec809aac052"
+      },
+      "metrics": {
+        "routeMiles": 10.9857,
+        "endpointOffsetsMeters": [
+          21.6,
+          23.3
+        ],
+        "mileageDifferencePercent": 0.79,
+        "maxSegmentMeters": 217.4,
+        "vertices": 291
+      },
+      "review": {
+        "file": "research/klickitat-course-20261117/courses/icehouse-turkey-hole/full-course-review.json",
+        "sha256": "04a659d45ac08ce788404aa98e9d1df70dae04fc78def413332732a9fd2bc861"
+      }
+    }
+  ],
+  "heldSourceCandidates": [
+    {
+      "sectionId": "leidl-icehouse",
+      "source": "USGS NHD 1707",
+      "evidence": {
+        "file": "research/klickitat-course-20261117/courses/leidl-icehouse/fork-review.json",
+        "sha256": "59c53d6f2dfe9557abd750738bf8f06553d1bccf361f2eb352a4c13afadfcdc8"
+      },
+      "reason": "Unavoidable obsolete-channel source split; not promoted."
+    }
+  ],
+  "sourceFallback": "Original OpenStreetMap native XML with explicit versioned way parts; data under ODbL1.0. New adapter is state-independent and never promotes access points.",
+  "planningMilesAccessCoordinatesGaugesAndTimingUnchanged": true,
+  "allNewCoursesDisplayOnly": true,
+  "sourceGeometryEdited": false,
+  "limitations": "Generalized line crosses local bank/island-edge points and bars. No navigation, source-survey date, exact shoreline connection or timing claim."
+}

@@ -1,0 +1,129 @@
+{
+  "status": "held",
+  "checkedOn": "2026-11-17",
+  "sourceSha256": "cb35dfd5613e225a6a3b0ada57312d0a1a1e6123e4d67b2d72029cc7f976fd44",
+  "forksReviewed": [
+    {
+      "branch": 1,
+      "node": [
+        -112.590631,
+        45.4311324
+      ],
+      "choices": [
+        "49961226",
+        "49962492"
+      ],
+      "finding": "Alternatives diverge near a gravel bar; downstream continuation not fully reviewed.",
+      "imagery": {
+        "file": "research/big-hole-courses-20261117/imagery/glen-fork-1.jpg",
+        "sha256": "a3c5002e1a2364c13c59125a1572bf8f404b836982666001b49ec7a6c2e55793"
+      }
+    },
+    {
+      "branch": 2,
+      "node": [
+        -112.6136786,
+        45.4370215
+      ],
+      "choices": [
+        "49962476",
+        "{E1DE3CC7-BFD9-4065-84C2-BD0B70543649}"
+      ],
+      "finding": "Both saved alternatives cut across exposed/vegetated former river ground. Neither is approved.",
+      "imagery": {
+        "file": "research/big-hole-courses-20261117/imagery/glen-fork-2.jpg",
+        "sha256": "6271d744b180b15ca7ffb6b848ab9a08f6d98b3fab087969f5840c0d45510b72"
+      }
+    },
+    {
+      "branch": 3,
+      "node": [
+        -112.6288371,
+        45.4410286
+      ],
+      "choices": [
+        "49962416",
+        "49962422"
+      ],
+      "finding": "Blue alternative follows the visible bend; no full-route approval.",
+      "imagery": {
+        "file": "research/big-hole-courses-20261117/imagery/glen-fork-3.jpg",
+        "sha256": "a4d567579257f350fa115f1ffc1be6868a96e13252a38a70d47d79d13f5863db"
+      }
+    },
+    {
+      "branch": 4,
+      "node": [
+        -112.6228746,
+        45.4484758
+      ],
+      "choices": [
+        "49956872",
+        "49969786"
+      ],
+      "finding": "Cloud cover obscures portions of the alternatives; no choice approved.",
+      "imagery": {
+        "file": "research/big-hole-courses-20261117/imagery/glen-fork-4.jpg",
+        "sha256": "987907626700c6138c8d68760ec7709d9388b07d17982fd5a5e9e2dd3b217af5"
+      }
+    },
+    {
+      "branch": 5,
+      "node": [
+        -112.6346538,
+        45.4495754
+      ],
+      "choices": [
+        "49946116",
+        "49969784"
+      ],
+      "finding": "Main river and side-channel context reviewed; no full-route approval.",
+      "imagery": {
+        "file": "research/big-hole-courses-20261117/imagery/glen-fork-5.jpg",
+        "sha256": "4f01564a74bbb948a575cffa28109a17d02267c0d1d8e1bb9bca57ba33849ba7"
+      }
+    },
+    {
+      "branch": 6,
+      "node": [
+        -112.63479,
+        45.4513377
+      ],
+      "choices": [
+        "49956880",
+        "49957544"
+      ],
+      "finding": "Orange branch appears in the wider open channel while blue follows a former side bend; no choice approved.",
+      "imagery": {
+        "file": "research/big-hole-courses-20261117/imagery/glen-fork-6.jpg",
+        "sha256": "8f1fd63282f4a02933dd381a1b4393f3fdf0ea0189aa46215b1e788fb92bab9c"
+      }
+    },
+    {
+      "branch": 7,
+      "node": [
+        -112.6445127,
+        45.4541428
+      ],
+      "choices": [
+        "49940274",
+        "49962330"
+      ],
+      "finding": "Both alternatives cross island/land near the upstream source fork; neither is approved.",
+      "imagery": {
+        "file": "research/big-hole-courses-20261117/imagery/glen-fork-7.jpg",
+        "sha256": "423d077121fb36db50718473cc5f0b66688c275a0362c3db9c5ecee8f632d87e"
+      }
+    }
+  ],
+  "graphCheck": {
+    "blockedFeatureIds": [
+      "49962476",
+      "{E1DE3CC7-BFD9-4065-84C2-BD0B70543649}"
+    ],
+    "reachesTakeOutWithoutTheseEdges": true,
+    "note": "This is source-network reachability only, not a statement about the physical river or legal access."
+  },
+  "newerHydrography": "Coverage audit found no intersecting enhanced workunit; saved comparison uses legacy NHD flowlines.",
+  "decision": "Keep all source geometry as research. An independent replacement source or separately documented course digitization is needed for the observed obsolete-channel portions; exact access GPS would not repair these source lines."
+}

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "localOnly": true,
+  "checkedAt": "2026-11-17T18:10:06.221498+00:00",
+  "riverId": "big-hole",
+  "sectionId": "glen-notch",
+  "gnisId": 779824,
+  "bounds": [
+    -112.68907179886112,
+    45.40953935165833,
+    -112.54588108696085,
+    45.48666825695596
+  ],
+  "envelopeBasis": "saved-course-and-accesses",
+  "result": {
+    "status": "legacy-only",
+    "flowlines": 37,
+    "provenanceCounts": {
+      "legacyNhd": 37
+    },
+    "intersectingEdhWorkunits": [],
+    "riverNames": [
+      "Big Hole River"
+    ],
+    "mainstemIds": [
+      "https://geoconnex.us/ref/mainstems/329548"
+    ],
+    "featureLoadedTimestamps": [
+      1694649600000
+    ],
+    "approved": false,
+    "note": "Coverage check only. Feature dates are database load dates, not imagery or survey dates. EDH workunits intersecting the search envelope do not prove complete route coverage, accurate landing connections, current channel alignment or navigability."
+  },
+  "sourceDocumentation": "https://www.usgs.gov/3d-hydrography-program/access-3dhp-data-products",
+  "evidence": [
+    {
+      "file": "research/big-hole-courses-20261117/hydro-coverage/flowlines.json",
+      "sha256": "7a2e7faf02199d10101772f7fa5347b3bbb49eff914966f21c769f0edfbad7e2"
+    },
+    {
+      "file": "research/big-hole-courses-20261117/hydro-coverage/workunits.json",
+      "sha256": "5169a8c4e8ae92edd034236334af496e9a0d876dd52ce8b321bd43bbe5d235a6"
+    },
+    {
+      "file": "research/big-hole-courses-20261117/sources/legacy-fwp-glen-notch.json",
+      "sha256": "2c2b77ec2fb838e40a21e8c2a909ef360833821471fc08f5afc8ddb2b73b86de"
+    }
+  ]
+}

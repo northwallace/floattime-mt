@@ -1,0 +1,154 @@
+{
+  "putIn": {
+    "featureId": "49940286",
+    "offsetMeters": 317.30625473629317,
+    "sourceStationMeters": 304.0799294113615
+  },
+  "takeOut": {
+    "featureId": "49962630",
+    "offsetMeters": 81.46961224603191,
+    "sourceStationMeters": 598.1025476579256
+  },
+  "viableEdges": [
+    "49940274",
+    "49940276",
+    "49940278",
+    "49940280",
+    "49940282",
+    "49940284",
+    "49940286",
+    "49946116",
+    "49946118",
+    "49956524",
+    "49956868",
+    "49956870",
+    "49956872",
+    "49956876",
+    "49956878",
+    "49956880",
+    "49957544",
+    "49957550",
+    "49957848",
+    "49961222",
+    "49961224",
+    "49961226",
+    "49962326",
+    "49962328",
+    "49962330",
+    "49962410",
+    "49962416",
+    "49962418",
+    "49962420",
+    "49962422",
+    "49962452",
+    "49962472",
+    "49962476",
+    "49962478",
+    "49962482",
+    "49962486",
+    "49962488",
+    "49962490",
+    "49962492",
+    "49962526",
+    "49962528",
+    "49962540",
+    "49962542",
+    "49962628",
+    "49962630",
+    "49969782",
+    "49969784",
+    "49969786",
+    "{067EAA3A-9D5E-43D3-B0F0-5236F40B75A5}",
+    "{E1DE3CC7-BFD9-4065-84C2-BD0B70543649}"
+  ],
+  "branches": [
+    {
+      "node": [
+        -112.590631,
+        45.4311324
+      ],
+      "choices": [
+        "49961226",
+        "49962492"
+      ]
+    },
+    {
+      "node": [
+        -112.6136786,
+        45.4370215
+      ],
+      "choices": [
+        "49962476",
+        "{E1DE3CC7-BFD9-4065-84C2-BD0B70543649}"
+      ]
+    },
+    {
+      "node": [
+        -112.6288371,
+        45.4410286
+      ],
+      "choices": [
+        "49962416",
+        "49962422"
+      ]
+    },
+    {
+      "node": [
+        -112.6228746,
+        45.4484758
+      ],
+      "choices": [
+        "49956872",
+        "49969786"
+      ]
+    },
+    {
+      "node": [
+        -112.6346538,
+        45.4495754
+      ],
+      "choices": [
+        "49946116",
+        "49969784"
+      ]
+    },
+    {
+      "node": [
+        -112.63479,
+        45.4513377
+      ],
+      "choices": [
+        "49956880",
+        "49957544"
+      ]
+    },
+    {
+      "node": [
+        -112.6445127,
+        45.4541428
+      ],
+      "choices": [
+        "49940274",
+        "49962330"
+      ]
+    }
+  ],
+  "courseAnchors": {
+    "putIn": {
+      "featureId": "49940286",
+      "reason": "The saved Glen all-source context shows this unnamed original flowline in the broad eastern main river beside the facility approach. Nearest unnamed49969868 follows a vegetated former/tributary channel; named49956526 cuts an old western bend. Retain the offshore facility-area gap without inventing a bank connector."
+    }
+  },
+  "riverId": "big-hole",
+  "sectionId": "glen-notch",
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1002_HU4_GPKG.zip",
+    "checkedOn": "2026-11-17",
+    "streamId": "Big Hole River",
+    "evidenceFile": "research/big-hole-courses-20261117/sources/big-hole-cb35dfd5613e225a.json",
+    "sha256": "cb35dfd5613e225a6a3b0ada57312d0a1a1e6123e4d67b2d72029cc7f976fd44"
+  },
+  "projectedCrs": "EPSG:5070",
+  "note": "Forward/reverse reachability identifies possible source paths. It does not select a navigable or principal channel."
+}

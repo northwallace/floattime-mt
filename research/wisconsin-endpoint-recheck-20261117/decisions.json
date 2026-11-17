@@ -1,0 +1,136 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-17",
+  "mapsAdded": [
+    "mullet-river/deerview-drive-bridge-access-to-hwy-g-flowage"
+  ],
+  "pathsAdded": [],
+  "retainedHolds": [
+    "bridge-creek/dells-mill-pond-to-harstad-county-park-canoe-launch"
+  ],
+  "sourceEvidence": [
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/landing-acc-0c78875e4151578fa7b1.json",
+      "sha256": "58b705c86fb4f844a0114c9aa74f1de006434dcc5f28db6f966d790e8ff9ac17"
+    },
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/landing-acc-2139a86ab2515dcd85e2.json",
+      "sha256": "86a3dd70b10bafbad7af5bfa85f27c89c3b253506089645eae547607eebb93eb"
+    },
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/landing-acc-f19a40c5a1be55c8a569.json",
+      "sha256": "18a7f17ce933b76e26374436310a37c7c7ca18a31e3c3b4859e73294356ae219"
+    },
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/mullet-dams.json",
+      "sha256": "751ebb2ea8feebb881b3ce447a945ec5272310b480784c62f9de5af93d25ecec"
+    },
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/mullet-property-map.pdf",
+      "sha256": "978888a973364ec1e5ead4c5f58f6cf582fcd07a54af25a304a35658417884e8"
+    },
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/mullet-property-map.receipt.json",
+      "sha256": "6c7e23521388cba17b5ec4236c04dcf4fb704a4252b8252f6590a32aae6c76dd"
+    },
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/dells-millpond-survey.pdf",
+      "sha256": "c7fe7d07a82962b0e76eeffc23c784444bc5d694745ec98228b1aca726054405"
+    },
+    {
+      "file": "research/wisconsin-endpoint-recheck-20261117/sources/dells-millpond-survey.receipt.json",
+      "sha256": "bbfe934eb45ed40997c889075517858122596252eebcfc6645bed6be477c7bea"
+    }
+  ],
+  "imagery": [
+    {
+      "id": "mullet-dam-landing",
+      "title": "Mullet Marsh - facility and dam inventory markers; not exact edges",
+      "pins": [
+        {
+          "lon": -88.17582419010365,
+          "lat": 43.758295746366834,
+          "label": "DNR Hwy G carry-in area",
+          "color": "yellow"
+        },
+        {
+          "lon": -88.17602135663972,
+          "lat": 43.75824062695683,
+          "label": "DNR Mullet Creek dam 861",
+          "color": "red"
+        }
+      ],
+      "minMeters": 450,
+      "file": "research/wisconsin-endpoint-recheck-20261117/imagery/mullet-dam-landing.jpg",
+      "imageUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-9815923.823358752%2C5427940.76773145%2C-9815473.823358752%2C5428278.26773145&bboxSR=3857&imageSR=3857&size=1024%2C768&format=jpg&f=image",
+      "bbox3857": [
+        -9815923.823358752,
+        5427940.76773145,
+        -9815473.823358752,
+        5428278.26773145
+      ],
+      "imageSha256": "5e7f393cd4745fb2b71bb32fb1118f03506b068b4b27fcefef6fef9b3ee9a384",
+      "baseSha256": "e9e17a6e92856a81223f6b31aa0f1fc0a6553186672407e2007b38e6a294aa08"
+    },
+    {
+      "id": "mullet-dam-context",
+      "title": "Mullet Marsh - Hwy G and outlet context",
+      "pins": [
+        {
+          "lon": -88.17582419010365,
+          "lat": 43.758295746366834,
+          "label": "DNR Hwy G carry-in area",
+          "color": "yellow"
+        },
+        {
+          "lon": -88.17602135663972,
+          "lat": 43.75824062695683,
+          "label": "DNR Mullet Creek dam 861",
+          "color": "red"
+        }
+      ],
+      "minMeters": 1500,
+      "file": "research/wisconsin-endpoint-recheck-20261117/imagery/mullet-dam-context.jpg",
+      "imageUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-9816448.823358752%2C5427547.01773145%2C-9814948.823358752%2C5428672.01773145&bboxSR=3857&imageSR=3857&size=1024%2C768&format=jpg&f=image",
+      "bbox3857": [
+        -9816448.823358752,
+        5427547.01773145,
+        -9814948.823358752,
+        5428672.01773145
+      ],
+      "imageSha256": "6dc1ef5a026328288564ca5901a27fac8d5f69e6512bfc7dcb05d1fb939328a2",
+      "baseSha256": "74b5fd1edd6408f17c11975de056181e1048ab28f4b306bce92792f1d2d986be"
+    },
+    {
+      "id": "mullet-deerview-area",
+      "title": "Mullet Marsh - original DNR Deerview public carry-in facility area",
+      "pins": [
+        {
+          "lat": 43.739626793306705,
+          "lon": -88.20519586805936,
+          "label": "DNR Deerview carry-in area"
+        }
+      ],
+      "minMeters": 600,
+      "file": "research/wisconsin-endpoint-recheck-20261117/imagery/mullet-deerview-area.jpg",
+      "imageUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?bbox=-9819257.489353327%2C5425011.846805714%2C-9818657.489353327%2C5425461.846805714&bboxSR=3857&imageSR=3857&size=1024%2C768&format=jpg&f=image",
+      "bbox3857": [
+        -9819257.489353327,
+        5425011.846805714,
+        -9818657.489353327,
+        5425461.846805714
+      ],
+      "imageSha256": "0bd7571fe344a7cf017245c9a12cfdbb3809471090ef197b750e16ae2d5b0c27",
+      "baseSha256": "e4b2c4b15c0bd06425968839212df6c348a6127add312294e3f3b205d6349903"
+    }
+  ],
+  "findings": [
+    "DNR current records 3862 and 3863 are state-owned unimproved carry-ins, not abandoned. Original facility coordinates and stable IDs preserved.",
+    "DNR property map revised October 23, 2024 identifies boat access; current property page allows canoeing but describes active wetland management including drawdowns.",
+    "Three imagery views inspected: Deerview context, Highway G dam/landing close view, and Highway G broader context. Hwy G original facility marker is on the upstream marsh side of the dike; no exact landing or bank is inferred.",
+    "DNR dam 861 remains On Landscape. Its presence does not prevent an access-area map for a trip ending above the structure; outlet warning retained. No dam passage or portage claimed.",
+    "Bridge Creek pond-to-Harstad hold retained; no substituted private bridge launch."
+  ],
+  "planningDistancesGaugesTimingAndIdsPreserved": true
+}

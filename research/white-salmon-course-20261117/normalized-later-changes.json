@@ -1,0 +1,374 @@
+[
+  {
+    "id": "mullet-river",
+    "before": {
+      "id": "mullet-river",
+      "name": "Mullet River",
+      "gauge": "04085744",
+      "gaugeName": "MULLET RIVER NEAR GREENBUSH, WI",
+      "lat": 43.73963,
+      "lon": -88.2052,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Mullet River in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "deerview-drive-bridge-access-to-hwy-g-flowage",
+          "putIn": "Deerview Drive Bridge Access",
+          "takeOut": "Hwy G Flowage",
+          "miles": 2.0,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+          "putInAccessId": "acc-2139a86ab2515dcd85e2",
+          "takeOutAccessId": "acc-f19a40c5a1be55c8a569",
+          "accessReview": "A dam lies near a section endpoint (Mullet Creek). The landing’s position relative to the barrier still needs confirmation.",
+          "routeReview": "This section includes Mullet Creek and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam.",
+          "mapPendingReason": "A dam lies near a section endpoint (Mullet Creek). The landing’s position relative to the barrier still needs confirmation.",
+          "mapReleased": false
+        }
+      ],
+      "gaugeRelationship": "same-river-reference",
+      "gaugeContext": {
+        "status": "context-only",
+        "note": "This station is downstream of the accessed reach. Its readings are reference information, not a measured flow for every section or a float-time estimate.",
+        "sourceName": "USGS Water Data — monitoring location and Wisconsin gauge review",
+        "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-04085744/",
+        "checkedOn": "2026-10-30"
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    },
+    "after": {
+      "id": "mullet-river",
+      "name": "Mullet River",
+      "gauge": "04085744",
+      "gaugeName": "MULLET RIVER NEAR GREENBUSH, WI",
+      "lat": 43.73963,
+      "lon": -88.2052,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Mullet River in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "deerview-drive-bridge-access-to-hwy-g-flowage",
+          "putIn": "Deerview Drive Bridge Access",
+          "takeOut": "Hwy G Flowage",
+          "miles": 2.0,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "A shallow-marsh paddle between two DNR-listed unimproved carry-ins. The Highway G facility area is on the impounded side of Mullet Creek Dam. Take out at the designated marsh-side carry-in and stay well clear of the water-control outlet; this trip does not include passage over the dam, a portage or a downstream relaunch. Water levels, drawdowns and vegetation may prevent a practical through paddle. Check current conditions and property postings with DNR before launching. Area markers identify facilities, not surveyed landings.",
+          "putInAccessId": "acc-2139a86ab2515dcd85e2",
+          "takeOutAccessId": "acc-f19a40c5a1be55c8a569",
+          "distanceReview": "The 2.0-mile planning value is a preliminary hydrography measurement through shallow Mullet Marsh, not a reviewed navigable course between usable landings. The access map is available for facility orientation; trip-time estimates remain unavailable.",
+          "notices": [
+            {
+              "title": "Marsh take-out beside a control structure",
+              "text": "DNR lists both Deerview Drive and Highway G as unimproved carry-ins and allows canoeing in Mullet Creek Wildlife Area. The Highway G area marker is on the marsh side of Mullet Creek Dam. Use the designated carry-in and keep clear of the outlet; no through-dam route or portage is offered. Managed drawdowns and dense vegetation can limit paddling.",
+              "sourceName": "Wisconsin DNR — Mullet Creek Wildlife Area and public access inventory",
+              "sourceUrl": "https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/mullet",
+              "checkedOn": "2026-11-17"
+            }
+          ],
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 43.739626793306705,
+            "lon": -88.20519586805936
+          },
+          "takeOutCoords": {
+            "lat": 43.758295746366834,
+            "lon": -88.17582419010365
+          },
+          "putInAccess": {
+            "id": "acc-2139a86ab2515dcd85e2",
+            "status": "access-verified",
+            "accessType": "Unimproved carry-in access area",
+            "operator": "Wisconsin DNR",
+            "sourceName": "Wisconsin DNR — public boat access inventory",
+            "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3862&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+            "verifiedOn": "2026-11-17",
+            "note": "Fresh DNR public-access record identifies a state-owned unimproved carry-in and is not marked abandoned. The DNR property map also identifies boat access in Mullet Creek Wildlife Area, where canoeing is an allowed recreational activity. The original agency facility coordinate is retained as an Area marker; exact landing, water depth, vegetation clearance and present-day usability are not field-verified. No surveyed shoreline connector or bank side is claimed.",
+            "directions": "Use the DNR-listed Deerview Drive carry-in at the Mullet Marsh road crossing. Follow the designated public approach and posted parking instructions; the marker is the original bridge/access-area coordinate, not an exact shoreline entry. Expect shallow marsh water, emergent vegetation and possible drawdowns; confirm a usable launch before setting a shuttle.",
+            "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3862&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json"
+          },
+          "takeOutAccess": {
+            "id": "acc-f19a40c5a1be55c8a569",
+            "status": "access-verified",
+            "accessType": "Unimproved carry-in access area",
+            "operator": "Wisconsin DNR",
+            "sourceName": "Wisconsin DNR — public boat access inventory",
+            "sourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3863&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json",
+            "verifiedOn": "2026-11-17",
+            "note": "Fresh DNR public-access record identifies a state-owned unimproved carry-in and is not marked abandoned. The DNR property map also identifies boat access in Mullet Creek Wildlife Area, where canoeing is an allowed recreational activity. The original agency facility coordinate is retained as an Area marker; exact landing, water depth, vegetation clearance and present-day usability are not field-verified. No surveyed shoreline connector or bank side is claimed. DNR dam record 861 is approximately 17 metres from the facility marker. Imagery places the marker on the impounded marsh side, not a confirmed landing edge. This identifies a take-out area above the control structure, not a route through it.",
+            "directions": "Use the signed DNR carry-in approach from County Highway G to the Mullet Marsh access area. The agency marker identifies the marsh side of the dike, close to Mullet Creek Dam; take out at the designated carry-in and stay clear of the water-control outlet. Do not continue through the control structure or assume a portage or downstream relaunch. Follow property postings and check drawdown and vegetation conditions with DNR.",
+            "coordinateSourceUrl": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_Boat_Access_Shore_Fishing_WTM_Ext/MapServer/2/query?where=BOATLANDING_SEQ_NO%3D3863&outFields=BOATLANDING_SEQ_NO%2CLMS_BOAT_LANDING_NAME%2CLANDING_TYPE_CODE%2CRAMP_TYPE_CODE%2COWNERSHIP_NAME_TEXT%2COWNERSHIP_MANAGER_NAME_TEXT%2CLL_LAT_DD_AMT%2CLL_LONG_DD_AMT%2CWATERBODY_NAME_TEXT%2CCOUNTY_NAME_TEXT%2CMUNICIPALITY_NAME_TEXT%2CABANDON_FLAG&outSR=4326&f=json"
+          },
+          "mapReleased": true
+        }
+      ],
+      "gaugeRelationship": "same-river-reference",
+      "gaugeContext": {
+        "status": "context-only",
+        "note": "This station is downstream of the accessed reach. Its readings are reference information, not a measured flow for every section or a float-time estimate.",
+        "sourceName": "USGS Water Data — monitoring location and Wisconsin gauge review",
+        "sourceUrl": "https://waterdata.usgs.gov/monitoring-location/USGS-04085744/",
+        "checkedOn": "2026-10-30"
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    }
+  },
+  {
+    "id": "bridge-creek",
+    "before": {
+      "id": "bridge-creek",
+      "name": "Bridge Creek",
+      "gauge": "05366334",
+      "gaugeName": "BRIDGE CREEK @ COUNTY TRUNK HIGHWY V NR AUGUSTA,WI",
+      "lat": 44.72418,
+      "lon": -91.14907,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Bridge Creek in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "dells-mill-pond-to-harstad-county-park-canoe-launch",
+          "putIn": "Dells Mill Pond",
+          "takeOut": "Harstad County Park Canoe Launch",
+          "miles": 2.2,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+          "putInAccessId": "acc-0c78875e4151578fa7b1",
+          "takeOutAccessId": "acc-98cf40ad285c5b2d9e2c",
+          "accessReview": "A dam lies near a section endpoint (Dells Lake). The landing’s position relative to the barrier still needs confirmation.",
+          "routeReview": "This section includes Dells Lake and needs a closer check of the landing or portage. Consult the agency guide and signed access; do not assume you can paddle through a dam.",
+          "mapPendingReason": "A dam lies near a section endpoint (Dells Lake). The landing’s position relative to the barrier still needs confirmation.",
+          "mapReleased": false
+        }
+      ],
+      "gaugeRelationship": "representative",
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    },
+    "after": {
+      "id": "bridge-creek",
+      "name": "Bridge Creek",
+      "gauge": "05366334",
+      "gaugeName": "BRIDGE CREEK @ COUNTY TRUNK HIGHWY V NR AUGUSTA,WI",
+      "lat": 44.72418,
+      "lon": -91.14907,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Bridge Creek in Wisconsin between Wisconsin DNR-listed public accesses.",
+      "state": "WI",
+      "timezone": "America/Chicago",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "sections": [
+        {
+          "id": "dells-mill-pond-to-harstad-county-park-canoe-launch",
+          "putIn": "Dells Mill Pond",
+          "takeOut": "Harstad County Park Canoe Launch",
+          "miles": 2.2,
+          "difficulty": "Not rated (no agency rating found)",
+          "notes": "Markers identify agency-listed access; the map states whether a landing or an approximate facility area has been reviewed. Mileage is preliminary, measured along USGS river geometry; it is not a surveyed paddling route. Difficulty has not been independently rated for every section. Check current conditions, hazards and access with the managing agency before paddling.",
+          "putInAccessId": "acc-0c78875e4151578fa7b1",
+          "takeOutAccessId": "acc-98cf40ad285c5b2d9e2c",
+          "accessReview": "The DNR-listed Dells Mill Pond carry-in is on the impoundment above Dells Mill Dam. A usable authorized carry to downstream Bridge Creek has not been established. The separate Highway V bridge launch described by paddlers is not this pond landing and must not be substituted without permission and a new access review.",
+          "routeReview": "This pond-to-Harstad itinerary encounters the Dells Mill dam site. A downstream bridge approach is a different access with steep banks and unresolved permission; no continuous float, safe passage or legal portage is approved.",
+          "notices": [
+            {
+              "title": "Pond landing is above the dam",
+              "text": "The DNR lake survey maps Dells Millpond and its dam separately from downstream Bridge Creek. The public pond carry-in does not establish a downstream bridge launch or an authorized carry around the mill. This itinerary remains withheld.",
+              "sourceName": "Wisconsin DNR — Dells Millpond lake survey and public carry-in record 5083",
+              "sourceUrl": "https://apps.dnr.wi.gov/doclink/lakes_maps/2131000a.pdf",
+              "checkedOn": "2026-11-17"
+            }
+          ],
+          "mapPendingReason": "The DNR-listed Dells Mill Pond carry-in is on the impoundment above Dells Mill Dam. A usable authorized carry to downstream Bridge Creek has not been established. The separate Highway V bridge launch described by paddlers is not this pond landing and must not be substituted without permission and a new access review.",
+          "mapReleased": false
+        }
+      ],
+      "gaugeRelationship": "representative",
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Access areas reviewed against current agency records. Exact water-edge landings have not been established for every endpoint; sections with unresolved permission or dam/portage questions are held separately."
+    }
+  },
+  {
+    "id": "white-salmon",
+    "before": {
+      "id": "white-salmon",
+      "name": "White Salmon River",
+      "gauge": "14123500",
+      "gaugeName": "White Salmon River near Underwood",
+      "lat": 45.826,
+      "lon": -121.498,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Spring-fed, ice-cold Wild and Scenic river in a mossy basalt slot — the Gorge's summer rafting run.",
+      "sections": [
+        {
+          "id": "bz-husum",
+          "putIn": "BZ Corner",
+          "takeOut": "Husum (above the falls)",
+          "miles": 4.4,
+          "difficulty": "Class III+",
+          "notes": "Continuous Class III–III+ in a narrow basalt gorge. TAKE OUT ABOVE HUSUM FALLS (Class V) at the river-right USFS access. Commercial rafting run. USFS: no fees at BZ Corner or the Husum Boating Site for private boaters; commercial outfitters need a USFS special-use permit.",
+          "putInAccessId": "acc-614954b70d50574288b6",
+          "takeOutAccessId": "acc-815155758939551a879b",
+          "notices": [
+            {
+              "title": "Scout the take-out above Husum Falls",
+              "text": "This is a technical whitewater trip. Before launching, identify the exit above Class V Husum Falls and plan your take-out. The Area marker shows the roadside boating facility, not the exact eddy or a navigation target. Do not use the map to decide when to make the exit.",
+              "sourceName": "USDA Forest Service",
+              "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+              "checkedOn": "2026-11-09"
+            }
+          ],
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.851342,
+            "lon": -121.509918
+          },
+          "takeOutCoords": {
+            "lat": 45.799923,
+            "lon": -121.486067
+          },
+          "putInAccess": {
+            "id": "acc-614954b70d50574288b6",
+            "status": "access-verified",
+            "accessType": "Access facility (approximate location)",
+            "sourceName": "USDA Forest Service, Columbia River Gorge NSA: BZ Launch Site & Trail (#4413)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+            "verifiedOn": "2026-11-09",
+            "note": "USFS confirms the launch, take-outs and trail open; toilets are seasonally closed. INFRA site 76009 matches this existing approximate agency coordinate. The imagery does not establish an exact parking loop or shoreline entry at the pin. The river is east of the marker; retain Area precision and agency directions.",
+            "directions": "Follow USFS directions to the signed parking east of SR 141 near milepost 12.5, then the 0.1-mile carry trail with boat-slide rails. The agency Area marker is approximate; use the signed entrance, not the marker, to locate parking and the launch.",
+            "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?geometry=-121.515%2C45.846%2C-121.505%2C45.856&geometryType=esriGeometryEnvelope&inSR=4326&outFields=site_name%2Csite_id%2Clatitude%2Clongitude%2Cpublic_site_name%2Crecarea_status%2Ccurrent_conditions%2Cusda_portal_url&outSR=4326&f=json"
+          },
+          "takeOutAccess": {
+            "id": "acc-815155758939551a879b",
+            "status": "access-verified",
+            "accessType": "River access facility (approximate area)",
+            "operator": "USDA Forest Service",
+            "sourceName": "USDA Forest Service — Husum (above the falls)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+            "verifiedOn": "2026-11-09",
+            "note": "Current USFS page identifies this boating/portage facility and publishes the unchanged candidate coordinate. Individual imagery places it at the roadside pull-out upstream of the visible falls. Preserve Area precision: the water-entry path and take-out eddy are under tree cover. Missing the upstream exit can lead into Class V Husum Falls.",
+            "directions": "USFS Husum Boating Site is beside SR 141 at approximately milepost 8.8. Before launching, scout and identify the take-out above Husum Falls; the roadside-area marker is not the exact take-out eddy.",
+            "coordinateSourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site"
+          },
+          "mapReleased": true
+        }
+      ],
+      "state": "WA",
+      "timezone": "America/Los_Angeles",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Audited 2026-10-25. Pending: BZ Corner, Husum (above the falls) not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    },
+    "after": {
+      "id": "white-salmon",
+      "name": "White Salmon River",
+      "gauge": "14123500",
+      "gaugeName": "White Salmon River near Underwood",
+      "lat": 45.826,
+      "lon": -121.498,
+      "refFlowCfs": null,
+      "refSpeedMph": null,
+      "blurb": "Spring-fed, ice-cold Wild and Scenic river in a mossy basalt slot — the Gorge's summer rafting run.",
+      "sections": [
+        {
+          "id": "bz-husum",
+          "putIn": "BZ Corner",
+          "takeOut": "Husum (above the falls)",
+          "miles": 4.4,
+          "difficulty": "Class III+",
+          "notes": "Continuous Class III–III+ in a narrow basalt gorge. TAKE OUT ABOVE HUSUM FALLS (Class V) at the river-right USFS access. Commercial rafting run. USFS: no fees at BZ Corner or the Husum Boating Site for private boaters; commercial outfitters need a USFS special-use permit.",
+          "putInAccessId": "acc-614954b70d50574288b6",
+          "takeOutAccessId": "acc-815155758939551a879b",
+          "notices": [
+            {
+              "title": "Scout the take-out above Husum Falls",
+              "text": "This is a technical whitewater trip. Before launching, identify the exit above Class V Husum Falls and plan your take-out. The Area marker shows the roadside boating facility, not the exact eddy or a navigation target. Do not use the map to decide when to make the exit.",
+              "sourceName": "USDA Forest Service",
+              "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+              "checkedOn": "2026-11-09"
+            }
+          ],
+          "routeReview": "Approximate main-river overview only. Tree cover and gorge shadows obscure the exact channel. Identify and scout the take-out ABOVE Class V Husum Falls before launching; the dotted line and Area marker do not locate the exit eddy or provide navigation guidance.",
+          "mapPilot": true,
+          "mapPrecision": "approximate",
+          "putInCoords": {
+            "lat": 45.851342,
+            "lon": -121.509918
+          },
+          "takeOutCoords": {
+            "lat": 45.799923,
+            "lon": -121.486067
+          },
+          "putInAccess": {
+            "id": "acc-614954b70d50574288b6",
+            "status": "access-verified",
+            "accessType": "Access facility (approximate location)",
+            "sourceName": "USDA Forest Service, Columbia River Gorge NSA: BZ Launch Site & Trail (#4413)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+            "verifiedOn": "2026-11-09",
+            "note": "USFS confirms the launch, take-outs and trail open; toilets are seasonally closed. INFRA site 76009 matches this existing approximate agency coordinate. The imagery does not establish an exact parking loop or shoreline entry at the pin. The river is east of the marker; retain Area precision and agency directions.",
+            "directions": "Follow USFS directions to the signed parking east of SR 141 near milepost 12.5, then the 0.1-mile carry trail with boat-slide rails. The agency Area marker is approximate; use the signed entrance, not the marker, to locate parking and the launch.",
+            "coordinateSourceUrl": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InfraRecreationSites_01/MapServer/0/query?geometry=-121.515%2C45.846%2C-121.505%2C45.856&geometryType=esriGeometryEnvelope&inSR=4326&outFields=site_name%2Csite_id%2Clatitude%2Clongitude%2Cpublic_site_name%2Crecarea_status%2Ccurrent_conditions%2Cusda_portal_url&outSR=4326&f=json"
+          },
+          "takeOutAccess": {
+            "id": "acc-815155758939551a879b",
+            "status": "access-verified",
+            "accessType": "River access facility (approximate area)",
+            "operator": "USDA Forest Service",
+            "sourceName": "USDA Forest Service — Husum (above the falls)",
+            "sourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+            "verifiedOn": "2026-11-09",
+            "note": "Current USFS page identifies this boating/portage facility and publishes the unchanged candidate coordinate. Individual imagery places it at the roadside pull-out upstream of the visible falls. Preserve Area precision: the water-entry path and take-out eddy are under tree cover. Missing the upstream exit can lead into Class V Husum Falls.",
+            "directions": "USFS Husum Boating Site is beside SR 141 at approximately milepost 8.8. Before launching, scout and identify the take-out above Husum Falls; the roadside-area marker is not the exact take-out eddy.",
+            "coordinateSourceUrl": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site"
+          },
+          "mapReleased": true
+        }
+      ],
+      "state": "WA",
+      "timezone": "America/Los_Angeles",
+      "timing": {
+        "mode": "unavailable",
+        "note": "A reviewed speed/flow calibration has not been established. Access and guide information remain available."
+      },
+      "multiDay": false,
+      "mapAudit": "pending",
+      "mapAuditNote": "Audited 2026-10-25. Pending: BZ Corner, Husum (above the falls) not yet confirmed at the exact river-side launch by a current managing-agency source. Maps stay hidden until every endpoint is verified."
+    }
+  }
+]

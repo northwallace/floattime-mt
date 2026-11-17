@@ -1,0 +1,69 @@
+{
+  "localOnly": true,
+  "published": false,
+  "checkedOn": "2026-11-17",
+  "pathsAdded": 1,
+  "mapsAdded": 0,
+  "riverId": "white-salmon",
+  "sectionId": "bz-husum",
+  "route": {
+    "file": "catalog/routes/WA/white-salmon--bz-husum.json",
+    "sha256": "c9a1a25fe8860bd5f627acf1f20d0bb3d33c7c078b0ac3c6f2695604903f7912"
+  },
+  "review": {
+    "file": "research/white-salmon-course-20261117/course/full-course-review.json",
+    "sha256": "a9cf9b37d95591edf5c44b9735d3b5f8a2370208f51766dd88e9f00bc08f829e"
+  },
+  "source": {
+    "name": "USGS National Hydrography Dataset — High Resolution",
+    "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/Hydrography/NHD/HU4/GPKG/NHD_H_1707_HU4_GPKG.zip",
+    "checkedOn": "2026-11-09",
+    "streamId": "White Salmon River",
+    "evidenceFile": "research/routes/WA/hr-sources/white-salmon-9eb55041b0b4513c.json",
+    "sha256": "9eb55041b0b4513c48e61aa342cbd03b39f828770c22fbf8a552e33db2a8e608"
+  },
+  "metrics": {
+    "routeMiles": 4.415,
+    "endpointOffsetsMeters": [
+      94.7,
+      39.6
+    ],
+    "mileageDifferencePercent": 0.34,
+    "maxSegmentMeters": 66.9,
+    "vertices": 1975
+  },
+  "sourceAnchors": {
+    "putIn": {
+      "featureId": "{7D1BFB42-7D72-4B66-BCF5-8A478FC61A96}",
+      "reason": "The individually inspected BZ Corner source comparison shows this original named White Salmon edge in the gorge east of the unchanged USFS facility area. The nearest unnamed source edge follows a roadside tributary through town. Use the original main-river edge for display-only overview; the shoreline connection remains unmapped.",
+      "imageryEvidence": [
+        {
+          "file": "research/white-salmon-course-20261117/imagery/bz-anchor-main-river.jpg",
+          "sha256": "81b1e2df08daf2910b6cadc12578661293a356c0a86216e0c32485cde19c1785"
+        },
+        {
+          "file": "research/white-salmon-course-20261117/imagery/bz-anchor-tributary.jpg",
+          "sha256": "e1c5419938cae751b562ac15898015e87e24bae042fd5540fbd5f6c5ca7dafa8"
+        }
+      ]
+    }
+  },
+  "agencySources": [
+    {
+      "url": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/trails/bz-launch-site-trail-4413",
+      "file": "research/white-salmon-course-20261117/sources/bz-usfs.html",
+      "status": 200,
+      "sha256": "9577006f2c96b9843dc445053b9858fc25df7ae1112d240d1cc4810b90ceb2dd"
+    },
+    {
+      "url": "https://www.fs.usda.gov/r06/columbiarivergorge/recreation/husum-boating-site",
+      "file": "research/white-salmon-course-20261117/sources/husum-usfs.html",
+      "status": 200,
+      "sha256": "f49a9a568f561c7f7a7b3600a81a5fbadaba1def07a2bd7f08764e3e15e1e9e5"
+    }
+  ],
+  "planningMilesChanged": false,
+  "accessCoordinatesAndStableIdsPreserved": true,
+  "allNewCoursesDisplayOnly": true,
+  "olderWrongTributaryCandidateNotPromoted": true
+}
